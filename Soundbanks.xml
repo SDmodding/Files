@@ -1,0 +1,80 @@
+<!--
+-
+- Priorities are defined as
+- 1:  lowest
+- 10:  highest
+-
+- default priority is 5.
+-
+- Priorities aren't specifically limited to this range, 
+- but don't be setting anything to ABOVE 9 without
+- talking to Scott or Jon first.
+-->
+
+<SoundBanks>
+
+  <Categories>
+	<Category name="Vehicles" prefix ="veh" priority = "8"/>
+	<Category name="Surface"  prefix ="sur" priority = "9"/>
+	
+	<Category name="Ambience" prefix ="amb" priority = "8"/>
+	<Category name="Music" 	  prefix ="mus" priority = "8"/>
+	<Category name="Dialogue" prefix ="dia" priority = "8"/>	
+  </Categories>
+  
+  <Pools>
+	<Pool name = "128K" slotSize = "131072" numSlots = "11" />
+	<Pool name = "64K"  slotSize = "65536"  numSlots = "10" />
+	<Pool name = "32K"  slotSize = "32768"  numSlots = "8" />  
+  </Pools>
+  
+  <Group name="Global">
+	<Bank name="Init" 		 	priority="12" />
+	<Bank name="d_tagged_dialogue_voice" priority="10"/>
+	<Bank name="glb_mix" priority="10"/>	
+	<Bank name="amb_crosswalk_signal"  priority="5"/>
+	<Bank name="amb_e" priority="9"/>
+	<Bank name="amb_city_tone_d" priority="8"/>
+	<Bank name="amb_fire_flames" priority ="4"/>
+	<Bank name="amb_rain_e"/>
+	<Bank name="amb_squelch" priority ="4"/>
+  	<Bank name="amb_radios"/>
+  	<Bank name="amb_siren_d" priority ="4"/>
+  	<Bank name="amb_telephones" />
+	<Bank name="amb_water"  priority ="4" />	
+	<Bank name="amb_cell_phones" priority ="4"/>	
+	<Bank name="des_wood_med" priority ="4"/>
+	<Bank name="dlg_external" priority="1"/>
+	<Bank name="dlg_ext_01" priority="5"/>
+	<Bank name="dryfire_e"  priority="5"/>
+	<Bank name="dynamic_mixing_states" priority="10"/>
+	<Bank name="d_event" priority="6"/>	
+	<Bank name="d_tagged_dialogue_sfx" priority="10"/>
+  	<Bank name="deb_e" priority="7"/>
+	<Bank name="exp_medium"  priority ="4"/>
+	<Bank name="fighting_e" priority="7"/>
+	<Bank name="sur_wet_d" priority ="4"/>	
+	<Bank name="fighting_health_states" />
+	<Bank name="fighting_static_default" priority="10" />
+	<Bank name="gnp_e" priority="7" />
+	<Bank name="mus_music" priority="9"/>
+	<Bank name="mus_radio_shuga"  priority ="4"/>	
+	<Bank name="mot_motion" priority="9"/>
+	<Bank name="ninp_sfx" priority="3"/>	  
+	<Bank name="poi_yawn_sneeze_cough" priority ="4"/>
+	<Bank name="static_sfx_2" 	priority="11" />
+	<Bank name="sur_metal_gate_d" priority ="4"/>
+   	<Bank name="static_voice" priority="10" />
+	<Bank name="ui_global" priority="10" />
+	<Bank name="ui_stingers_static_common" priority="10" />
+	<Bank name="sur_footstep_static_d" priority="10" />
+	<Bank name="d_tagged_panic_dialogue" priority="7" />
+	<Bank name="sur_e" priority="10"/>
+	<Bank name="veh_common_static"  priority ="8"/>
+	<Bank name="weapon_d" priority="10" />	
+	<Bank name="weapon_e" priority="10" />
+	<Bank name="fighting_taser_d" priority="7" />
+	<Bank name="dlg_events" priority="1" />
+</Group>
+  
+</SoundBanks>
