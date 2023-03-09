@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DamageTransferSystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DamageTransfer name="lowin01" DefaultValue="3">
+    <DamageAffector name="D_WinF" Health="1.5" UseDefault="false">
+      <TransferTo name="D_WinR02" />
+      <TransferTo name="D_WinL02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR01_Hijack" UseDefault="false">
+      <TransferTo name="D_WinL01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL01_Hijack" UseDefault="false">
+      <TransferTo name="D_WinR01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR02" Health="3" UseDefault="false">
+      <TransferTo name="D_WinL02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL02" Health="3" UseDefault="false">
+      <TransferTo name="D_WinR02" />
+    </DamageAffector>
+  </DamageTransfer>
+  <DamageTransfer name="vehicle4door" DefaultValue="3">
+    <DamageAffector name="D_WinF" Health="3.5" UseDefault="false">
+      <TransferTo name="D_WinB" />
+    </DamageAffector>
+    <DamageAffector name="D_WinB" Health="3.5" UseDefault="false">
+      <TransferTo name="D_WinF" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR01_Hijack">
+      <TransferTo name="D_WinL01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL01_Hijack">
+      <TransferTo name="D_WinR01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR02">
+      <TransferTo name="D_WinL02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL02">
+      <TransferTo name="D_WinR02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR03">
+      <TransferTo name="D_WinL03" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL03">
+      <TransferTo name="D_WinR03" />
+    </DamageAffector>
+  </DamageTransfer>
+  <DamageTransfer name="bus" DefaultValue="4">
+    <DamageAffector name="D_WinF" Health="3.5" UseDefault="false">
+      <TransferTo name="D_WinB" />
+    </DamageAffector>
+    <DamageAffector name="D_WinB" Health="3.5" UseDefault="false">
+      <TransferTo name="D_WinF" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR01_Hijack">
+      <TransferTo name="D_WinL01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL01_Hijack">
+      <TransferTo name="D_WinR01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR02">
+      <TransferTo name="D_WinL02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL02">
+      <TransferTo name="D_WinR02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR03">
+      <TransferTo name="D_WinL03" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL03">
+      <TransferTo name="D_WinR03" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR04">
+      <TransferTo name="D_WinL04" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL04">
+      <TransferTo name="D_WinR04" />
+    </DamageAffector>
+  </DamageTransfer>
+  <DamageTransfer name="doubledeckbus" DefaultValue="4">
+    <DamageAffector name="D_WinF" Health="3.5" UseDefault="false">
+      <TransferTo name="D_WinB" />
+    </DamageAffector>
+    <DamageAffector name="D_WinB" Health="3.5" UseDefault="false">
+      <TransferTo name="D_WinF" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR01_Hijack">
+      <TransferTo name="D_WinL01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL01_Hijack">
+      <TransferTo name="D_WinR01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR02">
+      <TransferTo name="D_WinL02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL02">
+      <TransferTo name="D_WinR02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR03">
+      <TransferTo name="D_WinL03" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL03">
+      <TransferTo name="D_WinR03" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR04">
+      <TransferTo name="D_WinL04" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL04">
+      <TransferTo name="D_WinR04" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR05">
+      <TransferTo name="D_WinL05" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL05">
+      <TransferTo name="D_WinR05" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR06">
+      <TransferTo name="D_WinL06" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL06">
+      <TransferTo name="D_WinR06" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR07">
+      <TransferTo name="D_WinL07" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL07">
+      <TransferTo name="D_WinR07" />
+    </DamageAffector>
+  </DamageTransfer>
+  <DamageTransfer name="truckcab" DefaultValue="4">
+    <DamageAffector name="D_WinR01_Hijack" Health="1.5" UseDefault="false">
+      <TransferTo name="D_WinR02" />
+      <TransferTo name="" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL01_Hijack" Health="1.5" UseDefault="false">
+      <TransferTo name="D_WinL02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR02" UseDefault="false">
+      <TransferTo name="D_WinL02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL02" UseDefault="false">
+      <TransferTo name="D_WinR02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinF" Health="3.5" UseDefault="false">
+      <TransferTo name="D_WinL01_Hijack" />
+      <TransferTo name="D_WinR01_Hijack" />
+    </DamageAffector>
+  </DamageTransfer>
+  <DamageTransfer name="van" DefaultValue="3.5">
+    <DamageAffector name="D_WinF" Health="3" UseDefault="false">
+      <TransferTo name="D_WinR03" />
+      <TransferTo name="D_WinL03" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR03" Health="2.5" UseDefault="false">
+      <TransferTo name="D_WinF" />
+      <TransferTo name="D_WinL03" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL03" Health="2.5" UseDefault="false">
+      <TransferTo name="D_WinF" />
+      <TransferTo name="D_WinR03" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR01_Hijack">
+      <TransferTo name="D_WinL01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL01_Hijack">
+      <TransferTo name="D_WinR01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR02" Health="2.5" UseDefault="false">
+      <TransferTo name="D_WinL02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL02" Health="2.5" UseDefault="false">
+      <TransferTo name="D_WinR02" />
+    </DamageAffector>
+  </DamageTransfer>
+  <DamageTransfer name="vehicle2door" DefaultValue="3.5">
+    <DamageAffector name="D_WinF" Health="2.5" UseDefault="false">
+      <TransferTo name="D_WinB" />
+    </DamageAffector>
+  </DamageTransfer>
+  <DamageTransfer name="limo" DefaultValue="3">
+    <DamageAffector name="D_WinF" Health="2.5" UseDefault="false">
+      <TransferTo name="D_WinB" />
+    </DamageAffector>
+    <DamageAffector name="D_WinB">
+      <TransferTo name="D_WinF" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR01_Hijack">
+      <TransferTo name="D_WinL01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL01_Hijack">
+      <TransferTo name="D_WinR01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR02">
+      <TransferTo name="D_WinL02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL02">
+      <TransferTo name="D_WinR02" />
+    </DamageAffector>
+  </DamageTransfer>
+  <DamageTransfer name="fireengine" DefaultValue="4">
+    <DamageAffector name="D_WinR01_Hijack">
+      <TransferTo name="D_WinL01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL01_Hijack">
+      <TransferTo name="D_WinR01_Hijack" />
+    </DamageAffector>
+    <DamageAffector name="D_WinR02">
+      <TransferTo name="D_WinL02" />
+    </DamageAffector>
+    <DamageAffector name="D_WinL02">
+      <TransferTo name="D_WinR02" />
+    </DamageAffector>
+  </DamageTransfer>
+</DamageTransferSystem>

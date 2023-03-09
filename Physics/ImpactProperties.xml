@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	For DIRECTION parameters
+		values from -1 to 0 will aim in the Reflected direction of the impact (R)
+		a value of 0 will aim in the direction of the surface normal (N)
+		a value from 0 to 1 will aim in the direction of the impact (I)
+
+						* Gun is here
+		  (-1)  R  N  I  (+1)
+				^  ^  ^
+				 \ | /
+				  \|/
+				======= surface
+
+	For each IMPACT TYPE
+		If you supply a Default material type, that will be used if there is no specific material listed that matches the collision event.
+		If you don't supply a Default material type, you will only see impact events on the listed materials
+
+	For each MATERIAL type
+		If you don't supply a Decal or Effect, then these effects won't be created when the impact occurs
+-->
+
+<ImpactPropertyList>
+	<Impact type = "Bullet">
+		<Material type="Default"			decal="Decal.Bullet"						effect="Impact_Default"				  			direction="0"/>
+		<Material type="Concrete"			decal="Decal.Bullet.Concrete001"			effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Metal"				decal="Decal.Bullet.Metal001"				effect="Impact_9MM_Metal"	   			  		direction="0"/>
+		<Material type="Metal_NoDecal"													effect="Impact_9MM_Metal"	   			  		direction="0"/>
+		<Material type="Metal_Vehicle"		decal="Decal.Bullet.Metal001"				effect="Impact_9MM_Metal"	   			  		direction="0"/>
+		<Material type="Wood"				decal="Decal.WoodImpact" 					effect="Impact_9MM_Wood"						direction="0"/>
+		<Material type="Styrofoam"			decal="Decal.Bullet.Wood001"				effect="Impact_9MM_Styrofoam"					direction="0"/>
+		<Material type="Cardboard"			decal="Decal.Bullet.Wood001"				effect="Impact_9MM_Cardboard_01"			   	direction="0"/>
+		<Material type="Flesh"				decal="Decal.BloodSplatter003"				effect="Impact_Flesh"	   	   	 		   		direction="0"/>
+		<Material type="Flesh_Head"			decal="Decal.BloodSplatter003"				effect="Impact_Flesh_Head"	   		 	 		direction="1"/>
+		<Material type="Plaster"			decal="Decal.Bullet"						effect="Impact_9MM_Plaster"	 					direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassShatter_01"			effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassShatter_01"			effect="Impact_9MM_AquariumGlass"				direction="0"/>
+		<Material type="Glass_BulletProof"	decal="HK_DECL_BulletProof_Glass"			effect="Impact_9MM_Glass"			 			direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="DrugPack"			decal="Decal.Bullet"						effect="Impact_9MM_DrugPackage"					direction="1"/>
+		<Material type="DrugMannequin"		decal="Decal.Bullet"						effect="HK_Impact_9mm_Mannequin_Hit_Effect"	 	direction="1"/>
+		<Material type="ElectricalPanel"	decal="Decal.Bullet.Metal001"				effect="Impact_ElectricalSparks"			 	direction="0"/>
+		<Material type="WhitePaint"			decal="HK_DECL_WhitePaint_Splat_01"			effect="HK_Impact_9mm_WhitePaint_Hit_Effect" 	direction="1"/>
+		<Material type="PowderCan"			decal="Decal.Bullet"						effect="Impact_9MM_DrugPackage"					direction="1"/>
+		<Material type="GiftWrapped"		decal="Decal.Bullet"						effect="Impact_9MM_Gift_01"						direction="0"/>
+		<Material type="Chandelier"														effect="Impact_9MM_Metal"						direction="1"/>
+		<Material type="Ceramic"			decal="Decal.Bullet.Tile001"				effect="Impact_9mm_Ceramic"						direction="0"/>
+		<Material type="Water"								  							effect="Impact_9MM_Water"						direction="0"/>
+		<Material type="Dirt"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Dirt"						direction="0"/>
+		<Material type="Rock"				decal="Decal.Bullet.Stone"					effect="Impact_9MM_Rock"						direction="0"/>
+		<Material type="Sand"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Sand"						direction="0"/>
+		<Material type="Grass"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Grass"						direction="0"/>
+		<Material type="Rubber"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Rubber"						direction="0"/>
+		<Material type="Fabric"				decal="Decal.Bullet.Small"					effect="HK_Cotton_Pillow_Effect"				direction="0"/>
+		<Material type="Fabric_Thin"		decal="Decal.Bullet.Small"					effect="Impact_9MM_Fabric"						direction="0"/>
+		<Material type="AsphaltShingle"  	decal="Decal.Bullet.Small"					effect="Impact_9MM_Shingle"						direction="0"/>
+		<Material type="Plastic"			decal="Decal.Bullet.Small"					effect="Impact_9MM_Rubber"						direction="0"/>
+		<Material type="Drywall"			decal="Decal.Bullet"						effect="HK_ELEC_DryWallImpact_Effect"			direction="0"/>
+		<Material type="PaperMache_Red"		decal="Decal.Bullet.Small"					effect="Impact_9MM_RedLantern_01"				direction="0"/>
+		<Material type="DiscoBall"			decal="Decal.Bullet.Small"					effect="HK_DiscoBall_Impact_Effect"				direction="0"/>
+		<Material type="PlexiGlass"														effect="HK_PlasticSheetImpact_Effect"			direction="0"/>
+		<Material type="BloodPack"														effect="HK_BloodPack_Impact_Effect"				direction="0"/>
+		<Material type="StoneSlab"			decal="Decal.Bullet.Stone"					effect="Impact_9MM_StoneSlab"					direction="0"/>
+		<Material type="WeddingCake"													effect="CakeImpact_9mm"							direction="0"/>
+		<Material type="Brick_Red"		 	decal="Decal.Bullet.Concrete001"			effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Tile"				decal="Decal.Bullet.Tile001"				effect="Impact_9MM_Tile"						direction="0"/>
+		<Material type="Tile_Blue"			decal="Decal.Bullet.Tile001"				effect="Impact_9MM_Tile_Blue"					direction="0"/>
+		<Material type="Tile_NoVFX"			decal="Decal.Bullet.Tile001"																direction="0"/>
+		<Material type="Mud"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Dirt"						direction="0"/>
+	</Impact>
+
+	<Impact type = "Bullet_SMG">
+		<Material type="Default"			decal="Decal.Bullet"						effect="Impact_Default"							direction="0"/>
+		<Material type="Concrete"			decal="Decal.Bullet.Concrete001"			effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Metal"				decal="Decal.Bullet.Metal001"				effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Metal_NoDecal"													effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Metal_Vehicle"		decal="Decal.Bullet.Metal001"				effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Wood"				decal="Decal.WoodImpact" 					effect="Impact_9MM_Wood"						direction="0"/>
+		<Material type="Styrofoam"			decal="Decal.Bullet.Wood001"				effect="Impact_9MM_Styrofoam"					direction="0"/>
+		<Material type="Cardboard"			decal="Decal.Bullet.Wood001"				effect="Impact_9MM_Cardboard_01"				direction="0"/>
+		<Material type="Flesh"															effect="Impact_Flesh"							direction="0"/>
+		<Material type="Flesh_Head"														effect="Impact_Flesh_Head"						direction="1"/>
+		<Material type="Plaster"			decal="Decal.Bullet"						effect="Impact_9MM_Plaster"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassShatter_01"			effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassShatter_01"			effect="Impact_9MM_AquariumGlass"				direction="0"/>
+		<Material type="Glass_BulletProof"	decal="HK_DECL_BulletProof_Glass"			effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="DrugPack"			decal="Decal.Bullet"						effect="Impact_9MM_DrugPackage"					direction="1"/>
+		<Material type="DrugMannequin"		decal="Decal.Bullet"						effect="HK_Impact_9mm_Mannequin_Hit_Effect"		direction="1"/>
+		<Material type="ElectricalPanel" 	decal="Decal.Bullet.Metal001"				effect="Impact_ElectricalSparks"				direction="0"/>
+		<Material type="WhitePaint"			decal="HK_DECL_WhitePaint_Splat_01"			effect="HK_Impact_9mm_WhitePaint_Hit_Effect" 	direction="1"/>
+		<Material type="PowderCan"			decal="Decal.Bullet"						effect="Impact_9MM_DrugPackage"					direction="1"/>
+		<Material type="GiftWrapped"		decal="Decal.Bullet"						effect="Impact_9MM_Gift_01"						direction="0"/>
+		<Material type="Chandelier"														effect="Impact_9MM_Metal"						direction="1"/>
+		<Material type="Ceramic"			decal="Decal.Bullet.Tile001"				effect="Impact_9mm_Ceramic"						direction="0"/>
+		<Material type="Water"								  							effect="Impact_9MM_Water"						direction="0"/>
+		<Material type="Dirt"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Dirt"						direction="0"/>
+		<Material type="Rock"				decal="Decal.Bullet.Stone"					effect="Impact_9MM_Rock"						direction="0"/>
+		<Material type="Sand"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Sand"						direction="0"/>
+		<Material type="Grass"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Grass"						direction="0"/>
+		<Material type="Rubber"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Rubber"						direction="0"/>
+		<Material type="Fabric"				decal="Decal.Bullet.Small"					effect="HK_Cotton_Pillow_Effect"				direction="0"/>
+		<Material type="Fabric_Thin"		decal="Decal.Bullet.Small"					effect="Impact_9MM_Fabric"						direction="0"/>
+		<Material type="AsphaltShingle"  	decal="Decal.Bullet.Small"					effect="Impact_9MM_Shingle"						direction="0"/>
+		<Material type="Plastic"			decal="Decal.Bullet.Small"					effect="Impact_9MM_Rubber"						direction="0"/>
+		<Material type="Drywall"			decal="Decal.Bullet"						effect="HK_ELEC_DryWallImpact_Effect"			direction="0"/>
+		<Material type="PaperMache_Red"		decal="Decal.Bullet.Small"					effect="Impact_9MM_RedLantern_01"				direction="0"/>
+		<Material type="DiscoBall"			decal="Decal.Bullet.Small"					effect="HK_DiscoBall_Impact_Effect"				direction="0"/>
+		<Material type="PlexiGlass"														effect="HK_PlasticSheetImpact_Effect"			direction="0"/>
+		<Material type="BloodPack"														effect="HK_BloodPack_Impact_Effect"				direction="0"/>
+		<Material type="StoneSlab"			decal="Decal.Bullet.Stone"					effect="Impact_9MM_StoneSlab"					direction="0"/>
+		<Material type="WeddingCake"													effect="CakeImpact_9mm"							direction="0"/>
+		<Material type="Brick_Red"		 	decal="Decal.Bullet.Concrete001"			effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Tile"				decal="Decal.Bullet.Tile001"				effect="Impact_9MM_Tile"						direction="0"/>
+		<Material type="Tile_Blue"			decal="Decal.Bullet.Tile001"				effect="Impact_9MM_Tile_Blue"					direction="0"/>
+		<Material type="Tile_NoVFX"			decal="Decal.Bullet.Tile001"																direction="0"/>
+		<Material type="Mud"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Dirt"						direction="0"/>
+	</Impact>
+
+	<Impact type = "Bullet_Sniper">
+		<Material type="Default"			decal="Decal.Bullet"						effect="Impact_Default"							direction="0"/>
+		<Material type="Concrete"			decal="Decal.Bullet.Concrete001"			effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Metal"				decal="Decal.Bullet.Metal001"				effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Metal_NoDecal"													effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Metal_Vehicle"		decal="Decal.Bullet.Metal001"				effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Wood"				decal="Decal.WoodImpact" 					effect="Impact_9MM_Wood"						direction="0"/>
+		<Material type="Styrofoam"			decal="Decal.Bullet.Wood001"				effect="Impact_9MM_Styrofoam"					direction="0"/>
+		<Material type="Cardboard"			decal="Decal.Bullet.Wood001"				effect="Impact_9MM_Cardboard_01"				direction="0"/>
+		<Material type="Flesh"															effect="Impact_Flesh"							direction="0"/>
+		<Material type="Flesh_Head"														effect="Impact_Flesh_Head"						direction="1"/>
+		<Material type="Plaster"			decal="Decal.Bullet"						effect="Impact_9MM_Plaster"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassShatter_01"			effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassShatter_01"			effect="Impact_9MM_AquariumGlass"				direction="0"/>
+		<Material type="Glass_BulletProof" 	decal="HK_DECL_BulletProof_Glass"			effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="DrugPack"			decal="Decal.Bullet"						effect="Impact_9MM_DrugPackage"					direction="1"/>
+		<Material type="DrugMannequin"   	decal="Decal.Bullet"						effect="HK_Impact_9mm_Mannequin_Hit_Effect"		direction="1"/>
+		<Material type="ElectricalPanel" 	decal="Decal.Bullet.Metal001"				effect="Impact_ElectricalSparks"				direction="0"/>
+		<Material type="WhitePaint"			decal="HK_DECL_WhitePaint_Splat_01"			effect="HK_Impact_9mm_WhitePaint_Hit_Effect" 	direction="1"/>
+		<Material type="PowderCan"			decal="Decal.Bullet"						effect="Impact_9MM_DrugPackage"					direction="1"/>
+		<Material type="GiftWrapped"		decal="Decal.Bullet"						effect="Impact_9MM_Gift_01"						direction="0"/>
+		<Material type="Chandelier"														effect="Impact_9MM_Metal"						direction="1"/>
+		<Material type="Ceramic"			decal="Decal.Bullet.Tile001"				effect="Impact_9mm_Ceramic"						direction="0"/>
+		<Material type="Water"								  							effect="Impact_9MM_Water"						direction="0"/>
+		<Material type="Dirt"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Dirt"						direction="0"/>
+		<Material type="Rock"				decal="Decal.Bullet.Stone"					effect="Impact_9MM_Rock"						direction="0"/>
+		<Material type="Sand"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Sand"						direction="0"/>
+		<Material type="Grass"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Grass"						direction="0"/>
+		<Material type="Rubber"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Rubber"						direction="0"/>
+		<Material type="Fabric"				decal="Decal.Bullet.Small"					effect="HK_Cotton_Pillow_Effect"				direction="0"/>
+		<Material type="Fabric_Thin"		decal="Decal.Bullet.Small"					effect="Impact_9MM_Fabric"						direction="0"/>
+		<Material type="AsphaltShingle"  	decal="Decal.Bullet.Small"					effect="Impact_9MM_Shingle"						direction="0"/>
+		<Material type="Plastic"			decal="Decal.Bullet.Small"					effect="Impact_9MM_Rubber"						direction="0"/>
+		<Material type="Drywall"			decal="Decal.Bullet"						effect="HK_ELEC_DryWallImpact_Effect"			direction="0"/>
+		<Material type="PaperMache_Red"		decal="Decal.Bullet.Small"					effect="Impact_9MM_RedLantern_01"				direction="0"/>
+		<Material type="DiscoBall"			decal="Decal.Bullet.Small"					effect="HK_DiscoBall_Impact_Effect"				direction="0"/>
+		<Material type="PlexiGlass"														effect="HK_PlasticSheetImpact_Effect"			direction="0"/>
+		<Material type="BloodPack"														effect="HK_BloodPack_Impact_Effect"				direction="0"/>
+		<Material type="StoneSlab"			decal="Decal.Bullet.Stone"					effect="Impact_9MM_StoneSlab"					direction="0"/>
+		<Material type="WeddingCake"													effect="CakeImpact_9mm"							direction="0"/>
+		<Material type="Brick_Red"		 	decal="Decal.Bullet.Concrete001"			effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Tile"				decal="Decal.Bullet.Tile001"				effect="Impact_9MM_Tile"						direction="0"/>
+		<Material type="Tile_Blue"			decal="Decal.Bullet.Tile001"				effect="Impact_9MM_Tile_Blue"					direction="0"/>
+		<Material type="Tile_NoVFX"			decal="Decal.Bullet.Tile001"																direction="0"/>
+		<Material type="Mud"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Dirt"						direction="0"/>
+	</Impact>
+
+	<Impact type = "Bullet_Rifle">
+		<Material type="Default"			decal="Decal.Bullet"						effect="Impact_Default"							direction="0"/>
+		<Material type="Concrete"			decal="Decal.Bullet.Concrete001"			effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Metal"				decal="Decal.Bullet.Metal001"				effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Metal_NoDecal"													effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Metal_Vehicle"		decal="Decal.Bullet.Metal001"				effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Wood"				decal="Decal.WoodImpact" 					effect="Impact_9MM_Wood"						direction="0"/>
+		<Material type="Styrofoam"			decal="Decal.Bullet.Wood001"				effect="Impact_9MM_Styrofoam"					direction="0"/>
+		<Material type="Cardboard"			decal="Decal.Bullet.Wood001"				effect="Impact_9MM_Cardboard_01"				direction="0"/>
+		<Material type="Flesh"															effect="Impact_Flesh"							direction="0"/>
+		<Material type="Flesh_Head"														effect="Impact_Flesh_Head"						direction="1"/>
+		<Material type="Plaster"			decal="Decal.Bullet"						effect="Impact_9MM_Plaster"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassShatter_01"			effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassShatter_01"			effect="Impact_9MM_AquariumGlass"				direction="0"/>
+		<Material type="Glass_BulletProof" 	decal="HK_DECL_BulletProof_Glass"			effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="DrugPack"			decal="Decal.Bullet"						effect="Impact_9MM_DrugPackage"					direction="1"/>
+		<Material type="DrugMannequin"   	decal="Decal.Bullet"						effect="HK_Impact_9mm_Mannequin_Hit_Effect"		direction="1"/>
+		<Material type="ElectricalPanel" 	decal="Decal.Bullet.Metal001"				effect="Impact_ElectricalSparks"				direction="0"/>
+		<Material type="WhitePaint"			decal="HK_DECL_WhitePaint_Splat_01"			effect="HK_Impact_9mm_WhitePaint_Hit_Effect" 	direction="1"/>
+		<Material type="PowderCan"			decal="Decal.Bullet"						effect="Impact_9MM_DrugPackage"					direction="1"/>
+		<Material type="GiftWrapped"		decal="Decal.Bullet"						effect="Impact_9MM_Gift_01"						direction="0"/>
+		<Material type="Chandelier"														effect="Impact_9MM_Metal"						direction="1"/>
+		<Material type="Ceramic"			decal="Decal.Bullet.Tile001"				effect="Impact_9mm_Ceramic"						direction="0"/>
+		<Material type="Water"															effect="Impact_9MM_Water"						direction="0"/>
+		<Material type="Dirt"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Dirt"						direction="0"/>
+		<Material type="Rock"				decal="Decal.Bullet.Stone"						effect="Impact_9MM_Rock"						direction="0"/>
+		<Material type="Sand"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Sand"						direction="0"/>
+		<Material type="Grass"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Grass"						direction="0"/>
+		<Material type="Rubber"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Rubber"						direction="0"/>
+		<Material type="Fabric"				decal="Decal.Bullet.Small"					effect="HK_Cotton_Pillow_Effect"				direction="0"/>
+		<Material type="Fabric_Thin"		decal="Decal.Bullet.Small"					effect="Impact_9MM_Fabric"						direction="0"/>
+		<Material type="AsphaltShingle"  	decal="Decal.Bullet.Small"					effect="Impact_9MM_Shingle"						direction="0"/>
+		<Material type="Plastic"			decal="Decal.Bullet.Small"					effect="Impact_9MM_Rubber"						direction="0"/>
+		<Material type="Drywall"			decal="Decal.Bullet"						effect="HK_ELEC_DryWallImpact_Effect"			direction="0"/>
+		<Material type="PaperMache_Red"		decal="Decal.Bullet.Small"					effect="Impact_9MM_RedLantern_01"				direction="0"/>
+		<Material type="DiscoBall"			decal="Decal.Bullet.Small"					effect="HK_DiscoBall_Impact_Effect"				direction="0"/>
+		<Material type="PlexiGlass"														effect="HK_PlasticSheetImpact_Effect"			direction="0"/>
+		<Material type="BloodPack"														effect="HK_BloodPack_Impact_Effect"				direction="0"/>
+		<Material type="StoneSlab"			decal="Decal.Bullet.Stone"					effect="Impact_9MM_StoneSlab"					direction="0"/>
+		<Material type="WeddingCake"													effect="CakeImpact_9mm"							direction="0"/>
+		<Material type="Brick_Red"		 	decal="Decal.Bullet.Concrete001"			effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Tile"				decal="Decal.Bullet.Tile001"				effect="Impact_9MM_Tile"						direction="0"/>
+		<Material type="Tile_Blue"			decal="Decal.Bullet.Tile001"				effect="Impact_9MM_Tile_Blue"					direction="0"/>
+		<Material type="Tile_NoVFX"			decal="Decal.Bullet.Tile001"																direction="0"/>
+		<Material type="Mud"				decal="Decal.Bullet.Small"					effect="Impact_9MM_Dirt"						direction="0"/>
+	</Impact>
+
+	<Impact type = "Bullet_ShotGun">
+		<Material type="Default"			decal="Decal.Bullet"				decalPercent="70" 		effect="Impact_Default"							direction="0"/>
+		<Material type="Concrete"			decal="Decal.Bullet.Concrete001"	decalPercent="70"		effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Metal"				decal="Decal.Bullet.Metal001"		decalPercent="70"		effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Metal_NoDecal"																	effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Metal_Vehicle"		decal="Decal.Bullet.Metal001"		decalPercent="70"		effect="Impact_9MM_Metal"						direction="0"/>
+		<Material type="Wood"				decal="Decal.WoodImpact" 			decalPercent="70"		effect="Impact_9MM_Wood"						direction="0"/>
+		<Material type="Styrofoam"			decal="Decal.Bullet.Wood001"		decalPercent="70"		effect="Impact_9MM_Styrofoam"					direction="0"/>
+		<Material type="Cardboard"			decal="Decal.Bullet.Wood001"		decalPercent="70"		effect="Impact_9MM_Cardboard_01"				direction="0"/>
+		<Material type="Flesh"																			effect="Impact_Flesh"							direction="0"/>
+		<Material type="Flesh_Head"																		effect="Impact_Flesh_Head"						direction="1"/>
+		<Material type="Plaster"			decal="Decal.Bullet"				decalPercent="70"		effect="Impact_9MM_Plaster"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassShatter_01"	decalPercent="70"		effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"											decalPercent="70"		effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassShatter_01"	decalPercent="70"		effect="Impact_9MM_AquariumGlass"				direction="0"/>
+		<Material type="Glass_BulletProof" 	decal="HK_DECL_BulletProof_Glass"	decalPercent="70"		effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"																	effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="NoImpact"																														direction="0"/>
+		<Material type="DrugPack"			decal="Decal.Bullet"				decalPercent="70"		effect="Impact_9MM_DrugPackage"					direction="1"/>
+		<Material type="DrugMannequin"   	decal="Decal.Bullet"				decalPercent="70"		effect="HK_Impact_9mm_Mannequin_Hit_Effect"		direction="1"/>
+		<Material type="ElectricalPanel" 	decal="Decal.Bullet.Metal001"		decalPercent="70"		effect="Impact_ElectricalSparks"				direction="0"/>
+		<Material type="WhitePaint"			decal="HK_DECL_WhitePaint_Splat_01"	decalPercent="70"		effect="HK_Impact_9mm_WhitePaint_Hit_Effect" 	direction="1"/>
+		<Material type="PowderCan"			decal="Decal.Bullet"				decalPercent="70"		effect="Impact_9MM_DrugPackage"					direction="1"/>
+		<Material type="GiftWrapped"		decal="Decal.Bullet"				decalPercent="70"		effect="Impact_9MM_Gift_01"						direction="0"/>
+		<Material type="Chandelier"																		effect="Impact_9MM_Metal"						direction="1"/>
+		<Material type="Ceramic"			decal="Decal.Bullet.Tile001"		decalPercent="70"		effect="Impact_9mm_Ceramic"						direction="0"/>
+		<Material type="Water"																			effect="Impact_9MM_Water"						direction="0"/>
+		<Material type="Dirt"				decal="Decal.Bullet.Small"			decalPercent="70"		effect="Impact_9MM_Dirt"						direction="0"/>
+		<Material type="Rock"				decal="Decal.Bullet.Stone"			decalPercent="70"		effect="Impact_9MM_Rock"						direction="0"/>
+		<Material type="Sand"				decal="Decal.Bullet.Small"			decalPercent="70"		effect="Impact_9MM_Sand"						direction="0"/>
+		<Material type="Grass"				decal="Decal.Bullet.Small"			decalPercent="70"		effect="Impact_9MM_Grass"						direction="0"/>
+		<Material type="Rubber"				decal="Decal.Bullet.Small"			decalPercent="70"		effect="Impact_9MM_Rubber"						direction="0"/>
+		<Material type="Fabric"				decal="Decal.Bullet.Small"			decalPercent="70"		effect="HK_Cotton_Pillow_Effect"				direction="0"/>
+		<Material type="Fabric_Thin"		decal="Decal.Bullet.Small"			decalPercent="70"		effect="Impact_9MM_Fabric"						direction="0"/>
+		<Material type="AsphaltShingle"  	decal="Decal.Bullet.Small"			decalPercent="70"		effect="Impact_9MM_Shingle"						direction="0"/>
+		<Material type="Plastic"			decal="Decal.Bullet.Small"			decalPercent="70"		effect="Impact_9MM_Rubber"						direction="0"/>
+		<Material type="Drywall"			decal="Decal.Bullet"				decalPercent="70"		effect="HK_ELEC_DryWallImpact_Effect"			direction="0"/>
+		<Material type="PaperMache_Red"		decal="Decal.Bullet.Small"			decalPercent="70"		effect="Impact_9MM_RedLantern_01"				direction="0"/>
+		<Material type="DiscoBall"			decal="Decal.Bullet.Small"			decalPercent="70"		effect="HK_DiscoBall_Impact_Effect"				direction="0"/>
+		<Material type="PlexiGlass"																		effect="HK_PlasticSheetImpact_Effect"			direction="0"/>
+		<Material type="BloodPack"																		effect="HK_BloodPack_Impact_Effect"				direction="0"/>
+		<Material type="StoneSlab"			decal="Decal.Bullet.Stone"			decalPercent="70"		effect="Impact_9MM_StoneSlab"					direction="0"/>
+		<Material type="WeddingCake"																	effect="CakeImpact_9mm"							direction="0"/>
+		<Material type="Brick_Red"		 	decal="Decal.Bullet.Concrete001"	decalPercent="70"		effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Tile"				decal="Decal.Bullet.Tile001"		decalPercent="70"		effect="Impact_9MM_Tile"						direction="0"/>
+		<Material type="Tile_Blue"			decal="Decal.Bullet.Tile001"		decalPercent="70"		effect="Impact_9MM_Tile_Blue"					direction="0"/>
+		<Material type="Tile_NoVFX"			decal="Decal.Bullet.Tile001"		decalPercent="70"														direction="0"/>
+		<Material type="Mud"				decal="Decal.Bullet.Small"			decalPercent="70"		effect="Impact_9MM_Dirt"						direction="0"/>
+	</Impact>
+
+	<Impact type = "Vehicle">
+		<Material type="Default"														effect="Impact_Vehicle_Default"  				direction="0"/>
+		<Material type="Concrete"   													effect="Impact_Vehicle_Concrete"				direction="0"/>
+		<Material type="Metal"															effect="Impact_Vehicle_Concrete"  				direction="0"/>
+		<Material type="Metal_NoDecal"													effect="Impact_Vehicle_Concrete"  				direction="0"/>
+		<Material type="Metal_Vehicle"													effect="Impact_Vehicle_Concrete"  				direction="0"/>
+		<Material type="Wood"															effect="Impact_9MM_Wood"						direction="0"/>
+		<Material type="Flesh"															effect="Impact_Vehicle_Flesh"					direction="0"/>
+		<Material type="Plaster"														effect="Impact_9MM_Plaster"						direction="0"/>
+		<Material type="Glass"															effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal" 													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="Water"															effect="Impact_9MM_Water"						direction="0"/>
+		<Material type="Dirt"															effect="Impact_9MM_Dirt"						direction="0"/>
+		<Material type="Rock"															effect="Impact_Vehicle_Concrete"				direction="0"/>
+		<Material type="Sand"															effect="Impact_9MM_Sand"						direction="0"/>
+		<Material type="Grass"															effect="Impact_9MM_Grass"						direction="0"/>
+		<Material type="StoneSlab"														effect="Impact_9MM_StoneSlab"					direction="0"/>
+		<Material type="Brick_Red"		 												effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Tile"															effect="Impact_9MM_Tile"						direction="0"/>
+		<Material type="Tile_Blue"														effect="Impact_9MM_Tile_Blue"					direction="0"/>
+		<Material type="Mud"															effect="Impact_9MM_Dirt"						direction="0"/>
+	</Impact>
+	
+	<Impact type = "VehicleRamming">
+		<Material type="Default"														effect="Impact_Vehicle_Default"  				direction="0"/>
+		<Material type="Concrete"   													effect="Impact_Vehicle_Concrete"				direction="0"/>
+		<Material type="Metal"															effect="Impact_Vehicle_Concrete"  				direction="0"/>
+		<Material type="Metal_NoDecal"													effect="Impact_Vehicle_Concrete"  				direction="0"/>
+		<Material type="Metal_Vehicle"													effect="Impact_Vehicle_Concrete"  				direction="0"/>
+		<Material type="Wood"															effect="Impact_9MM_Wood"						direction="0"/>
+		<Material type="Flesh"															effect="Impact_Vehicle_Flesh"					direction="0"/>
+		<Material type="Plaster"														effect="Impact_9MM_Plaster"						direction="0"/>
+		<Material type="Glass"															effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal" 													effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="Water"															effect="Impact_9MM_Water"						direction="0"/>
+		<Material type="Dirt"															effect="Impact_9MM_Dirt"						direction="0"/>
+		<Material type="Rock"															effect="Impact_Vehicle_Concrete"				direction="0"/>
+		<Material type="Sand"															effect="Impact_9MM_Sand"						direction="0"/>
+		<Material type="Grass"															effect="Impact_9MM_Grass"						direction="0"/>
+		<Material type="StoneSlab"														effect="Impact_9MM_StoneSlab"					direction="0"/>
+		<Material type="Brick_Red"		 												effect="Impact_9MM_Concrete"					direction="0"/>
+		<Material type="Tile"															effect="Impact_9MM_Tile"						direction="0"/>
+		<Material type="Tile_Blue"														effect="Impact_9MM_Tile_Blue"					direction="0"/>
+		<Material type="Mud"															effect="Impact_9MM_Dirt"						direction="0"/>
+	</Impact>
+
+	<Impact type="Kick">
+		<Material type="Default"														effect="Impact_Melee_Default"					direction="0"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="Impact_Melee_BlockedStrike"				direction="1"/>
+		<Material type="Body"															effect="Impact_Melee_BodyStrike"				direction="1"/>
+		<Material type="HeadBack"														effect="Impact_Melee_HeadStrike"				direction="1"/>
+		<Material type="HeadFront"														effect="Impact_Melee_HeadStrike"				direction="1"/>
+		<Material type="Legs"															effect="Impact_Melee_BodyStrike"				direction="1"/>
+		
+		<!--Surface Materials-->
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_BulletProof"  decal="HK_DECL_BulletProof_Glass"			effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="ElectricalPanel"												effect="Impact_Melee_ElectricalSparks"			direction="0"/>
+	</Impact>
+
+	<Impact type="Punch">
+		<Material type="Default"														effect="Impact_Melee_Default"					direction="0"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="Impact_Melee_BlockedStrike"				direction="1"/>
+		<Material type="Body"															effect="Impact_Melee_HeadStrike"				direction="1"/>
+		<Material type="HeadBack"														effect="Impact_Melee_HeadStrike"				direction="1"/>
+		<Material type="HeadFront"														effect="Impact_Melee_HeadStrike"				direction="1"/>
+		<Material type="Legs"															effect="Impact_Melee_HeadStrike"				direction="1"/>
+
+		<!--Surface Materials-->
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_BulletProof"  decal="HK_DECL_BulletProof_Glass"   		effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="ElectricalPanel"												effect="Impact_Melee_ElectricalSparks"			direction="0"/>
+	</Impact>
+	
+	<Impact type="Prop_Hammer">
+		<Material type="Default"														effect="Impact_Melee_Default"					direction="0"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+		<Material type="Body"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+		<Material type="HeadBack"														effect="Impact_BluntWeapon_Flesh"				direction="1"/>
+		<Material type="HeadFront"														effect="Impact_BluntWeapon_Flesh"				direction="1"/>
+		<Material type="Legs"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+		
+		<!--Surface Materials-->
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_BulletProof"  decal="HK_DECL_BulletProof_Glass"			effect="Impact_9MM_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="ElectricalPanel"												effect="Impact_Melee_ElectricalSparks"			direction="0"/>
+	</Impact>
+
+	<Impact type="PaintCan">
+		<Material type="Default"														effect="HK_PaintCan_Hit_01"						direction="0"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="HK_PaintCan_Hit_01"						direction="1"/>
+		<Material type="Body"															effect="HK_PaintCan_Hit_01"						direction="1"/>
+		<Material type="HeadBack"														effect="HK_PaintCan_Hit_01"						direction="1"/>
+		<Material type="HeadFront"														effect="HK_PaintCan_Hit_01"						direction="1"/>
+		<Material type="Legs"															effect="HK_PaintCan_Hit_01"						direction="1"/>
+		
+		<!--Surface Materials-->
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="HK_PaintCan_Hit_01"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="HK_PaintCan_Hit_01"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="HK_PaintCan_Hit_01"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="HK_PaintCan_Hit_01"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="ElectricalPanel"												effect="HK_PaintCan_Hit_01"						direction="0"/>
+	</Impact>
+
+	<Impact type="Prop_Cleaver001">
+		<Material type="Default"														effect="Impact_Melee_Default"					direction="0"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="Body"															effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="HeadBack"														effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="HeadFront"														effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="Legs"															effect="Impact_Blade_Flesh"						direction="1"/>
+
+		<!--Surface Materials-->
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="ElectricalPanel"												effect="Impact_Melee_ElectricalSparks"			direction="0"/>
+	</Impact>
+
+	<Impact type="Prop_HandGrinder001">
+		<Material type="Default"														effect="Impact_Melee_Default"					direction="0"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="Body"															effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="HeadBack"														effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="HeadFront"														effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="Legs"															effect="Impact_Blade_Flesh"						direction="1"/>
+
+		<!--Surface Materials-->
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="ElectricalPanel"												effect="Impact_Melee_ElectricalSparks"			direction="0"/>
+	</Impact>
+
+	<Impact type="Prop_MacheteTong001">
+		<Material type="Default"														effect="Impact_Melee_Default"					direction="1"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="Body"															effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="HeadBack"														effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="HeadFront"														effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="Legs"															effect="Impact_Blade_Flesh"						direction="1"/>
+	</Impact>
+
+	<Impact type="Baton">
+		<Material type="Default"														effect="Impact_Melee_Default"					direction="0"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+		<Material type="Body"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+		<Material type="HeadBack"														effect="Impact_BluntWeapon_Flesh"				direction="1"/>
+		<Material type="HeadFront"														effect="Impact_BluntWeapon_Flesh"				direction="1"/>
+		<Material type="Legs"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+
+		<!--Surface Materials-->
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="ElectricalPanel"												effect="Impact_Melee_ElectricalSparks"			direction="0"/>
+	</Impact>
+
+	<Impact type="Gun">
+		<Material type="Default"														effect="Impact_Melee_Default"					direction="0"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+		<Material type="Body"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+		<Material type="HeadBack"														effect="Impact_BluntWeapon_Flesh"				direction="1"/>
+		<Material type="HeadFront"														effect="Impact_BluntWeapon_Flesh"				direction="1"/>
+		<Material type="Legs"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+
+		<!--Surface Materials-->
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="ElectricalPanel"												effect="Impact_Melee_ElectricalSparks"			direction="0"/>
+	</Impact>
+
+	<Impact type="Knife">
+		<Material type="Default"														effect="Impact_Melee_Default"					direction="0"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="Body"															effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="HeadBack"														effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="HeadFront"														effect="Impact_Blade_Flesh"						direction="1"/>
+		<Material type="Legs"															effect="Impact_Blade_Flesh"						direction="1"/>
+
+		<!--Surface Materials-->
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_Vehcile"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="ElectricalPanel"												effect="Impact_Melee_ElectricalSparks"			direction="0"/>
+	</Impact>
+
+	<Impact type="BeerBottle">
+		<Material type="Default"														effect="Impact_Melee_Default"					direction="0"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+		<Material type="Body"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+		<Material type="HeadBack"														effect="Impact_BluntWeapon_Flesh"				direction="1"/>
+		<Material type="HeadFront"														effect="Impact_BluntWeapon_Flesh"				direction="1"/>
+		<Material type="Legs"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+
+		<!--Surface Materials-->
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="ElectricalPanel"												effect="Impact_Melee_ElectricalSparks"			direction="0"/>
+	</Impact>
+	
+	<Impact type="TireIron">
+		<Material type="Default"														effect="Impact_Melee_Default"					direction="0"/>
+
+		<!--Character Materials-->
+		<Material type="Arms"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+		<Material type="Body"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+		<Material type="HeadBack"														effect="Impact_BluntWeapon_Flesh"				direction="1"/>
+		<Material type="HeadFront"														effect="Impact_BluntWeapon_Flesh"				direction="1"/>
+		<Material type="Legs"															effect="Impact_BluntWeapon_Body"				direction="1"/>
+
+		<!--Surface Materials-->
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassShatter_01"			effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassShatter_01"			effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass_NoDecal"													effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="NoImpact"																										direction="0"/>
+		<Material type="ElectricalPanel"												effect="Impact_Melee_ElectricalSparks"			direction="0"/>
+		<Material type="Metal"															effect="Impact_9MM_Metal"	   			  		direction="0"/>
+		<Material type="Metal_NoDecal"													effect="Impact_9MM_Metal"	   			  		direction="0"/>
+		<Material type="Metal_Vehicle"													effect="Impact_9MM_Metal"	   			  		direction="0"/>
+	</Impact>
+
+	<Impact type="BodySlam">
+		<Material type="Default"														effect="Impact_FSR_BodySlam"					direction="0"/>
+		<Material type="Mud"															effect="HK_BodySlam_Mud_Effect"					direction="0"/>
+	</Impact>
+
+	<Impact type="HeadSlam">
+		<Material type="Default"														effect="Impact_BodySlam_Default"				direction="0"/>
+		<Material type="Tile"				decal="Decal.HeadSlam.Tile001"				effect="Impact_BodySlam_Tile"					direction="0"/>
+	</Impact>
+
+	<Impact type="BodyImpact">
+		<!--<Material type="Default"													effect="GeoAxis"								direction="0"/>-->
+		<Material type="Mud"															effect="HK_BodySlam_Mud_Effect"					direction="0"/>
+		<Material type="Default"														effect="Impact_BodySlam_Concrete"				direction="0"/>
+
+		<!--Surface Materials-->
+		<Material type="Concrete"														effect="Impact_BodySlam_Concrete"				direction="0"/>
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="Impact_BosySlam_Glass"					direction="0"/>
+		<Material type="Glass_Vehcicle"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_BosySlam_Glass"					direction="0"/>
+	</Impact>
+
+	<Impact type="HeadImpact">
+		<!--<Material type="Default"													effect="GeoAxis"								direction="0"/>-->
+		<Material type="Default"			decal="Decal.BloodSplatter002"				effect="Impact_HeadSlam_Concrete"				direction="0"/>
+
+		<!--Surface Materials-->
+		<Material type="Concrete"			decal="Decal.BloodSplatter002"				effect="Impact_HeadSlam_Concrete"				direction="0"/>
+		<Material type="Glass_Aquarium"		decal="HK_DECAL_GlassCrack_01"				effect="Impact_Melee_Glass"						direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassCrack_01"				effect="Impact_HeadSlam_Glass"					direction="0"/>
+		<Material type="Glass_Vehicle"													effect="Impact_HeadSlam_Glass"					direction="0"/>
+	</Impact>
+
+	<Impact type="LeapOfFaith">
+		<Material type="Default"														effect="Impact_FSR_LeapOfFaith"					direction="0"/>
+		<Material type="Wood"				decal="Decal.Wood001"						effect="Impact_FSR_LeapOfFaith"					direction="0"/>
+		<Material type="Glass"				decal="HK_DECAL_GlassShatter_02" 			effect="Impact_FSR_LeapOfFaith_Glass"			direction="0"/>
+		<Material type="Glass_Vehicle"										 			effect="Impact_FSR_LeapOfFaith_Glass"			direction="0"/>
+	</Impact>
+
+	<Impact type="WaterSplash">
+		<Material type="Default"														effect="HK_WaterSplash_Effect"					direction="0" />
+		<Material type="SplashForce_Low"												effect="CharacterSplash_Small"					direction="0" />
+		<Material type="SplashForce_Med"												effect="CharacterSplash_Large"					direction="0" />
+		<Material type="SplashForce_High"												effect="VehicleSplash_Standard"					direction="0" />
+	</Impact>
+
+</ImpactPropertyList>

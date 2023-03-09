@@ -1,0 +1,37 @@
+<AnimCompressionProfileEnum>
+  <AnimCompressionProfileEnum>
+    <!--
+		all the entries here refer to compression options that are applied
+		to animations.
+		in the //depot/MadScience/Project/HK/dev/Contrib/Havok/hk2011_1_0/Havok/Tools/HavokContentTools/
+		folder, you will find files that correspond to these names, with .HKO
+		file name extensions (with the exception of DEFAULT).
+		
+		the first profile, DEFAULT, doesn't actually exist as a compression
+		profile, but marks that the animation should use the animation bank
+		that it exists in compression setting.  it is not valid for the
+		bank to have a default compression setting.
+	-->
+    <AnimCompressionProfileEnum name="default"/>
+    <AnimCompressionProfileEnum name="uncompressed"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_ADDITIVE"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_BOTHARMS"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_FACIAL"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_FULLBODY"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_HEAD"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_LEFTARM"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_LEFTARMSPINE"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_RIGHTARM"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_RIGHTARMHEAD"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_RIGHTARMSPINE"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_SPINE"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_UPPERBODY"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_GAMEPLAY_CHARACTER_UPPERBODY_ADDITIVE"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_NIS_CAMERA"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_NIS_CHARACTER"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_NIS_FACIAL"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_NIS_PROP"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_SPLINE"/>
+    <AnimCompressionProfileEnum name="eANIM_COMPRESSION_PROFILE_SPLINE_LOW"/>
+  </AnimCompressionProfileEnum>
+</AnimCompressionProfileEnum>

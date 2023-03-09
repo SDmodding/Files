@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AmbientConversationList xsi:noNamespaceSchemaLocation="..\..\..\..\..\Docs\Design\Audio\AmbientConversationConfig.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--  To add more conversation topics, you must also add the corresponding enum in EnumsHK.hpp -->
+  <!--  The data fields should be self explanatory.														-->
+  <!--  Each conversation is made of a series of line groups. Each line group specifies which group		-->
+  <!--  of lines that it can follow. Each line group may contain several suitable contexts 				-->
+  <!--  for that part of the conversation tree.															-->
+  <!--  See Scott P if you have any questions 														  -->
+
+
+  
+  <!--DO NOT CHANGE THIS PLAY EVENT WITHOUT TALKING TO SPETERS-->
+  <Conversation event="play_shop" topic="eConversationTopic_Haggle" minLines="4" maxLines ="4" numSpeakers="2" speaker1Weight="50" speaker2Weight="50" minTimeBetweenLines="0.1" maxTimeBetweenLines="0.2">
+    
+    <LineGroup groupId="0" speaker="2" maxLinesFromGroup="1" startNode="true">
+      <Context name ="STALL_SHOP" weight="100"  />
+    </LineGroup>
+
+
+    <LineGroup groupId="1" speaker="1" maxLinesFromGroup="1">
+      <PrecedingGroup id="0" />
+      <Context name ="SHOP_SALES_PITCH" weight="100" emotion="Happy" />
+    </LineGroup> 
+
+    <LineGroup groupId="2" speaker="2" maxLinesFromGroup="1">
+      <PrecedingGroup id="1" />
+      <Context name ="AGREE_RELUCTANT" weight="100"   />
+    </LineGroup>
+
+    <LineGroup groupId="3" speaker="1" maxLinesFromGroup="1" terminalNode="true">
+      <PrecedingGroup id="2" />
+      <Context name ="SHOP_SALE_COMPLETE" weight="100" emotion="Happy" />
+    </LineGroup>
+    
+  </Conversation>
+
+  <!--RANDOM CONVERSATION TOPIC -->
+  <Conversation topic="eConversationTopic_Random" minLines="6" maxLines="15" numSpeakers="2" speaker1Weight="50" speaker2Weight="50" minTimeBetweenLines="1.0" maxTimeBetweenLines="2.5">
+
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true">
+		<Context name="NON_COMMIT" weight="50"  emotion="Angry" />
+		<Context name="ANECDOTE" weight="50"  emotion="Angry" />
+	</LineGroup>
+
+	<!--Lines in this group alternate between speakers-->
+	<LineGroup groupId="1" speaker="1" maxLinesFromGroup="5">
+		<PrecedingGroup id="2" />
+		<Context name="NON_COMMIT" weight="50"   />
+		<Context name="ANECDOTE" weight="50" emotion="Cocky"  />
+	</LineGroup>
+  
+	<LineGroup groupId="2" speaker="2" maxLinesFromGroup="5">
+		<PrecedingGroup id="0" />
+		<PrecedingGroup id="1" />
+		<Context name="NON_COMMIT" weight="50"   />
+		<Context name="ANECDOTE" weight="50"  emotion="Cocky" />
+	</LineGroup>
+  
+	<LineGroup groupId="3" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="2" />
+		<PrecedingGroup id="4" />
+		<Context name="NON_COMMIT" weight="50"   />
+		<Context name="ANECDOTE" weight="50" emotion="Cocky"  />
+	</LineGroup>
+  
+	<LineGroup groupId="4" maxLinesFromGroup="1" speaker="2" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<PrecedingGroup id="3" />
+		<Context name="NON_COMMIT" weight="50"  />
+		<Context name="ANECDOTE" weight="50"  emotion="Cocky" />
+	</LineGroup>
+  
+  </Conversation>
+
+  <!--AMBIENT CONVERSATION TOPIC -->
+  <Conversation topic="eConversationTopic_Ambient" minLines="6" maxLines="15" numSpeakers="2" speaker1Weight="50" speaker2Weight="50" minTimeBetweenLines="1.0" maxTimeBetweenLines="2.5">
+
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true">
+		<Context name="NON_COMMIT" weight="50"  emotion="Angry" />
+		<Context name="ANECDOTE" weight="50"  emotion="Angry" />
+	</LineGroup>
+
+
+	<!--Lines in this group alternate between speakers-->
+	<LineGroup groupId="1" speaker="1" maxLinesFromGroup="5">
+		<PrecedingGroup id="2" />
+		<Context name="NON_COMMIT" weight="50"   />
+		<Context name="ANECDOTE" weight="50" emotion="Cocky"  />
+	</LineGroup>
+  
+	<LineGroup groupId="2" speaker="2" maxLinesFromGroup="5">
+		<PrecedingGroup id="0" />
+		<PrecedingGroup id="1" />
+		<Context name="NON_COMMIT" weight="50"   />
+		<Context name="ANECDOTE" weight="50"  emotion="Cocky" />
+	</LineGroup>
+  
+	<LineGroup groupId="3" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="2" />
+		<PrecedingGroup id="4" />
+		<Context name="NON_COMMIT" weight="50"   />
+		<Context name="ANECDOTE" weight="50" emotion="Cocky"  />
+	</LineGroup>
+  
+	<LineGroup groupId="4" maxLinesFromGroup="1" speaker="2" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<PrecedingGroup id="3" />
+		<Context name="NON_COMMIT" weight="50"  />
+		<Context name="ANECDOTE" weight="50"  emotion="Cocky" />
+	</LineGroup>
+  
+  </Conversation>
+  
+  <!--CELL PHONE CONVERSATION TOPIC -->
+  <Conversation topic="eConversationTopic_Cell" minLines="5" maxLines="14" numSpeakers="1" minTimeBetweenLines="1.0" maxTimeBetweenLines="3.0">
+  
+	<LineGroup groupId="0" speaker="1" maxLinesFromGroup="1" startNode="true">
+		<Context name="PHONE_ANSWER" weight="50" emotion="Angry" />
+	</LineGroup>
+
+	<LineGroup groupId="1" speaker="1" maxLinesFromGroup="25">
+		<PrecedingGroup id="0" />
+		<PrecedingGroup id="1" />
+		<Context name="PHONE_RESPOND" weight="50" emotion="Cocky"  />
+		<Context name="NON_COMMIT" weight="50" emotion="Stern"  />
+		<Context name="ANECDOTE" weight="50" emotion="Angry"  />
+		<Context name="PLEASED" weight="50" emotion="Happy"  />
+		<Context name="UNHAPPY" weight="50" emotion="Sad"  />
+	</LineGroup>
+
+	<LineGroup groupId="2" speaker="1" maxLinesFromGroup="1" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<Context name="BYE" weight="50"   />
+	</LineGroup>
+  
+  </Conversation>
+  
+  <!--GENERIC CONVERSATION TOPIC -->
+  <Conversation topic="eConversationTopic_Generic" minLines="6" maxLines="15" numSpeakers="2" speaker1Weight="50" speaker2Weight="50" minTimeBetweenLines="1.0" maxTimeBetweenLines="2.5">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true">
+		<Context name="GREET" weight="50"  emotion="Angry" />				
+		<Context name="GREET_FRIEND" weight="50" emotion="Angry" />
+	</LineGroup>
+  
+	<!--Lines in this group alternate between speakers-->
+	<LineGroup groupId="1" speaker="1" maxLinesFromGroup="5">
+		<PrecedingGroup id="2" />
+		<Context name="NON_COMMIT" weight="50"   />
+		<Context name="ANECDOTE" weight="50" emotion="Cocky"  />
+	</LineGroup>
+  
+	<LineGroup groupId="2" speaker="2" maxLinesFromGroup="5">
+		<PrecedingGroup id="0" />
+		<PrecedingGroup id="1" />
+		<Context name="NON_COMMIT" weight="50" emotion="Cocky"  />
+		<Context name="ANECDOTE" weight="50"   />
+	</LineGroup>
+  
+	<LineGroup groupId="3" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="2" />
+		<PrecedingGroup id="4" />
+		<Context name="BYE" weight="50"  emotion="None" />
+	</LineGroup>
+
+	<LineGroup groupId="4" maxLinesFromGroup="1" speaker="2" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<PrecedingGroup id="3" />
+		<Context name="BYE" weight="50"  emotion="None" />
+	</LineGroup>
+  </Conversation>
+ 
+  <!--FUNNY CONVERSATION TOPIC -->
+  <Conversation topic="eConversationTopic_Funny" minLines="6" maxLines="15" numSpeakers="2" speaker1Weight="50" speaker2Weight="50" minTimeBetweenLines="1.0" maxTimeBetweenLines="2.5">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true">
+		<Context name="GREET" weight="50"  emotion="Happy" />				
+		<Context name="GREET_FRIEND" weight="50" emotion="Happy" />
+	</LineGroup>
+  
+	<!--Lines in this group alternate between speakers-->
+	<LineGroup groupId="1" speaker="1" maxLinesFromGroup="5">
+		<PrecedingGroup id="2" />
+		<Context name="ANECDOTE" weight="50" emotion="Cocky"  >	
+			<Gesture name="GestureShowBoating" time="0.0" />
+			<Emotion name="Cocky" time="0.0" />		
+		</Context>
+	</LineGroup>
+  
+	<LineGroup groupId="2" speaker="2" maxLinesFromGroup="5">
+		<PrecedingGroup id="0" />
+		<PrecedingGroup id="1" />
+  		<Context name="PLEASED" weight="100"  >	
+			<Gesture name="GestureLaugh" time="0.0" />
+			<Emotion name="Cocky" time="0.0" />		
+		</Context>
+	</LineGroup>
+  
+	<LineGroup groupId="3" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="2" />
+		<PrecedingGroup id="4" />
+		<Context name="BYE" weight="50"  emotion="None" />
+	</LineGroup>
+
+	<LineGroup groupId="4" maxLinesFromGroup="1" speaker="2" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<PrecedingGroup id="3" />
+		<Context name="BYE" weight="50"  emotion="None" />
+	</LineGroup>
+  </Conversation>
+
+ 
+  <!--FLIRT CONVERSATION TOPIC -->
+  <!-- NEEDS MORE DATA IMPLEMENTED - REVISIT -->
+  <Conversation topic="eConversationTopic_AmbientFlirt" minLines="3" maxLines="6" numSpeakers="2" speaker1Weight="50" speaker2Weight="50" minTimeBetweenLines="1.0" maxTimeBetweenLines="2.5">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true">
+		<Context name="GREET" weight="50" emotion="Angry"  />
+		<Context name="GREET_FRIEND" weight="50" emotion="Angry"  />
+	</LineGroup>
+
+	<!--Lines in this group alternate between speakers-->
+	<LineGroup groupId="1" speaker="1" maxLinesFromGroup="5">
+		<PrecedingGroup id="2" />
+		<Context name="NON_COMMIT" weight="50" emotion="Happy"  />
+		<Context name="ANECDOTE" weight="50"  emotion="Happy" />
+
+	</LineGroup>
+
+	<LineGroup groupId="2" speaker="2" maxLinesFromGroup="5">
+		<PrecedingGroup id="0" />
+		<PrecedingGroup id="1" />
+		<Context name="NON_COMMIT" weight="50" emotion="Cocky"  />
+		<Context name="ANECDOTE" weight="50" emotion="Stern"  />
+	</LineGroup>
+
+	<LineGroup groupId="3" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="2" />
+		<PrecedingGroup id="4" />
+		<Context name="BYE" weight="50"  emotion="Happy" />
+	</LineGroup>
+
+	<LineGroup groupId="4" maxLinesFromGroup="1" speaker="2" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<PrecedingGroup id="3" />
+		<Context name="BYE" weight="50"  emotion="Happy" />
+	</LineGroup>
+  
+  </Conversation>
+  
+  <!--ARGUMENT CONVERSATION TOPIC -->
+  <Conversation topic="eConversationTopic_Argument" minLines="7" maxLines="12" numSpeakers="2" speaker1Weight="50" speaker2Weight="50" minTimeBetweenLines="1.0" maxTimeBetweenLines="2.0">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true">
+		<Context name="GREET" weight="50" emotion="Angry" >
+			<Gesture name="GestureDismissRude" time="0.0" onListener="true"/>
+			<Gesture name="GestureArgue" time="0.0" />
+			<Emotion name="Angry" time="0.0" />
+		</Context>			
+	</LineGroup>
+
+	<!--Lines in this group alternate between speakers-->
+	<LineGroup groupId="1" speaker="1" maxLinesFromGroup="5">
+		<PrecedingGroup id="2" />
+		<Context name="ARGUMENT" weight="50" emotion="Angry" >
+			<Gesture name="GestureDismissRude" time="0.0" onListener="true"/>
+			<Gesture name="GestureArgue" time="0.0" />
+			<Emotion name="Angry" time="0.0" />
+		</Context>		
+		<Context name="INSULT" weight="50" emotion="Angry" >
+			<Gesture name="GestureDismissRude" time="0.0" onListener="true"/>
+			<Gesture name="GestureArgue" time="0.0" />
+			<Emotion name="Angry" time="0.0" />
+		</Context>	
+	</LineGroup>
+
+	<LineGroup groupId="2" speaker="2" maxLinesFromGroup="5">
+		<PrecedingGroup id="0" />
+		<PrecedingGroup id="1" />
+		<Context name="DISMISS" weight="50" emotion="Angry" >
+			<Gesture name="GestureArgue" time="0.0" />
+			<Emotion name="Angry" time="0.0" />
+		</Context>	
+		<Context name="NON_COMMIT" weight="50" emotion="Angry" >
+			<Gesture name="GestureArgue" time="0.0" />
+			<Emotion name="Angry" time="0.0" />
+		</Context>	
+		<Context name="UNHAPPY" weight="50" emotion="Angry" >
+			<Gesture name="GestureArgue" time="0.0" />
+			<Emotion name="Angry" time="0.0" />
+		</Context>	
+		<Context name="ARGUMENT" weight="50" emotion="Angry" >
+			<Gesture name="GestureDismissRude" time="0.0" onListener="true"/>		
+			<Gesture name="GestureArgue" time="0.0" />
+			<Emotion name="Angry" time="0.0" />
+		</Context>	
+		<Context name="INSULT" weight="50" emotion="Angry" >
+			<Gesture name="GestureDismissRude" time="0.0" onListener="true"/>		
+			<Gesture name="GestureArgue" time="0.0" />
+			<Emotion name="Angry" time="0.0" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="3" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="2" />
+		<PrecedingGroup id="4" />
+		<Context name="BYE" weight="50" emotion="Angry"  />
+	</LineGroup>
+
+	<LineGroup groupId="4" maxLinesFromGroup="1" speaker="2" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<PrecedingGroup id="3" />
+		<Context name="BYE" weight="50"  emotion="Angry" />
+	</LineGroup>
+  
+  </Conversation>
+  <!--ARGUMENT CONVERSATION TOPIC -->
+  <!--VENDOR CONVERSATION TOPIC -->
+  <Conversation topic="eConversationTopic_Vendor" minLines="3" maxLines="6" numSpeakers="1" speaker1Weight="50" speaker2Weight="50" minTimeBetweenLines="5.0" maxTimeBetweenLines="7.5">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true">
+		<Context name="SHOP_BEACON_GENERIC" weight="50"  emotion="Angry" />
+		<Context name="SHOP_SALES_PITCH" weight="50" emotion="Angry"  />
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="10" speaker="1">
+		<PrecedingGroup id="0" />
+		<PrecedingGroup id="1" />
+		<Context name="SHOP_BEACON_GENERIC" weight="50" emotion="Angry"  />
+		<Context name="SHOP_SALES_PITCH" weight="50"  emotion="Angry" />
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<Context name="SHOP_SALE_COMPLETE" weight="50" emotion="Angry"  />
+		</LineGroup>
+	</Conversation>
+    
+  <!--GAMBLE CONVERSATION TOPIC -->
+  <Conversation topic="eConversationTopic_Gamble" minLines="2" maxLines="2" numSpeakers="1" speaker1Weight="50" speaker2Weight="50" minTimeBetweenLines="3.0" maxTimeBetweenLines="5.5">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true">
+		<Context name="GAME_ANTICIPATE" weight="50" emotion="Angry"  />
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<Context name="GAME_LOSS" weight="50"  emotion="Angry"  />
+		<Context name="GAME_WIN" weight="50" emotion="Angry"  />
+	</LineGroup>
+
+  </Conversation>
+  
+  <!-- Guy makes a move, girl might like it...or not... -->
+  <Conversation topic="eConversationTopic_IndecentProposal" minLines="2" maxLines="3" numSpeakers="2" minTimeBetweenLines="1.1" maxTimeBetweenLines="2.0">
+  	
+  	<!-- This should be the guy greeting the girl -->
+  	<LineGroup groupID="0" speaker="1" maxLinesFromGroup="1" startNode="true">
+  		<Context name="GREET" weight="100"  emotion="Angry" />
+  	</LineGroup>
+  	
+  	<!-- This is the response by the girl -->
+  	<LineGroup groupID="1" speaker="2" maxLinesFromGroup="1">
+  		<PrecedingGroup id="0"/>
+  		<Context name="GREET" weight="100"/>
+  	</LineGroup>
+  	
+  	 <!-- Indecent proposal by the guy-->
+  	<LineGroup groupID="2" speaker="1" maxLinesFromGroup="1">
+  		<PrecedingGroup id="1"/>
+  		<Context name="INDECENT_PROPOSAL" weight="100"/>
+  	</LineGroup>
+  	
+  	<!-- Girl reacts badly -->
+  	
+  	 <!-- Bad response by the girl-->
+  	<LineGroup groupID="3" speaker="2" maxLinesFromGroup="1">
+  		<PrecedingGroup id="2"/>
+  		<Context name="REACT" weight="100"/>
+  		<Context name="REACT_AMUSED" weight="100"/>
+  		<Context name="REACT_HOSTILE" weight="100"/>
+  	</LineGroup>
+  
+    	 <!--Final insult-->
+  	<LineGroup groupID="4" speaker="2" maxLinesFromGroup="1" terminalNode="true">
+  		<PrecedingGroup id="2"/>
+  		<PrecedingGroup id="3"/>
+  		<Context name="INSULT" weight="100"/>
+  	</LineGroup>
+  	
+    	<!-- It's his lucky day -->
+    	
+    	 <!-- Positive response by the girl-->
+  	<LineGroup groupID="5" speaker="2" maxLinesFromGroup="1" terminalNode="true">
+  		<PrecedingGroup id="2"/>
+  		<Context name="AGREE" weight="100"/>
+  		 <Context name="AGREE_RELUCTANT" weight="100"/>
+		<Context name="AGREE_SWEET" weight="100"/>
+		<Context name="AGREE_RESPECTFUL" weight="100"/>
+  	</LineGroup>  	
+    	
+  </Conversation>
+  
+  <!--FLOOZY CONVERSATION TOPIC -->
+  <Conversation topic="eConversationTopic_Floozy" minLines="7" maxLines="40" numSpeakers="1" speaker1Weight="50" minTimeBetweenLines="3.0" maxTimeBetweenLines="5.5">
+  	
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true">
+		<Context name="GREET" weight="50" />
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="10" speaker="1">
+		<PrecedingGroup id="1" />
+		<Context name="PLEASED" weight="50" />
+		<Context name="AGREE_SWEET" weight="50" />
+		<Context name="AGREE_RELUCTANT" weight="50" />
+		<Context name="AGREE_RESPECTFUL" weight="50" />
+		<Context name="ANECDOTE" weight="10" />
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<PrecedingGroup id="2" />
+		<Context name="BYE" weight="50" />
+		<Context name="DISMISS" weight="50" />
+		<Context name="DISMISS_RESPECTFUL" weight="50" />
+	</LineGroup>
+  
+  </Conversation>
+  
+    <!--GENERIC GREET CONVERSATION TOPIC -->
+  <Conversation topic="eConversationTopic_Greet" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.0" maxTimeBetweenLines="0.1">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Gesture name="GestureTargetWave" time="0.1" />
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+  </Conversation>
+  
+      <!--GENERIC GREET CONVERSATION TOPIC -->
+  <Conversation topic="eConversationTopic_Greet_Failure" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Gesture name="GestureTargetDismiss" time="0.1"/>
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+  
+  </Conversation>
+ 
+
+  
+      <!--GENERIC greet purchase CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Greet_Purchase" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTargetWave" time="0.1" />
+			<Emotion name="Angry" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Gesture name="GestureTargetWave" time="0.1" />
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+
+</Conversation>
+  
+        <!--GENERIC greet purchase CONVERSATION TOPIC -->
+<Conversation event="play_shop" showSubtitles="true" topic="eConversationTopic_Greet_Failure_Purchase" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="purchase" weight="50" >
+			<Gesture name="GestureTargetWave" time="0.1" />
+			<Emotion name="Angry" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="shop_no_money" weight="50" emotion="Happy" >
+			<Gesture name="GestureTargetDismiss" time="0.1" />
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+
+</Conversation>
+
+<!--GENERIC greet purchase CONVERSATION TOPIC -->
+<Conversation event="play_shop" topic="eConversationTopic_Purchase" showSubtitles="true"  minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<!--GENERIC greet purchase CONVERSATION TOPIC -->
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseMassage" showSubtitles="true"  minLines="3" maxLines="3" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.1" maxTimeBetweenLines="0.3">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true" >
+		<Context name="SHOP_GREET_ENTER_MASSAGE" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+	
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="2" >
+		<PrecedingGroup id="0" />
+		<Context name="PURCHASE_MASSAGE" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<Context name="SHOP_SALE_COMPLETE_MASSAGE" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseMassageClinical" showSubtitles="true"  minLines="3" maxLines="3" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.1" maxTimeBetweenLines="0.3">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true" >
+		<Context name="SHOP_GREET_ENTER_MASSAGE" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+	
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="2" >
+		<PrecedingGroup id="0" />
+		<Context name="PURCHASE" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="1" />
+		<Context name="SHOP_SALE_COMPLETE_MASSAGE" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseApothecary" showSubtitles="true"  minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE_APOTHECARY" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_Purchase711" showSubtitles="true"  minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE_711" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.01" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseFish" showSubtitles="true"  minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE_FISH" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseFishBalls" showSubtitles="true"  minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE_EAT" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE_FISHBALLS" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseEggWaffle" showSubtitles="true"  minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE_EAT" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE_WAFFLE" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseFoodStick" showSubtitles="true"  minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE_EAT" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE_FOOD_STICK" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseIceCream" showSubtitles="true"  minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE_EAT" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE_ICE_CREAM" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseSpicySquid" showSubtitles="true"  minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE_EAT" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+			
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE_SQUID" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseRoastDuck" showSubtitles="true"  minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE_EAT" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE_DUCK" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseNoodles" showSubtitles="true"  minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE_EAT" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE_NOODLES" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchasePork" showSubtitles="true" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE_EAT" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE_PORK" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_shop" topic="eConversationTopic_PurchaseFood" showSubtitles="true" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE_EAT" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHOP_SALE_COMPLETE" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+  
+<!--PURCHASE CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_AmbientPurchase" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" speaker2Weight="50" minTimeBetweenLines="1.0" maxTimeBetweenLines="1.5">
+ 	<!--vendor speaks first-->
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true">
+		<Context name="SHOP_SALES_PITCH" weight="50" emotion="Angry"  />
+	</LineGroup>
+
+	<!--Lines in this group alternate between speakers-->
+	<!-- customer -->
+	<LineGroup groupId="1" speaker="2" maxLinesFromGroup="1">
+		<PrecedingGroup id="0" />
+		<Context name="STALL_SHOP" weight="50" emotion="Happy">
+			<Gesture name="GestureTargetWave" time="0.1" />
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<!--vendor -->
+	<LineGroup groupId="4" speaker="1" maxLinesFromGroup="1">
+		<PrecedingGroup id="1" />
+		<Context name="SHOP_SALE_COMPLETE" weight="50"  emotion="Angry" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" onListener="true"/>
+			<Gesture name="GestureListenerPurchase" time="0.1"/>
+			<Emotion name="Happy" time="0.1" onListener="true"/>
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<!-- customer -->
+	<LineGroup groupId="5" maxLinesFromGroup="1" speaker="2" terminalNode="true">
+		<PrecedingGroup id="4" />
+		<Context name="BYE" weight="50" emotion="Angry"  />
+	</LineGroup>
+</Conversation>  
+  
+<!--GENERIC greet purchase CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Bribe_Success" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1"/>
+			<Gesture name="GestureListenerPurchase" time="0.1" onListener="true"/>
+			<Emotion name="Angry" time="0.1" onListner="true"/>
+			<Emotion name="Sad" time="0.1"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+  
+  <!--GENERIC greet purchase CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Extort_Success" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" onListener="true"/>
+			<Gesture name="GestureListenerPurchase" time="0.1"/>
+			<Emotion name="Angry" time="0.1" />
+			<Emotion name="Sad" time="0.1" onListener="true"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+
+</Conversation>
+  
+      <!--GENERIC Charm CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Charm" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerCharm" time="0.1" onListener="true"/>
+			<Gesture name="GestureListenerCharm" time="0.1" />
+			<Emotion name="Angry" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+
+</Conversation>
+  
+        <!--GENERIC OfferHelp  CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_OfferHelp" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerAssist" time="0.1" />
+			<Gesture name="GestureListenerAssist" time="0.1" onListener="true"/>
+			<Emotion name="Angry" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+
+</Conversation>
+  
+          <!--GENERIC FAvour CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Favor" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerFavor" time="0.1" />
+			<Gesture name="GestureListenerAssist" time="0.1" onListener="true"/>
+			<Emotion name="Angry" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Gesture name="GestureListenerFavor" time="0.1" />
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+  
+<!--GENERIC favour package CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Favor_Package" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureListenerReceivePackage" time="0.1" onListener="true"/>
+			<Gesture name="GestureTalkerReceivePackage" time="0.1"/>
+			<Emotion name="Angry" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+  
+<!--GENERIC deliver package CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Deliver_Package" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Emotion name="Angry" time="0.1" />
+			<Gesture name="GestureListenerDeliverPackage" time="0.1" onListener="true"/>	
+			<Gesture name="GestureTalkerDeliverPackage" time="0.1"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+  
+                <!--GENERIC ally CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Ally" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerAlly" time="0.1" />
+			<Gesture name="GestureListenerAssist" time="0.1" onListener="true"/>
+			<Emotion name="Angry" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Gesture name="GestureListenerAlly" time="0.1" />
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+  
+                  <!--GENERIC informant CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Informant" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerInformant" time="0.1" onListener="true"/>
+			<Gesture name="GestureListenerAssist" time="0.1"/>
+			<Emotion name="Angry" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Gesture name="GestureListenerInformant" time="0.1" />
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+  
+                  <!--GENERIC harass CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Harass" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerHarass" time="0.1" onListener="true"/>
+			<Gesture name="GestureListenerHarass" time="0.1"/>
+			<Emotion name="Angry" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+                     <!--GENERIC flirt CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Flirt" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+ 	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerFlirt" time="0.1" onListener="true"/>
+			<Gesture name="GestureListenerFlirt" time="0.1" />
+			<Emotion name="Cocky" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+
+  	<LineGroup groupId="3" speaker="2" maxLinesFromGroup="5">
+		<PrecedingGroup id="2" />
+  		<Context name="PLEASED" weight="100"  >	
+			<Gesture name="GestureLaugh" time="0.0" />
+			<Emotion name="Cocky" time="0.0" />		
+		</Context>
+	</LineGroup>
+
+  	<LineGroup groupId="4" speaker="2" maxLinesFromGroup="5">
+		<PrecedingGroup id="3" />
+  		<Context name="PLEASED" weight="100"  >	
+			<Gesture name="GestureLaugh" time="0.0" />
+			<Emotion name="Cocky" time="0.0" />		
+		</Context>
+	</LineGroup>	
+</Conversation>
+
+                      <!--GENERIC kiss CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Kiss" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerKiss" time="0.1" onListener="true"/>
+			<Gesture name="GestureListenerKiss" time="0.1"/>
+			<Emotion name="Cocky" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+  
+                        <!--GENERIC Invite CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Invite" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerInvite" time="0.1" onListener="true"/>
+			<Gesture name="GestureListenerInvite" time="0.1"/>
+			<Emotion name="Cocky" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+  
+                          <!--GENERIC Escort CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_Escort" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerAlly" time="0.1" onListener="true"/>
+			<Gesture name="GestureListenerAlly" time="0.1"/>
+			<Emotion name="Cocky" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+                           <!--GENERIC fight club CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_FightClub" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerHarass" time="0.1" onListener="true"/>
+			<Gesture name="GestureListenerHarass" time="0.1"/>
+			<Emotion name="Cocky" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+  
+                              <!--GENERIC buzzer_interact CONVERSATION TOPIC -->
+<Conversation topic="eConversationTopic_BuzzerInteract" minLines="2" maxLines="2" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="GREET" weight="50" >
+			<Gesture name="GestureTalkerInformant" time="0.1" onListener="true"/>
+			<Gesture name="GestureListenerInformant" time="0.1"/>
+			<Emotion name="Cocky" time="0.1" />
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="2" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="GREET" weight="50" emotion="Happy" >
+			<Emotion name="Happy" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+  
+<Conversation event="play_mission" topic="eConversationTopic_PurchaseSafeHouse" 
+	showSubtitles="true"  
+	minLines="2" maxLines="2" 
+	numSpeakers="2" 
+	speaker1Weight="50" 
+	minTimeBetweenLines="0.1" 
+	maxTimeBetweenLines="0.3">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="PURCHASE" weight="50" >
+			<Gesture name="GestureTalkerPurchase" time="0.1" />
+			<Gesture name="GestureListenerPurchase" onListener="true" time="0.1"/>
+		</Context>
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHI" weight="50" emotion="Happy" /> <!-- safe house item sale line-->
+	</LineGroup>
+</Conversation>
+
+
+<!-- no money safehouse convo after confirmation screen-->
+<Conversation event="play_mission" topic="eConversationTopic_Failure_Purchase_SafeHouse" 
+	showSubtitles="true"  
+	minLines="1" maxLines="1" 
+	numSpeakers="2" 
+	speaker1Weight="50" 
+	minTimeBetweenLines="0.1" 
+	maxTimeBetweenLines="0.3">
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" startNode="true" >
+		<PrecedingGroup id="0" />
+		<Context name="SHINOMO" weight="50"  emotion="Anger"/><!-- safe house item sales pitch-->
+	</LineGroup>
+</Conversation>
+<!-- low face safehouse convo -->
+<Conversation event="play_mission" topic="eConversationTopic_Greet_Failure_Purchase_SafeHouse" 
+	showSubtitles="true"  
+	minLines="2" maxLines="2" 
+	numSpeakers="2" 
+	speaker1Weight="50" 
+	minTimeBetweenLines="0.1" 
+	maxTimeBetweenLines="0.3">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="greet_shop_safehouse" weight="50" /> <!-- safe house item greet-->
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHILF" weight="50" emotion="Anger" /><!-- safe house item sales pitch-->
+	</LineGroup>
+</Conversation>
+
+<!-- no money safehouse convo -->
+<Conversation event="play_mission" topic="eConversationTopic_Purchase_SafeHouse_ExitLow" 
+	showSubtitles="true"  
+	minLines="1" maxLines="1" 
+	numSpeakers="2" 
+	speaker1Weight="50" 
+	minTimeBetweenLines="0.1" 
+	maxTimeBetweenLines="0.2">
+	
+	<!-- decline to buy at confirmation screen-->
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true">
+		<Context name="SHIEL" weight="50" > 
+			<Emotion name="Angry" time="0.0" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_mission" topic="eConversationTopic_GreetSafeHouse" 
+	showSubtitles="true"  
+	minLines="2" maxLines="2" 
+	numSpeakers="2" 
+	speaker1Weight="50" 
+	minTimeBetweenLines="0.1" 
+	maxTimeBetweenLines="0.3">
+  	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true">
+		<Context name="greet_shop_safehouse" weight="50" /> <!-- safe house item greet-->
+	</LineGroup>
+
+	<LineGroup groupId="1" maxLinesFromGroup="1" speaker="1" terminalNode="true">
+		<PrecedingGroup id="0" />
+		<Context name="SHISP" weight="50" emotion="Happy" /><!-- safe house item sales pitch-->
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_driving" topic="eConversationTopic_ResumePlayer" showSubtitles="true"  minLines="1" maxLines="1" numSpeakers="1" 
+				speaker1Weight="50" minTimeBetweenLines="0.0" maxTimeBetweenLines="0.1">
+	
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true" terminalNode="true">
+		<Context name="on_resume_player" weight="50" />
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_driving" topic="eConversationTopic_ResumeNPC" showSubtitles="true"  minLines="1" maxLines="1" numSpeakers="1" 
+				speaker1Weight="50" minTimeBetweenLines="0.0" maxTimeBetweenLines="0.1">
+	
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="1" startNode="true" terminalNode="true">
+		<Context name="on_resume_npc" weight="50" />
+	</LineGroup>
+</Conversation>
+
+<!--VendorLowFace CONVERSATION TOPIC -->
+<Conversation event="play_mission" topic="eConversationTopic_VendorLowFace" showSubtitles="true" minLines="1" maxLines="1" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true" terminalNode="true">
+		<Context name="shop_exit_low" weight="50" >
+			<Emotion name="Angry" time="0.1" />
+		</Context>
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_driving" topic="eConversationTopic_PassengerReaction" showSubtitles="false" minLines="1" maxLines="1" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true" terminalNode="true">
+		<Context name="passenger_reaction" weight="50" />
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_driving" topic="eConversationTopic_PlayerGetOutOfCar" showSubtitles="false" minLines="1" maxLines="1" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true" terminalNode="true">
+		<Context name="passenger_reaction_get_out" weight="50" />
+	</LineGroup>
+</Conversation>
+
+<Conversation event="play_mission" topic="eConversationTopic_HitReaction" showSubtitles="false" minLines="1" maxLines="1" numSpeakers="2" speaker1Weight="50" minTimeBetweenLines="0.5" maxTimeBetweenLines="1.0">
+	<LineGroup groupId="0" maxLinesFromGroup="1" speaker="2" startNode="true" terminalNode="true">
+		<Context name="hit_reaction" weight="50" />
+	</LineGroup>
+</Conversation>
+
+</AmbientConversationList>

@@ -1,0 +1,1129 @@
+<?xml version="1.0"?>
+
+<VehicleEffectsDefinition>
+	<!-- Templates -->
+	<VehicleEffects Name="common2doorcar">
+
+		<State Name="DayTime">
+			<Effect Name="DaytimeEffect" 	Marker="E_EffectMarkerHere" BoundEffect="PUT_EFFECT_NAME_HERE"/>
+		</State>
+
+		<State Name="Nighttime">
+			<Effect Name="BackLight" 		Marker="E_BackLite" 		BoundEffect="Vehicle_Taillight" DamageAffector="D_WinLight_02" />
+			<Effect Name="BackLightLeft" 	Marker="E_BackLiteL" 		BoundEffect="Vehicle_Taillight" DamageAffector="D_WinLight_L02" />
+			<Effect Name="BackLightRight"	Marker="E_BackLiteR" 		BoundEffect="Vehicle_Taillight" DamageAffector="D_WinLight_R02" />
+		</State>
+
+		<State Name="BrakeLights">
+			<Effect Name="Brake_Light" 			Marker="E_BackLite" 	BoundEffect="Vehicle_Brakelight" 	DamageAffector="D_WinLight_02" />
+			<Effect Name="Left_Brake_Light"		Marker="E_BrakeLiteL"	BoundEffect="Vehicle_Brakelight"	DamageAffector="D_WinLight_L02" />
+			<Effect Name="Right_Brake_Light"	Marker="E_BrakeLiteR"	BoundEffect="Vehicle_Brakelight"	DamageAffector="D_WinLight_R02" />
+		</State>
+
+		<State Name="Reverse">
+			<Effect Name="ReverseLightLeft"		Marker="E_ReverseL"	BoundEffect="Vehicle_Reverselight"	DamageAffector="D_WinLight_L02" />
+			<Effect Name="ReverseLightRight"	Marker="E_ReverseR"	BoundEffect="Vehicle_Reverselight"	DamageAffector="D_WinLight_R02" />
+		</State>
+
+		<State Name="ExhaustClean">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Vehicle_Exhaust_Idle_Clean_01" Speed1="HK_Vehicle_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Vehicle_Exhaust_Idle_Clean_01" Speed1="HK_Vehicle_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Vehicle_Exhaust_Idle_Clean_01" Speed1="HK_Vehicle_Exhaust_Speed1_Clean_01" Speed2=""/>
+		</State>
+
+		<State Name="ExhaustDirty">
+			<!--<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>-->
+		</State>
+
+		<State Name="AIExhaustClean">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Vehicle_Exhaust_Idle_Clean_01" Speed1="HK_Vehicle_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Vehicle_Exhaust_Idle_Clean_01" Speed1="HK_Vehicle_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Vehicle_Exhaust_Idle_Clean_01" Speed1="HK_Vehicle_Exhaust_Speed1_Clean_01" Speed2=""/>
+		</State>
+
+		<State Name="AIExhaustDirty">
+			<!--<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>-->
+		</State>
+
+		<State Name="LeftTurn">
+			<Effect Name="LeftTurnSignalFront"	Marker="E_SignalL01"	BoundEffect="Vehicle_TurnSignal" DamageAffector="D_WinLight_L01"/>
+			<Effect Name="LeftTurnSignalBack"	Marker="E_SignalL02"	BoundEffect="Vehicle_TurnSignal" DamageAffector="D_WinLight_L02"/>
+		</State>
+
+		<State Name="RightTurn">
+			<Effect Name="RightTurnSignalFront"	Marker="E_SignalR01"	BoundEffect="Vehicle_TurnSignal" DamageAffector="D_WinLight_R01"/>
+			<Effect Name="RightTurnSignalBack"	Marker="E_SignalR02"	BoundEffect="Vehicle_TurnSignal" DamageAffector="D_WinLight_R02"/>
+		</State>
+
+		<State Name="PlayerHeadlights">
+			<Effect Name="PLayerHeadlightLeft"		Marker="E_HLiteL"	BoundEffect="Vehicle_Headlight" DamageAffector="D_WinLight_L01"/>
+			<Effect Name="PlayerHeadlightRight"		Marker="E_HLiteR"	BoundEffect="Vehicle_Headlight" DamageAffector="D_WinLight_R01"/>
+			<Effect Name="PlayerHeadlightSingle"	Marker="E_HLite"	BoundEffect="Vehicle_Headlight" DamageAffector="D_WinLight_01"/>
+		</State>
+		
+		<State Name="PlayerHeadlightFlares">
+			<Effect Name="PLayerHeadlightFlareLeft"		Marker="E_HLiteL"		BoundEffect="Vehicle_HeadlightFlare" 	DamageAffector="D_WinLight_L01"/>
+			<Effect Name="PlayerHeadlightFlareRight"	Marker="E_HLiteR"		BoundEffect="Vehicle_HeadlightFlare" 	DamageAffector="D_WinLight_R01"/>
+			<Effect Name="PlayerHeadlightFlareSingle"	Marker="E_HLite"		BoundEffect="Vehicle_HeadlightFlare" 	DamageAffector="D_WinLight_01"/>
+			<Effect Name="PlayerBackLight" 				Marker="E_BackLite" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_02" />
+			<Effect Name="PlayerBackLightLeft" 			Marker="E_BackLiteL" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_L02"/>
+			<Effect Name="PlayerBackLightRight"			Marker="E_BackLiteR" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_R02"/>
+		</State>
+
+		<State Name="TrafficHeadlights">
+			<Effect Name="TrafficHeadlightLeft"		Marker="E_HLiteL"	BoundEffect="Vehicle_TrafficHeadlight" DamageAffector="D_WinLight_L01"/>
+			<Effect Name="TrafficHeadlightRight"	Marker="E_HLiteR"	BoundEffect="Vehicle_TrafficHeadlight" DamageAffector="D_WinLight_R01"/>
+			<Effect Name="TrafficHeadlightSingle"	Marker="E_HLite"	BoundEffect="Vehicle_TrafficHeadlight" DamageAffector="D_WinLight_01"/>
+		</State>
+
+		<State Name="TrafficHeadlightFlares">
+			<Effect Name="TrafficHeadlightFlareLeft"	Marker="E_HLiteL"	BoundEffect="Vehicle_TrafficHeadlightFlare" DamageAffector="D_WinLight_L01"/>
+			<Effect Name="TrafficHeadlightFlareRight"	Marker="E_HLiteR"	BoundEffect="Vehicle_TrafficHeadlightFlare" DamageAffector="D_WinLight_R01"/>
+			<Effect Name="TrafficHeadlightFlareSingle"	Marker="E_HLite"	BoundEffect="Vehicle_TrafficHeadlightFlare" DamageAffector="D_WinLight_01"/>
+			<Effect Name="TrafficBackLight" 			Marker="E_BackLite" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_02" />
+			<Effect Name="TrafficBackLightLeft" 		Marker="E_BackLiteL" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_L02"/>
+			<Effect Name="TrafficBackLightRight"		Marker="E_BackLiteR" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_R02"/>
+		</State>
+
+		<State Name="EngineDamaged">
+			<Effect Name="EngineDamagedSmoke_Idle"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_C_4Dr_Idle0" Speed1="HK_EnSmoke_C_4Dr_Speed1" Speed2="HK_EnSmoke_C_4Dr_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineBlownFire_Idle"		Marker="E_Engine"	BoundEffect="HK_EngineFire_4Dr_Idle0" Speed1="HK_EngineFire_4Dr_Speed1" Speed2="HK_EngineFire_4Dr_Speed1"/>
+			<Phantom 								Marker="E_Engine" 	X="0.75" 	Y="1.25" 	Z="0.75" />
+		</State>
+
+		<State Name="Damage">
+			<Effect Name="RadiatorSteamFront"		Marker="E_Radiator01"	BoundEffect="HK_EnSteam_C_4Dr_Idle0"  Speed1="HK_EnSteam_C_4Dr_Speed1"	Speed2="HK_EnSteam_C_4Dr_Speed1" DamageAffector="D_121" />
+			<Effect Name="RadiatorSteamLeft"		Marker="E_Radiator02"	BoundEffect="HK_EnSteam_C_4Dr_Idle0"  Speed1="HK_EnSteam_C_4Dr_Speed1"	Speed2="HK_EnSteam_C_4Dr_Speed1" DamageAffector="D_121" />
+			<Effect Name="RadiatorSteamRight"		Marker="E_Radiator03"	BoundEffect="HK_EnSteam_C_4Dr_Idle0"  Speed1="HK_EnSteam_C_4Dr_Speed1"	Speed2="HK_EnSteam_C_4Dr_Speed1" DamageAffector="D_121" />
+		</State>
+
+		<State Name="DestructFront">
+			<Effect Name="TireFire_FR_Idle"			Marker="E_TireR01"			BoundEffect="HK_TireFire_R_4Dr_Idle0" />
+			<Effect Name="TireFire_FL_Idle"			Marker="E_TireL01"			BoundEffect="HK_TireFire_L_4Dr_Idle0" />
+		</State>
+
+		<State Name="DestructMid">
+			<Effect Name="LowFire_R_Idle"			Marker="E_Undercarriage"	BoundEffect="HK_LowFire_R_4Dr_Idle0" />
+			<Effect Name="LowFire_L_Idle"			Marker="E_Undercarriage"	BoundEffect="HK_LowFire_L_4Dr_Idle0" />
+		</State>
+
+		<State Name="DestructRear">
+			<Effect Name="TireFire_BR_Idle"			Marker="E_TireR02"			BoundEffect="HK_TireFire_R_4Dr_Idle0" />
+			<Effect Name="TireFire_BL_Idle"			Marker="E_TireL02"			BoundEffect="HK_TireFire_L_4Dr_Idle0" />
+		</State>
+
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"			Marker="E_ExplosionCenter" 	BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="CarGoBoomAttached" 		Marker="E_ExplosionCenter" 	BoundEffect="HK_VhclExplsn_Attached_01_Effect" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<!--<Effect Name="BurningDebris03" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris04" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris05" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="BurningDebris06" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="BurningDebris07" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />-->
+			<Phantom 								Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+		
+		<State Name="WindowShatter">
+			<Effect Name="LeftTailight"		Marker="E_WinLight_L02"		BoundEffect="HK_Taillight_Destruction_01" />
+			<Effect Name="RightTailight"	Marker="E_WinLight_R02"		BoundEffect="HK_Taillight_Destruction_01" />
+		</State>
+
+		<State Name="WindowBreakSm">
+			<Effect Name="FrontWindow" 		Marker="E_WinF" 			BoundEffect="HK_VehicleWindow_LargeWide_Front_01" />
+			<Effect Name="FrontRightWindow" Marker="E_WinR01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="MidRightWindow" 	Marker="E_WinR02" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="RearRightWindow" 	Marker="E_WinR03" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="FrontLeftWindow" 	Marker="E_WinL01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="MidLeftWindow" 	Marker="E_WinL02" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="RearLeftWindow" 	Marker="E_WinL03" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="BackWindow" 		Marker="E_WinB" 			BoundEffect="HK_VehicleWindow_LargeWide_Back_01" />
+		</State>
+
+		<State Name="WindowBreakMd">
+			<Effect Name="FrontWindow" 		Marker="E_WinF" 			BoundEffect="HK_VehicleWindow_LargeWide_Front_01" />
+			<Effect Name="FrontRightWindow" Marker="E_WinR01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="MidRightWindow" 	Marker="E_WinR02" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="RearRightWindow" 	Marker="E_WinR03" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="FrontLeftWindow" 	Marker="E_WinL01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="MidLeftWindow" 	Marker="E_WinL02" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="RearLeftWindow" 	Marker="E_WinL03" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="BackWindow" 		Marker="E_WinB" 			BoundEffect="HK_VehicleWindow_LargeWide_Back_01" />
+		</State>
+
+		<State Name="WindowBreakLg">
+			<Effect Name="FrontWindow" 		Marker="E_WinF" 			BoundEffect="HK_VehicleWindow_LargeWide_Front_01" />
+			<Effect Name="FrontRightWindow" Marker="E_WinR01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="MidRightWindow" 	Marker="E_WinR02" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="RearRightWindow" 	Marker="E_WinR03" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="FrontLeftWindow" 	Marker="E_WinL01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="MidLeftWindow" 	Marker="E_WinL02" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="RearLeftWindow" 	Marker="E_WinL03" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="BackWindow" 		Marker="E_WinB" 			BoundEffect="HK_VehicleWindow_LargeWide_Back_01" />
+		</State>
+
+		<State Name="RoofSliding">
+			<Effect Name="RoofSparks" 		Marker="E_Roof" 				BoundEffect="HK_RoofSparks_01" />
+		</State>
+
+		<State Name="InteriorLights">
+			<Effect Name="InteriorLight" 	Marker="E_IntLite" 				BoundEffect="HK_InteriorVhclLight_01" />
+		</State>
+
+		<State Name="Smoldering">
+			<Effect Name="SmolderSmoke" 	Marker="E_Undercarriage" 		BoundEffect="HK_Smoldering_4dr_Idle0" />
+		</State>
+		
+		<State Name="WheeledVehicleJump">
+			<Effect Name="WheeledVehicleJump"		Marker="E_Undercarriage"	BoundEffect="HK_VehicleJump_Effect" />
+			<!--<Effect Name="TireDust_BR"				Marker="E_TireR02"			BoundEffect="HK_VehicleJump_Wheel_Effect" />-->
+			<!--<Effect Name="TireDust_BL"				Marker="E_TireL02"			BoundEffect="HK_VehicleJump_Wheel_Effect" />-->
+		</State>
+		
+		<State Name="WheeledVehicleImpact">
+			<Effect Name="WheeledVehicleImpact"		Marker="E_Undercarriage"	BoundEffect="HK_VehicleLand_Effect" />
+		</State>
+
+	</VehicleEffects>
+
+	<VehicleEffects Name="common4doorcar">
+	
+		<Overrides Name="common2doorcar" />
+
+		<State Name="TaxiLights">
+			<Effect Name="TaxiLights" Marker="E_Roof" BoundEffect="HK_TaxiLight"/>
+		</State>
+		
+	</VehicleEffects>
+
+	<VehicleEffects Name="commontruck">
+	
+		<Overrides Name="common2doorcar" />
+				
+		<State Name="ExhaustClean">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Bus_Exhaust_Idle_Clean_01" Speed1="HK_Bus_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Bus_Exhaust_Idle_Clean_01" Speed1="HK_Bus_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Bus_Exhaust_Idle_Clean_01" Speed1="HK_Bus_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+		</State>
+
+		<State Name="ExhaustDirty">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Bus_Exhaust_Idle_Clean_01" Speed1="HK_Bus_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Bus_Exhaust_Idle_Clean_01" Speed1="HK_Bus_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Bus_Exhaust_Idle_Clean_01" Speed1="HK_Bus_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+		</State>
+		
+		<State Name="EngineDamaged">
+			<Effect Name="EngineDamagedSmoke_Idle"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_Truck_Idle0" Speed1="HK_EnSmoke_Truck_Speed1" Speed2="HK_EnSmoke_Truck_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineBlownFire_Idle"		Marker="E_Engine"	BoundEffect="HK_EngineFire_Truck_Idle0" Speed1="HK_EngineFire_Truck_Speed1" Speed2="HK_EngineFire_Truck_Speed1"/>
+			<Phantom 								Marker="E_Engine" 	X="0.75" 	Y="1.25" 	Z="0.75" />
+		</State>
+
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"		Marker="M_Body" 				BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="CarGoBoomAttached" 	Marker="E_ExplosionCenter" 		BoundEffect="HK_TankerFire_Attached_01_Effect" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Phantom 							Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+
+	</VehicleEffects>
+	
+	<VehicleEffects Name="ChickenTruck">
+	
+		<Overrides Name="common2doorcar" />
+				
+		<State Name="ExhaustClean">
+			<Effect Name="ChickenFeathers"		Marker="E_Exh"	BoundEffect="" 		Speed1="" 	Speed2=""/>
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Chicken_Exhaust_Idle_Clean_01" Speed1="HK_Chicken_Exhaust_Speed1_Clean_01" Speed2="HK_Chicken_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Chicken_Exhaust_Idle_Clean_01" Speed1="HK_Chicken_Exhaust_Speed1_Clean_01" Speed2="HK_Chicken_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Chicken_Exhaust_Idle_Clean_01" Speed1="HK_BChicken_Exhaust_Speed1_Clean_01" Speed2="HK_Chicken_Exhaust_Speed2_Clean_01"/>
+		</State>
+
+		<State Name="ExhaustDirty">
+			<Effect Name="ChickenFeathers"		Marker="E_Exh"	BoundEffect="" 		Speed1="" 	Speed2=""/>
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Chicken_Exhaust_Idle_Clean_01" Speed1="HK_Chicken_Exhaust_Speed1_Clean_01" Speed2="HK_Chicken_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Chicken_Exhaust_Idle_Clean_01" Speed1="HK_Chicken_Exhaust_Speed1_Clean_01" Speed2="HK_Chicken_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Chicken_Exhaust_Idle_Clean_01" Speed1="HK_Chicken_Exhaust_Speed1_Clean_01" Speed2="HK_Chicken_Exhaust_Speed2_Clean_01"/>
+		</State>
+		
+		<State Name="EngineDamaged">
+			<Effect Name="EngineDamagedSmoke_Idle"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_Truck_Idle0" Speed1="HK_EnSmoke_Truck_Speed1" Speed2="HK_EnSmoke_Truck_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineBlownFire_Idle"		Marker="E_Engine"	BoundEffect="HK_EngineFire_Truck_Idle0" Speed1="HK_EngineFire_Truck_Speed1" Speed2="HK_EngineFire_Truck_Speed1"/>
+			<Phantom 								Marker="E_Engine" 	X="0.75" 	Y="1.25" 	Z="0.75" />
+		</State>
+
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"		Marker="M_Body" 				BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="CarGoBoomAttached" 	Marker="E_ExplosionCenter" 		BoundEffect="HK_TankerFire_Attached_01_Effect" />
+			<Phantom 							Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+
+	</VehicleEffects>
+
+	<VehicleEffects Name="commonvan">
+	
+		<Overrides Name="common2doorcar" />
+		
+
+		
+		<State Name="EngineDamaged">
+			<Effect Name="EngineDamagedSmoke_Idle"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_Truck_Idle0" Speed1="HK_EnSmoke_Truck_Speed1" Speed2="HK_EnSmoke_Truck_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineBlownFire_Idle"		Marker="E_Engine"	BoundEffect="HK_EngineFire_Van_Idle0" Speed1="HK_EngineFire_Van_Speed1" Speed2="HK_EngineFire_Van_Speed1"/>
+			<Phantom 								Marker="E_Engine" 	X="0.75" 	Y="1.25" 	Z="0.75" />
+		</State>
+		
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"		Marker="M_Body" 				BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="CarGoBoomAttached" 	Marker="E_ExplosionCenter" 		BoundEffect="HK_VanFire_Attached_01_Effect" />
+			<Phantom 							Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+
+	</VehicleEffects>
+
+	<VehicleEffects Name="vandragging">
+	
+		<Overrides Name="common2doorcar" />
+		
+		<State Name="EngineDamaged">
+			<Effect Name="EngineDamagedSmoke_Idle"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_Truck_Idle0" Speed1="HK_EnSmoke_Truck_Speed1" Speed2="HK_EnSmoke_Truck_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineBlownFire_Idle"		Marker="E_Engine"	BoundEffect="HK_EngineFire_Van_Idle0" Speed1="HK_EngineFire_Van_Speed1" Speed2="HK_EngineFire_Van_Speed1"/>
+			<Phantom 								Marker="E_Engine" 	X="0.75" 	Y="1.25" 	Z="0.75" />
+		</State>
+		
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"		Marker="M_Body" 				BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="CarGoBoomAttached" 	Marker="E_ExplosionCenter" 		BoundEffect="HK_VanFire_Attached_01_Effect" />
+			<Phantom 							Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+
+		<State Name="Dragging">
+			<Effect Name="BumperSparksLeft"		Marker="E_CTC_Spark01"				Speed0="" Speed1="Vehicle_DraggingSparks"/>
+			<Effect Name="BumperSparksRight"	Marker="E_CTC_Spark02"				Speed0="" Speed1="Vehicle_DraggingSparks"/>
+		</State>
+
+	</VehicleEffects>
+
+	<VehicleEffects Name="commonddbus">
+	
+		<Overrides Name="common2doorcar" />
+		
+		<State Name="EngineDamaged">
+			<Effect Name="EngineDamagedSmoke_Idle"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_Truck_Idle0" Speed1="HK_EnSmoke_Truck_Speed1" Speed2="HK_EnSmoke_Truck_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineBlownFire_Idle"		Marker="E_Engine"	BoundEffect="HK_EngineFire_Truck_Idle0" Speed1="HK_EngineFire_Truck_Speed1" Speed2="HK_EngineFire_Truck_Speed1"/>
+			<Phantom 								Marker="E_Engine" 	X="0.75" 	Y="1.25" 	Z="0.75" />
+		</State>
+		
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"		Marker="M_Body" 				BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="CarGoBoomAttached" 	Marker="E_ExplosionCenter" 		BoundEffect="HK_TankerFire_Attached_01_Effect" />
+			<Phantom 							Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>		
+		
+	</VehicleEffects>
+
+	<VehicleEffects Name="commonbike">
+
+		<State Name="DayTime">
+			<Effect Name="DaytimeEffect" 	Marker="E_EffectMarkerHere" BoundEffect="PUT_EFFECT_NAME_HERE"/>
+		</State>
+
+		<State Name="Nighttime">
+			<Effect Name="BackLight" 	 	Marker="E_BackLite" 		BoundEffect="Vehicle_Taillight" />
+		</State>
+
+		<State Name="BrakeLights">
+			<Effect Name="Brake_Light"		Marker="E_BrakeLite"		BoundEffect="Vehicle_Brakelight"/>
+		</State>
+
+		<State Name="ExhaustClean">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+		</State>
+
+		<State Name="ExhaustDirty">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+			<!--<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>-->
+		</State>
+
+		<State Name="AIExhaustClean">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+		</State>
+
+		<State Name="AIExhaustDirty">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="" Speed2=""/>
+			<!--<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>-->
+		</State>
+
+		<State Name="LeftTurn">
+			<Effect Name="LeftTurnSignalFront"	Marker="E_SignalL01"	BoundEffect="Vehicle_TurnSignal" />
+			<Effect Name="LeftTurnSignalBack"	Marker="E_SignalL02"	BoundEffect="Vehicle_TurnSignal" />
+		</State>
+
+		<State Name="RightTurn">
+			<Effect Name="RightTurnSignalFront"	Marker="E_SignalR01"	BoundEffect="Vehicle_TurnSignal" />
+			<Effect Name="RightTurnSignalBack"	Marker="E_SignalR02"	BoundEffect="Vehicle_TurnSignal" />
+		</State>
+
+		<State Name="PlayerHeadlights">
+			<Effect Name="PlayerHeadlightSingle"	Marker="E_HLite"	BoundEffect="Vehicle_Headlight" />
+		</State>
+		
+		<State Name="PlayerHeadlightFlares">
+			<Effect Name="PlayerHeadlightFlareSingle"	Marker="E_HLite"	BoundEffect="Vehicle_HeadlightFlare" />
+		</State>
+
+		<State Name="TrafficHeadlights">
+			<Effect Name="TrafficHeadlightSingle"	Marker="E_HLite"	BoundEffect="Vehicle_TrafficHeadlight" />
+		</State>
+
+		<State Name="TrafficHeadlightFlares">
+			<Effect Name="TrafficHeadlightSingle"	Marker="E_HLite"	BoundEffect="Vehicle_TrafficHeadlightFlare" />
+		</State>
+
+		<State Name="EngineDamaged">
+			<Effect Name="EngineDamagedSmoke_Idle"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_Bike_Idle0" Speed1="HK_EnSmoke_Bike_Speed1" Speed2="HK_EnSmoke_Bike_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineBlownFire_Idle"		Marker="E_Engine"	BoundEffect="HK_EngineFire_Bike_Idle0" Speed1="HK_EngineFire_Bike_Speed1" Speed2="HK_EngineFire_Bike_Speed1"/>
+			<Phantom 								Marker="E_Engine" 	X="0.8" 	Y="0.45" 	Z="0.65" />
+		</State>
+
+		<State Name="Damage">
+			<Effect Name="RadiatorSteamFront"		Marker="E_Engine"	BoundEffect="HK_EnSteam_Bike_Idle0"  Speed1="HK_EnSteam_Bike_Speed1"	Speed2="HK_EnSteam_Bike_Speed1" DamageAffector="D_121" />
+		</State>
+
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"			Marker="M_Body" 			BoundEffect="HK_CarExplosion_01" />
+			<!--<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />-->
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="CarGoBoomAttached" 		Marker="E_ExplosionCenter" 	BoundEffect="HK_VhclExplsn_Attached_01_Effect" />
+			<Phantom 								Marker="E_ExplosionCenter" 	X="1.85" 	Y="0.45" 	Z="1.0" />
+		</State>
+		
+		<State Name="DestructFront">
+			<Effect Name="TireFire_FR_Idle"			Marker="E_Engine"			BoundEffect="HK_TireFire_Front_Bike_Idle0" />
+		</State>
+
+		<!-- <State Name="DestructMid">
+			<Effect Name="LowFire_R_Idle"			Marker="E_Undercarriage"	BoundEffect="HK_LowFire_R_4Dr_Idle0" />
+			<Effect Name="LowFire_L_Idle"			Marker="E_Undercarriage"	BoundEffect="HK_LowFire_L_4Dr_Idle0" />
+		</State> -->
+
+		<State Name="DestructRear">
+			<Effect Name="TireFire_BR_Idle"			Marker="E_Engine"			BoundEffect="HK_TireFire_Back_Bike_Idle0" />
+		</State>
+
+		<State Name="WheeledVehicleJump">
+			<Effect Name="WheeledVehicleJump"		Marker="E_Undercarriage"	BoundEffect="HK_VehicleJump_Effect" />
+			<!--<Effect Name="TireDust_BL"				Marker="E_TireL02"			BoundEffect="HK_VehicleJump_Wheel_Effect" />-->
+		</State>
+		
+		<State Name="WheeledVehicleImpact">
+			<Effect Name="WheeledVehicleImpact"		Marker="E_Undercarriage"	BoundEffect="HK_VehicleLand_Effect" />
+		</State>
+
+	</VehicleEffects>
+
+	<VehicleEffects Name="MonkeyKingBikeEffects">
+
+		<Overrides Name="commonbike" />
+		
+		<State Name="ExhaustClean">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="CloudFXClean" 		Marker="E_Engine" BoundEffect="MonkeyKing_CloudFX" Speed1="MonkeyKing_CloudFX" Speed2="MonkeyKing_CloudFX"/>
+		</State>
+
+		<State Name="ExhaustDirty">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="CloudFXDirty" 		Marker="E_Engine" 	BoundEffect="MonkeyKing_CloudFX" Speed1="MonkeyKing_CloudFX" Speed2="MonkeyKing_CloudFX"/>
+		</State>
+
+		<State Name="AIExhaustClean">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="CloudFXCleanAI" 		Marker="E_Engine" 	BoundEffect="MonkeyKing_CloudFX" Speed1="MonkeyKing_CloudFX" Speed2="MonkeyKing_CloudFX"/>
+		</State>
+
+		<State Name="AIExhaustDirty">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="" Speed1="" Speed2=""/>
+			<Effect Name="CloudFXDirtyAI" 		Marker="E_Engine" 	BoundEffect="MonkeyKing_CloudFX" Speed1="MonkeyKing_CloudFX" Speed2="MonkeyKing_CloudFX"/>
+		</State>
+		
+	
+		
+		<State Name="Damage">
+			<Effect Name="RadiatorSteamFront"		Marker="E_Engine"	BoundEffect=""  Speed1=""	Speed2="" DamageAffector="D_121" />
+		</State>
+
+	</VehicleEffects>
+	
+	<VehicleEffects Name="commonboat">
+
+		<State Name="Nighttime">
+			<Effect Name="FillLight" 				Marker="E_FillLight" 	BoundEffect="HK_BoatLight_Fill_01" />
+			<Effect Name="LeftGreenLight" 			Marker="E_GreenLight" 	BoundEffect="HK_BoatLight_Green_01" />
+			<Effect Name="RightRedLight" 			Marker="E_RedLight" 	BoundEffect="HK_BoatLight_Red_01" />
+			<Effect Name="Mast360Light" 			Marker="E_Mast360Light" BoundEffect="HK_BoatLight_Mast360_01" />
+			<Effect Name="MastFrontLight" 			Marker="E_MastLight" 	BoundEffect="HK_BoatLight_Mast_01" />
+			<Effect Name="MastBackLight" 			Marker="E_SternLight" 	BoundEffect="HK_BoatLight_Stern_01" />
+			<Effect Name="SearchLightR" 			Marker="E_SearchLightR" BoundEffect="HK_CopSearchLight_01" />
+			<Effect Name="SearchLightCenter"		Marker="E_SearchLightR" BoundEffect="HK_CopSearchLight_02" />
+			<Effect Name="SearchLightL" 			Marker="E_SearchLightL" BoundEffect="HK_CopSearchLight_01" />
+		</State>
+
+		<State Name="CopHeadlights">
+			<Effect Name="CopLight1" 				Marker="E_CopLiteB01" 	BoundEffect="HK_BoatLight_Cop_01" />
+			<Effect Name="CopLight2" 				Marker="E_CopLiteB02" 	BoundEffect="HK_BoatLight_Cop_02" />
+			<Effect Name="SearchLightR" 			Marker="E_SearchLightR" BoundEffect="HK_CopSearchLight_01" />
+			<Effect Name="SearchLightCenter"		Marker="E_SearchLightR" BoundEffect="HK_CopSearchLight_02" />
+			<Effect Name="SearchLightL" 			Marker="E_SearchLightL" BoundEffect="HK_CopSearchLight_01" />
+		</State>
+		
+		<State Name="EngineDamaged">
+			<Effect Name="EngineIsDamaged"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_C_4Dr_Idle0" Speed1="HK_EnSmoke_C_4Dr_Speed1" Speed2="HK_EnSmoke_C_4Dr_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineIsBlown"		Marker="E_Engine"	BoundEffect="HK_EngineFire_4Dr_Idle0" Speed1="HK_EngineFire_4Dr_Speed1" Speed2="HK_EngineFire_4Dr_Speed1"/>
+			<!-- <Phantom 								Marker="E_Engine" 	X="0.75" 	Y="1.25" 	Z="0.75" /> -->
+		</State>
+
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"			Marker="M_Body" 		BoundEffect="HK_BoatExplosion_01" />			
+			<Effect Name="BurningDebris01" 			Marker="M_Body" 		BoundEffect="BurningDebris_Effect_Water" />
+			<Effect Name="BurningDebris02" 			Marker="M_Body" 		BoundEffect="BurningDebris_Effect_02_Water" />
+			<!--<Phantom 							Marker="M_Body" 	X="3.25" 	Y="2.1" 	Z="3.0" />-->
+		</State>
+
+		<State Name="ExhaustClean">
+			<Effect Name="PropSplashEffect"		Marker="E_Propeller"	BoundEffect="HK_BoatPropSpray_Idle_01_Effect" Speed1="HK_BoatPropSpray_Speed1_01_Effect" Speed2="HK_BoatPropSpray_Speed2_01_Effect" Speed3="HK_BoatPropSpray_Speed3_01_Effect"/>
+			<Effect Name="VortexLeftEffect"		Marker="E_VortexL"		BoundEffect="EMPTY" Speed1="EMPTY" Speed2="HK_WakeVortex_Speed2_L_01_Effect" Speed3="HK_WakeVortex_Speed3_L_01_Effect"/>
+			<Effect Name="VortexRightEffect"	Marker="E_VortexR"		BoundEffect="EMPTY" Speed1="EMPTY" Speed2="HK_WakeVortex_Speed2_R_01_Effect" Speed3="HK_WakeVortex_Speed3_R_01_Effect"/>
+			<!-- <Effect Name="WaveSprayEffect"	  	Marker="E_WaveSpray"	BoundEffect="HK_WaveSpray_Speed3_Effect" Speed1="HK_WaveSpray_Speed3_Effect" Speed2="HK_WaveSpray_Speed2_Effect" Speed3="HK_WaveSpray_Speed3_Effect"/> -->
+			<Effect Name="BowSplashEffect"		Marker="D_121"	      	BoundEffect="EMPTY" Speed1="EMPTY" Speed2="HK_BowSpray_Player" Speed3="HK_BowSpray_Player"/>
+		</State>
+
+		<State Name="AIExhaustClean">
+			<Effect Name="PropSplashEffect"		Marker="E_Propeller"	BoundEffect="HK_BoatPropSpray_Idle_01_Effect" Speed1="HK_BoatPropSpray_Speed1_01_Effect" Speed2="HK_BoatPropSpray_Speed2_01_Effect" Speed3="HK_BoatPropSpray_Speed3_01_Effect"/>
+			<Effect Name="VortexLeftEffect"		Marker="E_VortexL"		BoundEffect="EMPTY" Speed1="EMPTY" Speed2="HK_WakeVortex_Speed2_L_01_Effect" Speed3="HK_WakeVortex_Speed3_L_01_Effect"/>
+			<Effect Name="VortexRightEffect"	Marker="E_VortexR"		BoundEffect="EMPTY" Speed1="EMPTY" Speed2="HK_WakeVortex_Speed2_R_01_Effect" Speed3="HK_WakeVortex_Speed3_R_01_Effect"/>
+		</State>
+
+		<State Name="AIExhaustLowLOD">
+			<Effect Name="SprayLeft"			Marker="E_VortexL"		BoundEffect="HK_HullSpray_LowLOD_R" />
+			<Effect Name="SprayRight"			Marker="E_VortexR"		BoundEffect="HK_HullSpray_LowLOD_L" />
+			<Effect Name="PropSplashEffect"		Marker="E_Propeller"	BoundEffect="HK_PropSpray_LowLOD" />
+		</State>
+
+		<State Name="Spray">
+			<Effect Name="HullSprayLeftEffect"	Marker="E_SprayFrontL"	BoundEffect="EMPTY" Speed1="HK_HullSpray_Speed1_Player_L" Speed2="HK_HullSpray_Speed2_Player_L" Speed3="HK_HullSpray_Speed2_Player_L"/>
+			<Effect Name="HullSprayRightEffect"	Marker="E_SprayFrontR"	BoundEffect="EMPTY" Speed1="HK_HullSpray_Speed1_Player_R" Speed2="HK_HullSpray_Speed2_Player_R" Speed3="HK_HullSpray_Speed2_Player_R"/>
+		</State>
+
+		<State Name="AISpray">
+			<Effect Name="HullSprayLeftEffect"	Marker="E_SprayFrontL"	BoundEffect="EMPTY" Speed1="HK_HullSpray_Speed1_Player" Speed2="HK_HullSpray_Speed2_AI_L" Speed3="HK_HullSpray_Speed2_AI_L"/>
+			<Effect Name="HullSprayRightEffect"	Marker="E_SprayFrontR"	BoundEffect="EMPTY" Speed1="HK_HullSpray_Speed1_Player" Speed2="HK_HullSpray_Speed2_AI_R" Speed3="HK_HullSpray_Speed2_AI_R"/>
+		</State>
+
+		<State Name="EnterWater">
+			<Effect Name="EnterWaterEffect"		Marker="M_Body" 		BoundEffect="HK_BoatEnterWater" />
+		</State>
+
+		<State Name="ExitWater">
+			<Effect Name="ExitWaterEffect"		Marker="M_Body" 		BoundEffect="HK_BoatExitWater" />
+		</State>
+
+	</VehicleEffects>
+
+	<VehicleEffects Name="commonboat2prop">
+
+		<Overrides Name="commonboat" />
+
+		<State Name="ExhaustClean">
+			<Effect Name="PropSplashEffectL"	Marker="E_PropellerL"	BoundEffect="HK_BoatPropSpray_Idle_01_Effect" 	Speed1="HK_BoatPropSpray_Speed1_01_Effect" 	Speed2="HK_BoatPropSpray_Speed2_01_Effect" 	Speed3="HK_BoatPropSpray_Speed3_01_Effect"/>
+			<Effect Name="PropSplashEffectR"	Marker="E_PropellerR"	BoundEffect="HK_BoatPropSpray_Idle_01_Effect" 	Speed1="HK_BoatPropSpray_Speed1_01_Effect" 	Speed2="HK_BoatPropSpray_Speed2_01_Effect" 	Speed3="HK_BoatPropSpray_Speed3_01_Effect"/>
+			<Effect Name="VortexLeftEffect"		Marker="E_VortexL"		BoundEffect="EMPTY" 							Speed1="EMPTY" 								Speed2="HK_WakeVortex_Speed2_L_01_Effect" 	Speed3="HK_WakeVortex_Speed3_L_01_Effect"/>
+			<Effect Name="VortexRightEffect"	Marker="E_VortexR"		BoundEffect="EMPTY" 							Speed1="EMPTY" 								Speed2="HK_WakeVortex_Speed2_R_01_Effect" 	Speed3="HK_WakeVortex_Speed3_R_01_Effect"/>
+			<Effect Name="WaveSprayEffect"		Marker="E_WaveSpray"	BoundEffect="HK_WaveSpray_Speed3_Effect" 		Speed1="HK_WaveSpray_Speed3_Effect" 		Speed2="HK_WaveSpray_Speed2_Effect" 		Speed3="HK_WaveSpray_Speed3_Effect"/>
+		</State>
+
+		<State Name="AIExhaustClean">
+			<Effect Name="PropSplashEffectL"	Marker="E_PropellerL"	BoundEffect="HK_BoatPropSpray_Idle_01_Effect" 	Speed1="HK_BoatPropSpray_Speed1_01_Effect" 	Speed2="HK_BoatPropSpray_Speed2_01_Effect" 	Speed3="HK_BoatPropSpray_Speed3_01_Effect"/>
+			<Effect Name="PropSplashEffectR"	Marker="E_PropellerR"	BoundEffect="HK_BoatPropSpray_Idle_01_Effect" 	Speed1="HK_BoatPropSpray_Speed1_01_Effect" 	Speed2="HK_BoatPropSpray_Speed2_01_Effect" 	Speed3="HK_BoatPropSpray_Speed3_01_Effect"/>
+			<Effect Name="VortexLeftEffect"		Marker="E_VortexL"		BoundEffect="EMPTY" 							Speed1="EMPTY" 								Speed2="HK_WakeVortex_Speed2_L_01_Effect" 	Speed3="HK_WakeVortex_Speed3_L_01_Effect"/>
+			<Effect Name="VortexRightEffect"	Marker="E_VortexR"		BoundEffect="EMPTY" 							Speed1="EMPTY" 								Speed2="HK_WakeVortex_Speed2_R_01_Effect" 	Speed3="HK_WakeVortex_Speed3_R_01_Effect"/>
+		</State>
+
+	</VehicleEffects>
+
+	<VehicleEffects Name="DragBikeEffects">
+
+		<Overrides Name="commonbike" />
+		
+		<!-- <State Name="ExhaustClean">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+		</State>
+
+		<State Name="ExhaustDirty">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+		</State>
+
+		<State Name="AIExhaustClean">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+		</State>
+
+		<State Name="AIExhaustDirty">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" Speed1="HK_Bike_Exhaust_Speed1_Clean_01" Speed2=""/>
+		</State> -->
+
+		<State Name="ExhaustIdleClean">
+			<Effect Name="ExhaustEffectLeft" 		Marker="E_ExhL"		BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" />
+			<Effect Name="ExhaustEffectRight"		Marker="E_ExhR"		BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" />
+			<Effect Name="ExhaustEffectLeftStart" 	Marker="E_ExhL"		BoundEffect="HK_DragBike_StartUp_Effect" />
+			<Effect Name="ExhaustEffectRightStart"	Marker="E_ExhR"		BoundEffect="HK_DragBike_StartUp_Effect" />
+			<!-- <Effect Name="ExhaustEffectLeft" 		Marker="E_ExhL"		BoundEffect="HK_CommonBike_GeneralExhaustIdleLeft_Clean_Effect" />
+			<Effect Name="ExhaustEffectRight"		Marker="E_ExhR"		BoundEffect="HK_CommonBike_GeneralExhaustIdleRight_Clean_Effect" />
+			<Effect Name="ExhaustEffectLeftStart" 	Marker="E_ExhL"		BoundEffect="HK_DragBike_ExhaustLeft_StartUp_Effect" />
+			<Effect Name="ExhaustEffectRightStart"	Marker="E_ExhR"		BoundEffect="HK_DragBike_ExhaustRight_StartUp_Effect" /> -->
+		</State>
+
+		<State Name="ExhaustIdleDirty">
+			<Effect Name="ExhaustEffectLeft" 		Marker="E_ExhL"		BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" />
+			<Effect Name="ExhaustEffectRight"		Marker="E_ExhR"		BoundEffect="HK_Bike_Exhaust_Idle_Clean_01" />
+			<!-- <Effect Name="ExhaustEffectLeft" 		Marker="E_ExhL"		BoundEffect="HK_CommonBike_GeneralExhaustIdleLeft_Dirty_Effect" />
+			<Effect Name="ExhaustEffectRight"		Marker="E_ExhR"		BoundEffect="HK_CommonBike_GeneralExhaustIdleRight_Dirty_Effect" /> -->
+		</State>
+
+		<State Name="ExhaustSpeed1Dirty">
+			<Effect Name="ExhaustEffectLeft" 		Marker="E_ExhL"		BoundEffect="" />
+			<Effect Name="ExhaustEffectRight"		Marker="E_ExhR"		BoundEffect="" />
+			<!-- <Effect Name="ExhaustEffectLeft" 		Marker="E_ExhL"		BoundEffect="HK_CommonBike_GeneralExhaustSpeed1_Dirty_Effect" />
+			<Effect Name="ExhaustEffectRight"		Marker="E_ExhR"		BoundEffect="HK_CommonBike_GeneralExhaustSpeed1_Dirty_Effect" /> -->
+		</State>
+				
+	</VehicleEffects>
+
+	<VehicleEffects Name="commontram">
+	
+		<Overrides Name="common2doorcar" />
+		
+		<State Name="EngineDamaged">
+			<Effect Name="EngineDamagedSmoke_Idle"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_Truck_Idle0" Speed1="HK_EnSmoke_Truck_Speed1" Speed2="HK_EnSmoke_Truck_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineBlownFire_Idle"		Marker="E_Engine"	BoundEffect="HK_EngineFire_Truck_Idle0" Speed1="HK_EngineFire_Truck_Speed1" Speed2="HK_EngineFire_Truck_Speed1"/>
+			<Phantom 								Marker="E_Engine" 	X="0.75" 	Y="1.25" 	Z="0.75" />
+		</State>
+
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"		Marker="M_Body" 				BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="CarGoBoomAttached" 	Marker="E_ExplosionCenter" 		BoundEffect="HK_TankerFire_Attached_01_Effect" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Phantom 							Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+			
+	</VehicleEffects>
+
+	<!-- The Emergency 4 Door vehicle Effects -->
+	<VehicleEffects Name="Emergency4DoorEffects">
+	
+		<Overrides Name="common2doorcar" />
+
+		<State Name="CopHeadlights">
+			<Effect Name="CopHeadlightLeft" 	Marker="E_HLiteL" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlightRight" 	Marker="E_HLiteR" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlight" 		Marker="E_HLite" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopCarLight" 			Marker="E_CopLite" 		BoundEffect="Vehicle_CopCarLights"/>
+			<Effect Name="CopCarLightFront" 	Marker="E_CopLite01" 	BoundEffect="HK_CopCar_SmallBlinkingLight_Effect"/>
+			<Effect Name="CopCarLightRear" 		Marker="E_CopLite02" 	BoundEffect="HK_CopCar_RearSmallBlinkingLight_Effect"/>
+		</State>
+
+		<State Name="Destroyed">
+			<Effect Name="CarGoBoomAttached" 		Marker="E_ExplosionCenter" 	BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="CopCarLightTerminate" 	Marker="E_CopLite" 			BoundEffect="Vehicle_CopCarLights_Terminate" />
+			<Phantom 								Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+
+		<State Name="Disabled">
+			<Effect Name="CopCarLightTerminate" Marker="E_CopLite" 		BoundEffect="Vehicle_CopCarLights_Terminate" />
+		</State>
+		
+	</VehicleEffects>
+
+	<!-- The Emergency 2 Door vehicle Effects -->
+	<VehicleEffects Name="Emergency2DoorEffects">
+	
+		<Overrides Name="common2doorcar" />
+
+		<State Name="CopHeadlights">
+			<Effect Name="CopHeadlightLeft" 	Marker="E_HLiteL" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlightRight" 	Marker="E_HLiteR" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlight" 		Marker="E_HLite" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopCarLight"	 		Marker="E_CopLite" 		BoundEffect="Vehicle_CopCarLights"/>
+		</State>
+		
+		<State Name="Destroyed">
+			<Effect Name="CarGoBoomAttached" 		Marker="E_ExplosionCenter" 	BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="CopCarLightTerminate" 	Marker="E_CopLite" 			BoundEffect="Vehicle_CopCarLights_Terminate" />
+			<Phantom 								Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+
+		<State Name="Disabled">
+			<Effect Name="CopCarLightTerminate" Marker="E_CopLite" 		BoundEffect="Vehicle_CopCarLights_Terminate" />
+		</State>
+		
+	</VehicleEffects>
+	
+	<VehicleEffects Name="AggressorSWAT">
+	
+		<Overrides Name="common2doorcar" />
+
+		<State Name="CopHeadlights">
+			<Effect Name="CopRedLight01" 		Marker="E_CopLightRed01" 		BoundEffect="Vehicle_AgressorSWAT_Light_01"/>
+			<Effect Name="CopRedLight02" 		Marker="E_CopLightRed02" 		BoundEffect="Vehicle_AgressorSWAT_Light_02"/>
+			<Effect Name="CopRedLight03" 		Marker="E_CopLightRed03" 		BoundEffect="Vehicle_AgressorSWAT_Light_03"/>
+			<Effect Name="CopRedLight04" 		Marker="E_CopLightRed04" 		BoundEffect="Vehicle_AgressorSWAT_Light_04"/>
+			<Effect Name="CopRedLight05" 		Marker="E_CopLightRed05" 		BoundEffect="Vehicle_AgressorSWAT_Light_01"/>
+			<Effect Name="CopRedLight06" 		Marker="E_CopLightRed06" 		BoundEffect="Vehicle_AgressorSWAT_Light_02"/>
+		</State>
+		
+		<State Name="Destroyed">
+			<Effect Name="CarGoBoomAttached" 		Marker="E_ExplosionCenter" 	BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Phantom 								Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+		
+	</VehicleEffects>
+	
+	<VehicleEffects Name="UndercoverCop">
+	
+		<Overrides Name="common2doorcar" />
+
+		<State Name="CopHeadlights">
+			<Effect Name="CopUndercoverLight" 	Marker="E_CopLite" 			BoundEffect="Vehicle_UndercoverCopLight_01"/>
+			<Effect Name="CopHeadlightLeft" 	Marker="E_HLiteL" 				BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlightRight" 	Marker="E_HLiteR" 				BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlight" 		Marker="E_HLite" 				BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopRedLight01" 		Marker="E_CopLightRed01" 		BoundEffect="Vehicle_RedCopLight_01"/>
+			<Effect Name="CopBlueLight01" 		Marker="E_CopLightRed02" 		BoundEffect="Vehicle_RedCopLight_01"/>
+			<Effect Name="CopRedLight02" 		Marker="E_CopLiteB01" 			BoundEffect="Vehicle_BlueCopLight_02"/>
+			<Effect Name="CopBlueLight02" 		Marker="E_CopLiteB02" 			BoundEffect="Vehicle_BlueCopLight_02"/>
+		</State>
+		
+		<State Name="Destroyed">
+			<Effect Name="CarGoBoomAttached" 		Marker="E_ExplosionCenter" 	BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Phantom 								Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+		
+	</VehicleEffects>
+	
+	<VehicleEffects Name="WanganCop">
+	
+		<Overrides Name="common2doorcar" />
+
+		<State Name="CopHeadlights">
+			<Effect Name="CopHeadlightLeft" 	Marker="E_HLiteL" 				BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlightRight" 	Marker="E_HLiteR" 				BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlight" 		Marker="E_HLite" 				BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopCarLight01" 		Marker="E_CopLite" 				BoundEffect="Vehicle_CopCarLights"/>
+			<Effect Name="CopRedLight01" 		Marker="E_CopLightRed01" 		BoundEffect="Vehicle_RedCopLight_01"/>
+			<Effect Name="CopBlueLight01" 		Marker="E_CopLightRed02" 		BoundEffect="Vehicle_RedCopLight_01"/>
+			<Effect Name="CopRedLight02" 		Marker="E_CopLiteB01" 			BoundEffect="Vehicle_BlueCopLight_02"/>
+			<Effect Name="CopBlueLight02" 		Marker="E_CopLiteB02" 			BoundEffect="Vehicle_BlueCopLight_02"/>
+		</State>
+		
+		<State Name="Destroyed">
+			<Effect Name="CarGoBoomAttached" 		Marker="E_ExplosionCenter" 	BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="CopCarLightTerminate" 	Marker="E_CopLite01" 			BoundEffect="Vehicle_CopCarLights_Terminate" />
+			<Effect Name="CopCarLightTerminate" 	Marker="E_CopLite02" 			BoundEffect="Vehicle_CopCarLights_Terminate" />
+			<Phantom 								Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+		
+	</VehicleEffects>
+
+	<!-- The Emergency 4 Door 2 Bubblegum vehicle Effects -->
+	<VehicleEffects Name="Emergency4Door2BGEffects">
+	
+		<Overrides Name="common2doorcar" />
+
+		<State Name="CopHeadlights">
+			<Effect Name="CopHeadlightLeft" 	Marker="E_HLiteL" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlightRight" 	Marker="E_HLiteR" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlight" 		Marker="E_HLite" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopCarLight01" 		Marker="E_CopLite01" 	BoundEffect="Vehicle_CopCarLights"/>
+			<Effect Name="CopCarLight02" 		Marker="E_CopLite02" 	BoundEffect="Vehicle_CopSUV_Rear_Lights"/>
+		</State>
+		
+		<State Name="Destroyed">
+			<Effect Name="CarGoBoomAttached" 		Marker="E_ExplosionCenter" 	BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="CopCarLightTerminate" 	Marker="E_CopLite01" 			BoundEffect="Vehicle_CopCarLights_Terminate" />
+			<Effect Name="CopCarLightTerminate" 	Marker="E_CopLite02" 			BoundEffect="Vehicle_CopCarLights_Terminate" />
+			<Phantom 								Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+
+		<State Name="Disabled">
+			<Effect Name="CopCarLightTerminate" Marker="E_CopLite01" 		BoundEffect="Vehicle_CopCarLights_Terminate" />
+			<Effect Name="CopCarLightTerminate" Marker="E_CopLite02" 		BoundEffect="Vehicle_CopCarLights_Terminate" />
+		</State>
+		
+	</VehicleEffects>
+
+	<!-- The Ambulance vehicle Effects -->
+	<VehicleEffects Name="Ambulance2BGEffects">
+	
+		<Overrides Name="common2doorcar" />
+		
+		<State Name="EngineDamaged">
+			<Effect Name="EngineDamagedSmoke_Idle"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_Truck_Idle0" Speed1="HK_EnSmoke_Truck_Speed1" Speed2="HK_EnSmoke_Truck_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineBlownFire_Idle"		Marker="E_Engine"	BoundEffect="HK_EngineFire_Van_Idle0" Speed1="HK_EngineFire_Van_Speed1" Speed2="HK_EngineFire_Van_Speed1"/>
+			<Phantom 								Marker="E_Engine" 	X="0.75" 	Y="1.25" 	Z="0.75" />
+		</State>
+
+		<State Name="CopHeadlights">
+			<Effect Name="CopHeadlightLeft" 	Marker="E_HLiteL" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlightRight" 	Marker="E_HLiteR" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlight" 		Marker="E_HLite" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopCarLight01" 		Marker="E_CopLite01" 	BoundEffect="Vehicle_AmbulanceLights"/>
+			<Effect Name="CopCarLight02" 		Marker="E_CopLiteB01" 	BoundEffect="Vehicle_AmbulanceLights_Rear"/>
+			<Effect Name="CopCarLight03" 		Marker="E_CopLiteB02" 	BoundEffect="Vehicle_AmbulanceLights_Rear"/>
+		</State>
+		
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"		Marker="M_Body" 				BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="CarGoBoomAttached" 	Marker="E_ExplosionCenter" 		BoundEffect="HK_VanFire_Attached_01_Effect" />
+			<Phantom 							Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>		
+		
+	</VehicleEffects>
+
+	<!-- The Ambulance vehicle Effects -->
+	<VehicleEffects Name="FireEngine2BGEffects">
+	
+		<Overrides Name="common2doorcar" />
+		
+		<State Name="EngineDamaged">
+			<Effect Name="EngineDamagedSmoke_Idle"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_Truck_Idle0" Speed1="HK_EnSmoke_Truck_Speed1" Speed2="HK_EnSmoke_Truck_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineBlownFire_Idle"		Marker="E_Engine"	BoundEffect="HK_EngineFire_Truck_Idle0" Speed1="HK_EngineFire_Truck_Speed1" Speed2="HK_EngineFire_Truck_Speed1"/>
+			<Phantom 								Marker="E_Engine" 	X="0.75" 	Y="1.25" 	Z="0.75" />
+		</State>
+
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"		Marker="M_Body" 				BoundEffect="HK_CarExplosion_01" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />
+			<Effect Name="CarGoBoomAttached" 	Marker="E_ExplosionCenter" 		BoundEffect="HK_TankerFire_Attached_01_Effect" />
+			<Phantom 							Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+
+		<State Name="CopHeadlights">
+			<Effect Name="CopHeadlightLeft" 	Marker="E_HLiteL" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlightRight" 	Marker="E_HLiteR" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopHeadlight" 		Marker="E_HLite" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="CopCarLight01" 		Marker="E_CopLite01" 	BoundEffect="Vehicle_FireTruckLights"/>
+			<Effect Name="CopCarLight02" 		Marker="E_CopLite02" 	BoundEffect="Vehicle_FireTruckLights"/>
+		</State>
+		
+	</VehicleEffects>
+
+	<!-- The Emergency Bike Effects -->
+	<VehicleEffects Name="EmergencyBikeEffects">
+		<Overrides Name="commonbike" />
+
+		<State Name="CopHeadlights">
+			<Effect Name="BikeCopHeadlightLeft" 	Marker="E_HLiteL" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="BikeCopHeadlightRight" 	Marker="E_HLiteR" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="BikeCopHeadlight" 		Marker="E_HLite" 		BoundEffect="Vehicle_PoliceLights_Headlight"/>
+			<Effect Name="BikeCopLight01" 			Marker="E_CopLite01" 	BoundEffect="Vehicle_CopBikeLights"/>
+			<Effect Name="BikeCopLight02" 			Marker="E_CopLite02" 	BoundEffect="Vehicle_CopBikeLights"/>
+		</State>
+
+	</VehicleEffects>
+	
+	<!-- LBP Kart -->
+	
+	<VehicleEffects Name="LBPKart">
+	
+		<Overrides Name="common2doorcar" />
+		
+		<State Name="DayTime">
+			<!--<Effect Name="DaytimeEffect" 	Marker="E_EffectMarkerHere" BoundEffect="PUT_EFFECT_NAME_HERE"/>-->
+		</State>
+
+		<State Name="Nighttime">
+			<!--<Effect Name="BackLight" 		Marker="E_BackLite" 		BoundEffect="Vehicle_Taillight" DamageAffector="D_WinLight_02" />
+			<Effect Name="BackLightLeft" 	Marker="E_BackLiteL" 		BoundEffect="Vehicle_Taillight" DamageAffector="D_WinLight_L02" />
+			<Effect Name="BackLightRight"	Marker="E_BackLiteR" 		BoundEffect="Vehicle_Taillight" DamageAffector="D_WinLight_R02" />-->
+		</State>
+
+		<State Name="BrakeLights">
+			<!--<Effect Name="Brake_Light" 			Marker="E_BackLite" 	BoundEffect="Vehicle_Brakelight" 	DamageAffector="D_WinLight_02" />
+			<Effect Name="Left_Brake_Light"		Marker="E_BrakeLiteL"	BoundEffect="Vehicle_Brakelight"	DamageAffector="D_WinLight_L02" />
+			<Effect Name="Right_Brake_Light"	Marker="E_BrakeLiteR"	BoundEffect="Vehicle_Brakelight"	DamageAffector="D_WinLight_R02" />-->
+		</State>
+
+		<State Name="Reverse">
+			<!--<Effect Name="ReverseLightLeft"		Marker="E_ReverseL"	BoundEffect="Vehicle_Reverselight"	DamageAffector="D_WinLight_L02" />
+			<Effect Name="ReverseLightRight"	Marker="E_ReverseR"	BoundEffect="Vehicle_Reverselight"	DamageAffector="D_WinLight_R02" />-->
+		</State>
+
+		<State Name="ExhaustClean">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Kart_Exhaust_Idle_Clean_01" Speed1="HK_Kart_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Kart_Exhaust_Idle_Clean_01" Speed1="HK_Kart_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Kart_Exhaust_Idle_Clean_01" Speed1="HK_Kart_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+		</State>
+
+		<State Name="ExhaustDirty">
+			<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Kart_Exhaust_Idle_Clean_01" Speed1="HK_Kart_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Kart_Exhaust_Idle_Clean_01" Speed1="HK_Kart_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Kart_Exhaust_Idle_Clean_01" Speed1="HK_Kart_Exhaust_Speed1_Clean_01" Speed2="HK_Bus_Exhaust_Speed2_Clean_01"/>
+		</State>
+
+		
+
+		<State Name="AIExhaustClean">
+			<!--<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Vehicle_Exhaust_Idle_Clean_01" Speed1="HK_Vehicle_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Vehicle_Exhaust_Idle_Clean_01" Speed1="HK_Vehicle_Exhaust_Speed1_Clean_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Vehicle_Exhaust_Idle_Clean_01" Speed1="HK_Vehicle_Exhaust_Speed1_Clean_01" Speed2=""/>-->
+		</State>
+		
+		<State Name="AIExhaustDirty">
+			<!--<Effect Name="GeneralExhaustEffect"	Marker="E_Exh"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>
+			<Effect Name="ExhaustEffectLeft" 	Marker="E_ExhL"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>
+			<Effect Name="ExhaustEffectRight"	Marker="E_ExhR"	BoundEffect="HK_Vehicle_Exhaust_Idle_Dirty_01" Speed1="HK_Vehicle_Exhaust_Speed1_Dirty_01" Speed2=""/>-->
+		</State>
+
+		<State Name="LeftTurn">
+			<!--<Effect Name="LeftTurnSignalFront"	Marker="E_SignalL01"	BoundEffect="Vehicle_TurnSignal" DamageAffector="D_WinLight_L01"/>
+			<Effect Name="LeftTurnSignalBack"	Marker="E_SignalL02"	BoundEffect="Vehicle_TurnSignal" DamageAffector="D_WinLight_L02"/>-->
+		</State>
+
+		<State Name="RightTurn">
+			<!--<Effect Name="RightTurnSignalFront"	Marker="E_SignalR01"	BoundEffect="Vehicle_TurnSignal" DamageAffector="D_WinLight_R01"/>
+			<Effect Name="RightTurnSignalBack"	Marker="E_SignalR02"	BoundEffect="Vehicle_TurnSignal" DamageAffector="D_WinLight_R02"/>-->
+		</State>
+
+		<State Name="PlayerHeadlights">
+			<!--<Effect Name="PLayerHeadlightLeft"		Marker="E_HLiteL"	BoundEffect="Vehicle_Headlight" DamageAffector="D_WinLight_L01"/>
+			<Effect Name="PlayerHeadlightRight"		Marker="E_HLiteR"	BoundEffect="Vehicle_Headlight" DamageAffector="D_WinLight_R01"/>
+			<Effect Name="PlayerHeadlightSingle"	Marker="E_HLite"	BoundEffect="Vehicle_Headlight" DamageAffector="D_WinLight_01"/>-->
+		</State>
+		
+		<State Name="PlayerHeadlightFlares">
+			<!--<Effect Name="PLayerHeadlightFlareLeft"		Marker="E_HLiteL"		BoundEffect="Vehicle_HeadlightFlare" 	DamageAffector="D_WinLight_L01"/>
+			<Effect Name="PlayerHeadlightFlareRight"	Marker="E_HLiteR"		BoundEffect="Vehicle_HeadlightFlare" 	DamageAffector="D_WinLight_R01"/>
+			<Effect Name="PlayerHeadlightFlareSingle"	Marker="E_HLite"		BoundEffect="Vehicle_HeadlightFlare" 	DamageAffector="D_WinLight_01"/>
+			<Effect Name="PlayerBackLight" 				Marker="E_BackLite" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_02" />
+			<Effect Name="PlayerBackLightLeft" 			Marker="E_BackLiteL" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_L02"/>
+			<Effect Name="PlayerBackLightRight"			Marker="E_BackLiteR" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_R02"/>-->
+		</State>
+
+		<State Name="TrafficHeadlights">
+			<!--<Effect Name="TrafficHeadlightLeft"		Marker="E_HLiteL"	BoundEffect="Vehicle_TrafficHeadlight" DamageAffector="D_WinLight_L01"/>
+			<Effect Name="TrafficHeadlightRight"	Marker="E_HLiteR"	BoundEffect="Vehicle_TrafficHeadlight" DamageAffector="D_WinLight_R01"/>
+			<Effect Name="TrafficHeadlightSingle"	Marker="E_HLite"	BoundEffect="Vehicle_TrafficHeadlight" DamageAffector="D_WinLight_01"/>-->
+		</State>
+
+		<State Name="TrafficHeadlightFlares">
+			<!--<Effect Name="TrafficHeadlightFlareLeft"	Marker="E_HLiteL"	BoundEffect="Vehicle_TrafficHeadlightFlare" DamageAffector="D_WinLight_L01"/>
+			<Effect Name="TrafficHeadlightFlareRight"	Marker="E_HLiteR"	BoundEffect="Vehicle_TrafficHeadlightFlare" DamageAffector="D_WinLight_R01"/>
+			<Effect Name="TrafficHeadlightFlareSingle"	Marker="E_HLite"	BoundEffect="Vehicle_TrafficHeadlightFlare" DamageAffector="D_WinLight_01"/>
+			<Effect Name="TrafficBackLight" 			Marker="E_BackLite" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_02" />
+			<Effect Name="TrafficBackLightLeft" 		Marker="E_BackLiteL" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_L02"/>
+			<Effect Name="TrafficBackLightRight"		Marker="E_BackLiteR" 	BoundEffect="NONE" 						DamageAffector="D_WinLight_R02"/>-->
+		</State>
+
+		<State Name="EngineDamaged">
+			<Effect Name="EngineDamagedSmoke_Idle"	Marker="E_ENGINE"	BoundEffect="HK_EnSmoke_C_4Dr_Idle0" Speed1="HK_EnSmoke_C_4Dr_Speed1" Speed2="HK_EnSmoke_C_4Dr_Speed1" />
+		</State>
+
+		<State Name="EngineBlown">
+			<Effect Name="EngineBlownFire_Idle"		Marker="E_Engine"	BoundEffect="HK_KART_EngineFire_4Dr_Idle0" Speed1="HK_KART_EngineFire_4Dr_Idle0" Speed2="HK_KART_EngineFire_4Dr_Idle0"/>
+			<Phantom 								Marker="E_Engine" 	X="0.75" 	Y="1.25" 	Z="0.75" />
+		</State>
+
+		<State Name="Damage">
+			<Effect Name="RadiatorSteamFront"		Marker="E_Radiator01"	BoundEffect="HK_EnSteam_C_4Dr_Idle0"  Speed1="HK_EnSteam_C_4Dr_Speed1"	Speed2="HK_EnSteam_C_4Dr_Speed1" DamageAffector="D_121" />
+			<Effect Name="RadiatorSteamLeft"		Marker="E_Radiator02"	BoundEffect="HK_EnSteam_C_4Dr_Idle0"  Speed1="HK_EnSteam_C_4Dr_Speed1"	Speed2="HK_EnSteam_C_4Dr_Speed1" DamageAffector="D_121" />
+			<Effect Name="RadiatorSteamRight"		Marker="E_Radiator03"	BoundEffect="HK_EnSteam_C_4Dr_Idle0"  Speed1="HK_EnSteam_C_4Dr_Speed1"	Speed2="HK_EnSteam_C_4Dr_Speed1" DamageAffector="D_121" />
+		</State>
+
+		<State Name="DestructFront">
+			<Effect Name="KillFX"			Marker="NoMarker"			BoundEffect="NoFX" />
+			<!--<Effect Name="TireFire_FR_Idle"			Marker="E_TireR01"			BoundEffect="HK_TireFire_R_4Dr_Idle0" />
+			<Effect Name="TireFire_FL_Idle"			Marker="E_TireL01"			BoundEffect="HK_TireFire_L_4Dr_Idle0" />-->
+		</State>
+
+		<State Name="DestructMid">
+			<Effect Name="KillFX"			Marker="NoMarker"			BoundEffect="NoFX" />
+			<!--<Effect Name="LowFire_R_Idle"			Marker="E_Undercarriage"	BoundEffect="HK_LowFire_R_4Dr_Idle0" />
+			<Effect Name="LowFire_L_Idle"			Marker="E_Undercarriage"	BoundEffect="HK_LowFire_L_4Dr_Idle0" />-->
+		</State>
+
+		<State Name="DestructRear">
+			<Effect Name="KillFX"			Marker="NoMarker"			BoundEffect="NoFX" />
+			<!--<Effect Name="TireFire_BR_Idle"			Marker="E_TireR02"			BoundEffect="HK_TireFire_R_4Dr_Idle0" />
+			<Effect Name="TireFire_BL_Idle"			Marker="E_TireL02"			BoundEffect="HK_TireFire_L_4Dr_Idle0" />-->
+		</State>
+
+		<State Name="Destroyed">
+			<Effect Name="ExplosionEffect"			Marker="E_ExplosionCenter" 	BoundEffect="HK_KART_Explosion_01" />
+			<!--<Effect Name="CarGoBoomAttached" 		Marker="E_ExplosionCenter" 	BoundEffect="HK_VhclExplsn_Attached_01_Effect" />
+			<Effect Name="BurningDebris01" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect" />
+			<Effect Name="BurningDebris02" 			Marker="E_ExplosionCenter" 	BoundEffect="BurningDebris_Effect_02" />-->
+			<Phantom 								Marker="E_ExplosionCenter" 	X="3.25" 	Y="2.1" 	Z="3.0" />
+		</State>
+		
+		<State Name="WindowShatter">
+			<!--<Effect Name="LeftTailight"		Marker="E_WinLight_L02"		BoundEffect="HK_Taillight_Destruction_01" />
+			<Effect Name="RightTailight"	Marker="E_WinLight_R02"		BoundEffect="HK_Taillight_Destruction_01" />-->
+		</State>
+
+		<State Name="WindowBreakSm">
+			<!--<Effect Name="FrontWindow" 		Marker="E_WinF" 			BoundEffect="HK_VehicleWindow_LargeWide_Front_01" />
+			<Effect Name="FrontRightWindow" Marker="E_WinR01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="MidRightWindow" 	Marker="E_WinR02" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="RearRightWindow" 	Marker="E_WinR03" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="FrontLeftWindow" 	Marker="E_WinL01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="MidLeftWindow" 	Marker="E_WinL02" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="RearLeftWindow" 	Marker="E_WinL03" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="BackWindow" 		Marker="E_WinB" 			BoundEffect="HK_VehicleWindow_LargeWide_Back_01" />-->
+		</State>
+
+		<State Name="WindowBreakMd">
+			<!--<Effect Name="FrontWindow" 		Marker="E_WinF" 			BoundEffect="HK_VehicleWindow_LargeWide_Front_01" />
+			<Effect Name="FrontRightWindow" Marker="E_WinR01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="MidRightWindow" 	Marker="E_WinR02" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="RearRightWindow" 	Marker="E_WinR03" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="FrontLeftWindow" 	Marker="E_WinL01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="MidLeftWindow" 	Marker="E_WinL02" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="RearLeftWindow" 	Marker="E_WinL03" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="BackWindow" 		Marker="E_WinB" 			BoundEffect="HK_VehicleWindow_LargeWide_Back_01" />-->
+		</State>
+
+		<State Name="WindowBreakLg">
+			<!--<Effect Name="FrontWindow" 		Marker="E_WinF" 			BoundEffect="HK_VehicleWindow_LargeWide_Front_01" />
+			<Effect Name="FrontRightWindow" Marker="E_WinR01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="MidRightWindow" 	Marker="E_WinR02" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="RearRightWindow" 	Marker="E_WinR03" 			BoundEffect="HK_VehicleWindow_Medium_Right_01" />
+			<Effect Name="FrontLeftWindow" 	Marker="E_WinL01_Hijack" 	BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="MidLeftWindow" 	Marker="E_WinL02" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="RearLeftWindow" 	Marker="E_WinL03" 			BoundEffect="HK_VehicleWindow_Medium_Left_01" />
+			<Effect Name="BackWindow" 		Marker="E_WinB" 			BoundEffect="HK_VehicleWindow_LargeWide_Back_01" />-->
+		</State>
+
+		<State Name="RoofSliding">
+			<!--<Effect Name="RoofSparks" 		Marker="E_Roof" 				BoundEffect="HK_RoofSparks_01" />-->
+		</State>
+
+		<State Name="InteriorLights">
+			<!--<Effect Name="InteriorLight" 	Marker="E_IntLite" 				BoundEffect="HK_InteriorVhclLight_01" />-->
+		</State>
+
+		<State Name="Smoldering">
+			<!--<Effect Name="SmolderSmoke" 	Marker="E_Undercarriage" 		BoundEffect="HK_Smoldering_4dr_Idle0" />-->
+		</State>
+		
+		<State Name="WheeledVehicleJump">
+			<Effect Name="WheeledVehicleJump"		Marker="E_Undercarriage"	BoundEffect="HK_VehicleJump_Effect" />
+			<Effect Name="Jetpack"					Marker="E_Undercarriage"	BoundEffect="HK_KART_Jetpack_01" />
+		</State>
+		
+		<State Name="WheeledVehicleImpact">
+			<Effect Name="WheeledVehicleImpact"		Marker="E_Undercarriage"	BoundEffect="HK_VehicleLand_Effect" />
+		</State>
+		
+		
+
+	</VehicleEffects>
+
+	<!-- Actual Vehicles -->
+	<!-- And now the Lowin vehicle effects -->
+	<VehicleEffects Name="LowinEffects">
+	
+		<Overrides Name="common2doorcar" />
+		
+		<State Name="Destroyed">
+		</State>
+		
+	</VehicleEffects>
+
+</VehicleEffectsDefinition>

@@ -1,0 +1,76 @@
+
+<?xml version="1.0"?>
+<lightcards texturename="lightcards">
+	<!--
+
+	Each light card must have the following attributes:
+	
+		name			Name of virtual texture.
+		channelmask		Specify as r,g,b triplet (i.e. 1,0,0 to select the
+						red-channel).
+		uv0 - uv3		UV for each vertex (starting from upper-left corner clockwise).
+						UVs are specified in pixels as x,y.
+		
+	-->
+	
+	<lightcard name="fade_lin" channelmask="1,0,0" uv0="0,0" uv1="16,0" uv2="16,128" uv3="0,128"/>
+	<lightcard name="fade_fast" channelmask="1,0,0" uv0="32,0" uv1="48,0" uv2="45,128" uv3="32,128"/>
+	<lightcard name="fade_scraper" channelmask="1,0,0" uv0="0,128" uv1="64,128" uv2="64,256" uv3="0,256"/>
+	<lightcard name="constant" channelmask="1,0,0" uv0="32,136" uv1="32,136" uv2="32,136" uv3="32,136"/>
+	<!--<lightcard name="spot_single" channelmask="1,0,0" uv0="258,0" uv1="384,0" uv2="384,128" uv3="258,128"/>-->
+	<lightcard name="spot_single" channelmask="0,1,0" uv0="1,0" uv1="128,0" uv2="128,128" uv3="1,128"/>
+	<lightcard name="spot_wide" channelmask="1,0,0" uv0="193,0" uv1="254,0" uv2="254,64" uv3="193,64"/>
+	<!--<lightcard name="circle" channelmask="1,0,0" uv0="258,130" uv1="382,130" uv2="382,254" uv3="258,254"/> -->
+	<lightcard name="circle" channelmask="1,0,0" uv0="129,0" uv1="192,0" uv2="192,64" uv3="129,64"/>
+	<!--<lightcard name="spot_double" channelmask="1,0,0" uv0="384,128" uv1="510,128" uv2="510,256" uv3="384,256"/> -->
+	<lightcard name="spot_triple" channelmask="1,0,0" uv0="129,128" uv1="256,128" uv2="256,192" uv3="129,192"/>
+	<lightcard name="spot_quad" channelmask="1,0,0" uv0="129,192" uv1="256,192" uv2="256,256" uv3="129,256"/>
+	<lightcard name="fade_spotty" channelmask="1,0,0" uv0="64,128" uv1="128,128" uv2="128,192" uv3="64,192"/>
+	<lightcard name="fade_rounded" channelmask="1,0,0" uv0="64,192" uv1="128,192" uv2="128,256" uv3="64,256"/>
+	<lightcard name="fade_lin_soft" channelmask="1,0,0" uv0="63,64" uv1="128,64" uv2="128,128" uv3="63,128"/>
+  
+	<lightcard name="outside_corner" channelmask="0,1,0" uv0="216,8" uv1="248,8" uv2="248,40" uv3="216,40"/>
+	<lightcard name="inside_corner" channelmask="0,1,0" uv0="176,8" uv1="208,8" uv2="208,40" uv3="176,40"/>
+	<lightcard name="straight" channelmask="0,1,0" uv0="216,48" uv1="248,48" uv2="248,80" uv3="248,80"/>
+ 	<lightcard name="square" channelmask="0,1,0" uv0="128,0" uv1="160,0" uv2="160,32" uv3="128,32"/>
+ 	<lightcard name="wallsconce" channelmask="0,1,0" uv0="128,48" uv1="192,48" uv2="192,176" uv3="128,176"/>  
+	<lightcard name="spot_singleHD" channelmask="0,1,0" uv0="1,0" uv1="128,0" uv2="128,128" uv3="1,128"/>
+  	<lightcard name="edgeblur" channelmask="0,1,0" uv0="195,111" uv1="256,111" uv2="256,176" uv3="195,172"/>
+	<lightcard name="CT_tubeSM" channelmask="0,1,0" uv0="0,192" uv1="64,192" uv2="64,208" uv3="0,208"/>
+	<lightcard name="CT_tubeLG" channelmask="0,1,0" uv0="0,224" uv1="256,224" uv2="256,240" uv3="0,240"/>
+	
+	
+	<lightcard name="spot_doubleHD" channelmask="0,0,1" uv0="1,0" uv1="128,0" uv2="128,128" uv3="1,128"/>
+	<lightcard name="spot_double" channelmask="0,0,1" uv0="1,0" uv1="128,0" uv2="128,128" uv3="1,128"/>
+	<lightcard name="spot_quadHD" channelmask="0,0,1" uv0="1,128" uv1="256,128" uv2="256,256" uv3="1,256"/>
+	
+	<!--   Full Rez
+		<lightcard name="fade_lin" channelmask="1,0,0" uv0="0,0" uv1="32,0" uv2="32,256" uv3="0,256"/>
+	<lightcard name="fade_fast" channelmask="1,0,0" uv0="64,0" uv1="96,0" uv2="96,256" uv3="64,256"/>
+	<lightcard name="fade_scraper" channelmask="1,0,0" uv0="0,256" uv1="128,256" uv2="128,512" uv3="0,512"/>
+	<lightcard name="constant" channelmask="1,0,0" uv0="64,272" uv1="65,272" uv2="65,273" uv3="64,273"/>
+	<lightcard name="spot_wide" channelmask="1,0,0" uv0="386,0" uv1="510,0" uv2="510,128" uv3="386,128"/>
+	<lightcard name="circle" channelmask="1,0,0" uv0="258,0" uv1="384,0" uv2="384,128" uv3="258,128"/>
+	<lightcard name="spot_triple" channelmask="1,0,0" uv0="258,256" uv1="512,256" uv2="512,384" uv3="258,384"/>
+	<lightcard name="spot_quad" channelmask="1,0,0" uv0="258,384" uv1="512,384" uv2="512,512" uv3="258,512"/>
+	<lightcard name="fade_spotty" channelmask="1,0,0" uv0="128,256" uv1="256,256" uv2="256,384" uv3="128,384"/>
+	<lightcard name="fade_rounded" channelmask="1,0,0" uv0="128,384" uv1="256,384" uv2="256,512" uv3="128,512"/>
+	<lightcard name="fade_lin_soft" channelmask="1,0,0" uv0="126,128" uv1="256,128" uv2="256,256" uv3="126,256"/>
+  
+	<lightcard name="outside_corner" channelmask="0,1,0" uv0="432,16" uv1="496,16" uv2="496,80" uv3="432,80"/>
+	<lightcard name="inside_corner" channelmask="0,1,0" uv0="352,16" uv1="416,16" uv2="416,80" uv3="352,80"/>
+	<lightcard name="straight" channelmask="0,1,0" uv0="432,96" uv1="496,96" uv2="496,160" uv3="432,160"/>
+ 	<lightcard name="square" channelmask="0,1,0" uv0="256,0" uv1="320,0" uv2="320,64" uv3="256,64"/>
+ 	<lightcard name="wallsconce" channelmask="0,1,0" uv0="256,96" uv1="384,96" uv2="384,352" uv3="256,352"/>  
+	<lightcard name="spot_singleHD" channelmask="0,1,0" uv0="1,0" uv1="256,0" uv2="256,256" uv3="1,256"/>
+  	<lightcard name="edgeblur" channelmask="0,1,0" uv0="390,222" uv1="512,222" uv2="512,352" uv3="390,352"/>
+	<lightcard name="CT_tubeSM" channelmask="0,1,0" uv0="0,384" uv1="128,384" uv2="128,416" uv3="0,416"/>
+	<lightcard name="CT_tubeLG" channelmask="0,1,0" uv0="0,448" uv1="512,448" uv2="512,480" uv3="0,480"/>
+	
+	
+	<lightcard name="spot_doubleHD" channelmask="0,0,1" uv0="1,0" uv1="256,0" uv2="256,256" uv3="1,256"/>
+	<lightcard name="spot_double" channelmask="0,0,1" uv0="1,0" uv1="256,0" uv2="256,256" uv3="1,256"/>
+	<lightcard name="spot_quadHD" channelmask="0,0,1" uv0="1,256" uv1="512,256" uv2="512,512" uv3="1,512"/>
+	
+	-->
+</lightcards>

@@ -1,0 +1,105 @@
+<AudioUIMap>
+	<!-- optimize me -->
+	<Screen Name="Default" Event="" SwitchGroup="">
+		<!-- THESE ARE UI INPUT HASH TYPES WHICH CONTAIN PRESSED, REPEAT, AND RELEASED HASH UID. -->
+		<Input Type="DPAD_UP" Pressed="On" Repeat="On" Released="Off"	Event=""/>
+		<Input Type="DPAD_DOWN" Pressed="On" Repeat="On" Released="Off" Event=""/>
+		<Input Type="DPAD_LEFT" Pressed="On" Repeat="On" Released="Off" Event = "play_fe_menu_nav"/>
+		<Input Type="DPAD_RIGHT" Pressed="On" Repeat="On" Released="Off" Event = "play_fe_menu_nav"/>
+
+		<Input Type="BUTTON_START" Pressed="On" Repeat="Off" Released="Off" Event="play_hud_select"/>
+		<Input Type="BUTTON_SELECT" Pressed="On" Repeat="Off" Released="Off" Event="play_hud_select"/>
+
+		<Input Type="BUTTON_ACCEPT" Pressed="On" Repeat="Off" Released="Off" Event="play_hud_select"/>
+		<Input Type="BUTTON_BACK" Pressed="On" Repeat="Off" Released="Off" Event="play_hud_back"/>
+		<Input Type="BUTTON_BUTTON1" Pressed="On" Repeat="Off" Released="Off" Event=""/>
+		<Input Type="BUTTON_BUTTON2" Pressed="On" Repeat="Off" Released="Off" Event=""/>
+
+		<Input Type="BUTTON_L1" Pressed="On" Repeat="On" Released="Off" Event = ""/>
+		<Input Type="BUTTON_L2" Pressed="On" Repeat="On" Released="Off" Event = ""/>
+		<Input Type="BUTTON_L3" Pressed="On" Repeat="On" Released="Off" Event = ""/>
+
+		<Input Type="BUTTON_R1" Pressed="On" Repeat="On" Released="Off" Event = ""/>
+		<Input Type="BUTTON_R2" Pressed="On" Repeat="On" Released="Off" Event = ""/>
+		<Input Type="BUTTON_R3" Pressed="On" Repeat="On" Released="Off" Event = ""/>
+
+		<!-- THESE ARE UI HASH TYPES THAT DO NOT CONTAIN PRESSED, REPEAT, AND RELEASED HASH UID. JUST ITS OWN NAME IS HASHED. -->
+		<Input Type="THUMBSTICK_RIGHT" Event = ""/>
+		<Input Type="THUMBSTICK_RIGHT_UP" Event = ""/>
+		<Input Type="THUMBSTICK_RIGHT_DOWN" Event = ""/>
+		<Input Type="THUMBSTICK_RIGHT_LEFT" Event = "play_fe_menu_nav"/>
+		<Input Type="THUMBSTICK_RIGHT_RIGHT" Event = "play_fe_menu_nav"/>
+
+		<Input Type="THUMBSTICK_LEFT" 	Event = ""/>
+		<Input Type="THUMBSTICK_LEFT_UP" Event = ""/>
+		<Input Type="THUMBSTICK_LEFT_DOWN" Event = ""/>
+		<Input Type="THUMBSTICK_LEFT_LEFT" Event = "play_fe_menu_nav"/>
+		<Input Type="THUMBSTICK_LEFT_RIGHT" Event = "play_fe_menu_nav"/>
+
+		<Input Type="MOUSE_MOVE" Event = ""/>
+		<Input Type="MOUSE_BUTTON_LEFT" Event = "Play_ui_tm_mouse_select"/>
+		<Input Type="MOUSE_BUTTON_RIGHT" Event = "Play_ui_tm_mouse_select_2"/>
+
+		<Input Type="KEYBOARD_INPUT" Event = ""/>
+
+		<Input Type="DIALOG_YES" Event = "Play_ui_tm_mouse_select"/>
+		<Input Type="DIALOG_NO" Event = "Play_ui_tm_mouse_highlight_red"/>
+		<Input Type="DIALOG_OK" Event = "Play_ui_tm_mouse_select"/>
+		<Input Type="DIALOG_CANCEL" Event = "Play_ui_tm_mouse_highlight_red"/>
+
+		<Input Type="HIDE_COMPLETE" Event = "Play_ui_tm_mouse_select_2"/>
+		<Input Type="SHOW_COMPLETE" Event = "Play_ui_tm_mouse_select"/>
+
+		<Input Type="INTRO_COMPLETE" Event = ""/>
+		<Input Type="OUTRO_COMPLETE" Event = ""/>
+
+		<Input Type="ENABLE_INPUT" Event = ""/>
+		<Input Type="DISABLE_INPUT" Event = ""/>
+
+		<Input Type="FADE_IN_COMPLETE" Event = ""/>
+		<Input Type="FADE_OUT_COMPLETE" Event = ""/>
+		<Input Type="FADE_IN" Event = ""/>
+		<Input Type="FADE_OUT" Event = ""/>
+		
+		<Input Type = "UPGRADE_RACKET" Event= "Play_ui_tm_upgrade"/>
+		<Input Type = "DOWNGRADE_RACKET" Event= "Play_ui_tm_downgrade"/>
+		
+	</Screen>
+	
+	<Screen Name="RaidResults" Event="" SwitchGroup="">
+	
+	<Input Type="NEON_EDGE_FLICKER" Event = "Play_ui_rs_edge_flicker"/>
+	<Input Type="NEON_EDGE_ON" Event = "Play_ui_rs_edge_on"/>
+	<Input Type="NEON_CHINESE_FLICKER" Event = "Play_ui_rs_chinese_flicker"/>
+	<Input Type="NEON_CHINESE_ON" Event = "Play_ui_rs_chinese_on"/>
+	<Input Type="NEON_SUCCESS_FLICKER" Event = "Play_ui_rs_success_flicker"/>
+	<Input Type="NEON_SUCCESS_ON" Event = "Play_ui_rs_success_on"/>
+	<Input Type="NEON_BAR_FLICKER" Event = "Play_ui_rs_bar_flicker"/>
+	<Input Type="NEON_BAR_ON" Event = "Play_ui_rs_bar_flicker"/>
+	<Input Type="MONEY_COUNTER_START" Event = "Play_ui_rs_coins"/>
+	<Input Type="FACE_COUNTER_START" Event = "Play_ui_rs_face"/>
+	<Input Type="COMMODITY_HIGHLIGHT" Event = "Play_ui_rs_commodity"/>
+	<Input Type="BONUS_HIGHLIGHT" Event = "Play_ui_rs_bonus"/>
+	<Input Type="RIVAL_HIGHLIGHT" Event = ""/>
+	<Input Type="CAMERA_PAN" Event = ""/>
+	</Screen>
+	
+	<Screen Name="TurfManagement" Event="" SwitchGroup="">
+	
+	<Input Type = "INIT_SCREEN" Event= "Play_ui_tm_enter"/>
+	<Input Type = "DESTROY_SCREEN" Event= "Play_ui_tm_exit"/>
+	<Input Type = "HIGHLIGHT_RACKET_HIGHLIGHTED" Event= "Play_ui_tm_mouse_highlight_green"/>
+	<Input Type = "HIGHLIGHT_RACKET_SELECTED" Event= "Play_ui_tm_mouse_highlight_green"/>
+	<Input Type = "HIGHLIGHT_RACKET_LOCKED" Event= "Play_ui_tm_mouse_highlight_red"/>
+
+	
+	</Screen>
+
+	<Screen Name="TurfBlock" Event="" SwitchGroup="">
+	
+	</Screen>
+
+	<Screen Name="Racket" Event="" SwitchGroup="">
+	</Screen>
+
+</AudioUIMap>
