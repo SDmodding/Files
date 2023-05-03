@@ -1,0 +1,52 @@
+<!--
+
+	Game Slice dependency graph structure
+	==================================
+	A game slice is a short gameplay sequence.  ie.  "Talk to Winston", or "Beat up 5 gang"
+		- To properly setup the dependency graph, basically you define a list of game slices, and then setup the dependency.
+		- A Mission, an Event can be made up of a few game slices
+		- An Objective is most likely going to be made up one one (or at most two) game slices
+
+	A game slice is made up of a few components.  Here is an example:
+			
+		<gameslice name="**GAMESLICE_NAME**">
+			<title>**GAMESLICE_TITLE**</title>
+			<scriptclass>**GAMESLICE_CLASS**</scriptclass>
+			<dependent>**GAMESLICE_NAME**</dependent>   \
+			<dependent>**GAMESLICE_NAME**</dependent>    - You can have as many as you want.
+			<dependent>**GAMESLICE_NAME**</dependent>   /
+			<minimumdependents>**NUMBER**</minimumdependents>
+		</gameslice>     
+	   
+		- **GAMESLICE_NAME** - This is an internal name, so you can pretty much name it anything, BUT it has to be unique, in this file.
+		- **GAMESLICE_TITLE** - This is a short caption that would describe this slice.  This will be displayed by the debug Progression UI,
+		  so you might want to make it meaningful.  ie. "Talk to Winston" (Without the quotes)
+		- **GAMESLICE_CLASS** - This is the directory name of the Skookum class that you want to be using. ie. "BBC_1_Winston" (Without the quotes)
+        
+		- As you can see above, you can have as many dependent as you want for a game slice.  Whenever you have
+		  a dependent, it means THIS game slice, will only be unlocked and run if the dependents are completed.
+		- Normally, you will likely want all the dependent game slices to be finished, before your game slice starts,
+		  in which case, you can omit the MinimumDependents.
+		- Otherwise, if you want this game slice to start when you complete just a few of them, you can specify the MinimumDependents field.
+		  An example would be if you want to create a mission and it will unlock as soon as you complete 3 out of 4 objectives.
+		  Then you list 4 game slice dependents, and then put in <minimumdependents>3</minimumdependents>
+				
+	Important Note: Currently the order that you list the game slice in this file is IMPORTANT.
+
+	//    <scriptclass> THIS IS YOUR DIRECTORY NAME  </scriptclass>
+
+	Example that you can copy / paste:
+	   
+		<gameslice name="S1">
+		<title>Socialize with Bouncer</title>
+		<scriptclass>Encounter</scriptclass>
+		</gameslice>     
+
+-->
+
+<supportfiles>
+	<supportfile name="Definitions\SupportFiles.xml"></supportfile>
+	<supportfile name="Objectives\SupportFiles.xml"></supportfile>
+	<supportfile name="SceneSettings\SupportFiles.xml"></supportfile>
+	<dependencygraph name="DependencyGraph\Main.xml"></dependencygraph>
+</supportfiles>
