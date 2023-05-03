@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Race Intro / Cheaters Never Prosper Definitions
+
+
+-->
+<gameslices>
+	<gameslice name="F_RI_1" holdcurtain="true">
+		<title>Cheaters Never Prosper</title>
+		<scriptclass>F_RI_1</scriptclass>
+		<restorelocationmarker>Locations-RIEventStart</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="F_CNP_2" holdcurtain="true">
+		<title>Cheaters Never Prosper 2</title>
+		<scriptclass>F_CNP_2</scriptclass>
+		<restorelocationmarker>Locations-CheatersNeverProsper2Start</restorelocationmarker>
+	</gameslice>	
+	
+	<gameslice name="F_CNP_3" holdcurtain="true">
+		<title>Cheaters Never Prosper 3</title>
+		<scriptclass>F_CNP_3</scriptclass>
+		<restorelocationmarker>Locations-CheatersNeverProsper3Start</restorelocationmarker>
+	</gameslice>		
+	
+	<gameslice name="F_CNP_4" holdcurtain="true">
+		<title>Cheaters Never Prosper 4</title>
+		<scriptclass>F_CNP_4</scriptclass>
+		<restorelocationmarker>Locations-CheatersNeverProsper4Start</restorelocationmarker>
+	</gameslice>		
+</gameslices>
+
+<groups>
+	<favour name="F_RI" statsid="43">
+		<title>$SGTITLE_CHEATERS_NEVERPROS</title>
+		<scriptclass>RIEvent</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_RaceIntro</triggerobject>
+		<restorelocationmarker>Locations-RIEventStart</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">F_RI_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+	
+	<favour name="F_CNP2" statsid="44">
+		<title>$SGTITLE_CHEATERS_NEVERPROS2</title>
+		<scriptclass>CheatersNeverProsper2</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_CNP2</triggerobject>
+		<restorelocationmarker>Locations-CheatersNeverProsper2Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">F_CNP_2</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+	
+	<favour name="F_CNP3" statsid="45">
+		<title>$SGTITLE_CHEATERS_NEVERPROS3</title>
+		<scriptclass>CheatersNeverProsper3</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_CNP3</triggerobject>
+		<restorelocationmarker>Locations-CheatersNeverProsper3Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">F_CNP_3</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>	
+	
+	<favour name="F_CNP4" statsid="46">
+		<title>$SGTITLE_CHEATERS_NEVERPROS4</title>
+		<scriptclass>CheatersNeverProsper4</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_CNP4</triggerobject>
+		<restorelocationmarker>Locations-CheatersNeverProsper4Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">F_CNP_4</child>
+	</favour>		
+</groups>
+

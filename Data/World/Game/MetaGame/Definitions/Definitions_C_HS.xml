@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>	
+
+	<gameslice name="C_R_Close">
+		<title>Close Hotshot's Case</title>
+		<scriptclass>C_Race_Close</scriptclass>
+		<dependent>R_42_Race</dependent>
+	</gameslice>
+
+	<gameslice name="Race_Start_Pendrew" holdcurtain="true">
+		<title>See Jane to Open Case</title>
+		<scriptclass>Race_Start_Pendrew</scriptclass>
+	</gameslice>
+	<gameslice name="Race_Start_Street_Race" holdcurtain="true">
+		<title>Race your first Race</title>
+		<scriptclass>Race_Start_Street_Race</scriptclass>
+		<scenelayeronstart geoautoactivate="false" activate="true">R_NP_04</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">R_NP_04</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">SS_Ext_POI</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="true">R_NP_04_Barrier01</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">R_NP_04_Barrier01</scenelayeronend>
+		<scenelayeronstart geoautoactivate="true" activate="false">R_NP_04_Amb</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">R_NP_04_Amb</scenelayeronend>
+		<scenelayeronstart geoautoactivate="true" activate="false">R_NP_04_Amb2</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">R_NP_04_Amb2</scenelayeronend>
+		<scenelayeronstart geoautoactivate="true" activate="false">R_NP_04_Amb3</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">R_NP_04_Amb3</scenelayeronend>	
+		<scenelayeronstart geoautoactivate="true" activate="false">R_NP_04_Amb4</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">R_NP_04_Amb4</scenelayeronend>	
+		<scenelayeronstart geoautoactivate="true" activate="false">R_NP_04_Amb5</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">R_NP_04_Amb5</scenelayeronend>	
+		<scenelayeronstart geoautoactivate="true" activate="false">R_NP_04_Amb6</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">R_NP_04_Amb6</scenelayeronend>	
+		<scenelayeronstart geoautoactivate="true" activate="false">R_NP_04_Amb7</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">R_NP_04_Amb7</scenelayeronend>	
+		<scenelayeronstart geoautoactivate="true" activate="false">R_NP_04_Amb8</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">R_NP_04_Amb8</scenelayeronend>		
+		<dependent>Race_Start_Pendrew</dependent>
+		<restorelocationmarker>Locations-C_Race2_spawn</restorelocationmarker>
+	</gameslice>
+	<gameslice name="R_21_Trace" holdcurtain="true">	
+		<title>Trace the call</title>
+		<scriptclass>R_21_Trace</scriptclass>		
+		<restorelocationmarker>Locations-C_Race2_spawn</restorelocationmarker>
+	</gameslice>
+	<gameslice name="R_22_HQ" holdcurtain="true">
+		<title>Find Hotshot</title>
+		<scriptclass>R_22_HQ</scriptclass>
+		<restorelocationmarker>R2Case-Restore_Trace</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitSanitary</setdisguiseonstart>
+		<dependent>R_21_Trace</dependent>
+	</gameslice>
+	<gameslice name="R_23_Plant" holdcurtain="true">
+		<title>Plant Bug</title>
+		<scriptclass>R_23_Plant</scriptclass>
+		<restorelocationmarker>R2Case-Restore_Plant</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitSanitary</setdisguiseonstart>
+		<dependent>R_22_HQ</dependent>
+	</gameslice>
+	<gameslice name="R_24_Follow" holdcurtain="true">
+		<title>Listen</title>
+		<scriptclass>R_24_Follow</scriptclass>
+		<dependent>R_23_Plant</dependent>
+		<restorelocationmarker>R2Case-Restore_Plant</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitSanitary</setdisguiseonstart>
+	</gameslice>
+	<gameslice name="R_25_Call">
+		<title>Call Teng</title>
+		<scriptclass>R_25_Call</scriptclass>
+		<dependent>R_24_Follow</dependent>
+	</gameslice>
+	<gameslice name="R_31_Text" holdcurtain="true">
+		<title>Text from Teng</title>
+		<restorelocationmarker>R3Case-Trace_Restore</restorelocationmarker>
+		<vehiclerestore range="100.000000000">R4Case-VehicleStartRestore</vehiclerestore>				
+		<scriptclass>R_31_Text</scriptclass>
+		<!-- <dependent>R_30_Teng</dependent> -->
+	</gameslice>
+	<gameslice name="R_32_Find" holdcurtain="true">
+		<title>Find the crash</title>
+		<scriptclass>R_32_Find</scriptclass>
+		<restorelocationmarker>R3Case-PhoneTrace</restorelocationmarker>
+		<vehiclerestore range="100.000000000">R3Case-PhoneTrace</vehiclerestore>				
+		<dependent>R_31_Text</dependent>
+	</gameslice>
+	<gameslice name="R_33_Question" holdcurtain="true">
+		<title>Question witness</title>
+		<scriptclass>R_33_Question</scriptclass>
+		<restorelocationmarker>R3Case-mkr_crash_site</restorelocationmarker>		
+		<dependent>R_32_Find</dependent>
+	</gameslice>
+	<gameslice name="R_34_Photo" holdcurtain="true">
+		<title>Photo the crash</title>
+		<scriptclass>R_34_Photo</scriptclass>
+		<restorelocationmarker>R3Case-mkr_crash_site</restorelocationmarker>		
+		<dependent>R_33_Question</dependent>
+	</gameslice>
+	<gameslice name="R_41_Find" holdcurtain="true">
+		<title>Find Race</title>
+		<scriptclass>R_41_Find</scriptclass>
+		<dependent>R_34_Photo</dependent>
+		<restorelocationmarker>R4Case-RestoreLeaveCrash</restorelocationmarker>
+	</gameslice>
+	<gameslice name="R_42_Race" holdcurtain="true">
+		<title>Race RacerX</title>
+		<scriptclass>R_42_Race</scriptclass>
+		<restorelocationmarker>R4Case-RestoreRacePlayer</restorelocationmarker>
+		<vehiclerestore range="1000.000000000">R4Case-mkr_racestart_Player</vehiclerestore>				
+		<dependent>R_41_Find</dependent>
+	</gameslice>
+</gameslices>
+<groups>	
+	<mission name="C_R_Start" statsid="1"> 
+		<title>$SGTITLE_RACE_CASE_START</title>
+		<scriptclass>RaceStartCase</scriptclass>
+		<restorelocationmarker>Locations-C_R_Start</restorelocationmarker>
+		<triggerobject>ProgressionTriggers_Cases-C_Race_Start</triggerobject>
+		<child checkpoint="true">Race_Start_Pendrew</child>
+		<child checkpoint="true">Race_Start_Street_Race</child>
+		<trackgamesliceas>CASE_PRESENCE</trackgamesliceas>
+	</mission>
+	<mission name="C_R2" statsid="2">
+		<title>$SGTITLE_HOTSHOT_LEAD_2</title>
+		<scriptclass>R2Case</scriptclass>
+		<!-- <triggerobject>ProgressionTriggers_Cases-C_Race2</triggerobject> PDAContact_JANE_TENG -->
+		<restorelocationmarker>Locations-C_Race2_spawn</restorelocationmarker>
+		<forceweather type="sunny" locked="true"></forceweather>
+		<triggerobject>ProgressionTriggers_Cases-C_Race2</triggerobject>
+		<cancellocationmarker>Locations-C_Race2_spawn</cancellocationmarker>				
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<child checkpoint="true">R_21_Trace</child>
+		<child checkpoint="true">R_22_HQ</child>
+		<child checkpoint="true">R_23_Plant</child>
+		<child checkpoint="true">R_24_Follow</child>
+		<child>R_25_Call</child>
+		<trackgamesliceas>CASE_PRESENCE</trackgamesliceas>
+	</mission>
+	<mission name="C_R4" statsid="1">
+		<title>$SGTITLE_HOTSHOT_LEAD_4</title>
+		<scriptclass>R4Case</scriptclass>
+		<triggerobject>ProgressionTriggers_Cases-C_Race3</triggerobject> 
+		<restorelocationmarker>Locations-C_Race3_spawn</restorelocationmarker>
+		<cancellocationmarker>Locations-C_Race3_spawn</cancellocationmarker>
+		<altlayeronstart activate="true" flush="true">HotShot</altlayeronstart>
+		<altlayeronend activate="false" flush="true">HotShot</altlayeronend>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>CASE</trackgamesliceas>
+		<child checkpoint="true">R_31_Text</child>
+		<child checkpoint="true">R_32_Find</child>
+		<child checkpoint="true">R_33_Question</child>
+		<child checkpoint="true">R_34_Photo</child>
+		<child checkpoint="true">R_41_Find</child>
+		<child checkpoint="true">R_42_Race</child>
+		<child >C_R_Close</child>
+	</mission>
+</groups>
+

@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+</gameslices>
+<groups>
+	<scenario name="S_AR" repeatableinterval="600">
+		<title>$SGTITLE_SCENARIO_AMBRESPONSE</title>
+		<scriptclass>S_AmbulanceResponse</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+		</enablemasks>
+	</scenario>
+	<scenario name="S_DD" repeatableinterval="300">
+		<title>$SGTITLE_SCENARIO_DRUG_DEAL</title>
+		<scriptclass>S_DrugDeal</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+		</enablemasks>
+	</scenario>
+	<scenario name="S_CD" repeatableinterval="300">
+		<title>$SGTITLE_SCENARIO_COP_DEATH</title>
+		<scriptclass>S_CopDeath</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+		</enablemasks>
+	</scenario>
+	<scenario name="S_BBC_FL" repeatableinterval="3">
+		<title>$SGTITLE_SCENARIO_BBC_FLIRT</title>
+		<scriptclass>S_BBCFlirt</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+		</enablemasks>
+	</scenario>
+	<scenario name="S_NATD" repeatableinterval="300">
+		<title>$SGTITLE_SCENARIO_NOT_A_TAXI</title>
+		<scriptclass>S_NotATaxiDriver</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+		</enablemasks>
+	</scenario>
+	<scenario name="S_PS" repeatableinterval="300">
+		<title>$SGTITLE_SCENARIO_PURSESNATCH</title>
+		<scriptclass>S_PurseSnatch</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+		</enablemasks>
+	</scenario>
+	<scenario name="S_CAT" repeatableinterval="300">
+		<title>$SGTITLE_SCENARIO_COPANDTRIAD</title>
+		<scriptclass>S_CopAndTriad</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+		</enablemasks>
+	</scenario>	
+	<scenario name="S_CAP_01" repeatableinterval="300">
+		<title>$SGTITLE_SCENARIO_COPANDPED01</title>
+		<scriptclass>S_CopAndPed_01</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+		</enablemasks>
+	</scenario>	
+	<scenario name="S_CAP_02" repeatableinterval="300">
+		<title>$SGTITLE_SCENARIO_COPANDPED02</title>
+		<scriptclass>S_CopAndPed_02</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+		</enablemasks>
+	</scenario>	
+	<scenario name="S_TC" repeatableinterval="60">
+		<title>$SGTITLE_SCENARIO_THUGCARJACK</title>
+		<scriptclass>S_ThugCarjack</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>			
+		</enablemasks>
+	</scenario>			
+	<scenario name="S_UT" repeatableinterval="30">
+		<title>$SGTITLE_SCENARIO_UNLOADTRUCK</title>
+		<scriptclass>S_UnloadTruck</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>			
+		</enablemasks>
+	</scenario>	
+	<scenario name="S_HJ" repeatableinterval="1">
+		<title>$SGTITLE_SCENARIO_VANHIJACK</title>
+		<scriptclass>S_Hijacking</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>
+			<enable for="P_CopChase"></enable>			
+		</enablemasks>
+	</scenario>
+	<scenario name="S_CopCheckID" repeatableinterval="300">
+		<title>$SGTITLE_SCENARIO_COPCHECKIDS</title>
+		<scriptclass>S_CopCheckID</scriptclass>
+		<failtimeout>300.000000000</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+		</enablemasks>
+	</scenario>
+	<scenario name="S_CopWriteTicket" repeatableinterval="300">
+		<title>$SGTITLE_SCENARIO_COPTICKET</title>
+		<scriptclass>S_CopWriteTicket</scriptclass>
+		<failtimeout>300.000000000</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+		</enablemasks>
+	</scenario>	
+	<scenario name="S_FaceComment" repeatableinterval="30">
+		<title>$SGTITLE_SCENARIO_FACECMT</title>
+		<scriptclass>S_FaceComment</scriptclass>
+		<failtimeout>300.000000000</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>		
+		</enablemasks>
+	</scenario>	
+	<scenario name="BBC_BOD" repeatableinterval="10">
+		<title>$SGTITLE_BOUNCER_DOOR_OPEN</title>
+        <layeroverride>BBC_BOD</layeroverride>			
+		<scriptclass>BouncerOpenDoors</scriptclass>
+		<triggerobject>ProgressionTriggers_LW-AMB_Bouncer_Door_Open</triggerobject>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>		
+		</enablemasks>
+	</scenario>
+	<scenario name="KT_S_FA_Clothing_09" repeatableinterval="1">
+		<title>$SGTITLE_KT_CLOTHING_09</title>
+		<scriptclass>S_Fashionista</scriptclass>
+		<triggerobject>ProgressionTriggers_LW-KT_S_FA_Clothing_09</triggerobject>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>		
+		</enablemasks>
+		<disablemasks>
+			<disable for="M_FU"></disable>			
+			<disable for="M_WED"></disable>			
+		</disablemasks>	
+	</scenario>		
+	<scenario name="CN_S_FA_Clothing_08" repeatableinterval="1">
+		<title>$SGTITLE_CENTRAL_CLOTHING_08</title>
+		<scriptclass>S_Fashionista</scriptclass>
+		<triggerobject>ProgressionTriggers_LW-CN_S_FA_Clothing_08</triggerobject>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>		
+		</enablemasks>
+		<disablemasks>
+			<disable for="M_FU"></disable>			
+			<disable for="M_WED"></disable>			
+		</disablemasks>	
+	</scenario>
+	<scenario name="CN_S_FA_Clothing_07" repeatableinterval="1">
+		<title>$SGTITLE_CENTRAL_CLOTHING_07</title>
+		<scriptclass>S_Fashionista</scriptclass>
+		<triggerobject>ProgressionTriggers_LW-CN_S_FA_Clothing_07</triggerobject>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>		
+		</enablemasks>
+		<disablemasks>
+			<disable for="M_FU"></disable>			
+			<disable for="M_WED"></disable>			
+		</disablemasks>	
+	</scenario>	
+	<scenario name="CN_S_FA_Clothing_06" repeatableinterval="1">
+		<title>$SGTITLE_CENTRAL_CLOTHING_06</title>
+		<scriptclass>S_Fashionista</scriptclass>
+		<triggerobject>ProgressionTriggers_LW-CN_S_FA_Clothing_06</triggerobject>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>		
+		</enablemasks>
+		<disablemasks>
+			<disable for="M_FU"></disable>			
+			<disable for="M_WED"></disable>			
+		</disablemasks>	
+	</scenario>	
+		<scenario name="CN_S_FA_Clothing_05" repeatableinterval="1">
+		<title>$SGTITLE_CENTRAL_CLOTHING_05</title>
+		<scriptclass>S_Fashionista</scriptclass>
+		<triggerobject>ProgressionTriggers_LW-CN_S_FA_Clothing_05</triggerobject>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>		
+		</enablemasks>
+		<disablemasks>
+			<disable for="M_FU"></disable>			
+			<disable for="M_WED"></disable>			
+		</disablemasks>	
+	</scenario>	
+	<scenario name="CN_S_FA_Clothing_04" repeatableinterval="1">
+		<title>$SGTITLE_CENTRAL_CLOTHING_04</title>
+		<scriptclass>S_Fashionista</scriptclass>
+		<triggerobject>ProgressionTriggers_LW-CN_S_FA_Clothing_04</triggerobject>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>		
+		</enablemasks>
+		<disablemasks>
+			<disable for="M_FU"></disable>			
+			<disable for="M_WED"></disable>			
+		</disablemasks>	
+	</scenario>	
+	<scenario name="CN_S_FA_Clothing_03" repeatableinterval="1">
+		<title>$SGTITLE_CENTRAL_CLOTHING_03</title>
+		<scriptclass>S_Fashionista</scriptclass>
+		<triggerobject>ProgressionTriggers_LW-CN_S_FA_Clothing_03</triggerobject>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>		
+		</enablemasks>
+		<disablemasks>
+			<disable for="M_FU"></disable>			
+			<disable for="M_WED"></disable>			
+		</disablemasks>	
+	</scenario>		
+	<!-- Massage Parlours -->
+	<scenario name="S_AB_Massage01" repeatableinterval = "2">
+		<title>Scenario - Massage Parlors</title>
+		<scriptclass>S_Massage</scriptclass>
+		<layeroverride>S_AB_Massage01</layeroverride>		
+		<triggerobject>ProgressionTriggers_LW-MarkerProgressionTrig_S_AB_Massage01</triggerobject>
+		<failtimeout>0.001</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>		
+		</enablemasks>
+	</scenario>
+	<scenario name="S_CN_Massage01" repeatableinterval = "2">
+		<title>Scenario - Massage Parlors</title>
+		<scriptclass>S_Massage</scriptclass>
+		<layeroverride>S_CN_Massage01</layeroverride>			
+		<triggerobject>ProgressionTriggers_LW-MarkerProgressionTrig_S_CN_Massage01</triggerobject>
+		<failtimeout>0.001</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+		<disablemasks>
+			<disable for="M_IN"></disable>
+			<disable for="M_FU"></disable>			
+			<disable for="M_WED"></disable>			
+		</disablemasks>	
+	</scenario>
+	<scenario name="S_KT_Massage01" repeatableinterval = "2">
+		<title>Scenario - Massage Parlors</title>
+		<scriptclass>S_Massage</scriptclass>
+		<layeroverride>S_KT_Massage01</layeroverride>			
+		<triggerobject>ProgressionTriggers_LW-MarkerProgressionTrig_S_KT_Massage01</triggerobject>
+		<failtimeout>0.001</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>						
+		</enablemasks>
+		<disablemasks>
+			<disable for="J_DC2"></disable>
+		</disablemasks>
+	</scenario>
+	<scenario name="S_NP_Massage01" repeatableinterval = "2">
+		<title>Scenario - Massage Parlors</title>
+		<scriptclass>S_Massage</scriptclass>
+		<layeroverride>S_NP_Massage01</layeroverride>				
+		<triggerobject>ProgressionTriggers_LW-MarkerProgressionTrig_S_NP_Massage01</triggerobject>
+		<failtimeout>0.001</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>					
+		</enablemasks>
+	</scenario>
+
+	<!-- Seedy Massage Parlours -->
+	<scenario name="S_NP_Seedy_Massage01" repeatableinterval = "2">
+		<title>Scenario - Seedy Massage Parlors01</title>
+		<scriptclass>S_Massage</scriptclass>
+            <layeroverride>S_NP_Seedy_Massage01</layeroverride>		
+		<triggerobject>ProgressionTriggers_LW-MarkerProgressionTrig_S_NP_Seedy_Massage01</triggerobject>
+		<failtimeout>0.001</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	<scenario name="S_NP_Seedy_Massage02" repeatableinterval = "2">
+		<title>Scenario - Seedy Massage Parlors02</title>
+		<scriptclass>S_Massage</scriptclass>
+            <layeroverride>S_NP_Seedy_Massage02</layeroverride>			
+		<triggerobject>ProgressionTriggers_LW-MarkerProgressionTrig_S_NP_Seedy_Massage02</triggerobject>
+		<failtimeout>0.001</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>				
+		</enablemasks>
+		<disablemasks>
+			<disable for="M_SS"></disable>
+		</disablemasks>
+	</scenario>
+	<scenario name="S_NP_Seedy_Massage03" repeatableinterval = "2">
+		<title>Scenario - Seedy Massage Parlors03</title>
+		<scriptclass>S_Massage</scriptclass>
+		<layeroverride>S_NP_Seedy_Massage03</layeroverride>				
+		<triggerobject>ProgressionTriggers_LW-MarkerProgressionTrig_S_NP_Seedy_Massage03</triggerobject>
+		<failtimeout>0.001</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>				
+		</enablemasks>		
+	</scenario>
+	<scenario name="S_NP_Seedy_Massage04" repeatableinterval = "2">
+		<title>Scenario - Seedy Massage Parlors04</title>
+		<scriptclass>S_Massage</scriptclass>
+		<layeroverride>S_NP_Seedy_Massage04</layeroverride>				
+		<triggerobject>ProgressionTriggers_LW-MarkerProgressionTrig_S_NP_Seedy_Massage04</triggerobject>
+		<failtimeout>0.001</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<!-- Hostess Massage Parlours -->
+	<scenario name="S_SOHO_Massage01" repeatableinterval = "2">
+		<title>Scenario - Hostess Massage Parlor01</title>
+		<scriptclass>S_Massage</scriptclass>
+		<layeroverride>S_SOHO_Massage01</layeroverride>		
+		<triggerobject>ProgressionTriggers_LW-MarkerProgressionTrig_S_SOHO_Massage01</triggerobject>
+		<failtimeout>0.001</failtimeout>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="missions"></enable>			
+			<enable forcategory="events"></enable>				
+			<enable forcategory="cases"></enable>					
+			<enable forcategory="dates"></enable>			
+			<enable forcategory="jobs"></enable>			
+			<disable forcategory="races"></disable>	
+			<enable forcategory="favours"></enable>						
+			<enable forcategory="sprinkles"></enable>		
+		</enablemasks>
+		<disablemasks>
+			<disable for="M_IV"></disable>
+		</disablemasks>
+	</scenario>	
+</groups>
+

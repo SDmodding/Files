@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+
+<gameslices>
+
+	<gameslice name="E_AI_1">
+		<title>Alley Intervention 1</title>
+		<scriptclass>E_AI_1</scriptclass>
+		<restorelocationmarker>Locations-AlleyIntervention_Spawn</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="E_AI2_1">
+		<title>Alley Intervention 2</title>
+		<scriptclass>E_AI2_1</scriptclass>
+		<restorelocationmarker>Locations-AlleyIntervention2_Spawn</restorelocationmarker>
+	</gameslice>
+
+</gameslices>
+
+
+<groups>
+
+	<event name="E_AI" statsid="8">
+		<title>$SGTITLE_ALLEY_INTERVENTION</title>
+		<scriptclass>E_AI</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_AlleyIntervention</triggerobject>
+		<restorelocationmarker>Locations-AlleyIntervention_Spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>E_AI_1</child>
+	</event>
+	
+	<event name="E_AI2" statsid="9">
+		<title>$SGTITLE_ALLEY_INTERVENTION_2</title>
+		<scriptclass>E_AI2</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_AI2</triggerobject>
+		<restorelocationmarker>Locations-AlleyIntervention2_Spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>E_AI2_1</child>
+	</event>
+
+</groups>

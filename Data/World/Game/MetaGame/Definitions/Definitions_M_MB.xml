@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<gameslices>
+	<gameslice name="MB_1_Meet" holdcurtain="true">
+		<title>Meet Winston at the Restaurant</title>
+		<scriptclass>MB_1_Meet</scriptclass>
+	</gameslice>
+	<gameslice name="MB_3_BusStopB" holdcurtain="true">
+		<title>Bus Stop 1</title>
+		<scriptclass>MB_3_BusStopB</scriptclass>
+		<restorelocationmarker>MBMission-player_respawn2</restorelocationmarker>
+		<dependent>MB_1_Meet</dependent>
+	</gameslice>
+	<gameslice name="MB_3_BusStopC" holdcurtain="true">
+		<title>Bus Stop 2</title>
+		<scriptclass>MB_3_BusStopC</scriptclass>
+		<restorelocationmarker>MBMission-player_respawn3</restorelocationmarker>
+		<dependent>MB_3_BusStopB</dependent>
+	</gameslice>
+	<gameslice name="MB_4_LastStop" holdcurtain="true">
+		<title>Bus Stop 3</title>
+		<scriptclass>MB_4_LastStop</scriptclass>
+		<restorelocationmarker>MBMission-player_respawn4</restorelocationmarker>
+		<dependent>MB_3_BusStopC</dependent>
+	</gameslice>
+	<gameslice name="MB_5_Chase" holdcurtain="true">
+		<title>Chase Rival Minibus</title>
+		<scriptclass>MB_5_Chase</scriptclass>
+		<restorelocationmarker>MBMission-Marker_Respawn_Chase</restorelocationmarker>
+		<dependent>MB_4_LastStop</dependent>
+	</gameslice>
+	<gameslice name="MB_6_DropOff" holdcurtain="true">
+		<title>Dropoff 1</title>
+		<scriptclass>MB_6_DropOff</scriptclass>
+		<restorelocationmarker>MBMission-player_respawn6</restorelocationmarker>
+		<dependent>MB_5_Chase</dependent>
+	</gameslice>
+	<gameslice name="MB_7_Ambush">
+		<title>Ambush</title>
+		<scriptclass>MB_7_Ambush</scriptclass>
+		<dependent>MB_6_DropOff</dependent>
+	</gameslice>
+	<gameslice name="MB_8_DropOff" holdcurtain="true">
+		<title>DropOff 2</title>
+		<scriptclass>MB_8_DropOff</scriptclass>
+		<restorelocationmarker>MBMission-player_respawn6</restorelocationmarker>
+		<dependent>MB_7_Ambush</dependent>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_MB" statsid="16">
+		<title>$SGTITLE_MINI_BUS</title>
+		<scriptclass>MBMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-M_MB</triggerobject>
+		<restorelocationmarker>Locations-MB_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_MB</completelocationmarker>
+		<cancellocationmarker>Locations-MB_spawn</cancellocationmarker>        
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child>MB_1_Meet</child>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Spc_Chu_Back_Peds</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="true">NP_Spc_Chu_Back_Peds</scenelayeronend>		
+		<child checkpoint="true">MB_3_BusStopB</child>
+		<child checkpoint="true">MB_3_BusStopC</child>
+		<child checkpoint="true">MB_4_LastStop</child>
+		<child checkpoint="true">MB_5_Chase</child>
+		<child checkpoint="true">MB_6_DropOff</child>
+		<child>MB_7_Ambush</child>
+		<child checkpoint="true">MB_8_DropOff</child>
+		<loadhintonstart priority="0">$LOADING_HINT_MB_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_mb_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_SUD_START</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_sud_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_NMC_START</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_nmc_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+</groups>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<gameslices>   
+	<!-- DEATH BY A THOUSAND CUTS -->
+	<gameslice name="E_DTC_1" holdcurtain="true">
+		<title>Death by a Thousand Cuts</title>
+		<scriptclass>E_DTC_1</scriptclass>
+		<restorelocationmarker>E_DTC-teleport_player</restorelocationmarker>
+	</gameslice>
+</gameslices>
+ 
+<groups>
+	<job name="E_DTC" statsid="1">
+		<title>$SGTITLE_DEATHBYATHOUSANDCUTS</title>
+		<scriptclass>E_DTC</scriptclass>
+		<restorelocationmarker>E_DTC-teleport_player</restorelocationmarker> 
+		<completelocationmarker>Locations-E_DTC_Start</completelocationmarker>
+		<triggerobject>ProgressionTriggers_Events-E_DTC</triggerobject>
+		<deferredregionrestart>false</deferredregionrestart>
+		<ignoresafehouserestore>true</ignoresafehouserestore>	
+		<child checkpoint="true">E_DTC_1</child>		
+		<trackgamesliceas>DLC</trackgamesliceas>		
+	</job>
+</groups>
+

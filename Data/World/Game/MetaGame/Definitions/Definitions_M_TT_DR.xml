@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<gameslices>
+	<gameslice name="DR_00_GoToRace" holdcurtain="true">
+		<title>Go to Race</title>
+		<scriptclass>DR_00_GoToRace</scriptclass>
+		<restorelocationmarker>ProgressionTriggers_TT-DRMission</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="DR_01_Race" holdcurtain="true">
+		<title>Death Race</title>
+		<scriptclass>DR_01_Race</scriptclass>
+		<restorelocationmarker>DRMission-Restore_RaceCar</restorelocationmarker>
+		<dependent>DR_00_GoToRace</dependent>
+		<scenelayeronstart geoautoactivate="false" activate="true">R_AB_02_Barrier01</scenelayeronstart>
+		<scenelayeronend geoautoactivate="false" activate="false">R_AB_02_Barrier01</scenelayeronend>
+	</gameslice>
+</gameslices>
+
+<groups>	
+	<mission name="M_TT_DR">
+		<title>$SGTITLE_DEATH_RACE</title>
+		<scriptclass>DRMission</scriptclass>
+		<triggerobject>ProgressionTriggers_TT-DRMission</triggerobject>
+		<audiooverride>M_TT</audiooverride>	
+		<completelocationmarker>Locations_TT-M_DR_Start</completelocationmarker>
+		<restorelocationmarker>Locations_TT-Unlocker_Start</restorelocationmarker>				
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>DLC</trackgamesliceas>
+		<child checkpoint="true">DR_00_GoToRace</child>
+		<child checkpoint="true">DR_01_Race</child>
+	</mission>
+</groups>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="Election">
+		<title>Election Call</title>
+		<scriptclass>Election</scriptclass>
+	</gameslice>
+
+</gameslices>
+	
+<groups>
+
+	<mission name="M_TEC">
+		<title>$SGTITLE_THE_ELECTION_CALL</title>
+		<scriptclass>TECMission</scriptclass>
+		<pdatrigger>Enforcer</pdatrigger>
+		<child>Election</child>
+	</mission>
+
+</groups>
+

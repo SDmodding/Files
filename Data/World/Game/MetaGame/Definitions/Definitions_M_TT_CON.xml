@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<gameslices>
+	<gameslice name="CON_00_MeetWithTang" holdcurtain="true">
+		<title>Intro</title>
+		<scriptclass>CON_00_MeetWithTang</scriptclass>
+		<restorelocationmarker>CONMission-InitialRestore</restorelocationmarker>
+	</gameslice>
+	<gameslice name="CON_01_Convoy" holdcurtain="true">
+		<title>Convoy</title>
+		<scriptclass>CON_01_Convoy</scriptclass>
+		<restorelocationmarker>CONMission-Restore_ConvoyCar</restorelocationmarker>
+		<dependent>CON_00_MeetWithTang</dependent>
+	</gameslice>
+	<gameslice name="CON_02_GoToGarage" holdcurtain="true">
+		<title>Garage</title>
+		<scriptclass>CON_02_GoToGarage</scriptclass>
+		<restorelocationmarker>CONMission-Restore_ReturnCar</restorelocationmarker>
+		<dependent>CON_01_Convoy</dependent>
+	</gameslice>
+</gameslices>
+
+<groups>	
+	<mission name="M_TT_CON">
+		<title>$SGTITLE_CONVOY</title>
+		<scriptclass>CONMission</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_TT-CONMission</triggerobject>
+		<audiooverride>M_TT</audiooverride>
+		<completelocationmarker>Locations_TT-M_CON_Start</completelocationmarker>
+		<restorelocationmarker>Locations_TT-Unlocker_Start</restorelocationmarker>		
+		<deferredregionrestart>false</deferredregionrestart>
+		<trackgamesliceas>DLC</trackgamesliceas>
+		<child checkpoint="true">CON_00_MeetWithTang</child>
+		<child checkpoint="true">CON_01_Convoy</child>
+		<child checkpoint="true">CON_02_GoToGarage</child>
+	</mission>
+</groups>
+

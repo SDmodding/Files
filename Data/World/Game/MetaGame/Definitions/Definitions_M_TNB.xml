@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="TNB_1_Meeting" holdcurtain="true">
+		<title>Ponytail Meeting</title>
+		<scriptclass>TNB_1_Meeting</scriptclass>
+		<restorelocationmarker>Locations-TNB_Fail_Spawn</restorelocationmarker>
+	</gameslice>	
+	<gameslice name="TNB_2_Brawl" holdcurtain="true">
+		<title>Gunfight Inside Bam Bam</title>
+		<scriptclass>TNB_2_Brawl</scriptclass>
+		<dependent>TNB_1_Meeting</dependent>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Comm_Ped_03</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BamBam_Ambience</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">Benny</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Benny</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_DancePOIs</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Flee</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_POI</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnBusy</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnDay</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnLate</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnOff</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Vestibule</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_ExtBouncers</scenelayeronstart>			
+		<restorelocationmarker>TNBMission-TNB_NIS1_Wei_MKR</restorelocationmarker>
+	</gameslice>	
+	<gameslice name="TNB_3_Chase" holdcurtain="true">
+		<title>Gunfight Ouside Bam Bam</title>
+		<scriptclass>TNB_3_Chase</scriptclass>
+		<dependent>TNB_2_Brawl</dependent>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<restorelocationmarker>TNBMission-TNB_Wei_Cover_MKR</restorelocationmarker>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<weaponrestore>object-physical-weapon-firearm-smg-45cal_taclight</weaponrestore>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Comm_Ped_03</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BamBam_Ambience</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">Benny</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Benny</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_DancePOIs</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Flee</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_POI</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnBusy</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnDay</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnLate</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnOff</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Vestibule</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_ExtBouncers</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="true">BBC_Amb_Bouncers</scenelayeronend>
+	</gameslice>	
+	<gameslice name="TNB_4_Capture" holdcurtain="true">
+		<title>Railshooter Chase</title>
+		<scriptclass>TNB_4_Capture</scriptclass>
+		<dependent>TNB_3_Chase</dependent>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<restorelocationmarker>TNBMission-TNB_Wei_NIS_Tele1</restorelocationmarker>
+	</gameslice>
+	<gameslice name="TNB_5_Freerun" holdcurtain="true">
+		<title>Ponytail Freerunning Chase</title>
+		<scriptclass>TNB_5_Freerun</scriptclass>
+		<dependent>TNB_4_Capture</dependent>
+		<restorelocationmarker>TNBMission-Placeholder_FR_Player_Tele</restorelocationmarker>
+	</gameslice>
+	<gameslice name="TNB_5_PonytailFight" holdcurtain="true">
+		<title>Ponytail Fight</title>
+		<scriptclass>TNB_5_PonytailFight</scriptclass>
+		<dependent>TNB_5_Freerun</dependent>
+		<restorelocationmarker>TNBMission-TNB_Wei_EndFight_MKR</restorelocationmarker>
+	</gameslice>
+	<gameslice name="TNB_6_Copescape" holdcurtain="true">
+		<title>Escape the Police</title>
+		<scriptclass>TNB_6_Copescape</scriptclass>
+		<dependent>TNB_5_PonytailFight</dependent>
+		<restorelocationmarker>TNBMission-TNB_Wei_EndCops_MKR</restorelocationmarker>
+	</gameslice>
+</gameslices>
+
+<groups>
+	<mission name="M_TNB" statsid="26">
+		<title>$SGTITLE_THE_NEW_BOSS</title>
+		<scriptclass>TNBMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-TNBMission</triggerobject>
+		<restorelocationmarker>Locations-TNB_Fail_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_TNB</completelocationmarker>
+		<forcetime time="22.0" locked="true"></forcetime> 
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_KaraokeRoom</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">NP_Comm_Ped_03</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BamBam_Ambience</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">Benny</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Benny</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_Bouncers</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_DancePOIs</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_Flee</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_POI</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_SpawnBusy</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_SpawnDay</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_SpawnLate</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_SpawnOff</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_Vestibule</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_KaraokeRoom</scenelayeronend>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">TNB_1_Meeting</child>
+		<child checkpoint="true">TNB_2_Brawl</child>
+		<child checkpoint="true">TNB_3_Chase</child>
+		<child checkpoint="true">TNB_4_Capture</child>
+		<child checkpoint="true">TNB_5_Freerun</child>
+		<child checkpoint="true">TNB_5_PonytailFight</child>
+		<child checkpoint="true">TNB_6_Copescape</child>
+		<ignoresafehouserestore>false</ignoresafehouserestore>
+		<loadhintonstart priority="0">$LOADING_HINT_NB_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_nb_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_WED_START</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_wed_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_BTB_START</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_btb_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+</groups>
+
+
+
+

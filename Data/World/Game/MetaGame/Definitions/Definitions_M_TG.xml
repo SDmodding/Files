@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="TG1_Meet_Tiffan" holdcurtain="true">
+		<title>TG1_Meet_Tiffany</title>
+		<scriptclass>TG1_Meet_Tiffan</scriptclass>
+	</gameslice>
+	<gameslice name="TG2_Call_Raymond" holdcurtain="true">
+		<title>TG2_Call_Raymond</title>
+		<scriptclass>TG2_Call_Raymond</scriptclass>
+		<restorelocationmarker>Locations-TG_Start_Location1</restorelocationmarker>
+		<dependent>TG1_Meet_Tiffan</dependent>
+	</gameslice>
+	<gameslice name="TG3_Shoot_Gun" holdcurtain="true">
+		<title>TG3_Shoot_Gun</title>
+		<scriptclass>TG3_Shoot_Gun</scriptclass>
+		<restorelocationmarker>TGMission-TG_NIS2_Wei_MKR</restorelocationmarker>			
+		<dependent>TG2_Call_Raymond</dependent>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<disablecopscoring></disablecopscoring>
+	</gameslice>
+	<gameslice name="TG4_Leave" holdcurtain="true">
+		<title>TG4_Leave</title>
+		<scriptclass>TG4_Leave</scriptclass>
+		<restorelocationmarker>TGMission-TG_NIS2_Wei_MKR1</restorelocationmarker>
+		<dependent>TG3_Shoot_Gun</dependent>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_TG" statsid="24">
+		<title>$SGTITLE_TIFFANYS_GUN</title>
+		<scriptclass>TGMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-TGMission</triggerobject>
+		<restorelocationmarker>Locations-TG_Start_Location</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_TG</completelocationmarker>
+		<vehiclesuperstop>true</vehiclesuperstop>		
+		<deferredregionrestart>false</deferredregionrestart>
+		<child>TG1_Meet_Tiffan</child>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">TG2_Call_Raymond</child>
+		<child checkpoint="true">TG3_Shoot_Gun</child>
+		<child checkpoint="true">TG4_Leave</child>
+	</mission>
+</groups>
+

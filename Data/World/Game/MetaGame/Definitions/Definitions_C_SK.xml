@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>	
+
+	<gameslice name="C_SK_Close">
+		<title>Close Serial Killer's Case</title>
+		<scriptclass>C_SK_Close</scriptclass>
+		<dependent>SK_43_Capture</dependent>
+	</gameslice>	
+
+
+	<gameslice name="SK_Start_Pendrew">
+		<title>See Pendrew to Open Case</title>
+		<scriptclass>SK_Start_Pendrew</scriptclass>
+	</gameslice>
+	<gameslice name="SK_11_Find">
+		<title>Go to Crime Scene</title>
+		<restorelocationmarker>Locations-C_SK1_1_Spawn</restorelocationmarker>		
+		<scriptclass>SK_11_Find</scriptclass>
+	</gameslice>
+	<gameslice name="SK_12_Photo" holdcurtain="true">
+		<title>Take Photos</title>
+		<scriptclass>SK_12_Photo</scriptclass>
+		<restorelocationmarker>SK1Case-PhotoRestore</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitPoliceCSI</setdisguiseonstart>		
+		<dependent>SK_11_Find</dependent>
+	</gameslice>
+	<gameslice name="SK_13_Snitch" holdcurtain="true">
+		<title>Escape!</title>
+		<restorelocationmarker>SK1Case-RestoreLeave</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitPoliceCSI</setdisguiseonstart>		
+		<scriptclass>SK_13_Snitch</scriptclass>
+	<dependent>SK_12_Photo</dependent>
+	</gameslice>
+	<gameslice name="SK_21_Hospital">
+		<title>Go to Hospital</title>
+		<scriptclass>SK_21_Hospital</scriptclass>
+		<restorelocationmarker>ProgressionTriggers_Cases-SK2Case</restorelocationmarker>
+	</gameslice>
+	<gameslice name="SK_22_Hack" holdcurtain="true">
+		<title>Hack hospital computer</title>
+		<scriptclass>SK_22_Hack</scriptclass>
+		<dependent>SK_21_Hospital</dependent>
+		<restorelocationmarker>SK2Case-HackRestore</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitDoctor</setdisguiseonstart>
+	</gameslice>
+	<gameslice name="SK_23_Bug" holdcurtain="true">
+		<title>Bug office</title>
+		<scriptclass>SK_23_Bug</scriptclass>
+		<restorelocationmarker>SK2Case-Hack_Hospital_Restore</restorelocationmarker>
+		<dependent>SK_22_Hack</dependent>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitDoctor</setdisguiseonstart>
+	</gameslice>
+	<gameslice name="SK_24_Leave">
+		<title>Leave hosptial</title>
+		<scriptclass>SK_24_Leave</scriptclass>
+		<dependent>SK_23_Bug</dependent>
+	</gameslice>
+	<gameslice name="SK_40_Teng">
+		<title>Phone Call</title>
+		<scriptclass>SK_40_Teng</scriptclass>
+	</gameslice>
+	<gameslice name="SK_41_Find">
+		<title>Get to Calvin</title>
+		<scriptclass>SK_41_Find</scriptclass>
+		<dependent>SK_40_Teng</dependent>
+	</gameslice>
+	<gameslice name="SK_42_Stop" holdcurtain="true">
+		<title>Stop the killer</title>
+		<scriptclass>SK_42_Stop</scriptclass>
+		<restorelocationmarker>SK4Case-mkr_capture_restore</restorelocationmarker>
+		<vehiclerestore range="100.000000000">SK4Case-restore_car</vehiclerestore>				
+		<dependent>SK_41_Find</dependent>
+	</gameslice>
+	<gameslice name="SK_43_Capture">
+		<title>Capture the killer</title>
+		<scriptclass>SK_43_Capture</scriptclass>
+		<dependent>SK_42_Stop</dependent>
+	</gameslice>
+</gameslices>
+<groups>	
+	<mission name="C_SK_Start" statsid="12">
+		<title>$SGTITLE_SERIAL_KILLER_START</title>
+		<scriptclass>SKStartCase</scriptclass>
+		<restorelocationmarker>Locations-C_SK_Start</restorelocationmarker>
+		<triggerobject>ProgressionTriggers_Cases-C_Start</triggerobject>
+		<trackgamesliceas>CASE_PRESENCE</trackgamesliceas>
+		<child>SK_Start_Pendrew</child>
+	</mission>
+	<mission name="C_SK1" statsid="13">
+		<title>$SGTITLE_SERIAL_KILLER_1</title>
+		<scriptclass>SK1Case</scriptclass>
+		<triggerobject>ProgressionTriggers_Cases-SK1Case</triggerobject>
+		<restorelocationmarker>Locations-C_SK1_1_Spawn</restorelocationmarker> 
+		<cancellocationmarker>Locations-C_SK1_1_Spawn</cancellocationmarker>	
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<scenelayeronstart geoautoactivate="false" activate="false">AB_DryDock_01</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="true">AB_DryDock_01</scenelayeronend>			
+		<removedisguiseonend enablewardrobe="true" enablestores="true"></removedisguiseonend>
+		<trackgamesliceas>CASE_PRESENCE</trackgamesliceas>
+		<child checkpoint="true">SK_11_Find</child>
+		<child checkpoint="true">SK_12_Photo</child>
+		<child checkpoint="true">SK_13_Snitch</child>
+	</mission>
+	<mission name="C_SK2" statsid="14">
+		<title>$SGTITLE_SERIAL_KILLER_2</title>
+		<scriptclass>SK2Case</scriptclass>
+		<triggerobject>ProgressionTriggers_Cases-SK2Case</triggerobject>
+		<restorelocationmarker>Locations-C_SK2_1_Spawn</restorelocationmarker>
+		<cancellocationmarker>Locations-C_SK2_1_Spawn</cancellocationmarker>		
+		<!--<scenelayeronstart geoautoactivate="false" activate="false">CN_Hospital_LowerInt</scenelayeronstart>-->
+		<!--<scenelayeronend geoautoactivate="true">CN_Hospital_LowerInt</scenelayeronend>-->
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_Hospital_NurseStation</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="true">CN_Hospital_NurseStation</scenelayeronend>			
+		<removedisguiseonend enablewardrobe="true" enablestores="true"></removedisguiseonend>
+		<trackgamesliceas>CASE_PRESENCE</trackgamesliceas>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<child checkpoint="true">SK_21_Hospital</child>
+		<child checkpoint="true">SK_22_Hack</child>
+		<child checkpoint="true">SK_23_Bug</child>
+		<child>SK_24_Leave</child>
+	</mission>
+	<mission name="C_SK3" statsid="4">
+		<title>$SGTITLE_SERIAL_KILLER_3</title>
+		<scriptclass>SK3Case</scriptclass>
+		<pdatrigger objective="SK3_CallTeng">PDAContact_JANE_TENG</pdatrigger>	
+		<!-- <triggerobject>ProgressionTriggers_Cases-SK3Case</triggerobject> -->
+		<!-- <restorelocationmarker>Locations-C_SK3_1_Spawn</restorelocationmarker> -->
+		<!-- <cancellocationmarker>Locations-C_SK3_1_Spawn</cancellocationmarker> -->		
+		<!-- <vehiclesuperstop>true</vehiclesuperstop> -->
+		<removedisguiseonend enablewardrobe="true" enablestores="true"></removedisguiseonend>
+		<trackgamesliceas>CASE</trackgamesliceas>
+		<child>SK_40_Teng</child>
+		<child>SK_41_Find</child>
+		<child checkpoint="true">SK_42_Stop</child>
+		<child>SK_43_Capture</child>
+		<child>C_SK_Close</child>
+	</mission>
+</groups>
+

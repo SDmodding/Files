@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<gameslices>
+	<gameslice name="EMP_00_GoToDocks" holdcurtain="true">
+		<title>Go to Docks</title>
+		<scriptclass>EMP_00_GoToDocks</scriptclass>
+		<restorelocationmarker>ProgressionTriggers_TT-EMPMission</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="EMP_01_Chase" holdcurtain="true">
+		<title>Chase and Ram</title>
+		<scriptclass>EMP_01_Chase</scriptclass>
+		<restorelocationmarker>EMPMission-Restore_ChaseCar</restorelocationmarker>
+		<dependent>EMP_00_GoToDocks</dependent>
+	</gameslice>
+	
+	<gameslice name="EMP_02_LoseCops" holdcurtain="true">
+		<title>Lose Cops</title>
+		<scriptclass>EMP_02_LoseCops</scriptclass>
+		<restorelocationmarker>EMPMission-Restore_LoseCopsCar</restorelocationmarker>
+		<dependent>EMP_01_Chase</dependent>
+	</gameslice>
+</gameslices>
+
+<groups>	
+	<mission name="M_TT_EMP">
+		<title>$SGTITLE_GET_THE_EMP</title>
+		<scriptclass>EMPMission</scriptclass>
+		<triggerobject>ProgressionTriggers_TT-EMPMission</triggerobject>
+		<audiooverride>M_TT</audiooverride>	
+		<completelocationmarker>Locations_TT-M_EMP_Start</completelocationmarker>
+		<restorelocationmarker>Locations_TT-Unlocker_Start</restorelocationmarker>
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>DLC</trackgamesliceas>
+		<child checkpoint="true">EMP_00_GoToDocks</child>
+		<child checkpoint="true">EMP_01_Chase</child>
+		<child checkpoint="true">EMP_02_LoseCops</child>
+	</mission>
+</groups>
+

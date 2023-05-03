@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="E_INT_1">
+		<title>Interrogation - 1</title>
+		<scriptclass>E_INT_1</scriptclass>
+		<restorelocationmarker>Locations-Interrogation_Spawn</restorelocationmarker>
+	</gameslice>	
+
+</gameslices>
+
+<groups>
+
+	<favour name="E_INT" statsid="13">
+		<minpiplevel>2</minpiplevel>
+		<faceactiontype>eFACEACTION_OFFER_HELP</faceactiontype>
+		<title>$SGTITLE_INTERROGATION</title>
+		<scriptclass>Interrogation</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_Interrogation</triggerobject>
+		<restorelocationmarker>Locations-Interrogation_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_INT</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_INT_1</child>
+	</favour>
+
+</groups>
+
+

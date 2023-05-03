@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<!--    
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	
+	
+	<gameslice name="Hiding">
+		<title>Garage Open</title>
+		<scriptclass>Hiding</scriptclass>
+	</gameslice>		
+</gameslices>
+<groups>
+
+	<job name="J_BD1" repeatableinterval="5">
+		<title>Bus Driver Job Route 1</title>
+		<scriptclass>J_BD1</scriptclass>
+		<incomingpdatrigger contactname="BusDriver" triggerobject="ProgressionTriggers_Jobs-J_BD1" vehiclefilter="Minibus"></incomingpdatrigger>
+		<restorelocationmarker>Locations-J_BD1_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_BD1</completelocationmarker>
+	</job>	
+	<job name="J_BD2" repeatableinterval="5">
+		<title>Bus Driver Job Route 2</title>
+		<scriptclass>J_BD2</scriptclass>
+		<incomingpdatrigger contactname="BusDriver" triggerobject="ProgressionTriggers_Jobs-J_BD2" vehiclefilter="Minibus"></incomingpdatrigger>
+		<restorelocationmarker>Locations-J_BD2_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_BD2</completelocationmarker>
+	</job>
+	<job name="J_BD3" repeatableinterval="5">
+		<title>Bus Driver Job Route 3</title>
+		<scriptclass>J_BD3</scriptclass>
+		<incomingpdatrigger contactname="BusDriver" triggerobject="ProgressionTriggers_Jobs-J_BD3" vehiclefilter="Minibus"></incomingpdatrigger>
+		<restorelocationmarker>Locations-J_BD3_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_BD3</completelocationmarker>
+	</job>
+	<job name="J_BD4" repeatableinterval="5">
+		<title>Bus Driver Job Route 4</title>
+		<scriptclass>J_BD4</scriptclass>
+		<incomingpdatrigger contactname="BusDriver" triggerobject="ProgressionTriggers_Jobs-J_BD4" vehiclefilter="Minibus"></incomingpdatrigger>
+		<restorelocationmarker>Locations-J_BD4_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_BD4</completelocationmarker>
+	</job>
+	<job name="J_BD5" repeatableinterval="5">
+		<title>Bus Driver Job Route 5</title>
+		<scriptclass>J_BD5</scriptclass>
+		<incomingpdatrigger contactname="BusDriver" triggerobject="ProgressionTriggers_Jobs-J_BD5" vehiclefilter="BusGroup"></incomingpdatrigger>
+		<restorelocationmarker>Locations-J_BD5_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_BD5</completelocationmarker>
+	</job>
+	<event name="E_GarageHiding1" repeatableinterval="5" statsid="1">
+		<title>Garage Hiding 1</title>
+		<scriptclass>GH1Event</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-GH1Event</triggerobject>
+		<restorelocationmarker>Locations-E_GH1_Spawn</restorelocationmarker>
+		<child>Hiding</child>
+	</event>
+</groups>

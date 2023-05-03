@@ -1,0 +1,549 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+
+</gameslices>
+
+<groups>
+	<job name="J_TD0" statsid="33">
+		<title>$SGTITLE_TRAN_INTRO</title>
+		<scriptclass>TranJob_00</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="true">TranJob_TT</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="true">TranJob_TT</scenelayeronend>			
+	</job>
+	
+	<scenario name="J_TD1_Call" >
+		<title>>$SGTITLE_TRAN_JOB_425_MHC</title>
+		<scriptclass>TranJobCall_01C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD1" statsid="10" >
+		<title>$SGTITLE_TRAN_JOB_425_MHC</title>
+		<scriptclass>TranJob_01C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD2_Call" >
+		<title>$SGTITLE_TRAN_JOB_BISAI_CALL</title>
+		<scriptclass>TranJobCall_02C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD2"  statsid="11">
+		<title>$SGTITLE_TRAN_JOB_BISAI_CALL</title>
+		<scriptclass>TranJob_02C</scriptclass>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD3_Call" >
+		<title>$SGTITLE_TRAN_JOB_DRIFTER_CALL</title>
+		<scriptclass>TranJobCall_03C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD3" statsid="12">
+		<title>$SGTITLE_TRAN_JOB_DRIFTER_CALL</title>
+		<scriptclass>TranJob_03C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD4_Call" >
+		<title>$SGTITLE_TRAN_JOB_600_COUPE</title>
+		<scriptclass>TranJobCall_04C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD4" statsid="13" >
+		<title>$SGTITLE_TRAN_JOB_600_COUPE</title>
+		<scriptclass>TranJob_04C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD5_Call" >
+		<title>$SGTITLE_TRAN_JOB_KLIENOD</title>
+		<scriptclass>TranJobCall_05C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD5" statsid="14" >
+		<title>$SGTITLE_TRAN_JOB_KLIENOD</title>
+		<scriptclass>TranJob_05C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD6_Call" >
+		<title>$SGTITLE_TRAN_JOB_GOPHER_CALL</title>
+		<scriptclass>TranJobCall_06C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD6" statsid="15" >
+		<title>$SGTITLE_TRAN_JOB_GOPHER_CALL</title>
+		<scriptclass>TranJob_06C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD7_Call" >
+		<title>$SGTITLE_TRAN_JOB_HATCHBACK</title>
+		<scriptclass>TranJobCall_07C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD7" statsid="16" >
+		<title>$SGTITLE_TRAN_JOB_HATCHBACK</title>
+		<scriptclass>TranJob_07C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD8_Call" >
+		<title>$SGTITLE_TRAN_JOB_TAXI_CALL</title>
+		<scriptclass>TranJobCall_08C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD8" statsid="17" >
+		<title>$SGTITLE_TRAN_JOB_TAXI_CALL</title>
+		<scriptclass>TranJob_08C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD9_Call" >
+		<title>$SGTITLE_TRAN_JOB_ENTERPRISE</title>
+		<scriptclass>TranJobCall_09C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD9" statsid="18" >
+		<title>$SGTITLE_TRAN_JOB_ENTERPRISE</title>
+		<scriptclass>TranJob_09C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD10_Call" >
+		<title>$SGTITLE_TRAN_JOB_BISMARCK</title>
+		<scriptclass>TranJobCall_10C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD10" statsid="19" >
+		<title>$SGTITLE_TRAN_JOB_BISMARCK</title>
+		<scriptclass>TranJob_10C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD11_Call" >
+		<title>$SGTITLE_TRAN_JOB_RIDGE_SPORT</title>
+		<scriptclass>TranJobCall_11C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD11" statsid="20" >
+		<title>$SGTITLE_TRAN_JOB_RIDGE_SPORT</title>
+		<scriptclass>TranJob_11C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD12_Call" >
+		<title>$SGTITLE_TRAN_JOB_HASSHA_CALL</title>
+		<scriptclass>TranJobCall_12C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD12" statsid="21" >
+		<title>$SGTITLE_TRAN_JOB_HASSHA_CALL</title>
+		<scriptclass>TranJob_12C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD13_Call" >
+		<title>$SGTITLE_TRAN_JOB_WANGANGSX</title>
+		<scriptclass>TranJobCall_13C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD13" statsid="22" >
+		<title>$SGTITLE_TRAN_JOB_WANGANGSX</title>
+		<scriptclass>TranJob_13C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD14_Call" >
+		<title>$SGTITLE_TRAN_JOB_LIMO_CALL</title>
+		<scriptclass>TranJobCall_14C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD14" statsid="23" >
+		<title>$SGTITLE_TRAN_JOB_LIMO_CALL</title>
+		<scriptclass>TranJob_14C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD15_Call" >
+		<title>$SGTITLE_TRAN_JOB_TERRE_CALL</title>
+		<scriptclass>TranJobCall_15C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD15" statsid="24" >
+		<title>$SGTITLE_TRAN_JOB_TERRE_CALL</title>
+		<scriptclass>TranJob_15C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD16_Call" >
+		<title>$SGTITLE_TRAN_JOB_LOWIN_CALL</title>
+		<scriptclass>TranJobCall_16C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD16" statsid="25" >
+		<title>$SGTITLE_TRAN_JOB_LOWIN_CALL</title>
+		<scriptclass>TranJob_16C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD17_Call" >
+		<title>$SGTITLE_TRAN_JOB_BLAST_CALL</title>
+		<scriptclass>TranJobCall_17C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD17" statsid="26" >
+		<title>$SGTITLE_TRAN_JOB_BLAST_CALL</title>
+		<scriptclass>TranJob_17C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD18_Call" >
+		<title>$SGTITLE_TRAN_JOB_TUONO_CALL</title>
+		<scriptclass>TranJobCall_18C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD18" statsid="27" >
+		<title>$SGTITLE_TRAN_JOB_TUONO_CALL</title>
+		<scriptclass>TranJob_18C</scriptclass>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="J_TD19_Call" >
+		<title>$SGTITLE_TRAN_JOB_ETALON_CALL</title>
+		<scriptclass>TranJobCall_19C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD19" statsid="28" >
+		<title>$SGTITLE_TRAN_JOB_ETALON_CALL</title>
+		<scriptclass>TranJob_19C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>	
+
+	<scenario name="J_TD20_Call" >
+		<title>$SGTITLE_TRAN_JOB_VELOCITA</title>
+		<scriptclass>TranJobCall_20C</scriptclass>
+		<pdatrigger>Tran</pdatrigger>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_TD20" statsid="29" >
+		<title>$SGTITLE_TRAN_JOB_VELOCITA</title>
+		<scriptclass>TranJob_20C</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>Locations-TranDeliveries_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_TD</completelocationmarker>
+		<audiooverride>Tran</audiooverride>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>	
+	
+	<job name="J_TD_END" statsid="30" >
+		<title>$SGTITLE_TRAN_JOB_END</title>
+		<scriptclass>TranJob_End</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>	
+</groups>

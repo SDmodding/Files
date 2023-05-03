@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+
+<gameslices>
+	
+	<!-- SHOW OFF 1 FAVOUR -->
+	<gameslice name="SO_01_Gameplay">
+		<title>Gameplay</title>
+		<scriptclass>SO_01_Gameplay</scriptclass>
+		<restorelocationmarker>Locations-Marker_EventShowOffStart</restorelocationmarker>		
+	</gameslice>
+	<!-- SHOW OFF 2 FAVOUR -->
+	<gameslice name="SO_02_Gameplay" holdcurtain="true"> 
+		<title>Gameplay</title>
+		<scriptclass>SO_02_Gameplay</scriptclass>
+		<restorelocationmarker>Locations-E_SO2_spawn</restorelocationmarker>		
+	</gameslice>
+	<!-- SHOW OFF 3 FAVOUR -->
+	<gameslice name="SO_03_Gameplay" holdcurtain="true"> 
+		<title>Gameplay</title>
+		<scriptclass>SO_03_Gameplay</scriptclass>
+		<restorelocationmarker>Locations-E_SO3_spawn</restorelocationmarker>		
+	</gameslice>
+	<!-- SHOW OFF 4 FAVOUR -->
+	<gameslice name="SO_04_Gameplay">
+		<title>Gameplay</title>
+		<scriptclass>SO_04_Gameplay</scriptclass>
+		<restorelocationmarker>Locations-E_SO4_spawn</restorelocationmarker>		
+	</gameslice>
+
+</gameslices>
+
+
+
+<groups>	
+	<!-- SHOW OFF 1 FAVOUR -->
+	<favour name="E_SO" statsid="20">
+		<title>$SGTITLE_SHOW_OFF_DEPRECATED</title>
+		<scriptclass>SOEvent</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-SOEvent</triggerobject>
+		<restorelocationmarker>Locations-Marker_EventShowOffStart</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_SO</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">SO_01_Gameplay</child>
+	</favour>
+	<!-- SHOW OFF 2 FAVOUR -->
+	<favour name="E_SO2" statsid="21">
+		<title>$SGTITLE_SHOW_OFF_1</title>
+		<scriptclass>SOEvent2</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-SOEvent2</triggerobject>
+		<restorelocationmarker>Locations-E_SO2_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_SO2</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child  checkpoint="true">SO_02_Gameplay</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+	<!-- SHOW OFF 3 FAVOUR -->
+	<favour name="E_SO3" statsid="22">
+		<title>$SGTITLE_SHOW_OFF_2</title>
+		<scriptclass>SOEvent3</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-SOEvent3</triggerobject>
+		<restorelocationmarker>Locations-E_SO3_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_SO3</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child  checkpoint="true">SO_03_Gameplay</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+	<!-- SHOW OFF 4 FAVOUR -->
+	<favour name="E_SO4" statsid="23">
+		<title>$SGTITLE_SHOW_OFF4DEPRECATED</title>
+		<scriptclass>SOEvent4</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-SOEvent4</triggerobject>
+		<restorelocationmarker>Locations-E_SO4_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_SO4</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child  checkpoint="true">SO_04_Gameplay</child>
+	</favour>	
+</groups>
+

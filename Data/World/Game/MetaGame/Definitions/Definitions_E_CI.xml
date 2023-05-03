@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Collect Insurance 01 and 02
+
+
+-->
+
+<gameslices>
+	<gameslice name="E_CI_1" holdcurtain="true">
+		<title>Collect Insurance 1</title>
+		<scriptclass>E_CI_1</scriptclass>
+		<restorelocationmarker>Locations-CollectInsurance_Spawn</restorelocationmarker>
+	</gameslice>	
+	<gameslice name="E_CI2_1" holdcurtain="true">
+		<title>Collect Insurance 2</title>
+		<scriptclass>E_CI2_1</scriptclass>
+		<restorelocationmarker>Locations-CollectInsurance2_Spawn</restorelocationmarker>
+	</gameslice>
+</gameslices>
+
+<groups>
+	<favour name="E_CI" statsid="6">
+		<title>$SGTITLE_COLLECT_INSURANCE</title>
+		<scriptclass>CollectInsurance</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-E_CollectInsurance</triggerobject>
+		<restorelocationmarker>Locations-CollectInsurance_Spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_CI_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+	<favour name="E_CI2" statsid="7">
+		<title>$SGTITLE_COLLECT_INSURANCE_2</title>
+		<scriptclass>CollectInsurance2</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-E_CollectInsurance2</triggerobject>
+		<restorelocationmarker>Locations-CollectInsurance2_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_CI2</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_CI2_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+</groups>

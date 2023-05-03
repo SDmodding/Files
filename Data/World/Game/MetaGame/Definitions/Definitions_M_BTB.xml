@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+
+<gameslices>
+	<gameslice name="BTB_1_Intro" holdcurtain="true">
+		<title>Meet Peggy</title>
+		<scriptclass>BTB_1_Intro</scriptclass>
+		<restorelocationmarker>Locations-BTB_Spawn</restorelocationmarker>
+	</gameslice>
+	<gameslice name="BTB_4_Go_Shop" holdcurtain="true">
+		<title>Go to the Mall</title>
+		<scriptclass>BTB_4_Go_Shop</scriptclass>
+		<restorelocationmarker>BTBMission-BTB_4_Go_Shop_Spawn</restorelocationmarker>
+		<dependent>BTB_1_Intro</dependent>
+	</gameslice>
+	<gameslice name="BTB_6_Go_Take" holdcurtain="true">
+		<title>Go to Cake Store</title>
+		<scriptclass>BTB_6_Go_Take</scriptclass>
+		<restorelocationmarker>BTBMission-BTB_6_Go_Take_Spawn</restorelocationmarker>
+		<dependent>BTB_4_Go_Shop</dependent>
+	</gameslice>
+	<gameslice name="BTB_7_Take" holdcurtain="true">
+		<title>Stop the Delivery</title>
+		<scriptclass>BTB_7_Take</scriptclass>
+		<restorelocationmarker>BTBMission-BTB_7_Take_Spawn</restorelocationmarker>
+		<dependent>BTB_6_Go_Take</dependent>
+	</gameslice>
+	<gameslice name="BTB_7a_Go_Pick" holdcurtain="true">
+		<title>Go to the Temple</title>
+		<scriptclass>BTB_7a_Go_Pick</scriptclass>
+		<restorelocationmarker>BTBMission-BTB_7a_Go_Pick_Spawn</restorelocationmarker>
+		<dependent>BTB_7_Take</dependent>
+	</gameslice>
+	<gameslice name="BTB_7b_Pick" holdcurtain="true">
+		<title>Pick the orchid</title>
+		<scriptclass>BTB_7b_Pick</scriptclass>
+		<restorelocationmarker>BTBMission-BTB_7b_Pick_Spawn</restorelocationmarker>
+		<dependent>BTB_7a_Go_Pick</dependent>
+	</gameslice>
+	<gameslice name="BTB_7c_Return" holdcurtain="true">
+		<title>Return the orchid</title>
+		<scriptclass>BTB_7c_Return</scriptclass>
+		<restorelocationmarker>BTBMission-BTB_7c_Return_Spawn</restorelocationmarker>
+		<dependent>BTB_7b_Pick</dependent>
+	</gameslice>
+	<gameslice name="BTB_7d_Cops" holdcurtain="true">
+		<title>Escape the Cops</title>
+		<scriptclass>BTB_7d_Cops</scriptclass>
+		<restorelocationmarker>BTBMission-BTB_7d_Cops_Spawn</restorelocationmarker>
+		<dependent>BTB_7c_Return</dependent>
+	</gameslice>
+	<gameslice name="BTB_8_Go_Deliver" holdcurtain="true">
+		<title>Bring Peggy to Mah Jong</title>
+		<scriptclass>BTB_8_Go_Deliver</scriptclass>
+		<restorelocationmarker>BTBMission-BTB_7d_Cops_Spawn</restorelocationmarker>
+		<dependent>BTB_7d_Cops</dependent>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_BTB" statsid="6">
+		<title>$SGTITLE_BRIDE_TO_BE</title>
+		<scriptclass>BTBMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-M_BTB</triggerobject>
+		<restorelocationmarker>Locations-BTB_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_BTB</completelocationmarker>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<!-- HACK: This shouldn't lock weather when loaded, only when mission starts -->
+		<forceweather type="sunny" locked="true"></forceweather>
+        <forcetime time="17.59" locked="true"></forcetime>
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>		
+		<watermark>true</watermark>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Temple_01_Peds_Day</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Temple_Monks_01</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Temple_01_POIs</scenelayeronstart>	
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Temple_01_Props</scenelayeronstart>			
+		<scenelayeronstart geoautoactivate="false" activate="false">PhotoGroup_Ph04</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="true">NP_Temple_01_Peds_Day</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_Temple_Monks_01</scenelayeronend>	
+		<scenelayeronend geoautoactivate="true">NP_Temple_01_POIs</scenelayeronend>	
+		<scenelayeronend geoautoactivate="true">NP_Temple_01_Props</scenelayeronend>			
+		<scenelayeronend geoautoactivate="true">PhotoGroup_Ph04</scenelayeronend>		
+		<child>BTB_1_Intro</child>
+		<child checkpoint="true">BTB_4_Go_Shop</child>
+		<child checkpoint="true">BTB_6_Go_Take</child>
+		<child checkpoint="true">BTB_7_Take</child>
+		<child checkpoint="true">BTB_7a_Go_Pick</child>
+		<child checkpoint="true">BTB_7b_Pick</child>		
+		<child checkpoint="true">BTB_7c_Return</child>
+		<child checkpoint="true">BTB_7d_Cops</child>
+		<child checkpoint="true">BTB_8_Go_Deliver</child>
+		<loadhintonstart priority="0">$LOADING_HINT_BTB_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_btb_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_UP_MID</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_up_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_SS_START</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_ss_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+</groups>
+

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<gameslices>
+
+	<gameslice name="IN_0_Intro"  holdcurtain="true">
+		<title>Introduction</title>
+		<scriptclass>IN_0_Intro</scriptclass>
+	</gameslice>
+
+	<gameslice name="IN_1_Meet_Jackie"  holdcurtain="true">
+		<title>Meet Jackie</title>
+		<scriptclass>IN_1_Meet_Jackie</scriptclass>
+		<restorelocationmarker>INMission-mkrPostNIS1</restorelocationmarker>
+		<dependent>IN_0_Intro</dependent>
+	</gameslice>
+	
+	<gameslice name="IN_1B_Massage"  holdcurtain="true">
+		<title>Massage Decision</title>
+		<scriptclass>IN_1B_Massage</scriptclass>
+		<restorelocationmarker>INMission-mkr_restore_player_at_massage</restorelocationmarker>
+		<dependent>IN_1_Meet_Jackie</dependent>
+	</gameslice>
+	
+	<gameslice name="IN_2_Locate_Traitor"  holdcurtain="true">
+		<title>Locate Yung</title>
+		<scriptclass>IN_2_Locate_Traitor</scriptclass>
+		<restorelocationmarker>INMission-Restore_Outside_Massage_Wei</restorelocationmarker>
+		<dependent>IN_1B_Massage</dependent>
+	</gameslice>
+	
+	<gameslice name="IN_2B_Fight_Traitor"  holdcurtain="true">
+		<title>Defeat Yung</title>
+		<scriptclass>IN_2B_Fight_Traitor</scriptclass>
+		<restorelocationmarker>INMission-mkr_restore_meetup_wei</restorelocationmarker>
+		<vehiclerestore range="100000.000000000">INMission-mkr_rstr_2b_van</vehiclerestore>
+		<dependent>IN_2_Locate_Traitor</dependent>
+	</gameslice>
+	
+	<gameslice name="IN_3_Drive_To_Temple"  holdcurtain="true">
+		<title>Go to the Temple</title>
+		<scriptclass>IN_3_Drive_To_Temple</scriptclass>
+		<restorelocationmarker>INMission-mkr_rstr_2b_wei</restorelocationmarker>
+		<vehiclerestore range="100000.000000000">INMission-mkr_rstr_2b_van</vehiclerestore>
+		<dependent>IN_2B_Fight_Traitor</dependent>
+	</gameslice>
+</gameslices>
+
+<groups>
+	<mission name="M_IN" statsid="13">
+		<title>$SGTITLE_INITIATION</title>
+		<scriptclass>INMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-INMission</triggerobject>
+		<restorelocationmarker>Locations-Hospital</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_IN</completelocationmarker>
+		<deferredregionrestart>false</deferredregionrestart>
+		<forcetime time="14.00" locked="true"></forcetime>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<saveoverride>CK5_1</saveoverride>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child>IN_0_Intro</child>
+		<scenelayeronstart geoautoactivate="false" activate="false">S_CN_Massage01</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="true">S_CN_Massage01</scenelayeronend>				
+		<child checkpoint="true">IN_1_Meet_Jackie</child>
+		<child checkpoint="true">IN_1B_Massage</child>
+		<child checkpoint="true">IN_2_Locate_Traitor</child>
+		<child checkpoint="true">IN_2B_Fight_Traitor</child>
+		<child checkpoint="true">IN_3_Drive_To_Temple</child>
+		<loadhintonstart priority="0">$LOADING_HINT_IN_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_in_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_NB_START</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_nb_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_WED_START</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_wed_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+</groups>

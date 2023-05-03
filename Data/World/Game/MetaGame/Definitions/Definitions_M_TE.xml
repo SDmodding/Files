@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<gameslices>
+	<gameslice name="TE_0_NIS" holdcurtain="true">
+		<title>NIS</title>
+		<scriptclass>TE_0_NIS</scriptclass>
+		<restorelocationmarker>TEMission-Marker_WeiTeleport01</restorelocationmarker>
+	</gameslice>
+	<gameslice name="TE_1_Meeting" holdcurtain="true">
+		<title>Escape Captors</title>
+		<scriptclass>TE_1_Meeting</scriptclass>
+		<restorelocationmarker>TEMission-Marker_WeiTeleport01</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitElectionEscape</setdisguiseonstart>		
+		<dependent>TE_0_NIS</dependent>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+	</gameslice>
+	<gameslice name="TE_2_Living_Room" holdcurtain="true">
+		<title>Living Room Battle</title>
+		<scriptclass>TE_2_Living_Room</scriptclass>
+		<restorelocationmarker>TEMission-Marker_LivingRoom_NIS</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitElectionEscape</setdisguiseonstart>		
+		<dependent>TE_1_Meeting</dependent>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+	</gameslice>
+	<gameslice name="TE_3_Gunmen" holdcurtain="true">
+		<title>Patio Party</title>
+		<scriptclass>TE_3_Gunmen</scriptclass>
+		<restorelocationmarker>TEMission-Marker_GunmenRestore</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitElectionEscape</setdisguiseonstart>		
+		<dependent>TE_2_Living_Room</dependent>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+	</gameslice>
+	<gameslice name="TE_3B_Shotgun" holdcurtain="true">
+		<title>Shotgun Guy</title>
+		<scriptclass>TE_3B_Shotgun</scriptclass>
+		<restorelocationmarker>TEMission-Marker_ShotgunFightTeleport</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitElectionEscape</setdisguiseonstart>		
+		<dependent>TE_3_Gunmen</dependent>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+	</gameslice>
+	<gameslice name="TE_4_Amenities" holdcurtain="true">
+		<title>Amenities</title>
+		<scriptclass>TE_4_Amenities</scriptclass>
+		<restorelocationmarker>TEMission-Marker_AmenitiesRestore</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-shotgun-antiriot_taclight</weaponrestore>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitElectionEscape</setdisguiseonstart>		
+		<dependent>TE_3B_Shotgun</dependent>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+	</gameslice>
+	<gameslice name="TE_4_Pool" holdcurtain="true">
+		<title>Pool Battle</title>
+		<scriptclass>TE_4_Pool</scriptclass>
+		<restorelocationmarker>TEMission-Marker_PoolRestore</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-shotgun-antiriot_taclight</weaponrestore>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitElectionEscape</setdisguiseonstart>		
+		<dependent>TE_4_Amenities</dependent>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+	</gameslice>
+	<gameslice name="TE_5_Enforcer" holdcurtain="true">
+		<title>Enforcer</title>
+		<scriptclass>TE_5_Enforcer</scriptclass>
+		<restorelocationmarker>TEMission-Marker_TeleportToEnforcer</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitElectionEscape</setdisguiseonstart>		
+		<dependent>TE_4_Pool</dependent>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+	</gameslice>
+	<gameslice name="TE_5B_MrTong" holdcurtain="true">
+		<title>Mr. Tong</title>
+		<scriptclass>TE_5B_MrTong</scriptclass>
+		<restorelocationmarker>TEMission-Marker_TeleportWei_TongNIS</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitElectionEscape</setdisguiseonstart>		
+		<dependent>TE_5_Enforcer</dependent>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_TE" statsid="23">
+		<title>$SGTITLE_THE_ELECTION</title>
+		<scriptclass>TEMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-TEMission</triggerobject>
+		<restorelocationmarker>Locations-TEMissionStart</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_TE</completelocationmarker>
+		<cancellocationmarker>Locations-TEMissionStart</cancellocationmarker>
+		<saveoverride>DTBSL_1_Drive</saveoverride>
+		<maxheatlevel>1</maxheatlevel>
+		<forcetime time="23.30" locked="true"></forcetime>
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">TE_0_NIS</child>
+		<child checkpoint="true">TE_1_Meeting</child>
+		<child checkpoint="true">TE_2_Living_Room</child>
+		<child checkpoint="true">TE_3_Gunmen</child>
+		<child checkpoint="true">TE_3B_Shotgun</child>
+		<child checkpoint="true">TE_4_Amenities</child>
+		<child checkpoint="true">TE_4_Pool</child>
+		<child checkpoint="true">TE_5_Enforcer</child>
+		<child checkpoint="true">TE_5B_MrTong</child>
+		<loadhintonstart priority="0">$LOADING_HINT_TE_START_2</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_te_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_IV_START</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_iv_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_JA_START</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_ja_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+</groups>

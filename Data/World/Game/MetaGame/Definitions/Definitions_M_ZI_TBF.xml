@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<gameslices>
+	<gameslice name="TBF1" holdcurtain="true">
+		<title>Intro</title>
+		<scriptclass>TBF_1_Intro</scriptclass>
+		<restorelocationmarker>TBFMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="TBF2" holdcurtain="true">
+		<title>Island Thug Fight</title>
+		<scriptclass>TBF_2_Fight</scriptclass>
+		<restorelocationmarker>TBFMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>TBF1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="TBF1_Repeatable" holdcurtain="true">
+		<title>Intro</title>
+		<scriptclass>TBF_1_Intro</scriptclass>
+		<restorelocationmarker>TBFMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="TBF2_Repeatable" holdcurtain="true">
+		<title>Island Thug Fight</title>
+		<scriptclass>TBF_2_Fight</scriptclass>
+		<restorelocationmarker>TBFMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>TBF1_Repeatable</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="TBF1_Repeatable1" holdcurtain="true">
+		<title>Intro</title>
+		<scriptclass>TBF_1_Intro</scriptclass>
+		<restorelocationmarker>TBFMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="TBF2_Repeatable1" holdcurtain="true">
+		<title>Island Thug Fight</title>
+		<scriptclass>TBF_2_Fight</scriptclass>
+		<restorelocationmarker>TBFMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>TBF1_Repeatable1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="TBF1_Repeatable2" holdcurtain="true">
+		<title>Intro</title>
+		<scriptclass>TBF_1_Intro</scriptclass>
+		<restorelocationmarker>TBFMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="TBF2_Repeatable2" holdcurtain="true">
+		<title>Island Thug Fight</title>
+		<scriptclass>TBF_2_Fight</scriptclass>
+		<restorelocationmarker>TBFMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>TBF1_Repeatable2</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="TBF1_Repeatable3" holdcurtain="true">
+		<title>Intro</title>
+		<scriptclass>TBF_1_Intro</scriptclass>
+		<restorelocationmarker>TBFMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="TBF2_Repeatable3" holdcurtain="true">
+		<title>Island Thug Fight</title>
+		<scriptclass>TBF_2_Fight</scriptclass>
+		<restorelocationmarker>TBFMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>TBF1_Repeatable3</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="TBF1_Repeatable4" holdcurtain="true">
+		<title>Intro</title>
+		<scriptclass>TBF_1_Intro</scriptclass>
+		<restorelocationmarker>TBFMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="TBF2_Repeatable4" holdcurtain="true">
+		<title>Island Thug Fight</title>
+		<scriptclass>TBF_2_Fight</scriptclass>
+		<restorelocationmarker>TBFMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>TBF1_Repeatable4</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="TBF1_Repeatable5" holdcurtain="true">
+		<title>Intro</title>
+		<scriptclass>TBF_1_Intro</scriptclass>
+		<restorelocationmarker>TBFMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="TBF2_Repeatable5" holdcurtain="true">
+		<title>Island Thug Fight</title>
+		<scriptclass>TBF_2_Fight</scriptclass>
+		<restorelocationmarker>TBFMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>TBF1_Repeatable5</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_ZI_TBF">
+		<title>$SGTITLE_TRIAL_BY_FIRE</title>
+		<scriptclass>TBFMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_TBF</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>DLC</trackgamesliceas>
+		<audiooverride>M_ZOD</audiooverride>
+		<forcetime time="7.45" locked="true"></forcetime>
+		<child checkpoint="true">TBF1</child>
+		<child checkpoint="true">TBF2</child>
+		<!-->setdisguiseonstart enablewardrobe="true" enablestores="true">OutfitKungfu</setdisguiseonstart-->
+	</mission>
+	<job name="M_ZI_TBF_Repeatable">
+		<title>$SGTITLE_TRIAL_BY_FIRE</title>
+		<scriptclass>TBFMission</scriptclass>				
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_TBF</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="7.45" locked="true"></forcetime>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<audiooverride>M_ZOD</audiooverride>		
+		<child checkpoint="true">TBF1_Repeatable</child>
+		<child checkpoint="true">TBF2_Repeatable</child>
+	</job>
+	
+	<job name="M_ZI_TBF_Repeatable1">
+		<title>$SGTITLE_TRIAL_BY_FIRE</title>
+		<scriptclass>TBFMission</scriptclass>				
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_TBF</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="7.45" locked="true"></forcetime>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<audiooverride>M_ZOD</audiooverride>		
+		<child checkpoint="true">TBF1_Repeatable1</child>
+		<child checkpoint="true">TBF2_Repeatable1</child>
+	</job>
+	
+	<job name="M_ZI_TBF_Repeatable2">
+		<title>$SGTITLE_TRIAL_BY_FIRE</title>
+		<scriptclass>TBFMission</scriptclass>				
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_TBF</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="7.45" locked="true"></forcetime>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<audiooverride>M_ZOD</audiooverride>		
+		<child checkpoint="true">TBF1_Repeatable2</child>
+		<child checkpoint="true">TBF2_Repeatable2</child>
+	</job>
+	
+	<job name="M_ZI_TBF_Repeatable3">
+		<title>$SGTITLE_TRIAL_BY_FIRE</title>
+		<scriptclass>TBFMission</scriptclass>				
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_TBF</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="7.45" locked="true"></forcetime>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<audiooverride>M_ZOD</audiooverride>		
+		<child checkpoint="true">TBF1_Repeatable3</child>
+		<child checkpoint="true">TBF2_Repeatable3</child>
+	</job>
+	
+	<job name="M_ZI_TBF_Repeatable4">
+		<title>$SGTITLE_TRIAL_BY_FIRE</title>
+		<scriptclass>TBFMission</scriptclass>				
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_TBF</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="7.45" locked="true"></forcetime>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<audiooverride>M_ZOD</audiooverride>		
+		<child checkpoint="true">TBF1_Repeatable4</child>
+		<child checkpoint="true">TBF2_Repeatable4</child>
+	</job>
+	
+	<job name="M_ZI_TBF_Repeatable5" repeatableinterval="300">
+		<title>$SGTITLE_TRIAL_BY_FIRE</title>
+		<scriptclass>TBFMission</scriptclass>				
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_TBF</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="7.45" locked="true"></forcetime>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<audiooverride>M_ZOD</audiooverride>		
+		<child checkpoint="false">TBF1_Repeatable5</child>
+		<child checkpoint="false">TBF2_Repeatable5</child>
+	</job>
+	
+</groups>
+

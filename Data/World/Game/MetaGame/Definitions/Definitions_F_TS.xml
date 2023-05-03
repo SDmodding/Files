@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+
+<gameslices>   
+	<!-- TIFFANY'S SONG -->
+	<gameslice name="F_TS_1">
+		<title>Tiffany's Song</title>
+		<scriptclass>F_TS_1</scriptclass>
+		<restorelocationmarker>Locations-F_TS</restorelocationmarker>
+	</gameslice>
+</gameslices>
+
+
+ 
+<groups>
+	<favour name="F_TS" statsid="49">
+		<title>$SGTITLE_TIFFANYS_SONG</title>
+		<scriptclass>F_TS</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_TS</triggerobject>
+		<restorelocationmarker>Locations-F_TS</restorelocationmarker>
+		<completelocationmarker>EndLocations-F_TS</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>				
+        <forcetime time="22.00" locked="true"></forcetime> 
+		<child checkpoint="true">F_TS_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+</groups>
+

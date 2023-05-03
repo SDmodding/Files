@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<!--    
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="FG_1_Girls" holdcurtain="true">
+		<title>See Ricky</title>
+		<scriptclass>FG_1_Girls</scriptclass>
+	</gameslice>
+	<gameslice name="FG_1_Pickup" holdcurtain="true">
+		<title>Pick Up Girls</title>
+		<scriptclass>FG_1_Pickup</scriptclass>
+		<restorelocationmarker>FGMission-mkr_restore1</restorelocationmarker>
+		<dependent>FG_1_Girls</dependent>
+	</gameslice>
+	<gameslice name="FG_2_Highway" holdcurtain="true">
+		<title>Go towards the Highway</title>
+		<scriptclass>FG_2_Highway</scriptclass>
+		<restorelocationmarker>FGMission-mkr_restore2</restorelocationmarker>
+		<dependent>FG_1_Pickup</dependent>
+	</gameslice>
+	<gameslice name="FG_3_Race" holdcurtain="true" statsid="19">
+		<title>Race the Driver</title>
+		<scriptclass>FG_3_Race</scriptclass> 
+		<restorelocationmarker>FGMission-mkr_restoreRace</restorelocationmarker>
+		<altlayeronstart activate="true" flush="true">FastGirls</altlayeronstart>
+		<altlayeronend activate="false" flush="true">FastGirls</altlayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="true">FGMIssion_Barrier01</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">FGMIssion_Barrier01</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="true">FGMission_Barrier02</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="false" activate="false">FGMission_Barrier02</scenelayeronend>
+		<trackgamesliceas>RACE</trackgamesliceas>
+		<dependent>FG_2_Highway</dependent>
+	</gameslice>
+	<gameslice name="FG_4_Drop" holdcurtain="true">
+		<title>Drop off the Girls</title>
+		<scriptclass>FG_4_Drop</scriptclass>
+		<restorelocationmarker>FGMission-mkr_restore4</restorelocationmarker>
+		<dependent>FG_3_Race</dependent>
+	</gameslice>
+
+
+</gameslices>
+
+<groups>
+
+	<mission name="M_FG" statsid="8">
+		<title>$SGTITLE_FAST_GIRLS</title>
+		<scriptclass>FGMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-FGMission</triggerobject>
+		<restorelocationmarker>Locations-FG_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_FG</completelocationmarker>
+		<forceweather type="sunny" wetness="0.5"  locked="true"></forceweather>
+        <forcetime time="22.04" locked="false"></forcetime>
+		<deferredregionrestart>false</deferredregionrestart>
+		<vendorenableonstart enable="false">PARKADE</vendorenableonstart>
+		<vendorenableonstart enable="false">VEHICLE_STORE</vendorenableonstart>
+		<vendorenableonend enable="true">PARKADE</vendorenableonend>
+		<vendorenableonend enable="true">VEHICLE_STORE</vendorenableonend>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child>FG_1_Girls</child>
+		<child checkpoint="true">FG_1_Pickup</child>
+		<child checkpoint="true">FG_2_Highway</child>
+		<child checkpoint="true">FG_3_Race</child>
+		<child checkpoint="true">FG_4_Drop</child>
+	</mission>
+
+</groups>

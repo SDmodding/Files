@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<!-- BREAK ARREST FAVOUR -->
+	<gameslice name="E_BA_1">
+		<title>Break Arrest 1</title>
+		<scriptclass>E_BA_1</scriptclass>
+		<restorelocationmarker>Locations-BreakArrest_Spawn</restorelocationmarker>
+	</gameslice>
+	
+	<!-- BREAK ARREST 2 FAVOUR -->
+	<gameslice name="E_BA2_1">
+		<title>Break Arrest 2</title>
+		<scriptclass>E_BA2_1</scriptclass>
+		<restorelocationmarker>Locations-BreakArrest2_Spawn</restorelocationmarker>
+	</gameslice>
+	
+	<!-- BREAK ARREST 3 FAVOUR -->
+	<gameslice name="E_BA3_1">
+		<title>Break Arrest 3</title>
+		<scriptclass>E_BA3_1</scriptclass>
+		<restorelocationmarker>Locations-BreakArrest3_Spawn</restorelocationmarker>
+	</gameslice>
+
+</gameslices>
+
+<groups>
+
+
+	<!-- BREAK ARREST FAVOUR -->
+	<favour name="E_BA" statsid="3">
+		<title>$SGTITLE_BREAKARREST</title>
+		<scriptclass>BreakArrest</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_BA</triggerobject>
+		<restorelocationmarker>Locations-BreakArrest_Spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_BA_1</child>
+	</favour>
+	
+	<!-- BREAK ARREST 2 FAVOUR -->
+	<favour name="E_BA2" statsid="4">
+		<title>$SGTITLE_BREAKARREST2</title>
+		<scriptclass>BreakArrest2</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_BA2</triggerobject>
+		<restorelocationmarker>Locations-BreakArrest2_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_BA2</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_BA2_1</child>
+	</favour>
+	
+	<!-- BREAK ARREST 3 FAVOUR -->
+	<favour name="E_BA3" statsid="5">
+		<title>$SGTITLE_BREAKARREST3</title>
+		<scriptclass>BreakArrest3</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_BA3</triggerobject>
+		<restorelocationmarker>Locations-BreakArrest3_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_BA3</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_BA3_1</child>
+	</favour>
+
+
+</groups>

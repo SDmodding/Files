@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+
+
+<gameslices>
+
+	<!-- Triad Wars North Point Residential -->
+
+	<gameslice name="TW_NP_02_Gameplay">
+		<title>Triad Wars North Point Residential Area02</title>
+		<scriptclass>TW_NP_02_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_NP_03_Gameplay">
+		<title>Triad Wars North Point Residential Area03</title>
+		<scriptclass>TW_NP_03_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_NP_END_Gameplay">
+		<title>Triad Wars North Point Residential Complete</title>
+		<scriptclass>TW_NP_END_Gameplay</scriptclass>
+	</gameslice>
+	
+	
+	
+	<!-- Triad Wars North Point Temple -->
+
+	<gameslice name="TW_NPT_01_Gameplay">
+		<title>Triad Wars North Point Temple Area01</title>
+		<scriptclass>TW_NPT_01_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_NPT_02_Gameplay">
+		<title>Triad Wars North Point Temple Area02</title>
+		<scriptclass>TW_NPT_02_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_NPT_03_Gameplay">
+		<title>Triad Wars North Point Temple Area03</title>
+		<scriptclass>TW_NPT_03_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_NPT_END_Gameplay">
+		<title>Triad Wars North Point Temple Complete</title>
+		<scriptclass>TW_NPT_END_Gameplay</scriptclass>
+	</gameslice>
+
+	
+	<!-- Triad Wars North Point Temple -->
+
+	<gameslice name="TW_CEN_01_Gameplay">
+		<title>Triad Wars Central Area01</title>
+		<scriptclass>TW_CEN_01_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_CEN_02_Gameplay">
+		<title>Triad Wars Central Area02</title>
+		<scriptclass>TW_CEN_02_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_CEN_03_Gameplay">
+		<title>Triad Wars Central Area03</title>
+		<scriptclass>TW_CEN_03_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_CEN_END_Gameplay">
+		<title>Triad Wars Central Complete</title>
+		<scriptclass>TW_CEN_END_Gameplay</scriptclass>
+	</gameslice>
+
+
+	<!-- Soho -->
+
+	<gameslice name="TW_SOHO_01_Gameplay">
+		<title>Triad Wars Soho Area01</title>
+		<scriptclass>TW_SOHO_01_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_SOHO_02_Gameplay">
+		<title>Triad Wars Soho Area02</title>
+		<scriptclass>TW_SOHO_02_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_SOHO_03_Gameplay">
+		<title>Triad Wars Soho Area03</title>
+		<scriptclass>TW_SOHO_03_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_SOHO_END_Gameplay">
+		<title>Triad Wars Soho Complete</title>
+		<scriptclass>TW_SOHO_END_Gameplay</scriptclass>
+	</gameslice>	
+	
+	
+	<!-- Dockyards (Kennedytown) -->
+
+	<gameslice name="TW_DOCK_01_Gameplay">
+		<title>Triad Wars Dockyards Area01</title>
+		<scriptclass>TW_DOCK_01_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_DOCK_02_Gameplay">
+		<title>Triad Wars Dockyards Area02</title>
+		<scriptclass>TW_DOCK_02_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_DOCK_03_Gameplay">
+		<title>Triad Wars Dockyards Area03</title>
+		<scriptclass>TW_DOCK_03_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_DOCK_END_Gameplay">
+		<title>Triad Wars Dockyards Complete</title>
+		<scriptclass>TW_DOCK_END_Gameplay</scriptclass>
+	</gameslice>	
+	
+	
+	<!-- Aberdeen -->
+
+	<gameslice name="TW_ABER_01_Gameplay">
+		<title>Triad Wars Aberdeen Area01</title>
+		<scriptclass>TW_ABER_01_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_ABER_02_Gameplay">
+		<title>Triad Wars Aberdeen Area02</title>
+		<scriptclass>TW_ABER_02_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_ABER_03_Gameplay">
+		<title>Triad Wars Aberdeen Area03</title>
+		<scriptclass>TW_ABER_03_Gameplay</scriptclass>
+	</gameslice>
+	
+	<gameslice name="TW_ABER_END_Gameplay">
+		<title>Triad Wars Aberdeen Complete</title>
+		<scriptclass>TW_ABER_END_Gameplay</scriptclass>
+	</gameslice>	
+	
+
+</gameslices>
+
+<groups>
+
+	<!-- Triad Wars North Point Residential -->
+
+	
+	<event name="E_TW_NP_02" statsid="28"> 
+		<title>$SGTITLE_TW_NORTH_POINT_2</title>
+		<scriptclass>TW_NP_02</scriptclass>		
+		<restorelocationmarker>Locations-TW_NP_02_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsNorthPoint02</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_NP_02_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+		
+	<event name="E_TW_NP_03" statsid="29">
+		<title>$SGTITLE_TW_NORTH_POINT_3</title>
+		<scriptclass>TW_NP_03</scriptclass>		
+		<restorelocationmarker>Locations-TW_NP_03_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsNorthPoint03</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_NP_03_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_TW_NP_END" statsid="30">
+		<title>$SGTITLE_TW_NORTH_POINT_COMP</title>
+		<scriptclass>TW_NP_END</scriptclass>		
+		<child>TW_NP_END_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	
+	<!-- Triad Wars North Point Temple -->
+
+	<event name="E_TW_NPT_01" statsid="31">
+		<title>$SGTITLE_TW_NP_TEMPLE_1</title>
+		<scriptclass>TW_NPT_01</scriptclass>		
+		<restorelocationmarker>Locations-TW_NPT_01_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsNorthPointTem01</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_NPT_01_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_TW_NPT_02" statsid="32">
+		<title>$SGTITLE_TW_NP_TEMPLE_2</title>
+		<scriptclass>TW_NPT_02</scriptclass>		
+		<restorelocationmarker>Locations-TW_NPT_02_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsNorthPointTem02</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_NPT_02_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+		
+	<event name="E_TW_NPT_03" statsid="33">
+		<title>$SGTITLE_TW_NP_TEMPLE_3</title>
+		<scriptclass>TW_NPT_03</scriptclass>		
+		<restorelocationmarker>Locations-TW_NPT_03_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsNorthPointTem03</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_NPT_03_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_TW_NPT_END" statsid="34">
+		<title>$SGTITLE_TW_NP_TEMPLE_COMP</title>
+		<scriptclass>TW_NPT_END</scriptclass>		
+		<child>TW_NPT_END_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+
+	<!-- Triad Wars Central -->
+
+	<event name="E_TW_CEN_01" statsid="35">
+		<title>$SGTITLE_TW_CENTRAL_HANGOUT_1</title>
+		<scriptclass>TW_CEN_01</scriptclass>		
+		<restorelocationmarker>Locations-TW_CEN_01_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsCentral01</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_CEN_01_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_TW_CEN_02" statsid="36">
+		<title>$SGTITLE_TW_CENTRAL_HANGOUT_2</title>
+		<scriptclass>TW_CEN_02</scriptclass>		
+		<restorelocationmarker>Locations-TW_CEN_02_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsCentral02</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_CEN_02_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+		
+	<event name="E_TW_CEN_03" statsid="37">
+		<title>$SGTITLE_TW_CENTRAL_HANGOUT_3</title>
+		<scriptclass>TW_CEN_03</scriptclass>		
+		<restorelocationmarker>Locations-TW_CEN_03_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsCentral03</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_CEN_03_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_TW_CEN_END" statsid="38">
+		<title>$SGTITLE_TW_CENTRAL_COMPLETE</title>
+		<scriptclass>TW_CEN_END</scriptclass>		
+		<child>TW_CEN_END_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	
+	
+	<!-- Triad Wars Soho -->
+
+	<event name="E_TW_SOHO_01" statsid="39">
+		<title>$SGTITLE_TW_SOHO_HANGOUT_1</title>
+		<scriptclass>TW_SOHO_01</scriptclass>		
+		<restorelocationmarker>Locations-TW_SOHO_01_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsSoho01</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_SOHO_01_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_TW_SOHO_02" statsid="40">
+		<title>$SGTITLE_TW_SOHO_HANGOUT_2</title>
+		<scriptclass>TW_SOHO_02</scriptclass>		
+		<restorelocationmarker>Locations-TW_SOHO_02_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsSoho02</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>		
+		<child>TW_SOHO_02_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+		
+	<event name="E_TW_SOHO_03" statsid="41">
+		<title>$SGTITLE_TW_SOHO_HANGOUT_3</title>
+		<scriptclass>TW_SOHO_03</scriptclass>		
+		<restorelocationmarker>Locations-TW_SOHO_03_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsSoho03</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_SOHO_03_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_TW_SOHO_END" statsid="42">
+		<title>$SGTITLE_TW_SOHO_COMPLETE</title>
+		<scriptclass>TW_SOHO_END</scriptclass>		
+		<child>TW_SOHO_END_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>	
+
+
+	<!-- Triad Wars Dockyards (Kennedytown) -->
+
+	<event name="E_TW_DOCK_01" statsid="43">
+		<title>$SGTITLE_TW_DOCKYARDS_1</title>
+		<scriptclass>TW_DOCK_01</scriptclass>		
+		<restorelocationmarker>Locations-TW_DOCK_01_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsDock01</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_DOCK_01_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_TW_DOCK_02" statsid="44">
+		<title>$SGTITLE_TW_DOCKYARDS_2</title>
+		<scriptclass>TW_DOCK_02</scriptclass>		
+		<restorelocationmarker>Locations-TW_DOCK_02_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsDock02</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_DOCK_02_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+		
+	<event name="E_TW_DOCK_03" statsid="45">
+		<title>$SGTITLE_TW_DOCKYARDS__3</title>
+		<scriptclass>TW_DOCK_03</scriptclass>		
+		<restorelocationmarker>Locations-TW_DOCK_03_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsDock03</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_DOCK_03_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_TW_DOCK_END" statsid="46">
+		<title>$SGTITLE_TW_DOCKYARDSCOMP</title>
+		<scriptclass>TW_DOCK_END</scriptclass>		
+		<child>TW_DOCK_END_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>	
+	
+	
+	
+	
+	<!-- Triad Wars Dockyards (Kennedytown) -->
+
+	<event name="E_TW_ABER_01" statsid="47">
+		<title>$SGTITLE_TW_ABD_HANGOUT_1</title>
+		<scriptclass>TW_ABER_01</scriptclass>		
+		<restorelocationmarker>Locations-TW_ABER_01_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsAber01</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_ABER_01_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_TW_ABER_02" statsid="48">
+		<title>$SGTITLE_TW_ABD_HANGOUT_2</title>
+		<scriptclass>TW_ABER_02</scriptclass>		
+		<restorelocationmarker>Locations-TW_ABER_02_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsAber02</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_ABER_02_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+		
+	<event name="E_TW_ABER_03" statsid="49">
+		<title>$SGTITLE_TW_ABD_HANGOUT_3</title>
+		<scriptclass>TW_ABER_03</scriptclass>		
+		<restorelocationmarker>Locations-TW_ABER_03_Start</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-TriadWarsAber03</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<failtimeout>0.001</failtimeout>
+		<deferredregionstart>true</deferredregionstart>
+		<child>TW_ABER_03_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_TW_ABER_END" statsid="50">
+		<title>$SGTITLE_TW_ABERDEEN_COMPLETE</title>
+		<scriptclass>TW_ABER_END</scriptclass>		
+		<child>TW_ABER_END_Gameplay</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>	
+
+</groups>

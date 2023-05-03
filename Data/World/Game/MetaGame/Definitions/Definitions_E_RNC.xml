@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="RNC1">
+		<title>RNC1</title>
+		<scriptclass>RNC1</scriptclass>
+		<restorelocationmarker>Locations-RNC1EventStart</restorelocationmarker>		
+	</gameslice>
+	<gameslice name="RNC2">
+		<title>RNC2</title>
+		<scriptclass>RNC2</scriptclass>
+		<restorelocationmarker>Locations-RNC2EventStart</restorelocationmarker>			
+	</gameslice>
+	<gameslice name="RNC3">
+		<title>RNC3</title>
+		<scriptclass>RNC3</scriptclass>
+		<restorelocationmarker>Locations-RNC3EventStart</restorelocationmarker>			
+	</gameslice>
+
+</gameslices>
+
+
+<groups>
+
+	<event name="E_HNR1" statsid="19">
+		<title>$SGTITLE_HIT_AND_RUN</title>
+		<scriptclass>RNC1Event</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-RNC1Event</triggerobject>
+		<restorelocationmarker>Locations-RNC1EventStart</restorelocationmarker>
+		<minpiplevel>1</minpiplevel>
+		<faceactiontype>eFACEACTION_OFFER_HELP</faceactiontype>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">RNC1</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	<event name="E_HNR2" statsid="20">
+		<title>$SGTITLE_HIT_AND_RUN_2</title>
+		<scriptclass>RNC2Event</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-RNC2Event</triggerobject>
+		<restorelocationmarker>Locations-RNC2EventStart</restorelocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>RNC2</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	<event name="E_HNR3" statsid="21">
+		<title>$SGTITLE_HIT_AND_RUN_3</title>
+		<scriptclass>RNC3Event</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-RNC3Event</triggerobject>
+		<restorelocationmarker>Locations-RNC3EventStart</restorelocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>RNC3</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+
+</groups>

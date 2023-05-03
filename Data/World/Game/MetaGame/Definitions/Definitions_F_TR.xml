@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+
+<gameslices>   
+	<gameslice name="F_TR_1" holdcurtain="true">
+		<title>Truck Recovery</title>
+		<scriptclass>F_TR_1</scriptclass>
+		<restorelocationmarker>Locations-F_TR_Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+	</gameslice>	
+</gameslices>
+ 
+<groups>
+	<favour name="F_TR" statsid="48">
+		<title>$SGTITLE_TRUCK_RECOVERY</title>
+		<scriptclass>F_TR</scriptclass>
+		<maxheatlevel>2</maxheatlevel>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_TR</triggerobject>
+		<restorelocationmarker>Locations-F_TR_Start</restorelocationmarker>
+		<deferredregionstart>true</deferredregionstart>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">F_TR_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>	
+</groups>
+

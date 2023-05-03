@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+
+<gameslices>   
+	<!-- ILLYANA FREE RUNNING FAVOUR -->
+	<gameslice name="F_IFR_1">
+		<title>Ilyana Free Running</title>
+		<scriptclass>F_IFR_1</scriptclass>
+		<restorelocationmarker>Locations-F_IFR_Start</restorelocationmarker>
+	</gameslice>
+</gameslices>
+
+
+ 
+<groups>
+	<!-- ILYANA FREE RUNNING FAVOUR -->
+	<favour name="F_IFR" statsid="36">
+		<title>$SGTITLE_ILYANA_FREE_RUNNING</title>
+		<scriptclass>F_IFR</scriptclass>
+		<restorelocationmarker>Locations-F_IFR_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-F_IFR</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_IFR</triggerobject>		
+		<child checkpoint="true">F_IFR_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+</groups>
+

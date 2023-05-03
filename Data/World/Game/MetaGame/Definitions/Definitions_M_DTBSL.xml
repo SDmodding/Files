@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<gameslices>
+	<gameslice name="DTBSL_1_Drive" holdcurtain="true">
+		<title>Drive to Big Smile Lee</title>
+		<scriptclass>DTBSL_1_Drive</scriptclass>
+		<restorelocationmarker>Locations-M_GTBSL_Start</restorelocationmarker>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_DTBSL" holdcurtain="true">
+		<title>$SGTITLE_DRIVE_TO_BIGSMILELEE</title>
+		<scriptclass>DTBSLMission</scriptclass>
+		<scenelayeronstart geoautoactivate="false" activate="false">AB_Ferry</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">AB_Ferry</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">AB_Parking_Boats</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">AB_Parking_Boats</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Harbour_Parking</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">NP_Harbour_Parking</scenelayeronend>
+		<savegamenameoverride>$SGTITLE_THE_ELECTION</savegamenameoverride>
+		<restorelocationmarker>Locations-M_GTBSL_Start</restorelocationmarker>
+		<cancellocationmarker>Locations-M_GTBSL_Start</cancellocationmarker>
+		<completelocationmarker>EndLocations-M_BSL</completelocationmarker>
+		<allowuicancellation>false</allowuicancellation>
+		<saveoverride>BSL_1_ParkingLot</saveoverride>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<deferredregionrestart>false</deferredregionrestart>
+		<forcetime time="23.30" locked="true"></forcetime>	
+		<child checkpoint="true">DTBSL_1_Drive</child>
+	</mission>
+</groups>
+

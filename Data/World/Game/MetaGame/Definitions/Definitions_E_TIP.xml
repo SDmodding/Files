@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+
+
+<gameslices>
+
+	<!-- THREE IS A PARTY FAVOUR -->
+	<gameslice name="E_TIP_1">
+		<title>Three is a Party</title>
+		<scriptclass>E_TIP_1</scriptclass>
+		<restorelocationmarker>Locations-ThreeIsAParty_Spawn</restorelocationmarker>
+	</gameslice>
+
+</gameslices>
+
+
+<groups>
+
+	<!-- THREE IS A PARTY FAVOUR -->
+	<favour name="E_TIP" statsid="24">
+		<title>$SGTITLE_THREE_IS_A_PARTY</title>
+		<scriptclass>ThreeIsAParty</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_ThreeIsAParty</triggerobject>
+		<restorelocationmarker>Locations-ThreeIsAParty_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_TIP</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_TIP_1</child>
+	</favour>
+
+</groups>

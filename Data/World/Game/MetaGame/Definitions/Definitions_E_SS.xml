@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<gameslices>   
+	<!-- SHAOLIN SHOWDOWN -->
+	<gameslice name="E_SS_1" holdcurtain="true">
+		<title>Shaolin Showdown</title>
+		<scriptclass>E_SS_1</scriptclass>
+		<restorelocationmarker>E_SS-player_teleport</restorelocationmarker>
+	</gameslice>
+</gameslices>
+ 
+<groups>
+	<job name="E_SS" statsid="3">
+		<title>$SGTITLE_SHAOLIN_SHOWDOWN</title>
+		<scriptclass>E_SS</scriptclass>
+		<restorelocationmarker>E_SS-player_teleport</restorelocationmarker>
+		<completelocationmarker>Locations-E_SS_Start</completelocationmarker>
+		<triggerobject>ProgressionTriggers_Events-E_SS</triggerobject>
+		<deferredregionrestart>false</deferredregionrestart>
+		<ignoresafehouserestore>true</ignoresafehouserestore>	
+		<child checkpoint="true">E_SS_1</child>		
+		<trackgamesliceas>DLC</trackgamesliceas>		
+	</job>
+</groups>
+

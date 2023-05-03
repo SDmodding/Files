@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	
+
+	<gameslice name="FC1Gameplay">
+		<title>Fight Club 1</title>
+		<scriptclass>FC1Gameplay</scriptclass>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<restorelocationmarker>Locations-FC1EventStart</restorelocationmarker>			
+	</gameslice>
+	
+	<gameslice name="FC2Gameplay">
+		<title>Fight Club 2</title>
+		<scriptclass>FC2Gameplay</scriptclass>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<restorelocationmarker>Locations-FC2EventStart</restorelocationmarker>			
+	</gameslice>
+	
+	<gameslice name="FC3Gameplay">
+		<title>Fight Club 3</title>
+		<scriptclass>FC3Gameplay</scriptclass>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<restorelocationmarker>Locations-FC3EventStart</restorelocationmarker>			
+	</gameslice>
+	
+	<gameslice name="FC4Gameplay">
+		<title>Fight Club 4</title>
+		<scriptclass>FC4Gameplay</scriptclass>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<restorelocationmarker>Locations-FC4EventStart</restorelocationmarker>			
+	</gameslice>
+
+	
+</gameslices>
+
+<groups>
+
+	
+	<favour name="F_FC1" repeatableinterval="1"  statsid="1">
+		<title>$SGTITLE_FIGHT_CLUB_1</title>
+		<scriptclass>F_FC1</scriptclass>
+		<failtimeout>1.000000000</failtimeout>	
+		<deferredregionrestart>false</deferredregionrestart>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_FightClub01</triggerobject>
+		<scenelayeronstart geoautoactivate="true" activate="true">F_FC1_Ambience</scenelayeronstart>										
+		<restorelocationmarker>Locations-FC1EventStart</restorelocationmarker>
+		<cancellocationmarker>Locations-FC1EventStart</cancellocationmarker>
+		<completelocationmarker>EndLocations-F_FC1</completelocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">FC1Gameplay</child>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</favour>
+	
+	<favour name="F_FC2" repeatableinterval="1"  statsid="2">
+		<title>$SGTITLE_FIGHT_CLUB_2</title>
+		<scriptclass>F_FC2</scriptclass>
+		<failtimeout>1.000000000</failtimeout>		
+		<deferredregionrestart>false</deferredregionrestart>		
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_FightClub02</triggerobject>
+		<scenelayeronstart geoautoactivate="true" activate="true">F_FC2_Ambience</scenelayeronstart>											
+		<restorelocationmarker>Locations-FC2EventStart</restorelocationmarker>
+		<cancellocationmarker>Locations-FC2EventStart</cancellocationmarker>
+		<completelocationmarker>EndLocations-F_FC2</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">FC2Gameplay</child>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</favour>
+	
+	<favour name="F_FC3" repeatableinterval="1"  statsid="3">
+		<title>$SGTITLE_FIGHT_CLUB_3</title>
+		<scriptclass>F_FC3</scriptclass>
+		<failtimeout>1.000000000</failtimeout>		
+		<deferredregionrestart>false</deferredregionrestart>		
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_FightClub03</triggerobject>
+		<scenelayeronstart geoautoactivate="true" activate="true">F_FC3_Ambience</scenelayeronstart>											
+		<restorelocationmarker>Locations-FC3EventStart</restorelocationmarker>
+		<cancellocationmarker>Locations-FC3EventStart</cancellocationmarker>
+		<completelocationmarker>EndLocations-F_FC3</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">FC3Gameplay</child>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</favour>
+	
+	<favour name="F_FC4" repeatableinterval="1"  statsid="4">
+		<title>$SGTITLE_FIGHT_CLUB_4</title>
+		<scriptclass>F_FC4</scriptclass>
+		<failtimeout>1.000000000</failtimeout>	
+		<deferredregionrestart>false</deferredregionrestart>		
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_FightClub04</triggerobject>
+		<restorelocationmarker>Locations-FC4EventStart</restorelocationmarker>
+		<completelocationmarker>EndLocations-F_FC4</completelocationmarker>		
+		<scenelayeronstart geoautoactivate="false" activate="false">AB_DryDock_01</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="true">AB_DryDock_01</scenelayeronend>		
+		<scenelayeronstart geoautoactivate="true" activate="true">F_FC4_Ambience</scenelayeronstart>									
+		<cancellocationmarker>Locations-FC4EventStart</cancellocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">FC4Gameplay</child>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</favour>
+
+	
+
+
+</groups>
+
+
+

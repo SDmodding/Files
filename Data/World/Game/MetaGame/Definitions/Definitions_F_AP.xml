@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+
+<gameslices>   
+	<!-- AMANDA PHOTOGRAPHY FAVOUR -->
+	<gameslice name="F_AP_1">
+		<title>Photographing Amanda</title>
+		<scriptclass>F_AP_1</scriptclass>
+		<restorelocationmarker>Locations-F_AP_Start</restorelocationmarker>
+	</gameslice>
+</gameslices>
+
+
+ 
+<groups>
+	<!-- AMANDA PHOTOGRAPHY FAVOUR -->
+	<favour name="F_AP" statsid="25">
+		<title>$SGTITLE_PHOTOGRAPHING_AMANDA</title>
+		<scriptclass>F_AP</scriptclass>
+		<restorelocationmarker>Locations-F_AP_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-F_AP</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_AP</triggerobject>
+		<child checkpoint="true">F_AP_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+</groups>
+

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+
+<gameslices>
+
+	<gameslice name="UP0" holdcurtain="true">
+		<title>Pick Up Winston</title>
+		<scriptclass>UP0_Drive</scriptclass>
+	</gameslice>
+	
+	<gameslice name="UP1" holdcurtain="true">
+		<title>Meet with Uncle Po</title>
+		<scriptclass>UP1_Meet</scriptclass>
+		<restorelocationmarker>UPMission-WinstonDrive_Start</restorelocationmarker>
+		<dependent>UP0</dependent>
+	</gameslice>
+	
+	<gameslice name="UP1b" holdcurtain="true">
+		<title>Meet with Roland</title>
+		<scriptclass>UP1b_Roland</scriptclass>
+		<restorelocationmarker>UPMission-FindRoland_PlayerStart</restorelocationmarker>
+		<dependent>UP1</dependent>
+	</gameslice>
+	
+	<gameslice name="UP2" holdcurtain="true">
+		<title>Find Patsy</title>
+		<scriptclass>UP2_Find</scriptclass>
+		<restorelocationmarker>UPMission-FindPatsy_PlayerStart</restorelocationmarker>
+		<dependent>UP1b</dependent>
+	</gameslice>
+	
+	<gameslice name="UP3" holdcurtain="true">
+		<title>Chase Target</title>
+		<scriptclass>UP3_Chase</scriptclass>
+		<restorelocationmarker>UPMission-Chase_PlayerVehicleDest</restorelocationmarker>
+		<dependent>UP2</dependent>
+	</gameslice>
+	
+	<gameslice name="UP4" holdcurtain="true">
+		<title>Deliver Car</title>
+		<scriptclass>UP4_Deliver</scriptclass>
+		<dependent>UP3</dependent>
+		<loadhintonstart priority="0">$LOADING_HINT_UP_MID</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_up_start_tp.perm.bin</loadscreenonstart>
+	</gameslice>
+	
+</gameslices>
+
+<groups>
+
+	<mission name="M_UP" statsid="27">
+		<title>$SGTITLE_UNCLE_PO</title>
+		<scriptclass>UPMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-M_UPMission</triggerobject>
+		<restorelocationmarker>Locations-UnclePo</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_UP</completelocationmarker>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<maxheatlevel>2</maxheatlevel>
+		<saveoverride>CK2_1</saveoverride>
+		<vendorenableonstart enable="false">VEHICLE_STORE</vendorenableonstart>
+		<vendorenableonend enable="true">VEHICLE_STORE</vendorenableonend>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">UP0</child>
+		<child checkpoint="true">UP1</child>
+		<child checkpoint="true">UP1b</child>
+		<child checkpoint="true">UP2</child>
+		<child checkpoint="true">UP3</child>
+		<child>UP4</child>
+		<loadhintonend priority="0">$LOADING_HINT_UP_END</loadhintonend>
+		<loadscreenonend priority="0">Data\UI\loading_up_end_tp.perm.bin</loadscreenonend>
+		<loadhintonend priority="1">$LOADING_HINT_SS_START</loadhintonend>
+		<loadscreenonend priority="1">Data\UI\loading_ss_start_tp.perm.bin</loadscreenonend>
+		<loadhintonend priority="2">$LOADING_HINT_BBC_MID</loadhintonend>
+		<loadscreenonend priority="2">Data\UI\loading_bbc_start_tp.perm.bin</loadscreenonend>
+	</mission>
+	
+</groups>

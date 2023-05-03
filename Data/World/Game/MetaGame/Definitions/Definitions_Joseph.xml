@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="E_GDC_1" holdcurtain="true">
+		<title>GDC Demo Start</title>
+		<scriptclass>GDCDemo_1</scriptclass>
+		<restorelocationmarker>Locations-Locations-E_GDC</restorelocationmarker>
+	</gameslice>
+	<gameslice name="F_BPI_1">
+		<title>Black Pearl Intro</title>
+		<scriptclass>F_BPI_1</scriptclass>
+		<restorelocationmarker>Locations-BPIEventStart</restorelocationmarker>
+	</gameslice>
+
+	<gameslice name="SHAB_01_Main">
+		<title>Purchase Safehouse</title>
+		<scriptclass>SHAB_01_Main</scriptclass>
+	</gameslice>
+	<gameslice name="SHKT_01_Main">
+		<title>Purchase SafeHouseKT</title>
+		<scriptclass>SHKT_01_Main</scriptclass>
+	</gameslice>
+	<gameslice name="SHCT1_01_Main">
+		<title>Purchase Safehouse C</title>
+		<scriptclass>SHCT1_01_Main</scriptclass>
+	</gameslice>
+
+
+	<gameslice name="J_TTD_1">
+		<title>Thug Take Down Gameplay</title>
+		<scriptclass>J_TTD_1</scriptclass>
+	</gameslice>
+</gameslices>
+
+
+<groups>
+	<mission name="E_GDC" holdcurtain="true">
+		<title>$SGTITLE_GDC_DEMO_START</title>
+		<scriptclass>GDCDemo</scriptclass>		
+		<restorelocationmarker>Restore-sf2</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>E_GDC_1</child>
+	</mission>
+	<favour name="F_BPI" statsid="51">
+		<title>$SGTITLE_BLACK_PEARL_INTRO</title>
+		<scriptclass>BPIEvent</scriptclass>
+		<triggerobject>ProgressionTriggers_Favours-F_BlackPearlIntro</triggerobject>
+		<restorelocationmarker>Locations-BPIEventStart</restorelocationmarker>
+		<child checkpoint="true">F_BPI_1</child>
+	</favour>	
+
+	<favour name="E_SafeHouseAB" statsid="52">
+		<title>$SGTITLE_SAFE_HOUSE_ABERDEEN</title>
+		<scriptclass>SHABEvent</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-SHABEvent</triggerobject>
+		<restorelocationmarker>Locations-SHABEvent_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_SHAB</completelocationmarker>
+		<child>SHAB_01_Main</child>
+	</favour>
+	<favour name="E_SafeHouseKT" statsid="53">
+		<title>$SGTITLE_SAFE_HOUSE_KENNEDY</title>
+		<scriptclass>SHKTEvent</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-SHKTEvent</triggerobject>
+		<restorelocationmarker>Locations-SHKTEvent_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_SHKT</completelocationmarker>
+		<child>SHKT_01_Main</child>
+	</favour>
+	<favour name="E_SafeHouseCT1" statsid="54">
+		<title>$SGTITLE_SAFE_HOUSE_CENTRAL_1</title>
+		<scriptclass>SHCT1Event</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-SHCT1Event</triggerobject>
+		<restorelocationmarker>Locations-SHCT1Event_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_SHCT1</completelocationmarker>
+		<child>SHCT1_01_Main</child>
+	</favour> 
+	
+		
+	<!--scenario name="J_TT">
+		<title>$SGTITLE_TRAN_TRACKER</title>
+		<scriptclass>TranJob_TT</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+		</enablemasks>
+	</scenario-->	
+</groups>
+

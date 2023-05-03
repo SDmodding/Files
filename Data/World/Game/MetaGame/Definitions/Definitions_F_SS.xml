@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<gameslices>   
+	<!-- SANDRA SPEEDING FAVOUR -->
+	<gameslice name="F_SS_1">
+		<title>Sandra Speeding</title>
+		<scriptclass>F_SS_1</scriptclass>
+		<restorelocationmarker>Locations-F_SS_Start</restorelocationmarker>
+	</gameslice>
+</gameslices>
+ 
+<groups>
+	<favour name="F_SS" statsid="47">
+		<title>$SGTITLE_SANDRA_SPEEDING</title>
+		<scriptclass>F_SS</scriptclass>
+		<restorelocationmarker>Locations-F_SS_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-F_SS</completelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_SS</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>				
+		<child checkpoint="true">F_SS_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+</groups>
+

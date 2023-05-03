@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+
+<gameslices>
+	
+	<gameslice name="MCR1" holdcurtain="true">
+		<title>NIS</title>
+		<scriptclass>MCR_1_Meet</scriptclass>
+		<restorelocationmarker>MCRMission-Intro_PlayerDest</restorelocationmarker>		
+		<scenelayeronstart geoautoactivate="false" activate="false">MCR_Table_Props</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true"  activate="true">MCR_Table_Props</scenelayeronend>
+	</gameslice>
+	
+	<gameslice name="MCR1a" holdcurtain="true">
+		<title>Call Ricky</title>
+		<scriptclass>MCR_1a_Call</scriptclass>
+		<restorelocationmarker>MCRMission-Intro_PlayerDest</restorelocationmarker>
+		<vehiclerestore range="100.0">MCRMission-Intro_PlayerVehicleDest</vehiclerestore>
+		<dependent>MCR1</dependent>
+	</gameslice>
+	
+	<gameslice name="MCR1b" holdcurtain="true">
+		<title>Trace call</title>
+		<scriptclass>MCR_1b_Trace</scriptclass>
+		<restorelocationmarker>MCRMission-TraceStart</restorelocationmarker>
+		<vehiclerestore range="100.0">MCRMission-Intro_PlayerVehicleDest</vehiclerestore>
+		<dependent>MCR1a</dependent>
+	</gameslice>
+	
+	<gameslice name="MCR2" holdcurtain="true">
+		<title>Drive to hangout</title>
+		<scriptclass>MCR_2_Drive</scriptclass>
+		<restorelocationmarker>MCRMission-Drive_PostTraceRestore</restorelocationmarker>
+		<vehiclerestore range="100000.0">MCRMission-Drive_TraceRestore</vehiclerestore>
+		<dependent>MCR1b</dependent>
+	</gameslice>
+	
+	<gameslice name="MCR2a" holdcurtain="true">
+		<title>Go to First Fight</title>
+		<scriptclass>MCR_2a_GoToFirstFight</scriptclass>
+		<restorelocationmarker>MCRMission-FirstFight_FindFightPlayerStart</restorelocationmarker>
+		<dependent>MCR2</dependent>
+	</gameslice>
+	
+	<gameslice name="MCR2b" holdcurtain="true">
+		<title>First Fight</title>
+		<scriptclass>MCR_2b_FirstFight</scriptclass>
+		<restorelocationmarker>MCRMission-FirstFight_PlayerStart</restorelocationmarker>
+		<dependent>MCR2a</dependent>
+	</gameslice>
+	
+	<gameslice name="MCR2c" holdcurtain="true">
+		<title>Second Fight</title>
+		<scriptclass>MCR_2c_SecondFight</scriptclass>
+		<restorelocationmarker>MCRMission-SecondFight_PlayerStart</restorelocationmarker>
+		<dependent>MCR2b</dependent>
+	</gameslice>
+	
+	<gameslice name="MCR2d" holdcurtain="true">
+		<title>Disarm</title>
+		<scriptclass>MCR_2d_Disarm</scriptclass>
+		<restorelocationmarker>MCRMission-Disarm_PlayerStart</restorelocationmarker>
+		<dependent>MCR2c</dependent>
+	</gameslice>
+	
+	<gameslice name="MCR3" holdcurtain="true">
+		<title>Shootout</title>
+		<scriptclass>MCR_3_Shootout</scriptclass>
+		<restorelocationmarker>MCRMission-Shootout_PlayerStart</restorelocationmarker>
+		<dependent>MCR2d</dependent>
+	</gameslice>
+	
+	<gameslice name="MCR4" holdcurtain="true">
+		<title>Vehicle chase</title>
+		<scriptclass>MCR_4_CarChase</scriptclass>
+		<restorelocationmarker>MCRMission-VehicleChase_PlayerStart</restorelocationmarker>
+		<dependent>MCR3</dependent>
+	</gameslice>
+	
+	<gameslice name="MCR5">
+		<title>Return to Mrs Chu</title>
+		<scriptclass>MCR_5_Return</scriptclass>
+		<restorelocationmarker>MCRMission-Return_PlayerStart</restorelocationmarker>
+		<dependent>MCR4</dependent>
+	</gameslice>
+	
+</gameslices>
+
+<groups>
+	<mission name="M_MCR" statsid="17">
+		<title>$SGTITLE_MRS_CHUS_REVENGE</title>
+		<scriptclass>MCRMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-MCRMission</triggerobject>
+		<restorelocationmarker>Locations-MCR_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_MCR</completelocationmarker>
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_SlumDock001</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_SlumDock002</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_SlumDock003</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_SlumDock001_Peds_Day</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_SlumDock004_Peds_Day</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_SlumDock004_Peds_Night</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_SlumDock001_POI_Day</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_SlumDock004_POI_Day</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_SlumDock004_POI_Night</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">NP_SlumDock001</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_SlumDock002</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_SlumDock003</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_SlumDock001_Peds_Day</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_SlumDock004_Peds_Day</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_SlumDock004_Peds_Night</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_SlumDock001_POI_Day</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_SlumDock004_POI_Day</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_SlumDock004_POI_Night</scenelayeronend>
+		<child checkpoint="true">MCR1</child>
+		<child checkpoint="true">MCR1a</child>
+		<child checkpoint="true">MCR1b</child>
+		<child checkpoint="true">MCR2</child>
+		<child checkpoint="true">MCR2a</child>
+		<child checkpoint="true">MCR2b</child>
+		<child checkpoint="false">MCR2c</child>
+		<child checkpoint="true">MCR2d</child>
+		<child checkpoint="true">MCR3</child>
+		<child checkpoint="true">MCR4</child>
+		<child checkpoint="false">MCR5</child>
+	</mission>
+</groups>

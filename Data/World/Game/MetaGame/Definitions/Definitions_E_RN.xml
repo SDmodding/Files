@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<!-- Definitions for Rough Neighbourhood 1 + 2 -->
+
+<gameslices>
+	<gameslice name="E_RN_1" holdcurtain="true"> 
+		<title>Rough Neighborhood</title>
+		<scriptclass>E_RN_1</scriptclass>
+		<restorelocationmarker>Locations-RoughNeighbourhood_Spawn</restorelocationmarker>
+	</gameslice>
+	<gameslice name="E_RN_2" holdcurtain="true"> 
+		<title>Rough Neighborhood 2</title>
+		<scriptclass>E_RN_2</scriptclass>
+		<restorelocationmarker>Locations-RoughNeighbourhood2_Spawn</restorelocationmarker>
+	</gameslice>
+</gameslices>
+
+<groups>
+	<favour name="E_RN" statsid="14">
+		<title>$SGTITLE_ROUGH_NEIGHBOURHOOD</title>
+		<scriptclass>RoughNeighbourhood</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-E_RoughNeighbourhood</triggerobject>
+		<restorelocationmarker>Locations-RoughNeighbourhood_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_RN</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_RN_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+	<favour name="E_RN2" statsid="15">
+		<title>$SGTITLE_ROUGH_NEIGHBORHOOD_2</title>
+		<scriptclass>RoughNeighbourhood2</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-E_RN2</triggerobject>
+		<restorelocationmarker>Locations-RoughNeighbourhood2_Spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_RN_2</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+</groups>
+
+

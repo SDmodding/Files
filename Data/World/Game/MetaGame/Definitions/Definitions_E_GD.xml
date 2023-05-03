@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="E_GD_1" holdcurtain="true"> 
+		<title>Gambling Den 1 01</title>
+		<scriptclass>E_GD_1</scriptclass>
+		<restorelocationmarker>Locations-GamblingDen_Spawn</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="E_GD2_1" holdcurtain="true"> 
+		<title>Gambling Den 2 01</title>
+		<scriptclass>E_GD2_1</scriptclass>
+		<restorelocationmarker>Locations-GamblingDen2_Spawn</restorelocationmarker>
+	</gameslice>
+
+</gameslices>
+
+<groups>
+
+	<favour name="E_GD" statsid="11">
+		<title>$SGTITLE_GAMBLING_DEN_1</title>
+		<minpiplevel>1</minpiplevel>
+		<faceactiontype>eFACEACTION_OFFER_HELP</faceactiontype>
+		<scriptclass>GambleDen</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-E_GamblingDen</triggerobject>
+		<restorelocationmarker>Locations-GamblingDen_Spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_GD_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+	
+	<favour name="E_GD2" statsid="12">
+		<title>$SGTITLE_GAMBLING_DEN_2</title>
+		<minpiplevel>1</minpiplevel>
+		<faceactiontype>eFACEACTION_OFFER_HELP</faceactiontype>
+		<scriptclass>GambleDen2</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-E_GamblingDen2</triggerobject>
+		<restorelocationmarker>Locations-GamblingDen2_Spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_GD2_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>	
+
+
+
+</groups>

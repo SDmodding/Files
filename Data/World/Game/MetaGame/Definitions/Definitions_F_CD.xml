@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+
+<gameslices>   
+	<!-- COP DRAW FAVOUR -->
+	<gameslice name="CD_01_Gameplay" holdcurtain="true">
+		<title>Cop Draw</title>
+		<scriptclass>CD_01_Gameplay</scriptclass>
+		<restorelocationmarker>Locations-F_CD_Spawn</restorelocationmarker>
+	</gameslice>	
+</gameslices>
+
+<groups>	 
+	<!-- COP DRAW FAVOUR -->
+	<favour name="E_CD" statsid="26">
+		<title>$SGTITLE_COP_DRAW</title>
+		<scriptclass>CopDraw</scriptclass>
+		<restorelocationmarker>Locations-F_CD_Spawn</restorelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-E_CD</triggerobject>
+		<scenelayeronstart geoautoactivate="false" activate="false">F_FC2_Ambience</scenelayeronstart>							
+		<scenelayeronend geoautoactivate="true">F_FC2_Ambience</scenelayeronend>					
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<child checkpoint="true">CD_01_Gameplay</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+</groups>
+	

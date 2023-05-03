@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="E_SL_1" holdcurtain="true"> 
+		<title>Sewer Line Gameplay</title>
+		<scriptclass>E_SL_1</scriptclass>
+		<restorelocationmarker>Locations-SLEvent_Start</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="E_SL2_1">
+		<title>Sewer Line 2 Gameplay</title>
+		<scriptclass>E_SL2_1</scriptclass>
+		<restorelocationmarker>Locations-SL2Event_Start</restorelocationmarker>
+	</gameslice>
+
+	<gameslice name="E_SL3_1" holdcurtain="true"> 
+		<title>Sewer Line 3</title>
+		<scriptclass>E_SL3_1</scriptclass>
+		<restorelocationmarker>Locations-SL3Event_Start</restorelocationmarker>
+	</gameslice>
+
+	<gameslice name="E_SL4_1" holdcurtain="true"> 
+		<title>Sewer Line 4 Gameplay</title>
+		<scriptclass>E_SL4_1</scriptclass>
+		<restorelocationmarker>Locations-SL4Event_Start</restorelocationmarker>
+	</gameslice>
+
+	
+</gameslices>
+
+
+<groups>
+
+	<favour name="E_SL" statsid="16">
+		<title>$SGTITLE_SEWER_LINE</title>
+		<scriptclass>SLEvent</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-SLEvent</triggerobject>
+		<restorelocationmarker>Locations-SLEvent_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_SL</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_SL_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+	
+	<favour name="E_SL2" statsid="17">
+		<title>$SGTITLE_SEWER_LINE_2</title>
+		<scriptclass keepobjectiveenabled="true">SL2Event</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-SL2Event</triggerobject>
+		<restorelocationmarker>Locations-SL2Event_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_SL2</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_SL2_1</child>
+	</favour>
+	
+	<!-- SEWER LINE 3 -->
+	<favour name="E_SL3" statsid="18">
+		<title>$SGTITLE_SEWER_LINE_3</title>
+		<scriptclass>SL3Event</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-SL3Event</triggerobject>
+		<restorelocationmarker>Locations-SL3Event_Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_SL3_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>	
+	
+	<favour name="E_SL4" statsid="19">
+		<title>$SGTITLE_SEWER_LINE_4</title>
+		<scriptclass>SL4Event</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-SL4Event</triggerobject>
+		<restorelocationmarker>Locations-SL4Event_Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<completelocationmarker>EndLocations-E_SL4</completelocationmarker>
+		<child checkpoint="true">E_SL4_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+
+
+
+</groups>

@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<!--    
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+-->
+
+<gameslices>
+	<gameslice name="PB_1_NotPing" holdcurtain="true">
+		<title>Collect bug</title>
+		<scriptclass>PB_1_NotPing</scriptclass>
+		<restorelocationmarker>Locations-RTNC_spawn</restorelocationmarker>
+	</gameslice>
+	<gameslice name="PB_2_ThiefChase" holdcurtain="true">
+		<title>Chase thief</title>
+		<scriptclass>PB_2_ThiefChase</scriptclass>
+		<restorelocationmarker>PBMission-AfterIntro</restorelocationmarker>
+		<dependent>PB_1_NotPing</dependent>
+		<enabletrafficonstart>false</enabletrafficonstart>
+	</gameslice>
+	<gameslice name="PB_3_GotoRestaurant">
+		<title>Goto Restaurant</title>
+		<scriptclass>PB_3_GotoRestaurant</scriptclass>
+		<dependent>PB_2_ThiefChase</dependent>
+	</gameslice>
+	<gameslice name="PB_4_SneakIn" holdcurtain="true">
+		<title>Sneak into Restaurant</title>
+		<scriptclass>PB_4_SneakIn</scriptclass>
+		<restorelocationmarker>PBMission-Restore_Restaurant</restorelocationmarker>
+		<dependent>PB_3_GotoRestaurant</dependent>
+	</gameslice>
+	<gameslice name="PB_5_PlantBug" holdcurtain="true">
+		<title>Plant bug</title>
+		<scriptclass>PB_5_PlantBug</scriptclass>
+		<restorelocationmarker>PBMission-Marker_RestaurantInside</restorelocationmarker>
+		<dependent>PB_4_SneakIn</dependent>
+	</gameslice>
+	<gameslice name="PB_6_ExitRestaurant">
+		<title>Exit Restaurant</title>
+		<scriptclass>PB_6_ExitRestaurant</scriptclass>
+		<dependent>PB_5_PlantBug</dependent>
+	</gameslice>
+</gameslices>
+
+<groups>
+	<mission name="M_PB" statsid="19">
+		<title>$SGTITLE_PENDREWS_BUGS</title>
+		<scriptclass>PBMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-M_RTNC</triggerobject>
+		<restorelocationmarker>Locations-RTNC_spawn</restorelocationmarker>
+		<cancellocationmarker>Locations-RTNC_spawn</cancellocationmarker>		
+		<!-- <forceweather type="sunny" wetness="0.0"  locked="true"></forceweather>
+        <forcetime time="10.30" locked="true"></forcetime> -->
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<watermark>true</watermark>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+	
+		<scenelayeronstart geoautoactivate="false" activate="false">AMB_NotPing</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Ambient_01</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Amb_01</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Amb_Eve_01</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Amb_Night_01</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Upstairs_Day</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Up_Cook</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Up_Wait</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Upstairs_Night</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">MrsChu_Rest_Int_Amb</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">MrsChu</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">MrsChus_Extra</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">MrsChu_Grief</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">MrsChu_Rest_Ext_Back</scenelayeronstart>		
+	
+		<scenelayeronstart geoautoactivate="false" activate="true">PB_Crowded_Park</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">PB_Crowded_Park</scenelayeronend>		
+
+		<scenelayeronend geoautoactivate="true">AMB_NotPing</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Ambient_01</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Amb_01</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Amb_Eve_01</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Amb_Night_01</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Upstairs_Day</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Up_Cook</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Up_Wait</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Upstairs_Night</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">MrsChu_Rest_Int_Amb</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">MrsChu</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">MrsChus_Extra</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">MrsChu_Grief</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">MrsChu_Rest_Ext_Back</scenelayeronend>		
+		
+		<child checkpoint="true">PB_1_NotPing</child>
+		<child checkpoint="true">PB_2_ThiefChase</child>
+		<child>PB_3_GotoRestaurant</child>
+		<child checkpoint="true">PB_4_SneakIn</child>
+		<child checkpoint="true">PB_5_PlantBug</child>
+		<child>PB_6_ExitRestaurant</child>
+	</mission>
+</groups>

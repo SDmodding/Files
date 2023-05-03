@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+
+
+<gameslices>   
+	<!-- Follow Tiffany -->
+	<gameslice name="F_CH_1">
+		<title>NotPing Hacking</title>
+		<scriptclass>F_CH_1</scriptclass>
+		<restorelocationmarker>Locations-F_CH_Start</restorelocationmarker>
+	</gameslice>	
+</gameslices>
+ 
+<groups>
+	<!-- CAMERA HACKING FAVOUR-->
+	<favour name="F_CH" statsid="27">
+		<title>$SGTITLE_NOTPING_HACKING</title>
+		<scriptclass>F_CH</scriptclass>
+		<restorelocationmarker>Locations-F_CH_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-F_CH</completelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_CH</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<child checkpoint="true">F_CH_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+</favour></groups>
+

@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<gameslices>
+	<gameslice name="HH1" holdcurtain="true">
+		<title>Tea</title>
+		<scriptclass>HH_1_Tea</scriptclass>
+		<restorelocationmarker>HHMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH2" holdcurtain="true">
+		<title>Ambush</title>
+		<scriptclass>HH_2_Ambush</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Ambush</restorelocationmarker>
+		<dependent>HH1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH3" holdcurtain="true">
+		<title>Freerun</title>
+		<scriptclass>HH_3_Freerun</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Beach</restorelocationmarker>
+		<dependent>HH2</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH4" holdcurtain="true">
+		<title>Beach Fight</title>
+		<scriptclass>HH_4_BeachFight</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Fight_Karl</restorelocationmarker>
+		<dependent>HH3</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH5" holdcurtain="true">
+		<title>Boat Ride</title>
+		<scriptclass>HH_5_Boat</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Find_Cure</restorelocationmarker>
+		<dependent>HH4</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH6">
+		<title>The Cure</title>
+		<scriptclass>HH_6_GetCure</scriptclass>
+		<dependent>HH5</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	
+	<gameslice name="HH1_Repeatable" holdcurtain="true">
+		<title>Tea</title>
+		<scriptclass>HH_1_Tea</scriptclass>
+		<restorelocationmarker>HHMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH2_Repeatable" holdcurtain="true">
+		<title>Ambush</title>
+		<scriptclass>HH_2_Ambush</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Ambush</restorelocationmarker>
+		<dependent>HH1_Repeatable</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH3_Repeatable" holdcurtain="true">
+		<title>Freerun</title>
+		<scriptclass>HH_3_Freerun</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Beach</restorelocationmarker>
+		<dependent>HH2_Repeatable</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH4_Repeatable" holdcurtain="true">
+		<title>Beach Fight</title>
+		<scriptclass>HH_4_BeachFight</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Fight_Karl</restorelocationmarker>
+		<dependent>HH3_Repeatable</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH5_Repeatable" holdcurtain="true">
+		<title>Boat Ride</title>
+		<scriptclass>HH_5_Boat</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Find_Cure</restorelocationmarker>
+		<dependent>HH4_Repeatable</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH6_Repeatable">
+		<title>The Cure</title>
+		<scriptclass>HH_6_GetCure</scriptclass>
+		<dependent>HH5_Repeatable</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="HH1_Repeatable1" holdcurtain="true">
+		<title>Tea</title>
+		<scriptclass>HH_1_Tea</scriptclass>
+		<restorelocationmarker>HHMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH2_Repeatable1" holdcurtain="true">
+		<title>Ambush</title>
+		<scriptclass>HH_2_Ambush</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Ambush</restorelocationmarker>
+		<dependent>HH1_Repeatable1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH3_Repeatable1" holdcurtain="true">
+		<title>Freerun</title>
+		<scriptclass>HH_3_Freerun</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Beach</restorelocationmarker>
+		<dependent>HH2_Repeatable1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH4_Repeatable1" holdcurtain="true">
+		<title>Beach Fight</title>
+		<scriptclass>HH_4_BeachFight</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Fight_Karl</restorelocationmarker>
+		<dependent>HH3_Repeatable1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH5_Repeatable1" holdcurtain="true">
+		<title>Boat Ride</title>
+		<scriptclass>HH_5_Boat</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Find_Cure</restorelocationmarker>
+		<dependent>HH4_Repeatable1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH6_Repeatable1">
+		<title>The Cure</title>
+		<scriptclass>HH_6_GetCure</scriptclass>
+		<dependent>HH5_Repeatable1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="HH1_Repeatable2" holdcurtain="true">
+		<title>Tea</title>
+		<scriptclass>HH_1_Tea</scriptclass>
+		<restorelocationmarker>HHMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH2_Repeatable2" holdcurtain="true">
+		<title>Ambush</title>
+		<scriptclass>HH_2_Ambush</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Ambush</restorelocationmarker>
+		<dependent>HH1_Repeatable2</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH3_Repeatable2" holdcurtain="true">
+		<title>Freerun</title>
+		<scriptclass>HH_3_Freerun</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Beach</restorelocationmarker>
+		<dependent>HH2_Repeatable2</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH4_Repeatable2" holdcurtain="true">
+		<title>Beach Fight</title>
+		<scriptclass>HH_4_BeachFight</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Fight_Karl</restorelocationmarker>
+		<dependent>HH3_Repeatable2</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH5_Repeatable2" holdcurtain="true">
+		<title>Boat Ride</title>
+		<scriptclass>HH_5_Boat</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Find_Cure</restorelocationmarker>
+		<dependent>HH4_Repeatable2</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH6_Repeatable2">
+		<title>The Cure</title>
+		<scriptclass>HH_6_GetCure</scriptclass>
+		<dependent>HH5_Repeatable2</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="HH1_Repeatable3" holdcurtain="true">
+		<title>Tea</title>
+		<scriptclass>HH_1_Tea</scriptclass>
+		<restorelocationmarker>HHMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH2_Repeatable3" holdcurtain="true">
+		<title>Ambush</title>
+		<scriptclass>HH_2_Ambush</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Ambush</restorelocationmarker>
+		<dependent>HH1_Repeatable3</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH3_Repeatable3" holdcurtain="true">
+		<title>Freerun</title>
+		<scriptclass>HH_3_Freerun</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Beach</restorelocationmarker>
+		<dependent>HH2_Repeatable3</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH4_Repeatable3" holdcurtain="true">
+		<title>Beach Fight</title>
+		<scriptclass>HH_4_BeachFight</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Fight_Karl</restorelocationmarker>
+		<dependent>HH3_Repeatable3</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH5_Repeatable3" holdcurtain="true">
+		<title>Boat Ride</title>
+		<scriptclass>HH_5_Boat</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Find_Cure</restorelocationmarker>
+		<dependent>HH4_Repeatable3</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH6_Repeatable3">
+		<title>The Cure</title>
+		<scriptclass>HH_6_GetCure</scriptclass>
+		<dependent>HH5_Repeatable3</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="HH1_Repeatable4" holdcurtain="true">
+		<title>Tea</title>
+		<scriptclass>HH_1_Tea</scriptclass>
+		<restorelocationmarker>HHMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH2_Repeatable4" holdcurtain="true">
+		<title>Ambush</title>
+		<scriptclass>HH_2_Ambush</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Ambush</restorelocationmarker>
+		<dependent>HH1_Repeatable4</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH3_Repeatable4" holdcurtain="true">
+		<title>Freerun</title>
+		<scriptclass>HH_3_Freerun</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Beach</restorelocationmarker>
+		<dependent>HH2_Repeatable4</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH4_Repeatable4" holdcurtain="true">
+		<title>Beach Fight</title>
+		<scriptclass>HH_4_BeachFight</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Fight_Karl</restorelocationmarker>
+		<dependent>HH3_Repeatable4</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH5_Repeatable4" holdcurtain="true">
+		<title>Boat Ride</title>
+		<scriptclass>HH_5_Boat</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Find_Cure</restorelocationmarker>
+		<dependent>HH4_Repeatable4</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH6_Repeatable4">
+		<title>The Cure</title>
+		<scriptclass>HH_6_GetCure</scriptclass>
+		<dependent>HH5_Repeatable4</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="HH1_Repeatable5" holdcurtain="true">
+		<title>Tea</title>
+		<scriptclass>HH_1_Tea</scriptclass>
+		<restorelocationmarker>HHMission-RestoreFirstSliceMKR</restorelocationmarker>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH2_Repeatable5" holdcurtain="true">
+		<title>Ambush</title>
+		<scriptclass>HH_2_Ambush</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Ambush</restorelocationmarker>
+		<dependent>HH1_Repeatable5</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH3_Repeatable5" holdcurtain="true">
+		<title>Freerun</title>
+		<scriptclass>HH_3_Freerun</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Beach</restorelocationmarker>
+		<dependent>HH2_Repeatable5</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH4_Repeatable5" holdcurtain="true">
+		<title>Beach Fight</title>
+		<scriptclass>HH_4_BeachFight</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Fight_Karl</restorelocationmarker>
+		<dependent>HH3_Repeatable5</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH5_Repeatable5" holdcurtain="true">
+		<title>Boat Ride</title>
+		<scriptclass>HH_5_Boat</scriptclass>
+		<restorelocationmarker>HHMission-Marker_Restore_Find_Cure</restorelocationmarker>
+		<dependent>HH4_Repeatable5</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="HH6_Repeatable5">
+		<title>The Cure</title>
+		<scriptclass>HH_6_GetCure</scriptclass>
+		<dependent>HH5_Repeatable5</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+</gameslices>
+<groups>
+	<mission name="M_ZI_HH">
+		<title>$SGTITLE_HELPING_HAND</title>
+		<scriptclass>HHMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_HH</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>DLC</trackgamesliceas>
+		<forcetime time="14.30" locked="true"></forcetime>
+		<audiooverride>M_ZOD</audiooverride>
+		<child checkpoint="true">HH1</child>
+		<child checkpoint="true">HH2</child>
+		<child checkpoint="true">HH3</child>
+		<child checkpoint="true">HH4</child>
+		<child checkpoint="true">HH5</child>
+		<child>HH6</child>
+		<setdisguiseonstart enablewardrobe="true" enablestores="true">OutfitKungfu</setdisguiseonstart>
+	</mission>
+	<job name="M_ZI_HH_Repeatable">
+		<title>$SGTITLE_HELPING_HAND</title>
+		<scriptclass>HHMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>		
+		<completelocationmarker>EndLocations-M_ZI_HH</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<vehiclesuperstop>true</vehiclesuperstop>	
+		<forcetime time="14.30" locked="true"></forcetime>		
+		<audiooverride>M_ZOD</audiooverride>
+		<child checkpoint="true">HH1_Repeatable</child>
+		<child checkpoint="true">HH2_Repeatable</child>
+		<child checkpoint="true">HH3_Repeatable</child>
+		<child checkpoint="true">HH4_Repeatable</child>
+		<child checkpoint="true">HH5_Repeatable</child>
+		<child>HH6_Repeatable</child>
+	</job>
+	
+	<job name="M_ZI_HH_Repeatable1">
+		<title>$SGTITLE_HELPING_HAND</title>
+		<scriptclass>HHMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>		
+		<completelocationmarker>EndLocations-M_ZI_HH</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<vehiclesuperstop>true</vehiclesuperstop>	
+		<forcetime time="14.30" locked="true"></forcetime>		
+		<audiooverride>M_ZOD</audiooverride>
+		<child checkpoint="true">HH1_Repeatable1</child>
+		<child checkpoint="true">HH2_Repeatable1</child>
+		<child checkpoint="true">HH3_Repeatable1</child>
+		<child checkpoint="true">HH4_Repeatable1</child>
+		<child checkpoint="true">HH5_Repeatable1</child>
+		<child>HH6_Repeatable1</child>
+	</job>
+	
+	<job name="M_ZI_HH_Repeatable2">
+		<title>$SGTITLE_HELPING_HAND</title>
+		<scriptclass>HHMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>		
+		<completelocationmarker>EndLocations-M_ZI_HH</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<vehiclesuperstop>true</vehiclesuperstop>	
+		<forcetime time="14.30" locked="true"></forcetime>		
+		<audiooverride>M_ZOD</audiooverride>
+		<child checkpoint="true">HH1_Repeatable2</child>
+		<child checkpoint="true">HH2_Repeatable2</child>
+		<child checkpoint="true">HH3_Repeatable2</child>
+		<child checkpoint="true">HH4_Repeatable2</child>
+		<child checkpoint="true">HH5_Repeatable2</child>
+		<child>HH6_Repeatable2</child>
+	</job>
+	
+	<job name="M_ZI_HH_Repeatable3">
+		<title>$SGTITLE_HELPING_HAND</title>
+		<scriptclass>HHMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>		
+		<completelocationmarker>EndLocations-M_ZI_HH</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<vehiclesuperstop>true</vehiclesuperstop>	
+		<forcetime time="14.30" locked="true"></forcetime>		
+		<audiooverride>M_ZOD</audiooverride>
+		<child checkpoint="true">HH1_Repeatable3</child>
+		<child checkpoint="true">HH2_Repeatable3</child>
+		<child checkpoint="true">HH3_Repeatable3</child>
+		<child checkpoint="true">HH4_Repeatable3</child>
+		<child checkpoint="true">HH5_Repeatable3</child>
+		<child>HH6_Repeatable3</child>
+	</job>
+	
+	<job name="M_ZI_HH_Repeatable4">
+		<title>$SGTITLE_HELPING_HAND</title>
+		<scriptclass>HHMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>		
+		<completelocationmarker>EndLocations-M_ZI_HH</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<vehiclesuperstop>true</vehiclesuperstop>	
+		<forcetime time="14.30" locked="true"></forcetime>		
+		<audiooverride>M_ZOD</audiooverride>
+		<child checkpoint="true">HH1_Repeatable4</child>
+		<child checkpoint="true">HH2_Repeatable4</child>
+		<child checkpoint="true">HH3_Repeatable4</child>
+		<child checkpoint="true">HH4_Repeatable4</child>
+		<child checkpoint="true">HH5_Repeatable4</child>
+		<child>HH6_Repeatable4</child>
+	</job>
+	
+	<job name="M_ZI_HH_Repeatable5" repeatableinterval="300">
+		<title>$SGTITLE_HELPING_HAND</title>
+		<scriptclass>HHMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>		
+		<completelocationmarker>EndLocations-M_ZI_HH</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<vehiclesuperstop>true</vehiclesuperstop>	
+		<forcetime time="14.30" locked="true"></forcetime>		
+		<audiooverride>M_ZOD</audiooverride>
+		<child checkpoint="false">HH1_Repeatable5</child>
+		<child checkpoint="false">HH2_Repeatable5</child>
+		<child checkpoint="false">HH3_Repeatable5</child>
+		<child checkpoint="false">HH4_Repeatable5</child>
+		<child checkpoint="false">HH5_Repeatable5</child>
+		<child>HH6_Repeatable5</child>
+	</job>
+</groups>
+

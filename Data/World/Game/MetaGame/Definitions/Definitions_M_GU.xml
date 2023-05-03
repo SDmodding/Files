@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<gameslices>
+	<gameslice name="GU0" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>GU_0</scriptclass>
+		<restorelocationmarker>GUMission-mkr_restore1</restorelocationmarker>
+	</gameslice>
+	<gameslice name="GU1" holdcurtain="true">
+		<title>Walk with Jackie</title>
+		<scriptclass>GU_1</scriptclass>
+		<restorelocationmarker>GUMission-mkr_restore1</restorelocationmarker>
+		<dependent>GU0</dependent>
+	</gameslice>
+	<gameslice name="GU2" holdcurtain="true">
+		<title>Fight in Lobby</title>
+		<scriptclass>GU_2</scriptclass>
+		<forcetime time="12.00" locked="true"></forcetime>
+		<restorelocationmarker>GUMission-mkr_restore2</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">NM_North01_Ped</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">NM_North01_Ped</scenelayeronend>
+		<dependent>GU1</dependent>
+	</gameslice>
+	<gameslice name="GU3" holdcurtain="true">
+		<title>Restaurant NIS's</title>
+		<scriptclass>GU_3</scriptclass>
+		<dependent>GU2</dependent>
+		<loadhintonstart priority="0">$LOADING_HINT_GU_END</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_gu_end_tp.perm.bin</loadscreenonstart>
+	</gameslice>
+	<gameslice name="GU4" holdcurtain="true">
+		<title>Counter Tutorial</title>
+		<scriptclass>GU_4</scriptclass>
+		<restorelocationmarker>GUMission-Marker_NIS_Conroy_Wei</restorelocationmarker>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<dependent>GU3</dependent>
+		<forcetime time="18.45" locked="true"></forcetime>
+	</gameslice>
+</gameslices>
+<!-- MISSIONS -->
+<groups>	
+	<mission name="M_GU" holdcurtain="true" statsid="11">
+		<title>$SGTITLE_GOING_UNDER</title>
+		<scriptclass>GUMission</scriptclass>
+		<restorelocationmarker>Locations-GU_spawn</restorelocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restoretimeout>0.0</restoretimeout>
+		<forceweather type="sunny" wetness="0.5"  locked="true"></forceweather>
+		<forcetime time="11.43" locked="true"></forcetime>
+		<deferredregionrestart>false</deferredregionrestart>
+		<saveoverride>VE1</saveoverride>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>false</unlocktrafficonend>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+
+		<scenelayeronstart activate="true">Intro_Gameplay</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Amb_Night_01</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">MrsChu_Rest_Ext_Back</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">MrsChu</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Line</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Up_Cook_NMC</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Up_Wait_NMC</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Upstairs_Day</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Downstairs_Day</scenelayeronstart>
+
+		<scenelayeronend activate="false">Intro_Gameplay</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Amb_Night_01</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">MrsChu_Rest_Ext_Back</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">MrsChu</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Line</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Up_Cook_NMC</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Up_Wait_NMC</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Upstairs_Day</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Downstairs_Day</scenelayeronend>
+
+		<child checkpoint="true">GU0</child>
+		<child checkpoint="true">GU1</child>
+		<child checkpoint="true">GU2</child>
+		<child>GU3</child>
+		<child checkpoint="true">GU4</child>
+		
+		<loadhintonstart priority="0">$LOADING_HINT_GU_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_gu_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_WTHK_START_1</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_wthk_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+</groups>
+

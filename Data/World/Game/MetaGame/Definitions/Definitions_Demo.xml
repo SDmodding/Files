@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<gameslices>
+	<!-- DEMO -->
+	<gameslice name="TE_0_NIS_DEMO" holdcurtain="true">
+		<title>NIS</title>
+		<scriptclass>TE_0_NIS_Demo</scriptclass>
+		<restorelocationmarker>TEMission-Marker_WeiTeleport01</restorelocationmarker>
+	</gameslice>
+	<gameslice name="TE_1_Meeting_DEMO" holdcurtain="true">
+		<title>Escape Captors</title>
+		<scriptclass>TE_1_Meeting</scriptclass>
+		<restorelocationmarker>TEMission-Marker_WeiTeleport01</restorelocationmarker>
+		<dependent>TE_0_NIS_DEMO</dependent>
+	</gameslice>
+	<gameslice name="TE_2_Living_Room_DEMO">
+		<title>Living Room Battle</title>
+		<scriptclass>TE_2_Living_Room</scriptclass>
+		<restorelocationmarker>TEMission-Marker_LivingRoom_NIS</restorelocationmarker>
+		<dependent>TE_1_Meeting_DEMO</dependent>
+	</gameslice>
+	<gameslice name="TE_3_Gunmen_DEMO">
+		<title>Patio Party</title>
+		<scriptclass>TE_3_Gunmen</scriptclass>
+		<restorelocationmarker>TEMission-Marker_GunmenRestore</restorelocationmarker>
+		<dependent>TE_2_Living_Room_DEMO</dependent>
+	</gameslice>
+	<gameslice name="TE_3B_Shotgun_DEMO">
+		<title>Shotgun Guy</title>
+		<scriptclass>TE_3B_Shotgun</scriptclass>
+		<restorelocationmarker>TEMission-Marker_ShotgunFightTeleport</restorelocationmarker>
+		<dependent>TE_3_Gunmen_DEMO</dependent>
+	</gameslice>
+	<gameslice name="TE_4_Amenities_DEMO">
+		<title>Amenities</title>
+		<scriptclass>TE_4_Amenities</scriptclass>
+		<restorelocationmarker>TEMission-Marker_AmenitiesRestore</restorelocationmarker>
+		<dependent>TE_3B_Shotgun_DEMO</dependent>
+	</gameslice>
+	<gameslice name="TE_4_Pool_DEMO" holdcurtain="true">
+		<title>Pool Battle</title>
+		<scriptclass>TE_4_Pool</scriptclass>
+		<restorelocationmarker>TEMission-Marker_PoolRestore</restorelocationmarker>
+		<dependent>TE_4_Amenities_DEMO</dependent>
+	</gameslice>
+	<gameslice name="TE_5_Enforcer_DEMO" holdcurtain="true">
+		<title>Enforcer</title>
+		<scriptclass>TE_5_Enforcer</scriptclass>
+		<restorelocationmarker>TEMission-Marker_TeleportToEnforcer</restorelocationmarker>
+		<dependent>TE_4_Pool_DEMO</dependent>
+	</gameslice>
+	<!--
+	<gameslice name="TE_5B_MrTong_DEMO">
+		<title>Mr. Tong</title>
+		<scriptclass>TE_5B_MrTong</scriptclass>
+		<restorelocationmarker>TEMission-Marker_TeleportWei_TongNIS</restorelocationmarker>
+		<dependent>TE_5_Enforcer_DEMO</dependent>
+	</gameslice>
+	<gameslice name="TE_6_Find_BSL_DEMO" holdcurtain="true">
+		<title>Find Big Smile Lee</title>
+		<scriptclass>TE_6_Find_BSL</scriptclass>
+		<restorelocationmarker>TEMission-Marker_Find_BSL_Restore</restorelocationmarker>
+		<dependent>TE_5B_MrTong_DEMO</dependent>
+	</gameslice>	
+	-->
+	<gameslice name="FG_2_Highway_DEMO" holdcurtain="true">
+		<title>Go towards the Highway</title>
+		<scriptclass>FG_2_Highway_Demo</scriptclass>
+		<restorelocationmarker>FGMission-mkr_restore2</restorelocationmarker>		
+	</gameslice>
+	<gameslice name="FG_3_Race_DEMO" holdcurtain="true">
+		<title>Race the Driver</title>
+		<scriptclass>FG_3_Race</scriptclass> 
+		<restorelocationmarker>FGMission-mkr_restoreRace</restorelocationmarker>		
+		<dependent>FG_2_Highway_DEMO</dependent>
+	</gameslice>
+	<gameslice name="FG_4_Drop_DEMO" holdcurtain="true">
+		<title>Drop off the Girls</title>
+		<scriptclass>FG_4_Drop_Demo</scriptclass>
+		<restorelocationmarker>FGMission-mkr_restore4</restorelocationmarker>
+		<dependent>FG_3_Race_DEMO</dependent>
+	</gameslice>
+	
+	<gameslice name="DemoApothecary" >
+		<title>Demo Apothecary</title>
+		<scriptclass>DemoApothecary</scriptclass>
+	</gameslice>	
+</gameslices>
+<groups>
+
+	<!-- DEMO -->
+	<mission name="M_TE_DEMO" holdcurtain="true">
+		<title>$SGTITLE_MR_TONG</title>
+		<scriptclass>TEMission</scriptclass>	
+		<triggerobject>ProgressionTriggers_Missions-TEMissionDemo</triggerobject>
+		<restorelocationmarker>Locations-TEMissionStart</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_TE</completelocationmarker>
+		<cancellocationmarker>Locations-TEMissionStart</cancellocationmarker>
+		<maxheatlevel>1</maxheatlevel>
+		<forceweather type="sunny" wetness="0.5"  locked="true"></forceweather>
+		<forcetime time="23.30" locked="true"></forcetime>
+		<child checkpoint="true">TE_0_NIS_DEMO</child>
+		<child checkpoint="true">TE_1_Meeting_DEMO</child>
+		<child checkpoint="true">TE_2_Living_Room_DEMO</child>
+		<child checkpoint="true">TE_3_Gunmen_DEMO</child>
+		<child checkpoint="true">TE_3B_Shotgun_DEMO</child>
+		<child checkpoint="true">TE_4_Amenities_DEMO</child>
+		<child checkpoint="true">TE_4_Pool_DEMO</child>
+		<child checkpoint="true">TE_5_Enforcer_DEMO</child>
+		<!--
+		<child checkpoint="true">TE_5B_MrTong_DEMO</child>
+		<child checkpoint="true">TE_6_Find_BSL_DEMO</child>
+		-->
+	</mission>	
+
+	<mission name="M_FG_DEMO" holdcurtain="true"> 
+		<title>$SGTITLE_FAST_GIRLS</title>
+		<scriptclass>FGMission</scriptclass>		
+		<restorelocationmarker>Locations-FG_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_FG</completelocationmarker>
+		<forceweather type="sunny" wetness="0.5"  locked="true"></forceweather>
+		<forcetime time="0.0" locked="true"></forcetime>
+		<child >FG_2_Highway_DEMO</child>
+		<child checkpoint="true">FG_3_Race_DEMO</child>
+		<child checkpoint="true">FG_4_Drop_DEMO</child>
+	</mission>
+
+	<mission name="DemoHandsOnNMC" holdcurtain="true"> 
+		<title>$SGTITLE_HANDS_ON_NMC</title>
+		<scriptclass>DemoHandsOnNMC</scriptclass>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>ProgressionTriggers_Missions-DemoHandsOnNMC</restorelocationmarker>
+		<triggerobject>ProgressionTriggers_Missions-DemoHandsOnNMC</triggerobject>
+	</mission>
+	
+	<mission name="DemoHandsOnTE" holdcurtain="true">
+		<title>$SGTITLE_HANDS_ON_TE</title>
+		<scriptclass>DemoHandsOnTE</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<restorelocationmarker>ProgressionTriggers_Missions-DemoHandsOnTE</restorelocationmarker>				
+		<triggerobject>ProgressionTriggers_Missions-DemoHandsOnTE</triggerobject>
+	</mission>
+	
+</groups>

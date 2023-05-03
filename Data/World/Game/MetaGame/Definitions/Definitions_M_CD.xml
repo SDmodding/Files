@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<gameslices>
+	<gameslice name="CD_1_Drive" holdcurtain="true">
+		<title>Drive</title>
+		<scriptclass>CD_1_Drive</scriptclass>
+		<scenelayeronstart geoautoactivate="false" activate="false">VehicleStore_FaceL1</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="true">VehicleStore_FaceL1</scenelayeronend>		
+		<restorelocationmarker>Locations-CivilDiscord_ChopShop</restorelocationmarker>
+	</gameslice>
+	<gameslice name="CD_2_ChopShop" holdcurtain="true">
+		<title>Chop Shop</title>
+		<scriptclass>CD_2_ChopShop</scriptclass>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>			
+		<restorelocationmarker>M_CDMission-CD_Wei_Tele1</restorelocationmarker>
+		<dependent>CD_1_Drive</dependent>
+	</gameslice>
+	<gameslice name="CD_2B_DriveToKoi" holdcurtain="true">
+		<title>Drive to Koi</title>
+		<scriptclass>CD_2B_DriveToKoi</scriptclass>
+		<restorelocationmarker>M_CDMission-Marker_CS_Done_Restore</restorelocationmarker>
+		<dependent>CD_2_ChopShop</dependent>
+		<enabletrafficonstart>true</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+	</gameslice>
+	<gameslice name="CD_3_Restaurant" holdcurtain="true">
+		<title>Restaurant</title>
+		<scriptclass>CD_3_Restaurant</scriptclass>
+		<restorelocationmarker>M_CDMission-Marker_Restore_MrsChus</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-smg-machine_pistol</weaponrestore>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>			
+		<dependent>CD_2B_DriveToKoi</dependent>
+	</gameslice>
+	<gameslice name="CD_3B_InsideTheKoi" holdcurtain="true">
+		<title>Inside the Koi</title>
+		<scriptclass>CD_3B_InsideTheKoi</scriptclass>
+		<restorelocationmarker>M_CDMission-Marker_ITK_PlayerStart</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-rifle-assault_taclight</weaponrestore>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>			
+		<dependent>CD_3_Restaurant</dependent>
+	</gameslice>
+	<gameslice name="CD_4_BackAlley" holdcurtain="true">
+		<title>Back Alley</title>
+		<scriptclass>CD_4_BackAlley</scriptclass>
+		<forceweather type="lightrain" locked="true"></forceweather>
+		<restorelocationmarker>M_CDMission-Marker_Restore_BackAlley</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-shotgun-antiriot_taclight</weaponrestore>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<dependent>CD_3B_InsideTheKoi</dependent>
+	</gameslice>
+	<gameslice name="CD_5_Walkway" holdcurtain="true">
+		<title>Walkway Battle</title>
+		<scriptclass>CD_5_Walkway</scriptclass>
+		<forceweather type="heavyrain" locked="true"></forceweather>
+		<restorelocationmarker>M_CDMission-Marker_WalkwayStartWei</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-rifle-grenade</weaponrestore>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>			
+		<dependent>CD_4_BackAlley</dependent>
+	</gameslice>
+	<gameslice name="CD_6_Escape" holdcurtain="true">
+		<title>Meet Ricky</title>
+		<scriptclass>CD_6_Escape</scriptclass>
+		<forceweather type="lightrain" locked="true"></forceweather>
+		<maxheatlevel>4</maxheatlevel>
+		<restorelocationmarker>M_CDMission-Marker_Restore_Escape</restorelocationmarker>
+		<dependent>CD_5_Walkway</dependent>
+	</gameslice>
+</gameslices>
+<!-- MISSIONS -->
+<groups>
+	<mission name="M_CD" statsid="7">
+		<title>$SGTITLE_CIVIL_DISCORD</title>
+		<scriptclass>M_CDMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-M_CDMission</triggerobject>
+		<restorelocationmarker>Locations-CivilDiscord_ChopShop</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_CD</completelocationmarker>
+		<forceweather type="sunny" locked="true"></forceweather>		
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Amb_Night_01</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_ChopShop_Day</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Amb_Night_01</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_ChopShop_Day</scenelayeronend>	
+		<trackgamesliceas>MISSION</trackgamesliceas>	
+		<child checkpoint="true">CD_1_Drive</child>
+		<child checkpoint="true">CD_2_ChopShop</child>
+		<child checkpoint="true">CD_2B_DriveToKoi</child>
+		<child checkpoint="true">CD_3_Restaurant</child>
+		<child checkpoint="true">CD_3B_InsideTheKoi</child>
+		<child checkpoint="true">CD_4_BackAlley</child>
+		<child checkpoint="true">CD_5_Walkway</child>
+		<child checkpoint="true">CD_6_Escape</child>
+	</mission>
+</groups>

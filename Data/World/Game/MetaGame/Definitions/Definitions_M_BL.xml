@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="BL_0_NIS" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>BL_0_NIS</scriptclass>
+	</gameslice>
+	<gameslice name="BL_1_GoToHome" holdcurtain="true">
+		<title>Go to Home</title>
+		<scriptclass>BL_1_GoToHome</scriptclass>
+		<dependent>BL_0_NIS</dependent>
+	</gameslice>
+	<gameslice name="BL_1B_Apartment" holdcurtain="true">
+		<title>Apartment</title>
+		<scriptclass>BL_1B_Apartment</scriptclass>
+		<restorelocationmarker>BLMission-Marker_Apartment_Start_Wei</restorelocationmarker>
+		<dependent>BL_1_GoToHome</dependent>
+	</gameslice>
+	<gameslice name="BL_2_EnterHome" holdcurtain="true">
+		<title>Enter Home</title>
+		<scriptclass>BL_2_EnterHome</scriptclass>
+		<restorelocationmarker>BLMission-RestoreStreet</restorelocationmarker>
+		<dependent>BL_1B_Apartment</dependent>
+	</gameslice>
+	<gameslice name="BL_3_Checkpoint" holdcurtain="true">
+		<title>Checkpoint</title>
+		<scriptclass>BL_3_Checkpoint</scriptclass>
+		<restorelocationmarker>BLMission-RestoreInsideHome</restorelocationmarker>
+		<dependent>BL_2_EnterHome</dependent>
+	</gameslice>
+	<gameslice name="BL_3A_Smash">
+		<title>Smash Vases</title>
+		<scriptclass>BL_3A_Smash</scriptclass>
+		<dependent>BL_3_Checkpoint</dependent>
+	</gameslice>
+	<gameslice name="BL_3B_Steal">
+		<title>Steal Collectible</title>
+		<scriptclass>BL_3B_Steal</scriptclass>
+		<dependent>BL_3A_Smash</dependent>
+	</gameslice>
+	<gameslice name="BL_3C_Clock" holdcurtain="true">
+		<title>Change Time</title>
+		<scriptclass>BL_3C_Clock</scriptclass>
+		<restorelocationmarker>BLMission-RestoreInsideHome</restorelocationmarker>
+		<dependent>BL_3B_Steal</dependent>
+	</gameslice>
+	<gameslice name="BL_3D_Piano">
+		<title>Rotate Piano</title>
+		<scriptclass>BL_3D_Piano</scriptclass>
+		<dependent>BL_3C_Clock</dependent>
+	</gameslice>
+	<gameslice name="BL_3E_Hide" holdcurtain="true">
+		<title>Hide</title>
+		<scriptclass>BL_3E_Hide</scriptclass>
+		<restorelocationmarker>BLMission-Marker_Hide_Restore_Wei</restorelocationmarker>
+		<dependent>BL_3D_Piano</dependent>
+	</gameslice>
+	<gameslice name="BL_4_ExitHome" holdcurtain="true">
+		<title>Exit Home</title>
+		<scriptclass>BL_4_ExitHome</scriptclass>
+		<restorelocationmarker>BLMission-Marker_Restore_Escape_Wei</restorelocationmarker>
+		<dependent>BL_3E_Hide</dependent>
+	</gameslice>
+	<gameslice name="BL_5_LeaveCommunity" holdcurtain="true">
+		<title>Leave Community</title>
+		<scriptclass>BL_5_LeaveCommunity</scriptclass>
+		<restorelocationmarker>BLMission-Marker_LeaveChins_Wei</restorelocationmarker>
+		<dependent>BL_4_ExitHome</dependent>
+	</gameslice>
+</gameslices>
+<groups>	
+	<mission name="M_BL" statsid="4">
+		<title>$SGTITLE_BAD_LUCK</title>
+		<scriptclass>BLMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-BLMission</triggerobject>
+		<restorelocationmarker>Locations-BL_Spawn</restorelocationmarker>
+		<cancellocationmarker>Locations-R_AB_01_Spawn</cancellocationmarker>
+		<completelocationmarker>Locations-BL_Spawn</completelocationmarker>
+		<forcetime time="21.00" locked="true"></forcetime>
+		<forceweather type="sunny" wetness="0.5"  locked="true"></forceweather>
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child>BL_0_NIS</child>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_12_POI</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="true">KT_12_POI</scenelayeronend>		
+		<child checkpoint="true">BL_1_GoToHome</child>
+		<child checkpoint="true">BL_1B_Apartment</child>
+		<child checkpoint="true">BL_2_EnterHome</child>
+		<child checkpoint="true">BL_3_Checkpoint</child>
+		<child>BL_3A_Smash</child>
+		<child>BL_3B_Steal</child>
+		<child checkpoint="true">BL_3C_Clock</child>
+		<child>BL_3D_Piano</child>
+		<child checkpoint="true">BL_3E_Hide</child>
+		<child checkpoint="true">BL_4_ExitHome</child>
+		<child checkpoint="true">BL_5_LeaveCommunity</child>
+	</mission>
+</groups>

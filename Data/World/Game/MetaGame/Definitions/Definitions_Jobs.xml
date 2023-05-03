@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>	
+	<gameslice name="SA1">
+		<title>Stripper Assassin Arcade Game Intro</title>
+		<scriptclass>SAJob</scriptclass>
+	</gameslice>
+	<gameslice name="MainRace">
+		<title>Main</title>
+		<scriptclass>MainRace</scriptclass>
+	</gameslice>
+</gameslices>
+<groups>
+	<job name="J_SA">
+		<title>$SGTITLE_STRIPPER_ARCADE_GAME</title>
+		<scriptclass>SAJob</scriptclass>
+		<triggerobject>ProgressionTriggers_Jobs-SAJob</triggerobject>
+		<child>SA1</child>
+	</job>	
+	<job name="TestRace" repeatableinterval="5">
+		<title>$SGTITLE_TEST_RACE</title>
+		<scriptclass>TRaJob</scriptclass>
+		<restorelocationmarker>Locations-TRaJob_Spawn</restorelocationmarker>
+		<triggerobject>ProgressionTriggers_Jobs-TRaJob</triggerobject>
+		<child>MainRace</child>
+	</job>
+</groups>
+

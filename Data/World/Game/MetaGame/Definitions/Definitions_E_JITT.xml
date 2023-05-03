@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<!-- 		Junk in the Trunk Events			-->
+
+<gameslices>
+
+	<gameslice name="JTEvent1">
+		<title>Junk in Trunk 1</title>
+		<scriptclass>JTEvent1</scriptclass>
+	</gameslice>
+
+	<gameslice name="JTEvent2">
+		<title>Junk in Trunk 2</title>
+		<scriptclass>JTEvent2</scriptclass>
+		<restorelocationmarker>Locations-JTEvent2Start</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="JTEvent3">
+		<title>Junk in Trunk 3</title>
+		<scriptclass>JTEvent3</scriptclass>
+		<restorelocationmarker>Locations-JTEvent3Start</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="JTEvent4">
+		<title>Junk in Trunk 4</title>
+		<scriptclass>JTEvent4</scriptclass>
+		<restorelocationmarker>Locations-JTEvent4Start</restorelocationmarker>
+	</gameslice>
+
+</gameslices>
+
+
+<groups>
+
+	<event name="E_JT" statsid="15">
+		<title>$SGTITLE_JUNK_IN_TRUNK</title>
+		<scriptclass>E_JT1</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_JT1</triggerobject>
+		<restorelocationmarker>Locations-E_JT1Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>JTEvent1</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+
+	<event name="E_JT2" statsid="16">
+		<title>$SGTITLE_JUNK_IN_TRUNK_2</title>
+		<scriptclass>E_JT2</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_JT2</triggerobject>
+		<restorelocationmarker>Locations-JTEvent2Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>JTEvent2</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_JT3" statsid="17">
+		<title>$SGTITLE_JUNK_IN_TRUNK_3</title>
+		<scriptclass>E_JT3</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_JT3</triggerobject>
+		<restorelocationmarker>Locations-JTEvent3Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>JTEvent3</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+	<event name="E_JT4" statsid="18">
+		<title>$SGTITLE_JUNK_IN_TRUNK_4</title>
+		<scriptclass>E_JT4</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_JT4</triggerobject>
+		<restorelocationmarker>Locations-JTEvent4Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>JTEvent4</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+	</event>
+	
+</groups>

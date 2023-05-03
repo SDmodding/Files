@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	
+	
+	
+	<gameslice name="HS0" holdcurtain="true">
+		<title>The Meeting</title>
+		<scriptclass>HS_0_Meet</scriptclass>
+	</gameslice>
+	<gameslice name="HS1" holdcurtain="true">
+		<title>Get to the Hospital</title>
+		<scriptclass>HS_1_Drive</scriptclass>
+		<restorelocationmarker>HSMission-mkrHS1Restore</restorelocationmarker> 
+		<dependent>HS0</dependent>
+	</gameslice>
+	<gameslice name="HS2" holdcurtain="true">
+		<title>Waiting Room Shootout</title>
+		<scriptclass>HS_2_WaitingRoom</scriptclass>
+		<restorelocationmarker>HSMission-mkrPlayerCover</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">SP_CN_HP_2</scenelayeronstart>		
+		<dependent>HS1</dependent>
+	</gameslice>
+	<gameslice name="HS3" holdcurtain="true">
+		<title>Ward Shootout</title>
+		<scriptclass>HS_3_Wards</scriptclass>
+		<restorelocationmarker>HSMission-restoreHS3</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-pistol-45cal_taclight</weaponrestore>
+		<dependent>HS2</dependent>
+	</gameslice>
+	<gameslice name="HS3b" holdcurtain="true">
+		<title>Get to Ricky</title>
+		<scriptclass>HS_3b_Ricky</scriptclass>
+		<restorelocationmarker>HSMission-restoreHS3b</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-pistol-45cal_taclight</weaponrestore>
+		<dependent>HS3</dependent>
+	</gameslice>
+	<gameslice name="HS4" holdcurtain="true">
+		<title>Hack the Security Computer</title>
+		<scriptclass>HS_4_Security</scriptclass>
+		<restorelocationmarker>HSMission-restoreHS4</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-pistol-45cal_taclight</weaponrestore>
+		<dependent>HS3b</dependent>
+	</gameslice>
+	<gameslice name="HS4b" holdcurtain="true">
+		<title>Return to Ricky</title>
+		<scriptclass>HS_4b_Return</scriptclass>
+		<restorelocationmarker>HSMission-restoreHS4b</restorelocationmarker>		
+		<scenelayeronstart geoautoactivate="false" activate="true">HS_Effect</scenelayeronstart>
+		<weaponrestore>object-physical-weapon-firearm-pistol-45cal_taclight</weaponrestore>		
+		<dependent>HS4</dependent>
+	</gameslice>
+	<gameslice name="HS5" holdcurtain="true">
+		<title>Defend Uncle Po</title>
+		<scriptclass>HS_5_Defend</scriptclass>
+		<restorelocationmarker>HSMission-restoreHS5</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="true">HS_Effect</scenelayeronstart>
+		<weaponrestore>object-physical-weapon-firearm-pistol-45cal_taclight</weaponrestore>
+		<dependent>HS4b</dependent>
+	</gameslice>
+	<gameslice name="HS6" holdcurtain="true">
+		<title>Escape the Hospital</title>
+		<scriptclass>HS_6_Escape</scriptclass>
+		<restorelocationmarker>HSMission-restoreHS6</restorelocationmarker>
+		<dependent>HS5</dependent>
+	</gameslice>
+	
+</gameslices>
+<groups>
+	
+	
+	
+	<mission name="M_HS" statsid="12">
+		<title>$SGTITLE_HOSPITAL_SHOOTOUT</title>
+		<scriptclass>HSMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-M_HS</triggerobject>
+		<restorelocationmarker>Locations-mkrHSMissionStart</restorelocationmarker>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<cancellocationmarker>Locations-mkrHSMissionStart</cancellocationmarker>
+		<completelocationmarker>EndLocations-M_HS</completelocationmarker>
+		<deferredregionrestart>false</deferredregionrestart>
+		<maxheatlevel>4</maxheatlevel>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<watermark>true</watermark>
+		<child>HS0</child>
+		<scenelayeronend geoautoactivate="true">SP_CN_HP_2</scenelayeronend>		
+		<scenelayeronend geoautoactivate="false" activate="false">HS_Effect</scenelayeronend>		
+		<child checkpoint="true">HS1</child>
+		<child checkpoint="true">HS2</child>
+		<child checkpoint="true">HS3</child>
+		<child checkpoint="true">HS3b</child>
+		<child checkpoint="true">HS4</child>
+		<child checkpoint="true">HS4b</child>
+		<child checkpoint="true">HS5</child>
+		<child checkpoint="true">HS6</child>
+		
+	</mission>
+
+</groups>
+

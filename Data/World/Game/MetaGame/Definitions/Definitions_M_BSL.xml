@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+
+<gameslices>
+
+	<gameslice name="BSL_1_ParkingLot" holdcurtain="true">
+		<title>Parking Lot Fight</title>
+		<scriptclass>BSL_1_ParkingLot</scriptclass>
+		<restorelocationmarker>Locations-BSL_Start</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="BSL_2_GoToOffice" holdcurtain="true">
+		<title>Go to the Office</title>
+		<scriptclass>BSL_2_GoToOffice</scriptclass>
+		<restorelocationmarker>BSLMission-GoToOffice_PlayerStart</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="true">BSL_Effects</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">BSL_Effects</scenelayeronend>	
+		<dependent>BSL_1_ParkingLot</dependent>
+	</gameslice>
+
+	<gameslice name="BSL_3_CompoundFight" holdcurtain="true">
+		<title>Fight in the Compound</title>
+		<scriptclass>BSL_3_CompoundFight</scriptclass>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<restorelocationmarker>BSLMission-CompoundFight_PlayerStart</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="true">BSL_Effects</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">BSL_Effects</scenelayeronend>	
+		<dependent>BSL_2_GoToOffice</dependent>
+	</gameslice>
+
+	<gameslice name="BSL_4_DockFight" holdcurtain="true">
+		<title>Dock Fight</title>
+		<scriptclass>BSL_4_DockFight</scriptclass>
+		<restorelocationmarker>BSLMission-DockFight_PlayerStart</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<scenelayeronstart geoautoactivate="false" activate="true">BSL_Effects</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">BSL_Effects</scenelayeronend>	
+		<dependent>BSL_3_CompoundFight</dependent>
+	</gameslice>
+
+	<gameslice name="BSL_5_RestaurantFight" holdcurtain="true">
+		<title>Kill Ponytail</title>
+		<scriptclass>BSL_5_RestaurantFight</scriptclass>
+		<restorelocationmarker>BSLMission-RestaurantFight_PlayerStart</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<dependent>BSL_4_DockFight</dependent>
+	</gameslice>
+	
+	<gameslice name="BSL_6_Chase" holdcurtain="true">
+		<title>Chase Big Smile Lee</title>
+		<scriptclass>BSL_6_Chase</scriptclass>
+		<restorelocationmarker>BSLMission-Chase_PlayerStart</restorelocationmarker>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="true">BSL_Effects</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">BSL_Effects</scenelayeronend>	
+		<dependent>BSL_5_RestaurantFight</dependent>
+	</gameslice>
+	
+	<gameslice name="BSL_7_Boat" holdcurtain="true">
+		<title>Boat Sequence</title>
+		<scriptclass>BSL_7_Boat</scriptclass>
+		<restorelocationmarker>BSLMission-BoatChase_PlayerStart</restorelocationmarker>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="true">BSL_Effects</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">BSL_Effects</scenelayeronend>	
+		<dependent>BSL_6_Chase</dependent>
+	</gameslice>
+
+	<gameslice name="BSL_8_Barge" holdcurtain="true">
+		<title>Kill Big Smile Lee</title>
+		<scriptclass>BSL_8_Barge</scriptclass>
+		<restorelocationmarker>BSLMission-Barge_PlayerStart</restorelocationmarker>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="true">BSL_FinalFight</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">BSL_FinalFight</scenelayeronend>	
+		<scenelayeronstart geoautoactivate="false" activate="true">BSL_FinalFightPostNIS</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">BSL_FinalFightPostNIS</scenelayeronend>	
+		<dependent>BSL_7_Boat</dependent>
+	</gameslice>
+	
+	<gameslice name="BSL_9_Credits" holdcurtain="true">
+		<title>Credits</title>
+		<scriptclass>BSL_9_Credits</scriptclass>
+		<restorelocationmarker>BSLMission-Barge_PostGamePlayerDest</restorelocationmarker>
+		<dependent>BSL_8_Barge</dependent>
+	</gameslice>
+	
+</gameslices>
+
+<groups>
+
+	<mission name="M_BSL" statsid="5">
+		<title>$SGTITLE_BIG_SMILE_LEE</title>
+		<scriptclass>BSLMission</scriptclass>
+		<scenelayeronstart geoautoactivate="false" activate="false">AB_Ferry</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">AB_Ferry</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">AB_Parking_Boats</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">AB_Parking_Boats</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Harbour_Parking</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">NP_Harbour_Parking</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">AB_Harbour_Parking</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">AB_Harbour_Parking</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">J_CJ_BS_02</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">J_CJ_BS_02</scenelayeronend>
+		<restorelocationmarker>Locations-BSL_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_BSL</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<allowuicancellation>false</allowuicancellation>
+		<deferredregionrestart>false</deferredregionrestart>
+		<forcetime time="23.30" locked="true"></forcetime>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">BSL_1_ParkingLot</child>
+		<child checkpoint="true">BSL_2_GoToOffice</child>
+		<child checkpoint="true">BSL_3_CompoundFight</child>
+		<child checkpoint="true">BSL_4_DockFight</child>
+		<child checkpoint="true">BSL_5_RestaurantFight</child>
+		<child checkpoint="true">BSL_6_Chase</child>
+		<child checkpoint="true">BSL_7_Boat</child>
+		<child checkpoint="true">BSL_8_Barge</child>
+		<child checkpoint="false">BSL_9_Credits</child>
+		<loadhintonstart priority="0">$LOADING_HINT_TE_START_1</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_bsl_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_TE_START_2</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_te_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_IV_START</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_iv_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+</groups>

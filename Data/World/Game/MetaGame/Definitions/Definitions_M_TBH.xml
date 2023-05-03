@@ -1,0 +1,89 @@
+
+
+
+
+<gameslices>
+
+
+
+	<gameslice name="TBH_1_Intro" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>TBH_1_Intro</scriptclass>
+	</gameslice>
+	<gameslice name="TBH_1A_Drive" holdcurtain="true">
+		<title>Drive to the Apartment</title>
+		<scriptclass>TBH_1A_Drive</scriptclass>
+		<restorelocationmarker>TBHMission-TBH_1_Respawn_Checkpoint</restorelocationmarker>
+		<dependent>TBH_1_Intro</dependent>
+	</gameslice>
+	<gameslice name="TBH_1B_Doorman" holdcurtain="true">
+		<title>Talk to the Doorman</title>
+		<scriptclass>TBH_1B_Doorman</scriptclass>
+		<restorelocationmarker>TBHMission-mkrRestoreTBH1B</restorelocationmarker>
+		<dependent>TBH_1A_Drive</dependent>
+	</gameslice>
+	<gameslice name="TBH_1C_Entry" holdcurtain="true">
+		<title>Get in the Apartment</title>
+		<scriptclass>TBH_1C_Entry</scriptclass>
+		<restorelocationmarker>TBHMission-mkrRestoreTBH1C</restorelocationmarker>
+		<dependent>TBH_1B_Doorman</dependent>
+	</gameslice>
+	<gameslice name="TBH_2_Bugging" holdcurtain="true">
+		<title>Plant the bugs</title>
+		<scriptclass>TBH_2_Bugging</scriptclass>
+		<restorelocationmarker>TBHMission-mkrRestoreTBH2</restorelocationmarker>
+		<dependent>TBH_1C_Entry</dependent>
+	</gameslice>
+	<gameslice name="TBH_2A_Bugging" holdcurtain="true">
+		<title>Escape the Apartment</title>
+		<scriptclass>TBH_2A_Bugging</scriptclass>
+		<restorelocationmarker>TBHMission-mkrTBH2ARestore</restorelocationmarker>
+		<dependent>TBH_2_Bugging</dependent>
+	</gameslice>
+	<gameslice name="TBH_3_Driving" holdcurtain="true">
+		<title>Meet Pendrew</title>
+		<scriptclass>TBH_3_Driving</scriptclass>
+		<restorelocationmarker>TBHMission-mkrTBH2AEnd</restorelocationmarker>
+		<dependent>TBH_2A_Bugging</dependent>
+	</gameslice>
+	
+	<gameslice name="TBH_4_Social" holdcurtain="true">
+		<title>Go to the Safehouse</title>
+		<scriptclass>TBH_4_Social</scriptclass>
+		<restorelocationmarker>TBHMission-Marker_Pendrew</restorelocationmarker>
+		<dependent>TBH_3_Driving</dependent>
+	</gameslice>
+	
+</gameslices>
+
+
+
+
+
+
+
+<groups>
+	<mission name="M_TBH" statsid="22">
+		<title>$SGTITLE_THE_BIG_HIT</title>
+		<scriptclass>TBHMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-TBHMission</triggerobject>
+		<restorelocationmarker>Locations-TBHMissionStart</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_TBH</completelocationmarker>
+		<vehiclesuperstop>true</vehiclesuperstop>		
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_N_20_Peds_Night</scenelayeronstart>						
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_N_20_Peds_Day</scenelayeronstart>	
+		<scenelayeronend geoautoactivate="true">CN_N_20_Peds_Night</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">CN_N_20_Peds_Day</scenelayeronend>				
+		<deferredregionrestart>false</deferredregionrestart>
+		<saveoverride>CK4_1</saveoverride>
+		<child>TBH_1_Intro</child>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">TBH_1A_Drive</child>
+		<child checkpoint="true">TBH_1B_Doorman</child>
+		<child checkpoint="true">TBH_1C_Entry</child>
+		<child checkpoint="true">TBH_2_Bugging</child>
+		<child checkpoint="true">TBH_2A_Bugging</child>
+		<child checkpoint="true">TBH_3_Driving</child>
+		<child checkpoint="true">TBH_4_Social</child>
+	</mission>
+</groups>

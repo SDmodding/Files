@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<gameslices>
+	<gameslice name="RT_00_GoToStart" holdcurtain="true">
+		<title>Go to Location</title>
+		<scriptclass>RT_00_GoToStart</scriptclass>
+		<restorelocationmarker>ProgressionTriggers_TT-CCMission</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="RT_01_Chase" holdcurtain="true">
+		<title>Chase</title>
+		<scriptclass>RT_01_Chase</scriptclass>
+		<restorelocationmarker>RTMission-Restore_ChaseCar</restorelocationmarker>		
+		<dependent>RT_00_GoToStart</dependent>
+	</gameslice>
+</gameslices>
+
+<groups>	
+	<mission name="M_TT_RT">
+		<title>$SGTITLE_RESCUE_TANG</title>
+		<scriptclass>RTMission</scriptclass>
+		<audiooverride>M_TT</audiooverride>	
+		<triggerobject>ProgressionTriggers_TT-RTMission</triggerobject>
+		<completelocationmarker>Locations_TT-M_RT_Start</completelocationmarker>
+		<restorelocationmarker>Locations_TT-Unlocker_Start</restorelocationmarker>	
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>DLC</trackgamesliceas>
+		<child checkpoint="true">RT_00_GoToStart</child>
+		<child checkpoint="true">RT_01_Chase</child>
+	</mission>
+</groups>
+

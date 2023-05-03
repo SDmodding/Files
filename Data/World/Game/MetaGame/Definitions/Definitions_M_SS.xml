@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<gameslices>
+	<gameslice name="GDC_SS_1_Winston" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>GDC_SS_1_Winston</scriptclass>
+		<restorelocationmarker>Locations-SS_spawn</restorelocationmarker>
+		<!--<forcetime time="22.00" locked="true"></forcetime>-->
+	</gameslice>
+	<gameslice name="GDC_SS_2_Drive" holdcurtain="true">
+		<title>Drive to Sweatshop</title>
+		<scriptclass>GDC_SS_2_Drive</scriptclass>
+		<restorelocationmarker>GDCSSMission-Drive_PlayerStart</restorelocationmarker>
+		<dependent>GDC_SS_1_Winston</dependent>		
+	</gameslice>
+	<gameslice name="GDC_SS_3_1stF" holdcurtain="true">
+		<title>First Floor Sweatshop</title>
+		<scriptclass>GDC_SS_3_1stF</scriptclass>
+		<restorelocationmarker>GDCSSMission-FirstFloor_PlayerStart</restorelocationmarker>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="true">NP_Sweatshop_Props</scenelayeronstart>
+		<dependent>GDC_SS_2_Drive</dependent>
+	</gameslice>
+	<gameslice name="GDC_SS_4_2ndF" holdcurtain="true">
+		<title>Second Floor Sweatshop</title>
+		<scriptclass>GDC_SS_4_2ndF</scriptclass>
+		<restorelocationmarker>GDCSSMission-SecondFloor_PlayerStart</restorelocationmarker>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="true">SS_IntactWindow</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">SS_IntactWindow</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="true">NP_Sweatshop_Props</scenelayeronstart>
+		<dependent>GDC_SS_3_1stF</dependent>
+	</gameslice>
+	<gameslice name="GDC_SS_5_Raid" holdcurtain="true">
+		<title>Capture Siu Wah</title>
+		<scriptclass>GDC_SS_5_Raid</scriptclass>
+		<restorelocationmarker>GDCSSMission-ThirdFloor_OfficePlayerStart</restorelocationmarker>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="true">SS_Fire</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">SS_Fire</scenelayeronend>	
+		<scenelayeronstart geoautoactivate="false" activate="true">FX_SS_CamAttach</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">FX_SS_CamAttach</scenelayeronend>			
+		<scenelayeronstart geoautoactivate="false" activate="true">SS_BrokenWindow</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">SS_BrokenWindow</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="true">NP_Sweatshop_Props</scenelayeronstart>
+		<dependent>GDC_SS_4_2ndF</dependent>
+	</gameslice>
+	<gameslice name="GDC_SS_7_Escape" holdcurtain="true">
+		<title>Siu Wah Car Chase</title>
+		<scriptclass>GDC_SS_7_Escape</scriptclass>
+		<restorelocationmarker>GDCSSMission-VehicleChase_PlayerStart</restorelocationmarker>
+		<maxheatlevel>1</maxheatlevel>
+		<dependent>GDC_SS_5_Raid</dependent>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_SS" statsid="20">
+		<title>$SGTITLE_SWEATSHOP</title>
+		<scriptclass>GDCSSMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-GDCSSMission</triggerobject>
+		<restorelocationmarker>ProgressionTriggers_Missions-GDCSSMission</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_SS</completelocationmarker>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<deferredregionrestart>false</deferredregionrestart>
+		<scenelayeronstart geoautoactivate="false" activate="false">SS_INT_Ambience</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">SS_INT_FirstFloor</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_TruckSP_01</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">SS_INT_Ambience</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">SS_INT_FirstFloor</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Indust_TruckSP_01</scenelayeronend>
+		<trackgamesliceas>MISSION</trackgamesliceas>	
+		<child checkpoint="true">GDC_SS_1_Winston</child>
+		<child checkpoint="true">GDC_SS_2_Drive</child>
+		<child checkpoint="true">GDC_SS_3_1stF</child>
+		<child checkpoint="true">GDC_SS_4_2ndF</child>
+		<child checkpoint="true">GDC_SS_5_Raid</child>
+		<child checkpoint="true">GDC_SS_7_Escape</child>
+		<loadhintonstart priority="0">$LOADING_HINT_SS_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_ss_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_BBC_MID</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_bbc_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_MB_START</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_mb_start_tp.perm.bin</loadscreenonstart>
+		<scenelayeronend geoautoactivate="false" activate="false">NP_Sweatshop_Props</scenelayeronend>
+		<forcetime time="22.00" locked="true"></forcetime>
+	</mission>
+</groups>

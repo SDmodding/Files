@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="J_DC1_1_FindTarget" holdcurtain="true">
+		<title>Find Target</title>
+		<scriptclass>J_DC1_1_FindTarget</scriptclass>
+		<restorelocationmarker>J_DC1-Restore_FindTarget</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="J_DC1_2_FootChase" holdcurtain="true">
+		<title>Foot Chase</title>
+		<scriptclass>J_DC1_2_FootChase</scriptclass>
+		<restorelocationmarker>J_DC1-Restore_FootChase</restorelocationmarker>
+		<dependent>J_DC1_1_FindTarget</dependent>
+	</gameslice>
+	
+	<gameslice name="J_DC2_1" holdcurtain="true">
+		<title>Debt Collection 2</title>
+		<scriptclass>J_DC2_1</scriptclass>
+		<restorelocationmarker>J_DC2-PlayerRestore</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="J_DC3_1" holdcurtain="true">
+		<title>Debt Collection 3</title>
+		<scriptclass>J_DC3_1</scriptclass>
+		<restorelocationmarker>J_DC3-Restore_Social</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="J_DC4_1_Capture" holdcurtain="true">
+		<title>Capture Wife</title>
+		<scriptclass>J_DC4_1_Capture</scriptclass>
+		<restorelocationmarker>J_DC4-Capture_PlayerRestore</restorelocationmarker>
+		<vehiclerestore range="100.0">J_DC4-Capture_VehicleRestore</vehiclerestore>
+	</gameslice>
+	
+	<gameslice name="J_DC4_2_Photo" holdcurtain="true">
+		<title>Photo Wife</title>
+		<scriptclass>J_DC4_2_Photo</scriptclass>
+		<restorelocationmarker>J_DC4-Photo_PlayerRestore</restorelocationmarker>
+		<vehiclerestore range="100.0">J_DC4-Photo_VehicleRestore</vehiclerestore>
+		<dependent>J_DC4_1_Capture</dependent>
+	</gameslice>
+	
+	<gameslice name="J_DC4_3_Collect" holdcurtain="true">
+		<title>Collect</title>
+		<scriptclass>J_DC4_3_Collect</scriptclass>
+		<restorelocationmarker>J_DC4-Photo_PlayerRestore</restorelocationmarker>
+		<vehiclerestore range="100000.0">J_DC4-Photo_VehicleRestore</vehiclerestore>
+		<dependent>J_DC4_2_Photo</dependent>
+	</gameslice>
+	
+	<gameslice name="J_DC5_1_GoToTarget" holdcurtain="true">
+		<title>Go To Target</title>
+		<scriptclass>J_DC5_1_GoToTarget</scriptclass>
+		<restorelocationmarker>J_DC5-Restore_GoToTarget</restorelocationmarker>
+		<vehiclerestore range="100.0">J_DC5-Restore_GoToTargetVehicle</vehiclerestore>
+	</gameslice>
+	
+	<gameslice name="J_DC5_2_FootChase" holdcurtain="true">
+		<title>Foot Chase</title>
+		<scriptclass>J_DC5_2_FootChase</scriptclass>
+		<restorelocationmarker>J_DC5-Restore_FootChase</restorelocationmarker>
+		<dependent>J_DC5_1_GoToTarget</dependent>
+	</gameslice>
+	
+	<gameslice name="J_DC5_3_Dropoff" holdcurtain="true">
+		<title>Drop Off</title>
+		<scriptclass>J_DC5_3_Dropoff</scriptclass>
+		<restorelocationmarker>J_DC5-DropOff_Start</restorelocationmarker>
+		<dependent>J_DC5_2_FootChase</dependent>
+	</gameslice>
+
+</gameslices>
+
+<groups>
+
+	<scenario name="E_DebtCollection1Call">
+		<title>$SGTITLE_ROLAND_CALL</title>
+		<scriptclass>E_DebtCollection1Call</scriptclass>
+		<restorelocationmarker>Locations-SFNP-NP</restorelocationmarker>
+		<pdatrigger>PDAContact_ROLAND</pdatrigger>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+
+	<job name="J_DC1" statsid="5">
+		<title>$SGTITLE_COLLECTION_SAMSON</title>
+		<scriptclass>J_DC1</scriptclass>
+		<restorelocationmarker>Locations-SFNP-NP</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_DC1</completelocationmarker>
+		<triggerobject>ProgressionTriggers_Jobs-J_DC1</triggerobject>
+		<child checkpoint="true">J_DC1_1_FindTarget</child>
+		<child checkpoint="true">J_DC1_2_FootChase</child>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="E_DebtCollection2Call">
+		<title>$SGTITLE_ROLAND_CALL</title>
+		<scriptclass>E_DebtCollection2Call</scriptclass>
+		<restorelocationmarker>Locations-SFKT-KT</restorelocationmarker>
+		<pdatrigger>PDAContact_ROLAND</pdatrigger>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>	
+	
+	<job name="J_DC2" statsid="6">
+		<title>$SGTITLE_COLLECTION_NORYANG</title>
+		<scriptclass>J_DC2</scriptclass>
+		<restorelocationmarker>Locations-SFKT-KT</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_DC2</completelocationmarker>
+		<triggerobject>ProgressionTriggers_Jobs-J_DC2</triggerobject>
+		<child checkpoint="true">J_DC2_1</child>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="E_DebtCollection3Call">
+		<title>$SGTITLE_ROLAND_CALL</title>
+		<scriptclass>E_DebtCollection3Call</scriptclass>
+		<restorelocationmarker>Locations-SFNP-NP</restorelocationmarker>
+		<pdatrigger>PDAContact_ROLAND</pdatrigger>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_DC3" statsid="7">
+		<title>$SGTITLE_COLLECTION_LEUNG</title>
+		<scriptclass>J_DC3</scriptclass>
+		<restorelocationmarker>Locations-SFNP-NP</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_DC3</completelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Jobs-J_DC3</triggerobject>
+		<child checkpoint="true">J_DC3_1</child>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="E_DebtCollection4Call">
+		<title>$SGTITLE_ROLAND_CALL</title>
+		<scriptclass>E_DebtCollection4Call</scriptclass>
+		<restorelocationmarker>Locations-SFCT-CT</restorelocationmarker>
+		<pdatrigger>PDAContact_ROLAND</pdatrigger>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_DC4" statsid="8">
+		<title>$SGTITLE_COLLECTION_TOMMY_WU</title>
+		<scriptclass>J_DC4</scriptclass>
+		<restorelocationmarker>Locations-SFCT-CT</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_DC4</completelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Jobs-J_DC4</triggerobject>
+		<child checkpoint="true">J_DC4_1_Capture</child>
+		<child checkpoint="true">J_DC4_2_Photo</child>
+		<child checkpoint="true">J_DC4_3_Collect</child>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+	
+	<scenario name="E_DebtCollection5Call">
+		<title>$SGTITLE_ROLAND_CALL</title>
+		<scriptclass>E_DebtCollection5Call</scriptclass>
+		<restorelocationmarker>Locations-SFCT-CT</restorelocationmarker>
+		<pdatrigger>PDAContact_ROLAND</pdatrigger>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+	</scenario>
+	
+	<job name="J_DC5" statsid="9">
+		<title>$SGTITLE_COLLECTION_SAMSONSEQ</title>
+		<scriptclass>J_DC5</scriptclass>
+		<restorelocationmarker>Locations-SFCT-CT</restorelocationmarker>
+		<completelocationmarker>EndLocations-J_DC5</completelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Jobs-J_DC5</triggerobject>
+		<child checkpoint="true">J_DC5_1_GoToTarget</child>
+		<child checkpoint="true">J_DC5_2_FootChase</child>
+		<child checkpoint="true">J_DC5_3_Dropoff</child>
+		<trackgamesliceas>JOB</trackgamesliceas>
+	</job>
+
+</groups>

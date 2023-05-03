@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="FK1" holdcurtain="true">
+		<title>Meet Mrs Chu</title>
+		<scriptclass>FK_1_Meet</scriptclass>
+		<restorelocationmarker>FKMission-Intro_PlayerDest</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="FK2" holdcurtain="true">
+		<title>Find Dogeyes</title>
+		<scriptclass>FK_2_FindDogeyes</scriptclass>
+		<restorelocationmarker>FKMission-Intro_PlayerDest</restorelocationmarker>
+		<dependent>FK1</dependent>
+	</gameslice>
+	
+	<gameslice name="FK4" holdcurtain="true">
+		<title>Boat Chase</title>
+		<scriptclass>FK_4_BoatChase</scriptclass>
+		<restorelocationmarker>FKMission-Water_PlayerDryStart</restorelocationmarker>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>		
+		<dependent>FK2</dependent>
+	</gameslice>
+	
+	<gameslice name="FK5" holdcurtain="true">
+		<title>Market Chase</title>
+		<scriptclass>FK_5_MarketChase</scriptclass>
+		<restorelocationmarker>FKMission-Market_ChasePlayerDest</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="true">FK_FishMarket_Ambience</scenelayeronstart>				
+		<dependent>FK4</dependent>
+	</gameslice>
+	
+	<gameslice name="FK6" holdcurtain="true">
+		<title>Market Fight</title>
+		<scriptclass>FK_6_MarketFight</scriptclass>
+		<restorelocationmarker>FKMission-Market_FightPlayerStart</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="true">FK_FishMarket_Ambience</scenelayeronstart>				
+		<dependent>FK5</dependent>
+	</gameslice>
+	
+	<gameslice name="FK7" holdcurtain="true">
+		<title>Freezer</title>
+		<scriptclass>FK_7_FreezerFight</scriptclass>
+		<restorelocationmarker>FKMission-Freezer_PlayerStart</restorelocationmarker>
+		<dependent>FK6</dependent>
+	</gameslice>
+	
+	<gameslice name="FK8" holdcurtain="true">
+		<title>Return to Mrs Chu</title>
+		<scriptclass>FK_7_Return</scriptclass>
+		<restorelocationmarker>FKMission-Return_PlayerDest</restorelocationmarker>
+		<dependent>FK7</dependent>
+	</gameslice>
+
+</gameslices>
+
+<groups>
+
+	<mission name="M_FK" statsid="9">
+		<title>$SGTITLE_FINAL_KILL</title>
+		<scriptclass>FKMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-FKMission</triggerobject>
+		<cancellocationmarker>Locations-FK_Spawn</cancellocationmarker>
+		<restorelocationmarker>Locations-FK_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_FK</completelocationmarker>
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<scenelayeronend geoautoactivate="false" activate="false">FK_FishMarket_Ambience</scenelayeronend>		
+		<child checkpoint="true">FK1</child>
+		<child checkpoint="true">FK2</child>
+		<child checkpoint="true">FK4</child>
+		<child checkpoint="true">FK5</child>
+		<child checkpoint="true">FK6</child>
+		<child checkpoint="true">FK7</child>
+		<child checkpoint="true">FK8</child>
+	</mission>
+
+</groups>

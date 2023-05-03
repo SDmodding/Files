@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="F_HM_1" holdcurtain="true">
+		<title>Highway Mayhem</title>
+		<scriptclass>F_HM_1</scriptclass>
+		<restorelocationmarker>Locations-HMEventStart</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="F_HM2_1" holdcurtain="true">
+		<title>Highway Mayhem 2</title>
+		<scriptclass>F_HM2_1</scriptclass>
+		<restorelocationmarker>Locations-HM2EventStart</restorelocationmarker>
+	</gameslice>
+
+</gameslices>
+
+
+<groups>
+
+	<favour name="F_HM" statsid="34">
+		<title>$SGTITLE_HIGHWAY_MAYHEM</title>
+		<scriptclass>HMEvent</scriptclass>
+		<maxheatlevel>1</maxheatlevel>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_HighwayMayhem</triggerobject>
+		<restorelocationmarker>Locations-HMEventStart</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">F_HM_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>		
+	<favour name="F_HM2" statsid="35">
+		<title>$SGTITLE_HIGHWAY_MAYHEM_2</title>
+		<scriptclass>HM2Event</scriptclass>
+		<maxheatlevel>1</maxheatlevel>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_HighwayMayhem2</triggerobject>
+		<restorelocationmarker>Locations-HM2EventStart</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">F_HM2_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>	
+
+
+
+</groups>
+

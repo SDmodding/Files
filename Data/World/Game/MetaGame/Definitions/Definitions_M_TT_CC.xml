@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<gameslices>
+	<gameslice name="CC_00_GoToStart" holdcurtain="true">
+		<title>Go to Location</title>
+		<scriptclass>CC_00_GoToStart</scriptclass>
+		<restorelocationmarker>ProgressionTriggers_TT-CCMission</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="CC_01_RailShooter" holdcurtain="true">
+		<title>Rail Shooter</title>
+		<scriptclass>CC_01_RailShooter</scriptclass>
+		<restorelocationmarker>CCMission-Restore_RailShooterCar</restorelocationmarker>
+		<dependent>CC_00_GoToStart</dependent>
+	</gameslice>
+	
+	<gameslice name="CC_02_GoToGarage" holdcurtain="true">
+		<title>Go to Garage</title>
+		<scriptclass>CC_02_GoToGarage</scriptclass>
+		<restorelocationmarker>CCMission-Restore_GoToGarageCar</restorelocationmarker>
+		<dependent>CC_01_RailShooter</dependent>
+	</gameslice>
+</gameslices>
+
+<groups>	
+	<mission name="M_TT_CC">
+		<title>$SGTITLE_CRUISE_CONTROL</title>
+		<scriptclass>CCMission</scriptclass>
+		<triggerobject>ProgressionTriggers_TT-CCMission</triggerobject>
+		<completelocationmarker>Locations_TT-M_CC_Start</completelocationmarker>
+		<restorelocationmarker>Locations_TT-Unlocker_Start</restorelocationmarker>
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>DLC</trackgamesliceas>
+		<audiooverride>M_TT</audiooverride>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_S_05_Peds_Day</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">CN_S_05_Peds_Day</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_N_07_Peds</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">CN_N_07_Peds</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_N_08_Peds</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">CN_N_08_Peds</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_N_09_Peds</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">CN_N_09_Peds</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_N_10_Peds</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">CN_N_10_Peds</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_N_11_Peds</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">CN_N_11_Peds</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_N_20_Peds_Day</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">CN_N_20_Peds_Day</scenelayeronend>
+		<child checkpoint="true">CC_00_GoToStart</child>
+		<child checkpoint="true">CC_01_RailShooter</child>
+		<child checkpoint="true">CC_02_GoToGarage</child>
+	</mission>
+</groups>

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="SU1" holdcurtain="true">
+		<title>Meet Jackie at Trans Autobody</title>
+		<scriptclass>SU_1_Meet</scriptclass>
+		<restorelocationmarker>Locations-SU_spawn</restorelocationmarker>
+	</gameslice>
+	<gameslice name="SU2" holdcurtain="true">
+		<title>Find the Shipment</title>
+		<scriptclass>SU_2_Find</scriptclass>
+		<restorelocationmarker>SUMission-mkr_Start</restorelocationmarker>
+		<dependent>SU1</dependent>
+	</gameslice>
+	<gameslice name="SU3" holdcurtain="true">
+		<title>Fight Warehouse Goons</title>
+		<scriptclass>SU_3_Warehouse</scriptclass>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitStickUp</setdisguiseonstart>				
+		<restorelocationmarker>SUMission-mkr_SU3_PlayerRestore</restorelocationmarker>
+		<dependent>SU2</dependent>
+	</gameslice>
+	<gameslice name="SU4" holdcurtain="true">
+		<title>Chase the Watch Van</title>
+		<scriptclass>SU_4_Chase</scriptclass>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitStickUp</setdisguiseonstart>				
+		<restorelocationmarker>SUMission-mkr_SU4_PlayerRestore</restorelocationmarker>
+		<dependent>SU3</dependent>
+	</gameslice>
+	
+	<gameslice name="SU5" holdcurtain="true">
+		<title>Escape with the Watches</title>
+		<scriptclass>SU_6_Escape</scriptclass>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitStickUp</setdisguiseonstart>				
+		<restorelocationmarker>SUMission-mkr_SU5_PlayerRestore</restorelocationmarker>
+		<dependent>SU4</dependent>
+		<loadhintonstart priority="0">$LOADING_HINT_SUD_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_sud_start_tp.perm.bin</loadscreenonstart>
+	</gameslice>
+	
+	
+</gameslices>
+<groups>
+	<mission name="M_SU" statsid="21">
+		<title>$SGTITLE_STICK_UPANDDELIVERY</title>
+		<scriptclass>SUMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-M_SU</triggerobject>		
+		<restorelocationmarker>Locations-open_world_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_SU</completelocationmarker>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<deferredregionrestart>false</deferredregionrestart>
+		<maxheatlevel>1</maxheatlevel>
+		<watermark>true</watermark>
+		<child>SU1</child>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Waterfront_Ped</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_POI_05</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_Ped_06</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">SS_Ext_POI</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="true">NP_Waterfront_Ped</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_Indust_POI_05</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">NP_Indust_Ped_06</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">SS_Ext_POI</scenelayeronend>		
+		<vendorenableonstart enable="false">PARKADE</vendorenableonstart>
+		<vendorenableonstart enable="false">VEHICLE_STORE</vendorenableonstart>
+		<vendorenableonend enable="true">PARKADE</vendorenableonend>
+		<vendorenableonend enable="true">VEHICLE_STORE</vendorenableonend>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">SU2</child>
+		<child checkpoint="true">SU3</child>
+		<child checkpoint="true">SU4</child>
+		<child checkpoint="true">SU5</child>
+	</mission>
+	
+</groups>
+

@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>	
+
+
+	<gameslice name="C_PS_Close">
+		<title>Close Popstar's Case</title>
+		<scriptclass>C_PS_Close</scriptclass>
+		<dependent>PS_33_HQ</dependent>		
+	</gameslice>
+
+
+	<!-- POPSTAR REFACTORATION NEEDED -->
+	<gameslice name="PS_11_Pickup">
+		<title>Help Ming</title>
+		<scriptclass>PS_11_Pickup</scriptclass>
+		<vehiclerestore range="100.000000000">PS1Case-VehicleRestore</vehiclerestore>		
+		<restorelocationmarker>PS1Case-RestoreTalkToMing</restorelocationmarker>					
+	</gameslice>
+	<gameslice name="PS_12_Favor"  holdcurtain="true">
+		<title>Collect from deadbeats</title>
+		<scriptclass>PS_12_Favor</scriptclass>
+		<dependent>PS_11_Pickup</dependent>
+		<restorelocationmarker>PS1Case-popstar_restore</restorelocationmarker>			
+		</gameslice>
+	<gameslice name="PS_13_Deal" holdcurtain="true">
+		<title>Do the deal</title>
+		<scriptclass>PS_13_Deal</scriptclass>
+		<restorelocationmarker>PS1Case-PopdealRestore</restorelocationmarker>			
+		<dependent>PS_12_Favor</dependent>
+	</gameslice>
+	<gameslice name="PS_20_Goto" holdcurtain="true">
+		<title>Go to the Park</title>
+		<scriptclass>PS_20_Goto</scriptclass>
+		<restorelocationmarker>Locations-TW_NP_01_Start</restorelocationmarker>
+	</gameslice>
+	<gameslice name="PS_21_Rumble" holdcurtain="true">
+		<title>Defeat the Triad</title>
+		<scriptclass>PS_21_Rumble</scriptclass>
+		<dependent>PS_20_Goto</dependent>				
+		<restorelocationmarker>Locations-TW_NP_01_Start</restorelocationmarker>
+	</gameslice>
+	<gameslice name="PS_22_Hack" holdcurtain="true">
+		<title>Hack Camera</title>
+		<scriptclass>PS_22_Hack</scriptclass>
+		<dependent>PS_21_Rumble</dependent>		
+		<restorelocationmarker>PS2Case-HackRestore</restorelocationmarker>
+	</gameslice>
+	<gameslice name="PS_23_Safehouse" holdcurtain="true">
+		<title>Return to Safehouse</title>
+		<scriptclass>PS_23_Safehouse</scriptclass>
+		<dependent>PS_22_Hack</dependent>		
+		<restorelocationmarker>PS2Case-HackHere</restorelocationmarker>
+	</gameslice>
+	<gameslice name="PS_24_Spycam" holdcurtain="true">
+		<title>Capture Enforcer</title>
+		<scriptclass>PS_24_Spycam</scriptclass>
+		<dependent>PS_23_Safehouse</dependent>		
+		<restorelocationmarker>PS2Case-Safehouse</restorelocationmarker>
+	</gameslice>
+	<gameslice name="PS_25_Teng" holdcurtain="true">
+		<title>Call Teng</title>
+		<scriptclass>PS_25_Teng</scriptclass>
+		<dependent>PS_24_Spycam</dependent>		
+		<restorelocationmarker>PS2Case-SpyPC</restorelocationmarker>
+	</gameslice>
+	<gameslice name="PS_30_Follow" holdcurtain="true">
+		<title>Get Disguise</title>
+		<scriptclass>PS_30_Follow</scriptclass>
+		<restorelocationmarker>Locations-C_PS3_Spawn</restorelocationmarker>
+	</gameslice>
+	<gameslice name="PS_30_Follow2" holdcurtain="true">
+		<title>Follow Popstar</title>
+		<scriptclass>PS_30_Follow2</scriptclass>
+		<restorelocationmarker>PS3Case-WaitForPopstar</restorelocationmarker>
+		<dependent>PS_30_Follow</dependent>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitVagrant</setdisguiseonstart>
+	</gameslice>
+	<gameslice name="PS_31_Photo" holdcurtain="true">
+		<title>Photo Popstar</title>
+		<scriptclass>PS_31_Photo</scriptclass>
+		<restorelocationmarker>PS3Case-PhotoRestore</restorelocationmarker>
+		<dependent>PS_30_Follow2</dependent>
+		<setdisguiseonstart enablewardrobe="true" enablestores="false">OutfitVagrant</setdisguiseonstart>
+	</gameslice>
+	<gameslice name="PS_32_Chase" holdcurtain="true">
+		<title>Chase Popstar</title>
+		<scriptclass>PS_32_Chase</scriptclass>
+		<restorelocationmarker>PS3Case-PhotoTransition_PlayerDest</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Waterfront_Ped_02</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_Ped_07_Evening</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_Ped_08_Evening</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_TG_Route_Fish</scenelayeronstart>				
+		<setdisguiseonstart enablewardrobe="true" enablestores="false">OutfitVagrant</setdisguiseonstart>
+		<dependent>PS_31_Photo</dependent>
+	</gameslice>
+	<gameslice name="PS_33_HQ" holdcurtain="true">
+		<title>Take car back to HQ</title>
+		<scriptclass>PS_33_HQ</scriptclass>
+		<restorelocationmarker>PS3Case-GetTheCar</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Waterfront_Ped_02</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_Ped_07_Evening</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_Ped_08_Evening</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_TG_Route_Fish</scenelayeronstart>				
+		<setdisguiseonstart enablewardrobe="true" enablestores="false">OutfitVagrant</setdisguiseonstart>
+		<dependent>PS_32_Chase</dependent>
+	</gameslice>
+</gameslices>
+<groups>	
+	<!-- POPSTAR REFACTORATION NEEDED -->
+	<mission name="C_PS_Start" statsid="8">
+		<title>$SGTITLE_POPSTAR_START</title>
+		<scriptclass>PSStartCase</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<triggerobject>ProgressionTriggers_Cases-C_PS_Start</triggerobject>
+		<restorelocationmarker>Locations-open_world_spawn</restorelocationmarker>
+		<trackgamesliceas>CASE_PRESENCE</trackgamesliceas>
+	</mission>
+	<mission name="C_PS1" statsid="9">
+		<title>$SGTITLE_POPSTAR_1</title>
+		<scriptclass>PS1Case</scriptclass>		
+		<forceweather type="sunny" locked="true"></forceweather>
+		<triggerobject>ProgressionTriggers_Cases-C_PS1</triggerobject>
+		<restorelocationmarker>Locations-C_PS1_Spawn</restorelocationmarker>
+		<cancellocationmarker>Locations-C_PS1_Spawn</cancellocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<deferredregionrestart>false</deferredregionrestart>		
+		<maxheatlevel>1</maxheatlevel>
+		<child checkpoint="true">PS_11_Pickup</child>
+		<child checkpoint="true">PS_12_Favor</child>
+		<child checkpoint="true">PS_13_Deal</child>
+		<trackgamesliceas>CASE_PRESENCE</trackgamesliceas>
+	</mission>
+	<mission name="C_PS2" statsid="10">
+		<title>$SGTITLE_POPSTAR_2</title>
+		<scriptclass>PS2Case</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Cases-C_PS2</triggerobject>
+		<restorelocationmarker>Locations-C_PS2_Spawn</restorelocationmarker>
+		<cancellocationmarker>Locations-C_PS2_Spawn</cancellocationmarker>		
+		<deferredregionrestart>false</deferredregionrestart>		
+		<child checkpoint="true">PS_20_Goto</child>
+		<child checkpoint="true">PS_21_Rumble</child>
+		<child checkpoint="true">PS_22_Hack</child>
+		<child checkpoint="true">PS_23_Safehouse</child>
+		<child checkpoint="true">PS_24_Spycam</child>
+		<child checkpoint="true">PS_25_Teng</child>
+		<trackgamesliceas>CASE_PRESENCE</trackgamesliceas>
+	</mission>
+	<mission name="C_PS3" statsid="3">
+		<title>$SGTITLE_POPSTAR_3</title>
+		<scriptclass>PS3Case</scriptclass>
+		<triggerobject>ProgressionTriggers_Cases-C_PS3</triggerobject>
+		<restorelocationmarker>Locations-C_PS3_Spawn</restorelocationmarker>        
+		<maxheatlevel>2</maxheatlevel>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Waterfront_Ped_02</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Waterfront_Ped_02_Night</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_Ped_07_Evening</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_Ped_07</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_Ped_08_Evening</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_Ped_08</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Waterfront_POI_02</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_TG_Route_Fish</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Indust_POI_08</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="true">NP_Waterfront_Ped_02</scenelayeronend>			
+		<scenelayeronend geoautoactivate="true">NP_Waterfront_Ped_02_Night</scenelayeronend>			
+		<scenelayeronend geoautoactivate="true">NP_Indust_Ped_07_Evening</scenelayeronend>			
+		<scenelayeronend geoautoactivate="true">NP_Indust_Ped_07</scenelayeronend>			
+		<scenelayeronend geoautoactivate="true">NP_Indust_Ped_08_Evening</scenelayeronend>			
+		<scenelayeronend geoautoactivate="true">NP_Indust_Ped_08</scenelayeronend>			
+		<scenelayeronend geoautoactivate="true">NP_Waterfront_POI_02</scenelayeronend>			
+		<scenelayeronend geoautoactivate="true">NP_TG_Route_Fish</scenelayeronend>			
+		<scenelayeronend geoautoactivate="true">NP_Indust_POI_08</scenelayeronend>		
+		<removedisguiseonend enablewardrobe="true" enablestores="true"></removedisguiseonend>
+		<trackgamesliceas>CASE</trackgamesliceas>
+		<child checkpoint="true">PS_30_Follow</child>
+		<child checkpoint="true">PS_30_Follow2</child>
+		<child checkpoint="true">PS_31_Photo</child>
+		<child checkpoint="true">PS_32_Chase</child>
+		<child checkpoint="true">PS_33_HQ</child>
+		<child>C_PS_Close</child>	
+	</mission>
+</groups>
+

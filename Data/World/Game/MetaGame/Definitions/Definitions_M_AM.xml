@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="AM1"  holdcurtain="true">
+		<title>Amanda Intro</title>
+		<restorelocationmarker>Locations-Safehouse_Exit</restorelocationmarker>
+		<scriptclass>AM1_Intro</scriptclass>
+	</gameslice>
+	<gameslice name="AM2"  holdcurtain="true">
+		<title>Drive to School</title>
+		<scriptclass>AM2_Drive</scriptclass>
+		<restorelocationmarker>AMMission-mkrWei</restorelocationmarker>
+		<dependent>AM1</dependent>
+	</gameslice>
+	<gameslice name="AM3"  holdcurtain="true">
+		<title>Martial Arts Lesson</title>
+		<scriptclass>AM3_Lesson</scriptclass>
+		<restorelocationmarker>AMMission-mkrWeiDirectionalLesson</restorelocationmarker>
+		<vehiclerestore range="100.000000000">AMMission-mkrDojoEntrance1</vehiclerestore>				
+		<dependent>AM2</dependent>
+	</gameslice>
+	<gameslice name="CSCH0"  holdcurtain="true">
+		<title>Martial Arts School Intro</title>
+		<restorelocationmarker>Locations-MMA_Class</restorelocationmarker>
+		<vehiclerestore range="100.000000000">Dojo-ParkerMarker</vehiclerestore>				
+		<scriptclass>CSCH0_Intro</scriptclass>
+	</gameslice>
+	<!-- holdcurtain="true"-->
+	<gameslice name="CSCH1"  holdcurtain="true">
+		<title>Martial Arts School Lesson</title>
+		<scriptclass>CSCH1_Lesson</scriptclass>
+		<vehiclerestore range="100.000000000">Dojo-ParkerMarker</vehiclerestore>				
+		<restorelocationmarker>Locations-MMA_Class</restorelocationmarker>
+		<dependent>CSCH0</dependent>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_AM" statsid="1">
+		<title>$SGTITLE_AMANDA</title>
+		<scriptclass>AMMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-AMMission</triggerobject>
+		<restorelocationmarker>Locations-Safehouse_Exit</restorelocationmarker>		
+		<completelocationmarker>EndLocations-M_MAS</completelocationmarker>
+		<cancellocationmarker>Locations-Safehouse_Exit</cancellocationmarker>		
+		<forceweather type="sunny" locked="true"></forceweather>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<deferredregionrestart>false</deferredregionrestart>
+		<watermark>true</watermark>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">AM1</child>
+		<child checkpoint="true">AM2</child>
+		<child checkpoint="true">AM3</child>
+	</mission>
+	<mission name="M_CSCH" repeatableinterval="5">
+		<title>$SGTITLE_MARTIAL_ARTS_SCHOOL</title>
+		<scriptclass>CSCHMission</scriptclass>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<deferredregionrestart>false</deferredregionrestart>		
+		<restorelocationmarker>Locations-MMA_Class</restorelocationmarker>
+		<cancellocationmarker>Locations-MMA_Class</cancellocationmarker>
+		<child>CSCH0</child>
+		<child>CSCH1</child>
+		<dependent>M_AM</dependent>
+	</mission>
+</groups>
+

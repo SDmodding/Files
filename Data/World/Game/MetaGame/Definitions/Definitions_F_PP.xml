@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="E_PP_1" holdcurtain="true"> 
+		<title>Pied Piper 01</title>
+		<scriptclass>E_PP_1</scriptclass>
+		<restorelocationmarker>Locations-PiedPiper_spawn</restorelocationmarker>		
+	</gameslice>
+	
+	<gameslice name="E_PP2_1" holdcurtain="true"> 
+		<title>Pied Piper 2 01</title>
+		<scriptclass>E_PP2_1</scriptclass>
+		<restorelocationmarker>Locations-PiedPiper2_spawn</restorelocationmarker>		
+	</gameslice>
+
+
+</gameslices>
+
+
+<groups>
+
+	<favour name="E_PP" statsid="37">
+		<title>$SGTITLE_PIED_PIPER</title>
+		<scriptclass>PiedPiper</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-PiedPiper</triggerobject>
+		<restorelocationmarker>Locations-PiedPiper_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_PP</completelocationmarker>
+		<minpiplevel>0</minpiplevel>
+		<faceactiontype>eFACEACTION_OFFER_HELP</faceactiontype>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_PP_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+
+	<favour name="E_PP2" statsid="38">
+		<title>$SGTITLE_PIED_PIPER_2</title>
+		<scriptclass>PiedPiper2</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-PiedPiper2</triggerobject>
+		<restorelocationmarker>Locations-PiedPiper2_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_PP2</completelocationmarker>
+		<minpiplevel>0</minpiplevel>
+		<faceactiontype>eFACEACTION_OFFER_HELP</faceactiontype>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_PP2_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+
+</groups>

@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+
+<!--    
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+
+<gameslices>
+	
+	<gameslice name="VE1" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>VE_1_Meet</scriptclass>
+		<restorelocationmarker>VEMission-Intro_PlayerStart</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="VE2" holdcurtain="true">
+		<title>Walk to Vendor1</title>
+		<scriptclass>VE_2_Extort</scriptclass>
+		<restorelocationmarker>VEMission-GoToKwan_PlayerStart</restorelocationmarker>
+		<dependent>VE1</dependent>
+	</gameslice>
+	
+	<gameslice name="VE2a" holdcurtain="true">
+		<title>First Vendor</title>
+		<scriptclass>VE_2_Extort1</scriptclass>
+		<restorelocationmarker>VEMission-KwanVendor_PlayerRestoreMarker</restorelocationmarker>
+		<dependent>VE2</dependent>
+	</gameslice>
+	
+	<gameslice name="VE2c" holdcurtain="true">
+		<title>Watch Vendor</title>
+		<scriptclass>VE_2_Extort3</scriptclass>
+		<restorelocationmarker>VEMission-WatchVendor_PlayerRestoreMarker</restorelocationmarker>
+		<dependent>VE2a</dependent>
+	</gameslice>
+	
+	<gameslice name="VE2d" holdcurtain="true">
+		<title>Ratfink Vendor</title>
+		<scriptclass>VE_2_Extort4</scriptclass>
+		<restorelocationmarker>VEMission-RatfinkVendor_PlayerRestoreMarker</restorelocationmarker>
+		<dependent>VE2c</dependent>
+	</gameslice>
+
+	<gameslice name="VE2f" holdcurtain="true">
+		<title>Bullied Vendor</title>
+		<scriptclass>VE_2_Extort5</scriptclass>
+		<restorelocationmarker>VEMission-BulliedVendor_PlayerRestoreMarker</restorelocationmarker>
+		<dependent>VE2d</dependent>
+	</gameslice>
+	
+	<gameslice name="VE2g" holdcurtain="true">
+		<title>Clothing Store</title>
+		<scriptclass>VE_2_Extort6</scriptclass>
+		<restorelocationmarker>VEMission-ClothingVendor_PlayerRestoreMarker</restorelocationmarker>
+		<dependent>VE2f</dependent>
+	</gameslice>
+	
+	<gameslice name="VE3" holdcurtain="true">
+		<title>Favor Tutorial</title>
+		<scriptclass>VE_3_Favor</scriptclass>
+		<restorelocationmarker>VEMission-FavorVendor_PlayerStart</restorelocationmarker>		
+		<savegamenameoverride>$SGTITLE_VENDOR_EXTORTION</savegamenameoverride>
+		<scenelayeronstart geoautoactivate="false" activate="false">Intro_Ambience</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">GoldenKoiLine</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Downstairs_Day</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Downstairs_Night</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="true">Intro_Ambience_VE_Fight</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="true">NP_VendorX_Props</scenelayeronstart>		
+		<dependent>VE2g</dependent>
+	</gameslice>
+	
+	<gameslice name="VE3_Fight" holdcurtain="true">
+		<title>Favor Fight</title>
+		<scriptclass>VE_3_FavorFight</scriptclass>
+		<restorelocationmarker>VEMission-FavorFight_PlayerRestoreMarker</restorelocationmarker>
+		<savegamenameoverride>$SGTITLE_VENDOR_EXTORTION</savegamenameoverride>
+		<scenelayeronstart geoautoactivate="false" activate="false">Intro_Ambience</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">GoldenKoiLine</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Downstairs_Day</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Downstairs_Night</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="true">Intro_Ambience_VE_Fight</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="true">NP_VendorX_Props</scenelayeronstart>	
+		<dependent>VE3</dependent>
+	</gameslice>
+	
+	<gameslice name="VE_4_GoToKitchen" holdcurtain="true">
+		<title>Go To Kitchen</title>
+		<scriptclass>VE_4_GoToKitchen</scriptclass>
+		<restorelocationmarker>VEMission-FavorFight_PlayerRestoreMarker</restorelocationmarker>
+		<savegamenameoverride>$SGTITLE_VENDOR_FAVOR</savegamenameoverride>
+		<scenelayeronstart geoautoactivate="false" activate="false">Intro_Ambience</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">GoldenKoiLine</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Downstairs_Day</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Golden_Koi_Downstairs_Night</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="true">Intro_Ambience_VE_Fight</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="true">NP_VendorX_Props</scenelayeronstart>	
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+		<dependent>VE3_Fight</dependent>
+	</gameslice>
+	
+</gameslices>
+
+<groups>
+
+	<mission name="M_VE" holdcurtain="true" statsid="28">
+		<title>$SGTITLE_VENDOR_EXTORTION</title>
+		<scriptclass>VEMission</scriptclass>
+		<restorelocationmarker>Locations-VE_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_VE</completelocationmarker>
+		<savegamenameoverride>$SGTITLE_VENDOR_FAVOR</savegamenameoverride>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>false</unlocktrafficonend>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<deferredregionrestart>false</deferredregionrestart>
+		<forcetime time="20.00" locked="true"></forcetime>
+		<forceweather type="sunny" locked="true"></forceweather>
+		<saveoverride>NMC_1_Intro</saveoverride>
+
+		<scenelayeronstart activate="true">Intro_Gameplay</scenelayeronstart>
+		
+		<scenelayeronend activate="false">Intro_Gameplay</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">Intro_Ambience</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">GoldenKoiLine</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Downstairs_Day</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Golden_Koi_Downstairs_Night</scenelayeronend>
+		<scenelayeronend geoautoactivate="false" activate="false">Intro_Ambience_VE_Fight</scenelayeronend>
+		<scenelayeronend geoautoactivate="false" activate="false">NP_VendorX_Props</scenelayeronend>
+		<altlayeronstart activate="true" flush="true">festival</altlayeronstart>
+		<altlayeronend activate="false" flush="true">festival</altlayeronend>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">VE1</child>
+		<child checkpoint="true">VE2</child>
+		<child checkpoint="true">VE2a</child>
+		<child checkpoint="true">VE2c</child>
+		<child checkpoint="true">VE2d</child>
+		<child checkpoint="true">VE2f</child>
+		<child checkpoint="true">VE2g</child>
+		<child checkpoint="true">VE3</child>
+		<child checkpoint="true">VE3_Fight</child>		
+		<child checkpoint="true">VE_4_GoToKitchen</child>	
+		<loadhintonstart priority="0">$LOADING_HINT_VE_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_ve_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_GU_START</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_gu_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_WTHK_START_1</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_wthk_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+
+</groups>
+

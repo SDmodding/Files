@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<!--    
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="IV_1_Pickup" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>IV_1_Pickup</scriptclass>
+	</gameslice>
+
+	<gameslice name="IV_2_DriveToBar" holdcurtain="true">
+		<title>Drive to Soho</title>
+		<scriptclass>IV_2_DriveToBar</scriptclass>
+		<restorelocationmarker>IVMission-DriveToBar_PlayerStart</restorelocationmarker>
+		<dependent>IV_1_Pickup</dependent>
+	</gameslice>
+
+	<gameslice name="IV_3_EnterBar" holdcurtain="true">
+		<title>Enter K-Bar</title>
+		<scriptclass>IV_3_EnterBar</scriptclass>
+		<restorelocationmarker>IVMission-EnterBar_PlayerStart</restorelocationmarker>
+		<dependent>IV_2_DriveToBar</dependent>
+	</gameslice>
+
+	<gameslice name="IV_4_Girl1" holdcurtain="true">
+		<title>Recruit Katushka</title>
+		<scriptclass>IV_4_Girl1</scriptclass>
+		<restorelocationmarker>IVMission-FindGirls_KatushkaPlayerStart</restorelocationmarker>
+		<dependent>IV_3_EnterBar</dependent>
+	</gameslice>
+
+	<gameslice name="IV_4_Girl2" holdcurtain="true">
+		<title>Recruit Vera</title>
+		<scriptclass>IV_4_Girl2</scriptclass>
+		<restorelocationmarker>IVMission-FindGirls_VeraPlayerStart</restorelocationmarker>
+		<dependent>IV_4_Girl1</dependent>
+	</gameslice>
+
+	<gameslice name="IV_4_Girl3" holdcurtain="true">
+		<title>Recruit Illyana</title>
+		<scriptclass>IV_4_Girl3</scriptclass>
+		<restorelocationmarker>IVMission-FindGirls_IllyanaPlayerStart</restorelocationmarker>
+		<dependent>IV_4_Girl2</dependent>
+	</gameslice>
+	
+	<gameslice name="IV_5_Sing" holdcurtain="true">
+		<title>Sing Karaoke</title>
+		<scriptclass>IV_5_Sing</scriptclass>
+		<restorelocationmarker>IVMission-Karaoke_PlayerStart</restorelocationmarker>
+		<dependent>IV_4_Girl3</dependent>
+	</gameslice>
+	
+	<gameslice name="IV_6_Photo" holdcurtain="true">
+		<title>Take Photos</title>
+		<scriptclass>IV_6_Photo</scriptclass>
+		<restorelocationmarker>IVMission-TakePhotos_PlayerStart</restorelocationmarker>
+		<dependent>IV_5_Sing</dependent>
+	</gameslice>
+	
+	<gameslice name="IV_7_LeaveBar" holdcurtain="true">
+		<title>Leave Bar</title>
+		<scriptclass>IV_7_LeaveBar</scriptclass>
+		<restorelocationmarker>IVMission-LeaveBar_WeiStart</restorelocationmarker>		
+		<dependent>IV_6_Photo</dependent>
+	</gameslice>
+
+	<gameslice name="IV_8_ParkingLotFight" holdcurtain="true">
+		<title>Parking Lot Fight</title>
+		<scriptclass>IV_8_ParkingLotFight</scriptclass>
+		<restorelocationmarker>IVMission-ParkingLot_PlayerStart</restorelocationmarker>
+		<dependent>IV_7_LeaveBar</dependent>
+	</gameslice>
+
+	<gameslice name="IV_9_Hotel" holdcurtain="true">
+		<title>Go to Hotel</title>
+		<scriptclass>IV_9_Hotel</scriptclass>
+		<restorelocationmarker>IVMission-GoToHotel_PlayerStart</restorelocationmarker>
+		<dependent>IV_8_ParkingLotFight</dependent>
+	</gameslice>
+
+</gameslices>
+
+<groups>
+
+	<mission name="M_IV" statsid="14">
+		<title>$SGTITLE_IMPORTANT_VISITOR</title>
+		<scriptclass>IVMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-IVMission</triggerobject>
+		<restorelocationmarker>Locations-IV_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_IV</completelocationmarker>
+		<forceweather type="sunny" wetness="0.5" locked="true"></forceweather>
+        <forcetime time="20.00" locked="true"></forcetime>
+		<deferredregionrestart>false</deferredregionrestart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CNSH_Item3_Vendor</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">CNSH_Item3_Vendor</scenelayeronend>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">IV_1_Pickup</child>
+		<child checkpoint="true">IV_2_DriveToBar</child>
+		<child checkpoint="true">IV_3_EnterBar</child>
+	    <child persistent="true">IV_4_Girl1</child>
+        <child persistent="true">IV_4_Girl2</child>
+        <child persistent="true">IV_4_Girl3</child>			
+		<child checkpoint="true">IV_5_Sing</child>
+		<child checkpoint="true">IV_6_Photo</child>
+		<child checkpoint="true">IV_7_LeaveBar</child>		
+		<child checkpoint="true">IV_8_ParkingLotFight</child>		
+		<child checkpoint="true">IV_9_Hotel</child>
+		<loadhintonstart priority="0">$LOADING_HINT_IV_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_iv_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_JA_START</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_ja_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_IN_START</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_in_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+
+</groups>
+

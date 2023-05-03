@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+	<gameslice name="E_S_01">
+		<title>Shoplifting 01</title>
+		<scriptclass>E_S_01</scriptclass>
+	</gameslice>
+	
+	<gameslice name="E_S2_01">
+		<title>Shoplifting 2 01</title>
+		<scriptclass>E_S2_01</scriptclass>
+	</gameslice>
+	
+	<gameslice name="E_S3_01">
+		<title>Shoplifting 3 01</title>
+		<scriptclass>E_S3_01</scriptclass>
+	</gameslice>
+	
+	<gameslice name="E_S4_01">
+		<title>Shoplifting 4 01</title>
+		<scriptclass>E_S4_01</scriptclass>
+	</gameslice>	
+	
+	
+</gameslices>
+
+
+<groups>
+
+	<event name="E_S" statsid="22">
+		<title>$SGTITLE_SHOPLIFTER</title>
+		<scriptclass>E_SEvent</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_S</triggerobject>
+		<restorelocationmarker>Locations-E_S_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_S</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<timeofday restore="9.30" active="8.0" inactive="17.0" bypassprompt="true"></timeofday>
+		<child>E_S_01</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+		<timeofday restore="9.30" active="8.0" inactive="17.0" bypassprompt="true"></timeofday>
+	</event>
+	
+	<event name="E_S2" statsid="23">
+		<title>$SGTITLE_SHOPLIFTER_2</title>
+		<scriptclass>E_S2Event</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_S2</triggerobject>
+		<restorelocationmarker>Locations-E_S2_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_S2</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<timeofday restore="9.30" active="8.0" inactive="17.0" bypassprompt="true"></timeofday>
+		<child>E_S2_01</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+		<timeofday restore="9.30" active="8.0" inactive="17.0" bypassprompt="true"></timeofday>
+	</event>
+	
+	<event name="E_S3" statsid="24">
+		<title>$SGTITLE_SHOPLIFTER_3</title>
+		<scriptclass>E_S3Event</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_S3</triggerobject>
+		<restorelocationmarker>Locations-E_S3_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_S3</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<timeofday restore="9.30" active="8.0" inactive="17.0" bypassprompt="true"></timeofday>
+		<child>E_S3_01</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+		<timeofday restore="9.30" active="8.0" inactive="17.0" bypassprompt="true"></timeofday>
+	</event>
+	
+	<event name="E_S4" statsid="25">
+		<title>$SGTITLE_SHOPLIFTER_4</title>
+		<scriptclass>E_S4Event</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_S4</triggerobject>
+		<restorelocationmarker>Locations-E_S4_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_S4</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<timeofday restore="9.30" active="8.0" inactive="17.0" bypassprompt="true"></timeofday>
+		<child>E_S4_01</child>
+		<trackgamesliceas>EVENT</trackgamesliceas>
+		<timeofday restore="9.30" active="8.0" inactive="17.0" bypassprompt="true"></timeofday>
+	</event>
+
+
+</groups>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+
+<gameslices>
+
+	<!-- COP PURSUIT 1 FAVOUR -->
+	<gameslice name="E_CP_1" holdcurtain="true">
+		<title>Cop Pursuit 1</title>
+		<scriptclass>E_CP_1</scriptclass>
+		<restorelocationmarker>Locations-CopPursuit_Spawn</restorelocationmarker>
+	</gameslice>
+	
+	<!-- COP PURSUIT 2 FAVOUR -->
+	<gameslice name="E_CP2_1" holdcurtain="true">
+		<title>Cop Pursuit 2</title>
+		<scriptclass>E_CP2_1</scriptclass>
+		<restorelocationmarker>Locations-CopPursuit2_Spawn</restorelocationmarker>
+	</gameslice>
+	
+	<!-- COP PURSUIT 3 FAVOUR -->
+	<gameslice name="E_CP3_1" holdcurtain="true">
+		<title>Cop Pursuit 3</title>
+		<scriptclass>E_CP3_1</scriptclass>
+		<restorelocationmarker>Locations-CopPursuit3_Spawn</restorelocationmarker>
+	</gameslice>
+	
+
+
+</gameslices>
+
+
+
+<groups>
+
+	<!-- COP PURSUIT 1 FAVOUR -->
+	<favour name="E_CP" statsid="8">
+		<title>$SGTITLE_COP_PURSUIT_1</title>
+		<scriptclass>CopPursuit</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-E_CP</triggerobject>
+		<restorelocationmarker>Locations-CopPursuit_Spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_CP_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+	
+	<!-- COP PURSUIT 2 FAVOUR -->
+	<favour name="E_CP2" statsid="9">
+		<title>$SGTITLE_COP_PURSUIT_2</title>
+		<scriptclass>CopPursuit2</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-E_CP2</triggerobject>
+		<restorelocationmarker>Locations-CopPursuit2_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_CP2</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_CP2_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>	
+	
+	<!-- COP PURSUIT 3 FAVOUR -->
+	<favour name="E_CP3" statsid="10">
+		<title>$SGTITLE_COP_PURSUIT_3</title>
+		<scriptclass>CopPursuit3</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Events-E_CP3</triggerobject>
+		<restorelocationmarker>Locations-CopPursuit3_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_CP3</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_CP3_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>	
+	
+
+</groups>

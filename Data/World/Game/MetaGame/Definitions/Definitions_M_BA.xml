@@ -1,0 +1,149 @@
+<gameslices>
+	<gameslice name="BA_1_PhoneCall" holdcurtain="true">
+		<title>Phone Call</title>
+		<scriptclass>BA_1_PhoneCall</scriptclass>
+	</gameslice>
+	<gameslice name="BA_1b_Drive" holdcurtain="true">
+		<title>Drive to Meet</title>
+		<scriptclass>BA_1b_Drive</scriptclass>
+		<dependent>BA_1_PhoneCall</dependent>
+	</gameslice>
+	<gameslice name="BA_2a_Hangout" holdcurtain="true">
+		<title>Go find Jackie</title>
+		<scriptclass>BA_2a_Hangout</scriptclass>
+		<restorelocationmarker>BAMission-mkrBA1DriveRestore</restorelocationmarker>
+		<dependent>BA_1b_Drive</dependent>
+	</gameslice>	
+	<gameslice name="BA_2_FirstFight" holdcurtain="true">
+		<title>First Fight</title>
+		<scriptclass>BA_2_FirstFight</scriptclass>
+		<restorelocationmarker>BAMission-Marker_HangoutRestore</restorelocationmarker>
+		<dependent>BA_2a_Hangout</dependent>
+	</gameslice>
+	<gameslice name="BA_2_Interrogate" holdcurtain="true">
+		<title>Fight Horseface</title>
+		<scriptclass>BA_2_Interrogate</scriptclass>
+		<restorelocationmarker>BAMission-Marker_InterrogateRestore</restorelocationmarker>
+		<dependent>BA_2_FirstFight</dependent>
+	</gameslice>
+	<gameslice name="BA_3a_PhoneTrace" holdcurtain="true">
+		<title>PhoneTrace Zi Wai</title>
+		<scriptclass>BA_3a_PhoneTrace</scriptclass>
+		<restorelocationmarker>BAMission-Marker_FightRestore</restorelocationmarker>
+		<dependent>BA_2_Interrogate</dependent>
+	</gameslice>
+	<gameslice name="BA_3b_Store" holdcurtain="true">
+		<title>Chase Zi Wai's Car</title>
+		<scriptclass>BA_3b_Store</scriptclass>
+		<restorelocationmarker>BAMission-Marker_TraceRestore</restorelocationmarker>
+		<vehiclerestore range="1000.000000000">BAMission-VehicleRestore</vehiclerestore>
+		<dependent>BA_3a_PhoneTrace</dependent>
+	</gameslice>	
+	<gameslice name="BA_3_Chase" holdcurtain="true">
+		<title>Chase Zi Wai on foot</title>
+		<scriptclass>BA_3_Chase</scriptclass>
+		<restorelocationmarker>BAMission-Marker_StoreRestore</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Day</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Night</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers01</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Shop_711_03</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Upper_Shopping</scenelayeronstart>	
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers02</scenelayeronstart>			
+		<dependent>BA_3b_Store</dependent>
+	</gameslice>
+	<gameslice name="BA_4_ThirdFight" holdcurtain="true">
+		<title>Fight Zi Wai's Thugs</title>
+		<scriptclass>BA_4_ThirdFight</scriptclass>
+		<dependent>BA_3_Chase</dependent>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Day</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Night</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers01</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Shop_711_03</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Upper_Shopping</scenelayeronstart>			
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers02</scenelayeronstart>
+		<restorelocationmarker>BAMission-mkrBA4Restore</restorelocationmarker>
+	</gameslice>
+	<gameslice name="BA_4a_Docks" holdcurtain="true">
+		<title>Get on a boat</title>
+		<scriptclass>BA_4a_Docks</scriptclass>
+		<restorelocationmarker>BAMission-mkrBA4Restore</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Day</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Night</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers01</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Shop_711_03</scenelayeronstart>	
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Upper_Shopping</scenelayeronstart>					
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers02</scenelayeronstart>
+		<dependent>BA_4_ThirdFight</dependent>
+	</gameslice>	
+	
+	<gameslice name="BA_5_BoatFight" holdcurtain="true">
+		<title>Boat Fight</title>
+		<scriptclass>BA_5_BoatFight</scriptclass>
+		<restorelocationmarker>BAMission-Marker_BFRestore</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Day</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Night</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers01</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Shop_711_03</scenelayeronstart>	
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Upper_Shopping</scenelayeronstart>					
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers02</scenelayeronstart>
+		<dependent>BA_4a_Docks</dependent>
+	</gameslice>
+	<gameslice name="BA_5_Dig" holdcurtain="true">
+		<title>Dig up Jackie</title>
+		<scriptclass>BA_5_Dig</scriptclass>
+		<restorelocationmarker>BAMission-Marker_DigRestore</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Day</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Night</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers01</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Shop_711_03</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Upper_Shopping</scenelayeronstart>	
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers02</scenelayeronstart>		
+		<dependent>BA_5_BoatFight</dependent>
+	</gameslice>	
+	<gameslice name="BA_6_RideHome" holdcurtain="true">
+		<title>Ride Home</title>
+		<scriptclass>BA_6_RideHome</scriptclass>
+		<restorelocationmarker>BAMission-Marker_RHRestore</restorelocationmarker>
+		<forceweather type="heavyrain" locked="true"></forceweather>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Day</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Alley_Night</scenelayeronstart>				
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers01</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Shop_711_03</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Peds_Upper_Shopping</scenelayeronstart>	
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_ShugaDancers02</scenelayeronstart>
+		<dependent>BA_5_Dig</dependent>
+	</gameslice>
+</gameslices>
+
+<groups>
+	<mission name="M_BA" statsid="2">
+		<title>$SGTITLE_BURIED_ALIVE</title>
+		<scriptclass>BAMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-BAMission</triggerobject>
+		<restorelocationmarker>Locations-BA_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_BA</completelocationmarker>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<deferredregionrestart>false</deferredregionrestart>
+		<watermark>true</watermark>
+		<scenelayeronstart geoautoactivate="false" activate="false">AB_DryDock_01</scenelayeronstart>				
+		<scenelayeronend geoautoactivate="true">AB_DryDock_01</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">KT_Peds_Alley_Day</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">KT_Peds_Alley_Night</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">KT_ShugaDancers01</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">KT_Shop_711_03</scenelayeronend>	
+		<trackgamesliceas>MISSION</trackgamesliceas>	
+		<child checkpoint="true">BA_1_PhoneCall</child>
+		<child checkpoint="true">BA_1b_Drive</child>
+		<child checkpoint="true">BA_2a_Hangout</child>
+		<child checkpoint="true">BA_2_FirstFight</child>
+		<child checkpoint="true">BA_2_Interrogate</child>
+		<child checkpoint="true">BA_3a_PhoneTrace</child>
+		<child checkpoint="true">BA_3b_Store</child>
+		<child checkpoint="true">BA_3_Chase</child>
+		<child checkpoint="true">BA_4_ThirdFight</child>
+		<child checkpoint="true">BA_4a_Docks</child>
+		<child checkpoint="true">BA_5_BoatFight</child>
+		<child checkpoint="true">BA_5_Dig</child>
+		<child checkpoint="true">BA_6_RideHome</child>
+	</mission>
+</groups>

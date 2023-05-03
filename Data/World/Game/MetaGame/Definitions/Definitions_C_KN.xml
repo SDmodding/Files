@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+
+
+	
+
+	<gameslice name="C_KN_Close">
+		<title>Close Kidnapper's Case</title>
+		<scriptclass>C_KN_Close</scriptclass>
+		<dependent>KC3_7</dependent>
+	</gameslice>		
+	
+	<!-- KIDNAPPER REFACTORATION NEEDED -->
+	<gameslice name="KN_Start_Pendrew">
+		<title>See Jane to Open Case</title>
+		<scriptclass>KN_Start_Pendrew</scriptclass>
+	</gameslice>
+	<gameslice name="KC1_1" holdcurtain="true">
+		<title>Talk to Ilyana</title>
+		<scriptclass>K_11_Ilyana</scriptclass>
+		<restorelocationmarker>Locations-KidnapperLead1_Restore_2</restorelocationmarker>		
+	</gameslice>
+	<gameslice name="KC1_2" holdcurtain="true">
+		<title>Talk to Leo</title>
+		<scriptclass>K_12_Leo</scriptclass>
+		<restorelocationmarker>KL1Case-LeoRestore</restorelocationmarker>		
+		<dependent>KC1_1</dependent>
+	</gameslice>
+	<gameslice name="KC1_3" holdcurtain="true">
+		<title>Find Apartment</title>
+		<scriptclass>K_13_Apartment</scriptclass>
+		<restorelocationmarker>KL1Case-ApartmentRestore</restorelocationmarker>		
+		<dependent>KC1_2</dependent>
+	</gameslice>
+	<gameslice name="KC1_4" holdcurtain="true">
+		<title>Search Apartment</title>
+		<scriptclass>K_14_Search</scriptclass>
+		<restorelocationmarker>Locations-KidnapperLead2_Restore_2</restorelocationmarker>		
+		<dependent>KC1_3</dependent>
+	</gameslice>
+	<gameslice name="KC1_5" holdcurtain="true">
+		<title>Call Teng</title>
+		<scriptclass>K_15_Call</scriptclass>
+		<restorelocationmarker>KL1Case-CallTengRestore</restorelocationmarker>		
+		<dependent>KC1_4</dependent>
+	</gameslice>
+	<gameslice name="KC2_1" holdcurtain="true">
+		<title>Get Suited</title>
+		<restorelocationmarker>Locations-C_K2_Spawn</restorelocationmarker>
+		<scriptclass>K_21_Get_Suited</scriptclass>
+	</gameslice>
+	<gameslice name="KC2_2">
+		<title>Meet at Dock</title>
+		<scriptclass>K_22_Goto_Dock</scriptclass>
+		<dependent>KC2_1</dependent>
+	</gameslice>
+	<gameslice name="KC2_3">
+		<title>Go to Den</title>
+		<scriptclass>K_23_Goto_Den</scriptclass>
+		<dependent>KC2_2</dependent>
+	</gameslice>
+	<gameslice name="KC2_4" holdcurtain="true">
+		<title>Enter Den</title>
+		<scriptclass>K_24_Enter_Den</scriptclass>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitHighRoller</setdisguiseonstart>		
+		<restorelocationmarker>KL2Case-DenDock</restorelocationmarker>
+		<dependent>KC2_3</dependent>
+	</gameslice>
+	<gameslice name="KC2_5" holdcurtain="true">
+		<title>Play Poker</title>
+		<scriptclass>K_25_Play_Poker</scriptclass>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitHighRoller</setdisguiseonstart>		
+		<restorelocationmarker>KL2Case-PlayNow</restorelocationmarker>
+		<dependent>KC2_4</dependent>
+	</gameslice>
+	<gameslice name="KC2_6">
+		<title>Do the Deal</title>
+		<scriptclass>K_26_Do_Deal</scriptclass>
+		<dependent>KC2_5</dependent>
+	</gameslice>
+	<gameslice name="KC3_1">
+		<title>Meet Ilyana</title>
+		<scriptclass>K_31_Meet_Ilyana</scriptclass>
+		<restorelocationmarker>Locations-C_K3_Spawn</restorelocationmarker>
+	</gameslice>
+	<gameslice name="KC3_2">
+		<title>Meet with the kidnapper</title>
+		<scriptclass>K_32_Meet_Kidnapper</scriptclass>
+		<dependent>KC3_1</dependent>
+	</gameslice>
+	<gameslice name="KC3_3">
+		<title>Photo Ilyana and kidnapper</title>
+		<scriptclass>K_33_Photo_Kidnapper</scriptclass>
+		<dependent>KC3_2</dependent>
+	</gameslice>
+	<gameslice name="KC3_4">
+		<title>Follow kidnapper</title>
+		<scriptclass>K_34_Follow_Kidnapper</scriptclass>
+		<restorelocationmarker>KL3Case-FollowRestore</restorelocationmarker>		
+		<dependent>KC3_3</dependent>
+	</gameslice>
+	<gameslice name="KC3_5">
+		<title>Find Ilyana</title>
+		<scriptclass>K_35_Find_Ilyana</scriptclass>
+		<restorelocationmarker>KL3Case-Lookout04</restorelocationmarker>
+		<dependent>KC3_4</dependent>
+	</gameslice>
+	<gameslice name="KC3_5b">
+		<title>Death of Katushka</title>
+		<scriptclass>K_35_Katushka</scriptclass>
+		<restorelocationmarker>KL3Case-GetThemRestore</restorelocationmarker>
+		<dependent>KC3_5</dependent>
+	</gameslice>
+	<gameslice name="KC3_6" holdcurtain="true">
+		<title>Free the girls</title>
+		<scriptclass>K_36_Fight</scriptclass>
+		<restorelocationmarker>KL3Case-CoverPoint</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-pistol-9mm</weaponrestore>
+		<dependent>KC3_5b</dependent>
+	</gameslice>
+	<gameslice name="KC3_7">
+		<title>Escape with the girls</title>
+		<scriptclass>K_37_Escape</scriptclass>
+		<restorelocationmarker>KL3Case-CoverPoint</restorelocationmarker>		
+		<dependent>KC3_6</dependent>
+	</gameslice>
+	
+</gameslices>
+<groups>	
+	<!-- KIDNAPPER REFACTORATION NEEDED -->	
+	<mission name="C_KN_Start" statsid="4">
+		<title>$SGTITLE_KIDNAPPER_START</title>
+		<scriptclass>KNStartCase</scriptclass>
+		<restorelocationmarker>Locations-C_R_Start</restorelocationmarker>
+		<triggerobject>ProgressionTriggers_Cases-C_Start</triggerobject>
+		<trackgamesliceas>CASE_PRESENCE</trackgamesliceas>
+		<child>KN_Start_Pendrew</child>
+	</mission>
+	<mission name="C_KN1" statsid="5">
+		<title>$SGTITLE_KIDNAPPER_1</title>
+		<scriptclass>KL1Case</scriptclass>
+		<triggerobject>ProgressionTriggers_Cases-KidnapperCase_1</triggerobject>
+		<restorelocationmarker>Locations-C_K1_Spawn</restorelocationmarker>		
+		<cancellocationmarker>Locations-C_K1_Spawn</cancellocationmarker>		
+		<completelocationmarker>EndLocations-C_KN1</completelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_S_Karaoke_01_Peds_Busy</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="true">CN_S_Karaoke_01_Peds_Busy</scenelayeronend>
+		<trackgamesliceas>CASE_PRESENCE</trackgamesliceas>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<child checkpoint="true">KC1_1</child>
+		<child checkpoint="true">KC1_2</child>
+		<child checkpoint="true">KC1_3</child>
+		<child checkpoint="true">KC1_4</child>
+		<child checkpoint="true">KC1_5</child>
+	</mission>
+	<mission name="C_KN2" statsid="6">
+		<title>$SGTITLE_KIDNAPPER_2</title>
+		<scriptclass>KL2Case</scriptclass>
+		<triggerobject>ProgressionTriggers_Cases-KidnapperCase_2</triggerobject>
+		<restorelocationmarker>Locations-C_K2_Spawn</restorelocationmarker>
+		<cancellocationmarker>Locations-C_K2_Spawn</cancellocationmarker>
+		<completelocationmarker>EndLocations-C_KN2</completelocationmarker>
+		<removedisguiseonend enablewardrobe="true" enablestores="true"></removedisguiseonend>
+		<vendorenableonstart enable="false">WARDROBE</vendorenableonstart>
+		<vendorenableonstart enable="false">CLOTHING_STORE</vendorenableonstart>
+		<vendorenableonend enable="true">WARDROBE</vendorenableonend>
+		<vendorenableonend enable="true">CLOTHING_STORE</vendorenableonend>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>CASE_PRESENCE</trackgamesliceas>
+		<child checkpoint="true">KC2_1</child>
+		<child>KC2_2</child>
+		<child>KC2_3</child>
+		<child checkpoint="true">KC2_4</child>
+		<child checkpoint="true">KC2_5</child>
+		<child>KC2_6</child>
+	</mission>
+	<mission name="C_KN3" statsid="2">
+		<title>$SGTITLE_KIDNAPPER_3</title>
+		<scriptclass>KL3Case</scriptclass>
+		<triggerobject>ProgressionTriggers_Cases-KidnapperCase_3</triggerobject>
+		<restorelocationmarker>Locations-C_K3_Spawn</restorelocationmarker>
+		<cancellocationmarker>Locations-C_K3_Spawn</cancellocationmarker>
+		<completelocationmarker>EndLocations-C_KN3</completelocationmarker>
+		<trackgamesliceas>CASE</trackgamesliceas>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<child checkpoint="true">KC3_1</child>
+		<child>KC3_2</child>
+		<child>KC3_3</child>
+		<child checkpoint="true">KC3_4</child>
+		<child checkpoint="true">KC3_5</child>
+		<child checkpoint="true">KC3_5b</child>
+		<child checkpoint="true">KC3_6</child>
+		<child checkpoint="false">KC3_7</child>
+		<child>C_KN_Close</child>
+	</mission>
+</groups>
+

@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="JA_2_Drive_1">
+		<title>Go to Jackie</title>
+		<scriptclass>JA_2_Drive_1</scriptclass>
+		<restorelocationmarker>JAMission-JA1_Spawn</restorelocationmarker>
+	</gameslice>
+	<gameslice name="JA_3_Drive_2" holdcurtain="true">
+		<title>Go to Docks</title>
+		<scriptclass>JA_3_Drive_2</scriptclass>
+		<restorelocationmarker>JAMission-JA3_Spawn</restorelocationmarker>
+		<vehiclerestore range="100000.000000000">JAMission-mkr_weiCarMeetJackie</vehiclerestore>
+		<forceweather type="lightrain" locked="true"></forceweather>
+		<dependent>JA_2_Drive_1</dependent>
+	</gameslice>
+	<gameslice name="JA_4_Sneak" holdcurtain="true">
+		<title>Get Tools</title>
+		<scriptclass>JA_4_Sneak</scriptclass>
+		<restorelocationmarker>JAMission-JA4_Spawn</restorelocationmarker>
+		<forceweather type="lightrain" locked="true"></forceweather>
+		<forcetime time="20.0" locked="true"></forcetime>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Docks_01_Peds</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Docks_01_POI</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">VehicleStore_FaceL4</scenelayeronstart>		
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitSanitary</setdisguiseonstart>		
+		<dependent>JA_3_Drive_2</dependent>
+	</gameslice>
+	<gameslice name="JA_5_Drive_3" holdcurtain="true">
+		<title>Go to Trucks</title>
+		<scriptclass>JA_5_Drive_3</scriptclass>
+		<restorelocationmarker>JAMission-JA5_Spawn</restorelocationmarker>
+		<forcetime time="20.0" locked="true"></forcetime>
+		<forceweather type="lightrain" locked="true"></forceweather>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Docks_01_Peds</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Docks_01_POI</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">VehicleStore_FaceL4</scenelayeronstart>		
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitSanitary</setdisguiseonstart>		
+		<dependent>JA_4_Sneak</dependent>
+	</gameslice>
+	<gameslice name="JA_6_Search" holdcurtain="true">
+		<title>Search Trucks</title>
+		<scriptclass>JA_6_Search</scriptclass>
+		<restorelocationmarker>JAMission-JA6_Spawn</restorelocationmarker>
+		<forcetime time="20.0" locked="true"></forcetime>
+		<forceweather type="lightrain" locked="true"></forceweather>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Docks_01_Peds</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Docks_01_POI</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">VehicleStore_FaceL4</scenelayeronstart>		
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitSanitary</setdisguiseonstart>		
+		<dependent>JA_5_Drive_3</dependent>
+	</gameslice>
+	<gameslice name="JA_7_Catch" holdcurtain="true">
+		<title>Catch Truck</title>
+		<scriptclass>JA_7_Catch</scriptclass>
+		<restorelocationmarker>JAMission-JA7_Spawn</restorelocationmarker>
+		<forcetime time="20.0" locked="true"></forcetime>
+		<forceweather type="lightrain" locked="true"></forceweather>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Docks_01_Peds</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Docks_01_POI</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">VehicleStore_FaceL4</scenelayeronstart>		
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitSanitary</setdisguiseonstart>		
+		<dependent>JA_6_Search</dependent>
+	</gameslice>
+	<gameslice name="JA_8_Drive_4" holdcurtain="true">
+		<title>Go to Jewelers</title>
+		<scriptclass>JA_8_Drive_4</scriptclass>
+		<restorelocationmarker>JAMission-JA8_Spawn</restorelocationmarker>
+		<forcetime time="20.0" locked="true"></forcetime>
+		<forceweather type="lightrain" locked="true"></forceweather>
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Docks_01_Peds</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">KT_Docks_01_POI</scenelayeronstart>		
+		<scenelayeronstart geoautoactivate="false" activate="false">VehicleStore_FaceL4</scenelayeronstart>		
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitSanitary</setdisguiseonstart>		
+		<dependent>JA_7_Catch</dependent>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_JA" statsid="15">
+		<title>$SGTITLE_JACKIE_ARRESTED</title>
+		<scriptclass>JAMission</scriptclass>
+		<pdatrigger objective="M_JA_Call_Jackie">Jackie</pdatrigger>
+		<restorelocationmarker>Locations-JA_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_JA</completelocationmarker>
+		<deferredregionrestart>false</deferredregionrestart>
+		<watermark>true</watermark>
+		<saveoverride>JackieArrestedNIS</saveoverride>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child>JA_2_Drive_1</child>
+		<scenelayeronend geoautoactivate="true">KT_Docks_01_Peds</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">KT_Docks_01_POI</scenelayeronend>		
+		<scenelayeronend geoautoactivate="true">VehicleStore_FaceL4</scenelayeronend>		
+		<child checkpoint="true">JA_3_Drive_2</child>
+		<child checkpoint="true">JA_4_Sneak</child>
+		<child checkpoint="true">JA_5_Drive_3</child>
+		<child checkpoint="true">JA_6_Search</child>
+		<child checkpoint="true">JA_7_Catch</child>
+		<child>JA_8_Drive_4</child>
+		<loadhintonstart priority="0">$LOADING_HINT_JA_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_ja_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_IN_START</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_in_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_NB_START</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_nb_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+</groups>
+

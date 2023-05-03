@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+-->
+<gameslices>
+	<gameslice name="WTHK_1_Intro" holdcurtain="true">
+		<title>First Cutscene</title>
+		<scriptclass>WTHK_1_Intro</scriptclass>
+		<restorelocationmarker>WTHKMission-Restore_1_Intro</restorelocationmarker>
+	</gameslice>
+	<gameslice name="WTHK_2_Movement_Tutorial" holdcurtain="true">
+		<title>Movement Tutorial</title>
+		<scriptclass>WTHK_2_Movement_Tutorial</scriptclass>
+		<restorelocationmarker>WTHKMission-Restore_2_Movement_Tutorial</restorelocationmarker>
+		<dependent>WTHK_1_Intro</dependent>		
+	</gameslice>
+	<gameslice name="WTHK_3_First_Action">
+		<title>First Action</title>
+		<scriptclass>WTHK_3_First_Action</scriptclass>
+		<restorelocationmarker>WTHKMission-Restore_3_First_Action</restorelocationmarker>
+		<dependent>WTHK_2_Movement_Tutorial</dependent>		
+	</gameslice>
+	<gameslice name="WTHK_4_After_Crash" holdcurtain="true">
+		<title>After Crash</title>
+		<scriptclass>WTHK_4_After_Crash</scriptclass>
+		<restorelocationmarker>WTHKMission-Restore_4_After_Crash</restorelocationmarker>
+		<dependent>WTHK_3_First_Action</dependent>		
+	</gameslice>
+	<gameslice name="WTHK_5_Final_Attempt" holdcurtain="true">
+		<title>Final Escape Attempt</title>
+		<scriptclass>WTHK_5_Final_Attempt</scriptclass>
+		<restorelocationmarker>WTHKMission-Restore_5_Final_Chase</restorelocationmarker>
+		<dependent>WTHK_4_After_Crash</dependent>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_WTHK" holdcurtain="true" statsid="30">
+		<title>$SGTITLE_WELCOME_TO_HONG_KONG</title>
+		<scriptclass>WTHKMission</scriptclass>
+		<restorelocationmarker>Locations-WTHK_Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="23.5" locked="true"></forcetime>
+		<forceweather type="heavyrain" locked="true"></forceweather>
+		<deferredregionrestart>false</deferredregionrestart>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>false</unlocktrafficonend>
+		<saveoverride>GU1</saveoverride>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">WTHK_1_Intro</child>
+		<child checkpoint="true">WTHK_2_Movement_Tutorial</child>
+		<child checkpoint="true">WTHK_3_First_Action</child>
+		<child checkpoint="true">WTHK_4_After_Crash</child>
+		<child checkpoint="true">WTHK_5_Final_Attempt</child>
+		<loadhintonstart priority="0">$LOADING_HINT_WTHK_START_1</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_wthk_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonend priority="0">$LOADING_HINT_WTHK_START_2</loadhintonend>
+		<loadscreenonend priority="0">Data\UI\loading_wthk_end_tp.perm.bin</loadscreenonend>
+	</mission>
+</groups>
+

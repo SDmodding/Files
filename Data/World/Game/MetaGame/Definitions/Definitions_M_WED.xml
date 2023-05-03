@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="WED_0_Tux" holdcurtain="true">
+		<title>Get Tuxedo</title>
+		<scriptclass>WED_0_Tux</scriptclass>
+		<restorelocationmarker>WEDMission-mkrWeiTeleport</restorelocationmarker>
+	</gameslice>
+	<gameslice name="WED_1_Intro" holdcurtain="true">
+		<title>Drive to Wedding</title>
+		<scriptclass>WED_1_Intro</scriptclass>
+		<restorelocationmarker>WEDMission-Marker_Tuxedo_Out</restorelocationmarker>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitWedding</setdisguiseonstart>
+		<scenelayeronstart geoautoactivate="true" activate="false">Wedding_Amb01</scenelayeronstart>
+		<dependent>WED_0_Tux</dependent>
+	</gameslice>
+	<gameslice name="WED_2_Fetch" holdcurtain="true">
+		<title>Get inside the hall</title>
+		<scriptclass>WED_2_Fetch</scriptclass>
+		<restorelocationmarker>WEDMission-mkr_tempWine</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<scenelayeronstart geoautoactivate="false" activate="false">PhotoGroup_Ph09</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_Park_Gardner_01</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Wedding_Amb01</scenelayeronstart>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitWedding</setdisguiseonstart>		
+		<dependent>WED_1_Intro</dependent>
+	</gameslice>
+	<gameslice name="WED_3_RescueA" holdcurtain="true">
+		<title>Foyer and Dining Hall Fight</title>
+		<scriptclass>WED_3_RescueA</scriptclass>
+		<restorelocationmarker>WEDMission-Marker_Post_Fetch</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="false">PhotoGroup_Ph09</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_Park_Gardner_01</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Wedding_Amb01</scenelayeronstart>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitWedding</setdisguiseonstart>		
+		<dependent>WED_2_Fetch</dependent>
+	</gameslice>
+	<gameslice name="WED_3B_FindPo" holdcurtain="true">
+		<title>Find Uncle Po</title>
+		<scriptclass>WED_3B_FindPo</scriptclass>
+		<restorelocationmarker>WEDMission-mkr_nisWinDeadWei</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-pistol-9mm</weaponrestore>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="false">PhotoGroup_Ph09</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_Park_Gardner_01</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Wedding_Amb01</scenelayeronstart>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitWedding</setdisguiseonstart>		
+		<dependent>WED_3_RescueA</dependent>
+	</gameslice>
+	<gameslice name="WED_4_RescueB" holdcurtain="true"> 
+		<title>Main Hall Fight</title>
+		<scriptclass>WED_4_RescueB</scriptclass>
+		<restorelocationmarker>WEDMission-mkr_weiPostNisRescueB</restorelocationmarker>
+		<weaponrestore>object-physical-weapon-firearm-pistol-9mm</weaponrestore>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="false">PhotoGroup_Ph09</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_Park_Gardner_01</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Wedding_Amb01</scenelayeronstart>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitWedding</setdisguiseonstart>		
+		<dependent>WED_3B_FindPo</dependent>
+	</gameslice>
+	<gameslice name="WED_5_EscortA" holdcurtain="true">
+		<title>Escort Po A</title>
+		<scriptclass>WED_5_EscortA</scriptclass>
+		<restorelocationmarker>Locations-WED5Spawn</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="false">PhotoGroup_Ph09</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_Park_Gardner_01</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Wedding_Amb01</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_park_Bun</scenelayeronstart>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitWedding</setdisguiseonstart>		
+		<dependent>WED_4_RescueB</dependent>
+	</gameslice>
+	<gameslice name="WED_6_EscortB" holdcurtain="true">
+		<title>Escort Po B</title>
+		<scriptclass>WED_6_EscortB</scriptclass>
+		<restorelocationmarker>Locations-WED6Spawn</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="false">PhotoGroup_Ph09</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_06_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_07_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_08_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_09_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_W_11_Peds_Evening</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_Park_Gardner_01</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Wedding_Amb01</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_park_Bun</scenelayeronstart>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitWedding</setdisguiseonstart>		
+		<dependent>WED_5_EscortA</dependent>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_WED" statsid="29">
+		<title>$SGTITLE_WEDDING</title>
+		<scriptclass>WEDMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-M_WED</triggerobject>
+		<restorelocationmarker>Locations-WED_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_WED</completelocationmarker>
+		<cancellocationmarker>Locations-WED_spawn</cancellocationmarker>
+		<saveoverride>CK3_1</saveoverride>
+		<deferredregionrestart>false</deferredregionrestart>
+		<forceweather type="sunny" wetness="0.5" locked="true"></forceweather>
+		<forcetime time="15.00" locked="true"></forcetime>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<watermark>true</watermark>
+		<scenelayeronend geoautoactivate="true">PhotoGroup_Ph09</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_W_06_Peds</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_W_06_Peds_Evening</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_W_07_Peds</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_W_07_Peds_Evening</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_W_08_Peds</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_W_08_Peds_Evening</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_W_09_Peds</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_W_09_Peds_Evening</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_W_11_Peds</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_W_11_Peds_Evening</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_Park_Gardner_01</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">CN_park_Bun</scenelayeronend>
+		<removedisguiseonend enablewardrobe="true" enablestores="true"></removedisguiseonend>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child checkpoint="true">WED_0_Tux</child>
+		<child checkpoint="true">WED_1_Intro</child>
+		<child checkpoint="true">WED_2_Fetch</child>
+		<child checkpoint="true">WED_3_RescueA</child>
+		<child checkpoint="true">WED_3B_FindPo</child>
+		<child checkpoint="true">WED_4_RescueB</child>
+		<child checkpoint="true">WED_5_EscortA</child>
+		<child checkpoint="true">WED_6_EscortB</child>
+		<loadhintonstart priority="0">$LOADING_HINT_WED_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_wed_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_BTB_START</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_btb_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_UP_MID</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_up_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+</groups>

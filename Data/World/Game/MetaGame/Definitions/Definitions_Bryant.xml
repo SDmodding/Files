@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	
+	<!--===========================-->
+	<!--========= EVENTS ===========-->
+	<!--===========================-->
+
+
+	
+	<gameslice name="E_DS_1" holdcurtain="true">
+		<title>Demo Start</title>
+		<scriptclass>DemoStart_1</scriptclass>
+		<restorelocationmarker>Locations-Locations-E_DS</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="E_ETA_1">
+		<title>Extortion Turn Around - 1</title>
+		<scriptclass>E_ETA_1</scriptclass>
+		<restorelocationmarker>Locations-ETA_Spawn</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="E_ETA2_1">
+		<title>Extortion Turn Around 2 - 1</title>
+		<scriptclass>E_ETA2_1</scriptclass>
+		<restorelocationmarker>Locations-ETA2_Spawn</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="E_SR1_1">
+		<title>Smuggling Ring 1</title>
+		<scriptclass>E_SR1_1</scriptclass>
+		<restorelocationmarker>Locations-E_SR1</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="E_SR2_1">
+		<title>Smuggling Ring 2</title>
+		<scriptclass>E_SR2_1</scriptclass>
+		<restorelocationmarker>Locations-E_SR2</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="E_SR3_1">
+		<title>Smuggling Ring 3</title>
+		<scriptclass>E_SR3_1</scriptclass>
+		<restorelocationmarker>Locations-E_SR3</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="E_SR4_1">
+		<title>Smuggling Ring 4</title>
+		<scriptclass>E_SR4_1</scriptclass>
+		<restorelocationmarker>Locations-E_SR4</restorelocationmarker>
+	</gameslice>
+	
+	<!--===========================-->
+	<!--========= FAVOURS =========-->
+	<!--===========================-->
+	
+	
+	
+	
+	<!-- PIECE OF WORK FAVOUR -->
+	<gameslice name="F_PW_1">
+		<title>Piece of Work</title>
+		<scriptclass>F_PW_1</scriptclass>
+		<restorelocationmarker>Locations-F_PW</restorelocationmarker>
+	</gameslice>
+	
+	
+
+	
+	<!-- SMUGGLING RING INTRO FAVOUR -->
+	<gameslice name="F_SRI_1">
+		<title>Smuggling Ring Intro</title>
+		<scriptclass>F_SRI_1</scriptclass>
+		<restorelocationmarker>Locations-F_SRI</restorelocationmarker>
+	</gameslice>
+	
+
+	
+	
+	<!--===========================-->
+	<!--========== DATES ===========-->
+	<!--===========================-->
+	
+	<!-- AMANDA SHOPPING -->
+	<gameslice name="D_Amanda_Shop">
+		<title>D_Amanda_Shop</title>
+		<scriptclass>D_Amanda_Shop</scriptclass>
+	</gameslice>
+	
+	<!-- TIFFANY SHOPPING -->
+	<gameslice name="DTS_01_Gameplay">
+		<title>Go Shopping</title>
+		<scriptclass>DTS_01_Gameplay</scriptclass>
+	</gameslice>
+	
+</gameslices>
+
+<groups>
+	<!--===========================-->
+	<!--========= EVENTS ===========-->
+	<!--===========================-->
+	
+
+	
+	<mission name="E_DS" holdcurtain="true">
+		<title>$SGTITLE_DEMO_START</title>
+		<scriptclass>DemoStart</scriptclass>		
+		<restorelocationmarker>Locations-E_DS</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>E_DS_1</child>
+	</mission>
+	
+	<event name="E_ETA" statsid="2">
+		<title>$SGTITLE_EXTORTIONTURNAROUND</title>
+		<scriptclass>ETA</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_ETA</triggerobject>
+		<restorelocationmarker>Locations-ETA_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_ETA</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>E_ETA_1</child>		
+	</event>
+	
+	<event name="E_ETA2" statsid="3">
+		<title>$SGTITLE_EXTORTION_TURN2</title>
+		<scriptclass>ETA2</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_ETA2</triggerobject>
+		<restorelocationmarker>Locations-ETA2_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_ETA2</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child>E_ETA2_1</child>		
+	</event>
+	
+	<event name="E_SR1" statsid="4">
+		<title>$SGTITLE_SMUGGLING_RING_1</title>
+		<scriptclass>E_SR1</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_SR1</triggerobject>
+		<restorelocationmarker>Locations-E_SR1</restorelocationmarker>
+		<child>E_SR1_1</child>
+	</event>
+	
+	<event name="E_SR2" statsid="5">
+		<title>$SGTITLE_SMUGGLING_RING_2</title>
+		<scriptclass>E_SR2</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_SR2</triggerobject>
+		<restorelocationmarker>Locations-E_SR2</restorelocationmarker>
+		<child>E_SR2_1</child>
+	</event>
+	
+	<event name="E_SR3" statsid="6">
+		<title>$SGTITLE_SMUGGLING_RING_3</title>
+		<scriptclass>E_SR3</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_SR3</triggerobject>
+		<restorelocationmarker>Locations-E_SR3</restorelocationmarker>
+		<child>E_SR3_1</child>
+	</event>
+	
+	<event name="E_SR4" statsid="7">
+		<title>$SGTITLE_SMUGGLING_RING_4</title>
+		<scriptclass>E_SR4</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_SR4</triggerobject>
+		<restorelocationmarker>Locations-E_SR4</restorelocationmarker>
+		<child>E_SR4_1</child>
+	</event>
+	
+	<!--===========================-->
+	<!--========= FAVOURS ===========-->
+	<!--===========================-->
+	
+
+
+	
+	<!-- PIECE OF WORK -->
+	<favour name="F_PW" statsid="1">
+		<title>$SGTITLE_PIECE_OF_WORK</title>
+		<scriptclass>F_PW</scriptclass>
+		<restorelocationmarker>Locations-F_PW</restorelocationmarker>
+		<completelocationmarker>EndLocations-F_PW</completelocationmarker>
+		<triggerobject>ProgressionTriggers_Favours-F_PW</triggerobject>
+		<child checkpoint="true">F_PW_1</child>
+	</favour>
+	
+	
+
+	
+	<!-- SMUGGLING RING INTRO FAVOUR -->
+	<favour name="F_SRI" statsid="2">
+		<title>$SGTITLE_SMUGGLING_RING_INTRO</title>
+		<scriptclass>F_SRI</scriptclass>
+		<triggerobject>ProgressionTriggers_Favours-F_SRI</triggerobject>
+		<restorelocationmarker>Locations-F_SRI</restorelocationmarker>
+		<child checkpoint="true">F_SRI_1</child>
+	</favour>
+	
+
+	
+	<!--===========================-->
+	<!--========= DATES ===========-->
+	<!--===========================-->
+	
+	<!-- AMANDA SHOPPING -->
+	<date name="D_A2" statsid="1">
+		<title>$SGTITLE_AMANDA_SHOPPING</title>
+		<scriptclass>D_ASDDate</scriptclass>
+		<restorelocationmarker>Locations-Date_Amanda_Shopping_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-D_AS</completelocationmarker>
+		<pdatrigger>Amanda Shop</pdatrigger>
+		<child>D_Amanda_Shop</child>
+	</date>	
+	
+	<!-- TIFFANY SHOPPING -->
+	<date name="D_T2" statsid="2">
+		<title>$SGTITLE_TIFFANY_SHOPPING</title>
+		<scriptclass>DTSDate</scriptclass>
+		<pdatrigger>Tiffany Shop</pdatrigger>
+		<restorelocationmarker>Locations-Date_Tiffany_Shopping_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-D_TS</completelocationmarker>
+		<child>DTS_01_Gameplay</child>
+	</date>
+	
+</groups>
+

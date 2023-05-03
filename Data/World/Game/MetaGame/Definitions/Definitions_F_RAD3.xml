@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="F_RAD3_1" holdcurtain="true"> 
+		<title>Rope a Dope 3 - 1</title>
+		<scriptclass>F_RAD3_1</scriptclass>
+		<restorelocationmarker>Locations-F_RAD3_Spawn</restorelocationmarker>		
+	</gameslice>
+</gameslices>
+
+<groups>
+	<favour name="F_RAD3" statsid="41">
+		<title>$SGTITLE_ROPE_A_DOPE_3</title>
+		<scriptclass>F_RAD3</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_RAD3</triggerobject>
+		<restorelocationmarker>Locations-F_RAD3_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-F_RAD3</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">F_RAD3_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+</groups>

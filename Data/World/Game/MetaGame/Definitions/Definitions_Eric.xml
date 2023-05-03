@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="Empty" internal="true">
+		<title>Empty</title>
+		<scriptclass>GameSlice</scriptclass>
+		<restorelocationmarker>Locations-SH_1_spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+	</gameslice>
+	<gameslice name="P_CopChaseInProgress" internal="true">
+		<title>Cop Chase In Progress</title>
+		<scriptclass>P_CopChaseInProgress</scriptclass>
+	</gameslice>
+</gameslices>
+<groups>
+	<scenario name="S_CaseCorona" internal="true">
+		<title>$SGTITLE_CASE_CORONA_PRIVATE</title>
+		<scriptclass>CaseCorona</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+		</enablemasks>
+	</scenario>
+	<mission name="P_CopChase" repeatableinterval="1" internal="true">
+		<title>$SGTITLE_COP_CHASE_CONDIS</title>
+		<scriptclass>P_CopChaseContainer</scriptclass>
+		<child>P_CopChaseInProgress</child>
+	</mission>
+	<fail name="F_FailCatcher" checkpoint="true" internal="true">
+		<title>$SGTITLE_GENERIC_FAIL</title>
+		<scriptclass>FailCatcher</scriptclass>
+	</fail>
+</groups>
+

@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="BBC1" holdcurtain="true">
+		<title>Meet Winston</title>
+		<scriptclass>BBC_1_Winston</scriptclass>
+		<scenelayeronend geoautoactivate="true">MrsChu_Rest_Int_Amb</scenelayeronend>
+	</gameslice>
+	<gameslice name="BBC2" holdcurtain="true">
+		<title>Drive to club</title>
+		<scriptclass>BBC_2_Bouncer</scriptclass>
+		<restorelocationmarker>Locations-Restaurant_exit</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBCExtHostile</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers_Day</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_ExtBouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_KaraokeRoom_Sing</scenelayeronstart>
+		<dependent>BBC1</dependent>
+	</gameslice>
+	<gameslice name="BBC3" holdcurtain="true">
+		<title>Get Into VIP</title>
+		<scriptclass>BBC_3_Bartender</scriptclass>
+		<restorelocationmarker>BBCMission-mkrBBC3Restore</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBCExtHostile</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers_Day</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_ExtBouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_KaraokeRoom_Sing</scenelayeronstart>
+		<dependent>BBC2</dependent>
+	</gameslice>
+	<gameslice name="BBC3a" holdcurtain="true">
+		<title>Karaoke and Upstairs</title>
+		<scriptclass>BBC_3a_Karaoke</scriptclass>
+		<restorelocationmarker>BBCMission-mkrBBC3aRestore</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBCExtHostile</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers_Day</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_ExtBouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_KaraokeRoom_Sing</scenelayeronstart>
+		<dependent>BBC3</dependent>
+	</gameslice>
+	<gameslice name="BBC4" holdcurtain="true">
+		<title>Fight Dogboys</title>
+		<scriptclass>BBC_4_Fight</scriptclass>
+		<restorelocationmarker>BBCMission-BBC_NIS_Restore_Fight</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Comm_Ped_03</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BamBam_Ambience</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Benny</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Benny</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_DancePOIs</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Flee</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_POI</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnBusy</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnDay</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnLate</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnOff</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Vestibule</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnBusy_Up</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers_Day</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_KaraokeRoom</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_ExtBouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_KaraokeRoom_Sing</scenelayeronstart>
+		<dependent>BBC3a</dependent>
+	</gameslice>
+	<gameslice name="BBC5" holdcurtain="true">
+		<title>The Chase</title>
+		<scriptclass>BBC_5_Chase</scriptclass>
+		<restorelocationmarker>BBCMission-mkr_weiBennyNisEndPos</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Comm_Ped_03</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BamBam_Ambience</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Benny</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Benny</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_DancePOIs</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Flee</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_POI</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnBusy</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnDay</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnLate</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnOff</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Vestibule</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnBusy_Up</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers_Day</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SocialPeds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnSocial</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_KaraokeRoom</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_ExtBouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_KaraokeRoom_Sing</scenelayeronstart>
+		<dependent>BBC4</dependent>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_BBC" statsid="3">
+		<title>$SGTITLE_BAM_BAM_CLUB</title>
+		<scriptclass>BBCMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-M_BBC</triggerobject>
+		<restorelocationmarker>Locations-BBC_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_BBC</completelocationmarker>
+		<saveoverride>CK1_1</saveoverride>
+		<forcetime time="22.0" locked="true"></forcetime> 
+		<deferredregionrestart>false</deferredregionrestart>
+		<watermark>true</watermark>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child>BBC1</child>
+
+		<scenelayeronstart geoautoactivate="false" activate="false">MrsChu_Rest_Int_Amb</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SocialPeds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_SpawnSocial</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_Bouncers_Day</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Benny</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_Amb_ExtBouncers</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">BBC_KaraokeRoom_Sing</scenelayeronstart>
+
+		<scenelayeronend geoautoactivate="true">NP_Comm_Ped_03</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BamBam_Ambience</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">Benny</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Benny</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_Bouncers</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_DancePOIs</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_Flee</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_POI</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_SpawnBusy</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_SpawnDay</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_SpawnLate</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_SpawnOff</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_Vestibule</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_SpawnBusy_Up</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_Bouncers_Day</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_SpawnSocial</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_Amb_SocialPeds</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_KaraokeRoom</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBCExtHostile</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">BBC_KaraokeRoom_Sing</scenelayeronend>
+		<child checkpoint="true">BBC2</child>
+		<child checkpoint="true">BBC3</child>
+		<child checkpoint="true">BBC3a</child>
+		<child checkpoint="true">BBC4</child>
+		<child checkpoint="true">BBC5</child>
+		<loadhintonend priority="0">$LOADING_HINT_BBC_MID</loadhintonend>
+		<loadscreenonend priority="0">Data\UI\loading_bbc_start_tp.perm.bin</loadscreenonend>
+		<loadhintonend priority="1">$LOADING_HINT_MB_START</loadhintonend>
+		<loadscreenonend priority="1">Data\UI\loading_mb_start_tp.perm.bin</loadscreenonend>
+		<loadhintonend priority="2">$LOADING_HINT_SUD_START</loadhintonend>
+		<loadscreenonend priority="2">Data\UI\loading_sud_start_tp.perm.bin</loadscreenonend>
+	</mission>
+	
+</groups>
+

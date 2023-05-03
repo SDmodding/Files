@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+
+<gameslices>
+	<gameslice name="NMC_1_Intro" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>NMC_1_Intro</scriptclass>
+		<restorelocationmarker>NMCMission-FindMing_PlayerStart</restorelocationmarker>
+	</gameslice>
+	<gameslice name="NMC_1a_FindMing" holdcurtain="true">
+		<title>Find Ming</title>
+		<scriptclass>NMC_1a_FindMing</scriptclass>
+		<restorelocationmarker>NMCMission-FindMing_PlayerStart</restorelocationmarker>
+		<dependent>NMC_1_Intro</dependent>
+	</gameslice>
+	<gameslice name="NMC_2_Chase" holdcurtain="true">
+		<title>Chase Ming</title>
+		<scriptclass>NMC_2_Chase</scriptclass>
+		<restorelocationmarker>NMCMission-Chase_PlayerStart</restorelocationmarker>
+		<dependent>NMC_1a_FindMing</dependent>
+	</gameslice>
+	<gameslice name="NMC_2a_Chase" holdcurtain="true">
+		<title>Chase Ming 2</title>
+		<scriptclass>NMC_2a_Chase</scriptclass>
+		<restorelocationmarker>NMCMission-PostLeap_PlayerStart</restorelocationmarker>
+		<dependent>NMC_2_Chase</dependent>
+	</gameslice>
+	<gameslice name="NMC_2b_Chase" holdcurtain="true">
+		<title>Chase Ming 3</title>
+		<scriptclass>NMC_2b_Chase</scriptclass>
+		<restorelocationmarker>NMCMission-Courtyard_PlayerStart</restorelocationmarker>
+		<scenelayeronstart geoautoactivate="false" activate="false">NM_West02_Ped</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NM_South02_Ped</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NM_South01_Ped</scenelayeronstart>
+		<dependent>NMC_2a_Chase</dependent>		
+	</gameslice>
+	<gameslice name="NMC_3_Fight" holdcurtain="true">
+		<title>Defeat Ming</title>
+		<scriptclass>NMC_3_Fight</scriptclass>
+		<restorelocationmarker>NMCMission-Rooftop_PlayerStart</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<scenelayeronstart geoautoactivate="false" activate="false">NM_West02_Ped</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NM_South02_Ped</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NM_South01_Ped</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Traffic_NP_Res</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Traffic_NP_Industrial</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Traffic_NP_Comm</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">Traffic_Highways</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_PorkbunVendor_009</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Comm_POI_Sheltered_02</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Comm_POI_Sheltered_03</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Comm_POI_06_Night</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Comm_POI_01_Night</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Comm_Ped_10</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Comm_Ped_05</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">IceCreamVendors</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NM_Alley_Ped_03</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NM_Alley_Ped_04</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NM_Alley_POI_04</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NM_Hallway_2</scenelayeronstart>		
+		<dependent>NMC_2b_Chase</dependent>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_NMC" holdcurtain="true" statsid="18">
+		<title>$SGTITLE_NIGHT_MARKET_CHASE</title>
+		<scriptclass>NMCMission</scriptclass>
+		<saveoverride>OutToOpenWorld_1</saveoverride>
+		<restorelocationmarker>Locations-NMC_spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_NMC</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<deferredregionrestart>false</deferredregionrestart>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>	
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<forcetime time="20.00" locked="true"></forcetime>
+		<forceweather type="sunny" locked="true"></forceweather>
+		<scenelayeronstart activate="true">Intro_Gameplay</scenelayeronstart>
+		<scenelayeronend activate="false">Intro_Gameplay</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NM_Vendor_ChaseOff</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NM_West02_Ped</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NM_South02_Ped</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NM_South01_Ped</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">Traffic_NP_Res</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">Traffic_NP_Industrial</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">Traffic_NP_Comm</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">Traffic_Highways</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_PorkbunVendor_009</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Comm_POI_Sheltered_02</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Comm_POI_Sheltered_03</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Comm_POI_06_Night</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Comm_POI_01_Night</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Comm_Ped_10</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Comm_Ped_05</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">IceCreamVendors</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NM_Alley_Ped_03</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NM_Alley_Ped_04</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NM_Alley_POI_04</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NM_Hallway_2</scenelayeronend>
+		<altlayeronstart activate="true" flush="true">festival</altlayeronstart>
+		<altlayeronend activate="false" flush="true">festival</altlayeronend>
+		<child checkpoint="true">NMC_1_Intro</child>
+		<child checkpoint="true">NMC_1a_FindMing</child>
+		<child checkpoint="true">NMC_2_Chase</child>
+		<child checkpoint="false">NMC_2a_Chase</child>
+		<child checkpoint="true">NMC_2b_Chase</child>
+		<child checkpoint="true">NMC_3_Fight</child>
+		<loadhintonstart priority="0">$LOADING_HINT_NMC_START</loadhintonstart>
+		<loadscreenonstart priority="0">Data\UI\loading_nmc_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="1">$LOADING_HINT_VE_START</loadhintonstart>
+		<loadscreenonstart priority="1">Data\UI\loading_ve_start_tp.perm.bin</loadscreenonstart>
+		<loadhintonstart priority="2">$LOADING_HINT_GU_START</loadhintonstart>
+		<loadscreenonstart priority="2">Data\UI\loading_gu_start_tp.perm.bin</loadscreenonstart>
+	</mission>
+</groups>

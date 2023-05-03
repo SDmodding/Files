@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+
+<!--
+
+	Police Protection
+
+
+-->
+
+<gameslices>
+	<gameslice name="E_PoliceProtection_1">
+		<title>Police Protection</title>
+		<scriptclass>E_PoliceProtection_1</scriptclass>
+		<restorelocationmarker>Locations-PoliceProtection_Spawn</restorelocationmarker>
+	</gameslice>
+</gameslices>
+
+
+<groups>
+
+	<job name="E_PPP" statsid="2">
+		<title>$SGTITLE_POLICE_PROTECTION</title>
+		<scriptclass>E_PPP</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_PoliceProtection</triggerobject>
+		<restorelocationmarker>Locations-PoliceProtection_Spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">E_PoliceProtection_1</child>
+		<trackgamesliceas>DLC</trackgamesliceas>		
+	</job>
+
+	<ambient name="E_PPP_SilentRewards">
+		<title>$SGTITLE_POLICE_PROTECTION</title>
+		<scriptclass>DLC_Placeholder</scriptclass>
+	</ambient>
+</groups>

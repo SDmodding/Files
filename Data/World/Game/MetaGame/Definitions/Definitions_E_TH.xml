@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+
+<gameslices>
+	<gameslice name="E_TH_1">
+		<title>Triad Highway</title>
+		<scriptclass>E_TH_1</scriptclass>
+		<restorelocationmarker>Locations-E_TH_Spawn</restorelocationmarker>
+	</gameslice>	
+</gameslices>
+
+
+<groups>
+	<job name="E_TH" statsid="4">
+		<title>$SGTITLE_TRIAD_HIGHWAY</title>
+		<scriptclass>E_TH</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-E_TH</triggerobject>
+		<restorelocationmarker>Locations-E_TH_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_TH</completelocationmarker>
+		<deferredregionrestart>false</deferredregionrestart>
+		<ignoresafehouserestore>true</ignoresafehouserestore>			
+		<child checkpoint="true">E_TH_1</child>
+		<trackgamesliceas>DLC</trackgamesliceas>		
+	</job>
+</groups>
+

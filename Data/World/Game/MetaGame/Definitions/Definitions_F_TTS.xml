@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<!-- TING'S T-SHIRT FAVOUR -->
+
+<gameslices>   
+	<gameslice name="F_TTS_1">
+		<title>Ting's T-Shirt</title>
+		<scriptclass>F_TTS_1</scriptclass>
+		<restorelocationmarker>Locations-F_TTS_Start</restorelocationmarker>
+	</gameslice>
+</gameslices>    
+ 
+<groups>
+	<!-- TING'S T-SHIRT FAVOUR -->
+	<favour name="F_TTS" statsid="50">
+		<title>$SGTITLE_TINGS_TSHIRT</title>
+		<scriptclass>F_TTS</scriptclass>
+		<restorelocationmarker>Locations-F_TTS_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-F_TTS</completelocationmarker>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_TTS</triggerobject>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<child checkpoint="true">F_TTS_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+</groups>
+

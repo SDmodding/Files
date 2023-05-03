@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	
+	<gameslice name="TGA_1_Intro" holdcurtain="true">
+		<title>Pickup Rendezvous</title>
+		<scriptclass>TGA_1_Intro</scriptclass>
+		<restorelocationmarker>ProgressionTriggers_Missions-mkrTGAE3</restorelocationmarker>
+	</gameslice>
+	<gameslice name="TGA_2_GoToTopGlamour" holdcurtain="true">
+		<title>Drive to Top Glamour</title>
+		<scriptclass>TGA_2_GoToTopGlamour</scriptclass>
+		<restorelocationmarker>TGAMission-mkrBike</restorelocationmarker>
+		<cancellocationmarker>EndLocations-M_TGA</cancellocationmarker>
+		<dependent>TGA_1_Intro</dependent>
+	</gameslice>
+	<gameslice name="TGA_3_ChaseVan" holdcurtain="true">
+		<title>Chase the Van</title>
+		<scriptclass>TGA_3_ChaseVan</scriptclass>
+		<restorelocationmarker>TGAMission-mkrWeiPostNIS</restorelocationmarker>
+		<cancellocationmarker>EndLocations-M_TGA</cancellocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>		
+		<scenelayeronstart geoautoactivate="false" activate="false">TG_Exterior_Ambience</scenelayeronstart>
+		<dependent>TGA_2_GoToTopGlamour</dependent>
+	</gameslice>
+	<gameslice name="TGA_4_Escape" holdcurtain="true">
+		<title>Escape with the Manager</title>
+		<scriptclass>TGA_4_Escape</scriptclass>
+		<restorelocationmarker>TGAMission-mkrTGA4Restore</restorelocationmarker>
+		<cancellocationmarker>EndLocations-M_TGA</cancellocationmarker>
+		<dependent>TGA_3_ChaseVan</dependent>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<scenelayeronstart geoautoactivate="false" activate="false">TG_Exterior_Ambience</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">TG_Ext_Peds</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">NP_Thugs_18k_01</scenelayeronstart>
+		<scenelayeronstart geoautoactivate="false" activate="false">VehicleStore_FaceL4</scenelayeronstart>
+		<scenelayeronstart activate="true">FX_TG_Burning_Debris</scenelayeronstart>
+		<scenelayeronend activate="false">FX_TG_Burning_Debris</scenelayeronend>
+	</gameslice>	
+	
+</gameslices>
+<groups>
+	
+	<mission name="M_TGA" statsid="25">
+		<title>$SGTITLE_TOP_GLAMOUR_AMBUSH</title>
+		<scriptclass>TGAMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-M_TGA</triggerobject>
+		<restorelocationmarker>Locations-TGA_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_TGA</completelocationmarker>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<deferredregionrestart>false</deferredregionrestart>
+		<watermark>true</watermark>
+		<scenelayeronend geoautoactivate="true">TG_Exterior_Ambience</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">TG_Ext_Peds</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">NP_Thugs_18k_01</scenelayeronend>
+		<scenelayeronend geoautoactivate="true">VehicleStore_FaceL4</scenelayeronend>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<child>TGA_1_Intro</child>
+		<child checkpoint="true">TGA_2_GoToTopGlamour</child>
+		<child checkpoint="true">TGA_3_ChaseVan</child>
+		<child checkpoint="true">TGA_4_Escape</child>
+	</mission>
+	
+	
+</groups>
+

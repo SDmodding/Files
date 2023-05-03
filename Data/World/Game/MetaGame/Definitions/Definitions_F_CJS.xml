@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<gameslices>   
+	<!-- CHEAP JACK SERENADE -->
+	<gameslice name="F_CJS_1">
+		<title>Cheap Jack Serenade</title>
+		<scriptclass>F_CJS_1</scriptclass>
+		<restorelocationmarker>Locations-F_CJS_Spawn</restorelocationmarker>
+	</gameslice>
+</gameslices>
+ 
+<groups>
+	<!-- CHEAP JACK SERENADE -->
+	<favour name="F_CJS" statsid="28">
+		<title>$SGTITLE_CHEAP_JACK_SERENADE</title>
+		<scriptclass>F_CJS</scriptclass>
+		<triggerobject keepobjectiveenabled="true">ProgressionTriggers_Favours-F_CJS</triggerobject>
+		<restorelocationmarker>Locations-F_CJS_Spawn</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<child checkpoint="true">F_CJS_1</child>
+		<trackgamesliceas>FAVOUR</trackgamesliceas>
+	</favour>
+</groups>
+

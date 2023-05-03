@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+-->
+<gameslices>
+	<gameslice name="STARTER_1" holdcurtain="true">
+		<title>Welcome to Hong Kong</title>
+		<scriptclass>Starter_1</scriptclass>
+		<restorelocationmarker>WTHKMission-Restore_1_Intro</restorelocationmarker>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_STARTER" holdcurtain="true">
+		<title>$SGTITLE_WELCOME_TO_HONG_KONG</title>
+		<scriptclass>StarterMission</scriptclass>
+		<restorelocationmarker>Locations-WTHK_Start</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<saveoverride>WTHK_1_Intro</saveoverride>
+		<child checkpoint="true">STARTER_1</child>
+	</mission>
+</groups>
+

@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+
+<gameslices>
+	
+	<gameslice name="FU1_Intro" holdcurtain="true">
+		<title>Intro NIS</title>		
+		<scriptclass>FU1_Intro</scriptclass>
+		<restorelocationmarker>FUMission-GoToStore_PlayerStart</restorelocationmarker>
+	</gameslice>
+	
+	<gameslice name="FU2_Drive" holdcurtain="true">
+		<title>Buy a Suit</title>		
+		<scriptclass>FU2_Drive</scriptclass>		
+		<restorelocationmarker>FUMission-GoToStore_PlayerStart</restorelocationmarker>
+		<dependent>FU1_Intro</dependent>
+	</gameslice>
+	
+	<gameslice name="FU3_Drive2" holdcurtain="true">
+		<title>Go to the Cemetery</title>		
+		<scriptclass>FU3_Drive2</scriptclass>		
+		<restorelocationmarker>FUMission-GoToCemetery_PlayerStart</restorelocationmarker>
+		<vehiclerestore range="100000.0">FUMission-GoToCemetery_VehicleStart</vehiclerestore>
+		<scenelayeronstart geoautoactivate="false" activate="true">FU_Effects</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">FU_Effects</scenelayeronend>
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitFuneral</setdisguiseonstart>		
+		<dependent>FU2_Drive</dependent>
+	</gameslice>
+	
+	<gameslice name="FU5_Shootout" holdcurtain="true">
+		<title>Top Level Shootout</title>		
+		<scriptclass>FU5_Shootout</scriptclass>		
+		<forceweather type="heavyrain" locked="true"></forceweather>
+		<restorelocationmarker>FUMission-TopLevel_PlayerStart</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="true">FU_Effects</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">FU_Effects</scenelayeronend>	
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitFuneral</setdisguiseonstart>		
+		<dependent>FU3_Drive2</dependent>
+	</gameslice>
+	
+	<gameslice name="FU6_River" holdcurtain="true">
+		<title>Follow the River</title>		
+		<scriptclass>FU6_River</scriptclass>		
+		<forceweather type="heavyrain" locked="true"></forceweather>
+		<restorelocationmarker>FUMission-River_PlayerStart</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="true">FU_Effects</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">FU_Effects</scenelayeronend>	
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitFuneral</setdisguiseonstart>		
+		<dependent>FU5_Shootout</dependent>
+	</gameslice>
+	
+	<gameslice name="FU7_Shootout2" holdcurtain="true">
+		<title>Ground Level Shootout</title>		
+		<scriptclass>FU7_Shootout2</scriptclass>		
+		<forceweather type="heavyrain" locked="true"></forceweather>
+		<restorelocationmarker>FUMission-LowerLevel_PlayerStart</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>false</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>false</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="true">FU_Effects</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">FU_Effects</scenelayeronend>	
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitFuneral</setdisguiseonstart>		
+		<dependent>FU6_River</dependent>
+	</gameslice>
+	
+	<gameslice name="FU8_ParkingLot" holdcurtain="true">
+		<title>Parking Lot Shootout</title>		
+		<scriptclass>FU8_ParkingLot</scriptclass>		
+		<forceweather type="heavyrain" locked="true"></forceweather>
+		<restorelocationmarker>FUMission-ParkingLot_PlayerStart</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<scenelayeronstart geoautoactivate="false" activate="true">FU_Effects</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">FU_Effects</scenelayeronend>	
+		<setdisguiseonstart enablewardrobe="false" enablestores="false">OutfitFuneral</setdisguiseonstart>		
+		<dependent>FU7_Shootout2</dependent>
+	</gameslice>
+	
+</gameslices>
+
+<groups>
+
+	<mission name="M_FU" statsid="10">
+		<title>$SGTITLE_THE_FUNERAL</title>
+		<scriptclass>FUMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-FUMission</triggerobject>
+		<restorelocationmarker>Locations-FUMission-Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_FU</completelocationmarker>
+		<deferredregionrestart>false</deferredregionrestart>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>MISSION</trackgamesliceas>
+		<forcetime time="16.00" locked="true"></forcetime>
+		<scenelayeronstart geoautoactivate="false" activate="false">Store_008</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">Store_008</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_S_Prison_001_Peds_Day</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">CN_S_Prison_001_Peds_Day</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_S_Prison_001_Peds_Night</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">CN_S_Prison_001_Peds_Night</scenelayeronend>
+		<scenelayeronstart geoautoactivate="false" activate="false">CN_S_Prison_001_POI_Day</scenelayeronstart>
+		<scenelayeronend geoautoactivate="true">CN_S_Prison_001_POI_Day</scenelayeronend>
+		<removedisguiseonend enablewardrobe="true" enablestores="true"></removedisguiseonend>
+		<child checkpoint="true">FU1_Intro</child>
+		<child checkpoint="true">FU2_Drive</child>
+		<child checkpoint="true">FU3_Drive2</child>
+		<child checkpoint="true">FU5_Shootout</child>
+		<child checkpoint="true">FU6_River</child>
+		<child checkpoint="true">FU7_Shootout2</child>
+		<child checkpoint="true">FU8_ParkingLot</child>		
+	</mission>
+	
+</groups>
