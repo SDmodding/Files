@@ -1,0 +1,178 @@
+<!--
+    This section list out the entire list of objectives in the game.
+    It is meant to be pulled together so it's easy for you to edit and view.
+	
+	The format for objective:
+	   name -		This is the unique identifier you will use in your script.
+					Note: This name is only needed to be unique across all the objectives, not game object
+	   secondary -	[Optional]: If true, then this is a secondary objective.  If not filled in, then secondary is false
+	   caption -	The text is what will be displayed on screen.  Ideally it should be the localized ID
+					A localized ID is generally of this format.
+					A dollar sign in front, and a unique name in all caps.  ex.  $THIS_IS_LOCALIZED_TEXT
+					Don't worry too much about populating the text for now, the localization database 
+					framework is being worked on by the Kart team.  We'll upgrade to it later
+	   log -		[Optional]: The text to show on the log window.  If not present it'll use the caption field
+	   
+	   Then, you can have a list of blips associated with it:
+		  name - This is the name of the object you want the objective to blip focus on the minimap 
+					Note: This should be the name of a game object that contains a transform (location).
+						ie. A game object (character / vehicle)
+							A marker (corona)
+							A mission start object (to be created...  :-P)
+		  type - The type of the blip
+
+	The format for objective hints:
+	   name -    This is the unique identifier you will use in your script.
+		         Note: This name is only needed to be unique across all the objective hints, not game object
+	   caption - The text is what will be displayed on screen.  Ideally it should be the localized ID
+                 A localized ID is generally of this format.
+				 A dollar sign in front, and a unique name in all caps.  ex.  $THIS_IS_LOCALIZED_TEXT
+                 Don't worry too much about populating the text for now, the localization database 
+				 framework is being worked on by the Kart team.  We'll upgrade to it later
+
+-->
+<objectives>
+
+	<objective name="EMPTY_OBJECTIVE" caption="">
+	</objective>
+
+	<objective name="EMPTY_OBJECTIVE_PDA" caption="" uses_pda="true"> 
+	</objective>
+	
+	<!-- Sample objective -->
+
+<!--
+	<objective name="SAMPLE_OBJECTIVE_PRIMARY" caption="Sample on screen objective" log="Sample log objective">
+	</objective>
+	<objective name="SAMPLE_OBJECTIVE_SECONDARY" secondary="true" caption="Sample on screen secondary objective" log="Sample log secondary objective">
+	</objective>
+-->
+    
+</objectives>
+
+<supportfiles>
+	<supportfile name="Objectives\Objectives_Aaron.xml" author="Aaron"></supportfile>
+	<supportfile name="Objectives\Objectives_Aldric.xml" author="Aldric"></supportfile>
+	<supportfile name="Objectives\Objectives_BrianB.xml" author="BrianB"></supportfile>
+	<supportfile name="Objectives\Objectives_Bryant.xml" author="Bryant"></supportfile>
+	<supportfile name="Objectives\Objectives_Eric.xml" author="Eric"></supportfile>
+	<supportfile name="Objectives\Objectives_James.xml" author="James"></supportfile>
+	<supportfile name="Objectives\Objectives_Jeffrie.xml" author="Jeffrie"></supportfile>
+	<supportfile name="Objectives\Objectives_Joseph.xml" author="Joseph"></supportfile>
+	<supportfile name="Objectives\Objectives_Jeremy.xml" author="Jeremy"></supportfile>
+	<supportfile name="Objectives\Objectives_Kenny.xml" author="Kenny"></supportfile>
+	<supportfile name="Objectives\Objectives_Mark.xml" author="Mark"></supportfile>
+	<supportfile name="Objectives\Objectives_Kram.xml" author="Kram"></supportfile>
+	<supportfile name="Objectives\Objectives_Matt.xml" author="Matt"></supportfile>
+	<supportfile name="Objectives\Objectives_Raul.xml" author="Raul"></supportfile>
+	<supportfile name="Objectives\Objectives_Roderick.xml" author="Roderick"></supportfile>
+	<supportfile name="Objectives\Objectives_Sasha.xml" author="Sasha"></supportfile>
+	<supportfile name="Objectives\Objectives_Taylor.xml" author="Taylor"></supportfile>
+	<supportfile name="Objectives\Objectives_Jobs.xml" author="Jobs"></supportfile>
+	<supportfile name="Objectives\Objectives_NoOwner.xml" author="NoOwner"></supportfile>
+	
+	<supportfile name="Objectives\Objectives_M_MB.xml" author="Matt"></supportfile>
+	<supportfile name="Objectives\Objectives_M_AM.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_BA.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_BBC.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_BTB.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_FU.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_MCR.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_VE.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_NMC.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_FK.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_BSL.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_DTBSL.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_IV.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_PB.xml" author="Kram"></supportfile>	
+	<supportfile name="Objectives\Objectives_M_SS.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_SU.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_TBH.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_HS.xml" author="NoOwner"></supportfile>
+	<supportfile name="Objectives\Objectives_M_WTHK.xml" author="NoOwner"></supportfile>
+
+	<supportfile name="Objectives\Objectives_M_TG.xml" author="Kram"></supportfile>	
+	<supportfile name="Objectives\Objectives_M_TGA.xml" author="NoOwner"></supportfile>	
+	<supportfile name="Objectives\Objectives_M_TNB.xml" author="NoOwner"></supportfile>	
+	<supportfile name="Objectives\Objectives_M_UP.xml" author="NoOwner"></supportfile>	
+	<supportfile name="Objectives\Objectives_M_WED.xml" author="NoOwner"></supportfile>	
+
+	<supportfile name="Objectives\Objectives_C_HS.xml" author="Kram"></supportfile>	
+	<supportfile name="Objectives\Objectives_C_KN.xml" author="Kram"></supportfile>	
+	<supportfile name="Objectives\Objectives_C_PS.xml" author="Kram"></supportfile>	
+	<supportfile name="Objectives\Objectives_C_SK.xml" author="Kram"></supportfile>	 
+	
+	<supportfile name="Objectives\Objectives_J_DC.xml" author="Kram"></supportfile>	 
+	<supportfile name="Objectives\Objectives_J_TRAN.xml" author="Kram"></supportfile>
+	<supportfile name="Objectives\Objectives_J_CJ.xml" author="Byron"></supportfile>
+	
+	<supportfile name="Objectives\Objectives_F_RI.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_F_CJS.xml" author="Shadi"></supportfile>
+	<supportfile name="Objectives\Objectives_F_FT.xml" author="Shadi"></supportfile>
+	<supportfile name="Objectives\Objectives_F_TS.xml" author="Shadi"></supportfile>	
+	<supportfile name="Objectives\Objectives_F_SS.xml" author="Shadi"></supportfile>		
+	<supportfile name="Objectives\Objectives_F_CH.xml" author="Shadi"></supportfile>			
+	<supportfile name="Objectives\Objectives_F_IFR.xml" author="Shadi"></supportfile>					
+	<supportfile name="Objectives\Objectives_F_AP.xml" author="Shadi"></supportfile>							
+	<supportfile name="Objectives\Objectives_F_TTS.xml" author="Shadi"></supportfile>								
+	<supportfile name="Objectives\Objectives_F_RHT.xml" author="Shadi"></supportfile>									
+	<supportfile name="Objectives\Objectives_F_RAD.xml" author="Shadi"></supportfile>										
+	<supportfile name="Objectives\Objectives_F_RAD2.xml" author="Shadi"></supportfile>											
+	<supportfile name="Objectives\Objectives_F_RAD3.xml" author="Shadi"></supportfile>												
+	<supportfile name="Objectives\Objectives_F_TR.xml" author="Shadi"></supportfile>													
+	<supportfile name="Objectives\Objectives_E_DTC.xml" author="Shadi"></supportfile>														
+	<supportfile name="Objectives\Objectives_E_TH.xml" author="Shadi"></supportfile>															
+	<supportfile name="Objectives\Objectives_E_SS.xml" author="Shadi"></supportfile>																
+	
+	<supportfile name="Objectives\Objectives_F_CD.xml" author="Jeffrie"></supportfile>	
+	
+	<supportfile name="Objectives\Objectives_E_CI.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_E_RN.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_E_BA.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_E_TIP.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_E_TW.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_E_AI.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_M_IN.xml" author="Matt"></supportfile>
+	<supportfile name="Objectives\Objectives_M_TE.xml" author="Matt"></supportfile>
+	<supportfile name="Objectives\Objectives_M_BL.xml" author="Matt"></supportfile>
+	<supportfile name="Objectives\Objectives_M_CD.xml" author="Matt"></supportfile>
+	<supportfile name="Objectives\Objectives_M_JA.xml" author="Matt"></supportfile>
+	<supportfile name="Objectives\Objectives_M_GU.xml" author="Matt"></supportfile>
+	
+	<supportfile name="Objectives\Objectives_E_RNC.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_F_HM.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_M_FG.xml" author="Quentin"></supportfile>
+	
+	<supportfile name="Objectives\Objectives_F_FC.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_F_PP.xml" author="Quentin"></supportfile> 
+	<supportfile name="Objectives\Objectives_E_INT.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_E_GD.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_E_S.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_E_CP.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_E_PPP.xml" author="Byron"></supportfile>
+	<supportfile name="Objectives\Objectives_E_SO.xml" author="Byron"></supportfile>
+	<supportfile name="Objectives\Objectives_E_ETA.xml" author="Byron"></supportfile>
+	<supportfile name="Objectives\Objectives_E_SL.xml" author="Quentin"></supportfile>
+	<supportfile name="Objectives\Objectives_E_JT.xml" author="Byron"></supportfile>
+	
+	<supportfile name="Objectives\Objectives_Demo.xml" author="Jeffrie"></supportfile>	
+	
+	<!--Transportation Terror DLC-->
+	<supportfile name="Objectives\Objectives_M_TT_EMP.xml" author="Aaron"></supportfile>
+	<supportfile name="Objectives\Objectives_M_TT_GENERAL.xml" author="Aaron"></supportfile>
+	<supportfile name="Objectives\Objectives_M_TT_CON.xml" author="Aaron"></supportfile>
+	<supportfile name="Objectives\Objectives_M_TT_CC.xml" author="Aaron"></supportfile>
+	<supportfile name="Objectives\Objectives_M_TT_DR.xml" author="Aaron"></supportfile>
+	<supportfile name="Objectives\Objectives_M_TT_RT.xml" author="Aaron"></supportfile>
+	<supportfile name="Objectives\Objectives_M_TT_MWT.xml" author="Aaron"></supportfile>
+	<supportfile name="Objectives\Objectives_TT_Secondary.xml" author="Aaron"></supportfile>
+	
+	<!--Zodiac Island DLC-->
+	<supportfile name="Objectives\Objectives_ZI_Secondary.xml" author="Quentin"></supportfile>	
+	<supportfile name="Objectives\Objectives_M_ZI_WTZ.xml" author="Quentin"></supportfile>	
+	<supportfile name="Objectives\Objectives_M_ZI_TBF.xml" author="Quentin"></supportfile>	
+	<supportfile name="Objectives\Objectives_M_ZI_CH.xml" author="Quentin"></supportfile>	
+	<supportfile name="Objectives\Objectives_M_ZI_HH.xml" author="Quentin"></supportfile>	
+	<supportfile name="Objectives\Objectives_M_ZI_LMS.xml" author="Quentin"></supportfile>	
+	<supportfile name="Objectives\Objectives_M_ZI_EG.xml" author="Quentin"></supportfile>	
+</supportfiles>

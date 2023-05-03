@@ -1,0 +1,37 @@
+<objectives>
+	<!-- WHARF RUNNER EVENT -->
+	<objective name="E_WR_001" caption="Wharf Runner" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-WREvent" blip="event_start" corona="walk_event"></indicator>
+	</objective>
+	<objective name="E_WR_002" caption="Race to the end of the course." autoflash="false"></objective>
+	<!-- CONFRONTATION MISSION -->
+	<objective name="M_CO_000" caption="$MISSION_CONFRONTATION_NAME" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-COMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_CO_001" caption="$MISSION_CONFRONTATION_OBJECTIVE_001">
+		<indicator name="COMission-Spawner_Tanker:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	<objective name="M_CO_002" caption="$MISSION_CONFRONTATION_OBJECTIVE_002">
+		<indicator name="COMission-Marker_Dest_Election" blip="mission_objective" corona="drive_mission"></indicator>	
+	</objective>
+	<objective name="M_CO_003" caption="$MISSION_CONFRONTATION_OBJECTIVE_003">
+		<indicator name="COMission-Spawner_EB1_BSLCREW_01:spawn" blip="enemy" corona="arrow_enemy"></indicator>
+		<indicator name="COMission-Spawner_EB1_BSLCREW_02:spawn" blip="enemy" corona="arrow_enemy"></indicator>
+		<indicator name="COMission-Spawner_EB1_BSLCREW_03:spawn" blip="enemy" corona="arrow_enemy"></indicator>
+		<indicator name="COMission-Spawner_EB1_BSLCREW_04:spawn" blip="enemy" corona="arrow_enemy"></indicator>
+	</objective>
+	<objective name="M_CO_004" caption="$MISSION_CONFRONTATION_OBJECTIVE_004">
+		<indicator name="COMission-Spawner_RS1_Conroy_Car:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	<objective name="M_CO_005" caption="$MISSION_CONFRONTATION_OBJECTIVE_005">
+		<indicator name="COMission-Spawner_RS1_BSL_Car:spawn" blip="enemy" corona="arrow_enemy"></indicator>
+	</objective>
+	<objective name="M_CO_006" caption="$MISSION_CONFRONTATION_OBJECTIVE_006">
+		<indicator name="COMission-Spawner_RD_BSL_Car:spawn" blip="enemy" corona="arrow_enemy"></indicator>
+	</objective>
+	<objective name="M_CO_007" caption="$MISSION_CONFRONTATION_OBJECTIVE_007">
+		<indicator name="COMission-Spawner_RS2_BSL_Car:spawn" blip="enemy" corona="arrow_enemy"></indicator>
+	</objective>
+	<objective name="M_CO_008" caption="$MISSION_CONFRONTATION_OBJECTIVE_008"></objective>
+	<objectivehint name="tempLockpickHint" caption="Press Y to Pick Lock"></objectivehint>	
+</objectives>

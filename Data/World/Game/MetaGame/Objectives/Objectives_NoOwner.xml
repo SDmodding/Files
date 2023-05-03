@@ -1,0 +1,128 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+	
+	<objective name="R_VP_01_000" caption="Race" autoflash="false">
+		<indicator name="ProgressionTriggers_Races-R_VP_01" blip="race_start" corona="drive_race"></indicator>
+	</objective>
+	
+<!--      			-->	
+	<objective name="TU_000" caption="$GLOBAL_OBJECTIVE_TRIAD_UPGRADE">
+		<indicator name="Locations-Triad_Upgrade_Corona" blip="martial_arts" corona="walk_mission"></indicator>
+	</objective>
+
+	<objective name="CU_000" caption="$GLOBAL_OBJECTIVE_COP_UPGRADE">
+		<indicator name="Locations-Cop_Upgrade_Corona" blip="martial_arts" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="TW_Thugs" caption="$EVENT_TRIADWARS_OBJECTIVE_THUGS">		
+	</objective>
+	
+	<objective name="CopDLC" caption="DLC - Call Raymond"></objective>
+	
+	<objective name="MeleeDLC" caption="DLC - Melee"></objective>
+
+	<objective name="CheckingIn_01" caption="Checking In" log="Checking In" autoflash="false">		
+	</objective>
+  
+  <objective name="M_CK1_000" caption="$MISSION_CHECKIN_1_NAME" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-CK1Mission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>    
+	<objective name="M_CK2_000" caption="$MISSION_CHECKIN_2_NAME" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-CK2Mission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>  
+	<objective name="M_CK3_000" caption="$MISSION_CHECKIN_3_NAME" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-CK3Mission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_CK4_000" caption="$MISSION_CHECKIN_4_NAME" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-CK4Mission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_CK5_000" caption="$MISSION_CHECKIN_5_NAME" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-CK5Mission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>  
+	<objective name="Safehouse_TEXT" caption="$MISSION_FIRST_SAFEHOUSE" display_priority="5">
+		<indicator name="ProgressionTriggers_Missions-FirstSafehouse" blip="safe_house_objective"></indicator>
+	</objective>
+	<objective name="Safehouse_ENTER" caption="$MISSION_FIRST_SAFEHOUSE">
+		<indicator name="SFNP-Bed_Objective" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+		<objective name="Safehouse_SLEEP_North_Point" caption="$MISSION_FIRST_SAFEHOUSE_SLEEP" autoflash="false">		
+		<indicator name="Locations-SFNP-NP" blip="safe_house_objective"></indicator>				
+	</objective>
+	<objective name="Safehouse_SLEEP" caption="$MISSION_FIRST_SAFEHOUSE_SLEEP" autoflash="false">		
+		<indicator name="Locations-SFKT-KT" blip="safe_house_objective"></indicator>				
+	</objective>
+	<objective name="Safehouse_SLEEP_Central" caption="$MISSION_FIRST_SAFEHOUSE_SLEEP" autoflash="false">		
+		<indicator name="Locations-SFCT-CT_Sleep" blip="safe_house_objective"></indicator>				
+	</objective>
+	<objective name="Parking_Tutorial" caption="$GLOBAL_TUTORIAL_PARKING">
+		<indicator name="OutToOpenWorld-Parking_Attendant" blip="parking_objective"></indicator>
+	</objective>
+	<objective name="SnitchScene_000" caption="$GLOBAL_MISSION_SNITCH">
+		<indicator name="ProgressionTriggers_Cases-SnitchScene" blip="mission_start"  corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="C_KN_CLOSE" caption="$CASE_CLOSE_KN" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-Case_Closed_KN" blip="case_start" corona="walk_case"></indicator>
+	</objective>  
+	<objective name="C_R_CLOSE" caption="$CASE_CLOSE_R" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-Case_Closed_R" blip="case_start" corona="walk_case"></indicator>
+	</objective>  
+	<objective name="C_SK_CLOSE" caption="$CASE_CLOSE_SK" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-Case_Closed_SK" blip="case_start" corona="walk_case"></indicator>
+	</objective>  
+	<objective name="C_PS_CLOSE" caption="$CASE_CLOSE_PS" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-Case_Closed_PS" blip="case_start" corona="walk_case"></indicator>
+	</objective>  
+	<objective name="Global_AB_002" caption="$GLOBAL_ABDUCTION_OBJECTIVE_002" autoflash="false">
+		<indicator name="World.c_player" blip="case_start" corona="walk_case"></indicator>
+	</objective>  
+	
+	<objective name="Global_Follow_Target" caption="$GLOBAL_FOLLOW_TARGET">
+	</objective>
+
+	<objective name="Global_Lose_The_Cops" caption="$EVENT_BREAKARREST3_OBJECTIVE_002"></objective>
+
+	<objective name="D_Tiffany_Call" caption="$DATE_START_TIFFANY_CALL" uses_pda="true"></objective>
+	<objective name="D_Ilyana_Call" caption="$DATE_START_ILYANA_CALL" uses_pda="true"></objective>
+	<objective name="D_NotPing_Call" caption="$DATE_START_NOTPING_CALL" uses_pda="true"></objective>
+	<objective name="D_Amanda_Call" caption="$DATE_START_AMANDA_CALL" uses_pda="true"></objective>
+	<objective name="D_Sandra_Call" caption="$DATE_START_SANDRA_CALL" uses_pda="true"></objective>
+	
+	<objective name="PD_000" caption="$E_COMBAT_TRAIN_TITLE">
+		<indicator name="Locations-MASchool2" blip="martial_arts" corona="walk_generic"></indicator>
+	</objective>
+	
+	<objective name="DRUG_BUST_SAFEHOUSE_NP" caption="$OWNAME_TRIADWARS_SAFEHOUSE">
+		<indicator name="Locations-SFNP-NP" blip="safe_house" ></indicator>		
+	</objective>
+	<objective name="DRUG_BUST_SAFEHOUSE_AB" caption="$OWNAME_TRIADWARS_SAFEHOUSE">
+		<indicator name="Locations-SFAB-AB" blip="safe_house" ></indicator>		
+	</objective>
+	<objective name="DRUG_BUST_SAFEHOUSE_CT" caption="$OWNAME_TRIADWARS_SAFEHOUSE">
+		<indicator name="Locations-SFCT-CT" blip="safe_house" ></indicator>		
+	</objective>
+	<objective name="DRUG_BUST_SAFEHOUSE_KT" caption="$OWNAME_TRIADWARS_SAFEHOUSE">
+		<indicator name="Locations-SFKT-KT" blip="safe_house" ></indicator>		
+	</objective>
+	
+	<objective name="PD_SELECTION" caption="$E_COMBAT_TRAIN_SELECT_FIGHTER">
+		<indicator name="PDEvent-Brawler_Social" blip="face_objective"></indicator>
+		<indicator name="PDEvent-Quick_Social" blip="face_objective"></indicator>
+		<indicator name="PDEvent-Striker_Social" blip="face_objective"></indicator>
+		<indicator name="PDEvent-Grappler_Social" blip="face_objective"></indicator>
+	</objective>
+	
+	<objective name="PD_ENEMIES" caption="$E_COMBAT_TRAIN_OBJECTIVE">
+	</objective>
+	
+	<objective name="DEMO_NIGHT_MARKET" caption="<font color='#34b76f'>Coming Soon...</font>" autoflash="false">
+		<indicator name="DemoStart-DemoCorona_01" blip="mission_start" corona="walk_mission"></indicator>
+		<indicator name="DemoStart-DemoCorona_02" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+</objectives>
