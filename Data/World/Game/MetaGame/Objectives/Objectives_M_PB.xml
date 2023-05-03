@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+
+<!--    
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+-->
+<objectives>
+<!-- *************************Pendrew's Bugs Objectives************************* -->	
+
+	<objective name="RTNC_OBJ_1_1" caption="$MISSION_PENDREWSBUGS_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-M_RTNC" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+
+	<!-- Catch the thief -->
+	<objective name="M_PB_Catch_Thief" caption="$MISSION_PB_CATCH_THIEF">
+		<indicator name="PBMission-SpawnThief:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+
+	<objective name="M_PB_Get_Bag" caption="$MISSION_PB_GET_BAG">
+	</objective>
+	
+	<objective name="M_PB_Call_Raymond" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_007" uses_pda="true"></objective>
+
+	<!-- Go to Mrs. Chu's Restaurant -->	
+	<objective name="M_PB_Goto_Restaurant" caption="$MISSION_PB_GOTO_RESTAURANT">
+		<indicator name="PBMission-RestaurantFront" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>	 
+	
+	<!-- Go to construction -->
+	<objective name="M_PB_Goto_Construction" caption="$MISSION_PB_GOTO_CONSTRUCTION">
+		<indicator name="PBMission-Marker_Restaurant" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>	 
+	
+	<objective name="M_PB_Cop_Hack" caption="$MISSION_PB_COP_HACK">
+	</objective>	 	
+	
+	<!-- Climb Here -->
+	<objective name="M_PB_Climb_Here" caption="$MISSION_PB_CONSTRUCTION_CLIMB_HERE">
+		<indicator name="PBMission-ClimbHere" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>	 
+
+	<objective name="M_PB_Climb_Here_Hold_My_Hand" caption="$MISSION_PB_CONSTRUCTION_CLIMB_HERE">
+		<indicator name="PBMission-HoldMyHand" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>	 
+	
+	<objective name="M_PB_Climb_Here2" caption="$MISSION_PB_CONSTRUCTION_CLIMB_HERE">
+		<indicator name="PBMission-LeaveHere" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+
+	<!-- Find a way in to the restaurant -->
+	<objective name="M_PB_Find_A_Way_In" caption="$MISSION_PB_FIND_WAY_INTO_KOI">
+		<indicator name="PBMission-Marker_RestaurantSkylight" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_PB_Listen_In" caption="$MISSION_PB_LISTEN_IN">
+		<indicator name="PBMission-Winston:spawn" blip="mission_objective"></indicator>
+		<indicator name="PBMission-Conroy:spawn" blip="mission_objective"></indicator>
+	</objective>
+
+	<!-- Sneak into the Restaurant through the skylight -->
+	<objective name="M_PB_Use_Skylight" caption="$MISSION_PB_USE_SKYLIGHT">		
+		<indicator name="PBMission-Marker_RestaurantSkylight" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	
+	<!-- Plant the bug inside the AC vent -->
+	<objective name="M_PB_Plant_Bug" caption="$MISSION_PB_PLANT_BUG">
+		<indicator name="PBMission-Marker_RestaurantBugPlant" blip="mission_objective" ></indicator>
+	</objective>	
+	
+	<!-- Pick the lock on the back door to get out -->
+	<objective name="M_PB_Pick_Backdoor" caption="$MISSION_PB_PICK_BACKDOOR">
+		<indicator name="PBMission-BackDoor" blip="mission_objective" ></indicator>
+	</objective>
+
+	<!-- Climb up onto the roof -->
+	<objective name="M_PB_Get_Onto_Roof" caption="$MISSION_PB_CLIMB_ONTO_ROOF">
+		<indicator name="PBMission-RestaurantRoof" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<!-- Leave the restaurant -->
+	<objective name="M_PB_Leave_Restaurant" caption="$MISSION_PB_LEAVE_AREA">
+		<indicator name="PBMission-Marker_RestaurantBack" blip="mission_objective" corona="walk_mission"></indicator>		
+	</objective>	
+
+</objectives>

@@ -1,0 +1,76 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+	
+	
+	
+	
+
+    
+    <!--******************************Hospital Shootout**************************************-->   
+
+    <objective name="M_HS_000" caption="$MISSION_BOSSESMEET_NAME_001" autoflash="false">
+			<indicator name="ProgressionTriggers_Missions-M_HS" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_HS_DRIVE_TO_HOSPITAL" caption="$MISSION_BOSSESMEET_OBJECTIVE_001">
+		<indicator name="HSMission-mkrHospitalEntrance" blip="mission_objective"></indicator>
+    </objective>
+	
+	<objective name="M_HS_DEFEAT_18K" caption="$MISSION_BOSSESMEET_OBJECTIVE_014">
+	
+	</objective>
+    
+	<objective name="M_HS_GET_TO_ELEVATOR" caption="$MISSION_BOSSESMEET_OBJECTIVE_010">
+		<indicator name="HSMission-mkrElevator" blip="mission_objective" ></indicator>	
+    </objective> 
+	
+	<objective name="M_HS_TAKE_ELEVATOR_UPSTAIRS" caption="$MISSION_BOSSESMEET_OBJECTIVE_011">
+		<indicator name="HSMission-mkrElevator" blip="mission_objective" ></indicator>	
+    </objective> 
+	
+	<objective name="M_HS_GET_OUT_OF_ELEVATOR" caption="$MISSION_BOSSESMEET_OBJECTIVE_012">
+		<indicator name="HSMission-mkrElevator2" blip="mission_objective" ></indicator>	
+    </objective> 
+	
+	
+	<objective name="M_HS_DEFEAT_18K_PART2" caption="$MISSION_BOSSESMEET_OBJECTIVE_014">
+		<!--<indicator name="HSMission-mkrOutsidePosRoom" blip="mission_objective" corona="walk_mission"></indicator>-->
+		<indicator name="HSMission-mkrOutsidePosRoom" blip="mission_objective"></indicator>
+	</objective>
+    
+	<objective name="M_HS_GO_TO_PO" caption="$MISSION_BOSSESMEET_OBJECTIVE_003">
+		<!--<indicator name="HSMission-mkrOutsidePosRoom" blip="mission_objective" corona="walk_mission"></indicator>-->
+		<indicator name="HSMission-mkrOutsidePosRoom" blip="mission_objective"></indicator>
+    </objective> 
+	
+	<objective name="M_HS_GO_TO_SECURITY_ROOM" caption="$MISSION_BOSSESMEET_OBJECTIVE_013">
+		<indicator name="HSMission-mkrSecurityCenter" blip="mission_objective" corona="walk_mission"></indicator>	
+	</objective>
+   
+	<objective name="M_HS_HACK_COMPUTER" caption="$MISSION_BOSSESMEET_OBJECTIVE_004">
+		<indicator name="HSMission-mkrSecurityComputer" blip="mission_objective"></indicator>	
+	</objective>
+	
+	<objective name="M_HS_RETURN_TO_RICKY" caption="$MISSION_BOSSESMEET_OBJECTIVE_007">
+		<indicator name="HSMission-spRicky:spawn" blip="mission_objective" corona="arrow_friendly"></indicator>
+	</objective>
+	
+	<objective name="M_HS_DEFEND_UNCLE_PO" caption="$MISSION_BOSSESMEET_OBJECTIVE_005">
+	</objective>
+	
+	<objective name="M_HS_LEAVE_HOSPITAL" caption="$MISSION_BOSSESMEET_OBJECTIVE_016">
+		<indicator name="HSMission-mkrEscapeHospital" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_HS_ESCAPE_COPS" caption="$MISSION_BOSSESMEET_OBJECTIVE_006"></objective>
+   
+   <objective name="M_HS_DROP_RICKY_OFF" caption="$MISSION_BOSSESMEET_OBJECTIVE_017"></objective>
+	
+
+		
+</objectives>

@@ -1,0 +1,47 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+	<!--*******************************Fast Girls Mission*****************************************-->
+	<objective name="M_FG_001" caption="$MISSION_FASTGIRLS_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-FGMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FG_002" caption="$MISSION_FASTGIRLS_OBJECTIVE_002">
+		<indicator name="FGMission-mkr_ricky" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FG_TAKECAR" caption="$MISSION_FASTGIRLS_OBJECTIVE_003">
+		<indicator name="FGMission-ricky_car:spawn" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_FG_PICKUPGIRLS" caption="$MISSION_FASTGIRLS_OBJECTIVE_004">
+		<indicator name="FGMission-mkr_sandra" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FG_005" caption="$MISSION_FASTGIRLS_OBJECTIVE_005">
+		<indicator name="FGMission-mkr_sandrahouse" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FG_GOTORACE" caption="$MISSION_FASTGIRLS_OBJECTIVE_006">
+		<indicator name="FGMission-mkr_group" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FG_WINTHERACE" caption="$MISSION_FASTGIRLS_OBJECTIVE_007">
+	</objective>
+	
+	<objective name="M_FG_LOSETHECOPS" caption="$MISSION_FASTGIRLS_OBJECTIVE_008">
+	</objective>
+	
+	<objective name="M_FG_GOTOSANDRASCONDO" caption="$MISSION_FASTGIRLS_OBJECTIVE_009">
+		<indicator name="FGMission-mkr_sandrahouse" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FG_GETINRICKYSCAR" caption="$MISSION_FASTGIRLS_OBJECTIVE_010">
+		<indicator name="FGMission-ricky_car:spawn"></indicator>
+	</objective>
+
+</objectives>

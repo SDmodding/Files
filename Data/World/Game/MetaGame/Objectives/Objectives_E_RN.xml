@@ -1,0 +1,58 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+	<!-- Event: Rough Neighbourhood -->	
+	<objective name="E_RN_TEXT" caption="$OWNAME_ROUGH_NEIGHBOURHOOD"  autoflash="false">   
+		<indicator name="ProgressionTriggers_Events-E_RoughNeighbourhood" blip="face_character"></indicator>       
+	</objective>      
+	
+	<objective name="E_RN_SOCIAL" caption="$EVENT_NEIGHBORHOOD1_NAME_001" autoflash="false">     
+	</objective>   
+	
+	<objective name="E_RN_001" caption="$EVENT_NEIGHBORHOOD1_OBJECTIVE_001">   
+		<!--indicator name="ProgressionTriggers_Events-E_RoughNeighbourhood" blip="event_objective" corona="arrow_objective"></indicator-->       
+		<indicator name="E_RN_Character:spawn" blip="event_objective"></indicator>       
+	</objective>      
+
+	<objective name="E_RN_002" caption="$EVENT_NEIGHBORHOOD1_OBJECTIVE_002">   
+	</objective>   
+	
+	<objective name="E_RN_003" caption="$EVENT_NEIGHBORHOOD1_OBJECTIVE_003">    
+	</objective>   	 	
+
+	<objectivehint name="E_RN_H_001" caption="$EVENT_NEIGHBORHOOD1_HINT_001"></objectivehint>
+	<objectivehint name="E_RN_H_002" caption="$EVENT_NEIGHBORHOOD1_HINT_002"></objectivehint>
+	<objectivehint name="E_RN_H_003" caption="$EVENT_NEIGHBORHOOD1_HINT_003"></objectivehint>
+	<objectivehint name="E_RN_H_004" caption="$EVENT_NEIGHBORHOOD1_HINT_004"></objectivehint>
+	
+	
+	
+	<!-- Event: Rough Neighbourhood 2 -->
+	<objective name="E_RN2_TEXT" caption="$OWNAME_ROUGH_NEIGHBORHOOD_2" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_RN2" blip="face_character"></indicator>
+	</objective>
+	
+	<objective name="E_RN2_SOCIAL" caption="$EVENT_NEIGHBORHOOD2_NAME_001">
+	</objective>
+	
+	<objective name="E_RN2_1" caption="$EVENT_NEIGHBORHOOD2_OBJECTIVE_001">
+		<!--indicator name="RoughNeighbourhood2:spawn" blip="event_objective"></indicator-->
+		<indicator name="E_RN2_Character:spawn" blip="event_objective"></indicator>
+	</objective>      
+
+	<objective name="E_RN2_2" caption="$EVENT_NEIGHBORHOOD2_OBJECTIVE_002">
+	</objective>
+
+	<objective name="E_RN2_3" caption="$EVENT_NEIGHBORHOOD2_OBJECTIVE_003">
+	</objective>   	      	
+	
+	<objectivehint name="E_RN2_H_1" caption="$EVENT_NEIGHBORHOOD2_HINT_001"></objectivehint>
+	<objectivehint name="E_RN2_H_2" caption="$EVENT_NEIGHBORHOOD2_HINT_002"></objectivehint>
+	<objectivehint name="E_RN2_H_3" caption="$EVENT_NEIGHBORHOOD2_HINT_003"></objectivehint>
+	<objectivehint name="E_RN2_H_4" caption="$EVENT_NEIGHBORHOOD2_HINT_004"></objectivehint>
+
+</objectives>

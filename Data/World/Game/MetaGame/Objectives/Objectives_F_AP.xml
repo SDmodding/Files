@@ -1,0 +1,44 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>  
+ 
+	<!-- AMANDA PHOTOS FAVOUR -->
+	<objective name="F_AP_TEXT" caption="$OWNAME_PHOTOGRAPHING_AMANDA"  autoflash="false">
+	   <indicator name="ProgressionTriggers_Favours-F_AP" blip="date_character" corona="arrow_social"></indicator>
+	</objective>
+
+	<objective name="F_AP_SOCIAL" caption="$OWNAME_PHOTOGRAPHING_AMANDA" autoflash="false">
+	</objective>
+
+	<objective name="F_AP_FIND_WAY" caption="$DATE_AMANDA2_OBJECTIVE_001">  
+	</objective>
+
+	<objective name="F_AP_TAKE_PIC" caption="$DATE_AMANDA2_OBJECTIVE_002"  uses_pda="true">
+		<indicator name="F_AP_Character:spawn" blip="event_objective"></indicator>
+	</objective>
+
+	<objective name="F_AP_SOCIAL_GUARD" caption="$DATE_AMANDA2_OBJECTIVE_003">
+		<indicator name="F_AP-sec_guard:spawn" blip="event_objective"></indicator>	
+	</objective>
+
+	<objective name="F_AP_SNAP_PHOTO1" caption="$DATE_AMANDA2_OBJECTIVE_004"  uses_pda="true">
+		<indicator name="F_AP_Character:spawn" blip="event_objective"></indicator>
+	</objective>
+
+	<objective name="F_AP_SNAP_PHOTO2" caption="$DATE_AMANDA2_OBJECTIVE_004"  uses_pda="true">
+		<indicator name="F_AP_Character:spawn" blip="event_objective"></indicator>
+	</objective>
+
+	<objective name="F_AP_SNAP_PHOTO3" caption="$DATE_AMANDA2_OBJECTIVE_004"  uses_pda="true">
+		<indicator name="F_AP_Character:spawn" blip="event_objective"></indicator>
+	</objective>
+
+	<objective name="F_AP_SNAP_PHOTO4" caption="$DATE_AMANDA2_OBJECTIVE_004"  uses_pda="true">
+		<indicator name="F_AP_Character:spawn" blip="event_objective"></indicator>
+	</objective>
+
+	
+</objectives>

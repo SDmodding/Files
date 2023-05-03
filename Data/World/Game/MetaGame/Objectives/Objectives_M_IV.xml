@@ -1,0 +1,102 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+	<objective name="M_IV_START" caption="$MISSION_IMPORTANTVISITOR_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-IVMission" blip="mission_start" corona="drive_mission"></indicator>
+	</objective>
+
+	<objective name="M_IV_GET_IN_CAR" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_002">
+		<indicator name="IVMission-SonnyCar:spawn" blip="mission_objective"></indicator>
+	</objective>
+
+	<objective name="M_IV_DRIVE_TO_SOHO" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_003">
+		<indicator name="IVMission-DriveToBar_DriveDest" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+
+	<objective name="M_IV_DRIVE_TO_KBAR" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_003B">
+		<indicator name="IVMission-DriveToBar_DriveDest" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+
+	<objective name="M_IV_ENTER_KBAR" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_006">
+		<indicator  name="IVMission-EnterBar_EntranceDest" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+
+	<objective name="M_IV_FOLLOW_HOSTESS" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_006B">
+		<indicator name="IVMission-KBar_Hostess:spawn" blip="mission_objective"></indicator>
+	</objective>
+
+	<objective name="M_IV_SIT_WITH_KING" caption="$MISSION_IMPORTANTVISITOR_SIT_WITH_KING">
+		<indicator name="IVMission-EnterBar_PlayerSitDest" blip="mission_objective"></indicator>
+	</objective>
+
+	<objective name="M_IV_FIND_KATUSHKA" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_009">
+		<indicator name="IVMission-KBar_Katushka:spawn" blip="social"></indicator>	
+	</objective>
+
+	<objective name="M_IV_DELIVER_KATUSHKA" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_009A">
+		<indicator name="IVMission-King:spawn" blip="mission_objective"></indicator>	
+	</objective>
+
+	<objective name="M_IV_FIND_VERA_AND_ALICE" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_009">
+		<indicator name="IVMission-KBar_Vera:spawn" blip="social"></indicator>	
+	</objective>
+
+	<objective name="M_IV_FIND_ILLYANA" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_009">
+		<indicator name="IVMission-KBar_Illyana:spawn" blip="social"></indicator>	
+	</objective>
+
+	<objective name="M_IV_TALK_TO_THUG" caption="$MISSION_IMPORTANTVISITOR_TALK_TO_THUG">
+		<indicator name="IVMission-KBar_IllyanaThug:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_IV_TALK_TO_ILLYANA" caption="$MISSION_IMPORTANTVISITOR_TALK_TO_ILLYANA">
+		<indicator name="IVMission-KBar_Illyana:spawn" blip="social"></indicator>	
+	</objective>
+
+	<objective name="M_IV_DELIVER_ILLYANA" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_008A">
+		<indicator name="IVMission-King:spawn" blip="mission_objective"></indicator>	
+	</objective>
+
+	<objective name="M_IV_RETURN_TO_KING" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_011A">
+		<indicator name="IVMission-King:spawn" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_IV_POSITION_FOR_PICTURES" caption="$MISSION_IMPORTANTVISITOR_GO_TO_PHOTO_SPOT">
+		<indicator name="IVMission-TakePhotos_PlayerStart" blip="mission_objective" corona="walk_mission" ></indicator>
+	</objective>
+	
+	<objective name="M_IV_TAKE_PICTURES" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_012">
+		<indicator name="IVMission-King:spawn" blip="mission_objective"></indicator>
+	</objective>
+
+	<objective name="M_IV_SING_KARAOKE" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_007">
+		<indicator name="IVMission-KaraokeRoom_MachineMarker" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_IV_SIT_WITH_KING_BEFORE_KARAOKE" caption="$MISSION_IMPORTANTVISITOR_SIT_WITH_KING">
+	</objective>
+
+	<objective name="M_IV_RETURN_TO_CAR" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_013">
+		<indicator name="IVMission-SonnyCar:spawn" blip="mission_objective"></indicator>
+	</objective>
+
+	<objective name="M_IV_PARKING_LOT_THUGS" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_014">
+	</objective>
+
+	<objective name="M_IV_GET_BACK_IN_CAR" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_002">
+		<indicator name="IVMission-SonnyCar:spawn" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_IV_PICK_UP_KING" caption="$MISSION_IMPORTANTVISITOR_PICK_UP_KING">
+		<indicator name="IVMission-King:spawn" blip="mission_objective"></indicator>
+	</objective>
+
+	<objective name="M_IV_DRIVE_TO_HOTEL" caption="$MISSION_IMPORTANTVISITOR_OBJECTIVE_016">
+		<indicator name="IVMission-GoToHotel_DriveDest" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+
+</objectives>

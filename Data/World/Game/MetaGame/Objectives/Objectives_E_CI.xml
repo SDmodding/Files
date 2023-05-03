@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+
+<objectives>
+
+	<!-- objective hints -->
+	<objectivehint name="E_CI_Bail" caption="$MISSION_COLLECTINSURANCE_HINT_001"></objectivehint>
+
+		<!--**********Collect Insurance***********-->
+	<objective name="E_CI_TEXT" caption="$OWNAME_COLLECT_INSURANCE"  autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_CollectInsurance" blip="face_character" ></indicator>
+	</objective>
+
+	<objective name="E_CI_SOCIAL" caption="$EVENT_COLLECTINSURANCE_NAME_001" autoflash="false">
+	</objective>
+
+	<objective name="E_CI_TAKE_CAR" caption="$EVENT_COLLECTINSURANCE_OBJECTIVE_001">
+		<indicator name="CollectInsurance-car:spawn" blip="event_objective"></indicator>
+	</objective>
+	<objective name="E_CI_002" caption="$EVENT_COLLECTINSURANCE_OBJECTIVE_002">
+		<indicator name="CollectInsurance-harbour_stop" blip="event_objective"></indicator>
+	</objective>
+	<objective name="E_CI_WRECK_CAR" caption="$EVENT_COLLECTINSURANCE_OBJECTIVE_003">
+		<indicator name="CollectInsurance-harbour" blip="event_objective"></indicator>
+	</objective>
+	
+			<!--**********Collect Insurance 2 ***********-->
+			
+	<objective name="E_CI2_TEXT" caption="$OWNAME_COLLECT_INSURANCE_2"  autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_CollectInsurance2" blip="face_character"></indicator>
+	</objective>		
+	<objective name="E_CI2_SOCIAL" caption="$EVENT_COLLECTINSURANCE2_NAME_001" autoflash="false">
+	</objective>	
+	<objective name="E_CI2_TAKE_CAR" caption="$EVENT_COLLECTINSURANCE2_OBJECTIVE_001">
+		<indicator name="CollectInsurance2-car:spawn" blip="event_objective"></indicator>
+	</objective>
+	<objective name="E_CI2_002" caption="$EVENT_COLLECTINSURANCE2_OBJECTIVE_002">
+		<indicator name="CollectInsurance2-harbour_stop" blip="event_objective"></indicator>
+	</objective>
+	<objective name="E_CI2_WRECK_CAR" caption="$EVENT_COLLECTINSURANCE2_OBJECTIVE_003">
+		<indicator name="CollectInsurance2-harbour" blip="event_objective"></indicator>
+	</objective>
+	
+	
+</objectives>

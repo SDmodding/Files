@@ -1,0 +1,111 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+<!--------------------------------------------------------------------
+
+                             EVENTS
+
+---------------------------------------------------------------------->
+
+	
+		
+	
+<!--------------------------------------------------------------------
+
+                              FAVORS
+
+---------------------------------------------------------------------->
+
+	<!--********** Event - Black Pearl Intro  ***********-->
+	<objective name="F_BPI_TEXT" caption="$EVENT_BLACKPEARLINTRO_NAME_000"  autoflash="false">
+		<indicator name="ProgressionTriggers_Favours-F_BlackPearlIntro" blip="face_character"></indicator>
+	</objective>
+	<objective name="F_BPI_SOCIAL" caption="$EVENT_BLACKPEARLINTRO_NAME_000" autoflash="false">
+	</objective>
+	<objective name="F_BPI_001" caption="$EVENT_BLACKPEARLINTRO_OBJECTIVE_005">
+		<indicator name="BPIEvent-boat_convenient:spawn" blip="event_objective" corona="walk_event"></indicator>
+	</objective>
+	
+	<objective name="F_BPI_002" caption="$EVENT_BLACKPEARLINTRO_OBJECTIVE_001">
+		<indicator name="BPIEvent-BPI_spawn_buoy1:spawn" blip="event_objective" corona="walk_event"></indicator>
+		<indicator name="BPIEvent-BPI_spawn_buoy2:spawn" blip="event_objective" corona="walk_event"></indicator>
+	</objective>
+	
+	<objective name="F_BPI_003" caption="$EVENT_BLACKPEARLINTRO_OBJECTIVE_002">
+		<indicator name="BPIEvent-BPI_spawn_buoy1:spawn" blip="event_objective" corona="walk_event"></indicator>
+		<indicator name="BPIEvent-BPI_spawn_buoy2:spawn" blip="event_objective" corona="walk_event"></indicator>
+	</objective>
+	
+	<objective name="F_BPI_004" caption="$EVENT_BLACKPEARLINTRO_OBJECTIVE_003">
+		<indicator name="ProgressionTriggers_Favours-F_BlackPearlIntro" blip="event_objective" corona="walk_event"></indicator>
+	</objective>
+	
+	<objective name="F_BPI_005" caption="$EVENT_BLACKPEARLINTRO_OBJECTIVE_006">
+		<indicator name="BPH_Van3-BPH1_Dropoff_MKR1" blip="event_objective" corona="walk_event"></indicator>
+	</objective>
+	
+	<objective name="F_BPI_006" caption="$EVENT_BLACKPEARLINTRO_OBJECTIVE_004">
+	</objective>
+	
+	<objective name="F_BPI_007" caption="$EVENT_BLACKPEARLINTRO_OBJECTIVE_007">
+	</objective>
+	
+	
+
+		<!-- SAFEHOUSE PURCHASE EVENTS -->
+	<objective name="E_SHAB_00" caption="$EVENT_SAFEHOUSEAB_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-SHABEvent" blip="face_character"></indicator>
+	</objective>
+	<objective name="E_SafeHouseAB_TEXT" caption="$EVENT_SAFEHOUSEAB_NAME_001" autoflash="false">
+	</objective>
+	<objective name="E_SafeHouseAB_SOCIAL" caption="$EVENT_SAFEHOUSEAB_NAME_001" autoflash="false">
+	</objective>
+	<objective name="E_SHAB_01" caption="$EVENT_SAFEHOUSEAB_NAME_002" autoflash="false">
+		<!--indicator name="SHABEvent-Spawner_Agent:spawn" blip="event_start"></indicator-->
+	</objective>
+	
+	<objective name="E_SHKT_00" caption="$EVENT_SAFEHOUSEKT_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-SHKTEvent" blip="face_character"></indicator>
+	</objective>
+	<objective name="E_SafeHouseKT_TEXT" caption="$EVENT_SAFEHOUSEKT_NAME_001" autoflash="false">
+	</objective>
+	<objective name="E_SafeHouseKT_SOCIAL" caption="$EVENT_SAFEHOUSEKT_NAME_001" autoflash="false">
+	</objective>
+	<objective name="E_SHKT_01" caption="$EVENT_SAFEHOUSEKT_NAME_002" autoflash="false">
+		<!--indicator name="SHKTEvent-Spawner_Agent:spawn" blip="event_start"></indicator-->
+	</objective>
+	
+	<objective name="E_SHCT1_00" caption="$EVENT_SAFEHOUSECT1_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-SHCT1Event" blip="face_character"></indicator>
+	</objective>
+	<objective name="E_SafeHouseCT1_TEXT" caption="$EVENT_SAFEHOUSECT1_NAME_001" autoflash="false">
+	</objective>
+	<objective name="E_SafeHouseCT1_SOCIAL" caption="$EVENT_SAFEHOUSECT1_NAME_001" autoflash="false">
+	</objective>
+	<objective name="E_SHCT1_01" caption="$EVENT_SAFEHOUSECT1_NAME_002" autoflash="false">
+		<!--indicator name="SHCT1Event-Spawner_Agent:spawn" blip="event_start"></indicator-->
+	</objective>
+	
+		
+<!--------------------------------------------------------------------
+
+                              JOBS
+
+---------------------------------------------------------------------->
+	
+	<!--******************************Race System************************************** --> 
+	<objective name="R_CURRENT_BIG_MARKER" caption="$EVENT_RACE_CURRENT_CHECKPOINT" autoflash="false">
+	</objective>
+	
+	<objective name="R_NEXT_RACER" caption="$EVENT_RACE_NEXT_RACER" autoflash="false">
+	</objective>
+	
+	<objective name="R_AI_VEHICLES" caption="$EVENT_RACE_WIN_THE_RACE" autoflash="false">
+	</objective>
+	
+</objectives>	
+	

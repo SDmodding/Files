@@ -1,0 +1,69 @@
+<!--
+	
+	See Objectives.xml for details
+	
+-->
+<objectives>
+
+	<objective name="BTB_1_Intro_1" caption="$MISSION_BRIDETOBE_NAME_001" autoflash='false'>
+		<indicator name="ProgressionTriggers_Missions-M_BTB" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="BTB_4_Drive_To_Shop" caption="$MISSION_BRIDETOBE_OBJECTIVE_005">
+		<indicator name="BTBMission-mkr_shopping" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="BTB_5_Choose_Flowers" caption="$MISSION_BRIDETOBE_OBJECTIVE_017">
+		<indicator name="BTBMission-Peggy:spawn" blip="social" ></indicator>
+	</objective>
+	
+	<objective name="BTB_5_Enter_Car" caption="$MISSION_BRIDETOBE_OBJECTIVE_007">
+		<indicator name="BTBMission-PeggyCar:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	
+	<objective name="BTB_6_Drive_To_Cake" caption="$MISSION_BRIDETOBE_OBJECTIVE_008">
+		<indicator name="BTBMission-mkr_cake" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="BTB_6_Stop_Delivery" caption="$MISSION_BRIDETOBE_OBJECTIVE_008A">
+		<indicator name="BTBMission-mkr_cake" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="BTB_7_Stop_The_Van_NoHijack" caption="$MISSION_BRIDETOBE_OBJECTIVE_016">
+		<indicator name="BTBMission-sp_cakeVan:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	
+	<objective name="BTB_7_Stop_The_Van" caption="$MISSION_BRIDETOBE_OBJECTIVE_009">
+		<indicator name="BTBMission-sp_cakeVan:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+
+	<objective name="BTB_7_Deliver_Cake" caption="$MISSION_BRIDETOBE_OBJECTIVE_010">
+		<indicator name="BTBMission-Marker_Cake_Delivery" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="BTB_7a_Drive_To_Temple" caption="$MISSION_BRIDETOBE_OBJECTIVE_013">
+		<indicator name="BTBMission-mkr_temple" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+
+	<objective name="BTB_7b_Get_Robe" caption="$MISSION_BRIDETOBE_OBJECTIVE_018">
+		<indicator name="BTBMission-SmallShack" blip="mission_objective"></indicator>	
+	</objective>
+	
+	<objective name="BTB_7b_Get_Orchid" caption="$MISSION_BRIDETOBE_OBJECTIVE_014">
+		<indicator name="BTBMission-POI_PickOrchidBTB_0001" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="BTB_7b_Defeat_Monks" caption="$MISSION_BRIDETOBE_OBJECTIVE_TRIAD" autoflash='false'></objective>
+	
+	<objective name="BTB_7c_Return_To_Peggy" caption="$MISSION_BRIDETOBE_OBJECTIVE_015">
+		<indicator name="BTBMission-PeggyCar:spawn" blip="mission_objective" corona="arrow_objective"></indicator>	
+	</objective>
+	
+	<objective name="BTB_7d_Lose_Cops" caption="$MISSION_BRIDETOBE_OBJECTIVE_004"></objective>
+	
+	<objective name="BTB_8_Drop_Peggy_Off" caption="$MISSION_BRIDETOBE_OBJECTIVE_012">
+		<indicator name="BTBMission-mkr_mahjong" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>	
+	
+</objectives>
+	

@@ -1,0 +1,149 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+		
+	<!-- SMUGGLING RING 1 EVENT -->
+	<objective name="E_SR1_001" caption="$EVENT_SMUGGLINGRING1_OBJECTIVE_001">
+		<indicator name="E_SR1-Spawn_Thug01:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR1-Spawn_Thug02:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR1-Spawn_Thug03:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR1-Spawn_Thug04:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR1-Spawn_Thug05:spawn" blip="enemy"></indicator>
+	</objective>
+	<objective name="E_SR1_002" caption="$EVENT_SMUGGLINGRING1_OBJECTIVE_002">
+		<indicator name="KT_Lockboxes-E_SR1" blip="event_objective" corona="arrow_objective"></indicator>
+	</objective>
+	
+	<!-- SMUGGLING RING 2 EVENT -->
+	<objective name="E_SR2_001" caption="$EVENT_SMUGGLINGRING2_OBJECTIVE_001">
+		<indicator name="E_SR2-Spawn_Thug01:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR2-Spawn_Thug02:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR2-Spawn_Thug03:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR2-Spawn_Thug04:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR2-Spawn_Thug05:spawn" blip="enemy"></indicator>
+	</objective>
+	<objective name="E_SR2_002" caption="$EVENT_SMUGGLINGRING2_OBJECTIVE_002">
+		<indicator name="NP_Lockboxes-E_SR2" blip="event_objective" corona="arrow_objective"></indicator>
+	</objective>
+	
+	<!-- SMUGGLING RING 3 EVENT -->
+	<objective name="E_SR3_001" caption="$EVENT_SMUGGLINGRING3_OBJECTIVE_001">
+		<indicator name="E_SR3-Spawn_Thug01:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR3-Spawn_Thug02:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR3-Spawn_Thug03:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR3-Spawn_Thug04:spawn" blip="enemy"></indicator>
+	</objective>
+	<objective name="E_SR3_002" caption="$EVENT_SMUGGLINGRING3_OBJECTIVE_002">
+		<indicator name="KT_Lockboxes-E_SR3" blip="event_objective" corona="arrow_objective"></indicator>
+	</objective>
+	
+	<!-- SMUGGLING RING 4 EVENT -->
+	<objective name="E_SR4_001" caption="$EVENT_SMUGGLINGRING4_OBJECTIVE_002">
+		<indicator name="CN_Lockboxes-E_SR4" blip="event_objective" corona="arrow_objective"></indicator>
+	</objective>
+	<objective name="E_SR4_002" caption="$EVENT_SMUGGLINGRING4_OBJECTIVE_001">
+		<indicator name="E_SR4-Spawn_Ambient01:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR4-Spawn_Ambient02:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR4-Spawn_Ambient03:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR4-Spawn_Ambient04:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR4-Spawn_Ambient05:spawn" blip="enemy"></indicator>
+		<indicator name="E_SR4-Spawn_Ambient06:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	
+	<!------------------------------------------------------->
+	<!----------------------- FAVOURS ----------------------->
+	<!------------------------------------------------------->	
+	
+	
+	
+	<!-- PIECE OF WORK FAVOUR -->
+		<objective name="F_PW_TEXT" caption="$EVENT_PIECEOFWORK_NAME_001"  autoflash="false">
+			<indicator name="ProgressionTriggers_Favours-F_PW" blip="face_character"></indicator>
+		</objective>
+		<objective name="F_PW_SOCIAL" caption="$EVENT_PIECEOFWORK_NAME_001" autoflash="false">
+		</objective>
+		<!-- Break into the construction site -->
+		<objective name="F_PW_000" caption="$EVENT_PIECEOFWORK_OBJECTIVE_000">
+			<indicator name="F_PW-Marker_ConstructionSiteEntrance" blip="event_objective"></indicator>
+		</objective>
+		<!-- Meet with the gun vendor -->
+		<objective name="F_PW_001" caption="$EVENT_PIECEOFWORK_OBJECTIVE_001">
+			<indicator name="F_PW-Spawn_GunVendor:spawn" blip="event_objective" corona="arrow_friendly"></indicator>
+		</objective>
+		<!-- Raise your heat level to 2 in front of the gun vendor -->
+		<objective name="F_PW_002" caption="$EVENT_PIECEOFWORK_OBJECTIVE_002">
+			<indicator name="F_PW-Spawn_Cop01:spawn" blip="event_objective"></indicator>
+			<indicator name="F_PW-Spawn_Cop02:spawn" blip="event_objective"></indicator>
+			<indicator name="F_PW-Spawn_Cop03:spawn" blip="event_objective"></indicator>
+			<indicator name="F_PW-Spawn_Cop04:spawn" blip="event_objective"></indicator>
+			<indicator name="F_PW-Spawn_Cop05:spawn" blip="event_objective"></indicator>
+			<indicator name="F_PW-Spawn_Cop06:spawn" blip="event_objective"></indicator>
+		</objective>
+		<!-- Lose the cops -->
+		<objective name="F_PW_003" caption="$EVENT_PIECEOFWORK_OBJECTIVE_003"></objective>
+		<!-- Purchase a gun from the gun vendor -->
+		<objective name="F_PW_004" caption="$EVENT_PIECEOFWORK_OBJECTIVE_004">
+			<indicator name="F_PW-Spawn_GunVendor:spawn" blip="event_objective" corona="arrow_friendly"></indicator>
+		</objective>
+		<!-- Give the gun to Granny Annie -->
+		<objective name="F_PW_005" caption="$EVENT_PIECEOFWORK_OBJECTIVE_005">
+			<indicator name="F_PW_Character:spawn" blip="event_objective" corona="arrow_friendly"></indicator>
+		</objective>
+		<!-- Re-equip the gun -->
+		<objective name="F_PW_006" caption="$EVENT_PIECEOFWORK_OBJECTIVE_006"></objective>
+	
+  
+
+  
+	<!-- SMUGGLING RING INTRO FAVOUR -->
+	<objective name="F_SRI_TEXT" caption="$FAVOUR_SMUGGLINGRING_NAME_001"  autoflash="false">
+	   <indicator name="ProgressionTriggers_Favours-F_SRI" blip="face_character"></indicator>
+	</objective>
+	<objective name="F_SRI_SOCIAL" caption="$FAVOUR_SMUGGLINGRING_NAME_001" autoflash="false">
+	</objective>
+	<objective name="F_SRI_001" caption="$EVENT_SMUGGLINGRINGINTRO_OBJECTIVE_001">
+		<indicator name="F_SRI-Marker_DenLocation" blip="event_objective"></indicator>
+	</objective>
+	<objective name="F_SRI_002" caption="$EVENT_SMUGGLINGRINGINTRO_OBJECTIVE_002">
+		<indicator name="F_SRI-Spawn_Thug01:spawn" blip="enemy"></indicator>
+		<indicator name="F_SRI-Spawn_Thug02:spawn" blip="enemy"></indicator>
+		<indicator name="F_SRI-Spawn_Thug03:spawn" blip="enemy"></indicator>
+		<indicator name="F_SRI-Spawn_Thug04:spawn" blip="enemy"></indicator>
+	</objective>
+	<objective name="F_SRI_003" caption="$EVENT_SMUGGLINGRINGINTRO_OBJECTIVE_003">
+		<indicator name="AB_Lockboxes-F_SRI" blip="event_objective" corona="arrow_objective"></indicator>
+	</objective>
+  
+	
+	<!------------------------------------------------------->
+	<!----------------------- DATES ------------------------->
+	<!------------------------------------------------------->
+	
+	
+	<!-- AMANDA SHOPPING DATE -->
+	<objective name="D_A1_000" caption="$DATE_AMANDA1_NAME_000" autoflash="false"></objective>
+	<objective name="D_A1_001" caption="$DATE_AMANDA1_OBJECTIVE_001">
+		<indicator name="D_ASDDate-Marker_Goto_Shop" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>	
+	<objective name="D_A1_002" caption="$DATE_AMANDA1_OBJECTIVE_002">
+		<indicator name="D_ASDDate-Spawner_TempShopKeeper:spawn" blip="store_clothing"></indicator>
+	</objective>
+	
+	<!-- TIFFANY SHOPPING DATE -->
+	<objective name="D_DTS_001" caption="$DATE_TIFFANY_OBJECTIVE_001">
+    <indicator name="DTSDate-Marker_Goto_Shop" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>	
+	<objective name="D_DTS_002" caption="$DATE_TIFFANY_OBJECTIVE_002">
+		<indicator name="DTSDate-Spawner_Woman_Bribe:spawn" blip="mission_objective" corona="arrow_friendly"></indicator>
+		<indicator name="DTSDate-Spawner_Woman_Help:spawn" blip="mission_objective" corona="arrow_friendly"></indicator>
+		<indicator name="DTSDate-Spawner_Woman_Charm:spawn" blip="mission_objective" corona="arrow_friendly"></indicator>
+	</objective>
+	<objective name="D_DTS_003" caption="$DATE_TIFFANY_OBJECTIVE_003">
+		<indicator name="DTSDate-Marker_Goto_Shop" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+</objectives>	

@@ -1,0 +1,31 @@
+<!--
+
+	See Objectives.xml for details
+
+-->
+<objectives>
+
+	<objective name="DEMO_OPENWORLD_01" caption="Go to <font color='#34b76f'>The Golden Koi</font>">
+		<indicator name="EndLocations-M_SU" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>	
+	
+	<objective name="DEMO_OPENWORLD_A" caption="Take care of <font color='#34b76f'>The 18K</font>">
+		<indicator name="ProgressionTriggers_Missions-BLMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>	
+	
+	<objective name="DEMO_OPENWORLD_02" caption="Go to <font color='#34b76f'>The Golden Koi</font>">
+		<indicator name="Locations-Demo_Apothecary" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="DEMO_OPENWORLD_TONG" caption="Meet with <font color='#34b76f'>Mr. Tong</font>">
+		<!--<indicator name="Locations-R_CT_05_Spawn" blip="mission_start" corona="walk_mission"></indicator>-->
+		<indicator name="ProgressionTriggers_Missions-TEMissionDemo" blip="mission_start" corona="walk_mission"></indicator>		
+	</objective>
+	
+
+	<objective name="M_TE_DEMO" caption="Meet with <font color='#34b76f'>Mr. Tong </font>" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-TEMissionDemo" blip="mission_start" corona="walk_mission"></indicator>	
+	</objective>
+
+
+</objectives>

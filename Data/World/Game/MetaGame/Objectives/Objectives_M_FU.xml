@@ -1,0 +1,54 @@
+<!--
+	
+	See Objectives.xml for details
+ 
+-->
+
+<objectives>	
+
+	<objective name="M_FU_START" caption="$MISSION_FUNERAL_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-FUMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FU_GO_TO_STORE" caption="$MISSION_FUNERAL_OBJECTIVE_003">
+		<indicator name="FUMission-GoToStore_StoreParkingSpot" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FU_BUY_SUIT" caption="$MISSION_FUNERAL_OBJECTIVE_004">
+		<indicator name="FUMission-GoToStore_Clerk:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="M_FU_GO_TO_CEMETERY" caption="$MISSION_FUNERAL_DRIVE_TO_CEMETERY">
+		<indicator name="FUMission-GoToCemetery_PlayerDest" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_FU_ELIMINATE_18K" caption="$MISSION_FUNERAL_OBJECTIVE_010">
+	</objective>
+	
+	<objective name="M_FU_TOPLEVEL_ADVANCE" caption="$MISSION_FUNERAL_ADVANCE_DOWN">
+		<indicator name="FUMission-MidLevel_PlayerDest" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FU_MIDLEVEL_ADVANCE" caption="$MISSION_FUNERAL_ADVANCE_DOWN">
+		<indicator name="FUMission-MidLevel_PlayerDest" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FU_GO_TO_RIVER" caption="$MISSION_FUNERAL_GO_TO_RIVER">
+		<indicator name="FUMission-River_EntranceDest" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FU_FOLLOW_RIVER" caption="$MISSION_FUNERAL_FOLLOW_RIVER">
+		<indicator name="FUMission-River_ExitDest" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FU_TAKE_OUT_GRENADE_LAUNCHER" caption="$MISSION_FUNERAL_TAKE_OUT_GRENADE_LAUNCHER">
+	</objective>
+	
+	<objective name="M_FU_GROUNDLEVEL_ADVANCE" caption="$MISSION_FUNERAL_ADVANCE_DOWN">
+		<indicator name="FUMission-GroundLevel_PlayerDest" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_FU_CLEAR_PARKING_LOT" caption="$MISSION_FUNERAL_OBJECTIVE_018">
+	</objective>
+
+</objectives>

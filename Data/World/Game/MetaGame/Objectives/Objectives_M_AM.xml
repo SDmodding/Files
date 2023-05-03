@@ -1,0 +1,107 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+
+	<!--******************************Amanda Mission**************************************-->  
+		
+	<objective name="M_AM_000" caption="$MISSION_AMANDA_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-AMMission" blip="mission_start" corona="walk_mission"></indicator>
+    </objective> 
+
+	<objective name="M_AM_Get_Car" caption="$MISSION_AMANDA_OBJECTIVE_GET_YOUR_CAR">
+		<indicator name="AMMission-mkrGetCar" blip="mission_objective"></indicator>
+	</objective>
+
+	<objective name="M_AM_Drive_To_BamBam" caption="$MISSION_AMANDA_GOTO_BAMBAM">
+	</objective>
+
+	<objective name="M_AM_Drive_To_Temple" caption="$MISSION_AMANDA_GOTO_TEMPLE">
+		<indicator name="AMMission-Temple" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+		
+	<objective name="M_AM_003" caption="$MISSION_AMANDA_OBJECTIVE_003">
+		<indicator name="AMMission-spStudent1:spawn" blip="enemy"></indicator>
+		<indicator name="AMMission-spStudent2:spawn" blip="enemy"></indicator>
+		<indicator name="AMMission-spStudent3:spawn" blip="enemy"></indicator>
+		<indicator name="AMMission-spStudent4:spawn" blip="enemy"></indicator>
+	</objective>	
+		
+	<objective name="M_AM_Drive_To_Dojo" caption="$MISSION_AMANDA_OBJECTIVE_004">
+		<indicator name="AMMission-mkrDojoEntrance1" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+		
+		
+	<objective name="M_AM_Directional_Attack" caption="$MISSION_AMANDA_DIRECTIONAL_ATTACK">			
+	</objective>
+
+	<objective name="M_AM_Directional_Attack_Again" caption="$MISSION_AMANDA_DIRECTIONAL_ATTACK_AGAIN">			
+	</objective>
+	
+	<objective name="M_AM_Sweep_Attack" caption="$MISSION_AMANDA_SWEEP_ATTACK">
+	</objective>
+	
+	<objective name="M_AM_Attack_Students" caption="$MISSION_AMANDA_OBJECTIVE_DEFEAT_STUDENTS">
+	</objective>
+		
+	<!--*****************************Dojo**************************************-->  
+	
+	<objective name="CSCH_000" caption="$MISSION_MARTIALARTS_NAME_001" autoflash="false">
+		<indicator name="Locations-MASchool" blip="martial_arts_objective" corona="walk_mission" ></indicator>
+	</objective>
+		
+	<objective name="CSCH_003" caption="$MISSION_MARTIALARTS_OBJECTIVE_003">
+		<indicator name="Dojo-mkrDefensiveUpgrade" blip="martial_arts" autoflash="false"></indicator>
+	</objective>
+	
+	<objective name="CSCH_004" caption="$MISSION_MARTIALARTS_OBJECTIVE_004">
+		<indicator name="Dojo-mkrOffensiveUpgrade" blip="martial_arts" autoflash="false"></indicator>
+	</objective>
+		
+	<objective name="CSCH_002" caption="$MISSION_MARTIALARTS_OBJECTIVE_001">
+		<indicator name="Dojo-spOffensiveStudent1:spawn" blip="enemy"></indicator>
+		<indicator name="Dojo-spOffensiveStudent2:spawn" blip="enemy"></indicator>
+		<indicator name="Dojo-spDefensiveStudent1:spawn" blip="enemy"></indicator>
+		<indicator name="Dojo-spDefensiveStudent2:spawn" blip="enemy"></indicator>
+	</objective>
+		
+	<objective name="CSCH_005" caption="$MISSION_MA_STUN_KNEE">
+	</objective>
+
+	<objective name="CSCH_006" caption="$MISSION_MA_STUN_GRAPPLE">
+	</objective>
+	
+	<objective name="CSCH_007" caption="$MISSION_MA_CHARGE_LEG_BREAK">
+	</objective>
+	
+	<objective name="CSCH_008" caption="$MISSION_MA_ARM_BREAK">
+	</objective>
+	
+	<objective name="CSCH_009" caption="$MISSION_MA_GRAPPLE_FINISHER">
+	</objective>
+	
+	<objective name="CSCH_010" caption="$MISSION_MA_STUN_FINISHER">
+	</objective>
+	
+	<objective name="CSCH_011" caption="$MISSION_MA_TACKLE_DISARM">
+	</objective>
+	
+	<objective name="CSCH_012" caption="$MISSION_MA_CHARGE_JUMP_KICK">
+	</objective>
+	
+	<objective name="CSCH_013" caption="$MISSION_MA_RUNNING_JUMP_KICK">
+	</objective>
+	
+	<objective name="CSCH_014" caption="$MISSION_MA_CHARGE_ROUNDHOUSE_KICK">
+	</objective>
+	
+	<objective name="CSCH_015" caption="$MISSION_MA_BURST_ATTACK">
+	</objective>
+	
+	<objective name="CSCH_DEFEAT" caption="$MISSION_MA_DEFEAT_STUDENTS">
+	</objective>	
+		
+</objectives>

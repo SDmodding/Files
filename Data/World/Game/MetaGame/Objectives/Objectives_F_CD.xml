@@ -1,0 +1,40 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>  
+ 
+	<!-- COP DRAW FAVOUR -->
+		<objective name="E_CD_TEXT" caption="$OWNAME_COP_DRAW"  autoflash="false">
+			<indicator name="ProgressionTriggers_Events-E_CD" blip="face_character"></indicator>
+		</objective>
+		<objective name="E_CD_SOCIAL" caption="$FAVOUR_COPDRAW_NAME_001" autoflash="false">
+		</objective>
+		<!-- Get the attention of the cops-->	
+		<objective name="E_CopDraw_1" caption="$EVENT_COPDRAW_OBJECTIVE_001">
+			<indicator name="CopDraw-mkrPopcanCorona" blip="event_objective" corona="walk_event"></indicator>				
+		</objective>
+		<!-- Cops and no cans-->	
+		<objective name="E_CopDraw_1a" caption="$EVENT_COPDRAW_OBJECTIVE_001">
+			<indicator name="CopDraw-Spawn_Cop01:spawn" blip="event_objective" corona="arrow_social"></indicator>				
+			<indicator name="CopDraw-Spawn_Cop02:spawn" blip="event_objective" corona="arrow_social"></indicator>				
+			<indicator name="CopDraw-Spawn_Cop03:spawn" blip="event_objective" corona="arrow_social"></indicator>					
+		</objective>
+
+		<!-- Lead the cops away-->	
+		<objective name="E_CopDraw_2" caption="$EVENT_COPDRAW_OBJECTIVE_002">
+			<indicator name="CopDraw-mkr_EndLocation" blip="event_objective" corona="walk_event"></indicator>			
+		</objective>
+		<!-- Return to Shao's car -->
+		<objective name="E_CopDraw_3" caption="$EVENT_COPDRAW_OBJECTIVE_003">
+			<indicator name="CopDraw-Spawn_ThugCar:spawn" blip="event_objective"></indicator>
+		</objective>
+		<!-- Return the car to Shao -->
+		<objective name="E_CopDraw_4" caption="$EVENT_COPDRAW_OBJECTIVE_004">
+			<indicator name="E_CD_Character:spawn" blip="event_objective"></indicator>
+		</objective>
+		<!-- Exit the car -->
+		<objective name="E_CopDraw_5" caption="$EVENT_COPDRAW_OBJECTIVE_005"></objective>
+	
+</objectives>

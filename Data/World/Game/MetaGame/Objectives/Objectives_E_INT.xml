@@ -1,0 +1,35 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+    <!-- Interrogation Favour -->		
+		
+	<objective name="E_INT_TEXT" caption="$EVENT_INTERROGATION_NAME_001"  autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_Interrogation" blip="face_character"></indicator>
+	</objective>
+	
+	<objective name="E_INT_SOCIAL" caption="$EVENT_INTERROGATION_NAME_001" autoflash="false">
+	</objective>
+	
+	<objective name="E_I_FINDINFORMANT" caption="$EVENT_INTERROGATION_OBJECTIVE_001">
+		<indicator name="Interrogation-car:spawn" blip="enemy" corona="arrow_hostile"></indicator>       
+	</objective>                 
+
+	<objective name="E_I_FOLLOWINFORMANT" caption="$EVENT_INTERROGATION_OBJECTIVE_002">
+		<indicator name="Interrogation-car:spawn" blip="enemy" corona="arrow_hostile"></indicator>       
+	</objective>   
+
+	<objective name="E_I_CONVINCEINFORMANT" caption="$EVENT_INTERROGATION_OBJECTIVE_003">
+		<indicator name="Interrogation-informant:spawn" blip="enemy" corona="arrow_hostile"></indicator>       
+	</objective>   		
+
+	<objective name="E_I_INTIMIDATE" caption="$EVENT_INTERROGATION_OBJECTIVE_004">
+		<indicator name="Interrogation-informant:spawn" blip="social" corona="arrow_social"></indicator>       
+	</objective>
+
+
+
+</objectives>

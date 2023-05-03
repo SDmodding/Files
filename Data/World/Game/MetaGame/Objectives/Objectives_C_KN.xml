@@ -1,0 +1,230 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+	<!-- ************************** Kidnapper Lead Start *************************-->
+	
+	<objective name="C_KCStart_001" caption="$CASE_NEW_ASSIGNMENT" autoflash="false">		
+	</objective>
+	
+	<!-- ************************** Kidnapper Lead 1 *************************-->
+	
+	<objective name="C_KC1_000" caption="$CASE_KIDNAPPER_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-KidnapperCase_1" blip="case_start" corona="walk_case" ></indicator>
+	</objective>
+
+	<objective name="C_K1_Talk_To_Ilyana" caption="$CASE_K1_TALK_TO_ILYANA">		
+		<indicator name="KL1Case-Ilyana:spawn" blip="social"></indicator>
+	</objective>
+
+	<objective name="C_K1_Talk_To_Leo" caption="$CASE_K1_TALK_TO_LEO">
+		<indicator name="KL1Case-Leo:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="C_K1_BackDoorHelpMe01" caption="$CASE_K1_BACKDOOR">
+		<indicator name="KL1Case-ApartmentBreadCumb01" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="C_K1_BackDoor" caption="$CASE_K1_BACKDOOR">
+		<indicator name="KL1Case-BackDoor" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="C_K1_Apartment" caption="$CASE_K1_KATUSHKAS_APARTMENT">
+		<indicator name="KL1Case-SearchHere" blip="case_objective" corona="walk_case" ></indicator>
+	</objective>
+
+	<objective name="C_K1_Search_Apartment" caption="$CASE_K1_SEARCH_APARTMENT">
+	</objective>
+	
+	<objective name="C_K1_SeachCPU" caption="$CASE_K1_SEARCH_COMPUTER">
+		<indicator name="KL1Case-Search_CPU" blip="case_objective" corona="walk_case" ></indicator>
+	</objective>
+	<objective name="C_K1_SeachTV" caption="$CASE_K1_SEARCH_TV">
+		<indicator name="KL1Case-Search_TV" blip="case_objective" corona="walk_case" ></indicator>
+	</objective>
+	<objective name="C_K1_SeachKitchen" caption="$CASE_K1_SEARCH_KITCHEN">
+		<indicator name="KL1Case-Search_Kitchen" blip="case_objective" corona="walk_case" ></indicator>
+	</objective>
+
+	<objective name="C_K1_PhotoScene" caption="$CASE_K1_PHOTO_APARTMENT" uses_pda="true">
+	</objective>
+
+	<objective name="C_K1_PhotoKitchen" caption="$CASE_KIDNAPPER_PHOTO_KITCHEN">
+		<indicator name="KL1Case-PhotoKitchen" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="C_K1_PhotoCPU" caption="$CASE_KIDNAPPER_PHOTO_CPU">
+		<indicator name="KL1Case-PhotoCPU" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="C_K1_PhotoTV" caption="$CASE_KIDNAPPER_PHOTO_TV">
+		<indicator name="KL1Case-PhotoTV" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="C_K1_Call_Teng" caption="$CASE_PS_CALL_TENG" uses_pda="true">
+	</objective>
+	
+	<objective name="C_K1_Leave" caption="$CASE_K1_LEAVE_APARTMENT">
+		<indicator name="KL1Case-Apartment" blip="case_objective" corona="walk_case" ></indicator>
+	</objective>
+
+	<objective name="C_K1_Leave2" caption="$CASE_K1_LEAVE_APARTMENT">
+		<indicator name="KL1Case-BackDoor" blip="case_objective" corona="walk_case" ></indicator>
+	</objective>
+
+	<objective name="C_K1_LeaveBack1" caption="$CASE_K1_LEAVE_APARTMENT">
+		<indicator name="KL1Case-BackEscape1" blip="case_objective" corona="walk_case" ></indicator>
+	</objective>
+
+	<objective name="C_K1_LeaveBack2" caption="$CASE_K1_LEAVE_APARTMENT">
+		<indicator name="KL1Case-BackEscape2" blip="case_objective" corona="walk_case" ></indicator>
+	</objective>
+
+	<objective name="C_K1_LeaveBack3" caption="$CASE_K1_LEAVE_APARTMENT">
+		<indicator name="KL1Case-BackEscape3" blip="case_objective" corona="walk_case" ></indicator>
+	</objective>
+	
+	<!-- ************************** Kidnapper Lead 2 *************************-->
+	
+	<objective name="C_KC2_000" caption="$CASE_KIDNAPPER_NAME_002" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-KidnapperCase_2" blip="case_start" corona="walk_case" ></indicator> 
+	</objective>
+
+	<objective name="C_K2_Get_Suited" caption="$CASE_K2_GET_SUITED">
+		<indicator name="KL2Case-Get_Suited" blip="case_objective" corona="walk_case" ></indicator>
+	</objective>
+
+	<objective name="C_K2_Goto_Docks" caption="$CASE_K2_GOTO_DOCK">		
+		<indicator name="KL2Case-NearBoats" blip="case_objective" corona="drive_case"></indicator>
+	</objective>	
+
+	<objective name="C_K2_Enter_Boat" caption="$CASE_K2_ENTER_BOAT">		
+		<indicator name="KL2Case-Boat:spawn" blip="case_objective"></indicator>
+	</objective>	
+	
+	<objective name="C_K2_Goto_Den" caption="$CASE_K2_GOTO_DEN">		
+		<indicator name="KL2Case-DenDock" blip="case_objective" corona="walk_case" ></indicator>
+	</objective>	
+
+	<objective name="C_K2_Enter_Den" caption="$CASE_K2_ENTER_DEN">		
+		<indicator name="KL2Case-DenBouncer:spawn" blip="social"></indicator>
+	</objective>	
+ 
+	<objective name="C_K2_Hostess" caption="$CASE_KIDNAPPER_SPEAK_001">		
+		<indicator name="KL2Case-Hostess:spawn" blip="social"></indicator>
+	</objective>	
+
+	<objective name="C_K2_Talk_Yar" caption="$CASE_K2_TALK_YAR">		
+		<indicator name="KL2Case-Kidnapper:spawn" blip="social"></indicator>
+	</objective>	
+	
+	<objective name="C_K2_Play_Poker" caption="$CASE_K2_PLAY_POKER">		
+		<indicator name="KL2Case-PlayPoker" blip="case_objective"></indicator>
+	</objective>	
+
+	<objective name="C_K2_Win_Poker" caption="$CASE_K2_WIN_POKER">
+	</objective>
+
+	<objective name="C_K2_Lose_Poker" caption="$CASE_K2_LOSE_POKER">
+	</objective>
+	
+	<objective name="C_K2_Bet_Ilyana" caption="$CASE_K2_ILYANA_BET">
+	</objective>
+	
+	<objective name="C_K2_Do_Deal" caption="$CASE_K2_DO_DEAL">		
+		<indicator name="KL2Case-Kidnapper:spawn" blip="social"></indicator>
+	</objective>	
+
+	<objective name="C_K2_Leave_Den" caption="$CASE_K2_LEAVE_DEN">		
+		<indicator name="KL2Case-DenLeaveMarker" blip="case_objective" corona="drive_case" ></indicator>
+	</objective>	
+	
+	<objective name="C_KC2_Call_Ilyana" caption="$CASE_K2_CALL_ILYANA" uses_pda="true">
+	</objective>
+	
+	<!-- ************************** Kidnapper Lead 3 *************************-->	
+
+	<objective name="C_KC3_000" caption="$CASE_KIDNAPPER_NAME_003" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-KidnapperCase_3" blip="case_start" corona="walk_case" ></indicator>
+	</objective>
+	
+	<objective name="C_KC3_MeetIlyana" caption="$CASE_K3_MEET_ILYANA">
+		<indicator name="KL3Case-Ilyana:spawn" blip="social"></indicator>
+	</objective>
+
+	<objective name="C_KC3_Meet_Kidnapper" caption="$CASE_KIDNAPPER_OBJECTIVE_030">
+		<indicator name="KL3Case-Kidnapper:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="C_KC3_Photo_Spot" caption="$CASE_K3_PHOTO_HINT">
+		<indicator name="KL3Case-PhotoBomb" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	
+	<objective name="C_KC3_Photo" caption="$CASE_K3_PHOTO_KIDNAPPER" uses_pda="true">
+		<indicator name="KL3Case-Kidnapper:spawn" blip="case_objective"></indicator>
+		<indicator name="KL3Case-Ilyana:spawn" blip="case_objective"></indicator>
+	</objective>
+
+	<objective name="C_KC3_Take_Bike" caption="$CASE_K3_TAKE_BIKE">
+		<indicator name="KL3Case-HandyBike:spawn" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="C_KC3_Drive1st" caption="$CASE_K3_DRIVE_VANTAGE">
+		<indicator name="KL3Case-Lookout01" blip="case_objective" corona="drive_case"></indicator>
+	</objective>	
+	
+	<objective name="C_KC3_Drive2nd" caption="$CASE_K3_DRIVE_VANTAGE_NEXT">
+		<indicator name="KL3Case-Lookout02" blip="case_objective" corona="drive_case"></indicator>
+	</objective>	
+	
+	<objective name="C_KC3_Drive3rd" caption="$CASE_K3_DRIVE_VANTAGE_NEXT">
+		<indicator name="KL3Case-Lookout03" blip="case_objective" corona="drive_case"></indicator>
+	</objective>	
+	
+	<objective name="C_KC3_Drive4th" caption="$CASE_K3_DRIVE_VANTAGE_NEXT">
+		<indicator name="KL3Case-Lookout04" blip="case_objective" corona="drive_case"></indicator>
+	</objective>	
+	
+	<objective name="C_KC3_WaitForBoat" caption="$CASE_K3_WAIT_FOR_BOAT">	
+		<indicator name="KL3Case-Lookout04" blip="case_objective"></indicator>
+	</objective>
+
+	<objective name="C_KC3_FindBoat" caption="$CASE_K3_GET_BOAT">	
+	</objective>
+	
+	<objective name="C_KC3_FindKidnapper" caption="$CASE_K3_FIND_KIDNAPPER">	
+		<indicator name="KL3Case-KidnapperBoat:spawn" blip="case_objective"></indicator>	
+	</objective>
+	
+	<objective name="C_KC3_Find_Ilyana" caption="$CASE_K3_FIND_ILYANA">	
+		<indicator name="KL3Case-LockPick" blip="case_objective"></indicator>
+	</objective>
+
+	<objective name="C_KC3_Leave_Boat" caption="$CASE_K3_FIND_KIDNAPPER">	
+		<indicator name="KL3Case-SmugglerRestoreBoat" blip="case_objective" corona="drive_case"></indicator>
+	</objective>
+
+	<objective name="C_KC3_Swim" caption="$CASE_K3_SWIM_IN">	
+		<indicator name="KL3Case-SmugglerRestore" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="C_KC3_Defeat_Enemies" caption="$CASE_K3_DEFEAT_ENEMIES">	
+	</objective>
+	
+	<objective name="C_KC3_Free_Girls" caption="$CASE_K3_FREE_GIRLS">	
+		<indicator name="KL3Case-LockPick" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="C_KC3_Escape" caption="$CASE_K3_ESCAPE">	
+		<indicator name="KL3Case-HandyBoat:spawn" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	
+	<objective name="C_KC3_Bring_To_Dock" caption="$CASE_K3_RESCUE_GIRLS">	
+		<indicator name="KL3Case-EscapeHere" blip="case_objective" corona="drive_case"></indicator>
+	</objective>
+	
+	<objectivehint name="C_KC3_H_001" caption="$CASE_KIDNAPPER_HINT_001"></objectivehint>
+	
+</objectives>

@@ -1,0 +1,104 @@
+<objectives>
+
+	<!-- DEBT COLLECTION 1 -->
+	<objective name="J_DC1_Title" caption="$JOB_DC1_TITLE"  autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_DC1" blip="job_objective" corona="drive_job"></indicator>
+	</objective>
+	<objective name="J_DC1_FindTarget" caption="$JOB_DC1_FIND_TARGET">
+		<indicator name="J_DC1-Target:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC1_Catch" caption="$JOB_DC1_CATCH">
+		<indicator name="J_DC1-Target:spawn" blip="job_objective"></indicator>
+	</objective>
+	
+	<!-- DEBT COLLECTION 2 -->
+	<objective name="J_DC2_Title" caption="$JOB_DC2_TITLE" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_DC2" blip="job_objective" corona="drive_job"></indicator>
+	</objective>
+	<objective name="J_DC2_Collect" caption="$JOB_DC2_COLLECT">
+		<indicator name="J_DC2-Norbert:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC2_Gather_Vagrants" caption="$JOB_DC2_GATHER_VAGRANTS">
+		<indicator name="J_DC2-Vagrant02:spawn" blip="job_objective" ></indicator>
+	</objective>
+	<objective name="J_DC2_Return_Parlour" caption="$JOB_DC2_RETURN_PARLOUR">
+		<indicator name="J_DC2-ReturnWithVagrants" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC2_Watch_Havoc" caption="$JOB_DC2_WATCH_HAVOC">
+	</objective>
+	<objective name="J_DC2_ReCollect" caption="$JOB_DC2_RECOLLECT">
+		<indicator name="J_DC2-Norbert:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC2_Leave" caption="$JOB_DC2_LEAVE">
+		<indicator name="J_DC2-Leave" blip="job_objective"></indicator>
+	</objective>
+	
+	<!-- DEBT COLLECTION 3 -->
+	<objective name="J_DC3_Title" caption="$JOB_DC3_TITLE"  autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_DC3" blip="job_objective" corona="drive_job"></indicator>
+	</objective>
+	<objective name="J_DC3_Collect" caption="$JOB_DC3_COLLECT">
+		<indicator name="J_DC3-Spawn_Target:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC3_Trunk_Him" caption="$JOB_DC3_TRUNK_HIM">
+	</objective>
+	<objective name="J_DC3_Get_In_Car" caption="$JOB_DC3_GET_IN_CAR">
+		<indicator name="J_DC3-Spawn_TargetCar:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC3_Drive_Fast" caption="$JOB_DC3_DRIVE_FAST"></objective>
+	<objective name="J_DC3_Keep_Speeding" caption="$JOB_DC3_KEEP_SPEEDING"></objective>
+	<objective name="J_DC3_Untrunk_Him" caption="$JOB_DC3_UNTRUNK_HIM">
+		<indicator name="J_DC3-Spawn_TargetCar:spawn" blip="job_objective"></indicator>
+	</objective>
+
+	<!-- DEBT COLLECTION 4 -->
+	<objective name="J_DC4_Title" caption="$JOB_DC4_TITLE" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_DC4" blip="job_objective" corona="drive_job"></indicator>
+	</objective>
+	
+	<objective name="J_DC4_Get_Gun" caption="$JOB_DC4_GET_GUN"></objective>
+	<objective name="J_DC4_Get_Car" caption="$JOB_DC4_GET_CAR">
+		<indicator name="J_DC4-WifeCar:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC4_Wait_Wife" caption="$JOB_DC4_WAIT_WIFE">
+	  <indicator name="J_DC4-Wife:spawn" blip="job_objective"> </indicator>
+	</objective>
+	<objective name="J_DC4_Kidnap" caption="$JOB_DC4_KIDNAP">
+		<indicator name="J_DC4-Wife:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC4_Enter_Car" caption="$JOB_DC4_ENTER_CAR">
+		<indicator name="J_DC4-WifeCar:spawn" blip="job_objective"></indicator>	
+	</objective>
+	<objective name="J_DC4_Drive_Stashspot" caption="$JOB_DC4_DRIVE_STASHSPOT">
+		<indicator name="J_DC4-Hideout" blip="job_objective" corona="drive_job"></indicator>		
+	</objective>
+	<objective name="J_DC4_Arrive_Stashspot" caption="$JOB_DC4_UNTRUNK">	
+	</objective>
+	<objective name="J_DC4_Arrive_Drag" caption="$JOB_DC4_UNTRUNK">	
+	</objective>
+	<objective name="J_DC4_Photo_Victim" caption="$JOB_DC4_PHOTO">
+		<indicator name="J_DC4-Wife:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC4_Meet_Husband" caption="$JOB_DC4_MEET">
+		<indicator name="J_DC4-Target:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC4_Harass_Husband" caption="$JOB_DC4_HARASS">
+		<indicator name="J_DC4-Target:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC4_Collect" caption="$JOB_DC4_COLLECT">
+		<indicator name="J_DC4-Target:spawn" blip="job_objective"></indicator>
+	</objective>		
+	
+	<!-- DEBT COLLECTION 5 -->
+	<objective name="J_DC5_Title" caption="$JOB_DC5_TITLE" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_DC5" blip="job_objective" corona="drive_job"></indicator>
+	</objective>
+	<objective name="J_DC5_Collect" caption="$JOB_DC5_COLLECT">
+		<indicator name="J_DC5-Target:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objective name="J_DC5_Catch" caption="$JOB_DC5_CATCH">
+		<indicator name="J_DC5-Target:spawn" blip="job_objective"></indicator>
+	</objective>
+	<objectivehint name="J_DC5_Hint_Rolands_Car" caption="$JOB_DC5_HINT_ROLAND"></objectivehint>
+	
+</objectives>

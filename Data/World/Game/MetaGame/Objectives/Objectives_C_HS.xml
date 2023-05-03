@@ -1,0 +1,125 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+	<!-- Case: Race Case Lead 1 -->
+	<objective name="C_Race_Start_1" caption="$CASE_HS_LEAD_01" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-C_Race_Start" blip="case_start" corona="walk_case"></indicator>	
+	</objective>
+	
+	<objective name="C_Race_Start_2" caption="$CASE_HS_LEAD_START_02">
+		<indicator name="ProgressionTriggers_Races-R_NP_04" blip="case_start"></indicator>	
+	</objective>
+	
+	<objective name="C_R1_Case_1" caption="$CASE_HS_LEAD_01">
+		<indicator name="ProgressionTriggers_Cases-C_Race1" blip="case_start"></indicator>
+	</objective>
+	<objective name="C_R1_Text_Jackie" caption="$CASE_HS1_TEXT_JACKIE" uses_pda="true">
+	</objective>
+	<objective name="C_R1_Call_Ace" caption="$CASE_HS1_CALL_ACE" uses_pda="true">
+	</objective>
+	<objective name="C_R1_Take_Car" caption="$CASE_HS1_GET_CAR">
+		<indicator name="RaceStartCase-RaceCar:spawn" blip="case_objective"></indicator>
+	</objective>
+	
+	<!-- Case: Race Case Lead 2 -->
+	<objective name="C_R2_Case_1" caption="$CASE_HS_LEAD_02" autoflash="false">
+	<indicator name="ProgressionTriggers_Cases-C_Race2" blip="case_start" corona="walk_case"></indicator>
+	</objective>
+	<objective name="C_R2_Disguise" caption="$CASE_SK1_GET_DISGUISE">
+		<indicator name="R2Case-mkr_dressup" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	<objective name="C_R2_Take_Van" caption="$CASE_HS2_TAKE_VAN">
+		<indicator name="R2Case-work_van:spawn" blip="case_objective"></indicator>
+	</objective>
+	<objective name="C_R2_HQ_1" caption="$CASE_HS2_GOTO_HOTSHOT">
+		<indicator name="R2Case-mkr_bugPlant" blip="case_objective"></indicator>
+	</objective> 
+	<objective name="C_R2_HQ_2" caption="$CASE_HS2_PARK_HERE">
+		<indicator name="R2Case-covertParkSpot" blip="case_objective" corona="drive_case"></indicator>
+	</objective> 
+	<objective name="C_R2_Plant_1" caption="$CASE_HS2_PLANT_BUG">
+		<indicator name="R2Case-mkr_bugPlant" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	<objective name="C_R2_Plant_2" caption="$CASE_HS2_PLANT_BUG">
+		<indicator name="R2Case-mkr_bugPlant" blip="case_objective"></indicator>
+	</objective>
+	<objective name="C_R2_Back_To_Van" caption="$CASE_HS2_BACK_TO_VAN">
+	</objective>
+	<objective name="C_R2_Follow_1" caption="$CASE_HS2_TAIL_PICKUP">
+		<indicator name="R2Case-sp_eddieCar:spawn" blip="case_objective"></indicator>
+	</objective>	
+	<objective name="C_R2_Wait_For_Pickup" caption="$CASE_HS2_WAIT_FOR_PICKUP">
+		<indicator name="R2Case-sp_eddieCar:spawn" blip="case_objective"></indicator>
+		<indicator name="R2Case-sp_eddieFriend:spawn" blip="case_objective"></indicator>
+	</objective>	
+	<objective name="C_R2_Follow_2" caption="$CASE_HS2_TAIL_HOTSHOT">
+		<indicator name="R2Case-sp_eddieCar:spawn" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="C_R2_Call_Teng" caption="$CASE_PS_CALL_TENG" uses_pda="true">
+	</objective>
+	
+	<objective name="C_R2_Drive_HQ" caption="$CASE_HS2_STASH_VAN">
+	  <indicator name="R2Case-HQ_GarageOutside" blip="case_objective" corona="drive_case"></indicator>
+	</objective>
+
+	<objective name="C_R2_Park_Van" caption="$CASE_HS2_PARK_VAN">
+	  <indicator name="R2Case-HQ_Garage" blip="case_objective" corona="drive_case"></indicator>
+	</objective>
+	
+	<!-- Case: Race Case Lead 3 -->
+	<objective name="C_R3_Case_1" caption="$CASE_HS_LEAD_03" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-C_Race3" blip="case_start"></indicator>
+	</objective>
+
+	<!-- Case: Race Case Lead 4 -->
+	<objective name="C_R3_HQ" caption="$CASE_HS3_MEET_TENG" autoflash="false">
+	  <indicator name="Locations-CaseBoardCorona" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	<objective name="C_R3_CallAce" caption="$CASE_HS3_TRACE_ACE">
+	</objective> 
+	<objective name="C_R3_Find" caption="$CASE_HS3_FIND_CRASH">
+		<indicator name="R4Case-DriveHere" blip="case_objective"></indicator>
+	</objective> 
+	<objective name="C_R3_Photo_Car" caption="$CASE_HS3_PHOTO_CAR" uses_pda="true">
+		<indicator name="R3Case-crash_car:spawn" blip="case_objective"></indicator>
+	</objective> 
+	<objective name="C_R3_Photo_Driver" caption="$CASE_HS3_PHOTO_DRIVER" uses_pda="true">
+		<indicator name="R3Case-crash_driver" blip="case_objective"></indicator>
+	</objective> 
+	<objective name="C_R3_Question_One" caption="$CASE_HS3_TALK_TO_CRYSTAL">
+		<indicator name="R3Case-witness:spawn" blip="case_objective"></indicator>
+	</objective> 
+	<objective name="C_R3_Leave_Crash" caption="$CASE_HS3_LEAVE_CRASH">
+		<indicator name="R4Case-LeaveCrash" blip="case_objective" corona="walk_case"></indicator>
+	</objective> 
+	<objective name="C_R3_Call_Teng" caption="$CASE_PS_CALL_TENG" uses_pda="true">
+	</objective>
+	<objective name="C_R4_Case_1" caption="$CASE_HS_LEAD_04">
+		<indicator name="ProgressionTriggers_Cases-C_Race3" blip="case_start" corona="drive_case"></indicator>
+	</objective>
+	<objective name="C_R4_Find_Fast_Car" caption="$CASE_HS4_FAST_CAR">
+	</objective>	
+	<objective name="C_R4_Drive_Peak" caption="$CASE_HS4_DRIVE_PEAK">
+		<indicator name="R4Case-Hotshot:spawn" blip="case_objective" corona="drive_case"></indicator>	
+	</objective>	
+	<objective name="C_R4_Text_Hotshot" caption="$CASE_HS4_TEXT_HOTSHOT" uses_pda="true">
+	</objective>	
+	<objective name="C_R4_Find_1" caption="$CASE_HS4_CHOOSE_CAR">
+	</objective>	
+	<objective name="C_R4_Chase_Hotshot" caption="$CASE_HS4_FOLLOW_HOTSHOT">
+		<indicator name="R4Case-Hotshot:spawn" blip="case_objective"></indicator>	
+	</objective>	
+	<objective name="C_R4_Disable_Hotshot" caption="$CASE_HS4_DISABLE_HOTSHOT">
+		<indicator name="R4Case-Hotshot:spawn" blip="enemy"></indicator>
+	</objective>
+	<objective name="C_R4_Escape" caption="$CASE_HS4_ESCAPE_COPS">
+	</objective>
+	
+	<objectivehint name="C_R_2_Trace_H_1" caption="$CASE_HS2_HINT_SAFE_DISTANCE"></objectivehint>
+	<objectivehint name="C_R4_Race_H_1" caption="$CASE_HS4_HINT_DISABLE_CAR"></objectivehint>
+
+</objectives>

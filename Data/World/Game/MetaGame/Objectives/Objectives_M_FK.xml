@@ -1,0 +1,91 @@
+<!--
+	
+	See Objectives.xml for details
+  
+-->
+<objectives>	
+
+	<objective name="M_FK_001" caption="$MISSION_FINALKILL_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-FKMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FK_FIND_DOGEYES" caption="$MISSION_FINALKILL_OBJECTIVE_002">
+		<indicator name="FKMission-Beach_StartDest" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FK_CONFRONT_DOGEYES" caption="$MISSION_FINALKILL_OBJECTIVE_003">
+		<indicator name="FKMission-Dogeyes:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="M_FK_BOAT_CHASE" caption="$MISSION_FINALKILL_OBJECTIVE_009">
+		<indicator name="FKMission-Dogeyes:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="M_FK_FOOT_CHASE" caption="$MISSION_FINALKILL_OBJECTIVE_009">
+		<indicator name="FKMission-Dogeyes:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="M_FK_FIRST_ROOM_FIGHT" caption="$MISSION_FINALKILL_OBJECTIVE_010">
+	</objective>
+	
+	<objective name="M_FK_GO_TO_2ND_FIGHT" caption="$MISSION_FINALKILL_OBJECTIVE_009">
+		<indicator name="FKMission-Dogeyes:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="M_FK_SECOND_ROOM_FIGHT" caption="$MISSION_FINALKILL_OBJECTIVE_010">
+	</objective>
+	
+	<objective name="M_FK_GO_TO_3RD_FIGHT" caption="$MISSION_FINALKILL_OBJECTIVE_009">
+		<indicator name="FKMission-Dogeyes:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="M_FK_THIRD_ROOM_FIGHT" caption="$MISSION_FINALKILL_OBJECTIVE_010">
+	</objective>
+	
+	<objective name="M_FK_ENTER_FREEZER" caption="$MISSION_FINALKILL_OBJECTIVE_019">
+		<indicator name="FKMission-Market_FreezerRoomDest" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_FK_FREEZER_ROOM_FIGHT" caption="$MISSION_FINALKILL_OBJECTIVE_010">	
+		<indicator name="FKMission-Dogeyes:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_FK_DEFEAT_DOGEYES" caption="$MISSION_FINALKILL_DEFEAT_DOGEYES">
+		<indicator name="FKMission-Dogeyes:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_FK_PICK_UP_DOGEYES" caption="$MISSION_FINALKILL_PICK_UP_DOGEYES">
+		<indicator name="FKMission-Dogeyes:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="M_FK_LEAVE_MARKET" caption="$MISSION_FINALKILL_OBJECTIVE_011">
+		<indicator name="FKMission-Return_ExitMarketDest" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FK_TRUNK_DOGEYES" caption="$MISSION_FINALKILL_OBJECTIVE_013">
+		<indicator  name="FKMission-Return_DukeVehicle:spawn" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_FK_DELIVER_DOGEYES" caption="$MISSION_FINALKILL_OBJECTIVE_016">
+		<indicator name="FKMission-Return_DropoffDest" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_FK_UNTRUNK_DOGEYES" caption="$MISSION_FINALKILL_OBJECTIVE_017">
+	</objective>
+	
+	<objective name="M_FK_ENTER_DUKE_VEHICLE" caption="$MISSION_FINALKILL_OBJECTIVE_014">
+		<indicator  name="FKMission-Return_DukeVehicle:spawn" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_FK_RIDE_WITH_DUKE" caption="$MISSION_FINALKILL_OBJECTIVE_018">
+		<indicator  name="FKMission-Return_DropoffDest" blip="mission_objective" corona="walk_mission"></indicator>	
+	</objective>
+	
+	<objective name="M_FK_ON_RAILS_SHOOTOUT" caption="$MISSION_FINALKILL_OBJECTIVE_015">
+	</objective>	
+	
+	<objective name="M_FK_UNTRUNK_FROM_DUKE" caption="$MISSION_FINALKILL_OBJECTIVE_017">
+		<indicator name="FKMission-Return_DukeVehicle:spawn" blip="mission_objective"></indicator>
+	</objective>
+	
+</objectives>

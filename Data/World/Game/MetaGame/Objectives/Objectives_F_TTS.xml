@@ -1,0 +1,39 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>  
+ 
+	<!-- TING'S T-SHIRT FAVOUR -->	
+	<objective name="F_TTS_TEXT" caption="$OWNAME_TINGS_TSHIRT"  autoflash="false">
+		<indicator name="ProgressionTriggers_Favours-F_TTS" blip="face_character"></indicator>
+	</objective>
+
+	<objective name="F_TTS_SOCIAL" caption="$OWNAME_TINGS_TSHIRT"  autoflash="false">
+	</objective>
+
+	<objective name="F_TTS_TEMPLE" caption="$EVENT_TINGS_TSHIRT_OBJECTIVE_001A">
+	</objective>
+	
+	<objective name="F_TTS_PHOTO_TEMPLE" caption="$EVENT_TINGS_TSHIRT_OBJECTIVE_001B" uses_pda="true">
+		<indicator name="F_TTS-loc1" blip="event_objective"></indicator>       
+	</objective> 
+	
+	<objective name="F_TTS_SUNSET" caption="$EVENT_TINGS_TSHIRT_OBJECTIVE_002A">
+		<indicator name="F_TTS-drive_to" blip="event_objective" corona="walk_event"></indicator>       
+	</objective>
+	
+	<objective name="F_TTS_PHOTO_SUNSET" caption="$EVENT_TINGS_TSHIRT_OBJECTIVE_002B"  uses_pda="true">
+		<indicator name="F_TTS-loc2" blip="event_objective"></indicator>       
+	</objective>
+
+	<objective name="F_TTS_POSITION2" caption="$EVENT_TINGS_TSHIRT_OBJECTIVE_POSITION">
+		<indicator name="F_TTS-loc2" blip="event_objective" corona="walk_event"></indicator>       
+	</objective>
+	
+	<objective name="F_TTS_BEAT_DRUNK" caption="$EVENT_TINGS_TSHIRT_OBJECTIVE_BEAT_DRUNK">
+		<indicator name="F_TTS-annoying_guy:spawn" blip="enemy"></indicator>       
+	</objective>
+	
+</objectives>

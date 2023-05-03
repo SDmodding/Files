@@ -1,0 +1,57 @@
+<!--
+
+	See Objectives.xml for details
+
+-->
+<objectives>
+
+	<objective name="M_IN_001" caption="$MISSION_INITIATION_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-INMission" blip="mission_start" corona="drive_mission"></indicator>
+	</objective>
+
+	<objective name="M_IN_1_CALL_JACKIE" caption="$MISSION_INITIATION_OBJECTIVE_01" uses_pda="true"></objective>
+
+	<objective name="M_IN_1_DRIVE_TO_JACKIE" caption="$MISSION_INITIATION_OBJECTIVE_02">
+		<indicator name="INMission-mkr_dest_drive_to_massage" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+
+	<objective name="M_IN_1_ENTER_MASSAGE_PARLOUR" caption="$MISSION_INITIATION_OBJECTIVE_03">
+		<indicator name="INMission-Marker_Vendor_Greet_Wei" blip="mission_objective"></indicator>
+	</objective>
+
+	<objective name="M_IN_1B_MASSAGE_CHOICE" caption="$MISSION_INITIATION_OBJECTIVE_04">
+		<indicator name="INMission-Spawner_MassageGirl_Vendor:spawn" blip="job_objective"></indicator>
+	</objective>
+
+	<objective name="M_IN_1C_ENTER_JACKIES_VAN" caption="$MISSION_INITIATION_OBJECTIVE_05">
+		<indicator name="INMission-SpawnerJackiesVan:spawn" blip="mission_objective"></indicator>
+	</objective>
+
+	<objective name="M_IN_1C_DRIVE_TO_MEET" caption="$MISSION_INITIATION_OBJECTIVE_06">
+		<indicator name="INMission-mkr_dest_meet_gangsters" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+
+	<objective name="M_IN_1C_CONFRONT_18K" caption="$MISSION_INITIATION_OBJECTIVE_07" autoflash="false">
+		<indicator name="INMission-mkr_dest_approach_gangsters" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+
+	<objective name="M_IN_DVD" caption="$MISSION_INITIATION_OBJECTIVE_08">
+		<indicator name="INMission-CombatSpawnGroup_Meetup:Thug1:spawn" blip="mission_objective"></indicator>
+	</objective>
+
+	<objective name="M_IN_2_DEFEAT_18K" caption="$MISSION_INITIATION_OBJECTIVE_09"></objective>
+	<objective name="M_IN_2_DEFEAT_YUNG" caption="$MISSION_INITIATION_OBJECTIVE_007B"></objective>
+
+	<objective name="M_IN_2B_ENTER_JACKIES_VAN" caption="$MISSION_INITIATION_OBJECTIVE_05">
+		<indicator name="INMission-SpawnerJackiesVan:spawn" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_IN_2B_GO_TO_TEMPLE" caption="$MISSION_INITIATION_OBJECTIVE_10">
+		<indicator name="INMission-Marker_Initiation_01" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_IN_12_SEARCH_FOR_YUNG" caption="$MISSION_INITIATION_OBJECTIVE_12">
+		<indicator name="INMission-Marker_Yung_01" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+
+</objectives>

@@ -1,0 +1,100 @@
+<!-- 
+	
+	See Objectives.xml for details
+
+-->
+
+<objectives>  
+	
+	<objective name="M_BSL_START" caption="$MISSION_BIGSMILELEE_NAME_000">
+		<indicator name="ProgressionTriggers_Missions-BSLMission" blip="mission_start" corona="drive_mission"></indicator>
+	</objective>
+
+	<objective name="M_BSL_GO_TO_PARKING_LOT_BREADCRUMB" caption="$MISSION_BIGSMILELEE_DRIVE_TO_PARKING_LOT">
+		<indicator name="BSLMission-GoToCompound_BreadCrumb" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_BSL_GO_TO_PARKING_LOT" caption="$MISSION_BIGSMILELEE_DRIVE_TO_PARKING_LOT">
+		<indicator name="BSLMission-GoToCompound_ParkingLotDest" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_BSL_PARKING_LOT_FIGHT" caption="$MISSION_BIGSMILELEE_PARKING_LOT_FIGHT">
+	</objective>
+	
+	<objective name="M_BSL_INFILTRATE_COMPOUND_START" caption="$MISSION_BIGSMILELEE_INFILTRATE_COMPOUND">
+		<indicator name="BSLMission-GoToOffice_RouteStart" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_BSL_INFILTRATE_COMPOUND_DEST" caption="$MISSION_BIGSMILELEE_INFILTRATE_COMPOUND">
+		<indicator name="BSLMission-GoToOffice_RouteEnd" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_BSL_DISARM_THUG" caption="$MISSION_BIGSMILELEE_DISARM_THUG">
+		<indicator name="BSLMission-GoToOffice_DisarmThug:spawn" blip="enemy"></indicator>	
+	</objective>
+	
+	<objective name="M_BSL_KILL_DISARM_THUG" caption="$MISSION_BIGSMILELEE_KILL_DISARM_THUG">
+		<indicator name="BSLMission-GoToOffice_DisarmThug:spawn" blip="enemy"></indicator>	
+	</objective>
+	
+	<objective name="M_BSL_TAKE_OUT_GUARDS" caption="$MISSION_BIGSMILELEE_TAKE_OUT_GUARDS">
+	</objective>
+	
+	<objective name="M_BSL_OPEN_GATE" caption="$MISSION_BIGSMILELEE_OPEN_GATE">
+		<indicator name="BSLMission-GoToOffice_HackConsolePOI" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_BSL_REACH_GATE" caption="$MISSION_BIGSMILELEE_GO_TO_RESTAURANT">
+		<indicator name="BSLMission-CompoundFight_GateDest" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_BSL_COMPOUND_SHOOTOUT" caption="$MISSION_BIGSMILELEE_COMPOUND_SHOOTOUT">
+	</objective>
+	
+	<objective name="M_BSL_REACH_RESTAURANT" caption="$MISSION_BIGSMILELEE_GO_TO_RESTAURANT">
+		<indicator name="BSLMission-DockFight_RestaurantDest" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_BSL_DOCKS_SHOOTOUT" caption="$MISSION_BIGSMILELEE_DOCKS_SHOOTOUT">
+	</objective>
+	
+	<objective name="M_BSL_KILL_PONYTAIL" caption="$MISSION_BIGSMILELEE_KILL_PONYTAIL">
+		<indicator name="BSLMission-RestaurantFight_PonyTail:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_BSL_CLEAR_RESTAURANT" caption="$MISSION_BIGSMILELEE_KILL_REMAINING_THUGS">
+	</objective>
+	
+	<objective name="M_BSL_FIND_BIG_SMILE_LEE" caption="$MISSION_BIGSMILELEE_FIND_BIG_SMILE_LEE">
+		<indicator name="BSLMission-BigSmileLee:spawn" blip="enemy_noncombat"></indicator>	
+	</objective>
+	
+	<objective name="M_BSL_CHASE_BIG_SMILE_LEE" caption="$MISSION_BIGSMILELEE_CHASE_BIG_SMILE_LEE">
+		<indicator name="BSLMission-BigSmileLee:spawn" blip="enemy_noncombat"></indicator>	
+	</objective>
+	
+	<objective name="M_BSL_CATCH_BOAT" caption="$MISSION_BIGSMILELEE_CATCH_BOAT">
+		<indicator name="BSLMission-BoatChase_Boat:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="M_BSL_CLIMB_BOAT" caption="$MISSION_BIGSMILELEE_CLIMB_BOAT">
+		<indicator name="BSLMission-BigSmileLee:spawn" blip="enemy_noncombat"></indicator>	
+	</objective>
+	
+	<objective name="M_BSL_FIGHT_BIG_SMILE_LEE" caption="$MISSION_BIGSMILELEE_DEFEAT_BIGSMILELEE">
+		<indicator name="BSLMission-BigSmileLee:spawn" blip="enemy_noncombat"></indicator>	
+	</objective>
+	
+	<objective name="M_BSL_KILL_BIG_SMILE_LEE" caption="$MISSION_BIGSMILELEE_KILL_BIG_SMILE_LEE">
+		<indicator name="BSLMission-BigSmileLee:spawn" blip="enemy_noncombat"></indicator>	
+	</objective>
+	
+	<objective name="M_BSL_FINISH_BIG_SMILE_LEE" caption="$MISSION_BIGSMILELEE_FINISH_BIGSMILELEE">
+		<indicator name="BSLMission-BigSmileLee:spawn" blip="enemy_noncombat"></indicator>	
+	</objective>
+	
+	<objective name="M_BSL_ICE_CHIPPER" caption="$MISSION_BIGSMILELEE_ICE_CHIPPER">
+		<indicator name="BSLMission-BigSmileLee:spawn" blip="enemy_noncombat"></indicator>	
+	</objective>
+
+</objectives>

@@ -1,0 +1,60 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+
+<objectives>
+	
+	<objective name="M_UP_START" caption="$MISSION_UNCLEPO_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-M_UPMission" blip="mission_start" corona="walk_mission"></indicator>
+    </objective>
+		
+	<objective name="M_UP_DRIVE_TO_PO" caption="$MISSION_UNCLEPO_OBJECTIVE_001">
+		<indicator name="UPMission-WinstonDrive_ApartmentDest" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_UP_LOSE_COPS" caption="$MISSION_UNCLEPO_OBJECTIVE_LOSE_COPS">
+    </objective>
+	
+	<objective name="M_UP_GET_IN_CAR" caption="$MISSION_UNCLEPO_OBJECTIVE_002b">
+		<indicator name="UPMission-FindRoland_ConvenientVehicle:spawn" blip="mission_objective"></indicator>
+    </objective>
+	
+	<objective name="M_UP_DRIVE_TO_ROLAND" caption="$MISSION_UNCLEPO_OBJECTIVE_002a" autoflash="true">
+		<indicator name="UPMission-FindRoland_DriveDest" blip="mission_objective" corona="walk_mission"></indicator>
+    </objective>
+		
+	<objective name="M_UP_WALK_TO_ROLAND" caption="$MISSION_UNCLEPO_OBJECTIVE_002">
+		<indicator name="UPMission-Roland:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+    </objective>
+	
+	<objective name="M_UP_FIND_PATSY" caption="$MISSION_UNCLEPO_OBJECTIVE_009">
+		<indicator name="UPMission-Patsy:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+    </objective>
+	
+	<objective name="M_UP_DEFEAT_BACKUP" caption="$MISSION_UNCLEPO_DEFEAT_PATSY_BACKUP">
+		<indicator name="UPMission-Chase_PatsyVehicle:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+    </objective>
+	
+	<objective name="M_UP_CHASE_VEHICLE" caption="$MISSION_UNCLEPO_OBJECTIVE_CHASE_PATSY">
+		<indicator name="UPMission-Chase_PatsyVehicle:spawn" blip="mission_objective"></indicator>
+    </objective>
+	
+	<objective name="M_UP_CATCH_VEHICLE" caption="$MISSION_UNCLEPO_OBJECTIVE_004">    
+		<indicator name="UPMission-Chase_PatsyVehicle:spawn" blip="mission_objective"></indicator>
+    </objective>
+	
+	<objective name="M_UP_GET_IN_PATSY_CAR" caption="$MISSION_UNCLEPO_OBJECTIVE_GET_IN_CAR">
+		<indicator name="UPMission-Chase_PatsyVehicle:spawn" blip="mission_objective"></indicator>
+    </objective>
+	
+	<objective name="M_UP_DELIVER_VEHICLE" caption="$MISSION_UNCLEPO_OBJECTIVE_DELIVER_VEHICLE">
+		<indicator name="UPMission-Deliver_InsideGarage" blip="mission_objective"></indicator>
+    </objective>
+	
+	<objective name="M_UP_PARK_VEHICLE" caption="$MISSION_UNCLEPO_OBJECTIVE_PARK_VEHICLE">
+		<indicator name="UPMission-Deliver_InsideGarage" blip="mission_objective" corona="drive_mission"></indicator>
+    </objective>
+
+</objectives>

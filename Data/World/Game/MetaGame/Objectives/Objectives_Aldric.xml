@@ -1,0 +1,288 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+<!--*******************************Rickys Lesson Mission*****************************************-->
+	<objective name="M_RL_001" caption="$MISSION_RICKYSLESSON_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-RLMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_RL_002" caption="$MISSION_RICKYSLESSON_OBJECTIVE_002">
+		<indicator name="RLMission-mkr_fifi" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_RL_003" caption="$MISSION_RICKYSLESSON_OBJECTIVE_003">
+		
+	</objective>
+	<objective name="M_RL_004" caption="$MISSION_RICKYSLESSON_OBJECTIVE_004">
+		<indicator  name="RLMission-mkr_docks" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_RL_005" caption="$MISSION_RICKYSLESSON_OBJECTIVE_005">
+		<indicator  name="RLMission-mkr_waterboat" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_RL_006" caption="$MISSION_RICKYSLESSON_OBJECTIVE_006">
+		<indicator  name="RLMission-trig_docks" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_RL_007" caption="$MISSION_RICKYSLESSON_OBJECTIVE_007">
+		<indicator  name="RLMission-engineer:spawn" blip="mission_objective" corona="arrow_friendly"></indicator>
+	</objective>
+	<objective name="M_RL_008" caption="$MISSION_RICKYSLESSON_OBJECTIVE_008">
+		<indicator  name="RLMission-wave3_enemy1:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy2:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy3:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy4:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy5:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy6:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy7:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy8:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy9:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy10:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy11:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy12:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy13:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy14:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy15:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy16:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy17:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy18:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy19:spawn" blip="enemy"></indicator>
+		<indicator  name="RLMission-wave3_enemy20:spawn" blip="enemy"></indicator>
+	</objective>
+	<objective name="M_RL_009" caption="$MISSION_RICKYSLESSON_OBJECTIVE_009">
+		
+	</objective>
+
+	<!--*******************************Bus Driver Job*****************************************-->
+	<objective name="E_NP1_BS1_001" caption="$EVENT_ROUTE1STATION1_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP1_BS1" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP1_BS1_002" caption="$EVENT_ROUTE1STATION1_OBJECTIVE_002">
+		<indicator name="E_NP1_BS1-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="E_NP1_BS2_001" caption="$EVENT_ROUTE1STATION2_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP1_BS2" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP1_BS2_002" caption="$EVENT_ROUTE1STATION2_OBJECTIVE_002">
+		<indicator name="E_NP1_BS2-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="E_NP1_BS3_001" caption="$EVENT_ROUTE1STATION3_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP1_BS3" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP1_BS3_002" caption="$EVENT_ROUTE1STATION3_OBJECTIVE_002">
+		<indicator name="E_NP1_BS3-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>	
+	<objective name="E_NP1_BS4_001" caption="$EVENT_ROUTE1STATION4_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP1_BS4" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP1_BS4_002" caption="$EVENT_ROUTE1STATION4_OBJECTIVE_002">
+		<indicator name="E_NP1_BS4-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>	
+	
+	<objective name="E_NP2_BS1_001" caption="$EVENT_ROUTE2STATION1_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP2_BS1" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP2_BS1_002" caption="$EVENT_ROUTE2STATION1_OBJECTIVE_002">
+		<indicator name="E_NP2_BS1-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="E_NP2_BS2_001" caption="$EVENT_ROUTE2STATION2_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP2_BS2" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP2_BS2_002" caption="$EVENT_ROUTE2STATION2_OBJECTIVE_002">
+		<indicator name="E_NP2_BS2-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="E_NP2_BS3_001" caption="$EVENT_ROUTE2STATION3_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP2_BS3" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP2_BS3_002" caption="$EVENT_ROUTE2STATION3_OBJECTIVE_002">
+		<indicator name="E_NP2_BS3-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>	
+	<objective name="E_NP2_BS4_001" caption="$EVENT_ROUTE2STATION4_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP2_BS4" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP2_BS4_002" caption="$EVENT_ROUTE2STATION4_OBJECTIVE_002">
+		<indicator name="E_NP2_BS4-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>	
+	
+	<objective name="E_NP3_BS1_001" caption="$EVENT_ROUTE3STATION1_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP3_BS1" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP3_BS1_002" caption="$EVENT_ROUTE3STATION1_OBJECTIVE_002">
+		<indicator name="E_NP3_BS1-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="E_NP3_BS2_001" caption="$EVENT_ROUTE3STATION2_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP3_BS2" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP3_BS2_002" caption="$EVENT_ROUTE3STATION2_OBJECTIVE_002">
+		<indicator name="E_NP3_BS2-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="E_NP3_BS3_001" caption="$EVENT_ROUTE3STATION3_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP3_BS3" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP3_BS3_002" caption="$EVENT_ROUTE3STATION3_OBJECTIVE_002">
+		<indicator name="E_NP3_BS3-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>	
+	<objective name="E_NP3_BS4_001" caption="$EVENT_ROUTE3STATION4_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP3_BS4" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP3_BS4_002" caption="$EVENT_ROUTE3STATION4_OBJECTIVE_002">
+		<indicator name="E_NP3_BS4-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>	
+	
+	<objective name="E_NP4_BS1_001" caption="$EVENT_ROUTE4STATION1_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP4_BS1" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP4_BS1_002" caption="$EVENT_ROUTE4STATION1_OBJECTIVE_002">
+		<indicator name="E_NP4_BS1-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="E_NP4_BS2_001" caption="$EVENT_ROUTE4STATION2_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP4_BS2" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP4_BS2_002" caption="$EVENT_ROUTE4STATION2_OBJECTIVE_002">
+		<indicator name="E_NP4_BS2-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="E_NP4_BS3_001" caption="$EVENT_ROUTE4STATION3_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP4_BS3" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP4_BS3_002" caption="$EVENT_ROUTE4STATION3_OBJECTIVE_002">
+		<indicator name="E_NP4_BS3-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>	
+	<objective name="E_NP4_BS4_001" caption="$EVENT_ROUTE4STATION4_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP4_BS4" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP4_BS4_002" caption="$EVENT_ROUTE4STATION4_OBJECTIVE_002">
+		<indicator name="E_NP4_BS4-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>	
+	
+	<objective name="E_NP5_BS1_001" caption="$EVENT_ROUTE5STATION1_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP5_BS1" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP5_BS1_002" caption="$EVENT_ROUTE5STATION1_OBJECTIVE_002">
+		<indicator name="E_NP5_BS1-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="E_NP5_BS2_001" caption="$EVENT_ROUTE5STATION2_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP5_BS2" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP5_BS2_002" caption="$EVENT_ROUTE5STATION2_OBJECTIVE_002">
+		<indicator name="E_NP5_BS2-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="E_NP5_BS3_001" caption="$EVENT_ROUTE5STATION3_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP5_BS3" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP5_BS3_002" caption="$EVENT_ROUTE5STATION3_OBJECTIVE_002">
+		<indicator name="E_NP5_BS3-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>	
+	<objective name="E_NP5_BS4_001" caption="$EVENT_ROUTE5STATION4_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_NP5_BS4" blip="bus_stop" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="E_NP5_BS4_002" caption="$EVENT_ROUTE5STATION4_OBJECTIVE_002">
+		<indicator name="E_NP5_BS4-enemy1:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>	
+	
+	<objective name="J_BD1_001" caption="$JOB_BUSDRIVER1_NAME_001" autoflash="false" >
+		<indicator name="ProgressionTriggers_Jobs-J_BD1" blip="bus_stop"></indicator>	
+	</objective>
+	<objective name="J_BD1_002" caption="$JOB_BUSDRIVER1_OBJECTIVE_002" >
+		<indicator name="next_bus_stop"></indicator>
+	</objective>
+	<objective name="J_BD1_003" caption="$JOB_BUSDRIVER1_OBJECTIVE_003" >
+		<indicator name="bus_stop_enemy" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="J_BD1_004" caption="$JOB_BUSDRIVER1_OBJECTIVE_004" >
+
+	</objective>	
+	<objective name="J_BD2_001" caption="$JOB_BUSDRIVER2_NAME_001" autoflash="false" >
+		<indicator name="ProgressionTriggers_Jobs-J_BD2" blip="bus_stop"></indicator>	
+	</objective>
+	<objective name="J_BD2_002" caption="$JOB_BUSDRIVER2_OBJECTIVE_002" >
+	</objective>
+	<objective name="J_BD3_001" caption="$JOB_BUSDRIVER3_NAME_001" autoflash="false" >
+		<indicator name="ProgressionTriggers_Jobs-J_BD3" blip="bus_stop"></indicator>	
+	</objective>
+	<objective name="J_BD3_002" caption="$JOB_BUSDRIVER3_OBJECTIVE_002" >
+	</objective>
+	<objective name="J_BD4_001" caption="$JOB_BUSDRIVER4_NAME_001" autoflash="false" >
+		<indicator name="ProgressionTriggers_Jobs-J_BD4" blip="bus_stop"></indicator>	
+	</objective>
+	<objective name="J_BD4_002" caption="$JOB_BUSDRIVER4_OBJECTIVE_002" >
+	</objective>
+	<objective name="J_BD5_001" caption="$JOB_BUSDRIVER5_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_BD5" blip="bus_stop"></indicator>	
+	</objective>
+	<objective name="J_BD5_002" caption="$JOB_BUSDRIVER5_OBJECTIVE_002" >
+	</objective>	
+	<!--*******************************Going Under Hint **********************************************-->
+	<objectivehint name="M_GU_H_001" caption="$MISSION_GOINGUNDER_HINT_001"></objectivehint>
+	<objectivehint name="M_GU_H_002" caption="$MISSION_GOINGUNDER_HINT_002"></objectivehint>
+	<objectivehint name="M_GU_H_003" caption="$MISSION_GOINGUNDER_HINT_003"></objectivehint> 
+	<objectivehint name="M_GU_H_004" caption="$MISSION_GOINGUNDER_HINT_004"></objectivehint> 
+	<objectivehint name="M_GU_H_005" caption="$MISSION_GOINGUNDER_HINT_005"></objectivehint> 
+	<objectivehint name="M_GU_H_006" caption="$MISSION_GOINGUNDER_HINT_006"></objectivehint> 
+	<objectivehint name="M_GU_H_007" caption="$MISSION_GOINGUNDER_HINT_007"></objectivehint> 
+	<objectivehint name="M_GU_H_008" caption="$MISSION_GOINGUNDER_HINT_008"></objectivehint> 
+	<objectivehint name="M_GU_H_009" caption="$MISSION_GOINGUNDER_HINT_009"></objectivehint> 
+	<objectivehint name="M_GU_H_010" caption="$MISSION_GOINGUNDER_HINT_010"></objectivehint> 
+	<objectivehint name="M_GU_H_011" caption="$MISSION_GOINGUNDER_HINT_011"></objectivehint> 
+	<objectivehint name="M_GU_H_012" caption="$MISSION_GOINGUNDER_HINT_012"></objectivehint> 
+
+	<!--*******************************Night Market Chase Mission**********************************************-->
+	<objectivehint name="M_NMC_H_001" caption="$MISSION_NIGHTMARKETCHASE_HINT_001"></objectivehint>
+	<objectivehint name="M_NMC_H_002" caption="$MISSION_NIGHTMARKETCHASE_HINT_002"></objectivehint> 
+	<objectivehint name="M_NMC_H_003" caption="$MISSION_NIGHTMARKETCHASE_HINT_003"></objectivehint>
+	<objectivehint name="M_NMC_H_004" caption="$MISSION_NIGHTMARKETCHASE_HINT_004"></objectivehint>
+	<objectivehint name="M_NMC_H_005" caption="$MISSION_NIGHTMARKETCHASE_HINT_005"></objectivehint>
+	<objectivehint name="M_NMC_H_006" caption="$MISSION_NIGHTMARKETCHASE_HINT_006"></objectivehint>
+	<objectivehint name="M_NMC_H_007" caption="$MISSION_NIGHTMARKETCHASE_HINT_007"></objectivehint>
+	<!--*******************************Vendor Extortion Mission**********************************************-->
+	<objectivehint name="M_VE_H_001" caption="$MISSION_VENDOREXTORTION_HINT_001"></objectivehint>
+	<objectivehint name="M_VE_H_002" caption="$MISSION_VENDOREXTORTION_HINT_002"></objectivehint> 
+	<objectivehint name="M_VE_H_003" caption="$MISSION_VENDOREXTORTION_HINT_003"></objectivehint>
+	<objectivehint name="M_VE_H_004" caption="$MISSION_VENDOREXTORTION_HINT_004"></objectivehint>
+	<objectivehint name="M_VE_H_005" caption="$MISSION_VENDOREXTORTION_HINT_005"></objectivehint>
+	<objectivehint name="M_VE_H_006" caption="$MISSION_VENDOREXTORTION_HINT_006"></objectivehint>
+	<objectivehint name="M_VE_H_007" caption="$MISSION_VENDOREXTORTION_HINT_007"></objectivehint>
+	<objectivehint name="M_VE_H_008" caption="$MISSION_VENDOREXTORTION_HINT_008"></objectivehint>
+	<objectivehint name="M_VE_H_009" caption="$MISSION_VENDOREXTORTION_HINT_009"></objectivehint>
+	<objectivehint name="M_VE_H_010" caption="$MISSION_VENDOREXTORTION_HINT_010"></objectivehint>
+	
+	<!--*******************************Rickys Lesson Hint **********************************************-->
+	<objectivehint name="M_RL_H_002" caption="$MISSION_RICKYSLESSON_HINT_002"></objectivehint>
+	<objectivehint name="M_RL_H_003" caption="$MISSION_RICKYSLESSON_HINT_003"></objectivehint> 
+	<!--*******************************Important Visitor Hint **********************************************-->
+	
+	<objectivehint name="M_IV_H_002" caption="$MISSION_IMPORTANTVISITOR_HINT_002"></objectivehint>
+	<objectivehint name="M_IV_H_003" caption="$MISSION_IMPORTANTVISITOR_HINT_003"></objectivehint>
+	
+	<!--*******************************Bus Driver 1 Hint **********************************************-->
+	<objectivehint name="J_BD1_H_001" caption="$JOB_BUSDRIVER1_HINT_001"></objectivehint>	
+
+	<objectivehint name="J_BD1_H_002" caption="$JOB_BUSDRIVER1_HINT_002"></objectivehint>	
+
+	<objectivehint name="J_BD1_H_003" caption="$JOB_BUSDRIVER1_HINT_003"></objectivehint>	
+
+	<objectivehint name="J_BD1_H_004" caption="$JOB_BUSDRIVER1_HINT_004"></objectivehint>	
+
+	<objectivehint name="J_BD1_H_005" caption="$JOB_BUSDRIVER1_HINT_005"></objectivehint>	
+	
+	<objectivehint name="J_BD1_H_006" caption="$JOB_BUSDRIVER1_HINT_006"></objectivehint>	
+
+	<objectivehint name="J_BD1_H_007" caption="$JOB_BUSDRIVER1_HINT_007"></objectivehint>	
+
+	<objectivehint name="J_BD1_H_008" caption="$JOB_BUSDRIVER1_HINT_008"></objectivehint>	
+
+	<objectivehint name="J_BD1_H_009" caption="$JOB_BUSDRIVER1_HINT_009"></objectivehint>	
+  
+	
+	
+		<!-- SHOW OFF EVENT -->
+	<objective name="E_SO1_TEXT" caption="$EVENT_SHOWOFF_NAME_001" text_unlockable="true" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-SOEvent" blip="event_start" corona="arrow_objective"></indicator>
+	</objective> 
+				
+		    <!--*********Karaoke***********-->		
+	<objective name="E_GH_TEXT" caption="$EVENT_GARAGEHIDING_NAME_001" text_unlockable="true" autoflash="false">
+	   <indicator name="ProgressionTriggers_Events-GH1Event" blip="hiding_spot_garage" corona="arrow_objective"></indicator>
+	</objective> 
+
+	
+</objectives>	

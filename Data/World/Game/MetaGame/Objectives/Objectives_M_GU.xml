@@ -1,0 +1,71 @@
+<objectives>
+	<!-- GOING UNDER MISSION -->
+	<objective name="M_GU_001" caption="$SGTITLE_GOING_UNDER" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-GUMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	<!-- Follow Jackie to Winstons -->
+	<objective name="M_GU_002" caption="$MISSION_GOINGUNDER_OBJECTIVE_002">
+		<indicator  name="GUMission-Spawner_Jackie_01:spawn" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_GU_003" caption="$MISSION_GOINGUNDER_OBJECTIVE_003" >
+		<indicator  name="GUMission-Spawner_DEB_02B:spawn" blip="enemy"></indicator>
+	</objective>
+	<!-- Defeat the Thugs - Back Alley Fight -->
+	<objective name="M_GU_004" caption="$MISSION_GOINGUNDER_OBJECTIVE_004"></objective>
+	<!-- Keep up with Jackie -->
+	<objective name="M_GU_006" caption="$MISSION_GOINGUNDER_OBJECTIVE_006">
+		<indicator  name="GUMission-Spawner_Jackie_01:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	<objective name="M_GU_007" caption="$MISSION_GOINGUNDER_OBJECTIVE_007" ></objective>
+	<objective name="M_GU_008" caption="$MISSION_GOINGUNDER_OBJECTIVE_008" ></objective>
+	<!-- defeat the thug -->
+	<objective name="M_GU_009" caption="$MISSION_GOINGUNDER_OBJECTIVE_009" autoflash="false">
+		<indicator  name="GUMission-Spawner_DEB_01B:spawn" blip="enemy"></indicator>
+	</objective>
+	<!-- defeat the thug -->
+	<objective name="M_GU_010" caption="$MISSION_GOINGUNDER_OBJECTIVE_010" autoflash="false">
+		<indicator  name="GUMission-Spawner_DEB_02B:spawn" blip="enemy"></indicator>
+	</objective>
+	<!-- defeat the remaining thugs -->
+	<objective name="M_GU_011" caption="$MISSION_GOINGUNDER_OBJECTIVE_011" autoflash="false"></objective>
+	<!-- look up at the poster of vivienne -->
+	<objective name="M_GU_012" caption="$MISSION_GOINGUNDER_OBJECTIVE_012">
+		<indicator name="GUMission-Spawner_Old_Lady:spawn" blip="mission_objective" corona="arrow_friendly"></indicator>
+	</objective>
+	<!-- look at jackie -->
+	<objective name="M_GU_013" caption="$MISSION_GOINGUNDER_OBJECTIVE_013">
+		<indicator  name="GUMission-Marker_LookAtJackie" blip="mission_objective" corona="arrow_friendly"></indicator>
+	</objective>
+	<!-- block the thugs attacks -->
+	<objective name="M_GU_015" caption="$MISSION_GOINGUNDER_OBJECTIVE_015" autoflash="false">
+		<indicator  name="GUMission-Spawner_ConroyThug_01:spawn" blip="enemy"></indicator>
+		<indicator  name="GUMission-Spawner_ConroyThug_02:spawn" blip="enemy"></indicator>
+	</objective>
+	<!-- defeat conroy using counters -->
+	<objective name="M_GU_016" caption="$MISSION_GOINGUNDER_OBJECTIVE_016" autoflash="false">
+		<indicator  name="GUMission-Spawner_Conroy:spawn" blip="enemy"></indicator>
+	</objective>
+	<!-- defend yourself from the waterstreet boys -->
+	<objective name="M_GU_021" caption="$MISSION_GOINGUNDER_OBJECTIVE_021" autoflash="false"></objective>
+	<!-- defeat foes using strikes -->
+	<objective name="M_GU_020" caption="$MISSION_GOINGUNDER_OBJECTIVE_020" autoflash="false"></objective>
+	<!-- defeat foes using grapples -->
+	<objective name="M_GU_019" caption="$MISSION_GOINGUNDER_OBJECTIVE_019" autoflash="false"></objective>
+	<objective name="M_GU_OBJ_STAND_UP" caption="$MISSION_GOINGUNDER_OBJECTIVE_014" autoflash="false"></objective>
+	<objective name="M_GU_OBJ_STAND_UP_FLASH" caption="$MISSION_GOINGUNDER_OBJECTIVE_014" autoflash="true"></objective>
+	<objective name="M_GU_OBJ_VISIT_APOTHECARY" caption="$MISSION_GOINGUNDER_OBJECTIVE_017" autoflash="true">
+		<indicator  name="GUMission-Spawner_Tea_Vendor:spawn" blip="social"></indicator>
+	</objective>
+	<objective name="M_GU_OBJ_PURCHASE_TEA" caption="$MISSION_GOINGUNDER_OBJECTIVE_018" autoflash="true">
+		<indicator  name="GUMission-Spawner_Tea_Vendor:spawn" blip="social"></indicator>
+	</objective>
+	<objective name="M_GU_PERFORM_GRAPPLE" caption="$MISSION_GOINGUNDER_OBJECTIVE_GRAPPLE" autoflash="true"></objective>
+	<objective name="M_GU_PERFORM_LIGHT" caption="$MISSION_GOINGUNDER_OBJECTIVE_LIGHT" autoflash="true"></objective>
+	<objective name="M_GU_PERFORM_HEAVY" caption="$MISSION_GOINGUNDER_OBJECTIVE_HEAVY" autoflash="true"></objective>
+	<objective name="M_GU_PERFORM_LIGHT_COMBO" caption="$MISSION_GOINGUNDER_OBJECTIVE_LIGHT_COMBO" autoflash="true"></objective>
+	<objective name="M_GU_PERFORM_FULL_COMBO" caption="$MISSION_GOINGUNDER_OBJECTIVE_FULL_COMBO" autoflash="true"></objective>
+	<objective name="M_GU_PERFORM_SWEEP" caption="$MISSION_GOINGUNDER_OBJECTIVE_SWEEP" autoflash="true"></objective>
+	<objective name="M_GU_PERFORM_KNEE" caption="$MISSION_GOINGUNDER_OBJECTIVE_KNEE" autoflash="true"></objective>
+	<objective name="M_GU_PERFORM_ROUNDHOUSE" caption="$MISSION_GOINGUNDER_OBJECTIVE_ROUNDHOUSE" autoflash="true"></objective>
+	<objective name="M_GU_PERFORM_BUTTERFLY" caption="$MISSION_GOINGUNDER_OBJECTIVE_BUTTERFLY" autoflash="true"></objective>
+</objectives>

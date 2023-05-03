@@ -1,0 +1,46 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives> 
+
+	<!-- BREAK ARREST FAVOUR -->
+	<objective name="E_BA_TEXT" caption="$EVENT_BREAKARREST_NAME_001" text_unlockable="true" autoflash="false">
+	   <indicator name="ProgressionTriggers_Events-E_BA" blip="face_character"></indicator>
+	</objective>
+	<objective name="E_BA_SOCIAL" caption="$EVENT_BREAKARREST_NAME_001" autoflash="false">
+	</objective>
+	<objective name="E_BA_DISTRACTCOPS" caption="$EVENT_BREAKARREST_OBJECTIVE_001">
+		<indicator name="BreakArrest-Spawn_Lin:spawn" blip="event_objective"></indicator>
+		<indicator name="BreakArrest-Spawn_Cop01:spawn" blip="event_objective"></indicator>
+	</objective>
+	<objective name="E_BA_LOSETHECOPS" caption="$EVENT_BREAKARREST_OBJECTIVE_002"></objective>
+	
+	
+	<!-- BREAK ARREST 2 FAVOUR -->
+	<objective name="E_BA2_TEXT" caption="$EVENT_BREAKARREST2_NAME_001" text_unlockable="true" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_BA2" blip="face_character"></indicator>
+	</objective>
+	<objective name="E_BA2_SOCIAL" caption="$EVENT_BREAKARREST2_NAME_001" autoflash="false">
+	</objective>
+	<objective name="E_BA2_COPSOFFBRODY" caption="$EVENT_BREAKARREST2_OBJECTIVE_001">
+		<indicator name="BreakArrest2-Spawn_Boyfriend:spawn" blip="event_objective"></indicator>
+		<indicator name="BreakArrest2-Spawn_Cop01:spawn" blip="event_objective"></indicator>
+	</objective>
+	<objective name="E_BA2_LOSETHECOPS" caption="$EVENT_BREAKARREST2_OBJECTIVE_002"></objective>
+
+	
+	<!-- BREAK ARREST 3 FAVOUR -->	
+	<objective name="E_BA3_TEXT" caption="$EVENT_BREAKARREST3_NAME_001" text_unlockable="true" autoflash="false">
+	    <indicator name="ProgressionTriggers_Events-E_BA3" blip="face_character"></indicator>
+	</objective> 
+	<objective name="E_BA3_SOCIAL" caption="$EVENT_BREAKARREST3_NAME_001" autoflash="false">
+	</objective> 	
+	<objective name="E_BA3_DISTRACTCOPS" caption="$EVENT_BREAKARREST3_OBJECTIVE_001">
+		<indicator name="BreakArrest3-Spawn_Boyfriend:spawn" blip="event_objective"></indicator>
+		<indicator name="BreakArrest3-Spawn_Cop01:spawn" blip="event_objective"></indicator>
+	</objective>
+	<objective name="E_BA3_LOSETHECOPS" caption="$EVENT_BREAKARREST3_OBJECTIVE_002"></objective>
+
+</objectives>

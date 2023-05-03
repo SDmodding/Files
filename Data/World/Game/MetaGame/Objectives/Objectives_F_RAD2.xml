@@ -1,0 +1,30 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>  
+ 
+	<objective name="F_RAD2_TEXT" caption="$OWNAME_ROPE_A_DOPE_2" autoflash="false">
+		<indicator name="ProgressionTriggers_Favours-F_RAD2" blip="face_character"></indicator>       
+	</objective>
+
+	<objective name="F_RAD2_SOCIAL" caption="$EVENT_ROPEADOPE2_NAME_001"  autoflash="false">
+	</objective>
+	
+	
+	<objective name="F_RAD2_MONEY" caption="$EVENT_ROPEADOPE2_OBJECTIVE_001">
+		<indicator name="F_RAD2-scamguy:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="F_RAD2_BEAT_UP" caption="$EVENT_ROPEADOPE_OBJECTIVE_002">
+		<indicator name="F_RAD2-scamguy:spawn" blip="enemy"></indicator>
+		<indicator name="F_RAD2-sp_thug1:spawn" blip="enemy"></indicator>      		
+		<indicator name="F_RAD2-sp_thug2:spawn" blip="enemy"></indicator> 
+	</objective>
+	
+	<objective name="F_RAD2_PROBLEM" caption="$EVENT_ROPEADOPE2_OBJECTIVE_004">
+		<indicator name="F_RAD2-POI_tinker_under_hood_player" blip="event_objective" corona="arrow_social"></indicator>  
+	</objective>
+ 
+</objectives>

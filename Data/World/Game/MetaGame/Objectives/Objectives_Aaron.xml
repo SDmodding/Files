@@ -1,0 +1,64 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>	
+
+	<!--**********Global - Test Scenarios***********-->
+	<objective name="Debug_VehicleAttack_001" caption="Watch the vehicle"></objective>
+	<objective name="Debug_VehicleAttack_002" caption="Kill the thugs"></objective>
+	<objective name="Debug_Scenario_Fight_001" caption="Defeat the thugs"></objective>
+	<objective name="Debug_Scenario_Dock_Chase_001" caption="Catch the <Font color='#c42430'>thug</Font>">
+		<indicator name="ScripterTests-DocksChase_Target:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	<objective name="Debug_Scenario_Dock_Chase_002" caption="Defeat the <Font color='#c42430'>thug</Font>">
+		<indicator name="ScripterTests-DocksChase_Target:spawn" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>
+	
+	<!--**********Global - Safehouse***********-->
+	<objective name="Global_SH_001" caption="$GLOBAL_SAFEHOUSE_OBJECTIVE_001"></objective>
+	<objective name="Global_SH_002" caption="$GLOBAL_SAFEHOUSE_OBJECTIVE_002"></objective>
+	<objective name="Global_SH_003" caption="$GLOBAL_SAFEHOUSE_OBJECTIVE_003"></objective>
+	<objective name="Global_SH_004" caption="$GLOBAL_SAFEHOUSE_OBJECTIVE_004"></objective>	
+	<objective name="Global_SH_005" caption="$GLOBAL_SAFEHOUSE_OBJECTIVE_005"></objective>	
+	
+	<!--**********Global - Abduction***********-->
+	<objective name="Global_AB_001" caption="$GLOBAL_ABDUCTION_OBJECTIVE_001">
+		<indicator  name="MCRMission-mkr_Butchershop_DriveTo" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+
+	<!--**********Street Racer***********-->
+	<objective name="J_SRE_001" caption="$JOB_STREETRACER_LABEL" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_SRE" blip="race_start" corona="drive_race"></indicator>
+	</objective>	
+	
+	<!--**********BNJ Mission***********-->
+	<objective name="M_BNJ_001" caption="$MISSION_BROKENNOSEJIANG_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-BNJMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_BNJ_002" caption="$MISSION_BROKENNOSEJIANG_OBJECTIVE_002">
+		<indicator name="BNJMission-Marker_KTCraneEntrance" blip="mission_objective" corona="walk_mission"></indicator>
+		<indicator name="BNJMission-Spawn_OldSaltyCrab:spawn" blip="friendly"></indicator>
+	</objective>
+	<objective name="M_BNJ_003" caption="$MISSION_BROKENNOSEJIANG_OBJECTIVE_003">
+	</objective>
+	<objective name="M_BNJ_004" caption="$MISSION_BROKENNOSEJIANG_OBJECTIVE_004">
+		<indicator name="BNJMission-Spawn_CraneGuard:spawn" blip="enemy"></indicator>
+	</objective>
+	<objective name="M_BNJ_005" caption="$MISSION_BROKENNOSEJIANG_OBJECTIVE_005">
+	</objective>
+	<objective name="M_BNJ_006" caption="$MISSION_BROKENNOSEJIANG_OBJECTIVE_006">
+		<indicator name="BNJMission-Spawn_PlayerBoat:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	<objective name="M_BNJ_007" caption="$MISSION_BROKENNOSEJIANG_OBJECTIVE_007">
+		<indicator name="BNJMission-Spawn_BigBoatLoaded:spawn" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_BNJ_008" caption="$MISSION_BROKENNOSEJIANG_OBJECTIVE_008">
+		<indicator name="BNJMission-Spawn_BigBoatLoaded:spawn" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_BNJ_009" caption="$MISSION_BROKENNOSEJIANG_OBJECTIVE_009">
+		<indicator name="BNJMission-Marker_TGCraneEntrance" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+</objectives>

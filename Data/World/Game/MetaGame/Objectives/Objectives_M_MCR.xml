@@ -1,0 +1,71 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>	
+
+	<objective name="M_MCR_START" caption="$MISSION_MRSCHUSREVENGE_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-MCRMission" blip="mission_start" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_MCR_CALL_RICKY" caption="$MISSION_MRSCHUSREVENGE_CALL_RICKY" uses_pda="true">
+	</objective>
+	
+	<objective name="M_MCR_FIND_TARGET" caption="$MISSION_MRSCHUSREVENGE_OBJECTIVE_002">
+	</objective>
+
+	<objective name="M_MCR_DRIVE_TO_TARGET" caption="$MISSION_MRSCHUSREVENGE_OBJECTIVE_003">
+		<indicator name="MCRMission-Drive_PlayerDest" blip="mission_objective"></indicator>
+	</objective> 
+	
+	<objective name="M_MCR_GO_TO_FIRST_FIGHT" caption="$MISSION_MRSCHUSREVENGE_GO_TO_FIRST_FIGHT">
+		<indicator name="MCRMission-FirstFight_FightStartDest" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_MCR_FIRST_FIGHT" caption="$MISSION_MRSCHUSREVENGE_FIRST_FIGHT">
+	</objective>
+	
+	<objective name="M_MCR_GO_TO_SECOND_FIGHT" caption="$MISSION_MRSCHUSREVENGE_GO_TO_SECOND_FIGHT">
+		<indicator name="MCRMission-SecondFight_FightStartDest" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_MCR_SECOND_FIGHT" caption="$MISSION_MRSCHUSREVENGE_SECOND_FIGHT">
+	</objective>
+	
+	<objective name="M_MCR_GO_TO_DISARM_FIGHT" caption="$MISSION_MRSCHUSREVENGE_GO_TO_DISARM_FIGHT">
+		<indicator name="MCRMission-Target:spawn" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_MCR_DISARM_THE_THUG" caption="$MISSION_MRSCHUSREVENGE_DISARM_THE_THUG">
+		<indicator name="MCRMission-Disarm_DisarmThug:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_MCR_DEFEAT_DISARM_THUGS" caption="$MISSION_MRSCHUSREVENGE_DEFEAT_DISARM_THUGS">
+		<indicator name="MCRMission-Disarm_DisarmThug:spawn" blip="enemy"></indicator>
+	</objective>	
+	
+	<objective name="M_MCR_GO_TO_SHOOTOUT" caption="$MISSION_MRSCHUSREVENGE_GO_TO_SHOOTOUT">
+		<indicator name="MCRMission-Shootout_FightStartDest" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_MCR_FIGHT_TO_TARGET" caption="$MISSION_MRSCHUSREVENGE_OBJECTIVE_005">
+		<indicator name="MCRMission-Target:spawn" blip="mission_objective"></indicator>
+	</objective>    
+	
+	<objective name="M_MCR_CHASE_TARGET" caption="$MISSION_MRSCHUSREVENGE_OBJECTIVE_006">
+		<indicator name="MCRMission-VehicleChase_TargetVehicle:spawn" blip="mission_objective"></indicator>
+	</objective>
+
+	<objective name="M_MCR_DEFEAT_BACKUP" caption="$MISSION_MRSCHUSREVENGE_DEFEAT_BACKUP">
+		<indicator name="MCRMission-VehicleChase_TargetVehicle:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>    	
+
+	<objective name="M_MCR_DELIVER_TARGET" caption="$MISSION_MRSCHUSREVENGE_OBJECTIVE_007">
+		<indicator name="MCRMission-Return_Dropoff" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_MCR_TAKE_OUT_OF_TRUNK" caption="$MISSION_MRSCHUSREVENGE_OBJECTIVE_008">
+	</objective>
+	
+</objectives>

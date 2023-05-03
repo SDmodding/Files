@@ -1,0 +1,104 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+	<!-- Case: Serial Killer Lead 1 -->
+	<objective name="SK_Start_001" caption="Open Case with Officer Jane" autoflash="false"> <!-- $CASE_SERIALKILLER_OBJECTIVE_001 -->
+	  <indicator name="Locations-CaseBoardCorona" blip="case_start" corona="walk_case"></indicator>
+	</objective>
+	<objective name="SK1_1_GoCrime_00" caption="$CASE_SERIALKILLER_NAME_001"> <!-- $CASE_SERIALKILLER_OBJECTIVE_001 -->
+	  <indicator name="ProgressionTriggers_Cases-SK1Case" blip="case_start" corona="drive_case"></indicator>
+	</objective>
+	<objective name="SK1_Disguise" caption="$CASE_SK1_GET_DISGUISE">  
+	  <indicator name="SK1Case-mkr_dress_up" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	<objective name="SK1_GoCrime" caption="$CASE_SK1_GOTO_CRIME"> 
+	  <indicator name="SK1Case-crime_scene" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK1_CopTalk" caption="$CASE_SK1_COP_SOCIAL"> 
+	  <indicator name="SK1Case-cop:spawn" blip="social"></indicator>
+	</objective>
+	<objective name="SK1_ApproachBody1" caption="$CASE_SK1_APPROACH_BODY">
+	  <indicator name="SK1Case-mkr_body01" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK1_Photos_1" caption="$CASE_SK1_OBJECTIVE_PHOTO_BODY" uses_pda="true"> 
+	  <indicator name="SK1Case-mkr_body02" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK1_SearchBody1" caption="$CASE_SK1_SEARCH_BODY"> 
+	  <indicator name="SK1Case-mkr_body01" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK1_EnterWarehouse" caption="$CASE_SK1_PROCESSS_BODY01"> 
+	  <indicator name="SK1Case-Warehouse" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK1_SearchBody2" caption="$CASE_SK1_SEARCH_NEXT_BODY"> 
+	  <indicator name="SK1Case-mkr_body02" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK1_Photos_2" caption="$CASE_SK1_OBJECTIVE_PHOTO_BODY" uses_pda="true"> 
+	  <indicator name="SK1Case-mkr_body02" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK1_ProcessBody3" caption="$CASE_SK1_PROCESSS_BODY01"> 
+	  <indicator name="SK1Case-mkr_body03" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK1_Photos_3" caption="$CASE_SK1_PHOTO_BODY_03" uses_pda="true"> 
+	  <indicator name="SK1Case-mkr_body03" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK1_SearchBody3" caption="$CASE_SK1_SEARCH_LAST_BODY"> 
+	  <indicator name="SK1Case-mkr_body03" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK1_SearchBodies" caption="$CASE_SERIALKILLER_SEARCH_BODIES"> 
+	</objective>
+	<objective name="SK1_Ditch_Disguise" caption="$CASE_POPSTAR_OBJECTIVE_DITCH_DISGUISE">
+	  <indicator name="SK1Case-mkr_dress_up" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	<objective name="SK1_CallTeng" caption="$CASE_PS_CALL_TENG" uses_pda="true"> 
+	</objective>
+	
+	<!-- Case: Serial Killer Lead 2 -->
+	<objective name="SK2_1_GoCrime_00" caption="$CASE_SERIALKILLER_NAME_002" autoflash="false"> 
+	  <indicator name="ProgressionTriggers_Cases-SK2Case" blip="case_start" corona="walk_case"></indicator>
+	</objective>
+	<objective name="SK2_Disguise" caption="$CASE_SK2_GET_DISGUISE"> 
+	  <indicator name="SK2Case-Change_Clothes" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	<objective name="SK2_Hospital" caption="$CASE_SK2_ENTER_HOSPITAL">
+	  <indicator name="SK2Case-HostpitalBreadcrumb" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK2_Hack_Hospital" caption="$CASE_SK2_HACK_HOSPITAL">
+	  <indicator name="SK2Case-Hack_Hosptial_Records" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK2_Bug_Doctor" caption="$CASE_SK2_BUG_DOCTOR">
+	  <indicator name="SK2Case-Bug_Loc" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK2_Crack_Safe" caption="$CASE_SK2_CRACK_SAFE"> 
+	  <indicator name="SK2Case-Crack_Doctor_Loc" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK2_Leave" caption="$CASE_SK2_LEAVE_HOSPITAL"> 
+	  <indicator name="Locations-Hospital" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	<objective name="SK2_Ditch_Disguise" caption="$CASE_SK2_RETURN_DISGUISE">
+	  <indicator name="SK2Case-Change_Clothes" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	
+	<!-- Case: Serial Killer Lead 3 -->	
+	<objective name="SK3_CallTeng" caption="$CASE_SERIALKILLER_NAME_003" uses_pda="true"  autoflash="false"> <!-- $CASE_SERIALKILLER_OBJECTIVE_014 -->
+	  <!-- indicator name="ProgressionTriggers_Cases-SK4Case" blip="case_start" corona="walk_case"></indicator -->
+	</objective>
+	<objective name="SK4_Find" caption="$CASE_SK4_SAVE_CALVIN"> 
+	  <indicator name="SK4Case-Calvin_Blip" blip="case_objective"></indicator>
+	</objective>
+	<objective name="SK4_Hijack" caption="$CASE_SK4_CAPTURE_KIDNAPPER"> 
+	  <indicator name="SK4Case-Kidnapper_Car:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	<objective name="SK4_Capture" caption="$CASE_SK4_DELIVER_KIDNAPPER">
+	  <indicator name="SK4Case-Kidnapper_Car:spawn" blip="enemy_noncombat" ></indicator>
+	</objective>
+	<objective name="SK4_StashSpot" caption="$CASE_SK3_OBJECTIVE_ESCAPE_AREA">
+	  <indicator name="SK4Case-mkr-Delivery" blip="case_objective" corona="drive_case"></indicator>
+	</objective>
+	<objective name="SK3_Call_Teng" caption="$CASE_PS_CALL_TENG" uses_pda="true"> 
+	</objective>
+	
+	<objectivehint name="SK4_Calvin_Trunk" caption="$CASE_SERIALKILLER_CALVIN_HINT_01"></objectivehint>
+</objectives>

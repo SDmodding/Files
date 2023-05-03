@@ -1,0 +1,46 @@
+<!--
+	
+	See Objectives.xml for details
+ 
+-->
+
+<objectives>	
+
+	<objective name="M_NMC_START" caption="$SGTITLE_NIGHT_MARKET_CHASE" autoflash="false">
+	</objective>
+
+	<objective name="M_NMC_TALK_TO_PEDDLER" caption="$MISSION_NIGHTMARKETCHASE_OBJECTIVE_008">
+		<indicator name="NMCMission-FindMing_Peddler:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="M_NMC_FIND_MING" caption="$MISSION_NIGHTMARKETCHASE_OBJECTIVE_007">
+		<indicator name="NMCMission-Ming:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="M_NMC_CONFRONT_MING" caption="$MISSION_NIGHTMARKETCHASE_OBJECTIVE_003">
+		<indicator name="NMCMission-Ming:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="M_NMC_CHASE_MING" caption="$MISSION_NIGHTMARKETCHASE_OBJECTIVE_004">
+		<indicator name="NMCMission-Ming:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="M_NMC_DEFEAT_COURYARD" caption="$MISSION_NIGHTMARKETCHASE_OBJECTIVE_009">
+	</objective>
+	
+	<objective name="M_NMC_DUMPSTER_THUG" caption="$MISSION_NIGHTMARKETCHASE_OBJECTIVE_011">
+	</objective>
+	
+	<objective name="M_NMC_DEFEAT_ROOFTOP" caption="$MISSION_NIGHTMARKETCHASE_OBJECTIVE_005">
+		<indicator name="NMCMission-Ming:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_NMC_DEFEAT_MING" caption="$MISSION_NIGHTMARKETCHASE_OBJECTIVE_012">
+		<indicator name="NMCMission-Ming:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_NMC_PICK_UP_MING" caption="$MISSION_NIGHTMARKETCHASE_OBJECTIVE_010">
+		<indicator name="NMCMission-Ming:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+</objectives>

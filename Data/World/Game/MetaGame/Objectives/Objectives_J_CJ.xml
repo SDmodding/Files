@@ -1,0 +1,156 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+	<!-- ********** Cop Job Unlocker ********** -->
+	<objective name="J_CJ_START" caption="$COP_JOBS_START_SDHD">
+		<indicator name="Locations-Cop_Jobs_Start" corona="walk_case"  blip="cop_event_start"></indicator>	
+	</objective>
+	
+	<objective name="J_CJ_AR_START" caption="$EVENT_AR_02_OBJ_01_SDHD">
+	</objective> 
+	
+	<objective name="J_CJ_DR_START" caption="$EVENT_DR_START_SDHD">
+	</objective>
+	
+	
+	<!-- ********** Armed Robbery2 ********** -->
+	<objective name="J_AR2_01a" caption="$EVENT_AR_02_OBJ_01_SDHD">
+	</objective>
+	<objective name="J_AR2_02a" caption="$EVENT_AR_02_OBJ_02" autoflash="true">	
+	</objective>	
+	<objective name="J_AR2_03a" caption="$EVENT_AR_02_OBJ_03" autoflash="true">	
+	</objective>
+	
+	<objective name="J_AR2_ALLEY1" caption="$EVENT_TRIADWARS_OBJECTIVE_THUGS" autoflash="true">	
+	</objective>
+	
+	<!-- ********** Drug Runner ********** -->
+	<objective name="J_DR1_01" caption="$EVENT_DR_01_OBJ_01">
+		<indicator name="DRJob_car"   blip="enemy"></indicator>	
+	</objective>
+	<objective name="J_DR1_02" caption="$EVENT_DR_01_OBJ_02" autoflash="true">
+		<indicator name="DRJob_driver" blip="enemy"></indicator>	
+		<indicator name="DRJob_thug1"  blip="enemy"></indicator>	
+		<indicator name="DRJob_thug2"  blip="enemy"></indicator>	
+	</objective>
+	<objective name="J_DR1_03" caption="$EVENT_DR_01_OBJ_03" autoflash="true">
+		<indicator name="DRJob_driver" blip="enemy"></indicator>	
+		<indicator name="DRJob_thug1"  blip="enemy"></indicator>	
+		<indicator name="DRJob_thug2"  blip="enemy"></indicator>	
+	</objective>
+		
+	<!-- ********** Hostage Situation ********** -->
+	<objective name="J_HS_01a" caption="$EVENT_WS_01_OBJ_01_SDHD">
+	</objective>
+	<objective name="J_HS_02a" caption="$EVENT_HS_01_OBJ_01_SDHD">
+	</objective>
+	<objective name="J_HS_03" caption="$EVENT_HS_01_OBJ_02" autoflash="true">
+	</objective>
+	
+	<!-- ********** Wharf Smuggler ********** -->
+	<objective name="J_WS_01" caption="$EVENT_WS_01_OBJ_01_SDHD">
+	</objective>
+	<objective name="J_WS_02" caption="$EVENT_WS_01_OBJ_02_SDHD">
+		<indicator name="WSJob-marker_wharf" blip="case_objective"></indicator>	
+	</objective>
+	<objective name="J_WS_03" caption="$EVENT_WS_01_OBJ_03">
+		<indicator name="WSJob-marker_wharf" blip="case_objective"></indicator>	
+	</objective>
+	<objective name="J_WS_04" caption="$EVENT_WS_01_OBJ_04">
+		<indicator name="WSJob-marker_wharf" blip="case_objective"></indicator>	
+	</objective>
+	<objective name="J_WS_05" caption="$EVENT_WS_01_OBJ_05">
+		<indicator name="WSJob-marker_wharf" blip="case_objective"></indicator>	
+	</objective>
+	
+	
+	
+	
+	<!-- ********** Armed Robbery (This is cut) ********** -->
+	<objective name="J_AR_01a" caption="$EVENT_AR_01_OBJ_01">
+		<indicator name="ARJob-loc1_marker_start" corona="drive_job"  blip="job_objective"></indicator>	
+	</objective>
+	<objective name="J_AR_01b" caption="$EVENT_AR_01_OBJ_01">
+		<indicator name="ARJob-loc2_marker_start" corona="drive_job"  blip="job_objective"></indicator>	
+	</objective>
+	<objective name="J_AR_02" caption="$EVENT_AR_01_OBJ_02">
+		<!-- <indicator name="ARJob-marker_start" corona="drive_job"  blip="job_objective"></indicator>	 -->
+	</objective>
+	
+	<!-- ********** Boat Smuggler (This is cut) ********** -->
+	<objective name="J_BS_01a" caption="$EVENT_BS_01_OBJ_01">
+		<indicator name="BSJob_car"  blip="enemy"></indicator>	
+	</objective>
+	<objective name="J_BS_02a" caption="$EVENT_BS_01_OBJ_02" autoflash="true">
+		<indicator name="BSJob_driver" blip="enemy"></indicator>	
+		<indicator name="BSJob_thug1"  blip="enemy"></indicator>	
+		<indicator name="BSJob_thug2"  blip="enemy"></indicator>	
+	</objective>
+
+	<!-- Progression Trigger Objectives -->
+	
+	<objective name="J_CJ_AR2_01" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_AR2_01" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_AR2_02" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_AR2_02" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_AR2_03" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_AR2_03" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_AR2_04" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_AR2_04" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_AR2_05" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_AR2_05" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_AR2_06" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_AR2_06" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_AR2_07" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_AR2_07" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_AR2_08" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_AR2_08" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_AR2_09" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_AR2_09" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_DR_01" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_DR_01" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_DR_02" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_DR_02" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_DR_03" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_DR_03" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_DR_04" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_DR_04" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_DR_05" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_DR_05" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_DR_06" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_DR_06" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_DR_07" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_DR_07" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_HS_01" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_HS_01" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_HS_02" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_HS_02" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_HS_03" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_HS_03" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	<objective name="J_CJ_WS_01" caption="$COP_JOBS_START_SDHD" autoflash="false">
+		<indicator name="ProgressionTriggers_Jobs-J_CJ_WS_01" corona="walk_case" blip="cop_event_start"></indicator>
+	</objective>
+	
+</objectives>

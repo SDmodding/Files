@@ -1,0 +1,58 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+	<!--********** Event - Shoplifter 1 ***********-->
+	<objective name="E_S_TEXT" caption="$OWNAME_SHOPLIFTER"  text_unlockable="true"  autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_S" blip="event_start"></indicator>
+	</objective>
+	
+	<objective name="E_S_001" caption="$EVENT_SHOPLIFTER1_OBJECTIVE_001">
+		<indicator name="E_SEvent-E_S_Crazy:spawn" blip="event_objective"></indicator>
+	</objective>
+	
+	<objective name="E_S_REMOVEDRUNK" caption="$EVENT_SHOPLIFTER1_OBJECTIVE_002">
+		<indicator name="E_SEvent-E_S_Crazy:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	
+	<!--********** Event - Shoplifter 2 ***********-->
+		<objective name="E_S2_TEXT" caption="$OWNAME_SHOPLIFTER_2"  text_unlockable="true"  autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_S2" blip="event_start"></indicator>
+	</objective>
+	
+	<objective name="E_S2_001" caption="$EVENT_SHOPLIFTER2_OBJECTIVE_001">
+		<indicator name="E_S2Event-Manager:spawn" blip="event_objective"></indicator>
+	</objective>
+	
+	<objective name="E_S2_REMOVEDRUNK" caption="$EVENT_SHOPLIFTER2_OBJECTIVE_002">
+		<indicator name="E_S2Event-Shoplifter:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<!--********** Event - Shoplifter 3 ***********-->
+	<objective name="E_S3_TEXT" caption="$OWNAME_SHOPLIFTER_3"  text_unlockable="true"  autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_S3" blip="event_start"></indicator>
+	</objective>
+	<objective name="E_S3_01" caption="$EVENT_SHOPLIFTER_03_OBJ_01">
+		<indicator name="E_S3Event-Manager:spawn" blip="event_objective"></indicator>
+	</objective>
+	<objective name="E_S3_REMOVEDRUNK" caption="$EVENT_SHOPLIFTER_03_OBJ_02">
+		<indicator name="E_S3Event-Shoplifter:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<!--********** Event -  Shoplifter 4 ***********-->
+	<objective name="E_S4_TEXT" caption="$OWNAME_SHOPLIFTER_4"  text_unlockable="true"  autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_S4" blip="event_start"></indicator>
+	</objective>
+	<objective name="E_S4_01" caption="$EVENT_SHOPLIFTER2_OBJECTIVE_001">
+		<indicator name="E_S4Event-Manager:spawn" blip="event_objective"></indicator>
+	</objective>
+	<objective name="E_S4_REMOVEDRUNK" caption="$EVENT_SHOPLIFTER_04_OBJ_02">
+		<indicator name="E_S4Event-Shoplifter:spawn" blip="enemy"></indicator>
+		<indicator name="E_S4Event-vsg_car:Vehicle:spawn" blip="event_objective" corona="arrow_social"></indicator>
+	</objective>
+
+</objectives>

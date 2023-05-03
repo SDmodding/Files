@@ -1,0 +1,98 @@
+
+<objectives>
+
+	<!-- COP PURSUIT 1 FAVOUR -->
+		<objective name="E_CP_TEXT" caption="$OWNAME_COP_PURSUIT_1" autoflash="false">
+			<indicator name="ProgressionTriggers_Events-E_CP" blip="face_character"></indicator>
+		</objective>
+		
+		<objective name="E_CP_SOCIAL" caption="$EVENT_COPPURSUIT1_NAME_001" autoflash="false">
+		</objective>
+		
+		<!-- Wait for Calvin		-->
+		<objective name="E_CP_WAITFORCALVIN" caption="$EVENT_COPPURSUIT1_OBJECTIVE_005">
+			<indicator name="E_CP_Character:spawn" blip="event_objective"></indicator>
+		</objective>
+		
+		<!-- Enter Calvin's car -->
+		<objective name="E_CP_GETINCAR" caption="$EVENT_COPPURSUIT1_OBJECTIVE_001">
+			<!--<indicator name="CopPursuit-Spawn_ThugCar:spawn" blip="event_objective" corona="arrow_social"></indicator>-->
+		</objective>
+		
+		<!-- Wait for Calvin to enter car -->
+		<objective name="E_CP_WAITFORCALVINCAR" caption="$EVENT_COPPURSUIT1_OBJECTIVE_006">
+			<indicator name="E_CP_Character:spawn" blip="event_objective"></indicator>
+		</objective>		
+		
+		<!-- Escape the cops -->
+		<objective name="E_CP_LOSETHECOPS" caption="$EVENT_COPPURSUIT1_OBJECTIVE_004">			
+		</objective>		
+		
+		<!-- Drop off Calvin-->
+		<objective name="E_CP_DROPYUNGOFF" caption="$EVENT_COPPURSUIT1_OBJECTIVE_002">
+		</objective>
+		
+		
+	<!-- COP PURSUIT 2 FAVOUR -->
+		<objective name="E_CP2_TEXT" caption="$OWNAME_COP_PURSUIT_2"  autoflash="false" >
+			<indicator name="ProgressionTriggers_Events-E_CP2" blip="face_character"></indicator>
+		</objective>
+		
+		<objective name="E_CP2_SOCIAL" caption="$EVENT_COPPURSUIT1_NAME_001" autoflash="false" >
+		</objective>
+		
+		<!-- Follow Calvin -->
+		<objective name="E_CP2_FOLLOW" caption="$EVENT_COPPURSUIT2_OBJECTIVE_002">
+			<indicator name="E_CP2_Character:spawn" blip="event_objective"></indicator>
+		</objective>	
+		
+		<!-- Enter Calvin's car -->
+		<objective name="E_CP2_GETINCAR" caption="$EVENT_COPPURSUIT1_OBJECTIVE_001">
+			<!--<indicator name="CopPursuitGun-Spawn_ThugCar01:spawn" blip="event_objective" corona="arrow_social"></indicator>-->
+		</objective>
+		
+		
+		<!-- Help Calvin escape the cops -->
+		<objective name="E_CP2_LOSETHECOPS" caption="$EVENT_COPPURSUIT_OBJECTIVE_001">
+		</objective>
+		
+		<!-- Drop Calvin off -->
+		<objective name="E_CP2_DROPOFF" caption="$EVENT_COPPURSUIT_OBJECTIVE_002"></objective>
+
+		
+	<!-- COP PURSUIT 3 FAVOUR -->
+		<objective name="E_CP3_TEXT" caption="$OWNAME_COP_PURSUIT_3" autoflash="false" >
+			<indicator name="ProgressionTriggers_Events-E_CP3" blip="face_character"></indicator>
+		</objective>
+		
+		<objective name="E_CP3_SOCIAL" caption="$EVENT_COPPURSUIT2_NAME_001" autoflash="false" >
+		</objective>
+		
+		<!-- Wait for Calvin		-->
+		<objective name="E_CP3_WAITFORCALVIN" caption="$EVENT_COPPURSUIT1_OBJECTIVE_005">
+			<indicator name="E_CP3_Character:spawn" blip="event_objective"></indicator>
+		</objective>
+		
+		<!-- Wait for Calvin to enter car -->
+		<objective name="E_CP3_WAITFORCALVINCAR" caption="$EVENT_COPPURSUIT1_OBJECTIVE_006">
+			<indicator name="E_CP3_Character:spawn" blip="event_objective"></indicator>
+		</objective>	
+		
+		<!-- Enter Calvin's car -->
+		<objective name="E_CP3_GETINCAR" caption="$EVENT_COPPURSUIT1_OBJECTIVE_001">
+			<!--<indicator name="CopPursuit2-Spawn_ThugCar01:spawn" blip="event_objective" corona="arrow_social"></indicator>-->
+		</objective>
+		
+		<!-- Help Calvin escape the cops -->
+		<objective name="E_CP3_LOSETHECOPS" caption="$EVENT_COPPURSUIT_OBJECTIVE_001">
+		</objective>
+		
+		<!-- Drop Calvin off -->
+		<objective name="E_CP3_DROPOFF" caption="$EVENT_COPPURSUIT_OBJECTIVE_002"></objective>
+
+
+		
+
+	
+
+</objectives>

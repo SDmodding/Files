@@ -1,0 +1,65 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+		<!--********** Event - Highway Mayhem  ***********-->
+	<objective name="F_HM_TEXT" caption="$OWNAME_HIGHWAY_MAYHEM"  autoflash="false">
+		<indicator name="ProgressionTriggers_Favours-F_HighwayMayhem" blip="face_character"></indicator>
+	</objective>
+	
+	<objective name="F_HM_SOCIAL" caption="$EVENT_HIGHWAYMAYHEM_NAME_000" autoflash="false">
+	</objective>
+	
+	<objective name="F_HM_FINDVEHICLE" caption="$EVENT_HIGHWAYMAYHEM_OBJECTIVE_001">
+		<!--<indicator name="HMEvent-BikeConvenient:spawn" blip="event_objective" corona="arrow_social" ></indicator>-->
+	</objective>
+	
+	<objective name="F_HM_GETONFREEWAY" caption="$EVENT_HIGHWAYMAYHEM_OBJECTIVE_002">
+		<indicator name="HMEvent-HighwayEntrance" blip="event_objective"></indicator>
+	</objective>
+	
+	<objective name="F_HM_DESTROYVAN_1" caption="$EVENT_HIGHWAYMAYHEM_OBJECTIVE_003">
+	</objective>
+	<objective name="F_HM_DESTROYVAN_2" caption="$EVENT_HIGHWAYMAYHEM_OBJECTIVE_003">
+		<indicator name="HMEvent-thugVan02:spawn" blip="enemy_objective" corona="arrow_hostile_truck"></indicator>
+	</objective>
+	<objective name="F_HM_DESTROYVAN_3" caption="$EVENT_HIGHWAYMAYHEM_OBJECTIVE_003">
+		<indicator name="HMEvent-thugVan03:spawn" blip="enemy_objective" corona="arrow_hostile_truck"></indicator>
+	</objective>
+	<objective name="F_HM_DESTROYVAN_4" caption="$EVENT_HIGHWAYMAYHEM_OBJECTIVE_003">
+		<indicator name="HMEvent-thugVan04:spawn" blip="enemy_objective" corona="arrow_hostile_truck"></indicator>
+	</objective>
+	
+			<!--********** Event - Highway Mayhem 2 ***********-->
+	<objective name="F_HM2_TEXT" caption="$OWNAME_HIGHWAY_MAYHEM_2"  autoflash="false">
+		<indicator name="ProgressionTriggers_Favours-F_HighwayMayhem2" blip="face_character"></indicator>
+	</objective>
+	
+	<objective name="F_HM2_SOCIAL" caption="$EVENT_HIGHWAYMAYHEM2_NAME_000" autoflash="false">
+	</objective>
+	
+	<objective name="F_HM2_DEFENDSUV" caption="$EVENT_HIGHWAYMAYHEM2_OBJECTIVE_001">
+	</objective>
+	
+	<objective name="F_HM2_002" caption="$EVENT_HIGHWAYMAYHEM2_OBJECTIVE_002">
+		<indicator name="HM2Event-HighwayEntrance" blip="event_objective"></indicator>
+	</objective>
+	
+	<objective name="F_HM2_003" caption="$EVENT_HIGHWAYMAYHEM2_OBJECTIVE_003">
+		<indicator name="HMEvent-thugVan01:spawn" blip="enemy" corona="arrow_hostile" ></indicator>
+	</objective>
+	<objective name="F_HM2_004" caption="$EVENT_HIGHWAYMAYHEM2_OBJECTIVE_003">
+		<indicator name="HM2Event-thugVan02:spawn" blip="enemy" corona="arrow_hostile" ></indicator>
+	</objective>
+	<objective name="F_HM2_005" caption="$EVENT_HIGHWAYMAYHEM2_OBJECTIVE_003">
+		<indicator name="HM2Event-thugVan03:spawn" blip="enemy" corona="arrow_hostile" ></indicator>
+	</objective>
+	<objective name="F_HM2_006" caption="$EVENT_HIGHWAYMAYHEM2_OBJECTIVE_003">
+		<indicator name="HM2Event-thugVan04:spawn" blip="enemy" corona="arrow_hostile" ></indicator>
+	</objective>
+
+
+</objectives>

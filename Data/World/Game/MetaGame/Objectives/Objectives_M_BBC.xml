@@ -1,0 +1,72 @@
+<objectives>
+	<!-- Mission: Bam Bam Club -->
+	<objective name="BBC_OBJ1" caption="$MISSION_BAMBAMBCLUB_NAME_001" autoflash="false">
+	  <indicator name="ProgressionTriggers_Missions-M_BBC" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_BBC_HEAD_TO_CLUB" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_001">
+	  <indicator name="BBCMission-mkr_playerParkSpot" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_BBC_TALK_TO_BOUNCER" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_003">
+		<indicator name="BBCMission-bouncer1:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="M_BBC_GO_INSIDE" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_014">
+		<indicator name="BBCMission-mkrInsideClub" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_BBC_TALK_TO_VIP_BOUNCER" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_013">
+		<indicator name="BBCMission-bouncer2:spawn" blip="social"></indicator>
+	</objective>
+	
+	
+	<objective name="M_BBC_TALK_TO_BARTENDER" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_004">
+		<indicator name="BBCMission-bartender1:spawn" blip="social"></indicator>
+	</objective>
+	<objective name="M_BBC_TALK_TO_TIFFANY" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_018">
+		<indicator name="BBCMission-girl:spawn" blip="social"></indicator>
+	</objective> 
+	<objective name="M_BBC_FOLLOW_TIFFANY" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_005">
+		<!--<indicator name="BBCMission-girl:spawn" blip="mission_objective" corona="arrow_objective"></indicator>-->
+		<indicator name="BBCMission-mkr_girldest2" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective> 
+	<objective name="M_BBC_MEET_TIFFANY" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_005a">
+		<indicator name="BBCMission-mkr_girldest2" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective> 
+	<objective name="M_BBC_SING_KARAOKE" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_015">
+		<indicator name="BBCMission-mkr_karaoke" blip="mission_objective"></indicator>
+	</objective> 
+	
+	<objective name="M_BBC_GO_UPSTAIRS" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_006a">
+		<indicator name="BBCMission-mkrUpstairs" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_BBC_GO_TO_VIP" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_006">
+		<indicator name="BBCMission-mkr_weiBennyNisPos" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_BBC_TAKE_OUT_DOGBOYS" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_007">
+		
+		
+	</objective>
+	<objective name="M_BBC_DEFEAT_BENNYS_BACKUP" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_008">
+		
+	</objective>
+	
+	<objective name="M_BBC_DEFEAT_BOUNCERS" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_010">
+		
+	</objective>
+	
+	<objective name="M_BBC_LOOK_FOR_BENNY" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_012">
+		<indicator name="BBCMission-mkr_bathroomObj" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_BBC_CLEAR_BATHROOM" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_016">
+		
+	</objective> 
+	<objective name="M_BBC_GET_BENNY_OUT" caption="$MISSION_BAMBAMBCLUB_OBJECTIVE_017">
+		<indicator name="BBCMission-miniboss:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+			
+	
+
+</objectives>
+	

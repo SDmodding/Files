@@ -1,0 +1,62 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+
+	<!-- Hit and Run Objectives -->
+	
+	<objective name="E_HNR1_TEXT" caption="$OWNAME_HIT_AND_RUN" text_unlockable="true" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-RNC1Event" blip="event_start"></indicator>
+	</objective>
+	
+	<objective name="E_RNC1_CHASECAR" caption="$EVENT_HITANDRUN1_OBJECTIVE_001">
+		<indicator name="RNC1Event-Spawn_ChaseCar:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="E_RNC1_CHASETHIEF" caption="$EVENT_HITANDRUN1_OBJECTIVE_002">  
+		<indicator name="RNC1Event-Spawn_ChasePed:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="E_RNC1_BEATUPTHIEF" caption="$EVENT_HITANDRUN1_OBJECTIVE_003">  
+		<indicator name="RNC1Event-Spawn_ChasePed:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="E_HNR2_TEXT" caption="$OWNAME_HIT_AND_RUN_2" text_unlockable="true" autoflash="false">	
+		<indicator name="ProgressionTriggers_Events-RNC2Event" blip="event_start"></indicator>
+	</objective>
+	
+	<objective name="E_RNC2_CHASECAR" caption="$EVENT_HITANDRUN2_OBJECTIVE_001">
+		<indicator name="RNC2Event-Spawn_ChaseCar:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="E_RNC2_CHASETHIEF" caption="$EVENT_HITANDRUN2_OBJECTIVE_002">
+		<indicator name="RNC2Event-Spawn_ChasePed:spawn" blip="enemy_noncombat"></indicator> 
+	</objective>	
+	
+	<objective name="E_RNC2_BEATUPTHIEF" caption="$EVENT_HITANDRUN1_OBJECTIVE_003">
+		<indicator name="RNC2Event-Spawn_ChasePed:spawn" blip="enemy"></indicator> 
+	</objective>	
+	
+	<objective name="E_HNR3_TEXT" caption="$OWNAME_HIT_AND_RUN_3" text_unlockable="true" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-RNC3Event" blip="event_start"></indicator> 
+	</objective>	
+
+	<objective name="E_RNC3_000" caption="$EVENT_HITANDRUN3_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-RNC3Event" blip="event_start" corona="walk_event"></indicator>
+	</objective>
+	
+	<objective name="E_RNC3_CHASETHIEF" caption="$EVENT_HITANDRUN3_OBJECTIVE_001">
+		<indicator name="RNC3Event-Spawn_ChasePed:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="E_RNC3_BEATUPTHIEF" caption="$EVENT_HITANDRUN3_OBJECTIVE_004">
+		<indicator name="RNC3Event-Spawn_ChasePed:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="E_RNC_GET_BAG" caption="$EVENT_HITANDRUN_GET_BAG">
+	</objective>
+
+</objectives>

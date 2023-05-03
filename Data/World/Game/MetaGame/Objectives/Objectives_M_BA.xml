@@ -1,0 +1,101 @@
+<objectives>
+
+
+<!--**********Buried Alive***********-->
+	<objective name="M_BA_001" caption="$MISSION_BURIEDALIVE_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-BAMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_BA_GO_TO_MEET" caption="$MISSION_BURIEDALIVE_OBJECTIVE_002" autoflash="true">
+		<indicator name="BAMission-CombatSpawnGroup_Upper:Thug:spawn" blip="mission_objective"></indicator>
+	</objective>	
+	
+	<objective name="M_BA_TALK_HORSEFACE" caption="$MISSION_BURIEDALIVE_OBJECTIVE_016" autoflash="true">
+		<indicator name="BAMission-Spawn_ContactThug:spawn" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_BA_CHECK_BOAT" caption="$MISSION_BURIEDALIVE_OBJECTIVE_008">
+		<indicator name="BAMission-Marker_HangoutRestore" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	
+	<objective name="M_BA_PHONE_TRACE_SIGNAL" caption="$MISSION_BURIEDALIVE_OBJECTIVE_004" autoflash="true">
+		<indicator name="BAMission-phonetracing_signal" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_BA_PHONE_TRACE" caption="$MISSION_BURIEDALIVE_OBJECTIVE_004A">		
+	</objective>	
+	
+	<objective name="M_BA_GO_TO_ZI_WAI" caption="$MISSION_BURIEDALIVE_OBJECTIVE_005">
+		<indicator name="BAMission-mkrZiWai" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>	
+
+	
+	<objective name="M_BA_DEFEAT_TRIAD" caption="$MISSION_BURIEDALIVE_OBJECTIVE_003">
+		
+	</objective>	
+
+	<objective name="M_BA_LOOK_FOR_JACKIE" caption="$MISSION_BURIEDALIVE_OBJECTIVE_009A">
+		<indicator name="BAMission-mkr_SearchForJackie" blip="mission_objective" corona="arrow_objective"></indicator> 
+	</objective>
+
+	<objective name="M_BA_DEFEAT_HORSEFACE" caption="$MISSION_BURIEDALIVE_OBJECTIVE_021">
+		<indicator name="BAMission-Spawn_ContactThug:spawn" blip="enemy"></indicator> 
+	</objective>		
+	
+	
+	<objective name="M_BA_GRAB_HORSEFACE" caption="$MISSION_BURIEDALIVE_OBJECTIVE_009">
+		<indicator name="BAMission-Spawn_ContactThug:spawn" blip="enemy"></indicator> 
+	</objective>	
+	
+	<objective name="M_BA_DRAG_HORSEFACE" caption="$MISSION_BURIEDALIVE_OBJECTIVE_007C">
+		<indicator name="BAMission-mkr_tablesaw" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	
+	<objective name="M_BA_CHASE_ZI_WAI_CAR" caption="$MISSION_BURIEDALIVE_OBJECTIVE_006">
+		<indicator name="BAMission-VehicleSpawnGroup_ZiWai:Vehicle:spawn" blip="mission_objective" corona="arrow_objective"></indicator>		
+	</objective>		
+	
+	<objective name="M_BA_CHASE_ZI_WAI_FOOT"  caption="$MISSION_BURIEDALIVE_OBJECTIVE_006">
+		<indicator name="BAMission-VehicleSpawnGroup_ZiWai:Seat1:spawn" blip="enemy_noncombat"></indicator>		
+	</objective>
+	
+	<objective name="M_BA_DEFEAT_ZI_WAI" caption="$MISSION_BURIEDALIVE_OBJECTIVE_007D" >
+		<indicator name="BAMission-VehicleSpawnGroup_ZiWai:Seat1:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_BA_GET_PHONE" caption="$MISSION_BURIEDALIVE_OBJECTIVE_007" >
+		<!--<indicator name="BAMission-mkr_phone" blip="mission_objective" corona="arrow_objective"></indicator>-->
+		<!--<indicator name="BAMission-mkr_phone" blip="mission_objective"></indicator>-->
+	</objective>
+	
+	<objective name="M_BA_CHECK_PHONE" caption="$MISSION_BURIEDALIVE_OBJECTIVE_007B" uses_pda="true">
+	</objective>
+	
+	<objective name="M_BA_CALL_SALTY" caption="$MISSION_BURIEDALIVE_OBJECTIVE_015" uses_pda="true">
+	</objective>
+	
+	<objective name="M_BA_MEET_SALTY" caption="$MISSION_BURIEDALIVE_OBJECTIVE_014" autoflash="true">
+		<indicator  name="BAMission-OldSalty_Objective" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_BA_GET_IN_BOAT" caption="$MISSION_BURIEDALIVE_OBJECTIVE_010">
+		<indicator  name="BAMission-Spawn_PlayerBoat:spawn" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_BA_DEFEAT_BOAT" caption="$MISSION_MINIBUS_OBJECTIVE_009">
+		<indicator name="BAMission-Spawn_PlayerBoat:spawn"></indicator>
+	</objective>	
+
+	
+	<objective name="M_BA_GO_TO_ISLAND" caption="$MISSION_BURIEDALIVE_OBJECTIVE_011"> 
+		<indicator  name="BAMission-Marker_JackieIsland" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_BA_DIG_UP_JACKIE" caption="$MISSION_BURIEDALIVE_OBJECTIVE_012">
+		<indicator name="BAMission-Marker_DigUpJackie" blip="mission_objective"></indicator>
+	</objective>	
+	<objective name="M_BA_RETURN_JACKIE" caption="$MISSION_BURIEDALIVE_OBJECTIVE_013">
+		<indicator  name="BAMission-Marker_RHDestination" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+</objectives>

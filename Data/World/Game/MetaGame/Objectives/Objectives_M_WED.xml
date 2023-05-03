@@ -1,0 +1,93 @@
+<!--
+	
+	See Objectives.xml for details
+	
+-->
+<objectives>
+
+<!-- Mission: Wedding -->
+	<objective name="WED_0_Tux_1"	caption="$MISSION_WEDDING_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-M_WED" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_WED_PURCHASE_TUXEDO" caption="$MISSION_WEDDING_OBJECTIVE_001">
+		<indicator name="WEDMission-Marker_Tuxedo_In" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_WED_DRIVE_HALL" caption="$MISSION_WEDDING_OBJECTIVE_002">
+		<indicator name="WEDMission-mkr_startHallNis" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_WED_INSIDE_HALL" caption="$MISSION_WEDDING_OBJECTIVE_004">
+		<indicator name="WEDMission-mkr_tempDoor" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_WED_FIND_WAY_INSIDE" caption="$MISSION_WEDDING_OBJECTIVE_005">
+		<indicator name="WEDMission-mkr_tempBreakInOutside" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_WED_FIND_WEDDING_PARTY" caption="$MISSION_WEDDING_OBJECTIVE_021">
+		<indicator name="WEDMission-mkr_tempBreakInOutside02" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_WED_DEFEAT_ATTACKERS" caption="$MISSION_WEDDING_OBJECTIVE_006">
+		
+	</objective>
+	<objective name="M_WED_FIND_WINSTON" caption="$MISSION_WEDDING_OBJECTIVE_014">
+		<indicator name="WEDMission-mkr_lookForWinston" blip="mission_objective"></indicator>
+	</objective>
+	
+	
+	<objective name="M_WED_DISARM_THUG" caption="$MISSION_WEDDING_OBJECTIVE_019">
+		<indicator name="WEDMission-sp_hallThug01:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_WED_GET_TO_WINSTON" caption="$MISSION_WEDDING_OBJECTIVE_022">
+		<indicator name="WEDMission-mkr_winstonDead" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_WED_GET_TO_MAIN_ROOM_1" caption="$MISSION_WEDDING_OBJECTIVE_008" >
+		<indicator name="WEDMission-mkr_gotoMainHall" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_WED_GET_TO_MAIN_ROOM_2" caption="$MISSION_WEDDING_OBJECTIVE_008" >
+		<indicator name="WEDMission-mkr_gotoMainHall02" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_WED_CLEAR_BALCONY" caption="$MISSION_WEDDING_OBJECTIVE_009">
+		
+	</objective>
+	<objective name="M_WED_GET_TO_STAIRS" caption="$MISSION_WEDDING_OBJECTIVE_020">
+		<indicator name="WEDMission-mkr_tempStairs" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_WED_SAVE_HOSTAGE" caption="$MISSION_WEDDING_OBJECTIVE_016">
+		<indicator name="WEDMission-mkr_tempHostage" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	<objective name="M_WED_CLEAR_GROUND_FLOOR" caption="$MISSION_WEDDING_OBJECTIVE_017">
+		
+	</objective>
+	<objective name="M_WED_CLEAR_ALL_ATTACKERS" caption="$MISSION_WEDDING_OBJECTIVE_023">
+		
+	</objective>
+	<objective name="M_WED_LOOK_FOR_PO" caption="$MISSION_WEDDING_OBJECTIVE_018">
+		<indicator name="WEDMission-mkr_tempFight" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_WED_LOOK_FOR_PO_2" caption="$MISSION_WEDDING_OBJECTIVE_018">
+		<indicator name="WEDMission-mkr_tempFight" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_WED_LOOK_FOR_PO_3" caption="$MISSION_WEDDING_OBJECTIVE_018">
+		<indicator name="WEDMission-mkr_tempFight" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_WED_FIND_PO" caption="$MISSION_WEDDING_OBJECTIVE_010" autoflash="false">
+		<indicator name="WEDMission-mkr_weiWithPo" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_WED_GET_TO_PO" caption="$MISSION_WEDDING_OBJECTIVE_011">
+		<indicator name="WEDMission-sp_po:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	
+	<objective name="M_WED_ESCORT_PO" caption="$MISSION_WEDDING_OBJECTIVE_012">
+		<indicator name="WEDMission-mkr_tempBridge" blip="mission_objective" corona="walk_mission"></indicator>
+		
+	</objective>
+	<objective name="M_WED_BRING_PO" caption="$MISSION_WEDDING_OBJECTIVE_013">
+		<indicator name="WEDMission-mkr_tempRoad" blip="mission_objective" corona="walk_mission"></indicator>
+		
+	</objective>
+	<objective name="M_WED_BRING_PO_HOSPITAL" caption="$MISSION_WEDDING_OBJECTIVE_015">
+		<indicator name="WEDMission-mkr_tempHospital" blip="mission_objective" corona="walk_mission"></indicator>
+		
+	</objective>
+	<objective name="M_WED_DEFEAT_HOSTAGE_TAKERS" caption="$MISSION_WEDDING_OBJECTIVE_006"></objective>
+</objectives>

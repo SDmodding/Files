@@ -1,0 +1,20 @@
+<objectives>
+	<objective name="M_TT_RT_START" caption="$MISSION_RT_TITLE" autoflash="false">
+		<indicator name="ProgressionTriggers_TT-RTMission" blip="transterror_start" corona="drive_job"></indicator>
+	</objective>
+
+	<objective name="M_TT_RT_GO_TO_START" caption="$TT_CRUISE_CONTROL_START_ALT"></objective>
+	
+	<objective name="M_TT_RT_CHASE_TARGET_VEHICLE" caption="$MISSION_RT_CHASE_TARGET_VEHICLE"></objective>
+
+	<objective name="M_TT_RT_FIGHT_ENEMY_VEHICLES" caption="$MISSION_RT_FIGHT_ENEMY_VEHICLES"></objective>
+
+	<objective name="M_TT_RT_CATCH_TARGET_VEHICLE" caption="$MISSION_RT_CATCH_TARGET_VEHICLE"></objective>
+
+	<objective name="M_TT_RT_KILL_ENEMIES" caption="$EVENT_FIGHTCLUB4_OBJECTIVE_001"></objective>
+
+	<objective name="M_TT_RT_REMOVE_TRUNK" caption="$MISSION_RT_REMOVE_TANG_TRUNK">
+		<indicator name="RTMission-tang:spawn" blip="job_objective"></indicator>	
+	</objective>	
+	
+</objectives>

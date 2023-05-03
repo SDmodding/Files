@@ -1,0 +1,58 @@
+
+
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+	
+	<!--******************************Top Glamour Mission**************************************-->
+	<objective name="M_TGA_000" caption="$MISSION_TOPGLAMOUR_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-M_TGA" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TGA_INTERIOR_YARD" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_001">
+		<indicator name="TGAMission-mkrBikePostNIS" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TGA_DRIVE_TOP_GLAMOUR" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_005" location_caption="Top Glamour Imports">
+		<indicator name="TGAMission-mkrGate" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TGA_CHASE_VAN" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_006">
+		<indicator name="TGAMission-spArmouredVan:spawn" blip="enemy_objective"></indicator>
+	</objective>		
+	
+	<objective name="M_TGA_FIND_WAY_INSIDE" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_007">
+		<indicator name="TGAMission-mkrTGA4Restore" blip="mission_objective" corona="drive_mission"></indicator>		
+	</objective>	
+	
+	<objective name="M_TGA_BLOW_TANK" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_008">
+		<indicator name="TGAMission-mkr_fuel" blip="enemy" corona="arrow_hostile"></indicator>
+	</objective>	
+		
+	<objective name="M_TGA_SMASH_GATE" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_004">
+		<indicator name="TGAMission-mkrGate" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>	
+	
+	<objective name="M_TGA_KILL_18K" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_002">
+	</objective>
+	
+	<objective name="M_TGA_DELIVERY_POINT" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_012">
+		<indicator name="TGAMission-mkrDelivery" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TGA_GRAB_NAZ" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_009">
+
+	</objective>		
+	
+	<objective name="M_TGA_GRAB_MANAGER" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_014"></objective>	
+	
+	<objective name="M_TGA_CALL_TENG" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_015" uses_pda="true"></objective>	
+	
+	<objective name="M_TGA_TRUNK_NAZ" caption="$MISSION_TOPGLAMOUR_OBJECTIVE_011">
+		<indicator name="TGAMission-sp_dropoff_car:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	
+</objectives>

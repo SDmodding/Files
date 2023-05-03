@@ -1,0 +1,46 @@
+<objectives>  
+
+
+
+<!-- The New Boss Mission -->
+	
+	<objective name="M_TNB_001" caption="$MISSION_THENEWBOSS_NAME_000" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-TNBMission" blip="mission_start" corona="walk_mission">       
+		</indicator>
+	</objective>
+	
+	<objective name="M_TNB_GET_TO_CREW" caption="$MISSION_THENEWBOSS_OBJECTIVE_002">
+		<indicator name="TNBMission-mkrCrew" blip="mission_objective" corona="walk_mission"> </indicator>
+	</objective>
+	
+	<objective name="M_TNB_CLEAR_CLUB" caption="$MISSION_THENEWBOSS_OBJECTIVE_003">
+	</objective>
+
+	<objective name="M_TNB_ESCAPE_COPS" caption="$MISSION_THENEWBOSS_OBJECTIVE_004">
+		<indicator name="TNBMission-mkrEscape" blip="mission_objective" corona="walk_mission"> </indicator>
+	</objective>
+	
+	<objective name="M_TNB_GET_IN_LIMO" caption="$MISSION_THENEWBOSS_OBJECTIVE_010">
+		
+	</objective>
+
+  <objective name="M_TNB_CATCH_PONYTAIL_IN_CAR" caption="$MISSION_THENEWBOSS_OBJECTIVE_005">
+    </objective>
+
+  <objective name="M_TNB_CATCH_PONYTAIL" caption="$MISSION_THENEWBOSS_OBJECTIVE_005">
+		<indicator name="TNBMission-TNB_Enforcer_Bloody:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="M_TNB_DEFEAT_THUGS" caption="$MISSION_THENEWBOSS_OBJECTIVE_006">
+	</objective>
+	
+	<objective name="M_TNB_DEFEAT_PONYTAIL" caption="$MISSION_THENEWBOSS_OBJECTIVE_007">
+		<indicator name="TNBMission-TNB_Enforcer_Bloody:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_TNB_CHECK_ENTRANCE" caption="$MISSION_THENEWBOSS_OBJECTIVE_009">
+		<indicator name="Locations-TNB_Fail_Spawn" blip="mission_objective" corona="walk_mission"> </indicator>
+	</objective>
+	
+	
+</objectives>  

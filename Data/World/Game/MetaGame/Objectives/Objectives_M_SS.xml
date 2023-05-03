@@ -1,0 +1,73 @@
+<!--
+	
+	See Objectives.xml for details
+	
+-->
+<objectives>
+	<objective name="M_GDCSS_START" caption="$MISSION_SWEATSHOP_NAME_000" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-GDCSSMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_GDCSS_GET_IN_VEHICLE" caption="$MISSION_SWEATSHOP_OBJECTIVE_002">
+		<indicator name="GDCSSMission-Drive_PlayerVehicleSpawnGroup:Vehicle:spawn" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_GDCSS_FOLLOW_ALLIES" caption="$MISSION_SWEATSHOP_OBJECTIVE_003">
+		<indicator name="GDCSSMission-Drive_AllyVehicleSpawnGroup:Vehicle:spawn" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_GDCSS_SCOUT_FIRST_ROOM" caption="$MISSION_SWEATSHOP_OBJECTIVE_004A">
+	</objective>
+	<objective name="M_GDCSS_FIGHT_FIRST_ROOM" caption="$MISSION_SWEATSHOP_OBJECTIVE_005">
+	</objective>
+	<objective name="M_GDCSS_SCOUT_SECOND_ROOM" caption="$MISSION_SWEATSHOP_OBJECTIVE_004A">
+		<indicator name="GDCSSMission-FirstFloor_SecondFightDest" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_GDCSS_FIGHT_SECOND_ROOM" caption="$MISSION_SWEATSHOP_OBJECTIVE_005" autoflash="false">
+	</objective>
+	<objective name="M_GDCSS_SCOUT_FURNACE" caption="$MISSION_SWEATSHOP_OBJECTIVE_004A">
+		<indicator name="GDCSSMission-FirstFloor_FurnaceRoom" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_GDCSS_FIGHT_FURNACE" caption="$MISSION_SWEATSHOP_OBJECTIVE_005">
+	</objective>
+	<objective name="M_GDCSS_SCOUT_VAULT_DISARM" caption="$MISSION_SWEATSHOP_OBJECTIVE_005" autoflash="false">
+		<indicator name="GDCSSMission-FirstFloor_VaultDisarmThug:spawn" blip="enemy"></indicator>
+	</objective>
+	<objective name="M_GDCSS_VAULT_DISARM" caption="$MISSION_SWEATSHOP_OBJECTIVE_VAULT_DISARM" autoflash="false">
+		<indicator name="GDCSSMission-FirstFloor_VaultDisarmThug:spawn" blip="enemy"></indicator>
+	</objective>
+	<objective name="M_GDCSS_SCOUT_UPSTAIRS" caption="$MISSION_SWEATSHOP_OBJECTIVE_004A">
+		<indicator name="GDCSSMission-SecondFloor_TopOfStairs" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_GDCSS_INITIAL_SHOOTOUT" caption="$MISSION_SWEATSHOP_OBJECTIVE_005">
+	</objective>
+	<objective name="M_GDCSS_ADVANCE_TO_STAIRS" caption="$MISSION_SWEATSHOP_OBJECTIVE_HEAD_UPSTAIRS">
+		<indicator name="GDCSSMission-ThirdFloor_Office" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_GDCSS_GO_TO_STAIRS_SHOOTOUT" caption="$MISSION_SWEATSHOP_OBJECTIVE_005">
+	</objective>
+	<objective name="M_GDCSS_ADVANCE_TO_THIRD_FLOOR" caption="$MISSION_SWEATSHOP_OBJECTIVE_HEAD_UPSTAIRS">
+		<indicator name="GDCSSMission-ThirdFloor_Office" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_GDCSS_THIRD_FLOOR_SHOOTOUT" caption="$MISSION_SWEATSHOP_OBJECTIVE_005">
+	</objective>
+	<objective name="M_GDCSS_GO_TO_THIRD_FLOOR_STAIRS" caption="$MISSION_SWEATSHOP_OBJECTIVE_006">
+		<indicator name="GDCSSMission-ThirdFloor_Office" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_GDCSS_THIRD_FLOOR_VAULT_SHOOT" caption="$MISSION_SWEATSHOP_OBJECTIVE_005">
+	</objective>
+	<objective name="M_GDCSS_GO_TO_OFFICE" caption="$MISSION_SWEATSHOP_OBJECTIVE_006">
+		<indicator name="GDCSSMission-ThirdFloor_Office" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_GDCSS_CATCH_SIU_WAH_FOOT" caption="$MISSION_SWEATSHOP_OBJECTIVE_007">
+		<indicator name="GDCSSMission-ThirdFloor_SiuWah:spawn" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_GDCSS_DRAG_SIU_WAH_OUTSIDE" caption="$MISSION_SWEATSHOP_OBJECTIVE_008">
+	</objective>
+	<objective name="M_GDCSS_CATCH_SIU_WAH_DRIVE" caption="$MISSION_SWEATSHOP_OBJECTIVE_007">
+	</objective>	
+	<objective name="M_GDCSS_LOSE_COPS" caption="$MISSION_SWEATSHOP_OBJECTIVE_010">
+	</objective>
+	<objective name="M_GDCSS_DROPOFF_SIU_WAH" caption="$MISSION_SWEATSHOP_OBJECTIVE_011">
+		<indicator name="GDCSSMission-Return_DropOffPoint" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_GDCSS_UNTRUNK_SIU_WAH" caption="$MISSION_SWEATSHOP_HINT_005">
+	</objective>
+</objectives>

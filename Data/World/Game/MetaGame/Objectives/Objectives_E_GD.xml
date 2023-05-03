@@ -1,0 +1,46 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+	<!-- Follow Gambling Den 1 -->	
+	<objective name="E_GD_TEXT" caption="$OWNAME_GAMBLING_DEN_1" autoflash="false">
+		<indicator name="ProgressionTriggers_Events-E_GamblingDen" blip="face_character"></indicator>
+	</objective>
+	
+	<objective name="E_GD_SOCIAL" caption="$EVENT_GAMBLINGDEN_NAME_001" autoflash="false">
+	</objective>
+	
+	<objective name="E_GD_CLEAROUTGAMBLERS" caption="$EVENT_GAMBLINGDEN_OBJECTIVE_001"> 
+		<indicator name="GambleDen-Gambler1:spawn" blip="enemy"></indicator>
+		<indicator name="GambleDen-Gambler2:spawn" blip="enemy"></indicator>  		
+		<indicator name="GambleDen-Gambler3:spawn" blip="enemy"></indicator>  		
+		<indicator name="GambleDen-Gambler4:spawn" blip="enemy"></indicator>  		
+	</objective>
+	 
+	<objective name="E_GD_002" caption="$EVENT_GAMBLINGDEN_OBJECTIVE_002"> 
+	</objective>
+
+	
+
+	<!-- Follow Gambling Den 2 -->	
+	<objective name="E_GD2_TEXT" caption="$OWNAME_GAMBLING_DEN_2" autoflash="false">
+	  <indicator name="ProgressionTriggers_Events-E_GamblingDen2" blip="face_character" ></indicator>
+	</objective> 
+
+	<objective name="E_GD2_SOCIAL" caption="$EVENT_GAMBLINGDEN2_NAME_001" autoflash="false">
+	</objective> 
+
+	<objective name="E_GD2_GETRIDOFDRUNKS" caption="$EVENT_GAMBLINGDEN2_OBJECTIVE_001">
+		<indicator name="GambleDen2-Drunk1:spawn" blip="enemy"></indicator>  
+		<indicator name="GambleDen2-Drunk2:spawn" blip="enemy"></indicator>  		
+	</objective> 	
+	
+	<objective name="E_GD2_002" caption="$EVENT_GAMBLINGDEN2_OBJECTIVE_002">
+	</objective> 	
+	
+
+
+</objectives>

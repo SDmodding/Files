@@ -1,0 +1,91 @@
+<!--
+
+	See Objectives.xml for details
+
+-->
+<objectives>
+<!-- BAD LUCK MISSION -->
+	<objective name="M_BL_001" caption="$MISSION_BADLUCK_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-BLMission" blip="mission_start" corona="Walk_mission"></indicator>
+	</objective>
+	<objective name="M_BL_002" caption="$MISSION_BADLUCK_OBJECTIVE_001">
+		<indicator name="BLMission-Spawn_Car:spawn" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_BL_003" caption="$MISSION_BADLUCK_OBJECTIVE_002">
+		<indicator name="BLMission-Marker_2ChinsHouse" blip="mission_objective" corona="Drive_mission"></indicator>	
+	</objective>
+	<objective name="M_BL_004" caption="$MISSION_BADLUCK_OBJECTIVE_003">
+		<indicator name="BLMission-Marker_2ChinsFrontDoor" blip="mission_objective" corona="Walk_mission"></indicator>
+	</objective>
+	<objective name="M_BL_005" caption="$MISSION_BADLUCK_OBJECTIVE_004">
+		<indicator name="BLMission-Marker_2ChinsFoyer" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_006" caption="$MISSION_BADLUCK_OBJECTIVE_005"></objective>
+	<objective name="M_BL_007" caption="$MISSION_BADLUCK_OBJECTIVE_006"></objective>
+	<objective name="M_BL_008" caption="$MISSION_BADLUCK_OBJECTIVE_007">
+		<indicator name="BLMission-Marker_Rotate" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_009" caption="$MISSION_BADLUCK_OBJECTIVE_008">
+		<indicator name="BLMission-Marker_Pull" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_010" caption="$MISSION_BADLUCK_OBJECTIVE_009">
+		<indicator name="BLMission-Marker_Carry" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_011" caption="$MISSION_BADLUCK_OBJECTIVE_010">
+		<indicator name="BLMission-Marker_Leave_Complex" blip="mission_objective" corona="walk_mission"></indicator>	
+	</objective>
+	<objective name="M_BL_012" caption="$MISSION_BADLUCK_OBJECTIVE_011"><!-- Unlock the gate and let old salty crab inside -->
+		<indicator name="BLMission-Marker_LockPick_01" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_013" caption="$MISSION_BADLUCK_OBJECTIVE_012">
+		<indicator name="BLMission-Marker_Parametric_Gate" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_014" caption="$MISSION_BADLUCK_OBJECTIVE_013"></objective>
+	<objective name="M_BL_015" caption="$MISSION_BADLUCK_OBJECTIVE_014">
+		<indicator name="BLMission-Marker_Hack_Security_Camera" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_016" caption="$MISSION_BADLUCK_OBJECTIVE_015">
+    <indicator name="BLMission-Spawn_OldSaltyCrab:spawn" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_017" caption="$MISSION_BADLUCK_OBJECTIVE_016">
+		<indicator name="BLMission-Marker_2ChinsHouse" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_BL_018" caption="$MISSION_BADLUCK_OBJECTIVE_017">
+		<indicator name="BLMission-Marker_Wall_01" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_019" caption="$MISSION_BADLUCK_OBJECTIVE_018">
+    <indicator name="BLMission-Marker_CorrectPath_01" blip="mission_objective" corona="walk_mission"></indicator>	
+	</objective>
+	<objective name="M_BL_020" caption="$MISSION_BADLUCK_OBJECTIVE_019">
+		<indicator name="BLMission-Marker_CorrectPath_02" blip="mission_objective" corona="walk_mission"></indicator>	
+	</objective>
+	<objective name="M_BL_021" caption="$MISSION_BADLUCK_OBJECTIVE_020">
+	</objective>
+	<objective name="M_BL_022" caption="$MISSION_BADLUCK_OBJECTIVE_021">
+		<indicator name="BLMission-Marker_OSC_ToCamera_02" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_023" caption="$MISSION_BADLUCK_OBJECTIVE_023">
+		<indicator name="BLMission-Marker_AptBuzzer" blip="event_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_024" caption="$MISSION_BADLUCK_OBJECTIVE_024">
+		<indicator name="BLMission-Marker_Steal_Uniform" blip="mission_objective" corona="walk_mission"></indicator>	
+	</objective>
+	
+	<objective name="M_BL_REACH_CHIN_GATE" caption="$MISSION_BADLUCK_OBJECTIVE_030">
+		<indicator name="BLMission-NIS_GateGuard_Guard" blip="mission_objective" corona="walk_mission"></indicator>	
+	</objective>
+	
+	<objective name="M_BL_FIND_WAY_TO_OPEN_GATE" caption="$MISSION_BADLUCK_OBJECTIVE_031">
+		<indicator name="BLMission-Marker_Gate_Back" blip="mission_objective" corona="walk_mission"></indicator>	
+	</objective>
+	
+	<objective name="M_BL_OPEN_GATE" caption="$MISSION_BADLUCK_OBJECTIVE_032">
+		<indicator name="BLMission-Marker_Parametric_Gate" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_PICK_LOCK" caption="$MISSION_BADLUCK_OBJECTIVE_033">
+		<indicator name="BLMission-Marker_2ChinsFoyer" blip="mission_objective"></indicator>	
+	</objective>
+	<objective name="M_BL_WAIT_FOR_CRAB" caption="$MISSION_BADLUCK_OBJECTIVE_034">
+		<indicator name="BLMission-Spawn_OldSaltyCrab:spawn" blip="mission_objective"></indicator>
+	</objective>
+</objectives>

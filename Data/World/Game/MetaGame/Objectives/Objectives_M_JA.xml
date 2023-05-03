@@ -1,0 +1,65 @@
+<objectives>
+	<objective name="M_JA_Call_Jackie" caption="$MISSION_JACKIEARRESTED_CALL_JACKIE" uses_pda="true"></objective>
+	<!-- Mission: Jackie Arrested -->
+	<objective name="JA_1_Jackie_1" caption="$MISSION_JACKIEARRESTED_NAME_001">
+		<indicator name="ProgressionTriggers_Missions-M_JA" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	<!-- Call Jackie -->
+	<objective name="JA_2_Drive_1_0" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_001" uses_pda="true"></objective>
+	<!-- Meet Jackie -->
+	<objective name="JA_2_Drive_1_0a" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_002">
+		<indicator name="JAMission-mkr_weiCarMeetJackie" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	<!-- Drive to Kennedy Town -->
+	<objective name="JA_3_Drive_To_Docks" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_004">
+		<indicator name="JAMission-mkr_weiCarDocksPark" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	<!-- Follow Jackie -->
+	<objective name="JA_3_Follow_Jackie" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_013">
+		<indicator name="JAMission-Spawner_Jackie_Sanitation:spawn" blip="mission_objective"></indicator>
+	</objective>
+	<!-- Sneak into the warehouses -->
+	<objective name="JA_4_Locate_Tool" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_005">
+		<indicator name="JAMission-mkr_sneakDest" blip="mission_objective"></indicator>
+	</objective>
+	<!-- Pick the Lock -->
+	<objective name="JA_5_Pick_Lock" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_006">
+		<indicator name="JAMission-mkr_lockPick" blip="mission_objective"></indicator>
+	</objective>
+	<!-- Get the tool -->
+	<objective name="JA_5_Take_Tool" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_007">
+		<indicator name="JAMission-mkr_pickupToolBlip" blip="mission_objective"></indicator>
+	</objective>
+	<!-- Meet up with Jackie -->
+	<objective name="JA_5_Meet_Jackie" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_008">
+		<indicator name="JAMission-Spawner_Jackie_Sanitation:spawn" blip="mission_objective"></indicator>
+	</objective>
+	<!-- Get rid of the Thugs -->
+	<objective name="JA_6_Search_1" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_014"></objective>
+	<!-- Search the Trucks -->
+	<objective name="JA_6_Search_2" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_010"></objective>
+	<!-- Catch the Truck -->
+	<objective name="JA_7_Catch_Van" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_011">
+		<indicator name="JAMission-Spawner_TruckToChase:spawn" blip="mission_objective"></indicator>
+	</objective>
+	<!-- Drive to the Jewelers -->
+	<objective name="JA_8_Drive_4_a" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_012">
+		<indicator name="JAMission-mkr_deliverTruck" blip="mission_objective"></indicator>
+	</objective>
+	<!-- Drive to the Jewelers -->
+	<objective name="JA_8_Drive_4_b" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_012">
+		<indicator name="JAMission-mkr_deliverTruck" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	<objective name="JA_6_Defeat_Garage_Thugs" caption="$MISSION_JACKIEARRESTED_OBJECTIVE_014"></objective>
+	<!-- Use your phone to call Jackie -->
+	<objectivehint name="JA_2_Drive_1_H_1" caption="$MISSION_JACKIEARRESTED_HINT_001"></objectivehint>
+	<!-- Get a Car -->
+	<objectivehint name="JA_6_Drive_3_H_1" caption="$MISSION_JACKIEARRESTED_HINT_002"></objectivehint>
+	<!-- Pick up Jackie -->
+	<objectivehint name="JA_6_Drive_3_H_2" caption="$MISSION_JACKIEARRESTED_HINT_003"></objectivehint>
+	<!-- Get back in the car -->
+	<objectivehint name="JA_6_Drive_3_H_3" caption="$MISSION_JACKIEARRESTED_HINT_004"></objectivehint>
+	<!-- Find a way up to the sercurity camera -->
+	<objectivehint name="JA_10_Drive_5_H_1" caption="$MISSION_JACKIEARRESTED_HINT_005"></objectivehint>
+</objectives>
+	

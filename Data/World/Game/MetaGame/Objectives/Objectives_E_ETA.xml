@@ -1,0 +1,32 @@
+
+<objectives>
+
+	<!------------------------------------------------------->
+	<!----------------------- EVENTS ------------------------>
+	<!------------------------------------------------------->
+	
+	
+
+	<!-- EXTORTION TURNAROUND EVENT -->
+	
+	<objective name="E_ETA_TEXT" caption="$EVENT_EXTORTIONTURN_NAME_001" text_unlockable="true" autoflash="false">
+	  <indicator name="ProgressionTriggers_Events-E_ETA" blip="event_start"></indicator>       
+	</objective>
+	<!-- Beat up the thug -->
+	<objective name="E_ETA_001" caption="$EVENT_EXTORTIONTURN_OBJECTIVE_001">
+	 <indicator name="ETA-Thug_Spawn:spawn" blip="enemy"></indicator>       
+	</objective>
+
+
+	<!-- EXTORTION TURNAROUND 2 EVENT -->
+	
+	<objective name="E_ETA2_TEXT" caption="$EVENT_EXTORTIONTURN2_NAME_001"  text_unlockable="true"  autoflash="false">
+	  <indicator name="ProgressionTriggers_Events-E_ETA2" blip="event_start"></indicator>       
+	</objective>    	
+	<!-- Beat up the thug -->
+	<objective name="E_ETA2_001" caption="$EVENT_EXTORTIONTURN2_OBJECTIVE_001">
+	 <indicator name="ETA2-Thug_Spawn:spawn" blip="enemy"></indicator> 	
+	</objective>    
+
+	
+</objectives>

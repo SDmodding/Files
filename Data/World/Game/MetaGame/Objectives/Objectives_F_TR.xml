@@ -1,0 +1,36 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>  
+ 
+	<!--********** Favour - Truck Recovery  ***********-->
+	<objective name="F_TR_TEXT" caption="$OWNAME_TRUCK_RECOVERY"  autoflash="false">
+		<indicator name="ProgressionTriggers_Favours-F_TR" blip="face_character"></indicator>
+	</objective>
+
+	<objective name="F_TR_SOCIAL" caption="$EVENT_HIJACKINTRO_NAME_000" autoflash="false">
+	</objective>
+
+	<objective name="F_TR_005" caption="$EVENT_HIJACKINTRO_OBJECTIVE_005">
+		<indicator name="F_TR-BikeConvenient:spawn" blip="event_objective"></indicator>
+	</objective>	
+	
+	<objective name="F_TR_001" caption="$EVENT_HIJACKINTRO_OBJECTIVE_001">
+		<indicator name="F_TR-HijackTruck_spwn:spawn" blip="event_objective"></indicator>
+	</objective>
+
+	<objective name="F_TR_002" caption="$EVENT_HIJACKINTRO_OBJECTIVE_002">
+		<indicator name="F_TR-DropOffLoc" blip="event_objective"></indicator>
+	</objective>
+	
+	<objective name="F_TR_003" caption="$EVENT_HIJACKINTRO_OBJECTIVE_003">
+	</objective>
+	
+	<objective name="F_TR_004" caption="$EVENT_HIJACKINTRO_OBJECTIVE_004">
+		<indicator name="F_TR-DropOffGarage" blip="event_objective"></indicator>
+	</objective>
+	
+	
+</objectives>

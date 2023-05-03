@@ -1,0 +1,24 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>  
+ 
+	<!-- SANDRA SPEEDING FAVOUR -->
+	<objective name="F_SS_TEXT" caption="$OWNAME_SANDRA_SPEEDING"  autoflash="false">
+	   <indicator name="ProgressionTriggers_Favours-F_SS" blip="date_character" corona="arrow_social"></indicator>
+	</objective>
+
+	<objective name="F_SS_SOCIAL" caption="$OWNAME_SANDRA_SPEEDING" autoflash="false">
+	</objective>
+
+	<objective name="F_SS_GAIN_SPEED" caption="$DATE_SANDRA1_OBJECTIVE_003"></objective>
+
+	<objective name="F_SS_MAINTAIN_SPEED" caption="$DATE_SANDRA1_OBJECTIVE_004"></objective>
+
+	<objective name="F_SS_DROP_SANDRA" caption="$DATE_SANDRA1_OBJECTIVE_005">
+		<indicator name="F_SS-SandraDropoff" blip="event_objective" corona="drive_event"></indicator>       
+	</objective>
+	
+</objectives>

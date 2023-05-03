@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+
+<objectives>  
+	<objective name="M_TG_001" caption="$MISSION_TIFFANYSGUN_NAME_000" autoflash='false'>
+		<indicator name="ProgressionTriggers_Missions-TGMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+
+	<objective name="M_TG_Meet_Tiffany" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_001">
+		<indicator name="TGMission-TG_Tiffany_MKR" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+
+	<objective name="M_TG_Leave_Club" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_010">
+		<indicator name="TGMission-TG_ClubExit_MKR" blip="mission_objective" corona="walk_mission"> </indicator>  
+	</objective>
+	
+
+	<objective name="M_TG_Call_Raymond" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_007" uses_pda="true">
+	</objective>
+	
+
+	
+	<objective name="M_TG_Meet_Pendrew" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_002">
+		<indicator name="TGMission-TG_Pendrew_MKR" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TG_Shoot_Debris" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_006"> 
+		<indicator name="TGMission-mkrDebris" blip="enemy_objective"></indicator>
+	</objective>
+	
+	<objective name="M_TG_Shoot_ElectricalBox" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_003">
+		<indicator name="TGMission-mkrObjElectricalBox" blip="enemy_objective"></indicator>
+	</objective>
+		
+	
+	<objective name="M_TG_Get_Into_Cover" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_009">
+		<indicator name="TGMission-mkrCover01" blip="mission_objective" corona="tiffanys_gun"></indicator>		
+	</objective>
+	
+	<objective name="M_TG_Shoot_BlindFire" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_013">
+	</objective>
+
+	<objective name="M_TG_Shoot_Objects" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_012">	
+	</objective>	
+
+	<objective name="M_TG_Shoot_Enemies_01" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_011"> 
+		<indicator name="TGMission-VehicleMarkerPath_VehicleGroup:Seat1:spawn" blip="enemy"></indicator>	
+		<indicator name="TGMission-VehicleMarkerPath_VehicleGroup:Seat2:spawn" blip="enemy"></indicator>
+		<indicator name="TGMission-CombatSpawnGroup:enemyB_005:spawn" blip="enemy"></indicator>		
+	</objective>
+	
+	<objective name="M_TG_Take_Cover" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_008">
+		<indicator name="TGMission-mkrCover02" blip="mission_objective" corona="tiffanys_gun"></indicator>		
+	</objective>
+	<objective name="M_TG_Shoot_Enemies_02" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_011"> 
+		<indicator name="TGMission-SpawnGroup_Group:Thug1:spawn" blip="enemy"></indicator>	
+		<indicator name="TGMission-SpawnGroup_Group:Thug2:spawn" blip="enemy"></indicator>	
+		<indicator name="TGMission-SpawnGroup_Group:Thug3:spawn" blip="enemy"></indicator>			
+	</objective>	
+
+
+	<objective name="M_TG_Shoot_VaultShoot" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_005">
+		<indicator name="TGMission-CombatSpawnGroup:enemyB_004:spawn" blip="enemy"></indicator>		
+	</objective>
+	
+	<objective name="M_TG_Shoot_VaultShoot_02" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_018">
+		<indicator name="TGMission-CombatSpawnGroup:enemyB_004:spawn" blip="enemy"></indicator>		
+	</objective>
+	
+	<objective name="M_TG_First_VaultShoot" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_014">
+	<!--	<indicator name="TGMission-TG_Car3:spawn" blip="enemy">  </indicator>	-->
+	</objective>	
+	
+	<objective name="M_TG_Second_VaultShoot" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_017">
+	</objective>
+
+	
+	<objective name="M_TG_Shoot_Tires" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_016">
+		<indicator name="TGMission-TG_Car3:spawn" blip="enemy">  </indicator>
+	</objective>
+
+	<objective name="M_TG_Shoot_Rear_Tire" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_016"> 
+		<indicator name="TGMission-TG_Car1:spawn" blip="enemy">  </indicator>
+	</objective>
+
+
+
+	<objective name="M_TG_Escape_On_Bike" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_015"> 
+		<!--<indicator name="TGMission-EscapeHere" blip="mission_objective">  </indicator>-->
+	</objective>
+
+	<objective name="M_TG_Leave_CrimeScene" caption="$MISSION_TIFFANYSGUN_OBJECTIVE_004">
+	</objective>
+	
+	<objectivehint name="M_TG_H_001" caption="$MISSION_TIFFANYSGUN_HINT_001"></objectivehint>
+	<objectivehint name="M_TG_H_002" caption="$MISSION_TIFFANYSGUN_HINT_002"></objectivehint>
+	<objectivehint name="M_TG_H_003" caption="$MISSION_TIFFANYSGUN_HINT_003"></objectivehint>
+	<objectivehint name="M_TG_H_004" caption="$MISSION_TIFFANYSGUN_HINT_004"></objectivehint>
+	<objectivehint name="M_TG_H_005" caption="$MISSION_TIFFANYSGUN_HINT_005"></objectivehint>
+</objectives>  

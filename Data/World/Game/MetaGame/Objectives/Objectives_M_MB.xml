@@ -1,0 +1,48 @@
+<!--
+
+	See Objectives.xml for details
+
+-->
+<objectives>
+
+	<objective name="M_MB_000" caption="$MISSION_MINIBUS_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-M_MB" blip="mission_start" corona="walk_mission"></indicator>         
+	</objective>
+	
+	<objective name="M_MB_2_TAKE_MINBUS" caption="$MISSION_MINIBUS_OBJECTIVE_001">
+		<indicator name="MBMission-temp_minibus:spawn" blip="mission_objective" corona="arrow_objective"></indicator>       
+	</objective>
+	
+	<objective name="M_MB_2_PICK_UP_REINFORCEMENTS" caption="$MISSION_MINIBUS_OBJECTIVE_002" corona="drive_mission">
+		<indicator name="MBMission-reinforcements_pickup" blip="mission_objective" corona="drive_mission"></indicator>       
+	</objective>
+	
+	<objective name="M_MB_3_GO_TO_FIRST_STOP" caption="$MISSION_MINIBUS_OBJECTIVE_004">
+		<indicator name="MBMission-Marker_Bus_Stop_01" blip="mission_objective" corona="drive_mission"></indicator>       
+	</objective>
+	
+	<objective name="M_MB_3_GO_TO_SECOND_STOP" caption="$MISSION_MINIBUS_OBJECTIVE_005">
+		<indicator name="MBMission-Marker_Bus_Stop_02" blip="mission_objective" corona="drive_mission"></indicator>       
+	</objective>
+
+	<objective name="M_MB_3_DEFEAT_THUGS" caption="$MISSION_MINIBUS_OBJECTIVE_012"></objective>
+	
+	<objective name="M_MB_4_GO_TO_LAST_STOP" caption="$MISSION_MINIBUS_OBJECTIVE_006">
+		<indicator name="MBMission-Marker_Bus_Stop_03" blip="mission_objective" corona="drive_mission"></indicator>       
+	</objective>
+	
+	<objective name="M_MB_5_HARASS_RIVAL_BUS" caption="$MISSION_MINIBUS_OBJECTIVE_007">
+		<indicator name="MBMission-rival_driver:spawn" blip="mission_objective"></indicator>       
+	</objective>
+	
+	<objective name="M_MB_6_DROP_OFF_PASSENGERS" caption="$MISSION_MINIBUS_OBJECTIVE_008">
+		<indicator name="MBMission-Marker_Bus_Stop_Night_Market" blip="mission_objective" corona="drive_mission"></indicator>       
+	</objective>
+	
+	<objective name="M_MB_7_ESCAPE_AMBUSH" caption="$MISSION_MINIBUS_OBJECTIVE_009"></objective>
+	
+	<objective name="M_MB_8_DROP_OFF_NIGHT_MARKET" caption="$MISSION_MINIBUS_OBJECTIVE_010">
+		<indicator name="MBMission-Marker_Bus_Stop_Night_Market" blip="mission_objective" corona="drive_mission"></indicator>       
+	</objective>
+
+</objectives>

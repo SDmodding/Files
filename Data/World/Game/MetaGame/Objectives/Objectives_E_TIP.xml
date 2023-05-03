@@ -1,0 +1,47 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+  <!-- THREE IS A PARTY FAVOUR -->
+		<objective name="E_TIP_TEXT" caption="$EVENT_THREEISAPARTY_NAME_001"  autoflash="false">
+			<indicator name="ProgressionTriggers_Events-E_ThreeIsAParty" blip="face_character"></indicator>
+		</objective>
+
+		<objective name="E_TIP_SOCIAL" caption="$EVENT_THREEISAPARTY_NAME_001" autoflash="false">
+		</objective>
+
+		<!-- Greet the girls -->
+		<objective name="E_TIAP_GREETGIRLS" caption="$EVENT_THREEISAPARTY_OBJECTIVE_001"> 
+		 <indicator name="ThreeIsAParty-Spawn_Girl01:spawn" blip="event_objective"></indicator>
+		</objective>
+
+		<!-- Buy a drink -->
+		<!-- Buy a drink -->
+		<objective name="E_TIAP_BUYDRINK" caption="$EVENT_THREEISAPARTY_OBJECTIVE_003">     
+		 <indicator name="ThreeIsAParty-Spawn_Bartender:spawn" blip="event_objective"></indicator>
+		</objective>
+
+		<!-- Introduce the girls to Calvin -->
+		<objective name="E_TIAP_INTRODUCEGIRLS" caption="$EVENT_THREEISAPARTY_OBJECTIVE_004">
+			<indicator name="E_TIP_Character:spawn" blip="event_objective"></indicator>
+		</objective>
+
+		<!-- Head to the dance floor -->
+		<objective name="E_TIAP_GOTODANCEFLOOR" caption="$EVENT_THREEISAPARTY_OBJECTIVE_002">
+			<indicator name="ThreeIsAParty-POI_Wei_Dancing" blip="event_objective" corona="walk_event"></indicator>
+		</objective>
+
+		<!-- Dance with the girls -->
+		<objective name="E_TIAP_DANCEWITHGIRLS" caption="$EVENT_THREEISAPARTY_OBJECTIVE_005">
+			<indicator name="ThreeIsAParty-POI_Wei_Dancing" blip="event_objective"></indicator>
+		</objective>
+
+		<!-- Leave the club -->
+		<objective name="E_TIAP_LEAVETHECLUB" caption="$EVENT_THREEISAPARTY_OBJECTIVE_006">
+			<indicator name="ThreeIsAParty-Marker_ClubExit" blip="event_objective"></indicator>
+		</objective>
+
+</objectives>

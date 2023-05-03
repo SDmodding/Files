@@ -1,0 +1,122 @@
+<!--
+
+	See Objectives.xml for details
+
+-->
+<objectives>
+	
+	<objective name="M_TE_000" caption="$MISSION_THEELECTION_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-TEMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<!-- Escape the building -->
+	<objective name="M_TE_002" caption="$MISSION_THEELECTION_OBJECTIVE_002" autoflash="false"></objective>
+	
+	<!-- Defeat the triad -->
+	<objective name="M_TE_003" caption="$MISSION_THEELECTION_OBJECTIVE_003" autoflash="false">
+		<indicator name="TEMission-Spawn_BedroomThug01:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<!-- Defeat the triad -->
+	<objective name="M_TE_004" caption="$MISSION_THEELECTION_OBJECTIVE_004"></objective>
+	
+	<!-- Break out of the penthouse suite -->
+	<objective name="M_TE_005" caption="$MISSION_THEELECTION_OBJECTIVE_005">
+		<indicator name="TEMission-Marker_Leave_Living_Room" blip="mission_objective" corona="walk_mission"></indicator>	
+	</objective>
+	
+	<!-- Escape the complex -->
+	<objective name="M_TE_006" caption="$MISSION_THEELECTION_OBJECTIVE_006">
+		<indicator name="TEMission-Marker_AmenitiesRestore" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_TE_007" caption="$MISSION_THEELECTION_OBJECTIVE_007"></objective>
+
+	<!-- Go to the election -->
+	<objective name="M_TE_010" caption="$MISSION_THEELECTION_OBJECTIVE_010">
+		<indicator name="TEMission-Marker_Find_Big_Smile_Lee" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>	
+	
+	<!-- Defeat the triad -->
+	<objective name="M_TE_011" caption="$MISSION_THEELECTION_OBJECTIVE_003"></objective>
+	
+	<!-- Escape the Complex -->
+	<objective name="M_TE_012" caption="$MISSION_THEELECTION_OBJECTIVE_012">
+		<indicator name="TEMission-Marker_LockedDoor" blip="mission_objective"></indicator>
+	</objective>
+
+	<!-- Find your way out of the penthouse -->
+	<objective name="M_TE_016" caption="$MISSION_THEELECTION_OBJECTIVE_014">
+		<indicator name="TEMission-Marker_Leave_Bathroom" blip="mission_objective"></indicator>
+	</objective>
+
+	<!-- Defeat the Thug -->
+	<objective name="M_TE_017" caption="$MISSION_THEELECTION_OBJECTIVE_015">
+		<indicator name="TEMission-Spawn_GuyOnToilet:spawn" blip="enemy"></indicator>
+	</objective>	
+	
+	<!-- Defeat the armed triad -->
+	<objective name="M_TE_013" caption="$MISSION_THEELECTION_OBJECTIVE_011"></objective>	
+	
+	<!-- Escape the complex [DURING THE SCAFFOLDING FREERUNNING] -->
+	<objective name="M_TE_014" caption="$MISSION_THEELECTION_OBJECTIVE_012">		
+		<indicator name="TEMission-Marker_ScaffoldingObjective" blip="mission_objective"></indicator>
+	</objective>
+	
+	<!-- Take Mr.Tong's Car -->
+	<objective name="M_TE_015" caption="$MISSION_THEELECTION_OBJECTIVE_013" autoflash="true">	
+		<indicator name="TEMission-Spawner_Tongs_Car:spawn" blip="mission_objective" corona="arrow_objective"></indicator>
+	</objective>
+	
+	<!-- Defeat Mr. Tong -->
+	<objective name="M_TE_018" caption="$MISSION_THEELECTION_OBJECTIVE_016">
+		<indicator name="TEMission-Spawn_Mr_Tong:spawn" blip="enemy"></indicator>
+	</objective>	
+	
+	<objectivehint name="M_TE_H_001" caption="$MISSION_THEELECTION_HINT_001"></objectivehint>	
+	
+	<!-- Use the Sink -->
+	<objective name="M_TE_019" caption="$MISSION_THEELECTION_OBJECTIVE_019">
+		<indicator name="TEMission-Marker_Use_Sink" blip="mission_objective"></indicator>
+	</objective>	
+	
+	<objective name="M_TE_022" caption="$MISSION_THEELECTION_OBJECTIVE_008" autoflash="false">
+		<indicator name="TEMission-Spawn_FitnessThug02:spawn" blip="enemy"></indicator>
+	</objective>
+	<!-- Escape the complex -->
+	<objective name="M_TE_023" caption="$MISSION_THEELECTION_OBJECTIVE_012">
+		<indicator name="TEMission-Marker_DoorToSauna" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<!-- Defeat the thugs -->
+	<objective name="M_TE_024" caption="$MISSION_THEELECTION_OBJECTIVE_008"></objective>
+
+	<!-- Defeat the thugs -->
+	<objective name="M_TE_DEFEAT_THUGS_GYM" caption="$MISSION_THEELECTION_OBJECTIVE_THUGS_GYM"></objective>
+	<objective name="M_TE_DEFEAT_THUGS_HALLWAY" caption="$MISSION_THEELECTION_OBJECTIVE_THUGS_HALLWAY"></objective>
+	<objective name="M_TE_DEFEAT_THUGS_LOCKER" caption="$MISSION_THEELECTION_OBJECTIVE_THUGS_LOCKER"></objective>
+	<objective name="M_TE_DEFEAT_THUGS_POOL" caption="$MISSION_THEELECTION_OBJECTIVE_THUGS_POOL"></objective>
+	<objective name="M_TE_HEAD_INTO_GYM" caption="$MISSION_THEELECTION_OBJECTIVE_HEAD_INTO_GYM">
+		<indicator name="TEMission-Marker_Objective_Gym" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_TE_HEAD_INTO_HALLWAY" caption="$MISSION_THEELECTION_OBJECTIVE_HEAD_INTO_HALLWAY">
+		<indicator name="TEMission-Marker_Objective_Hallway" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_TE_HEAD_INTO_LOCKER" caption="$MISSION_THEELECTION_OBJECTIVE_HEAD_INTO_LOCKER">
+		<indicator name="TEMission-Marker_Objective_Locker" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_TE_HEAD_INTO_POOL" caption="$MISSION_THEELECTION_OBJECTIVE_HEAD_INTO_POOL">
+		<indicator name="TEMission-Marker_Objective_Pool" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_TE_MEET_SHOTGUNNERS" caption="$MISSION_THEELECTION_OBJECTIVE_MEET_SHOTGUNNERS">
+		<indicator name="TEMission-Marker_Obj_Meet_Shotguns" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_TE_HEAD_INTO_SAUNA" caption="$MISSION_THEELECTION_OBJECTIVE_HEAD_INTO_SAUNA">
+		<indicator name="TEMission-Marker_DoorToSauna" blip="mission_objective"></indicator>
+	</objective>
+	<objective name="M_TE_SCAFF_01" caption="$MISSION_THEELECTION_OBJECTIVE_SCAFF_01">
+		<indicator name="TEMission-Marker_Scaffold_Jump_01" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	<objective name="M_TE_SCAFF_02" caption="$MISSION_THEELECTION_OBJECTIVE_SCAFF_02">
+		<indicator name="TEMission-Marker_ScaffoldingObjective" blip="mission_objective" corona="walk_mission" autoflash="false"></indicator>
+	</objective>
+</objectives>

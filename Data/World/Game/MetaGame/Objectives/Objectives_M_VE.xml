@@ -1,0 +1,97 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+
+<objectives>
+
+	<objective name="M_VE_START" caption="$SGTITLE_VENDOR_EXTORTION" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-M_VE" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+
+	<objective name="M_VE_GO_TO_FIRST_VENDOR" caption="$MISSION_VENDOREXTORTION_GO_TO_FIRST_VENDOR"> 
+		<indicator name="VEMission-KwanVendor:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="M_VE_EXTORT_FIRST_VENDOR" caption="$MISSION_VENDOREXTORTION_OBJECTIVE_010"> 
+		<indicator name="VEMission-KwanVendor:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="M_VE_GO_TO_WATCH_VENDOR" caption="$MISSION_VENDOREXTORTION_GO_TO_WATCH_VENDOR"> 
+		<indicator name="VEMission-WatchVendor:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="M_VE_EXTORT_WATCH_VENDOR" caption="$MISSION_VENDOREXTORTION_OBJECTIVE_007B"> 
+		<indicator name="VEMission-WatchVendor:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="M_VE_WATCH_VENDOR_GRAB_THUG" caption="$MISSION_VENDOREXTORTION_WATCH_VENDOR_GRAB_THUG"> 
+		<indicator name="VEMission-WatchVendor_Thug:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_VE_WATCH_VENDOR_DEFEAT_THUG" caption="$MISSION_GOINGUNDER_OBJECTIVE_010"> 
+		<indicator name="VEMission-WatchVendor_Thug:spawn" blip="enemy"></indicator>
+	</objective>
+	
+	<objective name="M_VE_WATCH_VENDOR_USE_COMBAT_PROP" caption="$MISSION_VENDOREXTORTION_WATCH_VENDOR_USE_COMBAT_PROP"  autoflash="false"> 
+	</objective>
+	
+	<objective name="M_VE_GO_TO_RATFINK_VENDOR" caption="$MISSION_VENDOREXTORTION_GO_TO_RATFINK_VENDOR"> 
+		<indicator name="VEMission-RatfinkVendor:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="M_VE_DEFEAT_RATFINK_THUGS" caption="$MISSION_VENDOREXTORTION_OBJECTIVE_009" autoflash="false"> 
+	</objective>
+	
+	<objective name="M_VE_EXTORT_RATFINK_VENDOR" caption="$MISSION_VENDOREXTORTION_COLLECT_FROM_RATFINK"> 
+		<indicator name="VEMission-RatfinkVendor:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="M_VE_GO_TO_BULLIED_VENDOR" caption="$MISSION_VENDOREXTORTION_GO_TO_BULLIED_VENDOR"> 
+		<indicator name="VEMission-BulliedVendor:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="M_VE_HELP_BULLIED_VENDOR" caption="$MISSION_VENDOREXTORTION_HELP_BULLIED_VENDOR"> 
+		<indicator name="VEMission-BulliedVendor:spawn" blip="social"></indicator>
+	</objective>
+
+	<objective name="M_VE_DEFEAT_BULLIED_THUGS" caption="$MISSION_VENDOREXTORTION_OBJECTIVE_013"> 
+	</objective>
+	
+	<objective name="M_VE_EXTORT_BULLIED_VENDOR" caption="$MISSION_VENDOREXTORTION_OBJECTIVE_014">  
+		<indicator name="VEMission-BulliedVendor:spawn" blip="social" ></indicator>
+	</objective>
+	
+	<objective name="M_VE_GO_TO_CLOTHING_VENDOR" caption="$MISSION_VENDOREXTORTION_GO_TO_CLOTHING_VENDOR"> 
+		<indicator name="VEMission-ClothingVendor:spawn" blip="store_clothing_objective"></indicator>
+	</objective>
+	
+	<objective name="M_VE_BUY_CLOTHING" caption="$MISSION_VENDOREXTORTION_BUY_CLOTHING"> 
+		<indicator name="VEMission-ClothingVendor:spawn" blip="store_clothing_objective"></indicator>
+	</objective>
+	
+	<objective name="M_VE_RETURN_WITH_MONEY" caption="$MISSION_VENDOREXTORTION_RETURN_WITH_MONEY"> 
+		<indicator name="VEMission-ClothingVendor_WalkAwayDest" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_VE_TALK_TO_FAVOR_VENDOR" caption="$MISSION_VENDOREXTORTION_COMPLETE_FAVOR"> 
+		<indicator name="VEMission-FavorVendor:spawn" blip="face_objective"></indicator>
+	</objective>
+	
+	<objective name="M_VE_RUSH_PACKAGE" caption="$MISSION_VENDOREXTORTION_OBJECTIVE_020"> 
+		<indicator name="VEMission-FavorVendor_DeliveryDest" blip="event_objective" corona="walk_event"></indicator>
+	</objective>
+	
+	<objective name="M_VE_DELIVER_PACKAGE" caption="$MISSION_VENDOREXTORTION_FINISH_DELIVERY"> 
+		<indicator name="VEMission-FavorFight_Waitress:spawn" blip="event_objective"></indicator>
+	</objective>	
+	
+	<objective name="M_VE_DEFEAT_FAVOR_THUGS" caption="$MISSION_VENDOREXTORTION_OBJECTIVE_022" autoflash="false">
+	</objective>
+	
+	<objective name="M_VE_GO_TO_KITCHEN" caption="$MISSION_VENDOREXTORTION_GO_TO_KITCHEN"> 
+		<indicator name="VEMission-FavorFight_KitchenDest" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+</objectives>

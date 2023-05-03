@@ -1,0 +1,87 @@
+<objectives>
+
+
+
+	<!-- SEWER LINE EVENT --> 
+	<objective name="E_SL_TEXT" caption="$OWNAME_SEWER_LINE" autoflash="false" >
+		<indicator name="ProgressionTriggers_Events-SLEvent" blip="face_character"></indicator>
+	</objective>
+	
+	<objective name="E_SL_SOCIAL" caption="$EVENT_SEWERLINE_NAME_001" autoflash="false" >
+	</objective>
+	
+	<objective name="E_SL_GETINVAN" caption="$EVENT_SEWERLINE_OBJECTIVE_001">
+		<indicator name="SLEvent-Spawner_Van:spawn" blip="event_objective"></indicator>
+	</objective>
+	
+	<objective name="E_SL_FOLLOWBEACON" caption="$EVENT_SEWERLINE_OBJECTIVE_002">
+	</objective>
+	
+	<objective name="E_SL_EXITVAN" caption="$EVENT_SEWERLINE_OBJECTIVE_003">
+		<indicator name="SLEvent-Marker_Blip_64" blip="event_objective" corona="drive_event"></indicator>
+	</objective>
+	
+	<objective name="E_SL_CALLTANG" caption="$EVENT_SEWERLINE4_OBJECTIVE_004" uses_pda="true"></objective>
+	
+	
+	<!-- SEWER LINE 2 EVENT --> 
+	<objective name="E_SL2_TEXT" caption="$EVENT_SEWERLINE2_NAME_001" autoflash="false" >
+		<indicator name="ProgressionTriggers_Events-SL2Event" blip="face_character"></indicator>
+	</objective>
+	
+	<objective name="E_SL2_SOCIAL" caption="$EVENT_SEWERLINE2_NAME_001" autoflash="false" >
+	</objective>
+	
+	<objective name="E_SL2_GETINBOAT" caption="$EVENT_SEWERLINE2_OBJECTIVE_001">
+		<indicator name="SL2Event-Boat:spawn" blip="event_objective" corona="drive_event"></indicator>
+	</objective>
+	
+	<objective name="E_SL2_FOLLOWBEACON" caption="$EVENT_SEWERLINE2_OBJECTIVE_002">
+	</objective>
+	
+	<objective name="E_SL2_EXITBOAT" caption="$EVENT_SEWERLINE2_OBJECTIVE_003">
+		<indicator name="SL2Event-ParkIt" blip="event_objective" corona="drive_event"></indicator>
+	</objective>
+	
+
+	
+	<!-- SEWER LINE 3 FAVOUR -->
+	<objective name="E_SL3_TEXT" caption="$OWNAME_SEWER_LINE_3" autoflash="false">
+	   <indicator name="ProgressionTriggers_Events-SL3Event" blip="face_character"></indicator>
+	</objective>
+
+	<objective name="E_SL3_SOCIAL" caption="$FAVOUR_SEWERLINE3_NAME_001" autoflash="false">
+	</objective>
+
+	<objective name="E_SL3_GETONSCOOTER" caption="$EVENT_SEWERLINE3_OBJECTIVE_001">
+		<indicator name="SL3Event-Spawn_Scooter:spawn" blip="event_objective"></indicator>       
+	</objective>
+
+	<objective name="E_SL3_FOLLOWROUTE" caption="$EVENT_SEWERLINE3_OBJECTIVE_002"></objective>
+	
+	<objective name="E_SL3_CALLTANG" caption="$EVENT_SEWERLINE4_OBJECTIVE_004" uses_pda="true"></objective>
+
+	
+	<!-- SEWER LINE EVENT 4 --> 
+	<objective name="E_SL4_TEXT" caption="$OWNAME_SEWER_LINE_4" autoflash="false" >
+		<indicator name="ProgressionTriggers_Events-SL4Event" blip="face_character"></indicator>
+	</objective>
+	
+	<objective name="E_SL4_SOCIAL" caption="$EVENT_SEWERLINE4_NAME_001" autoflash="false" >
+	</objective>
+	
+	<objective name="E_SL4_GETINVEHICLE" caption="$EVENT_SEWERLINE4_OBJECTIVE_001">
+		<indicator name="SL4Event-Spawner_Van:spawn" blip="event_objective"></indicator>
+	</objective>
+
+	<objective name="E_SL4_FOLLOWROUTE" caption="$EVENT_SEWERLINE4_OBJECTIVE_002">
+	</objective>
+	
+	<objective name="E_SL4_GETOFFSCOOTER" caption="$EVENT_SEWERLINE4_OBJECTIVE_003" autoflash="true">
+	</objective>
+	
+	<objective name="E_SL4_CALLTANG" caption="$EVENT_SEWERLINE4_OBJECTIVE_004" uses_pda="true"></objective>
+
+
+
+</objectives>

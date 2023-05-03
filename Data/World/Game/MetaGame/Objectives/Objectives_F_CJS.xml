@@ -1,0 +1,26 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>   
+ 
+	<!-- CHEAPJACK KARAOKE FAVOUR -->		
+	<objective name="F_CJS_TEXT" caption="$OWNAME_CHEAP_JACK_SERENADE" autoflash="false">
+		<indicator name="ProgressionTriggers_Favours-F_CJS" blip="face_character"></indicator>
+	</objective>
+
+	<objective name="F_CJS_SOCIAL" caption="$OWNAME_CHEAP_JACK_SERENADE" autoflash="false">
+	</objective>
+
+	<!-- Follow Jack into the booth -->
+	<objective name="F_CJS_FOLLOW" caption="$EVENT_KARAOKE_OBJECTIVE_001">
+		<indicator name="F_CJS-Marker_Karaoke" blip="event_objective" corona="walk_event"></indicator>
+	</objective>
+
+	<!-- Score low at karaoke -->
+	<objective name="F_CJS_SING" caption="$EVENT_KARAOKE_OBJECTIVE_002">
+		<indicator name="F_CJS-Marker_Karaoke" blip="event_objective"></indicator>
+	</objective>
+		
+</objectives>

@@ -1,0 +1,229 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+  <!-- Case: Popstar Lead 1 -->
+	<objective name="C_PS_Start_1" caption="$CASE_NEW_ASSIGNMENT" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-C_PS_Start" blip="case_start" corona="walk_case"></indicator>	
+	</objective>
+	
+	<objective name="C_PS_Start_2" caption="$CASE_POPSTAR_TEXT_MING" uses_pda="true">		
+	</objective>
+	
+	<objective name="PS_1_Lead" caption="$CASE_POPSTAR_NAME_001"> 
+		<indicator name="ProgressionTriggers_Cases-C_PS1" blip="case_start"></indicator>
+	</objective>
+
+	<objective name="PS_1_TalkToMing" caption="$CASE_POPSTAR_TALKTO_DIRTYMING">
+		<indicator name="PS1Case-dirtyming:spawn" blip="social"></indicator>
+	</objective>
+
+	<objective name="PS_1_FindPopstar" caption="$CASE_PS1_FIND_POPSTAR">
+		<indicator name="PS1Case-PopstarBreadcrumb" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="PS_1_FindPopstar2" caption="$CASE_PS1_FIND_POPSTAR">
+		<indicator name="PS1Case-BBallCourt" blip="case_objective"></indicator>
+	</objective>
+
+	<objective name="PS_1_TalkToPopstar" caption="$CASE_PS1_TALK_POPSTAR">
+		<indicator name="PS1Case-popstar:spawn" blip="face_objective"></indicator>
+	</objective>
+	
+	<objective name="PS_1_Find_Deadbeats" caption="$CASE_PS1_FIND_DEADBEATS">
+		<indicator name="PS1Case-find_deadbeats" blip="case_objective" corona="arrow_case"></indicator>  
+	</objective>	
+
+	<objective name="PS_1_Grab_Deadbeat" caption="$CASE_PS1_GRAB_DEADBEAT">
+		<indicator name="PS1Case-deadbeat_02:spawn" blip="enemy"></indicator>
+	</objective>
+
+	<objective name="PS_1_Throw_Deadbeat" caption="$CASE_PS1_THROW_DEADBEAT">
+		<indicator name="PS1Case-phonebooth" blip="case_objective"></indicator>
+	</objective>
+
+	<objective name="PS_1_Beat_Deadbeat2" caption="$CASE_PS1_BEAT_UP_DEADBEAT">
+		<indicator name="PS1Case-deadbeat_02:spawn" blip="enemy"></indicator>  	
+	</objective>
+	
+	<objective name="PS_1_Beat_Deadbeats" caption="$CASE_PS1_BEAT_UP_DEADBEATS">
+		<indicator name="PS1Case-deadbeat_01:spawn" blip="enemy"></indicator>
+		<indicator name="PS1Case-deadbeat_02:spawn" blip="enemy"></indicator>
+	</objective>
+
+	<objective name="PS_1_Beat_Deadbeat" caption="$CASE_PS1_BEAT_UP_DEADBEAT">
+		<indicator name="PS1Case-deadbeat_01:spawn" blip="enemy"></indicator>  	
+	</objective>
+
+	<objective name="PS_1_CollectSocial1" caption="$CASE_PS1_EXTORT_DEADBEAT" autoflash="true">
+		<indicator name="PS1Case-deadbeat_01:spawn" blip="social"></indicator>  
+	</objective>
+
+	<objective name="PS_1_GetStuff" caption="$CASE_PS1_GOTO_POPSTAR">
+		<indicator name="PS1Case-popstar:spawn" blip="social"></indicator>
+	</objective>
+
+	<objective name="PS_1_DitchCops" caption="$CASE_PS1_LOSE_COPS">
+	</objective>    
+
+	<objective name="PS_1_GoMing" caption="$CASE_PS1_RETURN_TO_MING">
+		<indicator name="PS1Case-ShowMeTheWay" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	
+	<objective name="PS_1_MoreTalkMing" caption="$CASE_POPSTAR_TALKTO_DIRTYMING">
+		<indicator name="PS1Case-dirtyming_postpop:spawn" blip="social"></indicator>
+	</objective>
+
+	<objective name="PS_1_Leave" caption="$CASE_PS1_LEAVE_AREA">
+		<indicator name="PS1Case-Leave" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+
+	<objective name="PS_1_Call_Teng" caption="$CASE_PS_CALL_TENG" uses_pda="true">
+	</objective>
+	
+	<!-- Case: Popstar Lead 2 -->
+	<objective name="PS_2_Lead" caption="$CASE_POPSTAR_NAME_002" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-C_PS2" blip="case_start" corona="arrow_case"></indicator>
+	</objective>
+	<objective name="PS_2_Goto" caption="$CASE_PS2_GOTO_ROOF">
+	  <indicator name="PS2Case-TriadWar" blip="case_objective" corona="arrow_case"></indicator>	
+	</objective>
+	<objective name="PS_2_TriadWar" caption="$CASE_PS2_BEAT_DEADBEATS">
+	  <indicator name="PS2Case-TriadWar" blip="case_objective"></indicator>	
+	</objective>
+	<objective name="PS_2_Hijack" caption="$CASE_PS2_HIJACK_CAM">
+	  <indicator name="PS2Case-HackHere" blip="case_objective"></indicator>	
+	</objective>
+	<objective name="PS_2_Safehouse" caption="$CASE_PS2_SAFEHOUSE">
+		<indicator name="PS2Case-Safehouse" blip="case_objective" corona="drive_case"></indicator>	
+	</objective>
+	<objective name="PS_2_Use_SpyPC" caption="$CASE_POPSTAR_SPYPC">
+		<indicator name="PS2Case-SpyPC" blip="case_objective"></indicator>	
+	</objective>
+	<objective name="PS_2_Call_Teng" caption="$CASE_PS_CALL_TENG" uses_pda="true">
+	</objective>
+	<objective name="PS_2_Text_Teng" caption="$CASE_PS_TEXT_TENG" uses_pda="true">
+	</objective>
+
+	
+	<!-- Case: Popstar Lead 3 -->
+	<objective name="PS_3_Lead" caption="$CASE_POPSTAR_NAME_003" autoflash="false">
+	  <indicator name="ProgressionTriggers_Cases-C_PS3" blip="case_start" corona="walk_case"></indicator>	
+	</objective>
+
+	<objective name="PS3_Disguise" caption="$CASE_SK1_GET_DISGUISE">
+		<indicator name="PS3Case-DressUp" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+
+	<objective name="PS3_Wait" caption="$CASE_PS3_WAIT_FOR_POPSTAR">
+		<indicator name="PS3Case-HandyCar:spawn" blip="case_objective"></indicator>
+	</objective>
+
+	<objective name="PS_3_Follow_Car" caption="$CASE_PS3_MONEY_DROP">
+		<indicator name="PS3Case-PopstarEntrourageGroup:Vehicle:spawn" blip="case_objective"></indicator>
+	</objective>
+
+	<objective name="PS_3_Hang_Back" caption="$CASE_PS3_HANG_BACK">
+		<indicator name="PS3Case-PhotoPart1" blip="case_objective" corona="drive_case"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Park_Car" caption="$CASE_PS3_PARK_NEAR_BUILDING">
+		<indicator name="PS3Case-PhotoPart1" blip="case_objective" corona="drive_case"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Climp_Up" caption="$CASE_PS3_CLIMB_ONTO_ROOF">
+		<indicator name="PS3Case-Rooftop" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+
+	<objective name="PS_3_Take_Cover" caption="$CASE_PS3_TAKE_COVER">
+		<indicator name="PS3Case-HereWait" blip="case_objective" corona="arrow_case"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Target_Supplier" caption="$CASE_PS3_SETUP_SHOT_SUPPLIER">
+		<indicator name="PS3Case-Supplier:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+
+	<objective name="PS_3_Wait_For_Popstar" caption="$CASE_PS3_WAIT_FOR_MONEY_DROP">
+		<indicator name="PS3Case-HereWait" blip="case_objective" ></indicator>		
+		<indicator name="PS3Case-Popstar:spawn"></indicator>
+	</objective>
+
+	<objective name="PS_3_Photo_Driver" caption="$CASE_PS3_PHOTO_SUPPLIER" uses_pda="true">
+		<indicator name="PS3Case-Popstar:spawn" blip="case_objective"></indicator>
+		<indicator name="PS3Case-Supplier:spawn" blip="case_objective"></indicator>
+	</objective>
+
+	<objective name="PS_3_Photo_Poptrunk" caption="$CASE_PS3_PHOTO_POPSTAR_SAMPLE" uses_pda="true">
+		<indicator name="PS3Case-Popstar:spawn" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Wait_For_Deal_Over" caption="$CASE_PS3_WAIT_DEAL_OVER">
+		<indicator name="PS3Case-PhotoTransition_PlayerDest" blip="case_objective" corona="arrow_case"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Wait_Gone_Down" caption="$CASE_PS3_WAIT_FOR_SAMPLE">
+		<indicator name="PS3Case-PhotoTransition_PlayerDest" blip="case_objective"></indicator>		
+	</objective>
+
+	<objective name="PS_3_FastTalk" caption="$CASE_PS3_FASTTALK">
+		<indicator name="PS3Case-PopstarEntrourageGroup:Seat1:spawn" blip="enemy_noncombat"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Pass_Guard" caption="$CASE_PS3_PASS_GUARD">
+		<indicator name="PS3Case-PassGuard" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Follow_Popstar" caption="$CASE_PS3_MONEY_DROP">
+		<indicator name="PS3Case-HereFollow" blip="case_objective" corona="walk_case"></indicator>
+		<indicator name="PS3Case-Popstar:spawn"></indicator>		
+	</objective>
+
+	<objective name="PS_3_Follow_Popstar2" caption="$CASE_PS3_MONEY_DROP">
+		<indicator name="PS3Case-HereFollow1" blip="case_objective" corona="walk_case"></indicator>
+		<indicator name="PS3Case-Popstar:spawn"></indicator>		
+	</objective>
+	
+	<objective name="PS_3_Photo_Deal_Pos" caption="$CASE_POPSTAR_OBJECTIVE_PHOTO_SPOT">
+	  <indicator name="PS3Case-PhotoPart2" blip="case_objective" corona="walk_case"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Photo_Wait_Deal" caption="$CASE_PS3_WAIT_FOR_MONEY_DROP">
+		<indicator name="PS3Case-Popstar:spawn" blip="case_objective"></indicator>
+		<indicator name="PS3Case-Supplier:spawn" blip="case_objective"></indicator>
+	</objective>
+
+	<objective name="PS_3_Target_Popstar" caption="$CASE_PS3_SETUP_SHOT_EXECUTION">
+		<indicator name="PS3Case-Popstar:spawn" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Photo_Deal" caption="$CASE_PS3_PHOTO_MONEY_DROP" uses_pda="true">
+	  <indicator name="PS3Case-Supplier:spawn" blip="case_objective"></indicator>
+	</objective>
+
+	<objective name="PS_3_Wait_For_Deal_Over2" caption="$CASE_PS3_WAIT_DEAL_OVER">
+		<indicator name="PS3Case-PhotoPart2" blip="case_objective" corona="arrow_case"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Photo_Popshot" caption="$CASE_PS3_PHOTO_POPSTAR_SAMPLE" uses_pda="true">
+		<indicator name="PS3Case-Popstar:spawn" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Get_Car" caption="$CASE_PS3_ACTION_HIJACK_CAR">
+	  <indicator name="PS3Case-HandyCar:spawn" blip="case_objective"></indicator>
+	</objective>
+
+	<objective name="PS_3_Action_Hijack" caption="$CASE_PS3_ACTION_HIJACK_CAR">
+	  <indicator name="PS3Case-HandyCar:spawn" blip="case_objective"></indicator>
+	</objective>
+	
+	<objective name="PS_3_Drive_HQ" caption="$CASE_PS3_RETURN_SUPPLIER_CAR">
+	  <indicator name="PS3Case-HQ_GarageOutside" blip="case_objective" corona="drive_case"></indicator>
+	</objective>
+
+	<objective name="PS_3_Park_Supplier_Car" caption="$CASE_PS3_PARK_SUPPLIER_CAR">
+	  <indicator name="PS3Case-HQ_Garage" blip="case_objective" corona="drive_case"></indicator>
+	</objective>
+
+</objectives>

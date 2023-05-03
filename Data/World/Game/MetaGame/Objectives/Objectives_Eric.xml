@@ -1,0 +1,16 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+	<objective name="C_NewCase" caption="$CASE_NEW_ASSIGNMENT" autoflash="false">
+		<indicator name="ProgressionTriggers_Cases-C_Race_Start" blip="case_start" corona="walk_case"></indicator>
+	</objective>
+
+	<objective name="C_Return" caption="Return to HQ to close the case" autoflash="false">
+		<indicator name="Locations-CaseBoardCorona" blip="case_start" corona="walk_case"></indicator>
+	</objective>
+
+</objectives>

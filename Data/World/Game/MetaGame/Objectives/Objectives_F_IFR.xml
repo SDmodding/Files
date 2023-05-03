@@ -1,0 +1,21 @@
+<!--
+	
+	See Objectives.xml for details
+	    
+-->
+<objectives>  
+ 
+	<!-- ILYANA FREE RUNNING FAVOUR -->
+	<objective name="F_IFR_TEXT" caption="$OWNAME_ILYANA_FREE_RUNNING"  autoflash="false">
+		<indicator name="ProgressionTriggers_Favours-F_IFR" blip="date_character"></indicator>
+	</objective>
+
+	<objective name="F_IFR_SOCIAL" caption="$DATE_ILYANA_NAME_001" autoflash="false">
+	</objective>
+
+	<objective name="F_IFR_RACE" caption="$DATE_ILYANA_OBJECTIVE_003">
+		<indicator name="F_IFR-race_ilyana:spawn" blip="friendly"></indicator>
+		<indicator name="F_IFR-Marker_RaceFinish" blip="event_objective" corona="walk_event"></indicator>
+	</objective>
+
+</objectives>

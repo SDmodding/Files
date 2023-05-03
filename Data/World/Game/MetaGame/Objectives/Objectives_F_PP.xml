@@ -1,0 +1,56 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+		<!--******************************Pied Piper Event**************************************-->  
+		
+		
+		<objective name="E_PP_TEXT" caption="$OWNAME_PIED_PIPER"  autoflash="false">					
+			<indicator name="ProgressionTriggers_Events-PiedPiper" blip="face_character"></indicator>
+		</objective>
+		
+		<objective name="E_PP_SOCIAL" caption="$EVENT_PIEDPIPER_NAME_001" autoflash="false">		
+		</objective>
+		
+		<objective name="E_PP_GETCOPS" caption="$EVENT_PIEDPIPER_OBJECTIVE_001"></objective>
+		
+		<objective name="E_PP_LEADCOPS" caption="$EVENT_PIEDPIPER_OBJECTIVE_002">
+			<indicator name="PiedPiper-mkrBusDepot" blip="event_objective" corona="drive_event"></indicator>
+		</objective>
+		
+		<objective name="E_PP_LOSECOPS" caption="$EVENT_BREAKARREST_OBJECTIVE_002"> 
+		</objective>
+		
+		<objectivehint name="E_PP_H_01" caption="$EVENT_PIEDPIPER_HINT_001"></objectivehint>
+		<objectivehint name="E_PP_H_02" caption="$EVENT_PIEDPIPER_HINT_002"></objectivehint>
+		
+		
+		
+		
+		<!--******************************Pied Piper 2 Event**************************************-->  
+		
+		<objective name="E_PP2_TEXT" caption="$OWNAME_PIED_PIPER_2"  autoflash="false">
+			<indicator name="ProgressionTriggers_Events-PiedPiper2" blip="face_character"></indicator>
+		</objective>
+		
+		<objective name="E_PP2_SOCIAL" caption="$EVENT_PIEDPIPER2_NAME_001"  autoflash="false">
+		</objective>
+		
+		<objective name="E_PP2_GETCOPS" caption="$EVENT_PIEDPIPER2_OBJECTIVE_001"></objective>
+		
+		<objective name="E_PP2_LEADCOPS" caption="$EVENT_PIEDPIPER2_OBJECTIVE_002">
+			<indicator name="PiedPiper2-mkrBusDepot" blip="event_objective" corona="drive_event"></indicator>
+		</objective>
+		
+		<objective name="E_PP2_LOSECOPS" caption="$EVENT_BREAKARREST_OBJECTIVE_002">
+		</objective>
+		
+		<objectivehint name="E_PP2_H_01" caption="$EVENT_PIEDPIPER2_HINT_001"></objectivehint>
+		<objectivehint name="E_PP2_H_02" caption="$EVENT_PIEDPIPER2_HINT_002"></objectivehint>
+
+
+
+</objectives>

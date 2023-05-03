@@ -1,0 +1,84 @@
+<objectives>
+
+<!-- *****************************The Big Hit Objectives************************************ -->
+	
+	<objective name="M_TBH_000" caption="$MISSION_THEBIGHIT_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-TBHMission" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TBH_GO_TO_APARTMENT" caption="$MISSION_THEBIGHIT_OBJECTIVE_014">
+		<indicator name="TBHMission-Marker_FifisApartment" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TBH_TALK_TO_DOORMAN" caption="$MISSION_THEBIGHIT_OBJECTIVE_002">
+		<indicator name="TBHMission-Spawn_SecurityGuard:spawn" blip="social"></indicator>
+	</objective>
+	
+	<objective name="M_TBH_CALL_SONNY" caption="$MISSION_THEBIGHIT_OBJECTIVE_011">
+	
+	</objective>
+	
+	<objective name="M_TBH_INVESTIGATE_SITE" caption="$MISSION_THEBIGHIT_OBJECTIVE_010">
+		<indicator name="TBHMission-mkrSite" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TBH_ENTER_SITE" caption="$MISSION_THEBIGHIT_OBJECTIVE_010">
+		<indicator name="TBHMission-mkrEnterSite" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TBH_CLIMB_UP" caption="$MISSION_THEBIGHIT_OBJECTIVE_013">
+		<indicator name="TBHMission-mkrWindow" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TBH_ENTER_APARTMENT" caption="$MISSION_THEBIGHIT_OBJECTIVE_015">
+		<indicator name="TBHMission-mkrRestoreTBH2" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<!--  Start copying files from Vivienne's Computer  -->
+	<objective name="M_TBH_HACK_COMPUTER" caption="$MISSION_THEBIGHIT_OBJECTIVE_003">
+		<indicator name="TBHMission-TBH_2_Bug1" blip="mission_objective"></indicator>
+	</objective>
+		
+	<!--  Bug the kitchen  -->
+	<objective name="M_TBH_BUG_KITCHEN" caption="$MISSION_THEBIGHIT_OBJECTIVE_006">
+		<indicator name="TBHMission-TBH_2_Bug2" blip="mission_objective"></indicator>
+	</objective>
+
+	<!--  Hide in the bedroom  -->
+	<objective name="M_TBH_HIDEIN_BEDROOM" caption="$MISSION_THEBIGHIT_OBJECTIVE_004">
+		<indicator name="TBHMission-TBH_2_Bedroom1" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>	
+	
+	<!--  Bug the bedroom  -->
+	<objective name="M_TBH_BUG_BEDROOM" caption="$MISSION_THEBIGHIT_OBJECTIVE_005">
+		<indicator name="TBHMission-TBH_2_Bug3" blip="mission_objective"></indicator>
+	</objective>
+	
+	<!--  Retrieve the memory stick  -->
+	<objective name="M_TBH_RETRIEVE_MEMORY" caption="$MISSION_THEBIGHIT_OBJECTIVE_007">
+		<indicator name="TBHMission-TBH_2_Bug1" blip="mission_objective"></indicator>
+	</objective>
+	
+	<objective name="M_TBH_GO_TO_BALCONY" caption="$MISSION_THEBIGHIT_OBJECTIVE_022">
+		<indicator name="TBHMission-mkrRestoreTBH2" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TBH_ESCAPE" caption="$MISSION_THEBIGHIT_OBJECTIVE_008">
+		<indicator name="TBHMission-mkrTBH2AEnd" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<!--  Meet Pendrew at the Central tram station  -->
+	<objective name="M_TBH_MEET_PENDREW" caption="$MISSION_THEBIGHIT_OBJECTIVE_009">
+		<indicator name="TBHMission-Marker_Pendrew" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TBH_GO_TO_SAFEHOUSE" caption="$MISSION_THEBIGHIT_OBJECTIVE_020">
+		<indicator name="TBHMission-mkrSafehouse" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_TBH_USE_COMPUTER" caption="$MISSION_THEBIGHIT_OBJECTIVE_021">
+		<indicator name="TBHMission-mkrEndPOI" blip="mission_objective" corona="walk_mission"></indicator>
+	</objective>
+	
+	
+</objectives>

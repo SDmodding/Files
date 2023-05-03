@@ -1,0 +1,36 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>
+
+	<!--******************************Stick Up and Delivery Mission**************************************-->
+	<objective name="M_SU_000" caption="$MISSION_STICKUP_NAME_001" autoflash="false">
+		<indicator name="ProgressionTriggers_Missions-M_SU" blip="mission_start" corona="walk_mission"></indicator>
+	</objective>
+	
+	<objective name="M_SU_WAREHOUSE" caption="$MISSION_STICKUP_OBJECTIVE_001" location_caption="Warehouse">
+		<indicator name="SUMission-mkr_warehouse" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_SU_FIGHT" caption="$MISSION_STICKUP_OBJECTIVE_002">		
+	</objective> 
+ 
+	<objective name="M_SU_CHASE" caption="$MISSION_STICKUP_OBJECTIVE_004">
+	</objective>
+	
+	<objective name="M_SU_RAM_VAN" caption="$MISSION_STICKUP_OBJECTIVE_005">
+	</objective>
+	
+	<objective name="M_SU_ESCORT" caption="$MISSION_STICKUP_OBJECTIVE_009">
+	</objective>
+	
+	<objective name="M_SU_TOPGLAMOUR" caption="$MISSION_STICKUP_OBJECTIVE_007">
+		<indicator name="SUMission-mkr_End" blip="mission_objective" corona="drive_mission"></indicator>
+	</objective>
+	
+	<objective name="M_SU_ESCAPEPOLICE" caption="$MISSION_STICKUP_OBJECTIVE_008">
+	</objective>
+		
+</objectives>

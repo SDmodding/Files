@@ -1,0 +1,38 @@
+<!--
+	
+	See Objectives.xml for details
+	   
+-->
+<objectives>  
+ 
+	<!-- NOTPING HACKING FAVOUR -->
+	<objective name="F_CH_TEXT" caption="$OWNAME_NOTPING_HACKING"  autoflash="false">
+		<indicator name="ProgressionTriggers_Favours-F_CH" blip="date_character" corona="arrow_social"></indicator>
+	</objective>
+
+	<objective name="F_CH_SOCIAL" caption="$OWNAME_NOTPING_HACKING" autoflash="false">
+	</objective>
+
+	<!-- Distract the cop -->
+	<objective name="F_CH_DISTRACT_COPS" caption="$DATE_NOTPING1_OBJECTIVE_003">
+		<indicator name="F_CH-Cop:spawn" blip="event_objective"></indicator>
+	</objective>
+
+	<!-- Talk to Not Ping -->
+	<objective name="F_CH_PING" caption="$DATE_NOTPING1_OBJECTIVE_002">
+		<indicator name="F_CH_Character:spawn" blip="event_objective"></indicator>
+	</objective>	
+	
+	<!-- Hack the camera before the cop notices -->
+	<objective name="F_CH_HACK" caption="$DATE_NOTPING1_OBJECTIVE_004">
+	 <indicator name="F_CH-Hacking_Location" blip="event_objective"></indicator>
+	</objective>
+
+	<!-- Leave the park with Not Ping -->
+	<objective name="F_CH_LEAVE" caption="$DATE_NOTPING1_OBJECTIVE_005">
+		<indicator name="F_CH_Character:spawn" blip="event_objective"></indicator>
+	</objective>
+		
+	<!--  corona="arrow_friendly" -->
+		
+</objectives>
