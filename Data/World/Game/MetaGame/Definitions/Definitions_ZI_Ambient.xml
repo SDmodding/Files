@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<gameslices>
+
+</gameslices>
+<!-- MISSIONS -->
+<groups>
+	<event name="ZodiacIslandUnlocker">
+		<title>$SGTITLE_ZODIAC_UNLOCKER</title>
+		<scriptclass>ZodiacIslandUnlocker</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<vehiclesuperstop>true</vehiclesuperstop>
+	</event>
+	<ambient name="ZodiacIslandManager" holdcurtain="true">
+		<title>$SGTITLE_ZODIAC_UNLOCKER</title>		
+		<scriptclass>ZodiacIslandManager</scriptclass>		
+		<maxheatlevel>0</maxheatlevel>
+	</ambient>
+	<mission name="ZodiacIslandExit">
+		<title>$SGTITLE_ENDGAME</title>
+		<scriptclass>ZodiacIslandExit</scriptclass>		
+	</mission>
+	<mission name="ZodiacIslandEnd">
+		<title>$SGTITLE_ENDGAME</title>
+		<scriptclass>ZodiacIslandEnd</scriptclass>		
+	</mission>
+</groups>
+

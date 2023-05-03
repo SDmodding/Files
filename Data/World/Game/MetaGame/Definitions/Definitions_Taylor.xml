@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	<gameslice name="WeaponContact" repeatableinterval="5">
+		<title>Weapon Contact</title>
+		<scriptclass>WCAmbient</scriptclass>
+	</gameslice>
+	<gameslice name="BoatContact" repeatableinterval="5">
+		<title>Boat Contact</title>
+		<scriptclass>BCAmbient</scriptclass>
+	</gameslice>
+	<gameslice name="MeleeBackup" repeatableinterval="5">
+		<title>Melee Backup</title>
+		<scriptclass>MBAmbient</scriptclass>
+	</gameslice>
+	<gameslice name="GunBackup" repeatableinterval="5">
+		<title>Gun Backup</title>
+		<scriptclass>GBAmbient</scriptclass>
+	</gameslice>
+</gameslices>
+<groups>
+	<event name="E_SC" repeatableinterval="5">
+		<title>SWAT Contact</title>
+		<scriptclass>SCEvent</scriptclass>
+		<pdatrigger>SWATContact</pdatrigger>
+		<restorelocationmarker>Locations-E_SC</restorelocationmarker>
+	</event>
+</groups>

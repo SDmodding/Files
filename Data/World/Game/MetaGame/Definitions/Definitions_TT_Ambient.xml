@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<gameslices>
+</gameslices>
+<!-- MISSIONS -->
+<groups>
+	<event name="TransportationTerrorUnlocker">
+		<title>$TT_SUPER_CAR_NAME</title>
+		<scriptclass>TransportationTerrorUnlocker</scriptclass>
+		<triggerobject>ProgressionTriggers_TT-Unlocker</triggerobject>
+		<restorelocationmarker>Locations_TT-Unlocker_Start</restorelocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<failtimeout>0.001</failtimeout>
+	</event> 
+	<event name="TransportationTerrorManager" holdcurtain="true">
+		<title>$TT_SUPER_CAR_NAME</title>
+		<subsetmode>transportationterror</subsetmode>
+		<scriptclass>TransportationTerrorManager</scriptclass>
+		<cancellocationmarker>Locations_TT-Unlocker_Restart</cancellocationmarker>		
+		<scenelayeronstart geoautoactivate="false" activate="true">HJ_Return_Points</scenelayeronstart>		
+		<scenelayeronend geoautoactivate="false" activate="false">HJ_Return_Points</scenelayeronend>
+		<failtimeout>0.001</failtimeout>
+	</event>
+	<mission name="TransportationTerrorEnd">
+		<title>$SGTITLE_DEATH_RACE</title>
+		<scriptclass>TransportationTerrorEnd</scriptclass>
+		<subsetmode>transportationterror</subsetmode>
+	</mission>
+	<scenario name="E_TT_AfterConvoy">
+		<title>$SGTITLE_CONVOY</title>
+		<scriptclass>E_TT_AfterConvoy</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+		<subsetmode>transportationterror</subsetmode>
+	</scenario>
+	<scenario name="E_TT_AfterEMP">
+		<title>$SGTITLE_GET_THE_EMP</title>
+		<scriptclass>E_TT_AfterEMP</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+		<subsetmode>transportationterror</subsetmode>
+	</scenario>
+	<scenario name="E_TT_AfterCC">
+		<title>$SGTITLE_CRUISE_CONTROL</title>
+		<scriptclass>E_TT_AfterCC</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+		<subsetmode>transportationterror</subsetmode>
+	</scenario>
+	<scenario name="E_TT_AfterRT">
+		<title>$SGTITLE_RESCUE_TANG</title>
+		<scriptclass>E_TT_AfterRT</scriptclass>
+		<enablemasks>
+			<enable forcategory="ambient"></enable>
+			<enable forcategory="scenarios"></enable>
+			<enable forcategory="events"></enable>
+			<enable forcategory="sprinkles"></enable>			
+		</enablemasks>
+		<subsetmode>transportationterror</subsetmode>
+	</scenario>
+</groups>

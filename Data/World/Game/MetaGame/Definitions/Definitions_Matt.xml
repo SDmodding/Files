@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<gameslices>
+<!-- Confrontation -->
+	<gameslice name="CO_01_StealTanker">
+		<title>Steal Tanker</title>
+		<scriptclass>CO_01_StealTanker</scriptclass>
+		<restorelocationmarker>COMission-Restore_01</restorelocationmarker>
+	</gameslice>
+	<gameslice name="CO_02_DriveToElection">
+		<title>Drive to Election</title>
+		<scriptclass>CO_02_DriveToElection</scriptclass>
+		<restorelocationmarker>COMission-Restore_01</restorelocationmarker>
+		<dependent>CO_01_StealTanker</dependent>
+	</gameslice>
+	<gameslice name="CO_03_ElectionBattle01">
+		<title>Election Battle 1</title>
+		<scriptclass>CO_03_ElectionBattle01</scriptclass>
+		<restorelocationmarker>COMission-Restore_02</restorelocationmarker>
+		<dependent>CO_02_DriveToElection</dependent>
+	</gameslice>
+	<gameslice name="CO_04_ElectionBattle02">
+		<title>Election Battle 2</title>
+		<scriptclass>CO_04_ElectionBattle02</scriptclass>
+		<restorelocationmarker>COMission-Restore_03</restorelocationmarker>
+		<dependent>CO_03_ElectionBattle01</dependent>
+	</gameslice>
+	<gameslice name="CO_05_RailShooter01">
+		<title>Rail Shooter 1</title>
+		<scriptclass>CO_05_RailShooter01</scriptclass>
+		<restorelocationmarker>COMission-Restore_04</restorelocationmarker>
+		<dependent>CO_04_ElectionBattle02</dependent>
+	</gameslice>
+	<gameslice name="CO_06_RailDriver">
+		<title>Rail Driver</title>
+		<scriptclass>CO_06_RailDriver</scriptclass>
+		<restorelocationmarker>COMission-Restore_05</restorelocationmarker>
+		<dependent>CO_05_RailShooter01</dependent>
+	</gameslice>
+	<gameslice name="CO_07_RailShooter02">
+		<title>Rail Shooter 2</title>
+		<scriptclass>CO_07_RailShooter02</scriptclass>
+		<restorelocationmarker>COMission-Restore_06</restorelocationmarker>
+		<dependent>CO_06_RailDriver</dependent>
+	</gameslice>
+	<gameslice name="CO_08_Finale">
+		<title>Finale</title>
+		<scriptclass>CO_08_Finale</scriptclass>
+		<restorelocationmarker>COMission-Restore_07</restorelocationmarker>
+		<lockambientpedsonstart>true</lockambientpedsonstart>
+		<enableambientpedsonstart>false</enableambientpedsonstart>
+		<enableambientpedsonend>true</enableambientpedsonend>
+		<unlockambientpedsonend>true</unlockambientpedsonend>
+		<locktrafficonstart>true</locktrafficonstart>
+		<enabletrafficonstart>false</enabletrafficonstart>
+		<enabletrafficonend>true</enabletrafficonend>
+		<unlocktrafficonend>true</unlocktrafficonend>
+		<dependent>CO_07_RailShooter02</dependent>
+	</gameslice>
+</gameslices>
+
+<!-- MISSIONS -->
+<groups>
+	<mission name="M_CO" statsid="16">
+		<title>$SGTITLE_CONFRONTATION</title>
+		<scriptclass>COMission</scriptclass>
+		<triggerobject>ProgressionTriggers_Missions-COMission</triggerobject>
+		<restorelocationmarker>COMission-Restore_00</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_CO</completelocationmarker>
+		<child checkpoint="true">CO_01_StealTanker</child>
+		<child checkpoint="true">CO_02_DriveToElection</child>
+		<child checkpoint="true">CO_03_ElectionBattle01</child>
+		<child checkpoint="true">CO_04_ElectionBattle02</child>
+		<child checkpoint="true">CO_05_RailShooter01</child>
+		<child checkpoint="true">CO_06_RailDriver</child>
+		<child checkpoint="true">CO_07_RailShooter02</child>
+		<child checkpoint="true">CO_08_Finale</child>
+	</mission>
+	<event name="E_WR" statsid="51">
+		<title>$SGTITLE_WHARF_RUNNER</title>
+		<scriptclass>WREvent</scriptclass>
+		<triggerobject>ProgressionTriggers_Events-WREvent</triggerobject>
+		<restorelocationmarker>Locations-WREvent_Start</restorelocationmarker>
+		<completelocationmarker>EndLocations-E_WR</completelocationmarker>
+	</event>
+</groups>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<!--
+
+	Please note that this file is sometimes auto-generated, therefore any comments you put in might get lost
+
+-->
+<gameslices>
+	
+	<!-- ONLY FOR DEMO -->
+		<gameslice name="TNB_1_Meeting_Demo" holdcurtain="true">
+		<title>TNB_1_Meeting</title>
+		<scriptclass>TNB_1_Meeting</scriptclass>
+		<restorelocationmarker>Locations-TNB_Fail_Spawn</restorelocationmarker>
+	</gameslice>	
+	<gameslice name="TNB_2_Brawl_Demo" holdcurtain="true">
+		<title>TNB_2_Brawl</title>
+		<scriptclass>TNB_2_Brawl</scriptclass>
+		<dependent>TNB_1_Meeting_Demo</dependent>
+		<restorelocationmarker>TNBMission-TNB_NIS1_Wei_MKR</restorelocationmarker>
+	</gameslice>	
+	<gameslice name="TNB_3_Chase_Demo" holdcurtain="true">
+		<title>TNB_3_Chase</title>
+		<scriptclass>TNB_3_Chase</scriptclass>
+		<dependent>TNB_2_Brawl_Demo</dependent>
+		<restorelocationmarker>TNBMission-TNB_Wei_Cover_MKR</restorelocationmarker>
+	</gameslice>	
+	<gameslice name="TNB_4_Capture_Demo">
+		<title>TNB_4_Capture</title>
+		<scriptclass>TNB_4_Capture</scriptclass>
+		<dependent>TNB_3_Chase_Demo</dependent>
+		<restorelocationmarker>TNBMission-TNB_Wei_NIS_Tele1</restorelocationmarker>
+	</gameslice>
+	<!-- ONLY FOR DEMO END -->
+	
+	<gameslice name="BPH_1">
+		<title>BPH_1</title>
+		<scriptclass>BPH_1</scriptclass>
+	</gameslice>
+	
+</gameslices>
+<groups>
+	
+
+	<job name="J_BPH" repeatableinterval="1">
+		<title>BPH</title>
+		<scriptclass>BPHJob</scriptclass>
+		<!--<timeofday restore="22.0" active="-1.0" inactive="-1.0"></timeofday>-->
+		<!--<triggerobject>ProgressionTriggers_Sasha-BPHJob</triggerobject>-->
+		<!--<incomingpdatrigger contactname="Buoy Boss" triggerobject="ProgressionTriggers_Sasha-BPHJob" vehiclefilter="Boat"></incomingpdatrigger>-->
+		<restorelocationmarker>BPHJob-BPH1_Restore</restorelocationmarker>
+		<child>BPH_1</child>
+	</job>
+	<mission name="M_TNB_Demo" holdcurtain="true">
+		<title>The New Boss</title>
+		<scriptclass>TNBMission</scriptclass>		
+		<restorelocationmarker>Locations-TNB_Fail_Spawn</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_TNB</completelocationmarker>
+		<timeofday restore="22.0" active="-1.0" inactive="-1.0"></timeofday>
+		<child checkpoint="true">TNB_1_Meeting_Demo</child>
+		<child checkpoint="true">TNB_2_Brawl_Demo</child>
+		<child checkpoint="true">TNB_3_Chase_Demo</child>
+		<child checkpoint="true">TNB_4_Capture_Demo</child>
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+	</mission>
+</groups>

@@ -1,0 +1,284 @@
+<?xml version="1.0"?> 
+<gameslices>
+	<gameslice name="WTZ0" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>WTZ_0_NIS</scriptclass>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ1" holdcurtain="true">
+		<title>Arrive and Flyby</title>
+		<scriptclass>WTZ_1_Arrival</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>WTZ0</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ2">
+		<title>Intro to Zodiac</title>
+		<scriptclass>WTZ_2_Intro</scriptclass>
+		<dependent>WTZ1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ3" holdcurtain="true">
+		<title>Social and Maybe Fight</title>
+		<scriptclass>WTZ_3_MeetFighters</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_02</restorelocationmarker>
+		<dependent>WTZ2</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ0_Repeatable" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>WTZ_0_NIS</scriptclass>
+	</gameslice>
+	<gameslice name="WTZ1_Repeatable" holdcurtain="true">
+		<title>Arrive and Flyby</title>
+		<scriptclass>WTZ_1_Arrival</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>WTZ0_Repeatable</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ2_Repeatable">
+		<title>Intro to Zodiac</title>
+		<scriptclass>WTZ_2_Intro</scriptclass>
+		<dependent>WTZ1_Repeatable</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ3_Repeatable" holdcurtain="true">
+		<title>Social and Maybe Fight</title>
+		<scriptclass>WTZ_3_MeetFighters</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_02</restorelocationmarker>
+		<dependent>WTZ2_Repeatable</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="WTZ0_Repeatable1" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>WTZ_0_NIS</scriptclass>
+	</gameslice>
+	<gameslice name="WTZ1_Repeatable1" holdcurtain="true">
+		<title>Arrive and Flyby</title>
+		<scriptclass>WTZ_1_Arrival</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>WTZ0_Repeatable1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ2_Repeatable1">
+		<title>Intro to Zodiac</title>
+		<scriptclass>WTZ_2_Intro</scriptclass>
+		<dependent>WTZ1_Repeatable1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ3_Repeatable1" holdcurtain="true">
+		<title>Social and Maybe Fight</title>
+		<scriptclass>WTZ_3_MeetFighters</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_02</restorelocationmarker>
+		<dependent>WTZ2_Repeatable1</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="WTZ0_Repeatable2" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>WTZ_0_NIS</scriptclass>
+	</gameslice>
+	<gameslice name="WTZ1_Repeatable2" holdcurtain="true">
+		<title>Arrive and Flyby</title>
+		<scriptclass>WTZ_1_Arrival</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>WTZ0_Repeatable2</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ2_Repeatable2">
+		<title>Intro to Zodiac</title>
+		<scriptclass>WTZ_2_Intro</scriptclass>
+		<dependent>WTZ1_Repeatable2</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ3_Repeatable2" holdcurtain="true">
+		<title>Social and Maybe Fight</title>
+		<scriptclass>WTZ_3_MeetFighters</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_02</restorelocationmarker>
+		<dependent>WTZ2_Repeatable2</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="WTZ0_Repeatable3" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>WTZ_0_NIS</scriptclass>
+	</gameslice>
+	<gameslice name="WTZ1_Repeatable3" holdcurtain="true">
+		<title>Arrive and Flyby</title>
+		<scriptclass>WTZ_1_Arrival</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>WTZ0_Repeatable3</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ2_Repeatable3">
+		<title>Intro to Zodiac</title>
+		<scriptclass>WTZ_2_Intro</scriptclass>
+		<dependent>WTZ1_Repeatable3</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ3_Repeatable3" holdcurtain="true">
+		<title>Social and Maybe Fight</title>
+		<scriptclass>WTZ_3_MeetFighters</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_02</restorelocationmarker>
+		<dependent>WTZ2_Repeatable3</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="WTZ0_Repeatable4" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>WTZ_0_NIS</scriptclass>
+	</gameslice>
+	<gameslice name="WTZ1_Repeatable4" holdcurtain="true">
+		<title>Arrive and Flyby</title>
+		<scriptclass>WTZ_1_Arrival</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>WTZ0_Repeatable4</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ2_Repeatable4">
+		<title>Intro to Zodiac</title>
+		<scriptclass>WTZ_2_Intro</scriptclass>
+		<dependent>WTZ1_Repeatable4</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ3_Repeatable4" holdcurtain="true">
+		<title>Social and Maybe Fight</title>
+		<scriptclass>WTZ_3_MeetFighters</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_02</restorelocationmarker>
+		<dependent>WTZ2_Repeatable4</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	
+	<gameslice name="WTZ0_Repeatable5" holdcurtain="true">
+		<title>Intro NIS</title>
+		<scriptclass>WTZ_0_NIS</scriptclass>
+	</gameslice>
+	<gameslice name="WTZ1_Repeatable5" holdcurtain="true">
+		<title>Arrive and Flyby</title>
+		<scriptclass>WTZ_1_Arrival</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_01</restorelocationmarker>
+		<dependent>WTZ0_Repeatable5</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ2_Repeatable5">
+		<title>Intro to Zodiac</title>
+		<scriptclass>WTZ_2_Intro</scriptclass>
+		<dependent>WTZ1_Repeatable5</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+	<gameslice name="WTZ3_Repeatable5" holdcurtain="true">
+		<title>Social and Maybe Fight</title>
+		<scriptclass>WTZ_3_MeetFighters</scriptclass>
+		<restorelocationmarker>WTZMission-Marker_Restore_02</restorelocationmarker>
+		<dependent>WTZ2_Repeatable5</dependent>
+		<audiooverride>M_ZOD</audiooverride>
+	</gameslice>
+</gameslices>
+<groups>
+	<mission name="M_ZI_WTZ">
+		<title>$SGTITLE_WELCOME_TO_ZODIAC</title>
+		<scriptclass>WTZMission</scriptclass>
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_WTZ</completelocationmarker>
+		<ignoresafehouserestore>true</ignoresafehouserestore>		
+		<forcetime time="6.30" locked="true"></forcetime>
+		<vehiclesuperstop>true</vehiclesuperstop>
+		<trackgamesliceas>DLC</trackgamesliceas>
+		<child checkpoint="true">WTZ0</child>
+		<child checkpoint="true">WTZ1</child>
+		<child>WTZ2</child>
+		<child checkpoint="true">WTZ3</child>
+		<audiooverride>M_ZOD</audiooverride>
+		<!--setdisguiseonstart enablewardrobe="true" enablestores="true">DLC_Zodiac_Island_Suit</setdisguiseonstart-->
+	</mission>
+	<job name="M_ZI_WTZ_Repeatable">
+		<title>$SGTITLE_WELCOME_TO_ZODIAC</title>
+		<scriptclass>WTZMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_WTZ</completelocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="6.30" locked="true"></forcetime>		
+		<vehiclesuperstop>true</vehiclesuperstop>		
+		<child checkpoint="true">WTZ0_Repeatable</child>
+		<child checkpoint="true">WTZ1_Repeatable</child>
+		<child>WTZ2_Repeatable</child>
+		<child checkpoint="true">WTZ3_Repeatable</child>
+		<audiooverride>M_ZOD</audiooverride>
+	</job>
+	
+	<job name="M_ZI_WTZ_Repeatable1">
+		<title>$SGTITLE_WELCOME_TO_ZODIAC</title>
+		<scriptclass>WTZMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_WTZ</completelocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="6.30" locked="true"></forcetime>		
+		<vehiclesuperstop>true</vehiclesuperstop>		
+		<child checkpoint="true">WTZ0_Repeatable1</child>
+		<child checkpoint="true">WTZ1_Repeatable1</child>
+		<child>WTZ2_Repeatable1</child>
+		<child checkpoint="true">WTZ3_Repeatable1</child>
+		<audiooverride>M_ZOD</audiooverride>
+	</job>
+	
+	<job name="M_ZI_WTZ_Repeatable2">
+		<title>$SGTITLE_WELCOME_TO_ZODIAC</title>
+		<scriptclass>WTZMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_WTZ</completelocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="6.30" locked="true"></forcetime>		
+		<vehiclesuperstop>true</vehiclesuperstop>		
+		<child checkpoint="true">WTZ0_Repeatable2</child>
+		<child checkpoint="true">WTZ1_Repeatable2</child>
+		<child>WTZ2_Repeatable2</child>
+		<child checkpoint="true">WTZ3_Repeatable2</child>
+		<audiooverride>M_ZOD</audiooverride>
+	</job>
+	
+	<job name="M_ZI_WTZ_Repeatable3">
+		<title>$SGTITLE_WELCOME_TO_ZODIAC</title>
+		<scriptclass>WTZMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_WTZ</completelocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="6.30" locked="true"></forcetime>		
+		<vehiclesuperstop>true</vehiclesuperstop>		
+		<child checkpoint="true">WTZ0_Repeatable3</child>
+		<child checkpoint="true">WTZ1_Repeatable3</child>
+		<child>WTZ2_Repeatable3</child>
+		<child checkpoint="true">WTZ3_Repeatable3</child>
+		<audiooverride>M_ZOD</audiooverride>
+	</job>
+	
+	<job name="M_ZI_WTZ_Repeatable4">
+		<title>$SGTITLE_WELCOME_TO_ZODIAC</title>
+		<scriptclass>WTZMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_WTZ</completelocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="6.30" locked="true"></forcetime>		
+		<vehiclesuperstop>true</vehiclesuperstop>		
+		<child checkpoint="true">WTZ0_Repeatable4</child>
+		<child checkpoint="true">WTZ1_Repeatable4</child>
+		<child>WTZ2_Repeatable4</child>
+		<child checkpoint="true">WTZ3_Repeatable4</child>
+		<audiooverride>M_ZOD</audiooverride>
+	</job>
+	
+	<job name="M_ZI_WTZ_Repeatable5" repeatableinterval="300">
+		<title>$SGTITLE_WELCOME_TO_ZODIAC</title>
+		<scriptclass>WTZMission</scriptclass>		
+		<restorelocationmarker>ProgressionTriggers_ZI-Unlocker_Restore</restorelocationmarker>
+		<completelocationmarker>EndLocations-M_ZI_WTZ</completelocationmarker>		
+		<ignoresafehouserestore>true</ignoresafehouserestore>
+		<forcetime time="6.30" locked="true"></forcetime>		
+		<vehiclesuperstop>true</vehiclesuperstop>		
+		<child checkpoint="false">WTZ0_Repeatable5</child>
+		<child checkpoint="false">WTZ1_Repeatable5</child>
+		<child>WTZ2_Repeatable5</child>
+		<child checkpoint="false">WTZ3_Repeatable5</child>
+		<audiooverride>M_ZOD</audiooverride>
+	</job>
+</groups>
