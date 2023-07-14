@@ -1456,9 +1456,6 @@
 [21752] \Global\Vehicle\Interactions\Action\GetIn\HelperFunctions\SeatDetach\Immediate\Passenger\0xD3EA421A\Minibus
 [21751] \Global\Vehicle\Interactions\Action\GetIn\HelperFunctions\SeatDetach\Immediate\Passenger\0xD3EA421A\Tram
 [21669] \Global\Vehicle\Interactions\Action\GetIn\NPC\0x3E9E3721
-[21671] \Global\Vehicle\Interactions\Action\GetIn\NPC\0xA68CACEF\0x5D59BA47
-[21672] \Global\Vehicle\Interactions\Action\GetIn\NPC\0xA68CACEF\0x5D59BA47\0x5A297D1D
-[21673] \Global\Vehicle\Interactions\Action\GetIn\NPC\0xA68CACEF\0xFDE00658
 [21668] \Global\Vehicle\Interactions\Action\GetIn\NPC\0xC09C77A8
 [21670] \Global\Vehicle\Interactions\Action\GetIn\NPC\0xD757CE0D
 [21691] \Global\Vehicle\Interactions\Action\GetIn\NPC\BySeat\Passenger1\Default
@@ -1481,6 +1478,9 @@
 [21684] \Global\Vehicle\Interactions\Action\GetIn\NPC\EnterVehicle\AsPassenger\0xD0B86E46\Pass3
 [21685] \Global\Vehicle\Interactions\Action\GetIn\NPC\EnterVehicle\AsPassenger\0xD0B86E46\Pass4
 [21690] \Global\Vehicle\Interactions\Action\GetIn\NPC\EnterVehicle\AsPassenger\FromPassengerSide
+[21671] \Global\Vehicle\Interactions\Action\GetIn\NPC\PullTargetFromVehicle\0x5D59BA47
+[21672] \Global\Vehicle\Interactions\Action\GetIn\NPC\PullTargetFromVehicle\0x5D59BA47\0x5A297D1D
+[21673] \Global\Vehicle\Interactions\Action\GetIn\NPC\PullTargetFromVehicle\0xFDE00658
 [21476] \Global\Vehicle\Interactions\Action\GetIn\NoAnim\Driver\Default
 [21480] \Global\Vehicle\Interactions\Action\GetIn\NoAnim\Passenger\Passenger1\Default
 [21477] \Global\Vehicle\Interactions\Action\GetIn\NoAnim\Passenger\Passenger1\Ferry
@@ -1811,8 +1811,8 @@
 [22252] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0x4AB5EAE0\0x4CC567B5
 [22260] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0x7D696E85\0x24D4EFC8
 [22257] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0x7D696E85\0x54839AC5
-[22258] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0x7D696E85\0x54839AC5\0x8DBAFAE6
 [22259] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0x7D696E85\0x54839AC5\Exit
+[22258] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0x7D696E85\0x54839AC5\VehicleRam
 [22255] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0x9E6E8434\Off
 [22256] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0x9E6E8434\On
 [22205] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xDF923B56\0x612BBC3B\0x3BA4A46B
@@ -1877,13 +1877,13 @@
 [22196] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xDF923B56\Truck\Gun
 [22199] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xDF923B56\Van\0x3BA4A46B
 [22198] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xDF923B56\Van\Gun
-[22267] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xE624A79C\0x0146209E
 [22261] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xE624A79C\0x12E673D7
 [22266] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xE624A79C\0x5F94235A
 [22263] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xE624A79C\0x6C34DB99
 [22262] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xE624A79C\0x8F6C3924
 [22265] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xE624A79C\0xB293554A
 [22264] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xE624A79C\0xEDCEDDDB
+[22267] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\0xE624A79C\INVALID
 [22278] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\EMPed\0xED5EB8B3
 [22276] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\FireEMP
 [22277] \Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\FireEMP\Exit
@@ -2502,8 +2502,8 @@
 [21403] \Global\Vehicle\Interactions\Trunk\Grapple\PutIn\0x1928B341
 [21409] \Global\Vehicle\Interactions\Trunk\Grapple\PutIn\0x1928B341\0xE3BAB214\0x45DCBA63
 [21408] \Global\Vehicle\Interactions\Trunk\Grapple\PutIn\0x1928B341\0xE3BAB214\0x77050680
-[21407] \Global\Vehicle\Interactions\Trunk\Grapple\PutIn\0x1928B341\Anims\0xEADF04DF\0x5F6C3831
 [21406] \Global\Vehicle\Interactions\Trunk\Grapple\PutIn\0x1928B341\Anims\0xEADF04DF\ALIVE
+[21407] \Global\Vehicle\Interactions\Trunk\Grapple\PutIn\0x1928B341\Anims\0xEADF04DF\None
 [21405] \Global\Vehicle\Interactions\Trunk\Grapple\PutIn\0x1928B341\Anims\Car
 [21404] \Global\Vehicle\Interactions\Trunk\Grapple\PutIn\0x1928B341\Anims\Van
 [21359] \Global\Vehicle\Interactions\Trunk\Grapple\PutIn\0x96493D19
@@ -2680,8 +2680,6 @@
 [21287] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0x44A1448E\0xD6B0B704\0x11806B52
 [21288] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0x44A1448E\0xD6B0B704\0x6E9047DD
 [21280] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0x44A1448E\Idle
-[21269] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xBA472395\0xE7053992\0x34433B7D
-[21270] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xBA472395\0xE7053992\0x34433B7D\0x732A5BC8
 [21273] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xBA472395\0xE7053992\0x734A44AD
 [21274] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xBA472395\0xE7053992\0x734A44AD\0x04D6F2CF
 [21271] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xBA472395\0xE7053992\0xC47DB1C9
@@ -2690,6 +2688,8 @@
 [21276] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xBA472395\0xE7053992\25\0x04D6F2CF
 [21277] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xBA472395\0xE7053992\Empty
 [21278] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xBA472395\0xE7053992\Empty\0x04D6F2CF
+[21269] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xBA472395\0xE7053992\Full
+[21270] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xBA472395\0xE7053992\Full\0x732A5BC8
 [21279] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xBA472395\0xE7053992\Idle
 [21292] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xE228BDEA\0x1FDDAEB3
 [21289] \Global\Vehicle\Object\Ride\Ride\0x333CE313\0xE228BDEA\0xEADF04DF\Into
