@@ -18,7 +18,8 @@
 
 [26497](\Global\POI_HeadSlamCombatProps\Interactions\Action\Grapple\MasterSpawn):
 	[0ms](AttackTimerTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -645,8 +646,12 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26568](\Global\POI_HeadSlamCombatProps\Interactions\Action\Grapple\Spawns\Gravity\Gravity):
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 
 [26566](\Global\POI_HeadSlamCombatProps\Interactions\Action\Grapple\Spawns\Sync\SyncGIV):
 	[0ms](TargetSyncPositionTrack)

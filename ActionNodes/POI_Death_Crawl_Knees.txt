@@ -8,20 +8,27 @@
 		[Group]: Mission_WE
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](InvulnerableTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [25783](\Global\Death_Crawl_Knees\Interactions\Death_Crawl_Knees_Idles\Death_Crawl_Knees_Anims\Death_Crawl_Knees_Cyc):
 	[0ms](AnimationTrack):
 		[Group]: Mission_WE
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](OpportunityTrack)
 
 [25785](\Global\Death_Crawl_Knees\Interactions\Death_Crawl_Knees_Idles\Death_Crawl_Knees_Exit\Death_Crawl_Knees_End):
@@ -38,18 +45,25 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [25787](\Global\Death_Crawl_Knees\Interactions\Death_Crawl_Knees_Idles\Death_Crawl_Knees_Exit\Death_Crawl_Knees_Exit):
 	[0ms](AnimationTrack):
 		[Group]: Mission_WE
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HealthSetPercentageTrack)
 	[0ms](InvulnerableTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [25781](\Global\Death_Crawl_Knees\UseConditions)

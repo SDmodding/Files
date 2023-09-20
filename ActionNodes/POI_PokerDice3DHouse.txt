@@ -66,10 +66,16 @@
 	[0ms](OpportunityTrack)
 
 [27576](\Global\PokerDice3DHouse\Interactions\Immediate):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](MasterTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1

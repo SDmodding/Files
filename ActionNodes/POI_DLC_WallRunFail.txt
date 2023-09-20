@@ -26,13 +26,20 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 29681
-	[600ms](CharacterPhysicsTrack)
+	[600ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [29681](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Auto-Kick-Off\PushAway\Fall):
 	[0ms](AnimationTrack):
@@ -40,7 +47,8 @@
 		[Group]: Locomotion_Wall
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](OpportunityTrack)
 
 [29682](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Auto-Kick-Off\PushAway\Fall\Land):
@@ -49,7 +57,8 @@
 		[Group]: Locomotion_Wall
 		[Begin]: 0.000000
 		[End]: 0.500000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SequenceTrack):
 		[ID]: 29683
 
@@ -86,10 +95,16 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0

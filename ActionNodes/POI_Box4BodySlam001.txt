@@ -13,8 +13,12 @@
 	[0ms](AttackTimerTrack)
 	[0ms](GameStatEventTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverridePOITrack)
 	[0ms](TargetGrappleReleaseTrack)
@@ -24,7 +28,8 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetSyncPositionTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1300ms](StimulusTrack)
 	[1900ms](POIDisableSelfTrack)
 	[1900ms](TargetPlayTrack)
@@ -38,15 +43,19 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
 	[0ms](DamageTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 25071
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2000ms](PlayEffectTrack)
 
 [25069](\Global\POI_Box4BodySlam001\Interactions\Action\Grapple\WeiOnRight\BodySlamGIV):
@@ -57,8 +66,12 @@
 	[0ms](AttackTimerTrack)
 	[0ms](GameStatEventTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverridePOITrack)
 	[0ms](TargetGrappleReleaseTrack)
@@ -69,7 +82,8 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetSyncPositionTrack)
 	[1000ms](POIDisableSelfTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1133ms](StimulusTrack)
 	[1900ms](TargetPlayTrack)
 	[2100ms](CameraShakeTrack)
@@ -82,15 +96,19 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
 	[0ms](DamageTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 25071
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2000ms](PlayEffectTrack)
 
 [25071](\Global\POI_Box4BodySlam001\Interactions\Action\Rcv\Grapple\InvertedProne):
@@ -98,10 +116,14 @@
 		[Group]: Grapples_Box
 		[Begin]: 2.333333
 		[End]: 2.666667
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](RagdollAquireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)
 

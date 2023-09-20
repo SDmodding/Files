@@ -3,7 +3,8 @@
 		[Group]: POI_Monk_Reanimated
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](InvulnerableTrack)
 	[0ms](OpportunityTrack)
 	[0ms](SimObjectFlagSetTrack)
@@ -17,7 +18,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 27707
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SkookumTrack):
 		[Class]: Character
 		[Script]: get_properties().append_property_boolean('FXEtherealFire', true)

@@ -15,8 +15,11 @@
 	[0ms](OpportunityTrack)
 
 [23372](\Global\Vehicle\Content\GenericDetach):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachEffectorTrack)
 	[0ms](TargetDetachEffectorTrack)
 	[0ms](TargetDetachEffectorTrack)
@@ -57,10 +60,12 @@
 
 [22854](\Global\Vehicle\Content\GetIn\D\DSide\BreakIn\Fail\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_In_Fail
 		[Group]: Car_Into_Driver
 		[Begin]: 0.166667
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_In_Fail
 		[Group]: Car_Into_Driver
 		[Begin]: 0.166667
 		[End]: -1.000000
@@ -78,8 +83,11 @@
 	[0ms](TargetReleaseTrack)
 
 [22855](\Global\Vehicle\Content\GetIn\D\DSide\BreakIn\Success):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](RagdollReleaseTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -107,10 +115,12 @@
 
 [22863](\Global\Vehicle\Content\GetIn\D\DSide\BreakIn\Success\Types\Alert\Anims\Car):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_BreakIn
 		[Group]: Car_Into_Driver
 		[Begin]: 0.200000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_BreakIn
 		[Group]: Car_Into_Driver
 		[Begin]: 0.200000
 		[End]: -1.000000
@@ -122,7 +132,8 @@
 	[0ms](TargetAttachTrack)
 	[0ms](TargetPlayTrack)
 	[400ms](TargetVehicleBreakWindowTrack)
-	[1500ms](SetStateFlagTrack)
+	[1500ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1666ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -148,10 +159,12 @@
 
 [22876](\Global\Vehicle\Content\GetIn\D\DSide\BreakIn\Success\Types\Normal\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_BreakIn_Cas
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_BreakIn_Cas
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -167,7 +180,8 @@
 	[1066ms](TargetVehicleBreakWindowTrack)
 	[1700ms](SubjectFollowOverrideTrack)
 	[2500ms](CameraChangeTrack)
-	[2500ms](SetStateFlagTrack)
+	[2500ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2500ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -269,7 +283,8 @@
 	[0ms](TargetPlayTrack)
 	[533ms](TargetVehicleBreakWindowTrack)
 	[1366ms](SubjectFollowOverrideTrack)
-	[2500ms](SetStateFlagTrack)
+	[2500ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2533ms](TargetAttachTrack)
 	[2533ms](TargetDetachTrack)
 	[2566ms](CameraChangeTrack)
@@ -292,10 +307,12 @@
 
 [22857](\Global\Vehicle\Content\GetIn\D\DSide\BreakIn\Success\Types\SlimJim\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_BreakIn_Fast
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_BreakIn_Fast
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -319,7 +336,8 @@
 	[1733ms](TargetAttachTrack)
 	[1733ms](TargetDetachTrack)
 	[1800ms](CameraChangeTrack)
-	[2500ms](SetStateFlagTrack)
+	[2500ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2566ms](TargetAttachEffectorTrack)
 	[3200ms](TargetAttachEffectorTrack)
 
@@ -346,7 +364,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [22775](\Global\Vehicle\Content\GetIn\D\DSide\Pistol):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -373,7 +392,9 @@
 		[Group]: Car_Into_Driver_Pistol
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
@@ -385,7 +406,8 @@
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[1000ms](CameraChangeTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1066ms](TargetAttachTrack)
 	[1066ms](TargetDetachTrack)
 
@@ -407,8 +429,11 @@
 		[Group]: Car_Into_Driver_Pistol
 		[Begin]: 0.750000
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -440,7 +465,9 @@
 		[Group]: Minibus_Into_Driver
 		[Begin]: 1.416667
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -469,7 +496,9 @@
 		[Group]: Minibus_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -498,8 +527,11 @@
 		[Group]: Truck_Into_Driver_Pistol
 		[Begin]: 1.500000
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -528,7 +560,9 @@
 		[Group]: Truck_Into_Driver_Pistol
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -537,7 +571,8 @@
 	[0ms](TargetPlayTrack)
 	[1066ms](TargetAttachTrack)
 	[1066ms](TargetDetachTrack)
-	[1200ms](SetStateFlagTrack)
+	[1200ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2166ms](CameraChangeTrack)
 
 [22781](\Global\Vehicle\Content\GetIn\D\DSide\Pistol\Anims\Truck\Truck\CameraCollisionTest):
@@ -558,8 +593,11 @@
 		[Group]: Van_Into_Driver_Pistol
 		[Begin]: 1.233333
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -588,7 +626,9 @@
 		[Group]: Van_Into_Driver_Pistol
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -597,7 +637,8 @@
 	[0ms](TargetPlayTrack)
 	[1066ms](TargetAttachTrack)
 	[1066ms](TargetDetachTrack)
-	[1200ms](SetStateFlagTrack)
+	[1200ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1900ms](CameraChangeTrack)
 
 [22787](\Global\Vehicle\Content\GetIn\D\DSide\Pistol\Anims\Van\Van\CameraCollisionTest):
@@ -610,7 +651,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [22800](\Global\Vehicle\Content\GetIn\D\DSide\Reg):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -634,7 +676,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22821
 	[0ms](SubjectFollowOverrideTrack)
@@ -656,7 +700,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[3200ms](TargetSpawnTrack)
@@ -666,13 +712,18 @@
 		[Group]: Car_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[500ms](TargetSpawnTrack)
-	[800ms](GravityTrack)
-	[1000ms](SetStateFlagTrack)
+	[800ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1033ms](TargetAttachTrack)
 	[1033ms](TargetDetachTrack)
 	[1566ms](CameraChangeTrack)
@@ -683,7 +734,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[166ms](TargetAttachTrack)
 	[500ms](TargetSpawnTrack)
 	[1033ms](TargetAttachTrack)
@@ -695,7 +748,9 @@
 		[Begin]: 0.700000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetSpawnTrack)
 	[166ms](TargetAttachTrack)
 
@@ -706,7 +761,9 @@
 		[End]: -1.000000
 	[0ms](AudioTrackSoundbankIO)
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[166ms](TargetAttachTrack)
 	[900ms](TargetSpawnTrack)
 
@@ -717,7 +774,9 @@
 		[End]: -1.000000
 	[0ms](AudioTrackSoundbankIO)
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[166ms](TargetAttachTrack)
 	[333ms](TargetAttachTrack)
 	[333ms](TargetDetachTrack)
@@ -728,7 +787,9 @@
 		[Group]: Yacht_Into
 		[Begin]: 1.400000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[1000ms](CameraChangeTrack)
@@ -740,7 +801,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](SubjectFollowOverrideTrack)
-	[166ms](GravityTrack)
+	[166ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[166ms](TargetAttachTrack)
 	[1000ms](CameraChangeTrack)
 	[1033ms](TargetAttachTrack)
@@ -753,7 +816,9 @@
 		[Begin]: 1.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[700ms](TargetSpawnTrack)
@@ -764,7 +829,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[1033ms](TargetAttachTrack)
@@ -773,14 +840,18 @@
 
 [22846](\Global\Vehicle\Content\GetIn\D\DSide\Reg\Anims\Car\Casual):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Casual_In
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Casual_In
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
@@ -790,7 +861,8 @@
 	[0ms](TargetPlayTrack)
 	[1033ms](TargetAttachTrack)
 	[1033ms](TargetDetachTrack)
-	[1500ms](SetStateFlagTrack)
+	[1500ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2000ms](CameraChangeTrack)
 	[2333ms](SpawnTrack):
 		[KeepAlive]: 1
@@ -807,15 +879,19 @@
 
 [22849](\Global\Vehicle\Content\GetIn\D\DSide\Reg\Anims\Car\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_In
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_In
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SimObjectFlagSetTrack)
 	[0ms](SpawnTrack):
@@ -827,7 +903,8 @@
 	[0ms](TargetDetachEffectorTrack)
 	[0ms](TargetPlayTrack)
 	[1000ms](CameraChangeTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1033ms](TargetAttachTrack)
 	[1033ms](TargetDetachTrack)
 	[1166ms](SpawnTrack):
@@ -847,14 +924,18 @@
 
 [22843](\Global\Vehicle\Content\GetIn\D\DSide\Reg\Anims\Car\DoorOpen\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_In
 		[Group]: Car_Into_Driver
 		[Begin]: 0.750000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_In
 		[Group]: Car_Into_Driver
 		[Begin]: 0.750000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -865,7 +946,8 @@
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[433ms](CameraChangeTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1033ms](TargetAttachTrack)
 	[1033ms](TargetDetachTrack)
 
@@ -883,7 +965,9 @@
 		[Group]: CBoat_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22808
 	[0ms](SubjectFollowOverrideTrack)
@@ -896,7 +980,9 @@
 		[Begin]: 1.200000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22809
 	[0ms](SubjectFollowOverrideTrack)
@@ -917,13 +1003,18 @@
 		[Group]: Car_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[500ms](TargetSpawnTrack)
-	[800ms](GravityTrack)
-	[1000ms](SetStateFlagTrack)
+	[800ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1033ms](TargetAttachTrack)
 	[1033ms](TargetDetachTrack)
 	[1566ms](CameraChangeTrack)
@@ -933,7 +1024,9 @@
 		[Group]: JetBoat_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22811
 	[0ms](SubjectFollowOverrideTrack)
@@ -946,7 +1039,9 @@
 		[Begin]: 0.666667
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetAttachTrack)
 	[500ms](TargetSpawnTrack)
@@ -957,7 +1052,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22804
 	[166ms](TargetAttachTrack)
@@ -970,7 +1067,9 @@
 		[End]: -1.000000
 	[0ms](AudioTrackSoundbankIO)
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[166ms](TargetAttachTrack)
 	[333ms](TargetAttachTrack)
 	[333ms](TargetDetachTrack)
@@ -982,7 +1081,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22802
 	[0ms](SubjectFollowOverrideTrack)
@@ -996,7 +1097,9 @@
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[166ms](TargetAttachTrack)
 	[1033ms](TargetAttachTrack)
 	[1033ms](TargetDetachTrack)
@@ -1008,7 +1111,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22806
 	[0ms](SubjectFollowOverrideTrack)
@@ -1021,7 +1126,9 @@
 		[Begin]: 0.533333
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[166ms](TargetAttachTrack)
 	[1033ms](TargetAttachTrack)
 	[1033ms](TargetDetachTrack)
@@ -1036,8 +1143,11 @@
 		[Group]: Minibus_Into_Driver
 		[Begin]: 1.416667
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1066,7 +1176,9 @@
 		[Group]: Minibus_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1075,7 +1187,8 @@
 	[0ms](TargetPlayTrack)
 	[1033ms](TargetAttachTrack)
 	[1033ms](TargetDetachTrack)
-	[1416ms](SetStateFlagTrack)
+	[1416ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1800ms](CameraChangeTrack)
 
 [22842](\Global\Vehicle\Content\GetIn\D\DSide\Reg\Anims\Minibus\Minibus\CameraCollisionTest):
@@ -1096,8 +1209,11 @@
 		[Group]: Truck_Into_Driver
 		[Begin]: 1.200000
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1126,7 +1242,9 @@
 		[Group]: Truck_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
@@ -1136,7 +1254,8 @@
 	[0ms](TargetPlayTrack)
 	[1033ms](TargetAttachTrack)
 	[1033ms](TargetDetachTrack)
-	[1200ms](SetStateFlagTrack)
+	[1200ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2166ms](CameraChangeTrack)
 
 [22830](\Global\Vehicle\Content\GetIn\D\DSide\Reg\Anims\Truck\Truck\CameraCollisionTest):
@@ -1157,8 +1276,11 @@
 		[Group]: Van_Into_Driver
 		[Begin]: 1.200000
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1187,7 +1309,9 @@
 		[Group]: Van_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1198,7 +1322,8 @@
 	[0ms](TargetPlayTrack)
 	[1033ms](TargetAttachTrack)
 	[1033ms](TargetDetachTrack)
-	[1200ms](SetStateFlagTrack)
+	[1200ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1900ms](CameraChangeTrack)
 	[2400ms](TargetAttachEffectorTrack)
 	[2566ms](TargetAttachEffectorTrack)
@@ -1287,7 +1412,9 @@
 
 [23042](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\DeniedByCop):
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1309,6 +1436,7 @@
 
 [23047](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\DeniedByCop\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_GIV
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -1319,12 +1447,14 @@
 
 [23048](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\DeniedByCop\Anims\Default\Vehicle):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_Object
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23043](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\DeniedByCop\Anims\Truck):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_GIV
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -1335,12 +1465,14 @@
 
 [23044](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\DeniedByCop\Anims\Truck\Vehicle):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_Object
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23045](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\DeniedByCop\Anims\Van):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_GIV
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -1351,6 +1483,7 @@
 
 [23046](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\DeniedByCop\Anims\Van\Vehicle):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_Object
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -1364,15 +1497,19 @@
 
 [23050](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\DeniedByCop\Rcv\D\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_RCV
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23015](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\P1Occupied):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](RagdollReleaseTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -1398,6 +1535,7 @@
 
 [23022](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\P1Occupied\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_GIV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -1418,6 +1556,7 @@
 
 [23023](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\P1Occupied\Anims\Default\Vehicle):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -1478,9 +1617,13 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [23035](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\P1Occupied\Rcv\D):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1496,12 +1639,14 @@
 
 [23041](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\P1Occupied\Rcv\D\Anims\Default\Alive):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_RCV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23040](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\P1Occupied\Rcv\D\Anims\Default\Dead):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_Dead_RCV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -1537,8 +1682,11 @@
 		[ID]: 0
 
 [23025](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\P1Occupied\Rcv\P1):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1546,7 +1694,8 @@
 	[2400ms](TargetDetachTrack)
 	[2400ms](TargetReleaseTrack)
 	[2400ms](VehicleInteractTrack)
-	[2666ms](CharacterPhysicsTrack)
+	[2666ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [23033](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\P1Occupied\Rcv\P1\Anims\Default\Alive):
 	[0ms](AnimationTrack):
@@ -1621,10 +1770,13 @@
 		[ID]: 0
 
 [22997](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\Pistol):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1767,9 +1919,13 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [23010](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\Pistol\Rcv\D):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1778,7 +1934,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](VehicleInteractTrack)
 	[2933ms](TargetDetachTrack)
-	[2966ms](CharacterPhysicsTrack)
+	[2966ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[3700ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1810,7 +1967,8 @@
 		[End]: -1.000000
 
 [23059](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\Reg):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
 	[0ms](SpawnTrack):
@@ -1833,10 +1991,12 @@
 
 [23069](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\Reg\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_GIV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_GIV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -1847,7 +2007,9 @@
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetAttachTrack)
 	[0ms](TargetPlayTrack)
-	[833ms](GravityTrack)
+	[833ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[1100ms](OpportunityTrack)
 	[2066ms](SubjectFollowOverrideTrack)
 	[3000ms](CameraChangeTrack)
@@ -1862,8 +2024,11 @@
 	[0ms](CameraResetTrack)
 
 [23071](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\Reg\Anims\Default\Detach):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachTrack)
 	[0ms](TargetReleaseTrack)
 
@@ -1887,7 +2052,9 @@
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetAttachTrack)
 	[0ms](TargetPlayTrack)
-	[833ms](GravityTrack)
+	[833ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[2033ms](SubjectFollowOverrideTrack)
 	[3333ms](CameraChangeTrack)
 	[3333ms](TargetAttachTrack)
@@ -1921,7 +2088,9 @@
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetAttachTrack)
 	[0ms](TargetPlayTrack)
-	[833ms](GravityTrack)
+	[833ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[2033ms](SubjectFollowOverrideTrack)
 	[3333ms](CameraChangeTrack)
 	[3333ms](TargetAttachTrack)
@@ -1957,7 +2126,9 @@
 	[0ms](TargetDetachEffectorTrack)
 	[0ms](TargetDetachEffectorTrack)
 	[0ms](TargetPlayTrack)
-	[833ms](GravityTrack)
+	[833ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[2033ms](SubjectFollowOverrideTrack)
 	[3333ms](CameraChangeTrack)
 	[3333ms](TargetAttachTrack)
@@ -1982,9 +2153,11 @@
 	[0ms](OpportunityTrack)
 
 [23074](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\Reg\Rcv\D\D_SEQ):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](OpportunityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1996,18 +2169,23 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[1400ms](VehicleInteractTrack)
 	[2000ms](TargetDetachTrack)
-	[2800ms](CharacterPhysicsTrack)
-	[2800ms](GravityTrack)
+	[2800ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[2800ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[2800ms](TargetReleaseTrack)
 
 [23082](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\Reg\Rcv\D\D_SEQ\Anims\Default\Alive):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_RCV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23081](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\Reg\Rcv\D\D_SEQ\Anims\Default\Dead):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_Dead_RCV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -2057,10 +2235,13 @@
 		[ID]: 0
 
 [22979](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\Rifle):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](RagdollReleaseTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -2204,9 +2385,13 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [22992](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\Rifle\Rcv\D):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2215,7 +2400,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](VehicleInteractTrack)
 	[2933ms](TargetDetachTrack)
-	[3700ms](CharacterPhysicsTrack)
+	[3700ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[4733ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2247,10 +2433,13 @@
 		[End]: -1.000000
 
 [22971](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\VehicleMovingFail\Fast):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2268,6 +2457,7 @@
 
 [22975](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\VehicleMovingFail\Fast\Anims\Car):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_RIT
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -2291,11 +2481,15 @@
 		[End]: -1.000000
 
 [22976](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\VehicleMovingFail\Slow):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2316,6 +2510,7 @@
 
 [22978](\Global\Vehicle\Content\GetIn\D\Hijack\DSide\VehicleMovingFail\Slow\Anims\Car):
 	[0ms](AnimationTrack):
+		[Name]: Car_Hijack_Fail_Slow_RIT
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -2396,10 +2591,13 @@
 	[0ms](OpportunityTrack)
 
 [22913](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\Fast):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2541,9 +2739,13 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [22926](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\Fast\Rcv\D):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2559,7 +2761,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[1966ms](TargetDetachTrack)
 	[1966ms](TargetReleaseTrack)
-	[2000ms](CharacterPhysicsTrack)
+	[2000ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [22934](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\Fast\Rcv\D\Anims\Default\Alive):
 	[0ms](AnimationTrack):
@@ -2569,6 +2772,7 @@
 
 [22933](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\Fast\Rcv\D\Anims\Default\Dead):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijk_Pass_In_Dead_RCV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.666667
 		[End]: -1.000000
@@ -2618,10 +2822,13 @@
 		[ID]: 0
 
 [22889](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\P1Occupied):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2738,9 +2945,13 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [22906](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\P1Occupied\Rcv\D):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2766,6 +2977,7 @@
 
 [22911](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\P1Occupied\Rcv\D\Anims\Other\Dead):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijk_Pass_In_Dead_RCV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -2774,7 +2986,6 @@
 
 [22908](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\P1Occupied\Rcv\D\Anims\Truck\Alive):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Out
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -2789,7 +3000,6 @@
 
 [22910](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\P1Occupied\Rcv\D\Anims\Van\Alive):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Out
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -2803,16 +3013,21 @@
 		[ID]: 0
 
 [22899](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\P1Occupied\Rcv\P1):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](VehicleInteractTrack)
 	[2400ms](TargetDetachTrack)
 	[2400ms](TargetReleaseTrack)
-	[2666ms](CharacterPhysicsTrack)
+	[2666ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [22905](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\P1Occupied\Rcv\P1\Anims\Other\Alive):
 	[0ms](AnimationTrack):
@@ -2857,10 +3072,13 @@
 		[ID]: 0
 
 [22942](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\Reg):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -3054,9 +3272,13 @@
 		[Group]: DDbus_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[2500ms](GravityTrack)
-	[3600ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[2500ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[3600ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[3600ms](TargetDetachTrack)
 	[3600ms](TargetReleaseTrack)
 
@@ -3065,9 +3287,13 @@
 		[Group]: DDbus_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[2500ms](GravityTrack)
-	[3600ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[2500ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[3600ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[3600ms](TargetDetachTrack)
 	[3600ms](TargetReleaseTrack)
 
@@ -3076,57 +3302,78 @@
 		[Group]: Car_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[2500ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[2500ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[2500ms](TargetDetachTrack)
 	[2500ms](TargetReleaseTrack)
-	[2533ms](CharacterPhysicsTrack)
+	[2533ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [22969](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\Reg\Rcv\D\Anims\Default\Dead):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijk_Pass_In_Dead_RCV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](RagdollAquireTrack)
-	[2500ms](GravityTrack)
+	[2500ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[2500ms](TargetDetachTrack)
 	[2500ms](TargetReleaseTrack)
-	[2533ms](CharacterPhysicsTrack)
+	[2533ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [22966](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\Reg\Rcv\D\Anims\Minibus\Alive):
 	[0ms](AnimationTrack):
 		[Group]: Minibus_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[4000ms](TargetDetachTrack)
-	[4500ms](GravityTrack)
+	[4500ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[4600ms](TargetReleaseTrack)
-	[4700ms](CharacterPhysicsTrack)
+	[4700ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [22965](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\Reg\Rcv\D\Anims\Minibus\Dead):
 	[0ms](AnimationTrack):
 		[Group]: Minibus_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](RagdollAquireTrack)
 	[4000ms](TargetDetachTrack)
-	[4500ms](GravityTrack)
+	[4500ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[4600ms](TargetReleaseTrack)
-	[4700ms](CharacterPhysicsTrack)
+	[4700ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [22961](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\Reg\Rcv\D\Anims\Truck\Alive):
 	[0ms](AnimationTrack):
 		[Group]: Truck_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[3100ms](TargetDetachTrack)
 	[3600ms](TargetReleaseTrack)
-	[3700ms](CharacterPhysicsTrack)
-	[3800ms](GravityTrack)
+	[3700ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[3800ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [22959](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\Reg\Rcv\D\Anims\Truck\Dead):
 	[0ms](AnimationTrack):
@@ -3134,7 +3381,8 @@
 		[Group]: Vehicle_Drive
 		[Begin]: 0.633333
 		[End]: 0.633333
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 22960
 
@@ -3143,9 +3391,12 @@
 		[Group]: Truck_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](RagdollAquireTrack)
-	[2208ms](GravityTrack)
+	[2208ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[2208ms](TargetDetachTrack)
 	[2208ms](TargetReleaseTrack)
 
@@ -3154,11 +3405,15 @@
 		[Group]: Van_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[3600ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[3600ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[3600ms](TargetDetachTrack)
 	[3600ms](TargetReleaseTrack)
-	[3650ms](GravityTrack)
+	[3650ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [22962](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\Reg\Rcv\D\Anims\Van\Dead):
 	[0ms](AnimationTrack):
@@ -3166,7 +3421,8 @@
 		[Group]: Vehicle_Drive
 		[Begin]: 0.633333
 		[End]: 0.633333
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 22963
 
@@ -3175,17 +3431,23 @@
 		[Group]: Van_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](RagdollAquireTrack)
-	[1600ms](GravityTrack)
+	[1600ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[1600ms](TargetDetachTrack)
 	[1600ms](TargetReleaseTrack)
 
 [22879](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\VehicleMovingFail\Fast):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -3203,6 +3465,7 @@
 
 [22883](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\VehicleMovingFail\Fast\Anims\Car):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_LFT
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -3226,11 +3489,15 @@
 		[End]: -1.000000
 
 [22884](\Global\Vehicle\Content\GetIn\D\Hijack\P1Side\VehicleMovingFail\Slow):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -3313,8 +3580,11 @@
 	[0ms](TargetReleaseTrack)
 
 [22753](\Global\Vehicle\Content\GetIn\D\P1Side\BreakIn\Success):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -3399,7 +3669,8 @@
 	[2166ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[2500ms](SetStateFlagTrack)
+	[2500ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2666ms](CameraChangeTrack)
 
 [22774](\Global\Vehicle\Content\GetIn\D\P1Side\BreakIn\Success\Types\Normal\Anims\Default\CameraCollisionTest):
@@ -3497,7 +3768,8 @@
 	[0ms](TargetPlayTrack)
 	[533ms](TargetVehicleBreakWindowTrack)
 	[1700ms](SubjectFollowOverrideTrack)
-	[2600ms](SetStateFlagTrack)
+	[2600ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2900ms](TargetAttachTrack)
 	[2900ms](TargetDetachTrack)
 	[3066ms](CameraChangeTrack)
@@ -3561,8 +3833,11 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [22693](\Global\Vehicle\Content\GetIn\D\P1Side\Pistol):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -3598,7 +3873,8 @@
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[1000ms](CameraChangeTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [22707](\Global\Vehicle\Content\GetIn\D\P1Side\Pistol\Anims\Car\Default\CameraCollisionTest):
 	[0ms](CameraChangeTrack)
@@ -3718,7 +3994,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [22708](\Global\Vehicle\Content\GetIn\D\P1Side\Reg):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -3742,8 +4019,12 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22729
 	[0ms](SubjectFollowOverrideTrack)
@@ -3765,7 +4046,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[3200ms](TargetSpawnTrack)
@@ -3775,15 +4058,20 @@
 		[Group]: Car_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[500ms](TargetSpawnTrack)
-	[800ms](GravityTrack)
+	[800ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[800ms](TargetAttachTrack)
 	[800ms](TargetDetachTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1566ms](CameraChangeTrack)
 
 [22731](\Global\Vehicle\Content\GetIn\D\P1Side\Reg\Anims\Boat\JetBoat\JetBoat):
@@ -3792,8 +4080,12 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[500ms](TargetSpawnTrack)
@@ -3806,7 +4098,9 @@
 		[Begin]: 0.700000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetAttachTrack)
 	[0ms](TargetSpawnTrack)
@@ -3818,8 +4112,12 @@
 		[End]: -1.000000
 	[0ms](AudioTrackSoundbankIO)
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[166ms](TargetAttachTrack)
 	[900ms](TargetSpawnTrack)
 
@@ -3830,8 +4128,12 @@
 		[End]: -1.000000
 	[0ms](AudioTrackSoundbankIO)
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[166ms](TargetAttachTrack)
 	[333ms](TargetAttachTrack)
 	[333ms](TargetDetachTrack)
@@ -3842,8 +4144,12 @@
 		[Group]: Yacht_Into
 		[Begin]: 1.400000
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[1000ms](CameraChangeTrack)
@@ -3854,8 +4160,12 @@
 		[Group]: Yacht_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[800ms](TargetAttachTrack)
@@ -3869,8 +4179,12 @@
 		[Begin]: 1.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[700ms](TargetSpawnTrack)
@@ -3881,8 +4195,12 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[800ms](TargetAttachTrack)
@@ -3898,7 +4216,9 @@
 		[Group]: Car_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
@@ -3908,14 +4228,17 @@
 	[0ms](TargetDetachEffectorTrack)
 	[0ms](TargetDetachEffectorTrack)
 	[0ms](TargetPlayTrack)
-	[800ms](GravityTrack)
+	[800ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[800ms](TargetAttachTrack)
 	[800ms](TargetDetachTrack)
 	[833ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[1000ms](CameraChangeTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2700ms](TargetAttachEffectorTrack)
 	[3366ms](TargetAttachEffectorTrack)
 
@@ -3937,8 +4260,12 @@
 		[Group]: Car_Into_Pass
 		[Begin]: 0.850000
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetAttachTrack)
 	[0ms](TargetPlayTrack)
@@ -3967,13 +4294,17 @@
 		[Group]: DDbus_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetAttachTrack)
 	[0ms](TargetPlayTrack)
 	[500ms](CameraChangeTrack)
 	[500ms](CameraResetTrack)
-	[800ms](GravityTrack)
+	[800ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[800ms](TargetAttachTrack)
 	[800ms](TargetDetachTrack)
 
@@ -3991,7 +4322,9 @@
 		[Group]: CBoat_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22716
 	[0ms](SubjectFollowOverrideTrack)
@@ -4004,7 +4337,9 @@
 		[Begin]: 1.200000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22717
 	[0ms](SubjectFollowOverrideTrack)
@@ -4025,15 +4360,20 @@
 		[Group]: Car_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[500ms](TargetSpawnTrack)
-	[800ms](GravityTrack)
+	[800ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[800ms](TargetAttachTrack)
 	[800ms](TargetDetachTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1566ms](CameraChangeTrack)
 
 [22718](\Global\Vehicle\Content\GetIn\D\P1Side\Reg\Anims\FromWaterBoat\JetBoat):
@@ -4041,7 +4381,9 @@
 		[Group]: JetBoat_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22719
 	[0ms](SubjectFollowOverrideTrack)
@@ -4054,7 +4396,9 @@
 		[Begin]: 0.666667
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetAttachTrack)
 	[500ms](TargetSpawnTrack)
@@ -4064,7 +4408,9 @@
 		[Group]: Sampan_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22712
 	[0ms](SubjectFollowOverrideTrack)
@@ -4079,7 +4425,9 @@
 		[End]: -1.000000
 	[0ms](AudioTrackSoundbankIO)
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverrideTrack)
 	[166ms](TargetAttachTrack)
 	[333ms](TargetAttachTrack)
@@ -4092,8 +4440,12 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22710
 	[0ms](SubjectFollowOverrideTrack)
@@ -4106,8 +4458,12 @@
 		[Begin]: 1.166667
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[166ms](TargetAttachTrack)
 	[800ms](TargetAttachTrack)
 	[800ms](TargetDetachTrack)
@@ -4119,7 +4475,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 22714
 	[0ms](SubjectFollowOverrideTrack)
@@ -4132,8 +4490,12 @@
 		[Begin]: 0.666667
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[166ms](TargetAttachTrack)
 	[800ms](TargetAttachTrack)
 	[800ms](TargetDetachTrack)
@@ -4148,14 +4510,18 @@
 		[Group]: Minibus_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetAttachTrack)
 	[0ms](TargetPlayTrack)
-	[800ms](GravityTrack)
+	[800ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[800ms](TargetAttachTrack)
 	[800ms](TargetDetachTrack)
 	[1566ms](CameraChangeTrack)
@@ -4181,14 +4547,18 @@
 		[Group]: Truck_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetAttachTrack)
 	[0ms](TargetPlayTrack)
-	[800ms](GravityTrack)
+	[800ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[800ms](TargetAttachTrack)
 	[800ms](TargetDetachTrack)
 	[1666ms](CameraChangeTrack)
@@ -4214,7 +4584,9 @@
 		[Group]: Van_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4223,7 +4595,9 @@
 	[0ms](TargetDetachEffectorTrack)
 	[0ms](TargetDetachEffectorTrack)
 	[0ms](TargetPlayTrack)
-	[800ms](GravityTrack)
+	[800ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[800ms](TargetAttachTrack)
 	[800ms](TargetDetachTrack)
 	[1666ms](CameraChangeTrack)
@@ -4243,11 +4617,18 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [23083](\Global\Vehicle\Content\GetIn\D\PullOutButNotEnter):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.800000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4260,10 +4641,12 @@
 
 [23090](\Global\Vehicle\Content\GetIn\D\PullOutButNotEnter\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_THG_Carjack_GIV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: Car_THG_Carjack_GIV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -4335,10 +4718,15 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [23092](\Global\Vehicle\Content\GetIn\D\PullOutButNotEnter\Rcv\D):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SkookumTrack):
 		[Class]: Character
 		[Script]: enable_player_vehicle_control(false)
@@ -4357,6 +4745,7 @@
 
 [23096](\Global\Vehicle\Content\GetIn\D\PullOutButNotEnter\Rcv\D\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_THG_Carjack_RCV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -4401,7 +4790,9 @@
 
 [23109](\Global\Vehicle\Content\GetIn\GetInAttachTemplate\AttachGetInTrack):
 	[166ms](TargetAttachTrack)
-	[833ms](GravityTrack)
+	[833ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[833ms](TargetAttachTrack)
 	[833ms](TargetDetachTrack)
 
@@ -4443,8 +4834,11 @@
 	[0ms](OpportunityTrack)
 
 [22660](\Global\Vehicle\Content\GetIn\P1\Chauffeur):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4457,6 +4851,7 @@
 
 [22661](\Global\Vehicle\Content\GetIn\P1\Chauffeur\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_Limo_Pass_Out_GIV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -4465,14 +4860,19 @@
 
 [22662](\Global\Vehicle\Content\GetIn\P1\Chauffeur\Anims\Default\Vehicle):
 	[0ms](AnimationTrack):
+		[Name]: Car_Limo_Pass_Out_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [22663](\Global\Vehicle\Content\GetIn\P1\Chauffeur\Rcv\P1):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4486,14 +4886,19 @@
 
 [22664](\Global\Vehicle\Content\GetIn\P1\Chauffeur\Rcv\P1\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_Limo_Pass_Out_RCV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [22665](\Global\Vehicle\Content\GetIn\P1\PullOutButNotEnter):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4506,6 +4911,7 @@
 
 [22670](\Global\Vehicle\Content\GetIn\P1\PullOutButNotEnter\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_THG_Pass_Carjack_GIV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -4514,6 +4920,7 @@
 
 [22671](\Global\Vehicle\Content\GetIn\P1\PullOutButNotEnter\Anims\Default\Vehicle):
 	[0ms](AnimationTrack):
+		[Name]: Car_THG_Pass_Carjack_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -4547,9 +4954,13 @@
 		[End]: -1.000000
 
 [22672](\Global\Vehicle\Content\GetIn\P1\PullOutButNotEnter\Rcv\P1):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4563,6 +4974,7 @@
 
 [22675](\Global\Vehicle\Content\GetIn\P1\PullOutButNotEnter\Rcv\P1\Anims\Default):
 	[0ms](AnimationTrack):
+		[Name]: Car_THG_Pass_Carjack_RCV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -4580,8 +4992,11 @@
 		[End]: -1.000000
 
 [22638](\Global\Vehicle\Content\GetIn\P1\Reg):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4623,7 +5038,8 @@
 		[End]: -1.000000
 	[0ms](TargetPlayTrack)
 	[266ms](TargetAttachTrack)
-	[1500ms](SetStateFlagTrack)
+	[1500ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [22651](\Global\Vehicle\Content\GetIn\P1\Reg\Anims\Car\Casual\Vehicle):
 	[0ms](SpawnTrack):
@@ -4639,14 +5055,17 @@
 		[Group]: Car_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetAttachTrack)
 	[0ms](TargetPlayTrack)
 	[800ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[800ms](TargetDetachTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [22655](\Global\Vehicle\Content\GetIn\P1\Reg\Anims\Car\Default\Vehicle):
 	[0ms](SpawnTrack):
@@ -4658,7 +5077,9 @@
 		[Group]: Car_Into_Pass
 		[Begin]: 1.400000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetPlayTrack)
 	[266ms](TargetAttachTrack)
 	[800ms](TargetAttachTrack)
@@ -4676,7 +5097,8 @@
 		[End]: -1.000000
 	[0ms](TargetPlayTrack)
 	[266ms](TargetAttachTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [22653](\Global\Vehicle\Content\GetIn\P1\Reg\Anims\Car\Female\Vehicle):
 	[0ms](SpawnTrack):
@@ -4729,7 +5151,9 @@
 		[Group]: Truck_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetPlayTrack)
 	[166ms](TargetAttachTrack)
 	[1333ms](SpawnTrack):
@@ -4748,7 +5172,9 @@
 		[Group]: Van_Into_Pass
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetPlayTrack)
 	[166ms](TargetAttachTrack)
 	[1333ms](SpawnTrack):
@@ -4763,8 +5189,11 @@
 		[End]: -1.000000
 
 [22676](\Global\Vehicle\Content\GetIn\P2\Reg):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4820,8 +5249,11 @@
 	[166ms](TargetAttachTrack)
 
 [22683](\Global\Vehicle\Content\GetIn\P3\Reg):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4877,8 +5309,11 @@
 	[166ms](TargetAttachTrack)
 
 [22690](\Global\Vehicle\Content\GetIn\P4\Reg):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4906,8 +5341,10 @@
 	[166ms](TargetAttachTrack)
 
 [23260](\Global\Vehicle\Content\GetOut\D\GetOutAggressive):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4923,12 +5360,17 @@
 	[0ms](TargetDetachTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
-	[400ms](CharacterPhysicsTrack)
-	[666ms](GravityTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
+	[666ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [23243](\Global\Vehicle\Content\GetOut\D\GetOutAggressiveFast):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4944,8 +5386,11 @@
 	[0ms](TargetDetachTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
-	[400ms](CharacterPhysicsTrack)
-	[666ms](GravityTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
+	[666ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [23247](\Global\Vehicle\Content\GetOut\D\GetOutAggressiveFast\Anims\DDbus\Backwards):
 	[0ms](AnimationTrack):
@@ -5054,7 +5499,6 @@
 
 [23252](\Global\Vehicle\Content\GetOut\D\GetOutAggressiveFast\Anims\Truck\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Quike_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -5081,7 +5525,6 @@
 
 [23255](\Global\Vehicle\Content\GetOut\D\GetOutAggressiveFast\Anims\Van\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Quike_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -5191,7 +5634,6 @@
 
 [23267](\Global\Vehicle\Content\GetOut\D\GetOutAggressive\Anims\Truck\Backwards):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Quike_Out_Reverse
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -5207,7 +5649,6 @@
 
 [23268](\Global\Vehicle\Content\GetOut\D\GetOutAggressive\Anims\Truck\Truck):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Quike_Out
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -5221,14 +5662,12 @@
 
 [23269](\Global\Vehicle\Content\GetOut\D\GetOutAggressive\Anims\Truck\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Quike_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23270](\Global\Vehicle\Content\GetOut\D\GetOutAggressive\Anims\Van\Backwards):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Quike_Out_Reverse
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -5244,7 +5683,6 @@
 
 [23271](\Global\Vehicle\Content\GetOut\D\GetOutAggressive\Anims\Van\Default):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Quike_Out
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -5258,13 +5696,13 @@
 
 [23272](\Global\Vehicle\Content\GetOut\D\GetOutAggressive\Anims\Van\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Quike_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23313](\Global\Vehicle\Content\GetOut\D\GetOutBlockedCar):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5279,7 +5717,9 @@
 	[1966ms](TargetAttachTrack)
 	[1966ms](TargetDetachTrack)
 	[2000ms](TargetDetachTrack)
-	[2966ms](GravityTrack)
+	[2966ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [23314](\Global\Vehicle\Content\GetOut\D\GetOutBlockedCar\Anims\Car):
 	[0ms](AnimationTrack):
@@ -5307,8 +5747,10 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [23310](\Global\Vehicle\Content\GetOut\D\GetOutBlockedDDBus):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5324,7 +5766,9 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
 	[333ms](TargetVehicleBreakWindowTrack)
-	[4800ms](GravityTrack)
+	[4800ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[4900ms](TargetDetachTrack)
 
 [23311](\Global\Vehicle\Content\GetOut\D\GetOutBlockedDDBus\Anims\DDbus):
@@ -5347,9 +5791,13 @@
 		[End]: -1.000000
 
 [23307](\Global\Vehicle\Content\GetOut\D\GetOutBlockedMiniBus):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5365,7 +5813,9 @@
 	[2133ms](TargetAttachTrack)
 	[2133ms](TargetDetachTrack)
 	[2533ms](TargetDetachTrack)
-	[3333ms](GravityTrack)
+	[3333ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [23308](\Global\Vehicle\Content\GetOut\D\GetOutBlockedMiniBus\Anims\Minibus):
 	[0ms](AnimationTrack):
@@ -5386,9 +5836,13 @@
 		[End]: -1.000000
 
 [23304](\Global\Vehicle\Content\GetOut\D\GetOutBlockedTruck):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5403,11 +5857,12 @@
 	[1833ms](TargetAttachTrack)
 	[1833ms](TargetDetachTrack)
 	[1866ms](TargetDetachTrack)
-	[2000ms](GravityTrack)
+	[2000ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [23305](\Global\Vehicle\Content\GetOut\D\GetOutBlockedTruck\Anims\Truck):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Passenger_Out
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -5420,15 +5875,18 @@
 
 [23306](\Global\Vehicle\Content\GetOut\D\GetOutBlockedTruck\Anims\Truck\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Passenger_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23301](\Global\Vehicle\Content\GetOut\D\GetOutBlockedVan):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5444,11 +5902,12 @@
 	[2333ms](TargetAttachTrack)
 	[2333ms](TargetDetachTrack)
 	[2666ms](TargetDetachTrack)
-	[2900ms](GravityTrack)
+	[2900ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [23302](\Global\Vehicle\Content\GetOut\D\GetOutBlockedVan\Anims\Van):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Passenger_Out
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -5464,15 +5923,18 @@
 
 [23303](\Global\Vehicle\Content\GetOut\D\GetOutBlockedVan\Anims\Van\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Passenger_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23237](\Global\Vehicle\Content\GetOut\D\GetOutBoat\IntoWater):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5529,9 +5991,13 @@
 	[1666ms](CameraChangeTrack)
 
 [23231](\Global\Vehicle\Content\GetOut\D\GetOutBoat\OntoDock\ToLeft):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5577,9 +6043,13 @@
 		[End]: -1.000000
 
 [23225](\Global\Vehicle\Content\GetOut\D\GetOutBoat\OntoDock\ToRight):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5634,7 +6104,8 @@
 	[0ms](SubjectFollowOverrideTrack)
 
 [23288](\Global\Vehicle\Content\GetOut\D\GetOutCar):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 23372
 	[0ms](SpawnTrack):
@@ -5653,7 +6124,8 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetPlayTrack)
 	[2250ms](OpportunityTrack)
@@ -5661,7 +6133,9 @@
 	[2400ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[2500ms](GravityTrack)
+	[2500ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[2500ms](TargetDetachTrack)
 	[3150ms](OpportunityTrack)
 
@@ -5676,7 +6150,8 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetPlayTrack)
 	[800ms](CameraChangeTrack)
@@ -5684,7 +6159,9 @@
 	[800ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[900ms](GravityTrack)
+	[900ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[900ms](TargetDetachTrack)
 	[1200ms](OpportunityTrack)
 
@@ -5703,7 +6180,8 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetPlayTrack)
 	[766ms](CameraChangeTrack)
@@ -5711,7 +6189,9 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[866ms](OpportunityTrack)
-	[900ms](GravityTrack)
+	[900ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[900ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5727,7 +6207,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [23297](\Global\Vehicle\Content\GetOut\D\GetOutCar\GetOutCarIntoCover):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 23372
 	[0ms](SpawnTrack):
@@ -5739,7 +6220,9 @@
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[300ms](GravityTrack)
+	[300ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[333ms](TargetDetachTrack)
 
 [23298](\Global\Vehicle\Content\GetOut\D\GetOutCar\GetOutCarIntoCover\Anims\IntoCover):
@@ -5764,8 +6247,10 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [23285](\Global\Vehicle\Content\GetOut\D\GetOutDDBus):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5817,14 +6302,12 @@
 
 [23222](\Global\Vehicle\Content\GetOut\D\GetOutDiveShoot\VehicleAnims\Truck):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Quike_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23223](\Global\Vehicle\Content\GetOut\D\GetOutDiveShoot\VehicleAnims\Van):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Quike_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -5836,9 +6319,13 @@
 		[Group]: Vehicle_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 23211
 	[0ms](SpawnTrack):
@@ -5868,7 +6355,9 @@
 	[933ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[2166ms](OpportunityTrack)
 
 [23212](\Global\Vehicle\Content\GetOut\D\GetOutDiveShoot\WithGun\DismountShoot\Aiming):
@@ -5898,7 +6387,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](SubjectFollowOverrideTrack)
 
@@ -5908,9 +6398,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 23219
@@ -5927,7 +6421,9 @@
 	[300ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[466ms](GravityTrack)
+	[466ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[1666ms](OpportunityTrack)
 
 [23219](\Global\Vehicle\Content\GetOut\D\GetOutDiveShoot\WithGun\ToBeImplemented\Dismount_slideOLD\Ditch_Slide\Getup):
@@ -5936,7 +6432,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[933ms](OpportunityTrack)
 
 [23215](\Global\Vehicle\Content\GetOut\D\GetOutDiveShoot\WithGun\ToBeImplemented\Dismount_slide\Ditch_Slide):
@@ -5945,9 +6442,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 23216
@@ -5961,7 +6462,9 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetingProfileSelectTrack)
 	[0ms](VehicleInteractTrack)
-	[466ms](GravityTrack)
+	[466ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[733ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5987,7 +6490,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SubjectFollowOverrideTrack)
 
 [23200](\Global\Vehicle\Content\GetOut\D\GetOutDiveShoot\WithRifle\DismountShoot):
@@ -5997,9 +6501,13 @@
 		[Group]: Vehicle_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 23201
 	[0ms](SpawnTrack):
@@ -6026,7 +6534,9 @@
 	[933ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[2166ms](OpportunityTrack)
 
 [23202](\Global\Vehicle\Content\GetOut\D\GetOutDiveShoot\WithRifle\DismountShoot\Aiming):
@@ -6056,7 +6566,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](SubjectFollowOverrideTrack)
 
@@ -6066,9 +6577,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 23209
@@ -6088,7 +6603,9 @@
 	[300ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[466ms](GravityTrack)
+	[466ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[1666ms](OpportunityTrack)
 
 [23209](\Global\Vehicle\Content\GetOut\D\GetOutDiveShoot\WithRifle\ToBeImplemented\Dismount_slideOLD\Ditch_Slide\Getup):
@@ -6097,7 +6614,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[933ms](OpportunityTrack)
 
 [23205](\Global\Vehicle\Content\GetOut\D\GetOutDiveShoot\WithRifle\ToBeImplemented\Dismount_slide\Ditch_Slide):
@@ -6106,9 +6624,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 23206
@@ -6125,7 +6647,9 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetingProfileSelectTrack)
 	[0ms](VehicleInteractTrack)
-	[466ms](GravityTrack)
+	[466ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[733ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6151,12 +6675,14 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SubjectFollowOverrideTrack)
 	[933ms](OpportunityTrack)
 
 [23282](\Global\Vehicle\Content\GetOut\D\GetOutMiniBus):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 23372
 	[0ms](SpawnTrack):
@@ -6189,7 +6715,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [23279](\Global\Vehicle\Content\GetOut\D\GetOutTruck):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 23372
 	[0ms](SpawnTrack):
@@ -6204,7 +6731,6 @@
 
 [23280](\Global\Vehicle\Content\GetOut\D\GetOutTruck\Anims\Truck):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Out
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -6223,7 +6749,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [23276](\Global\Vehicle\Content\GetOut\D\GetOutVan):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 23372
 	[0ms](SpawnTrack):
@@ -6238,7 +6765,6 @@
 
 [23277](\Global\Vehicle\Content\GetOut\D\GetOutVan\Anims\Van):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Out
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -6263,7 +6789,8 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6272,15 +6799,22 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](VehicleInteractTrack)
 	[333ms](TargetVehicleBreakWindowTrack)
-	[4300ms](CharacterPhysicsTrack)
-	[4300ms](GravityTrack)
+	[4300ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[4300ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[4300ms](TargetDetachTrack)
 	[4300ms](TargetReleaseTrack)
 
 [23191](\Global\Vehicle\Content\GetOut\D\NotOnWheels\OnLeftSide):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6333,7 +6867,6 @@
 
 [23195](\Global\Vehicle\Content\GetOut\D\NotOnWheels\OnLeftSide\Anims\Truck\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -6353,9 +6886,13 @@
 		[End]: -1.000000
 
 [23182](\Global\Vehicle\Content\GetOut\D\NotOnWheels\OnRightSide):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6408,7 +6945,6 @@
 
 [23186](\Global\Vehicle\Content\GetOut\D\NotOnWheels\OnRightSide\Anims\Truck\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Passenger_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -6429,8 +6965,10 @@
 		[End]: -1.000000
 
 [23173](\Global\Vehicle\Content\GetOut\D\NotOnWheels\OnRoof):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6451,7 +6989,9 @@
 		[End]: -1.000000
 	[0ms](TargetDetachTrack)
 	[0ms](TargetPlayTrack)
-	[600ms](GravityTrack)
+	[600ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[600ms](TargetDetachTrack)
 
 [23181](\Global\Vehicle\Content\GetOut\D\NotOnWheels\OnRoof\Anims\Default\Vehicle):
@@ -6467,7 +7007,9 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachTrack)
 	[0ms](TargetPlayTrack)
 	[1500ms](TargetDetachTrack)
@@ -6484,7 +7026,9 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachTrack)
 	[0ms](TargetPlayTrack)
 	[1500ms](TargetDetachTrack)
@@ -6501,22 +7045,27 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachTrack)
 	[0ms](TargetPlayTrack)
 	[1500ms](TargetDetachTrack)
 
 [23179](\Global\Vehicle\Content\GetOut\D\NotOnWheels\OnRoof\Anims\Van\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23318](\Global\Vehicle\Content\GetOut\D\OverturnedBoat):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6566,8 +7115,10 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [23162](\Global\Vehicle\Content\GetOut\D\QuickEscape\GetOutAggressive):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6581,8 +7132,11 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetSyncPositionTrack)
 	[0ms](VehicleInteractTrack)
-	[400ms](CharacterPhysicsTrack)
-	[666ms](GravityTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
+	[666ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [23165](\Global\Vehicle\Content\GetOut\D\QuickEscape\GetOutAggressive\Anims\DDbus\Default):
 	[0ms](AnimationTrack):
@@ -6643,7 +7197,6 @@
 
 [23167](\Global\Vehicle\Content\GetOut\D\QuickEscape\GetOutAggressive\Anims\Truck\Truck):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Quike_Out
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -6657,14 +7210,12 @@
 
 [23168](\Global\Vehicle\Content\GetOut\D\QuickEscape\GetOutAggressive\Anims\Truck\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Quike_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [23169](\Global\Vehicle\Content\GetOut\D\QuickEscape\GetOutAggressive\Anims\Van\Default):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Quike_Out
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -6678,7 +7229,6 @@
 
 [23170](\Global\Vehicle\Content\GetOut\D\QuickEscape\GetOutAggressive\Anims\Van\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Quike_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -6690,13 +7240,16 @@
 	[0ms](TargetSyncPositionTrack)
 
 [23110](\Global\Vehicle\Content\GetOut\P1\IntoCover):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 23372
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[300ms](GravityTrack)
+	[300ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[333ms](TargetDetachTrack)
 
 [23111](\Global\Vehicle\Content\GetOut\P1\IntoCover\Anims\Car):
@@ -6728,9 +7281,13 @@
 		[Group]: Car_ActionHijack
 		[Begin]: 2.166667
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6749,7 +7306,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [23116](\Global\Vehicle\Content\GetOut\P1\Reg):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 23372
 	[0ms](SpawnTrack):
@@ -6783,7 +7341,8 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetPlayTrack)
 	[533ms](TargetAttachTrack)
 	[533ms](TargetDetachTrack)
@@ -6802,7 +7361,8 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetPlayTrack)
 	[533ms](TargetAttachTrack)
 	[533ms](TargetDetachTrack)
@@ -6827,7 +7387,8 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetPlayTrack)
 	[533ms](TargetAttachTrack)
 	[533ms](TargetDetachTrack)
@@ -6846,7 +7407,8 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetPlayTrack)
 	[533ms](TargetAttachTrack)
 	[533ms](TargetDetachTrack)
@@ -6938,9 +7500,13 @@
 		[End]: -1.000000
 
 [23137](\Global\Vehicle\Content\GetOut\P2\QuickEscape):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6956,7 +7522,8 @@
 	[666ms](TargetDetachTrack)
 
 [23138](\Global\Vehicle\Content\GetOut\P2\Reg):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 23372
 	[0ms](SpawnTrack):
@@ -6969,7 +7536,8 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetPlayTrack)
 	[1200ms](OpportunityTrack)
 
@@ -6983,7 +7551,8 @@
 		[Group]: POI_Taxi_PanicExit
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetPlayTrack)
 	[900ms](OpportunityTrack)
 
@@ -7029,9 +7598,13 @@
 		[Group]: Car_ActionHijack
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7044,7 +7617,8 @@
 	[666ms](TargetDetachTrack)
 
 [23148](\Global\Vehicle\Content\GetOut\P3\Reg):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 23372
 	[0ms](SpawnTrack):
@@ -7058,7 +7632,8 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetPlayTrack)
 	[1200ms](OpportunityTrack)
 
@@ -7072,7 +7647,8 @@
 		[Group]: POI_Taxi_PanicExit
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetPlayTrack)
 	[900ms](OpportunityTrack)
 
@@ -7114,9 +7690,13 @@
 	[1366ms](TargetDetachTrack)
 
 [23157](\Global\Vehicle\Content\GetOut\P4\Reg):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7182,8 +7762,10 @@
 
 [23369](\Global\Vehicle\Content\Ride\D\ActionHijackStartJump):
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7927,7 +8509,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -7998,27 +8582,36 @@
 	[0ms](SubjectFollowOverrideTrack)
 
 [23457](\Global\Vehicle\ImpactDamageEffect\Ragdoll\RecoverRagdoll):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](MasterTrack)
 	[0ms](RagdollChangeModeTrack)
 	[0ms](RagdollReleaseTrack)
 	[0ms](SubjectFollowOverrideTrack)
 
 [23487](\Global\Vehicle\ImpactDamageEffect\Ragdoll\Utility\BallisticGrav\Off):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 
 [23488](\Global\Vehicle\ImpactDamageEffect\Ragdoll\Utility\BallisticGrav\On):
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 1
 	[0ms](OpportunityTrack)
 
 [23492](\Global\Vehicle\ImpactDamageEffect\Ragdoll\Utility\BreakOut\Default):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollReleaseTrack)
 
 [23491](\Global\Vehicle\ImpactDamageEffect\Ragdoll\Utility\BreakOut\IsPlayer):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollChangeModeTrack)
 
 [23490](\Global\Vehicle\ImpactDamageEffect\Ragdoll\Utility\ConditionalRelease\Default):
@@ -8483,9 +9076,13 @@
 	[0ms](TargetReleaseTrack)
 
 [21712](\Global\Vehicle\Interactions\Action\GetIn\HelperFunctions\SeatAttach\Common):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetLockTrack)
 
 [21694](\Global\Vehicle\Interactions\Action\GetIn\HelperFunctions\SeatAttach\Driver):
@@ -8577,9 +9174,13 @@
 	[0ms](TargetAttachTrack)
 
 [21762](\Global\Vehicle\Interactions\Action\GetIn\HelperFunctions\SeatDetach\Immediate\Common\Common):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetReleaseTrack)
 
 [21748](\Global\Vehicle\Interactions\Action\GetIn\HelperFunctions\SeatDetach\Immediate\Driver):
@@ -8671,7 +9272,9 @@
 		[Group]: Locomotion_FreeRunning
 		[Begin]: 0.166667
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
 		[ID]: 21738
@@ -8683,9 +9286,13 @@
 		[Group]: Locomotion_FreeRunning
 		[Begin]: 0.000000
 		[End]: 0.633333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
 		[ID]: 21739
@@ -8707,7 +9314,9 @@
 		[Group]: Locomotion_FreeRunning
 		[Begin]: 0.166667
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
 		[ID]: 21735
@@ -8719,9 +9328,13 @@
 		[Group]: Locomotion_FreeRunning
 		[Begin]: 0.000000
 		[End]: 0.633333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
 		[ID]: 21736
@@ -8778,6 +9391,7 @@
 
 [21723](\Global\Vehicle\Interactions\Action\GetIn\HelperFunctions\SeatSwitch\NoSequence\DriverToPassenger\Anims\DriverToPass):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Ally_to_Pass
 		[Group]: Vehicle_Drive_Passenger_Swap
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -8833,6 +9447,7 @@
 
 [21716](\Global\Vehicle\Interactions\Action\GetIn\HelperFunctions\SeatSwitch\NoSequence\PassengerToDriver\Anims\PassToDriver):
 	[0ms](AnimationTrack):
+		[Name]: Car_Ally_to_Driver
 		[Group]: Vehicle_Drive_Passenger_Swap
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -9114,7 +9729,8 @@
 [21671](\Global\Vehicle\Interactions\Action\GetIn\NPC\PullTargetFromVehicle\CarJackDriverSide):
 	[0ms](SequenceTrack):
 		[ID]: 23372
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9129,7 +9745,8 @@
 [21673](\Global\Vehicle\Interactions\Action\GetIn\NPC\PullTargetFromVehicle\CarJackPassengerSide):
 	[0ms](SequenceTrack):
 		[ID]: 23372
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9236,7 +9853,9 @@
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](CameraShakeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](StimulusTrack)
@@ -9313,8 +9932,12 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.810000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: -9.810000
+		[BallisticMode]: 1
 	[0ms](OpportunityTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -9346,10 +9969,14 @@
 		[End]: -1.000000
 
 [21575](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Climb\DetachFromHang_KEY\Utility\VehicleDetach):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetGrappleReleaseTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetReleaseTrack)
@@ -9406,8 +10033,10 @@
 		[End]: -1.000000
 
 [21507](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Climb\Hang\Loco\LeftCorner\Hijack):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
@@ -9492,8 +10121,10 @@
 		[End]: -1.000000
 
 [21514](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Climb\Hang\Loco\LeftCorner\Hijack\Receive\Driver\KickedOut):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9526,7 +10157,6 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[1166ms](AnimationTrack):
-		[Name]: Truck_Drive_Quike_Out
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -9535,7 +10165,6 @@
 
 [21518](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Climb\Hang\Loco\LeftCorner\Hijack\Receive\Driver\KickedOut\Anims\Truck\Truck_JumpOut\Vehicle):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Quike_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -9548,8 +10177,10 @@
 	[3366ms](TargetDetachTrack)
 
 [21520](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Climb\Hang\Loco\LeftCorner\Hijack\Receive\Passenger):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9673,8 +10304,10 @@
 		[End]: -1.000000
 
 [21528](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Climb\Hang\Loco\RightCorner\Hijack):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
@@ -9759,8 +10392,10 @@
 		[End]: -1.000000
 
 [21536](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Climb\Hang\Loco\RightCorner\Hijack\Receive\Driver\KickedOut):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9801,8 +10436,10 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [21540](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Climb\Hang\Loco\RightCorner\Hijack\Receive\Passenger):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9872,9 +10509,12 @@
 
 [21491](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Climb\Latch\Back):
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -9901,9 +10541,12 @@
 [21495](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Climb\Latch\Left):
 	[0ms](CameraChangeTrack)
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -9925,9 +10568,12 @@
 [21493](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Climb\Latch\Right):
 	[0ms](CameraChangeTrack)
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -9948,10 +10594,14 @@
 	[0ms](TargetLockTrack)
 
 [21614](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Fall):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SkookumTrack):
 		[Class]: Character
 		[Script]: ActionButton.hide()
@@ -9969,8 +10619,10 @@
 
 [21593](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Hijack):
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
 	[0ms](OpportunityTrack)
@@ -10058,8 +10710,10 @@
 	[0ms](GameStatEventTrack)
 
 [21602](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Hijack\Receive\Driver\PulledOut):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10085,8 +10739,10 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [21607](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Hijack\Receive\Passenger2\JumpOut):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10104,8 +10760,10 @@
 		[End]: -1.000000
 
 [21609](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Hijack\Receive\Passenger3\PulledOut):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10124,8 +10782,10 @@
 		[End]: -1.000000
 
 [21605](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Hijack\Receive\Passenger\JumpOut):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10156,11 +10816,15 @@
 
 [21576](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Latch\Back\DirectlyBehindMiddle\Back):
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21593
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10203,12 +10867,16 @@
 
 [21582](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Latch\Back\PastRearEnd\BackLeft):
 	[0ms](AudioTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21593
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10226,12 +10894,16 @@
 
 [21580](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Latch\Back\PastRearEnd\BackRight):
 	[0ms](AudioTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21593
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10250,12 +10922,16 @@
 [21588](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Latch\Default):
 	[0ms](AudioTrack)
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21593
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10280,12 +10956,16 @@
 [21586](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Latch\Left):
 	[0ms](AudioTrack)
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21593
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10304,12 +10984,16 @@
 [21584](\Global\Vehicle\Interactions\Action\GetIn\Player\ActionHijack\Hop\Latch\Right):
 	[0ms](AudioTrack)
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21593
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10735,9 +11419,13 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [21490](\Global\Vehicle\Interactions\Action\GetIn\Player\Taxi\Spawn\Utility\MoveToPassengerSeat):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SubjectElevationTrack)
 	[0ms](SubjectElevationTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -10748,7 +11436,8 @@
 [21790](\Global\Vehicle\Interactions\Action\GetOut\AsDriver\ActionHijackStart\StartJump):
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10933,8 +11622,12 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.810000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: -9.810000
+		[BallisticMode]: 1
 	[0ms](OpportunityTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -10948,8 +11641,12 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.810000
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: -9.810000
+		[BallisticMode]: 1
 	[0ms](OpportunityTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -11124,7 +11821,8 @@
 	[0ms](TargetDetachEffectorTrack)
 
 [22143](\Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -11984,7 +12682,6 @@
 
 [22148](\Global\Vehicle\Interactions\Action\Ride\AsDriver\Ride\RideAnims\Reverse\Anims\Van):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reverse
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -13205,7 +13902,8 @@
 		[Group]: DDbus
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 
 [21822](\Global\Vehicle\Interactions\Action\Ride\AsPassenger\DDbus\Pass2):
@@ -13214,7 +13912,8 @@
 		[Group]: DDbus
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 
 [21823](\Global\Vehicle\Interactions\Action\Ride\AsPassenger\DDbus\Pass3):
@@ -13223,7 +13922,8 @@
 		[Group]: DDbus
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 
 [21824](\Global\Vehicle\Interactions\Action\Ride\AsPassenger\DDbus\Pass4):
@@ -13232,7 +13932,8 @@
 		[Group]: DDbus
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 
 [21815](\Global\Vehicle\Interactions\Action\Ride\AsPassenger\Ferry\Pass1):
@@ -13257,7 +13958,8 @@
 		[Group]: Minibus
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 
 [21818](\Global\Vehicle\Interactions\Action\Ride\AsPassenger\Minibus\Pass2):
@@ -13266,7 +13968,8 @@
 		[Group]: Minibus
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 
 [21819](\Global\Vehicle\Interactions\Action\Ride\AsPassenger\Minibus\Pass3):
@@ -13275,7 +13978,8 @@
 		[Group]: Minibus
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 
 [21820](\Global\Vehicle\Interactions\Action\Ride\AsPassenger\Minibus\Pass4):
@@ -13284,11 +13988,13 @@
 		[Group]: Minibus
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 
 [21825](\Global\Vehicle\Interactions\Action\Ride\AsPassenger\Player):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -14132,7 +14838,8 @@
 		[End]: -1.000000
 
 [21934](\Global\Vehicle\Interactions\Action\Ride\AsPassenger\Ride):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -14699,7 +15406,6 @@
 
 [22456](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\HighSpeed\Vehicle\Van\HitFront):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_Frnt
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -14708,7 +15414,6 @@
 
 [22455](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\HighSpeed\Vehicle\Van\HitLeft):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_LFT
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -14717,7 +15422,6 @@
 
 [22453](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\HighSpeed\Vehicle\Van\HitRear):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_Bck
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -14726,7 +15430,6 @@
 
 [22454](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\HighSpeed\Vehicle\Van\HitRight):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_RIT
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15005,7 +15708,6 @@
 
 [22393](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\LowSpeed\Vehicle\Driver\Van\HitFront):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_Frnt
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15014,7 +15716,6 @@
 
 [22392](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\LowSpeed\Vehicle\Driver\Van\HitLeft):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_LFT
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15023,7 +15724,6 @@
 
 [22390](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\LowSpeed\Vehicle\Driver\Van\HitRear):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_Bck
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15032,7 +15732,6 @@
 
 [22391](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\LowSpeed\Vehicle\Driver\Van\HitRight):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_RIT
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15339,7 +16038,6 @@
 
 [22421](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\MediumSpeed\Vehicle\Van\HitFront):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_Frnt
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15348,7 +16046,6 @@
 
 [22420](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\MediumSpeed\Vehicle\Van\HitLeft):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_LFT
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15357,7 +16054,6 @@
 
 [22418](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\MediumSpeed\Vehicle\Van\HitRear):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_Bck
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15366,7 +16062,6 @@
 
 [22419](\Global\Vehicle\Interactions\Action\Ride\HitTree\Bump\MediumSpeed\Vehicle\Van\HitRight):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Reac_RIT
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15383,13 +16078,17 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [22315](\Global\Vehicle\Interactions\Action\Ride\HitTree\Explosion\End\ReleaseVehicle):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](ExecuteTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetReleaseTrack)
 
 [22313](\Global\Vehicle\Interactions\Action\Ride\HitTree\Explosion\GetOutBoat):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](HealthSetPercentageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18768
@@ -15402,7 +16101,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [22308](\Global\Vehicle\Interactions\Action\Ride\HitTree\Explosion\GetOutCar):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SequenceTrack):
 		[ID]: 18768
 	[0ms](SetCharacterOnFireTrack)
@@ -15460,7 +16160,8 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](CollisionDisableAgainstTargetTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](SequenceTrack):
@@ -15505,7 +16206,9 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[33ms](GravityTrack)
+	[33ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[66ms](RagdollChangeModeTrack)
 	[100ms](RagdollChangeMotorTrack)
 	[133ms](RagdollChangeModeTrack)
@@ -15517,7 +16220,8 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](CollisionDisableAgainstTargetTrack)
 	[0ms](DamageTrack)
 	[0ms](RagdollAquireTrack)
@@ -15563,13 +16267,17 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[33ms](GravityTrack)
+	[33ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[66ms](RagdollChangeModeTrack)
 	[100ms](RagdollChangeMotorTrack)
 	[133ms](RagdollChangeModeTrack)
 
 [22508](\Global\Vehicle\Interactions\Action\Ride\HitTree\ExternallyReferenced\CrashFrontPass\Ragdoll):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](RagdollSetFrictionTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -15579,7 +16287,9 @@
 	[0ms](StimulusTrack)
 
 [22506](\Global\Vehicle\Interactions\Action\Ride\HitTree\ExternallyReferenced\CrashFront\Ragdoll):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](RagdollSetFrictionTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -15651,7 +16361,6 @@
 
 [22323](\Global\Vehicle\Interactions\Action\Ride\HitTree\Knockout\Pass1\Dead\Van):
 	[0ms](AnimationTrack):
-		[Name]: Van_Pass_Reac_Death
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15672,7 +16381,6 @@
 
 [22328](\Global\Vehicle\Interactions\Action\Ride\HitTree\Knockout\Pass1\Default\Van):
 	[0ms](AnimationTrack):
-		[Name]: Van_Pass_Reac_Death
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15757,7 +16465,8 @@
 		[Group]: Car_Drive_Gun
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](RagdollAquireTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -15767,7 +16476,9 @@
 	[0ms](TargetPlayTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
-	[550ms](GravityTrack)
+	[550ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[550ms](RagdollChangeModeTrack)
 	[550ms](TargetDetachTrack)
 
@@ -15787,7 +16498,6 @@
 
 [22490](\Global\Vehicle\Interactions\Action\Ride\HitTree\ShotOutOfVehicle\Pass1\Dead\Van):
 	[0ms](AnimationTrack):
-		[Name]: Van_Pass_Reac_Death
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15808,7 +16518,6 @@
 
 [22496](\Global\Vehicle\Interactions\Action\Ride\HitTree\ShotOutOfVehicle\Pass1\Default\Van):
 	[0ms](AnimationTrack):
-		[Name]: Van_Pass_Reac_Death
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -15818,7 +16527,8 @@
 		[Group]: Car_Drive_Gun
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](RagdollAquireTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -15828,7 +16538,9 @@
 	[0ms](TargetPlayTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
-	[550ms](GravityTrack)
+	[550ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[550ms](RagdollChangeModeTrack)
 	[550ms](TargetDetachTrack)
 
@@ -15849,7 +16561,8 @@
 		[Group]: Car_Drive_Gun
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](RagdollAquireTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -15859,7 +16572,9 @@
 	[0ms](TargetPlayTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
-	[550ms](GravityTrack)
+	[550ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[550ms](RagdollChangeModeTrack)
 	[550ms](TargetDetachTrack)
 
@@ -16210,10 +16925,13 @@
 		[Group]: Cop
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SetOutOfFightTrack)
@@ -16263,10 +16981,13 @@
 		[Group]: Cop
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SetOutOfFightTrack)
@@ -16353,8 +17074,12 @@
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 18772
 	[0ms](SpawnTrack):
@@ -16488,8 +17213,12 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 18772
 	[0ms](SpawnTrack):
@@ -16658,9 +17387,13 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachTrack)
 	[0ms](TargetPlayTrack)
 	[0ms](TargetReleaseTrack)
@@ -16671,9 +17404,13 @@
 		[Group]: Minibus_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachTrack)
 	[0ms](TargetPlayTrack)
 	[0ms](TargetPlayTrack)
@@ -16686,9 +17423,13 @@
 		[Group]: Minibus_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachTrack)
 	[0ms](TargetPlayTrack)
 	[0ms](TargetPlayTrack)
@@ -16700,9 +17441,13 @@
 		[Group]: Minibus_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachTrack)
 	[0ms](TargetPlayTrack)
 	[0ms](TargetPlayTrack)
@@ -16714,9 +17459,13 @@
 		[Group]: Minibus_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachTrack)
 	[0ms](TargetPlayTrack)
 	[0ms](TargetPlayTrack)
@@ -16729,9 +17478,13 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachTrack)
 	[0ms](TargetPlayTrack)
 	[0ms](TargetReleaseTrack)
@@ -16744,13 +17497,18 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetPlayTrack)
 	[0ms](VehicleInteractTrack)
-	[1166ms](CharacterPhysicsTrack)
-	[1166ms](GravityTrack)
+	[1166ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[1166ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[1166ms](TargetDetachTrack)
 	[1166ms](TargetReleaseTrack)
 
@@ -16760,10 +17518,15 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SkookumTrack):
 		[Class]: Character
 		[Script]: World.c_player.money_adjust(-310, EconomyMethod.ticket_purchased)
@@ -16780,9 +17543,13 @@
 		[Group]: Car_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](TargetDetachTrack)
 	[0ms](TargetPlayTrack)
 	[0ms](TargetReleaseTrack)
@@ -16987,8 +17754,12 @@
 		[End]: 4.633333
 	[0ms](CameraFollowGotoTrack)
 	[0ms](CameraIgnoreCollisionTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17007,10 +17778,16 @@
 		[Group]: Car_Kidnap
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetSyncPositionTrack)
@@ -17037,8 +17814,12 @@
 	[0ms](CameraIgnoreCollisionTrack)
 	[0ms](CameraIgnoreCollisionTrack)
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 15095
 	[0ms](SpawnTrack):
@@ -17085,11 +17866,17 @@
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
 	[0ms](AudioTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetSyncPositionTrack)
@@ -17109,8 +17896,12 @@
 	[0ms](CameraFollowGotoTrack)
 	[0ms](CameraIgnoreCollisionTrack)
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 15095
 	[0ms](SpawnTrack):
@@ -17157,11 +17948,17 @@
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
 	[0ms](AudioTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetSyncPositionTrack)
@@ -17201,10 +17998,16 @@
 	[0ms](VehicleDoorPhysicsTrack)
 
 [21402](\Global\Vehicle\Interactions\Trunk\Grapple\PutIn\ForceInNoAnim):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21403
 	[0ms](TargetLockTrack)
@@ -17257,8 +18060,12 @@
 	[0ms](CameraIgnoreCollisionTrack)
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -17294,10 +18101,15 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21403
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
@@ -17320,8 +18132,12 @@
 	[0ms](CameraIgnoreCollisionTrack)
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -17359,10 +18175,15 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21403
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
@@ -17448,8 +18269,12 @@
 	[0ms](CameraIgnoreCollisionTrack)
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -17489,10 +18314,15 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21403
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
@@ -17514,8 +18344,12 @@
 	[0ms](CameraIgnoreCollisionTrack)
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -17553,10 +18387,15 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21403
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
@@ -17642,8 +18481,12 @@
 	[0ms](CameraIgnoreCollisionTrack)
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -17679,10 +18522,15 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21403
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
@@ -17704,8 +18552,12 @@
 	[0ms](CameraIgnoreCollisionTrack)
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -17743,10 +18595,15 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 21403
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
@@ -17796,9 +18653,14 @@
 	[0ms](TargetLockTrack)
 
 [21403](\Global\Vehicle\Interactions\Trunk\Grapple\PutIn\InTrunk):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SetOutOfFightTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -17995,6 +18857,7 @@
 
 [20769](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Close\Regular\Regular_SEQ\Blend):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_In_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.750000
 		[End]: -1.000000
@@ -18005,6 +18868,7 @@
 
 [20768](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Close\Regular\Regular_SEQ\NoBlend):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_In_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.750000
 		[End]: -1.000000
@@ -18019,6 +18883,7 @@
 
 [20748](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\BreakIn\Casual\Casual_SEQ):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_BreakIn_Cas_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -18035,6 +18900,7 @@
 [20749](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\BreakIn\Casual\Casual_SEQ\Interrupted\DoorNotYetOpened)
 [20750](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\BreakIn\Casual\Casual_SEQ\Interrupted\WhileDoorOpening):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_BreakIn_Cas_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 2.000000
 		[End]: 2.000000
@@ -18048,6 +18914,7 @@
 
 [20746](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\BreakIn\Quick\Quick_SEQ):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_BreakIn_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.200000
 		[End]: -1.000000
@@ -18061,6 +18928,7 @@
 
 [20753](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\BreakIn\Regular\Regular_SEQ):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_BreakIn_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.200000
 		[End]: -1.000000
@@ -18077,6 +18945,7 @@
 [20754](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\BreakIn\Regular\Regular_SEQ\Interrupted\DoorNotYetOpened)
 [20755](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\BreakIn\Regular\Regular_SEQ\Interrupted\WhileDoorOpening):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_BreakIn_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 1.466667
 		[End]: -1.000000
@@ -18090,6 +18959,7 @@
 
 [20758](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Casual\Casual_SEQ):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Casual_In_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -18103,6 +18973,7 @@
 [20759](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Casual\Casual_SEQ\Interrupted\DoorNotYetOpened)
 [20760](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Casual\Casual_SEQ\Interrupted\WhileDoorOpening):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Casual_In_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 1.400000
 		[End]: 1.400000
@@ -18116,6 +18987,7 @@
 
 [20733](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Hijack\Regular\Regular_SEQ):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: 4.150000
@@ -18129,6 +19001,7 @@
 [20734](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Hijack\Regular\Regular_SEQ\Interrupted\DoorNotYetOpened)
 [20735](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Hijack\Regular\Regular_SEQ\Interrupted\WhileDoorOpening):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.900000
 		[End]: 0.900000
@@ -18148,6 +19021,7 @@
 
 [20739](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Hijack\Thug\Thug_SEQ):
 	[0ms](AnimationTrack):
+		[Name]: Car_THG_Carjack_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -18163,6 +19037,7 @@
 [20740](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Hijack\Thug\Thug_SEQ\Interrupted\DoorNotYetOpened)
 [20741](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Hijack\Thug\Thug_SEQ\Interrupted\WhileDoorOpening):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.900000
 		[End]: 0.900000
@@ -18182,6 +19057,7 @@
 
 [20763](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Regular\Regular_SEQ):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_In_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -18195,6 +19071,7 @@
 [20764](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Regular\Regular_SEQ\Interrupted\DoorNotYetOpened)
 [20765](\Global\Vehicle\ObjectSpawns\DoorControllers\Car\Driver\GetIn\Open\Regular\Regular_SEQ\Interrupted\WhileDoorOpening):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_In_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.750000
 		[End]: 0.750000
@@ -19346,7 +20223,6 @@
 
 [21086](\Global\Vehicle\ObjectSpawns\DoorControllers\Truck\Driver\GetOut\Open\Quick\Quick_SEQ):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Quike_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -19358,7 +20234,6 @@
 
 [21088](\Global\Vehicle\ObjectSpawns\DoorControllers\Truck\Driver\GetOut\Open\Regular\Regular_SEQ):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -19367,7 +20242,6 @@
 
 [21089](\Global\Vehicle\ObjectSpawns\DoorControllers\Truck\Driver\GetOut\Open\Regular\Regular_SEQ\Interrupted\WhileDoorOpening):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 1.800000
 		[End]: 1.800000
@@ -19623,7 +20497,6 @@
 [21137](\Global\Vehicle\ObjectSpawns\DoorControllers\Truck\Passenger\GetIn\Open\Regular\Regular_SEQ\Interrupted\WhileDoorOpening\DoorOpened)
 [21161](\Global\Vehicle\ObjectSpawns\DoorControllers\Truck\Passenger\GetOut\AutoCloseDoor\ClosePassSideDoor):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Passenger_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 2.200000
 		[End]: -1.000000
@@ -19635,7 +20508,6 @@
 
 [21143](\Global\Vehicle\ObjectSpawns\DoorControllers\Truck\Passenger\GetOut\Open\DriverViaPassenger\Regular\Regular_SEQ):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Passenger_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -19644,7 +20516,6 @@
 
 [21144](\Global\Vehicle\ObjectSpawns\DoorControllers\Truck\Passenger\GetOut\Open\DriverViaPassenger\Regular\Regular_SEQ\Interrupted\WhileDoorOpening):
 	[0ms](AnimationTrack):
-		[Name]: Truck_Drive_Passenger_Out_Object
 		[Group]: Truck_Drive
 		[Begin]: 2.200000
 		[End]: 2.200000
@@ -19955,7 +20826,6 @@
 
 [20913](\Global\Vehicle\ObjectSpawns\DoorControllers\Van\Driver\GetOut\Open\Quick\Quick_SEQ):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Quike_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -19967,7 +20837,6 @@
 
 [20915](\Global\Vehicle\ObjectSpawns\DoorControllers\Van\Driver\GetOut\Open\Regular\Regular_SEQ):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -19976,7 +20845,6 @@
 
 [20916](\Global\Vehicle\ObjectSpawns\DoorControllers\Van\Driver\GetOut\Open\Regular\Regular_SEQ\Interrupted\WhileDoorOpening):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 1.800000
 		[End]: 1.800000
@@ -20228,7 +21096,6 @@
 [20964](\Global\Vehicle\ObjectSpawns\DoorControllers\Van\Passenger\GetIn\Open\Regular\Regular_SEQ\Interrupted\WhileDoorOpening\DoorOpened)
 [20988](\Global\Vehicle\ObjectSpawns\DoorControllers\Van\Passenger\GetOut\AutoCloseDoor\ClosePassSideDoor):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Passenger_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 2.200000
 		[End]: -1.000000
@@ -20240,7 +21107,6 @@
 
 [20970](\Global\Vehicle\ObjectSpawns\DoorControllers\Van\Passenger\GetOut\Open\DriverViaPassenger\Regular\Regular_SEQ):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Passenger_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -20249,7 +21115,6 @@
 
 [20971](\Global\Vehicle\ObjectSpawns\DoorControllers\Van\Passenger\GetOut\Open\DriverViaPassenger\Regular\Regular_SEQ\Interrupted\WhileDoorOpening):
 	[0ms](AnimationTrack):
-		[Name]: Van_Drive_Passenger_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 2.200000
 		[End]: 2.200000
@@ -21320,7 +22185,6 @@
 [21199](\Global\Vehicle\Object\Ride\Ride\Reactions\Cower\Female\CowerExit)
 [21200](\Global\Vehicle\Object\Ride\Ride\Reactions\Cower\Male):
 	[0ms](AnimationTrack):
-		[Name]: PED_Cower_Loop_Male
 		[Group]: Pedestrian_Scared_M
 		[Begin]: 0.000000
 		[End]: -1.000000

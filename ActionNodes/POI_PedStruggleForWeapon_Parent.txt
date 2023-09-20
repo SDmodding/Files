@@ -17,7 +17,8 @@
 	[0ms](AttackTimerTrack)
 	[0ms](SequenceTrack):
 		[ID]: 27351
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetLockTrack)
 	[0ms](TargetPlayTrack)
 	[0ms](TargetSteerToTrack)
@@ -29,10 +30,12 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](SequenceTrack):
 		[ID]: 27352
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [27352](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapGIV\Stunned\Dead):
 	[0ms](AnimationTrack):
@@ -42,7 +45,8 @@
 	[0ms](HealthSetPercentageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18890
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SkookumTrack):
 		[Class]: Character
 		[Script]: poi_stop_using_use()

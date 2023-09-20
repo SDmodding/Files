@@ -95,12 +95,18 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ResourceOpportunityTrack)
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -110,11 +116,13 @@
 		[Group]: HungryGhostsLGhoul
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](InvulnerableTrack)
 	[0ms](PlayEffectTrack)
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](UnhideTrack)
 	[1000ms](DialogueTrackWeaponImpact)
 	[1500ms](HideTrack)
@@ -125,9 +133,14 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](PlayEffectTrack)
 	[0ms](RagdollAquireTrack)
@@ -139,7 +152,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_NONE
 
 [18877](\Global\HitTree\PostHit\Downed\FaceDown\Dead\PlayerRevive):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](HealthSetPercentageTrack)
 	[0ms](RagdollReleaseTrack)
 	[0ms](SequenceTrack):
@@ -165,9 +179,14 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](PlayEffectTrack)
 	[0ms](SpawnTrack):
@@ -194,9 +213,14 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](PlayEffectTrack)
 	[0ms](SpawnTrack):
@@ -223,9 +247,14 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](PlayEffectTrack)
@@ -253,9 +282,14 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](PlayEffectTrack)
 	[0ms](SpawnTrack):
@@ -271,7 +305,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -288,7 +323,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -347,7 +383,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -364,7 +401,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -381,7 +419,8 @@
 		[Group]: Ground_Arrest
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](InvulnerableTrack)
 	[0ms](SetOutOfFightTrack)
 	[0ms](SimObjectFlagSetTrack)
@@ -401,7 +440,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](SequenceTrack):
 		[ID]: 0
 
@@ -411,7 +451,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](InvulnerableTrack)
 	[0ms](SetOutOfFightTrack)
 	[0ms](SimObjectFlagSetTrack)
@@ -443,7 +484,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -460,7 +502,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -477,7 +520,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
@@ -492,7 +536,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -509,7 +554,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -530,7 +576,8 @@
 		[ID]: 18863
 	[0ms](SequenceTrack):
 		[ID]: 18930
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18863](\Global\HitTree\PostHit\Downed\FaceDown\Getup\Downed\Dead):
 	[0ms](AnimationTrack):
@@ -541,7 +588,8 @@
 	[0ms](AudioTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18835
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -552,7 +600,8 @@
 		[Group]: HungryGhostsLGhoul
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18857](\Global\HitTree\PostHit\Downed\FaceDown\Getup\Quick\AutoKick\Downed):
 	[0ms](AnimationTrack):
@@ -560,12 +609,14 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.700000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SequenceTrack):
 		[ID]: 18858
 	[0ms](SequenceTrack):
 		[ID]: 18934
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18858](\Global\HitTree\PostHit\Downed\FaceDown\Getup\Quick\AutoKick\Downed\Dead):
 	[0ms](AnimationTrack):
@@ -585,12 +636,14 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.700000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SequenceTrack):
 		[ID]: 18860
 	[0ms](SequenceTrack):
 		[ID]: 18938
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18860](\Global\HitTree\PostHit\Downed\FaceDown\Getup\Quick\Downed\Dead):
 	[0ms](AnimationTrack):
@@ -610,7 +663,8 @@
 		[Group]: Ground_HitReactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](SequenceTrack):
 		[ID]: 18835
 	[0ms](SpawnTrack):
@@ -624,12 +678,14 @@
 		[Group]: Ground_HitReactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -641,10 +697,12 @@
 		[Group]: Ground_HitReactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -656,10 +714,12 @@
 		[Group]: Ground_HitReactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -676,7 +736,8 @@
 		[ID]: 0
 	[0ms](SequenceTrack):
 		[ID]: 18772
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[666ms](OpportunityTrack)
 
 [18855](\Global\HitTree\PostHit\Downed\FaceDown\Hit\Projectile\Light2):
@@ -690,7 +751,8 @@
 		[ID]: 0
 	[0ms](SequenceTrack):
 		[ID]: 18772
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[666ms](OpportunityTrack)
 
 [18854](\Global\HitTree\PostHit\Downed\FaceDown\Hit\Projectile\Light3):
@@ -704,7 +766,8 @@
 		[ID]: 0
 	[0ms](SequenceTrack):
 		[ID]: 18772
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[666ms](OpportunityTrack)
 
 [18909](\Global\HitTree\PostHit\Downed\FaceUp\Dead\DLC_Ghost\EliteGhoul):
@@ -733,11 +796,17 @@
 		[Group]: Ground
 		[Begin]: 0.166667
 		[End]: 0.200000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ResourceOpportunityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -747,9 +816,11 @@
 		[Group]: HungryGhostsLGhoul
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](PlayEffectTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](UnhideTrack)
 	[1000ms](DialogueTrackWeaponImpact)
 	[1500ms](HideTrack)
@@ -760,9 +831,14 @@
 		[Group]: Ground
 		[Begin]: 0.166667
 		[End]: 0.200000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](SpawnTrack):
@@ -773,7 +849,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [18922](\Global\HitTree\PostHit\Downed\FaceUp\Dead\PlayerRevive):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](RagdollReleaseTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -798,9 +875,14 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
@@ -827,9 +909,14 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
@@ -856,9 +943,14 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
@@ -885,9 +977,14 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
@@ -903,7 +1000,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -921,7 +1019,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -938,7 +1037,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -955,7 +1055,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -974,7 +1075,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -991,7 +1093,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -1008,7 +1111,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 7.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -1025,7 +1129,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -1041,7 +1146,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18893](\Global\HitTree\PostHit\Downed\FaceUp\FaceUp_SpineWrith):
 	[0ms](AnimationTrack):
@@ -1049,7 +1155,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -1066,7 +1173,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -1085,7 +1193,8 @@
 		[Group]: Ground_HitReactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -1099,7 +1208,8 @@
 		[Group]: Ground_HitReactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -1115,8 +1225,10 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
@@ -1126,7 +1238,8 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[733ms](OpportunityTrack)
-	[933ms](CharacterPhysicsTrack)
+	[933ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [18900](\Global\HitTree\PostHit\Downed\FaceUp\Hit\Heavy\HenryTest\Right\Heavy):
 	[0ms](AnimationTrack):
@@ -1134,8 +1247,10 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18893
@@ -1143,7 +1258,8 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[733ms](OpportunityTrack)
-	[1000ms](CharacterPhysicsTrack)
+	[1000ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [18903](\Global\HitTree\PostHit\Downed\FaceUp\Hit\Light\Light1):
 	[0ms](AnimationTrack):
@@ -1153,7 +1269,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1167,7 +1284,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1181,7 +1299,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1195,7 +1314,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18772
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[666ms](OpportunityTrack)
 
 [18907](\Global\HitTree\PostHit\Downed\FaceUp\Hit\Projectile\Light2):
@@ -1206,7 +1326,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18772
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[666ms](OpportunityTrack)
 
 [18906](\Global\HitTree\PostHit\Downed\FaceUp\Hit\Projectile\Light3):
@@ -1217,7 +1338,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18772
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[666ms](OpportunityTrack)
 
 [18898](\Global\HitTree\PostHit\Downed\FaceUp\Sleep):
@@ -1225,7 +1347,8 @@
 		[Group]: DrunkenMaster
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -1242,8 +1365,10 @@
 		[Group]: Ground
 		[Begin]: 0.800000
 		[End]: 1.466667
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18802](\Global\HitTree\PostHit\FromRagdollStanding\FaceUp\Standing):
 	[0ms](AnimationTrack):
@@ -1251,8 +1376,10 @@
 		[Group]: Ground
 		[Begin]: 0.700000
 		[End]: 1.466667
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18928](\Global\HitTree\PostHit\Getup\Downed):
 	[0ms](AnimationTrack):
@@ -1264,7 +1391,8 @@
 		[ID]: 18929
 	[0ms](SequenceTrack):
 		[ID]: 18931
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18929](\Global\HitTree\PostHit\Getup\Downed\Dead):
 	[0ms](AnimationTrack):
@@ -1285,7 +1413,8 @@
 		[End]: -1.000000
 	[0ms](HeadTrackTargetTrack)
 	[0ms](PlayEffectTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[666ms](LookAtTrack)
 	[666ms](TargetSteerToTrack)
 
@@ -1295,12 +1424,14 @@
 		[Group]: Defense
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SequenceTrack):
 		[ID]: 18924
 	[0ms](SequenceTrack):
 		[ID]: 18932
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18924](\Global\HitTree\PostHit\Getup\Quick\AutoKick\Downed\Dead):
 	[0ms](AnimationTrack):
@@ -1320,12 +1451,14 @@
 		[Group]: Defense
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SequenceTrack):
 		[ID]: 18926
 	[0ms](SequenceTrack):
 		[ID]: 18936
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18926](\Global\HitTree\PostHit\Getup\Quick\Downed\Dead):
 	[0ms](AnimationTrack):
@@ -1345,11 +1478,16 @@
 		[Group]: Grapples
 		[Begin]: 0.700000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[966ms](RagdollTrack)
-	[1400ms](GravityTrack)
+	[1400ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[1600ms](RagdollBlendMotorTrack)
 	[1666ms](OpportunityTrack)
 
@@ -1386,13 +1524,19 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](RagdollChangeBlendWeightTrack)
 	[0ms](RagdollChangeBlendWeightTrack)
 	[566ms](DetailedOnGroundTrack)
-	[566ms](GravityTrack)
-	[700ms](GravityTrack)
+	[566ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[700ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[700ms](OpportunityTrack)
 	[700ms](OpportunityTrack)
 
@@ -1422,7 +1566,8 @@
 		[Group]: Strikes
 		[Begin]: 0.200000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18811](\Global\HitTree\PostHit\ParkourPostHitTEST\WallBehind\HeavyFront):
 	[0ms](AnimationTrack):
@@ -1437,7 +1582,8 @@
 		[Group]: Strikes
 		[Begin]: 0.100000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18810](\Global\HitTree\PostHit\ParkourPostHitTEST\WallBehind\KnockDownHighFrontHit):
 	[0ms](AnimationTrack):
@@ -1457,7 +1603,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18813](\Global\HitTree\PostHit\ParkourPostHitTEST\WallBehind\SideKickHit):
 	[0ms](AnimationTrack):
@@ -1494,7 +1641,8 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](UnhideTrack)
-	[266ms](CharacterPhysicsTrack)
+	[266ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[266ms](PlayEffectTrack)
 	[266ms](RagdollChangeModeTrack)
 	[266ms](RagdollReleaseTrack)
@@ -1508,7 +1656,8 @@
 		[Begin]: 0.566667
 		[End]: -1.000000
 	[0ms](CameraFollowGotoTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](InvulnerableTrack)
 	[0ms](RagdollChangeAngularLimitStrTrack)
 	[0ms](RagdollChangeBlendWeightTrack)
@@ -1518,7 +1667,8 @@
 	[0ms](RagdollChangeMotorTrack)
 	[0ms](RagdollReleaseTrack)
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1545,7 +1695,8 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](UnhideTrack)
-	[266ms](CharacterPhysicsTrack)
+	[266ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[266ms](RagdollChangeModeTrack)
 	[266ms](RagdollReleaseTrack)
 	[1500ms](HideTrack)
@@ -1556,7 +1707,8 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraFollowGotoTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](InvulnerableTrack)
 	[0ms](PlayEffectTrack)
 	[0ms](RagdollChangeAngularLimitStrTrack)
@@ -1567,7 +1719,8 @@
 	[0ms](RagdollChangeMotorTrack)
 	[0ms](RagdollReleaseTrack)
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1581,14 +1734,20 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](RagdollChangeAngularLimitStrTrack)
 	[0ms](RagdollChangeMotorTrack)
 	[0ms](RagdollChangeVelocityTrackingStrTrack)
 	[0ms](ResourceOpportunityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1603,12 +1762,14 @@
 	[0ms](InvulnerableTrack)
 	[0ms](PlayEffectTrack)
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](UnhideTrack)
-	[266ms](CharacterPhysicsTrack)
+	[266ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[500ms](DialogueTrackWeaponImpact)
 	[1500ms](HideTrack)
 
@@ -1618,14 +1779,20 @@
 		[Group]: Ground
 		[Begin]: 0.166667
 		[End]: 0.200000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](RagdollChangeAngularLimitStrTrack)
 	[0ms](RagdollChangeMotorTrack)
 	[0ms](RagdollChangeVelocityTrackingStrTrack)
 	[0ms](ResourceOpportunityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1637,11 +1804,13 @@
 		[Group]: HungryGhostsLGhoul
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](InvulnerableTrack)
 	[0ms](PlayEffectTrack)
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1655,7 +1824,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrackLibraryTrack)
 	[0ms](RagdollChangeAngularLimitStrTrack)
 	[0ms](RagdollChangeMotorTrack)
@@ -1675,7 +1845,8 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrackLibraryTrack)
 	[0ms](RagdollChangeAngularLimitStrTrack)
 	[0ms](RagdollChangeMotorTrack)
@@ -1695,7 +1866,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](DamageTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -1764,7 +1937,8 @@
 		[Group]: Swim
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -1799,7 +1973,8 @@
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[266ms](CharacterPhysicsTrack)
+	[266ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[266ms](RagdollChangeModeTrack)
 	[266ms](RagdollReleaseTrack)
 
@@ -1810,7 +1985,8 @@
 		[Begin]: 0.000000
 		[End]: 0.666667
 	[0ms](CameraFollowGotoTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollChangeAngularLimitStrTrack)
 	[0ms](RagdollChangeBlendWeightTrack)
 	[0ms](RagdollChangeBlendWeightTrack)
@@ -1820,7 +1996,8 @@
 	[0ms](RagdollReleaseTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18861
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1837,12 +2014,14 @@
 	[0ms](RagdollChangeModeTrack)
 	[0ms](RagdollChangeMotorTrack)
 	[0ms](RagdollChangeVelocityTrackingStrTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[100ms](RagdollReleaseTrack)
-	[200ms](CharacterPhysicsTrack)
+	[200ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 
 [18786](\Global\HitTree\PostHit\Ragdoll\Intermediate\Intermediate\Getup\FaceUp\GetupFaceup):
 	[0ms](AnimationTrack):
@@ -1851,7 +2030,8 @@
 		[Begin]: 0.000000
 		[End]: 0.666667
 	[0ms](CameraFollowGotoTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollChangeAngularLimitStrTrack)
 	[0ms](RagdollChangeBlendWeightTrack)
 	[0ms](RagdollChangeBlendWeightTrack)
@@ -1861,7 +2041,8 @@
 	[0ms](RagdollReleaseTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18802
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1874,7 +2055,8 @@
 		[Begin]: 0.000000
 		[End]: 0.666667
 	[0ms](CameraFollowGotoTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollChangeAngularLimitStrTrack)
 	[0ms](RagdollChangeBlendWeightTrack)
 	[0ms](RagdollChangeBlendWeightTrack)
@@ -1884,7 +2066,8 @@
 	[0ms](RagdollReleaseTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18927
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1903,11 +2086,13 @@
 	[0ms](RagdollChangeMotorTrack)
 	[0ms](RagdollChangeVelocityTrackingStrTrack)
 	[0ms](RagdollReleaseTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[200ms](CharacterPhysicsTrack)
+	[200ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 
 [18783](\Global\HitTree\PostHit\Ragdoll\Intermediate\Intermediate\LongFall)
 [18772](\Global\HitTree\PostHit\Ragdoll\Ragdoll):
@@ -2022,8 +2207,10 @@
 		[Group]: Strikes
 		[Begin]: 0.933333
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2042,7 +2229,8 @@
 	[0ms](AudioTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18842
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2069,8 +2257,10 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18831](\Global\HitTree\PostHit\Stunned\Getup\OnOneKnee):
 	[0ms](AnimationTrack):
@@ -2078,7 +2268,8 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [18820](\Global\HitTree\PostHit\Stunned\OnOneKnee):
 	[0ms](AnimationTrack):
@@ -2104,7 +2295,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18827](\Global\HitTree\PostHit\Stunned\OnOneKnee\FromGrappleStrike):
 	[0ms](AnimationTrack):
@@ -2126,8 +2318,10 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18823](\Global\HitTree\PostHit\Stunned\OnOneKnee\Stunned):
 	[0ms](AnimationTrack):
@@ -2135,7 +2329,8 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
@@ -2152,8 +2347,10 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18824](\Global\HitTree\PostHit\Stunned\OnOneKnee\Stunned\Getup\GetUp_PED_Scared):
 	[0ms](AnimationTrack):
@@ -2161,8 +2358,10 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: 0.966667
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18826](\Global\HitTree\PostHit\Stunned\OnOneKnee\Stunned\Getup\Getup):
 	[0ms](AnimationTrack):
@@ -2170,8 +2369,10 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[600ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[600ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18828](\Global\HitTree\PostHit\Stunned\Right_Leg\Stunned):
 	[0ms](AnimationTrack):
@@ -2179,7 +2380,8 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[33ms](SpawnTrack):
@@ -2196,8 +2398,10 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18830](\Global\HitTree\PostHit\Stunned\Right_Leg\Stunned\Util\StunEffect):
 	[0ms](ExecuteTrack)
@@ -2214,7 +2418,8 @@
 		[Begin]: 0.666667
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](OpportunityTrack)
 
 [18938](\Global\HitTree\PostHit\TransToStanding\Getup\FromFaceDownQuick):
@@ -2224,7 +2429,8 @@
 		[Begin]: 0.733333
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 
@@ -2235,7 +2441,8 @@
 		[Begin]: 0.733333
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 
@@ -2326,7 +2533,8 @@
 		[Begin]: 0.800000
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](OpportunityTrack)
 
 [18936](\Global\HitTree\PostHit\TransToStanding\Getup\FromFaceUpQuick):
@@ -2336,7 +2544,8 @@
 		[Begin]: 0.733333
 		[End]: 1.033333
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 
@@ -2347,7 +2556,8 @@
 		[Begin]: 0.733333
 		[End]: 1.033333
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 
@@ -3572,7 +3782,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17222](\Global\HitTree\PreReactionControl\Ragdoll\Utility\RagdollRecovery):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollChangeModeTrack)
 	[0ms](RagdollReleaseTrack)
 
@@ -4038,7 +4249,8 @@
 		[TargetOnly]: 1
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetSteerToTrack)
 	[100ms](MinimumDistanceTrack):
 		[MinimumDistance]: 1.300000
@@ -4076,7 +4288,8 @@
 		[TargetMovement]: 0.000000
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PlayEffectTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SimObjectFlagSetTrack)
 	[0ms](TargetAssignTrack)
 	[0ms](TargetLockTrack)
@@ -4115,7 +4328,8 @@
 	[0ms](InvulnerableTrack)
 	[0ms](MasterTrack)
 	[0ms](PlayEffectTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SimObjectFlagSetTrack)
 	[0ms](SkookumTrack):
 		[Class]: Character
@@ -4231,7 +4445,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4499,7 +4714,8 @@
 		[TargetType]: eTARGET_TYPE_ATTACKER
 	[0ms](SequenceTrack):
 		[ID]: 18772
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4684,7 +4900,8 @@
 
 [17795](\Global\HitTree\Reactions\Counters\Grapple\BSL_Counter_HACK\From_Back\MediumDamage\Elbow2\SpawnerGIV):
 	[0ms](AttackTimerTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4729,7 +4946,8 @@
 [17798](\Global\HitTree\Reactions\Counters\Grapple\BSL_Counter_HACK\From_Back\MediumDamage\Elbow2\SpawnerRCV):
 	[0ms](SequenceTrack):
 		[ID]: 18896
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -4787,7 +5005,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[700ms](EffectSurfaceCollisionTrack)
 	[700ms](EffectSurfaceCollisionTrack)
 	[933ms](PlayEffectTrack)
@@ -4830,7 +5049,8 @@
 		[Group]: Grapples_GroundPound
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -5179,7 +5399,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5210,7 +5431,8 @@
 		[Begin]: 0.000000
 		[End]: 1.100000
 	[0ms](AttackTimerTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5268,7 +5490,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18893
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5386,7 +5609,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5404,7 +5628,8 @@
 		[Group]: Grapples
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[33ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5453,7 +5678,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[933ms](PlayEffectTrack)
 	[933ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -5478,7 +5704,8 @@
 		[Group]: DefenseFrontCounter
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[566ms](PlayEffectTrack)
 	[600ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -5542,7 +5769,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[633ms](PlayEffectTrack)
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -5581,7 +5809,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[633ms](PlayEffectTrack)
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -5622,7 +5851,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[466ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5630,7 +5860,8 @@
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[1233ms](CharacterPhysicsTrack)
+	[1233ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 
 [17985](\Global\HitTree\Reactions\Counters\Grapple\From_Back\Kick\Left\HeavyDamage\Catch\Finish\Takedown\GroundPunch\Counter_GIV):
 	[0ms](AnimationTrack):
@@ -5684,7 +5915,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[633ms](PlayEffectTrack)
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -5698,7 +5930,8 @@
 	[1566ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[2033ms](CharacterPhysicsTrack)
+	[2033ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 
 [17989](\Global\HitTree\Reactions\Counters\Grapple\From_Back\Kick\Left\HeavyDamage\Catch\Finish\Takedown\PunchRepeat\Counter_GIV):
 	[0ms](AnimationTrack):
@@ -5746,7 +5979,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5804,7 +6038,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5862,7 +6097,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5920,7 +6156,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -5978,7 +6215,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6035,7 +6273,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6091,7 +6330,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6165,7 +6405,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6221,7 +6462,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6278,7 +6520,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6295,7 +6538,8 @@
 	[800ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[1033ms](CharacterPhysicsTrack)
+	[1033ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 
 [17934](\Global\HitTree\Reactions\Counters\Grapple\From_Back\Kick\Right\AgainstSweep\MediumDamage\SpawnerGIV):
 	[0ms](SpawnTrack):
@@ -6371,7 +6615,8 @@
 		[Group]: Defense
 		[Begin]: 0.766667
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6409,7 +6654,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetSteerToTrack)
 	[266ms](SpawnTrack):
 		[KeepAlive]: 1
@@ -6430,7 +6676,8 @@
 
 [17948](\Global\HitTree\Reactions\Counters\Grapple\From_Back\Kick\Right\HeavyDamage\Elbow1\SpawnerGIV):
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6466,7 +6713,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18889
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6511,7 +6759,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[600ms](EffectSurfaceCollisionTrack)
 	[833ms](PlayEffectTrack)
 	[866ms](SpawnTrack):
@@ -6544,7 +6793,8 @@
 
 [17955](\Global\HitTree\Reactions\Counters\Grapple\From_Back\Kick\Right\HeavyDamage\Elbow2\SpawnerGIV):
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6583,7 +6833,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18896
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6641,7 +6892,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[700ms](EffectSurfaceCollisionTrack)
 	[700ms](EffectSurfaceCollisionTrack)
 	[933ms](PlayEffectTrack)
@@ -6706,7 +6958,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -6787,7 +7040,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[633ms](PlayEffectTrack)
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -6813,7 +7067,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[633ms](PlayEffectTrack)
 	[666ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -6882,7 +7137,8 @@
 		[End]: 1.133333
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[633ms](PlayEffectTrack)
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -6905,7 +7161,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetSteerToTrack)
 	[66ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -6967,7 +7224,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18836
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7003,7 +7261,8 @@
 		[Begin]: 0.000000
 		[End]: 1.100000
 	[0ms](AttackTimerTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7067,7 +7326,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7098,7 +7358,8 @@
 		[Begin]: 0.000000
 		[End]: 1.100000
 	[0ms](AttackTimerTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7159,7 +7420,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[33ms](PairedGrappleTrack)
 	[500ms](PlayEffectTrack)
 	[533ms](OpportunityTrack)
@@ -7242,7 +7504,8 @@
 		[End]: 0.500000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[433ms](PlayEffectTrack)
 	[566ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -7256,7 +7519,8 @@
 		[End]: 0.666667
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[366ms](PlayEffectTrack)
 	[566ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -7290,7 +7554,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[300ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7380,7 +7645,8 @@
 		[End]: 0.500000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[433ms](PlayEffectTrack)
 	[566ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -7394,7 +7660,8 @@
 		[End]: 0.666667
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[366ms](PlayEffectTrack)
 	[566ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -7406,7 +7673,8 @@
 		[Group]: Defense
 		[Begin]: 0.533333
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7478,7 +7746,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7535,7 +7804,8 @@
 		[Group]: Defense
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[33ms](PairedGrappleTrack)
 	[400ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -7606,7 +7876,8 @@
 		[End]: 0.500000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[433ms](PlayEffectTrack)
 	[566ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -7618,7 +7889,8 @@
 		[Group]: Defense
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[233ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7640,7 +7912,8 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7697,7 +7970,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7734,7 +8008,8 @@
 		[Begin]: 0.000000
 		[End]: 1.100000
 	[0ms](AttackTimerTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7793,7 +8068,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18893
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7872,7 +8148,8 @@
 		[End]: 0.700000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[366ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7898,7 +8175,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[366ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -7950,7 +8228,8 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8025,7 +8304,8 @@
 		[End]: 0.366667
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[400ms](PlayEffectTrack)
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -8037,7 +8317,8 @@
 		[Group]: Defense
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[566ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8114,7 +8395,8 @@
 		[End]: 0.366667
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[400ms](PlayEffectTrack)
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -8148,7 +8430,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[266ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8235,7 +8518,8 @@
 		[End]: 0.366667
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[400ms](PlayEffectTrack)
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -8249,7 +8533,8 @@
 		[End]: 0.666667
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8272,7 +8557,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[200ms](PlayEffectTrack)
 	[366ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -8344,7 +8630,8 @@
 		[End]: 0.700000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[366ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8370,7 +8657,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[366ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8448,7 +8736,8 @@
 		[End]: 0.366667
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[400ms](PlayEffectTrack)
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -8460,7 +8749,8 @@
 		[Group]: Defense
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[566ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8538,7 +8828,8 @@
 		[End]: 0.366667
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[400ms](PlayEffectTrack)
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -8552,7 +8843,8 @@
 		[End]: 0.666667
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8575,7 +8867,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[200ms](PlayEffectTrack)
 	[366ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -8602,7 +8895,6 @@
 
 [17868](\Global\HitTree\Reactions\Counters\Grapple\From_Back\Weapon\Left\Default\HeavyDamage\Counter_GIV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_LFT_Bck_01_GIV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.066667
 		[End]: -1.000000
@@ -8626,7 +8918,6 @@
 
 [17869](\Global\HitTree\Reactions\Counters\Grapple\From_Back\Weapon\Left\Default\HeavyDamage\Counter_RCV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_LFT_Bck_01_RCV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.066667
 		[End]: -1.000000
@@ -8643,7 +8934,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18894
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8669,7 +8961,6 @@
 
 [17864](\Global\HitTree\Reactions\Counters\Grapple\From_Back\Weapon\Right\02\HeavyDamage\Counter_GIV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_RIT_Bck_03_GIV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.100000
 		[End]: -1.000000
@@ -8692,7 +8983,6 @@
 
 [17865](\Global\HitTree\Reactions\Counters\Grapple\From_Back\Weapon\Right\02\HeavyDamage\Counter_RCV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_RIT_Bck_03_RCV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.100000
 		[End]: -1.000000
@@ -8709,7 +8999,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18836
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8732,7 +9023,6 @@
 
 [17866](\Global\HitTree\Reactions\Counters\Grapple\From_Back\Weapon\Right\03\MediumDamage\Counter_GIV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_RIT_Bck_02_GIV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.066667
 		[End]: 1.258333
@@ -8756,7 +9046,6 @@
 
 [17867](\Global\HitTree\Reactions\Counters\Grapple\From_Back\Weapon\Right\03\MediumDamage\Counter_RCV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_RIT_Bck_02_RCV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.066667
 		[End]: -1.000000
@@ -8795,7 +9084,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18893
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8870,7 +9160,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18837
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8926,7 +9217,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -8989,7 +9281,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18894
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9077,7 +9370,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18120
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9164,7 +9458,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9240,7 +9535,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9358,7 +9654,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18136
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[900ms](PlayEffectTrack)
 	[1516ms](PlayEffectTrack)
 	[1633ms](SpawnTrack):
@@ -9377,7 +9674,8 @@
 		[Group]: Grapples
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](PlayEffectTrack)
 	[566ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -9471,7 +9769,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18142
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[833ms](PlayEffectTrack)
 	[1566ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -9496,7 +9795,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18836
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[533ms](PlayEffectTrack)
 	[900ms](PlayEffectTrack)
 	[1000ms](SpawnTrack):
@@ -9576,7 +9876,8 @@
 		[TimeToDistance]: 0.300000
 		[TargetMovement]: 0.300000
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9651,7 +9952,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9710,7 +10012,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18836
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9803,7 +10106,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18082
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9874,7 +10178,8 @@
 		[Group]: DrunkenMaster
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](TargetGrappleReleaseTrack)
 	[0ms](TargetPlayTrack)
 	[0ms](TargetSyncPositionTrack)
@@ -9911,13 +10216,16 @@
 	[500ms](PlayEffectTrack)
 
 [18096](\Global\HitTree\Reactions\Counters\Grapple\Kick\Right\Drunken\MediumDamage\Counter_GIV\Counter_Loop_GIV\HACKTicker\Crawl):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 
 [18095](\Global\HitTree\Reactions\Counters\Grapple\Kick\Right\Drunken\MediumDamage\Counter_GIV\Counter_Loop_GIV\HACKTicker\Crouch):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 
 [18094](\Global\HitTree\Reactions\Counters\Grapple\Kick\Right\Drunken\MediumDamage\Counter_GIV\Counter_Loop_GIV\HACKTicker\Walk):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 
 [18098](\Global\HitTree\Reactions\Counters\Grapple\Kick\Right\Drunken\MediumDamage\Counter_RCV):
 	[0ms](AnimationTrack):
@@ -9940,7 +10248,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -9991,7 +10300,8 @@
 		[TargetType]: eTARGET_TYPE_ATTACKER
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10076,7 +10386,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18889
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10146,7 +10457,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10217,7 +10529,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18842
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10304,7 +10617,8 @@
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10403,7 +10717,8 @@
 		[TimeToDistance]: 0.300000
 		[TargetMovement]: 0.300000
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10478,7 +10793,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[433ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10542,7 +10858,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10618,7 +10935,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18894
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10635,7 +10953,8 @@
 
 [18062](\Global\HitTree\Reactions\Counters\Grapple\Punch\Left\HeavyDamage\ThroatChopFinish\SpawnerGIV):
 	[0ms](AttackTimerTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10743,7 +11062,8 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[633ms](PlayEffectTrack)
 	[666ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -10765,7 +11085,8 @@
 		[End]: 0.600000
 	[0ms](SequenceTrack):
 		[ID]: 18068
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[466ms](PlayEffectTrack)
 
 [18068](\Global\HitTree\Reactions\Counters\Grapple\Punch\Left\HeavyDamage\ThroatChopFinish\SpawnerRCV\ThroatChop\Counter_RCV):
@@ -10776,7 +11097,8 @@
 		[End]: 0.500000
 	[0ms](SequenceTrack):
 		[ID]: 18069
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[466ms](PlayEffectTrack)
 	[900ms](PlayEffectTrack)
 	[900ms](PlayEffectTrack)
@@ -10845,7 +11167,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18893
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -10922,7 +11245,8 @@
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -11003,7 +11327,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -11094,7 +11419,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18893
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -11125,7 +11451,8 @@
 
 [18074](\Global\HitTree\Reactions\Counters\Grapple\Punch\Left\MediumDamage\ThroatChopStun\SpawnerGIV):
 	[0ms](AttackTimerTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -11205,7 +11532,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18079
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[466ms](PlayEffectTrack)
 
 [18079](\Global\HitTree\Reactions\Counters\Grapple\Punch\Left\MediumDamage\ThroatChopStun\SpawnerRCV\ThroatChop\Counter_RCV):
@@ -11214,7 +11542,8 @@
 		[Group]: Defense
 		[Begin]: 0.000000
 		[End]: 0.633333
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[466ms](PlayEffectTrack)
 	[900ms](PlayEffectTrack)
 	[900ms](PlayEffectTrack)
@@ -11297,7 +11626,8 @@
 		[TimeToDistance]: 0.300000
 		[TargetMovement]: 0.300000
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -11372,7 +11702,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -11489,7 +11820,8 @@
 		[TimeToDistance]: 0.300000
 		[TargetMovement]: 0.300000
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -11515,7 +11847,6 @@
 
 [17827](\Global\HitTree\Reactions\Counters\Grapple\TONG_Counter_HACK\From_Back\HeavyDamage\Counter_GIV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_RIT_Bck_03_GIV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.100000
 		[End]: -1.000000
@@ -11539,7 +11870,6 @@
 
 [17828](\Global\HitTree\Reactions\Counters\Grapple\TONG_Counter_HACK\From_Back\HeavyDamage\Counter_RCV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_RIT_Bck_03_RCV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.100000
 		[End]: -1.000000
@@ -11556,7 +11886,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18836
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -11603,7 +11934,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -11945,7 +12277,6 @@
 
 [18029](\Global\HitTree\Reactions\Counters\Grapple\Weapon\Right\Default\HeavyDamage\HeadAttack\Counter_GIV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_RIT_03_GIV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.100000
 		[End]: -1.000000
@@ -11962,7 +12293,6 @@
 
 [18030](\Global\HitTree\Reactions\Counters\Grapple\Weapon\Right\Default\HeavyDamage\HeadAttack\Counter_RCV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_RIT_03_RCV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.100000
 		[End]: -1.000000
@@ -11980,7 +12310,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18836
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12008,7 +12339,6 @@
 
 [18031](\Global\HitTree\Reactions\Counters\Grapple\Weapon\Right\Default\MediumDamage\Throwdown\Counter_GIV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_LFT_01_GIV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.066667
 		[End]: -1.000000
@@ -12026,7 +12356,6 @@
 
 [18032](\Global\HitTree\Reactions\Counters\Grapple\Weapon\Right\Default\MediumDamage\Throwdown\Counter_RCV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_LFT_01_RCV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.066667
 		[End]: -1.000000
@@ -12044,7 +12373,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18894
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12095,7 +12425,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12117,7 +12448,6 @@
 
 [18027](\Global\HitTree\Reactions\Counters\Grapple\Weapon\Right\Knife\MediumDamage\Flip\Counter_GIV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_RIT_02_GIV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.133333
 		[End]: -1.000000
@@ -12135,7 +12465,6 @@
 
 [18028](\Global\HitTree\Reactions\Counters\Grapple\Weapon\Right\Knife\MediumDamage\Flip\Counter_RCV):
 	[0ms](AnimationTrack):
-		[Name]: DEF_Counter_WPN_High_RIT_02_RCV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.133333
 		[End]: -1.000000
@@ -12175,7 +12504,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18893
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12225,7 +12555,8 @@
 		[Group]: Defense
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[400ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12262,7 +12593,8 @@
 		[Group]: Defense
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12321,7 +12653,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18840
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12398,7 +12731,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18893
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12465,7 +12799,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18840
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12534,7 +12869,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18840
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12607,7 +12943,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12692,7 +13029,8 @@
 		[Group]: Defense
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[200ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12766,7 +13104,8 @@
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12838,7 +13177,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18836
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12895,7 +13235,8 @@
 		[Group]: Defense
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -12976,7 +13317,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18893
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -13522,7 +13864,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -13593,27 +13937,36 @@
 	[0ms](SubjectFollowOverrideTrack)
 
 [18252](\Global\HitTree\Reactions\Counters\Utility\ImpactDamageEffect\Ragdoll\RecoverRagdoll):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](MasterTrack)
 	[0ms](RagdollChangeModeTrack)
 	[0ms](RagdollReleaseTrack)
 	[0ms](SubjectFollowOverrideTrack)
 
 [18282](\Global\HitTree\Reactions\Counters\Utility\ImpactDamageEffect\Ragdoll\Utility\BallisticGrav\Off):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 
 [18283](\Global\HitTree\Reactions\Counters\Utility\ImpactDamageEffect\Ragdoll\Utility\BallisticGrav\On):
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 1
 	[0ms](OpportunityTrack)
 
 [18287](\Global\HitTree\Reactions\Counters\Utility\ImpactDamageEffect\Ragdoll\Utility\BreakOut\Default):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollReleaseTrack)
 
 [18286](\Global\HitTree\Reactions\Counters\Utility\ImpactDamageEffect\Ragdoll\Utility\BreakOut\IsPlayer):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollChangeModeTrack)
 
 [18285](\Global\HitTree\Reactions\Counters\Utility\ImpactDamageEffect\Ragdoll\Utility\ConditionalRelease\Default):
@@ -14042,7 +14395,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14103,7 +14457,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](OpportunityTrack)
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14195,7 +14550,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18893
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14292,7 +14648,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](SequenceTrack):
 		[ID]: 18836
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14351,7 +14708,8 @@
 		[End]: -1.000000
 	[0ms](CoverHoldPositionTrack)
 	[0ms](OpportunityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [17636](\Global\HitTree\Reactions\Death_Touch\BlindFireReac\Right\Shot_Front):
 	[0ms](AnimationTrack):
@@ -14360,7 +14718,8 @@
 		[End]: -1.000000
 	[0ms](CoverHoldPositionTrack)
 	[0ms](OpportunityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [17639](\Global\HitTree\Reactions\Death_Touch\BlindFireReac\Utility\Shot_KO\Dead):
 	[0ms](AnimationTrack):
@@ -14369,7 +14728,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](OpportunityTrack)
 
 [17638](\Global\HitTree\Reactions\Death_Touch\BlindFireReac\Utility\Shot_KO\Knockout):
@@ -14379,7 +14739,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](OpportunityTrack)
 
 [17777](\Global\HitTree\Reactions\Death_Touch\Default\Downed):
@@ -14407,12 +14768,14 @@
 	[0ms](RagdollBlendMotorTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[100ms](DialogueTrackWeaponImpact)
-	[566ms](CharacterPhysicsTrack)
+	[566ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[1500ms](RagdollTrack)
 
 [17664](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\Chest\Shotgun\Shot_Chest):
@@ -14422,7 +14785,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14438,7 +14802,8 @@
 	[0ms](RagdollMotorTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14452,7 +14817,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14467,7 +14833,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14482,12 +14849,14 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18892
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[100ms](DialogueTrackWeaponImpact)
-	[1000ms](CharacterPhysicsTrack)
+	[1000ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17644](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\Head\Dead):
 	[0ms](AnimationTrack):
@@ -14496,14 +14865,16 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[100ms](DialogueTrackWeaponImpact)
 	[500ms](RagdollMotorTrack)
 	[500ms](RagdollTrack)
-	[1000ms](CharacterPhysicsTrack)
+	[1000ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17642](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\Head\Shotgun):
 	[0ms](AnimationTrack):
@@ -14514,7 +14885,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[266ms](OpportunityTrack)
 
@@ -14537,14 +14909,16 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[100ms](DialogueTrackWeaponImpact)
 	[300ms](RagdollTrack)
 	[500ms](RagdollMotorTrack)
-	[600ms](CharacterPhysicsTrack)
+	[600ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17651](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\L_Hand\HeavyShot\L_Hand):
 	[0ms](AnimationTrack):
@@ -14553,11 +14927,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18888
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[266ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[2133ms](CharacterPhysicsTrack)
+	[2133ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17652](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\L_Hand\L_Hand):
 	[0ms](AnimationTrack):
@@ -14565,11 +14941,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18839
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[266ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[2133ms](CharacterPhysicsTrack)
+	[2133ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17650](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\L_Hand\Sniper_Rifle\L_Hand):
 	[0ms](AnimationTrack):
@@ -14578,11 +14956,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18888
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[266ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[2133ms](CharacterPhysicsTrack)
+	[2133ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17661](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\L_Leg\L_Leg):
 	[0ms](AnimationTrack):
@@ -14591,11 +14971,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18890
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[666ms](CharacterPhysicsTrack)
+	[666ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17659](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\L_Leg\Shotgun):
 	[0ms](AnimationTrack):
@@ -14605,12 +14987,14 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[300ms](OpportunityTrack)
-	[600ms](CharacterPhysicsTrack)
+	[600ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17660](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\L_Leg\Shotgun\Ragdoll):
 	[0ms](AnimationTrack):
@@ -14629,13 +15013,15 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[500ms](RagdollMotorTrack)
 	[500ms](RagdollTrack)
-	[600ms](CharacterPhysicsTrack)
+	[600ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17649](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\R_Hand\R_Hand):
 	[0ms](AnimationTrack):
@@ -14644,11 +15030,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18839
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[200ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[3400ms](CharacterPhysicsTrack)
+	[3400ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17648](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\R_Hand\Shotgun\R_Hand):
 	[0ms](AnimationTrack):
@@ -14657,11 +15045,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18840
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[200ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[333ms](CharacterPhysicsTrack)
+	[333ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17646](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\R_Hand\Sniper_Rifle\R_Hand):
 	[0ms](AnimationTrack):
@@ -14671,11 +15061,13 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18840
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[200ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[333ms](CharacterPhysicsTrack)
+	[333ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[333ms](OpportunityTrack)
 
 [17647](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\R_Hand\Sniper_Rifle\R_Hand\Ragdoll):
@@ -14694,11 +15086,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18841
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[600ms](CharacterPhysicsTrack)
+	[600ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17657](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\R_Leg\R_Leg\Ragdoll):
 	[0ms](AnimationTrack):
@@ -14718,12 +15112,14 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[300ms](OpportunityTrack)
-	[600ms](CharacterPhysicsTrack)
+	[600ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17655](\Global\HitTree\Reactions\Death_Touch\Front\KOAnims\R_Leg\Shotgun\Ragdoll):
 	[0ms](AnimationTrack):
@@ -14742,13 +15138,15 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[500ms](RagdollMotorTrack)
 	[500ms](RagdollTrack)
-	[600ms](CharacterPhysicsTrack)
+	[600ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17703](\Global\HitTree\Reactions\Death_Touch\Front\Standing\Chest\AlliedNoDeath\Shot_Chest):
 	[0ms](AnimationTrack):
@@ -14757,7 +15155,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14770,7 +15169,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[266ms](OpportunityTrack)
 
@@ -14781,7 +15181,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[200ms](OpportunityTrack)
 
@@ -14803,7 +15204,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[733ms](OpportunityTrack)
 
@@ -14836,7 +15238,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14853,7 +15256,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14893,7 +15297,8 @@
 	[0ms](RagdollMotorTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -14925,7 +15330,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[300ms](OpportunityTrack)
 
@@ -14949,7 +15355,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 
 [17670](\Global\HitTree\Reactions\Death_Touch\Front\Standing\Head\Shotgun\Ragdoll):
@@ -14971,7 +15378,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[266ms](OpportunityTrack)
 
@@ -15051,13 +15459,15 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18888
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[200ms](OpportunityTrack)
 	[200ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[333ms](CharacterPhysicsTrack)
+	[333ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17674](\Global\HitTree\Reactions\Death_Touch\Front\Standing\Lefthand\Shot_Heavy_Hand_Left\Ragdoll):
 	[0ms](AnimationTrack):
@@ -15076,12 +15486,14 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[500ms](OpportunityTrack)
-	[600ms](CharacterPhysicsTrack)
+	[600ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[700ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -15124,7 +15536,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -15132,7 +15545,8 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[500ms](OpportunityTrack)
-	[600ms](CharacterPhysicsTrack)
+	[600ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17696](\Global\HitTree\Reactions\Death_Touch\Front\Standing\LegRight\HeavyShot\Ragdoll):
 	[0ms](AnimationTrack):
@@ -15229,12 +15643,14 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18840
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[200ms](OpportunityTrack)
 	[200ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[333ms](CharacterPhysicsTrack)
+	[333ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17682](\Global\HitTree\Reactions\Death_Touch\Front\Standing\Righthand\Shot_Heavy_Hand_Right\Ragdoll):
 	[0ms](AnimationTrack):
@@ -15255,7 +15671,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[266ms](OpportunityTrack)
 
@@ -15278,7 +15695,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[200ms](OpportunityTrack)
 
@@ -15298,7 +15716,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[233ms](OpportunityTrack)
 
@@ -15307,7 +15726,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[233ms](OpportunityTrack)
 
@@ -15319,7 +15739,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18772
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 
 [17560](\Global\HitTree\Reactions\Death_Touch\Ragdoll\Crouch\Front\Dead):
@@ -15329,7 +15750,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[500ms](RagdollMotorTrack)
 	[500ms](RagdollTrack)
@@ -15339,7 +15761,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -15359,7 +15782,8 @@
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[50ms](DialogueTrackWeaponImpact)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1200ms](OpportunityTrack)
 	[1200ms](RagdollChangeModeTrack)
 
@@ -15375,7 +15799,8 @@
 	[0ms](StimulusTrack)
 	[50ms](DialogueTrackWeaponImpact)
 	[266ms](RagdollMotorTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1500ms](OpportunityTrack)
 
 [17629](\Global\HitTree\Reactions\Death_Touch\Ragdoll\Default\Chest\Front\Dead_01):
@@ -15384,7 +15809,8 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -15395,11 +15821,11 @@
 
 [17630](\Global\HitTree\Reactions\Death_Touch\Ragdoll\Default\Chest\Front\Dead_02):
 	[0ms](AnimationTrack):
-		[Name]: STR_Reac_Knockdown_Chest_Knife
 		[Group]: Weapon_1hand_Equipped
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -15414,7 +15840,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -15429,7 +15856,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -15445,7 +15873,8 @@
 	[0ms](RagdollTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1500ms](OpportunityTrack)
 
 [17602](\Global\HitTree\Reactions\Death_Touch\Ragdoll\Default\Crouch\Back\Dead):
@@ -15455,7 +15884,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[50ms](DialogueTrackWeaponImpact)
@@ -15469,7 +15899,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[66ms](RagdollAquireTrack)
@@ -15482,7 +15913,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[66ms](RagdollAquireTrack)
@@ -15495,7 +15927,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[66ms](RagdollAquireTrack)
@@ -15506,7 +15939,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](ExecuteTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
@@ -15520,9 +15954,11 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](RagdollAquireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -15541,7 +15977,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1000ms](OpportunityTrack)
 	[1000ms](RagdollChangeModeTrack)
 
@@ -15556,7 +15993,8 @@
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[50ms](DialogueTrackWeaponImpact)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1166ms](OpportunityTrack)
 	[1166ms](RagdollChangeModeTrack)
 
@@ -15571,7 +16009,8 @@
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[50ms](DialogueTrackWeaponImpact)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1166ms](OpportunityTrack)
 	[1166ms](RagdollChangeModeTrack)
 
@@ -15585,7 +16024,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1000ms](OpportunityTrack)
 	[1000ms](RagdollChangeModeTrack)
 
@@ -15600,7 +16040,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1000ms](OpportunityTrack)
 	[1000ms](RagdollChangeModeTrack)
 
@@ -15614,7 +16055,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1000ms](OpportunityTrack)
 	[1000ms](RagdollChangeModeTrack)
 
@@ -15628,7 +16070,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1000ms](OpportunityTrack)
 	[1000ms](RagdollChangeModeTrack)
 
@@ -15642,7 +16085,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1000ms](OpportunityTrack)
 	[1000ms](RagdollChangeModeTrack)
 
@@ -15656,7 +16100,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1000ms](OpportunityTrack)
 	[1000ms](RagdollChangeModeTrack)
 
@@ -15670,7 +16115,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[1000ms](OpportunityTrack)
 	[1000ms](RagdollChangeModeTrack)
 
@@ -15684,7 +16130,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[666ms](OpportunityTrack)
 	[666ms](RagdollChangeModeTrack)
 
@@ -15698,7 +16145,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[600ms](OpportunityTrack)
 	[600ms](RagdollChangeModeTrack)
 
@@ -15707,7 +16155,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](DialogueTrackWeaponImpact)
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
@@ -15722,7 +16171,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](DialogueTrackWeaponImpact)
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
@@ -15737,7 +16187,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](DialogueTrackWeaponImpact)
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
@@ -15752,7 +16203,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[0ms](DialogueTrackWeaponImpact)
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
@@ -15767,12 +16219,14 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[100ms](DialogueTrackWeaponImpact)
 	[266ms](RagdollAquireTrack)
-	[500ms](CharacterPhysicsTrack)
+	[500ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[600ms](OpportunityTrack)
 	[600ms](RagdollChangeModeTrack)
 
@@ -15781,12 +16235,14 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: 0.666667
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[100ms](DialogueTrackWeaponImpact)
 	[200ms](RagdollAquireTrack)
-	[333ms](CharacterPhysicsTrack)
+	[333ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](OpportunityTrack)
 	[500ms](RagdollChangeModeTrack)
 
@@ -15795,12 +16251,14 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[100ms](DialogueTrackWeaponImpact)
 	[233ms](RagdollAquireTrack)
-	[466ms](CharacterPhysicsTrack)
+	[466ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](OpportunityTrack)
 	[500ms](RagdollChangeModeTrack)
 
@@ -15809,7 +16267,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[200ms](SpawnTrack):
@@ -15818,17 +16277,20 @@
 	[266ms](RagdollAquireTrack)
 	[566ms](OpportunityTrack)
 	[566ms](RagdollChangeModeTrack)
-	[600ms](CharacterPhysicsTrack)
+	[600ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17568](\Global\HitTree\Reactions\Death_Touch\Ragdoll\Moving\KO_Back\Left_Knee\Knockdown):
 	[0ms](AnimationTrack):
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[233ms](CharacterPhysicsTrack)
+	[233ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[600ms](RagdollAquireTrack)
 	[1133ms](OpportunityTrack)
 	[1133ms](RagdollChangeModeTrack)
@@ -15838,27 +16300,32 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: 0.866667
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[333ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](RagdollAquireTrack)
 	[833ms](OpportunityTrack)
 	[833ms](RagdollChangeModeTrack)
-	[1466ms](CharacterPhysicsTrack)
+	[1466ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [17569](\Global\HitTree\Reactions\Death_Touch\Ragdoll\Moving\KO_Back\Right_Knee\Knockdown):
 	[0ms](AnimationTrack):
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
-	[366ms](CharacterPhysicsTrack)
+	[366ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](RagdollAquireTrack)
 	[733ms](OpportunityTrack)
 	[733ms](RagdollChangeModeTrack)
@@ -15872,7 +16339,8 @@
 	[0ms](StimulusTrack)
 	[100ms](DialogueTrackWeaponImpact)
 	[300ms](RagdollAquireTrack)
-	[466ms](CharacterPhysicsTrack)
+	[466ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[533ms](OpportunityTrack)
 	[533ms](RagdollChangeModeTrack)
 
@@ -15890,14 +16358,16 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](RagdollAquireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[50ms](DialogueTrackWeaponImpact)
-	[500ms](CharacterPhysicsTrack)
+	[500ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](OpportunityTrack)
 	[500ms](RagdollChangeModeTrack)
 	[966ms](SpawnTrack):
@@ -15912,7 +16382,8 @@
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[50ms](DialogueTrackWeaponImpact)
-	[266ms](CharacterPhysicsTrack)
+	[266ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[600ms](RagdollAquireTrack)
 	[1133ms](OpportunityTrack)
 	[1133ms](RagdollChangeModeTrack)
@@ -15922,7 +16393,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -15933,7 +16405,8 @@
 	[0ms](StimulusTrack)
 	[50ms](DialogueTrackWeaponImpact)
 	[166ms](RagdollAquireTrack)
-	[233ms](CharacterPhysicsTrack)
+	[233ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[333ms](OpportunityTrack)
 	[333ms](RagdollChangeModeTrack)
 
@@ -15945,7 +16418,8 @@
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[50ms](DialogueTrackWeaponImpact)
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](RagdollAquireTrack)
 	[733ms](OpportunityTrack)
 	[733ms](RagdollChangeModeTrack)
@@ -15967,7 +16441,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -15981,7 +16456,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -15995,7 +16471,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16009,7 +16486,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16023,7 +16501,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16037,7 +16516,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16051,7 +16531,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16065,7 +16546,8 @@
 		[Group]: Shotgun_Equipped
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16079,7 +16561,8 @@
 		[Group]: Shotgun_Equipped
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16093,7 +16576,8 @@
 		[Group]: Shotgun_Equipped
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
@@ -16107,7 +16591,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16121,7 +16606,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16135,7 +16621,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](RagdollMotorTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
@@ -16149,7 +16636,8 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16164,7 +16652,8 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16179,7 +16668,8 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16193,7 +16683,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16207,7 +16698,8 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16217,7 +16709,8 @@
 	[1666ms](RagdollChangeModeTrack)
 
 [17580](\Global\HitTree\Reactions\Death_Touch\Ragdoll\Shotgun\Default\Leg\Back\Dead):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](RagdollMotorTrack)
 	[0ms](RagdollTrack)
 	[0ms](StimulusTrack)
@@ -16230,7 +16723,8 @@
 		[Group]: Shotgun_Equipped
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16244,7 +16738,8 @@
 		[Group]: Shotgun_Equipped
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](ExecuteTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](StimulusTrack)
@@ -16254,7 +16749,8 @@
 	[566ms](RagdollChangeModeTrack)
 
 [17577](\Global\HitTree\Reactions\Death_Touch\Ragdoll\Shotgun\Default\Leg\Front\Dead):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](RagdollMotorTrack)
 	[0ms](RagdollTrack)
 	[0ms](StimulusTrack)
@@ -16302,16 +16798,19 @@
 
 [17556](\Global\HitTree\Reactions\Death_Touch\RailFall\Behind\Dead):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_Rail_Fall
 		[Group]: POI_Lean_Rail_HitReacts
 		[Begin]: 0.100000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[600ms](GravityTrack)
+	[600ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 1
 
 [17557](\Global\HitTree\Reactions\Death_Touch\RailFall\Behind\Dead\Ragdoll):
 	[0ms](MasterTrack)
@@ -16320,16 +16819,19 @@
 
 [17558](\Global\HitTree\Reactions\Death_Touch\RailFall\InFront\Dead):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Rail_Lean_Fall_FWD
 		[Group]: POI_Lean_Rail_HitReacts
 		[Begin]: 0.066667
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[600ms](GravityTrack)
+	[600ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 1
 
 [17559](\Global\HitTree\Reactions\Death_Touch\RailFall\InFront\Dead\Ragdoll):
 	[0ms](MasterTrack)
@@ -16350,12 +16852,14 @@
 		[End]: 0.400000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[100ms](DialogueTrackWeaponImpact)
-	[266ms](CharacterPhysicsTrack)
+	[266ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[300ms](RagdollMotorTrack)
 	[300ms](RagdollTrack)
 
@@ -16366,13 +16870,15 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[100ms](DialogueTrackWeaponImpact)
 	[500ms](RagdollTrack)
-	[766ms](CharacterPhysicsTrack)
+	[766ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17723](\Global\HitTree\Reactions\Death_Touch\Rear\KOAnims\Back\Sniper_Rifle\Chest):
 	[0ms](AnimationTrack):
@@ -16381,13 +16887,15 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[100ms](DialogueTrackWeaponImpact)
 	[500ms](RagdollTrack)
-	[766ms](CharacterPhysicsTrack)
+	[766ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17718](\Global\HitTree\Reactions\Death_Touch\Rear\KOAnims\Butocks\Butocks):
 	[0ms](AnimationTrack):
@@ -16396,11 +16904,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[1100ms](CharacterPhysicsTrack)
+	[1100ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17717](\Global\HitTree\Reactions\Death_Touch\Rear\KOAnims\Head\Head):
 	[0ms](AnimationTrack):
@@ -16409,13 +16919,15 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[100ms](DialogueTrackWeaponImpact)
 	[500ms](RagdollTrack)
-	[1100ms](CharacterPhysicsTrack)
+	[1100ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17716](\Global\HitTree\Reactions\Death_Touch\Rear\KOAnims\Head\HeavyShot):
 	[0ms](AnimationTrack):
@@ -16436,11 +16948,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18839
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[3100ms](CharacterPhysicsTrack)
+	[3100ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17722](\Global\HitTree\Reactions\Death_Touch\Rear\KOAnims\L_Leg\L_Leg):
 	[0ms](AnimationTrack):
@@ -16449,11 +16963,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[433ms](CharacterPhysicsTrack)
+	[433ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](RagdollTrack)
 
 [17719](\Global\HitTree\Reactions\Death_Touch\Rear\KOAnims\R_Hand\R_Hand):
@@ -16463,12 +16979,14 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18777
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[2000ms](RagdollTrack)
-	[2566ms](CharacterPhysicsTrack)
+	[2566ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17721](\Global\HitTree\Reactions\Death_Touch\Rear\KOAnims\R_Leg\R_Leg):
 	[0ms](AnimationTrack):
@@ -16477,11 +16995,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[433ms](CharacterPhysicsTrack)
+	[433ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](RagdollTrack)
 
 [17738](\Global\HitTree\Reactions\Death_Touch\Rear\Moving\Back\Knockdown):
@@ -16489,10 +17009,13 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[266ms](OpportunityTrack)
-	[466ms](CharacterPhysicsTrack)
-	[4500ms](CharacterPhysicsTrack)
+	[466ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[4500ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [17739](\Global\HitTree\Reactions\Death_Touch\Rear\Moving\Back\Knockdown\Ragdoll):
 	[0ms](AnimationTrack):
@@ -16511,12 +17034,14 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[200ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[500ms](OpportunityTrack)
-	[600ms](CharacterPhysicsTrack)
+	[600ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17731](\Global\HitTree\Reactions\Death_Touch\Rear\Moving\Left_Hand\Knockdown\Ragdoll):
 	[0ms](AnimationTrack):
@@ -16535,8 +17060,10 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18890
-	[0ms](SetStateFlagTrack)
-	[233ms](CharacterPhysicsTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
+	[233ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](OpportunityTrack)
 
 [17727](\Global\HitTree\Reactions\Death_Touch\Rear\Moving\Left_Knee\Knockdown\Ragdoll):
@@ -16554,13 +17081,16 @@
 		[Group]: Shot_Reactions
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[333ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[400ms](CharacterPhysicsTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](OpportunityTrack)
-	[1466ms](CharacterPhysicsTrack)
+	[1466ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [17733](\Global\HitTree\Reactions\Death_Touch\Rear\Moving\Right_Hand\Knockdown\Ragdoll):
 	[0ms](AnimationTrack):
@@ -16578,8 +17108,10 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 18889
-	[0ms](SetStateFlagTrack)
-	[366ms](CharacterPhysicsTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
+	[366ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](OpportunityTrack)
 
 [17729](\Global\HitTree\Reactions\Death_Touch\Rear\Moving\Right_Knee\Knockdown\Ragdoll):
@@ -16599,7 +17131,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](OpportunityTrack)
 
 [17756](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\ArmLeft\01\Ragdoll):
@@ -16619,7 +17152,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](OpportunityTrack)
 
 [17758](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\ArmRight\01\Ragdoll):
@@ -16639,7 +17173,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](OpportunityTrack)
 
 [17774](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\Back\Pistol\Left\Ragdoll):
@@ -16659,7 +17194,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](OpportunityTrack)
 
 [17776](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\Back\Pistol\Right\Ragdoll):
@@ -16679,7 +17215,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](OpportunityTrack)
 
 [17770](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\Back\Rifle\Left\Ragdoll):
@@ -16699,7 +17236,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](OpportunityTrack)
 
 [17772](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\Back\Rifle\Right\Ragdoll):
@@ -16719,12 +17257,14 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[500ms](OpportunityTrack)
-	[766ms](CharacterPhysicsTrack)
+	[766ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17768](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\Back\Shotgun\Back\Ragdoll):
 	[0ms](AnimationTrack):
@@ -16743,7 +17283,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [17759](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\HandLeft\Shot_Hand_Left):
 	[0ms](AnimationTrack):
@@ -16752,7 +17293,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -16775,7 +17317,8 @@
 		[End]: 1.166667
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -16798,7 +17341,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[266ms](OpportunityTrack)
 
 [17743](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\Head\Shot_Head\Ragdoll):
@@ -16818,12 +17362,14 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[500ms](OpportunityTrack)
-	[1100ms](CharacterPhysicsTrack)
+	[1100ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17741](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\Head\Shotgun\Ragdoll):
 	[0ms](AnimationTrack):
@@ -16842,7 +17388,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](OpportunityTrack)
 
 [17749](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\LegLeft\Shot_Leg_Left\Ragdoll):
@@ -16862,12 +17409,14 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[266ms](OpportunityTrack)
-	[433ms](CharacterPhysicsTrack)
+	[433ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [17747](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\LegLeft\Shotgun\Ragdoll):
 	[0ms](AnimationTrack):
@@ -16895,7 +17444,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[300ms](OpportunityTrack)
 
 [17754](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\LegRight\Shot_Leg_Right\Ragdoll):
@@ -16915,11 +17465,13 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[433ms](CharacterPhysicsTrack)
+	[433ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[500ms](OpportunityTrack)
 
 [17752](\Global\HitTree\Reactions\Death_Touch\Rear\Standing\LegRight\Shotgun\Ragdoll):
@@ -16949,7 +17501,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[266ms](OpportunityTrack)
 
@@ -16971,7 +17524,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](DialogueTrackWeaponImpact)
 	[200ms](OpportunityTrack)
 
@@ -17152,7 +17706,8 @@
 		[TimeToDistance]: 0.300000
 		[TargetMovement]: 0.300000
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17312,7 +17867,8 @@
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17334,7 +17890,8 @@
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17386,7 +17943,8 @@
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17468,7 +18026,8 @@
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17490,7 +18049,8 @@
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17542,7 +18102,8 @@
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17732,7 +18293,8 @@
 		[Begin]: 0.000000
 		[End]: 1.100000
 	[0ms](AttackTimerTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17793,7 +18355,8 @@
 	[0ms](RagdollAquireTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18887
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17876,7 +18439,8 @@
 	[0ms](PairedGrappleTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18837
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17943,7 +18507,8 @@
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -17991,7 +18556,8 @@
 		[Group]: DrunkenMaster
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](TargetGrappleReleaseTrack)
 	[0ms](TargetPlayTrack)
 	[0ms](TargetSyncPositionTrack)
@@ -18028,13 +18594,16 @@
 	[500ms](PlayEffectTrack)
 
 [18441](\Global\HitTree\Reactions\HeavyBlockBreak\FromBlockCounters\ZodiacDLC\KickRight\LightDamage\Counter_GIV\Counter_Loop_GIV\HACKTicker\Crawl):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 
 [18440](\Global\HitTree\Reactions\HeavyBlockBreak\FromBlockCounters\ZodiacDLC\KickRight\LightDamage\Counter_GIV\Counter_Loop_GIV\HACKTicker\Crouch):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 
 [18439](\Global\HitTree\Reactions\HeavyBlockBreak\FromBlockCounters\ZodiacDLC\KickRight\LightDamage\Counter_GIV\Counter_Loop_GIV\HACKTicker\Walk):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 
 [18443](\Global\HitTree\Reactions\HeavyBlockBreak\FromBlockCounters\ZodiacDLC\KickRight\LightDamage\Counter_RCV):
 	[0ms](AnimationTrack):
@@ -18056,10 +18625,12 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](OpportunityTrack)
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -18109,7 +18680,8 @@
 		[End]: -1.000000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -18192,14 +18764,16 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[100ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[666ms](PlayEffectTrack)
 
 [18436](\Global\HitTree\Reactions\HeavyBlockBreak\FromBlockCounters\ZodiacDLC\KickRight\Parry\Counter_RCV\SpawnCounter):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 
 [18428](\Global\HitTree\Reactions\HeavyBlockBreak\HandleDamage\Default):
 	[0ms](ExecuteTrack)
@@ -18632,7 +19206,8 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](HandleDamageTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -18703,7 +19278,8 @@
 	[0ms](ExecuteTrackLibraryTrack)
 	[0ms](PairedGrappleTrack)
 	[0ms](PlayEffectTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1800ms](TargetSteerToTrack)
 
 [18474](\Global\HitTree\Reactions\Heavy\Mid\Front\ZodiacDLC\Counter_RCV):
@@ -18871,7 +19447,8 @@
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PlayEffectTrack)
 	[0ms](PlayEffectTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SimObjectFlagSetTrack)
 	[0ms](TargetAssignTrack)
 	[0ms](TargetLockTrack)
@@ -18911,7 +19488,8 @@
 	[0ms](MasterTrack)
 	[0ms](PlayEffectTrack)
 	[0ms](PlayEffectTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SimObjectFlagSetTrack)
 	[0ms](SkookumTrack):
 		[Class]: Character
@@ -19084,7 +19662,8 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[433ms](OpportunityTrack)
-	[500ms](CharacterPhysicsTrack)
+	[500ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[700ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -19185,7 +19764,8 @@
 	[0ms](RagdollChangeBlendWeightTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -19265,7 +19845,8 @@
 	[0ms](RagdollChangeBlendWeightTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -19321,7 +19902,8 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[433ms](OpportunityTrack)
-	[500ms](CharacterPhysicsTrack)
+	[500ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[700ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -19495,7 +20077,8 @@
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[800ms](CharacterPhysicsTrack)
+	[800ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[800ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -19522,7 +20105,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18890
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -19605,7 +20189,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18890
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -19647,7 +20232,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18889
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -19887,7 +20473,8 @@
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18777
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -19951,7 +20538,8 @@
 	[266ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[800ms](CharacterPhysicsTrack)
+	[800ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[800ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -19965,7 +20553,8 @@
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18777
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -20001,7 +20590,6 @@
 
 [18375](\Global\HitTree\Reactions\Knockdown\Weapons\Cleaver\Front\Tong):
 	[0ms](AnimationTrack):
-		[Name]: STR_Reac_Knockdown_Chest_Knife
 		[Group]: Weapon_1hand_Equipped
 		[Begin]: 0.066667
 		[End]: -1.000000
@@ -20026,8 +20614,10 @@
 	[266ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[300ms](SetStateFlagTrack)
-	[400ms](SetStateFlagTrack)
+	[300ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
+	[400ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1033ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -20129,7 +20719,6 @@
 
 [18379](\Global\HitTree\Reactions\Knockdown\Weapons\Knife\Front):
 	[0ms](AnimationTrack):
-		[Name]: STR_Reac_Knockdown_Chest_Knife
 		[Group]: Weapon_1hand_Equipped
 		[Begin]: 0.066667
 		[End]: -1.000000
@@ -20154,8 +20743,10 @@
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[300ms](SetStateFlagTrack)
-	[400ms](SetStateFlagTrack)
+	[300ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
+	[400ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1033ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -20198,8 +20789,10 @@
 	[266ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[300ms](SetStateFlagTrack)
-	[400ms](SetStateFlagTrack)
+	[300ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
+	[400ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1033ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -20242,8 +20835,10 @@
 	[266ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[300ms](SetStateFlagTrack)
-	[400ms](SetStateFlagTrack)
+	[300ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
+	[400ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1033ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -20286,8 +20881,10 @@
 	[266ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[300ms](SetStateFlagTrack)
-	[400ms](SetStateFlagTrack)
+	[300ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
+	[400ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1033ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -20330,8 +20927,10 @@
 	[266ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[300ms](SetStateFlagTrack)
-	[400ms](SetStateFlagTrack)
+	[300ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
+	[400ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1033ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -20495,7 +21094,8 @@
 		[HitOneTargetOnly]: 0
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](PairedGrappleTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetSyncPositionTrack)
 	[200ms](PlayEffectTrack)
 	[333ms](PlayEffectTrack)
@@ -20569,7 +21169,8 @@
 		[Group]: DrunkenMaster
 		[Begin]: 0.000000
 		[End]: 0.400000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SequenceTrack):
 		[ID]: 18704
 	[0ms](TargetGrappleReleaseTrack)
@@ -20600,7 +21201,8 @@
 		[TargetType]: eTARGET_TYPE_ATTACKER
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -20648,13 +21250,16 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [18702](\Global\HitTree\Reactions\Light\High\Front\MediumDamage\Counter_RCV\Counter_Loop_RCV\HACKTicker\Crawl):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 
 [18701](\Global\HitTree\Reactions\Light\High\Front\MediumDamage\Counter_RCV\Counter_Loop_RCV\HACKTicker\Crouch):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 
 [18700](\Global\HitTree\Reactions\Light\High\Front\MediumDamage\Counter_RCV\Counter_Loop_RCV\HACKTicker\Walk):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 
 [18709](\Global\HitTree\Reactions\Light\High\Left\FromBack):
 	[0ms](AnimationTrack):
@@ -21208,7 +21813,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18894
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21291,20 +21897,23 @@
 		[Group]: Locomotion_OnFire_Dies
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](HandleDamageTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18887
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[2333ms](CharacterPhysicsTrack)
+	[2333ms](CharacterPhysicsTrack):
+		[Mode]: CP_CRAWL
 	[2333ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21395,7 +22004,8 @@
 	[0ms](SequenceTrack):
 		[ID]: 18339
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21428,7 +22038,8 @@
 	[0ms](SequenceTrack):
 		[ID]: 18339
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21464,7 +22075,8 @@
 	[0ms](SequenceTrack):
 		[ID]: 18339
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21500,7 +22112,8 @@
 	[0ms](SequenceTrack):
 		[ID]: 18339
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21536,7 +22149,8 @@
 	[0ms](SequenceTrack):
 		[ID]: 18339
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21586,7 +22200,8 @@
 
 [18342](\Global\HitTree\Reactions\OverrideHitReact\JiangShiStunned\Stunned\EnableTakeDamage\False):
 	[0ms](OpportunityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SkookumTrack):
 		[Class]: Character
 		[Script]: enable_take_damage(false)
@@ -21607,8 +22222,10 @@
 		[Group]: Strikes
 		[Begin]: 0.933333
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21639,7 +22256,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18777
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21690,8 +22308,10 @@
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[566ms](SetStateFlagTrack)
-	[733ms](CharacterPhysicsTrack)
+	[566ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
+	[733ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[966ms](PlayEffectTrack)
 
 [18356](\Global\HitTree\Reactions\OverrideHitReact\Knockout\Ragdoll\Collapse\Front\Left\Left):
@@ -21709,7 +22329,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21726,7 +22347,8 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[333ms](PlayEffectTrack)
-	[733ms](CharacterPhysicsTrack)
+	[733ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [18357](\Global\HitTree\Reactions\OverrideHitReact\Knockout\Ragdoll\Collapse\Front\Right\Right):
 	[0ms](AnimationTrack):
@@ -21743,7 +22365,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21760,7 +22383,8 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[466ms](PlayEffectTrack)
-	[733ms](CharacterPhysicsTrack)
+	[733ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [18358](\Global\HitTree\Reactions\OverrideHitReact\Knockout\Ragdoll\Collapse\Front\Right\Right2):
 	[0ms](AnimationTrack):
@@ -21777,7 +22401,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21794,7 +22419,8 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[466ms](PlayEffectTrack)
-	[733ms](CharacterPhysicsTrack)
+	[733ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 
 [18354](\Global\HitTree\Reactions\OverrideHitReact\Knockout\Ragdoll\Collapse\Rear\BCK_Reac_KO_FallFront):
 	[0ms](AnimationTrack):
@@ -21806,7 +22432,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21822,7 +22449,8 @@
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[333ms](CharacterPhysicsTrack)
+	[333ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[1066ms](PlayEffectTrack)
 
 [18355](\Global\HitTree\Reactions\OverrideHitReact\Knockout\Ragdoll\Collapse\Rear\STR_Reac_KO_FallFront_RIT):
@@ -21835,7 +22463,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21851,7 +22480,8 @@
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[800ms](CharacterPhysicsTrack)
+	[800ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[1233ms](PlayEffectTrack)
 
 [18349](\Global\HitTree\Reactions\OverrideHitReact\Knockout\Ragdoll\Knockdown\Front\High):
@@ -21875,7 +22505,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21903,7 +22534,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21936,7 +22568,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21975,7 +22608,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22014,7 +22648,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18777
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22046,7 +22681,8 @@
 		[TargetType]: eTARGET_TYPE_ATTACKER
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22073,7 +22709,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22112,7 +22749,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22151,7 +22789,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22190,7 +22829,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22242,7 +22882,8 @@
 	[0ms](SequenceTrack):
 		[ID]: 18331
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22266,7 +22907,8 @@
 	[0ms](SequenceTrack):
 		[ID]: 18331
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22293,7 +22935,8 @@
 	[0ms](SequenceTrack):
 		[ID]: 18331
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22320,7 +22963,8 @@
 	[0ms](SequenceTrack):
 		[ID]: 18331
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22347,7 +22991,8 @@
 	[0ms](SequenceTrack):
 		[ID]: 18331
 	[0ms](SetCharacterInvulnerableToFireTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22388,8 +23033,10 @@
 		[Group]: Strikes
 		[Begin]: 0.933333
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [18413](\Global\HitTree\Reactions\POI_Reactions\SquatBump\Back\Back):
 	[0ms](AnimationTrack):
@@ -22400,7 +23047,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18862
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[466ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22413,7 +23061,8 @@
 		[End]: 0.566667
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22426,7 +23075,8 @@
 		[End]: 1.066667
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[666ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22439,7 +23089,8 @@
 		[End]: 0.600000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[533ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -22452,7 +23103,8 @@
 		[End]: 0.500000
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[466ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -23977,7 +24629,8 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[433ms](OpportunityTrack)
-	[500ms](CharacterPhysicsTrack)
+	[500ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[700ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24018,7 +24671,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18842
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24421,7 +25075,8 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](HandleDamageTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24560,10 +25215,12 @@
 		[Group]: Strikes
 		[Begin]: 0.600000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](SequenceTrack):
 		[ID]: 18894
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24656,7 +25313,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18891
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24671,7 +25329,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18894
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24685,7 +25344,8 @@
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24699,7 +25359,8 @@
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24731,7 +25392,6 @@
 	[100ms](TargetAttachTrack)
 	[100ms](TargetDetachEffectorTrack)
 	[200ms](AnimationTrack):
-		[Name]: STR_Baton_Kali_Combo_BatonFlip
 		[Group]: Baton_Equipped
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -24747,7 +25407,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24764,7 +25425,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24807,8 +25469,10 @@
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[300ms](SetStateFlagTrack)
-	[400ms](SetStateFlagTrack)
+	[300ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
+	[400ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[666ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24885,7 +25549,8 @@
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[0ms](TargetPhysicalDamageTrack)
@@ -24901,7 +25566,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24930,7 +25596,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -24989,12 +25656,17 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18777
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -25008,12 +25680,17 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18777
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -25027,12 +25704,17 @@
 		[Begin]: 0.100000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18777
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -25046,12 +25728,17 @@
 		[Begin]: 0.100000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18777
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -25065,12 +25752,17 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18777
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -25084,12 +25776,17 @@
 		[Begin]: 0.100000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18777
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -25779,17 +26476,23 @@
 
 [19117](\Global\HitTree\Utility\Queries\WeightedGrappleRandoms\StrikeAbuse)
 [19111](\Global\HitTree\Utility\StateFlags\Crouch\Crouch):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](ExecuteTrack)
 
 [19110](\Global\HitTree\Utility\StateFlags\Downed\FaceDown):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](ExecuteTrack)
 
 [19109](\Global\HitTree\Utility\StateFlags\Downed\FaceUp):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](ExecuteTrack)
 

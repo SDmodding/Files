@@ -471,7 +471,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -542,27 +544,36 @@
 	[0ms](SubjectFollowOverrideTrack)
 
 [19214](\Global\ImpactDamageEffect\Ragdoll\RecoverRagdoll):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](MasterTrack)
 	[0ms](RagdollChangeModeTrack)
 	[0ms](RagdollReleaseTrack)
 	[0ms](SubjectFollowOverrideTrack)
 
 [19244](\Global\ImpactDamageEffect\Ragdoll\Utility\BallisticGrav\Off):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 
 [19245](\Global\ImpactDamageEffect\Ragdoll\Utility\BallisticGrav\On):
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 1
 	[0ms](OpportunityTrack)
 
 [19249](\Global\ImpactDamageEffect\Ragdoll\Utility\BreakOut\Default):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollReleaseTrack)
 
 [19248](\Global\ImpactDamageEffect\Ragdoll\Utility\BreakOut\IsPlayer):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollChangeModeTrack)
 
 [19247](\Global\ImpactDamageEffect\Ragdoll\Utility\ConditionalRelease\Default):

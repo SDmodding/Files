@@ -14,8 +14,12 @@
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatEventTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverridePOITrack)
 	[0ms](TargetGrappleReleaseTrack)
@@ -27,7 +31,8 @@
 	[0ms](TargetSyncPositionTrack)
 	[0ms](UpdateStatAwardWithIntegerTrack)
 	[1000ms](POIDisableSelfTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1000ms](TargetPlayTrack)
 	[1300ms](StimulusTrack)
 	[1333ms](OpportunityTrack)
@@ -39,13 +44,17 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](DamageTrack)
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)
@@ -63,8 +72,12 @@
 	[0ms](AttackTimerTrack)
 	[0ms](GameStatEventTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverridePOITrack)
 	[0ms](TargetGrappleReleaseTrack)
@@ -76,7 +89,8 @@
 	[0ms](TargetSyncPositionTrack)
 	[0ms](UpdateStatAwardWithIntegerTrack)
 	[1000ms](POIDisableSelfTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[1000ms](TargetPlayTrack)
 	[1133ms](StimulusTrack)
 
@@ -86,13 +100,17 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](DamageTrack)
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)
@@ -107,9 +125,13 @@
 		[Group]: Prop_Gears4Squeeze001_Dead
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)
 

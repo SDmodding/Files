@@ -23,7 +23,8 @@
 	[0ms](DamageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 26129
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetReleaseTrack)
 
 [26121](\Global\POI_Execution\Interactions\Intimidate\Exit\Give):
@@ -105,13 +106,17 @@
 		[Group]: Mission_PS
 		[Begin]: 0.433333
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](HealthSetPercentageTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](SequenceTrack):
 		[ID]: 0
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION

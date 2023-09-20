@@ -4,8 +4,12 @@
 		[Begin]: 0.400000
 		[End]: -1.000000
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](POIDisableSelfTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
@@ -17,7 +21,8 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetSyncPositionTrack)
 	[100ms](CameraShakeTrack)
-	[333ms](SetStateFlagTrack)
+	[333ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[350ms](TargetPlayTrack)
 	[966ms](CameraShakeTrack)
 	[1100ms](TargetDetachEffectorTrack)
@@ -41,7 +46,8 @@
 		[ID]: 29020
 	[0ms](TargetSyncPositionTrack)
 	[100ms](PlayEffectTrack)
-	[333ms](SetStateFlagTrack)
+	[333ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [29016](\Global\POI_Toilet_HeadDunk001\Interactions\Toilet\0x8E961FA1\0xD2951245\HeadslamGIV):
 	[0ms](AnimationTrack):
@@ -67,16 +73,19 @@
 	[0ms](DamageTrack)
 	[0ms](ExecuteTrackLibraryTrack)
 	[508ms](PlayEffectTrack)
-	[733ms](SetStateFlagTrack)
+	[733ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [29020](\Global\POI_Toilet_HeadDunk001\Interactions\Toilet\0x8E961FA1\Utility\Toilet_Victim_Idle):
 	[0ms](AnimationTrack):
 		[Group]: LOM_ToiletDunk001_Use
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
 	[0ms](SetOutOfFightTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetSyncPositionTrack)
 
 [29014](\Global\POI_Toilet_HeadDunk001\Interactions\Toilet\0x8E961FA1\WeiOnLeft\HeadslamGIV):
@@ -86,8 +95,12 @@
 		[End]: -1.000000
 	[0ms](GameStatEventTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](POIDisableSelfTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
@@ -103,7 +116,8 @@
 	[200ms](TargetSyncPositionTrack)
 	[300ms](TargetAttachEffectorTrack)
 	[500ms](CameraShakeTrack)
-	[733ms](SetStateFlagTrack)
+	[733ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[750ms](TargetPlayTrack)
 	[1366ms](CameraShakeTrack)
 	[1500ms](TargetDetachEffectorTrack)
@@ -128,7 +142,8 @@
 		[ID]: 29020
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
 	[500ms](PlayEffectTrack)
-	[733ms](SetStateFlagTrack)
+	[733ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [29012](\Global\POI_Toilet_HeadDunk001\Interactions\Toilet\0x8E961FA1\WeiOnRight\HeadslamGIV):
 	[0ms](AnimationTrack):
@@ -137,8 +152,12 @@
 		[End]: -1.000000
 	[0ms](GameStatEventTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](POIDisableSelfTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
@@ -154,7 +173,8 @@
 	[200ms](TargetSyncPositionTrack)
 	[300ms](TargetAttachEffectorTrack)
 	[500ms](CameraShakeTrack)
-	[733ms](SetStateFlagTrack)
+	[733ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[750ms](TargetPlayTrack)
 	[1366ms](CameraShakeTrack)
 	[1500ms](TargetDetachEffectorTrack)
@@ -178,7 +198,8 @@
 	[0ms](SequenceTrack):
 		[ID]: 29020
 	[508ms](PlayEffectTrack)
-	[733ms](SetStateFlagTrack)
+	[733ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [29021](\Global\POI_Toilet_HeadDunk001\Interactions\Toilet\Grapple\POIHideEquipped):
 	[0ms](SequenceTrack):
@@ -195,8 +216,12 @@
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatEventTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](POIDisableSelfTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
@@ -211,7 +236,8 @@
 	[0ms](TargetSyncPositionTrack)
 	[300ms](TargetAttachEffectorTrack)
 	[500ms](CameraShakeTrack)
-	[733ms](SetStateFlagTrack)
+	[733ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[750ms](TargetPlayTrack)
 	[1400ms](CameraShakeTrack)
 	[1500ms](TargetDetachEffectorTrack)
@@ -232,16 +258,21 @@
 	[0ms](SequenceTrack):
 		[ID]: 29027
 	[500ms](PlayEffectTrack)
-	[733ms](SetStateFlagTrack)
+	[733ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [29027](\Global\POI_Toilet_HeadDunk001\Interactions\Toilet\Grapple\WeiOnLeft\HeadslamRCV\Toilet_Victim_Idle):
 	[0ms](AnimationTrack):
 		[Group]: LOM_ToiletDunk001_Use
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetSyncPositionTrack)
 
 [29022](\Global\POI_Toilet_HeadDunk001\Interactions\Toilet\Grapple\WeiOnRight\HeadslamGIV):
@@ -252,8 +283,12 @@
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatEventTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](POIDisableSelfTrack)
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
@@ -269,7 +304,8 @@
 	[0ms](TargetSyncPositionTrack)
 	[300ms](TargetAttachEffectorTrack)
 	[500ms](CameraShakeTrack)
-	[733ms](SetStateFlagTrack)
+	[733ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[750ms](TargetPlayTrack)
 	[1400ms](CameraShakeTrack)
 	[1500ms](TargetDetachEffectorTrack)
@@ -296,15 +332,22 @@
 		[Group]: LOM_ToiletDunk001_Use
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetSyncPositionTrack)
 
 [29034](\Global\POI_Toilet_HeadDunk001\Interactions\Toilet\Library\TargetAssignLockAndSyncRCV):
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)

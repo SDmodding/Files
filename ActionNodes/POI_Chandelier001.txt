@@ -5,8 +5,12 @@
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](POIDisableSelfTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
@@ -21,7 +25,8 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetReleaseTrack)
 	[333ms](StimulusTrack)
-	[933ms](SetStateFlagTrack)
+	[933ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2800ms](PlayEffectTrack)
 	[2833ms](CameraShakeTrack)
 	[3833ms](CameraShakeTrack)
@@ -34,9 +39,12 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
 	[0ms](DamageTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](RagdollAquireTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -46,7 +54,8 @@
 	[0ms](TargetLockTrack)
 	[333ms](PlayEffectTrack)
 	[333ms](PlayEffectTrack)
-	[933ms](SetStateFlagTrack)
+	[933ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[3333ms](TargetSyncPositionTrack)
 
 [25277](\Global\POI_Chandelier001\Interactions\Action\Grapple\POIHideEquipped):

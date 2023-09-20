@@ -78,7 +78,6 @@
 
 [17186](\Global\Pedestrian\Attacks\ShoppingBag\Righthand):
 	[0ms](AnimationTrack):
-		[Name]: STR_ShopBag_Heavy_01
 		[Group]: Carried_Item_1hand_Equipped
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -288,7 +287,9 @@
 		[Group]: Locomotion_Fall
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 
 [17195](\Global\Pedestrian\Fall\Falling\Land):
@@ -297,7 +298,9 @@
 		[Group]: Locomotion_Jump
 		[Begin]: 0.066667
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [17196](\Global\Pedestrian\Female\Dress):
 	[0ms](AnimationTrack):
@@ -305,8 +308,11 @@
 		[End]: -1.000000
 
 [16914](\Global\Pedestrian\Locomotion\MasterSpawn):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -347,7 +353,9 @@
 	[0ms](SlopeLocomotionFixupTrack)
 
 [17097](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](LookAtTrack)
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
@@ -356,7 +364,6 @@
 
 [17133](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Aware\Female\Aware_01):
 	[0ms](AnimationTrack):
-		[Name]: PED_Female_Idle_Aware_01
 		[Group]: Pedestrian_Flavour_Aware
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -364,7 +371,6 @@
 
 [17134](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Aware\Female\Aware_02):
 	[0ms](AnimationTrack):
-		[Name]: PED_Female_Idle_Aware_02
 		[Group]: Pedestrian_Flavour_Aware
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -372,7 +378,6 @@
 
 [17136](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Aware\Male\Aware):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Aware_Hips_Male
 		[Group]: Pedestrian_Flavour_Aware
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -380,7 +385,6 @@
 
 [17135](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Aware\Male\AwarePace):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Aware_Pace_Male
 		[Group]: Pedestrian_Flavour_Aware
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -533,14 +537,12 @@
 
 [17157](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\FixHair):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_FixHair_Female
 		[Group]: Pedestrian_Flavour_Female_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17153](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\Hang_01):
 	[0ms](AnimationTrack):
-		[Name]: PED_Female_Stand_Idle_2
 		[Group]: Pedestrian_Flavour_Female_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -561,7 +563,6 @@
 
 [17156](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\HeadScratch):
 	[0ms](AnimationTrack):
-		[Name]: PED_HeadScratch_Female
 		[Group]: Pedestrian_Flavour_Female_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -581,21 +582,18 @@
 
 [17159](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\LipBalm):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_LipBalm_Female
 		[Group]: Pedestrian_Flavour_Female_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17151](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\Ped_CheckWatch):
 	[0ms](AnimationTrack):
-		[Name]: PED_Female_Idle_CheckWatch
 		[Group]: Pedestrian_Flavour_Female_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17152](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\Ped_Cross_Arms):
 	[0ms](AnimationTrack):
-		[Name]: PED_Female_Stand_Idle_2
 		[Group]: Pedestrian_Flavour_Female_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -658,6 +656,7 @@
 
 [17185](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\AnswerPhone):
 	[0ms](AnimationTrack):
+		[Name]: PED_Cel_Answer
 		[Group]: POI_Cel_M
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -682,12 +681,14 @@
 
 [17174](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\BodyScratch):
 	[0ms](AnimationTrack):
+		[Name]: PED_Idle_BodyScratch
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17170](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Coughing):
 	[0ms](AnimationTrack):
+		[Name]: PED_Coughing
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -702,24 +703,28 @@
 
 [17179](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\FaceWipe):
 	[0ms](AnimationTrack):
+		[Name]: PED_Idle_FaceWipe
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17176](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\FixHair):
 	[0ms](AnimationTrack):
+		[Name]: PED_Idle_FixHair
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17172](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\HandsBehindBack):
 	[0ms](AnimationTrack):
+		[Name]: PED_Idle_HandsBehindBack
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17178](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\HandsInPockets):
 	[0ms](AnimationTrack):
+		[Name]: PED_Idle_HandsInPockets
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -733,26 +738,26 @@
 
 [17167](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Hang_02):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Relaxed_Brush
 		[Group]: POI_Hang_Out_M
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17168](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Hang_03):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Relaxed_Wallet
 		[Group]: POI_Hang_Out_M
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17169](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Hang_04):
 	[0ms](AnimationTrack):
+		[Name]: PED_Stand_LookWatch
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17177](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\HeadScratch):
 	[0ms](AnimationTrack):
+		[Name]: PED_HeadScratch
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -772,49 +777,55 @@
 
 [17173](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\NeckRub):
 	[0ms](AnimationTrack):
+		[Name]: PED_Idle_NeckRub
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17165](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Ped_Cross_Arms):
 	[0ms](AnimationTrack):
+		[Name]: PED_Stand_CrossArms
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17164](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Ped_Look_Watch):
 	[0ms](AnimationTrack):
+		[Name]: PED_Stand_LookWatch
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17175](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\PickNose):
 	[0ms](AnimationTrack):
+		[Name]: PED_Idle_PickNose
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17180](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\ShoulderGlanceLft):
 	[0ms](AnimationTrack):
+		[Name]: PED_ShoulderGlance_LFT
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17181](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\ShoulderGlanceRit):
 	[0ms](AnimationTrack):
+		[Name]: PED_ShoulderGlance_RIT
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17182](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Sneeze):
 	[0ms](AnimationTrack):
-		[Name]: PED_Sneeze_M
 		[Group]: POI_Hang_Out_M
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [17171](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Yawning):
 	[0ms](AnimationTrack):
+		[Name]: PED_Yawning
 		[Group]: Pedestrian_Flavour_Male_Idles
 		[Begin]: 0.000000
 		[End]: -1.000000

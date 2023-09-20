@@ -4,8 +4,12 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SubjectFollowOverridePOITrack)
 	[0ms](TargetLockTrack)
 	[0ms](TargetLockTrack)
@@ -26,7 +30,9 @@
 		[Group]: LOI_PH_StrangleLight001
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
@@ -38,7 +44,9 @@
 		[Group]: Ground
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [27434](\Global\POI_PH_StrangleLight001\UseConditions)

@@ -27,10 +27,13 @@
 		[Group]: LOM_ElectricalPanel001_Use
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
 	[0ms](DamageTrack)
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SetOutOfFightTrack)
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)
@@ -54,7 +57,8 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetSyncPositionTrack)
 	[233ms](POIDisableSelfTrack)
-	[233ms](SetStateFlagTrack)
+	[233ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[466ms](TargetPlayTrack)
 	[600ms](OpportunityTrack)
 	[766ms](OpportunityTrack)
@@ -65,17 +69,21 @@
 		[Group]: LOM_ElectricalPanel001_Use
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
 	[0ms](DamageTrack)
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SetOutOfFightTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_AI
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)
-	[233ms](SetStateFlagTrack)
+	[233ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[700ms](CameraShakeTrack)
 	[700ms](VisualTreatmentTrack)
 
@@ -98,7 +106,8 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetSyncPositionTrack)
 	[466ms](POIDisableSelfTrack)
-	[466ms](SetStateFlagTrack)
+	[466ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[700ms](TargetPlayTrack)
 	[833ms](CameraShakeTrack)
 	[833ms](StimulusTrack)
@@ -112,19 +121,23 @@
 		[End]: -1.000000
 	[0ms](DamageTrack)
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 26030
 	[0ms](SetOutOfFightTrack)
 	[0ms](TargetSyncPositionTrack)
-	[400ms](SetStateFlagTrack)
+	[400ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [26030](\Global\POI_ElectricalPanel001\Interactions\Action\Grapple\Left\FaceSlamRCV\Reaction):
 	[0ms](AnimationTrack):
 		[Group]: LOM_ElectricalPanel001_Use
 		[Begin]: 0.666667
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
 	[0ms](DamageTrack)
 	[0ms](SetOutOfFightTrack)
 	[0ms](TargetLockTrack)
@@ -156,7 +169,8 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetSyncPositionTrack)
 	[400ms](POIDisableSelfTrack)
-	[400ms](SetStateFlagTrack)
+	[400ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[733ms](TargetPlayTrack)
 	[866ms](CameraShakeTrack)
 	[866ms](StimulusTrack)
@@ -170,19 +184,23 @@
 		[End]: -1.000000
 	[0ms](DamageTrack)
 	[0ms](FacialRequestTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 26027
 	[0ms](SetOutOfFightTrack)
 	[0ms](TargetSyncPositionTrack)
-	[400ms](SetStateFlagTrack)
+	[400ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [26027](\Global\POI_ElectricalPanel001\Interactions\Action\Grapple\Right\FaceSlamRCV\Reaction):
 	[0ms](AnimationTrack):
 		[Group]: LOM_ElectricalPanel001_Use
 		[Begin]: 0.666667
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
 	[0ms](DamageTrack)
 	[0ms](SetOutOfFightTrack)
 	[0ms](TargetLockTrack)

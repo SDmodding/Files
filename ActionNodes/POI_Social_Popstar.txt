@@ -4,10 +4,16 @@
 		[Group]: POI_Sit_Sleep_Sprawled_M
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_SITTING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -16,17 +22,26 @@
 		[Script]: _poi_stop_using_use() 
 
 [28651](\Global\POI_Social_Popstar\Interactions\Sitting\FastExit):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SkookumTrack):
 		[Class]: Character
 		[Script]: _poi_stop_using_use() 
 
 [28653](\Global\POI_Social_Popstar\Interactions\Sitting\PerformSocial):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_SITTING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
@@ -109,10 +124,16 @@
 		[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
 
 [28666](\Global\POI_Social_Popstar\Interactions\Sitting\SittingIdles):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_SITTING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1

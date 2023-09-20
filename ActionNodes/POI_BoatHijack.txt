@@ -4,7 +4,9 @@
 		[Group]: Locomotion_Jump
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 1
 	[0ms](SequenceTrack):
 		[ID]: 25047
 
@@ -13,7 +15,9 @@
 		[Group]: Vehicle_ActionHijack
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.800000
+		[BallisticMode]: 1
 	[0ms](OpportunityTrack)
 
 [25048](\Global\POI_BoatHijack\Interactions\Action\Long_Jump_Boat\ActionHijack\ActionHijackStart\Anims\JumpAir\JumpAirCyc\JumpAirPrepLand):
@@ -21,7 +25,9 @@
 		[Group]: Boat_ActionHijack
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.800000
+		[BallisticMode]: 1
 
 [25045](\Global\POI_BoatHijack\Interactions\Action\Long_Jump_Boat\ActionHijack\ActionHijackStart\LongJump):
 	[0ms](AttackCollisionTrack):
@@ -47,7 +53,9 @@
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
 	[0ms](CameraChangeTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.800000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION

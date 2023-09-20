@@ -61,16 +61,19 @@
 
 [26249](\Global\POI_Fishing\Interactions\HitTree\OverRailing\InAir):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Rail_Lean_Fall
 		[Group]: POI_Lean_Rail_HitReacts
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](ParkourSyncPositionTrack)
 	[366ms](DetailedOnGroundTrack)
 	[400ms](OpportunityTrack)
-	[500ms](GravityTrack)
+	[500ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[600ms](OpportunityTrack)
 
 [26239](\Global\POI_Fishing\UseConditions)

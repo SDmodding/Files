@@ -6,8 +6,12 @@
 	[0ms](AttackTimerTrack)
 	[0ms](GameStatEventTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -21,7 +25,8 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetReleaseTrack)
 	[933ms](POIDisableSelfTrack)
-	[933ms](SetStateFlagTrack)
+	[933ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2033ms](CameraShakeTrack)
 	[2033ms](StimulusTrack)
 	[2500ms](OpportunityTrack)
@@ -33,17 +38,23 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
 	[0ms](DamageTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](StimulusTrack)
 	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
 	[0ms](TargetLockTrack)
-	[933ms](SetStateFlagTrack)
+	[933ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2033ms](PlayEffectTrack)
 	[2500ms](TargetSyncPositionTrack)
 

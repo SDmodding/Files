@@ -136,11 +136,12 @@
 
 [27942](\Global\POI_Sitting\Interactions\HitTree\Sitting\Reactions\Push\OverBack\InAir):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_Rail_Fall
 		[Group]: POI_Lean_Rail_HitReacts
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
@@ -152,13 +153,21 @@
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[900ms](GravityTrack)
+	[900ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [27948](\Global\POI_Sitting\Interactions\HitTree\Sitting\Reactions\SeatedTracks):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_SITTING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -178,10 +187,16 @@
 	[0ms](TargetSyncPositionTrack)
 
 [27956](\Global\POI_Sitting\Interactions\SeatedTracks):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_SITTING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SensorComponentTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 1
@@ -204,7 +219,6 @@
 [27959](\Global\POI_Sitting\Interactions\SeatedTracks\SplitBodyReactions\Cower\Female\CowerExit)
 [27960](\Global\POI_Sitting\Interactions\SeatedTracks\SplitBodyReactions\Cower\Male):
 	[0ms](AnimationTrack):
-		[Name]: PED_Cower_Loop_Male
 		[Group]: Pedestrian_Scared_M
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -660,7 +674,8 @@
 		[Group]: POI_Sit_Sleep_M
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -673,7 +688,8 @@
 		[Group]: POI_Sit_Sleep_M
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)

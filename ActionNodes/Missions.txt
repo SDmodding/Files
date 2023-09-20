@@ -79,6 +79,7 @@
 
 [19436](\Global\Missions\BL\Phone_For_Help):
 	[0ms](AnimationTrack):
+		[Name]: PED_Cel_PhoneForHelp
 		[Group]: POI_Cel_M
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -180,7 +181,9 @@
 		[Group]: Mission_BM
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetSyncPositionTrack)
 
 [19489](\Global\Missions\BTB\Monk_PullRope):
@@ -252,10 +255,14 @@
 		[End]: -1.000000
 
 [19483](\Global\Missions\BsL\BoatHijack\Hop\Fall):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](EventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -269,8 +276,10 @@
 		[End]: -1.000000
 
 [19472](\Global\Missions\BsL\BoatHijack\Hop\Hijack):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
 	[0ms](GameStatEventTrack)
@@ -319,8 +328,10 @@
 		[End]: -1.000000
 
 [19479](\Global\Missions\BsL\BoatHijack\Hop\Hijack\Receive\Driver\PulledOut):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -345,8 +356,10 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_NONE
 
 [19481](\Global\Missions\BsL\BoatHijack\Hop\Hijack\Receive\Passenger):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -367,11 +380,15 @@
 	[0ms](ExecuteTrack)
 
 [19462](\Global\Missions\BsL\BoatHijack\Hop\Latch\Back\DirectlyBehindMiddle\Back):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 19470
 	[0ms](SpawnTrack):
@@ -389,11 +406,15 @@
 		[End]: -1.000000
 
 [19466](\Global\Missions\BsL\BoatHijack\Hop\Latch\Back\PastRearEnd\BackLeft):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 19470
 	[0ms](SpawnTrack):
@@ -411,11 +432,15 @@
 		[End]: -1.000000
 
 [19464](\Global\Missions\BsL\BoatHijack\Hop\Latch\Back\PastRearEnd\BackRight):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 19470
 	[0ms](SpawnTrack):
@@ -433,11 +458,15 @@
 		[End]: -1.000000
 
 [19468](\Global\Missions\BsL\BoatHijack\Hop\Latch\Default):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 19470
 	[0ms](SpawnTrack):
@@ -605,6 +634,7 @@
 
 [19500](\Global\Missions\GU\WakeUp\LoadAnswer\AnswerPhone):
 	[0ms](AnimationTrack):
+		[Name]: PED_Cel_Answer
 		[Group]: POI_Cel_M
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -630,8 +660,12 @@
 		[Begin]: 0.000000
 		[End]: 3.333333
 	[0ms](AudioTrackSoundbankIO)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](TargetLockTrack)
 	[0ms](TargetLockTrack)
 	[0ms](TargetReleaseTrack)
@@ -660,12 +694,16 @@
 		[Group]: Mission_IN
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SequenceTrack):
 		[ID]: 18894
 	[0ms](VehicleInteractTrack)
-	[400ms](GravityTrack)
+	[400ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[400ms](TargetDetachTrack)
 	[400ms](TargetReleaseTrack)
 
@@ -910,7 +948,8 @@
 		[TimeToDistance]: 0.000000
 		[TargetMovement]: 0.500000
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SkookumTrack):
 		[Class]: Character
 		[Script]: ActionButton.hide()
@@ -924,7 +963,9 @@
 		[Group]: Locomotion_FreeRunning
 		[Begin]: 0.000000
 		[End]: 0.166667
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -935,9 +976,13 @@
 		[Group]: Locomotion_FreeRunning
 		[Begin]: 0.000000
 		[End]: 0.633333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](SubjectFollowOverrideTrack)
 
@@ -994,7 +1039,8 @@
 		[Group]: Strikes
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1542,7 +1588,8 @@
 		[Group]: Grapples_AlliedLocomotion_UnclePo
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [19618](\Global\Missions\NMC\IdleCamera\MissionStartCam):
 	[0ms](SubjectFollowOverrideTrack)
@@ -1686,14 +1733,12 @@
 
 [19641](\Global\Missions\PS\Popstar_Motion4Drugs\01\Placeholder_03):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Aware_Hips_Male
 		[Group]: Pedestrian_Flavour_Aware
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [19642](\Global\Missions\PS\Popstar_Motion4Drugs\01\Placeholder_04):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Aware_Pace_Male
 		[Group]: Pedestrian_Flavour_Aware
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -1762,7 +1807,6 @@
 
 [19646](\Global\Missions\PS\Popstar_Stabbing\Grapple\Back\GrapRCV):
 	[0ms](AnimationTrack):
-		[Name]: STR_Knife_Stab_Behind_RCV
 		[Group]: Grapples_Weapon_1hand_Equipped
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -2407,9 +2451,11 @@
 		[Group]: LOI_PH_StrangleLight001
 		[Begin]: 24.100000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](SetOutOfFightTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [19720](\Global\Missions\TE\BoundStruggle\Crawl_Begin\PickupGrapple\Fail\FAILTIME):
 	[0ms](AnimationTrack):
@@ -2472,7 +2518,8 @@
 		[Group]: POI_Sit_Sleep_M
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
 	[0ms](SequenceTrack):
 		[ID]: 19667
 	[0ms](SpawnTrack):
@@ -2501,7 +2548,8 @@
 		[Group]: POI_Sit_Sleep_M
 		[Begin]: 4.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](TargetGrappleReleaseTrack)
 	[0ms](TargetReleaseTrack)
 
@@ -2568,7 +2616,6 @@
 [19728](\Global\Missions\TE\CrouchCover\LoadCrouchCover\CrouchCover):
 	[0ms](AnimationBankReferenceTrack)
 	[0ms](AnimationTrack):
-		[Name]: Cover_Idle
 		[Group]: Cover_Gun
 		[Begin]: 0.000000
 		[End]: 2.000000
@@ -2579,7 +2626,6 @@
 [19729](\Global\Missions\TE\CrouchCover\LoadCrouchCover\CrouchCover\Peek):
 	[0ms](AnimationBankReferenceTrack)
 	[0ms](AnimationTrack):
-		[Name]: Cover_Peekout_UP
 		[Group]: Cover_Gun
 		[Begin]: 0.000000
 		[End]: 3.950000
@@ -2589,7 +2635,6 @@
 
 [19730](\Global\Missions\TE\CrouchCover\LoadCrouchCover\CrouchCover\Peek\CrouchCover):
 	[0ms](AnimationTrack):
-		[Name]: Cover_Idle
 		[Group]: Cover_Gun
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -2657,7 +2702,6 @@
 
 [19725](\Global\Missions\TE\Hide\LoadHideIdle\HideIdle\Peek):
 	[0ms](AnimationTrack):
-		[Name]: Cover_Hi_Peekout_L
 		[Group]: Cover_Gun
 		[Begin]: 0.000000
 		[End]: 2.400000
@@ -2764,16 +2808,23 @@
 [19665](\Global\Missions\TE\WorkLightStrangle\StrangleOBJ)
 [19664](\Global\Missions\TE\WorkLightStrangle\StrangleRCV)
 [19759](\Global\Missions\TGA\FallOutofVehicle):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](TargetPlayTrack)
 	[0ms](VehicleInteractTrack)
-	[833ms](CharacterPhysicsTrack)
-	[833ms](GravityTrack)
+	[833ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[833ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[833ms](TargetDetachTrack)
 	[833ms](TargetReleaseTrack)
 
@@ -2785,6 +2836,7 @@
 
 [19763](\Global\Missions\TGA\FallOutofVehicle\Anims\Other):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_Dead_RCV
 		[Group]: Car_Into_Driver
 		[Begin]: 0.966667
 		[End]: -1.000000
@@ -2797,7 +2849,6 @@
 
 [19761](\Global\Missions\TGA\FallOutofVehicle\Anims\Van):
 	[0ms](AnimationTrack):
-		[Name]: Van_Dirty_Ming_Out
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -2813,6 +2864,7 @@
 
 [19767](\Global\Missions\TGA\FallOutofVehicle\Vehicle\Other):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_In_Object
 		[Group]: Car_Into_Driver
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -2829,7 +2881,6 @@
 
 [19765](\Global\Missions\TGA\FallOutofVehicle\Vehicle\Van):
 	[0ms](AnimationTrack):
-		[Name]: Van_Dirty_Ming_Out_Object
 		[Group]: Van_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -2842,7 +2893,8 @@
 		[Group]: Vehicle_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [19755](\Global\Missions\TG\Pendrew_Point\01):
 	[0ms](AnimationTrack):

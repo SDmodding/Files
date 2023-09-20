@@ -622,8 +622,10 @@
 [20154](\Global\Bike\Interactions\Vehicle\GetOff\ActionHijackStart\Hop\FromBack\NewJump\FromBack):
 	[0ms](BlendTreeTrack)
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -639,9 +641,12 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.133333
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](CollisionDisableAgainstTargetTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -654,11 +659,16 @@
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
-	[266ms](CharacterPhysicsTrack)
+	[266ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[266ms](TargetDetachTrack)
-	[283ms](GravityTrack)
+	[283ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 1
 	[366ms](RagdollImpulseTrack)
-	[566ms](GravityTrack)
+	[566ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 1
 	[583ms](OpportunityTrack)
 	[733ms](CameraShakeTrack)
 
@@ -669,8 +679,12 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: -9.810000
+		[BallisticMode]: 1
 	[0ms](OpportunityTrack)
 	[0ms](RagdollAquireTrack)
 	[0ms](SubjectFollowOverrideTrack)
@@ -684,10 +698,14 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.133333
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](CollisionDisableAgainstTargetTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -704,7 +722,8 @@
 	[0ms](VehicleInteractTrack)
 	[0ms](VelocitySlopeModeTrack)
 	[133ms](TargetSyncPositionTrack)
-	[266ms](CharacterPhysicsTrack)
+	[266ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[266ms](OpportunityTrack)
 	[266ms](RagdollAquireTrack)
 	[266ms](VelocitySlopeModeTrack)
@@ -713,7 +732,9 @@
 	[600ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[633ms](GravityTrack)
+	[633ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[733ms](CameraShakeTrack)
 	[1600ms](OpportunityTrack)
 
@@ -733,8 +754,11 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 20168
 	[0ms](SpawnTrack):
@@ -752,7 +776,8 @@
 	[100ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[166ms](CharacterPhysicsTrack)
+	[166ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[166ms](GameStatEventTrack)
 	[166ms](TargetDetachTrack)
 	[333ms](SpawnTrack):
@@ -765,7 +790,9 @@
 	[933ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[2166ms](OpportunityTrack)
 
 [20169](\Global\Bike\Interactions\Vehicle\GetOff\Dismount\OnGround\Moving\WithGun\DismountShoot\Aiming):
@@ -794,7 +821,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](SubjectFollowOverrideTrack)
 
@@ -804,9 +832,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 20176
@@ -823,7 +855,9 @@
 	[300ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[466ms](GravityTrack)
+	[466ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[1666ms](OpportunityTrack)
 
 [20176](\Global\Bike\Interactions\Vehicle\GetOff\Dismount\OnGround\Moving\WithGun\ToBeImplemented\Dismount_slideOLD\Ditch_Slide\Getup):
@@ -832,7 +866,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[933ms](OpportunityTrack)
 
 [20172](\Global\Bike\Interactions\Vehicle\GetOff\Dismount\OnGround\Moving\WithGun\ToBeImplemented\Dismount_slide\Ditch_Slide):
@@ -841,9 +876,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 20173
@@ -857,7 +896,9 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetingProfileSelectTrack)
 	[0ms](VehicleInteractTrack)
-	[466ms](GravityTrack)
+	[466ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[733ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -883,7 +924,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SubjectFollowOverrideTrack)
 	[933ms](OpportunityTrack)
 
@@ -894,8 +936,11 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 20158
 	[0ms](SpawnTrack):
@@ -909,7 +954,8 @@
 	[0ms](TargetingProfileSelectTrack)
 	[0ms](TimeWarpTrack)
 	[0ms](VehicleInteractTrack)
-	[166ms](CharacterPhysicsTrack)
+	[166ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[166ms](GameStatEventTrack)
 	[166ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -922,7 +968,9 @@
 	[933ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[2166ms](OpportunityTrack)
 
 [20159](\Global\Bike\Interactions\Vehicle\GetOff\Dismount\OnGround\Moving\WithRifle\DismountShoot\Aiming):
@@ -951,7 +999,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SubjectFollowOverrideTrack)
 	[0ms](SubjectFollowOverrideTrack)
 
@@ -961,9 +1010,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 20166
@@ -983,7 +1036,9 @@
 	[300ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[466ms](GravityTrack)
+	[466ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[1666ms](OpportunityTrack)
 
 [20166](\Global\Bike\Interactions\Vehicle\GetOff\Dismount\OnGround\Moving\WithRifle\ToBeImplemented\Dismount_slideOLD\Ditch_Slide\Getup):
@@ -992,7 +1047,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[933ms](OpportunityTrack)
 
 [20162](\Global\Bike\Interactions\Vehicle\GetOff\Dismount\OnGround\Moving\WithRifle\ToBeImplemented\Dismount_slide\Ditch_Slide):
@@ -1001,9 +1057,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](SequenceTrack):
 		[ID]: 20163
@@ -1020,7 +1080,9 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TargetingProfileSelectTrack)
 	[0ms](VehicleInteractTrack)
-	[466ms](GravityTrack)
+	[466ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[733ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1046,7 +1108,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SubjectFollowOverrideTrack)
 	[933ms](OpportunityTrack)
 
@@ -1056,9 +1119,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.133333
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1071,7 +1138,9 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
 	[266ms](TargetDetachTrack)
-	[633ms](GravityTrack)
+	[633ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [20185](\Global\Bike\Interactions\Vehicle\GetOff\Dismount\OnGround\NotMoving\NotMovingDismountSpawn):
 	[0ms](SpawnTrack):
@@ -1150,7 +1219,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1167,9 +1237,13 @@
 	[0ms](TargetReleaseTrack)
 
 [20190](\Global\Bike\Interactions\Vehicle\GetOff\Dismount\OnGround\NotMoving\NotMovingDismountSpawn\Main\Dismount\LeftHandSide):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1183,7 +1257,9 @@
 	[0ms](TargetPlayTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
-	[700ms](GravityTrack)
+	[700ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [20192](\Global\Bike\Interactions\Vehicle\GetOff\Dismount\OnGround\NotMoving\NotMovingDismountSpawn\Main\Dismount\LeftHandSide\Anims\Driver):
 	[0ms](AnimationTrack):
@@ -1215,9 +1291,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1225,7 +1305,9 @@
 	[0ms](TargetPlayTrack)
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
-	[700ms](GravityTrack)
+	[700ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[700ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1262,9 +1344,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1285,9 +1371,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1303,8 +1393,11 @@
 	[750ms](TargetDetachTrack)
 
 [20209](\Global\Bike\Interactions\Vehicle\GetOnNoAnim):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 19839
 	[0ms](SpawnTrack):
@@ -1320,8 +1413,11 @@
 	[0ms](OpportunityTrack)
 
 [20136](\Global\Bike\Interactions\Vehicle\GetOn\EnterVehicle\Default):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -1626,8 +1722,11 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -1680,8 +1779,11 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -1741,9 +1843,13 @@
 		[Group]: Motorbike_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1761,15 +1867,19 @@
 		[Group]: Motorbike_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](VehicleInteractTrack)
 	[700ms](TargetDetachTrack)
 	[700ms](TargetReleaseTrack)
-	[766ms](CharacterPhysicsTrack)
+	[766ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[1366ms](OpportunityTrack)
 
 [20125](\Global\Bike\Interactions\Vehicle\GetOn\Hijack\NPC\FromPassengerSide\FromPassengerSide):
@@ -1781,9 +1891,13 @@
 		[Group]: Motorbike_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1801,15 +1915,19 @@
 		[Group]: Motorbike_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](VehicleInteractTrack)
 	[700ms](TargetDetachTrack)
 	[700ms](TargetReleaseTrack)
-	[766ms](CharacterPhysicsTrack)
+	[766ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[1366ms](OpportunityTrack)
 
 [20129](\Global\Bike\Interactions\Vehicle\GetOn\Hijack\NPC\PoliceArrestPlayer):
@@ -1826,10 +1944,14 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -1858,9 +1980,13 @@
 		[Group]: Motorbike_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1876,7 +2002,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[700ms](TargetDetachTrack)
 	[700ms](TargetReleaseTrack)
-	[966ms](CharacterPhysicsTrack)
+	[966ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [20120](\Global\Bike\Interactions\Vehicle\GetOn\Hijack\Player\FromDriverSide\OfficerShen\Giv):
 	[0ms](AnimationTrack):
@@ -1934,10 +2061,14 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -1966,9 +2097,13 @@
 		[Group]: Motorbike_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1984,7 +2119,8 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[700ms](TargetDetachTrack)
 	[700ms](TargetReleaseTrack)
-	[966ms](CharacterPhysicsTrack)
+	[966ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 
 [20115](\Global\Bike\Interactions\Vehicle\GetOn\Hijack\Player\FromPassengerSide\OfficerShen\Giv):
 	[0ms](AnimationTrack):
@@ -2038,10 +2174,13 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [20112](\Global\Bike\Interactions\Vehicle\GetOn\Hijack\Player\VehicleMovingFail\Fast\Fast):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2056,19 +2195,24 @@
 
 [20113](\Global\Bike\Interactions\Vehicle\GetOn\Hijack\Player\VehicleMovingFail\Fast\Fast\Anims\OnLeftSide):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_LFT
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [20114](\Global\Bike\Interactions\Vehicle\GetOn\Hijack\Player\VehicleMovingFail\Fast\Fast\Anims\OnRightSide):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_RIT
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [20210](\Global\Bike\Interactions\Vehicle\GetPassengerOnNoAnim):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 19839
 	[0ms](SpawnTrack):
@@ -2084,9 +2228,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.133333
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -2432,7 +2580,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](EventTrack)
 	[0ms](SequenceTrack):
@@ -2448,7 +2597,9 @@
 	[0ms](VehicleInteractTrack)
 
 [19989](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\CrashFront\Ragdoll):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -2527,9 +2678,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -2544,7 +2699,9 @@
 	[666ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [19956](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\HitReact\Knockdown\Front):
 	[0ms](AnimationTrack):
@@ -2552,9 +2709,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -2569,7 +2730,9 @@
 	[666ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [19955](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\HitReact\Knockdown\Left):
 	[0ms](AnimationTrack):
@@ -2577,9 +2740,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -2594,7 +2761,9 @@
 	[666ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [19957](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\HitReact\Knockdown\Right):
 	[0ms](AnimationTrack):
@@ -2602,9 +2771,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -2619,7 +2792,9 @@
 	[666ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [19954](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\HitReact\StandingOnSeat):
 	[0ms](AnimationTrack):
@@ -2797,7 +2972,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: 0.333333
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](EventTrack)
 	[0ms](SequenceTrack):
@@ -2818,7 +2994,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: 0.333333
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](EventTrack)
 	[0ms](SequenceTrack):
@@ -2834,7 +3011,9 @@
 	[0ms](VehicleInteractTrack)
 
 [19939](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\RemoveDriver\FallOffForwardPassenger\Ragdoll):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](RagdollAquireTrack)
 	[0ms](RagdollSetFrictionTrack)
 	[0ms](SequenceTrack):
@@ -2845,7 +3024,9 @@
 	[0ms](StimulusTrack)
 
 [19941](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\RemoveDriver\FallOffForward\Ragdoll):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](RagdollAquireTrack)
 	[0ms](RagdollSetFrictionTrack)
 	[0ms](SequenceTrack):
@@ -2856,9 +3037,13 @@
 	[0ms](StimulusTrack)
 
 [19990](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\Utility\ExecuteLibrary\DetachToRagdoll):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](RagdollSetFrictionTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -2867,10 +3052,14 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](TargetReleaseTrack)
-	[33ms](GravityTrack)
+	[33ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 1
 	[33ms](TargetDetachTrack)
 	[33ms](VehicleInteractTrack)
-	[100ms](GravityTrack)
+	[100ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [20051](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\Utility\ImpactDamageEffect\ImpactApplyDamage\HeavyDamage\Default):
 	[0ms](DamageTrack)
@@ -3345,7 +3534,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -3416,27 +3607,36 @@
 	[0ms](SubjectFollowOverrideTrack)
 
 [20070](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\Utility\ImpactDamageEffect\Ragdoll\RecoverRagdoll):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](MasterTrack)
 	[0ms](RagdollChangeModeTrack)
 	[0ms](RagdollReleaseTrack)
 	[0ms](SubjectFollowOverrideTrack)
 
 [20100](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\BallisticGrav\Off):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 
 [20101](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\BallisticGrav\On):
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 1
 	[0ms](OpportunityTrack)
 
 [20105](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\BreakOut\Default):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollReleaseTrack)
 
 [20104](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\BreakOut\IsPlayer):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollChangeModeTrack)
 
 [20103](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\ConditionalRelease\Default):
@@ -3816,8 +4016,11 @@
 
 [20099](\Global\Bike\Interactions\Vehicle\OnBike\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\SpeedTest\Release)
 [19844](\Global\Bike\Interactions\Vehicle\OnBike\Ride\Ride):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -3983,8 +4186,11 @@
 	[0ms](OpportunityTrack)
 
 [19914](\Global\Bike\Interactions\Vehicle\OnBike\Ride\Ride\Anims\PassengerFallOff):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](HealthSetPercentageTrack)
 	[0ms](SequenceTrack):
 		[ID]: 18772
@@ -4442,15 +4648,19 @@
 		[Group]: Motorbike
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 
 [19937](\Global\Bike\Interactions\Vehicle\OnBike\Stand_idle\Driver):
 	[0ms](BlendTreeTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -4483,7 +4693,8 @@
 		[Group]: Motorbike_Passenger
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)

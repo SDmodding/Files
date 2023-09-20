@@ -1,11 +1,14 @@
 [26900](\Global\POI_Leaning_Fwd\Interactions\HitTree\OverRailing\InAir):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Rail_Lean_Fall
 		[Group]: POI_Lean_Rail_HitReacts
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
@@ -14,7 +17,9 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[366ms](DetailedOnGroundTrack)
-	[466ms](GravityTrack)
+	[466ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[533ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION

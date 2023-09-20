@@ -1,10 +1,11 @@
 [26891](\Global\POI_Leaning_Back\Interactions\HitTree\OverRailing\InAir):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_Rail_Fall
 		[Group]: POI_Lean_Rail_HitReacts
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
@@ -18,21 +19,28 @@
 	[766ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[900ms](GravityTrack)
+	[900ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [26892](\Global\POI_Leaning_Back\Interactions\HitTree\OverRailing\InAirTest):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_Rail_Fall
 		[Group]: POI_Lean_Rail_HitReacts
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](TargetAssignTrack)
 	[100ms](StimulusTrack)
-	[200ms](GravityTrack)
+	[200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 1
 	[366ms](DetailedOnGroundTrack)
 
 [26871](\Global\POI_Leaning_Back\Interactions\LeaningIdles):
@@ -52,7 +60,6 @@
 
 [26872](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_180):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_ALL
 		[Group]: POI_Lean_B_M
 		[Begin]: 0.000000
 		[End]: 2.333333
@@ -61,7 +68,6 @@
 
 [26873](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_180\LeaningIdles\LeaningIdle):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_ALL
 		[Group]: POI_Lean_B_M
 		[Begin]: 2.333333
 		[End]: 9.000000
@@ -77,7 +83,6 @@
 
 [26879](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_180\LeaningIdles\SmokingIdles\Idles\Female\Smoking_01):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_LeanBack_Smoking_F_CYC
 		[Group]: POI_Lean_B_F
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -86,7 +91,6 @@
 
 [26875](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_180\LeaningIdles\SmokingIdles\SmokingAnims\Female_INTO\SmokingIdle_LoadResource):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_ALL
 		[Group]: POI_Lean_B_M
 		[Begin]: 2.333333
 		[End]: 9.000000
@@ -97,7 +101,6 @@
 
 [26878](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_180\LeaningIdles\SmokingIdles\SmokingAnims\Female_INTO\SmokingIdle_LoadResource\SmokingInto_Actual):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_LeanBack_Smoking_F_INTO
 		[Group]: POI_Lean_B_F
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -117,7 +120,6 @@
 [26877](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_180\LeaningIdles\SmokingIdles\SmokingAnims\Female_INTO\SmokingIdle_LoadResource\WaitForResources\Timeout)
 [26880](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_180\LeaningIdles\SmokingIdles\Smoking_Exit\Female\Smoking_Exit):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_LeanBack_Smoking_F_OUT
 		[Group]: POI_Lean_B_F
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -131,7 +133,6 @@
 
 [26881](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_180):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_ALL
 		[Group]: POI_Lean_B_M
 		[Begin]: 0.000000
 		[End]: 2.333333
@@ -140,7 +141,6 @@
 
 [26882](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_180\LeaningIdles\LeaningIdle):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_ALL
 		[Group]: POI_Lean_B_M
 		[Begin]: 2.333333
 		[End]: 9.000000
@@ -156,7 +156,6 @@
 
 [26888](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_180\LeaningIdles\SmokingIdles\Idles\Male\Smoking_01):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_LeanBack_Smoking_CYC
 		[Group]: POI_Lean_B_M
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -165,7 +164,6 @@
 
 [26884](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_180\LeaningIdles\SmokingIdles\SmokingAnims\Male_INTO\SmokingIdle_LoadResource):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_ALL
 		[Group]: POI_Lean_B_M
 		[Begin]: 2.333333
 		[End]: 9.000000
@@ -176,7 +174,6 @@
 
 [26887](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_180\LeaningIdles\SmokingIdles\SmokingAnims\Male_INTO\SmokingIdle_LoadResource\SmokingInto_Actual):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_LeanBack_Smoking_INTO
 		[Group]: POI_Lean_B_M
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -196,7 +193,6 @@
 [26886](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_180\LeaningIdles\SmokingIdles\SmokingAnims\Male_INTO\SmokingIdle_LoadResource\WaitForResources\Timeout)
 [26889](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_180\LeaningIdles\SmokingIdles\Smoking_Exit\Male\Smoking_Exit):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_LeanBack_Smoking_OUT
 		[Group]: POI_Lean_B_M
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -210,7 +206,6 @@
 
 [26890](\Global\POI_Leaning_Back\Interactions\LeaningIdles\LeaningExit\LeaningExit):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_ALL
 		[Group]: POI_Lean_B_M
 		[Begin]: 9.000000
 		[End]: 10.333333

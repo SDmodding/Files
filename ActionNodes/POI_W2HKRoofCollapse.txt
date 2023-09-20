@@ -25,7 +25,9 @@
 		[TargetOnly]: 0
 		[HitOneTargetOnly]: 1
 		[TargetType]: eTARGET_TYPE_FOCUS
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 16304
 	[0ms](SpawnTrack):
@@ -42,7 +44,9 @@
 		[Group]: POI_W2HKRoofCollapse
 		[Begin]: 0.500000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 29427
 	[0ms](TargetLockTrack)
@@ -67,6 +71,7 @@
 
 [29428](\Global\W2HKRoofCollapse\Interactions\Pause):
 	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle_Look2
 		[Group]: Locomotion_Flavour
 		[Begin]: 0.333333
 		[End]: 1.333333

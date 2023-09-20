@@ -1,11 +1,14 @@
 [26918](\Global\POI_Leaning_R\Interactions\HitTree\OverRailing\InAir\Back):
 	[0ms](AnimationTrack):
-		[Name]: PED_Idle_Back_Lean_Rail_Fall
 		[Group]: POI_Lean_Rail_HitReacts
 		[Begin]: 0.333333
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
@@ -13,7 +16,9 @@
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
-	[200ms](GravityTrack)
+	[200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 1
 	[366ms](DetailedOnGroundTrack)
 	[400ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -25,8 +30,12 @@
 		[Group]: Grapples
 		[Begin]: 0.333333
 		[End]: -1.000000
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](HandleDamageTrack)
 	[0ms](ParkourSyncPositionTrack)
 	[0ms](SequenceTrack):
@@ -35,7 +44,9 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[366ms](DetailedOnGroundTrack)
-	[400ms](GravityTrack)
+	[400ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[400ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION

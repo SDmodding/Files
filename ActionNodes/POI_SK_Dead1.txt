@@ -3,9 +3,14 @@
 		[Group]: Mission_SK
 		[Begin]: 0.000000
 		[End]: 0.033333
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](DamageTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 
 [28485](\Global\POI_SK_Dead1\UseConditions)

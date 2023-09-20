@@ -11,9 +11,13 @@
 		[Group]: LOS_PhoneBooth002_Use
 		[Begin]: 6.666667
 		[End]: 6.933333
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)
 
@@ -26,8 +30,12 @@
 	[0ms](AttackTimerTrack)
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](POIDisableSelfTrack)
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverridePOITrack)
@@ -41,7 +49,8 @@
 	[0ms](TargetSyncPositionTrack)
 	[700ms](CameraShakeTrack)
 	[733ms](StimulusTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2200ms](CameraShakeTrack)
 	[2500ms](TargetPlayTrack)
 	[2941ms](PlayEffectTrack)
@@ -56,17 +65,21 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
 	[0ms](DamageTrack)
 	[0ms](FacialRequestTrack)
 	[0ms](GameStatSpecialMoveTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 27379
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)
 	[800ms](PlayEffectTrack)
-	[1000ms](SetStateFlagTrack)
+	[1000ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[2100ms](PlayEffectTrack)
 	[3133ms](PlayEffectTrack)
 	[3166ms](PlayEffectTrack)

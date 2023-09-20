@@ -8,7 +8,8 @@
 	[0ms](PlayEffectTrack)
 	[0ms](PlayEffectTrack)
 	[0ms](PlayEffectTrack)
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 
 [26336](\Global\POI_GhostTrappedPed\Interactions\Root\Exit\Falling):
 	[0ms](AnimationTrack):
@@ -16,7 +17,8 @@
 		[Group]: Locomotion_Fall
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](SetStateFlagTrack)
+	[0ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[0ms](SkookumTrack):
 		[Class]: Character
 		[Script]: _poi_stop_using_use() 
@@ -28,6 +30,8 @@
 		[Group]: Locomotion_Jump
 		[Begin]: 0.033333
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [26334](\Global\POI_GhostTrappedPed\UseConditions)

@@ -63,10 +63,15 @@
 	[0ms](ExecuteTrackLibraryTrack)
 
 [25773](\Global\POI_Dead\Interactions\ExecuteTracks):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
 	[0ms](DamageTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](PlayEffectTrack)
 
 [25764](\Global\POI_Dead\Interactions\MasterSpawn):

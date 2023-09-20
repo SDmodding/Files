@@ -51,15 +51,20 @@
 
 [20379](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\EnterVehicle\Default\GetIn):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Mount_RIT
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Mount_RIT
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -79,15 +84,20 @@
 
 [20378](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\EnterVehicle\Default\GetInPassengerSide):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Mount_LFT
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Mount_LFT
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -107,15 +117,20 @@
 
 [20377](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\EnterVehicle\Default\GetInRearSide):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Mount_BAK
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Mount_BAK
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -135,17 +150,23 @@
 
 [20371](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\EnterVehicle\OnLeftSide):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_PicUpMnt_LFT
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_PicUpMnt_LFT
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraFollowGotoTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -171,6 +192,7 @@
 [20373](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\EnterVehicle\OnLeftSide\TargetPlay\Spawn):
 	[0ms](AnimationRefPoseTrack)
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_PicUpMnt_LFT_Object
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -181,16 +203,21 @@
 
 [20374](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\EnterVehicle\OnRightSide):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_PicUpMnt_RIT
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_PicUpMnt_RIT
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraFollowGotoTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -216,6 +243,7 @@
 [20376](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\EnterVehicle\OnRightSide\TargetPlay\Spawn):
 	[0ms](AnimationRefPoseTrack)
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_PicUpMnt_RIT_Object
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -225,9 +253,13 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [20380](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\HelperFunctions\GetInNoAnim):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 20350
 	[0ms](SpawnTrack):
@@ -245,16 +277,22 @@
 
 [20368](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\NPC\FromDriverSide\FromDriverSide):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Hijack_RIT_GIV
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Hijack_RIT_GIV
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -270,12 +308,17 @@
 
 [20369](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\NPC\FromDriverSide\Receive):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Hijack_RIT_RCV
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -286,16 +329,22 @@
 
 [20366](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\NPC\FromPassengerSide\FromPassengerSide):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Hijack_LFT_GIV
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Hijack_LFT_GIV
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -311,12 +360,17 @@
 
 [20367](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\NPC\FromPassengerSide\Receive):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Hijack_LFT_RCV
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -331,13 +385,18 @@
 
 [20364](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\Player\FromDriverSide\FromDriverSide):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Hijack_RIT_GIV
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -407,29 +466,40 @@
 
 [20365](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\Player\FromDriverSide\Receive):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Hijack_RIT_RCV
 		[Group]: Scooter_Into
 		[Begin]: 0.133333
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](VehicleInteractTrack)
 	[700ms](TargetDetachTrack)
 	[700ms](TargetReleaseTrack)
-	[966ms](CharacterPhysicsTrack)
-	[1133ms](GravityTrack)
+	[966ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[1133ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [20359](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\Player\FromPassengerSide\FromPassengerSide):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Hijack_LFT_GIV
 		[Group]: Scooter_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -499,19 +569,25 @@
 
 [20360](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\Player\FromPassengerSide\Receive):
 	[0ms](AnimationTrack):
+		[Name]: SCOOT_Hijack_LFT_RCV
 		[Group]: Scooter_Into
 		[Begin]: 0.133333
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](VehicleInteractTrack)
 	[700ms](TargetDetachTrack)
 	[700ms](TargetReleaseTrack)
-	[966ms](CharacterPhysicsTrack)
-	[1133ms](GravityTrack)
+	[966ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[1133ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [20352](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\Player\VehicleMovingFail\Fast):
 	[0ms](SpawnTrack):
@@ -519,10 +595,13 @@
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [20353](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\Player\VehicleMovingFail\Fast\Fast):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](EventTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -537,12 +616,14 @@
 
 [20354](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\Player\VehicleMovingFail\Fast\Fast\Anims\OnLeftSide):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_LFT
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
 
 [20355](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetIn\Hijack\Player\VehicleMovingFail\Fast\Fast\Anims\OnRightSide):
 	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Hijack_Fail_RIT
 		[Group]: Vehicle_Into
 		[Begin]: 0.000000
 		[End]: -1.000000
@@ -553,9 +634,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](TargetDetachTrack)
 	[0ms](TargetLockTrack)
@@ -568,9 +653,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](TargetDetachTrack)
 	[0ms](TargetLockTrack)
@@ -583,9 +672,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](TargetDetachTrack)
 	[0ms](TargetLockTrack)
@@ -598,9 +691,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](TargetDetachTrack)
 	[0ms](TargetLockTrack)
@@ -613,9 +710,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](TargetDetachTrack)
 	[0ms](TargetLockTrack)
@@ -628,9 +729,13 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](TargetDetachTrack)
 	[0ms](TargetLockTrack)
@@ -638,9 +743,13 @@
 	[0ms](VehicleInteractTrack)
 
 [20390](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetOut\ActionHijack\Jump\FromBack):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.800000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -651,9 +760,13 @@
 	[0ms](VehicleInteractTrack)
 
 [20398](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetOut\ActionHijack\Jump\FromBackLeft):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.800000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -683,9 +796,13 @@
 		[End]: -1.000000
 
 [20394](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetOut\ActionHijack\Jump\FromBackRight):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.800000
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -734,9 +851,13 @@
 		[End]: -1.000000
 
 [20386](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetOut\ActionHijack\Jump\FromLeft):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -766,9 +887,13 @@
 		[End]: -1.000000
 
 [20382](\Global\Scooter\Interactions\MasterSpawn\Vehicle\GetOut\ActionHijack\Jump\FromRight):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -805,8 +930,11 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -822,8 +950,11 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
 	[366ms](TargetDetachTrack)
-	[400ms](CharacterPhysicsTrack)
-	[633ms](GravityTrack)
+	[400ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[633ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[700ms](OpportunityTrack)
 	[1733ms](OpportunityTrack)
 
@@ -834,8 +965,10 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -854,9 +987,13 @@
 		[End]: -1.000000
 	[0ms](AudioTrackSimple)
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -881,9 +1018,13 @@
 		[End]: -1.000000
 	[0ms](AudioTrackSimple)
 	[0ms](CameraChangeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -907,9 +1048,13 @@
 		[Group]: Scooter_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
@@ -1117,7 +1262,8 @@
 		[Group]: Scooter_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](EventTrack)
 	[0ms](SequenceTrack):
@@ -1133,7 +1279,9 @@
 	[0ms](VehicleInteractTrack)
 
 [20650](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\CrashFront\Ragdoll):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -1343,7 +1491,9 @@
 		[Group]: Scooter_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -1352,7 +1502,9 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
 	[233ms](TargetDetachTrack)
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [20494](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Knockout\Speed\SpeedA):
 	[0ms](AnimationTrack):
@@ -1360,7 +1512,9 @@
 		[Group]: Scooter_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -1369,7 +1523,9 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
 	[233ms](TargetDetachTrack)
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [20495](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Knockout\Speed\SpeedB):
 	[0ms](AnimationTrack):
@@ -1377,7 +1533,9 @@
 		[Group]: Scooter_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -1386,7 +1544,9 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
 	[333ms](TargetDetachTrack)
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [20496](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Knockout\Speed\SpeedC):
 	[0ms](AnimationTrack):
@@ -1394,7 +1554,9 @@
 		[Group]: Scooter_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](SequenceTrack):
 		[ID]: 0
 	[0ms](SpawnTrack):
@@ -1403,7 +1565,9 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](VehicleInteractTrack)
 	[333ms](TargetDetachTrack)
-	[1200ms](GravityTrack)
+	[1200ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [20491](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\RemoveDriver\FallOffForward):
 	[0ms](AnimationTrack):
@@ -1411,7 +1575,8 @@
 		[Group]: Motorbike_Drive
 		[Begin]: 0.000000
 		[End]: 0.333333
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
 	[0ms](EventTrack)
 	[0ms](EventTrack)
 	[0ms](SequenceTrack):
@@ -1427,7 +1592,9 @@
 	[0ms](VehicleInteractTrack)
 
 [20492](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\RemoveDriver\FallOffForward\Ragdoll):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](RagdollAquireTrack)
 	[0ms](RagdollSetFrictionTrack)
 	[0ms](SequenceTrack):
@@ -1438,9 +1605,13 @@
 	[0ms](StimulusTrack)
 
 [20533](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Utility\ExecuteLibrary\DetachToRagdoll):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DEAD
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_ENTER_EXIT_VEHICLE
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](RagdollSetFrictionTrack)
 	[0ms](SpawnTrack):
 		[KeepAlive]: 0
@@ -1449,10 +1620,14 @@
 		[KeepAlive]: 0
 		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 	[0ms](TargetReleaseTrack)
-	[33ms](GravityTrack)
+	[33ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 1
 	[33ms](TargetDetachTrack)
 	[33ms](VehicleInteractTrack)
-	[100ms](GravityTrack)
+	[100ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [20594](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Utility\ImpactDamageEffect\ImpactApplyDamage\HeavyDamage\Default):
 	[0ms](DamageTrack)
@@ -1927,7 +2102,9 @@
 		[Begin]: 0.000000
 		[End]: -1.000000
 	[0ms](ExecuteTrackLibraryTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -1998,27 +2175,36 @@
 	[0ms](SubjectFollowOverrideTrack)
 
 [20613](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Utility\ImpactDamageEffect\Ragdoll\RecoverRagdoll):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
 	[0ms](MasterTrack)
 	[0ms](RagdollChangeModeTrack)
 	[0ms](RagdollReleaseTrack)
 	[0ms](SubjectFollowOverrideTrack)
 
 [20643](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\BallisticGrav\Off):
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 
 [20644](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\BallisticGrav\On):
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 1
 	[0ms](OpportunityTrack)
 
 [20648](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\BreakOut\Default):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollReleaseTrack)
 
 [20647](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\BreakOut\IsPlayer):
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_CROUCH
 	[0ms](RagdollChangeModeTrack)
 
 [20646](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\ConditionalRelease\Default):
@@ -2399,8 +2585,11 @@
 [20642](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\HitTree\Utility\ImpactDamageEffect\Ragdoll\Utility\SpeedTest\Release)
 [20446](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\Ride):
 	[0ms](BlendTreeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -2417,8 +2606,11 @@
 
 [20445](\Global\Scooter\Interactions\MasterSpawn\Vehicle\Ride\RideBackwards):
 	[0ms](BlendTreeTrack)
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -2728,7 +2920,8 @@
 		[Group]: Scooter_Drive
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
@@ -2969,8 +3162,11 @@
 		[Group]: Scooter
 		[Begin]: 0.000000
 		[End]: -1.000000
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DRIVING
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](OpportunityTrack)
 	[0ms](OpportunityTrack)
 

@@ -427,8 +427,11 @@
 	[0ms](SkookumTrack):
 		[Class]: Character
 		[Script]: _poi_stop_using_use() 
-	[500ms](CharacterPhysicsTrack)
-	[500ms](GravityTrack)
+	[500ms](CharacterPhysicsTrack):
+		[Mode]: CP_WALK
+	[500ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 	[500ms](SkookumTrack):
 		[Class]: Character
 		[Script]: PokerDice.despawn_all()
@@ -452,8 +455,11 @@
 		[Script]: NIS.hide_curtain()
 
 [27547](\Global\PokerDice3D\Interactions\Sync\Immediate):
-	[0ms](CharacterPhysicsTrack)
-	[0ms](GravityTrack)
+	[0ms](CharacterPhysicsTrack):
+		[Mode]: CP_DISABLED
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](MasterTrack)
 	[0ms](TargetSyncPositionTrack)
 	[500ms](SkookumTrack):

@@ -5,8 +5,12 @@
 		[End]: -1.000000
 	[0ms](AttackTimerTrack)
 	[0ms](GameStatEventTrack)
-	[0ms](GravityTrack)
-	[0ms](GravityTrack)
+	[0ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
+	[0ms](GravityTrack):
+		[Value]: 0.000000
+		[BallisticMode]: 0
 	[0ms](StimulusTrack)
 	[0ms](StimulusTrack)
 	[0ms](SubjectFollowOverridePOITrack)
@@ -18,7 +22,8 @@
 	[0ms](TargetReleaseTrack)
 	[0ms](TimeWarpTrack)
 	[200ms](TargetSyncPositionTrack)
-	[266ms](SetStateFlagTrack)
+	[266ms](SetStateFlagTrack):
+		[FlagType]: eSTATE_FLAG_UNINTERRUPTIBLE
 	[500ms](TargetPlayTrack)
 
 [26059](\Global\POI_Elevator4Fall001\Interactions\Action\Grapple\Left\HeadslamRCV):
@@ -41,7 +46,9 @@
 	[0ms](GameStatSpecialMoveTrack)
 	[0ms](TargetLockTrack)
 	[0ms](TargetSyncPositionTrack)
-	[1000ms](GravityTrack)
+	[1000ms](GravityTrack):
+		[Value]: -9.808333
+		[BallisticMode]: 0
 
 [26065](\Global\POI_Elevator4Fall001\POI_Condition_Reference\ActionRequest)
 [26062](\Global\POI_Elevator4Fall001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
