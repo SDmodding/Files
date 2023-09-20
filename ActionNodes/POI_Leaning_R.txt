@@ -1,61 +1,102 @@
 [26918](\Global\POI_Leaning_R\Interactions\HitTree\OverRailing\InAir\Back):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](HandleDamageTrack)
-[0ms](ParkourSyncPositionTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[200ms](GravityTrack)
-[366ms](DetailedOnGroundTrack)
-[400ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Back_Lean_Rail_Fall
+		[Group]: POI_Lean_Rail_HitReacts
+		[Begin]: 0.333333
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](HandleDamageTrack)
+	[0ms](ParkourSyncPositionTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18777
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[200ms](GravityTrack)
+	[366ms](DetailedOnGroundTrack)
+	[400ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26917](\Global\POI_Leaning_R\Interactions\HitTree\OverRailing\InAir\Front):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](HandleDamageTrack)
-[0ms](ParkourSyncPositionTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[366ms](DetailedOnGroundTrack)
-[400ms](GravityTrack)
-[400ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Rail_FRT_RCV
+		[Group]: Grapples
+		[Begin]: 0.333333
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](HandleDamageTrack)
+	[0ms](ParkourSyncPositionTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18777
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[366ms](DetailedOnGroundTrack)
+	[400ms](GravityTrack)
+	[400ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26911](\Global\POI_Leaning_R\Interactions\LeaningIdles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SensorComponentTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SensorComponentTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
 
 [26912](\Global\POI_Leaning_R\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_90R):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_R_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26913](\Global\POI_Leaning_R\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_90R\LeaningIdles\LeaningIdle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_R_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26914](\Global\POI_Leaning_R\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_90R):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_R_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26915](\Global\POI_Leaning_R\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_90R\LeaningIdles\LeaningIdle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_R_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26916](\Global\POI_Leaning_R\Interactions\LeaningIdles\LeaningExit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_R_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26910](\Global\POI_Leaning_R\UseConditions)

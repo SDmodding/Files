@@ -1,19 +1,24 @@
 [24958](\Global\BangOnWindow\Interactions\BangIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24959](\Global\BangOnWindow\Interactions\BangIdles\BangAnims\Bang):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [24960](\Global\BangOnWindow\Interactions\BangIdles\Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [24957](\Global\BangOnWindow\UseConditions)

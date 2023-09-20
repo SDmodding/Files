@@ -1,21 +1,28 @@
 [28907](\Global\TeapotReturn\Interactions\TeapotReturn):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28908](\Global\TeapotReturn\Interactions\TeapotReturn\Drop):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignMyTargetToTargetsTargetTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: GUN_Drop_STR_LO
+		[Group]: Inventory_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28909
+	[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSteerToTrack)
 
 [28909](\Global\TeapotReturn\Interactions\TeapotReturn\Teapot_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [28906](\Global\TeapotReturn\UseConditions)

@@ -1,191 +1,225 @@
 [6150](\Global\Rooster\MasterSpawn):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
 
 [6189](\Global\Rooster\MasterSpawn\Actions\Idle):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
 
 [6191](\Global\Rooster\MasterSpawn\Actions\Idle\Behavior\Idle):
-[0ms](IdleTrack)
-[0ms](MinimumDurationTrack)
-[0ms](SequenceTrack)
+	[0ms](IdleTrack)
+	[0ms](MinimumDurationTrack)
+	[0ms](SequenceTrack):
+		[ID]: 6190
 
 [6190](\Global\Rooster\MasterSpawn\Actions\Idle\Behavior\Wander):
-[0ms](MinimumDurationTrack)
-[0ms](SequenceTrack)
-[0ms](WanderTrack)
+	[0ms](MinimumDurationTrack)
+	[0ms](SequenceTrack):
+		[ID]: 6191
+	[0ms](WanderTrack)
 
 [6151](\Global\Rooster\MasterSpawn\Actions\InactiveStates\Dead):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [6171](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn):
-[0ms](CollisionAvoidanceTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetAssignTrack)
+	[0ms](CollisionAvoidanceTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
+	[0ms](TargetAssignTrack)
+	[0ms](TargetAssignTrack)
+	[0ms](TargetAssignTrack)
 
 [6182](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\CombatIdle\Idle):
-[0ms](IdleTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](IdleTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
 
 [6183](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\CombatIdle\Idle\Stance\CombatStance):
-[0ms](ActionRequestTrack)
-[0ms](ActionRequestTrack)
-[0ms](OpportunityTrack)
-[100ms](DialogueTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](OpportunityTrack)
+	[100ms](DialogueTrack)
 
 [6184](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\CombatIdle\Idle\Stance\Idle):
-[0ms](ActionRequestTrack)
-[0ms](OpportunityTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](OpportunityTrack)
 
 [6173](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\CombatReactions\Disabled\Downed):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [6175](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\CombatReactions\Disabled\Grappled):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [6174](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\CombatReactions\Disabled\Stunned):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [6176](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\CombatRegion\OutsideCombatRegion):
-[0ms](CombatRegionMoveToTrack)
-[0ms](OpportunityTrack)
+	[0ms](CombatRegionMoveToTrack)
+	[0ms](OpportunityTrack)
 
 [6177](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\MeleeBehavior\BasicAttack):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
 
 [6178](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\MeleeBehavior\BasicAttack\Attacks\Default\Attack):
-[0ms](ActionRequestAndWaitUntilPlayingTrack)
-[0ms](OpportunityTrack)
+	[0ms](ActionRequestAndWaitUntilPlayingTrack)
+	[0ms](OpportunityTrack)
 
 [6180](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\MeleeBehavior\BasicAttack\Attacks\Default\Dummy)
 [6179](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\MeleeBehavior\BasicAttack\Attacks\Default\MoveIn):
-[0ms](ActionRequestTrack)
-[0ms](ActionRequestTrack)
-[0ms](MinimumDurationTrack)
-[0ms](OpportunityTrack)
-[0ms](PathfindToTargetTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](MinimumDurationTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PathfindToTargetTrack)
 
 [6181](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\MeleeBehavior\BasicAttack\Attacks\Dummy)
 [6172](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\Behaviour\TargetDead):
-[0ms](AIObjectiveTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AIObjectiveTrack)
+	[0ms](TargetReleaseTrack)
 
 [6185](\Global\Rooster\MasterSpawn\Actions\Objectives\AttackTargetSimple\CombatSpawn\CombatStance\Default):
-[0ms](ActionRequestTrack)
-[0ms](OpportunityTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](OpportunityTrack)
 
 [6170](\Global\Rooster\MasterSpawn\Actions\Objectives\FaceTarget\FaceTarget):
-[0ms](OpportunityTrack)
-[0ms](TurnToFaceTargetTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TurnToFaceTargetTrack)
 
 [6168](\Global\Rooster\MasterSpawn\Actions\Objectives\Flee\Flee):
-[0ms](CollisionAvoidanceTrack)
-[0ms](FleeTrack)
-[0ms](MinimumDurationTrack)
-[0ms](OpportunityTrack)
+	[0ms](CollisionAvoidanceTrack)
+	[0ms](FleeTrack)
+	[0ms](MinimumDurationTrack)
+	[0ms](OpportunityTrack)
 
 [6169](\Global\Rooster\MasterSpawn\Actions\Objectives\Follow):
-[0ms](CollisionAvoidanceTrack)
-[0ms](FollowTargetTrack)
-[0ms](HeadTrackTargetTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetAssignTrack)
+	[0ms](CollisionAvoidanceTrack)
+	[0ms](FollowTargetTrack)
+	[0ms](HeadTrackTargetTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetAssignTrack)
 
 [6186](\Global\Rooster\MasterSpawn\Actions\Objectives\Idle\Idle):
-[0ms](IdleTrack)
-[0ms](MinimumDurationTrack)
-[0ms](OpportunityTrack)
+	[0ms](IdleTrack)
+	[0ms](MinimumDurationTrack)
+	[0ms](OpportunityTrack)
 
 [6166](\Global\Rooster\MasterSpawn\Actions\PerformScriptCommands\PerformScriptCommands):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
 
 [6167](\Global\Rooster\MasterSpawn\Actions\PerformScriptCommands\PerformScriptCommands\ExecuteScriptCommands):
-[0ms](PerformScriptCommandTrack)
+	[0ms](PerformScriptCommandTrack)
 
 [6187](\Global\Rooster\MasterSpawn\Actions\RunFromPlayer):
-[0ms](OpportunityTrack)
-[0ms](PathfindAwayFromTargetTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PathfindAwayFromTargetTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
 
 [6188](\Global\Rooster\MasterSpawn\Actions\RunFromPlayer\AudioSpawn):
-[0ms](AudioTrack)
-[0ms](MinimumDurationTrack)
+	[0ms](AudioTrack)
+	[0ms](MinimumDurationTrack)
 
 [6165](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\ForceEnterCover\Exit)
 [6162](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\ForceEnterCover\ForceEnterCover):
-[0ms](ActionRequestTrack)
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
 
 [6163](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\ForceEnterCover\ForceEnterCover\CoverSearch\RepeatedSearch):
-[0ms](AICoverSearchTrack)
+	[0ms](AICoverSearchTrack)
 
 [6164](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\ForceEnterCover\InCover):
-[0ms](AIObjectiveTrack)
-[0ms](ActionRequestTrack)
+	[0ms](AIObjectiveTrack)
+	[0ms](ActionRequestTrack)
 
 [6153](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\GetInVehicle\GetInVehicle):
-[0ms](AIObjectiveTrack)
-[0ms](ActionRequestAndWaitUntilPlayingTrack)
-[0ms](OpportunityTrack)
+	[0ms](AIObjectiveTrack)
+	[0ms](ActionRequestAndWaitUntilPlayingTrack)
+	[0ms](OpportunityTrack)
 
 [6154](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\GetOutOfVehicle\GetOutOfVehicle):
-[0ms](AIObjectiveTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AIObjectiveTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
 
 [6155](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\GetOutOfVehicle\GetOutOfVehicle\ExitVehicle\ExitBike):
-[0ms](ActionRequestAndWaitUntilPlayingTrack)
-[0ms](OpportunityTrack)
+	[0ms](ActionRequestAndWaitUntilPlayingTrack)
+	[0ms](OpportunityTrack)
 
 [6156](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\GetOutOfVehicle\GetOutOfVehicle\ExitVehicle\ExitVehicle):
-[0ms](ActionRequestAndWaitUntilPlayingTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[1200ms](OpportunityTrack)
+	[0ms](ActionRequestAndWaitUntilPlayingTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
+	[1200ms](OpportunityTrack)
 
 [6160](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\GetOutOfVehicle\GetOutOfVehicle\ExitVehicle\ExitVehicle\EndExit)
 [6159](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\GetOutOfVehicle\GetOutOfVehicle\ExitVehicle\ExitVehicle\TakeCoverOnDoor\FoundCover):
-[0ms](ActionRequestTrack)
-[0ms](ExecuteTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](ExecuteTrack)
 
 [6157](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\GetOutOfVehicle\GetOutOfVehicle\ExitVehicle\ExitVehicle\TakeCoverOnDoor\SearchForCover):
-[0ms](ActionRequestTrack)
-[0ms](OpportunityTrack)
-[1166ms](SpawnTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](OpportunityTrack)
+	[1166ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
 
 [6158](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\GetOutOfVehicle\GetOutOfVehicle\ExitVehicle\ExitVehicle\TakeCoverOnDoor\SearchForCover\CoverSearch):
-[0ms](AICoverSearchTrack)
+	[0ms](AICoverSearchTrack)
 
 [6161](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\GetOutOfVehicle\GetOutOfVehicle\ExitVehicle\InvalidVehicle)
 [6152](\Global\Rooster\MasterSpawn\Actions\ScriptObjectives\UsePOINoInterrupt):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_AI
 
 [6193](\Global\Rooster\MasterSpawn\AudiobankLoad\Idle):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [6192](\Global\Rooster\MasterSpawn\AudiobankLoad\LoadChickenSFX):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
 
 [6149](\Global\Rooster\NISControlled):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 

@@ -1,20 +1,25 @@
 [25088](\Global\POI_BroomPickup\Interactions\Broom):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25090](\Global\POI_BroomPickup\Interactions\Broom\Broom_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetReleaseTrack)
 
 [25089](\Global\POI_BroomPickup\Interactions\Broom\Pickup):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
-[333ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25090
+	[0ms](TargetSteerToTrack)
+	[333ms](TargetAttachTrack)
 
 [25087](\Global\POI_BroomPickup\UseConditions)

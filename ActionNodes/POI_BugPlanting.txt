@@ -1,71 +1,107 @@
 [25132](\Global\BugPlanting\Interactions\Anims\0xC5CAC41C):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SubjectFollowOverrideTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SubjectFollowOverrideTrack)
 
 [25134](\Global\BugPlanting\Interactions\Anims\Planting_CYC):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SubjectFollowOverrideTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SubjectFollowOverrideTrack)
 
 [25135](\Global\BugPlanting\Interactions\Anims\Planting_to_Screwdriver):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SubjectFollowOverrideTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 1.100000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25136
+	[0ms](SubjectFollowOverrideTrack)
+	[0ms](TargetPlayTrack)
 
 [25136](\Global\BugPlanting\Interactions\Anims\Screwdriver_CYC_2):
-[0ms](AnimationTrack)
-[0ms](SubjectFollowOverrideTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SubjectFollowOverrideTrack)
 
 [25133](\Global\BugPlanting\Interactions\Anims\Screwdriver_to_Planting):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SubjectFollowOverrideTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 0.933333
+		[End]: 4.433333
+	[0ms](SequenceTrack):
+		[ID]: 25134
+	[0ms](SubjectFollowOverrideTrack)
+	[0ms](TargetPlayTrack)
 
 [25130](\Global\BugPlanting\Interactions\Begin):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SubjectFollowOverrideTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25131
+	[0ms](SubjectFollowOverrideTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25137](\Global\BugPlanting\Interactions\Exit\0x81B3C4F7):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SubjectFollowOverrideTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 1.100000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25138
+	[0ms](SubjectFollowOverrideTrack)
+	[0ms](TargetPlayTrack)
 
 [25138](\Global\BugPlanting\Interactions\Exit\AutoExit):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.setup_cameras(false)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](SubjectFollowOverrideTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.setup_cameras(false)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](SubjectFollowOverrideTrack)
 
 [25131](\Global\BugPlanting\Interactions\Minigame):
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.setup_cameras()
-[0ms](SpawnTrack)
-[0ms](UIScreenTrack)
-[1000ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.c_minigame._setup_bugplanting()
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.setup_cameras()
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](UIScreenTrack):
+		[Name]: BugPlantingMinigame
+	[1000ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.c_minigame._setup_bugplanting()
 
 [25129](\Global\BugPlanting\Interactions\MoveTo):
-[0ms](BlendTreeTrack)
-[0ms](OpportunityTrack)
-[0ms](PathfindToTargetTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PathfindToTargetTrack)
+	[0ms](SequenceTrack):
+		[ID]: 25130
+	[0ms](TargetSteerToTrack)
 
 [25128](\Global\BugPlanting\Interactions\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25127](\Global\BugPlanting\UseConditions)

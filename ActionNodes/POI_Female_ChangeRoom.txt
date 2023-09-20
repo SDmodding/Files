@@ -1,28 +1,39 @@
 [26138](\Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26140](\Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Anims\Anims\FloozyIdle_Anims):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Female_Floozy_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26139
 
 [26141](\Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Anims\Anims\NewClothes_Anims):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Female_NewClothes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26139
 
 [26139](\Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Anims\ChangeRoom_Anims):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26142](\Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26137](\Global\POI_Female_ChangeRoom\UseConditions)

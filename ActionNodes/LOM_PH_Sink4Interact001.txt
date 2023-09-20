@@ -1,24 +1,27 @@
 [24576](\Global\LOM_PH_Sink4Interact001\Object\Deactivated):
-[0ms](MasterTrack)
-[0ms](SetHighlightingModeTrack)
+	[0ms](MasterTrack)
+	[0ms](SetHighlightingModeTrack)
 
 [24575](\Global\LOM_PH_Sink4Interact001\Object\Idle):
-[0ms](ExecuteTrack)
-[0ms](SetHighlightingModeTrack)
+	[0ms](ExecuteTrack)
+	[0ms](SetHighlightingModeTrack)
 
 [24579](\Global\LOM_PH_Sink4Interact001\Object\NotInteractable\HeadSlam):
-[0ms](GameStatSpecialMoveTrack)
-[0ms](PhysicalDamageTrack)
-[0ms](SequenceTrack)
-[0ms](SetHighlightingModeTrack)
+	[0ms](GameStatSpecialMoveTrack)
+	[0ms](PhysicalDamageTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24576
+	[0ms](SetHighlightingModeTrack)
 
 [24577](\Global\LOM_PH_Sink4Interact001\Object\NotInteractable\WashHands):
-[0ms](ExecuteTrack)
-[0ms](SequenceTrack)
-[500ms](PlayEffectTrack)
+	[0ms](ExecuteTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24575
+	[500ms](PlayEffectTrack)
 
 [24578](\Global\LOM_PH_Sink4Interact001\Object\NotInteractable\WashHandsWei):
-[0ms](ExecuteTrack)
-[0ms](SequenceTrack)
-[500ms](PlayEffectTrack)
+	[0ms](ExecuteTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24575
+	[500ms](PlayEffectTrack)
 

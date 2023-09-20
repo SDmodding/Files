@@ -1,16 +1,25 @@
 [29413](\Global\POI_Vomit_Fast\Interactions\VomitIdles):
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29414](\Global\POI_Vomit_Fast\Interactions\VomitIdles\VomitAnims\Male\Vomit):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[500ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Vomit_Ground
+		[Begin]: 3.333333
+		[End]: 6.333333
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[500ms](PlayEffectTrack)
 
 [29415](\Global\POI_Vomit_Fast\Interactions\VomitIdles\Vomit_Exit\Vomit_Exit):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: POI_Vomit_Ground
+		[Begin]: 10.866667
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [29412](\Global\POI_Vomit_Fast\UseConditions)

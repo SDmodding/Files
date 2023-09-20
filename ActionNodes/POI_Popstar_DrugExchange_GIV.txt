@@ -1,45 +1,67 @@
 [27602](\Global\POI_Popstar_DrugExchange_GIV\Interactions\BuyerRCV):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: poi_stop_using_use()
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Teng_Case_03_PopStar_Photo
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Group]: POI_Teng_Case_03_PopStar_Photo
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: poi_stop_using_use()
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27599](\Global\POI_Popstar_DrugExchange_GIV\Interactions\PopstarGIV):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: poi_stop_using_use()
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
-[10800ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Teng_Case_03_PopStar_Photo
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Group]: POI_Teng_Case_03_PopStar_Photo
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: poi_stop_using_use()
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
+	[10800ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27600](\Global\POI_Popstar_DrugExchange_GIV\Interactions\PopstarGIV\Object\TrunkOpen):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Teng_Case_03_PopStar_Photo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27601](\Global\POI_Popstar_DrugExchange_GIV\Interactions\PopstarGIV\Spawnknife):
-[0ms](MasterTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetDetachTrack)
+	[0ms](MasterTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-kitchenknife
+	[0ms](TargetAttachTrack)
+	[0ms](TargetDetachTrack)
 
 [27598](\Global\POI_Popstar_DrugExchange_GIV\Interactions\WaitForBuyer):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27597](\Global\POI_Popstar_DrugExchange_GIV\UseConditions)

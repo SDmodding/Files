@@ -1,11 +1,25 @@
 [24125](\Global\MagicDoor\Object\Idle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: Door_Closed_Idle_Object
+		[Group]: Door
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [24127](\Global\MagicDoor\Object\OpenLeft):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_MagicDoor_Open_Left_Object
+		[Group]: POI_MagicDoor_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24125
 
 [24126](\Global\MagicDoor\Object\OpenRight):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_MagicDoor_Open_Right_Object
+		[Group]: POI_MagicDoor_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24125
 

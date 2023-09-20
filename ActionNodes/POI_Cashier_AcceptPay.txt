@@ -1,14 +1,19 @@
 [25180](\Global\POI_Cashier_AcceptPay\Interactions\MasterSpawn):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25181](\Global\POI_Cashier_AcceptPay\Interactions\MasterSpawn\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cashier_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25182](\Global\POI_Cashier_AcceptPay\Interactions\MasterSpawn\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25179](\Global\POI_Cashier_AcceptPay\UseConditions)

@@ -1,72 +1,114 @@
 [26073](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](StimulusTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](StimulusTrack)
 
 [26086](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_Exit\CheckBody_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](StimulusTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](StimulusTrack)
 
 [26075](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckBody):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[100ms](DialogueTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[100ms](DialogueTrack)
 
 [26080](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\CheckBody\CheckBody):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26075
 
 [26077](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\DefibBody):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SequenceTrack):
+		[ID]: 26078
 
 [26078](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\DefibBody2):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SequenceTrack):
+		[ID]: 26079
 
 [26076](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\GetDefib):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SequenceTrack):
+		[ID]: 26077
 
 [26079](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\ReturnDefib):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SequenceTrack):
+		[ID]: 26075
 
 [26084](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\DeadBody\DefibReact):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 2.400000
+		[End]: -1.000000
 
 [26085](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\DeadBody\DefibReact2):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [26074](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignTrack)
-[0ms](TurnToFaceTargetTrack)
-[8ms](TargetLockTrack)
-[100ms](DialogueTrack)
-[925ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26075
+	[0ms](TargetAssignTrack)
+	[0ms](TurnToFaceTargetTrack)
+	[8ms](TargetLockTrack)
+	[100ms](DialogueTrack)
+	[925ms](TargetDetachTrack)
 
 [26082](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\Out):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [26083](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\Steer)
 [26081](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\TakeBag):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[100ms](DialogueTrack)
-[375ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26082
+	[100ms](DialogueTrack)
+	[375ms](TargetAttachTrack)
 
 [26072](\Global\POI_EMT_CheckBody_Child\UseConditions)

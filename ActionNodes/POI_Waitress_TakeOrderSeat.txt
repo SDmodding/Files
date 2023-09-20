@@ -1,30 +1,36 @@
 [29435](\Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29437](\Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles\WaitressAnims\PathToAndExit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [29436](\Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles\WaitressAnims\Take_Order):
-[0ms](AnimationTrack)
-[0ms](HeadTrackTargetTrack)
-[0ms](SequenceTrack)
-[100ms](DialogueTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Waitress
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](HeadTrackTargetTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[100ms](DialogueTrack)
 
 [29438](\Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles\WaitressExit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [29434](\Global\POI_Waitress_TakeOrderSeat\UseConditions)

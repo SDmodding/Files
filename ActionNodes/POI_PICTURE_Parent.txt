@@ -1,61 +1,84 @@
 [27498](\Global\Picture_Parent\Interactions\Anims):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
 
 [27508](\Global\Picture_Parent\Interactions\Anims\PICTURE_Exit\PICTURE_Exit):
-[0ms](AnimationTrack)
-[0ms](DialogueTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](POIEnableChildTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: POI_PICTURE_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](DialogueTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](POIEnableChildTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27499](\Global\Picture_Parent\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources):
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27502](\Global\Picture_Parent\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources\IsSpawningActual):
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Camera001
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAttachTrack)
 
 [27500](\Global\Picture_Parent\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [27501](\Global\Picture_Parent\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources\WaitForResources\Timeout)
 [27503](\Global\Picture_Parent\Interactions\Anims\Picture_Enter\Picture_PreLoad):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27506](\Global\Picture_Parent\Interactions\Anims\Picture_Enter\Picture_PreLoad\Picture_Enter):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PICTURE_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Camera001
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAttachTrack)
 
 [27507](\Global\Picture_Parent\Interactions\Anims\Picture_Enter\Picture_PreLoad\Picture_Enter\Picture_Actual\Pictuer_Actual):
-[0ms](AnimationTrack)
-[0ms](DialogueTrack)
-[0ms](OpportunityTrack)
-[2600ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PICTURE_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](DialogueTrack)
+	[0ms](OpportunityTrack)
+	[2600ms](PlayEffectTrack)
 
 [27504](\Global\Picture_Parent\Interactions\Anims\Picture_Enter\Picture_PreLoad\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [27505](\Global\Picture_Parent\Interactions\Anims\Picture_Enter\Picture_PreLoad\WaitForResources\Timeout)
 [27497](\Global\Picture_Parent\UseConditions)

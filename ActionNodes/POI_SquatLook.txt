@@ -1,45 +1,77 @@
 [28776](\Global\POI_SquatLook\Interactions\SquatIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28782](\Global\POI_SquatLook\Interactions\SquatIdles\Exit\ExitFemale):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[500ms](OpportunityTrack)
-[1000ms](OpportunityTrack)
-[1000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: GANG_LOC_Female_Squat_to_Stand
+		[Group]: POI_SquatLook_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[500ms](OpportunityTrack)
+	[1000ms](OpportunityTrack)
+	[1000ms](OpportunityTrack)
 
 [28783](\Global\POI_SquatLook\Interactions\SquatIdles\Exit\ExitMale):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[500ms](OpportunityTrack)
-[1000ms](OpportunityTrack)
-[1000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: SHP_Idle_Squat_to_Stand
+		[Group]: POI_SquatLook_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[500ms](OpportunityTrack)
+	[1000ms](OpportunityTrack)
+	[1000ms](OpportunityTrack)
 
 [28779](\Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Idles\Female\Squat_01):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: GANG_LOC_Female_Squat_Idle
+		[Group]: POI_SquatLook_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28780](\Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Idles\Male\Squat_01):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: SHP_Idle_Squat_CYC
+		[Group]: POI_SquatLook_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28777](\Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Intro\IntroFemale):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: GANG_LOC_Female_Stand_to_Squat
+		[Group]: POI_SquatLook_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28778](\Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Intro\IntroMale):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: SHP_idle_to_Squat
+		[Group]: POI_SquatLook_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28781](\Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\SpeakDialogue):
-[0ms](DialogueTrackPOI)
+	[0ms](DialogueTrackPOI)
 
 [28775](\Global\POI_SquatLook\UseConditions)

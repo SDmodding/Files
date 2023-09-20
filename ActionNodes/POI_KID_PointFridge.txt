@@ -1,25 +1,36 @@
 [26826](\Global\POI_KID_PointFridge\Interactions\Exit):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26824](\Global\POI_KID_PointFridge\Interactions\PointFridgeAnims\Cyc):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_KID
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [26823](\Global\POI_KID_PointFridge\Interactions\PointFridgeAnims\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_KID
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26824
+	[0ms](TargetSyncPositionTrack)
 
 [26825](\Global\POI_KID_PointFridge\Interactions\PointFridgeAnims\Out):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_KID
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26826
+	[0ms](TargetSyncPositionTrack)
 
 [26822](\Global\POI_KID_PointFridge\UseConditions)

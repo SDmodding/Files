@@ -1,39 +1,60 @@
 [25922](\Global\POI_Drunk\Interactions\MasterSpawn):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
 
 [25923](\Global\POI_Drunk\Interactions\MasterSpawn\Anims\Idles\Idle_01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Drink_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25924](\Global\POI_Drunk\Interactions\MasterSpawn\Anims\Idles\Idle_02):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_DRUNK_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25925](\Global\POI_Drunk\Interactions\MasterSpawn\Anims\Idles\Idle_03):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Drink_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25926](\Global\POI_Drunk\Interactions\MasterSpawn\Anims\Idles\Idle_04):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_DRUNK_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25927](\Global\POI_Drunk\Interactions\MasterSpawn\Exit\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25928](\Global\POI_Drunk\Interactions\MasterSpawn\ObjectSpawn\LoadResources):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [25929](\Global\POI_Drunk\Interactions\MasterSpawn\ObjectSpawn\LoadResources\AttachCup):
-[0ms](ObjectCreateTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetDetachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-NISCup001
+	[0ms](ObjectReferenceTrack)
+	[0ms](TargetAttachTrack)
+	[0ms](TargetDetachTrack)
 
 [25921](\Global\POI_Drunk\UseConditions)

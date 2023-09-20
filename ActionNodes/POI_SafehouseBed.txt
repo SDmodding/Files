@@ -1,140 +1,180 @@
 [27772](\Global\POI_SafehouseBed\Interactions\Left_Side\AudiobankLoad):
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27774](\Global\POI_SafehouseBed\Interactions\Left_Side\Begin\Begin):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_INTO
+		[Group]: POI_SafeHouseBed
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 27775
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27775](\Global\POI_SafehouseBed\Interactions\Left_Side\Begin\Begin\Sleeping_01):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: World.c_player._sleep_save()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetLockTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_CYC
+		[Group]: POI_SafeHouseBed
+		[Begin]: 0.000000
+		[End]: 3.000000
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 27776
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: World.c_player._sleep_save()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetLockTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27776](\Global\POI_SafehouseBed\Interactions\Left_Side\Begin\Begin\Sleeping_01\Exit):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: HUD.region_show()
-[0ms](TargetLockTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
-[1666ms](GravityTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_OUT
+		[Group]: POI_SafeHouseBed
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: HUD.region_show()
+	[0ms](TargetLockTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
+	[1666ms](GravityTrack)
 
 [27773](\Global\POI_SafehouseBed\Interactions\Left_Side\Begin\MoveTo):
-[0ms](BlendTreeTrack)
-[0ms](OpportunityTrack)
-[0ms](PathfindToTargetTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PathfindToTargetTrack)
+	[0ms](SequenceTrack):
+		[ID]: 27774
+	[0ms](TargetSteerToTrack)
 
 [27764](\Global\POI_SafehouseBed\Interactions\Nightmare\AudiobankLoad):
-[0ms](AudioTrackSoundbankIO)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27765](\Global\POI_SafehouseBed\Interactions\Nightmare\Begin):
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: World.c_player.get_properties().set_property_boolean('WakeUp', false)
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 27766
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: World.c_player.get_properties().set_property_boolean('WakeUp', false)
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27766](\Global\POI_SafehouseBed\Interactions\Nightmare\Begin\Sleeping_01):
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: World.c_player._sleep_save()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 27767
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: World.c_player._sleep_save()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27767](\Global\POI_SafehouseBed\Interactions\Nightmare\Exit):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: HUD.region_show()
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_Stress_OUT
+		[Group]: POI_SafeHouseBed
+		[Begin]: 1.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: HUD.region_show()
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27763](\Global\POI_SafehouseBed\Interactions\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27768](\Global\POI_SafehouseBed\Interactions\WakeUp\AudiobankLoad):
-[0ms](AudioTrackSoundbankIO)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27769](\Global\POI_SafehouseBed\Interactions\WakeUp\Begin):
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: World.c_player.get_properties().set_property_boolean('WakeUp', false)
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 27770
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: World.c_player.get_properties().set_property_boolean('WakeUp', false)
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27770](\Global\POI_SafehouseBed\Interactions\WakeUp\Begin\Sleeping_01):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: World.c_player._sleep_save()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_CYC
+		[Group]: POI_SafeHouseBed
+		[Begin]: 0.000000
+		[End]: 3.000000
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 27771
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: World.c_player._sleep_save()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27771](\Global\POI_SafehouseBed\Interactions\WakeUp\Exit):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: HUD.region_show()
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
-[4000ms](GravityTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_OUT
+		[Group]: POI_SafeHouseBed
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: HUD.region_show()
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
+	[4000ms](GravityTrack)
 
 [27762](\Global\POI_SafehouseBed\UseConditions)

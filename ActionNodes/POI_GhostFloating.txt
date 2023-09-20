@@ -1,48 +1,72 @@
 [26326](\Global\POI_GhostFloating\Interactions\Root):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](HeadTrackTargetTrack)
-[0ms](InvulnerableTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SetStateFlagTrack)
-[0ms](SimObjectFlagSetTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Ghost_Floating
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](HeadTrackTargetTrack)
+	[0ms](InvulnerableTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SetStateFlagTrack)
+	[0ms](SimObjectFlagSetTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
 
 [26327](\Global\POI_GhostFloating\Interactions\Root\Exit\Falling):
-[0ms](AnimationTrack)
-[0ms](SetStateFlagTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[166ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Fall2InAir
+		[Group]: Locomotion_Fall
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SetStateFlagTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[166ms](OpportunityTrack)
 
 [26328](\Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0x6777FC79):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Reac_Trans_Stand2OneKnee
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 26329
 
 [26329](\Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0x6777FC79\Stunned):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Reac_Stun_OneKnee_Cyc
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26330](\Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0x6777FC79\Stunned\Effect):
-[0ms](ExecuteTrack)
-[0ms](PlayEffectTrack)
+	[0ms](ExecuteTrack)
+	[0ms](PlayEffectTrack)
 
 [26331](\Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0xFBB81FA4):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jump_Land_Light_to_Idle
+		[Group]: Locomotion_Jump
+		[Begin]: 0.033333
+		[End]: -1.000000
+	[0ms](GravityTrack)
 
 [26333](\Global\POI_GhostFloating\Interactions\Root\Steering\Idle):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [26332](\Global\POI_GhostFloating\Interactions\Root\Steering\SteerTo):
-[0ms](OpportunityTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetSteerToTrack)
 
 [26325](\Global\POI_GhostFloating\UseConditions)

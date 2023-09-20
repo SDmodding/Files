@@ -1,47 +1,106 @@
 [29684](\Global\POI_DLC_WallRunFail\Interactions\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use()
 
 [29678](\Global\POI_DLC_WallRunFail\Interactions\Master):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29680](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Auto-Kick-Off\PushAway):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[600ms](CharacterPhysicsTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Wall_Exit
+		[Group]: Locomotion_Wall
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 1
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: 0.666667
+		[AttackRadius]: 0.500000
+		[AttackTypeID]: 5
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 29681
+	[600ms](CharacterPhysicsTrack)
 
 [29681](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Auto-Kick-Off\PushAway\Fall):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Wall_Fall_Cyc
+		[Group]: Locomotion_Wall
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](OpportunityTrack)
 
 [29682](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Auto-Kick-Off\PushAway\Fall\Land):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Wall_Land
+		[Group]: Locomotion_Wall
+		[Begin]: 0.000000
+		[End]: 0.500000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](SequenceTrack):
+		[ID]: 29683
 
 [29679](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\RunUp):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](AttackCollisionTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](ParkourSyncPositionTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Wall_RunUp
+		[Group]: Locomotion_Wall
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Name]: LOC_Wall_RunUp
+		[Group]: Locomotion_Wall
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: 1.000000
+		[AttackRadius]: 0.416667
+		[AttackTypeID]: 6
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 200
+		[WeaponDamage]: 0
+		[ColBegin]: 0.266667
+		[ColEnd]: -1.000000
+		[AttackRadius]: 0.566667
+		[AttackTypeID]: 0
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](ParkourSyncPositionTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSyncPositionTrack)
 
 [29683](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Tired):
-[0ms](AnimationTrack)
-[5000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle_BreathHeavy
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[5000ms](OpportunityTrack)
 
 [29677](\Global\POI_DLC_WallRunFail\UseConditions)

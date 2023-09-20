@@ -1,29 +1,45 @@
 [28521](\Global\POI_SlidingDoor_LgWarehouse\Interactions\Action\Close):
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[166ms](TargetSyncPositionTrack)
-[1000ms](SpawnTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[166ms](TargetSyncPositionTrack)
+	[1000ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28523](\Global\POI_SlidingDoor_LgWarehouse\Interactions\Action\Close\Anims\SlideLeft):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_SlidingDoorWhs001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28522](\Global\POI_SlidingDoor_LgWarehouse\Interactions\Action\Close\Anims\SlideRight):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_SlidingDoorWhs001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28518](\Global\POI_SlidingDoor_LgWarehouse\Interactions\Action\Open):
-[0ms](SpawnTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[166ms](TargetSyncPositionTrack)
-[1000ms](TargetPlayTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[166ms](TargetSyncPositionTrack)
+	[1000ms](TargetPlayTrack)
 
 [28519](\Global\POI_SlidingDoor_LgWarehouse\Interactions\Action\Open\Anims\SlideLeft):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_SlidingDoorWhs001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28520](\Global\POI_SlidingDoor_LgWarehouse\Interactions\Action\Open\Anims\SlideRight):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_SlidingDoorWhs001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28517](\Global\POI_SlidingDoor_LgWarehouse\UseConditions\MainUse):
-[0ms](AudioTrackSoundbankIO)
+	[0ms](AudioTrackSoundbankIO)
 

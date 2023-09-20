@@ -1,31 +1,56 @@
 [25587](\Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [25590](\Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget\ExitLoop):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: poi_stop_using_use()
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: THG_Combat_Circle_03
+		[Group]: Thug
+		[Begin]: 4.700000
+		[End]: 6.333333
+	[0ms](LookAtTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: poi_stop_using_use()
+	[0ms](TargetSteerToTrack)
 
 [25588](\Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget\GroundAttackLoop\Chop):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSyncPositionTrack)
-[800ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 25588
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetSyncPositionTrack)
+	[800ms](OpportunityTrack)
 
 [25589](\Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget\GroundAttackLoop\Chop\Attack):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSteerToTrack)
-[200ms](OpportunityTrack)
-[300ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Baton_Ground
+		[Group]: Weapon_1hand_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 25
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.233333
+		[ColEnd]: 0.400000
+		[AttackRadius]: 0.300000
+		[AttackTypeID]: 11
+		[TargetOnly]: 1
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 0.000000
+		[TimeToDistance]: 0.000000
+		[TargetMovement]: 0.500000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](TargetLockTrack)
+	[0ms](TargetSteerToTrack)
+	[200ms](OpportunityTrack)
+	[300ms](TargetReleaseTrack)
 
 [25586](\Global\POI_ChopBodyGIV\UseConditions)

@@ -1,13 +1,17 @@
 [26732](\Global\POI_Investigate\Interactions\Out\Out):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Investigate
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](TargetReleaseTrack)
 
 [26731](\Global\POI_Investigate\UseConditions):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("$HUD_DODGE")
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("$HUD_DODGE")
 

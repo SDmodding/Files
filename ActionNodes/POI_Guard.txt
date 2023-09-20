@@ -1,32 +1,48 @@
 [26400](\Global\POI_Guard\Interactions\Guard_Idles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26401](\Global\POI_Guard\Interactions\Guard_Idles\Guard):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26403](\Global\POI_Guard\Interactions\Guard_Idles\Guard\Guard_Anims\0xB164979A):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Gestures_4
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26401
 
 [26404](\Global\POI_Guard\Interactions\Guard_Idles\Guard\Guard_Anims\0xB5A58A2D):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Gestures_2
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26401
 
 [26402](\Global\POI_Guard\Interactions\Guard_Idles\Guard\Guard_Anims\Guard_Idle01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_PoliceOfficer_Idle
+		[Group]: Guarding
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26401
 
 [26405](\Global\POI_Guard\Interactions\Guard_Idles\Guard_Idle_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26399](\Global\POI_Guard\UseConditions)

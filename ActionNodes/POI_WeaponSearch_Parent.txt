@@ -1,107 +1,158 @@
 [29483](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\AllClear\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PatDown_Disarm
+		[Begin]: 0.000000
+		[End]: 1.400000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetPlayTrack)
 
 [29484](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\AllClear\Rcv):
-[0ms](AnimationTrack)
-[0ms](TargetReleaseTrack)
-[1000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetReleaseTrack)
+	[1000ms](OpportunityTrack)
 
 [29469](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\ChildReady):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_PoliceOfficer_Idle
+		[Group]: Guarding
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [29470](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\EquippedRifle\Into\IntoGIV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
-[1533ms](TargetAssignTrack)
-[1533ms](TargetLockTrack)
-[1533ms](TargetStealAttachedItemTrack)
-[1566ms](SpawnTrack)
-[1566ms](TargetReleaseTrack)
-[2400ms](AttachmentTransferTrack)
-[2400ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PatDown_Disarm
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
+	[1533ms](TargetAssignTrack)
+	[1533ms](TargetLockTrack)
+	[1533ms](TargetStealAttachedItemTrack)
+	[1566ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1566ms](TargetReleaseTrack)
+	[2400ms](AttachmentTransferTrack)
+	[2400ms](TargetPlayTrack)
 
 [29471](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\EquippedRifle\Into\IntoRCV):
-[0ms](AnimationTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PatDown_Disarm
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetReleaseTrack)
 
 [29472](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\EquippedWeapon\Into\IntoGIV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
-[1200ms](TargetAssignTrack)
-[1200ms](TargetReleaseTrack)
-[1200ms](TargetStealAttachedItemTrack)
-[1233ms](TargetLockTrack)
-[1266ms](SpawnTrack)
-[2000ms](AttachmentTransferTrack)
-[2000ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PatDown_Disarm
+		[Begin]: 0.000000
+		[End]: 2.500000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
+	[1200ms](TargetAssignTrack)
+	[1200ms](TargetReleaseTrack)
+	[1200ms](TargetStealAttachedItemTrack)
+	[1233ms](TargetLockTrack)
+	[1266ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[2000ms](AttachmentTransferTrack)
+	[2000ms](TargetPlayTrack)
 
 [29473](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\EquippedWeapon\Into\IntoRCV):
-[0ms](AnimationTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PatDown_Disarm
+		[Begin]: 0.000000
+		[End]: 2.500000
+	[0ms](TargetReleaseTrack)
 
 [29474](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\PatDown\Check\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PatDown_Disarm
+		[Begin]: 0.000000
+		[End]: 7.500000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [29475](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\PatDown\Check\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PatDown_Disarm
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29476](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\PatDown\DisarmStowed\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
-[2833ms](TargetAssignTrack)
-[2833ms](TargetReleaseTrack)
-[2833ms](TargetStealAttachedItemTrack)
-[2866ms](SpawnTrack)
-[2866ms](TargetLockTrack)
-[3766ms](AttachmentTransferTrack)
-[3766ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PatDown_Disarm
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
+	[2833ms](TargetAssignTrack)
+	[2833ms](TargetReleaseTrack)
+	[2833ms](TargetStealAttachedItemTrack)
+	[2866ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[2866ms](TargetLockTrack)
+	[3766ms](AttachmentTransferTrack)
+	[3766ms](TargetPlayTrack)
 
 [29477](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\PatDown\DisarmStowed\Rcv):
-[0ms](AnimationTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetReleaseTrack)
-[1900ms](AttachmentTransferTrack)
-[1900ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PatDown_Disarm
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetReleaseTrack)
+	[1900ms](AttachmentTransferTrack)
+	[1900ms](TargetPlayTrack)
 
 [29482](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\Utility\TurnOffLight\Pistol):
-[0ms](TargetPlayTrack)
+	[0ms](TargetPlayTrack)
 
 [29479](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\Utility\TurnOffLight\Rifle):
-[0ms](TargetPlayTrack)
+	[0ms](TargetPlayTrack)
 
 [29480](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\Utility\TurnOffLight\Shotgun):
-[0ms](TargetPlayTrack)
+	[0ms](TargetPlayTrack)
 
 [29481](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\Utility\TurnOffLight\Submachinegun):
-[0ms](TargetPlayTrack)
+	[0ms](TargetPlayTrack)
 
 [29478](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Disarm\Utility\Unhide):
-[0ms](ExecuteTrack)
-[0ms](UnhideTrack)
+	[0ms](ExecuteTrack)
+	[0ms](UnhideTrack)
 
 [29485](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Exit\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: poi_stop_using_use()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: poi_stop_using_use()
 
 [29468](\Global\POI_WeaponSearch_Parent\Interactions\WeaponSearch_State\Wait\WaitForChild):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_PoliceOfficer_Idle
+		[Group]: Guarding
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [29467](\Global\POI_WeaponSearch_Parent\UseConditions)

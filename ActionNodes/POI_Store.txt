@@ -1,13 +1,18 @@
 [28817](\Global\POI_Store\Interactions\Exit):
-[0ms](OpportunityTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetReleaseTrack)
 
 [28816](\Global\POI_Store\Interactions\PerformAction):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: World.c_gameslice._launch_store_front(poi_get_target()<>InterestPoint.get_properties(),this)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 28817
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: World.c_gameslice._launch_store_front(poi_get_target()<>InterestPoint.get_properties(),this)
 
 [28815](\Global\POI_Store\UseConditions)

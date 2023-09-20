@@ -1,34 +1,61 @@
 [24484](\Global\LOM_ElecStoreShutter002\Object\Animation\Closing):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOM_ElecStoreShutter~Closing_Object
+		[Group]: LOM_ElecStoreShutter002
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SequenceTrack):
+		[ID]: 24479
 
 [24483](\Global\LOM_ElecStoreShutter002\Object\Animation\Opening_Automatic):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SequenceTrack):
+		[ID]: 24478
 
 [24480](\Global\LOM_ElecStoreShutter002\Object\Animation\Opening_Forced):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSimple)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOM_ElecStoreShutter~Opening_Object
+		[Group]: LOM_ElecStoreShutter002
+		[Begin]: 0.933333
+		[End]: 3.200000
+	[0ms](AudioTrackSimple)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SequenceTrack):
+		[ID]: 24481
 
 [24481](\Global\LOM_ElecStoreShutter002\Object\Animation\Opening_Forced\Opening_Finish):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SequenceTrack)
-[1500ms](AudioTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOM_ElecStoreShutter~Opening_Object
+		[Group]: LOM_ElecStoreShutter002
+		[Begin]: 3.200000
+		[End]: 5.933333
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SequenceTrack):
+		[ID]: 24482
+	[1500ms](AudioTrack)
 
 [24482](\Global\LOM_ElecStoreShutter002\Object\Animation\Opening_Forced\Opening_Finish\Opened_Pause):
-[0ms](MasterTrack)
-[0ms](SequenceTrack)
+	[0ms](MasterTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24478
 
 [24479](\Global\LOM_ElecStoreShutter002\Object\Closed):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
+	[0ms](AnimationTrack):
+		[Name]: LOM_ElecStoreShutter~sedIdle_Object
+		[Group]: LOM_ElecStoreShutter002
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
 
 [24478](\Global\LOM_ElecStoreShutter002\Object\Opened):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
+	[0ms](AnimationTrack):
+		[Name]: LOM_ElecStoreShutter~nedIdle_Object
+		[Group]: LOM_ElecStoreShutter002
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
 

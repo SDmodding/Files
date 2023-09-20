@@ -1,28 +1,39 @@
 [25150](\Global\POI_BurnMoney\Interactions\BurnMoney_Idles):
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
 
 [25151](\Global\POI_BurnMoney\Interactions\BurnMoney_Idles\Anims\Burn):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[2633ms](ObjectCreateTrack)
-[2633ms](TargetAttachTrack)
-[3900ms](PlayEffectTrack)
-[4900ms](TargetPlayEffectTrack)
-[8333ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BurnMoney
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25153
+	[2633ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-MoneyCashBill001
+	[2633ms](TargetAttachTrack)
+	[3900ms](PlayEffectTrack)
+	[4900ms](TargetPlayEffectTrack)
+	[8333ms](TargetDetachTrack)
 
 [25152](\Global\POI_BurnMoney\Interactions\BurnMoney_Idles\Anims\Wait):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [25153](\Global\POI_BurnMoney\Interactions\BurnMoney_Idles\Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25149](\Global\POI_BurnMoney\UseConditions)

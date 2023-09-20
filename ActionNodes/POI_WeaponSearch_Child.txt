@@ -1,8 +1,14 @@
 [29465](\Global\POI_WeaponSearch_Child\Interactions\MasterSpawn):
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
 
 [29466](\Global\POI_WeaponSearch_Child\Interactions\MasterSpawn\WaitForInstruction):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29464](\Global\POI_WeaponSearch_Child\UseConditions)

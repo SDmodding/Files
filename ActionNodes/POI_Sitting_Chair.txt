@@ -1,600 +1,1057 @@
 [28223](\Global\POI_Sitting_Chair\Interactions\HitTree\Ragdoll\AquireRagdollLoose):
-[0ms](MasterTrack)
-[0ms](RagdollAquireTrack)
-[0ms](SubjectFollowOverrideTrack)
+	[0ms](MasterTrack)
+	[0ms](RagdollAquireTrack)
+	[0ms](SubjectFollowOverrideTrack)
 
 [28222](\Global\POI_Sitting_Chair\Interactions\HitTree\Ragdoll\AquireRagdollStiff):
-[0ms](MasterTrack)
-[0ms](RagdollAquireTrack)
-[0ms](SubjectFollowOverrideTrack)
+	[0ms](MasterTrack)
+	[0ms](RagdollAquireTrack)
+	[0ms](SubjectFollowOverrideTrack)
 
 [28214](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Attack\Female):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[2266ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Reac_Sit_FRT_01
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[2266ms](OpportunityTrack)
 
 [28215](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Attack\Male):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[1733ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Reac_Sitting_FRT_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1733ms](OpportunityTrack)
 
 [28208](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Dead\Dead):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](RagdollDeathImpulseTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Male_Sit_Dead_Pose01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](RagdollDeathImpulseTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28212](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Projectile\Back):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](RagdollImpulseTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](RagdollImpulseTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18777
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28213](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Projectile\Front):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](RagdollImpulseTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](RagdollImpulseTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18777
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28209](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Push\Back):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](HandleDamageTrack)
-[0ms](RagdollImpulseTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](HandleDamageTrack)
+	[0ms](RagdollImpulseTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18777
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28211](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Push\Front):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](HandleDamageTrack)
-[0ms](RagdollImpulseTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](HandleDamageTrack)
+	[0ms](RagdollImpulseTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18777
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28210](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Push\OverBack\InAir):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](HandleDamageTrack)
-[0ms](ParkourSyncPositionTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[733ms](DetailedOnGroundTrack)
-[766ms](SpawnTrack)
-[900ms](GravityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Back_Lean_Rail_Fall
+		[Group]: POI_Lean_Rail_HitReacts
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](HandleDamageTrack)
+	[0ms](ParkourSyncPositionTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18777
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[733ms](DetailedOnGroundTrack)
+	[766ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[900ms](GravityTrack)
 
 [28216](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\SeatedTracks):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](SpawnTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28217](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\SeatedTracks\FractureStrength):
-[0ms](MasterTrack)
-[0ms](TargetFractureStrengthTrack)
+	[0ms](MasterTrack)
+	[0ms](TargetFractureStrengthTrack)
 
 [28221](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Sync\Sync\NoSyncValid)
 [28220](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Sync\Sync\ParentObject):
-[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28218](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Sync\Sync\Sync):
-[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28219](\Global\POI_Sitting_Chair\Interactions\HitTree\Sitting\Reactions\Sync\Sync\interactionPoint):
-[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28225](\Global\POI_Sitting_Chair\Interactions\PropSpawn\IsUsingCellPhone\PropSpawn):
-[0ms](ExecuteTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ExecuteTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[0ms](TargetAttachTrack)
 
 [28226](\Global\POI_Sitting_Chair\Interactions\SeatedTracks):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28228](\Global\POI_Sitting_Chair\Interactions\SeatedTracks\AssignSyncTarget):
-[0ms](MasterTrack)
-[0ms](TargetAssignTrack)
+	[0ms](MasterTrack)
+	[0ms](TargetAssignTrack)
 
 [28227](\Global\POI_Sitting_Chair\Interactions\SeatedTracks\FractureStrength):
-[0ms](MasterTrack)
-[0ms](TargetFractureStrengthTrack)
+	[0ms](MasterTrack)
+	[0ms](TargetFractureStrengthTrack)
 
 [28094](\Global\POI_Sitting_Chair\Interactions\Sitting):
-[0ms](AudioTrackSoundbankIO)
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](StimulusTrack)
-[0ms](StimulusTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](StimulusTrack)
+	[0ms](StimulusTrack)
 
 [28206](\Global\POI_Sitting_Chair\Interactions\SittingEnter\Female):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28207](\Global\POI_Sitting_Chair\Interactions\SittingEnter\Male):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28089](\Global\POI_Sitting_Chair\Interactions\SittingExit\Exit):
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28091](\Global\POI_Sitting_Chair\Interactions\SittingExit\Exit\Anims\Female\Left):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_to_Stand_Chair_LFT
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28090](\Global\POI_Sitting_Chair\Interactions\SittingExit\Exit\Anims\Female\Right):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_to_Stand_Chair_RIT
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28093](\Global\POI_Sitting_Chair\Interactions\SittingExit\Exit\Anims\Male\Left):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Male_Sit_to_Stand_Chair_LFT
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28092](\Global\POI_Sitting_Chair\Interactions\SittingExit\Exit\Anims\Male\Right):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Male_Sit_to_Stand_Chair_RIT
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28144](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Female\Default):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[3000ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LookAtTrack)
+	[3000ms](ResourceOpportunityTrack)
 
 [28145](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Female\Random\SittingIdle):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LookAtTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28146](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Female\Random\SittingIdle_CheckWatch):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_WaitLook_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28147](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Female\Random\SittingIdle_LookAround):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_WaitLook_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28148](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Female\Random\SittingIdle_TapFoot):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_WaitLook_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LookAtTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28104](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28105](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\LoadingAnims):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28106](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\LoadingAnims\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28107](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\LoadingAnims\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28132](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\GameOver\Lose):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28133](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\GameOver\Lose\Anims\Female\01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28134](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\GameOver\Lose\Anims\Female\02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28135](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\GameOver\Lose\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28129](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\GameOver\Win):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28130](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\GameOver\Win\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28131](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\GameOver\Win\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28117](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\Idle):
-[0ms](SpawnTrack)
-[3000ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[3000ms](OpportunityTrack)
 
 [28118](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\Idle\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28119](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\Idle\Anims\Male\01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28120](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\Idle\Anims\Male\02):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28121](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\PickTiles):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 28125
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28122](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\PickTiles\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28123](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\PickTiles\Anims\Male\01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28124](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\PickTiles\Anims\Male\02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28125](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\R2Idle):
-[0ms](SpawnTrack)
-[3000ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[3000ms](OpportunityTrack)
 
 [28126](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\R2Pick):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 28127
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28127](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\R3Idle):
-[0ms](SpawnTrack)
-[3000ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[3000ms](OpportunityTrack)
 
 [28128](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\InGame\R3Pick):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28114](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\PreGame\InitialPickTiles):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28115](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\PreGame\InitialPickTiles\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28116](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\PreGame\InitialPickTiles\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28108](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\PreGame\MixTiles01):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 28114
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28109](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\PreGame\MixTiles01\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28110](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\PreGame\MixTiles01\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28111](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\PreGame\MixTiles02):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 28114
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28112](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\PreGame\MixTiles02\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28113](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Gambling\Anims\Playing\PreGame\MixTiles02\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Majong_Idle_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28149](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Male\Default):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[3000ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LookAtTrack)
+	[3000ms](ResourceOpportunityTrack)
 
 [28152](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Male\Random\Sit_CheckWatch):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_WaitLook_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28151](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Male\Random\Sit_Look):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_WaitLook_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28153](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Male\Random\Sit_Sneeze):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Sneeze_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28150](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Male\Random\SittingIdle):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LookAtTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28143](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\MrsChuGrief\Default):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28142](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\MrsChuGrief\MrsChu):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28095](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Restaurant):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28096](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Restaurant\Anims\Female):
-[0ms](AnimationTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ResourceOpportunityTrack)
 
 [28097](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Restaurant\Anims\Female\Eating):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
 
 [28098](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Restaurant\Anims\Male):
-[0ms](AnimationTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ResourceOpportunityTrack)
 
 [28099](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Restaurant\Anims\Male\Eating\EatingRandom_01):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28100](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Restaurant\Anims\Male\Eating\EatingRandom_02):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28101](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Restaurant\Anims\Male\Eating\EatingRandom_03):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28102](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Restaurant\Utility\PropSpawn\Streaming):
-[0ms](ObjectReferenceTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [28103](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Restaurant\Utility\PropSpawn\Streaming\ChopsticksAndNoodles):
-[0ms](MasterTrack)
-[0ms](ObjectCreateTrack)
-[0ms](ObjectCreateTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetDestroyTrack)
-[0ms](TargetDestroyTrack)
+	[0ms](MasterTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-NISChopSticks001
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-NoodleBowl001
+	[0ms](ObjectReferenceTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](TargetAttachTrack)
+	[0ms](TargetAttachTrack)
+	[0ms](TargetDestroyTrack)
+	[0ms](TargetDestroyTrack)
 
 [28136](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\UsingCelPhone):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28137](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\UsingCelPhone\Anims\Streaming):
-[0ms](AnimationTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ResourceOpportunityTrack)
 
 [28138](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\UsingCelPhone\Anims\Streaming\Anims\WinstonTalkAngry):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_CelTalk_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28139](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\UsingCelPhone\Anims\Streaming\Anims\WinstonTalkAngry\0x5FEF8E30):
-[0ms](AnimationTrack)
-[0ms](HeadTrackTargetTrack)
-[0ms](LookAtTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_CelTalk_M
+		[Begin]: 0.000000
+		[End]: 0.200000
+	[0ms](HeadTrackTargetTrack)
+	[0ms](LookAtTrack)
 
 [28140](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\UsingCelPhone\Utility\PropSpawn\Streaming):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [28141](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\UsingCelPhone\Utility\PropSpawn\Streaming\Celphone):
-[0ms](ExecuteTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetDestroyTrack)
+	[0ms](ExecuteTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[0ms](TargetAttachTrack)
+	[0ms](TargetDestroyTrack)
 
 [28154](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\BeginConversation\Start):
-[0ms](ConversationTrackCleanup)
-[0ms](ConversationTrackCreate)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetAssignMyTargetToTargetsTargetTrack)
-[0ms](TargetAssignTrack)
+	[0ms](ConversationTrackCleanup)
+	[0ms](ConversationTrackCreate)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+	[0ms](TargetAssignTrack)
 
 [28155](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\Controller):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28163](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\Controller\LowerBody\Anims\Female\FemaleIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28162](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\Controller\LowerBody\Anims\Female\SitEating):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28165](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\Controller\LowerBody\Anims\Male\MaleIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28164](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\Controller\LowerBody\Anims\Male\SitEating):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28156](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\Controller\States\Idle\FemaleIdle):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TurnToFaceTargetTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TurnToFaceTargetTrack)
 
 [28157](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\Controller\States\Idle\MaleIdle):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TurnToFaceTargetTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TurnToFaceTargetTrack)
 
 [28158](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\Controller\States\LateIdle\FemaleIdle):
-[0ms](ConversationTrackOperation)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](ConversationTrackOperation)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28159](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\Controller\States\LateIdle\MaleIdle):
-[0ms](ConversationTrackOperation)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](ConversationTrackOperation)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28161](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\Controller\States\Listen\ListenAnims):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TurnToFaceTargetTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TurnToFaceTargetTrack)
 
 [28160](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\Controller\States\Speak\SpeakAnims):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TurnToFaceTargetTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TurnToFaceTargetTrack)
 
 [28167](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\ExitConversation\Exit):
-[0ms](SequenceTrack)
-[0ms](TargetAssignTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAssignTrack)
 
 [28166](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\Conversation\ExitConversation\StartExit):
-[0ms](TargetAssignTrack)
+	[0ms](TargetAssignTrack)
 
 [28174](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\FF):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28176](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\FF\Loaded\ToLeftOf\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28175](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\FF\Loaded\ToLeftOf\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_FF
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28178](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\FF\Loaded\ToRightOf\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28177](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\FF\Loaded\ToRightOf\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_FF
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28169](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\FF_Sexy):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28171](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\FF_Sexy\Loaded\ToLeftOf\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_FF
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28170](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\FF_Sexy\Loaded\ToLeftOf\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_FF
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28173](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\FF_Sexy\Loaded\ToRightOf\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_FF
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28172](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\FF_Sexy\Loaded\ToRightOf\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_FF
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28204](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\Idles\Anims\FemaleIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28203](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\Idles\Anims\FemaleIdle_Sexy):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Sexy_F_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28205](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\Idles\Anims\MaleIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28201](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\Idles\Anims\SitEating\FemaleIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28202](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\Idles\Anims\SitEating\MaleIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28179](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28181](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Female\ToLeftOf\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28180](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Female\ToLeftOf\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_MF
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28183](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Female\ToRightOf\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Sit_Idle
+		[Group]: POI_Sitting_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28182](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Female\ToRightOf\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_MF
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28187](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Male\ToLeftOf\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28185](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Male\ToLeftOf\SitEating\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28184](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Male\ToLeftOf\SitEating\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28186](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Male\ToLeftOf\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_MM
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28191](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Male\ToRightOf\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28189](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Male\ToRightOf\SitEating\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28188](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Male\ToRightOf\SitEating\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28190](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MF\Loaded\Male\ToRightOf\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_MM
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28192](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MM):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28196](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MM\Loaded\ToLeftOf\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28194](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MM\Loaded\ToLeftOf\SitEating\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28193](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MM\Loaded\ToLeftOf\SitEating\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28195](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MM\Loaded\ToLeftOf\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_MM
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28200](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MM\Loaded\ToRightOf\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28198](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MM\Loaded\ToRightOf\SitEating\Listening):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28197](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MM\Loaded\ToRightOf\SitEating\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28199](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\PairedSit\Casual\MM\Loaded\ToRightOf\Speaking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Talking_MM
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28168](\Global\POI_Sitting_Chair\Interactions\Sitting\Anims\Utility\ConversationHandler\WaitConversation\Wait):
-[0ms](MinimumDurationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](MinimumDurationTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28224](\Global\POI_Sitting_Chair\Interactions\Sync\Sync):
-[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28088](\Global\POI_Sitting_Chair\UseConditions)

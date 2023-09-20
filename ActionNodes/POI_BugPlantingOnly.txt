@@ -1,38 +1,56 @@
 [25142](\Global\bugplantingOnly\Interactions\0x5A9B3B5E):
-[0ms](AIOverrideAvoidanceRadiusTrack)
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AIOverrideAvoidanceRadiusTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 2.833333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25143
 
 [25140](\Global\bugplantingOnly\Interactions\AudiobankLoad):
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25141](\Global\bugplantingOnly\Interactions\Begin):
-[0ms](AIOverrideAvoidanceRadiusTrack)
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Bugplanting.set_bugging_only()
-[0ms](TargetSyncPositionTrack)
+	[0ms](AIOverrideAvoidanceRadiusTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 0.000000
+		[End]: 1.666667
+	[0ms](SequenceTrack):
+		[ID]: 25142
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Bugplanting.set_bugging_only()
+	[0ms](TargetSyncPositionTrack)
 
 [25144](\Global\bugplantingOnly\Interactions\Exit):
-[0ms](AIOverrideAvoidanceRadiusTrack)
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.setup_cameras(false)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AIOverrideAvoidanceRadiusTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.setup_cameras(false)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25143](\Global\bugplantingOnly\Interactions\Minigame):
-[0ms](AIOverrideAvoidanceRadiusTrack)
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.setup_cameras()
-[0ms](UIScreenTrack)
+	[0ms](AIOverrideAvoidanceRadiusTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_BugPlanting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25144
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.setup_cameras()
+	[0ms](UIScreenTrack):
+		[Name]: BugPlantingMinigame
 
 [25139](\Global\bugplantingOnly\UseConditions)

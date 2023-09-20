@@ -1,29 +1,45 @@
 [29440](\Global\POI_Waitress_WithWater\Interactions\Waitress_WithWater):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29441](\Global\POI_Waitress_WithWater\Interactions\Waitress_WithWater\WithWater_Anims\Grab_TeaPot):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Waitress
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 29442
 
 [29442](\Global\POI_Waitress_WithWater\Interactions\Waitress_WithWater\WithWater_Anims\Grab_TeaPot\WithWater_Stationary_01):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Waitress
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [29443](\Global\POI_Waitress_WithWater\Interactions\Waitress_WithWater\WithWater_Anims\Walking\WithWater_Walking_01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Waitress
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [29444](\Global\POI_Waitress_WithWater\Interactions\Waitress_WithWater\WithWater_Exit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: POI_Waitress
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [29439](\Global\POI_Waitress_WithWater\UseConditions)

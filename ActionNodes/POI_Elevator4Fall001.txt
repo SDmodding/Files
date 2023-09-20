@@ -1,68 +1,84 @@
 [26058](\Global\POI_Elevator4Fall001\Interactions\Action\Grapple\Left\HeadslamGIV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](GameStatEventTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](StimulusTrack)
-[0ms](StimulusTrack)
-[0ms](SubjectFollowOverridePOITrack)
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TimeWarpTrack)
-[200ms](TargetSyncPositionTrack)
-[266ms](SetStateFlagTrack)
-[500ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_Elevator4Fall001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](GameStatEventTrack)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](StimulusTrack)
+	[0ms](StimulusTrack)
+	[0ms](SubjectFollowOverridePOITrack)
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TimeWarpTrack)
+	[200ms](TargetSyncPositionTrack)
+	[266ms](SetStateFlagTrack)
+	[500ms](TargetPlayTrack)
 
 [26059](\Global\POI_Elevator4Fall001\Interactions\Action\Grapple\Left\HeadslamRCV):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](DamageTrack)
-[0ms](GameStatSpecialMoveTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSyncPositionTrack)
-[1000ms](GravityTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_Elevator4Fall001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 10
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.666667
+		[ColEnd]: -1.000000
+		[AttackRadius]: 0.200000
+		[AttackTypeID]: 5
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](DamageTrack)
+	[0ms](GameStatSpecialMoveTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetSyncPositionTrack)
+	[1000ms](GravityTrack)
 
 [26065](\Global\POI_Elevator4Fall001\POI_Condition_Reference\ActionRequest)
 [26062](\Global\POI_Elevator4Fall001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "a", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "a", "mash")
 
 [26060](\Global\POI_Elevator4Fall001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "b", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "b", "mash")
 
 [26063](\Global\POI_Elevator4Fall001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "x", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "x", "mash")
 
 [26061](\Global\POI_Elevator4Fall001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "y", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "y", "mash")
 
 [26064](\Global\POI_Elevator4Fall001\POI_Condition_Reference\UseConditions)
 [26057](\Global\POI_Elevator4Fall001\UseConditions\ActionRequest)

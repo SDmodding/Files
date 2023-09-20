@@ -1,44 +1,63 @@
 [26416](\Global\Hacking\Interactions\AudiobankLoad):
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26418](\Global\Hacking\Interactions\Begin):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
-[500ms](ObjectCreateTrack)
-[500ms](TargetAttachTrack)
-[500ms](TargetLockTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hacking
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26419
+	[0ms](TargetSyncPositionTrack)
+	[500ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-firearm-camera-pda
+	[500ms](TargetAttachTrack)
+	[500ms](TargetLockTrack)
 
 [26420](\Global\Hacking\Interactions\Exit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.setup_cameras(false)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[466ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hacking
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.setup_cameras(false)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[466ms](TargetDetachTrack)
 
 [26419](\Global\Hacking\Interactions\Hacking):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.setup_cameras()
-[0ms](UIScreenTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hacking
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26420
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.setup_cameras()
+	[0ms](UIScreenTrack):
+		[Name]: HackingMinigame
 
 [26417](\Global\Hacking\Interactions\MoveTo):
-[0ms](BlendTreeTrack)
-[0ms](PathfindToTargetTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](PathfindToTargetTrack)
+	[0ms](SequenceTrack):
+		[ID]: 26418
+	[0ms](TargetSteerToTrack)
 
 [26415](\Global\Hacking\Interactions\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26414](\Global\Hacking\UseConditions)

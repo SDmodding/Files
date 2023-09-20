@@ -1,89 +1,130 @@
 [28600](\Global\POI_Social_CNP\Interactions\PacingExit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [28615](\Global\POI_Social_CNP\Interactions\PacingIdles):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28616](\Global\POI_Social_CNP\Interactions\PacingIdles\Anims\Pacing):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PP
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28617](\Global\POI_Social_CNP\Interactions\PacingIdles\Anims\Pacing\IsSpeaking):
-[0ms](AnimationTrack)
-[0ms](HeadTrackTargetTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PP
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](HeadTrackTargetTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetSteerToTrack)
 
 [28618](\Global\POI_Social_CNP\Interactions\PacingIdles\Anims\Pacing\IsSpeaking\Pacing):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PP
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28601](\Global\POI_Social_CNP\Interactions\PerformSocial):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [28614](\Global\POI_Social_CNP\Interactions\PerformSocial\Done):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: Mission_PP
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [28602](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnFastTalk):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28603](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo):
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "y", "")
-[0ms](TimeWarpTrack)
-[3000ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "y", "")
+	[0ms](TimeWarpTrack)
+	[3000ms](OpportunityTrack)
 
 [28604](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Done)
 [28605](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo\TimedOut)
 [28606](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnGestures\Gestures):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28610](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Listening):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28611](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Listening\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PP
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28607](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Talking):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28609](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Talking\Anims\Default):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PP
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28608](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Talking\Anims\SecondaryLines\Line2-QuestionRequest):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PP
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28612](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnGestures\Idle):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [28613](\Global\POI_Social_CNP\Interactions\PerformSocial\SpawnUI):
-[0ms](SkookumTrack)
-	[Class]: Actor
-	[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
+	[0ms](SkookumTrack):
+		[Class]: Actor
+		[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
 
 [28619](\Global\POI_Social_CNP\Interactions\Sync\Default):
-[0ms](CharacterPhysicsSuperMassiveTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](CharacterPhysicsSuperMassiveTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28599](\Global\POI_Social_CNP\UseConditions)

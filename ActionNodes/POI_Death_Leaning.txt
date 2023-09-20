@@ -1,12 +1,19 @@
 [25789](\Global\Death_Leaning\Interactions\Death_Leaning_Exit):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](HealthSetPercentageTrack)
-[0ms](InvulnerableTrack)
-[0ms](SetStateFlagTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_WE
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](HealthSetPercentageTrack)
+	[0ms](InvulnerableTrack)
+	[0ms](SetStateFlagTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25788](\Global\Death_Leaning\UseConditions)

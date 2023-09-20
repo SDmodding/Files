@@ -1,61 +1,104 @@
 [28950](\Global\POI_ThreatenVendor\Interactions\Threaten\Grab):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Trans_Ready2IdleFront_GIV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: 0.433333
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSteerToTrack)
 
 [28953](\Global\POI_ThreatenVendor\Interactions\Threaten\Grab\Intimidate\Cycle\Give):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.800000
+		[End]: 1.333333
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 28953
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28954](\Global\POI_ThreatenVendor\Interactions\Threaten\Grab\Intimidate\Cycle\Rcv):
-[0ms](AnimationTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetSyncPositionTrack)
 
 [28955](\Global\POI_ThreatenVendor\Interactions\Threaten\Grab\Intimidate\Exit\Give):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
-[466ms](TargetGrappleReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
+	[466ms](TargetGrappleReleaseTrack)
 
 [28956](\Global\POI_ThreatenVendor\Interactions\Threaten\Grab\Intimidate\Exit\Rcv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28957
 
 [28957](\Global\POI_ThreatenVendor\Interactions\Threaten\Grab\Intimidate\Exit\Rcv\Stumble):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[333ms](CharacterPhysicsTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Reac_KO_DoubleKnee_Chest
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28958
+	[333ms](CharacterPhysicsTrack)
 
 [28958](\Global\POI_ThreatenVendor\Interactions\Threaten\Grab\Intimidate\Exit\Rcv\Stumble\FaceUp_Semi-Prone):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[1000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRD_SideAss_L
+		[Group]: Ground
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[1000ms](OpportunityTrack)
 
 [28959](\Global\POI_ThreatenVendor\Interactions\Threaten\Grab\Intimidate\Exit\Rcv\Stumble\FaceUp_Semi-Prone\Getup\Trans):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Reac_KnockDown_Leg_L_b
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack)
 
 [28960](\Global\POI_ThreatenVendor\Interactions\Threaten\Grab\Intimidate\Exit\Rcv\Stumble\FaceUp_Semi-Prone\Getup\Trans\OnOneKnee):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Trans_OneKnee2Ready
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
 
 [28951](\Global\POI_ThreatenVendor\Interactions\Threaten\Grab\Intimidate\Give):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.000000
+		[End]: 0.766667
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28952](\Global\POI_ThreatenVendor\Interactions\Threaten\Grab\Intimidate\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28949](\Global\POI_ThreatenVendor\Interactions\WaitForTarget):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
 
 [28948](\Global\POI_ThreatenVendor\UseConditions)

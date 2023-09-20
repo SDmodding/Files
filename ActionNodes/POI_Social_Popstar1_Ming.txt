@@ -1,152 +1,234 @@
 [28673](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master):
-[0ms](AudioTrackSoundbankIO)
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetAssignTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [28674](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\FastExit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: poi_stop_using_use()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: poi_stop_using_use()
 
 [28676](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28694](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\Done):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 28695
 
 [28677](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnFastTalk):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28678](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnFastTalk\PlayFX&SloMo):
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "y", "")
-[0ms](TimeWarpTrack)
-[3000ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "y", "")
+	[0ms](TimeWarpTrack)
+	[3000ms](OpportunityTrack)
 
 [28679](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Done)
 [28680](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnFastTalk\PlayFX&SloMo\TimedOut)
 [28681](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Gestures):
-[0ms](HeadTrackTargetTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](HeadTrackTargetTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28691](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Gestures\Anims\Idle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28686](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Gestures\Anims\Listening):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28687](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Gestures\Anims\Listening\Anims\Idle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28688](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Gestures\Anims\Listening\Anims\LookatBowl):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28689](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Gestures\Anims\Listening\Anims\Nod):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28690](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Gestures\Anims\Listening\Anims\Shift):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28682](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Gestures\Anims\Talking):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28683](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Gestures\Anims\Talking\Anims\01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28684](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Gestures\Anims\Talking\Anims\02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28685](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Gestures\Anims\Talking\Anims\03):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28692](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnGestures\Idle):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [28693](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\PerformSocial\SpawnUI):
-[0ms](SkookumTrack)
-	[Class]: Actor
-	[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
+	[0ms](SkookumTrack):
+		[Class]: Actor
+		[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
 
 [28695](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\Sitting):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28675](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\SittingExit):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Male_Sit_GetUp_Abrupt
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetPlayTrack)
 
 [28697](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\Sitting\Anims\Eating\EatingRandom_01):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28698](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\Sitting\Anims\Eating\EatingRandom_02):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28699](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\Sitting\Anims\Eating\EatingRandom_03):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28700](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\Sitting\Anims\IsSpeaking):
-[0ms](HeadTrackTargetTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](HeadTrackTargetTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28701](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\Sitting\Anims\IsSpeaking\Anims\01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28702](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\Sitting\Anims\IsSpeaking\Anims\02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28703](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\Sitting\Anims\IsSpeaking\Anims\03):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Eat_Sitting
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28696](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Master\Substates\Sitting\Anims\SittingEnter):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28705](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Object\Falling):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28706](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\PropSpawn\PropSpawn):
-[0ms](MasterTrack)
-[0ms](ObjectCreateTrack)
-[0ms](ObjectCreateTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetAttachTrack)
+	[0ms](MasterTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-NISChopSticks001
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-NoodleBowl001
+	[0ms](ObjectReferenceTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](TargetAttachTrack)
+	[0ms](TargetAttachTrack)
 
 [28704](\Global\POI_Social_Popstar1_Ming\Interactions\Sitting\Sync\Immediate):
-[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28672](\Global\POI_Social_Popstar1_Ming\UseConditions)

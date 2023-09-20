@@ -1,33 +1,49 @@
 [26594](\Global\POI_HealthShrine_Pedestrian\Interactions\Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26588](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26592](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Anims\Cyc):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: 10.000000
+	[0ms](SequenceTrack):
+		[ID]: 26593
 
 [26591](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Anims\Intro):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26592
 
 [26593](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Anims\Outro):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26594
 
 [26590](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\AudioLoad):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
 
 [26589](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Sync):
-[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [26587](\Global\POI_HealthShrine_Pedestrian\UseConditions)

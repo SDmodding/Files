@@ -1,28 +1,37 @@
 [29646](\Global\POI_DLC_ParkingTicket\Interactions\Master):
-[0ms](ObjectReferenceTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [29648](\Global\POI_DLC_ParkingTicket\Interactions\Master\0xDBBE5DB7):
-[0ms](MasterTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
-[33ms](ObjectCreateTrack)
-[33ms](TargetAttachTrack)
+	[0ms](MasterTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-NISPen001
+	[0ms](TargetAttachTrack)
+	[33ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-PoliceTicket001
+	[33ms](TargetAttachTrack)
 
 [29649](\Global\POI_DLC_ParkingTicket\Interactions\Master\Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [29647](\Global\POI_DLC_ParkingTicket\Interactions\Master\ParkingTicket\0x17C6FE73):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_ParkingTicket
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29645](\Global\POI_DLC_ParkingTicket\UseConditions)

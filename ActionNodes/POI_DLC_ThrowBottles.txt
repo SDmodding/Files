@@ -1,53 +1,84 @@
 [29669](\Global\POI_DLC_ThrowBottles\Interactions\Master):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29676](\Global\POI_DLC_ThrowBottles\Interactions\Master\0x474F3254):
-[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [29672](\Global\POI_DLC_ThrowBottles\Interactions\Master\0x5A17B90E\Pickup):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[166ms](SpawnTrack)
-[266ms](ObjectCreateTrack)
-[266ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Pickup_from_Ground_Stand
+		[Group]: Locomotion_PickUpObject
+		[Begin]: 0.000000
+		[End]: 0.600000
+	[0ms](SequenceTrack):
+		[ID]: 29673
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[166ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[266ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-beerbottle
+	[266ms](TargetAttachTrack)
 
 [29673](\Global\POI_DLC_ThrowBottles\Interactions\Master\0x5A17B90E\Throw):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Throw_Stand_Righthand_WPN
+		[Group]: Throws
+		[Begin]: 0.000000
+		[End]: 0.433333
+	[0ms](SequenceTrack):
+		[ID]: 29674
+	[0ms](TargetLockTrack)
+	[0ms](TargetSteerToTrack)
 
 [29674](\Global\POI_DLC_ThrowBottles\Interactions\Master\0x5A17B90E\Throw\Release):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[166ms](ApplyStimulusEmitterToTargetTrack)
-[166ms](TargetDetachTrack)
-[166ms](TargetPhysicalAttackTrack)
-[166ms](TargetPlayTrack)
-[166ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Throw_Stand_Righthand_WPN
+		[Group]: Throws
+		[Begin]: 0.466667
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[166ms](ApplyStimulusEmitterToTargetTrack)
+	[166ms](TargetDetachTrack)
+	[166ms](TargetPhysicalAttackTrack)
+	[166ms](TargetPlayTrack)
+	[166ms](TargetReleaseTrack)
 
 [29670](\Global\POI_DLC_ThrowBottles\Interactions\Master\Anims\Male\Cheer1):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[0ms](SequenceTrack)
-[4000ms](DialogueTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cheer_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LookAtTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[4000ms](DialogueTrack)
 
 [29671](\Global\POI_DLC_ThrowBottles\Interactions\Master\Anims\Male\Cheer3_02):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[100ms](DialogueTrack)
-[2800ms](DialogueTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cheer_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[100ms](DialogueTrack)
+	[2800ms](DialogueTrack)
 
 [29675](\Global\POI_DLC_ThrowBottles\Interactions\Master\Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [29668](\Global\POI_DLC_ThrowBottles\UseConditions)

@@ -1,24 +1,33 @@
 [27524](\Global\POI_PointGun\Interactions\PointGun):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27526](\Global\POI_PointGun\Interactions\PointGun\PointGunAnims\Stationary\Male\0x046626A6):
-[0ms](MasterTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](MasterTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-firearm-pistol-9mm
+	[0ms](TargetAttachTrack)
 
 [27525](\Global\POI_PointGun\Interactions\PointGun\PointGunAnims\Stationary\Male\PointGun_01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27527](\Global\POI_PointGun\Interactions\PointGun\PointGun_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27523](\Global\POI_PointGun\UseConditions)

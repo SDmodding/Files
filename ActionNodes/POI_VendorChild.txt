@@ -1,75 +1,137 @@
 [29205](\Global\POI_VendorChild\Interactions\MasterSpawn):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29206](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\Paired\Haggle\Listening):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29207](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\Paired\Haggle\Listening\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29208](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\Paired\Haggle\Listening\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29209](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\Paired\Haggle\Speaking):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29210](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\Paired\Haggle\Speaking\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Haggle_F_Customer
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29211](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\Paired\Haggle\Speaking\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Haggle_M_Customer
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29212](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\WaitingForParent\Idle):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29219](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\WaitingForParent\Idle\Anims\Idle\Female):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [29220](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\WaitingForParent\Idle\Anims\Idle\Male):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle_v02
+		[Group]: Locomotion_New
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [29213](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\WaitingForParent\Idle\Anims\WindowShopping\Female\WindowShopping_01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_WindowShopping
+		[Group]: POI_Window_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [29214](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\WaitingForParent\Idle\Anims\WindowShopping\Female\WindowShopping_02):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_WindowShop2_CYC
+		[Group]: POI_Window_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [29215](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\WaitingForParent\Idle\Anims\WindowShopping\Female\WindowShopping_03):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_WindowShop3_CYC
+		[Group]: POI_Window_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [29216](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\WaitingForParent\Idle\Anims\WindowShopping\Male\WindowShopping_01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_WindowShop1_CYC
+		[Group]: POI_Window_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [29217](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\WaitingForParent\Idle\Anims\WindowShopping\Male\WindowShopping_02):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_WindowShop2_CYC
+		[Group]: POI_Window_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [29218](\Global\POI_VendorChild\Interactions\MasterSpawn\Behaviour\WaitingForParent\Idle\Anims\WindowShopping\Male\WindowShopping_03):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_WindowShop3_CYC
+		[Group]: POI_Window_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [29221](\Global\POI_VendorChild\Interactions\MasterSpawn\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [29222](\Global\POI_VendorChild\Interactions\Sync):
-[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [29223](\Global\POI_VendorChild\QueryConditions\ParentBusyWithPlayer)
 [29224](\Global\POI_VendorChild\QueryConditions\Prop_Equipped)

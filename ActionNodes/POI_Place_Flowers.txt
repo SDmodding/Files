@@ -1,26 +1,36 @@
 [27510](\Global\POI_Place_Flowers\Interactions\Place_Flowers):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27511](\Global\POI_Place_Flowers\Interactions\Place_Flowers\PlaceFlowers_Anims\Female\PlaceFlowers):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[2000ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Place_Flowers
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27513
+	[2000ms](TargetDetachTrack)
 
 [27512](\Global\POI_Place_Flowers\Interactions\Place_Flowers\PlaceFlowers_Anims\Male\PlaceFlowers):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[3500ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Place_Flowers
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27513
+	[3500ms](TargetDetachTrack)
 
 [27513](\Global\POI_Place_Flowers\Interactions\Place_Flowers\PlaceFlowers_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27509](\Global\POI_Place_Flowers\UseConditions)

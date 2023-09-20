@@ -1,59 +1,116 @@
 [25031](\Global\POI_Bite_GIV\Interactions\Exit\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
-[0ms](TargetDamageTrack)
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetDamageTrack)
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25032](\Global\POI_Bite_GIV\Interactions\Exit\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[900ms](SkookumTrack)
-	[Class]: Character
-	[Script]: set_bone_visual_damage_amount(19, 1.0, 1.0)
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 18887
+	[900ms](SkookumTrack):
+		[Class]: Character
+		[Script]: set_bone_visual_damage_amount(19, 1.0, 1.0)
 
 [25028](\Global\POI_Bite_GIV\Interactions\Grapple\Cycle\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
-[10000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
+	[10000ms](OpportunityTrack)
 
 [25029](\Global\POI_Bite_GIV\Interactions\Grapple\Cycle\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
-[900ms](SpawnTrack)
-[1333ms](SpawnTrack)
-[2166ms](SpawnTrack)
-[2766ms](SpawnTrack)
-[5633ms](SpawnTrack)
-[7266ms](SpawnTrack)
-[8500ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[900ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1333ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[2166ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[2766ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[5633ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[7266ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[8500ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25030](\Global\POI_Bite_GIV\Interactions\Grapple\Cycle\GrapRCV\FX):
-[0ms](MasterTrack)
-[0ms](PlayEffectTrack)
+	[0ms](MasterTrack)
+	[0ms](PlayEffectTrack)
 
 [25026](\Global\POI_Bite_GIV\Interactions\Grapple\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](SequenceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAssignTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25027](\Global\POI_Bite_GIV\Interactions\Grapple\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Group]: HungryGhostsLGhoul
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25025](\Global\POI_Bite_GIV\Interactions\WaitForTarget):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25024](\Global\POI_Bite_GIV\UseConditions)

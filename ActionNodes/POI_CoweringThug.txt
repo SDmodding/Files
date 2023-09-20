@@ -1,40 +1,73 @@
 [25671](\Global\POI_CoweringThug\Interactions\CoweringExit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25662](\Global\POI_CoweringThug\Interactions\CoweringIdles):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25664](\Global\POI_CoweringThug\Interactions\CoweringIdles\CoweringAnims\Female\Cycle\Cycle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Scared_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25663](\Global\POI_CoweringThug\Interactions\CoweringIdles\CoweringAnims\Female\Into\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Scared_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack)
 
 [25666](\Global\POI_CoweringThug\Interactions\CoweringIdles\CoweringAnims\Male\Cycle):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25667](\Global\POI_CoweringThug\Interactions\CoweringIdles\CoweringAnims\Male\Cycle\Anims\CowerStand01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cower2_StandCower_CYC
+		[Group]: Pedestrian_Scared_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25668](\Global\POI_CoweringThug\Interactions\CoweringIdles\CoweringAnims\Male\Cycle\Anims\CowerStand02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cower2_StandCower_StepBack
+		[Group]: Pedestrian_Scared_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25669](\Global\POI_CoweringThug\Interactions\CoweringIdles\CoweringAnims\Male\Cycle\Anims\CowerStand03):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cower2_StandCower_StepBack_02
+		[Group]: Pedestrian_Scared_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25670](\Global\POI_CoweringThug\Interactions\CoweringIdles\CoweringAnims\Male\Cycle\Anims\CowerStand04):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cower2_StandCower_StepBack_03
+		[Group]: Pedestrian_Scared_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25665](\Global\POI_CoweringThug\Interactions\CoweringIdles\CoweringAnims\Male\Into\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cower2_Trans_2StandCower
+		[Group]: Pedestrian_Scared_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25666
 
 [25661](\Global\POI_CoweringThug\UseConditions)

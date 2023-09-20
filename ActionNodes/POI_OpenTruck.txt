@@ -1,39 +1,55 @@
 [27287](\Global\OpenTruck\Interactions\HC_Idles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27289](\Global\OpenTruck\Interactions\HC_Idles\HC_Anims\CloseDoors\CloseDoors):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Carry_Box_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27290
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27288](\Global\OpenTruck\Interactions\HC_Idles\HC_Anims\OpenDoors\OpenDoors):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Carry_Box_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27290
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27290](\Global\OpenTruck\Interactions\HC_Idles\HJ_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27292](\Global\OpenTruck\TruckCloseDoors\CloseDoors):
-[0ms](AnimationTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Carry_Box_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetReleaseTrack)
 
 [27291](\Global\OpenTruck\TruckOpenDoors\OpenDoors):
-[0ms](AnimationTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Carry_Box_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetReleaseTrack)
 
 [27286](\Global\OpenTruck\UseConditions)

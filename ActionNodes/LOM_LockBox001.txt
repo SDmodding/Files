@@ -1,203 +1,340 @@
 [24535](\Global\LOM_LockBox001\Collected):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24540
 
 [24544](\Global\LOM_LockBox001\Interactions\LockedUnlocked\Locked\SafeCrack):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSteerToTrack)
-[0ms](TargetSyncPositionTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24545
+	[0ms](TargetLockTrack)
+	[0ms](TargetSteerToTrack)
+	[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [24545](\Global\LOM_LockBox001\Interactions\LockedUnlocked\Locked\SafeCrack\SafeCrackCYC):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.setup_cameras()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.setup_cameras(false)
-[0ms](TargetPlayTrack)
-[0ms](UIScreenTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24546
+	[0ms](SequenceTrack):
+		[ID]: 24548
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.setup_cameras()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.setup_cameras(false)
+	[0ms](TargetPlayTrack)
+	[0ms](UIScreenTrack):
+		[Name]: SafeCrackingMinigame
 
 [24546](\Global\LOM_LockBox001\Interactions\LockedUnlocked\Locked\SafeCrack\SafeCrackCYC\PerformAction_GrabItem):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSteerToTrack)
-[0ms](TargetSyncPositionTrack)
-[1000ms](SkookumTrack)
-	[Class]: Character
-	[Script]: this.poi_get_target()<>Collectible.collect(true)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 0.600000
+		[End]: 2.566667
+	[0ms](SequenceTrack):
+		[ID]: 24547
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSteerToTrack)
+	[0ms](TargetSyncPositionTrack)
+	[1000ms](SkookumTrack):
+		[Class]: Character
+		[Script]: this.poi_get_target()<>Collectible.collect(true)
 
 [24547](\Global\LOM_LockBox001\Interactions\LockedUnlocked\Locked\SafeCrack\SafeCrackCYC\PerformAction_GrabItem\PickupSpawn):
-[0ms](SpawnTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
 
 [24548](\Global\LOM_LockBox001\Interactions\LockedUnlocked\Locked\SafeCrack_Fail):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
 
 [24549](\Global\LOM_LockBox001\Interactions\LockedUnlocked\Unlocked\PerformAction):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 0.000000
+		[End]: 0.600000
+	[0ms](SequenceTrack):
+		[ID]: 24550
+	[0ms](TargetSteerToTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [24550](\Global\LOM_LockBox001\Interactions\LockedUnlocked\Unlocked\PerformAction\PerformAction_GrabItem):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Camera.release_camera()
-[0ms](TargetPlayTrack)
-[0ms](TargetSteerToTrack)
-[0ms](TargetSyncPositionTrack)
-[1000ms](SkookumTrack)
-	[Class]: Character
-	[Script]: this.poi_get_target()<>Collectible.collect(true)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 0.600000
+		[End]: 2.566667
+	[0ms](SequenceTrack):
+		[ID]: 24551
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Camera.release_camera()
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSteerToTrack)
+	[0ms](TargetSyncPositionTrack)
+	[1000ms](SkookumTrack):
+		[Class]: Character
+		[Script]: this.poi_get_target()<>Collectible.collect(true)
 
 [24551](\Global\LOM_LockBox001\Interactions\LockedUnlocked\Unlocked\PerformAction\PerformAction_GrabItem\PickupSpawn):
-[0ms](SpawnTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
 
 [24543](\Global\LOM_LockBox001\Interactions\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24573](\Global\LOM_LockBox001\Interactions\PickupObject\NoObject):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
 
 [24570](\Global\LOM_LockBox001\Interactions\PickupObject\PickupBuffs\PickupEnergyDrink):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-LOP_EnergyDrink001
+	[0ms](TargetAttachTrack)
 
 [24571](\Global\LOM_LockBox001\Interactions\PickupObject\PickupBuffs\PickupHappyEnding):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-LOP_HappyEnding001
+	[0ms](TargetAttachTrack)
 
 [24572](\Global\LOM_LockBox001\Interactions\PickupObject\PickupBuffs\PickupHerbalTea):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-LOP_HerbalTea001
+	[0ms](TargetAttachTrack)
 
 [24569](\Global\LOM_LockBox001\Interactions\PickupObject\PickupBuffs\PickupPorkBun):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-LOP_PorkBun001
+	[0ms](TargetAttachTrack)
 
 [24552](\Global\LOM_LockBox001\Interactions\PickupObject\PickupFirearm\Pickup9mm):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-firearm-pistol-9mm
+	[0ms](TargetAttachTrack)
 
 [24555](\Global\LOM_LockBox001\Interactions\PickupObject\PickupFirearm\PickupASSAULT_RIFLE):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-firearm-rifle-assault
+	[0ms](TargetAttachTrack)
 
 [24557](\Global\LOM_LockBox001\Interactions\PickupObject\PickupFirearm\PickupAntiriot):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-firearm-shotgun-antiriot_taclight
+	[0ms](TargetAttachTrack)
 
 [24559](\Global\LOM_LockBox001\Interactions\PickupObject\PickupFirearm\PickupMACHINE_PISTOL):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-firearm-smg-machine_pistol
+	[0ms](TargetAttachTrack)
 
 [24556](\Global\LOM_LockBox001\Interactions\PickupObject\PickupFirearm\PickupRIFLE_GRENADE):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-firearm-rifle-grenade
+	[0ms](TargetAttachTrack)
 
 [24553](\Global\LOM_LockBox001\Interactions\PickupObject\PickupFirearm\PickupService):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-firearm-pistol-service
+	[0ms](TargetAttachTrack)
 
 [24558](\Global\LOM_LockBox001\Interactions\PickupObject\PickupFirearm\PickupShotgunPump):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-firearm-shotgun-pump
+	[0ms](TargetAttachTrack)
 
 [24560](\Global\LOM_LockBox001\Interactions\PickupObject\PickupFirearm\PickupUMP):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-firearm-smg-45cal_taclight
+	[0ms](TargetAttachTrack)
 
 [24554](\Global\LOM_LockBox001\Interactions\PickupObject\PickupFirearm\PickupUsp):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-firearm-pistol-45cal
+	[0ms](TargetAttachTrack)
 
 [24561](\Global\LOM_LockBox001\Interactions\PickupObject\PickupMelee\PickupBaton):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-baton
+	[0ms](TargetAttachTrack)
 
 [24562](\Global\LOM_LockBox001\Interactions\PickupObject\PickupMelee\PickupBeerBottle):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-beerbottle
+	[0ms](TargetAttachTrack)
 
 [24563](\Global\LOM_LockBox001\Interactions\PickupObject\PickupMelee\PickupCleaver):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-cleaver_A
+	[0ms](TargetAttachTrack)
 
 [24566](\Global\LOM_LockBox001\Interactions\PickupObject\PickupMelee\PickupCrowbar):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-crowbar
+	[0ms](TargetAttachTrack)
 
 [24564](\Global\LOM_LockBox001\Interactions\PickupObject\PickupMelee\PickupKnife):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-kitchenknife
+	[0ms](TargetAttachTrack)
 
 [24565](\Global\LOM_LockBox001\Interactions\PickupObject\PickupMelee\PickupPopCan):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-PopCan_A
+	[0ms](TargetAttachTrack)
 
 [24567](\Global\LOM_LockBox001\Interactions\PickupObject\PickupMelee\PickupTireiron):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-tireiron
+	[0ms](TargetAttachTrack)
 
 [24568](\Global\LOM_LockBox001\Interactions\PickupObject\PickupMelee\PickupWoodenclub):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 2.566667
+		[End]: 3.333333
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-woodenclub
+	[0ms](TargetAttachTrack)
 
 [24536](\Global\LOM_LockBox001\NotCollected):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24538
 
 [24541](\Global\LOM_LockBox001\Object\Animation\Opening):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 0.600000
+		[End]: 1.200000
+	[0ms](SequenceTrack):
+		[ID]: 24540
 
 [24538](\Global\LOM_LockBox001\Object\Closed):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001
+		[Begin]: 0.000000
+		[End]: 0.033333
+	[0ms](OpportunityTrack)
+	[0ms](PlayEffectTrack)
 
 [24542](\Global\LOM_LockBox001\Object\ClosedPlayingNIS):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001
+		[Begin]: 0.000000
+		[End]: 0.033333
+	[0ms](OpportunityTrack)
 
 [24539](\Global\LOM_LockBox001\Object\Cracking):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001
+		[Begin]: 0.000000
+		[End]: 0.033333
 
 [24540](\Global\LOM_LockBox001\Object\Opened):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001
+		[Begin]: 0.000000
+		[End]: 0.033333
 
 [24537](\Global\LOM_LockBox001\UseConditions)

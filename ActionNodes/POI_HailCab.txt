@@ -1,23 +1,31 @@
 [26451](\Global\POI_HailCab\Interactions\Hail_Cab_Idles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26452](\Global\POI_HailCab\Interactions\Hail_Cab_Idles\Hail_Cab_Anims\Female\Hail_Cab):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_HailCab_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [26453](\Global\POI_HailCab\Interactions\Hail_Cab_Idles\Hail_Cab_Anims\Male\Hail_Cab):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_HailCab_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [26454](\Global\POI_HailCab\Interactions\Hail_Cab_Idles\Hail_Cab_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26450](\Global\POI_HailCab\UseConditions)

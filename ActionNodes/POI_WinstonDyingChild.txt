@@ -1,18 +1,23 @@
 [29552](\Global\POI_WinstonDyingChild\Interactions\DyingIdles):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
 
 [29554](\Global\POI_WinstonDyingChild\Interactions\DyingIdles\DyingExit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [29553](\Global\POI_WinstonDyingChild\Interactions\DyingIdles\DyingStates\Dying\Dying):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_WE
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
 
 [29551](\Global\POI_WinstonDyingChild\UseConditions)

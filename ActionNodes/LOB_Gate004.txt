@@ -1,57 +1,87 @@
 [24163](\Global\LOB_Gate004\Interactions\Open\Conditions\OpenDoor_INTO):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](StruggleTrack)
-[0ms](TargetSyncPositionTrack)
-[33ms](SkookumTrack)
-	[Class]: HUD
-	[Script]: ActionButton.show_for_one_frame("", "y", "mash")
+	[0ms](AnimationTrack):
+		[Group]: LOB_Gate004_Use
+		[Begin]: 0.000000
+		[End]: 1.200000
+	[0ms](SequenceTrack):
+		[ID]: 24164
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](StruggleTrack)
+	[0ms](TargetSyncPositionTrack)
+	[33ms](SkookumTrack):
+		[Class]: HUD
+		[Script]: ActionButton.show_for_one_frame("", "y", "mash")
 
 [24164](\Global\LOB_Gate004\Interactions\Open\Conditions\OpenDoor_INTO\OpenDoor_PARA):
-[0ms](AnimationTrack)
-[0ms](InputSignalFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: HUD
-	[Script]: ActionButton.show_for_one_frame("", "y", "mash")
-[0ms](Struggle2Track)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
-[166ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_Gate004_Use
+		[Begin]: 1.200000
+		[End]: 7.733333
+	[0ms](InputSignalFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: HUD
+		[Script]: ActionButton.show_for_one_frame("", "y", "mash")
+	[0ms](Struggle2Track)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
+	[166ms](OpportunityTrack)
 
 [24165](\Global\LOB_Gate004\Interactions\Open\Conditions\OpenDoor_INTO\OpenDoor_PARA\Finished\Opening_Finish):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_Gate004_Use
+		[Begin]: 7.733333
+		[End]: 9.633333
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
 
 [24166](\Global\LOB_Gate004\Interactions\Open\Conditions\OpenDoor_INTO\OpenDoor_PARA\Finished\Timeout):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_Gate004_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
 
 [24162](\Global\LOB_Gate004\Object\Animation\Closing):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_Gate004_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [24160](\Global\LOB_Gate004\Object\Animation\Opening):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_Gate004_Use
+		[Begin]: 1.200000
+		[End]: 7.733333
+	[0ms](SequenceTrack):
+		[ID]: 24161
 
 [24161](\Global\LOB_Gate004\Object\Animation\Opening\Opening_Finish):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_Gate004_Use
+		[Begin]: 7.733333
+		[End]: 9.633333
+	[0ms](SequenceTrack):
+		[ID]: 24159
 
 [24158](\Global\LOB_Gate004\Object\Closed):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_Gate004
+		[Begin]: 0.000000
+		[End]: 0.033333
 
 [24159](\Global\LOB_Gate004\Object\Opened):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOB_Gate004
+		[Begin]: 0.000000
+		[End]: 0.033333
 

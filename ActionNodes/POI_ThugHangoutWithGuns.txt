@@ -1,58 +1,108 @@
 [28987](\Global\POI_ThugHangoutWithGuns\Interactions\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [28974](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28981](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Pistol):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28985](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Pistol\Random\Brawler):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Thug_Brawler
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28981
 
 [28982](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Pistol\Random\Elite):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: THG_LOC_Stand_HangOut1
+		[Group]: Thug
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28983](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Pistol\Random\Grappler):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Thug_Grappler
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28981
 
 [28984](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Pistol\Random\Quick):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Thug_QuickStriker
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28986](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Pistol\Random\Striker):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: THG_LOC_Stand_Idle1
+		[Group]: Thug
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28981
 
 [28975](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Rifle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Rifle_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28979](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Rifle\Random\Brawler):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Thug_Brawler
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28975
 
 [28976](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Rifle\Random\Eilte):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: THG_LOC_Stand_HangOut1
+		[Group]: Thug
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [28977](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Rifle\Random\Grappler):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Thug_Grappler
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28975
 
 [28978](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Rifle\Random\Quick):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: THG_LOC_Weapon_Stressed_Idle_01
+		[Group]: Thug
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28975
 
 [28980](\Global\POI_ThugHangoutWithGuns\Interactions\MasterSpawn\Anims\Rifle\Random\Striker):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: THG_LOC_Stand_Idle1
+		[Group]: Thug
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28975
 
 [28973](\Global\POI_ThugHangoutWithGuns\UseConditions)

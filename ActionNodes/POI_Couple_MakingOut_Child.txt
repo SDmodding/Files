@@ -1,19 +1,25 @@
 [25602](\Global\POI_Couple_MakingOut_Child\Interactions\MakingOut_Idles):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25604](\Global\POI_Couple_MakingOut_Child\Interactions\MakingOut_Idles\Exit\Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetReleaseTrack)
 
 [25603](\Global\POI_Couple_MakingOut_Child\Interactions\MakingOut_Idles\MakingOut_States\Wait\WaitForInstruction):
-[0ms](AnimationTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetSyncPositionTrack)
 
 [25601](\Global\POI_Couple_MakingOut_Child\UseConditions)

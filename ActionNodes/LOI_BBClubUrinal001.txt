@@ -1,39 +1,43 @@
 [24224](\Global\LOI_BBClubUrinal001\Object\Deactivated):
-[0ms](MasterTrack)
-[0ms](SetHighlightingModeTrack)
+	[0ms](MasterTrack)
+	[0ms](SetHighlightingModeTrack)
 
 [24219](\Global\LOI_BBClubUrinal001\Object\Idle):
-[0ms](ExecuteTrack)
-[0ms](SpawnTrack)
+	[0ms](ExecuteTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24223](\Global\LOI_BBClubUrinal001\Object\Idle\SidesAvailable\BothSidesDisabled):
-[0ms](MasterTrack)
-[0ms](SetHighlightingModeTrack)
+	[0ms](MasterTrack)
+	[0ms](SetHighlightingModeTrack)
 
 [24220](\Global\LOI_BBClubUrinal001\Object\Idle\SidesAvailable\BothSidesEnabled):
-[0ms](MasterTrack)
-[0ms](SetHighlightingModeTrack)
+	[0ms](MasterTrack)
+	[0ms](SetHighlightingModeTrack)
 
 [24222](\Global\LOI_BBClubUrinal001\Object\Idle\SidesAvailable\LeftSideDisabled):
-[0ms](MasterTrack)
-[0ms](SetHighlightingModeTrack)
+	[0ms](MasterTrack)
+	[0ms](SetHighlightingModeTrack)
 
 [24221](\Global\LOI_BBClubUrinal001\Object\Idle\SidesAvailable\RightSideDisabled):
-[0ms](MasterTrack)
-[0ms](SetHighlightingModeTrack)
+	[0ms](MasterTrack)
+	[0ms](SetHighlightingModeTrack)
 
 [24225](\Global\LOI_BBClubUrinal001\Object\NotInteractable\FlushUrinal):
-[0ms](AudioTrackSoundbankIO)
-[0ms](ExecuteTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[200ms](AudioTrackSimple)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](ExecuteTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24219
+	[200ms](AudioTrackSimple)
 
 [24226](\Global\LOI_BBClubUrinal001\Object\NotInteractable\HeadSlam):
-[0ms](ExecuteTrack)
-[0ms](PlayEffectTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[0ms](SetHighlightingModeTrack)
-[400ms](GameStatSpecialMoveTrack)
+	[0ms](ExecuteTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24224
+	[0ms](SetHighlightingModeTrack)
+	[400ms](GameStatSpecialMoveTrack)
 

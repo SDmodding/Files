@@ -1,47 +1,64 @@
 [26017](\Global\POI_ElecStoreShutter002\Interactions\Open\Normal\Open):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: HUD
-	[Script]: ActionButton.show_for_one_frame("", "y", "mash")
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_ElecStoreShutter001_Open
+		[Group]: LOM_ElecStoreShutter001_Use
+		[Begin]: 0.000000
+		[End]: 0.933333
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SequenceTrack):
+		[ID]: 26018
+	[0ms](SkookumTrack):
+		[Class]: HUD
+		[Script]: ActionButton.show_for_one_frame("", "y", "mash")
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [26018](\Global\POI_ElecStoreShutter002\Interactions\Open\Normal\Open\Struggle):
-[0ms](AnimationTrack)
-[0ms](InputSignalFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: HUD
-	[Script]: ActionButton.show_for_one_frame("", "y", "mash")
-[0ms](Struggle2Track)
-[100ms](AudioTrack)
-[100ms](TargetPlayTrack)
-[333ms](OpportunityTrack)
-[500ms](AudioTrackSimple)
+	[0ms](AnimationTrack):
+		[Name]: INT_ElecStoreShutter001_Open
+		[Group]: LOM_ElecStoreShutter001_Use
+		[Begin]: 0.933333
+		[End]: 3.200000
+	[0ms](InputSignalFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: HUD
+		[Script]: ActionButton.show_for_one_frame("", "y", "mash")
+	[0ms](Struggle2Track)
+	[100ms](AudioTrack)
+	[100ms](TargetPlayTrack)
+	[333ms](OpportunityTrack)
+	[500ms](AudioTrackSimple)
 
 [26019](\Global\POI_ElecStoreShutter002\Interactions\Open\Normal\Open\Struggle\Finished\Opening_Finish):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[2333ms](OpportunityTrack)
-[2333ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_ElecStoreShutter001_Open
+		[Group]: LOM_ElecStoreShutter001_Use
+		[Begin]: 3.200000
+		[End]: 5.933333
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[2333ms](OpportunityTrack)
+	[2333ms](OpportunityTrack)
 
 [26020](\Global\POI_ElecStoreShutter002\Interactions\Open\Normal\Open\Struggle\Finished\Timeout):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_ElecStoreShutter001_OpenFail
+		[Group]: LOM_ElecStoreShutter001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
 
 [26016](\Global\POI_ElecStoreShutter002\UseConditions):
-[0ms](AudioTrackSoundbankIO)
+	[0ms](AudioTrackSoundbankIO)
 

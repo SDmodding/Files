@@ -1,22 +1,33 @@
 [29088](\Global\POI_TvBroken\Interactions\BangOnTV):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29089](\Global\POI_TvBroken\Interactions\BangOnTV\Anims\Cyclic):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_TVBroken
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29090](\Global\POI_TvBroken\Interactions\BangOnTV\Exit\Default):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29091](\Global\POI_TvBroken\Interactions\BangOnTV\Exit\Default\TurnToPlayer):
-[0ms](TargetSteerToTrack)
+	[0ms](TargetSteerToTrack)
 
 [29087](\Global\POI_TvBroken\UseConditions)

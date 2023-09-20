@@ -1,40 +1,61 @@
 [28499](\Global\Sleeping_bed\Interactions\GoToSleep):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSteerToTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_INTO
+		[Group]: POI_SafeHouseBed
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 28500
+	[0ms](TargetLockTrack)
+	[0ms](TargetSteerToTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28500](\Global\Sleeping_bed\Interactions\SleepingIdles):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28501](\Global\Sleeping_bed\Interactions\SleepingIdles\SleepingBed_Anims\Female\Sleeping_01):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_CYC
+		[Group]: POI_SafeHouseBed
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSyncPositionTrack)
 
 [28502](\Global\Sleeping_bed\Interactions\SleepingIdles\SleepingBed_Anims\Male\Sleeping_01):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_CYC
+		[Group]: POI_SafeHouseBed
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSyncPositionTrack)
 
 [28503](\Global\Sleeping_bed\Interactions\SleepingIdles\SleepingExit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_OUT
+		[Group]: POI_SafeHouseBed
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetSyncPositionTrack)
 
 [28498](\Global\Sleeping_bed\UseConditions)

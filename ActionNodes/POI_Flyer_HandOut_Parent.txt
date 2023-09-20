@@ -1,68 +1,91 @@
 [26253](\Global\POI_Flyer_HandOut_Parent\Interactions\FlyerHandOut_Idles):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
 
 [26262](\Global\POI_Flyer_HandOut_Parent\Interactions\FlyerHandOut_Idles\FlyerHandOut_Exit\FlyerHandOut_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26259](\Global\POI_Flyer_HandOut_Parent\Interactions\FlyerHandOut_Idles\FlyerHandOut_States\ChildReady):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [26260](\Global\POI_Flyer_HandOut_Parent\Interactions\FlyerHandOut_Idles\FlyerHandOut_States\Handout\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignMyTargetToTargetsTargetTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Flyer_HandOut
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
 
 [26261](\Global\POI_Flyer_HandOut_Parent\Interactions\FlyerHandOut_Idles\FlyerHandOut_States\Handout\Rcv):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
-[866ms](TargetStealAttachedItemTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Flyer_HandOut
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
+	[866ms](TargetStealAttachedItemTrack)
 
 [26258](\Global\POI_Flyer_HandOut_Parent\Interactions\FlyerHandOut_Idles\FlyerHandOut_States\WaitForChild\IdleAnims\Idle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Flyer_HandOut
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [26257](\Global\POI_Flyer_HandOut_Parent\Interactions\FlyerHandOut_Idles\FlyerHandOut_States\WaitForChild\IdleAnims\Waving):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Flyer_HandOut
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [26255](\Global\POI_Flyer_HandOut_Parent\Interactions\FlyerHandOut_Idles\LoadResources\Loaded\Single):
-[0ms](ExecuteTrack)
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ExecuteTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Flier001
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAttachTrack)
 
 [26254](\Global\POI_Flyer_HandOut_Parent\Interactions\FlyerHandOut_Idles\LoadResources\Loaded\Stack):
-[0ms](ExecuteTrack)
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ExecuteTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-StackOFliers001
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAttachTrack)
 
 [26256](\Global\POI_Flyer_HandOut_Parent\Interactions\FlyerHandOut_Idles\LoadResources\Wait):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [26252](\Global\POI_Flyer_HandOut_Parent\UseConditions)

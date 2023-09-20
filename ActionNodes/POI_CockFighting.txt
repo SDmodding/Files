@@ -1,21 +1,24 @@
 [25398](\Global\Cockfighting\Interactions\Begin):
-[0ms](ExecuteTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.c_minigame._setup_cockfighting()
-[0ms](TargetSyncPositionTrack)
+	[0ms](ExecuteTrack)
+	[0ms](SequenceTrack):
+		[ID]: 25399
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.c_minigame._setup_cockfighting()
+	[0ms](TargetSyncPositionTrack)
 
 [25400](\Global\Cockfighting\Interactions\Exit):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetSyncPositionTrack)
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetSyncPositionTrack)
 
 [25399](\Global\Cockfighting\Interactions\UI):
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
-[0ms](UIScreenTrack)
+	[0ms](SequenceTrack):
+		[ID]: 25400
+	[0ms](TargetSyncPositionTrack)
+	[0ms](UIScreenTrack):
+		[Name]: CockFight
 
 [25397](\Global\Cockfighting\UseConditions)

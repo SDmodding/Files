@@ -1,1307 +1,2418 @@
 [17187](\Global\Pedestrian\Attacks\LightAttacks\Punch\Left\FacePunch):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Punch
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 10
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.466667
+		[ColEnd]: 0.666667
+		[AttackRadius]: 0.200000
+		[AttackTypeID]: 8
+		[TargetOnly]: 1
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.000000
+		[TimeToDistance]: 0.100000
+		[TargetMovement]: 0.350000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [17188](\Global\Pedestrian\Attacks\LightAttacks\Punch\Right\FacePunch):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Punch
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 10
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.433333
+		[ColEnd]: 0.600000
+		[AttackRadius]: 0.200000
+		[AttackTypeID]: 8
+		[TargetOnly]: 1
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.000000
+		[TimeToDistance]: 0.100000
+		[TargetMovement]: 0.350000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [17189](\Global\Pedestrian\Attacks\MidRangeAttacks\Kick\Right):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Punch
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 30
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.500000
+		[ColEnd]: 0.700000
+		[AttackRadius]: 0.200000
+		[AttackTypeID]: 11
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.300000
+		[TimeToDistance]: 0.100000
+		[TargetMovement]: 0.350000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [17186](\Global\Pedestrian\Attacks\ShoppingBag\Righthand):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](TargetSteerToTrack)
-[333ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_ShopBag_Heavy_01
+		[Group]: Carried_Item_1hand_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 90
+		[PropDamage]: 200
+		[WeaponDamage]: 0
+		[ColBegin]: 0.666667
+		[ColEnd]: 0.800000
+		[AttackRadius]: 0.450000
+		[AttackTypeID]: 11
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](TargetSteerToTrack)
+	[333ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17205](\Global\Pedestrian\BlendTest):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17197](\Global\Pedestrian\BlendTest2\Layer0):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 17200
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17198](\Global\Pedestrian\BlendTest2\Layer0\Layer1\Animation):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Idle_Ready
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 17199
 
 [17199](\Global\Pedestrian\BlendTest2\Layer0\Layer1\BlendTree):
-[0ms](BlendTreeTrack)
-[0ms](SequenceTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](SequenceTrack):
+		[ID]: 17198
 
 [17200](\Global\Pedestrian\BlendTest2\Layer0\NO_ANIMATION):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 17197
 
 [17201](\Global\Pedestrian\BlendTest2\Layer0_):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 17204
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17202](\Global\Pedestrian\BlendTest2\Layer0_\Layer1\Animation):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Idle_Ready
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 17203
 
 [17203](\Global\Pedestrian\BlendTest2\Layer0_\Layer1\BlendTree):
-[0ms](BlendTreeTrack)
-[0ms](SequenceTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](SequenceTrack):
+		[ID]: 17202
 
 [17204](\Global\Pedestrian\BlendTest2\Layer0_\NO_ANIMATION):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 17201
 
 [17206](\Global\Pedestrian\BlendTest\LayeredAnim):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Idle_Ready
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 17207
 
 [17207](\Global\Pedestrian\BlendTest\LayeredAnim\LayeredAnim):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Idle_Ready
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 17206
 
 [17208](\Global\Pedestrian\BlendTest\LayeredBlendTree):
-[0ms](BlendTreeTrack)
-[0ms](SequenceTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](SequenceTrack):
+		[ID]: 17209
 
 [17209](\Global\Pedestrian\BlendTest\LayeredBlendTree\LayeredBlendTree):
-[0ms](BlendTreeTrack)
-[0ms](SequenceTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](SequenceTrack):
+		[ID]: 17208
 
 [17190](\Global\Pedestrian\Bump_FromJog\Left):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](JumpTrack)
-[0ms](OpportunityTrack)
-[0ms](StimulusTrack)
-[0ms](StimulusTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Bump_LFT
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: 1.000000
+		[AttackRadius]: 0.200000
+		[AttackTypeID]: 6
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](JumpTrack)
+	[0ms](OpportunityTrack)
+	[0ms](StimulusTrack)
+	[0ms](StimulusTrack)
 
 [17191](\Global\Pedestrian\Bump_FromJog\Right):
-[0ms](AnimationTrack)
-[0ms](JumpTrack)
-[0ms](OpportunityTrack)
-[0ms](StimulusTrack)
-[0ms](StimulusTrack)
-[100ms](AttackCollisionTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Bump_RIT
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](JumpTrack)
+	[0ms](OpportunityTrack)
+	[0ms](StimulusTrack)
+	[0ms](StimulusTrack)
+	[100ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: 1.000000
+		[AttackRadius]: 0.200000
+		[AttackTypeID]: 6
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
 
 [17192](\Global\Pedestrian\Bump_FromWalk\Left):
-[0ms](AttackCollisionTrack)
-[0ms](OpportunityTrack)
-[0ms](StimulusTrack)
-[0ms](StimulusTrack)
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: 1.000000
+		[AttackRadius]: 0.600000
+		[AttackTypeID]: 6
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](OpportunityTrack)
+	[0ms](StimulusTrack)
+	[0ms](StimulusTrack)
 
 [17193](\Global\Pedestrian\Bump_FromWalk\Right):
-[0ms](OpportunityTrack)
-[0ms](StimulusTrack)
-[0ms](StimulusTrack)
-[100ms](AttackCollisionTrack)
+	[0ms](OpportunityTrack)
+	[0ms](StimulusTrack)
+	[0ms](StimulusTrack)
+	[100ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: 1.000000
+		[AttackRadius]: 0.600000
+		[AttackTypeID]: 6
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
 
 [17194](\Global\Pedestrian\Fall\Falling):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_InAir_Cyc
+		[Group]: Locomotion_Fall
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](OpportunityTrack)
 
 [17195](\Global\Pedestrian\Fall\Falling\Land):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jump_Land_Med_to_Idle
+		[Group]: Locomotion_Jump
+		[Begin]: 0.066667
+		[End]: -1.000000
+	[0ms](GravityTrack)
 
 [17196](\Global\Pedestrian\Female\Dress):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16914](\Global\Pedestrian\Locomotion\MasterSpawn):
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](PlaybackSpeedModifierEnabledTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SubjectElevationTrack)
-[0ms](VelocitySlopeModeTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PlaybackSpeedModifierEnabledTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SubjectElevationTrack)
+	[0ms](VelocitySlopeModeTrack)
 
 [16917](\Global\Pedestrian\Locomotion\MasterSpawn\DEAD_SOMEHOW):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [16916](\Global\Pedestrian\Locomotion\MasterSpawn\SlopeFixUp\SlopeDefault):
-[0ms](OpportunityTrack)
-[0ms](VelocitySlopeModeTrack)
-[0ms](VelocitySlopeModeTrack)
+	[0ms](OpportunityTrack)
+	[0ms](VelocitySlopeModeTrack)
+	[0ms](VelocitySlopeModeTrack)
 
 [16915](\Global\Pedestrian\Locomotion\MasterSpawn\SlopeFixUp\SlopeUp):
-[0ms](OpportunityTrack)
-[0ms](SlopeLocomotionFixupTrack)
-[0ms](SlopeLocomotionFixupTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SlopeLocomotionFixupTrack)
+	[0ms](SlopeLocomotionFixupTrack)
 
 [17097](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling):
-[0ms](GravityTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](GravityTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17133](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Aware\Female\Aware_01):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Idle_Aware_01
+		[Group]: Pedestrian_Flavour_Aware
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17134](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Aware\Female\Aware_02):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Idle_Aware_02
+		[Group]: Pedestrian_Flavour_Aware
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17136](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Aware\Male\Aware):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Aware_Hips_Male
+		[Group]: Pedestrian_Flavour_Aware
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17135](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Aware\Male\AwarePace):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Aware_Pace_Male
+		[Group]: Pedestrian_Flavour_Aware
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17120](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Combat\exitCombat):
-[0ms](AnimationBankReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17121](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Combat\exitCombat\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Punch
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17117](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Combat\inCombat):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17118](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Combat\inCombat\Anims\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Punch
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 17119
 
 [17119](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Combat\inCombat\Anims\Into\Cycle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Punch
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17130](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Elderly\Cane):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_CaneIdle_CYC
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17131](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Elderly\Female):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Female_Idle_01
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17132](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Elderly\Male):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Idle_01
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](ResourceOpportunityTrack)
 
 [17139](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Female\Default):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](ResourceOpportunityTrack)
 
 [17138](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Female\Sexy):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Fem_Club_Stand_Idle
+		[Group]: Pedestrian_Sexy_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](ResourceOpportunityTrack)
 
 [17137](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Female\Waitress):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Bartender_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](ResourceOpportunityTrack)
 
 [17141](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Elderly\Male\Idle01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Idle_01
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17142](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Elderly\Male\Idle03):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Elder_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [17144](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Bartender\Bartender_Flirt):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Bartender_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17143](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Bartender\Bartender_YellOut):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Bartender_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17161](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\AnswerPhone):
-[0ms](AnimationTrack)
-[0ms](ConversationTrackCreate)
-[0ms](ConversationTrackOperation)
-[0ms](ObjectReferenceTrack)
-[1033ms](ObjectCreateTrack)
-[1033ms](TargetAttachTrack)
-[1200ms](AudioTrackSimple)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ConversationTrackCreate)
+	[0ms](ConversationTrackOperation)
+	[0ms](ObjectReferenceTrack)
+	[1033ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[1033ms](TargetAttachTrack)
+	[1200ms](AudioTrackSimple)
 
 [17160](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\AnswerText):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[1200ms](AudioTrackSimple)
-[1500ms](ObjectCreateTrack)
-[1500ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_Read_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[1200ms](AudioTrackSimple)
+	[1500ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[1500ms](TargetAttachTrack)
 
 [17150](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\EquippedOverride):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17157](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\FixHair):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_FixHair_Female
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17153](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\Hang_01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle_2
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17154](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\Hang_02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_Brush_F
+		[Group]: POI_Hang_Out_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17155](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\Hang_03):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01_F
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17156](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\HeadScratch):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_HeadScratch_Female
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17162](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\LightCigarette):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[1000ms](ObjectCreateTrack)
-[1000ms](TargetAttachTrack)
-[4500ms](PlayEffectTrack)
-[4500ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_F_INTO
+		[Group]: POI_Smoking_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[1000ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Cigarette
+	[1000ms](TargetAttachTrack)
+	[4500ms](PlayEffectTrack)
+	[4500ms](PlayEffectTrack)
 
 [17159](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\LipBalm):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_LipBalm_Female
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17151](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\Ped_CheckWatch):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Idle_CheckWatch
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17152](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\Ped_Cross_Arms):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle_2
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17158](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Default\Sneeze):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Sneeze_F
+		[Group]: POI_Hang_Out_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17148](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Sexy\AnswerPhone):
-[0ms](AnimationTrack)
-[0ms](ConversationTrackCreate)
-[0ms](ConversationTrackOperation)
-[0ms](ObjectReferenceTrack)
-[1033ms](ObjectCreateTrack)
-[1033ms](TargetAttachTrack)
-[1200ms](AudioTrackSimple)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ConversationTrackCreate)
+	[0ms](ConversationTrackOperation)
+	[0ms](ObjectReferenceTrack)
+	[1033ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[1033ms](TargetAttachTrack)
+	[1200ms](AudioTrackSimple)
 
 [17147](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Sexy\AnswerText):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[1200ms](AudioTrackSimple)
-[1500ms](ObjectCreateTrack)
-[1500ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_Read_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[1200ms](AudioTrackSimple)
+	[1500ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[1500ms](TargetAttachTrack)
 
 [17149](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Sexy\LightCigarette):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[1000ms](ObjectCreateTrack)
-[1000ms](TargetAttachTrack)
-[4500ms](PlayEffectTrack)
-[4500ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_F_INTO
+		[Group]: POI_Smoking_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[1000ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Cigarette
+	[1000ms](TargetAttachTrack)
+	[4500ms](PlayEffectTrack)
+	[4500ms](PlayEffectTrack)
 
 [17145](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Sexy\Ped_Stand_Idle_02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Sexy_F_Flavour
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17146](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Female\Sexy\Ped_Stand_Idle_03):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Sexy_F_Flavour
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17185](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\AnswerPhone):
-[0ms](AnimationTrack)
-[0ms](ConversationTrackCreate)
-[0ms](ConversationTrackOperation)
-[0ms](ObjectReferenceTrack)
-[566ms](ObjectCreateTrack)
-[566ms](TargetAttachTrack)
-[1200ms](AudioTrackSimple)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ConversationTrackCreate)
+	[0ms](ConversationTrackOperation)
+	[0ms](ObjectReferenceTrack)
+	[566ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[566ms](TargetAttachTrack)
+	[1200ms](AudioTrackSimple)
 
 [17184](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\AnswerText):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[1200ms](AudioTrackSimple)
-[1500ms](ObjectCreateTrack)
-[1500ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_Read_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[1200ms](AudioTrackSimple)
+	[1500ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[1500ms](TargetAttachTrack)
 
 [17174](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\BodyScratch):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17170](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Coughing):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17163](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\EquippedOverride):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle_v02
+		[Group]: Pedestrian_New
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17179](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\FaceWipe):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17176](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\FixHair):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17172](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\HandsBehindBack):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17178](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\HandsInPockets):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17166](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Hang_01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17167](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Hang_02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_Brush
+		[Group]: POI_Hang_Out_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17168](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Hang_03):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_Wallet
+		[Group]: POI_Hang_Out_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17169](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Hang_04):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17177](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\HeadScratch):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17183](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\LightCigarette):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[1000ms](ObjectCreateTrack)
-[1000ms](TargetAttachTrack)
-[4500ms](PlayEffectTrack)
-[4500ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_INTO
+		[Group]: POI_Smoking_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[1000ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Cigarette
+	[1000ms](TargetAttachTrack)
+	[4500ms](PlayEffectTrack)
+	[4500ms](PlayEffectTrack)
 
 [17173](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\NeckRub):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17165](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Ped_Cross_Arms):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17164](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Ped_Look_Watch):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17175](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\PickNose):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17180](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\ShoulderGlanceLft):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17181](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\ShoulderGlanceRit):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17182](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Sneeze):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Sneeze_M
+		[Group]: POI_Hang_Out_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17171](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\InactivityIdles\Male\Yawning):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17102](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Talking\Cycle\Female):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [17103](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Talking\Cycle\Male):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cel_Talk_CYC
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [17098](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Talking\End\Female):
-[0ms](AnimationTrack)
-[0ms](ConversationTrackCleanup)
-[0ms](ConversationTrackOperation)
-[1066ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ConversationTrackCleanup)
+	[0ms](ConversationTrackOperation)
+	[1066ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17099](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Talking\End\Male):
-[0ms](AnimationTrack)
-[0ms](ConversationTrackCleanup)
-[0ms](ConversationTrackOperation)
-[1600ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cel_Hangup
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ConversationTrackCleanup)
+	[0ms](ConversationTrackOperation)
+	[1600ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17101](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Talking\End\Utility\DetachAll\Default):
-[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [17100](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Talking\End\Utility\DetachAll\Left):
-[0ms](SequenceTrack)
-[0ms](TargetDetachTrack)
+	[0ms](SequenceTrack):
+		[ID]: 17107
+	[0ms](TargetDetachTrack)
 
 [17109](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Texting\Cycle\Female\Default):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_Read_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [17108](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Texting\Cycle\Female\Sexy):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_Read_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [17110](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Texting\Cycle\Male):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_Read_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [17104](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Texting\End\Exit\Female):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: stop_holding_action_request("CellText")
-[1166ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_Read_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: stop_holding_action_request("CellText")
+	[1166ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17105](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Texting\End\Exit\Male):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: stop_holding_action_request("CellText")
-[1566ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_Read_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: stop_holding_action_request("CellText")
+	[1566ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17107](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Texting\End\Exit\Utility\DetachAll\Default):
-[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [17106](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cellphone\Texting\End\Exit\Utility\DetachAll\Left):
-[0ms](SequenceTrack)
-[0ms](TargetDetachTrack)
+	[0ms](SequenceTrack):
+		[ID]: 17107
+	[0ms](TargetDetachTrack)
 
 [17115](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cigarette\Cycle\Female):
-[0ms](AnimationTrack)
-[0ms](MinimumDurationTrack)
-[0ms](OpportunityTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_F_CYC
+		[Group]: POI_Smoking_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](MinimumDurationTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [17116](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cigarette\Cycle\Male):
-[0ms](AnimationTrack)
-[0ms](MinimumDurationTrack)
-[0ms](OpportunityTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_CYC
+		[Group]: POI_Smoking_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](MinimumDurationTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [17111](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cigarette\End\Exit\Female):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: stop_holding_action_request("Smoke")
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_F_OUT
+		[Group]: POI_Smoking_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: stop_holding_action_request("Smoke")
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17112](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cigarette\End\Exit\Female\Detach):
-[0ms](MasterTrack)
-[0ms](TargetDetachTrack)
+	[0ms](MasterTrack)
+	[0ms](TargetDetachTrack)
 
 [17113](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cigarette\End\Exit\Male):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: stop_holding_action_request("Smoke")
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_OUT
+		[Group]: POI_Smoking_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: stop_holding_action_request("Smoke")
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17114](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\ItemEquipped\Cigarette\End\Exit\Male\Detach):
-[0ms](MasterTrack)
-[0ms](TargetDetachTrack)
+	[0ms](MasterTrack)
+	[0ms](TargetDetachTrack)
 
 [17140](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Male\Default):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle_v02
+		[Group]: Pedestrian_New
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](ResourceOpportunityTrack)
 
 [17124](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Social\Informant\Female\Default):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[4000ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[4000ms](ResourceOpportunityTrack)
 
 [17123](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Social\Informant\Female\Sexy):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[4000ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Fem_Club_Stand_Idle
+		[Group]: Pedestrian_Sexy_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[4000ms](ResourceOpportunityTrack)
 
 [17122](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Social\Informant\Female\Waitress):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[4000ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Bartender_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[4000ms](ResourceOpportunityTrack)
 
 [17126](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Social\Informant\Idle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [17125](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Social\Informant\Listen):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_SOC_REAC_Listen1
+		[Group]: Social_Listen
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [17127](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Social\NeedsHelp):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Informant_MM
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17129](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Unique\Benny):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Benny
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17128](\Global\Pedestrian\Locomotion\Spawn\Idle\Idling\Anims\Unique\Mrs_Chu):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mrs_Chu
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17066](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Run):
-[0ms](LocomotionTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](LocomotionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 17097
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17067](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Run\Anims\Default\Female_Pedestrian\toIdle_R):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Trans_Jog2Stand_RFoot
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17068](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Run\Anims\Default\toIdle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_JOG2Stand
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack)
 
 [17069](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Run\Anims\Default\toIdleR):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_JOG2Stand_Rfoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack)
 
 [17063](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Sprinting):
-[0ms](LookAtTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[700ms](OpportunityTrack)
+	[0ms](LookAtTrack)
+	[0ms](SequenceTrack):
+		[ID]: 17097
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[700ms](OpportunityTrack)
 
 [17064](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Sprinting\Anims\Default\toIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Run2Stand_RFoot
+		[Group]: Locomotion
+		[Begin]: 0.200000
+		[End]: -1.000000
 
 [17065](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Sprinting\Anims\Default\toIdleR):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Run2Stand
+		[Group]: Locomotion
+		[Begin]: 0.166667
+		[End]: -1.000000
 
 [17070](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Walk):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 17097
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17071](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Walk\Anims\ElderlyAnims\toIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Trans_Walk2Stand
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17072](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Walk\Anims\ElderlyAnims\toIdleR):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Trans~lk2Stand_Rfoot
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17073](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Walk\Anims\Female_Pedestrian\Female_toIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Trans_Walk2Stand_LFoot
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17074](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Walk\Anims\Female_Pedestrian\Female_toIdleR):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Trans_Walk2Stand_RFoot
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17075](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Walk\Anims\toIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Walk2Stand
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17076](\Global\Pedestrian\Locomotion\Spawn\Idle\TransFrom\Walk\Anims\toIdleR):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Walk2Stand_Rfoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17077](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnLeft\TurnLeft180):
-[0ms](MotionIntentionFilterTrack)
-[0ms](SpawnTrack)
-[500ms](OpportunityTrack)
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[500ms](OpportunityTrack)
 
 [17079](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnLeft\TurnLeft180\Anims\Combat):
-[0ms](AnimationTrack)
-[0ms](MotionIntentionFilterTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Stand_Turn_180_LFT
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](MotionIntentionFilterTrack)
 
 [17081](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnLeft\TurnLeft180\Anims\Default):
-[0ms](AnimationTrack)
-[0ms](MotionIntentionFilterTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Turn_180_LFT
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](MotionIntentionFilterTrack)
 
 [17078](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnLeft\TurnLeft180\Anims\Elderly):
-[0ms](AnimationTrack)
-[0ms](LocomotionTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Trans~lk2Stand_Rfoot
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LocomotionTrack)
 
 [17080](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnLeft\TurnLeft180\Anims\Rifle):
-[0ms](AnimationTrack)
-[0ms](MotionIntentionFilterTrack)
+	[0ms](AnimationTrack):
+		[Group]: Rifle_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](MotionIntentionFilterTrack)
 
 [17082](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnLeft\TurnLeft90):
-[0ms](MotionIntentionFilterTrack)
-[0ms](SpawnTrack)
-[333ms](OpportunityTrack)
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[333ms](OpportunityTrack)
 
 [17084](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnLeft\TurnLeft90\Anims\Combat):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Stand_Turn_90_LFT
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17086](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnLeft\TurnLeft90\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Turn_090_LFT
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17083](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnLeft\TurnLeft90\Anims\Elderly):
-[0ms](AnimationTrack)
-[0ms](LocomotionTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Trans~lk2Stand_Rfoot
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LocomotionTrack)
 
 [17085](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnLeft\TurnLeft90\Anims\Rifle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Rifle_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17087](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnRight\TurnRight180):
-[0ms](MotionIntentionFilterTrack)
-[0ms](SpawnTrack)
-[500ms](OpportunityTrack)
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[500ms](OpportunityTrack)
 
 [17089](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnRight\TurnRight180\Anims\Combat):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Stand_Turn_180_RIT
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17091](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnRight\TurnRight180\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Turn_180_RIT
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17088](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnRight\TurnRight180\Anims\Elderly):
-[0ms](AnimationTrack)
-[0ms](LocomotionTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Trans_Walk2Stand
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LocomotionTrack)
 
 [17090](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnRight\TurnRight180\Anims\Rifle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Rifle_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17092](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnRight\TurnRight90):
-[0ms](MotionIntentionFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17094](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnRight\TurnRight90\Anims\Combat):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Stand_Turn_90_RIT
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17096](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnRight\TurnRight90\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Turn_090_RIT
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17093](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnRight\TurnRight90\Anims\Elderly):
-[0ms](AnimationTrack)
-[0ms](LocomotionTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Trans_Walk2Stand
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LocomotionTrack)
 
 [17095](\Global\Pedestrian\Locomotion\Spawn\Idle\Turn\TurnToDirection\TurnRight\TurnRight90\Anims\Rifle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Rifle_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16998](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\Loco):
-[0ms](CharacterStatModifyTrack)
-[0ms](LocomotionTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](CharacterStatModifyTrack)
+	[0ms](LocomotionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17005](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\Loco\Anims\Default):
-[0ms](BlendTreeTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [16999](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\Loco\Anims\Elderly\CaneEquipped):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Scared_Elderly_Cane
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17001](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\Loco\Anims\Elderly\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Scared_Elderly_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17000](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\Loco\Anims\Elderly\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Scared_Elderly_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17004](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\Loco\Anims\Female_Pedestrian):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Jog_CYC
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17003](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\Loco\Anims\Stairs\Downstairs\JogDown):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_JogDown_Cyc
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17002](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\Loco\Anims\Stairs\Upstairs\JogUp):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_JogUp_Cyc
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17006](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\RunActions\Turn180\LeftFoot):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[466ms](LocomotionTrack)
-[466ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Jog_Turn180_Lfoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack)
+	[466ms](LocomotionTrack)
+	[466ms](OpportunityTrack)
 
 [17007](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\RunActions\Turn180\RightFoot):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[466ms](LocomotionTrack)
-[466ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Jog_Turn180_Rfoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack)
+	[466ms](LocomotionTrack)
+	[466ms](OpportunityTrack)
 
 [16979](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle):
-[0ms](LookAtTrack)
-[0ms](MotionIntentionFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[100ms](LocomotionTrack)
+	[0ms](LookAtTrack)
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16998
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
+	[100ms](LocomotionTrack)
 
 [16987](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\180L\OneStep180L):
-[0ms](AnimationTrack)
-[200ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jog_OneStep_180L
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[200ms](OpportunityTrack)
 
 [16988](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\180L\OneStep180L\180L):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Stand2Jog_180L
+		[Group]: Locomotion
+		[Begin]: 0.200000
+		[End]: -1.000000
 
 [16983](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\180R\OneStep180R):
-[0ms](AnimationTrack)
-[200ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jog_OneStep_180R
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[200ms](OpportunityTrack)
 
 [16984](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\180R\OneStep180R\180R):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Stand2Jog_180R
+		[Group]: Locomotion
+		[Begin]: 0.200000
+		[End]: -1.000000
 
 [16985](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\90L\OneStep90L):
-[0ms](AnimationTrack)
-[200ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jog_OneStep_090L
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[200ms](OpportunityTrack)
 
 [16986](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\90L\OneStep90L\90L):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Stand2Jog_090L
+		[Group]: Locomotion
+		[Begin]: 0.200000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [16981](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\90R\OneStep90R):
-[0ms](AnimationTrack)
-[200ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jog_OneStep_090R
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[200ms](OpportunityTrack)
 
 [16982](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\90R\OneStep90R\90R):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Stand2Jog_090R
+		[Group]: Locomotion
+		[Begin]: 0.200000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [16980](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\Female_Pedestrian\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Trans_Stand2Jog_LFoot
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16989](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\toRun):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [16990](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\toRun\Anims\Default\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Stand2Jog
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16991](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Idle\Anims\toRun\Anims\Default\Onestep):
-[0ms](AnimationTrack)
-[200ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[200ms](OpportunityTrack)
 
 [16995](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Sprinting):
-[0ms](LocomotionTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](LocomotionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16998
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [16996](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Sprinting\Anims\RunStart\Left):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Run2Jog_LeftFoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16997](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Sprinting\Anims\RunStart\Right):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Run2Jog_RightFoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16992](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Walk):
-[0ms](LocomotionTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](LocomotionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16998
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
 
 [16993](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Walk\Anims\RunStart):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Walk2Jog
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16994](\Global\Pedestrian\Locomotion\Spawn\Moveing\Run\TransFrom\Walk\Anims\RunStartR):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Walk2Jog_Rfoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16969](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\Loco):
-[0ms](CharacterStatModifyTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](StimulusTrack)
-[0ms](StimulusTrack)
+	[0ms](CharacterStatModifyTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](StimulusTrack)
+	[0ms](StimulusTrack)
 
 [16976](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\Loco\Anims\Default):
-[0ms](BlendTreeTrack)
-[0ms](LocomotionTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](LocomotionTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
 
 [16970](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\Loco\Anims\Elderly\CaneEquipped):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Scared_Elderly_Cane
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16972](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\Loco\Anims\Elderly\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Scared_Elderly_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16971](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\Loco\Anims\Elderly\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Scared_Elderly_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16975](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\Loco\Anims\Female_Pedestrian):
-[0ms](AnimationTrack)
-[0ms](LocomotionTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Jog_CYC
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LocomotionTrack)
+	[0ms](OpportunityTrack)
 
 [16974](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\Loco\Anims\Stairs\Downstairs\RunDown):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
-[0ms](OpportunityTrack)
-[0ms](VelocitySlopeModeTrack)
-[0ms](VelocitySlopeModeTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_RunDown_Cyc
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
+	[0ms](OpportunityTrack)
+	[0ms](VelocitySlopeModeTrack)
+	[0ms](VelocitySlopeModeTrack)
 
 [16973](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\Loco\Anims\Stairs\Upstairs\RunUp):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_RunUp_Cyc
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
+	[0ms](OpportunityTrack)
 
 [16977](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\SprintActions\Turn180\LeftFoot):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[466ms](LocomotionTrack)
-[466ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Jog_Turn180_Lfoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack)
+	[466ms](LocomotionTrack)
+	[466ms](OpportunityTrack)
 
 [16978](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\SprintActions\Turn180\RightFoot):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[466ms](LocomotionTrack)
-[466ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Jog_Turn180_Rfoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack)
+	[466ms](LocomotionTrack)
+	[466ms](OpportunityTrack)
 
 [16952](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Idle\Idle):
-[0ms](MotionIntentionFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[266ms](LocomotionTrack)
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16969
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[266ms](LocomotionTrack)
 
 [16959](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Idle\Idle\Anims\180L\OneStep180L):
-[0ms](AnimationTrack)
-[200ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jog_OneStep_180L
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[200ms](OpportunityTrack)
 
 [16960](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Idle\Idle\Anims\180L\OneStep180L\180L):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Stand2Jog_180L
+		[Group]: Locomotion
+		[Begin]: 0.200000
+		[End]: -1.000000
 
 [16955](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Idle\Idle\Anims\180R\OneStep180R):
-[0ms](AnimationTrack)
-[200ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jog_OneStep_180R
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[200ms](OpportunityTrack)
 
 [16956](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Idle\Idle\Anims\180R\OneStep180R\180R):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Stand2Jog_180R
+		[Group]: Locomotion
+		[Begin]: 0.200000
+		[End]: -1.000000
 
 [16957](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Idle\Idle\Anims\90L\OneStep90L):
-[0ms](AnimationTrack)
-[200ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jog_OneStep_090L
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[200ms](OpportunityTrack)
 
 [16958](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Idle\Idle\Anims\90L\OneStep90L\90L):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Stand2Jog_090L
+		[Group]: Locomotion
+		[Begin]: 0.200000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [16953](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Idle\Idle\Anims\90R\OneStep90R):
-[0ms](AnimationTrack)
-[200ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jog_OneStep_090R
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[200ms](OpportunityTrack)
 
 [16954](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Idle\Idle\Anims\90R\OneStep90R\90R):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Stand2Jog_090R
+		[Group]: Locomotion
+		[Begin]: 0.200000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [16961](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Idle\Idle\Anims\toRun):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [16962](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Idle\Idle\Anims\toRun\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Stand2Jog
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16966](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Run):
-[0ms](LocomotionTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](LocomotionTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16969
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [16967](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Run\Anims\toSprint):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Jog2Run_LeftFoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16968](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Run\Anims\toSprintR):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Jog2Run_RightFoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16963](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Walk):
-[0ms](LocomotionTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](LocomotionTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16969
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [16964](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Walk\Anims\toRun):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Walk2Jog
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16965](\Global\Pedestrian\Locomotion\Spawn\Moveing\Sprinting\TransFrom\Walk\Anims\toRunR):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Walk2Jog_Rfoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16948](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\Idling):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [16949](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\Idling\Anims\CombatStance):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Punch
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16951](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\Idling\Anims\Default):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [16950](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\Idling\Anims\DefaultFEM):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [16940](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\TransFrom\Run):
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16948
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [16941](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\TransFrom\Run\Anims\toIdle):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16942](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\TransFrom\Run\Anims\toIdleR):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16943](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\TransFrom\Walk):
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16948
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [16944](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\TransFrom\Walk\Anims\toIdle):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16945](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\TransFrom\Walk\Anims\toIdleR):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16946](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\TransFrom\toIdle):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16948
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [16947](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Idle\TransFrom\toIdle\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Trans_Ready2Stand
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [16919](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Run\Loco):
-[0ms](MotionIntentionFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [16920](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Run\Loco\Anims\Combat):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16924](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Run\Loco\Anims\Default):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16921](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Run\Loco\Anims\Ped_Female\Default_Female1):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16922](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Run\Loco\Anims\Ped_Male\Default_Ped_Male1):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16923](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Run\Loco\Anims\Ped_Male\Default_Ped_Male2):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16918](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Run\TransFrom\Idle):
-[0ms](BlendTreeTrack)
-[0ms](MotionIntentionFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
-[533ms](LocomotionTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16919
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
+	[533ms](LocomotionTrack)
 
 [16926](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco):
-[0ms](LookAtTrack)
-[0ms](MotionIntentionFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](LookAtTrack)
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [16931](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Combat):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16939](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Default):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16932](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Ped_Female\0x2E7F30A2):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16934](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Ped_Female\Ped_Female):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16933](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Ped_Female\Ped_Female_Casual):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16935](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Ped_Male\0xC7AE0EF0):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16936](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Ped_Male\0xD9E95EF5):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16938](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Ped_Male\Default_Ped_Male1):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16937](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Ped_Male\Default_Ped_Male2):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [16930](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Stairs\Downstairs\WalkDown):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
-[0ms](OpportunityTrack)
-[0ms](VelocitySlopeModeTrack)
-[0ms](VelocitySlopeModeTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkDown
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
+	[0ms](OpportunityTrack)
+	[0ms](VelocitySlopeModeTrack)
+	[0ms](VelocitySlopeModeTrack)
 
 [16929](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Stairs\Downstairs\WalkDown_Female):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
-[0ms](OpportunityTrack)
-[0ms](VelocitySlopeModeTrack)
-[0ms](VelocitySlopeModeTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkDown_F
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
+	[0ms](OpportunityTrack)
+	[0ms](VelocitySlopeModeTrack)
+	[0ms](VelocitySlopeModeTrack)
 
 [16928](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Stairs\Upstairs\WalkUp):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkUp
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
+	[0ms](OpportunityTrack)
 
 [16927](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\Loco\Anims\Stairs\Upstairs\WalkUp_Female):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkUp_F
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
+	[0ms](OpportunityTrack)
 
 [16925](\Global\Pedestrian\Locomotion\Spawn\Moveing\Strafe\Strafe\Walk\TransFrom\Idle):
-[0ms](BlendTreeTrack)
-[0ms](MotionIntentionFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
-[533ms](LocomotionTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16926
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
+	[533ms](LocomotionTrack)
 
 [17012](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SubjectSprintTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SubjectSprintTrack)
 
 [17013](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\CombatStance):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Punch
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [17023](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Cane):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17024](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Cane\Anims\Female):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Female_CaneWalk_CYC
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17025](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Cane\Anims\Male):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_CaneWalk_CYC
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17026](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\RootLocomotionAnimation):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17027](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\RootLocomotionAnimation\Anims\Female\Female_Walk02):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Female_Walk_CYC02
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17028](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\RootLocomotionAnimation\Anims\Female\Female_Walk03):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Walk_CYC03
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17029](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\RootLocomotionAnimation\Anims\Male\Male_Walk02):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Walk_CYC02
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17030](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\RootLocomotionAnimation\Anims\Male\Male_Walk03):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Walk_CYC03
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17031](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\RootLocomotionAnimation\Anims\Male\Male_Walk04):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Walk_CYC04
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17032](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\RootLocomotionAnimation\Anims\Male\Male_Walk05):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_Walk_CYC05
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17020](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Stairs\0x0513ED1C):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17021](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Stairs\0x0513ED1C\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Female_CaneWalk_CYC
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17022](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Stairs\0x0513ED1C\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Male_CaneWalk_CYC
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17017](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Stairs\Downstairs):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17018](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Stairs\Downstairs\Anims\Female):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkDown_F
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17019](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Stairs\Downstairs\Anims\Male):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkDown
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17014](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Stairs\Upstairs):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17015](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Stairs\Upstairs\Anims\Female):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkUp_F
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17016](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\ElderlyOverride\Stairs\Upstairs\Anims\Male):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkUp
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17039](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\Fast_Walk):
-[0ms](LocomotionTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](LocomotionTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
 
 [17041](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\Fast_Walk\Anims\Female\Fast_Walk):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Fem_Walk_Fast_CYC
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17040](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\Fast_Walk\Anims\Female\Fast_Walk_LookBehind):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Fem_Flee_Walk_CYC
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17043](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\Fast_Walk\Anims\Male\Fast_Walk):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Walk_Fast_CYC
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17042](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\Fast_Walk\Anims\Male\Fast_Walk_LookBehind):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Flee_QuickWalk_CYC
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17044](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
 
 [17051](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Female\Drunk):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Drunk_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17050](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Female\Fast_Walk):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Fem_Walk_Fast_CYC
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17052](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Female\MeterMaid):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_SOLO_MeterMaid_Walk_F
+		[Group]: POI_CheckMeter
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17056](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Female\Ped_Female):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Walk_CYC
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17055](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Female\Ped_Female_Casual):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Fem_Walk_Casual
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17053](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Female\Sexy):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_LOC_Female_Sexy_Walk_CYC
+		[Group]: Pedestrian_Sexy_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17054](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Female\Slow):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Walk_CYC
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17062](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Male\Default):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Walk_CYC_2
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17059](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Male\Drunk):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Drunk_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17057](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Male\Fast_Walk):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Walk_Fast_CYC
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17061](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Male\Male_Variation2):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Walk_CYC_3
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17060](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Male\Male_Variation_Elite):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: THG_ELITE_LOC_Strafe_Walk_FRT_CYC
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17058](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Male\Slow):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_Walk_CYC_3
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17045](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Unique\Ped_Beggar):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Group]: POI_Beggar_Walk
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17047](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Unique\Ped_Benny):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Group]: Benny
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17046](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Unique\Ped_Junkie):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Junkie
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17048](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Unique\Ped_Mrs_Chu):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Group]: Mrs_Chu
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17049](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\RootLocomotionAnimation\Anims\Unique\Ped_Tiffany):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: PED_LOC_Female_Sexy_Walk_CYC
+		[Group]: Pedestrian_Sexy_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17036](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\Stairs\Downstairs):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17037](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\Stairs\Downstairs\Anims\Female):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkDown_F
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17038](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\Stairs\Downstairs\Anims\Male):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkDown
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17033](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\Stairs\Upstairs):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17034](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\Stairs\Upstairs\Anims\Female):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkUp_F
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17035](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\Loco\Anims\Stairs\Upstairs\Anims\Male):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stair_WalkUp
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
 
 [17008](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\TransFrom\Idle_Removed)
 [17009](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\TransFrom\Run):
-[0ms](LocomotionTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](LocomotionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 17012
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [17010](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\TransFrom\Run\Anims\toWalk):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Jog2Walk
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [17011](\Global\Pedestrian\Locomotion\Spawn\Moveing\Walk\TransFrom\Run\Anims\toWalkR):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Trans_Jog2Walk_Rfoot
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 

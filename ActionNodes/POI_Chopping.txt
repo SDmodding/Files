@@ -1,72 +1,99 @@
 [25337](\Global\POI_Chopping\Interactions\ChoppingIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [25341](\Global\POI_Chopping\Interactions\ChoppingIdles\ChoppingAnims\ChoppingIntro\MaleIntro\MaleIntro_Actual):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Chopping
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25342](\Global\POI_Chopping\Interactions\ChoppingIdles\ChoppingAnims\ChoppingLoop\MaleLoop\MaleChopping_Actual):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Chopping
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [25340](\Global\POI_Chopping\Interactions\ChoppingIdles\ChoppingAnims\Start\IsSpawning_toChoppingIntro):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25339](\Global\POI_Chopping\Interactions\ChoppingIdles\ChoppingAnims\Start\IsSpawning_toChoppingLoop):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25347](\Global\POI_Chopping\Interactions\ChoppingIdles\ChoppingExit\FemaleExit\FemaleChopping_Exit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Chopping
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [25348](\Global\POI_Chopping\Interactions\ChoppingIdles\ChoppingExit\MaleExit\MaleChopping_Exit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Chopping
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [25343](\Global\POI_Chopping\Interactions\ChoppingIdles\ResourceLoad\LoadResources):
-[0ms](ObjectReferenceTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25346](\Global\POI_Chopping\Interactions\ChoppingIdles\ResourceLoad\LoadResources\IsSpawning_Actual):
-[0ms](ObjectCreateTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-VegetablesChopped001
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-cleaver_A
+	[0ms](TargetAttachTrack)
+	[0ms](TargetAttachTrack)
 
 [25344](\Global\POI_Chopping\Interactions\ChoppingIdles\ResourceLoad\LoadResources\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [25345](\Global\POI_Chopping\Interactions\ChoppingIdles\ResourceLoad\LoadResources\WaitForResources\Timeout)
 [25338](\Global\POI_Chopping\Interactions\ChoppingIdles\Sync):
-[0ms](MasterTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](MasterTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25336](\Global\POI_Chopping\UseConditions)

@@ -1,47 +1,67 @@
 [25762](\Global\POI_DC_Hostage_Parent\Interactions\Grab\Exit\ExitActual):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: poi_stop_using_use()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: poi_stop_using_use()
 
 [25760](\Global\POI_DC_Hostage_Parent\Interactions\Grab\GrappleInit\Hostage!\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_DC_Hostage
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25761](\Global\POI_DC_Hostage_Parent\Interactions\Grab\GrappleInit\Hostage!\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_DC_Hostage
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25756](\Global\POI_DC_Hostage_Parent\Interactions\Grab\Orientation\Behind\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[66ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: 1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[66ms](TargetSyncPositionTrack)
 
 [25757](\Global\POI_DC_Hostage_Parent\Interactions\Grab\Orientation\Behind\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25758](\Global\POI_DC_Hostage_Parent\Interactions\Grab\Orientation\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSteerToTrack)
-[66ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: 0.733333
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSteerToTrack)
+	[66ms](TargetSyncPositionTrack)
 
 [25759](\Global\POI_DC_Hostage_Parent\Interactions\Grab\Orientation\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: 0.733333
 
 [25755](\Global\POI_DC_Hostage_Parent\Interactions\WaitForChild):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [25754](\Global\POI_DC_Hostage_Parent\UseConditions)

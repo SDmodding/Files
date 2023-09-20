@@ -1,225 +1,436 @@
 [24920](\Global\POI_Balcony\Interactions\Root):
-[0ms](SpawnTrack)
-[0ms](TargetDestroyTrack)
-[0ms](TargetDestroyTrack)
-[4000ms](ResourceOpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDestroyTrack)
+	[0ms](TargetDestroyTrack)
+	[4000ms](ResourceOpportunityTrack)
 
 [24921](\Global\POI_Balcony\Interactions\Root\LeaningAnims\Female\LeaningIdle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_F_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24922
 
 [24922](\Global\POI_Balcony\Interactions\Root\LeaningAnims\Female\LeaningIdle_2):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_F_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [24923](\Global\POI_Balcony\Interactions\Root\LeaningAnims\Male\LeaningIdle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_F_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [24940](\Global\POI_Balcony\Interactions\SecondaryActions\BrushOff\Female):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_Brush_F
+		[Group]: POI_Hang_Out_F
+		[Begin]: 0.633333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24941](\Global\POI_Balcony\Interactions\SecondaryActions\BrushOff\Male):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_Brush
+		[Group]: POI_Hang_Out_M
+		[Begin]: 0.633333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24952](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\End\Female):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[1066ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1066ms](TargetDetachTrack)
 
 [24953](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\End\Male):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[1600ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cel_Hangup
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1600ms](TargetDetachTrack)
 
 [24950](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\Female):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
-[10000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[10000ms](OpportunityTrack)
 
 [24951](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\Male):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
-[10000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cel_Talk_CYC
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[10000ms](OpportunityTrack)
 
 [24948](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Female):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[66ms](AudioTrackSimple)
-[900ms](ObjectCreateTrack)
-[900ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[66ms](AudioTrackSimple)
+	[900ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[900ms](TargetAttachTrack)
 
 [24949](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Male):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[66ms](AudioTrackSimple)
-[900ms](ObjectCreateTrack)
-[900ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[66ms](AudioTrackSimple)
+	[900ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[900ms](TargetAttachTrack)
 
 [24934](\Global\POI_Balcony\Interactions\SecondaryActions\Coughing\Female):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.266667
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24935](\Global\POI_Balcony\Interactions\SecondaryActions\Coughing\Male):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.266667
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24954](\Global\POI_Balcony\Interactions\SecondaryActions\FaceWipe\Male):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.433333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24938](\Global\POI_Balcony\Interactions\SecondaryActions\FixHair\Female):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_FixHair_Female
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 1.500000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24939](\Global\POI_Balcony\Interactions\SecondaryActions\FixHair\Male):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.533333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24936](\Global\POI_Balcony\Interactions\SecondaryActions\HeadScratch\Female):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_HeadScratch_Female
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.833333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24937](\Global\POI_Balcony\Interactions\SecondaryActions\HeadScratch\Male):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.133333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24946](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\End\Female):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: stop_holding_action_request("Smoke")
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_F_OUT
+		[Group]: POI_Smoking_F
+		[Begin]: 0.266667
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: stop_holding_action_request("Smoke")
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
 
 [24947](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\End\Male):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: stop_holding_action_request("Smoke")
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_OUT
+		[Group]: POI_Smoking_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: stop_holding_action_request("Smoke")
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
 
 [24944](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\Female):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_F_CYC
+		[Group]: POI_Smoking_F
+		[Begin]: 0.666667
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24945](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\Male):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_CYC
+		[Group]: POI_Smoking_M
+		[Begin]: 2.133333
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24942](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Female):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[1000ms](ObjectCreateTrack)
-[1000ms](TargetAttachTrack)
-[4500ms](PlayEffectTrack)
-[4500ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_F_INTO
+		[Group]: POI_Smoking_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1000ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Cigarette
+	[1000ms](TargetAttachTrack)
+	[4500ms](PlayEffectTrack)
+	[4500ms](PlayEffectTrack)
 
 [24943](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Male):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[1000ms](ObjectCreateTrack)
-[1000ms](TargetAttachTrack)
-[4500ms](PlayEffectTrack)
-[4500ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_INTO
+		[Group]: POI_Smoking_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1000ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Cigarette
+	[1000ms](TargetAttachTrack)
+	[4500ms](PlayEffectTrack)
+	[4500ms](PlayEffectTrack)
 
 [24926](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Cyc\Default):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Beat_Rug_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetPlayTrack)
 
 [24924](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Into\LoadRug):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [24925](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Into\LoadRug\RugCleanInto_Actual):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[33ms](TargetAttachTrack)
-[33ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Beat_Rug_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-RugBeating001
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[33ms](TargetAttachTrack)
+	[33ms](TargetPlayTrack)
 
 [24927](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Out\Default):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[2333ms](TargetDestroyTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Beat_Rug_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](TargetPlayTrack)
+	[2333ms](TargetDestroyTrack)
 
 [24930](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Cyc\Default):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Beat_Rug_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [24928](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Into\LoadRug):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [24929](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Into\LoadRug\Default):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[33ms](ObjectCreateTrack)
-[1333ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Beat_Rug_F
+		[Begin]: 0.333333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[33ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-RugBeating001
+	[1333ms](TargetAttachTrack)
 
 [24931](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Out\Default):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[2333ms](TargetDestroyTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Beat_Rug_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[2333ms](TargetDestroyTrack)
 
 [24955](\Global\POI_Balcony\Interactions\SecondaryActions\Sneeze\Female):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Sneeze_F
+		[Group]: POI_Hang_Out_F
+		[Begin]: 0.533333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24956](\Global\POI_Balcony\Interactions\SecondaryActions\Sneeze\Male):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Sneeze_M
+		[Group]: POI_Hang_Out_M
+		[Begin]: 0.533333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [24932](\Global\POI_Balcony\Interactions\SecondaryActions\WaterThrow\Anims\Female\LoadWater):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [24933](\Global\POI_Balcony\Interactions\SecondaryActions\WaterThrow\Anims\Female\LoadWater\ThrowWater_Female):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](LookAtTrack)
-[0ms](SequenceTrack)
-[33ms](ObjectCreateTrack)
-[33ms](TargetAttachTrack)
-[4166ms](PlayEffectTrack)
-[4333ms](PlayEffectTrack)
-[8800ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_DumpWater
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](LookAtTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24920
+	[33ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-BucketWater001
+	[33ms](TargetAttachTrack)
+	[4166ms](PlayEffectTrack)
+	[4333ms](PlayEffectTrack)
+	[8800ms](TargetDetachTrack)
 
 [24919](\Global\POI_Balcony\UseConditions)

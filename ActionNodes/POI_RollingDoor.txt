@@ -1,70 +1,98 @@
 [27728](\Global\POI_RollingDoor\Interactions\Inside\Open\Normal\Open):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_ElecStoreShutter001_Open_INTO
+		[Group]: LOM_ElecStoreShutter001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SequenceTrack):
+		[ID]: 27729
+	[0ms](TargetSyncPositionTrack)
 
 [27729](\Global\POI_RollingDoor\Interactions\Inside\Open\Normal\Open\Struggle):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](InputSignalFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "y", "mash")
-[0ms](SpawnTrack)
-[0ms](Struggle2Track)
-[0ms](TargetSyncPositionTrack)
-[100ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_ElecStoreShutter001_Open_CYC
+		[Group]: LOM_ElecStoreShutter001_Use
+		[Begin]: 0.100000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](InputSignalFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "y", "mash")
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](Struggle2Track)
+	[0ms](TargetSyncPositionTrack)
+	[100ms](TargetPlayTrack)
 
 [27732](\Global\POI_RollingDoor\Interactions\Inside\Open\Normal\Open\Struggle\AudioSpawn\Playing):
-[0ms](OpportunityTrack)
-[100ms](AudioTrack)
-[500ms](AudioTrackSimple)
+	[0ms](OpportunityTrack)
+	[100ms](AudioTrack)
+	[500ms](AudioTrackSimple)
 
 [27733](\Global\POI_RollingDoor\Interactions\Inside\Open\Normal\Open\Struggle\AudioSpawn\Playing\Stopped):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [27730](\Global\POI_RollingDoor\Interactions\Inside\Open\Normal\Open\Struggle\Finished\Opening_Finish):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
-[100ms](AudioTrack)
-[2333ms](OpportunityTrack)
-[2333ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_ElecStoreShutter001_Open_OUT
+		[Group]: LOM_ElecStoreShutter001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
+	[100ms](AudioTrack)
+	[2333ms](OpportunityTrack)
+	[2333ms](OpportunityTrack)
 
 [27731](\Global\POI_RollingDoor\Interactions\Inside\Open\Normal\Open\Struggle\Finished\Timeout):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_ElecStoreShutter001_OpenFail
+		[Group]: LOM_ElecStoreShutter001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
 
 [27726](\Global\POI_RollingDoor\Interactions\Main\Open\Normal\Open):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
-[800ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_ElecStoreShutter001_Open
+		[Group]: LOM_ElecStoreShutter001_Use
+		[Begin]: 0.000000
+		[End]: 1.033333
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SequenceTrack):
+		[ID]: 27727
+	[0ms](TargetSyncPositionTrack)
+	[800ms](TargetPlayTrack)
 
 [27727](\Global\POI_RollingDoor\Interactions\Main\Open\Normal\Open\Finish):
-[0ms](AnimationTrack)
-[0ms](TargetGrappleReleaseTrack)
-[666ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_ElecStoreShutter001_Open
+		[Group]: LOM_ElecStoreShutter001_Use
+		[Begin]: 4.000000
+		[End]: -1.000000
+	[0ms](TargetGrappleReleaseTrack)
+	[666ms](TargetPlayTrack)
 
 [27725](\Global\POI_RollingDoor\UseConditions\InsideUse):
-[0ms](AudioTrackSoundbankIO)
+	[0ms](AudioTrackSoundbankIO)
 
 [27724](\Global\POI_RollingDoor\UseConditions\MainUse):
-[0ms](AudioTrackSoundbankIO)
+	[0ms](AudioTrackSoundbankIO)
 

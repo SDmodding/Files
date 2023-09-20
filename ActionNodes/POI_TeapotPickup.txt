@@ -1,19 +1,25 @@
 [28903](\Global\TeapotPickup\Interactions\Teapot):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28904](\Global\TeapotPickup\Interactions\Teapot\Pickup):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
-[333ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Waitress
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28905
+	[0ms](TargetSteerToTrack)
+	[333ms](TargetAttachTrack)
 
 [28905](\Global\TeapotPickup\Interactions\Teapot\Teapot_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [28902](\Global\TeapotPickup\UseConditions)

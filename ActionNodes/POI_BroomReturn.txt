@@ -1,22 +1,29 @@
 [25092](\Global\POI_BroomReturn\Interactions\BroomReturn):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25094](\Global\POI_BroomReturn\Interactions\BroomReturn\Broom_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetReleaseTrack)
 
 [25093](\Global\POI_BroomReturn\Interactions\BroomReturn\Drop):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
-[200ms](TargetAssignMyTargetToTargetsTargetTrack)
-[200ms](TargetDetachTrack)
-[200ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Name]: GUN_Drop_STR_LO
+		[Group]: Inventory_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25094
+	[0ms](TargetSteerToTrack)
+	[200ms](TargetAssignMyTargetToTargetsTargetTrack)
+	[200ms](TargetDetachTrack)
+	[200ms](TargetPlayTrack)
 
 [25091](\Global\POI_BroomReturn\UseConditions)

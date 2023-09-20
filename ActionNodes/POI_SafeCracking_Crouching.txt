@@ -1,34 +1,50 @@
 [27759](\Global\POI_SafeCracking_Crouching\Interactions\Begin):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27760
+	[0ms](TargetSyncPositionTrack)
 
 [27761](\Global\POI_SafeCracking_Crouching\Interactions\Exit):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.setup_cameras(false)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.setup_cameras(false)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27760](\Global\POI_SafeCracking_Crouching\Interactions\Minigame):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: Minigame.setup_cameras()
-[0ms](TargetSyncPositionTrack)
-[0ms](UIScreenTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_LockBox001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27761
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: Minigame.setup_cameras()
+	[0ms](TargetSyncPositionTrack)
+	[0ms](UIScreenTrack):
+		[Name]: SafeCrackingMinigame
 
 [27758](\Global\POI_SafeCracking_Crouching\Interactions\MoveTo):
-[0ms](BlendTreeTrack)
-[0ms](PathfindToTargetTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](PathfindToTargetTrack)
+	[0ms](SequenceTrack):
+		[ID]: 27759
+	[0ms](TargetSteerToTrack)
 
 [27757](\Global\POI_SafeCracking_Crouching\Interactions\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27756](\Global\POI_SafeCracking_Crouching\UseConditions)

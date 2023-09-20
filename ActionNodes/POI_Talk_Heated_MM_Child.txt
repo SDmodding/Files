@@ -1,25 +1,32 @@
 [28883](\Global\POI_Talk_Heated_MM_Child\Interactions\Talk_Heated_MM_Idles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28886](\Global\POI_Talk_Heated_MM_Child\Interactions\Talk_Heated_MM_Idles\Talk_Heated_MM_Exit\Talk_Heated_MM_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [28884](\Global\POI_Talk_Heated_MM_Child\Interactions\Talk_Heated_MM_Idles\Talk_Heated_MM_States\Talk_Heated_MM\Talk_Heated_MM):
-[0ms](LocomotionTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LocomotionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28885](\Global\POI_Talk_Heated_MM_Child\Interactions\Talk_Heated_MM_Idles\Talk_Heated_MM_States\Talk_Heated_MM\Talk_Heated_MM\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Talk_Heated_MM
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28882](\Global\POI_Talk_Heated_MM_Child\UseConditions)

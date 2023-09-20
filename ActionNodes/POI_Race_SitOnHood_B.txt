@@ -1,32 +1,46 @@
 [27654](\Global\POI_Race_SitOnHood_B\Interactions\MasterSpawn):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
 
 [27657](\Global\POI_Race_SitOnHood_B\Interactions\MasterSpawn\Anims\Idle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Race_SitOnHood
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [27655](\Global\POI_Race_SitOnHood_B\Interactions\MasterSpawn\Anims\PlayerNear):
-[0ms](AnimationTrack)
-[0ms](HeadTrackTargetTrack)
-[0ms](LookAtTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Race_SitOnHood
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](HeadTrackTargetTrack)
+	[0ms](LookAtTrack)
+	[0ms](SequenceTrack):
+		[ID]: 27656
 
 [27656](\Global\POI_Race_SitOnHood_B\Interactions\MasterSpawn\Anims\PlayerNear\Idle):
-[0ms](AnimationTrack)
-[0ms](HeadTrackTargetTrack)
-[0ms](LookAtTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Race_SitOnHood
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](HeadTrackTargetTrack)
+	[0ms](LookAtTrack)
 
 [27659](\Global\POI_Race_SitOnHood_B\Interactions\MasterSpawn\CollisionDisable):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](MasterTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](MasterTrack)
 
 [27658](\Global\POI_Race_SitOnHood_B\Interactions\MasterSpawn\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27653](\Global\POI_Race_SitOnHood_B\UseConditions)

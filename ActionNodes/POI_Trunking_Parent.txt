@@ -1,88 +1,149 @@
 [29073](\Global\POI_Trunking_Parent\Interactions\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use()
 
 [29062](\Global\POI_Trunking_Parent\Interactions\Grab):
-[0ms](AnimationTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](TargetSteerToTrack)
-[200ms](TargetSteerToTrack)
-[266ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Idle_Front_Start
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.200000
+		[TimeToDistance]: 0.100000
+		[TargetMovement]: 0.500000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](TargetSteerToTrack)
+	[200ms](TargetSteerToTrack)
+	[266ms](OpportunityTrack)
 
 [29065](\Global\POI_Trunking_Parent\Interactions\Grab\Idle\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
-[1033ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Idle_Front_GIV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
+	[1033ms](OpportunityTrack)
 
 [29066](\Global\POI_Trunking_Parent\Interactions\Grab\Idle\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](SimObjectFlagSetTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Idle_Front_RCV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SimObjectFlagSetTrack)
 
 [29063](\Global\POI_Trunking_Parent\Interactions\Grab\Init\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignMyTargetToTargetsTargetTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSteerToTrack)
-[66ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Trans_Ready2Idle~ont_Player_GIV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSteerToTrack)
+	[66ms](TargetSyncPositionTrack)
 
 [29064](\Global\POI_Trunking_Parent\Interactions\Grab\Init\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Trans_Ready2Idle~ont_Player_RCV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [29067](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](StimulusTrack)
-[0ms](StimulusTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_Kidnap
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 29073
+	[0ms](StimulusTrack)
+	[0ms](StimulusTrack)
+	[0ms](TargetAssignTrack)
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSpawnTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [29068](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignTargetsTargetToMyTargetTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSyncPositionTrack)
-[0ms](VehicleInteractTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_Kidnap
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 10
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.116667
+		[ColEnd]: 2.000000
+		[AttackRadius]: 0.450000
+		[AttackTypeID]: 5
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 21403
+	[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetSyncPositionTrack)
+	[0ms](VehicleInteractTrack)
 
 [29069](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Narrow):
-[0ms](AnimationTrack)
-[0ms](VehicleDoorPhysicsTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_Kidnap
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](VehicleDoorPhysicsTrack)
 
 [29070](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Standard):
-[0ms](AnimationTrack)
-[0ms](VehicleDoorPhysicsTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_Kidnap
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](VehicleDoorPhysicsTrack)
 
 [29071](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Wide):
-[0ms](AnimationTrack)
-[0ms](VehicleDoorPhysicsTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_Kidnap
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](VehicleDoorPhysicsTrack)
 
 [29072](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Wider):
-[0ms](AnimationTrack)
-[0ms](VehicleDoorPhysicsTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_Kidnap
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](VehicleDoorPhysicsTrack)
 
 [29061](\Global\POI_Trunking_Parent\Interactions\WaitForChild):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [29060](\Global\POI_Trunking_Parent\UseConditions)

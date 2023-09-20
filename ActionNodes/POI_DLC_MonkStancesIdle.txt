@@ -1,34 +1,60 @@
 [29644](\Global\POI_DLC_MonkStancesIdle\Interactions\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use()
 
 [29637](\Global\POI_DLC_MonkStancesIdle\Interactions\Master):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29643](\Global\POI_DLC_MonkStancesIdle\Interactions\Master\Pose\0x6B66B096):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Monk
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [29638](\Global\POI_DLC_MonkStancesIdle\Interactions\Master\Pose\0xA472134A\0x00CBFF50):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_MartialArts_Student_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 29640
 
 [29639](\Global\POI_DLC_MonkStancesIdle\Interactions\Master\Pose\0xA472134A\0xE0311BFF):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_MartialArts_Student_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 29640
 
 [29642](\Global\POI_DLC_MonkStancesIdle\Interactions\Master\Pose\0xAF655D09):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Monk
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 29643
 
 [29641](\Global\POI_DLC_MonkStancesIdle\Interactions\Master\Pose\Eagle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Monk
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 29642
 
 [29640](\Global\POI_DLC_MonkStancesIdle\Interactions\Master\Pose\Tiger):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Monk
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 29641
 
 [29636](\Global\POI_DLC_MonkStancesIdle\UseConditions)

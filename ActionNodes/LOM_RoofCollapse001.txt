@@ -1,24 +1,32 @@
 [24624](\Global\LOM_RoofCollapse001\Object\Collapse):
-[0ms](AnimationTrack)
-[0ms](CameraShakeTrack)
-[0ms](PhysicalDamageTrack)
-[166ms](PlayEffectTrack)
-[400ms](PlayEffectTrack)
-[441ms](PlayEffectTrack)
-[500ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_RoofCollapse001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CameraShakeTrack)
+	[0ms](PhysicalDamageTrack)
+	[166ms](PlayEffectTrack)
+	[400ms](PlayEffectTrack)
+	[441ms](PlayEffectTrack)
+	[500ms](PlayEffectTrack)
 
 [24623](\Global\LOM_RoofCollapse001\Object\Flex):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_RoofCollapse001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24621
 
 [24621](\Global\LOM_RoofCollapse001\Object\Idle):
-[0ms](AnimationRefPoseTrack)
+	[0ms](AnimationRefPoseTrack)
 
 [24622](\Global\LOM_RoofCollapse001\Object\Lightning):
-[0ms](AnimationRefPoseTrack)
-[0ms](MasterTrack)
-[0ms](SequenceTrack)
-[16ms](PlayEffectTrack)
-[16ms](PlayEffectTrack)
+	[0ms](AnimationRefPoseTrack)
+	[0ms](MasterTrack)
+	[0ms](SequenceTrack):
+		[ID]: 24621
+	[16ms](PlayEffectTrack)
+	[16ms](PlayEffectTrack)
 

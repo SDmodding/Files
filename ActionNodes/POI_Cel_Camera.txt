@@ -1,53 +1,96 @@
 [25253](\Global\POI_Cel_Camera\Interactions\Celphone):
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
+	[0ms](TargetReleaseTrack)
 
 [25258](\Global\POI_Cel_Camera\Interactions\Celphone\Behavior\CreatePhone\Female):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[833ms](ObjectCreateTrack)
-[833ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Female_Cel_Camera_INTO
+		[Group]: POI_Cel_Camera
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25254
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[833ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[833ms](TargetAttachTrack)
 
 [25259](\Global\POI_Cel_Camera\Interactions\Celphone\Behavior\CreatePhone\Male):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[833ms](ObjectCreateTrack)
-[833ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Cel_Camera_INTO
+		[Group]: POI_Cel_Camera
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25256
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[833ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[833ms](TargetAttachTrack)
 
 [25254](\Global\POI_Cel_Camera\Interactions\Celphone\Behavior\Into\Female):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
-[1000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Female_Cel_Camera_CYC
+		[Group]: POI_Cel_Camera
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1000ms](OpportunityTrack)
 
 [25255](\Global\POI_Cel_Camera\Interactions\Celphone\Behavior\Into\Female\Exit):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSimple)
-[0ms](PlayEffectTrack)
-[0ms](TargetReleaseTrack)
-[1566ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Female_Cel_Camera_OUT
+		[Group]: POI_Cel_Camera
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSimple)
+	[0ms](PlayEffectTrack)
+	[0ms](TargetReleaseTrack)
+	[1566ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25256](\Global\POI_Cel_Camera\Interactions\Celphone\Behavior\Into\Male):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
-[1000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Cel_Camera_CYC
+		[Group]: POI_Cel_Camera
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1000ms](OpportunityTrack)
 
 [25257](\Global\POI_Cel_Camera\Interactions\Celphone\Behavior\Into\Male\Exit):
-[0ms](AnimationTrack)
-[0ms](TargetReleaseTrack)
-[33ms](AudioTrackSimple)
-[33ms](PlayEffectTrack)
-[1566ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Cel_Camera_OUT
+		[Group]: POI_Cel_Camera
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetReleaseTrack)
+	[33ms](AudioTrackSimple)
+	[33ms](PlayEffectTrack)
+	[1566ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25261](\Global\POI_Cel_Camera\Interactions\Celphone\Behavior\Utility\DetachAll\Default):
-[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [25260](\Global\POI_Cel_Camera\Interactions\Celphone\Behavior\Utility\DetachAll\Left):
-[0ms](SequenceTrack)
-[0ms](TargetDetachTrack)
+	[0ms](SequenceTrack):
+		[ID]: 25261
+	[0ms](TargetDetachTrack)
 
 [25252](\Global\POI_Cel_Camera\UseConditions)

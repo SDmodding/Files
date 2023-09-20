@@ -1,31 +1,41 @@
 [26198](\Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles):
-[0ms](AudioTrackSoundbankIO)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26201](\Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles\CrackerToss_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26199](\Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles\FireCrackerToss_Anims\Toss):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[50ms](DialogueTrackWeaponImpact)
-[4266ms](PlayEffectTrack)
-[4433ms](PlayEffectTrack)
-[5666ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_FireCracker_Toss
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26200
+	[50ms](DialogueTrackWeaponImpact)
+	[4266ms](PlayEffectTrack)
+	[4433ms](PlayEffectTrack)
+	[5666ms](PlayEffectTrack)
 
 [26200](\Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles\FireCrackerToss_Anims\Toss\Wait):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSimple)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cheer_M
+		[Begin]: 0.333333
+		[End]: 3.400000
+	[0ms](AudioTrackSimple)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26197](\Global\POI_FireCracker_Toss\UseConditions)

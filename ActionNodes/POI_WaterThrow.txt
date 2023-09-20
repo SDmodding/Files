@@ -1,46 +1,61 @@
 [29451](\Global\POI_WaterThrow\Interactions\AudiobankLoad):
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29452](\Global\POI_WaterThrow\Interactions\WaterThrowIdles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDestroyTrack)
-[0ms](TargetDestroyTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDestroyTrack)
+	[0ms](TargetDestroyTrack)
 
 [29453](\Global\POI_WaterThrow\Interactions\WaterThrowIdles\WaterThrowAnims\Female\WaterThrow_PreLoad):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29454](\Global\POI_WaterThrow\Interactions\WaterThrowIdles\WaterThrowAnims\Female\WaterThrow_PreLoad\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [29455](\Global\POI_WaterThrow\Interactions\WaterThrowIdles\WaterThrowAnims\Female\WaterThrow_PreLoad\WaitForResources\Timeout)
 [29456](\Global\POI_WaterThrow\Interactions\WaterThrowIdles\WaterThrowAnims\Female\WaterThrow_PreLoad\WaterThrow_Actual):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
-[4000ms](PlayEffectTrack)
-[4000ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_DumpWater
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-BucketWater001
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 29456
+	[0ms](TargetAttachTrack)
+	[4000ms](PlayEffectTrack)
+	[4000ms](PlayEffectTrack)
 
 [29457](\Global\POI_WaterThrow\Interactions\WaterThrowIdles\WaterThrow_Exit\WaterThrow_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDestroyTrack)
-[0ms](TargetDestroyTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDestroyTrack)
+	[0ms](TargetDestroyTrack)
 
 [29450](\Global\POI_WaterThrow\UseConditions)

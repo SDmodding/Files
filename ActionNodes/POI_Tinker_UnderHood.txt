@@ -1,15 +1,20 @@
 [28998](\Global\POI_Tinker_UnderHood\Interactions\TinkerUnderHood_Idles):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28999](\Global\POI_Tinker_UnderHood\Interactions\TinkerUnderHood_Idles\TinkerUnderHood_Anims\TinkerUnderHood_Idle01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Tinker_UnderHood
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29000](\Global\POI_Tinker_UnderHood\Interactions\TinkerUnderHood_Idles\TinkerUnderHood_Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [28997](\Global\POI_Tinker_UnderHood\UseConditions)

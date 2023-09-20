@@ -1,36 +1,58 @@
 [26957](\Global\LookForPlayer\Interactions\LookIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26963](\Global\LookForPlayer\Interactions\LookIdles\LookExit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: Thug_LookForPlayer
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26958](\Global\LookForPlayer\Interactions\LookIdles\LookInto):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Thug_LookForPlayer
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26959
 
 [26959](\Global\LookForPlayer\Interactions\LookIdles\LookInto\Look):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26962](\Global\LookForPlayer\Interactions\LookIdles\LookInto\Look\LookAnims\LookBehind):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Thug_LookForPlayer
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26959
 
 [26960](\Global\LookForPlayer\Interactions\LookIdles\LookInto\Look\LookAnims\LookFront):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Thug_LookForPlayer
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26959
 
 [26961](\Global\LookForPlayer\Interactions\LookIdles\LookInto\Look\LookAnims\LookLeft):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Thug_LookForPlayer
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26959
 
 [26956](\Global\LookForPlayer\UseConditions)

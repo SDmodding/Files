@@ -1,71 +1,166 @@
 [27134](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27146](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_Exit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: 0.333333
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27139](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\BowInto-PROMOTE_TO_USE):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TurnToFaceTargetTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27140
+	[0ms](TurnToFaceTargetTrack)
 
 [27140](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: 1.166667
+	[0ms](SequenceTrack):
+		[ID]: 27141
 
 [27141](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow\BowOut):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27136
 
 [27136](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\LightAttack1):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_LCombo01_L_Jab_Hi
+		[Group]: Strikes
+		[Begin]: 0.033333
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.100000
+		[ColEnd]: 0.166667
+		[AttackRadius]: 0.116667
+		[AttackTypeID]: 8
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.250000
+		[TimeToDistance]: 0.050000
+		[TargetMovement]: 0.350000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SequenceTrack):
+		[ID]: 27137
+	[0ms](TargetSteerToTrack)
 
 [27137](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\LightAttack1\LightAttack2):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_LCombo02_R_Cross_Hi
+		[Group]: Strikes
+		[Begin]: 0.033333
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.100000
+		[ColEnd]: 0.166667
+		[AttackRadius]: 0.116667
+		[AttackTypeID]: 10
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.000000
+		[TimeToDistance]: 0.100000
+		[TargetMovement]: 0.350000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SequenceTrack):
+		[ID]: 27138
+	[0ms](TargetSteerToTrack)
 
 [27138](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\LightAttack1\LightAttack2\ChargeAttack3):
-[0ms](AnimationTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
-[200ms](AttackCollisionTrack)
-[333ms](SetStateFlagTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_HCombo02_L_KneeKick_Mid
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 0.500000
+		[TimeToDistance]: 0.000000
+		[TargetMovement]: 0.500000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSteerToTrack)
+	[200ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.633333
+		[ColEnd]: 0.800000
+		[AttackRadius]: 0.208333
+		[AttackTypeID]: 12
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[333ms](SetStateFlagTrack)
 
 [27143](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TurnToFaceTargetTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27144
+	[0ms](TurnToFaceTargetTrack)
 
 [27144](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: 1.166667
+	[0ms](SequenceTrack):
+		[ID]: 27145
 
 [27145](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow\BowOut):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27142
 
 [27142](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\ReceiveAttack):
-[0ms](AnimationTrack)
-[33ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle_Alert
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[33ms](OpportunityTrack)
 
 [27135](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\WaitForChild\WaitForChild):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle_Alert
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [27133](\Global\POI_MartialArts_ChargeStun_Parent\UseConditions)

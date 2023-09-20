@@ -1,48 +1,81 @@
 [26900](\Global\POI_Leaning_Fwd\Interactions\HitTree\OverRailing\InAir):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](HandleDamageTrack)
-[0ms](ParkourSyncPositionTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[366ms](DetailedOnGroundTrack)
-[466ms](GravityTrack)
-[533ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Rail_Lean_Fall
+		[Group]: POI_Lean_Rail_HitReacts
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](HandleDamageTrack)
+	[0ms](ParkourSyncPositionTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18777
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[366ms](DetailedOnGroundTrack)
+	[466ms](GravityTrack)
+	[533ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26894](\Global\POI_Leaning_Fwd\Interactions\LeaningIdles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SensorComponentTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SensorComponentTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
 
 [26895](\Global\POI_Leaning_Fwd\Interactions\LeaningIdles\LeaningAnims\Female\LeaningIdle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_F_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26896
 
 [26897](\Global\POI_Leaning_Fwd\Interactions\LeaningIdles\LeaningAnims\Female\LeaningIdle_2):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_F_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26896](\Global\POI_Leaning_Fwd\Interactions\LeaningIdles\LeaningAnims\Female\LeaningIdle_BrushHair):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_F_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26897
 
 [26898](\Global\POI_Leaning_Fwd\Interactions\LeaningIdles\LeaningAnims\Male\LeaningIdle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Lean_F_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26899](\Global\POI_Leaning_Fwd\Interactions\LeaningIdles\LeaningExit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26893](\Global\POI_Leaning_Fwd\UseConditions)

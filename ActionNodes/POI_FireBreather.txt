@@ -1,59 +1,84 @@
 [26185](\Global\POI_FireBreather\Interactions\FireBreather_Idles):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
 
 [26194](\Global\POI_FireBreather\Interactions\FireBreather_Idles\FireBreather_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26196](\Global\POI_FireBreather\Interactions\FireBreather_Idles\FireSpawn\Idle):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [26195](\Global\POI_FireBreather\Interactions\FireBreather_Idles\FireSpawn\PlayEffect):
-[0ms](MasterTrack)
-[0ms](PlayEffectTrack)
+	[0ms](MasterTrack)
+	[0ms](PlayEffectTrack)
 
 [26186](\Global\POI_FireBreather\Interactions\FireBreather_Idles\Preload):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26189](\Global\POI_FireBreather\Interactions\FireBreather_Idles\Preload\AttachTorch):
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-FlamingTorch001
+	[0ms](SequenceTrack):
+		[ID]: 26190
+	[0ms](TargetAttachTrack)
 
 [26190](\Global\POI_FireBreather\Interactions\FireBreather_Idles\Preload\AttachTorch\BreatheFire):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26191](\Global\POI_FireBreather\Interactions\FireBreather_Idles\Preload\AttachTorch\BreatheFire\FireBreather_Anims\BreathFire):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[5000ms](PlayEffectTrack)
-[12533ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_FireBreather_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[5000ms](PlayEffectTrack)
+	[12533ms](PlayEffectTrack)
 
 [26192](\Global\POI_FireBreather\Interactions\FireBreather_Idles\Preload\AttachTorch\BreatheFire\FireBreather_Anims\BreathFire\Dance\Dance):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_FireBreather_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26193](\Global\POI_FireBreather\Interactions\FireBreather_Idles\Preload\AttachTorch\BreatheFire\FireBreather_Anims\BreathFire\Dance\Dance02):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_FireBreather_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26187](\Global\POI_FireBreather\Interactions\FireBreather_Idles\Preload\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [26188](\Global\POI_FireBreather\Interactions\FireBreather_Idles\Preload\WaitForResources\Timeout)
 [26184](\Global\POI_FireBreather\UseConditions)

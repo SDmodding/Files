@@ -1,49 +1,68 @@
 [28647](\Global\POI_Social_No_Anim\Interactions\Idle):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28648](\Global\POI_Social_No_Anim\Interactions\Idle\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: 0.033333
 
 [28649](\Global\POI_Social_No_Anim\Interactions\Idle\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: 0.033333
 
 [28638](\Global\POI_Social_No_Anim\Interactions\PerformSocial):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [28646](\Global\POI_Social_No_Anim\Interactions\PerformSocial\Done):
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28639](\Global\POI_Social_No_Anim\Interactions\PerformSocial\SpawnFastTalk):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28640](\Global\POI_Social_No_Anim\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo):
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "y", "")
-[0ms](TimeWarpTrack)
-[3000ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "y", "")
+	[0ms](TimeWarpTrack)
+	[3000ms](OpportunityTrack)
 
 [28641](\Global\POI_Social_No_Anim\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Done)
 [28642](\Global\POI_Social_No_Anim\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo\TimedOut)
 [28643](\Global\POI_Social_No_Anim\Interactions\PerformSocial\SpawnGestures\Gestures):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [28644](\Global\POI_Social_No_Anim\Interactions\PerformSocial\SpawnGestures\Idle):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [28645](\Global\POI_Social_No_Anim\Interactions\PerformSocial\SpawnUI):
-[0ms](SkookumTrack)
-	[Class]: Actor
-	[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
+	[0ms](SkookumTrack):
+		[Class]: Actor
+		[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
 
 [28637](\Global\POI_Social_No_Anim\UseConditions)

@@ -1,67 +1,91 @@
 [25161](\Global\POI_BusMachine\Interactions\BusMachine):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25155](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25156](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Buy\Default):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: 5.266667
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25157](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Pickup\Default):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 5.266667
+		[End]: 9.633333
+	[0ms](SequenceTrack):
+		[ID]: 25160
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25158](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Pickup\Pay):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: World.c_player.money_adjust(-120, EconomyMethod.ticket_purchased)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: World.c_player.money_adjust(-120, EconomyMethod.ticket_purchased)
 
 [25159](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Sync\interactionPoint):
-[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25160](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25162](\Global\POI_BusMachine\Interactions\BusMachine\Anims\Buy\Default):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: 5.266667
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25163](\Global\POI_BusMachine\Interactions\BusMachine\Anims\Pickup\Default):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 5.266667
+		[End]: 9.633333
+	[0ms](SequenceTrack):
+		[ID]: 25166
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25164](\Global\POI_BusMachine\Interactions\BusMachine\Anims\Pickup\Pay):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: World.c_player.money_adjust(-120, EconomyMethod.ticket_purchased)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: World.c_player.money_adjust(-120, EconomyMethod.ticket_purchased)
 
 [25165](\Global\POI_BusMachine\Interactions\BusMachine\Anims\Sync\interactionPoint):
-[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25166](\Global\POI_BusMachine\Interactions\BusMachine\Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25154](\Global\POI_BusMachine\UseConditions)

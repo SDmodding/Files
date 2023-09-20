@@ -1,90 +1,170 @@
 [29180](\Global\POI_vendor\Interactions\VendorIdles):
-[0ms](ConversationTrackCleanup)
-[0ms](ConversationTrackOperation)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](SpawnTrack)
+	[0ms](ConversationTrackCleanup)
+	[0ms](ConversationTrackOperation)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29181](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29182](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Female\VendorCall_02):
-[0ms](AnimationTrack)
-[100ms](DialogueTrack)
+	[0ms](AnimationTrack):
+		[Name]: SHP_Vendor_Calling_Female_02
+		[Group]: Shopkeeper
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[100ms](DialogueTrack)
 
 [29183](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Female\VendorCall_03):
-[0ms](AnimationTrack)
-[100ms](DialogueTrack)
+	[0ms](AnimationTrack):
+		[Name]: SHP_Vendor_Calling_Female_03
+		[Group]: Shopkeeper
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[100ms](DialogueTrack)
 
 [29184](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Call_01):
-[0ms](AnimationTrack)
-[100ms](DialogueTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Vendor
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[100ms](DialogueTrack)
 
 [29185](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Call_Left):
-[0ms](AnimationTrack)
-[100ms](DialogueTrack)
+	[0ms](AnimationTrack):
+		[Name]: SHP_Calling_Left_01
+		[Group]: Shopkeeper
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[100ms](DialogueTrack)
 
 [29186](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Call_Right):
-[0ms](AnimationTrack)
-[100ms](DialogueTrack)
+	[0ms](AnimationTrack):
+		[Name]: SHP_Calling_Right_01
+		[Group]: Shopkeeper
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[100ms](DialogueTrack)
 
 [29187](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Idle):
-[0ms](AnimationTrack)
-[100ms](DialogueTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Vendor
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[100ms](DialogueTrack)
 
 [29188](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female):
-[0ms](AnimationTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ResourceOpportunityTrack)
 
 [29190](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\FixHair):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_FixHair_Female
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29193](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\Hang_03):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01_F
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29191](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\HeadScratch):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_HeadScratch_Female
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29189](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\Ped_CheckWatch):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Idle_CheckWatch
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29192](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\Ped_Cross_Arms):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle_2
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29194](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male):
-[0ms](AnimationTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle_v02
+		[Group]: Pedestrian_New
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ResourceOpportunityTrack)
 
 [29198](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\BodyScratch):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29199](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\FaceWipe):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29200](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Hang_01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29201](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Hang_03):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_Wallet
+		[Group]: POI_Hang_Out_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29202](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Hang_04):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29195](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\HeadScratch):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29197](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\NeckRub):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29196](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Ped_Cross_Arms):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Flavour_Male_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29203](\Global\POI_vendor\Interactions\VendorIdles\VendorExit)
 [29179](\Global\POI_vendor\UseConditions)

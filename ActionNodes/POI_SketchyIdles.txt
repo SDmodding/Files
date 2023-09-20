@@ -1,27 +1,45 @@
 [28479](\Global\POI_SketchyIdles\Interactions\Idle):
-[0ms](OpportunityTrack)
-[0ms](ResourceOpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](ResourceOpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28480](\Global\POI_SketchyIdles\Interactions\Idle\SketchyAnims\Sketchy01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28481](\Global\POI_SketchyIdles\Interactions\Idle\SketchyAnims\Sketchy02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28482](\Global\POI_SketchyIdles\Interactions\Idle\SketchyAnims\Sketchy03):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [28484](\Global\POI_SketchyIdles\Interactions\Idle\SketchyExit):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [28483](\Global\POI_SketchyIdles\Interactions\Idle\Talking):
-[0ms](AnimationTrack)
-[0ms](HeadTrackTargetTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Gestures_TalkingMale
+		[Begin]: 0.266667
+		[End]: -1.000000
+	[0ms](HeadTrackTargetTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
 
 [28478](\Global\POI_SketchyIdles\UseConditions)

@@ -1,15 +1,27 @@
 [27446](\Global\POI_PickupPhone\Interactions\Anims\Into):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Name]: LOC_PDA_INTO
+		[Group]: Locomotion
+		[Begin]: 1.666667
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27445](\Global\POI_PickupPhone\Interactions\Anims\PickupPhone):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[200ms](ObjectCreateTrack)
-[200ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Pickup_from_Ground_Stand
+		[Group]: Locomotion_PickUpObject
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 27446
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[200ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-MissionCellPhone001
+	[200ms](TargetAttachTrack)
 
 [27444](\Global\POI_PickupPhone\UseConditions)

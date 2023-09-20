@@ -1,42 +1,54 @@
 [29651](\Global\POI_DLC_PicketSign\Interactions\Master):
-[0ms](ObjectReferenceTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
 
 [29657](\Global\POI_DLC_PicketSign\Interactions\Master\0x474F3254):
-[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [29653](\Global\POI_DLC_PicketSign\Interactions\Master\0xCAAE91CE\Sign1):
-[0ms](MasterTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](MasterTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-PicketSign001
+	[0ms](TargetAttachTrack)
 
 [29654](\Global\POI_DLC_PicketSign\Interactions\Master\0xCAAE91CE\Sign2):
-[0ms](MasterTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](MasterTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-PicketSign002
+	[0ms](TargetAttachTrack)
 
 [29655](\Global\POI_DLC_PicketSign\Interactions\Master\0xCAAE91CE\Sign3):
-[0ms](MasterTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](MasterTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-PicketSign003
+	[0ms](TargetAttachTrack)
 
 [29656](\Global\POI_DLC_PicketSign\Interactions\Master\Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [29652](\Global\POI_DLC_PicketSign\Interactions\Master\Picket):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
-[0ms](TargetAttachEffectorTrack)
-[0ms](TargetDetachEffectorTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PicketSign
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetAttachEffectorTrack)
+	[0ms](TargetDetachEffectorTrack)
 
 [29650](\Global\POI_DLC_PicketSign\UseConditions)

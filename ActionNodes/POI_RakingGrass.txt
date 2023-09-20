@@ -1,30 +1,45 @@
 [27680](\Global\POI_RakingGrass\Interactions\MasterSpawn):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27682](\Global\POI_RakingGrass\Interactions\MasterSpawn\Anims\Cycle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_RakingGrass
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27681](\Global\POI_RakingGrass\Interactions\MasterSpawn\Anims\Intro):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_RakingGrass
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27682
 
 [27683](\Global\POI_RakingGrass\Interactions\MasterSpawn\Exit):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: POI_RakingGrass
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27684](\Global\POI_RakingGrass\Interactions\MasterSpawn\ObjectSpawn\LoadResources):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [27685](\Global\POI_RakingGrass\Interactions\MasterSpawn\ObjectSpawn\LoadResources\Attach):
-[0ms](ObjectCreateTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetDestroyTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-RakeMetal001
+	[0ms](ObjectReferenceTrack)
+	[0ms](TargetAttachTrack)
+	[0ms](TargetDestroyTrack)
 
 [27679](\Global\POI_RakingGrass\UseConditions)

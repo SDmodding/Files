@@ -1,43 +1,75 @@
 [28893](\Global\POI_Taunt\Interactions\TauntIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28894](\Global\POI_Taunt\Interactions\TauntIdles\ResetRandom):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28896](\Global\POI_Taunt\Interactions\TauntIdles\ResetRandom\TauntAnims\Angry_01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Bump_Reaction_Angry_01
+		[Group]: Pedestrian_Pushed_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28894
 
 [28897](\Global\POI_Taunt\Interactions\TauntIdles\ResetRandom\TauntAnims\Angry_02):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Bump_Reaction_Angry_02
+		[Group]: Pedestrian_Pushed_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28894
 
 [28898](\Global\POI_Taunt\Interactions\TauntIdles\ResetRandom\TauntAnims\Angry_03):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Bump_Reaction_Angry_03
+		[Group]: Pedestrian_Pushed_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28894
 
 [28899](\Global\POI_Taunt\Interactions\TauntIdles\ResetRandom\TauntAnims\Angry_04):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Bump_Reaction_Angry_04
+		[Group]: Pedestrian_Pushed_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28894
 
 [28900](\Global\POI_Taunt\Interactions\TauntIdles\ResetRandom\TauntAnims\Angry_05):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Bump_Reaction_Angry_05
+		[Group]: Pedestrian_Pushed_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28894
 
 [28895](\Global\POI_Taunt\Interactions\TauntIdles\ResetRandom\TauntAnims\Yell_01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Yell_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 28894
 
 [28901](\Global\POI_Taunt\Interactions\TauntIdles\TauntExit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [28892](\Global\POI_Taunt\UseConditions)

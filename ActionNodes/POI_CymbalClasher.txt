@@ -1,23 +1,29 @@
 [25704](\Global\POI_CymbalClasher\Interactions\CymbalClashIdles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25706](\Global\POI_CymbalClasher\Interactions\CymbalClashIdles\CymbalClashAnims\Idles\CymbalClash):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_CymbalClasher
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25705](\Global\POI_CymbalClasher\Interactions\CymbalClashIdles\CymbalClashAnims\IsSpawning\IsSpawning_Actual):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25707](\Global\POI_CymbalClasher\Interactions\CymbalClashIdles\CymbalClashExit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25703](\Global\POI_CymbalClasher\UseConditions)

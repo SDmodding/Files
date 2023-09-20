@@ -1,23 +1,35 @@
 [25595](\Global\POI_ChopBodyRCV\Interactions\Hit):
-[0ms](AnimationTrack)
-[0ms](HandleDamageTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRD_Reac_LieFront_PosX_Heavy
+		[Group]: Ground_HitReactions
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](HandleDamageTrack)
 
 [25592](\Global\POI_ChopBodyRCV\Interactions\POI_Downed):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [25593](\Global\POI_ChopBodyRCV\Interactions\POI_Downed\FaceDown):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRD_All_Fours_Writh
+		[Group]: Ground
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 25593
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
 
 [25594](\Global\POI_ChopBodyRCV\Interactions\POI_Downed\FaceDown\Die):
-[0ms](HealthSetPercentageTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: poi_stop_using_use()
+	[0ms](HealthSetPercentageTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: poi_stop_using_use()
 
 [25591](\Global\POI_ChopBodyRCV\UseConditions)

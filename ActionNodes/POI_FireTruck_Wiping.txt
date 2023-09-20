@@ -1,61 +1,83 @@
 [26203](\Global\POI_Wiping\Interactions\Wiping):
-[0ms](AudioTrackSoundbankIO)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
 
 [26204](\Global\POI_Wiping\Interactions\Wiping\Wiping_Anims\Female_Anim\Wiping_LoadResource):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01_F
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26205](\Global\POI_Wiping\Interactions\Wiping\Wiping_Anims\Female_Anim\Wiping_LoadResource\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [26206](\Global\POI_Wiping\Interactions\Wiping\Wiping_Anims\Female_Anim\Wiping_LoadResource\WaitForResources\Timeout)
 [26207](\Global\POI_Wiping\Interactions\Wiping\Wiping_Anims\Female_Anim\Wiping_LoadResource\Wiping_Actual):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Wiping
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Sponge001
+	[0ms](OpportunityTrack)
+	[0ms](TargetAttachTrack)
 
 [26208](\Global\POI_Wiping\Interactions\Wiping\Wiping_Anims\Male_Anim\Wiping_LoadResource):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26209](\Global\POI_Wiping\Interactions\Wiping\Wiping_Anims\Male_Anim\Wiping_LoadResource\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [26210](\Global\POI_Wiping\Interactions\Wiping\Wiping_Anims\Male_Anim\Wiping_LoadResource\WaitForResources\Timeout)
 [26211](\Global\POI_Wiping\Interactions\Wiping\Wiping_Anims\Male_Anim\Wiping_LoadResource\Wiping_Actual):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Wiping
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Sponge001
+	[0ms](OpportunityTrack)
+	[0ms](TargetAttachTrack)
 
 [26212](\Global\POI_Wiping\Interactions\Wiping\Wiping_Exit\Female\Wiping_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26213](\Global\POI_Wiping\Interactions\Wiping\Wiping_Exit\Male\Wiping_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26202](\Global\POI_Wiping\UseConditions)

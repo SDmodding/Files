@@ -1,39 +1,77 @@
 [29429](\Global\W2HKRoofCollapse\Interactions\FallThroughRecover):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](AttackCollisionTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TimeWarpTrack)
-[333ms](TimeWarpTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_W2HKRoofCollapse
+		[Begin]: 0.000000
+		[End]: 0.533333
+	[0ms](AttackCollisionTrack):
+		[Damage]: 3
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: -1.000000
+		[AttackRadius]: 3.500000
+		[AttackTypeID]: 18
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](AttackCollisionTrack):
+		[Damage]: 3
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: -1.000000
+		[AttackRadius]: 3.500000
+		[AttackTypeID]: 18
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 16304
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TimeWarpTrack)
+	[333ms](TimeWarpTrack)
 
 [29426](\Global\W2HKRoofCollapse\Interactions\HighVault):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSyncPositionTrack)
-[0ms](TimeWarpTrack)
-[500ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_W2HKRoofCollapse
+		[Begin]: 0.500000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 29427
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetSyncPositionTrack)
+	[0ms](TimeWarpTrack)
+	[500ms](TargetPlayTrack)
 
 [29427](\Global\W2HKRoofCollapse\Interactions\Landing1):
-[0ms](AnimationTrack)
-[0ms](CameraShakeTrack)
-[0ms](PlayEffectTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TimeWarpTrack)
-[300ms](TimeWarpTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_W2HKRoofCollapse
+		[Begin]: 0.000000
+		[End]: 0.500000
+	[0ms](CameraShakeTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 29429
+	[0ms](TargetPlayTrack)
+	[0ms](TimeWarpTrack)
+	[300ms](TimeWarpTrack)
 
 [29428](\Global\W2HKRoofCollapse\Interactions\Pause):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSimple)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Locomotion_Flavour
+		[Begin]: 0.333333
+		[End]: 1.333333
+	[0ms](AudioTrackSimple)
+	[0ms](SequenceTrack):
+		[ID]: 29429
 
 [29425](\Global\W2HKRoofCollapse\UseConditions)

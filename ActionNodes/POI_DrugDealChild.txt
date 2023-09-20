@@ -1,28 +1,42 @@
 [25911](\Global\DrugDealChild\Interactions\DrugDealIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25915](\Global\DrugDealChild\Interactions\DrugDealIdles\DrugDealExit\DrugDealExit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25912](\Global\DrugDealChild\Interactions\DrugDealIdles\DrugDealStates\Buying\Buying):
-[0ms](LocomotionTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LocomotionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25913](\Global\DrugDealChild\Interactions\DrugDealIdles\DrugDealStates\Buying\Buying\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_DrugDeal
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25914](\Global\DrugDealChild\Interactions\DrugDealIdles\DrugDealStates\Buying\Buying\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_DrugDeal
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25910](\Global\DrugDealChild\UseConditions)

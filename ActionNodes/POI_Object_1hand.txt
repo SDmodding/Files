@@ -1,31 +1,55 @@
 [27275](\Global\POI_Object_1hand\Interactions\SmallObjectIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27278](\Global\POI_Object_1hand\Interactions\SmallObjectIdles\PlaceObjectExit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[1166ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Place_on_Counter_Stand
+		[Group]: POI_Object_1hand
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[1166ms](OpportunityTrack)
 
 [27279](\Global\POI_Object_1hand\Interactions\SmallObjectIdles\PlaceObjectExit\PlaceObjectExit_OnCounter):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Place_on_Counter_Stand
+		[Group]: POI_Object_1hand
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27280](\Global\POI_Object_1hand\Interactions\SmallObjectIdles\PlaceObjectExit\PlaceObjectExit_UnderCounter):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Place_Under_Counter_Stand
+		[Group]: POI_Object_1hand
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27277](\Global\POI_Object_1hand\Interactions\SmallObjectIdles\SmallObjectAnims\Cycle\Carry_SmallObject):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_SmallObj_Carry_RHand_Stand
+		[Group]: POI_Object_1hand
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [27276](\Global\POI_Object_1hand\Interactions\SmallObjectIdles\SmallObjectAnims\Pickup\Pickup_FromCounter):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Pickup_from_Counter_Stand
+		[Group]: POI_Object_1hand
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [27274](\Global\POI_Object_1hand\UseConditions)

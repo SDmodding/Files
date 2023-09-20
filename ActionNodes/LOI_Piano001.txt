@@ -1,71 +1,106 @@
 [24305](\Global\LOI_Piano001\Interactions\Open\Cancel):
-[0ms](AnimationTrack)
-[0ms](InputSignalFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](Struggle2Track)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[50ms](DialogueTrackWeaponImpact)
+	[0ms](AnimationTrack):
+		[Group]: LOI_Piano001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](InputSignalFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](Struggle2Track)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[50ms](DialogueTrackWeaponImpact)
 
 [24306](\Global\LOI_Piano001\Interactions\Open\Cancel\Break)
 [24301](\Global\LOI_Piano001\Interactions\Open\OpenDoor_INTO):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: HUD
-	[Script]: ActionButton.show_for_one_frame("", "y", "mash")
-[0ms](StruggleTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_Piano001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24302
+	[0ms](SkookumTrack):
+		[Class]: HUD
+		[Script]: ActionButton.show_for_one_frame("", "y", "mash")
+	[0ms](StruggleTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [24302](\Global\LOI_Piano001\Interactions\Open\OpenDoor_INTO\Idle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_Piano001_Use
+		[Begin]: 1.066667
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetPlayTrack)
 
 [24303](\Global\LOI_Piano001\Interactions\Open\OpenDoor_INTO\OpenDoor_PARA):
-[0ms](AnimationTrack)
-[0ms](InputSignalFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](Struggle2Track)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
-[1333ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_Piano001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](InputSignalFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](Struggle2Track)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
+	[1333ms](OpportunityTrack)
 
 [24304](\Global\LOI_Piano001\Interactions\Open\OpenDoor_INTO\OpenDoor_PARA\Opening_Finish):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_Piano001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
 
 [24307](\Global\LOI_Piano001\Interactions\Utility\SpawnHUD):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show_for_one_frame("", "y", "mash")
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show_for_one_frame("", "y", "mash")
 
 [24299](\Global\LOI_Piano001\Object\Animation\Closing):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24295
 
 [24297](\Global\LOI_Piano001\Object\Animation\Opening):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_Piano001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24298
 
 [24298](\Global\LOI_Piano001\Object\Animation\Opening\Opening_Finish):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_Piano001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 24296
 
 [24295](\Global\LOI_Piano001\Object\Closed):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_Piano001
+		[Begin]: 0.000000
+		[End]: 0.033333
 
 [24296](\Global\LOI_Piano001\Object\Opened):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_Piano001
+		[Begin]: 0.000000
+		[End]: 0.033333
 
 [24300](\Global\LOI_Piano001\UseConditions)

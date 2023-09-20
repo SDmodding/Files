@@ -1,18 +1,26 @@
 [27185](\Global\POI_MartialArts_Student\Interactions\MasterSpawn):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27186](\Global\POI_MartialArts_Student\Interactions\MasterSpawn\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_MartialArts_Student_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27187](\Global\POI_MartialArts_Student\Interactions\MasterSpawn\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_MartialArts_Student_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27188](\Global\POI_MartialArts_Student\Interactions\MasterSpawn\ExitDummy)
 [27184](\Global\POI_MartialArts_Student\UseConditions)

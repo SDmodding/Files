@@ -1,21 +1,30 @@
 [27596](\Global\POI_PoliceScanner\Interactions\Anims\Off):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use()
-[0ms](TargetSyncPositionTrack)
-[900ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PoliceScanner
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use()
+	[0ms](TargetSyncPositionTrack)
+	[900ms](TargetPlayTrack)
 
 [27595](\Global\POI_PoliceScanner\Interactions\Anims\On):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use()
-[0ms](TargetSyncPositionTrack)
-[900ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PoliceScanner
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use()
+	[0ms](TargetSyncPositionTrack)
+	[900ms](TargetPlayTrack)
 
 [27594](\Global\POI_PoliceScanner\Interactions\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27593](\Global\POI_PoliceScanner\UseConditions)

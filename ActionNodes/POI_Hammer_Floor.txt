@@ -1,40 +1,50 @@
 [26456](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
 
 [26462](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\Idles\Hammer_CYC):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Construction_Hammer_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [26458](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource):
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26461](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource\IsSpawning_Actual):
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-hammer
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAttachTrack)
 
 [26459](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[5000ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[5000ms](OpportunityTrack)
 
 [26460](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource\WaitForResources\Timeout)
 [26457](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\WithProp\IsSpawning_Actual):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26463](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
 
 [26455](\Global\POI_Hammer_Floor\UseConditions)

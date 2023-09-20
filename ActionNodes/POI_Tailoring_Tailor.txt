@@ -1,35 +1,48 @@
 [28834](\Global\POI_Tailoring_Tailor\Interactions\TailoringAnims):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28837](\Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Exit\Exit):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](POIEnableChildTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: POI_Couple_MakingOut
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](POIEnableChildTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [28838](\Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Exit\ExitSpecial):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 28837
 
 [28836](\Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Tailoring_States\Measuring\Measuring):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Tailor_MeasuringSuit_MM
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28835](\Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Tailoring_States\WaitFor_Child\Wait):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](POIEnableChildTrack)
-[3000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](POIEnableChildTrack)
+	[3000ms](OpportunityTrack)
 
 [28833](\Global\POI_Tailoring_Tailor\UseConditions)

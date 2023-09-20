@@ -1,20 +1,30 @@
 [26409](\Global\Guitar_Hero\Interactions\GuitarHeroExit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_2Hand_Drop
+		[Group]: Inventory_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
 
 [26407](\Global\Guitar_Hero\Interactions\GuitarHeroIdles):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26408](\Global\Guitar_Hero\Interactions\GuitarHeroIdles\GuitarHeroAnims\PlayGuitar\PlayGuitar):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-GameGuitar001
+	[0ms](TargetAttachTrack)
 
 [26406](\Global\Guitar_Hero\UseConditions)

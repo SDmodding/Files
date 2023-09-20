@@ -1,23 +1,35 @@
 [27723](\Global\Ring_Doorbell\Interactions\Exit_Doorbell):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: POI_Buzzer
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27721](\Global\Ring_Doorbell\Interactions\Into_Doorbell):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](ExecuteTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Buzzer
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](ExecuteTrack)
+	[0ms](SequenceTrack):
+		[ID]: 27723
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27722](\Global\Ring_Doorbell\Interactions\Into_Doorbell\Hold_Doorbell):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Buzzer
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27720](\Global\Ring_Doorbell\UseConditions)

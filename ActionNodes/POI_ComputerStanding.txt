@@ -1,55 +1,89 @@
 [25461](\Global\POI_ComputerStanding\Interactions\Female\ComputerIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25463](\Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\ComputerAnims\Idles\Use):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_ComputerStanding_F_CYC
+		[Group]: POI_ComputerStanding
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25462](\Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\ComputerAnims\Intro):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_ComputerStanding_F_INTO
+		[Group]: POI_ComputerStanding
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25464](\Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\ComputerAnims\Sync\interactionPoint):
-[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25465](\Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\Computer_Exit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Name]: POI_ComputerStanding_F_OUT
+		[Group]: POI_ComputerStanding
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25466](\Global\POI_ComputerStanding\Interactions\Male\ComputerIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25468](\Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\ComputerAnims\Idles\Use):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_ComputerStanding_M_CYC
+		[Group]: POI_ComputerStanding
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25467](\Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\ComputerAnims\Intro):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_ComputerStanding_M_INTO
+		[Group]: POI_ComputerStanding
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25469](\Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\ComputerAnims\Sync\interactionPoint):
-[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25470](\Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\Computer_Exit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Name]: POI_ComputerStanding_M_OUT
+		[Group]: POI_ComputerStanding
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25460](\Global\POI_ComputerStanding\UseConditions)

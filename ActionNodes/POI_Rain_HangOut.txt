@@ -1,81 +1,148 @@
 [27661](\Global\Rain_HangOut\Interactions\HangOutIdles):
-[0ms](AudioTrackSoundbankIO)
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27678](\Global\Rain_HangOut\Interactions\HangOutIdles\HangOutExit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: POI_Grooving_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27662](\Global\Rain_HangOut\Interactions\HangOutIdles\HangOut_Intro):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [27663](\Global\Rain_HangOut\Interactions\HangOutIdles\HangOut_Intro\HangOut_Enter\Female\Enter):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Rain_HangOut_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [27664](\Global\Rain_HangOut\Interactions\HangOutIdles\HangOut_Intro\HangOut_Enter\Male\Enter):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Rain_HangOut_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [27666](\Global\Rain_HangOut\Interactions\HangOutIdles\HangOut_Intro\HangOut_Intro\Female\Hang_Cough):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Rain_HangOut_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27665](\Global\Rain_HangOut\Interactions\HangOutIdles\HangOut_Intro\HangOut_Intro\Female\Hang_Sneeze):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Rain_HangOut_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27668](\Global\Rain_HangOut\Interactions\HangOutIdles\HangOut_Intro\HangOut_Intro\Male\Hang_Cough):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Rain_HangOut_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27667](\Global\Rain_HangOut\Interactions\HangOutIdles\HangOut_Intro\HangOut_Intro\Male\Hang_Sneeze):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Rain_HangOut_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27669](\Global\Rain_HangOut\Interactions\HangOutIdles\Hangout):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [27671](\Global\Rain_HangOut\Interactions\HangOutIdles\Hangout\HangOutAnims\Female\Hang_01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle_2
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27672](\Global\Rain_HangOut\Interactions\HangOutIdles\Hangout\HangOutAnims\Female\Hang_03):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01_F
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27673](\Global\Rain_HangOut\Interactions\HangOutIdles\Hangout\HangOutAnims\Female\Hang_04):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Idle_CheckWatch
+		[Group]: Pedestrian_Flavour_Female_Idles
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27670](\Global\Rain_HangOut\Interactions\HangOutIdles\Hangout\HangOutAnims\Female\Hang_Sneeze):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Sneeze_F
+		[Group]: POI_Hang_Out_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27675](\Global\Rain_HangOut\Interactions\HangOutIdles\Hangout\HangOutAnims\Male\Hang_01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27676](\Global\Rain_HangOut\Interactions\HangOutIdles\Hangout\HangOutAnims\Male\Hang_04):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27677](\Global\Rain_HangOut\Interactions\HangOutIdles\Hangout\HangOutAnims\Male\Hang_05):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27674](\Global\Rain_HangOut\Interactions\HangOutIdles\Hangout\HangOutAnims\Male\Hang_Sneeze):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Sneeze_M
+		[Group]: POI_Hang_Out_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27669
 
 [27660](\Global\Rain_HangOut\UseConditions)

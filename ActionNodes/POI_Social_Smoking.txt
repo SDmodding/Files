@@ -1,146 +1,205 @@
 [28708](\Global\POI_Social_Smoking\Interactions\MasterSpawn):
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[1000ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1000ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28715](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Cycle\Female):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[7000ms](LookAtTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_F_CYC
+		[Group]: POI_Smoking_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[7000ms](LookAtTrack)
 
 [28716](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Cycle\Male):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[3000ms](LookAtTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_CYC_02
+		[Group]: POI_Smoking_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[3000ms](LookAtTrack)
 
 [28719](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Cycle\Util\Conversation\HeadTracking):
-[0ms](HeadTrackTargetTrack)
-[0ms](OpportunityTrack)
+	[0ms](HeadTrackTargetTrack)
+	[0ms](OpportunityTrack)
 
 [28720](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Cycle\Util\Conversation\Idle):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [28717](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Cycle\Util\Conversation\IsSpeaking\Female):
-[0ms](AnimationTrack)
-[0ms](HeadTrackTargetTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Gestures_TalkingFemale
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](HeadTrackTargetTrack)
+	[0ms](OpportunityTrack)
 
 [28718](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Cycle\Util\Conversation\IsSpeaking\Male):
-[0ms](AnimationTrack)
-[0ms](HeadTrackTargetTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Gestures_TalkingMale
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](HeadTrackTargetTrack)
+	[0ms](OpportunityTrack)
 
 [28711](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Exit)
 [28712](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Exit\Anims\Female):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_F_OUT
+		[Group]: POI_Smoking_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
 
 [28713](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Exit\Anims\Male\Hostile_Quick_Exit):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_OUT
+		[Group]: POI_Smoking_M
+		[Begin]: 0.400000
+		[End]: 2.333333
+	[0ms](PlayEffectTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
 
 [28714](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Exit\Anims\Male\Smoking_Exit):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_OUT
+		[Group]: POI_Smoking_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
 
 [28709](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Into\Female):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[4500ms](PlayEffectTrack)
-[4500ms](PlayEffectTrack)
-[6666ms](LookAtTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_F_INTO
+		[Group]: POI_Smoking_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[4500ms](PlayEffectTrack)
+	[4500ms](PlayEffectTrack)
+	[6666ms](LookAtTrack)
 
 [28710](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Anims\Smoking\Into\Male):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[4500ms](PlayEffectTrack)
-[4500ms](PlayEffectTrack)
-[5500ms](LookAtTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Smoking_INTO
+		[Group]: POI_Smoking_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[4500ms](PlayEffectTrack)
+	[4500ms](PlayEffectTrack)
+	[5500ms](LookAtTrack)
 
 [28730](\Global\POI_Social_Smoking\Interactions\MasterSpawn\ObjectSpawn\LoadResources):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [28731](\Global\POI_Social_Smoking\Interactions\MasterSpawn\ObjectSpawn\LoadResources\AttachCigarette):
-[0ms](ObjectCreateTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](TargetDestroyTrack)
-[1000ms](TargetAttachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Cigarette
+	[0ms](ObjectReferenceTrack)
+	[0ms](TargetDestroyTrack)
+	[1000ms](TargetAttachTrack)
 
 [28721](\Global\POI_Social_Smoking\Interactions\MasterSpawn\PerformSocial):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
 
 [28729](\Global\POI_Social_Smoking\Interactions\MasterSpawn\PerformSocial\Done)
 [28722](\Global\POI_Social_Smoking\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28723](\Global\POI_Social_Smoking\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo):
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "y", "")
-[0ms](TimeWarpTrack)
-[3000ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "y", "")
+	[0ms](TimeWarpTrack)
+	[3000ms](OpportunityTrack)
 
 [28724](\Global\POI_Social_Smoking\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Done)
 [28725](\Global\POI_Social_Smoking\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo\TimedOut)
 [28726](\Global\POI_Social_Smoking\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [28727](\Global\POI_Social_Smoking\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Idle):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [28728](\Global\POI_Social_Smoking\Interactions\MasterSpawn\PerformSocial\SpawnUI):
-[0ms](SkookumTrack)
-	[Class]: Actor
-	[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
+	[0ms](SkookumTrack):
+		[Class]: Actor
+		[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
 
 [28734](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Sync\Idle):
-[0ms](CharacterPhysicsSuperMassiveTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](CharacterPhysicsSuperMassiveTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28733](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Sync\PreSocial):
-[0ms](CharacterPhysicsSuperMassiveTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](CharacterPhysicsSuperMassiveTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28732](\Global\POI_Social_Smoking\Interactions\MasterSpawn\Sync\Social):
-[0ms](CharacterPhysicsSuperMassiveTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSteerToTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](CharacterPhysicsSuperMassiveTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetSteerToTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [28707](\Global\POI_Social_Smoking\UseConditions)

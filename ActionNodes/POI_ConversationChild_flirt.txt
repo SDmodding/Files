@@ -1,59 +1,97 @@
 [25517](\Global\ConversationChild_flirt\Interactions\Idles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25520](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles):
-[0ms](ConversationTrackCleanup)
-[0ms](ConversationTrackCreate)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[200ms](ConversationTrackOperation)
+	[0ms](ConversationTrackCleanup)
+	[0ms](ConversationTrackCreate)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[200ms](ConversationTrackOperation)
 
 [25525](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationExit\ConversationExit):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25526](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationExit\NormalExit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25527](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationExit\SlapExit):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Slap_Face
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25526
 
 [25521](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen):
-[0ms](ExecuteTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](ExecuteTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25522](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_SOC_REAC_Listen_FEM1
+		[Group]: Social_Listen
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25523](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_SOC_REAC_Listen1
+		[Group]: Social_Listen
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25524](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Speaking\Speaking):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[0ms](MinimumDurationTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Conv_Talk_01
+		[Group]: POI_Talk_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LookAtTrack)
+	[0ms](MinimumDurationTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25519](\Global\ConversationChild_flirt\Interactions\Idles\WaitForConversationChild\Wait):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[2000ms](OpportunityTrack)
-[7000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[2000ms](OpportunityTrack)
+	[7000ms](OpportunityTrack)
 
 [25518](\Global\ConversationChild_flirt\Interactions\Idles\WaitForConversationChild\WaitVendor):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[2000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: SHP_Calling_01
+		[Group]: Shopkeeper
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[2000ms](OpportunityTrack)
 
 [25516](\Global\ConversationChild_flirt\UseConditions)

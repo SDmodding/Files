@@ -1,36 +1,49 @@
 [29590](\Global\POI_WriteTicket\Interactions\WriteTicket):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [29591](\Global\POI_WriteTicket\Interactions\WriteTicket\WriteTicket_Anims\WriteTicket_LoadResource):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29592](\Global\POI_WriteTicket\Interactions\WriteTicket\WriteTicket_Anims\WriteTicket_LoadResource\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [29593](\Global\POI_WriteTicket\Interactions\WriteTicket\WriteTicket_Anims\WriteTicket_LoadResource\WaitForResources\Timeout)
 [29594](\Global\POI_WriteTicket\Interactions\WriteTicket\WriteTicket_Anims\WriteTicket_LoadResource\WriteTicket_Actual):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cop_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-NISPen001
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-PoliceBook001
+	[0ms](TargetAttachTrack)
+	[0ms](TargetAttachTrack)
 
 [29595](\Global\POI_WriteTicket\Interactions\WriteTicket\WriteTicket_Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [29589](\Global\POI_WriteTicket\UseConditions)

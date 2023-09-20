@@ -1,44 +1,77 @@
 [25681](\Global\POI_Cower_Crouch\Interactions\MasterSpawn):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25685](\Global\POI_Cower_Crouch\Interactions\MasterSpawn\Anims\Cycle\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Cowering_Crouch_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25686](\Global\POI_Cower_Crouch\Interactions\MasterSpawn\Anims\Cycle\Male\Cower4):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Cowering_Crouch_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25687](\Global\POI_Cower_Crouch\Interactions\MasterSpawn\Anims\Cycle\Male\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cower2_CrouchCower_CYC
+		[Group]: Fallback_Anims
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25682](\Global\POI_Cower_Crouch\Interactions\MasterSpawn\Anims\Into\Female):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Cowering_Crouch_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25683](\Global\POI_Cower_Crouch\Interactions\MasterSpawn\Anims\Into\Male\Cower2):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Cowering_Crouch_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25684](\Global\POI_Cower_Crouch\Interactions\MasterSpawn\Anims\Into\Male\Cower4):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Cowering_Crouch_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25688](\Global\POI_Cower_Crouch\Interactions\MasterSpawn\Exit\Female):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use()
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Cowering_Crouch_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use()
 
 [25689](\Global\POI_Cower_Crouch\Interactions\MasterSpawn\Exit\Male\Cower04):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use()
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Cowering_Crouch_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use()
 
 [25690](\Global\POI_Cower_Crouch\Interactions\MasterSpawn\Exit\Male\Default):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Cowering_Crouch_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25680](\Global\POI_Cower_Crouch\UseConditions)

@@ -1,130 +1,226 @@
 [25126](\Global\POI_BSL_GroundPound\Interactions\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use()
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use()
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
 
 [25123](\Global\POI_BSL_GroundPound\Interactions\FinalPunch\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[366ms](TimeWarpTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25126
+	[0ms](TargetPlayTrack)
+	[366ms](TimeWarpTrack)
 
 [25124](\Global\POI_BSL_GroundPound\Interactions\FinalPunch\Rcv):
-[0ms](AnimationTrack)
-[0ms](DamageTrack)
-[0ms](SequenceTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](DamageTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetReleaseTrack)
 
 [25125](\Global\POI_BSL_GroundPound\Interactions\HUD\HUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "x","mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "x","mash")
 
 [25103](\Global\POI_BSL_GroundPound\Interactions\Start\Giv):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25105](\Global\POI_BSL_GroundPound\Interactions\Start\Punch1\Giv):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[666ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[666ms](OpportunityTrack)
 
 [25106](\Global\POI_BSL_GroundPound\Interactions\Start\Punch1\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25107](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[500ms](OpportunityTrack)
 
 [25108](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25109](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[500ms](OpportunityTrack)
 
 [25110](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25111](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[500ms](OpportunityTrack)
 
 [25112](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25113](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Repeat3\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[666ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[666ms](OpportunityTrack)
 
 [25114](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Repeat3\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25115](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Repeat3\Repeat4\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[500ms](OpportunityTrack)
 
 [25116](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Repeat3\Repeat4\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25117](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Repeat3\Repeat4\Repeat5\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[500ms](OpportunityTrack)
 
 [25118](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Repeat3\Repeat4\Repeat5\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25119](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Repeat3\Repeat4\Repeat5\Repeat6\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[666ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[666ms](OpportunityTrack)
 
 [25120](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Repeat3\Repeat4\Repeat5\Repeat6\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25121](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Repeat3\Repeat4\Repeat5\Repeat6\Repeat7\Giv):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[500ms](OpportunityTrack)
 
 [25122](\Global\POI_BSL_GroundPound\Interactions\Start\Punch2\Repeat1\Repeat2\Repeat3\Repeat4\Repeat5\Repeat6\Repeat7\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25104](\Global\POI_BSL_GroundPound\Interactions\Start\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_GroundPound
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25102](\Global\POI_BSL_GroundPound\UseConditions)

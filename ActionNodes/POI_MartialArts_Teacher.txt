@@ -1,15 +1,23 @@
 [27190](\Global\POI_MartialArts_Teacher\Interactions\MartialArts_Moves):
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27191](\Global\POI_MartialArts_Teacher\Interactions\MartialArts_Moves\Anims\Move\MoveA):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_MartialArts_Teacher
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27192](\Global\POI_MartialArts_Teacher\Interactions\MartialArts_Moves\Anims\Move\MoveB):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_MartialArts_Teacher
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27193](\Global\POI_MartialArts_Teacher\Interactions\MartialArts_Moves\Exit\ExitDummy)
 [27189](\Global\POI_MartialArts_Teacher\UseConditions)

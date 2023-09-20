@@ -1,170 +1,250 @@
 [25219](\Global\POI_Cel\Interactions\CelIdles):
-[0ms](ConversationTrackCleanup)
-[0ms](ConversationTrackCreate)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[6000ms](AudioTrackSimple)
-[6500ms](ConversationTrackOperation)
+	[0ms](ConversationTrackCleanup)
+	[0ms](ConversationTrackCreate)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[6000ms](AudioTrackSimple)
+	[6500ms](ConversationTrackOperation)
 
 [25233](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Cyclic\Female\CyclicActual):
-[0ms](AnimationTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[500ms](OpportunityTrack)
 
 [25234](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Cyclic\Male\CyclicActual):
-[0ms](AnimationTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cel_Talk_CYC
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[500ms](OpportunityTrack)
 
 [25235](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Exit\Female\ExitActual):
-[0ms](AnimationTrack)
-[0ms](ConversationTrackCleanup)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[1083ms](AudioTrackSimple)
-[2500ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ConversationTrackCleanup)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[1083ms](AudioTrackSimple)
+	[2500ms](TargetDetachTrack)
 
 [25236](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Exit\Male\ExitActual):
-[0ms](AnimationTrack)
-[0ms](ConversationTrackCleanup)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[2500ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cel_Hangup
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ConversationTrackCleanup)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[2500ms](TargetDetachTrack)
 
 [25225](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01_F
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25228](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources\IntroActual):
-[0ms](AnimationTrack)
-[0ms](ConversationTrackCreate)
-[0ms](ConversationTrackOperation)
-[0ms](SequenceTrack)
-[1500ms](ObjectCreateTrack)
-[1500ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ConversationTrackCreate)
+	[0ms](ConversationTrackOperation)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[1500ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[1500ms](TargetAttachTrack)
 
 [25226](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [25227](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources\WaitForResources\Timeout)
 [25229](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25232](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources\IntroActual):
-[0ms](AnimationTrack)
-[0ms](ConversationTrackCreate)
-[0ms](ConversationTrackOperation)
-[0ms](SequenceTrack)
-[1500ms](ObjectCreateTrack)
-[1500ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ConversationTrackCreate)
+	[0ms](ConversationTrackOperation)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[1500ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[1500ms](TargetAttachTrack)
 
 [25230](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [25231](\Global\POI_Cel\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources\WaitForResources\Timeout)
 [25223](\Global\POI_Cel\Interactions\CelIdles\CelAnims\IsSpawning\IsSpawningActual\IsFemaleSpawning\IsFemaleSpawningActual):
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAttachTrack)
 
 [25224](\Global\POI_Cel\Interactions\CelIdles\CelAnims\IsSpawning\IsSpawningActual\IsMaleSpawning\IsMaleSpawningActual):
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAttachTrack)
 
 [25220](\Global\POI_Cel\Interactions\CelIdles\CelAnims\IsSpawning\LoadResources):
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25221](\Global\POI_Cel\Interactions\CelIdles\CelAnims\IsSpawning\LoadResources\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [25222](\Global\POI_Cel\Interactions\CelIdles\CelAnims\IsSpawning\LoadResources\WaitForResources\Timeout)
 [25207](\Global\POI_Cel\Interactions\InScriptedState):
-[0ms](LookAtTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[6000ms](AudioTrackSimple)
+	[0ms](LookAtTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[6000ms](AudioTrackSimple)
 
 [25210](\Global\POI_Cel\Interactions\InScriptedState\CelAnims\Speaking\Cyclic\Female\CyclicActual):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[500ms](OpportunityTrack)
 
 [25211](\Global\POI_Cel\Interactions\InScriptedState\CelAnims\Speaking\Cyclic\Male\CyclicActual):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cel_Talk_CYC
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[500ms](OpportunityTrack)
 
 [25212](\Global\POI_Cel\Interactions\InScriptedState\CelAnims\Speaking\Exit\Female\ExitActual):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[1083ms](AudioTrackSimple)
-[1266ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[1083ms](AudioTrackSimple)
+	[1266ms](TargetDetachTrack)
 
 [25213](\Global\POI_Cel\Interactions\InScriptedState\CelAnims\Speaking\Exit\Male\ExitActual):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[1833ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cel_Hangup
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[1833ms](TargetDetachTrack)
 
 [25214](\Global\POI_Cel\Interactions\InScriptedState\CelAnims\Speaking\FastExit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
 
 [25208](\Global\POI_Cel\Interactions\InScriptedState\CelAnims\Speaking\Intro\Female\IntroActual):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[1500ms](ObjectCreateTrack)
-[1500ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[1500ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[1500ms](TargetAttachTrack)
 
 [25209](\Global\POI_Cel\Interactions\InScriptedState\CelAnims\Speaking\Intro\Male\IntroActual):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[1500ms](ObjectCreateTrack)
-[1500ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[1500ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-CellPhone001
+	[1500ms](TargetAttachTrack)
 
 [25215](\Global\POI_Cel\Interactions\InScriptedState\CelAnims\WaitForLoad\Female):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [25216](\Global\POI_Cel\Interactions\InScriptedState\CelAnims\WaitForLoad\Male):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [25218](\Global\POI_Cel\Interactions\InScriptedState\Utility\LoadCell):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [25217](\Global\POI_Cel\Interactions\InScriptedState\Utility\Loaded):
-[0ms](ObjectReferenceTrack)
+	[0ms](ObjectReferenceTrack)
 
 [25206](\Global\POI_Cel\UseConditions)

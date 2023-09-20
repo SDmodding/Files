@@ -1,64 +1,92 @@
 [27778](\Global\POI_Scrub_Floor\Interactions\AudiobankLoad):
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27779](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
 
 [27788](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles\ScrubFloor_Anims\Cyclic\Female\CyclicActual01):
-[0ms](AnimationTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Scrub_Floor
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[500ms](OpportunityTrack)
 
 [27789](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles\ScrubFloor_Anims\Cyclic\Female\CyclicActual02):
-[0ms](AnimationTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Scrub_Floor
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[500ms](OpportunityTrack)
 
 [27790](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles\ScrubFloor_Anims\Exit\Female\ExitActual):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Scrub_Floor
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
 
 [27784](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles\ScrubFloor_Anims\Intro\Female\LoadResources):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01_F
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27787](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles\ScrubFloor_Anims\Intro\Female\LoadResources\IntroActual):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[1500ms](ObjectCreateTrack)
-[1500ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Scrub_Floor
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[1500ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Sponge001
+	[1500ms](TargetAttachTrack)
 
 [27785](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles\ScrubFloor_Anims\Intro\Female\LoadResources\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [27786](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles\ScrubFloor_Anims\Intro\Female\LoadResources\WaitForResources\Timeout)
 [27783](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles\ScrubFloor_Anims\IsSpawning\IsSpawningActual\IsFemaleSpawning\IsFemaleSpawningActual):
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Sponge001
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAttachTrack)
 
 [27780](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles\ScrubFloor_Anims\IsSpawning\LoadResources):
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27781](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles\ScrubFloor_Anims\IsSpawning\LoadResources\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [27782](\Global\POI_Scrub_Floor\Interactions\ScrubFloor_Idles\ScrubFloor_Anims\IsSpawning\LoadResources\WaitForResources\Timeout)
 [27777](\Global\POI_Scrub_Floor\UseConditions)

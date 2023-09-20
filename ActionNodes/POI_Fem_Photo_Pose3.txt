@@ -1,24 +1,36 @@
 [26168](\Global\POI_Fem_Photo3\Interactions\Exit\Pose_Exit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: POI_Fem_Photo_Pose3
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26165](\Global\POI_Fem_Photo3\Interactions\Pose_Idles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26167](\Global\POI_Fem_Photo3\Interactions\Pose_Idles\Pose_Anims\Cycle\Pose_Cycle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Fem_Photo_Pose3
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [26166](\Global\POI_Fem_Photo3\Interactions\Pose_Idles\Pose_Anims\Into\Pose_Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Fem_Photo_Pose3
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26164](\Global\POI_Fem_Photo3\UseConditions)

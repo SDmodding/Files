@@ -1,68 +1,94 @@
 [27051](\Global\POI_ChickenButcher\Interactions\ChickenButcher_Idles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [27059](\Global\POI_ChickenButcher\Interactions\ChickenButcher_Idles\ChickenButcher_Exit\Butcher_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetReleaseTrack)
 
 [27052](\Global\POI_ChickenButcher\Interactions\ChickenButcher_Idles\ChickenButcher_States\Butcher_PreLoad):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27055](\Global\POI_ChickenButcher\Interactions\ChickenButcher_Idles\ChickenButcher_States\Butcher_PreLoad\ChickenButcher\Butcher_FirstPlay):
-[0ms](AnimationTrack)
-[0ms](AttachmentTransferTrack)
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
-[300ms](ObjectCreateTrack)
-[300ms](TargetAttachTrack)
-[4866ms](AttachmentTransferTrack)
-[7000ms](PlayEffectTrack)
-[10933ms](AttachmentTransferTrack)
-[14000ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Male_Chicken_Butcher
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttachmentTransferTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-cleaver_A
+	[0ms](SequenceTrack):
+		[ID]: 27056
+	[0ms](TargetAttachTrack)
+	[300ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-ChickenChopped001
+	[300ms](TargetAttachTrack)
+	[4866ms](AttachmentTransferTrack)
+	[7000ms](PlayEffectTrack)
+	[10933ms](AttachmentTransferTrack)
+	[14000ms](TargetDetachTrack)
 
 [27056](\Global\POI_ChickenButcher\Interactions\ChickenButcher_Idles\ChickenButcher_States\Butcher_PreLoad\ChickenButcher\Butcher_FirstPlay\Butcher_Cycle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[300ms](ObjectCreateTrack)
-[300ms](TargetAttachTrack)
-[4866ms](AttachmentTransferTrack)
-[7100ms](PlayEffectTrack)
-[10933ms](AttachmentTransferTrack)
-[14000ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Male_Chicken_Butcher
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27056
+	[300ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-ChickenChopped001
+	[300ms](TargetAttachTrack)
+	[4866ms](AttachmentTransferTrack)
+	[7100ms](PlayEffectTrack)
+	[10933ms](AttachmentTransferTrack)
+	[14000ms](TargetDetachTrack)
 
 [27057](\Global\POI_ChickenButcher\Interactions\ChickenButcher_Idles\ChickenButcher_States\Butcher_PreLoad\WaitForButcher\Wait01):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [27058](\Global\POI_ChickenButcher\Interactions\ChickenButcher_Idles\ChickenButcher_States\Butcher_PreLoad\WaitForButcher\Wait02):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Male_ComeHere
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [27053](\Global\POI_ChickenButcher\Interactions\ChickenButcher_Idles\ChickenButcher_States\Butcher_PreLoad\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [27054](\Global\POI_ChickenButcher\Interactions\ChickenButcher_Idles\ChickenButcher_States\Butcher_PreLoad\WaitForResources\Timeout)
 [27050](\Global\POI_ChickenButcher\UseConditions)

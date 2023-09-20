@@ -1,23 +1,35 @@
 [25636](\Global\POI_CowerFast\Interactions\MasterSpawn):
-[0ms](CharacterPhysicsTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25638](\Global\POI_CowerFast\Interactions\MasterSpawn\Anims\Cyc):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Cowering_Crouch_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [25637](\Global\POI_CowerFast\Interactions\MasterSpawn\Anims\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Cowering_Crouch_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25638
 
 [25639](\Global\POI_CowerFast\Interactions\MasterSpawn\Exit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: poi_stop_using_use()
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Cowering_Crouch_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: poi_stop_using_use()
 
 [25635](\Global\POI_CowerFast\UseConditions)

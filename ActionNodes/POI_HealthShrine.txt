@@ -1,36 +1,47 @@
 [26586](\Global\POI_HealthShrine\Interactions\Exit)
 [26583](\Global\POI_HealthShrine\Interactions\MoveTo):
-[0ms](BlendTreeTrack)
-[0ms](OpportunityTrack)
-[0ms](PathfindToTargetTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PathfindToTargetTrack)
+	[0ms](SequenceTrack):
+		[ID]: 26584
+	[0ms](TargetSteerToTrack)
 
 [26582](\Global\POI_HealthShrine\Interactions\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26584](\Global\POI_HealthShrine\Interactions\PerformAction):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: if this.poi_get_target()<>Collectible.is_collected()~ [this.poi_get_target()<>Collectible.collect(true)] else [HintText.show_info_popup("$HUD_COLLECTIBLES_HEALTHSHRINE_ALREADY_FOUND")] 
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
-[500ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: Shrine
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 26586
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: if this.poi_get_target()<>Collectible.is_collected()~ [this.poi_get_target()<>Collectible.collect(true)] else [HintText.show_info_popup("$HUD_COLLECTIBLES_HEALTHSHRINE_ALREADY_FOUND")] 
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
+	[500ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26585](\Global\POI_HealthShrine\Interactions\PerformAction\CreateIncense):
-[0ms](MasterTrack)
-[0ms](ObjectCreateTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetDestroyTrack)
+	[0ms](MasterTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-IncenseStick001
+	[0ms](TargetAttachTrack)
+	[0ms](TargetDestroyTrack)
 
 [26581](\Global\POI_HealthShrine\UseConditions)

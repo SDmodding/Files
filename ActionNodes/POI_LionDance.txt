@@ -1,41 +1,59 @@
 [26934](\Global\POI_Liondance\Interactions\LionDanceIdles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26936](\Global\POI_Liondance\Interactions\LionDanceIdles\LionDanceAnims\Idles\LionDance1):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Liondance
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
 
 [26937](\Global\POI_Liondance\Interactions\LionDanceIdles\LionDanceAnims\Idles\LionDance2):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Liondance
+		[Begin]: 0.100000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
 
 [26938](\Global\POI_Liondance\Interactions\LionDanceIdles\LionDanceAnims\Idles\LionDance3):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Liondance
+		[Begin]: 0.200000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
 
 [26939](\Global\POI_Liondance\Interactions\LionDanceIdles\LionDanceAnims\Idles\LionDance4):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Liondance
+		[Begin]: 0.300000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
 
 [26940](\Global\POI_Liondance\Interactions\LionDanceIdles\LionDanceAnims\Idles\LionDance5):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Liondance
+		[Begin]: 0.400000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
 
 [26935](\Global\POI_Liondance\Interactions\LionDanceIdles\LionDanceAnims\IsSpawning\IsSpawning_Actual):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26941](\Global\POI_Liondance\Interactions\LionDanceIdles\LionDanceExit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
 
 [26933](\Global\POI_Liondance\UseConditions)

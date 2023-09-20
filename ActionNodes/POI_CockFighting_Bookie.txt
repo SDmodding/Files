@@ -1,8 +1,9 @@
 [25402](\Global\Cockfighting_Bookie\Interactions\TakeBets\TakeBetIdles):
-[0ms](ExecuteTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: World.c_gameslice.gameslice_remove_corona() if World.is_cockfighting_enabled() [World.c_gameslice.gameslice_create_corona_actor(this<>Actor, 'arrow_social')]
+	[0ms](ExecuteTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: World.c_gameslice.gameslice_remove_corona() if World.is_cockfighting_enabled() [World.c_gameslice.gameslice_create_corona_actor(this<>Actor, 'arrow_social')]
 
 [25401](\Global\Cockfighting_Bookie\UseConditions)

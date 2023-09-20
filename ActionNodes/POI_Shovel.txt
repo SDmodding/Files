@@ -1,64 +1,87 @@
 [27807](\Global\POI_Shovel\Interactions\ShovelIdles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
 
 [27814](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\INTO_Anims\ShovelIdle_LoadResource):
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27817](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\INTO_Anims\ShovelIdle_LoadResource\ShovelInto_Actual):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[1000ms](ObjectCreateTrack)
-[1000ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOP_Shovel001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[1000ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-Shovel001
+	[1000ms](TargetAttachTrack)
 
 [27815](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\INTO_Anims\ShovelIdle_LoadResource\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[5000ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[5000ms](OpportunityTrack)
 
 [27816](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\INTO_Anims\ShovelIdle_LoadResource\WaitForResources\Timeout)
 [27813](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\INTO_Anims\WithProp\IsSpawning_Actual):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [27818](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\Idles\Dig_CYC):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOP_Shovel001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27819
 
 [27819](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\Idles\Dig_CYC\Dig_WipeBrow):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOP_Shovel001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27818
 
 [27809](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\IsSpawning\ShovelIdle_LoadResource):
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27812](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\IsSpawning\ShovelIdle_LoadResource\IsSpawning_Actual):
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-Shovel001
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAttachTrack)
 
 [27810](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\IsSpawning\ShovelIdle_LoadResource\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[5000ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[5000ms](OpportunityTrack)
 
 [27811](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\IsSpawning\ShovelIdle_LoadResource\WaitForResources\Timeout)
 [27808](\Global\POI_Shovel\Interactions\ShovelIdles\ShovelAnims\IsSpawning\WithProp\IsSpawning_Actual):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [27820](\Global\POI_Shovel\Interactions\ShovelIdles\Shovel_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetDetachTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetDetachTrack)
 
 [27806](\Global\POI_Shovel\UseConditions)

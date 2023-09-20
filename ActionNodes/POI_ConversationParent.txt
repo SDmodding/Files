@@ -1,53 +1,87 @@
 [25529](\Global\ConversationParent\Interactions\Idles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25533](\Global\ConversationParent\Interactions\Idles\ConversationIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25538](\Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationExit\ConversationExit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25534](\Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen):
-[0ms](ExecuteTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](ExecuteTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25535](\Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_SOC_REAC_Listen_FEM1
+		[Group]: Social_Listen
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25536](\Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_SOC_REAC_Listen1
+		[Group]: Social_Listen
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25537](\Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Speaking\Speaking):
-[0ms](AnimationTrack)
-[0ms](LookAtTrack)
-[0ms](MinimumDurationTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Conv_Talk_01
+		[Group]: POI_Talk_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LookAtTrack)
+	[0ms](MinimumDurationTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25532](\Global\ConversationParent\Interactions\Idles\WaitForConversationChild\Wait):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[2000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[2000ms](OpportunityTrack)
 
 [25530](\Global\ConversationParent\Interactions\Idles\WaitForConversationChild\WaitVendor):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[2000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: SHP_Calling_01
+		[Group]: Shopkeeper
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[2000ms](OpportunityTrack)
 
 [25531](\Global\ConversationParent\Interactions\Idles\WaitForConversationChild\Wait_Female):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[2000ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[2000ms](OpportunityTrack)
 
 [25528](\Global\ConversationParent\UseConditions)

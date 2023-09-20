@@ -1,183 +1,272 @@
 [29123](\Global\POI_VendingMachine001\Interactions\Grapple\Default\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](GameStatEventTrack)
-[0ms](GameStatSpecialMoveTrack)
-[0ms](SpawnTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
-[600ms](GameStatSpecialMoveTrack)
-[600ms](TargetPlayTrack)
-[833ms](OpportunityTrack)
-[833ms](OpportunityTrack)
-[1200ms](TargetGrappleReleaseTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Into_PopMachine_FRT_GIV
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](GameStatEventTrack)
+	[0ms](GameStatSpecialMoveTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
+	[600ms](GameStatSpecialMoveTrack)
+	[600ms](TargetPlayTrack)
+	[833ms](OpportunityTrack)
+	[833ms](OpportunityTrack)
+	[1200ms](TargetGrappleReleaseTrack)
 
 [29124](\Global\POI_VendingMachine001\Interactions\Grapple\Default\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](DamageTrack)
-[0ms](GameStatSpecialMoveTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
-[500ms](SpawnTrack)
-[1233ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Into_PopMachine_FRT_RCV
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 10
+		[PropDamage]: 300
+		[WeaponDamage]: 0
+		[ColBegin]: 0.433333
+		[ColEnd]: 0.800000
+		[AttackRadius]: 0.450000
+		[AttackTypeID]: 5
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](DamageTrack)
+	[0ms](GameStatSpecialMoveTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
+	[500ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1233ms](TargetReleaseTrack)
 
 [29122](\Global\POI_VendingMachine001\Interactions\Grapple\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29127](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn):
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
 
 [29142](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\DiscardIceCream):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
-[433ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Drop_Pop_Righthand
+		[Group]: Pop_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
+	[433ms](TargetDetachTrack)
 
 [29143](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\DiscardIceCream\Buff):
-[0ms](PlayerBuffActivateTrack)
+	[0ms](PlayerBuffActivateTrack)
 
 [29139](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\Eating\Eat_IceCream):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_PorkBun
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 29142
+	[0ms](TargetSyncPositionTrack)
 
 [29141](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\Eating\Load):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [29140](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\Eating\Ped):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_PorkBun
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 29144
 
 [29129](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\InsertMoney):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Buy_Pop_RightHand
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
 
 [29130](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\InsertMoney\Pay):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: World.c_player.money_adjust(-8, EconomyMethod.icecream_purchased)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: World.c_player.money_adjust(-8, EconomyMethod.icecream_purchased)
 
 [29128](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\MoveTo):
-[0ms](BlendTreeTrack)
-[0ms](OpportunityTrack)
-[0ms](PathfindToTargetTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PathfindToTargetTrack)
+	[0ms](SequenceTrack):
+		[ID]: 29129
+	[0ms](TargetSteerToTrack)
 
 [29131](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\PickUpProduct\ConeA\GetCone):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
-[933ms](ObjectCreateTrack)
-[933ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_PickUp_Pop_from_Machine_RIT
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSyncPositionTrack)
+	[933ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-IceCreamCone001_A
+	[933ms](TargetAttachTrack)
 
 [29132](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\PickUpProduct\ConeA\WaitForStream):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [29133](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\PickUpProduct\ConeB\GetCone):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
-[933ms](ObjectCreateTrack)
-[933ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_PickUp_Pop_from_Machine_RIT
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSyncPositionTrack)
+	[933ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-IceCreamCone001_B
+	[933ms](TargetAttachTrack)
 
 [29134](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\PickUpProduct\ConeB\WaitForStream):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [29135](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\PickUpProduct\SandwichA\GetSandwich):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
-[933ms](ObjectCreateTrack)
-[933ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_PickUp_Pop_from_Machine_RIT
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSyncPositionTrack)
+	[933ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-IceCreamSmich001_A
+	[933ms](TargetAttachTrack)
 
 [29136](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\PickUpProduct\SandwichA\WaitForStream):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [29137](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\PickUpProduct\SandwichB\GetSandwich):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
-[933ms](ObjectCreateTrack)
-[933ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_PickUp_Pop_from_Machine_RIT
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSyncPositionTrack)
+	[933ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-IceCreamSmich001_B
+	[933ms](TargetAttachTrack)
 
 [29138](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Anims\PickUpProduct\SandwichB\WaitForStream):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [29144](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\MasterSpawn\Ped_Exit)
 [29125](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29126](\Global\POI_VendingMachine001\Interactions\POI_SubInteraction\SyncToFootPosition):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 29127
+	[0ms](TargetSyncPositionTrack)
 
 [29150](\Global\POI_VendingMachine001\POI_Condition_Reference\ActionRequest)
 [29147](\Global\POI_VendingMachine001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "a", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "a", "mash")
 
 [29145](\Global\POI_VendingMachine001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "b", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "b", "mash")
 
 [29148](\Global\POI_VendingMachine001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "x", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "x", "mash")
 
 [29146](\Global\POI_VendingMachine001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "y", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "y", "mash")
 
 [29149](\Global\POI_VendingMachine001\POI_Condition_Reference\UseConditions)
 [29120](\Global\POI_VendingMachine001\UseConditions\ActionInteract\Ped)

@@ -1,31 +1,44 @@
 [27366](\Global\Peeing\Interactions\PEEING_Idles):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](StimulusTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](StimulusTrack)
 
 [27368](\Global\Peeing\Interactions\PEEING_Idles\PEEING_Anims\Idles\Cycle\Peeing):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[400ms](AudioTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PEEING_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[400ms](AudioTrack)
 
 [27367](\Global\Peeing\Interactions\PEEING_Idles\PEEING_Anims\Idles\Into\Into):
-[0ms](AnimationTrack)
-[0ms](AudioTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PEEING_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [27369](\Global\Peeing\Interactions\PEEING_Idles\PEEING_Exit\PEEING_Exit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](StimulusTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_PEEING_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](StimulusTrack)
 
 [27365](\Global\Peeing\UseConditions)

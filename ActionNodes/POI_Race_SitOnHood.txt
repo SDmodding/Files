@@ -1,17 +1,22 @@
 [27650](\Global\POI_Race_SitOnHood\Interactions\MasterSpawn):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Race_SitOnHood
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
 
 [27652](\Global\POI_Race_SitOnHood\Interactions\MasterSpawn\CollisionDisable):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](MasterTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](MasterTrack)
 
 [27651](\Global\POI_Race_SitOnHood\Interactions\MasterSpawn\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27649](\Global\POI_Race_SitOnHood\UseConditions)

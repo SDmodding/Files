@@ -1,33 +1,48 @@
 [24966](\Global\POI_Basketball\Interactions\BasketballIdles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
 
 [24972](\Global\POI_Basketball\Interactions\BasketballIdles\BasketballAnims\BasketballExit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [24967](\Global\POI_Basketball\Interactions\BasketballIdles\BasketballIntro):
-[0ms](ConversationTrackOperation)
-[0ms](SequenceTrack)
+	[0ms](ConversationTrackOperation)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [24970](\Global\POI_Basketball\Interactions\BasketballIdles\BasketballIntro\BasketballAnims\0x3F172A5D\Giv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Basketball
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [24971](\Global\POI_Basketball\Interactions\BasketballIdles\BasketballIntro\BasketballAnims\0x3F172A5D\Rcv):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Basketball
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [24968](\Global\POI_Basketball\Interactions\BasketballIdles\BasketballIntro\BasketballAnims\Idles\0x0AC644A4):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Basketball
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [24969](\Global\POI_Basketball\Interactions\BasketballIdles\BasketballIntro\BasketballAnims\Idles\BallFlipIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Basketball
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [24965](\Global\POI_Basketball\UseConditions)

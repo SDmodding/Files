@@ -1,53 +1,83 @@
 [25054](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDetachTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDetachTrack)
 
 [25064](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Bouncer_ClipBoard_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25055](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25058](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard):
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Clipboard001
+	[0ms](SequenceTrack):
+		[ID]: 25059
+	[0ms](TargetAttachTrack)
 
 [25059](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Bouncer_ClipBoard
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25060](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x639D475B):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Bouncer_ClipBoard
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25059
 
 [25061](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x675C5AEC):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Bouncer_ClipBoard
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25059
 
 [25062](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x6A1F7C35):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Bouncer_ClipBoard
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25059
 
 [25063](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x7DDA175E):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Bouncer_ClipBoard
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25059
 
 [25056](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [25057](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\WaitForResources\Timeout)
 [25053](\Global\POI_Bouncer_ClipBoard\UseConditions)

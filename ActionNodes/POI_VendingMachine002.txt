@@ -1,171 +1,269 @@
 [29155](\Global\POI_VendingMachine002\Interactions\Grapple\Default\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](GameStatEventTrack)
-[0ms](GameStatSpecialMoveTrack)
-[0ms](SpawnTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
-[600ms](TargetPlayTrack)
-[833ms](OpportunityTrack)
-[833ms](OpportunityTrack)
-[1200ms](TargetGrappleReleaseTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Into_PopMachine_FRT_GIV
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](GameStatEventTrack)
+	[0ms](GameStatSpecialMoveTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
+	[600ms](TargetPlayTrack)
+	[833ms](OpportunityTrack)
+	[833ms](OpportunityTrack)
+	[1200ms](TargetGrappleReleaseTrack)
 
 [29156](\Global\POI_VendingMachine002\Interactions\Grapple\Default\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](DamageTrack)
-[0ms](GameStatSpecialMoveTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
-[500ms](SpawnTrack)
-[1233ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Into_PopMachine_FRT_RCV
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 10
+		[PropDamage]: 300
+		[WeaponDamage]: 0
+		[ColBegin]: 0.433333
+		[ColEnd]: 0.800000
+		[AttackRadius]: 0.450000
+		[AttackTypeID]: 5
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](DamageTrack)
+	[0ms](GameStatSpecialMoveTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
+	[500ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[1233ms](TargetReleaseTrack)
 
 [29154](\Global\POI_VendingMachine002\Interactions\Grapple\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29159](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn):
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
 
 [29171](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\DiscardCokeCan):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
-[0ms](SetStateFlagTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
-[400ms](TargetPhysicalDamageTrack)
-[433ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Drop_Pop_Righthand
+		[Group]: Pop_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SetStateFlagTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
+	[400ms](TargetPhysicalDamageTrack)
+	[433ms](TargetDetachTrack)
 
 [29172](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\DiscardCokeCan\Buff):
-[0ms](PlayerBuffActivateTrack)
+	[0ms](PlayerBuffActivateTrack)
 
 [29161](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\InsertMoney):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SetStateFlagTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_Buy_Pop_RightHand
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SetStateFlagTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSyncPositionTrack)
 
 [29162](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\InsertMoney\Pay):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: World.c_player.money_adjust(-30, EconomyMethod.pop_purchased)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: World.c_player.money_adjust(-30, EconomyMethod.pop_purchased)
 
 [29160](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\MoveTo):
-[0ms](BlendTreeTrack)
-[0ms](OpportunityTrack)
-[0ms](PathfindToTargetTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PathfindToTargetTrack)
+	[0ms](SequenceTrack):
+		[ID]: 29161
+	[0ms](TargetSteerToTrack)
 
 [29170](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\Open\PedOpenOnly):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_DrinkSoda_OpenCan_Stand_M
+		[Group]: Pop_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29169](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\Open\PlayerDrink):
-[0ms](AnimationTrack)
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SetStateFlagTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_DrinkSoda_Sip_Stand_M_CYC
+		[Group]: Pop_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 29171
+	[0ms](SetStateFlagTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [29168](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\PickUpProduct\PedItems\GetDrinkCan):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
-[933ms](ObjectCreateTrack)
-[933ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_PickUp_Pop_from_Machine_RIT
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSyncPositionTrack)
+	[933ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-PopCan_A
+	[933ms](TargetAttachTrack)
 
 [29164](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\PickUpProduct\PedItems\StreamNoWork\PopBottle\GetDrinkBottle):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
-[933ms](ObjectCreateTrack)
-[933ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_PickUp_Pop_from_Machine_RIT
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSyncPositionTrack)
+	[933ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-BottledSoftDrink001
+	[933ms](TargetAttachTrack)
 
 [29165](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\PickUpProduct\PedItems\StreamNoWork\PopBottle\WaitForStream):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [29166](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\PickUpProduct\PedItems\StreamNoWork\PopCan\GetDrinkCan):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
-[933ms](ObjectCreateTrack)
-[933ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_PickUp_Pop_from_Machine_RIT
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSyncPositionTrack)
+	[933ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-PopCan_A
+	[933ms](TargetAttachTrack)
 
 [29167](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\PickUpProduct\PedItems\StreamNoWork\PopCan\WaitForStream):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [29163](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\MasterSpawn\Anims\PickUpProduct\PlayerCokeCan):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SetStateFlagTrack)
-[0ms](TargetSyncPositionTrack)
-[933ms](ObjectCreateTrack)
-[933ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Name]: INT_PickUp_Pop_from_Machine_RIT
+		[Group]: PopMachine_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SetStateFlagTrack)
+	[0ms](TargetSyncPositionTrack)
+	[933ms](ObjectCreateTrack):
+		[Name]: object-physical-weapon-melee-PopCan_ShugaA
+	[933ms](TargetAttachTrack)
 
 [29157](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29158](\Global\POI_VendingMachine002\Interactions\POI_SubInteraction\VENDINGMACHINE\SyncToFootPosition):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 29159
+	[0ms](TargetSyncPositionTrack)
 
 [29178](\Global\POI_VendingMachine002\POI_Condition_Reference\ActionRequest)
 [29175](\Global\POI_VendingMachine002\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "a", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "a", "mash")
 
 [29173](\Global\POI_VendingMachine002\POI_Condition_Reference\StruggleHUD_B\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "b", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "b", "mash")
 
 [29176](\Global\POI_VendingMachine002\POI_Condition_Reference\StruggleHUD_X\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "x", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "x", "mash")
 
 [29174](\Global\POI_VendingMachine002\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("", "y", "mash")
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("", "y", "mash")
 
 [29177](\Global\POI_VendingMachine002\POI_Condition_Reference\UseConditions)
 [29152](\Global\POI_VendingMachine002\UseConditions\ActionInteract\Ped)

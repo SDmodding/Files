@@ -1,1931 +1,3119 @@
 [19427](\Global\Missions\AMMission\Bow\Exit):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19426](\Global\Missions\AMMission\Bow\PerformAction):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_AM
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19427
 
 [19428](\Global\Missions\AMMission\ChargeAttack1):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_HCombo01_SideKick_Mid
+		[Group]: MonkeyKingReplacedAnims
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 40
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.533333
+		[ColEnd]: 0.666667
+		[AttackRadius]: 0.200000
+		[AttackTypeID]: 11
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](TargetSteerToTrack)
 
 [19431](\Global\Missions\BA\SearchBody\Cycle\Cycle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SubjectFollowOverridePOITrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BA
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SubjectFollowOverridePOITrack)
 
 [19429](\Global\Missions\BA\SearchBody\Into\AudiobankLoad):
-[0ms](AudioTrackSoundbankIO)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19430](\Global\Missions\BA\SearchBody\Into\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SubjectFollowOverridePOITrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BA
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SubjectFollowOverridePOITrack)
 
 [19432](\Global\Missions\BA\SearchBody\Out\Out):
-[0ms](AnimationTrack)
-[0ms](CameraFollowGotoTrack)
-[0ms](SequenceTrack)
-[0ms](SubjectFollowOverridePOITrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BA
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CameraFollowGotoTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SubjectFollowOverridePOITrack)
 
 [19434](\Global\Missions\BL\Hide_Under_Counter):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hide_Counter
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19435
 
 [19435](\Global\Missions\BL\Hide_Under_Counter\Hide_Under_Counter_CYC):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hide_Counter
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19436](\Global\Missions\BL\Phone_For_Help):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19442](\Global\Missions\BL\Ring_DoorBell_Out):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Buzzer
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19440](\Global\Missions\BL\Ring_Doorbell):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Buzzer
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19441
 
 [19441](\Global\Missions\BL\Ring_Doorbell\Ring_DoorBell_CYC):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Buzzer
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19437](\Global\Missions\BL\StruggleTest):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("Struggle", "y")
-[0ms](StruggleTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("Struggle", "y")
+	[0ms](StruggleTrack)
 
 [19439](\Global\Missions\BL\StruggleTest\Finish\Fail):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.set_weapon_struggle_state("fail")
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: NIS.c_default.flash_subtitles( "[PLACEHOLDER] Struggle Fail", 3.0 )
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.set_weapon_struggle_state("fail")
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: NIS.c_default.flash_subtitles( "[PLACEHOLDER] Struggle Fail", 3.0 )
 
 [19438](\Global\Missions\BL\StruggleTest\Finish\Success):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.set_weapon_struggle_state("success")
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: NIS.c_default.flash_subtitles( "[PLACEHOLDER] Struggle Success", 3.0 )
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.set_weapon_struggle_state("success")
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: NIS.c_default.flash_subtitles( "[PLACEHOLDER] Struggle Success", 3.0 )
 
 [19433](\Global\Missions\BL\Thug_LookForPlayer):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Thug_LookForPlayer
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19447](\Global\Missions\BM\Hostage_Kneeling\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BM
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19448](\Global\Missions\BM\Hostage_Kneeling\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BM
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19445](\Global\Missions\BM\Hostage_Squatting\Cycle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hide_Squat
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19446
 
 [19444](\Global\Missions\BM\Hostage_Squatting\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hide_Squat
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19445
 
 [19446](\Global\Missions\BM\Hostage_Squatting\Out):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hide_Squat
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19449](\Global\Missions\BM\Hostage_Stand_LookDown\Cycle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BM
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19443](\Global\Missions\BM\Uncle_Po_Bed_Idle):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BM
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19489](\Global\Missions\BTB\Monk_PullRope):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_TempleRope
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19486](\Global\Missions\BTB\Peggy_ShowFlowers):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BTB
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19488](\Global\Missions\BTB\Peggy_ShowFlowers_Fail):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BTB
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19487](\Global\Missions\BTB\Peggy_ShowFlowers_Success):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BTB
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19485](\Global\Missions\BTB\Wei_PickFlowers):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BTB
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19451](\Global\Missions\BreakArrest\Arrested_Thug):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: MSN_BreakArrest_ThugArrested_1
+		[Group]: Mission_BreakArrest
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19450](\Global\Missions\BreakArrest\Upset_Girl):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: MSN_BreakArrest_GirlUpset_1
+		[Group]: Mission_BreakArrest
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19459](\Global\Missions\BsL\BoatHijack\Driver\DriveIdle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: JetBoat_Drive_Idle
+		[Group]: JetBoat
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19460
 
 [19460](\Global\Missions\BsL\BoatHijack\Driver\DriveIdle\DriveIdleToShoot):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BSL
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19461
 
 [19461](\Global\Missions\BsL\BoatHijack\Driver\DriveIdle\DriveIdleToShoot\ShootIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: JetBoat_Drive_BigSmile_Idle
+		[Group]: JetBoat
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19483](\Global\Missions\BsL\BoatHijack\Hop\Fall):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](EventTrack)
-[0ms](GravityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetReleaseTrack)
-[350ms](TargetDetachTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](EventTrack)
+	[0ms](GravityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetReleaseTrack)
+	[350ms](TargetDetachTrack)
 
 [19484](\Global\Missions\BsL\BoatHijack\Hop\Fall\Anims\Car):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_ActionHijack
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19472](\Global\Missions\BsL\BoatHijack\Hop\Hijack):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](EventTrack)
-[0ms](GameStatEventTrack)
-[0ms](GameStatEventTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](EventTrack)
+	[0ms](GameStatEventTrack)
+	[0ms](GameStatEventTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
 
 [19474](\Global\Missions\BsL\BoatHijack\Hop\Hijack\Anims\Car\Car):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_ActionHijack
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19475
+	[0ms](TargetAttachTrack)
+	[0ms](TargetDetachTrack)
 
 [19473](\Global\Missions\BsL\BoatHijack\Hop\Hijack\Anims\Car\Car_Kidnap):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_ActionHijack
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19475
+	[0ms](TargetAttachTrack)
+	[0ms](TargetDetachTrack)
 
 [19475](\Global\Missions\BsL\BoatHijack\Hop\Hijack\Anims\DoneAnim\DriverIdle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: Car_Passenger_Idle
+		[Group]: Car
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19479](\Global\Missions\BsL\BoatHijack\Hop\Hijack\Receive\Driver\PulledOut):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](TargetReleaseTrack)
-[0ms](VehicleInteractTrack)
-[2166ms](TargetDetachTrack)
-[2166ms](VehicleStateTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
+	[0ms](TargetReleaseTrack)
+	[0ms](VehicleInteractTrack)
+	[2166ms](TargetDetachTrack)
+	[2166ms](VehicleStateTrack)
 
 [19480](\Global\Missions\BsL\BoatHijack\Hop\Hijack\Receive\Driver\PulledOut\Anims\Car):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_ActionHijack
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19478](\Global\Missions\BsL\BoatHijack\Hop\Hijack\Receive\Driver\SlideOver):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
 
 [19481](\Global\Missions\BsL\BoatHijack\Hop\Hijack\Receive\Passenger):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](SpawnTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19482](\Global\Missions\BsL\BoatHijack\Hop\Hijack\Receive\Passenger\Anims\Car):
-[0ms](AnimationTrack)
-[0ms](VehicleInteractTrack)
-[2533ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_ActionHijack
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](VehicleInteractTrack)
+	[2533ms](TargetDetachTrack)
 
 [19476](\Global\Missions\BsL\BoatHijack\Hop\Hijack\WaitForDriverSeat\Waiting):
-[0ms](OpportunityTrack)
-[0ms](VehicleInteractTrack)
+	[0ms](OpportunityTrack)
+	[0ms](VehicleInteractTrack)
 
 [19477](\Global\Missions\BsL\BoatHijack\Hop\Hijack\WaitForDriverSeat\Waiting\DoneWaiting):
-[0ms](ExecuteTrack)
+	[0ms](ExecuteTrack)
 
 [19462](\Global\Missions\BsL\BoatHijack\Hop\Latch\Back\DirectlyBehindMiddle\Back):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](EventTrack)
-[0ms](GameStatEventTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SubjectElevationTrack)
-[0ms](SubjectElevationTrack)
-[0ms](TargetAttachTrack)
-[0ms](TimeWarpTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](EventTrack)
+	[0ms](GameStatEventTrack)
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19470
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SubjectElevationTrack)
+	[0ms](SubjectElevationTrack)
+	[0ms](TargetAttachTrack)
+	[0ms](TimeWarpTrack)
 
 [19463](\Global\Missions\BsL\BoatHijack\Hop\Latch\Back\DirectlyBehindMiddle\Back\Anims\Car):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_ActionHijack
+		[Begin]: 0.333333
+		[End]: -1.000000
 
 [19466](\Global\Missions\BsL\BoatHijack\Hop\Latch\Back\PastRearEnd\BackLeft):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](EventTrack)
-[0ms](GameStatEventTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SubjectElevationTrack)
-[0ms](SubjectElevationTrack)
-[0ms](TargetAttachTrack)
-[0ms](TimeWarpTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](EventTrack)
+	[0ms](GameStatEventTrack)
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19470
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SubjectElevationTrack)
+	[0ms](SubjectElevationTrack)
+	[0ms](TargetAttachTrack)
+	[0ms](TimeWarpTrack)
 
 [19467](\Global\Missions\BsL\BoatHijack\Hop\Latch\Back\PastRearEnd\BackLeft\Anims\Car):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_ActionHijack
+		[Begin]: 0.333333
+		[End]: -1.000000
 
 [19464](\Global\Missions\BsL\BoatHijack\Hop\Latch\Back\PastRearEnd\BackRight):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](EventTrack)
-[0ms](GameStatEventTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SubjectElevationTrack)
-[0ms](SubjectElevationTrack)
-[0ms](TargetAttachTrack)
-[0ms](TimeWarpTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](EventTrack)
+	[0ms](GameStatEventTrack)
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19470
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SubjectElevationTrack)
+	[0ms](SubjectElevationTrack)
+	[0ms](TargetAttachTrack)
+	[0ms](TimeWarpTrack)
 
 [19465](\Global\Missions\BsL\BoatHijack\Hop\Latch\Back\PastRearEnd\BackRight\Anims\Car):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_ActionHijack
+		[Begin]: 0.333333
+		[End]: -1.000000
 
 [19468](\Global\Missions\BsL\BoatHijack\Hop\Latch\Default):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](EventTrack)
-[0ms](GameStatEventTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SubjectElevationTrack)
-[0ms](SubjectElevationTrack)
-[0ms](TargetAttachTrack)
-[0ms](TimeWarpTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](EventTrack)
+	[0ms](GameStatEventTrack)
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19470
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SubjectElevationTrack)
+	[0ms](SubjectElevationTrack)
+	[0ms](TargetAttachTrack)
+	[0ms](TimeWarpTrack)
 
 [19469](\Global\Missions\BsL\BoatHijack\Hop\Latch\Default\Anims\Car):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_ActionHijack
+		[Begin]: 0.333333
+		[End]: -1.000000
 
 [19470](\Global\Missions\BsL\BoatHijack\Hop\Struggle):
-[0ms](GameStatEventTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: HUD
-	[Script]: ActionButton.show_for_one_frame("", "y", "mash")
-[0ms](SpawnTrack)
-[0ms](StruggleTrack)
+	[0ms](GameStatEventTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: HUD
+		[Script]: ActionButton.show_for_one_frame("", "y", "mash")
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](StruggleTrack)
 
 [19471](\Global\Missions\BsL\BoatHijack\Hop\Struggle\Anims\Car):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_ActionHijack
+		[Begin]: 0.166667
+		[End]: -1.000000
 
 [19456](\Global\Missions\BsL\Dodge\Cycle\Cycle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BSL
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19458](\Global\Missions\BsL\Dodge\Failure\Failure):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
 
 [19455](\Global\Missions\BsL\Dodge\Into\Into):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BSL
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19456
 
 [19457](\Global\Missions\BsL\Dodge\Success\Success):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
+	[0ms](AnimationTrack):
+		[Group]: Mission_BSL
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
 
 [19491](\Global\Missions\CD\Hide_Under_Counter):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hide_Counter
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19490](\Global\Missions\CD\Point):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19492](\Global\Missions\CD\Tran_Peekout):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19452](\Global\Missions\CNY_DLC\SuicideBomber\Detonate):
-[0ms](HealthSetPercentageTrack)
-[0ms](HideTrack)
-[0ms](InvulnerableTrack)
-[0ms](MasterTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[33ms](ExplosionTrack)
-[33ms](SpawnTrack)
+	[0ms](HealthSetPercentageTrack)
+	[0ms](HideTrack)
+	[0ms](InvulnerableTrack)
+	[0ms](MasterTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18772
+	[33ms](ExplosionTrack)
+	[33ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19453](\Global\Missions\CNY_DLC\SuicideBomber\Detonate\MurderPlayer):
-[0ms](MasterTrack)
-[0ms](TargetDamageTrack)
+	[0ms](MasterTrack)
+	[0ms](TargetDamageTrack)
 
 [19454](\Global\Missions\CNY_DLC\SuicideBomber\Unhide):
-[0ms](SequenceTrack)
-[0ms](SetCharacterInvulnerableToFireTrack)
-[0ms](UnhideTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18801
+	[0ms](SetCharacterInvulnerableToFireTrack)
+	[0ms](UnhideTrack)
 
 [19493](\Global\Missions\CopDraw\Angry_Thug_Watching):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_CopDraw
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19494](\Global\Missions\FK\Wei_Taunt):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_FK
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19795](\Global\Missions\F_FC\IntroCam01):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19796](\Global\Missions\F_FC\IntroCam02):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19797](\Global\Missions\F_FC\IntroCam03):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19798](\Global\Missions\F_FC\IntroCam04):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19495](\Global\Missions\GD\Yell):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_GD
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19505](\Global\Missions\GU\Arrive_At_Koi):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19504](\Global\Missions\GU\Jackie_Sitting_Dazed\Cycle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_GU
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19502](\Global\Missions\GU\WakeUp\ExitLoad):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [19503](\Global\Missions\GU\WakeUp\ExitLoad\Exit):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_OUT
+		[Group]: POI_SafeHouseBed
+		[Begin]: 3.333333
+		[End]: -1.000000
 
 [19499](\Global\Missions\GU\WakeUp\LoadAnswer):
-[0ms](AnimationBankReferenceTrack)
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_OUT
+		[Group]: POI_SafeHouseBed
+		[Begin]: 3.333333
+		[End]: 3.333333
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19500](\Global\Missions\GU\WakeUp\LoadAnswer\AnswerPhone):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cel_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19501
 
 [19501](\Global\Missions\GU\WakeUp\LoadAnswer\AnswerPhone\TalkOnPhone):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cel_Talk_CYC
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19496](\Global\Missions\GU\WakeUp\LoadWakeUp):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [19497](\Global\Missions\GU\WakeUp\LoadWakeUp\WakeUpStart):
-[0ms](AnimationBankReferenceTrack)
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
-[3333ms](SpawnTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: POI_Sleep_Bed_OnSide_01_OUT
+		[Group]: POI_SafeHouseBed
+		[Begin]: 0.000000
+		[End]: 3.333333
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
+	[3333ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19498](\Global\Missions\GU\WakeUp\LoadWakeUp\WakeUpStart\Startle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Sleep_M
+		[Begin]: 0.333333
+		[End]: -1.000000
 
 [19507](\Global\Missions\In\Fall\Fall):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_IN
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 18893
 
 [19506](\Global\Missions\In\Fall_Off_Bike\Fall):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](SequenceTrack)
-[0ms](VehicleInteractTrack)
-[400ms](GravityTrack)
-[400ms](TargetDetachTrack)
-[400ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_IN
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18894
+	[0ms](VehicleInteractTrack)
+	[400ms](GravityTrack)
+	[400ms](TargetDetachTrack)
+	[400ms](TargetReleaseTrack)
 
 [19508](\Global\Missions\J_DC\ThreatenTarget\Init\Behind\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetSteerToTrack)
-[33ms](TargetPlayTrack)
-[133ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Trans_Back_to_Front_GIV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetSteerToTrack)
+	[33ms](TargetPlayTrack)
+	[133ms](TargetSyncPositionTrack)
 
 [19509](\Global\Missions\J_DC\ThreatenTarget\Init\Behind\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Trans_Back_to_Front_RCV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
 
 [19510](\Global\Missions\J_DC\ThreatenTarget\Init\Front\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSteerToTrack)
-[66ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Trans_Ready2IdleFront_GIV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSteerToTrack)
+	[66ms](TargetSyncPositionTrack)
 
 [19511](\Global\Missions\J_DC\ThreatenTarget\Init\Front\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Trans_Ready2IdleFront_RCV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](TargetSteerToTrack)
 
 [19512](\Global\Missions\J_DC\ThreatenTarget\Init\Idle\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Idle_Front_GIV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19513](\Global\Missions\J_DC\ThreatenTarget\Init\Idle\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Idle_Front_RCV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19518](\Global\Missions\J_DC\ThreatenTarget\Out\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](SubjectFollowOverrideTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SubjectFollowOverrideTrack)
+	[0ms](TargetPlayTrack)
 
 [19519](\Global\Missions\J_DC\ThreatenTarget\Out\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19514](\Global\Missions\J_DC\ThreatenTarget\Threaten\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](SequenceTrack)
-[0ms](SubjectFollowOverrideTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SubjectFollowOverrideTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19515](\Global\Missions\J_DC\ThreatenTarget\Threaten\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19516](\Global\Missions\J_DC\ThreatenTarget\Threaten\Idle\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](SubjectFollowOverrideTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](SubjectFollowOverrideTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19517](\Global\Missions\J_DC\ThreatenTarget\Threaten\Idle\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Combat_Intimidate
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19526](\Global\Missions\KID\KidnapperAssassinate\KidnapperAssassinate_GIV):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_KID
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19527](\Global\Missions\KID\KidnapperAssassinate\KidnapperAssassinate_RCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_KID
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19524](\Global\Missions\KID\PickUpFromGarbageCan\ReachIntoGarbageCan):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_KID
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19525
+	[0ms](TargetSyncPositionTrack)
 
 [19525](\Global\Missions\KID\PickUpFromGarbageCan\ReachIntoGarbageCan\Exit):
-[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [19523](\Global\Missions\KID\PickUpFromGarbageCan\SyncToFootPosition):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19521](\Global\Missions\KID\PlaceIntoGarbageCan\ReachIntoGarbageCan):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_KID
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19522
+	[0ms](TargetSyncPositionTrack)
 
 [19522](\Global\Missions\KID\PlaceIntoGarbageCan\ReachIntoGarbageCan\Exit):
-[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
 
 [19520](\Global\Missions\KID\PlaceIntoGarbageCan\SyncToFootPosition):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19605](\Global\Missions\MB\Cam_Bus_Stop_01):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19606](\Global\Missions\MB\Cam_Bus_Stop_02):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19607](\Global\Missions\MB\Cam_Bus_Stop_03):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19603](\Global\Missions\MB\Halt_INTO):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_MB
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19604
 
 [19604](\Global\Missions\MB\Halt_INTO\Halt_CYC):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_MB
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19611](\Global\Missions\MCR\FinishTakeWeapon\AimAtTarget):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("$HUD_KICK", "x")
-[0ms](TargetSteerToTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19614
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("$HUD_KICK", "x")
+	[0ms](TargetSteerToTrack)
 
 [19613](\Global\Missions\MCR\FinishTakeWeapon\AimAtTarget\KickTarget):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19614
 
 [19612](\Global\Missions\MCR\FinishTakeWeapon\AimAtTarget\ShootTarget):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](TargetDamageTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](TargetDamageTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetPlayTrack)
 
 [19614](\Global\Missions\MCR\FinishTakeWeapon\FailSequence):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SetStateFlagTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SubjectFollowOverrideTrack)
-[0ms](TargetSteerToTrack)
-[466ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_StunFin_Stomach_Front
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 1000
+		[PropDamage]: 100
+		[WeaponDamage]: 0
+		[ColBegin]: 0.400000
+		[ColEnd]: 0.666667
+		[AttackRadius]: 0.500000
+		[AttackTypeID]: 11
+		[TargetOnly]: 1
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.200000
+		[TimeToDistance]: 0.000000
+		[TargetMovement]: 0.500000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SetStateFlagTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SubjectFollowOverrideTrack)
+	[0ms](TargetSteerToTrack)
+	[466ms](PlayEffectTrack)
 
 [19615](\Global\Missions\MCR\HijackTruck\StartHijack):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](ParkourSyncPositionTrack)
-[0ms](SequenceTrack)
-[0ms](SubjectFollowOverrideTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Climb_BigClimbUp240cm
+		[Group]: Locomotion_FreeRunning
+		[Begin]: 0.000000
+		[End]: 0.166667
+	[0ms](GravityTrack)
+	[0ms](ParkourSyncPositionTrack)
+	[0ms](SequenceTrack)
+	[0ms](SubjectFollowOverrideTrack)
 
 [19616](\Global\Missions\MCR\HijackTruck\StartHijack\CleanUp):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
-[0ms](SubjectFollowOverrideTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_CatLeap_ClimbUp
+		[Group]: Locomotion_FreeRunning
+		[Begin]: 0.000000
+		[End]: 0.633333
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack)
+	[0ms](SubjectFollowOverrideTrack)
 
 [19610](\Global\Missions\MCR\StartTakeWeapon\FailSequence):
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
 
 [19608](\Global\Missions\MCR\StartTakeWeapon\WaitForGrapple):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("$HUD_TAKE_WEAPON")
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19610
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("$HUD_TAKE_WEAPON")
 
 [19609](\Global\Missions\MCR\StartTakeWeapon\WaitForGrapple\GrappleTarget):
-[0ms](ExecuteTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
+	[0ms](ExecuteTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
 
 [19789](\Global\Missions\MMA\DojoLeftCam):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19792](\Global\Missions\MMA\DojoLeftPanCam):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19790](\Global\Missions\MMA\DojoRightCam):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19791](\Global\Missions\MMA\DojoRightPanCam):
-[0ms](CameraAnimationTrack)
+	[0ms](CameraAnimationTrack)
 
 [19793](\Global\Missions\MMA\Stunned\OnOneKnee):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Reac_Trans_Stand2OneKnee
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19794
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19794](\Global\Missions\MMA\Stunned\OnOneKnee\Stunned):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Reac_Stun_OneKnee_Cyc
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19595](\Global\Missions\M_WED\Deaths\BackDeath):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: FAL_Impact_BAK
+		[Group]: Falls
+		[Begin]: 1.666667
+		[End]: -1.000000
 
 [19594](\Global\Missions\M_WED\Deaths\FrontDeath):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: FAL_Impact_FRT
+		[Group]: Falls
+		[Begin]: 1.333333
+		[End]: -1.000000
 
 [19602](\Global\Missions\M_WED\Gun_Distracted):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19596](\Global\Missions\M_WED\Injured_on_Floor\Cycle\Cyc):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_WE
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19597](\Global\Missions\M_WED\Injured_on_Floor\Death\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_WE
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19601](\Global\Missions\M_WED\LockDoor_Thug\Cyc):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_WE
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19528](\Global\Missions\M_WED\MasterSpawn):
-[0ms](OpportunityTrack)
-[0ms](PairedGrappleTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: get_properties().append_property_boolean('AutoStowPistol', false)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: get_properties().append_property_boolean('AutoStowPistol', true)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](VelocitySlopeModeTrack)
-[0ms](VelocitySlopeModeTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PairedGrappleTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: get_properties().append_property_boolean('AutoStowPistol', false)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: get_properties().append_property_boolean('AutoStowPistol', true)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](VelocitySlopeModeTrack)
+	[0ms](VelocitySlopeModeTrack)
 
 [19592](\Global\Missions\M_WED\MasterSpawnOLD):
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: get_properties().append_property_boolean('AutoStowPistol', false)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: get_properties().append_property_boolean('AutoStowPistol', true)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: get_properties().append_property_boolean('AutoStowPistol', false)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: get_properties().append_property_boolean('AutoStowPistol', true)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19591](\Global\Missions\M_WED\MasterSpawn\AutoPickupAmmo\Pistol):
-[0ms](AudioTrackSimple)
-[0ms](TargetWeaponAmmoConsumeTrack)
+	[0ms](AudioTrackSimple)
+	[0ms](TargetWeaponAmmoConsumeTrack)
 
 [19590](\Global\Missions\M_WED\MasterSpawn\AutoPickupAmmo\Rifle):
-[0ms](AudioTrackSimple)
-[0ms](TargetWeaponAmmoConsumeTrack)
+	[0ms](AudioTrackSimple)
+	[0ms](TargetWeaponAmmoConsumeTrack)
 
 [19588](\Global\Missions\M_WED\MasterSpawn\AutoPickupAmmo\SMG):
-[0ms](AudioTrackSimple)
-[0ms](TargetWeaponAmmoConsumeTrack)
+	[0ms](AudioTrackSimple)
+	[0ms](TargetWeaponAmmoConsumeTrack)
 
 [19589](\Global\Missions\M_WED\MasterSpawn\AutoPickupAmmo\Shotgun):
-[0ms](AudioTrackSimple)
-[0ms](TargetWeaponAmmoConsumeTrack)
+	[0ms](AudioTrackSimple)
+	[0ms](TargetWeaponAmmoConsumeTrack)
 
 [19532](\Global\Missions\M_WED\MasterSpawn\EquipPistol\DrawPistol):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: GUN_Equip_BAK
+		[Group]: Inventory_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19531](\Global\Missions\M_WED\MasterSpawn\EquipPistol\DropWeapon):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[300ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Name]: GUN_Drop_STR_LO
+		[Group]: Inventory_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19532
+	[300ms](TargetDetachTrack)
 
 [19533](\Global\Missions\M_WED\MasterSpawn\EquipPistol\ERROR_NO_PISTOL_IN_INVENTORY):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19570](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Idle\GrapGIV):
-[0ms](AttackTimerTrack)
-[0ms](MotionIntentionFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AttackTimerTrack)
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19572](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Idle\GrapGIV\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19571](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Idle\GrapGIV\Anims\Gun):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19573](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Idle\GrapRCV):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19575](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Idle\GrapRCV\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19574](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Idle\GrapRCV\Anims\Gun):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19546](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Cycle\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](AttackCollisionTrack)
-[0ms](Locomotion2Track)
-[0ms](OpportunityTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: -1.000000
+		[AttackRadius]: 0.200000
+		[AttackTypeID]: 18
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: -1.000000
+		[AttackRadius]: 0.250000
+		[AttackTypeID]: 5
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](Locomotion2Track)
+	[0ms](OpportunityTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19547](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Cycle\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19554](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Idle\GrapGIV):
-[0ms](Locomotion2Track)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](Locomotion2Track)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19556](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Idle\GrapGIV\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19555](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Idle\GrapGIV\Anims\Gun):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19557](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Idle\GrapRCV):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19559](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Idle\GrapRCV\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19558](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Idle\GrapRCV\Anims\Gun):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19548](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Jog\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19550](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Jog\GrapGIV\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19549](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Jog\GrapGIV\Anims\Gun):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19551](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Jog\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19553](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Jog\GrapRCV\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19552](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Sprint\Exit\Trans_To_Jog\GrapRCV\Anims\Gun):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19560](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Strafe\GrapGIV):
-[0ms](Locomotion2Track)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](Locomotion2Track)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19562](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Strafe\GrapGIV\Anims\Default):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [19561](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Strafe\GrapGIV\Anims\Gun):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [19563](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Strafe\GrapRCV):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19565](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Strafe\GrapRCV\Anims\Default):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [19564](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Move\Strafe\GrapRCV\Anims\Gun):
-[0ms](BlendTreeTrack)
+	[0ms](BlendTreeTrack)
 
 [19566](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Rotate\Left\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](MotionIntentionFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19567](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Rotate\Left\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19568](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Rotate\Right\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](MotionIntentionFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19569](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Cycle\Rotate\Right\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19576](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Exit\Release\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetPlayTrack)
 
 [19577](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Exit\Release\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19581](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\GunLogic\Aiming):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19583](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\GunLogic\Aiming\Anims\Idle):
-[0ms](BlendTreeTrack)
-[0ms](OpportunityTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](OpportunityTrack)
 
 [19582](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\GunLogic\Aiming\Anims\Moving):
-[0ms](BlendTreeTrack)
-[0ms](OpportunityTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](OpportunityTrack)
 
 [19584](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\GunLogic\Aiming\Fire):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [19585](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\GunLogic\NotAiming):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19578](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\GunLogic\Reload):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetPlayTrack)
+	[0ms](AnimationTrack):
+		[Group]: Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
+	[0ms](TargetPlayTrack)
 
 [19580](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\GunLogic\Reload\Handgun):
-[0ms](AnimationTrack)
-[200ms](ObjectCreateFromPropertiesTrack)
+	[0ms](AnimationTrack):
+		[Group]: Gun_Equipped
+		[Begin]: 0.000000
+		[End]: 0.666667
+	[200ms](ObjectCreateFromPropertiesTrack)
 
 [19579](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\GunLogic\Reload\TargetReload):
-[0ms](ReloadGunTrack)
+	[0ms](ReloadGunTrack)
 
 [19534](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Left\GrapGIV):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
-[66ms](TargetPlayTrack)
-[66ms](TargetSyncPositionTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
+	[66ms](TargetPlayTrack)
+	[66ms](TargetSyncPositionTrack)
 
 [19536](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Left\GrapGIV\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19535](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Left\GrapGIV\Anims\Gun):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19537](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Left\GrapRCV):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19539](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Left\GrapRCV\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.066667
+		[End]: -1.000000
 
 [19538](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Left\GrapRCV\Anims\Gun):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.066667
+		[End]: -1.000000
 
 [19540](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Right\GrapGIV):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetSteerToTrack)
-[66ms](TargetPlayTrack)
-[66ms](TargetSyncPositionTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetSteerToTrack)
+	[66ms](TargetPlayTrack)
+	[66ms](TargetSyncPositionTrack)
 
 [19542](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Right\GrapGIV\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.766667
+		[End]: -1.000000
 
 [19541](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Right\GrapGIV\Anims\Gun):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.766667
+		[End]: -1.000000
 
 [19543](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Right\GrapRCV):
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19545](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Right\GrapRCV\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.833333
+		[End]: -1.000000
 
 [19544](\Global\Missions\M_WED\MasterSpawn\Grapple\Hostage\Init\Right\GrapRCV\Anims\Gun):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.833333
+		[End]: -1.000000
 
 [19587](\Global\Missions\M_WED\MasterSpawn\Steering\Default):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19586](\Global\Missions\M_WED\MasterSpawn\Steering\TargetSteer):
-[0ms](OpportunityTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](OpportunityTrack)
+	[0ms](TargetSteerToTrack)
 
 [19529](\Global\Missions\M_WED\MasterSpawn\TargetDead\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](MotionIntentionFilterTrack)
-[0ms](SpawnTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](MotionIntentionFilterTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19530](\Global\Missions\M_WED\MasterSpawn\TargetDead\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19599](\Global\Missions\M_WED\Struggle_on_Floor\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_WE
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetAssignTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19600](\Global\Missions\M_WED\Struggle_on_Floor\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_WE
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19598](\Global\Missions\M_WED\Struggle_on_Floor\Thug\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_WE
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19593](\Global\Missions\M_WED\UnclePo_Idle\UnclePo_Idle_CYC):
-[0ms](AnimationTrack)
-[0ms](SetStateFlagTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_AlliedLocomotion_UnclePo
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SetStateFlagTrack)
 
 [19618](\Global\Missions\NMC\IdleCamera\MissionStartCam):
-[0ms](SubjectFollowOverrideTrack)
+	[0ms](SubjectFollowOverrideTrack)
 
 [19617](\Global\Missions\NMC\Ming_Taunt\Idle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_NMC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [19619](\Global\Missions\NMC\Stumble\Stumble):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Bumped_Sidestep_SML_RIT
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19622](\Global\Missions\PB\HangingOut\Thugs\Lft\Cyc):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PB
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19621](\Global\Missions\PB\HangingOut\Thugs\Mid\Cyc):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PB
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19620](\Global\Missions\PB\HangingOut\Thugs\Rit\Cyc):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PB
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19623](\Global\Missions\PB\HangingOut\Winston\Cyc):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PB
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19624](\Global\Missions\PB\HangingOut\Winston\WinstonDrunkCycle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Reac_Stun_Face_Cyc
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19625](\Global\Missions\PP\Cyc):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PP
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19628](\Global\Missions\PS\Popstar_Assassination\Cycle\Cycle_GIV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19630
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19629](\Global\Missions\PS\Popstar_Assassination\Cycle\Cycle_RCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19626](\Global\Missions\PS\Popstar_Assassination\Into\Into_GIV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19628
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19627](\Global\Missions\PS\Popstar_Assassination\Into\Into_RCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19630](\Global\Missions\PS\Popstar_Assassination\Out\Out_GIV):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19631](\Global\Missions\PS\Popstar_Assassination\Out\Out_RCV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 18887
 
 [19633](\Global\Missions\PS\Popstar_CheckGun\Cycle\Cycle):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19632](\Global\Missions\PS\Popstar_CheckGun\Into\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19634](\Global\Missions\PS\Popstar_CheckGun\Out\Out):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19639](\Global\Missions\PS\Popstar_Motion4Drugs\01\Placeholder_01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Conv_Talk_01
+		[Group]: POI_Talk_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19640](\Global\Missions\PS\Popstar_Motion4Drugs\01\Placeholder_02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19641](\Global\Missions\PS\Popstar_Motion4Drugs\01\Placeholder_03):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Aware_Hips_Male
+		[Group]: Pedestrian_Flavour_Aware
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19642](\Global\Missions\PS\Popstar_Motion4Drugs\01\Placeholder_04):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Aware_Pace_Male
+		[Group]: Pedestrian_Flavour_Aware
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19643](\Global\Missions\PS\Popstar_Motion4Drugs\FalsedOut_Motion4Drugs):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19635](\Global\Missions\PS\Popstar_SketchyIdles\Cycle\01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19636](\Global\Missions\PS\Popstar_SketchyIdles\Cycle\02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19637](\Global\Missions\PS\Popstar_SketchyIdles\Cycle\03):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19638](\Global\Missions\PS\Popstar_SketchyIdles\Cycle\Agitated):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_PS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19644](\Global\Missions\PS\Popstar_Stabbing\GrappleAttempt):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](TargetSteerToTrack)
-[200ms](TargetSteerToTrack)
-[233ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Idle_Front_Start
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.200000
+		[TimeToDistance]: 0.100000
+		[TargetMovement]: 0.500000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](TargetSteerToTrack)
+	[200ms](TargetSteerToTrack)
+	[233ms](OpportunityTrack)
 
 [19645](\Global\Missions\PS\Popstar_Stabbing\Grapple\Back\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](GameStatEventTrack)
-[0ms](TargetAssignMyTargetToTargetsTargetTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[66ms](TargetSyncPositionTrack)
-[2000ms](TargetDamageTrack)
-[2500ms](TargetGrappleReleaseTrack)
-[2833ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Knife_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](GameStatEventTrack)
+	[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[66ms](TargetSyncPositionTrack)
+	[2000ms](TargetDamageTrack)
+	[2500ms](TargetGrappleReleaseTrack)
+	[2833ms](OpportunityTrack)
 
 [19646](\Global\Missions\PS\Popstar_Stabbing\Grapple\Back\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Knife_Stab_Behind_RCV
+		[Group]: Grapples_Weapon_1hand_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19647](\Global\Missions\PS\Popstar_Stabbing\Grapple\Front\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](StimulusTrack)
-[0ms](TargetAssignMyTargetToTargetsTargetTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[100ms](TargetSyncPositionTrack)
-[466ms](StimulusTrack)
-[1866ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Knife_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](StimulusTrack)
+	[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+	[0ms](TargetAssignTrack)
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[100ms](TargetSyncPositionTrack)
+	[466ms](StimulusTrack)
+	[1866ms](OpportunityTrack)
 
 [19648](\Global\Missions\PS\Popstar_Stabbing\Grapple\Front\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](DamageTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[166ms](SpawnTrack)
-[433ms](PlayEffectTrack)
-[433ms](SpawnTrack)
-[733ms](PlayEffectTrack)
-[3266ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: Knife_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](DamageTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18835
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[166ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[433ms](PlayEffectTrack)
+	[433ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[733ms](PlayEffectTrack)
+	[3266ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19787](\Global\Missions\Robo_Test\CombatIdle):
-[0ms](BlendTreeTrack)
-[0ms](SequenceTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19788
 
 [19788](\Global\Missions\Robo_Test\CombatIdle\Buff1):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: SOC_Combat_Berserk1
+		[Group]: Social
+		[Begin]: 0.166667
+		[End]: 1.166667
+	[0ms](SequenceTrack):
+		[ID]: 19787
 
 [19786](\Global\Missions\Robo_Test\Idle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: RoboTest
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19653](\Global\Missions\SK\Injured\InjuredWalk):
-[0ms](AnimationTrack)
-[0ms](Locomotion2Track)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: MSN_LOC_Injured_Walk_CYC
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](Locomotion2Track)
+	[0ms](OpportunityTrack)
 
 [19654](\Global\Missions\SK\KnifeStabBehind\KnifeStabBehind_GIV):
-[0ms](AnimationTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSteerToTrack)
-[66ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_SK
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSteerToTrack)
+	[66ms](TargetSyncPositionTrack)
 
 [19655](\Global\Missions\SK\KnifeStabBehind\KnifeStabBehind_RCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_SK
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19656](\Global\Missions\SL\Cyc):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_SL
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19657](\Global\Missions\SS\Gas\Run\01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_SS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19658](\Global\Missions\SS\Gas\Run\02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_SS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19659](\Global\Missions\SS\Gas\Stand\Cyc\01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_SS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19660](\Global\Missions\SS\Gas\Stand\Cyc\02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_SS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19661](\Global\Missions\SS\Gas\Stand\Non_CYC\01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_SS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19662](\Global\Missions\SS\Gas\Stand\Non_CYC\02):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_SS
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19649](\Global\Missions\S_LOC\Cyc\01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_S_LOC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19650](\Global\Missions\S_LOC\Cyc\Gesture\01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_S_LOC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19651](\Global\Missions\S_LOC\Cyc\Gesture\02):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_S_LOC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19652](\Global\Missions\S_LOC\Thug\01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_S_LOC
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19813](\Global\Missions\SelectUI\Idle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19817](\Global\Missions\SelectUI\Idle\Choose!\A_Button):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: 0.500000
+	[0ms](SequenceTrack):
+		[ID]: 19813
 
 [19816](\Global\Missions\SelectUI\Idle\Choose!\B_Button):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: 0.500000
+	[0ms](SequenceTrack):
+		[ID]: 19813
 
 [19815](\Global\Missions\SelectUI\Idle\Choose!\X_Button):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: 0.500000
+	[0ms](SequenceTrack):
+		[ID]: 19813
 
 [19814](\Global\Missions\SelectUI\Idle\Choose!\Y_Button):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: 0.500000
+	[0ms](SequenceTrack):
+		[ID]: 19813
 
 [19674](\Global\Missions\TE\BoundStruggle\Crawl_Begin):
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19676](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CrawlInto\CrawlInto):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: GameplayHelp.show("BUTTON_L_STICK","$HUD_CRAWL_TO_ESCAPE","Icon_Crawl")
-[0ms](TargetAttachTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-DuctTapeBinding001_Left
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-DuctTapeBinding001_Right
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: GameplayHelp.show("BUTTON_L_STICK","$HUD_CRAWL_TO_ESCAPE","Icon_Crawl")
+	[0ms](TargetAttachTrack)
+	[0ms](TargetAttachTrack)
 
 [19675](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CrawlInto\CrawlIntoPCControls):
-[0ms](AnimationTrack)
-[0ms](ObjectCreateTrack)
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: GameplayHelp.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: GameplayHelp.show("BUTTON_BUTTON1","$HUD_CRAWL_TO_ESCAPE","Icon_Crawl")
-[0ms](TargetAttachTrack)
-[0ms](TargetAttachTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-DuctTapeBinding001_Left
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-DuctTapeBinding001_Right
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: GameplayHelp.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: GameplayHelp.show("BUTTON_BUTTON1","$HUD_CRAWL_TO_ESCAPE","Icon_Crawl")
+	[0ms](TargetAttachTrack)
+	[0ms](TargetAttachTrack)
 
 [19679](\Global\Missions\TE\BoundStruggle\Crawl_Begin\Crawl\Idle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [19678](\Global\Missions\TE\BoundStruggle\Crawl_Begin\Crawl\Moving):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19677](\Global\Missions\TE\BoundStruggle\Crawl_Begin\Crawl\MovingPCControls):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19712](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\Cut_Ropes_Feet_Finish):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SubjectFollowOverrideTrack)
-[0ms](TargetDetachTrack)
-[0ms](TargetDetachTrack)
-[50ms](AudioTrackSimple)
-[50ms](AudioTrackSimple)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SubjectFollowOverrideTrack)
+	[0ms](TargetDetachTrack)
+	[0ms](TargetDetachTrack)
+	[50ms](AudioTrackSimple)
+	[50ms](AudioTrackSimple)
 
 [19689](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRope):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","l","wiggle_lr")
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: GameplayHelp.hide()
-[1133ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","l","wiggle_lr")
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: GameplayHelp.hide()
+	[1133ms](OpportunityTrack)
 
 [19680](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRopePCControls):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: GameplayHelp.hide()
-[33ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","y","mash")
-[1133ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: GameplayHelp.hide()
+	[33ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","y","mash")
+	[1133ms](OpportunityTrack)
 
 [19681](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRopePCControls\CutDown1):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[33ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","x","mash")
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: 0.333333
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[33ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","x","mash")
 
 [19683](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRopePCControls\CutDown2):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[33ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","x","mash")
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: 0.333333
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[33ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","x","mash")
 
 [19685](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRopePCControls\CutDown3):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[33ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","x","mash")
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: 0.333333
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[33ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","x","mash")
 
 [19687](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRopePCControls\CutDown4):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[33ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","x","mash")
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: 0.333333
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[33ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","x","mash")
 
 [19682](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRopePCControls\CutUp1):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[33ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","y","mash")
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.333333
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[33ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","y","mash")
 
 [19684](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRopePCControls\CutUp2):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[33ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","y","mash")
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.333333
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[33ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","y","mash")
 
 [19686](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRopePCControls\CutUp3):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[33ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","y","mash")
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.333333
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[33ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","y","mash")
 
 [19688](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRopePCControls\CutUp4):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[33ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","y","mash")
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.333333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[33ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","y","mash")
 
 [19690](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRope\CutDown1):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: 0.333333
+	[0ms](OpportunityTrack)
 
 [19692](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRope\CutDown2):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: 0.333333
+	[0ms](OpportunityTrack)
 
 [19694](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRope\CutDown3):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: 0.333333
+	[0ms](OpportunityTrack)
 
 [19696](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRope\CutDown4):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: 0.333333
+	[0ms](OpportunityTrack)
 
 [19691](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRope\CutUp1):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.333333
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [19693](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRope\CutUp2):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.333333
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [19695](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRope\CutUp3):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.333333
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [19697](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToCutRope\TransToCutRope\CutUp4):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.333333
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19705](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeet):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrack)
-[0ms](PlayEffectTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","l","rotate_cw")
-[16ms](AudioTrackSimple)
-[50ms](AudioTrackSimple)
-[1833ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","l","rotate_cw")
+	[16ms](AudioTrackSimple)
+	[50ms](AudioTrackSimple)
+	[1833ms](OpportunityTrack)
 
 [19698](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeetPCControls):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrack)
-[0ms](PlayEffectTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("","b","mash")
-[16ms](AudioTrackSimple)
-[50ms](AudioTrackSimple)
-[1833ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrack)
+	[0ms](PlayEffectTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("","b","mash")
+	[16ms](AudioTrackSimple)
+	[50ms](AudioTrackSimple)
+	[1833ms](OpportunityTrack)
 
 [19699](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeetPCControls\FeetUntieSpawn):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19712
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19701](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeetPCControls\FeetUntieSpawn\FeetUntieAnims\FeetUntie1):
-[0ms](AnimationTrack)
-[50ms](AudioTrackSimple)
-[166ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[50ms](AudioTrackSimple)
+	[166ms](OpportunityTrack)
 
 [19702](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeetPCControls\FeetUntieSpawn\FeetUntieAnims\FeetUntie2):
-[0ms](AnimationTrack)
-[50ms](AudioTrackSimple)
-[166ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[50ms](AudioTrackSimple)
+	[166ms](OpportunityTrack)
 
 [19703](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeetPCControls\FeetUntieSpawn\FeetUntieAnims\FeetUntie3):
-[0ms](AnimationTrack)
-[50ms](AudioTrackSimple)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[50ms](AudioTrackSimple)
 
 [19704](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeetPCControls\FeetUntieSpawn\FeetUntieAnims\FeetUntie4):
-[0ms](AnimationTrack)
-[50ms](AudioTrackSimple)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[50ms](AudioTrackSimple)
 
 [19700](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeetPCControls\FeetUntieSpawn\FeetUntieAnims\Init):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19706](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeet\FeetUntieSpawn):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19712
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19708](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeet\FeetUntieSpawn\FeetUntieAnims\FeetUntie1):
-[0ms](AnimationTrack)
-[50ms](AudioTrackSimple)
-[166ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[50ms](AudioTrackSimple)
+	[166ms](OpportunityTrack)
 
 [19709](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeet\FeetUntieSpawn\FeetUntieAnims\FeetUntie2):
-[0ms](AnimationTrack)
-[50ms](AudioTrackSimple)
-[166ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[50ms](AudioTrackSimple)
+	[166ms](OpportunityTrack)
 
 [19710](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeet\FeetUntieSpawn\FeetUntieAnims\FeetUntie3):
-[0ms](AnimationTrack)
-[50ms](AudioTrackSimple)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[50ms](AudioTrackSimple)
 
 [19711](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeet\FeetUntieSpawn\FeetUntieAnims\FeetUntie4):
-[0ms](AnimationTrack)
-[50ms](AudioTrackSimple)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[50ms](AudioTrackSimple)
 
 [19707](\Global\Missions\TE\BoundStruggle\Crawl_Begin\CutRopes\TransToFeet\TransToFeet\FeetUntieSpawn\FeetUntieAnims\Init):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19722](\Global\Missions\TE\BoundStruggle\Crawl_Begin\IKTracks):
-[0ms](TargetAttachEffectorTrack)
-[0ms](TargetAttachEffectorTrack)
-[0ms](TargetDetachEffectorTrack)
-[0ms](TargetDetachEffectorTrack)
+	[0ms](TargetAttachEffectorTrack)
+	[0ms](TargetAttachEffectorTrack)
+	[0ms](TargetDetachEffectorTrack)
+	[0ms](TargetDetachEffectorTrack)
 
 [19717](\Global\Missions\TE\BoundStruggle\Crawl_Begin\PickupGrapple\BreakOut\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](SubjectFollowOverridePOITrack)
-[0ms](TargetAttachEffectorTrack)
-[0ms](TargetAttachEffectorTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
-[0ms](TargetSyncPositionTrack)
-[8333ms](TargetDetachEffectorTrack)
-[8333ms](TargetDetachEffectorTrack)
-[14433ms](CameraFollowGotoTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_PH_StrangleLight001
+		[Begin]: 6.433333
+		[End]: -1.000000
+	[0ms](SubjectFollowOverridePOITrack)
+	[0ms](TargetAttachEffectorTrack)
+	[0ms](TargetAttachEffectorTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
+	[8333ms](TargetDetachEffectorTrack)
+	[8333ms](TargetDetachEffectorTrack)
+	[14433ms](CameraFollowGotoTrack)
 
 [19718](\Global\Missions\TE\BoundStruggle\Crawl_Begin\PickupGrapple\BreakOut\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](GameStatSpecialMoveTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_PH_StrangleLight001
+		[Begin]: 6.433333
+		[End]: -1.000000
+	[0ms](GameStatSpecialMoveTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19719](\Global\Missions\TE\BoundStruggle\Crawl_Begin\PickupGrapple\BreakOut\GrapRCV\Downed\FaceUp\Dead):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](SetOutOfFightTrack)
-[0ms](SetStateFlagTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_PH_StrangleLight001
+		[Begin]: 24.100000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](SetOutOfFightTrack)
+	[0ms](SetStateFlagTrack)
 
 [19720](\Global\Missions\TE\BoundStruggle\Crawl_Begin\PickupGrapple\Fail\FAILTIME):
-[0ms](AnimationTrack)
-[0ms](MasterTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_PH_StrangleLight001
+		[Begin]: 4.500000
+		[End]: 4.533333
+	[0ms](MasterTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
 
 [19721](\Global\Missions\TE\BoundStruggle\Crawl_Begin\PickupGrapple\Fail\FAILTIMERCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_PH_StrangleLight001
+		[Begin]: 4.500000
+		[End]: 4.533333
 
 [19713](\Global\Missions\TE\BoundStruggle\Crawl_Begin\PickupGrapple\PickupPlayerGIV):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SubjectFollowOverridePOITrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetAttachEffectorTrack)
-[0ms](TargetDetachEffectorTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
-[0ms](TargetSyncPositionTrack)
-[0ms](TargetSyncPositionTrack)
-[733ms](CameraShakeTrack)
-[1166ms](CameraShakeTrack)
-[3666ms](SpawnTrack)
-[4500ms](OpportunityTrack)
-[5133ms](CameraShakeTrack)
-[5333ms](CameraShakeTrack)
-[6100ms](TargetPlayTrack)
-[7300ms](CameraShakeTrack)
-[19866ms](CameraFollowGotoTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_PH_StrangleLight001
+		[Begin]: 0.000000
+		[End]: 6.400000
+	[0ms](OpportunityTrack)
+	[0ms](SubjectFollowOverridePOITrack)
+	[0ms](TargetAssignTrack)
+	[0ms](TargetAttachEffectorTrack)
+	[0ms](TargetDetachEffectorTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
+	[0ms](TargetSyncPositionTrack)
+	[733ms](CameraShakeTrack)
+	[1166ms](CameraShakeTrack)
+	[3666ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[4500ms](OpportunityTrack)
+	[5133ms](CameraShakeTrack)
+	[5333ms](CameraShakeTrack)
+	[6100ms](TargetPlayTrack)
+	[7300ms](CameraShakeTrack)
+	[19866ms](CameraFollowGotoTrack)
 
 [19714](\Global\Missions\TE\BoundStruggle\Crawl_Begin\PickupGrapple\PickupPlayerGIV\BufferInput\ButtonPressed):
-[0ms](MasterTrack)
+	[0ms](MasterTrack)
 
 [19715](\Global\Missions\TE\BoundStruggle\Crawl_Begin\PickupGrapple\PickupPlayerGIV\BufferInput\Idle):
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show_for_one_frame("", "y")
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show_for_one_frame("", "y")
 
 [19716](\Global\Missions\TE\BoundStruggle\Crawl_Begin\PickupGrapple\PickupPlayerRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_PH_StrangleLight001
+		[Begin]: 0.000000
+		[End]: 6.400000
 
 [19666](\Global\Missions\TE\BoundStruggle\Sit_Sleep_CYC):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
-[0ms](TargetLockTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Sleep_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](SequenceTrack):
+		[ID]: 19667
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
+	[0ms](TargetLockTrack)
 
 [19667](\Global\Missions\TE\BoundStruggle\Sit_Sleep_CYC\Sit_Sleep_CYC):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Sleep_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19668
 
 [19668](\Global\Missions\TE\BoundStruggle\Sit_Sleep_CYC\Sit_Sleep_CYC\Sit_Sleep_CYC):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Sleep_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19673](\Global\Missions\TE\BoundStruggle\Sit_Sleep_CYC\Sit_Sleep_CYC\Sit_Sleep_CYC\SitSleep_OUT\SitSleep_StartleUp):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Sleep_M
+		[Begin]: 4.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetReleaseTrack)
 
 [19669](\Global\Missions\TE\BoundStruggle\Sit_Sleep_CYC\Sit_Sleep_CYC\Sit_Sleep_CYC\SitSleep_OUT\Sit_SitSleep_INTO):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("$HUD_BREAK_OUT!")
-[0ms](StruggleTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Sleep_M
+		[Begin]: 0.000000
+		[End]: 1.000000
+	[0ms](SequenceTrack):
+		[ID]: 19670
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("$HUD_BREAK_OUT!")
+	[0ms](StruggleTrack)
 
 [19670](\Global\Missions\TE\BoundStruggle\Sit_Sleep_CYC\Sit_Sleep_CYC\Sit_Sleep_CYC\SitSleep_OUT\Sit_SitSleep_INTO\Sit_SitSleep_PARA):
-[0ms](AnimationTrack)
-[0ms](InputSignalFilterTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("$HUD_BREAK_OUT!")
-[0ms](Struggle2Track)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Sleep_M
+		[Begin]: 1.000000
+		[End]: 1.500000
+	[0ms](InputSignalFilterTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("$HUD_BREAK_OUT!")
+	[0ms](Struggle2Track)
 
 [19671](\Global\Missions\TE\BoundStruggle\Sit_Sleep_CYC\Sit_Sleep_CYC\Sit_Sleep_CYC\SitSleep_OUT\Sit_SitSleep_INTO\Sit_SitSleep_PARA\Finished\SitSleep_Finish):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Sleep_M
+		[Begin]: 1.500000
+		[End]: 2.000000
+	[0ms](SequenceTrack):
+		[ID]: 19673
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
 
 [19672](\Global\Missions\TE\BoundStruggle\Sit_Sleep_CYC\Sit_Sleep_CYC\Sit_Sleep_CYC\SitSleep_OUT\Sit_SitSleep_INTO\Sit_SitSleep_PARA\Finished\Timeout):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_Clock001_Use
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
 
 [19731](\Global\Missions\TE\CrouchCover\Exit):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [19732](\Global\Missions\TE\CrouchCover\Exit\Stand):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hide_Kneel
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19727](\Global\Missions\TE\CrouchCover\LoadCrouchCover):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [19728](\Global\Missions\TE\CrouchCover\LoadCrouchCover\CrouchCover):
-[0ms](AnimationBankReferenceTrack)
-[0ms](AnimationTrack)
-[1800ms](SpawnTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: Cover_Idle
+		[Group]: Cover_Gun
+		[Begin]: 0.000000
+		[End]: 2.000000
+	[1800ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19729](\Global\Missions\TE\CrouchCover\LoadCrouchCover\CrouchCover\Peek):
-[0ms](AnimationBankReferenceTrack)
-[0ms](AnimationTrack)
-[3900ms](SpawnTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: Cover_Peekout_UP
+		[Group]: Cover_Gun
+		[Begin]: 0.000000
+		[End]: 3.950000
+	[3900ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19730](\Global\Missions\TE\CrouchCover\LoadCrouchCover\CrouchCover\Peek\CrouchCover):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: Cover_Idle
+		[Group]: Cover_Gun
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19733](\Global\Missions\TE\CrouchHide\LoadCrouchHide):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [19734](\Global\Missions\TE\CrouchHide\LoadCrouchHide\CrouchHide):
-[0ms](AnimationBankReferenceTrack)
-[0ms](AnimationTrack)
-[600ms](SpawnTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hide_Counter
+		[Begin]: 0.000000
+		[End]: 0.633333
+	[600ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19735](\Global\Missions\TE\CrouchHide\LoadCrouchHide\CrouchHide\Peek):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hide_Counter
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19736](\Global\Missions\TE\CrouchHide\LoadStand):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [19737](\Global\Missions\TE\CrouchHide\LoadStand\Stand):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hide_Counter
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19746](\Global\Missions\TE\GuitarHero\GuitarPlayer):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19747](\Global\Missions\TE\GuitarHero\Spectator):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ELEC
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19723](\Global\Missions\TE\Hide\LoadHideIdle):
-[0ms](AnimationBankReferenceTrack)
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19724](\Global\Missions\TE\Hide\LoadHideIdle\HideIdle):
-[0ms](AnimationBankReferenceTrack)
-[0ms](AnimationTrack)
-[3600ms](SpawnTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: Cover_Hi_Idle_L
+		[Group]: Cover
+		[Begin]: 0.000000
+		[End]: 3.700000
+	[3600ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19725](\Global\Missions\TE\Hide\LoadHideIdle\HideIdle\Peek):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: Cover_Hi_Peekout_L
+		[Group]: Cover_Gun
+		[Begin]: 0.000000
+		[End]: 2.400000
 
 [19726](\Global\Missions\TE\Hide\LoadHideIdle\LowerArm):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Locomotion_Tired
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19745](\Global\Missions\TE\InjuredIdle\Default):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: MSN_LOC_Injured_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](TargetSteerToTrack)
 
 [19744](\Global\Missions\TE\InjuredWalk\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: MSN_LOC_Injured_Walk_CYC
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19743](\Global\Missions\TE\Scaff_Drop\DropScaff):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_PH_ScafBreak01_A
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19751](\Global\Missions\TE\Shotgun_Search):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Shotgun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19741](\Global\Missions\TE\Sit\Exit):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.hide()
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.hide()
 
 [19742](\Global\Missions\TE\Sit\Exit\Stand):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Male_Sit_Trans_2Stand
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19738](\Global\Missions\TE\Sit\LoadSit):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [19739](\Global\Missions\TE\Sit\LoadSit\Sit):
-[0ms](AnimationBankReferenceTrack)
-[0ms](AnimationTrack)
-[2300ms](SpawnTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Male_Sit_Trans_2Sit
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[2300ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19740](\Global\Missions\TE\Sit\LoadSit\Sit\SitIdle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: ActionButton.show("$HUD_GET_UP!")
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sit_01
+		[Group]: POI_Sitting_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: ActionButton.show("$HUD_GET_UP!")
 
 [19748](\Global\Missions\TE\Strangle_Thug\Strangle_GIV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSteerToTrack)
-[66ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_PH_StrangleLight001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSteerToTrack)
+	[66ms](TargetSyncPositionTrack)
 
 [19749](\Global\Missions\TE\Strangle_Thug\Strangle_RCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOI_PH_StrangleLight001
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19750](\Global\Missions\TE\Thug_LookForPlayer):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Thug_LookForPlayer
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19663](\Global\Missions\TE\WorkLightStrangle\StrangleGIV)
 [19665](\Global\Missions\TE\WorkLightStrangle\StrangleOBJ)
 [19664](\Global\Missions\TE\WorkLightStrangle\StrangleRCV)
 [19759](\Global\Missions\TGA\FallOutofVehicle):
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](SetStateFlagTrack)
-[0ms](SpawnTrack)
-[0ms](TargetPlayTrack)
-[0ms](VehicleInteractTrack)
-[833ms](CharacterPhysicsTrack)
-[833ms](GravityTrack)
-[833ms](TargetDetachTrack)
-[833ms](TargetReleaseTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](SetStateFlagTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetPlayTrack)
+	[0ms](VehicleInteractTrack)
+	[833ms](CharacterPhysicsTrack)
+	[833ms](GravityTrack)
+	[833ms](TargetDetachTrack)
+	[833ms](TargetReleaseTrack)
 
 [19762](\Global\Missions\TGA\FallOutofVehicle\Anims\Minibus):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Minibus_Into_Driver
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19763](\Global\Missions\TGA\FallOutofVehicle\Anims\Other):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_Into_Driver
+		[Begin]: 0.966667
+		[End]: -1.000000
 
 [19760](\Global\Missions\TGA\FallOutofVehicle\Anims\Truck):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Truck_Into_Driver
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19761](\Global\Missions\TGA\FallOutofVehicle\Anims\Van):
-[0ms](AnimationTrack)
-[0ms](AudioTrackSoundbankIO)
+	[0ms](AnimationTrack):
+		[Name]: Van_Dirty_Ming_Out
+		[Group]: Van_Drive
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AudioTrackSoundbankIO)
 
 [19764](\Global\Missions\TGA\FallOutofVehicle\Vehicle\Minibus):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Minibus_Into_Driver
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 21189
 
 [19767](\Global\Missions\TGA\FallOutofVehicle\Vehicle\Other):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Car_Into_Driver
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 21189
 
 [19766](\Global\Missions\TGA\FallOutofVehicle\Vehicle\Truck):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Truck_Into_Driver
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 21189
 
 [19765](\Global\Missions\TGA\FallOutofVehicle\Vehicle\Van):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: Van_Dirty_Ming_Out_Object
+		[Group]: Van_Drive
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 21189
 
 [19758](\Global\Missions\TGA\Unconscious):
-[0ms](AnimationTrack)
-[0ms](SetStateFlagTrack)
+	[0ms](AnimationTrack):
+		[Name]: Car_Drive_Reac_Dead
+		[Group]: Vehicle_Drive
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SetStateFlagTrack)
 
 [19755](\Global\Missions\TG\Pendrew_Point\01):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_TG
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19756](\Global\Missions\TG\Pendrew_Point\02):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_TG
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19757](\Global\Missions\TG\Pendrew_Point\03):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_TG
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19752](\Global\Missions\TG\RagdollBody\RagdollTracks):
-[0ms](ExecuteTrack)
-[0ms](RagdollMotorTrack)
-[0ms](RagdollTrack)
-[500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](RagdollMotorTrack)
+	[0ms](RagdollTrack)
+	[500ms](OpportunityTrack)
 
 [19754](\Global\Missions\TG\RagdollBody\RagdollTracks\Facing\FaceDWN):
-[0ms](AnimationTrack)
-[500ms](OpportunityTrack)
-[500ms](OpportunityTrack)
-[20000ms](RagdollMotorTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRD_KO_LieFront_PosX_Ragdoll
+		[Group]: Ground
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[500ms](OpportunityTrack)
+	[500ms](OpportunityTrack)
+	[20000ms](RagdollMotorTrack)
 
 [19753](\Global\Missions\TG\RagdollBody\RagdollTracks\Facing\FaceUp):
-[0ms](AnimationTrack)
-[0ms](ExecuteTrack)
-[0ms](RagdollMotorTrack)
-[500ms](OpportunityTrack)
-[500ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRD_KO_LieBack_PosX
+		[Group]: Ground
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ExecuteTrack)
+	[0ms](RagdollMotorTrack)
+	[500ms](OpportunityTrack)
+	[500ms](OpportunityTrack)
 
 [19769](\Global\Missions\TNB\ThreatenShoot\Front\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSteerToTrack)
-[66ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Trans_Ready2IdleFront_GIV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SequenceTrack):
+		[ID]: 19771
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSteerToTrack)
+	[66ms](TargetSyncPositionTrack)
 
 [19770](\Global\Missions\TNB\ThreatenShoot\Front\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Trans_Ready2IdleFront_RCV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](TargetSteerToTrack)
 
 [19768](\Global\Missions\TNB\ThreatenShoot\Front\Loading):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [19771](\Global\Missions\TNB\ThreatenShoot\Idle\GrapGIV):
-[0ms](AnimationBankReferenceTrack)
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Idle_Front_GIV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19772](\Global\Missions\TNB\ThreatenShoot\Idle\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: GRA_Idle_Front_RCV
+		[Group]: Grapples_Into
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19774](\Global\Missions\TNB\ThreatenShoot\Shoot\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](TargetGrappleReleaseTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
-[1566ms](TargetPlayTrack)
-[1700ms](TargetDamageTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](TargetGrappleReleaseTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
+	[1566ms](TargetPlayTrack)
+	[1700ms](TargetDamageTrack)
 
 [19775](\Global\Missions\TNB\ThreatenShoot\Shoot\GrapRCV):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
-[1733ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: Grapples_Gun_Equipped
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSteerToTrack)
+	[1733ms](PlayEffectTrack)
 
 [19773](\Global\Missions\TNB\ThreatenShoot\Shoot\Loading):
-[0ms](AnimationBankReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [19776](\Global\Missions\TNB\Thug_Dies_Shooting\Default):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_TNB
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19777](\Global\Missions\TNB\Thug_Harass\Hostage\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](AttackTimerTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAssignTrack)
-[0ms](TargetLockTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_TNB
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackTimerTrack)
+	[0ms](SequenceTrack)
+	[0ms](TargetAssignTrack)
+	[0ms](TargetLockTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19778](\Global\Missions\TNB\Thug_Harass\Hostage\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_TNB
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19799](\Global\Missions\Utility\RotateClockwiseGenerator):
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [19812](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateRotateClockwise\ClockwiseGeneration):
-[0ms](ActionRequestTrack)
+	[0ms](ActionRequestTrack)
 
 [19809](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateRotateClockwise\Tick0):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19810](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateRotateClockwise\Tick1):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19811](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateRotateClockwise\Tick2):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19803](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateTick\InitInput\InitInputDown):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19801](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateTick\InitInput\InitInputFwd):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19804](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateTick\InitInput\InitInputLeft):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19802](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateTick\InitInput\InitInputRight):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19807](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateTick\InputSequence\InputDown):
-[0ms](ActionRequestTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19805](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateTick\InputSequence\InputFwd):
-[0ms](ActionRequestTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19808](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateTick\InputSequence\InputLeft):
-[0ms](ActionRequestTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19806](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateTick\InputSequence\InputRight):
-[0ms](ActionRequestTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
+	[0ms](ActionRequestTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19800](\Global\Missions\Utility\RotateClockwiseGenerator\GenerateTick\WaitForInitInput):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [19779](\Global\Missions\VE\FaceMeterTut):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](TimeWarpTrack)
-[0ms](VisualTreatmentTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle_Alert_HIEnergy
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_NONE
+	[0ms](TimeWarpTrack)
+	[0ms](VisualTreatmentTrack)
 
 [19780](\Global\Missions\ZOD\HelpWeiUp\GrapGIV):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ZOD
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [19781](\Global\Missions\ZOD\HelpWeiUp\GrapRCV):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_ZOD
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [19782](\Global\Missions\ZOD\WeiCollapse\Collapse\0xF623DC65):
-[0ms](AnimationBankReferenceTrack)
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationBankReferenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Reac_Stun_Face_Cyc
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [19784](\Global\Missions\ZOD\WeiCollapse\Collapse\FollowUp\0xE1E6B70E):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Pushed_RIT
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.666667
+		[End]: 1.466667
+	[0ms](SequenceTrack):
+		[ID]: 19785
 
 [19783](\Global\Missions\ZOD\WeiCollapse\Collapse\FollowUp\0xFFA1E70B):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Elder_Pushed_LFT
+		[Group]: Pedestrian_Elderly
+		[Begin]: 0.633333
+		[End]: 1.066667
+	[0ms](SequenceTrack):
+		[ID]: 19785
 
 [19785](\Global\Missions\ZOD\WeiCollapse\Downed):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_Reac_Collapse_OnBackPosX
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
 

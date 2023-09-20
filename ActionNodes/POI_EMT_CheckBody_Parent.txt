@@ -1,20 +1,34 @@
 [26088](\Global\POI_EMT_CheckBody_Parent\Interactions\CheckBody_Idles):
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](HealthSetPercentageTrack)
-[0ms](SetStateFlagTrack)
-[0ms](SpawnTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](HealthSetPercentageTrack)
+	[0ms](SetStateFlagTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26090](\Global\POI_EMT_CheckBody_Parent\Interactions\CheckBody_Idles\CheckBody_States\CheckBody\DefibReact):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 2.400000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 26091
 
 [26091](\Global\POI_EMT_CheckBody_Parent\Interactions\CheckBody_Idles\CheckBody_States\CheckBody\DefibReact2):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [26089](\Global\POI_EMT_CheckBody_Parent\Interactions\CheckBody_Idles\CheckBody_States\WaitForCheckBody_Child\Wait):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_EMT_CheckBody
+		[Begin]: 0.000000
+		[End]: 1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26087](\Global\POI_EMT_CheckBody_Parent\UseConditions)

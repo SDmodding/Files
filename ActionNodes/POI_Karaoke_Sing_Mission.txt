@@ -1,14 +1,17 @@
 [26810](\Global\Karaoke_Sing_Mission\Interactions\KaraokeMissionIdles):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26811](\Global\Karaoke_Sing_Mission\Interactions\KaraokeMissionIdles\KaraokeMissionAnims\KaraokeMission_CYC):
-[0ms](BlendTreeTrack)
-[0ms](SequenceTrack)
+	[0ms](BlendTreeTrack)
+	[0ms](SequenceTrack):
+		[ID]: 26810
 
 [26812](\Global\Karaoke_Sing_Mission\Interactions\KaraokeMissionIdles\KaraokeMission_Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26809](\Global\Karaoke_Sing_Mission\UseConditions)

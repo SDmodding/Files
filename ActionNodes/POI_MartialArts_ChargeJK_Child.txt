@@ -1,79 +1,208 @@
 [27061](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27074](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_Exit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: 0.333333
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27067](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\BowInto-PROMOTE_TO_USE):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TurnToFaceTargetTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27068
+	[0ms](TurnToFaceTargetTrack)
 
 [27068](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: 1.166667
+	[0ms](SequenceTrack):
+		[ID]: 27069
 
 [27069](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow\BowOut):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27062
 
 [27062](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_LCombo01_L_Jab_Hi
+		[Group]: Strikes
+		[Begin]: 0.033333
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.100000
+		[ColEnd]: 0.166667
+		[AttackRadius]: 0.116667
+		[AttackTypeID]: 8
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.250000
+		[TimeToDistance]: 0.050000
+		[TargetMovement]: 0.350000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SequenceTrack):
+		[ID]: 27063
+	[0ms](TargetSteerToTrack)
 
 [27063](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_LCombo02_R_Cross_Hi
+		[Group]: Strikes
+		[Begin]: 0.033333
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.100000
+		[ColEnd]: 0.166667
+		[AttackRadius]: 0.116667
+		[AttackTypeID]: 10
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.000000
+		[TimeToDistance]: 0.100000
+		[TargetMovement]: 0.350000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SequenceTrack):
+		[ID]: 27064
+	[0ms](TargetSteerToTrack)
 
 [27064](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_LCombo03_L_Hook_Hi
+		[Group]: Strikes
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.100000
+		[ColEnd]: 0.166667
+		[AttackRadius]: 0.125000
+		[AttackTypeID]: 10
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 0.950000
+		[TimeToDistance]: 0.050000
+		[TargetMovement]: 0.350000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SequenceTrack):
+		[ID]: 27065
+	[0ms](TargetSteerToTrack)
 
 [27065](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3\LightAttack4):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_LCombo04_R_Overhand_Hi
+		[Group]: Strikes
+		[Begin]: 0.133333
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.166667
+		[ColEnd]: 0.266667
+		[AttackRadius]: 0.108333
+		[AttackTypeID]: 10
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.150000
+		[TimeToDistance]: 0.050000
+		[TargetMovement]: 0.200000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SequenceTrack):
+		[ID]: 27066
+	[0ms](TargetSteerToTrack)
 
 [27066](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3\LightAttack4\ChargeAttack5):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[0ms](MinimumDistanceTrack)
-[0ms](SequenceTrack)
-[0ms](TargetSteerToTrack)
+	[0ms](AnimationTrack):
+		[Name]: STR_HCombo02_L_RoundKick_Hi
+		[Group]: MonkeyKingReplacedAnims
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 0
+		[PropDamage]: 0
+		[WeaponDamage]: 0
+		[ColBegin]: 0.666667
+		[ColEnd]: 0.900000
+		[AttackRadius]: 0.100000
+		[AttackTypeID]: 18
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](MinimumDistanceTrack):
+		[MinimumDistance]: 1.300000
+		[TimeToDistance]: 0.100000
+		[TargetMovement]: 0.300000
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](TargetSteerToTrack)
 
 [27071](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TurnToFaceTargetTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27072
+	[0ms](TurnToFaceTargetTrack)
 
 [27072](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: 1.166667
+	[0ms](SequenceTrack):
+		[ID]: 27073
 
 [27073](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow\BowOut):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Pray_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27070
 
 [27070](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\ReceiveAttack):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Stand_Idle_Alert
+		[Group]: Locomotion
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27060](\Global\POI_MartialArts_ChargeJK_Child\UseConditions)

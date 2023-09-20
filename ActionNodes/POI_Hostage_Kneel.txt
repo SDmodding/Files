@@ -1,23 +1,31 @@
 [26663](\Global\Hostage_Kneel\Interactions\Hostage_Kneel_Idles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26664](\Global\Hostage_Kneel\Interactions\Hostage_Kneel_Idles\Hostage_Kneel_Anims\Idles\Female\Idle_01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BM
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [26665](\Global\Hostage_Kneel\Interactions\Hostage_Kneel_Idles\Hostage_Kneel_Anims\Idles\Male\Idle_01):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mission_BM
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [26666](\Global\Hostage_Kneel\Interactions\Hostage_Kneel_Idles\Hostage_Kneel_Exit\Hostage_Kneel_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26662](\Global\Hostage_Kneel\UseConditions)

@@ -1,21 +1,28 @@
 [27520](\Global\POI_Pleading\Interactions\PleadingIdles):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [27521](\Global\POI_Pleading\Interactions\PleadingIdles\PleadingAnims\Female\Pleading):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[100ms](DialogueTrack)
+	[0ms](AnimationTrack):
+		[Name]: MSN_BreakArrest_GirlUpset_1
+		[Group]: Mission_BreakArrest
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[100ms](DialogueTrack)
 
 [27522](\Global\POI_Pleading\Interactions\PleadingIdles\PleadingExit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [27519](\Global\POI_Pleading\UseConditions)

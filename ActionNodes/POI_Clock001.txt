@@ -1,39 +1,52 @@
 [25377](\Global\POI_Clock001\Interactions\Open\Close):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_Clock001_Use
+		[Begin]: 9.933333
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25375](\Global\POI_Clock001\Interactions\Open\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetSyncPositionTrack)
-[116ms](AudioTrackSimple)
-[358ms](AudioTrack)
-[508ms](AudioTrackSimple)
-[675ms](AudioTrack)
-[866ms](AudioTrackSimple)
-[908ms](AudioTrackSimple)
-[1258ms](AudioTrackSimple)
-[5200ms](AudioTrackSimple)
-[6600ms](AudioTrackSimple)
-[8200ms](AudioTrackSimple)
-[9083ms](AudioTrackSimple)
-[9500ms](AudioTrackSimple)
-[9800ms](AudioTrackSimple)
-[10000ms](AudioTrackSimple)
-[11000ms](AudioTrackSimple)
+	[0ms](AnimationTrack):
+		[Group]: LOM_Clock001_Use
+		[Begin]: 0.000000
+		[End]: 2.666667
+	[0ms](SequenceTrack):
+		[ID]: 25376
+	[0ms](TargetPlayTrack)
+	[0ms](TargetSyncPositionTrack)
+	[116ms](AudioTrackSimple)
+	[358ms](AudioTrack)
+	[508ms](AudioTrackSimple)
+	[675ms](AudioTrack)
+	[866ms](AudioTrackSimple)
+	[908ms](AudioTrackSimple)
+	[1258ms](AudioTrackSimple)
+	[5200ms](AudioTrackSimple)
+	[6600ms](AudioTrackSimple)
+	[8200ms](AudioTrackSimple)
+	[9083ms](AudioTrackSimple)
+	[9500ms](AudioTrackSimple)
+	[9800ms](AudioTrackSimple)
+	[10000ms](AudioTrackSimple)
+	[11000ms](AudioTrackSimple)
 
 [25376](\Global\POI_Clock001\Interactions\Open\Open):
-[0ms](AnimationTrack)
-[0ms](TargetPlayTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetReleaseTrack)
-[0ms](TargetSyncPositionTrack)
+	[0ms](AnimationTrack):
+		[Group]: LOM_Clock001_Use
+		[Begin]: 4.933333
+		[End]: -1.000000
+	[0ms](TargetPlayTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetReleaseTrack)
+	[0ms](TargetSyncPositionTrack)
 
 [25374](\Global\POI_Clock001\Interactions\POIHideEquipped):
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25373](\Global\POI_Clock001\UseConditions\ActionInteract)

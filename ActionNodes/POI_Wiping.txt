@@ -1,45 +1,73 @@
 [29578](\Global\POI_Wiping\Interactions\Wiping):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29579](\Global\POI_Wiping\Interactions\Wiping\Anims\MrsChuWiping):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Wiping
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29582](\Global\POI_Wiping\Interactions\Wiping\Anims\WaitingForSponge):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [29585](\Global\POI_Wiping\Interactions\Wiping\Anims\WaitingForSponge\Anims\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29584](\Global\POI_Wiping\Interactions\Wiping\Anims\WaitingForSponge\Anims\Female):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29583](\Global\POI_Wiping\Interactions\Wiping\Anims\WaitingForSponge\Anims\Sexy):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Fem_Club_Stand_Idle
+		[Group]: Pedestrian_Sexy_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29581](\Global\POI_Wiping\Interactions\Wiping\Anims\Wiping):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Wiping
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29580](\Global\POI_Wiping\Interactions\Wiping\Anims\WipingFemale):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Wiping
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [29588](\Global\POI_Wiping\Interactions\Wiping\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [29586](\Global\POI_Wiping\Interactions\Wiping\ObjectSpawn\LoadResources):
-[0ms](ObjectReferenceTrack)
-[0ms](OpportunityTrack)
+	[0ms](ObjectReferenceTrack)
+	[0ms](OpportunityTrack)
 
 [29587](\Global\POI_Wiping\Interactions\Wiping\ObjectSpawn\LoadResources\AttachSponge):
-[0ms](ObjectCreateTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](TargetAttachTrack)
-[0ms](TargetDestroyTrack)
-[0ms](TargetDetachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Sponge001
+	[0ms](ObjectReferenceTrack)
+	[0ms](TargetAttachTrack)
+	[0ms](TargetDestroyTrack)
+	[0ms](TargetDetachTrack)
 
 [29577](\Global\POI_Wiping\UseConditions)

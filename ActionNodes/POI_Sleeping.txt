@@ -1,32 +1,50 @@
 [28497](\Global\POI_Sleeping\Interactions\Exit):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[5666ms](OpportunityTrack)
-[5666ms](OpportunityTrack)
-[5666ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sleep_Wake_01
+		[Group]: POI_Sleeping_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[5666ms](OpportunityTrack)
+	[5666ms](OpportunityTrack)
+	[5666ms](OpportunityTrack)
 
 [28492](\Global\POI_Sleeping\Interactions\SleepingIdles):
-[0ms](AudioTrackSoundbankIO)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28494](\Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Cycle\Cycle):
-[0ms](AnimationTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sleep_01
+		[Group]: POI_Sleeping_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28496](\Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Cycle\Cycle\HeadTracking\Idle):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [28495](\Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Cycle\Cycle\HeadTracking\PlayerClose):
-[0ms](HeadTrackTargetTrack)
-[0ms](LookAtTrack)
-[0ms](MasterTrack)
-[0ms](SequenceTrack)
+	[0ms](HeadTrackTargetTrack)
+	[0ms](LookAtTrack)
+	[0ms](MasterTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28493](\Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Into\Into):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Sleep_In_01
+		[Group]: POI_Sleeping_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [28491](\Global\POI_Sleeping\UseConditions)

@@ -1,39 +1,64 @@
 [25692](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandEnter\Female\CowerStandEnter_Female):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Scared_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25694
 
 [25693](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandEnter\Male\CowerStandEnter_Male):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cower2_Trans_2StandCower
+		[Group]: Pedestrian_Scared_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 25694
 
 [25694](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25695](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandAnims\Female\CowerStandIdle_Female):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Scared_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25696](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandAnims\Male\CowerStandIdle_Male):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Cower2_StandCower_CYC
+		[Group]: Pedestrian_Scared_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25697](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandExit\Female\CowerStandExit_Female):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Group]: Pedestrian_Scared_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25698](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandExit\Male\CowerStandExit_Male):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25691](\Global\POI_Cower_Stand\UseConditions)

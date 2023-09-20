@@ -1,42 +1,57 @@
 [25478](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25485](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\ConfettiToss_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25479](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25482](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\AttachBucket):
-[0ms](ObjectCreateTrack)
-[0ms](SequenceTrack)
-[0ms](TargetAttachTrack)
+	[0ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-BucketWater001
+	[0ms](SequenceTrack):
+		[ID]: 25483
+	[0ms](TargetAttachTrack)
 
 [25483](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\AttachBucket\ConfettiToss):
-[0ms](SequenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [25484](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\AttachBucket\ConfettiToss\ConfettiToss_Anims\Toss):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[2533ms](PlayEffectTrack)
-[6933ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Confetti_Toss_M
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[2533ms](PlayEffectTrack)
+	[6933ms](PlayEffectTrack)
 
 [25480](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\WaitForResources):
-[0ms](ExecuteTrack)
-[0ms](OpportunityTrack)
-[2500ms](OpportunityTrack)
+	[0ms](ExecuteTrack)
+	[0ms](OpportunityTrack)
+	[2500ms](OpportunityTrack)
 
 [25481](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\WaitForResources\Timeout)
 [25477](\Global\POI_Confetti_Toss\UseConditions)

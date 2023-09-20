@@ -1,41 +1,59 @@
 [25803](\Global\DiceChild\Interactions\DiceIdles):
-[0ms](AudioTrackSoundbankIO)
-[0ms](ConversationTrackCleanup)
-[0ms](ConversationTrackCreate)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
-[200ms](ConversationTrackOperation)
+	[0ms](AudioTrackSoundbankIO)
+	[0ms](ConversationTrackCleanup)
+	[0ms](ConversationTrackCreate)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[200ms](ConversationTrackOperation)
 
 [25808](\Global\DiceChild\Interactions\DiceIdles\DiceExit\DiceExit):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](AnimationTrack):
+		[Name]: GANG_Trans_Squat2Stand_01
+		[Group]: POI_Squat
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [25804](\Global\DiceChild\Interactions\DiceIdles\DiceStates\DicePlaying\DicePlaying):
-[0ms](LocomotionTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](LocomotionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 25806
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25805](\Global\DiceChild\Interactions\DiceIdles\DiceStates\DicePlaying\DicePlaying\Anims\Male\DiceRoll):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_SquatDice_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25806](\Global\DiceChild\Interactions\DiceIdles\DiceStates\DiceWatching\DiceWatching):
-[0ms](LocomotionTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LocomotionTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [25807](\Global\DiceChild\Interactions\DiceIdles\DiceStates\DiceWatching\DiceWatching\Anims\Male\DiceWatch):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: GANG_LOC_Squat_Idle
+		[Group]: POI_Squat
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [25802](\Global\DiceChild\UseConditions)

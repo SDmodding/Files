@@ -1,24 +1,33 @@
 [26482](\Global\POI_Hassle\Interactions\HassleIdles):
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26484](\Global\POI_Hassle\Interactions\HassleIdles\HassleAnims\Hassle_Workers):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Hassle
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [26483](\Global\POI_Hassle\Interactions\HassleIdles\HassleAnims\MrsChuHassle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: Mrs_Chu
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [26485](\Global\POI_Hassle\Interactions\HassleIdles\Hassle_Exit):
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26481](\Global\POI_Hassle\UseConditions)

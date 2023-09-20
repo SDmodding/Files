@@ -1,59 +1,113 @@
 [23910](\Global\CRI_Chicken001\Attacks\Kick):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
+	[0ms](AnimationTrack):
+		[Group]: CRI_Chicken001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 10
+		[PropDamage]: 10
+		[WeaponDamage]: 0
+		[ColBegin]: 0.100000
+		[ColEnd]: 0.166667
+		[AttackRadius]: 0.116667
+		[AttackTypeID]: 10
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
 
 [23909](\Global\CRI_Chicken001\Attacks\Peck):
-[0ms](AnimationTrack)
-[0ms](AttackCollisionTrack)
-[333ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: CRI_Chicken001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](AttackCollisionTrack):
+		[Damage]: 10
+		[PropDamage]: 10
+		[WeaponDamage]: 0
+		[ColBegin]: 0.100000
+		[ColEnd]: 0.166667
+		[AttackRadius]: 0.116667
+		[AttackTypeID]: 10
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[333ms](OpportunityTrack)
 
 [23914](\Global\CRI_Chicken001\HitTree\PostHit\Dead\Downed\Down):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](StimulusTrack)
+	[0ms](AnimationTrack):
+		[Group]: CRI_Chicken001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](StimulusTrack)
 
 [23911](\Global\CRI_Chicken001\HitTree\PreReactionControl\Carried)
 [23912](\Global\CRI_Chicken001\HitTree\PreReactionControl\Default):
-[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
 
 [23913](\Global\CRI_Chicken001\HitTree\Reactions\Hit):
-[0ms](AnimationTrack)
-[0ms](HandleDamageTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: CRI_Chicken001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](HandleDamageTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [23908](\Global\CRI_Chicken001\Locomotion\Idle\Idle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: CRI_Chicken001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
 
 [23904](\Global\CRI_Chicken001\Locomotion\Moving\RunAway\RunLoop):
-[0ms](AnimationTrack)
-[0ms](LocomotionTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: CRI_Chicken001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LocomotionTrack)
+	[0ms](OpportunityTrack)
 
 [23903](\Global\CRI_Chicken001\Locomotion\Moving\RunFlapAway\RunFlapLoop):
-[0ms](AnimationTrack)
-[0ms](LocomotionTrack)
-[0ms](OpportunityTrack)
-[0ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: CRI_Chicken001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LocomotionTrack)
+	[0ms](OpportunityTrack)
+	[0ms](PlayEffectTrack)
 
 [23905](\Global\CRI_Chicken001\Locomotion\Moving\TrotAway\TrotLoop):
-[0ms](AnimationTrack)
-[0ms](LocomotionTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: CRI_Chicken001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LocomotionTrack)
+	[0ms](OpportunityTrack)
 
 [23906](\Global\CRI_Chicken001\Locomotion\Moving\WalkAway\WalkAway):
-[0ms](AnimationTrack)
-[0ms](LocomotionTrack)
-[0ms](OpportunityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: CRI_Chicken001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LocomotionTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 23907
 
 [23907](\Global\CRI_Chicken001\Locomotion\Moving\WalkAway\WalkLoop):
-[0ms](AnimationTrack)
-[0ms](LocomotionTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: CRI_Chicken001
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](LocomotionTrack)
+	[0ms](OpportunityTrack)
 
 [23902](\Global\CRI_Chicken001\MasterSpawn):
-[0ms](CharacterPhysicsTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 

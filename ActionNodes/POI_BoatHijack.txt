@@ -1,29 +1,62 @@
 [25046](\Global\POI_BoatHijack\Interactions\Action\Long_Jump_Boat\ActionHijack\ActionHijackStart\Anims\JumpAir):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jump_Run_JumpUp
+		[Group]: Locomotion_Jump
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](SequenceTrack):
+		[ID]: 25047
 
 [25047](\Global\POI_BoatHijack\Interactions\Action\Long_Jump_Boat\ActionHijack\ActionHijackStart\Anims\JumpAir\JumpAirCyc):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
-[0ms](OpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Vehicle_ActionHijack
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
+	[0ms](OpportunityTrack)
 
 [25048](\Global\POI_BoatHijack\Interactions\Action\Long_Jump_Boat\ActionHijack\ActionHijackStart\Anims\JumpAir\JumpAirCyc\JumpAirPrepLand):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
+	[0ms](AnimationTrack):
+		[Group]: Boat_ActionHijack
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](GravityTrack)
 
 [25045](\Global\POI_BoatHijack\Interactions\Action\Long_Jump_Boat\ActionHijack\ActionHijackStart\LongJump):
-[0ms](AttackCollisionTrack)
-[0ms](AttackCollisionTrack)
-[0ms](CameraChangeTrack)
-[0ms](GravityTrack)
-[0ms](SpawnTrack)
-[0ms](SubjectFollowOverrideTrack)
-[0ms](TargetSteerToTrack)
-[0ms](TimeWarpTrack)
-[33ms](TargetJumpTrack)
-[100ms](AudioTrackSimple)
-[100ms](DialogueTrackWeaponImpact)
-[266ms](OpportunityTrack)
+	[0ms](AttackCollisionTrack):
+		[Damage]: 20
+		[PropDamage]: 400
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: -1.000000
+		[AttackRadius]: 0.300000
+		[AttackTypeID]: 18
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](AttackCollisionTrack):
+		[Damage]: 20
+		[PropDamage]: 400
+		[WeaponDamage]: 0
+		[ColBegin]: 0.000000
+		[ColEnd]: -1.000000
+		[AttackRadius]: 0.300000
+		[AttackTypeID]: 18
+		[TargetOnly]: 0
+		[HitOneTargetOnly]: 1
+		[TargetType]: eTARGET_TYPE_FOCUS
+	[0ms](CameraChangeTrack)
+	[0ms](GravityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SubjectFollowOverrideTrack)
+	[0ms](TargetSteerToTrack)
+	[0ms](TimeWarpTrack)
+	[33ms](TargetJumpTrack)
+	[100ms](AudioTrackSimple)
+	[100ms](DialogueTrackWeaponImpact)
+	[266ms](OpportunityTrack)
 
 [25044](\Global\POI_BoatHijack\UseConditions)

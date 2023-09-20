@@ -1,35 +1,60 @@
 [27249](\Global\POI_Mix_Drink_Child\Interactions\Exit)
 [27242](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink):
-[0ms](HeadTrackTargetTrack)
-[0ms](LookAtTrack)
-[0ms](SpawnTrack)
-[0ms](TargetDestroyTrack)
-[0ms](TargetDestroyTrack)
-[4000ms](OpportunityTrack)
+	[0ms](HeadTrackTargetTrack)
+	[0ms](LookAtTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](TargetDestroyTrack)
+	[0ms](TargetDestroyTrack)
+	[4000ms](OpportunityTrack)
 
 [27243](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Female):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Gestures_TalkingFemale
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
 
 [27245](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Female\Idle\Default):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Female_Stand_Idle
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27244](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Female\Idle\Sexy):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Fem_Club_Stand_Idle
+		[Group]: Pedestrian_Sexy_F
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27246](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Male):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
+	[0ms](AnimationTrack):
+		[Group]: Social_Gestures_TalkingMale
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 27247
 
 [27247](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Male\Idle):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Name]: PED_Idle_Relaxed_01
+		[Group]: Pedestrian
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [27248](\Global\POI_Mix_Drink_Child\Interactions\ReciveDrink):
-[0ms](AnimationTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](TargetReleaseTrack)
-[1500ms](TargetStealAttachedItemTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Receive_Drink
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](TargetReleaseTrack)
+	[1500ms](TargetStealAttachedItemTrack)
 
 [27241](\Global\POI_Mix_Drink_Child\UseConditions)

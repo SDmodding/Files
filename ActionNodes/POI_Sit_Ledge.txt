@@ -1,107 +1,155 @@
 [28447](\Global\POI_Sit_Ledge\Interactions\HitTree\Dead):
-[0ms](AnimationTrack)
-[0ms](RagdollAquireTrack)
-[0ms](RagdollDeathImpulseTrack)
-[0ms](SequenceTrack)
-[0ms](SpawnTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Ledge
+		[Begin]: 0.000000
+		[End]: 0.033333
+	[0ms](RagdollAquireTrack)
+	[0ms](RagdollDeathImpulseTrack)
+	[0ms](SequenceTrack):
+		[ID]: 18777
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28449](\Global\POI_Sit_Ledge\Interactions\HitTree\Dead\AddImpulse\Front):
-[0ms](MasterTrack)
-[0ms](RagdollDeathImpulseTrack)
-[0ms](RagdollImpulseTrack)
+	[0ms](MasterTrack)
+	[0ms](RagdollDeathImpulseTrack)
+	[0ms](RagdollImpulseTrack)
 
 [28448](\Global\POI_Sit_Ledge\Interactions\HitTree\Dead\AddImpulse\Rear):
-[0ms](MasterTrack)
-[0ms](RagdollDeathImpulseTrack)
-[0ms](RagdollImpulseTrack)
+	[0ms](MasterTrack)
+	[0ms](RagdollDeathImpulseTrack)
+	[0ms](RagdollImpulseTrack)
 
 [28450](\Global\POI_Sit_Ledge\Interactions\HitTree\InAir):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](OpportunityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](SpawnTrack)
-[0ms](SpawnTrack)
-[200ms](OpportunityTrack)
-[733ms](GravityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Ledge
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[200ms](OpportunityTrack)
+	[733ms](GravityTrack)
 
 [28452](\Global\POI_Sit_Ledge\Interactions\HitTree\InAir\DetachCig):
-[0ms](MasterTrack)
-[0ms](TargetDetachTrack)
+	[0ms](MasterTrack)
+	[0ms](TargetDetachTrack)
 
 [28451](\Global\POI_Sit_Ledge\Interactions\HitTree\InAir\Land):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jump_Land_Med_to_Idle
+		[Group]: Locomotion_Jump
+		[Begin]: 0.066667
+		[End]: -1.000000
+	[0ms](GravityTrack)
 
 [28453](\Global\POI_Sit_Ledge\Interactions\SeatedTracks):
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](GravityTrack)
-[0ms](GravityTrack)
-[0ms](SpawnTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](GravityTrack)
+	[0ms](GravityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28454](\Global\POI_Sit_Ledge\Interactions\SeatedTracks\FractureStrength):
-[0ms](MasterTrack)
-[0ms](TargetFractureStrengthTrack)
+	[0ms](MasterTrack)
+	[0ms](TargetFractureStrengthTrack)
 
 [28438](\Global\POI_Sit_Ledge\Interactions\Sitting):
-[0ms](ExecuteTrackLibraryTrack)
-[0ms](LookAtTrack)
-[0ms](OpportunityTrack)
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](ExecuteTrackLibraryTrack)
+	[0ms](LookAtTrack)
+	[0ms](OpportunityTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [28440](\Global\POI_Sit_Ledge\Interactions\Sitting\Anims\Default\Blend):
-[0ms](AnimationTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Ledge
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ResourceOpportunityTrack)
 
 [28439](\Global\POI_Sit_Ledge\Interactions\Sitting\Anims\Default\NoBlend):
-[0ms](AnimationTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Ledge
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ResourceOpportunityTrack)
 
 [28441](\Global\POI_Sit_Ledge\Interactions\Sitting\Anims\SecondaryActions\Into):
-[0ms](AnimationTrack)
-[0ms](ObjectReferenceTrack)
-[0ms](SequenceTrack)
-[4500ms](PlayEffectTrack)
-[5966ms](ObjectCreateTrack)
-[5966ms](TargetAttachTrack)
-[8500ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Ledge
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ObjectReferenceTrack)
+	[0ms](SequenceTrack):
+		[ID]: 28442
+	[4500ms](PlayEffectTrack)
+	[5966ms](ObjectCreateTrack):
+		[Name]: object-physical-prop-StreamedObject-Cigarette
+	[5966ms](TargetAttachTrack)
+	[8500ms](PlayEffectTrack)
 
 [28442](\Global\POI_Sit_Ledge\Interactions\Sitting\Anims\SecondaryActions\Into\Cycle):
-[0ms](AnimationTrack)
-[0ms](OpportunityTrack)
-[0ms](PlayEffectTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Ledge
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](OpportunityTrack)
+	[0ms](PlayEffectTrack)
 
 [28443](\Global\POI_Sit_Ledge\Interactions\Sitting\Anims\SecondaryActions\Into\Cycle\End):
-[0ms](AnimationTrack)
-[0ms](PlayEffectTrack)
-[0ms](SequenceTrack)
-[800ms](TargetDetachTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Ledge
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](PlayEffectTrack)
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[800ms](TargetDetachTrack)
 
 [28444](\Global\POI_Sit_Ledge\Interactions\Sitting\Exit\InAir):
-[0ms](AnimationTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](CharacterPhysicsTrack)
-[0ms](DetailedOnGroundTrack)
-[0ms](GravityTrack)
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
-[0ms](SpawnTrack)
-[200ms](OpportunityTrack)
-[733ms](GravityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Sit_Ledge
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](CharacterPhysicsTrack)
+	[0ms](CharacterPhysicsTrack)
+	[0ms](DetailedOnGroundTrack)
+	[0ms](GravityTrack)
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
+	[0ms](SpawnTrack):
+		[KeepAlive]: 1
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
+	[200ms](OpportunityTrack)
+	[733ms](GravityTrack)
 
 [28446](\Global\POI_Sit_Ledge\Interactions\Sitting\Exit\InAir\DetachCig):
-[0ms](MasterTrack)
-[0ms](TargetDetachTrack)
+	[0ms](MasterTrack)
+	[0ms](TargetDetachTrack)
 
 [28445](\Global\POI_Sit_Ledge\Interactions\Sitting\Exit\InAir\Land):
-[0ms](AnimationTrack)
-[0ms](GravityTrack)
+	[0ms](AnimationTrack):
+		[Name]: LOC_Jump_Land_Med_to_Idle
+		[Group]: Locomotion_Jump
+		[Begin]: 0.066667
+		[End]: -1.000000
+	[0ms](GravityTrack)
 
 [28437](\Global\POI_Sit_Ledge\UseConditions)

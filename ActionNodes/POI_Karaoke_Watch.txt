@@ -1,23 +1,35 @@
 [26814](\Global\POI_Karaoke_Watch\Interactions\MasterSpawn):
-[0ms](OpportunityTrack)
-[0ms](SpawnTrack)
+	[0ms](OpportunityTrack)
+	[0ms](SpawnTrack):
+		[KeepAlive]: 0
+		[ActionTreeType]: eACTION_TREE_TYPE_ACTION
 
 [26815](\Global\POI_Karaoke_Watch\Interactions\MasterSpawn\Anims\Female):
-[0ms](AnimationTrack)
-[0ms](ResourceOpportunityTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Karaoke_Watch_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](ResourceOpportunityTrack)
 
 [26816](\Global\POI_Karaoke_Watch\Interactions\MasterSpawn\Anims\Female\Cheer):
-[0ms](AnimationTrack)
-[0ms](SequenceTrack)
-[2000ms](DialogueTrackWeaponImpact)
-[5500ms](DialogueTrackWeaponImpact)
+	[0ms](AnimationTrack):
+		[Group]: POI_Cheer_F
+		[Begin]: 0.000000
+		[End]: -1.000000
+	[0ms](SequenceTrack):
+		[ID]: 0
+	[2000ms](DialogueTrackWeaponImpact)
+	[5500ms](DialogueTrackWeaponImpact)
 
 [26817](\Global\POI_Karaoke_Watch\Interactions\MasterSpawn\Anims\Male):
-[0ms](AnimationTrack)
+	[0ms](AnimationTrack):
+		[Group]: POI_Karaoke_Watch_M
+		[Begin]: 0.000000
+		[End]: -1.000000
 
 [26818](\Global\POI_Karaoke_Watch\Interactions\MasterSpawn\Exit):
-[0ms](SkookumTrack)
-	[Class]: Character
-	[Script]: _poi_stop_using_use() 
+	[0ms](SkookumTrack):
+		[Class]: Character
+		[Script]: _poi_stop_using_use() 
 
 [26813](\Global\POI_Karaoke_Watch\UseConditions)
