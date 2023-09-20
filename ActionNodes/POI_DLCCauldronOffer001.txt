@@ -1,5 +1,30 @@
-[29631] \Global\POI_DLCCauldronOffer001\Interactions\Exit
-[29629] \Global\POI_DLCCauldronOffer001\Interactions\MoveTo
-[29628] \Global\POI_DLCCauldronOffer001\Interactions\POIHideEquipped
-[29630] \Global\POI_DLCCauldronOffer001\Interactions\PerformAction
-[29627] \Global\POI_DLCCauldronOffer001\UseConditions
+[29631](\Global\POI_DLCCauldronOffer001\Interactions\Exit)
+[29629](\Global\POI_DLCCauldronOffer001\Interactions\MoveTo):
+[0ms](BlendTreeTrack)
+[0ms](OpportunityTrack)
+[0ms](PathfindToTargetTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[29628](\Global\POI_DLCCauldronOffer001\Interactions\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[29630](\Global\POI_DLCCauldronOffer001\Interactions\PerformAction):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](ObjectReferenceTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: if this.poi_get_target()<>Collectible.is_collected()~ [this.poi_get_target()<>Collectible.collect(true)] else [HintText.show_info_popup("$HUD_COLLECTIBLES_HEALTHSHRINE_ALREADY_FOUND")] 
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[0ms](UpdateStatAwardWithIntegerTrack)
+
+[29627](\Global\POI_DLCCauldronOffer001\UseConditions)

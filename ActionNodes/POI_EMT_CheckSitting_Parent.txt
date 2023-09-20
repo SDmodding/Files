@@ -1,6 +1,29 @@
-[26098] \Global\POI_EMT_CheckSitting_Parent\Interactions\CheckSitting_Idles
-[26102] \Global\POI_EMT_CheckSitting_Parent\Interactions\CheckSitting_Idles\CheckSitting_Exit\CheckSitting_Exit
-[26101] \Global\POI_EMT_CheckSitting_Parent\Interactions\CheckSitting_Idles\CheckSitting_States\CheckSitting\CheckSitting
-[26099] \Global\POI_EMT_CheckSitting_Parent\Interactions\CheckSitting_Idles\CheckSitting_States\CheckSitting_Child\Wait
-[26100] \Global\POI_EMT_CheckSitting_Parent\Interactions\CheckSitting_Idles\CheckSitting_States\Trans2CheckSitting\Transition
-[26097] \Global\POI_EMT_CheckSitting_Parent\UseConditions
+[26098](\Global\POI_EMT_CheckSitting_Parent\Interactions\CheckSitting_Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[26102](\Global\POI_EMT_CheckSitting_Parent\Interactions\CheckSitting_Idles\CheckSitting_Exit\CheckSitting_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26101](\Global\POI_EMT_CheckSitting_Parent\Interactions\CheckSitting_Idles\CheckSitting_States\CheckSitting\CheckSitting):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+
+[26099](\Global\POI_EMT_CheckSitting_Parent\Interactions\CheckSitting_Idles\CheckSitting_States\CheckSitting_Child\Wait):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[26100](\Global\POI_EMT_CheckSitting_Parent\Interactions\CheckSitting_Idles\CheckSitting_States\Trans2CheckSitting\Transition):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26097](\Global\POI_EMT_CheckSitting_Parent\UseConditions)

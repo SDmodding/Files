@@ -1,22 +1,129 @@
-[26739] \Global\Karaoke\Interactions\Intro\Intro_LoadResource
-[26740] \Global\Karaoke\Interactions\Intro\Intro_LoadResource\Intro_WaitForResource
-[26741] \Global\Karaoke\Interactions\Intro\Intro_LoadResource\Intro_WaitForResource\Timeout
-[26743] \Global\Karaoke\Interactions\Karaoke_Actual\Begin
-[26757] \Global\Karaoke\Interactions\Karaoke_Actual\Exit
-[26742] \Global\Karaoke\Interactions\Karaoke_Actual\MoveTo
-[26744] \Global\Karaoke\Interactions\Karaoke_Actual\Singing
-[26753] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\End\Bad\Bad1
-[26754] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\End\Bad\Bad2
-[26755] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\End\Good\Good1
-[26756] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\End\Good\Good2
-[26747] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Idle
-[26752] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Instrumental\Guitar1
-[26749] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Instrumental\Instrumental1
-[26750] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Instrumental\Instrumental2
-[26751] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Instrumental\Instrumental3
-[26745] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Picking_song
-[26748] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Sing
-[26746] \Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Walking_back
-[26758] \Global\Karaoke\Interactions\LoadChildPOIResources\LoadResources
-[26738] \Global\Karaoke\Interactions\POIHideEquipped
-[26737] \Global\Karaoke\UseConditions
+[26739](\Global\Karaoke\Interactions\Intro\Intro_LoadResource):
+[0ms](AnimationTrack)
+[0ms](AttackRightsSetTimeUntilNextAttackTrack)
+[0ms](AttackRightsTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[26740](\Global\Karaoke\Interactions\Intro\Intro_LoadResource\Intro_WaitForResource):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[26741](\Global\Karaoke\Interactions\Intro\Intro_LoadResource\Intro_WaitForResource\Timeout)
+[26743](\Global\Karaoke\Interactions\Karaoke_Actual\Begin):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_player.enable_invulnerable()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_player.enable_player_script_control()
+[0ms](TargetAttachTrack)
+[0ms](TargetSyncPositionTrack)
+
+[26757](\Global\Karaoke\Interactions\Karaoke_Actual\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Camera.release_camera()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_player.enable_invulnerable(false)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_player.enable_player_script_control(false) 
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_get_target().enable_child_pois(false, true)
+[0ms](TargetDetachTrack)
+
+[26742](\Global\Karaoke\Interactions\Karaoke_Actual\MoveTo):
+[0ms](BlendTreeTrack)
+[0ms](PathfindToTargetTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[26744](\Global\Karaoke\Interactions\Karaoke_Actual\Singing):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](UIScreenTrack)
+
+[26753](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\End\Bad\Bad1):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26754](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\End\Bad\Bad2):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26755](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\End\Good\Good1):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26756](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\End\Good\Good2):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26747](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Idle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[8000ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_get_target().enable_child_pois(false, true)
+
+[26752](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Instrumental\Guitar1):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[26749](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Instrumental\Instrumental1):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[26750](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Instrumental\Instrumental2):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[26751](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Instrumental\Instrumental3):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[26745](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Picking_song):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[26748](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Sing):
+[0ms](BlendTreeTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_get_target().enable_child_pois(true, true)
+
+[26746](\Global\Karaoke\Interactions\Karaoke_Actual\Singing\Anims\Walking_back):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1000ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.c_minigame._setup_karaoke()
+
+[26758](\Global\Karaoke\Interactions\LoadChildPOIResources\LoadResources):
+[0ms](ExecuteTrack)
+
+[26738](\Global\Karaoke\Interactions\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[26737](\Global\Karaoke\UseConditions)

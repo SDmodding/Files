@@ -1,7 +1,44 @@
-[26416] \Global\Hacking\Interactions\AudiobankLoad
-[26418] \Global\Hacking\Interactions\Begin
-[26420] \Global\Hacking\Interactions\Exit
-[26419] \Global\Hacking\Interactions\Hacking
-[26417] \Global\Hacking\Interactions\MoveTo
-[26415] \Global\Hacking\Interactions\POIHideEquipped
-[26414] \Global\Hacking\UseConditions
+[26416](\Global\Hacking\Interactions\AudiobankLoad):
+[0ms](AudioTrackSoundbankIO)
+[0ms](SpawnTrack)
+
+[26418](\Global\Hacking\Interactions\Begin):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSyncPositionTrack)
+[500ms](ObjectCreateTrack)
+[500ms](TargetAttachTrack)
+[500ms](TargetLockTrack)
+
+[26420](\Global\Hacking\Interactions\Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras(false)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[466ms](TargetDetachTrack)
+
+[26419](\Global\Hacking\Interactions\Hacking):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras()
+[0ms](UIScreenTrack)
+
+[26417](\Global\Hacking\Interactions\MoveTo):
+[0ms](BlendTreeTrack)
+[0ms](PathfindToTargetTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[26415](\Global\Hacking\Interactions\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[26414](\Global\Hacking\UseConditions)

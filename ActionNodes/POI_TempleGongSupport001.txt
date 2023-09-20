@@ -1,15 +1,119 @@
-[28931] \Global\POI_TempleGongSupport001\Interactions\Action\Grapple\LeftSide\Knockout\GrapGIV
-[28932] \Global\POI_TempleGongSupport001\Interactions\Action\Grapple\LeftSide\Knockout\GrapRCV
-[28930] \Global\POI_TempleGongSupport001\Interactions\Action\Grapple\LeftSide\Knockout\POIHideEquipped
-[28934] \Global\POI_TempleGongSupport001\Interactions\Action\Grapple\RightSide\Knockout\GrapGIV
-[28935] \Global\POI_TempleGongSupport001\Interactions\Action\Grapple\RightSide\Knockout\GrapRCV
-[28933] \Global\POI_TempleGongSupport001\Interactions\Action\Grapple\RightSide\Knockout\POIHideEquipped
-[28937] \Global\POI_TempleGongSupport001\Interactions\Action\Grapple\Utility\SyncPosition\Back
-[28936] \Global\POI_TempleGongSupport001\Interactions\Action\Grapple\Utility\SyncPosition\Front
-[28943] \Global\POI_TempleGongSupport001\POI_Condition_Reference\ActionRequest
-[28940] \Global\POI_TempleGongSupport001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD
-[28938] \Global\POI_TempleGongSupport001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD
-[28941] \Global\POI_TempleGongSupport001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD
-[28939] \Global\POI_TempleGongSupport001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD
-[28942] \Global\POI_TempleGongSupport001\POI_Condition_Reference\UseConditions
-[28929] \Global\POI_TempleGongSupport001\UseConditions\ActionRequest
+[28931](\Global\POI_TempleGongSupport001\Interactions\Action\Grapple\LeftSide\Knockout\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](AttackTimerTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](RagdollCollisionTrack)
+[0ms](SetStateFlagTrack)
+[0ms](SpawnTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[33ms](SubjectFollowOverridePOITrack)
+[300ms](TargetGrappleReleaseTrack)
+[400ms](CameraShakeTrack)
+
+[28932](\Global\POI_TempleGongSupport001\Interactions\Action\Grapple\LeftSide\Knockout\GrapRCV):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](AttackCollisionTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](SequenceTrack)
+[0ms](SetStateFlagTrack)
+[0ms](TargetReleaseTrack)
+[316ms](PlayEffectTrack)
+[333ms](PlayEffectTrack)
+[333ms](PlayEffectTrack)
+[366ms](AudioTrackSimple)
+[600ms](SetStateFlagTrack)
+[1033ms](SpawnTrack)
+
+[28930](\Global\POI_TempleGongSupport001\Interactions\Action\Grapple\LeftSide\Knockout\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[28934](\Global\POI_TempleGongSupport001\Interactions\Action\Grapple\RightSide\Knockout\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](AttackTimerTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](SetStateFlagTrack)
+[0ms](SpawnTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[33ms](SubjectFollowOverridePOITrack)
+[300ms](TargetGrappleReleaseTrack)
+[400ms](CameraShakeTrack)
+
+[28935](\Global\POI_TempleGongSupport001\Interactions\Action\Grapple\RightSide\Knockout\GrapRCV):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](AttackCollisionTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](RagdollCollisionTrack)
+[0ms](SequenceTrack)
+[0ms](SetStateFlagTrack)
+[0ms](TargetReleaseTrack)
+[350ms](PlayEffectTrack)
+[366ms](AudioTrackSimple)
+[366ms](PlayEffectTrack)
+[366ms](PlayEffectTrack)
+[600ms](SetStateFlagTrack)
+[1033ms](SpawnTrack)
+
+[28933](\Global\POI_TempleGongSupport001\Interactions\Action\Grapple\RightSide\Knockout\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[28937](\Global\POI_TempleGongSupport001\Interactions\Action\Grapple\Utility\SyncPosition\Back):
+[0ms](TargetSyncPositionTrack)
+
+[28936](\Global\POI_TempleGongSupport001\Interactions\Action\Grapple\Utility\SyncPosition\Front):
+[0ms](TargetSyncPositionTrack)
+
+[28943](\Global\POI_TempleGongSupport001\POI_Condition_Reference\ActionRequest)
+[28940](\Global\POI_TempleGongSupport001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "a", "mash")
+
+[28938](\Global\POI_TempleGongSupport001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "b", "mash")
+
+[28941](\Global\POI_TempleGongSupport001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "x", "mash")
+
+[28939](\Global\POI_TempleGongSupport001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "y", "mash")
+
+[28942](\Global\POI_TempleGongSupport001\POI_Condition_Reference\UseConditions)
+[28929](\Global\POI_TempleGongSupport001\UseConditions\ActionRequest)

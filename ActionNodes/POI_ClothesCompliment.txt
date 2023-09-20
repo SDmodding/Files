@@ -1,19 +1,111 @@
-[25379] \Global\ClothesCompliment\Interactions\Idles
-[25394] \Global\ClothesCompliment\Interactions\Idles\Compliment\DisableCompliment
-[25393] \Global\ClothesCompliment\Interactions\Idles\Compliment\Ignore\IgnorePlayer
-[25391] \Global\ClothesCompliment\Interactions\Idles\Compliment\NegativeRemark\Female\NegativeRemark
-[25392] \Global\ClothesCompliment\Interactions\Idles\Compliment\NegativeRemark\Male\NegativeRemark
-[25389] \Global\ClothesCompliment\Interactions\Idles\Compliment\PositiveRemark\Female\PositiveRemark
-[25390] \Global\ClothesCompliment\Interactions\Idles\Compliment\PositiveRemark\Male\PositiveRemark
-[25395] \Global\ClothesCompliment\Interactions\Idles\Exit\Female\Smoking_Exit
-[25396] \Global\ClothesCompliment\Interactions\Idles\Exit\Male\Smoking_Exit
-[25380] \Global\ClothesCompliment\Interactions\Idles\Smoking\LoadCigarette\LoadResource
-[25381] \Global\ClothesCompliment\Interactions\Idles\Smoking\LoadCigarette\LoadResource\WaitForResources
-[25382] \Global\ClothesCompliment\Interactions\Idles\Smoking\LoadCigarette\LoadResource\WaitForResources\Timeout
-[25388] \Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingCycle\ComplimentOppurtunity
-[25386] \Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingCycle\Female\Female_SmokingCycle_Anim
-[25387] \Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingCycle\Male\Male_SmokingCycle_Anim
-[25384] \Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingInto\Female\Female_SmokingInto_Anim
-[25383] \Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingInto\IsSpawning\AttachAndSkip
-[25385] \Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingInto\Male\Male_SmokingInto_Anim
-[25378] \Global\ClothesCompliment\UseConditions
+[25379](\Global\ClothesCompliment\Interactions\Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25394](\Global\ClothesCompliment\Interactions\Idles\Compliment\DisableCompliment):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Debug.print("get_properties().set_property_boolean('CanComplimentPlayer', false)")
+
+[25393](\Global\ClothesCompliment\Interactions\Idles\Compliment\Ignore\IgnorePlayer):
+[0ms](SequenceTrack)
+
+[25391](\Global\ClothesCompliment\Interactions\Idles\Compliment\NegativeRemark\Female\NegativeRemark):
+[0ms](DialogueTrack)
+[0ms](LocomotionTrack)
+[0ms](LookAtTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[25392](\Global\ClothesCompliment\Interactions\Idles\Compliment\NegativeRemark\Male\NegativeRemark):
+[0ms](DialogueTrack)
+[0ms](LocomotionTrack)
+[0ms](LookAtTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[25389](\Global\ClothesCompliment\Interactions\Idles\Compliment\PositiveRemark\Female\PositiveRemark):
+[0ms](DialogueTrack)
+[0ms](LocomotionTrack)
+[0ms](LookAtTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[25390](\Global\ClothesCompliment\Interactions\Idles\Compliment\PositiveRemark\Male\PositiveRemark):
+[0ms](DialogueTrack)
+[0ms](LocomotionTrack)
+[0ms](LookAtTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[25395](\Global\ClothesCompliment\Interactions\Idles\Exit\Female\Smoking_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+
+[25396](\Global\ClothesCompliment\Interactions\Idles\Exit\Male\Smoking_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+
+[25380](\Global\ClothesCompliment\Interactions\Idles\Smoking\LoadCigarette\LoadResource):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25381](\Global\ClothesCompliment\Interactions\Idles\Smoking\LoadCigarette\LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25382](\Global\ClothesCompliment\Interactions\Idles\Smoking\LoadCigarette\LoadResource\WaitForResources\Timeout)
+[25388](\Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingCycle\ComplimentOppurtunity):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+
+[25386](\Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingCycle\Female\Female_SmokingCycle_Anim):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SpawnTrack)
+
+[25387](\Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingCycle\Male\Male_SmokingCycle_Anim):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SpawnTrack)
+
+[25384](\Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingInto\Female\Female_SmokingInto_Anim):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1000ms](ObjectCreateTrack)
+[1000ms](TargetAttachTrack)
+[4500ms](PlayEffectTrack)
+[4500ms](PlayEffectTrack)
+
+[25383](\Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingInto\IsSpawning\AttachAndSkip):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[25385](\Global\ClothesCompliment\Interactions\Idles\Smoking\SmokingInto\Male\Male_SmokingInto_Anim):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1000ms](ObjectCreateTrack)
+[1000ms](TargetAttachTrack)
+[4500ms](PlayEffectTrack)
+[4500ms](PlayEffectTrack)
+
+[25378](\Global\ClothesCompliment\UseConditions)

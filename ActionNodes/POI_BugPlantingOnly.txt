@@ -1,6 +1,38 @@
-[25142] \Global\bugplantingOnly\Interactions\0x5A9B3B5E
-[25140] \Global\bugplantingOnly\Interactions\AudiobankLoad
-[25141] \Global\bugplantingOnly\Interactions\Begin
-[25144] \Global\bugplantingOnly\Interactions\Exit
-[25143] \Global\bugplantingOnly\Interactions\Minigame
-[25139] \Global\bugplantingOnly\UseConditions
+[25142](\Global\bugplantingOnly\Interactions\0x5A9B3B5E):
+[0ms](AIOverrideAvoidanceRadiusTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25140](\Global\bugplantingOnly\Interactions\AudiobankLoad):
+[0ms](AudioTrackSoundbankIO)
+[0ms](SpawnTrack)
+
+[25141](\Global\bugplantingOnly\Interactions\Begin):
+[0ms](AIOverrideAvoidanceRadiusTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Bugplanting.set_bugging_only()
+[0ms](TargetSyncPositionTrack)
+
+[25144](\Global\bugplantingOnly\Interactions\Exit):
+[0ms](AIOverrideAvoidanceRadiusTrack)
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras(false)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25143](\Global\bugplantingOnly\Interactions\Minigame):
+[0ms](AIOverrideAvoidanceRadiusTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras()
+[0ms](UIScreenTrack)
+
+[25139](\Global\bugplantingOnly\UseConditions)

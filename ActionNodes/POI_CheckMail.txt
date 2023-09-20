@@ -1,9 +1,44 @@
-[25289] \Global\POI_CheckMail\Interactions\CheckMail
-[25290] \Global\POI_CheckMail\Interactions\CheckMail\Anims\CheckMail
-[25291] \Global\POI_CheckMail\Interactions\CheckMail\Anims\Idle
-[25292] \Global\POI_CheckMail\Interactions\CheckMail\Exit
-[25293] \Global\POI_CheckMail\Interactions\CheckMail\ObjectSpawn\LoadResources
-[25294] \Global\POI_CheckMail\Interactions\CheckMail\ObjectSpawn\LoadResources\Attach
-[25295] \Global\POI_CheckMail\Interactions\CheckMail\ObjectSpawn\LoadResources\Attach\Destroy\ExitNormally
-[25296] \Global\POI_CheckMail\Interactions\CheckMail\ObjectSpawn\LoadResources\Attach\Destroy\PlayEffect
-[25288] \Global\POI_CheckMail\UseConditions
+[25289](\Global\POI_CheckMail\Interactions\CheckMail):
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[25290](\Global\POI_CheckMail\Interactions\CheckMail\Anims\CheckMail):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[400ms](ObjectCreateTrack)
+[400ms](TargetAttachTrack)
+[5600ms](TargetDetachTrack)
+
+[25291](\Global\POI_CheckMail\Interactions\CheckMail\Anims\Idle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[25292](\Global\POI_CheckMail\Interactions\CheckMail\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25293](\Global\POI_CheckMail\Interactions\CheckMail\ObjectSpawn\LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+
+[25294](\Global\POI_CheckMail\Interactions\CheckMail\ObjectSpawn\LoadResources\Attach):
+[0ms](ObjectCreateTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+[0ms](TargetAttachTrack)
+
+[25295](\Global\POI_CheckMail\Interactions\CheckMail\ObjectSpawn\LoadResources\Attach\Destroy\ExitNormally):
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+
+[25296](\Global\POI_CheckMail\Interactions\CheckMail\ObjectSpawn\LoadResources\Attach\Destroy\PlayEffect):
+[0ms](PlayEffectTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+
+[25288](\Global\POI_CheckMail\UseConditions)

@@ -1,9 +1,79 @@
-[27614] \Global\POI_PurchaseDrink_Bartender\Interactions\Purchase
-[27621] \Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Exit\Exit
-[27615] \Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\ServeDrink\Martini
-[27616] \Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\ServeDrink\Martini\Cycle
-[27617] \Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\ServeDrink\Martini\Cycle\Exit
-[27618] \Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\ServeDrink\MixDrinkActual_01
-[27619] \Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\ServeDrink\MixDrinkActual_02
-[27620] \Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\WaitForParent
-[27613] \Global\POI_PurchaseDrink_Bartender\UseConditions
+[27614](\Global\POI_PurchaseDrink_Bartender\Interactions\Purchase):
+[0ms](POIDisableSelfTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+
+[27621](\Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Exit\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27615](\Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\ServeDrink\Martini):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetDetachTrack)
+[1266ms](ObjectCreateTrack)
+[1300ms](TargetAttachTrack)
+[1333ms](ObjectCreateTrack)
+[1366ms](TargetAttachTrack)
+
+[27616](\Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\ServeDrink\Martini\Cycle):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27617](\Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\ServeDrink\Martini\Cycle\Exit):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetDestroyTrack)
+[0ms](TargetDestroyTrack)
+[0ms](TargetDetachTrack)
+[1000ms](PlayEffectTrack)
+[1800ms](PlayEffectTrack)
+[2666ms](TargetPlayTrack)
+
+[27618](\Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\ServeDrink\MixDrinkActual_01):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetDestroyTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[4666ms](ObjectCreateTrack)
+[4666ms](TargetAttachTrack)
+[5000ms](TargetPlayTrack)
+
+[27619](\Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\ServeDrink\MixDrinkActual_02):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetDestroyTrack)
+[0ms](TargetDestroyTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[1100ms](ObjectCreateTrack)
+[1100ms](ObjectCreateTrack)
+[1100ms](TargetAttachTrack)
+[1100ms](TargetAttachTrack)
+[4000ms](PlayEffectTrack)
+[5000ms](TargetPlayTrack)
+[7333ms](TargetDestroyTrack)
+[7333ms](TargetDestroyTrack)
+
+[27620](\Global\POI_PurchaseDrink_Bartender\Interactions\Purchase\Purchase\WaitForParent):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[27613](\Global\POI_PurchaseDrink_Bartender\UseConditions)

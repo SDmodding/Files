@@ -1,6 +1,28 @@
-[26138] \Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle
-[26140] \Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Anims\Anims\FloozyIdle_Anims
-[26141] \Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Anims\Anims\NewClothes_Anims
-[26139] \Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Anims\ChangeRoom_Anims
-[26142] \Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Exit
-[26137] \Global\POI_Female_ChangeRoom\UseConditions
+[26138](\Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[26140](\Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Anims\Anims\FloozyIdle_Anims):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26141](\Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Anims\Anims\NewClothes_Anims):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26139](\Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Anims\ChangeRoom_Anims):
+[0ms](SequenceTrack)
+
+[26142](\Global\POI_Female_ChangeRoom\Interactions\ChangeRoom_Idle\ChangeRoom_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26137](\Global\POI_Female_ChangeRoom\UseConditions)

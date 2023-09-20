@@ -1,12 +1,62 @@
-[27207] \Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles
-[27212] \Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Idles\Male\Mechanic
-[27208] \Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\MechanicAnims\Male_INTO\MechanicIdle_LoadResource
-[27211] \Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\MechanicAnims\Male_INTO\MechanicIdle_LoadResource\MechanicInto_Actual
-[27209] \Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\MechanicAnims\Male_INTO\MechanicIdle_LoadResource\WaitForResources
-[27210] \Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\MechanicAnims\Male_INTO\MechanicIdle_LoadResource\WaitForResources\Timeout
-[27214] \Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Mechanic_Exit\BikeStolen
-[27215] \Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Mechanic_Exit\BikeStolen\BroadcastCarTheft
-[27213] \Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Mechanic_Exit\Exit
-[27217] \Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Utility\CleanUp\Default
-[27216] \Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Utility\CleanUp\Thug
-[27206] \Global\POI_Mechanic_Tire\UseConditions
+[27207](\Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[27212](\Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Idles\Male\Mechanic):
+[0ms](AnimationTrack)
+[500ms](OpportunityTrack)
+
+[27208](\Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\MechanicAnims\Male_INTO\MechanicIdle_LoadResource):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[27211](\Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\MechanicAnims\Male_INTO\MechanicIdle_LoadResource\MechanicInto_Actual):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[27209](\Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\MechanicAnims\Male_INTO\MechanicIdle_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[27210](\Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\MechanicAnims\Male_INTO\MechanicIdle_LoadResource\WaitForResources\Timeout)
+[27214](\Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Mechanic_Exit\BikeStolen):
+[0ms](AnimationTrack)
+[0ms](ConversationTrackCleanup)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+[0ms](TargetPlayTrack)
+[1266ms](OpportunityTrack)
+[1266ms](OpportunityTrack)
+[1266ms](OpportunityTrack)
+
+[27215](\Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Mechanic_Exit\BikeStolen\BroadcastCarTheft):
+[0ms](StimulusTrack)
+
+[27213](\Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Mechanic_Exit\Exit):
+[0ms](AnimationTrack)
+[0ms](ConversationTrackCleanup)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use()
+
+[27217](\Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Utility\CleanUp\Default):
+[0ms](TargetDetachTrack)
+
+[27216](\Global\POI_Mechanic_Tire\Interactions\Mechanic_Idles\Utility\CleanUp\Thug):
+[0ms](TargetAttachTrack)
+[0ms](TargetDetachTrack)
+
+[27206](\Global\POI_Mechanic_Tire\UseConditions)

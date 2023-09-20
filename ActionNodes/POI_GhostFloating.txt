@@ -1,9 +1,48 @@
-[26326] \Global\POI_GhostFloating\Interactions\Root
-[26327] \Global\POI_GhostFloating\Interactions\Root\Exit\Falling
-[26328] \Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0x6777FC79
-[26329] \Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0x6777FC79\Stunned
-[26330] \Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0x6777FC79\Stunned\Effect
-[26331] \Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0xFBB81FA4
-[26333] \Global\POI_GhostFloating\Interactions\Root\Steering\Idle
-[26332] \Global\POI_GhostFloating\Interactions\Root\Steering\SteerTo
-[26325] \Global\POI_GhostFloating\UseConditions
+[26326](\Global\POI_GhostFloating\Interactions\Root):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](HeadTrackTargetTrack)
+[0ms](InvulnerableTrack)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SetStateFlagTrack)
+[0ms](SimObjectFlagSetTrack)
+[0ms](SpawnTrack)
+[0ms](TargetSyncPositionTrack)
+
+[26327](\Global\POI_GhostFloating\Interactions\Root\Exit\Falling):
+[0ms](AnimationTrack)
+[0ms](SetStateFlagTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[166ms](OpportunityTrack)
+
+[26328](\Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0x6777FC79):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+
+[26329](\Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0x6777FC79\Stunned):
+[0ms](AnimationTrack)
+[0ms](SpawnTrack)
+
+[26330](\Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0x6777FC79\Stunned\Effect):
+[0ms](ExecuteTrack)
+[0ms](PlayEffectTrack)
+
+[26331](\Global\POI_GhostFloating\Interactions\Root\Exit\Falling\Land\0xFBB81FA4):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+
+[26333](\Global\POI_GhostFloating\Interactions\Root\Steering\Idle):
+[0ms](OpportunityTrack)
+
+[26332](\Global\POI_GhostFloating\Interactions\Root\Steering\SteerTo):
+[0ms](OpportunityTrack)
+[0ms](TargetSteerToTrack)
+
+[26325](\Global\POI_GhostFloating\UseConditions)

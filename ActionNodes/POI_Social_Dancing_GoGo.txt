@@ -1,17 +1,74 @@
-[28636] \Global\POI_Social_Dancing_GoGo\Interactions\DancingExit
-[28621] \Global\POI_Social_Dancing_GoGo\Interactions\MasterSpawn
-[28622] \Global\POI_Social_Dancing_GoGo\Interactions\MasterSpawn\DancingAnims\Dance_01
-[28623] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial
-[28635] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\Done
-[28624] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnFastTalk
-[28625] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo
-[28626] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Done
-[28627] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo\TimedOut
-[28628] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Gestures
-[28631] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Listening
-[28632] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Listening\Anims\Default
-[28629] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Talking
-[28630] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Talking\Anims\Default
-[28633] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Idle
-[28634] \Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnUI
-[28620] \Global\POI_Social_Dancing_GoGo\UseConditions
+[28636](\Global\POI_Social_Dancing_GoGo\Interactions\DancingExit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[28621](\Global\POI_Social_Dancing_GoGo\Interactions\MasterSpawn):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28622](\Global\POI_Social_Dancing_GoGo\Interactions\MasterSpawn\DancingAnims\Dance_01):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[28623](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](TargetSteerToTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28635](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\Done):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[28624](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnFastTalk):
+[0ms](SpawnTrack)
+
+[28625](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo):
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "y", "")
+[0ms](TimeWarpTrack)
+[3000ms](OpportunityTrack)
+
+[28626](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Done)
+[28627](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnFastTalk\PlayFX&SloMo\TimedOut)
+[28628](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Gestures):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28631](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Listening):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28632](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Listening\Anims\Default):
+[0ms](AnimationTrack)
+
+[28629](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Talking):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28630](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Gestures\Anims\Talking\Anims\Default):
+[0ms](AnimationTrack)
+
+[28633](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnGestures\Idle):
+[0ms](OpportunityTrack)
+
+[28634](\Global\POI_Social_Dancing_GoGo\Interactions\PerformSocial\SpawnUI):
+[0ms](SkookumTrack)
+	[Class]: Actor
+	[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
+
+[28620](\Global\POI_Social_Dancing_GoGo\UseConditions)

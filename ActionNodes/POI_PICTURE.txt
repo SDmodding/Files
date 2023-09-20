@@ -1,18 +1,84 @@
-[27448] \Global\POI_Picture\Interactions\Anims
-[27463] \Global\POI_Picture\Interactions\Anims\PICTURE_Exit\Female\FemalePicture_Exit
-[27464] \Global\POI_Picture\Interactions\Anims\PICTURE_Exit\Male\MalePicture_Exit
-[27449] \Global\POI_Picture\Interactions\Anims\Picture_Enter\IsSpawning\IsSpawning_LoadResource
-[27452] \Global\POI_Picture\Interactions\Anims\Picture_Enter\IsSpawning\IsSpawning_LoadResource\IsSpawning_Actual
-[27450] \Global\POI_Picture\Interactions\Anims\Picture_Enter\IsSpawning\IsSpawning_LoadResource\WaitForResources
-[27451] \Global\POI_Picture\Interactions\Anims\Picture_Enter\IsSpawning\IsSpawning_LoadResource\WaitForResources\Timeout
-[27453] \Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Female\FemalePicture_LoadResources
-[27456] \Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Female\FemalePicture_LoadResources\FemalePicture_Intro_Actual
-[27454] \Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Female\FemalePicture_LoadResources\WaitForResources
-[27455] \Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Female\FemalePicture_LoadResources\WaitForResources\Timeout
-[27457] \Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Male\MalePicture_LoadResources
-[27460] \Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Male\MalePicture_LoadResources\MalePicture_Intro_Actual
-[27458] \Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Male\MalePicture_LoadResources\WaitForResources
-[27459] \Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Male\MalePicture_LoadResources\WaitForResources\Timeout
-[27461] \Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Loop\Female\Female_Picture_Loop
-[27462] \Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Loop\Male\Male_Picture_Loop
-[27447] \Global\POI_Picture\UseConditions
+[27448](\Global\POI_Picture\Interactions\Anims):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[27463](\Global\POI_Picture\Interactions\Anims\PICTURE_Exit\Female\FemalePicture_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27464](\Global\POI_Picture\Interactions\Anims\PICTURE_Exit\Male\MalePicture_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27449](\Global\POI_Picture\Interactions\Anims\Picture_Enter\IsSpawning\IsSpawning_LoadResource):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[27452](\Global\POI_Picture\Interactions\Anims\Picture_Enter\IsSpawning\IsSpawning_LoadResource\IsSpawning_Actual):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[27450](\Global\POI_Picture\Interactions\Anims\Picture_Enter\IsSpawning\IsSpawning_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[27451](\Global\POI_Picture\Interactions\Anims\Picture_Enter\IsSpawning\IsSpawning_LoadResource\WaitForResources\Timeout)
+[27453](\Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Female\FemalePicture_LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[27456](\Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Female\FemalePicture_LoadResources\FemalePicture_Intro_Actual):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+[100ms](DialogueTrack)
+
+[27454](\Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Female\FemalePicture_LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[27455](\Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Female\FemalePicture_LoadResources\WaitForResources\Timeout)
+[27457](\Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Male\MalePicture_LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[27460](\Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Male\MalePicture_LoadResources\MalePicture_Intro_Actual):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+[100ms](DialogueTrack)
+
+[27458](\Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Male\MalePicture_LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[27459](\Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Intro\Male\MalePicture_LoadResources\WaitForResources\Timeout)
+[27461](\Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Loop\Female\Female_Picture_Loop):
+[0ms](AnimationTrack)
+[500ms](OpportunityTrack)
+
+[27462](\Global\POI_Picture\Interactions\Anims\Picture_Enter\Picture_Loop\Male\Male_Picture_Loop):
+[0ms](AnimationTrack)
+[500ms](OpportunityTrack)
+
+[27447](\Global\POI_Picture\UseConditions)

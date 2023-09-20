@@ -1,3 +1,22 @@
-[26651] \Global\poi_HIS_Tariq\Interactions\PerformAction
-[26652] \Global\poi_HIS_Tariq\Interactions\SquatExit
-[26650] \Global\poi_HIS_Tariq\UseConditions
+[26651](\Global\poi_HIS_Tariq\Interactions\PerformAction):
+[0ms](AnimationTrack)
+[0ms](PrintTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_HIS_Tariq()
+[0ms](TargetSteerToTrack)
+
+[26652](\Global\poi_HIS_Tariq\Interactions\SquatExit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: this.poi_get_target()<>InterestPoint.enable_interest_point(false) this.poi_get_target()<>InterestPoint.finish()
+[1166ms](OpportunityTrack)
+
+[26650](\Global\poi_HIS_Tariq\UseConditions)

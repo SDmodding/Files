@@ -1,11 +1,52 @@
-[26240] \Global\POI_Fishing\Interactions\FISHING_Idles
-[26241] \Global\POI_Fishing\Interactions\FISHING_Idles\Anims\Fishing\Fishing_Cast
-[26242] \Global\POI_Fishing\Interactions\FISHING_Idles\Anims\Fishing\Fishing_Idle
-[26243] \Global\POI_Fishing\Interactions\FISHING_Idles\Anims\Fishing\Fishing_Reel
-[26244] \Global\POI_Fishing\Interactions\FISHING_Idles\Anims\WaitingForRod
-[26245] \Global\POI_Fishing\Interactions\FISHING_Idles\Anims\WaitingForRod\Anims\Default
-[26248] \Global\POI_Fishing\Interactions\FISHING_Idles\Fishing_Exit\Fishing_Exit
-[26246] \Global\POI_Fishing\Interactions\FISHING_Idles\ObjectSpawn\LoadResources
-[26247] \Global\POI_Fishing\Interactions\FISHING_Idles\ObjectSpawn\LoadResources\AttachRod
-[26249] \Global\POI_Fishing\Interactions\HitTree\OverRailing\InAir
-[26239] \Global\POI_Fishing\UseConditions
+[26240](\Global\POI_Fishing\Interactions\FISHING_Idles):
+[0ms](OpportunityTrack)
+[0ms](SensorComponentTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDestroyTrack)
+
+[26241](\Global\POI_Fishing\Interactions\FISHING_Idles\Anims\Fishing\Fishing_Cast):
+[0ms](AnimationTrack)
+
+[26242](\Global\POI_Fishing\Interactions\FISHING_Idles\Anims\Fishing\Fishing_Idle):
+[0ms](AnimationTrack)
+
+[26243](\Global\POI_Fishing\Interactions\FISHING_Idles\Anims\Fishing\Fishing_Reel):
+[0ms](AnimationTrack)
+
+[26244](\Global\POI_Fishing\Interactions\FISHING_Idles\Anims\WaitingForRod):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[26245](\Global\POI_Fishing\Interactions\FISHING_Idles\Anims\WaitingForRod\Anims\Default):
+[0ms](AnimationTrack)
+
+[26248](\Global\POI_Fishing\Interactions\FISHING_Idles\Fishing_Exit\Fishing_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26246](\Global\POI_Fishing\Interactions\FISHING_Idles\ObjectSpawn\LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+
+[26247](\Global\POI_Fishing\Interactions\FISHING_Idles\ObjectSpawn\LoadResources\AttachRod):
+[0ms](ObjectCreateTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetDestroyTrack)
+
+[26249](\Global\POI_Fishing\Interactions\HitTree\OverRailing\InAir):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](HandleDamageTrack)
+[0ms](ParkourSyncPositionTrack)
+[366ms](DetailedOnGroundTrack)
+[400ms](OpportunityTrack)
+[500ms](GravityTrack)
+[600ms](OpportunityTrack)
+
+[26239](\Global\POI_Fishing\UseConditions)

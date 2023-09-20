@@ -1,5 +1,28 @@
-[25036] \Global\POI_Beggar_Sleep\Interactions\GoToSleep
-[25037] \Global\POI_Beggar_Sleep\Interactions\SleepingIdles
-[25038] \Global\POI_Beggar_Sleep\Interactions\SleepingIdles\SleepinSide_Anims\Male\Sleeping_01
-[25039] \Global\POI_Beggar_Sleep\Interactions\SleepingIdles\SleepingExit
-[25035] \Global\POI_Beggar_Sleep\UseConditions
+[25036](\Global\POI_Beggar_Sleep\Interactions\GoToSleep):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[25037](\Global\POI_Beggar_Sleep\Interactions\SleepingIdles):
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25038](\Global\POI_Beggar_Sleep\Interactions\SleepingIdles\SleepinSide_Anims\Male\Sleeping_01):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[25039](\Global\POI_Beggar_Sleep\Interactions\SleepingIdles\SleepingExit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25035](\Global\POI_Beggar_Sleep\UseConditions)

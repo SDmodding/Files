@@ -1,7 +1,29 @@
-[27178] \Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn
-[27179] \Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn\Anims\MoveA
-[27180] \Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn\Anims\MoveB
-[27181] \Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn\Exit\Exit
-[27182] \Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn\HeadTrack\ClosestPed
-[27183] \Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn\HeadTrack\Idle
-[27177] \Global\POI_MartialArts_Novice_Teacher\UseConditions
+[27178](\Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn):
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[27179](\Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn\Anims\MoveA):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+
+[27180](\Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn\Anims\MoveB):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+
+[27181](\Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn\Exit\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27182](\Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn\HeadTrack\ClosestPed):
+[0ms](HeadTrackTargetTrack)
+[0ms](OpportunityTrack)
+
+[27183](\Global\POI_MartialArts_Novice_Teacher\Interactions\MasterSpawn\HeadTrack\Idle):
+[0ms](OpportunityTrack)
+
+[27177](\Global\POI_MartialArts_Novice_Teacher\UseConditions)

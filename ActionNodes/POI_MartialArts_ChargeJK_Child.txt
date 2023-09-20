@@ -1,15 +1,79 @@
-[27061] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles
-[27074] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_Exit
-[27067] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\BowInto-PROMOTE_TO_USE
-[27068] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow
-[27069] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow\BowOut
-[27062] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1
-[27063] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2
-[27064] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3
-[27065] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3\LightAttack4
-[27066] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3\LightAttack4\ChargeAttack5
-[27071] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY
-[27072] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow
-[27073] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow\BowOut
-[27070] \Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\ReceiveAttack
-[27060] \Global\POI_MartialArts_ChargeJK_Child\UseConditions
+[27061](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[27074](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27067](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\BowInto-PROMOTE_TO_USE):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[27068](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27069](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow\BowOut):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27062](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27063](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27064](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27065](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3\LightAttack4):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27066](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3\LightAttack4\ChargeAttack5):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27071](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[27072](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27073](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow\BowOut):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27070](\Global\POI_MartialArts_ChargeJK_Child\Interactions\ChargeJumpKick_Idles\ChargeJumpKick_States\ReceiveAttack\ReceiveAttack):
+[0ms](AnimationTrack)
+
+[27060](\Global\POI_MartialArts_ChargeJK_Child\UseConditions)

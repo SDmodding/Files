@@ -1,23 +1,108 @@
-[24360] \Global\LOL_HospElevDoors001\Interactions\Action\CallElevator\CloseDoor
-[24361] \Global\LOL_HospElevDoors001\Interactions\Action\CallElevator\OpenDoor
-[24370] \Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Cancel
-[24371] \Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Cancel\Break
-[24362] \Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init
-[24364] \Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginGIV
-[24365] \Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginGIV\StruggleGIV
-[24366] \Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginGIV\StruggleGIV\SuccessGIV
-[24367] \Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginGIV\StruggleGIV\SuccessRCV
-[24368] \Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginGIV\StruggleRCV
-[24369] \Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginRCV
-[24363] \Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\Idle
-[24372] \Global\LOL_HospElevDoors001\Interactions\Action\Utility\SpawnHUD
-[24355] \Global\LOL_HospElevDoors001\Object\Animation\Closing
-[24354] \Global\LOL_HospElevDoors001\Object\Animation\Opening
-[24356] \Global\LOL_HospElevDoors001\Object\Animation\Opening_Stuck
-[24357] \Global\LOL_HospElevDoors001\Object\LockedOut
-[24353] \Global\LOL_HospElevDoors001\Object\StuckElevator\Opened
-[24352] \Global\LOL_HospElevDoors001\Object\StuckElevator\Sealed
-[24350] \Global\LOL_HospElevDoors001\Object\WaitingForCall\Closed
-[24351] \Global\LOL_HospElevDoors001\Object\WaitingForCall\Opened
-[24358] \Global\LOL_HospElevDoors001\UseConditions\ClosedElevator
-[24359] \Global\LOL_HospElevDoors001\UseConditions\StuckElevator
+[24360](\Global\LOL_HospElevDoors001\Interactions\Action\CallElevator\CloseDoor):
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+
+[24361](\Global\LOL_HospElevDoors001\Interactions\Action\CallElevator\OpenDoor):
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+
+[24370](\Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Cancel):
+[0ms](AnimationTrack)
+[0ms](InputSignalFilterTrack)
+[0ms](OpportunityTrack)
+[0ms](Struggle2Track)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[50ms](DialogueTrackWeaponImpact)
+
+[24371](\Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Cancel\Break)
+[24362](\Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[450ms](AudioTrackSimple)
+
+[24364](\Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginGIV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](TargetPlayTrack)
+[50ms](DialogueTrackWeaponImpact)
+[100ms](AudioTrackSimple)
+
+[24365](\Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginGIV\StruggleGIV):
+[0ms](AnimationTrack)
+[0ms](InputSignalFilterTrack)
+[0ms](SpawnTrack)
+[0ms](Struggle2Track)
+[0ms](TargetPlayTrack)
+[666ms](OpportunityTrack)
+[666ms](OpportunityTrack)
+
+[24366](\Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginGIV\StruggleGIV\SuccessGIV):
+[0ms](AnimationTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[50ms](AudioTrackSimple)
+[50ms](DialogueTrackWeaponImpact)
+
+[24367](\Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginGIV\StruggleGIV\SuccessRCV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[50ms](AudioTrackSimple)
+
+[24368](\Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginGIV\StruggleRCV):
+[0ms](AnimationTrack)
+
+[24369](\Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\BeginRCV):
+[0ms](AnimationTrack)
+
+[24363](\Global\LOL_HospElevDoors001\Interactions\Action\ForceDoors\Init\Idle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetPlayTrack)
+
+[24372](\Global\LOL_HospElevDoors001\Interactions\Action\Utility\SpawnHUD):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show_for_one_frame("", "y", "mash")
+
+[24355](\Global\LOL_HospElevDoors001\Object\Animation\Closing):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[24354](\Global\LOL_HospElevDoors001\Object\Animation\Opening):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[24356](\Global\LOL_HospElevDoors001\Object\Animation\Opening_Stuck):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[24357](\Global\LOL_HospElevDoors001\Object\LockedOut):
+[0ms](AnimationTrack)
+
+[24353](\Global\LOL_HospElevDoors001\Object\StuckElevator\Opened):
+[0ms](AnimationTrack)
+
+[24352](\Global\LOL_HospElevDoors001\Object\StuckElevator\Sealed):
+[0ms](AnimationTrack)
+
+[24350](\Global\LOL_HospElevDoors001\Object\WaitingForCall\Closed):
+[0ms](AnimationTrack)
+
+[24351](\Global\LOL_HospElevDoors001\Object\WaitingForCall\Opened):
+[0ms](AnimationTrack)
+[5000ms](OpportunityTrack)
+
+[24358](\Global\LOL_HospElevDoors001\UseConditions\ClosedElevator)
+[24359](\Global\LOL_HospElevDoors001\UseConditions\StuckElevator)

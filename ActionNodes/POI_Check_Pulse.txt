@@ -1,5 +1,26 @@
-[25307] \Global\Check_Pulse_Parent\Interactions\Check_Pulse_Idles
-[25310] \Global\Check_Pulse_Parent\Interactions\Check_Pulse_Idles\Check_Pulse_Exit\Check_Pulse_Exit
-[25309] \Global\Check_Pulse_Parent\Interactions\Check_Pulse_Idles\Check_Pulse_States\Check_Pulse\Check_Pulse
-[25308] \Global\Check_Pulse_Parent\Interactions\Check_Pulse_Idles\Check_Pulse_States\WaitForCheckPulseChild\Wait
-[25306] \Global\Check_Pulse_Parent\UseConditions
+[25307](\Global\Check_Pulse_Parent\Interactions\Check_Pulse_Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25310](\Global\Check_Pulse_Parent\Interactions\Check_Pulse_Idles\Check_Pulse_Exit\Check_Pulse_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25309](\Global\Check_Pulse_Parent\Interactions\Check_Pulse_Idles\Check_Pulse_States\Check_Pulse\Check_Pulse):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+
+[25308](\Global\Check_Pulse_Parent\Interactions\Check_Pulse_Idles\Check_Pulse_States\WaitForCheckPulseChild\Wait):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[25306](\Global\Check_Pulse_Parent\UseConditions)

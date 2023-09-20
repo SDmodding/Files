@@ -1,11 +1,72 @@
-[26799] \Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_F
-[26802] \Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_F\Karaoke_Sing_F_Anims\Karaoke_Sing_F_Idle
-[26800] \Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_F\Karaoke_Sing_F_Anims\LoadResource
-[26801] \Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_F\Karaoke_Sing_F_Anims\LoadResource\Timeout
-[26803] \Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_F\Karaoke_Sing_F_Exit
-[26804] \Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_M
-[26807] \Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_M\Karaoke_Sing_M_Anims\Karaoke_Sing_M_Idle
-[26805] \Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_M\Karaoke_Sing_M_Anims\LoadResource
-[26806] \Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_M\Karaoke_Sing_M_Anims\LoadResource\Timeout
-[26808] \Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_M\Karaoke_Sing_M_Exit
-[26798] \Global\POI_Karaoke_Sing\UseConditions
+[26799](\Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_F):
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world._manage_karaoke_bbc_emitters('Female', false)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world._manage_karaoke_bbc_emitters('Female', true)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[26802](\Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_F\Karaoke_Sing_F_Anims\Karaoke_Sing_F_Idle):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[26800](\Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_F\Karaoke_Sing_F_Anims\LoadResource):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[26801](\Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_F\Karaoke_Sing_F_Anims\LoadResource\Timeout)
+[26803](\Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_F\Karaoke_Sing_F_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26804](\Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_M):
+[0ms](AudioTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world._manage_karaoke_bbc_emitters('Male', false)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world._manage_karaoke_bbc_emitters('Male', true)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[26807](\Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_M\Karaoke_Sing_M_Anims\Karaoke_Sing_M_Idle):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[26805](\Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_M\Karaoke_Sing_M_Anims\LoadResource):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[26806](\Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_M\Karaoke_Sing_M_Anims\LoadResource\Timeout)
+[26808](\Global\POI_Karaoke_Sing\Interactions\Karaoke_Sing_M\Karaoke_Sing_M_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26798](\Global\POI_Karaoke_Sing\UseConditions)

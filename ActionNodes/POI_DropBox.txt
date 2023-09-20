@@ -1,11 +1,48 @@
-[25900] \Global\DropBox\Interactions\DropBoxIdles
-[25901] \Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\IsSpawning\DropIdle_LoadResource
-[25904] \Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\IsSpawning\DropIdle_LoadResource\IsSpawning_Actual
-[25902] \Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\IsSpawning\DropIdle_LoadResource\WaitForResources
-[25903] \Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\IsSpawning\DropIdle_LoadResource\WaitForResources\Timeout
-[25905] \Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\Male_INTO\DropIdle_LoadResource
-[25908] \Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\Male_INTO\DropIdle_LoadResource\DropInto_Actual
-[25906] \Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\Male_INTO\DropIdle_LoadResource\WaitForResources
-[25907] \Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\Male_INTO\DropIdle_LoadResource\WaitForResources\Timeout
-[25909] \Global\DropBox\Interactions\DropBoxIdles\DropBox_Exit\Male\DropBox_Exit
-[25899] \Global\DropBox\UseConditions
+[25900](\Global\DropBox\Interactions\DropBoxIdles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[25901](\Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\IsSpawning\DropIdle_LoadResource):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25904](\Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\IsSpawning\DropIdle_LoadResource\IsSpawning_Actual):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[25902](\Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\IsSpawning\DropIdle_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25903](\Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\IsSpawning\DropIdle_LoadResource\WaitForResources\Timeout)
+[25905](\Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\Male_INTO\DropIdle_LoadResource):
+[0ms](AnimationTrack)
+[0ms](SpawnTrack)
+
+[25908](\Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\Male_INTO\DropIdle_LoadResource\DropInto_Actual):
+[0ms](AnimationTrack)
+[0ms](TargetDetachTrack)
+
+[25906](\Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\Male_INTO\DropIdle_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25907](\Global\DropBox\Interactions\DropBoxIdles\DropBoxAnims\Male_INTO\DropIdle_LoadResource\WaitForResources\Timeout)
+[25909](\Global\DropBox\Interactions\DropBoxIdles\DropBox_Exit\Male\DropBox_Exit):
+[0ms](ConversationTrackCleanup)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25899](\Global\DropBox\UseConditions)

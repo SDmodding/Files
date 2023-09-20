@@ -1,6 +1,24 @@
-[26951] \Global\POI_PlayerDancing\Interactions\DancingIdles
-[26952] \Global\POI_PlayerDancing\Interactions\DancingIdles\DancingAnims\Male\DancingIdle
-[26953] \Global\POI_PlayerDancing\Interactions\DancingIdles\DancingAnims\Male\DancingSpecial
-[26955] \Global\POI_PlayerDancing\Interactions\DancingIdles\Exit
-[26954] \Global\POI_PlayerDancing\Interactions\DancingIdles\ShowHUD
-[26950] \Global\POI_PlayerDancing\UseConditions
+[26951](\Global\POI_PlayerDancing\Interactions\DancingIdles):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[26952](\Global\POI_PlayerDancing\Interactions\DancingIdles\DancingAnims\Male\DancingIdle):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26953](\Global\POI_PlayerDancing\Interactions\DancingIdles\DancingAnims\Male\DancingSpecial):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26955](\Global\POI_PlayerDancing\Interactions\DancingIdles\Exit)
+[26954](\Global\POI_PlayerDancing\Interactions\DancingIdles\ShowHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("$HUD_EXIT")
+
+[26950](\Global\POI_PlayerDancing\UseConditions)

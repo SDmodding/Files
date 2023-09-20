@@ -1,4 +1,22 @@
-[25583] \Global\Cop_Idle\Interactions\CopIdle
-[25584] \Global\Cop_Idle\Interactions\CopIdle\CopIdleAnims\Male\Cop_StandIdle
-[25585] \Global\Cop_Idle\Interactions\CopIdle\CopIdleExit
-[25582] \Global\Cop_Idle\UseConditions
+[25583](\Global\Cop_Idle\Interactions\CopIdle):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[83ms](DialogueTrack)
+
+[25584](\Global\Cop_Idle\Interactions\CopIdle\CopIdleAnims\Male\Cop_StandIdle):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25585](\Global\Cop_Idle\Interactions\CopIdle\CopIdleExit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25582](\Global\Cop_Idle\UseConditions)

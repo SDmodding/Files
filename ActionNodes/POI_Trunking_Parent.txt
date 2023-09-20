@@ -1,14 +1,88 @@
-[29073] \Global\POI_Trunking_Parent\Interactions\Exit
-[29062] \Global\POI_Trunking_Parent\Interactions\Grab
-[29065] \Global\POI_Trunking_Parent\Interactions\Grab\Idle\GrapGIV
-[29066] \Global\POI_Trunking_Parent\Interactions\Grab\Idle\GrapRCV
-[29063] \Global\POI_Trunking_Parent\Interactions\Grab\Init\GrapGIV
-[29064] \Global\POI_Trunking_Parent\Interactions\Grab\Init\GrapRCV
-[29067] \Global\POI_Trunking_Parent\Interactions\Grab\Trunking\GrapGIV
-[29068] \Global\POI_Trunking_Parent\Interactions\Grab\Trunking\GrapRCV
-[29069] \Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Narrow
-[29070] \Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Standard
-[29071] \Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Wide
-[29072] \Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Wider
-[29061] \Global\POI_Trunking_Parent\Interactions\WaitForChild
-[29060] \Global\POI_Trunking_Parent\UseConditions
+[29073](\Global\POI_Trunking_Parent\Interactions\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use()
+
+[29062](\Global\POI_Trunking_Parent\Interactions\Grab):
+[0ms](AnimationTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](TargetSteerToTrack)
+[200ms](TargetSteerToTrack)
+[266ms](OpportunityTrack)
+
+[29065](\Global\POI_Trunking_Parent\Interactions\Grab\Idle\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[1033ms](OpportunityTrack)
+
+[29066](\Global\POI_Trunking_Parent\Interactions\Grab\Idle\GrapRCV):
+[0ms](AnimationTrack)
+[0ms](SimObjectFlagSetTrack)
+
+[29063](\Global\POI_Trunking_Parent\Interactions\Grab\Init\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+[0ms](TargetAssignTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSteerToTrack)
+[66ms](TargetSyncPositionTrack)
+
+[29064](\Global\POI_Trunking_Parent\Interactions\Grab\Init\GrapRCV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](SpawnTrack)
+[0ms](TargetSteerToTrack)
+
+[29067](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](StimulusTrack)
+[0ms](StimulusTrack)
+[0ms](TargetAssignTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSpawnTrack)
+[0ms](TargetSyncPositionTrack)
+
+[29068](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\GrapRCV):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSyncPositionTrack)
+[0ms](VehicleInteractTrack)
+
+[29069](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Narrow):
+[0ms](AnimationTrack)
+[0ms](VehicleDoorPhysicsTrack)
+
+[29070](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Standard):
+[0ms](AnimationTrack)
+[0ms](VehicleDoorPhysicsTrack)
+
+[29071](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Wide):
+[0ms](AnimationTrack)
+[0ms](VehicleDoorPhysicsTrack)
+
+[29072](\Global\POI_Trunking_Parent\Interactions\Grab\Trunking\Vehicle\Car\Wider):
+[0ms](AnimationTrack)
+[0ms](VehicleDoorPhysicsTrack)
+
+[29061](\Global\POI_Trunking_Parent\Interactions\WaitForChild):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSyncPositionTrack)
+
+[29060](\Global\POI_Trunking_Parent\UseConditions)

@@ -1,5 +1,23 @@
-[25595] \Global\POI_ChopBodyRCV\Interactions\Hit
-[25592] \Global\POI_ChopBodyRCV\Interactions\POI_Downed
-[25593] \Global\POI_ChopBodyRCV\Interactions\POI_Downed\FaceDown
-[25594] \Global\POI_ChopBodyRCV\Interactions\POI_Downed\FaceDown\Die
-[25591] \Global\POI_ChopBodyRCV\UseConditions
+[25595](\Global\POI_ChopBodyRCV\Interactions\Hit):
+[0ms](AnimationTrack)
+[0ms](HandleDamageTrack)
+
+[25592](\Global\POI_ChopBodyRCV\Interactions\POI_Downed):
+[0ms](OpportunityTrack)
+
+[25593](\Global\POI_ChopBodyRCV\Interactions\POI_Downed\FaceDown):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](TargetSyncPositionTrack)
+
+[25594](\Global\POI_ChopBodyRCV\Interactions\POI_Downed\FaceDown\Die):
+[0ms](HealthSetPercentageTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_stop_using_use()
+
+[25591](\Global\POI_ChopBodyRCV\UseConditions)

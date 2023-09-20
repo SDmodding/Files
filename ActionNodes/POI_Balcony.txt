@@ -1,38 +1,225 @@
-[24920] \Global\POI_Balcony\Interactions\Root
-[24921] \Global\POI_Balcony\Interactions\Root\LeaningAnims\Female\LeaningIdle
-[24922] \Global\POI_Balcony\Interactions\Root\LeaningAnims\Female\LeaningIdle_2
-[24923] \Global\POI_Balcony\Interactions\Root\LeaningAnims\Male\LeaningIdle
-[24940] \Global\POI_Balcony\Interactions\SecondaryActions\BrushOff\Female
-[24941] \Global\POI_Balcony\Interactions\SecondaryActions\BrushOff\Male
-[24952] \Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\End\Female
-[24953] \Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\End\Male
-[24950] \Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\Female
-[24951] \Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\Male
-[24948] \Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Female
-[24949] \Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Male
-[24934] \Global\POI_Balcony\Interactions\SecondaryActions\Coughing\Female
-[24935] \Global\POI_Balcony\Interactions\SecondaryActions\Coughing\Male
-[24954] \Global\POI_Balcony\Interactions\SecondaryActions\FaceWipe\Male
-[24938] \Global\POI_Balcony\Interactions\SecondaryActions\FixHair\Female
-[24939] \Global\POI_Balcony\Interactions\SecondaryActions\FixHair\Male
-[24936] \Global\POI_Balcony\Interactions\SecondaryActions\HeadScratch\Female
-[24937] \Global\POI_Balcony\Interactions\SecondaryActions\HeadScratch\Male
-[24946] \Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\End\Female
-[24947] \Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\End\Male
-[24944] \Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\Female
-[24945] \Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\Male
-[24942] \Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Female
-[24943] \Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Male
-[24926] \Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Cyc\Default
-[24924] \Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Into\LoadRug
-[24925] \Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Into\LoadRug\RugCleanInto_Actual
-[24927] \Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Out\Default
-[24930] \Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Cyc\Default
-[24928] \Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Into\LoadRug
-[24929] \Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Into\LoadRug\Default
-[24931] \Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Out\Default
-[24955] \Global\POI_Balcony\Interactions\SecondaryActions\Sneeze\Female
-[24956] \Global\POI_Balcony\Interactions\SecondaryActions\Sneeze\Male
-[24932] \Global\POI_Balcony\Interactions\SecondaryActions\WaterThrow\Anims\Female\LoadWater
-[24933] \Global\POI_Balcony\Interactions\SecondaryActions\WaterThrow\Anims\Female\LoadWater\ThrowWater_Female
-[24919] \Global\POI_Balcony\UseConditions
+[24920](\Global\POI_Balcony\Interactions\Root):
+[0ms](SpawnTrack)
+[0ms](TargetDestroyTrack)
+[0ms](TargetDestroyTrack)
+[4000ms](ResourceOpportunityTrack)
+
+[24921](\Global\POI_Balcony\Interactions\Root\LeaningAnims\Female\LeaningIdle):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[24922](\Global\POI_Balcony\Interactions\Root\LeaningAnims\Female\LeaningIdle_2):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[24923](\Global\POI_Balcony\Interactions\Root\LeaningAnims\Male\LeaningIdle):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[24940](\Global\POI_Balcony\Interactions\SecondaryActions\BrushOff\Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24941](\Global\POI_Balcony\Interactions\SecondaryActions\BrushOff\Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24952](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\End\Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[1066ms](TargetDetachTrack)
+
+[24953](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\End\Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[1600ms](TargetDetachTrack)
+
+[24950](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\Female):
+[0ms](AnimationTrack)
+[0ms](SpawnTrack)
+[10000ms](OpportunityTrack)
+
+[24951](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Cycle\Male):
+[0ms](AnimationTrack)
+[0ms](SpawnTrack)
+[10000ms](OpportunityTrack)
+
+[24948](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Female):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[66ms](AudioTrackSimple)
+[900ms](ObjectCreateTrack)
+[900ms](TargetAttachTrack)
+
+[24949](\Global\POI_Balcony\Interactions\SecondaryActions\Cellphone\AnswerCall\Into\Male):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[66ms](AudioTrackSimple)
+[900ms](ObjectCreateTrack)
+[900ms](TargetAttachTrack)
+
+[24934](\Global\POI_Balcony\Interactions\SecondaryActions\Coughing\Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24935](\Global\POI_Balcony\Interactions\SecondaryActions\Coughing\Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24954](\Global\POI_Balcony\Interactions\SecondaryActions\FaceWipe\Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24938](\Global\POI_Balcony\Interactions\SecondaryActions\FixHair\Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24939](\Global\POI_Balcony\Interactions\SecondaryActions\FixHair\Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24936](\Global\POI_Balcony\Interactions\SecondaryActions\HeadScratch\Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24937](\Global\POI_Balcony\Interactions\SecondaryActions\HeadScratch\Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24946](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\End\Female):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: stop_holding_action_request("Smoke")
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[24947](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\End\Male):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: stop_holding_action_request("Smoke")
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[24944](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\Female):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24945](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Cycle\Male):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24942](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Female):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[1000ms](ObjectCreateTrack)
+[1000ms](TargetAttachTrack)
+[4500ms](PlayEffectTrack)
+[4500ms](PlayEffectTrack)
+
+[24943](\Global\POI_Balcony\Interactions\SecondaryActions\LightCigarette\Into\Male):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[1000ms](ObjectCreateTrack)
+[1000ms](TargetAttachTrack)
+[4500ms](PlayEffectTrack)
+[4500ms](PlayEffectTrack)
+
+[24926](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Cyc\Default):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+
+[24924](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Into\LoadRug):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+
+[24925](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Into\LoadRug\RugCleanInto_Actual):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[33ms](TargetAttachTrack)
+[33ms](TargetPlayTrack)
+
+[24927](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Female\Out\Default):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[2333ms](TargetDestroyTrack)
+
+[24930](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Cyc\Default):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[24928](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Into\LoadRug):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+
+[24929](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Into\LoadRug\Default):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[33ms](ObjectCreateTrack)
+[1333ms](TargetAttachTrack)
+
+[24931](\Global\POI_Balcony\Interactions\SecondaryActions\RugClean\Anims\Male\Out\Default):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[2333ms](TargetDestroyTrack)
+
+[24955](\Global\POI_Balcony\Interactions\SecondaryActions\Sneeze\Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24956](\Global\POI_Balcony\Interactions\SecondaryActions\Sneeze\Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24932](\Global\POI_Balcony\Interactions\SecondaryActions\WaterThrow\Anims\Female\LoadWater):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+
+[24933](\Global\POI_Balcony\Interactions\SecondaryActions\WaterThrow\Anims\Female\LoadWater\ThrowWater_Female):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](LookAtTrack)
+[0ms](SequenceTrack)
+[33ms](ObjectCreateTrack)
+[33ms](TargetAttachTrack)
+[4166ms](PlayEffectTrack)
+[4333ms](PlayEffectTrack)
+[8800ms](TargetDetachTrack)
+
+[24919](\Global\POI_Balcony\UseConditions)

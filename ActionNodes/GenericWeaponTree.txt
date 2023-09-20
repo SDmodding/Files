@@ -1,9 +1,37 @@
-[19412] \Global\GenericWeaponTree\Bomb
-[19413] \Global\GenericWeaponTree\Bomb\Explode
-[19416] \Global\GenericWeaponTree\Bomb\Explode\DestroySelf
-[19415] \Global\GenericWeaponTree\Bomb\Explode\DestroyVehicle
-[19414] \Global\GenericWeaponTree\Bomb\Explode\DetachFromVehicle
-[19411] \Global\GenericWeaponTree\CarBomb\Bomb
-[19417] \Global\GenericWeaponTree\Idle
-[19419] \Global\GenericWeaponTree\Idle\Rimlight\Off
-[19418] \Global\GenericWeaponTree\Idle\Rimlight\On
+[19412](\Global\GenericWeaponTree\Bomb):
+[0ms](MasterTrack)
+
+[19413](\Global\GenericWeaponTree\Bomb\Explode):
+[0ms](ExplosionTrack)
+[0ms](MasterTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+
+[19416](\Global\GenericWeaponTree\Bomb\Explode\DestroySelf):
+[0ms](SkookumTrack)
+	[Class]: Weapon
+	[Script]: despawn(true)
+
+[19415](\Global\GenericWeaponTree\Bomb\Explode\DestroyVehicle):
+[0ms](MasterTrack)
+[0ms](VehicleAddSpeedTrack)
+[0ms](VehicleTriggerExplosionTrack)
+
+[19414](\Global\GenericWeaponTree\Bomb\Explode\DetachFromVehicle):
+[0ms](TargetDetachTrack)
+
+[19411](\Global\GenericWeaponTree\CarBomb\Bomb):
+[0ms](MasterTrack)
+[0ms](TargetLockTrack)
+
+[19417](\Global\GenericWeaponTree\Idle):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[19419](\Global\GenericWeaponTree\Idle\Rimlight\Off):
+[0ms](OpportunityTrack)
+
+[19418](\Global\GenericWeaponTree\Idle\Rimlight\On):
+[0ms](OpportunityTrack)
+[0ms](RimLightTrack)
+

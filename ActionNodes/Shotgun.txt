@@ -1,20 +1,96 @@
-[19357] \Global\Shotgun\Flashlight\TacLight
-[19339] \Global\Shotgun\MasterSpawn
-[19340] \Global\Shotgun\MasterSpawn\Actions\Equiped\Fire
-[19344] \Global\Shotgun\MasterSpawn\Actions\Equiped\Fire\VFX\Default\Default
-[19343] \Global\Shotgun\MasterSpawn\Actions\Equiped\Fire\VFX\Default\Player
-[19342] \Global\Shotgun\MasterSpawn\Actions\Equiped\Fire\VFX\Shotgun_Pump\Default
-[19341] \Global\Shotgun\MasterSpawn\Actions\Equiped\Fire\VFX\Shotgun_Pump\Player
-[19345] \Global\Shotgun\MasterSpawn\Actions\Equiped\Idle
-[19346] \Global\Shotgun\MasterSpawn\Actions\Idle
-[19347] \Global\Shotgun\MasterSpawn\Actions\Idle\Rimlight
-[19350] \Global\Shotgun\MasterSpawn\Animations\BoltActuate\ShotgunSemiAuto
-[19351] \Global\Shotgun\MasterSpawn\Animations\BoltActuate\ShotgunSemiAuto\BoltLockedBack
-[19348] \Global\Shotgun\MasterSpawn\Animations\BoltActuate\Shotgun_Pump
-[19349] \Global\Shotgun\MasterSpawn\Animations\BoltActuate\Shotgun_Pump\BoltLockedBack
-[19353] \Global\Shotgun\MasterSpawn\Animations\Idle
-[19352] \Global\Shotgun\MasterSpawn\Animations\TargetPlayedOnDiscard\BoltLockedBack
-[19354] \Global\Shotgun\MasterSpawn\GunSmoke\Firing
-[19355] \Global\Shotgun\MasterSpawn\GunSmoke\Firing\Smoking
-[19356] \Global\Shotgun\MasterSpawn\GunSmoke\Idle
-[19358] \Global\Shotgun\Utility\OwnerFireWeaponStimuli
+[19357](\Global\Shotgun\Flashlight\TacLight):
+[0ms](AudioTrackSimple)
+[0ms](AudioTrackSimple)
+[0ms](PlayEffectTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[19339](\Global\Shotgun\MasterSpawn):
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[19340](\Global\Shotgun\MasterSpawn\Actions\Equiped\Fire):
+[0ms](ShootTrack)
+[0ms](SpawnTrack)
+[0ms](TargetPlayTrack)
+[0ms](TriggerRecoilPostEffectTrack)
+[66ms](OpportunityTrack)
+[66ms](OpportunityTrack)
+
+[19344](\Global\Shotgun\MasterSpawn\Actions\Equiped\Fire\VFX\Default\Default):
+[0ms](ExecuteTrack)
+[0ms](PlayEffectTrack)
+[133ms](PlayEffectTrack)
+
+[19343](\Global\Shotgun\MasterSpawn\Actions\Equiped\Fire\VFX\Default\Player):
+[0ms](ExecuteTrack)
+[0ms](PlayEffectTrack)
+[66ms](PlayEffectTrack)
+
+[19342](\Global\Shotgun\MasterSpawn\Actions\Equiped\Fire\VFX\Shotgun_Pump\Default):
+[0ms](ExecuteTrack)
+[0ms](PlayEffectTrack)
+[500ms](PlayEffectTrack)
+
+[19341](\Global\Shotgun\MasterSpawn\Actions\Equiped\Fire\VFX\Shotgun_Pump\Player):
+[0ms](ExecuteTrack)
+[0ms](PlayEffectTrack)
+[500ms](PlayEffectTrack)
+
+[19345](\Global\Shotgun\MasterSpawn\Actions\Equiped\Idle):
+[0ms](AnimationRefPoseTrack)
+[0ms](OpportunityTrack)
+
+[19346](\Global\Shotgun\MasterSpawn\Actions\Idle):
+[0ms](AnimationRefPoseTrack)
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[19347](\Global\Shotgun\MasterSpawn\Actions\Idle\Rimlight):
+[0ms](OpportunityTrack)
+[0ms](RimLightTrack)
+
+[19350](\Global\Shotgun\MasterSpawn\Animations\BoltActuate\ShotgunSemiAuto):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[66ms](OpportunityTrack)
+
+[19351](\Global\Shotgun\MasterSpawn\Animations\BoltActuate\ShotgunSemiAuto\BoltLockedBack):
+[0ms](AnimationTrack)
+
+[19348](\Global\Shotgun\MasterSpawn\Animations\BoltActuate\Shotgun_Pump):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[500ms](OpportunityTrack)
+
+[19349](\Global\Shotgun\MasterSpawn\Animations\BoltActuate\Shotgun_Pump\BoltLockedBack):
+[0ms](AnimationTrack)
+
+[19353](\Global\Shotgun\MasterSpawn\Animations\Idle):
+[0ms](AnimationRefPoseTrack)
+[0ms](OpportunityTrack)
+
+[19352](\Global\Shotgun\MasterSpawn\Animations\TargetPlayedOnDiscard\BoltLockedBack)
+[19354](\Global\Shotgun\MasterSpawn\GunSmoke\Firing):
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[1000ms](OpportunityTrack)
+
+[19355](\Global\Shotgun\MasterSpawn\GunSmoke\Firing\Smoking):
+[0ms](ExecuteTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+[3000ms](OpportunityTrack)
+
+[19356](\Global\Shotgun\MasterSpawn\GunSmoke\Idle):
+[0ms](OpportunityTrack)
+
+[19358](\Global\Shotgun\Utility\OwnerFireWeaponStimuli):
+[0ms](StimulusTrack)
+[0ms](StimulusTrack)
+

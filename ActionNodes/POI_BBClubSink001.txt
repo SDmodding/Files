@@ -1,16 +1,149 @@
-[24984] \Global\POI_BBClubSink001\Interactions\Action\Exit
-[24982] \Global\POI_BBClubSink001\Interactions\Action\POIHideEquipped
-[24983] \Global\POI_BBClubSink001\Interactions\Action\WashHands
-[24977] \Global\POI_BBClubSink001\Interactions\Grapple\POIHideEquipped
-[24978] \Global\POI_BBClubSink001\Interactions\Grapple\WeiOnLeft\HeadslamGIV
-[24979] \Global\POI_BBClubSink001\Interactions\Grapple\WeiOnLeft\HeadslamRCV
-[24980] \Global\POI_BBClubSink001\Interactions\Grapple\WeiOnRight\HeadslamGIV
-[24981] \Global\POI_BBClubSink001\Interactions\Grapple\WeiOnRight\HeadslamRCV
-[24990] \Global\POI_BBClubSink001\POI_Condition_Reference\ActionRequest
-[24987] \Global\POI_BBClubSink001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD
-[24985] \Global\POI_BBClubSink001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD
-[24988] \Global\POI_BBClubSink001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD
-[24986] \Global\POI_BBClubSink001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD
-[24989] \Global\POI_BBClubSink001\POI_Condition_Reference\UseConditions
-[24976] \Global\POI_BBClubSink001\UseConditions\ActionInteract\ActionInteract
-[24975] \Global\POI_BBClubSink001\UseConditions\GrappleInteract\GrappleInteract
+[24984](\Global\POI_BBClubSink001\Interactions\Action\Exit)
+[24982](\Global\POI_BBClubSink001\Interactions\Action\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24983](\Global\POI_BBClubSink001\Interactions\Action\WashHands):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[33ms](CameraFollowGotoTrack)
+[3333ms](HealthReplenishInstantTrack)
+[3333ms](SkookumTrack)
+	[Class]: Character
+	[Script]: set_bone_visual_damage_amount(10, 0.0) set_bone_visual_damage_amount(9, 0.00) set_bone_visual_damage_amount(8, 0.0) set_bone_visual_damage_amount(7, 0.00)
+
+[24977](\Global\POI_BBClubSink001\Interactions\Grapple\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[24978](\Global\POI_BBClubSink001\Interactions\Grapple\WeiOnLeft\HeadslamGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](StimulusTrack)
+[0ms](StimulusTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[433ms](SetStateFlagTrack)
+[766ms](CameraShakeTrack)
+[1333ms](OpportunityTrack)
+[1625ms](TargetPlayTrack)
+[1666ms](OpportunityTrack)
+
+[24979](\Global\POI_BBClubSink001\Interactions\Grapple\WeiOnLeft\HeadslamRCV):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](AttackTimerTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[433ms](SetStateFlagTrack)
+
+[24980](\Global\POI_BBClubSink001\Interactions\Grapple\WeiOnRight\HeadslamGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](StimulusTrack)
+[0ms](StimulusTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[500ms](SetStateFlagTrack)
+[766ms](CameraShakeTrack)
+[1000ms](OpportunityTrack)
+[1333ms](OpportunityTrack)
+[1625ms](TargetPlayTrack)
+
+[24981](\Global\POI_BBClubSink001\Interactions\Grapple\WeiOnRight\HeadslamRCV):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](AttackTimerTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[500ms](SetStateFlagTrack)
+
+[24990](\Global\POI_BBClubSink001\POI_Condition_Reference\ActionRequest)
+[24987](\Global\POI_BBClubSink001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "a", "mash")
+
+[24985](\Global\POI_BBClubSink001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "b", "mash")
+
+[24988](\Global\POI_BBClubSink001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "x", "mash")
+
+[24986](\Global\POI_BBClubSink001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "y", "mash")
+
+[24989](\Global\POI_BBClubSink001\POI_Condition_Reference\UseConditions)
+[24976](\Global\POI_BBClubSink001\UseConditions\ActionInteract\ActionInteract)
+[24975](\Global\POI_BBClubSink001\UseConditions\GrappleInteract\GrappleInteract)

@@ -1,67 +1,429 @@
-[24009] \Global\Door\Interactions\Close\Opened\CloseLeft\NotPlayer
-[24010] \Global\Door\Interactions\Close\Opened\CloseRight\NotPlayer
-[24046] \Global\Door\Interactions\Knockdown\Knockdown
-[24042] \Global\Door\Interactions\Open\ElevatorPryOpen\ButtonPrompt\ElevatorPry
-[24043] \Global\Door\Interactions\Open\ElevatorPryOpen\ButtonPrompt\ElevatorPry\ElevatorPryCYC
-[24045] \Global\Door\Interactions\Open\ElevatorPryOpen\ButtonPrompt\ElevatorPry\ElevatorPryFail
-[24044] \Global\Door\Interactions\Open\ElevatorPryOpen\ButtonPrompt\ElevatorPry\ElevatorPryFinished
-[24014] \Global\Door\Interactions\Open\KickOpenLeftSawdust\PushSide\Open
-[24013] \Global\Door\Interactions\Open\KickOpenRightSawdust\PushSide\Open
-[24036] \Global\Door\Interactions\Open\Locked\ButtonPrompt\LockPick
-[24038] \Global\Door\Interactions\Open\Locked\ButtonPrompt\LockPick\LockPickCYC
-[24039] \Global\Door\Interactions\Open\Locked\ButtonPrompt\LockPick\LockPickFinished
-[24040] \Global\Door\Interactions\Open\Locked\ButtonPrompt\LockPick\LockPickFinished\OnFinished
-[24037] \Global\Door\Interactions\Open\Locked\ButtonPrompt\LockPick\POIHideEquipped
-[24041] \Global\Door\Interactions\Open\Locked\ButtonPrompt\OpenAttempt
-[24012] \Global\Door\Interactions\Open\UnlockedKickOpenLeft\PushSide\Open
-[24011] \Global\Door\Interactions\Open\UnlockedKickOpenRight\PushSide\Open
-[24017] \Global\Door\Interactions\Open\UnlockedStealthOpen\Walk\PushSideRight\Injured
-[24018] \Global\Door\Interactions\Open\UnlockedStealthOpen\Walk\PushSideRight\Open
-[24015] \Global\Door\Interactions\Open\UnlockedStealthOpen\Walk\PushSide\Injured
-[24016] \Global\Door\Interactions\Open\UnlockedStealthOpen\Walk\PushSide\Open
-[24030] \Global\Door\Interactions\Open\Unlocked\PushSideRight\Female\Open
-[24032] \Global\Door\Interactions\Open\Unlocked\PushSideRight\RunTrans\Alert\Open
-[24031] \Global\Door\Interactions\Open\Unlocked\PushSideRight\RunTrans\JogSpeed\Open
-[24028] \Global\Door\Interactions\Open\Unlocked\PushSideRight\SprintingTrans\Breach\Clean
-[24029] \Global\Door\Interactions\Open\Unlocked\PushSideRight\SprintingTrans\Breach\Sloppy
-[24027] \Global\Door\Interactions\Open\Unlocked\PushSideRight\SprintingTrans\Ilyana\Breach
-[24035] \Global\Door\Interactions\Open\Unlocked\PushSideRight\WalkTrans\Focusing\Open
-[24034] \Global\Door\Interactions\Open\Unlocked\PushSideRight\WalkTrans\Normal\Open
-[24033] \Global\Door\Interactions\Open\Unlocked\PushSideRight\WalkTrans\Safehouse\Open
-[24022] \Global\Door\Interactions\Open\Unlocked\PushSide\Female\Open
-[24024] \Global\Door\Interactions\Open\Unlocked\PushSide\RunTrans\Alert\Open
-[24023] \Global\Door\Interactions\Open\Unlocked\PushSide\RunTrans\JogSpeed\Open
-[24020] \Global\Door\Interactions\Open\Unlocked\PushSide\SprintingTrans\Breach\Clean
-[24021] \Global\Door\Interactions\Open\Unlocked\PushSide\SprintingTrans\Breach\Sloppy
-[24019] \Global\Door\Interactions\Open\Unlocked\PushSide\SprintingTrans\Ilyana\Breach
-[24026] \Global\Door\Interactions\Open\Unlocked\PushSide\WalkTrans\Focusing\Open
-[24025] \Global\Door\Interactions\Open\Unlocked\PushSide\WalkTrans\Normal\Open
-[24047] \Global\Door\Interactions\Utility\PDASpawnNoCleanup
-[24048] \Global\Door\Interactions\Utility\VelocitySlopeMode
-[23982] \Global\Door\Object\Closed\Idle
-[23984] \Global\Door\Object\Closed\IdleKickOpen
-[23985] \Global\Door\Object\Closed\IdleKickOpenSawdust
-[23983] \Global\Door\Object\Closed\IdleStealthOpen
-[23986] \Global\Door\Object\Closed\LockedForPicking
-[23993] \Global\Door\Object\Closed\NotInteractable\Alert\Clean
-[23994] \Global\Door\Object\Closed\NotInteractable\Alert_Right\Clean
-[23998] \Global\Door\Object\Closed\NotInteractable\Breach\Clean
-[23997] \Global\Door\Object\Closed\NotInteractable\Breach\Sloppy
-[24000] \Global\Door\Object\Closed\NotInteractable\Breach_Left\Clean
-[23999] \Global\Door\Object\Closed\NotInteractable\Breach_Left\Sloppy
-[23988] \Global\Door\Object\Closed\NotInteractable\Female_Opening
-[23990] \Global\Door\Object\Closed\NotInteractable\Female_Opening_Right
-[23987] \Global\Door\Object\Closed\NotInteractable\Idle
-[23995] \Global\Door\Object\Closed\NotInteractable\Jog\Clean
-[23996] \Global\Door\Object\Closed\NotInteractable\Jog_Right\Clean
-[23989] \Global\Door\Object\Closed\NotInteractable\Opening
-[23992] \Global\Door\Object\Closed\NotInteractable\OpeningAndClosing
-[23991] \Global\Door\Object\Closed\NotInteractable\Opening_Right
-[24003] \Global\Door\Object\Closed\NotInteractable\StealthInjured\Opening
-[24004] \Global\Door\Object\Closed\NotInteractable\StealthRightInjured\Opening
-[24002] \Global\Door\Object\Closed\NotInteractable\StealthRight\Opening
-[24001] \Global\Door\Object\Closed\NotInteractable\Stealth\Opening
-[24006] \Global\Door\Object\Open\NotInteractable\Closing_Left
-[24008] \Global\Door\Object\Open\NotInteractable\FromBreach\Clean
-[24007] \Global\Door\Object\Open\NotInteractable\FromBreach\Sloppy
-[24005] \Global\Door\Object\Open\NotInteractable\Idle
+[24009](\Global\Door\Interactions\Close\Opened\CloseLeft\NotPlayer):
+[0ms](AnimationTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24010](\Global\Door\Interactions\Close\Opened\CloseRight\NotPlayer):
+[0ms](AnimationTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24046](\Global\Door\Interactions\Knockdown\Knockdown):
+[0ms](AttackCollisionTrack)
+[0ms](ExecuteTrack)
+
+[24042](\Global\Door\Interactions\Open\ElevatorPryOpen\ButtonPrompt\ElevatorPry):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24043](\Global\Door\Interactions\Open\ElevatorPryOpen\ButtonPrompt\ElevatorPry\ElevatorPryCYC):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24045](\Global\Door\Interactions\Open\ElevatorPryOpen\ButtonPrompt\ElevatorPry\ElevatorPryFail):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24044](\Global\Door\Interactions\Open\ElevatorPryOpen\ButtonPrompt\ElevatorPry\ElevatorPryFinished):
+[0ms](AnimationTrack)
+
+[24014](\Global\Door\Interactions\Open\KickOpenLeftSawdust\PushSide\Open):
+[0ms](CameraConstrainYawTrack)
+[0ms](SpawnTrack)
+[466ms](PlayEffectTrack)
+
+[24013](\Global\Door\Interactions\Open\KickOpenRightSawdust\PushSide\Open):
+[0ms](CameraConstrainYawTrack)
+[0ms](SpawnTrack)
+[466ms](PlayEffectTrack)
+
+[24036](\Global\Door\Interactions\Open\Locked\ButtonPrompt\LockPick):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24038](\Global\Door\Interactions\Open\Locked\ButtonPrompt\LockPick\LockPickCYC):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras()
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[0ms](UIScreenTrack)
+
+[24039](\Global\Door\Interactions\Open\Locked\ButtonPrompt\LockPick\LockPickFinished):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras(false)
+
+[24040](\Global\Door\Interactions\Open\Locked\ButtonPrompt\LockPick\LockPickFinished\OnFinished):
+[0ms](OpportunityTrack)
+
+[24037](\Global\Door\Interactions\Open\Locked\ButtonPrompt\LockPick\POIHideEquipped):
+[0ms](SpawnTrack)
+
+[24041](\Global\Door\Interactions\Open\Locked\ButtonPrompt\OpenAttempt):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24012](\Global\Door\Interactions\Open\UnlockedKickOpenLeft\PushSide\Open):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SubjectFollowOverrideTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[233ms](TargetPlayTrack)
+[333ms](CameraShakeTrack)
+[500ms](CameraShakeTrack)
+
+[24011](\Global\Door\Interactions\Open\UnlockedKickOpenRight\PushSide\Open):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SubjectFollowOverrideTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[233ms](TargetPlayTrack)
+[333ms](CameraShakeTrack)
+[500ms](CameraShakeTrack)
+
+[24017](\Global\Door\Interactions\Open\UnlockedStealthOpen\Walk\PushSideRight\Injured):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[166ms](AttackCollisionTrack)
+[200ms](TargetSyncPositionTrack)
+
+[24018](\Global\Door\Interactions\Open\UnlockedStealthOpen\Walk\PushSideRight\Open):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[166ms](AttackCollisionTrack)
+[200ms](TargetSyncPositionTrack)
+
+[24015](\Global\Door\Interactions\Open\UnlockedStealthOpen\Walk\PushSide\Injured):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[166ms](AttackCollisionTrack)
+[200ms](TargetSyncPositionTrack)
+
+[24016](\Global\Door\Interactions\Open\UnlockedStealthOpen\Walk\PushSide\Open):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[166ms](AttackCollisionTrack)
+[200ms](TargetSyncPositionTrack)
+
+[24030](\Global\Door\Interactions\Open\Unlocked\PushSideRight\Female\Open):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[166ms](AttackCollisionTrack)
+[233ms](TargetSyncPositionTrack)
+
+[24032](\Global\Door\Interactions\Open\Unlocked\PushSideRight\RunTrans\Alert\Open):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[166ms](AttackCollisionTrack)
+
+[24031](\Global\Door\Interactions\Open\Unlocked\PushSideRight\RunTrans\JogSpeed\Open):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[166ms](AttackCollisionTrack)
+
+[24028](\Global\Door\Interactions\Open\Unlocked\PushSideRight\SprintingTrans\Breach\Clean):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[33ms](SpawnTrack)
+[100ms](TargetSyncPositionTrack)
+
+[24029](\Global\Door\Interactions\Open\Unlocked\PushSideRight\SprintingTrans\Breach\Sloppy):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](GameStatEventTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[100ms](SpawnTrack)
+[400ms](LocomotionTrack)
+
+[24027](\Global\Door\Interactions\Open\Unlocked\PushSideRight\SprintingTrans\Ilyana\Breach):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[33ms](SpawnTrack)
+
+[24035](\Global\Door\Interactions\Open\Unlocked\PushSideRight\WalkTrans\Focusing\Open):
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+
+[24034](\Global\Door\Interactions\Open\Unlocked\PushSideRight\WalkTrans\Normal\Open):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](SpawnTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[100ms](TargetSyncPositionTrack)
+[166ms](AttackCollisionTrack)
+
+[24033](\Global\Door\Interactions\Open\Unlocked\PushSideRight\WalkTrans\Safehouse\Open):
+[0ms](AnimationTrack)
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](SpawnTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[166ms](AttackCollisionTrack)
+[200ms](TargetAttachEffectorTrack)
+[400ms](TargetDetachEffectorTrack)
+
+[24022](\Global\Door\Interactions\Open\Unlocked\PushSide\Female\Open):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[166ms](AttackCollisionTrack)
+[233ms](TargetSyncPositionTrack)
+
+[24024](\Global\Door\Interactions\Open\Unlocked\PushSide\RunTrans\Alert\Open):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[166ms](AttackCollisionTrack)
+
+[24023](\Global\Door\Interactions\Open\Unlocked\PushSide\RunTrans\JogSpeed\Open):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[166ms](AttackCollisionTrack)
+
+[24020](\Global\Door\Interactions\Open\Unlocked\PushSide\SprintingTrans\Breach\Clean):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[33ms](SpawnTrack)
+[100ms](TargetSyncPositionTrack)
+
+[24021](\Global\Door\Interactions\Open\Unlocked\PushSide\SprintingTrans\Breach\Sloppy):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](GameStatEventTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[100ms](SpawnTrack)
+[400ms](LocomotionTrack)
+
+[24019](\Global\Door\Interactions\Open\Unlocked\PushSide\SprintingTrans\Ilyana\Breach):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[33ms](SpawnTrack)
+
+[24026](\Global\Door\Interactions\Open\Unlocked\PushSide\WalkTrans\Focusing\Open):
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+
+[24025](\Global\Door\Interactions\Open\Unlocked\PushSide\WalkTrans\Normal\Open):
+[0ms](AnimationTrack)
+[0ms](CameraConstrainYawTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](SpawnTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[100ms](TargetSyncPositionTrack)
+[166ms](AttackCollisionTrack)
+
+[24047](\Global\Door\Interactions\Utility\PDASpawnNoCleanup):
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[24048](\Global\Door\Interactions\Utility\VelocitySlopeMode):
+[0ms](VelocitySlopeModeTrack)
+[0ms](VelocitySlopeModeTrack)
+
+[23982](\Global\Door\Object\Closed\Idle):
+[0ms](AnimationTrack)
+
+[23984](\Global\Door\Object\Closed\IdleKickOpen):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+
+[23985](\Global\Door\Object\Closed\IdleKickOpenSawdust):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+
+[23983](\Global\Door\Object\Closed\IdleStealthOpen):
+[0ms](AnimationTrack)
+
+[23986](\Global\Door\Object\Closed\LockedForPicking):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+
+[23993](\Global\Door\Object\Closed\NotInteractable\Alert\Clean):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[50ms](AudioTrack)
+[150ms](AudioTrack)
+
+[23994](\Global\Door\Object\Closed\NotInteractable\Alert_Right\Clean):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[50ms](AudioTrack)
+[150ms](AudioTrack)
+
+[23998](\Global\Door\Object\Closed\NotInteractable\Breach\Clean):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[50ms](AudioTrack)
+
+[23997](\Global\Door\Object\Closed\NotInteractable\Breach\Sloppy):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[100ms](AudioTrack)
+
+[24000](\Global\Door\Object\Closed\NotInteractable\Breach_Left\Clean):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[50ms](AudioTrack)
+
+[23999](\Global\Door\Object\Closed\NotInteractable\Breach_Left\Sloppy):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[100ms](AudioTrack)
+
+[23988](\Global\Door\Object\Closed\NotInteractable\Female_Opening):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1133ms](AudioTrack)
+[1500ms](AudioTrack)
+
+[23990](\Global\Door\Object\Closed\NotInteractable\Female_Opening_Right):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1100ms](AudioTrack)
+[1450ms](AudioTrack)
+
+[23987](\Global\Door\Object\Closed\NotInteractable\Idle):
+[0ms](AnimationTrack)
+
+[23995](\Global\Door\Object\Closed\NotInteractable\Jog\Clean):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[50ms](AudioTrack)
+[150ms](AudioTrack)
+
+[23996](\Global\Door\Object\Closed\NotInteractable\Jog_Right\Clean):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[50ms](AudioTrack)
+[150ms](AudioTrack)
+
+[23989](\Global\Door\Object\Closed\NotInteractable\Opening):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[50ms](AudioTrack)
+[250ms](AudioTrack)
+
+[23992](\Global\Door\Object\Closed\NotInteractable\OpeningAndClosing):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[23991](\Global\Door\Object\Closed\NotInteractable\Opening_Right):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[100ms](AudioTrack)
+[250ms](AudioTrack)
+
+[24003](\Global\Door\Object\Closed\NotInteractable\StealthInjured\Opening):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[750ms](AudioTrack)
+
+[24004](\Global\Door\Object\Closed\NotInteractable\StealthRightInjured\Opening):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[750ms](AudioTrack)
+
+[24002](\Global\Door\Object\Closed\NotInteractable\StealthRight\Opening):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[716ms](AudioTrack)
+
+[24001](\Global\Door\Object\Closed\NotInteractable\Stealth\Opening):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[633ms](AudioTrack)
+
+[24006](\Global\Door\Object\Open\NotInteractable\Closing_Left):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[500ms](AudioTrack)
+[1000ms](AudioTrack)
+
+[24008](\Global\Door\Object\Open\NotInteractable\FromBreach\Clean):
+[0ms](OpportunityTrack)
+[100ms](DoorStateTrack)
+
+[24007](\Global\Door\Object\Open\NotInteractable\FromBreach\Sloppy):
+[0ms](OpportunityTrack)
+
+[24005](\Global\Door\Object\Open\NotInteractable\Idle):
+[0ms](OpportunityTrack)
+

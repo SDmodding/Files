@@ -1,9 +1,67 @@
-[28763] \Global\SpyCam\Exit
-[28762] \Global\SpyCam\Interactions\Actions\End\Success
-[28761] \Global\SpyCam\Interactions\Actions\Hacking_CYC
-[28759] \Global\SpyCam\Interactions\Actions\Intro
-[28760] \Global\SpyCam\Interactions\Actions\Intro\0x417F6987
-[28758] \Global\SpyCam\Interactions\Actions\MoveTo
-[28757] \Global\SpyCam\Interactions\Actions\POIHideEquippedOnly
-[28756] \Global\SpyCam\Interactions\AudiobankLoad
-[28755] \Global\SpyCam\UseConditions
+[28763](\Global\SpyCam\Exit):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras(false)
+[0ms](SpawnTrack)
+[0ms](TargetReleaseTrack)
+[300ms](TargetPlayTrack)
+
+[28762](\Global\SpyCam\Interactions\Actions\End\Success):
+[0ms](CollectibleCollectTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: SpyPC.handle_collectible() _wait(5.0) HUD.hide_mission_progress()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: SpyPC.turn_off_spycam_effect()
+
+[28761](\Global\SpyCam\Interactions\Actions\Hacking_CYC):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras(false)
+[0ms](TargetPlayTrack)
+[0ms](UIScreenTrack)
+
+[28759](\Global\SpyCam\Interactions\Actions\Intro):
+[0ms](AnimationTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSyncPositionTrack)
+[466ms](SpawnTrack)
+[1033ms](TargetPlayTrack)
+
+[28760](\Global\SpyCam\Interactions\Actions\Intro\0x417F6987):
+[0ms](ObjectCreateTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetLockTrack)
+
+[28758](\Global\SpyCam\Interactions\Actions\MoveTo):
+[0ms](BlendTreeTrack)
+[0ms](OpportunityTrack)
+[0ms](PathfindToTargetTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[28757](\Global\SpyCam\Interactions\Actions\POIHideEquippedOnly):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[28756](\Global\SpyCam\Interactions\AudiobankLoad):
+[0ms](AudioTrackSoundbankIO)
+[0ms](AudioTrackSoundbankIO)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.set_spycam_juncbox_target()
+[0ms](SpawnTrack)
+
+[28755](\Global\SpyCam\UseConditions)

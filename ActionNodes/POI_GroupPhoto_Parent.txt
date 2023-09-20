@@ -1,21 +1,130 @@
-[26379] \Global\POI_GroupPhoto_Parent\Interactions\ActivateChildren
-[26380] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures
-[26397] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\Exit\Female\FemalePicture_Exit
-[26398] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\Exit\Male\MalePicture_Exit
-[26382] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Female\FemalePicture_LoadResources
-[26385] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Female\FemalePicture_LoadResources\FemalePicture_Intro_Actual
-[26383] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Female\FemalePicture_LoadResources\WaitForResources
-[26384] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Female\FemalePicture_LoadResources\WaitForResources\Timeout
-[26386] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Male\MalePicture_LoadResources
-[26389] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Male\MalePicture_LoadResources\MalePicture_Intro_Actual
-[26387] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Male\MalePicture_LoadResources\WaitForResources
-[26388] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Male\MalePicture_LoadResources\WaitForResources\Timeout
-[26390] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\IsFemale\TellSubjectsToPose01
-[26391] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\IsFemale\TellSubjectsToPose02
-[26392] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\IsMale\TellSubjectsToPose01
-[26393] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\IsMale\TellSubjectsToPose02
-[26395] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\Picture_Loop\Female\Female_Picture_Loop
-[26396] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\Picture_Loop\Male\Male_Picture_Loop
-[26394] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\TellSubjectsToPose
-[26381] \Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\WaitForSubjects
-[26378] \Global\POI_GroupPhoto_Parent\UseConditions
+[26379](\Global\POI_GroupPhoto_Parent\Interactions\ActivateChildren):
+[0ms](POIEnableChildTrack)
+[0ms](POIEnableChildTrack)
+[0ms](POIEnableChildTrack)
+[0ms](POIEnableChildTrack)
+[0ms](SequenceTrack)
+
+[26380](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDestroyTrack)
+
+[26397](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\Exit\Female\FemalePicture_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDestroyTrack)
+
+[26398](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\Exit\Male\MalePicture_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDestroyTrack)
+
+[26382](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Female\FemalePicture_LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[26385](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Female\FemalePicture_LoadResources\FemalePicture_Intro_Actual):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetDetachEffectorTrack)
+[1400ms](TargetAttachEffectorTrack)
+
+[26383](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Female\FemalePicture_LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[26384](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Female\FemalePicture_LoadResources\WaitForResources\Timeout)
+[26386](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Male\MalePicture_LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[26389](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Male\MalePicture_LoadResources\MalePicture_Intro_Actual):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetDetachEffectorTrack)
+[1400ms](TargetAttachEffectorTrack)
+
+[26387](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Male\MalePicture_LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[26388](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\Picture_Intro\Male\MalePicture_LoadResources\WaitForResources\Timeout)
+[26390](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\IsFemale\TellSubjectsToPose01):
+[0ms](AnimationTrack)
+[0ms](DialogueTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachEffectorTrack)
+[0ms](TargetDetachEffectorTrack)
+
+[26391](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\IsFemale\TellSubjectsToPose02):
+[0ms](AnimationTrack)
+[0ms](DialogueTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachEffectorTrack)
+[0ms](TargetDetachEffectorTrack)
+
+[26392](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\IsMale\TellSubjectsToPose01):
+[0ms](AnimationTrack)
+[0ms](DialogueTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachEffectorTrack)
+[0ms](TargetDetachEffectorTrack)
+
+[26393](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\IsMale\TellSubjectsToPose02):
+[0ms](AnimationTrack)
+[0ms](DialogueTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachEffectorTrack)
+[0ms](TargetDetachEffectorTrack)
+
+[26395](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\Picture_Loop\Female\Female_Picture_Loop):
+[0ms](AnimationTrack)
+[0ms](DialogueTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachEffectorTrack)
+[0ms](TargetDetachEffectorTrack)
+
+[26396](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\Picture_Loop\Male\Male_Picture_Loop):
+[0ms](AnimationTrack)
+[0ms](DialogueTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachEffectorTrack)
+[0ms](TargetDetachEffectorTrack)
+
+[26394](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\StartPhotography\TellSubjectsToPose):
+[0ms](SequenceTrack)
+[0ms](TargetAssignSubTargetTrack)
+[0ms](TargetAssignSubTargetTrack)
+[0ms](TargetAssignSubTargetTrack)
+[0ms](TargetAssignSubTargetTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetPlayTrack)
+
+[26381](\Global\POI_GroupPhoto_Parent\Interactions\TakePictures\TakePictures\WaitForSubjects):
+[0ms](AnimationTrack)
+[0ms](MinimumDurationTrack)
+[0ms](SequenceTrack)
+
+[26378](\Global\POI_GroupPhoto_Parent\UseConditions)

@@ -1,12 +1,144 @@
-[27387] \Global\POI_PhoneBooth003\Interactions\Grapple\POIHideEquipped
-[27388] \Global\POI_PhoneBooth003\Interactions\Grapple\WeiOnLeft\PhoneBeatingGIV
-[27389] \Global\POI_PhoneBooth003\Interactions\Grapple\WeiOnLeft\PhoneBeatingRCV
-[27390] \Global\POI_PhoneBooth003\Interactions\Grapple\WeiOnRight\PhoneBeatingGIV
-[27391] \Global\POI_PhoneBooth003\Interactions\Grapple\WeiOnRight\PhoneBeatingRCV
-[27397] \Global\POI_PhoneBooth003\POI_Condition_Reference\ActionRequest
-[27394] \Global\POI_PhoneBooth003\POI_Condition_Reference\StruggleHUD_A\StruggleHUD
-[27392] \Global\POI_PhoneBooth003\POI_Condition_Reference\StruggleHUD_B\StruggleHUD
-[27395] \Global\POI_PhoneBooth003\POI_Condition_Reference\StruggleHUD_X\StruggleHUD
-[27393] \Global\POI_PhoneBooth003\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD
-[27396] \Global\POI_PhoneBooth003\POI_Condition_Reference\UseConditions
-[27386] \Global\POI_PhoneBooth003\UseConditions\GrappleInteract\ActionRequest
+[27387](\Global\POI_PhoneBooth003\Interactions\Grapple\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[27388](\Global\POI_PhoneBooth003\Interactions\Grapple\WeiOnLeft\PhoneBeatingGIV):
+[0ms](AnimationTrack)
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](POIDisableSelfTrack)
+[0ms](StimulusTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[1000ms](SetStateFlagTrack)
+[1300ms](CameraShakeTrack)
+[1300ms](StimulusTrack)
+[1800ms](ObjectCreateTrack)
+[1800ms](TargetPlayTrack)
+[1900ms](TargetAttachTrack)
+[2500ms](OpportunityTrack)
+[2566ms](CameraShakeTrack)
+[2833ms](OpportunityTrack)
+[3166ms](CameraShakeTrack)
+[3866ms](TargetDetachTrack)
+
+[27389](\Global\POI_PhoneBooth003\Interactions\Grapple\WeiOnLeft\PhoneBeatingRCV):
+[0ms](AnimationTrack)
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSyncPositionTrack)
+[1000ms](SetStateFlagTrack)
+[1200ms](PlayEffectTrack)
+[1250ms](PlayEffectTrack)
+[2550ms](PlayEffectTrack)
+[2566ms](PlayEffectTrack)
+[3150ms](PlayEffectTrack)
+[3166ms](PlayEffectTrack)
+
+[27390](\Global\POI_PhoneBooth003\Interactions\Grapple\WeiOnRight\PhoneBeatingGIV):
+[0ms](AnimationTrack)
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](POIDisableSelfTrack)
+[0ms](StimulusTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[1000ms](SetStateFlagTrack)
+[1133ms](StimulusTrack)
+[1400ms](CameraShakeTrack)
+[1966ms](ObjectCreateTrack)
+[1966ms](TargetAttachTrack)
+[1966ms](TargetPlayTrack)
+[2500ms](OpportunityTrack)
+[2666ms](CameraShakeTrack)
+[2833ms](OpportunityTrack)
+[3266ms](CameraShakeTrack)
+[3966ms](TargetDetachTrack)
+
+[27391](\Global\POI_PhoneBooth003\Interactions\Grapple\WeiOnRight\PhoneBeatingRCV):
+[0ms](AnimationTrack)
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSyncPositionTrack)
+[1000ms](SetStateFlagTrack)
+[1300ms](PlayEffectTrack)
+[1350ms](PlayEffectTrack)
+[2633ms](PlayEffectTrack)
+[2666ms](PlayEffectTrack)
+[3266ms](PlayEffectTrack)
+[3266ms](PlayEffectTrack)
+
+[27397](\Global\POI_PhoneBooth003\POI_Condition_Reference\ActionRequest)
+[27394](\Global\POI_PhoneBooth003\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "a", "mash")
+
+[27392](\Global\POI_PhoneBooth003\POI_Condition_Reference\StruggleHUD_B\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "b", "mash")
+
+[27395](\Global\POI_PhoneBooth003\POI_Condition_Reference\StruggleHUD_X\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "x", "mash")
+
+[27393](\Global\POI_PhoneBooth003\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "y", "mash")
+
+[27396](\Global\POI_PhoneBooth003\POI_Condition_Reference\UseConditions)
+[27386](\Global\POI_PhoneBooth003\UseConditions\GrappleInteract\ActionRequest)

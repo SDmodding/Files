@@ -1,15 +1,72 @@
-[26073] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles
-[26086] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_Exit\CheckBody_Exit
-[26075] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckBody
-[26080] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\CheckBody\CheckBody
-[26077] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\DefibBody
-[26078] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\DefibBody2
-[26076] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\GetDefib
-[26079] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\ReturnDefib
-[26084] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\DeadBody\DefibReact
-[26085] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\DeadBody\DefibReact2
-[26074] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\Into
-[26082] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\Out
-[26083] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\Steer
-[26081] \Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\TakeBag
-[26072] \Global\POI_EMT_CheckBody_Child\UseConditions
+[26073](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](StimulusTrack)
+
+[26086](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_Exit\CheckBody_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](StimulusTrack)
+
+[26075](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckBody):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[100ms](DialogueTrack)
+
+[26080](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\CheckBody\CheckBody):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26077](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\DefibBody):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](SequenceTrack)
+
+[26078](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\DefibBody2):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](SequenceTrack)
+
+[26076](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\GetDefib):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](SequenceTrack)
+
+[26079](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\CheckingBody\UseDefib\ReturnDefib):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](SequenceTrack)
+
+[26084](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\DeadBody\DefibReact):
+[0ms](AnimationTrack)
+
+[26085](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\DeadBody\DefibReact2):
+[0ms](AnimationTrack)
+
+[26074](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\Into):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTrack)
+[0ms](TurnToFaceTargetTrack)
+[8ms](TargetLockTrack)
+[100ms](DialogueTrack)
+[925ms](TargetDetachTrack)
+
+[26082](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\Out):
+[0ms](AnimationTrack)
+
+[26083](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\Steer)
+[26081](\Global\POI_EMT_CheckBody_Child\Interactions\CheckBody_Idles\CheckBody_States\CheckBodyEMT\TakeBag):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[100ms](DialogueTrack)
+[375ms](TargetAttachTrack)
+
+[26072](\Global\POI_EMT_CheckBody_Child\UseConditions)

@@ -1,6 +1,32 @@
-[27219] \Global\Meditate\Interactions\MEDITATE_Idles
-[27220] \Global\Meditate\Interactions\MEDITATE_Idles\MEDITATE_Anims\Idles\Female\MEDITATE_01
-[27221] \Global\Meditate\Interactions\MEDITATE_Idles\MEDITATE_Anims\Idles\Male\MEDITATE_01
-[27223] \Global\Meditate\Interactions\MEDITATE_Idles\MEDITATE_Exit\MEDITATE_Exit
-[27222] \Global\Meditate\Interactions\MEDITATE_Idles\MEDITATE_Exit\MEDITATE_ExitFemale
-[27218] \Global\Meditate\UseConditions
+[27219](\Global\Meditate\Interactions\MEDITATE_Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[27220](\Global\Meditate\Interactions\MEDITATE_Idles\MEDITATE_Anims\Idles\Female\MEDITATE_01):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27221](\Global\Meditate\Interactions\MEDITATE_Idles\MEDITATE_Anims\Idles\Male\MEDITATE_01):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27223](\Global\Meditate\Interactions\MEDITATE_Idles\MEDITATE_Exit\MEDITATE_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27222](\Global\Meditate\Interactions\MEDITATE_Idles\MEDITATE_Exit\MEDITATE_ExitFemale):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27218](\Global\Meditate\UseConditions)

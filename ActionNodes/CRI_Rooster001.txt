@@ -1,25 +1,113 @@
-[23961] \Global\CRI_Rooster001\AI\Avoidance\Idle
-[23959] \Global\CRI_Rooster001\AI\Avoidance\RunAway
-[23958] \Global\CRI_Rooster001\AI\Avoidance\RunFlapAway
-[23960] \Global\CRI_Rooster001\AI\Avoidance\WalkAway
-[23947] \Global\CRI_Rooster001\Attacks\Kick
-[23949] \Global\CRI_Rooster001\Attacks\KickMir
-[23946] \Global\CRI_Rooster001\Attacks\Peck
-[23948] \Global\CRI_Rooster001\Attacks\PeckMir
-[23962] \Global\CRI_Rooster001\GlobalActions\CombatEntry
-[23964] \Global\CRI_Rooster001\GlobalActions\POIDynamicBranch
-[23963] \Global\CRI_Rooster001\GlobalActions\Taunts
-[23956] \Global\CRI_Rooster001\HitTree\PostHit\Dead\Downed\Down
-[23957] \Global\CRI_Rooster001\HitTree\PostHit\Dead\Downed\DownMir
-[23950] \Global\CRI_Rooster001\HitTree\PreReactionControl\Carried
-[23951] \Global\CRI_Rooster001\HitTree\PreReactionControl\Default
-[23952] \Global\CRI_Rooster001\HitTree\Reactions\Hit
-[23954] \Global\CRI_Rooster001\HitTree\Reactions\HitMir
-[23953] \Global\CRI_Rooster001\HitTree\Reactions\Roll
-[23955] \Global\CRI_Rooster001\HitTree\Reactions\RollMir
-[23944] \Global\CRI_Rooster001\Locomotion\Idle\Focus
-[23945] \Global\CRI_Rooster001\Locomotion\Idle\Idle
-[23942] \Global\CRI_Rooster001\Locomotion\Moving\RunAway\RunLoop
-[23941] \Global\CRI_Rooster001\Locomotion\Moving\RunFlapAway\RunFlapLoop
-[23943] \Global\CRI_Rooster001\Locomotion\Moving\WalkAway\WalkLoop
-[23940] \Global\CRI_Rooster001\MasterSpawn
+[23961](\Global\CRI_Rooster001\AI\Avoidance\Idle):
+[0ms](OpportunityTrack)
+
+[23959](\Global\CRI_Rooster001\AI\Avoidance\RunAway):
+[0ms](ActionRequestTrack)
+[0ms](OpportunityTrack)
+
+[23958](\Global\CRI_Rooster001\AI\Avoidance\RunFlapAway):
+[0ms](ActionRequestTrack)
+[0ms](OpportunityTrack)
+
+[23960](\Global\CRI_Rooster001\AI\Avoidance\WalkAway):
+[0ms](ActionRequestTrack)
+[0ms](OpportunityTrack)
+
+[23947](\Global\CRI_Rooster001\Attacks\Kick):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](TargetSteerToTrack)
+
+[23949](\Global\CRI_Rooster001\Attacks\KickMir):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](TargetSteerToTrack)
+
+[23946](\Global\CRI_Rooster001\Attacks\Peck):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](TargetSteerToTrack)
+
+[23948](\Global\CRI_Rooster001\Attacks\PeckMir):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](TargetSteerToTrack)
+
+[23962](\Global\CRI_Rooster001\GlobalActions\CombatEntry)
+[23964](\Global\CRI_Rooster001\GlobalActions\POIDynamicBranch):
+[0ms](POIBeginTrack)
+[0ms](POIBehaviourActiveTrack)
+
+[23963](\Global\CRI_Rooster001\GlobalActions\Taunts)
+[23956](\Global\CRI_Rooster001\HitTree\PostHit\Dead\Downed\Down):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+
+[23957](\Global\CRI_Rooster001\HitTree\PostHit\Dead\Downed\DownMir):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+
+[23950](\Global\CRI_Rooster001\HitTree\PreReactionControl\Carried)
+[23951](\Global\CRI_Rooster001\HitTree\PreReactionControl\Default):
+[0ms](OpportunityTrack)
+
+[23952](\Global\CRI_Rooster001\HitTree\Reactions\Hit):
+[0ms](AnimationTrack)
+[0ms](HandleDamageTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[23954](\Global\CRI_Rooster001\HitTree\Reactions\HitMir):
+[0ms](AnimationTrack)
+[0ms](HandleDamageTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[23953](\Global\CRI_Rooster001\HitTree\Reactions\Roll):
+[0ms](AnimationTrack)
+[0ms](HandleDamageTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[23955](\Global\CRI_Rooster001\HitTree\Reactions\RollMir):
+[0ms](AnimationTrack)
+[0ms](HandleDamageTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[23944](\Global\CRI_Rooster001\Locomotion\Idle\Focus):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSteerToTrack)
+
+[23945](\Global\CRI_Rooster001\Locomotion\Idle\Idle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[23942](\Global\CRI_Rooster001\Locomotion\Moving\RunAway\RunLoop):
+[0ms](AnimationTrack)
+[0ms](LocomotionTrack)
+[0ms](OpportunityTrack)
+
+[23941](\Global\CRI_Rooster001\Locomotion\Moving\RunFlapAway\RunFlapLoop):
+[0ms](AnimationTrack)
+[0ms](LocomotionTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+
+[23943](\Global\CRI_Rooster001\Locomotion\Moving\WalkAway\WalkLoop):
+[0ms](AnimationTrack)
+[0ms](LocomotionTrack)
+[0ms](OpportunityTrack)
+
+[23940](\Global\CRI_Rooster001\MasterSpawn):
+[0ms](CharacterPhysicsTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+

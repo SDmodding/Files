@@ -1,4 +1,21 @@
-[28840] \Global\Talking\Interactions\TalkingIdles
-[28841] \Global\Talking\Interactions\TalkingIdles\TalkAnims\Male\PED_Conv_Talk_01_Male
-[28842] \Global\Talking\Interactions\TalkingIdles\TalkExit
-[28839] \Global\Talking\UseConditions
+[28840](\Global\Talking\Interactions\TalkingIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28841](\Global\Talking\Interactions\TalkingIdles\TalkAnims\Male\PED_Conv_Talk_01_Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[100ms](DialogueTrack)
+
+[28842](\Global\Talking\Interactions\TalkingIdles\TalkExit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[28839](\Global\Talking\UseConditions)

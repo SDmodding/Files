@@ -1,4 +1,20 @@
-[25273] \Global\POI_ChainingDoor\Interactions\ChainingDoorIdles
-[25274] \Global\POI_ChainingDoor\Interactions\ChainingDoorIdles\ChainingDoorAnims\ChainingDoor
-[25275] \Global\POI_ChainingDoor\Interactions\ChainingDoorIdles\ChainingDoorExit
-[25272] \Global\POI_ChainingDoor\UseConditions
+[25273](\Global\POI_ChainingDoor\Interactions\ChainingDoorIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25274](\Global\POI_ChainingDoor\Interactions\ChainingDoorIdles\ChainingDoorAnims\ChainingDoor):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25275](\Global\POI_ChainingDoor\Interactions\ChainingDoorIdles\ChainingDoorExit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25272](\Global\POI_ChainingDoor\UseConditions)

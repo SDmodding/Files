@@ -1,14 +1,71 @@
-[27134] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles
-[27146] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_Exit
-[27139] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\BowInto-PROMOTE_TO_USE
-[27140] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow
-[27141] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow\BowOut
-[27136] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\LightAttack1
-[27137] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\LightAttack1\LightAttack2
-[27138] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\LightAttack1\LightAttack2\ChargeAttack3
-[27143] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY
-[27144] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow
-[27145] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow\BowOut
-[27142] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\ReceiveAttack
-[27135] \Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\WaitForChild\WaitForChild
-[27133] \Global\POI_MartialArts_ChargeStun_Parent\UseConditions
+[27134](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[27146](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27139](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\BowInto-PROMOTE_TO_USE):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[27140](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27141](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\BowInto-PROMOTE_TO_USE\Bow\BowOut):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27136](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\LightAttack1):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27137](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\LightAttack1\LightAttack2):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27138](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\PerformAttack\LightAttack1\LightAttack2\ChargeAttack3):
+[0ms](AnimationTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+[200ms](AttackCollisionTrack)
+[333ms](SetStateFlagTrack)
+
+[27143](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[27144](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27145](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\BowInto-NEEDS_OPPORTUNITY\Bow\BowOut):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27142](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\ReceiveAttack\ReceiveAttack):
+[0ms](AnimationTrack)
+[33ms](OpportunityTrack)
+
+[27135](\Global\POI_MartialArts_ChargeStun_Parent\Interactions\ChargeStun_Idles\ChargeStun_States\WaitForChild\WaitForChild):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[27133](\Global\POI_MartialArts_ChargeStun_Parent\UseConditions)

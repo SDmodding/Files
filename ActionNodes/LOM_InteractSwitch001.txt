@@ -1,4 +1,74 @@
-[24534] \Global\LOM_InteractSwitch001\Object\Animation\TurningOff
-[24533] \Global\LOM_InteractSwitch001\Object\Destroyed
-[24532] \Global\LOM_InteractSwitch001\Object\LightsOff
-[24531] \Global\LOM_InteractSwitch001\Object\LightsOn
+[24534](\Global\LOM_InteractSwitch001\Object\Animation\TurningOff):
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_601", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_602", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_603", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_604", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_605", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_606", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_607", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_608", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_609", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_610", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_611", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_612", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_613", 1.0 )
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_world.damage_destructible("LOI_PH_light02_614", 1.0 )
+
+[24533](\Global\LOM_InteractSwitch001\Object\Destroyed):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.enable_light_layer('LOCKER_OFF', false)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.enable_light_layer('LOCKER_ON', true)
+
+[24532](\Global\LOM_InteractSwitch001\Object\LightsOff):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.enable_light_layer('LOCKER_OFF', false)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.enable_light_layer('LOCKER_ON', true)
+[100ms](AudioTrackSimple)
+
+[24531](\Global\LOM_InteractSwitch001\Object\LightsOn):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.enable_light_layer('LOCKER_OFF', true)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.enable_light_layer('LOCKER_ON', false)
+

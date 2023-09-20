@@ -1,6 +1,30 @@
-[29459] \Global\POI_Wave_Flag\Interactions\InactivityIdle\Idle
-[29460] \Global\POI_Wave_Flag\Interactions\WaveFlag_Idles
-[29462] \Global\POI_Wave_Flag\Interactions\WaveFlag_Idles\WaveFlag_Anims\Cycle
-[29461] \Global\POI_Wave_Flag\Interactions\WaveFlag_Idles\WaveFlag_Anims\Into
-[29463] \Global\POI_Wave_Flag\Interactions\WaveFlag_Idles\WaveFlag_Exit
-[29458] \Global\POI_Wave_Flag\UseConditions
+[29459](\Global\POI_Wave_Flag\Interactions\InactivityIdle\Idle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[29460](\Global\POI_Wave_Flag\Interactions\WaveFlag_Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[29462](\Global\POI_Wave_Flag\Interactions\WaveFlag_Idles\WaveFlag_Anims\Cycle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[29461](\Global\POI_Wave_Flag\Interactions\WaveFlag_Idles\WaveFlag_Anims\Into):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](ObjectCreateTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetAttachTrack)
+
+[29463](\Global\POI_Wave_Flag\Interactions\WaveFlag_Idles\WaveFlag_Exit):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[29458](\Global\POI_Wave_Flag\UseConditions)

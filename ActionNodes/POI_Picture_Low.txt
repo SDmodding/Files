@@ -1,12 +1,57 @@
-[27486] \Global\POI_Picture_Low\Interactions\Anims
-[27496] \Global\POI_Picture_Low\Interactions\Anims\PICTURE_Exit\PICTURE_Exit
-[27487] \Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources
-[27490] \Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources\IsSpawning_Actual
-[27488] \Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources\WaitForResources
-[27489] \Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources\WaitForResources\Timeout
-[27491] \Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\Picture_PreLoad
-[27494] \Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\Picture_PreLoad\Picture_Enter
-[27495] \Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\Picture_PreLoad\Picture_Enter\Picture_Actual\Pictuer_Actual
-[27492] \Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\Picture_PreLoad\WaitForResources
-[27493] \Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\Picture_PreLoad\WaitForResources\Timeout
-[27485] \Global\POI_Picture_Low\UseConditions
+[27486](\Global\POI_Picture_Low\Interactions\Anims):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[27496](\Global\POI_Picture_Low\Interactions\Anims\PICTURE_Exit\PICTURE_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27487](\Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[27490](\Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources\IsSpawning_Actual):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[27488](\Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[27489](\Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\IsSpawning\LoadResources\WaitForResources\Timeout)
+[27491](\Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\Picture_PreLoad):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[27494](\Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\Picture_PreLoad\Picture_Enter):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[27495](\Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\Picture_PreLoad\Picture_Enter\Picture_Actual\Pictuer_Actual):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[27492](\Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\Picture_PreLoad\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[27493](\Global\POI_Picture_Low\Interactions\Anims\Picture_Enter\Picture_PreLoad\WaitForResources\Timeout)
+[27485](\Global\POI_Picture_Low\UseConditions)

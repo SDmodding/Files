@@ -1,19 +1,82 @@
-[27623] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase
-[27640] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Exit\Exit
-[27624] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\ActivateChildren
-[27625] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink
-[27626] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink\Anims\Female
-[27628] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink\Anims\Female\Idle\Default
-[27627] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink\Anims\Female\Idle\Sexy
-[27629] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink\Anims\Male
-[27630] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink\Anims\Male\Idle
-[27631] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\ReciveDrink
-[27635] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingFemale\Random\Wave_01
-[27636] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingFemale\Random\Wave_02
-[27632] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingFemale\Waiting
-[27634] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingFemale\Waiting\Anims\Default
-[27633] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingFemale\Waiting\Anims\Sexy
-[27638] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingMale\Random\Wave_01
-[27639] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingMale\Random\Wave_02
-[27637] \Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingMale\Waiting
-[27622] \Global\POI_PurchaseDrink_Customer\UseConditions
+[27623](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase):
+[0ms](AudioTrackSoundbankIO)
+[0ms](POIEnableChildTrack)
+[0ms](SpawnTrack)
+
+[27640](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Exit\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27624](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\ActivateChildren):
+[0ms](POIEnableChildTrack)
+[0ms](SequenceTrack)
+
+[27625](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink):
+[0ms](HeadTrackTargetTrack)
+[0ms](LookAtTrack)
+[0ms](SpawnTrack)
+[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+
+[27626](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink\Anims\Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27628](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink\Anims\Female\Idle\Default):
+[0ms](AnimationTrack)
+
+[27627](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink\Anims\Female\Idle\Sexy):
+[0ms](AnimationTrack)
+
+[27629](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink\Anims\Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27630](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\OrderDrink\Anims\Male\Idle):
+[0ms](AnimationTrack)
+
+[27631](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\BartenderReady\ReciveDrink):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetReleaseTrack)
+[1500ms](TargetStealAttachedItemTrack)
+
+[27635](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingFemale\Random\Wave_01):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[27636](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingFemale\Random\Wave_02):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[27632](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingFemale\Waiting):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[27634](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingFemale\Waiting\Anims\Default):
+[0ms](AnimationTrack)
+
+[27633](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingFemale\Waiting\Anims\Sexy):
+[0ms](AnimationTrack)
+
+[27638](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingMale\Random\Wave_01):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[27639](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingMale\Random\Wave_02):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[27637](\Global\POI_PurchaseDrink_Customer\Interactions\Purchase\Purchase\WaitingForBartender\WaitingMale\Waiting):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[27622](\Global\POI_PurchaseDrink_Customer\UseConditions)

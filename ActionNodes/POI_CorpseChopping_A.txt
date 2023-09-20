@@ -1,5 +1,31 @@
-[25587] \Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget
-[25590] \Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget\ExitLoop
-[25588] \Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget\GroundAttackLoop\Chop
-[25589] \Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget\GroundAttackLoop\Chop\Attack
-[25586] \Global\POI_ChopBodyGIV\UseConditions
+[25587](\Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[25590](\Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget\ExitLoop):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_stop_using_use()
+[0ms](TargetSteerToTrack)
+
+[25588](\Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget\GroundAttackLoop\Chop):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](TargetAssignTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSyncPositionTrack)
+[800ms](OpportunityTrack)
+
+[25589](\Global\POI_ChopBodyGIV\Interactions\WaitForSubtarget\GroundAttackLoop\Chop\Attack):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSteerToTrack)
+[200ms](OpportunityTrack)
+[300ms](TargetReleaseTrack)
+
+[25586](\Global\POI_ChopBodyGIV\UseConditions)

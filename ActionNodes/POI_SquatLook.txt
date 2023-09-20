@@ -1,9 +1,45 @@
-[28776] \Global\POI_SquatLook\Interactions\SquatIdles
-[28782] \Global\POI_SquatLook\Interactions\SquatIdles\Exit\ExitFemale
-[28783] \Global\POI_SquatLook\Interactions\SquatIdles\Exit\ExitMale
-[28779] \Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Idles\Female\Squat_01
-[28780] \Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Idles\Male\Squat_01
-[28777] \Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Intro\IntroFemale
-[28778] \Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Intro\IntroMale
-[28781] \Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\SpeakDialogue
-[28775] \Global\POI_SquatLook\UseConditions
+[28776](\Global\POI_SquatLook\Interactions\SquatIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28782](\Global\POI_SquatLook\Interactions\SquatIdles\Exit\ExitFemale):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[500ms](OpportunityTrack)
+[1000ms](OpportunityTrack)
+[1000ms](OpportunityTrack)
+
+[28783](\Global\POI_SquatLook\Interactions\SquatIdles\Exit\ExitMale):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[500ms](OpportunityTrack)
+[1000ms](OpportunityTrack)
+[1000ms](OpportunityTrack)
+
+[28779](\Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Idles\Female\Squat_01):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[28780](\Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Idles\Male\Squat_01):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[28777](\Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Intro\IntroFemale):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[28778](\Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\Intro\IntroMale):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[28781](\Global\POI_SquatLook\Interactions\SquatIdles\SquatAnims\SpeakDialogue):
+[0ms](DialogueTrackPOI)
+
+[28775](\Global\POI_SquatLook\UseConditions)

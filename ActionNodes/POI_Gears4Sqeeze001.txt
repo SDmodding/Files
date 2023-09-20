@@ -1,13 +1,134 @@
-[26292] \Global\POI_Gears4Sqeeze001\Interactions\Action\Grapple\POIHideEquipped
-[26293] \Global\POI_Gears4Sqeeze001\Interactions\Action\Grapple\WeiOnLeft\Default\HeadslamGIV
-[26294] \Global\POI_Gears4Sqeeze001\Interactions\Action\Grapple\WeiOnLeft\Default\HeadslamRCV
-[26295] \Global\POI_Gears4Sqeeze001\Interactions\Action\Grapple\WeiOnRight\Default\HeadslamGIV
-[26296] \Global\POI_Gears4Sqeeze001\Interactions\Action\Grapple\WeiOnRight\Default\HeadslamRCV
-[26297] \Global\POI_Gears4Sqeeze001\Interactions\Rcv\Grapple\HeadStuckIn
-[26303] \Global\POI_Gears4Sqeeze001\POI_Condition_Reference\ActionRequest
-[26300] \Global\POI_Gears4Sqeeze001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD
-[26298] \Global\POI_Gears4Sqeeze001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD
-[26301] \Global\POI_Gears4Sqeeze001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD
-[26299] \Global\POI_Gears4Sqeeze001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD
-[26302] \Global\POI_Gears4Sqeeze001\POI_Condition_Reference\UseConditions
-[26291] \Global\POI_Gears4Sqeeze001\UseConditions\ActionRequest
+[26292](\Global\POI_Gears4Sqeeze001\Interactions\Action\Grapple\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[26293](\Global\POI_Gears4Sqeeze001\Interactions\Action\Grapple\WeiOnLeft\Default\HeadslamGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](StimulusTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[0ms](UpdateStatAwardWithIntegerTrack)
+[1000ms](POIDisableSelfTrack)
+[1000ms](SetStateFlagTrack)
+[1000ms](TargetPlayTrack)
+[1300ms](StimulusTrack)
+[1333ms](OpportunityTrack)
+[1333ms](OpportunityTrack)
+
+[26294](\Global\POI_Gears4Sqeeze001\Interactions\Action\Grapple\WeiOnLeft\Default\HeadslamRCV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](SetStateFlagTrack)
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSyncPositionTrack)
+[500ms](PlayEffectTrack)
+[1250ms](PlayEffectTrack)
+[1300ms](PlayEffectTrack)
+[1300ms](PlayEffectTrack)
+[1333ms](PlayEffectTrack)
+
+[26295](\Global\POI_Gears4Sqeeze001\Interactions\Action\Grapple\WeiOnRight\Default\HeadslamGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](GameStatEventTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](StimulusTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[0ms](UpdateStatAwardWithIntegerTrack)
+[1000ms](POIDisableSelfTrack)
+[1000ms](SetStateFlagTrack)
+[1000ms](TargetPlayTrack)
+[1133ms](StimulusTrack)
+
+[26296](\Global\POI_Gears4Sqeeze001\Interactions\Action\Grapple\WeiOnRight\Default\HeadslamRCV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](SetStateFlagTrack)
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSyncPositionTrack)
+[400ms](PlayEffectTrack)
+[1150ms](PlayEffectTrack)
+[1200ms](PlayEffectTrack)
+[1200ms](PlayEffectTrack)
+[1300ms](PlayEffectTrack)
+
+[26297](\Global\POI_Gears4Sqeeze001\Interactions\Rcv\Grapple\HeadStuckIn):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](SetStateFlagTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSyncPositionTrack)
+
+[26303](\Global\POI_Gears4Sqeeze001\POI_Condition_Reference\ActionRequest)
+[26300](\Global\POI_Gears4Sqeeze001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "a", "mash")
+
+[26298](\Global\POI_Gears4Sqeeze001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "b", "mash")
+
+[26301](\Global\POI_Gears4Sqeeze001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "x", "mash")
+
+[26299](\Global\POI_Gears4Sqeeze001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "y", "mash")
+
+[26302](\Global\POI_Gears4Sqeeze001\POI_Condition_Reference\UseConditions)
+[26291](\Global\POI_Gears4Sqeeze001\UseConditions\ActionRequest)

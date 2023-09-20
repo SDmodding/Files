@@ -1,7 +1,32 @@
-[28497] \Global\POI_Sleeping\Interactions\Exit
-[28492] \Global\POI_Sleeping\Interactions\SleepingIdles
-[28494] \Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Cycle\Cycle
-[28496] \Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Cycle\Cycle\HeadTracking\Idle
-[28495] \Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Cycle\Cycle\HeadTracking\PlayerClose
-[28493] \Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Into\Into
-[28491] \Global\POI_Sleeping\UseConditions
+[28497](\Global\POI_Sleeping\Interactions\Exit):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[5666ms](OpportunityTrack)
+[5666ms](OpportunityTrack)
+[5666ms](OpportunityTrack)
+
+[28492](\Global\POI_Sleeping\Interactions\SleepingIdles):
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28494](\Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Cycle\Cycle):
+[0ms](AnimationTrack)
+[0ms](SpawnTrack)
+
+[28496](\Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Cycle\Cycle\HeadTracking\Idle):
+[0ms](OpportunityTrack)
+
+[28495](\Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Cycle\Cycle\HeadTracking\PlayerClose):
+[0ms](HeadTrackTargetTrack)
+[0ms](LookAtTrack)
+[0ms](MasterTrack)
+[0ms](SequenceTrack)
+
+[28493](\Global\POI_Sleeping\Interactions\SleepingIdles\SleepingAnims\Into\Into):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[28491](\Global\POI_Sleeping\UseConditions)

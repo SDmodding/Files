@@ -1,11 +1,64 @@
-[27400] \Global\POI_PhoneBooth_Ambient\Interactions\Into
-[27401] \Global\POI_PhoneBooth_Ambient\Interactions\Into\Cyc
-[27402] \Global\POI_PhoneBooth_Ambient\Interactions\Into\Cyc\Exit
-[27399] \Global\POI_PhoneBooth_Ambient\Interactions\POIHideEquipped
-[27408] \Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\ActionRequest
-[27405] \Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\StruggleHUD_A\StruggleHUD
-[27403] \Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\StruggleHUD_B\StruggleHUD
-[27406] \Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\StruggleHUD_X\StruggleHUD
-[27404] \Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD
-[27407] \Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\UseConditions
-[27398] \Global\POI_PhoneBooth_Ambient\UseConditions
+[27400](\Global\POI_PhoneBooth_Ambient\Interactions\Into):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](ObjectReferenceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSyncPositionTrack)
+[3333ms](ObjectCreateTrack)
+[3333ms](TargetAttachTrack)
+
+[27401](\Global\POI_PhoneBooth_Ambient\Interactions\Into\Cyc):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSyncPositionTrack)
+
+[27402](\Global\POI_PhoneBooth_Ambient\Interactions\Into\Cyc\Exit):
+[0ms](AnimationTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[633ms](TargetDestroyTrack)
+
+[27399](\Global\POI_PhoneBooth_Ambient\Interactions\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[27408](\Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\ActionRequest)
+[27405](\Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "a", "mash")
+
+[27403](\Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\StruggleHUD_B\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "b", "mash")
+
+[27406](\Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\StruggleHUD_X\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "x", "mash")
+
+[27404](\Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "y", "mash")
+
+[27407](\Global\POI_PhoneBooth_Ambient\POI_Condition_Reference\UseConditions)
+[27398](\Global\POI_PhoneBooth_Ambient\UseConditions)

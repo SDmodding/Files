@@ -1,9 +1,40 @@
-[26456] \Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles
-[26462] \Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\Idles\Hammer_CYC
-[26458] \Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource
-[26461] \Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource\IsSpawning_Actual
-[26459] \Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource\WaitForResources
-[26460] \Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource\WaitForResources\Timeout
-[26457] \Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\WithProp\IsSpawning_Actual
-[26463] \Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Exit
-[26455] \Global\POI_Hammer_Floor\UseConditions
+[26456](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[26462](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\Idles\Hammer_CYC):
+[0ms](AnimationTrack)
+
+[26458](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[26461](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource\IsSpawning_Actual):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[26459](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[5000ms](OpportunityTrack)
+
+[26460](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\HammerFloor_LoadResource\WaitForResources\Timeout)
+[26457](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Anims\IsSpawning\WithProp\IsSpawning_Actual):
+[0ms](SequenceTrack)
+
+[26463](\Global\POI_Hammer_Floor\Interactions\HammerFloor_Idles\HammerFloor_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+
+[26455](\Global\POI_Hammer_Floor\UseConditions)

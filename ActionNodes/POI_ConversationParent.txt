@@ -1,11 +1,53 @@
-[25529] \Global\ConversationParent\Interactions\Idles
-[25533] \Global\ConversationParent\Interactions\Idles\ConversationIdles
-[25538] \Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationExit\ConversationExit
-[25534] \Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen
-[25535] \Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Female
-[25536] \Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Male
-[25537] \Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Speaking\Speaking
-[25532] \Global\ConversationParent\Interactions\Idles\WaitForConversationChild\Wait
-[25530] \Global\ConversationParent\Interactions\Idles\WaitForConversationChild\WaitVendor
-[25531] \Global\ConversationParent\Interactions\Idles\WaitForConversationChild\Wait_Female
-[25528] \Global\ConversationParent\UseConditions
+[25529](\Global\ConversationParent\Interactions\Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25533](\Global\ConversationParent\Interactions\Idles\ConversationIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25538](\Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationExit\ConversationExit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25534](\Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen):
+[0ms](ExecuteTrack)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[25535](\Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Female):
+[0ms](AnimationTrack)
+
+[25536](\Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Male):
+[0ms](AnimationTrack)
+
+[25537](\Global\ConversationParent\Interactions\Idles\ConversationIdles\ConversationStates\Speaking\Speaking):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+[0ms](MinimumDurationTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25532](\Global\ConversationParent\Interactions\Idles\WaitForConversationChild\Wait):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[2000ms](OpportunityTrack)
+
+[25530](\Global\ConversationParent\Interactions\Idles\WaitForConversationChild\WaitVendor):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[2000ms](OpportunityTrack)
+
+[25531](\Global\ConversationParent\Interactions\Idles\WaitForConversationChild\Wait_Female):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[2000ms](OpportunityTrack)
+
+[25528](\Global\ConversationParent\UseConditions)

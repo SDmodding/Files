@@ -1,10 +1,50 @@
-[25263] \Global\Celphone_Camera_Crouch\Interactions\Celphone
-[25268] \Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\CreatePhone\Female
-[25269] \Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\CreatePhone\Male
-[25264] \Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Into\Female
-[25265] \Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Into\Female\Exit
-[25266] \Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Into\Male
-[25267] \Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Into\Male\Exit
-[25271] \Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Utility\DetachAll\Default
-[25270] \Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Utility\DetachAll\Left
-[25262] \Global\Celphone_Camera_Crouch\UseConditions
+[25263](\Global\Celphone_Camera_Crouch\Interactions\Celphone):
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[25268](\Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\CreatePhone\Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[833ms](ObjectCreateTrack)
+[833ms](TargetAttachTrack)
+
+[25269](\Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\CreatePhone\Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[833ms](ObjectCreateTrack)
+[833ms](TargetAttachTrack)
+
+[25264](\Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Into\Female):
+[0ms](AnimationTrack)
+[0ms](SpawnTrack)
+[1000ms](OpportunityTrack)
+
+[25265](\Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Into\Female\Exit):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSimple)
+[0ms](PlayEffectTrack)
+[1566ms](SpawnTrack)
+
+[25266](\Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Into\Male):
+[0ms](AnimationTrack)
+[0ms](SpawnTrack)
+[1000ms](OpportunityTrack)
+
+[25267](\Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Into\Male\Exit):
+[0ms](AnimationTrack)
+[33ms](AudioTrackSimple)
+[33ms](PlayEffectTrack)
+[1566ms](SpawnTrack)
+
+[25271](\Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Utility\DetachAll\Default):
+[0ms](TargetDetachTrack)
+
+[25270](\Global\Celphone_Camera_Crouch\Interactions\Celphone\Behavior\Utility\DetachAll\Left):
+[0ms](SequenceTrack)
+[0ms](TargetDetachTrack)
+
+[25262](\Global\Celphone_Camera_Crouch\UseConditions)

@@ -1,5 +1,27 @@
-[29417] \Global\POI_Vomit_Ground\Interactions\VomitIdles
-[29418] \Global\POI_Vomit_Ground\Interactions\VomitIdles\VomitAnims\Female\Vomit
-[29419] \Global\POI_Vomit_Ground\Interactions\VomitIdles\VomitAnims\Male\Vomit
-[29420] \Global\POI_Vomit_Ground\Interactions\VomitIdles\Vomit_Exit\Vomit_Exit
-[29416] \Global\POI_Vomit_Ground\UseConditions
+[29417](\Global\POI_Vomit_Ground\Interactions\VomitIdles):
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[29418](\Global\POI_Vomit_Ground\Interactions\VomitIdles\VomitAnims\Female\Vomit):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[2000ms](PlayEffectTrack)
+
+[29419](\Global\POI_Vomit_Ground\Interactions\VomitIdles\VomitAnims\Male\Vomit):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[3833ms](PlayEffectTrack)
+
+[29420](\Global\POI_Vomit_Ground\Interactions\VomitIdles\Vomit_Exit\Vomit_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[29416](\Global\POI_Vomit_Ground\UseConditions)

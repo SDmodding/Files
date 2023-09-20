@@ -1,9 +1,45 @@
-[19383] \Global\Sniper\MasterSpawn
-[19384] \Global\Sniper\MasterSpawn\Actions\Equiped\Dry-Fire
-[19385] \Global\Sniper\MasterSpawn\Actions\Equiped\Fire
-[19386] \Global\Sniper\MasterSpawn\Actions\Idle
-[19388] \Global\Sniper\MasterSpawn\Actions\Idle\Rimlight\LightOff
-[19387] \Global\Sniper\MasterSpawn\Actions\Idle\Rimlight\Rimlight
-[19389] \Global\Sniper\MasterSpawn\GunSmoke\Firing
-[19390] \Global\Sniper\MasterSpawn\GunSmoke\Firing\Smoking
-[19391] \Global\Sniper\MasterSpawn\GunSmoke\Idle
+[19383](\Global\Sniper\MasterSpawn):
+[0ms](SpawnTrack)
+
+[19384](\Global\Sniper\MasterSpawn\Actions\Equiped\Dry-Fire):
+[0ms](ExecuteTrack)
+[0ms](GunConsumeAmmoTrack)
+
+[19385](\Global\Sniper\MasterSpawn\Actions\Equiped\Fire):
+[0ms](CameraRecoilTrack)
+[0ms](ExecuteTrack)
+[0ms](PlayEffectTrack)
+[0ms](PlayEffectTrack)
+[0ms](ShootTrack)
+[0ms](TriggerRecoilPostEffectTrack)
+[66ms](OpportunityTrack)
+[66ms](OpportunityTrack)
+
+[19386](\Global\Sniper\MasterSpawn\Actions\Idle):
+[0ms](AnimationRefPoseTrack)
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[19388](\Global\Sniper\MasterSpawn\Actions\Idle\Rimlight\LightOff):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+
+[19387](\Global\Sniper\MasterSpawn\Actions\Idle\Rimlight\Rimlight):
+[0ms](OpportunityTrack)
+[0ms](RimLightTrack)
+
+[19389](\Global\Sniper\MasterSpawn\GunSmoke\Firing):
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[1000ms](OpportunityTrack)
+
+[19390](\Global\Sniper\MasterSpawn\GunSmoke\Firing\Smoking):
+[0ms](ExecuteTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+[2000ms](OpportunityTrack)
+
+[19391](\Global\Sniper\MasterSpawn\GunSmoke\Idle):
+[0ms](OpportunityTrack)
+

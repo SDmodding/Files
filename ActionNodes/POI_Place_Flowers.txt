@@ -1,5 +1,26 @@
-[27510] \Global\POI_Place_Flowers\Interactions\Place_Flowers
-[27511] \Global\POI_Place_Flowers\Interactions\Place_Flowers\PlaceFlowers_Anims\Female\PlaceFlowers
-[27512] \Global\POI_Place_Flowers\Interactions\Place_Flowers\PlaceFlowers_Anims\Male\PlaceFlowers
-[27513] \Global\POI_Place_Flowers\Interactions\Place_Flowers\PlaceFlowers_Exit
-[27509] \Global\POI_Place_Flowers\UseConditions
+[27510](\Global\POI_Place_Flowers\Interactions\Place_Flowers):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[27511](\Global\POI_Place_Flowers\Interactions\Place_Flowers\PlaceFlowers_Anims\Female\PlaceFlowers):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[2000ms](TargetDetachTrack)
+
+[27512](\Global\POI_Place_Flowers\Interactions\Place_Flowers\PlaceFlowers_Anims\Male\PlaceFlowers):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[3500ms](TargetDetachTrack)
+
+[27513](\Global\POI_Place_Flowers\Interactions\Place_Flowers\PlaceFlowers_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27509](\Global\POI_Place_Flowers\UseConditions)

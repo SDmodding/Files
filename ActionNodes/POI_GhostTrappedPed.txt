@@ -1,4 +1,22 @@
-[26335] \Global\POI_GhostTrappedPed\Interactions\Root
-[26336] \Global\POI_GhostTrappedPed\Interactions\Root\Exit\Falling
-[26337] \Global\POI_GhostTrappedPed\Interactions\Root\Exit\Falling\Land
-[26334] \Global\POI_GhostTrappedPed\UseConditions
+[26335](\Global\POI_GhostTrappedPed\Interactions\Root):
+[0ms](AnimationTrack)
+[0ms](InvulnerableTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](PlayEffectTrack)
+[0ms](PlayEffectTrack)
+[0ms](SetStateFlagTrack)
+
+[26336](\Global\POI_GhostTrappedPed\Interactions\Root\Exit\Falling):
+[0ms](AnimationTrack)
+[0ms](SetStateFlagTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[166ms](OpportunityTrack)
+
+[26337](\Global\POI_GhostTrappedPed\Interactions\Root\Exit\Falling\Land):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+
+[26334](\Global\POI_GhostTrappedPed\UseConditions)

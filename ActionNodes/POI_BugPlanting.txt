@@ -1,12 +1,71 @@
-[25132] \Global\BugPlanting\Interactions\Anims\0xC5CAC41C
-[25134] \Global\BugPlanting\Interactions\Anims\Planting_CYC
-[25135] \Global\BugPlanting\Interactions\Anims\Planting_to_Screwdriver
-[25136] \Global\BugPlanting\Interactions\Anims\Screwdriver_CYC_2
-[25133] \Global\BugPlanting\Interactions\Anims\Screwdriver_to_Planting
-[25130] \Global\BugPlanting\Interactions\Begin
-[25137] \Global\BugPlanting\Interactions\Exit\0x81B3C4F7
-[25138] \Global\BugPlanting\Interactions\Exit\AutoExit
-[25131] \Global\BugPlanting\Interactions\Minigame
-[25129] \Global\BugPlanting\Interactions\MoveTo
-[25128] \Global\BugPlanting\Interactions\POIHideEquipped
-[25127] \Global\BugPlanting\UseConditions
+[25132](\Global\BugPlanting\Interactions\Anims\0xC5CAC41C):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SubjectFollowOverrideTrack)
+
+[25134](\Global\BugPlanting\Interactions\Anims\Planting_CYC):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SubjectFollowOverrideTrack)
+
+[25135](\Global\BugPlanting\Interactions\Anims\Planting_to_Screwdriver):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SubjectFollowOverrideTrack)
+[0ms](TargetPlayTrack)
+
+[25136](\Global\BugPlanting\Interactions\Anims\Screwdriver_CYC_2):
+[0ms](AnimationTrack)
+[0ms](SubjectFollowOverrideTrack)
+
+[25133](\Global\BugPlanting\Interactions\Anims\Screwdriver_to_Planting):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SubjectFollowOverrideTrack)
+[0ms](TargetPlayTrack)
+
+[25130](\Global\BugPlanting\Interactions\Begin):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SubjectFollowOverrideTrack)
+[0ms](TargetSyncPositionTrack)
+
+[25137](\Global\BugPlanting\Interactions\Exit\0x81B3C4F7):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SubjectFollowOverrideTrack)
+[0ms](TargetPlayTrack)
+
+[25138](\Global\BugPlanting\Interactions\Exit\AutoExit):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras(false)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](SubjectFollowOverrideTrack)
+
+[25131](\Global\BugPlanting\Interactions\Minigame):
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras()
+[0ms](SpawnTrack)
+[0ms](UIScreenTrack)
+[1000ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.c_minigame._setup_bugplanting()
+
+[25129](\Global\BugPlanting\Interactions\MoveTo):
+[0ms](BlendTreeTrack)
+[0ms](OpportunityTrack)
+[0ms](PathfindToTargetTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[25128](\Global\BugPlanting\Interactions\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[25127](\Global\BugPlanting\UseConditions)

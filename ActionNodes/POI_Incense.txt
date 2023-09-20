@@ -1,19 +1,99 @@
-[26701] \Global\POI_Incense\Interactions\Incense_Idles
-[26702] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Female\0x380BF9F1
-[26705] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Female\0x380BF9F1\0xD4C8C0AD
-[26703] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Female\0x380BF9F1\WaitForResources
-[26704] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Female\0x380BF9F1\WaitForResources\Timeout
-[26706] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Male\0x0D7383A7
-[26709] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Male\0x0D7383A7\0xACBAF539
-[26707] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Male\0x0D7383A7\WaitForResources
-[26708] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Male\0x0D7383A7\WaitForResources\Timeout
-[26710] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Female\FemaleLightPray_LoadResources
-[26713] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Female\FemaleLightPray_LoadResources\FemaleLightPray_Actual
-[26711] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Female\FemaleLightPray_LoadResources\WaitForResources
-[26712] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Female\FemaleLightPray_LoadResources\WaitForResources\Timeout
-[26714] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Male\MaleLightPray_LoadResources
-[26717] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Male\MaleLightPray_LoadResources\MaleLightPray_Actual
-[26715] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Male\MaleLightPray_LoadResources\WaitForResources
-[26716] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Male\MaleLightPray_LoadResources\WaitForResources\Timeout
-[26718] \Global\POI_Incense\Interactions\Incense_Idles\Incense_Exit
-[26700] \Global\POI_Incense\UseConditions
+[26701](\Global\POI_Incense\Interactions\Incense_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[26702](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Female\0x380BF9F1):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[26705](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Female\0x380BF9F1\0xD4C8C0AD):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1266ms](ObjectCreateTrack)
+[1266ms](TargetAttachTrack)
+[2100ms](TargetAttachTrack)
+[4000ms](PlayEffectTrack)
+[4000ms](PlayEffectTrack)
+[6291ms](TargetAttachTrack)
+
+[26703](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Female\0x380BF9F1\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[26704](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Female\0x380BF9F1\WaitForResources\Timeout)
+[26706](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Male\0x0D7383A7):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[26709](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Male\0x0D7383A7\0xACBAF539):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1266ms](ObjectCreateTrack)
+[1266ms](TargetAttachTrack)
+[2100ms](TargetAttachTrack)
+[4000ms](PlayEffectTrack)
+[4000ms](PlayEffectTrack)
+[6291ms](TargetAttachTrack)
+
+[26707](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Male\0x0D7383A7\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[26708](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light\Male\0x0D7383A7\WaitForResources\Timeout)
+[26710](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Female\FemaleLightPray_LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[26713](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Female\FemaleLightPray_LoadResources\FemaleLightPray_Actual):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1266ms](ObjectCreateTrack)
+[1266ms](TargetAttachTrack)
+[2100ms](TargetAttachTrack)
+[4000ms](PlayEffectTrack)
+[4000ms](PlayEffectTrack)
+[6291ms](TargetAttachTrack)
+
+[26711](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Female\FemaleLightPray_LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[26712](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Female\FemaleLightPray_LoadResources\WaitForResources\Timeout)
+[26714](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Male\MaleLightPray_LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[26717](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Male\MaleLightPray_LoadResources\MaleLightPray_Actual):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1266ms](ObjectCreateTrack)
+[1266ms](TargetAttachTrack)
+[2100ms](TargetAttachTrack)
+[4000ms](PlayEffectTrack)
+[4000ms](PlayEffectTrack)
+[6291ms](TargetAttachTrack)
+
+[26715](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Male\MaleLightPray_LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[26716](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Anims\Incense_Light_Pray\Male\MaleLightPray_LoadResources\WaitForResources\Timeout)
+[26718](\Global\POI_Incense\Interactions\Incense_Idles\Incense_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+
+[26700](\Global\POI_Incense\UseConditions)

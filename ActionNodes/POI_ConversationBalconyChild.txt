@@ -1,10 +1,51 @@
-[25487] \Global\ConversationBalconyChild\Interactions\Idles
-[25490] \Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles
-[25495] \Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles\ConversationExit\ConversationExit
-[25491] \Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen
-[25492] \Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Female
-[25493] \Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Male
-[25494] \Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles\ConversationStates\Speaking\Speaking
-[25488] \Global\ConversationBalconyChild\Interactions\Idles\WaitForConversationParent\WaitBelow_Female
-[25489] \Global\ConversationBalconyChild\Interactions\Idles\WaitForConversationParent\WaitBelow_Male
-[25486] \Global\ConversationBalconyChild\UseConditions
+[25487](\Global\ConversationBalconyChild\Interactions\Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25490](\Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles):
+[0ms](ConversationTrackCleanup)
+[0ms](ConversationTrackCreate)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[200ms](ConversationTrackOperation)
+
+[25495](\Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles\ConversationExit\ConversationExit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25491](\Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen):
+[0ms](ExecuteTrack)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[25492](\Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Female):
+[0ms](AnimationTrack)
+
+[25493](\Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Male):
+[0ms](AnimationTrack)
+
+[25494](\Global\ConversationBalconyChild\Interactions\Idles\ConversationIdles\ConversationStates\Speaking\Speaking):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+[0ms](MinimumDurationTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25488](\Global\ConversationBalconyChild\Interactions\Idles\WaitForConversationParent\WaitBelow_Female):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[2000ms](OpportunityTrack)
+
+[25489](\Global\ConversationBalconyChild\Interactions\Idles\WaitForConversationParent\WaitBelow_Male):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[2000ms](OpportunityTrack)
+
+[25486](\Global\ConversationBalconyChild\UseConditions)

@@ -1,8 +1,31 @@
-[24872] \Global\POI_AggressiveCheer\Interactions\CheeringIdles
-[24873] \Global\POI_AggressiveCheer\Interactions\CheeringIdles\Anims\Cheer1
-[24874] \Global\POI_AggressiveCheer\Interactions\CheeringIdles\Anims\Cheer2
-[24875] \Global\POI_AggressiveCheer\Interactions\CheeringIdles\CheerExit
-[24878] \Global\POI_AggressiveCheer\Interactions\CheeringIdles\HeadTrack\Closest
-[24877] \Global\POI_AggressiveCheer\Interactions\CheeringIdles\HeadTrack\Player
-[24876] \Global\POI_AggressiveCheer\Interactions\CheeringIdles\HeadTrack\PlayerDefaultTillSJTargetingFix
-[24871] \Global\POI_AggressiveCheer\UseConditions
+[24872](\Global\POI_AggressiveCheer\Interactions\CheeringIdles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[24873](\Global\POI_AggressiveCheer\Interactions\CheeringIdles\Anims\Cheer1):
+[0ms](AnimationTrack)
+
+[24874](\Global\POI_AggressiveCheer\Interactions\CheeringIdles\Anims\Cheer2):
+[0ms](AnimationTrack)
+[616ms](DialogueTrackWeaponImpact)
+
+[24875](\Global\POI_AggressiveCheer\Interactions\CheeringIdles\CheerExit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[24878](\Global\POI_AggressiveCheer\Interactions\CheeringIdles\HeadTrack\Closest):
+[0ms](HeadTrackTargetTrack)
+[0ms](OpportunityTrack)
+
+[24877](\Global\POI_AggressiveCheer\Interactions\CheeringIdles\HeadTrack\Player):
+[0ms](HeadTrackTargetTrack)
+[0ms](OpportunityTrack)
+
+[24876](\Global\POI_AggressiveCheer\Interactions\CheeringIdles\HeadTrack\PlayerDefaultTillSJTargetingFix):
+[0ms](HeadTrackTargetTrack)
+[0ms](OpportunityTrack)
+
+[24871](\Global\POI_AggressiveCheer\UseConditions)

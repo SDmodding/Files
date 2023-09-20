@@ -1,11 +1,59 @@
-[27748] \Global\POI_SafeCracking\Interactions\Begin
-[27755] \Global\POI_SafeCracking\Interactions\Exit
-[27749] \Global\POI_SafeCracking\Interactions\Minigame
-[27747] \Global\POI_SafeCracking\Interactions\MoveTo
-[27751] \Global\POI_SafeCracking\Interactions\Out
-[27753] \Global\POI_SafeCracking\Interactions\Out\PickUpFiles\Cyc
-[27752] \Global\POI_SafeCracking\Interactions\Out\PickUpFiles\Into
-[27754] \Global\POI_SafeCracking\Interactions\Out\PickUpFiles\Out
-[27746] \Global\POI_SafeCracking\Interactions\POIHideEquipped
-[27750] \Global\POI_SafeCracking\Interactions\Result
-[27745] \Global\POI_SafeCracking\UseConditions
+[27748](\Global\POI_SafeCracking\Interactions\Begin):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSyncPositionTrack)
+
+[27755](\Global\POI_SafeCracking\Interactions\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras(false)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27749](\Global\POI_SafeCracking\Interactions\Minigame):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras()
+[0ms](TargetSyncPositionTrack)
+[0ms](UIScreenTrack)
+
+[27747](\Global\POI_SafeCracking\Interactions\MoveTo):
+[0ms](BlendTreeTrack)
+[0ms](PathfindToTargetTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27751](\Global\POI_SafeCracking\Interactions\Out):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+
+[27753](\Global\POI_SafeCracking\Interactions\Out\PickUpFiles\Cyc):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSyncPositionTrack)
+
+[27752](\Global\POI_SafeCracking\Interactions\Out\PickUpFiles\Into):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSyncPositionTrack)
+
+[27754](\Global\POI_SafeCracking\Interactions\Out\PickUpFiles\Out):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+
+[27746](\Global\POI_SafeCracking\Interactions\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[27750](\Global\POI_SafeCracking\Interactions\Result):
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[27745](\Global\POI_SafeCracking\UseConditions)

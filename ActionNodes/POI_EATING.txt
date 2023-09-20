@@ -1,10 +1,51 @@
-[25964] \Global\POI_Eating\Interactions\MasterSpawn
-[25965] \Global\POI_Eating\Interactions\MasterSpawn\Anims\Eat\Female
-[25966] \Global\POI_Eating\Interactions\MasterSpawn\Anims\Eat\Male
-[25967] \Global\POI_Eating\Interactions\MasterSpawn\Anims\Idle
-[25972] \Global\POI_Eating\Interactions\MasterSpawn\Exit
-[25968] \Global\POI_Eating\Interactions\MasterSpawn\ObjectSpawn\LoadResources
-[25969] \Global\POI_Eating\Interactions\MasterSpawn\ObjectSpawn\LoadResources\Attach
-[25970] \Global\POI_Eating\Interactions\MasterSpawn\ObjectSpawn\LoadResources\Attach\Destroy\ExitNormally
-[25971] \Global\POI_Eating\Interactions\MasterSpawn\ObjectSpawn\LoadResources\Attach\Destroy\PlayEffect
-[25963] \Global\POI_Eating\UseConditions
+[25964](\Global\POI_Eating\Interactions\MasterSpawn):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[25965](\Global\POI_Eating\Interactions\MasterSpawn\Anims\Eat\Female):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+
+[25966](\Global\POI_Eating\Interactions\MasterSpawn\Anims\Eat\Male):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+
+[25967](\Global\POI_Eating\Interactions\MasterSpawn\Anims\Idle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[25972](\Global\POI_Eating\Interactions\MasterSpawn\Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25968](\Global\POI_Eating\Interactions\MasterSpawn\ObjectSpawn\LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+
+[25969](\Global\POI_Eating\Interactions\MasterSpawn\ObjectSpawn\LoadResources\Attach):
+[0ms](ObjectCreateTrack)
+[0ms](ObjectCreateTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetAttachTrack)
+
+[25970](\Global\POI_Eating\Interactions\MasterSpawn\ObjectSpawn\LoadResources\Attach\Destroy\ExitNormally):
+[0ms](TargetDestroyTrack)
+[0ms](TargetDestroyTrack)
+
+[25971](\Global\POI_Eating\Interactions\MasterSpawn\ObjectSpawn\LoadResources\Attach\Destroy\PlayEffect):
+[0ms](PlayEffectTrack)
+[0ms](TargetDestroyTrack)
+[0ms](TargetDestroyTrack)
+
+[25963](\Global\POI_Eating\UseConditions)

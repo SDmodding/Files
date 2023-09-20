@@ -1,12 +1,57 @@
-[25824] \Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle
-[25828] \Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Direct_Traffic\Go_Left\Go_Left
-[25829] \Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Direct_Traffic\Go_Left\Trans2GoRight\Trans2GoRight
-[25830] \Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Direct_Traffic\Go_Right\Go-Right
-[25831] \Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Direct_Traffic\Go_Right\Trans2GoLeft\Trans2GoLeft
-[25826] \Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Trans2Direct_Traffic\2Go_Left\Trans2_GoLeft
-[25827] \Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Trans2Direct_Traffic\2Go_Right\Trans2_GoRight
-[25832] \Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Trans2Idle\from_GoLeft\Trans_from_GoLeft
-[25833] \Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Trans2Idle\from_GoRight\Trans_from_GoRight
-[25825] \Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\WaitForDirectTraffic\Wait
-[25834] \Global\POI_DirectTraffic\Interactions\DirectTraffic_Exit\Cop_DirectTraffic_Exit
-[25823] \Global\POI_DirectTraffic\UseConditions
+[25824](\Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle):
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25828](\Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Direct_Traffic\Go_Left\Go_Left):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[25829](\Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Direct_Traffic\Go_Left\Trans2GoRight\Trans2GoRight):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25830](\Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Direct_Traffic\Go_Right\Go-Right):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[25831](\Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Direct_Traffic\Go_Right\Trans2GoLeft\Trans2GoLeft):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25826](\Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Trans2Direct_Traffic\2Go_Left\Trans2_GoLeft):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25827](\Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Trans2Direct_Traffic\2Go_Right\Trans2_GoRight):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25832](\Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Trans2Idle\from_GoLeft\Trans_from_GoLeft):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[25833](\Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\Trans2Idle\from_GoRight\Trans_from_GoRight):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[25825](\Global\POI_DirectTraffic\Interactions\Cop_DirectTraffic_Idle\Cop_DirectTraffic_States\WaitForDirectTraffic\Wait):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[25834](\Global\POI_DirectTraffic\Interactions\DirectTraffic_Exit\Cop_DirectTraffic_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25823](\Global\POI_DirectTraffic\UseConditions)

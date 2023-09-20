@@ -1,21 +1,83 @@
-[25651] \Global\POI_Cowering\Interactions\Crouch\MasterSpawn
-[25655] \Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Cycle\Female
-[25656] \Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Cycle\Male\Cower4
-[25657] \Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Cycle\Male\Default
-[25652] \Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Into\Female
-[25653] \Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Into\Male\Cower2
-[25654] \Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Into\Male\Cower4
-[25658] \Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Exit\Female
-[25659] \Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Exit\Male\Cower04
-[25660] \Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Exit\Male\Default
-[25641] \Global\POI_Cowering\Interactions\Stand\Into\Female
-[25642] \Global\POI_Cowering\Interactions\Stand\Into\Male
-[25643] \Global\POI_Cowering\Interactions\Stand\MasterSpawn
-[25644] \Global\POI_Cowering\Interactions\Stand\MasterSpawn\Anims\Cycle\Female
-[25645] \Global\POI_Cowering\Interactions\Stand\MasterSpawn\Anims\Cycle\Male\Cower
-[25646] \Global\POI_Cowering\Interactions\Stand\MasterSpawn\Anims\Cycle\Male\Cower02
-[25647] \Global\POI_Cowering\Interactions\Stand\MasterSpawn\Anims\Cycle\Male\Cower03
-[25648] \Global\POI_Cowering\Interactions\Stand\MasterSpawn\Anims\Cycle\Male\CowerStep
-[25649] \Global\POI_Cowering\Interactions\Stand\MasterSpawn\Exit\Female
-[25650] \Global\POI_Cowering\Interactions\Stand\MasterSpawn\Exit\Male
-[25640] \Global\POI_Cowering\UseConditions
+[25651](\Global\POI_Cowering\Interactions\Crouch\MasterSpawn):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25655](\Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Cycle\Female):
+[0ms](AnimationTrack)
+
+[25656](\Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Cycle\Male\Cower4):
+[0ms](AnimationTrack)
+
+[25657](\Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Cycle\Male\Default):
+[0ms](AnimationTrack)
+
+[25652](\Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Into\Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25653](\Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Into\Male\Cower2):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25654](\Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Anims\Into\Male\Cower4):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25658](\Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Exit\Female):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use()
+
+[25659](\Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Exit\Male\Cower04):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use()
+
+[25660](\Global\POI_Cowering\Interactions\Crouch\MasterSpawn\Exit\Male\Default):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25641](\Global\POI_Cowering\Interactions\Stand\Into\Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25642](\Global\POI_Cowering\Interactions\Stand\Into\Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25643](\Global\POI_Cowering\Interactions\Stand\MasterSpawn):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25644](\Global\POI_Cowering\Interactions\Stand\MasterSpawn\Anims\Cycle\Female):
+[0ms](AnimationTrack)
+
+[25645](\Global\POI_Cowering\Interactions\Stand\MasterSpawn\Anims\Cycle\Male\Cower):
+[0ms](AnimationTrack)
+
+[25646](\Global\POI_Cowering\Interactions\Stand\MasterSpawn\Anims\Cycle\Male\Cower02):
+[0ms](AnimationTrack)
+
+[25647](\Global\POI_Cowering\Interactions\Stand\MasterSpawn\Anims\Cycle\Male\Cower03):
+[0ms](AnimationTrack)
+
+[25648](\Global\POI_Cowering\Interactions\Stand\MasterSpawn\Anims\Cycle\Male\CowerStep):
+[0ms](AnimationTrack)
+
+[25649](\Global\POI_Cowering\Interactions\Stand\MasterSpawn\Exit\Female):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use()
+
+[25650](\Global\POI_Cowering\Interactions\Stand\MasterSpawn\Exit\Male):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use()
+
+[25640](\Global\POI_Cowering\UseConditions)

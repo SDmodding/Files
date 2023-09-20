@@ -1,4 +1,16 @@
-[29413] \Global\POI_Vomit_Fast\Interactions\VomitIdles
-[29414] \Global\POI_Vomit_Fast\Interactions\VomitIdles\VomitAnims\Male\Vomit
-[29415] \Global\POI_Vomit_Fast\Interactions\VomitIdles\Vomit_Exit\Vomit_Exit
-[29412] \Global\POI_Vomit_Fast\UseConditions
+[29413](\Global\POI_Vomit_Fast\Interactions\VomitIdles):
+[0ms](AudioTrackSoundbankIO)
+[0ms](SpawnTrack)
+
+[29414](\Global\POI_Vomit_Fast\Interactions\VomitIdles\VomitAnims\Male\Vomit):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[500ms](PlayEffectTrack)
+
+[29415](\Global\POI_Vomit_Fast\Interactions\VomitIdles\Vomit_Exit\Vomit_Exit):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[29412](\Global\POI_Vomit_Fast\UseConditions)

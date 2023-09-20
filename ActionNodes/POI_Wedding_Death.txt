@@ -1,4 +1,21 @@
-[29487] \Global\POI_Wedding_Death\Interactions\DeathIdle
-[29489] \Global\POI_Wedding_Death\Interactions\DeathIdle\DeathExit
-[29488] \Global\POI_Wedding_Death\Interactions\DeathIdle\Downed\FaceUp
-[29486] \Global\POI_Wedding_Death\UseConditions
+[29487](\Global\POI_Wedding_Death\Interactions\DeathIdle):
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: set_health(0.0)
+[0ms](SpawnTrack)
+
+[29489](\Global\POI_Wedding_Death\Interactions\DeathIdle\DeathExit):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[29488](\Global\POI_Wedding_Death\Interactions\DeathIdle\Downed\FaceUp):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](SequenceTrack)
+[0ms](SetStateFlagTrack)
+
+[29486](\Global\POI_Wedding_Death\UseConditions)

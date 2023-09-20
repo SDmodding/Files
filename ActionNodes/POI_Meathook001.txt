@@ -1,12 +1,88 @@
-[27196] \Global\POI_Meathook001\Interactions\Action\Grapple\Front\ThrowGIV
-[27197] \Global\POI_Meathook001\Interactions\Action\Grapple\Front\ThrowRCV
-[27195] \Global\POI_Meathook001\Interactions\Action\Grapple\POIHideEquipped
-[27199] \Global\POI_Meathook001\Interactions\Action\Grapple\SyncRCV\interactionPoint
-[27198] \Global\POI_Meathook001\Interactions\Action\Grapple\Sync\interactionPoint
-[27205] \Global\POI_Meathook001\POI_Condition_Reference\ActionRequest
-[27202] \Global\POI_Meathook001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD
-[27200] \Global\POI_Meathook001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD
-[27203] \Global\POI_Meathook001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD
-[27201] \Global\POI_Meathook001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD
-[27204] \Global\POI_Meathook001\POI_Condition_Reference\UseConditions
-[27194] \Global\POI_Meathook001\UseConditions\ActionRequest
+[27196](\Global\POI_Meathook001\Interactions\Action\Grapple\Front\ThrowGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](GameStatEventTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SpawnTrack)
+[0ms](StimulusTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[933ms](POIDisableSelfTrack)
+[933ms](SetStateFlagTrack)
+[2033ms](CameraShakeTrack)
+[2033ms](StimulusTrack)
+[2500ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[27197](\Global\POI_Meathook001\Interactions\Action\Grapple\Front\ThrowRCV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](DamageTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SpawnTrack)
+[0ms](StimulusTrack)
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetLockTrack)
+[933ms](SetStateFlagTrack)
+[2033ms](PlayEffectTrack)
+[2500ms](TargetSyncPositionTrack)
+
+[27195](\Global\POI_Meathook001\Interactions\Action\Grapple\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[27199](\Global\POI_Meathook001\Interactions\Action\Grapple\SyncRCV\interactionPoint):
+[0ms](TargetSyncPositionTrack)
+
+[27198](\Global\POI_Meathook001\Interactions\Action\Grapple\Sync\interactionPoint):
+[0ms](TargetSyncPositionTrack)
+
+[27205](\Global\POI_Meathook001\POI_Condition_Reference\ActionRequest)
+[27202](\Global\POI_Meathook001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "a", "mash")
+
+[27200](\Global\POI_Meathook001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "b", "mash")
+
+[27203](\Global\POI_Meathook001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "x", "mash")
+
+[27201](\Global\POI_Meathook001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "y", "mash")
+
+[27204](\Global\POI_Meathook001\POI_Condition_Reference\UseConditions)
+[27194](\Global\POI_Meathook001\UseConditions\ActionRequest)

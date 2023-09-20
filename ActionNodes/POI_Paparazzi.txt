@@ -1,8 +1,37 @@
-[27298] \Global\POI_Paparazzi\Interactions\Paparazzi_Idles
-[27301] \Global\POI_Paparazzi\Interactions\Paparazzi_Idles\Paparazzi_Anims\Paparazzi_01
-[27302] \Global\POI_Paparazzi\Interactions\Paparazzi_Idles\Paparazzi_Anims\Paparazzi_02
-[27303] \Global\POI_Paparazzi\Interactions\Paparazzi_Idles\Paparazzi_Anims\Paparazzi_03
-[27304] \Global\POI_Paparazzi\Interactions\Paparazzi_Idles\Paparazzi_Exit
-[27300] \Global\POI_Paparazzi\Interactions\Paparazzi_Idles\SpawnCamera\Spawn
-[27299] \Global\POI_Paparazzi\Interactions\Paparazzi_Idles\SpawnCamera\Wait
-[27297] \Global\POI_Paparazzi\UseConditions
+[27298](\Global\POI_Paparazzi\Interactions\Paparazzi_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[27301](\Global\POI_Paparazzi\Interactions\Paparazzi_Idles\Paparazzi_Anims\Paparazzi_01):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27302](\Global\POI_Paparazzi\Interactions\Paparazzi_Idles\Paparazzi_Anims\Paparazzi_02):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27303](\Global\POI_Paparazzi\Interactions\Paparazzi_Idles\Paparazzi_Anims\Paparazzi_03):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27304](\Global\POI_Paparazzi\Interactions\Paparazzi_Idles\Paparazzi_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27300](\Global\POI_Paparazzi\Interactions\Paparazzi_Idles\SpawnCamera\Spawn):
+[0ms](ExecuteTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[27299](\Global\POI_Paparazzi\Interactions\Paparazzi_Idles\SpawnCamera\Wait):
+[0ms](ExecuteTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+
+[27297](\Global\POI_Paparazzi\UseConditions)

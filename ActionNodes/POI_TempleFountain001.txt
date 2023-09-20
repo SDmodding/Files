@@ -1,16 +1,223 @@
-[28922] \Global\POI_TempleFountain001\Interactions\Action\Downed\FaceUp\SputterWater
-[28917] \Global\POI_TempleFountain001\Interactions\Action\Grapple\Left\FountainDrawRCV
-[28916] \Global\POI_TempleFountain001\Interactions\Action\Grapple\Left\FountainDrawnGIV
-[28914] \Global\POI_TempleFountain001\Interactions\Action\Grapple\Right\FountainDrawnGIV
-[28915] \Global\POI_TempleFountain001\Interactions\Action\Grapple\Right\FountainDrawnRCV
-[28920] \Global\POI_TempleFountain001\Interactions\Action\Sprint\Grapple\Left\FountainDrawnGIV
-[28921] \Global\POI_TempleFountain001\Interactions\Action\Sprint\Grapple\Left\FountainDrawnRCV
-[28919] \Global\POI_TempleFountain001\Interactions\Action\Sprint\Grapple\Right\FountainDrawnRCV
-[28918] \Global\POI_TempleFountain001\Interactions\Action\Sprint\Grapple\Right\FountainDrawnsGIV
-[28928] \Global\POI_TempleFountain001\POI_Condition_Reference\ActionRequest
-[28925] \Global\POI_TempleFountain001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD
-[28923] \Global\POI_TempleFountain001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD
-[28926] \Global\POI_TempleFountain001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD
-[28924] \Global\POI_TempleFountain001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD
-[28927] \Global\POI_TempleFountain001\POI_Condition_Reference\UseConditions
-[28913] \Global\POI_TempleFountain001\UseConditions\ActionRequest
+[28922](\Global\POI_TempleFountain001\Interactions\Action\Downed\FaceUp\SputterWater):
+[0ms](AnimationTrack)
+[0ms](DamageTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[4000ms](OpportunityTrack)
+
+[28917](\Global\POI_TempleFountain001\Interactions\Action\Grapple\Left\FountainDrawRCV):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](FacialRequestTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[1000ms](PlayEffectTrack)
+[1300ms](PlayEffectTrack)
+[1500ms](PlayEffectTrack)
+[1800ms](PlayEffectTrack)
+[2291ms](PlayEffectTrack)
+[2508ms](PlayEffectTrack)
+[2725ms](PlayEffectTrack)
+[2791ms](PlayEffectTrack)
+[2991ms](PlayEffectTrack)
+[3258ms](PlayEffectTrack)
+
+[28916](\Global\POI_TempleFountain001\Interactions\Action\Grapple\Left\FountainDrawnGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](StimulusTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[433ms](SetStateFlagTrack)
+[1666ms](StimulusTrack)
+[7900ms](OpportunityTrack)
+[7900ms](OpportunityTrack)
+
+[28914](\Global\POI_TempleFountain001\Interactions\Action\Grapple\Right\FountainDrawnGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](StimulusTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[466ms](SetStateFlagTrack)
+[1800ms](StimulusTrack)
+[7966ms](OpportunityTrack)
+[7966ms](OpportunityTrack)
+
+[28915](\Global\POI_TempleFountain001\Interactions\Action\Grapple\Right\FountainDrawnRCV):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](FacialRequestTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[1000ms](PlayEffectTrack)
+[1300ms](PlayEffectTrack)
+[1500ms](PlayEffectTrack)
+[1800ms](PlayEffectTrack)
+[2291ms](PlayEffectTrack)
+[2508ms](PlayEffectTrack)
+[2725ms](PlayEffectTrack)
+[2791ms](PlayEffectTrack)
+[2991ms](PlayEffectTrack)
+[3258ms](PlayEffectTrack)
+
+[28920](\Global\POI_TempleFountain001\Interactions\Action\Sprint\Grapple\Left\FountainDrawnGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](StimulusTrack)
+[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[433ms](SetStateFlagTrack)
+[1466ms](StimulusTrack)
+
+[28921](\Global\POI_TempleFountain001\Interactions\Action\Sprint\Grapple\Left\FountainDrawnRCV):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[0ms](UnhideTrack)
+[433ms](SetStateFlagTrack)
+[2400ms](HideTrack)
+
+[28919](\Global\POI_TempleFountain001\Interactions\Action\Sprint\Grapple\Right\FountainDrawnRCV):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[433ms](SetStateFlagTrack)
+
+[28918](\Global\POI_TempleFountain001\Interactions\Action\Sprint\Grapple\Right\FountainDrawnsGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](StimulusTrack)
+[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[1800ms](StimulusTrack)
+
+[28928](\Global\POI_TempleFountain001\POI_Condition_Reference\ActionRequest)
+[28925](\Global\POI_TempleFountain001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "a", "mash")
+
+[28923](\Global\POI_TempleFountain001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "b", "mash")
+
+[28926](\Global\POI_TempleFountain001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "x", "mash")
+
+[28924](\Global\POI_TempleFountain001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "y", "mash")
+
+[28927](\Global\POI_TempleFountain001\POI_Condition_Reference\UseConditions)
+[28913](\Global\POI_TempleFountain001\UseConditions\ActionRequest)

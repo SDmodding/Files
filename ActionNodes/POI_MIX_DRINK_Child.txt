@@ -1,9 +1,35 @@
-[27249] \Global\POI_Mix_Drink_Child\Interactions\Exit
-[27242] \Global\POI_Mix_Drink_Child\Interactions\OrderDrink
-[27243] \Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Female
-[27245] \Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Female\Idle\Default
-[27244] \Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Female\Idle\Sexy
-[27246] \Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Male
-[27247] \Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Male\Idle
-[27248] \Global\POI_Mix_Drink_Child\Interactions\ReciveDrink
-[27241] \Global\POI_Mix_Drink_Child\UseConditions
+[27249](\Global\POI_Mix_Drink_Child\Interactions\Exit)
+[27242](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink):
+[0ms](HeadTrackTargetTrack)
+[0ms](LookAtTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDestroyTrack)
+[0ms](TargetDestroyTrack)
+[4000ms](OpportunityTrack)
+
+[27243](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27245](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Female\Idle\Default):
+[0ms](AnimationTrack)
+
+[27244](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Female\Idle\Sexy):
+[0ms](AnimationTrack)
+
+[27246](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27247](\Global\POI_Mix_Drink_Child\Interactions\OrderDrink\Anims\Male\Idle):
+[0ms](AnimationTrack)
+
+[27248](\Global\POI_Mix_Drink_Child\Interactions\ReciveDrink):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetReleaseTrack)
+[1500ms](TargetStealAttachedItemTrack)
+
+[27241](\Global\POI_Mix_Drink_Child\UseConditions)

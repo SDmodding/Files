@@ -1,6 +1,35 @@
-[28770] \Global\POI_SquatDice\Interactions\SquattingIdles
-[28774] \Global\POI_SquatDice\Interactions\SquattingIdles\SquatExit
-[28772] \Global\POI_SquatDice\Interactions\SquattingIdles\SquattingAnims\Cycle\SquatIdle
-[28773] \Global\POI_SquatDice\Interactions\SquattingIdles\SquattingAnims\Cycle\SquatIdle\Squat_DiceRoll
-[28771] \Global\POI_SquatDice\Interactions\SquattingIdles\SquattingAnims\Intro\SquatEnter
-[28769] \Global\POI_SquatDice\UseConditions
+[28770](\Global\POI_SquatDice\Interactions\SquattingIdles):
+[0ms](AudioTrackSoundbankIO)
+[0ms](ConversationTrackCleanup)
+[0ms](ConversationTrackCreate)
+[0ms](ConversationTrackOperation)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28774](\Global\POI_SquatDice\Interactions\SquattingIdles\SquatExit):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[1666ms](OpportunityTrack)
+[1666ms](OpportunityTrack)
+[1666ms](OpportunityTrack)
+
+[28772](\Global\POI_SquatDice\Interactions\SquattingIdles\SquattingAnims\Cycle\SquatIdle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[28773](\Global\POI_SquatDice\Interactions\SquattingIdles\SquattingAnims\Cycle\SquatIdle\Squat_DiceRoll):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetDestroyTrack)
+
+[28771](\Global\POI_SquatDice\Interactions\SquattingIdles\SquattingAnims\Intro\SquatEnter):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[28769](\Global\POI_SquatDice\UseConditions)

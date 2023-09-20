@@ -1,13 +1,67 @@
-[25161] \Global\POI_BusMachine\Interactions\BusMachine
-[25155] \Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL
-[25156] \Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Buy\Default
-[25157] \Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Pickup\Default
-[25158] \Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Pickup\Pay
-[25159] \Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Sync\interactionPoint
-[25160] \Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Exit
-[25162] \Global\POI_BusMachine\Interactions\BusMachine\Anims\Buy\Default
-[25163] \Global\POI_BusMachine\Interactions\BusMachine\Anims\Pickup\Default
-[25164] \Global\POI_BusMachine\Interactions\BusMachine\Anims\Pickup\Pay
-[25165] \Global\POI_BusMachine\Interactions\BusMachine\Anims\Sync\interactionPoint
-[25166] \Global\POI_BusMachine\Interactions\BusMachine\Exit
-[25154] \Global\POI_BusMachine\UseConditions
+[25161](\Global\POI_BusMachine\Interactions\BusMachine):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[25155](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[25156](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Buy\Default):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25157](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Pickup\Default):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[25158](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Pickup\Pay):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_player.money_adjust(-120, EconomyMethod.ticket_purchased)
+
+[25159](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Anims\Sync\interactionPoint):
+[0ms](TargetSyncPositionTrack)
+
+[25160](\Global\POI_BusMachine\Interactions\BusMachineNoBusRide_BSL\Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25162](\Global\POI_BusMachine\Interactions\BusMachine\Anims\Buy\Default):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25163](\Global\POI_BusMachine\Interactions\BusMachine\Anims\Pickup\Default):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[25164](\Global\POI_BusMachine\Interactions\BusMachine\Anims\Pickup\Pay):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_player.money_adjust(-120, EconomyMethod.ticket_purchased)
+
+[25165](\Global\POI_BusMachine\Interactions\BusMachine\Anims\Sync\interactionPoint):
+[0ms](TargetSyncPositionTrack)
+
+[25166](\Global\POI_BusMachine\Interactions\BusMachine\Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25154](\Global\POI_BusMachine\UseConditions)

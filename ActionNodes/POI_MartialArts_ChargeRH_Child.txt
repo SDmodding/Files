@@ -1,14 +1,73 @@
-[27092] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles
-[27104] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_Exit
-[27093] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\BowInto
-[27094] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\BowInto\Bow
-[27095] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\BowInto\Bow\BowOut
-[27096] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\LightAttack1
-[27097] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\LightAttack1\LightAttack2
-[27098] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3
-[27099] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3\ChargeAttack4
-[27101] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\ReceiveAttack\BowInto
-[27102] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\ReceiveAttack\BowInto\Bow
-[27103] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\ReceiveAttack\BowInto\Bow\BowOut
-[27100] \Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\ReceiveAttack\ReceiveAttack
-[27091] \Global\POI_MartialArts_ChargeRH_Child\UseConditions
+[27092](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[27104](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27093](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\BowInto):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[27094](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\BowInto\Bow):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27095](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\BowInto\Bow\BowOut):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27096](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\LightAttack1):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27097](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\LightAttack1\LightAttack2):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27098](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27099](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\PerformAttack\LightAttack1\LightAttack2\LightAttack3\ChargeAttack4):
+[0ms](AnimationTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+[200ms](AttackCollisionTrack)
+
+[27101](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\ReceiveAttack\BowInto):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[27102](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\ReceiveAttack\BowInto\Bow):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27103](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\ReceiveAttack\BowInto\Bow\BowOut):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27100](\Global\POI_MartialArts_ChargeRH_Child\Interactions\ChargeRoundhouse_Idles\ChargeRoundhouse_States\ReceiveAttack\ReceiveAttack):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[27091](\Global\POI_MartialArts_ChargeRH_Child\UseConditions)

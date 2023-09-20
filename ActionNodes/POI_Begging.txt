@@ -1,4 +1,21 @@
-[25041] \Global\POI_Begging\Interactions\Begging_Idles
-[25042] \Global\POI_Begging\Interactions\Begging_Idles\BeggingAnims\Begging
-[25043] \Global\POI_Begging\Interactions\Begging_Idles\Begging_Exit
-[25040] \Global\POI_Begging\UseConditions
+[25041](\Global\POI_Begging\Interactions\Begging_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25042](\Global\POI_Begging\Interactions\Begging_Idles\BeggingAnims\Begging):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25043](\Global\POI_Begging\Interactions\Begging_Idles\Begging_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25040](\Global\POI_Begging\UseConditions)

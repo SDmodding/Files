@@ -1,23 +1,126 @@
-[28525] \Global\POI_Smoking\Interactions\SmokingIdles
-[28541] \Global\POI_Smoking\Interactions\SmokingIdles\Idles\Female\Smoking_01
-[28542] \Global\POI_Smoking\Interactions\SmokingIdles\Idles\Male\Smoking_01
-[28532] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Female_INTO\SmokingIdle_LoadResource
-[28535] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Female_INTO\SmokingIdle_LoadResource\SmokingInto_Actual
-[28533] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Female_INTO\SmokingIdle_LoadResource\WaitForResources
-[28534] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Female_INTO\SmokingIdle_LoadResource\WaitForResources\Timeout
-[28531] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Female_INTO\WithProp\SmokingInto_Actual
-[28527] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\IsSpawning\SmokingIdle_LoadResource
-[28530] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\IsSpawning\SmokingIdle_LoadResource\IsSpawning_Actual
-[28528] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\IsSpawning\SmokingIdle_LoadResource\WaitForResources
-[28529] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\IsSpawning\SmokingIdle_LoadResource\WaitForResources\Timeout
-[28526] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\IsSpawning\WithProp\IsSpawning_Actual
-[28537] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Male_INTO\SmokingIdle_LoadResource
-[28540] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Male_INTO\SmokingIdle_LoadResource\SmokingInto_Actual
-[28538] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Male_INTO\SmokingIdle_LoadResource\WaitForResources
-[28539] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Male_INTO\SmokingIdle_LoadResource\WaitForResources\Timeout
-[28536] \Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Male_INTO\WithProp\SmokingInto_Actual
-[28543] \Global\POI_Smoking\Interactions\SmokingIdles\Smoking_Exit\Female\Smoking_Exit
-[28544] \Global\POI_Smoking\Interactions\SmokingIdles\Smoking_Exit\Male\NoAnimExit
-[28545] \Global\POI_Smoking\Interactions\SmokingIdles\Smoking_Exit\Male\Quick_Exit
-[28546] \Global\POI_Smoking\Interactions\SmokingIdles\Smoking_Exit\Male\Smoking_Exit
-[28524] \Global\POI_Smoking\UseConditions
+[28525](\Global\POI_Smoking\Interactions\SmokingIdles):
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[1250ms](OpportunityTrack)
+
+[28541](\Global\POI_Smoking\Interactions\SmokingIdles\Idles\Female\Smoking_01):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](LookAtTrack)
+[0ms](PlayEffectTrack)
+
+[28542](\Global\POI_Smoking\Interactions\SmokingIdles\Idles\Male\Smoking_01):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+[0ms](TargetDetachEffectorTrack)
+[600ms](TargetAttachEffectorTrack)
+[4366ms](TargetDetachEffectorTrack)
+[4600ms](LookAtTrack)
+
+[28532](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Female_INTO\SmokingIdle_LoadResource):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[28535](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Female_INTO\SmokingIdle_LoadResource\SmokingInto_Actual):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1000ms](ObjectCreateTrack)
+[1000ms](TargetAttachTrack)
+[4500ms](PlayEffectTrack)
+[4500ms](PlayEffectTrack)
+
+[28533](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Female_INTO\SmokingIdle_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[28534](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Female_INTO\SmokingIdle_LoadResource\WaitForResources\Timeout)
+[28531](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Female_INTO\WithProp\SmokingInto_Actual):
+[0ms](SequenceTrack)
+
+[28527](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\IsSpawning\SmokingIdle_LoadResource):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[28530](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\IsSpawning\SmokingIdle_LoadResource\IsSpawning_Actual):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[28528](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\IsSpawning\SmokingIdle_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[28529](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\IsSpawning\SmokingIdle_LoadResource\WaitForResources\Timeout)
+[28526](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\IsSpawning\WithProp\IsSpawning_Actual):
+[0ms](SequenceTrack)
+
+[28537](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Male_INTO\SmokingIdle_LoadResource):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[28540](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Male_INTO\SmokingIdle_LoadResource\SmokingInto_Actual):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1000ms](ObjectCreateTrack)
+[1000ms](TargetAttachTrack)
+[4500ms](PlayEffectTrack)
+[4500ms](PlayEffectTrack)
+
+[28538](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Male_INTO\SmokingIdle_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[28539](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Male_INTO\SmokingIdle_LoadResource\WaitForResources\Timeout)
+[28536](\Global\POI_Smoking\Interactions\SmokingIdles\SmokingAnims\Male_INTO\WithProp\SmokingInto_Actual):
+[0ms](SequenceTrack)
+
+[28543](\Global\POI_Smoking\Interactions\SmokingIdles\Smoking_Exit\Female\Smoking_Exit):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+[2500ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[28544](\Global\POI_Smoking\Interactions\SmokingIdles\Smoking_Exit\Male\NoAnimExit):
+[0ms](MasterTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+
+[28545](\Global\POI_Smoking\Interactions\SmokingIdles\Smoking_Exit\Male\Quick_Exit):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+
+[28546](\Global\POI_Smoking\Interactions\SmokingIdles\Smoking_Exit\Male\Smoking_Exit):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+[1166ms](OpportunityTrack)
+[1166ms](OpportunityTrack)
+[1166ms](OpportunityTrack)
+
+[28524](\Global\POI_Smoking\UseConditions)

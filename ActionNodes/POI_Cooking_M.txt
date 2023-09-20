@@ -1,14 +1,66 @@
-[25565] \Global\POI_Cooking_M\Interactions\CookingIdles
-[25574] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Cyclic\Cyclic
-[25575] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Cyclic\Cyclic\Male\CyclicActual01
-[25576] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Cyclic\Cyclic\Male\CyclicActual02
-[25577] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Exit\Male\ExitActual
-[25570] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Intro\Male\LoadResources
-[25573] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Intro\Male\LoadResources\IntroActual
-[25571] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Intro\Male\LoadResources\WaitForResources
-[25572] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Intro\Male\LoadResources\WaitForResources\Timeout
-[25569] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\IsSpawning\IsSpawningActual\IsMaleSpawning\IsMaleSpawningActual
-[25566] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\IsSpawning\LoadResources
-[25567] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\IsSpawning\LoadResources\WaitForResources
-[25568] \Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\IsSpawning\LoadResources\WaitForResources\Timeout
-[25564] \Global\POI_Cooking_M\UseConditions
+[25565](\Global\POI_Cooking_M\Interactions\CookingIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+
+[25574](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Cyclic\Cyclic):
+[0ms](SequenceTrack)
+
+[25575](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Cyclic\Cyclic\Male\CyclicActual01):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[25576](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Cyclic\Cyclic\Male\CyclicActual02):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[25577](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Exit\Male\ExitActual):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+
+[25570](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Intro\Male\LoadResources):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25573](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Intro\Male\LoadResources\IntroActual):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1133ms](ObjectCreateTrack)
+[1133ms](TargetAttachTrack)
+
+[25571](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Intro\Male\LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25572](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\Intro\Male\LoadResources\WaitForResources\Timeout)
+[25569](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\IsSpawning\IsSpawningActual\IsMaleSpawning\IsMaleSpawningActual):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[25566](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\IsSpawning\LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25567](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\IsSpawning\LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25568](\Global\POI_Cooking_M\Interactions\CookingIdles\CookingAnims\IsSpawning\LoadResources\WaitForResources\Timeout)
+[25564](\Global\POI_Cooking_M\UseConditions)

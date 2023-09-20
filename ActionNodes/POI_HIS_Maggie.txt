@@ -1,3 +1,22 @@
-[26645] \Global\poi_HIS_Maggie\Interactions\PerformAction
-[26646] \Global\poi_HIS_Maggie\Interactions\SquatExit
-[26644] \Global\poi_HIS_Maggie\UseConditions
+[26645](\Global\poi_HIS_Maggie\Interactions\PerformAction):
+[0ms](AnimationTrack)
+[0ms](PrintTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_HIS_Maggie()
+[0ms](TargetSteerToTrack)
+
+[26646](\Global\poi_HIS_Maggie\Interactions\SquatExit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: this.poi_get_target()<>InterestPoint.enable_interest_point(false) this.poi_get_target()<>InterestPoint.finish()
+[1166ms](OpportunityTrack)
+
+[26644](\Global\poi_HIS_Maggie\UseConditions)

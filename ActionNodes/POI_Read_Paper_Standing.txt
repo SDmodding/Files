@@ -1,18 +1,72 @@
-[27687] \Global\POI_Read_Paper_Standing\Interactions\ReadBook
-[27689] \Global\POI_Read_Paper_Standing\Interactions\ReadBook\Anims\Idle
-[27688] \Global\POI_Read_Paper_Standing\Interactions\ReadBook\Anims\Read
-[27690] \Global\POI_Read_Paper_Standing\Interactions\ReadBook\Exit
-[27691] \Global\POI_Read_Paper_Standing\Interactions\ReadBook\ObjectSpawn\LoadResources
-[27692] \Global\POI_Read_Paper_Standing\Interactions\ReadBook\ObjectSpawn\LoadResources\Attach
-[27693] \Global\POI_Read_Paper_Standing\Interactions\ReadBook\ObjectSpawn\LoadResources\Attach\Destroy\ExitNormally
-[27694] \Global\POI_Read_Paper_Standing\Interactions\ReadBook\ObjectSpawn\LoadResources\Attach\Destroy\PlayEffect
-[27695] \Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper
-[27698] \Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\Anims\Idle
-[27696] \Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\Anims\Read\Female
-[27697] \Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\Anims\Read\Male
-[27699] \Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\Exit
-[27700] \Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\ObjectSpawn\LoadResources
-[27701] \Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\ObjectSpawn\LoadResources\Attach
-[27702] \Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\ObjectSpawn\LoadResources\Attach\Destroy\ExitNormally
-[27703] \Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\ObjectSpawn\LoadResources\Attach\Destroy\PlayEffect
-[27686] \Global\POI_Read_Paper_Standing\UseConditions
+[27687](\Global\POI_Read_Paper_Standing\Interactions\ReadBook):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[27689](\Global\POI_Read_Paper_Standing\Interactions\ReadBook\Anims\Idle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[27688](\Global\POI_Read_Paper_Standing\Interactions\ReadBook\Anims\Read):
+[0ms](AnimationTrack)
+
+[27690](\Global\POI_Read_Paper_Standing\Interactions\ReadBook\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27691](\Global\POI_Read_Paper_Standing\Interactions\ReadBook\ObjectSpawn\LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+
+[27692](\Global\POI_Read_Paper_Standing\Interactions\ReadBook\ObjectSpawn\LoadResources\Attach):
+[0ms](ObjectCreateTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+[0ms](TargetAttachTrack)
+
+[27693](\Global\POI_Read_Paper_Standing\Interactions\ReadBook\ObjectSpawn\LoadResources\Attach\Destroy\ExitNormally):
+[0ms](TargetDetachTrack)
+
+[27694](\Global\POI_Read_Paper_Standing\Interactions\ReadBook\ObjectSpawn\LoadResources\Attach\Destroy\PlayEffect):
+[0ms](PlayEffectTrack)
+[0ms](TargetDetachTrack)
+
+[27695](\Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[27698](\Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\Anims\Idle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[27696](\Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\Anims\Read\Female):
+[0ms](AnimationTrack)
+
+[27697](\Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\Anims\Read\Male):
+[0ms](AnimationTrack)
+
+[27699](\Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27700](\Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\ObjectSpawn\LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+
+[27701](\Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\ObjectSpawn\LoadResources\Attach):
+[0ms](ObjectCreateTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+[0ms](TargetAttachTrack)
+
+[27702](\Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\ObjectSpawn\LoadResources\Attach\Destroy\ExitNormally):
+[0ms](TargetDetachTrack)
+
+[27703](\Global\POI_Read_Paper_Standing\Interactions\ReadNewspaper\ObjectSpawn\LoadResources\Attach\Destroy\PlayEffect):
+[0ms](PlayEffectTrack)
+[0ms](TargetDetachTrack)
+
+[27686](\Global\POI_Read_Paper_Standing\UseConditions)

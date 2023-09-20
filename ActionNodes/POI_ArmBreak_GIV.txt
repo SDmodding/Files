@@ -1,11 +1,61 @@
-[24904] \Global\POI_ArmBreak_GIV\Interactions\Action\Grab
-[24905] \Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Give
-[24906] \Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Give\LoopStartGIV
-[24907] \Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Give\LoopStartGIV\EndGIV
-[24908] \Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Rcv
-[24909] \Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Rcv\LoopstartRCV
-[24910] \Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Rcv\LoopstartRCV\EndRCV
-[24911] \Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Rcv\LoopstartRCV\EndRCV\Dizzy
-[24912] \Global\POI_ArmBreak_GIV\Interactions\Action\Grab\Rcv
-[24903] \Global\POI_ArmBreak_GIV\Interactions\WaitForTarget
-[24902] \Global\POI_ArmBreak_GIV\UseConditions
+[24904](\Global\POI_ArmBreak_GIV\Interactions\Action\Grab):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+[0ms](TargetAssignTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSteerToTrack)
+[66ms](TargetSyncPositionTrack)
+
+[24905](\Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Give):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24906](\Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Give\LoopStartGIV):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24907](\Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Give\LoopStartGIV\EndGIV):
+[0ms](AnimationTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+
+[24908](\Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Rcv):
+[0ms](AnimationTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24909](\Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Rcv\LoopstartRCV):
+[0ms](AnimationTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24910](\Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Rcv\LoopstartRCV\EndRCV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24911](\Global\POI_ArmBreak_GIV\Interactions\Action\Grab\ArmBreak\Rcv\LoopstartRCV\EndRCV\Dizzy):
+[0ms](AnimationTrack)
+[0ms](TargetReleaseTrack)
+
+[24912](\Global\POI_ArmBreak_GIV\Interactions\Action\Grab\Rcv):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSteerToTrack)
+[66ms](TargetSyncPositionTrack)
+
+[24903](\Global\POI_ArmBreak_GIV\Interactions\WaitForTarget):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSyncPositionTrack)
+
+[24902](\Global\POI_ArmBreak_GIV\UseConditions)

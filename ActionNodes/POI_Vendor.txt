@@ -1,25 +1,90 @@
-[29180] \Global\POI_vendor\Interactions\VendorIdles
-[29181] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon
-[29182] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Female\VendorCall_02
-[29183] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Female\VendorCall_03
-[29184] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Call_01
-[29185] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Call_Left
-[29186] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Call_Right
-[29187] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Idle
-[29188] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female
-[29190] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\FixHair
-[29193] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\Hang_03
-[29191] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\HeadScratch
-[29189] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\Ped_CheckWatch
-[29192] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\Ped_Cross_Arms
-[29194] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male
-[29198] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\BodyScratch
-[29199] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\FaceWipe
-[29200] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Hang_01
-[29201] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Hang_03
-[29202] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Hang_04
-[29195] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\HeadScratch
-[29197] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\NeckRub
-[29196] \Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Ped_Cross_Arms
-[29203] \Global\POI_vendor\Interactions\VendorIdles\VendorExit
-[29179] \Global\POI_vendor\UseConditions
+[29180](\Global\POI_vendor\Interactions\VendorIdles):
+[0ms](ConversationTrackCleanup)
+[0ms](ConversationTrackOperation)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](SpawnTrack)
+
+[29181](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[29182](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Female\VendorCall_02):
+[0ms](AnimationTrack)
+[100ms](DialogueTrack)
+
+[29183](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Female\VendorCall_03):
+[0ms](AnimationTrack)
+[100ms](DialogueTrack)
+
+[29184](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Call_01):
+[0ms](AnimationTrack)
+[100ms](DialogueTrack)
+
+[29185](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Call_Left):
+[0ms](AnimationTrack)
+[100ms](DialogueTrack)
+
+[29186](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Call_Right):
+[0ms](AnimationTrack)
+[100ms](DialogueTrack)
+
+[29187](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Beckon\Anims\Male\Idle):
+[0ms](AnimationTrack)
+[100ms](DialogueTrack)
+
+[29188](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female):
+[0ms](AnimationTrack)
+[0ms](ResourceOpportunityTrack)
+
+[29190](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\FixHair):
+[0ms](AnimationTrack)
+
+[29193](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\Hang_03):
+[0ms](AnimationTrack)
+
+[29191](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\HeadScratch):
+[0ms](AnimationTrack)
+
+[29189](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\Ped_CheckWatch):
+[0ms](AnimationTrack)
+
+[29192](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Female\Streamed\Ped_Cross_Arms):
+[0ms](AnimationTrack)
+
+[29194](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male):
+[0ms](AnimationTrack)
+[0ms](ResourceOpportunityTrack)
+
+[29198](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\BodyScratch):
+[0ms](AnimationTrack)
+
+[29199](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\FaceWipe):
+[0ms](AnimationTrack)
+
+[29200](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Hang_01):
+[0ms](AnimationTrack)
+
+[29201](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Hang_03):
+[0ms](AnimationTrack)
+
+[29202](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Hang_04):
+[0ms](AnimationTrack)
+
+[29195](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\HeadScratch):
+[0ms](AnimationTrack)
+
+[29197](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\NeckRub):
+[0ms](AnimationTrack)
+
+[29196](\Global\POI_vendor\Interactions\VendorIdles\VendorAnims\Idle\Male\Streamed\Ped_Cross_Arms):
+[0ms](AnimationTrack)
+
+[29203](\Global\POI_vendor\Interactions\VendorIdles\VendorExit)
+[29179](\Global\POI_vendor\UseConditions)

@@ -1,38 +1,209 @@
-[28434] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Ragdoll\AquireRagdollLoose
-[28433] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Ragdoll\AquireRagdollStiff
-[28425] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Attack\Female
-[28426] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Attack\Male
-[28419] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Dead\Dead
-[28423] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Projectile\Back
-[28424] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Projectile\Front
-[28420] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Push\Back
-[28422] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Push\Front
-[28421] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Push\OverBack\InAir
-[28427] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\SeatedTracks
-[28428] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\SeatedTracks\FractureStrength
-[28432] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Sync\Sync\NoSyncValid
-[28431] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Sync\Sync\ParentObject
-[28429] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Sync\Sync\Sync
-[28430] \Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Sync\Sync\interactionPoint
-[28435] \Global\POI_Sit_Group_Parent\Interactions\SeatedTracks
-[28436] \Global\POI_Sit_Group_Parent\Interactions\SeatedTracks\FractureStrength
-[28400] \Global\POI_Sit_Group_Parent\Interactions\Sitting
-[28401] \Global\POI_Sit_Group_Parent\Interactions\Sitting\0x5DA79C40\0x2939B24E\0x2939B24E
-[28402] \Global\POI_Sit_Group_Parent\Interactions\Sitting\0x5DA79C40\0x980B3167\0x1632822F\0x1A3E4F8D
-[28403] \Global\POI_Sit_Group_Parent\Interactions\Sitting\0x5DA79C40\0x980B3167\0x9607BEF3\0xAFC68797
-[28404] \Global\POI_Sit_Group_Parent\Interactions\Sitting\0x5DA79C40\ActivateChildren\0xBEC5724D
-[28405] \Global\POI_Sit_Group_Parent\Interactions\Sitting\0x5DA79C40\Sit_Group\Sit_Group
-[28406] \Global\POI_Sit_Group_Parent\Interactions\Sitting\0x9E103B1C\0x9E103B1C
-[28408] \Global\POI_Sit_Group_Parent\Interactions\Sitting\IV_PhotoPose\Cycle\Cyc
-[28407] \Global\POI_Sit_Group_Parent\Interactions\Sitting\IV_PhotoPose\Into\Into
-[28409] \Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial
-[28417] \Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\Done
-[28410] \Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnFastTalk
-[28411] \Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnFastTalk\PlayFX&SloMo
-[28412] \Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Done
-[28413] \Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnFastTalk\PlayFX&SloMo\TimedOut
-[28414] \Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnGestures\Gestures
-[28415] \Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnGestures\Idle
-[28416] \Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnUI
-[28418] \Global\POI_Sit_Group_Parent\Interactions\Sync\Immediate
-[28399] \Global\POI_Sit_Group_Parent\UseConditions
+[28434](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Ragdoll\AquireRagdollLoose):
+[0ms](MasterTrack)
+[0ms](RagdollAquireTrack)
+[0ms](SubjectFollowOverrideTrack)
+
+[28433](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Ragdoll\AquireRagdollStiff):
+[0ms](MasterTrack)
+[0ms](RagdollAquireTrack)
+[0ms](SubjectFollowOverrideTrack)
+
+[28425](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Attack\Female):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[2266ms](OpportunityTrack)
+
+[28426](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Attack\Male):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[1733ms](OpportunityTrack)
+
+[28419](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Dead\Dead):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](RagdollDeathImpulseTrack)
+[0ms](SpawnTrack)
+
+[28423](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Projectile\Back):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](RagdollImpulseTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[28424](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Projectile\Front):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](RagdollImpulseTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[28420](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Push\Back):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](HandleDamageTrack)
+[0ms](RagdollImpulseTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[28422](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Push\Front):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](HandleDamageTrack)
+[0ms](RagdollImpulseTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[28421](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Push\OverBack\InAir):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](HandleDamageTrack)
+[0ms](ParkourSyncPositionTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[733ms](DetailedOnGroundTrack)
+[766ms](SpawnTrack)
+[900ms](GravityTrack)
+
+[28427](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\SeatedTracks):
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SpawnTrack)
+
+[28428](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\SeatedTracks\FractureStrength):
+[0ms](MasterTrack)
+[0ms](TargetFractureStrengthTrack)
+
+[28432](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Sync\Sync\NoSyncValid)
+[28431](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Sync\Sync\ParentObject):
+[0ms](TargetSyncPositionTrack)
+
+[28429](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Sync\Sync\Sync):
+[0ms](TargetSyncPositionTrack)
+
+[28430](\Global\POI_Sit_Group_Parent\Interactions\HitTree\Sitting\Reactions\Sync\Sync\interactionPoint):
+[0ms](TargetSyncPositionTrack)
+
+[28435](\Global\POI_Sit_Group_Parent\Interactions\SeatedTracks):
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SpawnTrack)
+
+[28436](\Global\POI_Sit_Group_Parent\Interactions\SeatedTracks\FractureStrength):
+[0ms](MasterTrack)
+[0ms](TargetFractureStrengthTrack)
+
+[28400](\Global\POI_Sit_Group_Parent\Interactions\Sitting):
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[28401](\Global\POI_Sit_Group_Parent\Interactions\Sitting\0x5DA79C40\0x2939B24E\0x2939B24E):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](SequenceTrack)
+
+[28402](\Global\POI_Sit_Group_Parent\Interactions\Sitting\0x5DA79C40\0x980B3167\0x1632822F\0x1A3E4F8D):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[28403](\Global\POI_Sit_Group_Parent\Interactions\Sitting\0x5DA79C40\0x980B3167\0x9607BEF3\0xAFC68797):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[28404](\Global\POI_Sit_Group_Parent\Interactions\Sitting\0x5DA79C40\ActivateChildren\0xBEC5724D):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignSubTargetTrack)
+[0ms](TargetAssignSubTargetTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetPlayTrack)
+
+[28405](\Global\POI_Sit_Group_Parent\Interactions\Sitting\0x5DA79C40\Sit_Group\Sit_Group):
+[0ms](AnimationTrack)
+
+[28406](\Global\POI_Sit_Group_Parent\Interactions\Sitting\0x9E103B1C\0x9E103B1C):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[28408](\Global\POI_Sit_Group_Parent\Interactions\Sitting\IV_PhotoPose\Cycle\Cyc):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28407](\Global\POI_Sit_Group_Parent\Interactions\Sitting\IV_PhotoPose\Into\Into):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[28409](\Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[28417](\Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\Done)
+[28410](\Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnFastTalk):
+[0ms](SpawnTrack)
+
+[28411](\Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnFastTalk\PlayFX&SloMo):
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "y", "")
+[0ms](TimeWarpTrack)
+[3000ms](OpportunityTrack)
+
+[28412](\Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Done)
+[28413](\Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnFastTalk\PlayFX&SloMo\TimedOut)
+[28414](\Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnGestures\Gestures):
+[0ms](HeadTrackTargetTrack)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+
+[28415](\Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnGestures\Idle):
+[0ms](OpportunityTrack)
+
+[28416](\Global\POI_Sit_Group_Parent\Interactions\Sitting\PerformSocial\SpawnUI):
+[0ms](SkookumTrack)
+	[Class]: Actor
+	[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
+
+[28418](\Global\POI_Sit_Group_Parent\Interactions\Sync\Immediate):
+[0ms](TargetSyncPositionTrack)
+
+[28399](\Global\POI_Sit_Group_Parent\UseConditions)

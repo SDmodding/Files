@@ -1,20 +1,93 @@
-[25448] \Global\POI_Cock_Holding_GIV\Interactions\Exit
-[25430] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn
-[25433] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Agitate\Give
-[25434] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Agitate\Rcv
-[25431] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Into\Give
-[25432] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Into\Rcv
-[25435] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Release\Give
-[25436] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Release\Rcv
-[25437] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Hold\Give
-[25438] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Hold\Rcv
-[25439] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\AssignAndLockBird
-[25441] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Lose\Jeer1
-[25442] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Watching
-[25443] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Watching\Anims\Cheer1
-[25444] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Watching\Anims\Cheer2
-[25445] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Watching\Anims\Cheer3
-[25446] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Watching\Anims\Cheer4
-[25440] \Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Win\Cheer1
-[25447] \Global\POI_Cock_Holding_GIV\Interactions\WaitForTarget
-[25429] \Global\POI_Cock_Holding_GIV\UseConditions
+[25448](\Global\POI_Cock_Holding_GIV\Interactions\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_stop_using_use()
+
+[25430](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](TargetSyncPositionTrack)
+
+[25433](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Agitate\Give):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+
+[25434](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Agitate\Rcv):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+
+[25431](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Into\Give):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[200ms](DialogueTrack)
+
+[25432](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Into\Rcv):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+
+[25435](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Release\Give):
+[0ms](AnimationTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetPlayTrack)
+[200ms](DialogueTrack)
+
+[25436](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Agitate\Release\Rcv):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_stop_using_use()
+[0ms](TargetReleaseTrack)
+
+[25437](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Hold\Give):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetPlayTrack)
+
+[25438](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Anims\Hold\Rcv):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+
+[25439](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\AssignAndLockBird):
+[0ms](MasterTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+
+[25441](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Lose\Jeer1):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25442](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Watching):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25443](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Watching\Anims\Cheer1):
+[0ms](AnimationTrack)
+
+[25444](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Watching\Anims\Cheer2):
+[0ms](AnimationTrack)
+
+[25445](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Watching\Anims\Cheer3):
+[0ms](AnimationTrack)
+
+[25446](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Watching\Anims\Cheer4):
+[0ms](AnimationTrack)
+
+[25440](\Global\POI_Cock_Holding_GIV\Interactions\MasterSpawn\Cheers\Win\Cheer1):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25447](\Global\POI_Cock_Holding_GIV\Interactions\WaitForTarget):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSyncPositionTrack)
+
+[25429](\Global\POI_Cock_Holding_GIV\UseConditions)

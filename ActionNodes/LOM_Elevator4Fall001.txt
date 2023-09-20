@@ -1,3 +1,19 @@
-[24494] \Global\LOM_Elevator4Fall001\Object\Animation\Breaking
-[24493] \Global\LOM_Elevator4Fall001\Object\Broken
-[24492] \Global\LOM_Elevator4Fall001\Object\Unbroken
+[24494](\Global\LOM_Elevator4Fall001\Object\Animation\Breaking):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[24493](\Global\LOM_Elevator4Fall001\Object\Broken):
+[0ms](AnimationTrack)
+[0ms](SetHighlightingModeTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.enable_light_layer('ELEVATOR_LIGHT', false)
+
+[24492](\Global\LOM_Elevator4Fall001\Object\Unbroken):
+[0ms](AnimationTrack)
+[0ms](SetHighlightingModeTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.enable_light_layer('ELEVATOR_LIGHT', true)
+

@@ -1,4 +1,19 @@
-[29686] \Global\POI_DLC_HangThenFall\Interactions\Master
-[29687] \Global\POI_DLC_HangThenFall\Interactions\Master\Actions\Hang
-[29688] \Global\POI_DLC_HangThenFall\Interactions\Master\Fall
-[29685] \Global\POI_DLC_HangThenFall\UseConditions
+[29686](\Global\POI_DLC_HangThenFall\Interactions\Master):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[29687](\Global\POI_DLC_HangThenFall\Interactions\Master\Actions\Hang):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](TargetSyncPositionTrack)
+
+[29688](\Global\POI_DLC_HangThenFall\Interactions\Master\Fall):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use()
+[0ms](TargetSyncPositionTrack)
+
+[29685](\Global\POI_DLC_HangThenFall\UseConditions)

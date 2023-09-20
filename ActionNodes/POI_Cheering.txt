@@ -1,19 +1,82 @@
-[25318] \Global\POI_Cheering\Interactions\CheeringIdles
-[25335] \Global\POI_Cheering\Interactions\CheeringIdles\CheerExit
-[25325] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Dogeyes\Cheer1
-[25326] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Dogeyes\Cheer2
-[25320] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Female\CheeringState
-[25322] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Female\CheeringState\Anim\ClippedAt116
-[25321] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Female\CheeringState\Anim\FullAnim
-[25319] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Female\InitialTimeOffset
-[25323] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Jackie\Cheer_01_Male
-[25324] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Jackie\Cheer_02_Male
-[25329] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Male\Cheer2_01
-[25330] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Male\Cheer2_02
-[25331] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Male\Cheer2_03
-[25327] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Male\Cheer_01
-[25328] \Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Male\Cheer_02
-[25332] \Global\POI_Cheering\Interactions\CheeringIdles\HeadTrack\ClosestAlly
-[25334] \Global\POI_Cheering\Interactions\CheeringIdles\HeadTrack\Idle
-[25333] \Global\POI_Cheering\Interactions\CheeringIdles\HeadTrack\Player
-[25317] \Global\POI_Cheering\UseConditions
+[25318](\Global\POI_Cheering\Interactions\CheeringIdles):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[25335](\Global\POI_Cheering\Interactions\CheeringIdles\CheerExit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25325](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Dogeyes\Cheer1):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+
+[25326](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Dogeyes\Cheer2):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+[616ms](DialogueTrackWeaponImpact)
+
+[25320](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Female\CheeringState):
+[0ms](SpawnTrack)
+
+[25322](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Female\CheeringState\Anim\ClippedAt116):
+[0ms](AnimationTrack)
+[2000ms](DialogueTrackWeaponImpact)
+
+[25321](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Female\CheeringState\Anim\FullAnim):
+[0ms](AnimationTrack)
+[2000ms](DialogueTrackWeaponImpact)
+[5500ms](DialogueTrackWeaponImpact)
+
+[25319](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Female\InitialTimeOffset):
+[0ms](AnimationTrack)
+[0ms](MinimumDurationTrack)
+[0ms](SequenceTrack)
+
+[25323](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Jackie\Cheer_01_Male):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+
+[25324](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Jackie\Cheer_02_Male):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+
+[25329](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Male\Cheer2_01):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+[50ms](DialogueTrackWeaponImpact)
+
+[25330](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Male\Cheer2_02):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+[1683ms](DialogueTrackWeaponImpact)
+
+[25331](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Male\Cheer2_03):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+
+[25327](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Male\Cheer_01):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+[50ms](DialogueTrackWeaponImpact)
+
+[25328](\Global\POI_Cheering\Interactions\CheeringIdles\Cheering\Male\Cheer_02):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+
+[25332](\Global\POI_Cheering\Interactions\CheeringIdles\HeadTrack\ClosestAlly):
+[0ms](HeadTrackTargetTrack)
+[0ms](OpportunityTrack)
+
+[25334](\Global\POI_Cheering\Interactions\CheeringIdles\HeadTrack\Idle):
+[0ms](OpportunityTrack)
+
+[25333](\Global\POI_Cheering\Interactions\CheeringIdles\HeadTrack\Player):
+[0ms](HeadTrackTargetTrack)
+[0ms](OpportunityTrack)
+
+[25317](\Global\POI_Cheering\UseConditions)

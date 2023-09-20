@@ -1,15 +1,82 @@
-[25359] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster
-[25371] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingExit\ChoppingFish_Exit
-[25360] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload
-[25363] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\ChopPrep\Prep
-[25364] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\ChopPrep\PrepObject
-[25367] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\Chop\Chop
-[25368] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\Chop\ChopObject
-[25369] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\Discard\Throw
-[25370] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\Discard\ThrowObject
-[25366] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\PrepCYC\CYCObject
-[25365] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\PrepCYC\Cyc
-[25361] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\WaitForResources
-[25362] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\WaitForResources\Timeout
-[25372] \Global\POI_ChoppingNMC\Interactions\ChoppingMaster\Sync
-[25358] \Global\POI_ChoppingNMC\UseConditions
+[25359](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetReleaseTrack)
+
+[25371](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingExit\ChoppingFish_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetReleaseTrack)
+
+[25360](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25363](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\ChopPrep\Prep):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetPlayTrack)
+[4766ms](AttachmentTransferTrack)
+
+[25364](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\ChopPrep\PrepObject):
+[0ms](AnimationTrack)
+
+[25367](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\Chop\Chop):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[600ms](AudioTrackSimple)
+[600ms](PlayEffectTrack)
+
+[25368](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\Chop\ChopObject):
+[0ms](AnimationTrack)
+
+[25369](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\Discard\Throw):
+[0ms](AnimationTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetPlayTrack)
+[700ms](AttachmentTransferTrack)
+
+[25370](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\Discard\ThrowObject):
+[0ms](AnimationTrack)
+
+[25366](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\PrepCYC\CYCObject):
+[0ms](AnimationTrack)
+
+[25365](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\Chopping\PrepCYC\Cyc):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetPlayTrack)
+
+[25361](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25362](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\ChoppingStates\Preload\WaitForResources\Timeout)
+[25372](\Global\POI_ChoppingNMC\Interactions\ChoppingMaster\Sync):
+[0ms](TargetSyncPositionTrack)
+
+[25358](\Global\POI_ChoppingNMC\UseConditions)

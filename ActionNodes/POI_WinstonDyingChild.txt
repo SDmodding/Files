@@ -1,4 +1,18 @@
-[29552] \Global\POI_WinstonDyingChild\Interactions\DyingIdles
-[29554] \Global\POI_WinstonDyingChild\Interactions\DyingIdles\DyingExit
-[29553] \Global\POI_WinstonDyingChild\Interactions\DyingIdles\DyingStates\Dying\Dying
-[29551] \Global\POI_WinstonDyingChild\UseConditions
+[29552](\Global\POI_WinstonDyingChild\Interactions\DyingIdles):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetSyncPositionTrack)
+
+[29554](\Global\POI_WinstonDyingChild\Interactions\DyingIdles\DyingExit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[29553](\Global\POI_WinstonDyingChild\Interactions\DyingIdles\DyingStates\Dying\Dying):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+
+[29551](\Global\POI_WinstonDyingChild\UseConditions)

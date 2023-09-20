@@ -1,8 +1,33 @@
-[26594] \Global\POI_HealthShrine_Pedestrian\Interactions\Exit
-[26588] \Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn
-[26592] \Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Anims\Cyc
-[26591] \Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Anims\Intro
-[26593] \Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Anims\Outro
-[26590] \Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\AudioLoad
-[26589] \Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Sync
-[26587] \Global\POI_HealthShrine_Pedestrian\UseConditions
+[26594](\Global\POI_HealthShrine_Pedestrian\Interactions\Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26588](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[26592](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Anims\Cyc):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26591](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Anims\Intro):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26593](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Anims\Outro):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26590](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\AudioLoad):
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+
+[26589](\Global\POI_HealthShrine_Pedestrian\Interactions\MasterSpawn\Sync):
+[0ms](TargetSyncPositionTrack)
+
+[26587](\Global\POI_HealthShrine_Pedestrian\UseConditions)

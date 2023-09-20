@@ -1,4 +1,16 @@
-[26726] \Global\POI_Injured_Hotshot\Interactions\InjuredIdles
-[26727] \Global\POI_Injured_Hotshot\Interactions\InjuredIdles\InjuredAnims\Injured
-[26728] \Global\POI_Injured_Hotshot\Interactions\InjuredIdles\InjuredExit
-[26725] \Global\POI_Injured_Hotshot\UseConditions
+[26726](\Global\POI_Injured_Hotshot\Interactions\InjuredIdles):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[26727](\Global\POI_Injured_Hotshot\Interactions\InjuredIdles\InjuredAnims\Injured):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](InvulnerableTrack)
+
+[26728](\Global\POI_Injured_Hotshot\Interactions\InjuredIdles\InjuredExit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26725](\Global\POI_Injured_Hotshot\UseConditions)

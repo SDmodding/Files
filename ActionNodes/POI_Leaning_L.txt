@@ -1,9 +1,58 @@
-[26909] \Global\POI_Leaning_L\Interactions\HitTree\OverRailing\InAir\Back
-[26908] \Global\POI_Leaning_L\Interactions\HitTree\OverRailing\InAir\Front
-[26902] \Global\POI_Leaning_L\Interactions\LeaningIdles
-[26903] \Global\POI_Leaning_L\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_90L
-[26904] \Global\POI_Leaning_L\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_90L\LeaningIdles\LeaningIdle
-[26905] \Global\POI_Leaning_L\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_90L
-[26906] \Global\POI_Leaning_L\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_90L\LeaningIdles\LeaningIdle
-[26907] \Global\POI_Leaning_L\Interactions\LeaningIdles\LeaningExit
-[26901] \Global\POI_Leaning_L\UseConditions
+[26909](\Global\POI_Leaning_L\Interactions\HitTree\OverRailing\InAir\Back):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](HandleDamageTrack)
+[0ms](ParkourSyncPositionTrack)
+[366ms](DetailedOnGroundTrack)
+[800ms](GravityTrack)
+
+[26908](\Global\POI_Leaning_L\Interactions\HitTree\OverRailing\InAir\Front):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](HandleDamageTrack)
+[0ms](ParkourSyncPositionTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[200ms](GravityTrack)
+[366ms](DetailedOnGroundTrack)
+[800ms](SpawnTrack)
+
+[26902](\Global\POI_Leaning_L\Interactions\LeaningIdles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SensorComponentTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](TargetSyncPositionTrack)
+
+[26903](\Global\POI_Leaning_L\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_90L):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26904](\Global\POI_Leaning_L\Interactions\LeaningIdles\LeaningAnims\Female\LeaningInto_90L\LeaningIdles\LeaningIdle):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26905](\Global\POI_Leaning_L\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_90L):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26906](\Global\POI_Leaning_L\Interactions\LeaningIdles\LeaningAnims\Male\LeaningInto_90L\LeaningIdles\LeaningIdle):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26907](\Global\POI_Leaning_L\Interactions\LeaningIdles\LeaningExit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26901](\Global\POI_Leaning_L\UseConditions)

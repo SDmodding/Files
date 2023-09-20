@@ -1,8 +1,47 @@
-[29684] \Global\POI_DLC_WallRunFail\Interactions\Exit
-[29678] \Global\POI_DLC_WallRunFail\Interactions\Master
-[29680] \Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Auto-Kick-Off\PushAway
-[29681] \Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Auto-Kick-Off\PushAway\Fall
-[29682] \Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Auto-Kick-Off\PushAway\Fall\Land
-[29679] \Global\POI_DLC_WallRunFail\Interactions\Master\Anims\RunUp
-[29683] \Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Tired
-[29677] \Global\POI_DLC_WallRunFail\UseConditions
+[29684](\Global\POI_DLC_WallRunFail\Interactions\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use()
+
+[29678](\Global\POI_DLC_WallRunFail\Interactions\Master):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[29680](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Auto-Kick-Off\PushAway):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[600ms](CharacterPhysicsTrack)
+
+[29681](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Auto-Kick-Off\PushAway\Fall):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](OpportunityTrack)
+
+[29682](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Auto-Kick-Off\PushAway\Fall\Land):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](SequenceTrack)
+
+[29679](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\RunUp):
+[0ms](AnimationTrack)
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](AttackCollisionTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](ParkourSyncPositionTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSyncPositionTrack)
+
+[29683](\Global\POI_DLC_WallRunFail\Interactions\Master\Anims\Tired):
+[0ms](AnimationTrack)
+[5000ms](OpportunityTrack)
+
+[29677](\Global\POI_DLC_WallRunFail\UseConditions)

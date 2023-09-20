@@ -1,20 +1,102 @@
-[27466] \Global\PICTURE_Child\Interactions\PICTURE_Idles
-[27484] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_Exit\PICTURE_Exit
-[27467] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing
-[27468] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO
-[27469] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC
-[27470] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT
-[27471] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO
-[27472] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC
-[27473] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT
-[27474] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO
-[27475] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO\Female_3_CYC
-[27476] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO\Female_3_CYC\Female_3_OUT
-[27477] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO\Female_3_CYC\Female_3_OUT\Female_4_INTO
-[27478] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO\Female_3_CYC\Female_3_OUT\Female_4_INTO\Female_4_CYC
-[27479] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO\Female_3_CYC\Female_3_OUT\Female_4_INTO\Female_4_CYC\Female_4_OUT
-[27481] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Male\Male_CYC\Male_CYC01
-[27482] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Male\Male_CYC\Male_CYC01\Male_CYC02
-[27483] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Male\Male_CYC\Male_CYC01\Male_CYC02\Male_CYC03
-[27480] \Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Male\Male_INTO
-[27465] \Global\PICTURE_Child\UseConditions
+[27466](\Global\PICTURE_Child\Interactions\PICTURE_Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[27484](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_Exit\PICTURE_Exit):
+[0ms](DialogueTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27467](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing):
+[0ms](LocomotionTrack)
+[0ms](LookAtTrack)
+[0ms](SpawnTrack)
+
+[27468](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27469](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27470](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[27471](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27472](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27473](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[27474](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27475](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO\Female_3_CYC):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27476](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO\Female_3_CYC\Female_3_OUT):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[27477](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO\Female_3_CYC\Female_3_OUT\Female_4_INTO):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27478](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO\Female_3_CYC\Female_3_OUT\Female_4_INTO\Female_4_CYC):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27479](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Female\Female_Pose_1\Female_INTO\Female_CYC\Female_OUT\Female_2_INTO\Female_2_CYC\Female_2_OUT\Female_3_INTO\Female_3_CYC\Female_3_OUT\Female_4_INTO\Female_4_CYC\Female_4_OUT):
+[0ms](AnimationBankReferenceTrack)
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[27481](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Male\Male_CYC\Male_CYC01):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27482](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Male\Male_CYC\Male_CYC01\Male_CYC02):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27483](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Male\Male_CYC\Male_CYC01\Male_CYC02\Male_CYC03):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27480](\Global\PICTURE_Child\Interactions\PICTURE_Idles\PICTURE_States\Posing\Posing\Anims\Male\Male_INTO):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27465](\Global\PICTURE_Child\UseConditions)

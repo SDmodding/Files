@@ -1,5 +1,31 @@
-[26198] \Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles
-[26201] \Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles\CrackerToss_Exit
-[26199] \Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles\FireCrackerToss_Anims\Toss
-[26200] \Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles\FireCrackerToss_Anims\Toss\Wait
-[26197] \Global\POI_FireCracker_Toss\UseConditions
+[26198](\Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles):
+[0ms](AudioTrackSoundbankIO)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[26201](\Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles\CrackerToss_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26199](\Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles\FireCrackerToss_Anims\Toss):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[50ms](DialogueTrackWeaponImpact)
+[4266ms](PlayEffectTrack)
+[4433ms](PlayEffectTrack)
+[5666ms](PlayEffectTrack)
+
+[26200](\Global\POI_FireCracker_Toss\Interactions\FireCrackerToss_Idles\FireCrackerToss_Anims\Toss\Wait):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSimple)
+[0ms](SequenceTrack)
+
+[26197](\Global\POI_FireCracker_Toss\UseConditions)

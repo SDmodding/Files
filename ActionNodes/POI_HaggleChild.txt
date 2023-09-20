@@ -1,9 +1,47 @@
-[26434] \Global\HaggleChild\Interactions\HaggleChildIdles
-[26436] \Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles
-[26441] \Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles\ConversationExit\ConversationExit
-[26437] \Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles\HaggleStates\Listen\Listen
-[26438] \Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles\HaggleStates\Listen\Listen\Anims\Female
-[26439] \Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles\HaggleStates\Listen\Listen\Anims\Male
-[26440] \Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles\HaggleStates\Speaking\Speaking
-[26435] \Global\HaggleChild\Interactions\HaggleChildIdles\WaitForHaggleChild\Wait
-[26433] \Global\HaggleChild\UseConditions
+[26434](\Global\HaggleChild\Interactions\HaggleChildIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[26436](\Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles):
+[0ms](ConversationTrackCleanup)
+[0ms](ConversationTrackCreate)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[200ms](ConversationTrackOperation)
+
+[26441](\Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles\ConversationExit\ConversationExit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26437](\Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles\HaggleStates\Listen\Listen):
+[0ms](ExecuteTrack)
+[0ms](LocomotionTrack)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[26438](\Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles\HaggleStates\Listen\Listen\Anims\Female):
+[0ms](AnimationTrack)
+
+[26439](\Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles\HaggleStates\Listen\Listen\Anims\Male):
+[0ms](AnimationTrack)
+
+[26440](\Global\HaggleChild\Interactions\HaggleChildIdles\HagglingIdles\HaggleStates\Speaking\Speaking):
+[0ms](LocomotionTrack)
+[0ms](LookAtTrack)
+[0ms](MinimumDurationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[26435](\Global\HaggleChild\Interactions\HaggleChildIdles\WaitForHaggleChild\Wait):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[1000ms](OpportunityTrack)
+
+[26433](\Global\HaggleChild\UseConditions)

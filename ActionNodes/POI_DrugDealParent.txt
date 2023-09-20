@@ -1,5 +1,26 @@
-[25917] \Global\DrugDealParent\Interactions\DrugDealIdles
-[25920] \Global\DrugDealParent\Interactions\DrugDealIdles\DrugDealExit\DrugDealExit
-[25918] \Global\DrugDealParent\Interactions\DrugDealIdles\DrugDealStates\0xF33AD6B3\Wait
-[25919] \Global\DrugDealParent\Interactions\DrugDealIdles\DrugDealStates\Selling\Selling
-[25916] \Global\DrugDealParent\UseConditions
+[25917](\Global\DrugDealParent\Interactions\DrugDealIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25920](\Global\DrugDealParent\Interactions\DrugDealIdles\DrugDealExit\DrugDealExit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25918](\Global\DrugDealParent\Interactions\DrugDealIdles\DrugDealStates\0xF33AD6B3\Wait):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[25919](\Global\DrugDealParent\Interactions\DrugDealIdles\DrugDealStates\Selling\Selling):
+[0ms](AnimationTrack)
+[0ms](LocomotionTrack)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+
+[25916](\Global\DrugDealParent\UseConditions)

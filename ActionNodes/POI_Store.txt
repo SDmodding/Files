@@ -1,3 +1,13 @@
-[28817] \Global\POI_Store\Interactions\Exit
-[28816] \Global\POI_Store\Interactions\PerformAction
-[28815] \Global\POI_Store\UseConditions
+[28817](\Global\POI_Store\Interactions\Exit):
+[0ms](OpportunityTrack)
+[0ms](TargetReleaseTrack)
+
+[28816](\Global\POI_Store\Interactions\PerformAction):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: World.c_gameslice._launch_store_front(poi_get_target()<>InterestPoint.get_properties(),this)
+
+[28815](\Global\POI_Store\UseConditions)

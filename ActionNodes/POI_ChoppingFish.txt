@@ -1,9 +1,66 @@
-[25350] \Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles
-[25356] \Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_Exit\ChoppingFish_Exit
-[25351] \Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_States\ChoppingFish_PreLoad
-[25354] \Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_States\ChoppingFish_PreLoad\ChoppingFish\ChoppingFish_FirstPlay
-[25355] \Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_States\ChoppingFish_PreLoad\ChoppingFish\ChoppingFish_FirstPlay\ChoppingFish_Cycle
-[25352] \Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_States\ChoppingFish_PreLoad\WaitForResources
-[25353] \Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_States\ChoppingFish_PreLoad\WaitForResources\Timeout
-[25357] \Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\Sync
-[25349] \Global\POI_ChoppingFish\UseConditions
+[25350](\Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetReleaseTrack)
+
+[25356](\Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_Exit\ChoppingFish_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetReleaseTrack)
+
+[25351](\Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_States\ChoppingFish_PreLoad):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25354](\Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_States\ChoppingFish_PreLoad\ChoppingFish\ChoppingFish_FirstPlay):
+[0ms](AnimationTrack)
+[0ms](AttachmentTransferTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+[500ms](ObjectCreateTrack)
+[500ms](TargetAttachTrack)
+[2000ms](TargetPlayTrack)
+[4866ms](AttachmentTransferTrack)
+[7100ms](PlayEffectTrack)
+[10933ms](AttachmentTransferTrack)
+[14333ms](TargetDetachTrack)
+
+[25355](\Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_States\ChoppingFish_PreLoad\ChoppingFish\ChoppingFish_FirstPlay\ChoppingFish_Cycle):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[500ms](ObjectCreateTrack)
+[500ms](TargetAttachTrack)
+[2000ms](TargetPlayTrack)
+[4866ms](AttachmentTransferTrack)
+[7100ms](PlayEffectTrack)
+[10933ms](AttachmentTransferTrack)
+[14333ms](TargetDetachTrack)
+
+[25352](\Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_States\ChoppingFish_PreLoad\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25353](\Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\ChoppingFish_States\ChoppingFish_PreLoad\WaitForResources\Timeout)
+[25357](\Global\POI_ChoppingFish\Interactions\ChoppingFish_Idles\Sync):
+[0ms](MasterTrack)
+[0ms](TargetSyncPositionTrack)
+
+[25349](\Global\POI_ChoppingFish\UseConditions)

@@ -1,4 +1,19 @@
-[27423] \Global\PhotoWall\Interactions\0x6EB822C0
-[27422] \Global\PhotoWall\Interactions\Begin
-[27424] \Global\PhotoWall\Interactions\Exit
-[27421] \Global\PhotoWall\UseConditions
+[27423](\Global\PhotoWall\Interactions\0x6EB822C0):
+[0ms](SequenceTrack)
+[0ms](UIScreenTrack)
+
+[27422](\Global\PhotoWall\Interactions\Begin):
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+
+[27424](\Global\PhotoWall\Interactions\Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27421](\Global\PhotoWall\UseConditions)

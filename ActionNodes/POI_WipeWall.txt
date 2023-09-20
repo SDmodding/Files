@@ -1,18 +1,86 @@
-[29560] \Global\POI_WipeWall\Interactions\WipeWall_Anims
-[29573] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Cyc\Female\WipeWall_Cyc
-[29574] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Cyc\Male\WipeWall_Cyc
-[29575] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Exit\Female\WipeWall_Exit
-[29576] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Exit\Male\WipeWall_Exit
-[29565] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Female_INTO\WipeWall_LoadResource
-[29566] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Female_INTO\WipeWall_LoadResource\WaitForResources
-[29567] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Female_INTO\WipeWall_LoadResource\WaitForResources\Timeout
-[29568] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Female_INTO\WipeWall_LoadResource\WipeWall_Into_Actual
-[29561] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\IsSpawning\IsSpawning_LoadResources
-[29564] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\IsSpawning\IsSpawning_LoadResources\IsSpawning_Actual
-[29562] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\IsSpawning\IsSpawning_LoadResources\WaitForResources
-[29563] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\IsSpawning\IsSpawning_LoadResources\WaitForResources\Timeout
-[29569] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Male_INTO\WipeWall_LoadResource
-[29570] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Male_INTO\WipeWall_LoadResource\WaitForResources
-[29571] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Male_INTO\WipeWall_LoadResource\WaitForResources\Timeout
-[29572] \Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Male_INTO\WipeWall_LoadResource\WipeWall_Into_Actual
-[29559] \Global\POI_WipeWall\UseConditions
+[29560](\Global\POI_WipeWall\Interactions\WipeWall_Anims):
+[0ms](AudioTrackSoundbankIO)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[29573](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Cyc\Female\WipeWall_Cyc):
+[0ms](AnimationTrack)
+[500ms](OpportunityTrack)
+
+[29574](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Cyc\Male\WipeWall_Cyc):
+[0ms](AnimationTrack)
+[500ms](OpportunityTrack)
+
+[29575](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Exit\Female\WipeWall_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[29576](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Exit\Male\WipeWall_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[29565](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Female_INTO\WipeWall_LoadResource):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[29566](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Female_INTO\WipeWall_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[29567](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Female_INTO\WipeWall_LoadResource\WaitForResources\Timeout)
+[29568](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Female_INTO\WipeWall_LoadResource\WipeWall_Into_Actual):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[29561](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\IsSpawning\IsSpawning_LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[29564](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\IsSpawning\IsSpawning_LoadResources\IsSpawning_Actual):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[29562](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\IsSpawning\IsSpawning_LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[29563](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\IsSpawning\IsSpawning_LoadResources\WaitForResources\Timeout)
+[29569](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Male_INTO\WipeWall_LoadResource):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[29570](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Male_INTO\WipeWall_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[29571](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Male_INTO\WipeWall_LoadResource\WaitForResources\Timeout)
+[29572](\Global\POI_WipeWall\Interactions\WipeWall_Anims\WipeWall_Into\Male_INTO\WipeWall_LoadResource\WipeWall_Into_Actual):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[29559](\Global\POI_WipeWall\UseConditions)

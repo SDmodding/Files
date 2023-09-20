@@ -1,15 +1,97 @@
-[26119] \Global\POI_Execution\Interactions\Intimidate\Cycle\Give
-[26120] \Global\POI_Execution\Interactions\Intimidate\Cycle\Rcv
-[26122] \Global\POI_Execution\Interactions\Intimidate\Exit\Downed\FaceUp
-[26121] \Global\POI_Execution\Interactions\Intimidate\Exit\Give
-[26117] \Global\POI_Execution\Interactions\Intimidate\Give
-[26118] \Global\POI_Execution\Interactions\Intimidate\Rcv
-[26123] \Global\POI_Execution\Interactions\Threaten\Grab
-[26126] \Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Cycle\Give
-[26127] \Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Cycle\Rcv
-[26128] \Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Exit\Give
-[26129] \Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Exit\Rcv
-[26124] \Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Give
-[26125] \Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Rcv
-[26116] \Global\POI_Execution\Interactions\WaitForTarget
-[26115] \Global\POI_Execution\UseConditions
+[26119](\Global\POI_Execution\Interactions\Intimidate\Cycle\Give):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+
+[26120](\Global\POI_Execution\Interactions\Intimidate\Cycle\Rcv):
+[0ms](AnimationTrack)
+[0ms](TargetSteerToTrack)
+
+[26122](\Global\POI_Execution\Interactions\Intimidate\Exit\Downed\FaceUp):
+[0ms](AnimationTrack)
+[0ms](DamageTrack)
+[0ms](SequenceTrack)
+[0ms](SetStateFlagTrack)
+[0ms](TargetReleaseTrack)
+
+[26121](\Global\POI_Execution\Interactions\Intimidate\Exit\Give):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+
+[26117](\Global\POI_Execution\Interactions\Intimidate\Give):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+
+[26118](\Global\POI_Execution\Interactions\Intimidate\Rcv):
+[0ms](AnimationTrack)
+[0ms](TargetSteerToTrack)
+
+[26123](\Global\POI_Execution\Interactions\Threaten\Grab):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[26126](\Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Cycle\Give):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+
+[26127](\Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Cycle\Rcv):
+[0ms](AnimationTrack)
+[0ms](TargetSyncPositionTrack)
+
+[26128](\Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Exit\Give):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[2400ms](TargetDestroyTrack)
+
+[26129](\Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Exit\Rcv):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](HealthSetPercentageTrack)
+[0ms](RagdollAquireTrack)
+[0ms](SequenceTrack)
+[0ms](SetStateFlagTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[33ms](RagdollChangeModeTrack)
+[33ms](RagdollChangeMotorTrack)
+
+[26124](\Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Give):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+
+[26125](\Global\POI_Execution\Interactions\Threaten\Grab\Intimidate\Rcv):
+[0ms](AnimationTrack)
+
+[26116](\Global\POI_Execution\Interactions\WaitForTarget):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+
+[26115](\Global\POI_Execution\UseConditions)

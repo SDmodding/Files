@@ -1,24 +1,117 @@
-[19381] \Global\Submachinegun\Flashlight\TacLight
-[19359] \Global\Submachinegun\MasterSpawn
-[19366] \Global\Submachinegun\MasterSpawn\Actions\Equiped\Fake-Fire_Auto
-[19360] \Global\Submachinegun\MasterSpawn\Actions\Equiped\Fire\Fire_Auto
-[19361] \Global\Submachinegun\MasterSpawn\Actions\Equiped\Fire\Fire_Auto\Fire_Anim
-[19362] \Global\Submachinegun\MasterSpawn\Actions\Equiped\Fire\Fire_Single
-[19364] \Global\Submachinegun\MasterSpawn\Actions\Equiped\Fire\VFX\Default
-[19363] \Global\Submachinegun\MasterSpawn\Actions\Equiped\Fire\VFX\Player
-[19365] \Global\Submachinegun\MasterSpawn\Actions\Equiped\Idle
-[19367] \Global\Submachinegun\MasterSpawn\Actions\Idle
-[19368] \Global\Submachinegun\MasterSpawn\Actions\Idle\Rimlight
-[19371] \Global\Submachinegun\MasterSpawn\Animations\BoltActuate\SMG_35
-[19372] \Global\Submachinegun\MasterSpawn\Animations\BoltActuate\SMG_35\BoltLockedBack
-[19369] \Global\Submachinegun\MasterSpawn\Animations\BoltActuate\SMG_45
-[19370] \Global\Submachinegun\MasterSpawn\Animations\BoltActuate\SMG_45\BoltLockedBack
-[19374] \Global\Submachinegun\MasterSpawn\Animations\Idle
-[19373] \Global\Submachinegun\MasterSpawn\Animations\TargetPlayedOnDiscard\BoltLockedBack
-[19375] \Global\Submachinegun\MasterSpawn\GunSmoke\Firing
-[19376] \Global\Submachinegun\MasterSpawn\GunSmoke\Firing\Smoking
-[19377] \Global\Submachinegun\MasterSpawn\GunSmoke\Idle
-[19378] \Global\Submachinegun\RedDot\RedDotSight
-[19380] \Global\Submachinegun\RedDot\RedDotSight\Switch\Off
-[19379] \Global\Submachinegun\RedDot\RedDotSight\Switch\On
-[19382] \Global\Submachinegun\Utility\OwnerFireWeaponStimuli
+[19381](\Global\Submachinegun\Flashlight\TacLight):
+[0ms](AudioTrackSimple)
+[0ms](AudioTrackSimple)
+[0ms](PlayEffectTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[19359](\Global\Submachinegun\MasterSpawn):
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[19366](\Global\Submachinegun\MasterSpawn\Actions\Equiped\Fake-Fire_Auto):
+[0ms](SequenceTrack)
+[0ms](ShootTrack)
+[0ms](SpawnTrack)
+[0ms](TargetPlayTrack)
+
+[19360](\Global\Submachinegun\MasterSpawn\Actions\Equiped\Fire\Fire_Auto):
+[0ms](SpawnTrack)
+[33ms](OpportunityTrack)
+
+[19361](\Global\Submachinegun\MasterSpawn\Actions\Equiped\Fire\Fire_Auto\Fire_Anim):
+[0ms](SequenceTrack)
+[0ms](ShootTrack)
+[0ms](SpawnTrack)
+[0ms](TargetPlayTrack)
+[0ms](TriggerRecoilPostEffectTrack)
+
+[19362](\Global\Submachinegun\MasterSpawn\Actions\Equiped\Fire\Fire_Single):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[0ms](ShootTrack)
+[0ms](SpawnTrack)
+[0ms](TargetPlayTrack)
+[0ms](TriggerRecoilPostEffectTrack)
+
+[19364](\Global\Submachinegun\MasterSpawn\Actions\Equiped\Fire\VFX\Default):
+[0ms](MasterTrack)
+[0ms](PlayEffectTrack)
+[33ms](PlayEffectTrack)
+
+[19363](\Global\Submachinegun\MasterSpawn\Actions\Equiped\Fire\VFX\Player):
+[0ms](MasterTrack)
+[0ms](PlayEffectTrack)
+[33ms](PlayEffectTrack)
+
+[19365](\Global\Submachinegun\MasterSpawn\Actions\Equiped\Idle):
+[0ms](AnimationRefPoseTrack)
+[0ms](OpportunityTrack)
+
+[19367](\Global\Submachinegun\MasterSpawn\Actions\Idle):
+[0ms](AnimationRefPoseTrack)
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[19368](\Global\Submachinegun\MasterSpawn\Actions\Idle\Rimlight):
+[0ms](OpportunityTrack)
+[0ms](RimLightTrack)
+
+[19371](\Global\Submachinegun\MasterSpawn\Animations\BoltActuate\SMG_35):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[33ms](OpportunityTrack)
+
+[19372](\Global\Submachinegun\MasterSpawn\Animations\BoltActuate\SMG_35\BoltLockedBack):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[19369](\Global\Submachinegun\MasterSpawn\Animations\BoltActuate\SMG_45):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[33ms](OpportunityTrack)
+
+[19370](\Global\Submachinegun\MasterSpawn\Animations\BoltActuate\SMG_45\BoltLockedBack):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[19374](\Global\Submachinegun\MasterSpawn\Animations\Idle):
+[0ms](AnimationRefPoseTrack)
+[0ms](OpportunityTrack)
+
+[19373](\Global\Submachinegun\MasterSpawn\Animations\TargetPlayedOnDiscard\BoltLockedBack)
+[19375](\Global\Submachinegun\MasterSpawn\GunSmoke\Firing):
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[1000ms](OpportunityTrack)
+
+[19376](\Global\Submachinegun\MasterSpawn\GunSmoke\Firing\Smoking):
+[0ms](ExecuteTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+[2000ms](OpportunityTrack)
+
+[19377](\Global\Submachinegun\MasterSpawn\GunSmoke\Idle):
+[0ms](OpportunityTrack)
+
+[19378](\Global\Submachinegun\RedDot\RedDotSight):
+[0ms](SpawnTrack)
+
+[19380](\Global\Submachinegun\RedDot\RedDotSight\Switch\Off):
+[0ms](OpportunityTrack)
+
+[19379](\Global\Submachinegun\RedDot\RedDotSight\Switch\On):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+
+[19382](\Global\Submachinegun\Utility\OwnerFireWeaponStimuli):
+[0ms](StimulusTrack)
+[0ms](StimulusTrack)
+

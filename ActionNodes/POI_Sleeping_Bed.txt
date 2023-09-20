@@ -1,6 +1,40 @@
-[28499] \Global\Sleeping_bed\Interactions\GoToSleep
-[28500] \Global\Sleeping_bed\Interactions\SleepingIdles
-[28501] \Global\Sleeping_bed\Interactions\SleepingIdles\SleepingBed_Anims\Female\Sleeping_01
-[28502] \Global\Sleeping_bed\Interactions\SleepingIdles\SleepingBed_Anims\Male\Sleeping_01
-[28503] \Global\Sleeping_bed\Interactions\SleepingIdles\SleepingExit
-[28498] \Global\Sleeping_bed\UseConditions
+[28499](\Global\Sleeping_bed\Interactions\GoToSleep):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSteerToTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28500](\Global\Sleeping_bed\Interactions\SleepingIdles):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28501](\Global\Sleeping_bed\Interactions\SleepingIdles\SleepingBed_Anims\Female\Sleeping_01):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28502](\Global\Sleeping_bed\Interactions\SleepingIdles\SleepingBed_Anims\Male\Sleeping_01):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28503](\Global\Sleeping_bed\Interactions\SleepingIdles\SleepingExit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetSyncPositionTrack)
+
+[28498](\Global\Sleeping_bed\UseConditions)

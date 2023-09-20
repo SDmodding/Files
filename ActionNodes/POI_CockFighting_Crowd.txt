@@ -1,26 +1,107 @@
-[25414] \Global\Cockfighting_Crowd\Interactions\PlaceBets\Dialogue\Dialogue
-[25404] \Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L
-[25409] \Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\Idles
-[25413] \Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\Idles\Male\0x77B635F4
-[25410] \Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\Idles\Male\PlaceBet_01
-[25411] \Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\Idles\Male\PlaceBet_02
-[25412] \Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\Idles\Male\PlaceBet_03
-[25405] \Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\PlaceBetIdle_LoadResource
-[25408] \Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\PlaceBetIdle_LoadResource\PlaceBetIdle_Actual
-[25406] \Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\PlaceBetIdle_LoadResource\WaitForResources
-[25407] \Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\PlaceBetIdle_LoadResource\WaitForResources\Timeout
-[25415] \Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles
-[25419] \Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\SquatAnims\EndFight\Lose
-[25418] \Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\SquatAnims\EndFight\Win
-[25417] \Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\SquatAnims\Idles\Squat_01
-[25416] \Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\SquatAnims\IntroSquat
-[25420] \Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\SquatAnims\SpeakDialogue
-[25421] \Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\Squat_Exit
-[25422] \Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles
-[25428] \Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\CheerExit
-[25423] \Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\Cheering
-[25427] \Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\Cheering\CheeringAnims\Male\0x18D5099E
-[25424] \Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\Cheering\CheeringAnims\Male\Cheer_01_Male
-[25425] \Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\Cheering\CheeringAnims\Male\Cheer_02_Male
-[25426] \Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\Cheering\CheeringAnims\Male\Cheer_03_Male
-[25403] \Global\Cockfighting_Crowd\UseConditions
+[25414](\Global\Cockfighting_Crowd\Interactions\PlaceBets\Dialogue\Dialogue):
+[0ms](ExecuteTrack)
+[200ms](DialogueTrack)
+
+[25404](\Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L):
+[0ms](LookAtTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[25409](\Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\Idles):
+[0ms](SequenceTrack)
+
+[25413](\Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\Idles\Male\0x77B635F4):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25410](\Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\Idles\Male\PlaceBet_01):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25411](\Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\Idles\Male\PlaceBet_02):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25412](\Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\Idles\Male\PlaceBet_03):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25405](\Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\PlaceBetIdle_LoadResource):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25408](\Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\PlaceBetIdle_LoadResource\PlaceBetIdle_Actual):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[25406](\Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\PlaceBetIdle_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25407](\Global\Cockfighting_Crowd\Interactions\PlaceBets\PlaceBet_Idles_L\PlaceBet_Anims\PlaceBetIdle_LoadResource\WaitForResources\Timeout)
+[25415](\Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25419](\Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\SquatAnims\EndFight\Lose):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25418](\Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\SquatAnims\EndFight\Win):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25417](\Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\SquatAnims\Idles\Squat_01):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[25416](\Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\SquatAnims\IntroSquat):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[25420](\Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\SquatAnims\SpeakDialogue)
+[25421](\Global\Cockfighting_Crowd\Interactions\SquatCheer\SquatCheer_Idles\Squat_Exit):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25422](\Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25428](\Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\CheerExit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25423](\Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\Cheering):
+[0ms](SequenceTrack)
+
+[25427](\Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\Cheering\CheeringAnims\Male\0x18D5099E):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25424](\Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\Cheering\CheeringAnims\Male\Cheer_01_Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25425](\Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\Cheering\CheeringAnims\Male\Cheer_02_Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25426](\Global\Cockfighting_Crowd\Interactions\StandCheer\CheeringIdles\Cheering\CheeringAnims\Male\Cheer_03_Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25403](\Global\Cockfighting_Crowd\UseConditions)

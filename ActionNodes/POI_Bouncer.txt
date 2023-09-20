@@ -1,4 +1,21 @@
-[25050] \Global\Bouncer\Interactions\BouncerIdles
-[25051] \Global\Bouncer\Interactions\BouncerIdles\BouncerAnims\Bouncer_Idle
-[25052] \Global\Bouncer\Interactions\BouncerIdles\BouncerExit
-[25049] \Global\Bouncer\UseConditions
+[25050](\Global\Bouncer\Interactions\BouncerIdles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25051](\Global\Bouncer\Interactions\BouncerIdles\BouncerAnims\Bouncer_Idle):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25052](\Global\Bouncer\Interactions\BouncerIdles\BouncerExit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25049](\Global\Bouncer\UseConditions)

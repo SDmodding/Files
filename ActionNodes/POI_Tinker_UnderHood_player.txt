@@ -1,4 +1,25 @@
-[29006] \Global\POI_Tinker_UnderHood_player\Interactions\TinkerUnderHood_Idles
-[29007] \Global\POI_Tinker_UnderHood_player\Interactions\TinkerUnderHood_Idles\TinkerUnderHood_Anims\TinkerUnderHood_Idle01
-[29008] \Global\POI_Tinker_UnderHood_player\Interactions\TinkerUnderHood_Idles\TinkerUnderHood_Exit
-[29005] \Global\POI_Tinker_UnderHood_player\UseConditions
+[29006](\Global\POI_Tinker_UnderHood_player\Interactions\TinkerUnderHood_Idles):
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetSyncPositionTrack)
+
+[29007](\Global\POI_Tinker_UnderHood_player\Interactions\TinkerUnderHood_Idles\TinkerUnderHood_Anims\TinkerUnderHood_Idle01):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Helpbar.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[29008](\Global\POI_Tinker_UnderHood_player\Interactions\TinkerUnderHood_Idles\TinkerUnderHood_Exit):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Helpbar.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[29005](\Global\POI_Tinker_UnderHood_player\UseConditions)

@@ -1,25 +1,113 @@
-[23936] \Global\CRI_Pigeon001\AI\Avoidance\Idle
-[23934] \Global\CRI_Pigeon001\AI\Avoidance\RunAway
-[23933] \Global\CRI_Pigeon001\AI\Avoidance\RunFlapAway
-[23935] \Global\CRI_Pigeon001\AI\Avoidance\WalkAway
-[23922] \Global\CRI_Pigeon001\Attacks\Kick
-[23924] \Global\CRI_Pigeon001\Attacks\KickMir
-[23921] \Global\CRI_Pigeon001\Attacks\Peck
-[23923] \Global\CRI_Pigeon001\Attacks\PeckMir
-[23937] \Global\CRI_Pigeon001\GlobalActions\CombatEntry
-[23939] \Global\CRI_Pigeon001\GlobalActions\POIDynamicBranch
-[23938] \Global\CRI_Pigeon001\GlobalActions\Taunts
-[23931] \Global\CRI_Pigeon001\HitTree\PostHit\Dead\Downed\Down
-[23932] \Global\CRI_Pigeon001\HitTree\PostHit\Dead\Downed\DownMir
-[23925] \Global\CRI_Pigeon001\HitTree\PreReactionControl\Carried
-[23926] \Global\CRI_Pigeon001\HitTree\PreReactionControl\Default
-[23927] \Global\CRI_Pigeon001\HitTree\Reactions\Hit
-[23929] \Global\CRI_Pigeon001\HitTree\Reactions\HitMir
-[23928] \Global\CRI_Pigeon001\HitTree\Reactions\Roll
-[23930] \Global\CRI_Pigeon001\HitTree\Reactions\RollMir
-[23919] \Global\CRI_Pigeon001\Locomotion\Idle\Focus
-[23920] \Global\CRI_Pigeon001\Locomotion\Idle\Idle
-[23917] \Global\CRI_Pigeon001\Locomotion\Moving\RunAway\RunLoop
-[23916] \Global\CRI_Pigeon001\Locomotion\Moving\RunFlapAway\RunFlapLoop
-[23918] \Global\CRI_Pigeon001\Locomotion\Moving\WalkAway\WalkLoop
-[23915] \Global\CRI_Pigeon001\MasterSpawn
+[23936](\Global\CRI_Pigeon001\AI\Avoidance\Idle):
+[0ms](OpportunityTrack)
+
+[23934](\Global\CRI_Pigeon001\AI\Avoidance\RunAway):
+[0ms](ActionRequestTrack)
+[0ms](OpportunityTrack)
+
+[23933](\Global\CRI_Pigeon001\AI\Avoidance\RunFlapAway):
+[0ms](ActionRequestTrack)
+[0ms](OpportunityTrack)
+
+[23935](\Global\CRI_Pigeon001\AI\Avoidance\WalkAway):
+[0ms](ActionRequestTrack)
+[0ms](OpportunityTrack)
+
+[23922](\Global\CRI_Pigeon001\Attacks\Kick):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](TargetSteerToTrack)
+
+[23924](\Global\CRI_Pigeon001\Attacks\KickMir):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](TargetSteerToTrack)
+
+[23921](\Global\CRI_Pigeon001\Attacks\Peck):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](TargetSteerToTrack)
+
+[23923](\Global\CRI_Pigeon001\Attacks\PeckMir):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](TargetSteerToTrack)
+
+[23937](\Global\CRI_Pigeon001\GlobalActions\CombatEntry)
+[23939](\Global\CRI_Pigeon001\GlobalActions\POIDynamicBranch):
+[0ms](POIBeginTrack)
+[0ms](POIBehaviourActiveTrack)
+
+[23938](\Global\CRI_Pigeon001\GlobalActions\Taunts)
+[23931](\Global\CRI_Pigeon001\HitTree\PostHit\Dead\Downed\Down):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](PlayEffectTrack)
+
+[23932](\Global\CRI_Pigeon001\HitTree\PostHit\Dead\Downed\DownMir):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](PlayEffectTrack)
+
+[23925](\Global\CRI_Pigeon001\HitTree\PreReactionControl\Carried)
+[23926](\Global\CRI_Pigeon001\HitTree\PreReactionControl\Default):
+[0ms](OpportunityTrack)
+
+[23927](\Global\CRI_Pigeon001\HitTree\Reactions\Hit):
+[0ms](AnimationTrack)
+[0ms](HandleDamageTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[23929](\Global\CRI_Pigeon001\HitTree\Reactions\HitMir):
+[0ms](AnimationTrack)
+[0ms](HandleDamageTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[23928](\Global\CRI_Pigeon001\HitTree\Reactions\Roll):
+[0ms](AnimationTrack)
+[0ms](HandleDamageTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[23930](\Global\CRI_Pigeon001\HitTree\Reactions\RollMir):
+[0ms](AnimationTrack)
+[0ms](HandleDamageTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[23919](\Global\CRI_Pigeon001\Locomotion\Idle\Focus):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSteerToTrack)
+
+[23920](\Global\CRI_Pigeon001\Locomotion\Idle\Idle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[23917](\Global\CRI_Pigeon001\Locomotion\Moving\RunAway\RunLoop):
+[0ms](AnimationTrack)
+[0ms](Locomotion2Track)
+[0ms](OpportunityTrack)
+
+[23916](\Global\CRI_Pigeon001\Locomotion\Moving\RunFlapAway\RunFlapLoop):
+[0ms](AnimationTrack)
+[0ms](Locomotion2Track)
+[0ms](OpportunityTrack)
+
+[23918](\Global\CRI_Pigeon001\Locomotion\Moving\WalkAway\WalkLoop):
+[0ms](AnimationTrack)
+[0ms](Locomotion2Track)
+[0ms](OpportunityTrack)
+
+[23915](\Global\CRI_Pigeon001\MasterSpawn):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+

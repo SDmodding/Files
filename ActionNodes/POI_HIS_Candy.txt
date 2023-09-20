@@ -1,3 +1,22 @@
-[26627] \Global\poi_HIS_Candy\Interactions\PerformAction
-[26628] \Global\poi_HIS_Candy\Interactions\SquatExit
-[26626] \Global\poi_HIS_Candy\UseConditions
+[26627](\Global\poi_HIS_Candy\Interactions\PerformAction):
+[0ms](AnimationTrack)
+[0ms](PrintTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_HIS_Candy()
+[0ms](TargetSteerToTrack)
+
+[26628](\Global\poi_HIS_Candy\Interactions\SquatExit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: this.poi_get_target()<>InterestPoint.enable_interest_point(false) this.poi_get_target()<>InterestPoint.finish()
+[1166ms](OpportunityTrack)
+
+[26626](\Global\poi_HIS_Candy\UseConditions)

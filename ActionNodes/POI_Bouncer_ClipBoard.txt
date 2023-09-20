@@ -1,12 +1,53 @@
-[25054] \Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles
-[25064] \Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Bouncer_ClipBoard_Exit
-[25055] \Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload
-[25058] \Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard
-[25059] \Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard
-[25060] \Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x639D475B
-[25061] \Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x675C5AEC
-[25062] \Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x6A1F7C35
-[25063] \Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x7DDA175E
-[25056] \Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\WaitForResources
-[25057] \Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\WaitForResources\Timeout
-[25053] \Global\POI_Bouncer_ClipBoard\UseConditions
+[25054](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[25064](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Bouncer_ClipBoard_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25055](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25058](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[25059](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25060](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x639D475B):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25061](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x675C5AEC):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25062](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x6A1F7C35):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25063](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\AttachClipBoard\Bouncer_ClipBoard\0xE78136E8\0x7DDA175E):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25056](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25057](\Global\POI_Bouncer_ClipBoard\Interactions\Bouncer_ClipBoard_Idles\Preload\WaitForResources\Timeout)
+[25053](\Global\POI_Bouncer_ClipBoard\UseConditions)

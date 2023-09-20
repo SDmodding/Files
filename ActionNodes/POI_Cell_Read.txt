@@ -1,15 +1,82 @@
-[25238] \Global\POI_Cell_Read\Interactions\CelIdles
-[25247] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Cyclic\Female\CyclicActual_01
-[25248] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Cyclic\Female\CyclicActual_02
-[25249] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Cyclic\Male\CyclicActual
-[25250] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Exit\Female\ExitActual
-[25251] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Exit\Male\ExitActual
-[25239] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources
-[25242] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources\IntroActual
-[25240] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources\WaitForResources
-[25241] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources\WaitForResources\Timeout
-[25243] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources
-[25246] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources\IntroActual
-[25244] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources\WaitForResources
-[25245] \Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources\WaitForResources\Timeout
-[25237] \Global\POI_Cell_Read\UseConditions
+[25238](\Global\POI_Cell_Read\Interactions\CelIdles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetSyncPositionTrack)
+
+[25247](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Cyclic\Female\CyclicActual_01):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[500ms](OpportunityTrack)
+
+[25248](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Cyclic\Female\CyclicActual_02):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[500ms](OpportunityTrack)
+
+[25249](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Cyclic\Male\CyclicActual):
+[0ms](AnimationTrack)
+[500ms](OpportunityTrack)
+
+[25250](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Exit\Female\ExitActual):
+[0ms](AnimationTrack)
+[0ms](ConversationTrackCleanup)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[2500ms](TargetDetachTrack)
+
+[25251](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Exit\Male\ExitActual):
+[0ms](AnimationTrack)
+[0ms](ConversationTrackCleanup)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[2500ms](TargetDetachTrack)
+
+[25239](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25242](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources\IntroActual):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1500ms](ObjectCreateTrack)
+[1500ms](TargetAttachTrack)
+
+[25240](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25241](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Female\LoadResources\WaitForResources\Timeout)
+[25243](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25246](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources\IntroActual):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[1500ms](ObjectCreateTrack)
+[1500ms](TargetAttachTrack)
+
+[25244](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25245](\Global\POI_Cell_Read\Interactions\CelIdles\CelAnims\Intro\Male\LoadResources\WaitForResources\Timeout)
+[25237](\Global\POI_Cell_Read\UseConditions)

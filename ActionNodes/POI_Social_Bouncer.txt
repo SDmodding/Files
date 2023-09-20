@@ -1,41 +1,209 @@
-[28559] \Global\POI_Social_Bouncer\Interactions\MasterSpawn
-[28563] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\Anims\Idle
-[28560] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\Anims\IsSpeaking
-[28561] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\Anims\IsSpeaking\Cycle
-[28562] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\Anims\IsSpeaking\Cycle\toIdle
-[28598] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\Exit
-[28564] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial
-[28582] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\Done
-[28565] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk
-[28566] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo
-[28567] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Done
-[28568] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo\TimedOut
-[28570] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Timewarp\Default
-[28569] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Timewarp\TutorialSlowmo
-[28572] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures
-[28574] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\Charmed
-[28575] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\DirectOverShoulderLeft
-[28578] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\Listening
-[28579] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\Listening\Anims\Default
-[28573] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\TakeBribe
-[28576] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\Talking
-[28577] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\Talking\Anims\Default
-[28580] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Idle
-[28571] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Intro
-[28581] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnUI
-[28596] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\AllClear\Giv
-[28597] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\AllClear\Rcv
-[28583] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\EquippedRifle\Into\IntoGIV
-[28584] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\EquippedRifle\Into\IntoRCV
-[28585] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\EquippedWeapon\Into\IntoGIV
-[28586] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\EquippedWeapon\Into\IntoRCV
-[28587] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\PatDown\Check\Giv
-[28588] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\PatDown\Check\Rcv
-[28589] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\PatDown\DisarmStowed\Giv
-[28590] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\PatDown\DisarmStowed\Rcv
-[28595] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\Utility\TurnOffLight\Pistol
-[28592] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\Utility\TurnOffLight\Rifle
-[28593] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\Utility\TurnOffLight\Shotgun
-[28594] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\Utility\TurnOffLight\Submachinegun
-[28591] \Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\Utility\Unhide
-[28558] \Global\POI_Social_Bouncer\UseConditions
+[28559](\Global\POI_Social_Bouncer\Interactions\MasterSpawn):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28563](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\Anims\Idle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28560](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\Anims\IsSpeaking):
+[0ms](AnimationTrack)
+[0ms](HeadTrackTargetTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28561](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\Anims\IsSpeaking\Cycle):
+[0ms](AnimationTrack)
+[0ms](HeadTrackTargetTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28562](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\Anims\IsSpeaking\Cycle\toIdle):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[28598](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[28564](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial):
+[0ms](HeadTrackTargetTrack)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](TargetSteerToTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28582](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\Done):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[28565](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk):
+[0ms](SpawnTrack)
+
+[28566](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo):
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "y", "")
+[0ms](SpawnTrack)
+[3000ms](OpportunityTrack)
+
+[28567](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Done)
+[28568](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo\TimedOut)
+[28570](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Timewarp\Default):
+[0ms](MasterTrack)
+[0ms](TimeWarpTrack)
+
+[28569](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnFastTalk\PlayFX&SloMo\Timewarp\TutorialSlowmo):
+[0ms](MasterTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: HintText.show_hint_text("$TUTORIAL_SLOMO_FAST_TALK", 10.0)
+[0ms](TimeWarpTrack)
+
+[28572](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28574](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\Charmed):
+[0ms](AnimationTrack)
+
+[28575](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\DirectOverShoulderLeft):
+[0ms](AnimationTrack)
+
+[28578](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\Listening):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28579](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\Listening\Anims\Default):
+[0ms](AnimationTrack)
+
+[28573](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\TakeBribe):
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[28576](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\Talking):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28577](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Gestures\Anims\Talking\Anims\Default):
+[0ms](AnimationTrack)
+
+[28580](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Idle):
+[0ms](OpportunityTrack)
+
+[28571](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnGestures\Intro):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[28581](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\PerformSocial\SpawnUI):
+[0ms](SkookumTrack)
+	[Class]: Actor
+	[Script]: World.c_gameslice._launch_store_front(get_properties(),this)
+
+[28596](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\AllClear\Giv):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+
+[28597](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\AllClear\Rcv):
+[0ms](AnimationTrack)
+
+[28583](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\EquippedRifle\Into\IntoGIV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[1533ms](TargetAssignTrack)
+[1533ms](TargetLockTrack)
+[1533ms](TargetStealAttachedItemTrack)
+[1566ms](SpawnTrack)
+[1566ms](TargetReleaseTrack)
+[2400ms](AttachmentTransferTrack)
+[2400ms](TargetPlayTrack)
+
+[28584](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\EquippedRifle\Into\IntoRCV):
+[0ms](AnimationTrack)
+[0ms](TargetReleaseTrack)
+
+[28585](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\EquippedWeapon\Into\IntoGIV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[1200ms](TargetAssignTrack)
+[1200ms](TargetReleaseTrack)
+[1200ms](TargetStealAttachedItemTrack)
+[1233ms](TargetLockTrack)
+[1266ms](SpawnTrack)
+[2000ms](AttachmentTransferTrack)
+[2000ms](TargetPlayTrack)
+
+[28586](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\EquippedWeapon\Into\IntoRCV):
+[0ms](AnimationTrack)
+[0ms](TargetReleaseTrack)
+
+[28587](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\PatDown\Check\Giv):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28588](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\PatDown\Check\Rcv):
+[0ms](AnimationTrack)
+
+[28589](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\PatDown\DisarmStowed\Giv):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[2833ms](TargetAssignTrack)
+[2833ms](TargetReleaseTrack)
+[2833ms](TargetStealAttachedItemTrack)
+[2866ms](SpawnTrack)
+[2866ms](TargetLockTrack)
+[3766ms](AttachmentTransferTrack)
+[3766ms](TargetPlayTrack)
+
+[28590](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\PatDown\DisarmStowed\Rcv):
+[0ms](AnimationTrack)
+[0ms](TargetAssignTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[1900ms](AttachmentTransferTrack)
+[1900ms](TargetPlayTrack)
+
+[28595](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\Utility\TurnOffLight\Pistol):
+[0ms](TargetPlayTrack)
+
+[28592](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\Utility\TurnOffLight\Rifle):
+[0ms](TargetPlayTrack)
+
+[28593](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\Utility\TurnOffLight\Shotgun):
+[0ms](TargetPlayTrack)
+
+[28594](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\Utility\TurnOffLight\Submachinegun):
+[0ms](TargetPlayTrack)
+
+[28591](\Global\POI_Social_Bouncer\Interactions\MasterSpawn\WeaponSearch\Disarm\Utility\Unhide):
+[0ms](ExecuteTrack)
+[0ms](UnhideTrack)
+
+[28558](\Global\POI_Social_Bouncer\UseConditions)

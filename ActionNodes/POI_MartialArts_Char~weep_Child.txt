@@ -1,12 +1,59 @@
-[27148] \Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles
-[27158] \Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_Exit
-[27149] \Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\PerformAttack\BowInto
-[27150] \Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\PerformAttack\BowInto\Bow
-[27151] \Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\PerformAttack\BowInto\Bow\BowOut
-[27152] \Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\PerformAttack\LightAttack1
-[27153] \Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\PerformAttack\LightAttack1\ChargeAttack2
-[27155] \Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\ReceiveAttack\BowInto
-[27156] \Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\ReceiveAttack\BowInto\Bow
-[27157] \Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\ReceiveAttack\BowInto\Bow\BowOut
-[27154] \Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\ReceiveAttack\ReceiveAttack
-[27147] \Global\POI_MartialArts_ChargeSweep_Child\UseConditions
+[27148](\Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[27158](\Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27149](\Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\PerformAttack\BowInto):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[27150](\Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\PerformAttack\BowInto\Bow):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27151](\Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\PerformAttack\BowInto\Bow\BowOut):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27152](\Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\PerformAttack\LightAttack1):
+[0ms](AnimationTrack)
+[0ms](AttackCollisionTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27153](\Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\PerformAttack\LightAttack1\ChargeAttack2):
+[0ms](AnimationTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+[200ms](AttackCollisionTrack)
+
+[27155](\Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\ReceiveAttack\BowInto):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TurnToFaceTargetTrack)
+
+[27156](\Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\ReceiveAttack\BowInto\Bow):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27157](\Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\ReceiveAttack\BowInto\Bow\BowOut):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27154](\Global\POI_MartialArts_ChargeSweep_Child\Interactions\ChargeSweep_Idles\ChargeSweep_States\ReceiveAttack\ReceiveAttack):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[27147](\Global\POI_MartialArts_ChargeSweep_Child\UseConditions)

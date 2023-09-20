@@ -1,4 +1,23 @@
-[27723] \Global\Ring_Doorbell\Interactions\Exit_Doorbell
-[27721] \Global\Ring_Doorbell\Interactions\Into_Doorbell
-[27722] \Global\Ring_Doorbell\Interactions\Into_Doorbell\Hold_Doorbell
-[27720] \Global\Ring_Doorbell\UseConditions
+[27723](\Global\Ring_Doorbell\Interactions\Exit_Doorbell):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27721](\Global\Ring_Doorbell\Interactions\Into_Doorbell):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](ExecuteTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SpawnTrack)
+
+[27722](\Global\Ring_Doorbell\Interactions\Into_Doorbell\Hold_Doorbell):
+[0ms](AnimationTrack)
+
+[27720](\Global\Ring_Doorbell\UseConditions)

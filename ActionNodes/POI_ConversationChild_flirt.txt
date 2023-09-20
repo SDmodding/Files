@@ -1,12 +1,59 @@
-[25517] \Global\ConversationChild_flirt\Interactions\Idles
-[25520] \Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles
-[25525] \Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationExit\ConversationExit
-[25526] \Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationExit\NormalExit
-[25527] \Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationExit\SlapExit
-[25521] \Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen
-[25522] \Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Female
-[25523] \Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Male
-[25524] \Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Speaking\Speaking
-[25519] \Global\ConversationChild_flirt\Interactions\Idles\WaitForConversationChild\Wait
-[25518] \Global\ConversationChild_flirt\Interactions\Idles\WaitForConversationChild\WaitVendor
-[25516] \Global\ConversationChild_flirt\UseConditions
+[25517](\Global\ConversationChild_flirt\Interactions\Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25520](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles):
+[0ms](ConversationTrackCleanup)
+[0ms](ConversationTrackCreate)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[200ms](ConversationTrackOperation)
+
+[25525](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationExit\ConversationExit):
+[0ms](AnimationTrack)
+
+[25526](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationExit\NormalExit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25527](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationExit\SlapExit):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25521](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen):
+[0ms](ExecuteTrack)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[25522](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Female):
+[0ms](AnimationTrack)
+
+[25523](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Listen\Listen\Anims\Male):
+[0ms](AnimationTrack)
+
+[25524](\Global\ConversationChild_flirt\Interactions\Idles\ConversationIdles\ConversationStates\Speaking\Speaking):
+[0ms](AnimationTrack)
+[0ms](LookAtTrack)
+[0ms](MinimumDurationTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25519](\Global\ConversationChild_flirt\Interactions\Idles\WaitForConversationChild\Wait):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[2000ms](OpportunityTrack)
+[7000ms](OpportunityTrack)
+
+[25518](\Global\ConversationChild_flirt\Interactions\Idles\WaitForConversationChild\WaitVendor):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[2000ms](OpportunityTrack)
+
+[25516](\Global\ConversationChild_flirt\UseConditions)

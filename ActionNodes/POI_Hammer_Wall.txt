@@ -1,9 +1,40 @@
-[26465] \Global\POI_Hammer_Wall\Interactions\HammerWall_Idles
-[26471] \Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\Idles\Hammer_CYC
-[26467] \Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\IsSpawning\HammerWall_LoadResource
-[26470] \Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\IsSpawning\HammerWall_LoadResource\IsSpawning_Actual
-[26468] \Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\IsSpawning\HammerWall_LoadResource\WaitForResources
-[26469] \Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\IsSpawning\HammerWall_LoadResource\WaitForResources\Timeout
-[26466] \Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\IsSpawning\WithProp\IsSpawning_Actual
-[26472] \Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Exit
-[26464] \Global\POI_Hammer_Wall\UseConditions
+[26465](\Global\POI_Hammer_Wall\Interactions\HammerWall_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[26471](\Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\Idles\Hammer_CYC):
+[0ms](AnimationTrack)
+
+[26467](\Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\IsSpawning\HammerWall_LoadResource):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[26470](\Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\IsSpawning\HammerWall_LoadResource\IsSpawning_Actual):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[26468](\Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\IsSpawning\HammerWall_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[5000ms](OpportunityTrack)
+
+[26469](\Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\IsSpawning\HammerWall_LoadResource\WaitForResources\Timeout)
+[26466](\Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Anims\IsSpawning\WithProp\IsSpawning_Actual):
+[0ms](SequenceTrack)
+
+[26472](\Global\POI_Hammer_Wall\Interactions\HammerWall_Idles\HammerWall_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+
+[26464](\Global\POI_Hammer_Wall\UseConditions)

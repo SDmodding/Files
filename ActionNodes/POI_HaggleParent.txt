@@ -1,8 +1,42 @@
-[26443] \Global\HaggleParent\Interactions\HaggleIdles
-[26449] \Global\HaggleParent\Interactions\HaggleIdles\HaggleExit\HaggleExit
-[26445] \Global\HaggleParent\Interactions\HaggleIdles\HaggleStates\Listen\Listen
-[26446] \Global\HaggleParent\Interactions\HaggleIdles\HaggleStates\Listen\Listen\Anims\Female
-[26447] \Global\HaggleParent\Interactions\HaggleIdles\HaggleStates\Listen\Listen\Anims\Male
-[26448] \Global\HaggleParent\Interactions\HaggleIdles\HaggleStates\Speaking\Speaking
-[26444] \Global\HaggleParent\Interactions\HaggleIdles\HaggleStates\WaitForConversationChild\Wait
-[26442] \Global\HaggleParent\UseConditions
+[26443](\Global\HaggleParent\Interactions\HaggleIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[26449](\Global\HaggleParent\Interactions\HaggleIdles\HaggleExit\HaggleExit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26445](\Global\HaggleParent\Interactions\HaggleIdles\HaggleStates\Listen\Listen):
+[0ms](ExecuteTrack)
+[0ms](LocomotionTrack)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[26446](\Global\HaggleParent\Interactions\HaggleIdles\HaggleStates\Listen\Listen\Anims\Female):
+[0ms](AnimationTrack)
+
+[26447](\Global\HaggleParent\Interactions\HaggleIdles\HaggleStates\Listen\Listen\Anims\Male):
+[0ms](AnimationTrack)
+
+[26448](\Global\HaggleParent\Interactions\HaggleIdles\HaggleStates\Speaking\Speaking):
+[0ms](LocomotionTrack)
+[0ms](LookAtTrack)
+[0ms](MinimumDurationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[26444](\Global\HaggleParent\Interactions\HaggleIdles\HaggleStates\WaitForConversationChild\Wait):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[1000ms](OpportunityTrack)
+
+[26442](\Global\HaggleParent\UseConditions)

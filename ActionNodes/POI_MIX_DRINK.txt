@@ -1,17 +1,80 @@
-[27225] \Global\POI_Mix_Drink\Interactions\MasterSpawn
-[27229] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle
-[27230] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\Idle
-[27232] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\Bartender_Flirt
-[27235] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\FixHair
-[27237] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\Hang_01
-[27233] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\Hang_03
-[27236] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\HeadScratch
-[27234] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\LipBalm
-[27231] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\Ped_Stand_Idle_03
-[27226] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Into
-[27227] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Into\Cycle
-[27228] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Into\Cycle\Pour
-[27238] \Global\POI_Mix_Drink\Interactions\MasterSpawn\Exit\Exit
-[27239] \Global\POI_Mix_Drink\Interactions\MasterSpawn\ObjectSpawn\LoadResources
-[27240] \Global\POI_Mix_Drink\Interactions\MasterSpawn\ObjectSpawn\LoadResources\RetainResource
-[27224] \Global\POI_Mix_Drink\UseConditions
+[27225](\Global\POI_Mix_Drink\Interactions\MasterSpawn):
+[0ms](AudioTrackSoundbankIO)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](POIEnableChildTrack)
+[0ms](POIEnableChildTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+
+[27229](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[27230](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\Idle):
+[0ms](AnimationTrack)
+[3000ms](ResourceOpportunityTrack)
+
+[27232](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\Bartender_Flirt):
+[0ms](AnimationTrack)
+
+[27235](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\FixHair):
+[0ms](AnimationTrack)
+
+[27237](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\Hang_01):
+[0ms](AnimationTrack)
+
+[27233](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\Hang_03):
+[0ms](AnimationTrack)
+
+[27236](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\HeadScratch):
+[0ms](AnimationTrack)
+
+[27234](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\LipBalm):
+[0ms](AnimationTrack)
+
+[27231](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Idle\Anims\InactivityIdles\Ped_Stand_Idle_03):
+[0ms](AnimationTrack)
+
+[27226](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Into):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignMyTargetToTargetsTargetTrack)
+[0ms](TargetDetachTrack)
+[1266ms](ObjectCreateTrack)
+[1300ms](TargetAttachTrack)
+[1333ms](ObjectCreateTrack)
+[1366ms](TargetAttachTrack)
+
+[27227](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Into\Cycle):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27228](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Anims\Into\Cycle\Pour):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetDestroyTrack)
+[0ms](TargetDestroyTrack)
+[0ms](TargetDetachTrack)
+[966ms](TargetPlayEffectTrack)
+[2666ms](TargetPlayTrack)
+[4500ms](TargetDestroyTrack)
+
+[27238](\Global\POI_Mix_Drink\Interactions\MasterSpawn\Exit\Exit)
+[27239](\Global\POI_Mix_Drink\Interactions\MasterSpawn\ObjectSpawn\LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+
+[27240](\Global\POI_Mix_Drink\Interactions\MasterSpawn\ObjectSpawn\LoadResources\RetainResource):
+[0ms](ObjectReferenceTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](TargetDestroyTrack)
+[0ms](TargetDestroyTrack)
+
+[27224](\Global\POI_Mix_Drink\UseConditions)

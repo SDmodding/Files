@@ -1,11 +1,55 @@
-[25461] \Global\POI_ComputerStanding\Interactions\Female\ComputerIdles
-[25463] \Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\ComputerAnims\Idles\Use
-[25462] \Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\ComputerAnims\Intro
-[25464] \Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\ComputerAnims\Sync\interactionPoint
-[25465] \Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\Computer_Exit
-[25466] \Global\POI_ComputerStanding\Interactions\Male\ComputerIdles
-[25468] \Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\ComputerAnims\Idles\Use
-[25467] \Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\ComputerAnims\Intro
-[25469] \Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\ComputerAnims\Sync\interactionPoint
-[25470] \Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\Computer_Exit
-[25460] \Global\POI_ComputerStanding\UseConditions
+[25461](\Global\POI_ComputerStanding\Interactions\Female\ComputerIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25463](\Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\ComputerAnims\Idles\Use):
+[0ms](AnimationTrack)
+
+[25462](\Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\ComputerAnims\Intro):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[25464](\Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\ComputerAnims\Sync\interactionPoint):
+[0ms](TargetSyncPositionTrack)
+
+[25465](\Global\POI_ComputerStanding\Interactions\Female\ComputerIdles\Computer_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25466](\Global\POI_ComputerStanding\Interactions\Male\ComputerIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25468](\Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\ComputerAnims\Idles\Use):
+[0ms](AnimationTrack)
+
+[25467](\Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\ComputerAnims\Intro):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[25469](\Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\ComputerAnims\Sync\interactionPoint):
+[0ms](TargetSyncPositionTrack)
+
+[25470](\Global\POI_ComputerStanding\Interactions\Male\ComputerIdles\Computer_Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25460](\Global\POI_ComputerStanding\UseConditions)

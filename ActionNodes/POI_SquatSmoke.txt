@@ -1,14 +1,65 @@
-[28785] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles
-[28795] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Cycle\SquatIdle
-[28794] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Cycle\Squat_Smoke
-[28796] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Cycle\Squat_Spit
-[28790] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Intro\Intro_LoadResource
-[28793] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Intro\Intro_LoadResource\Intro_Actual
-[28791] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Intro\Intro_LoadResource\WaitForResources
-[28792] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Intro\Intro_LoadResource\WaitForResources\Timeout
-[28786] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\IsSpawning\Spawning_LoadResource
-[28789] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\IsSpawning\Spawning_LoadResource\IsSpawning_Actual
-[28787] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\IsSpawning\Spawning_LoadResource\WaitForResources
-[28788] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\IsSpawning\Spawning_LoadResource\WaitForResources\Timeout
-[28797] \Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeExit
-[28784] \Global\POI_SquatSmoke\UseConditions
+[28785](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles):
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28795](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Cycle\SquatIdle):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[28794](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Cycle\Squat_Smoke):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[28796](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Cycle\Squat_Spit):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+
+[28790](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Intro\Intro_LoadResource):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[28793](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Intro\Intro_LoadResource\Intro_Actual):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[28791](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Intro\Intro_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[28792](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\Intro\Intro_LoadResource\WaitForResources\Timeout)
+[28786](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\IsSpawning\Spawning_LoadResource):
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[28789](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\IsSpawning\Spawning_LoadResource\IsSpawning_Actual):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[28787](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\IsSpawning\Spawning_LoadResource\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[28788](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeAnims\IsSpawning\Spawning_LoadResource\WaitForResources\Timeout)
+[28797](\Global\POI_SquatSmoke\Interactions\SquatSmokeIdles\SquatSmokeExit):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetDetachTrack)
+[500ms](OpportunityTrack)
+[1333ms](OpportunityTrack)
+[1333ms](OpportunityTrack)
+
+[28784](\Global\POI_SquatSmoke\UseConditions)

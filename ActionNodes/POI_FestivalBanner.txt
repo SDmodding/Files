@@ -1,5 +1,26 @@
-[26180] \Global\POI_FestivalBanner\Interactions\Master
-[26182] \Global\POI_FestivalBanner\Interactions\Master\Anims\Wait
-[26181] \Global\POI_FestivalBanner\Interactions\Master\Anims\WaveFlag
-[26183] \Global\POI_FestivalBanner\Interactions\Master\FestivalBannerExit
-[26179] \Global\POI_FestivalBanner\UseConditions
+[26180](\Global\POI_FestivalBanner\Interactions\Master):
+[0ms](LookAtTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetDetachTrack)
+
+[26182](\Global\POI_FestivalBanner\Interactions\Master\Anims\Wait):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[26181](\Global\POI_FestivalBanner\Interactions\Master\Anims\WaveFlag):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetPlayTrack)
+
+[26183](\Global\POI_FestivalBanner\Interactions\Master\FestivalBannerExit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26179](\Global\POI_FestivalBanner\UseConditions)

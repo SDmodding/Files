@@ -1,5 +1,30 @@
-[29435] \Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles
-[29437] \Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles\WaitressAnims\PathToAndExit
-[29436] \Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles\WaitressAnims\Take_Order
-[29438] \Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles\WaitressExit
-[29434] \Global\POI_Waitress_TakeOrderSeat\UseConditions
+[29435](\Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[29437](\Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles\WaitressAnims\PathToAndExit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[29436](\Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles\WaitressAnims\Take_Order):
+[0ms](AnimationTrack)
+[0ms](HeadTrackTargetTrack)
+[0ms](SequenceTrack)
+[100ms](DialogueTrack)
+
+[29438](\Global\POI_Waitress_TakeOrderSeat\Interactions\WaitressIdles\WaitressExit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[29434](\Global\POI_Waitress_TakeOrderSeat\UseConditions)

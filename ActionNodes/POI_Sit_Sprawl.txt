@@ -1,23 +1,142 @@
-[28475] \Global\POI_Sit_Sprawl\Interactions\HitTree\Ragdoll\AquireRagdollLoose
-[28474] \Global\POI_Sit_Sprawl\Interactions\HitTree\Ragdoll\AquireRagdollStiff
-[28466] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Attack\Female
-[28467] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Attack\Male
-[28460] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Dead\Dead
-[28464] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Projectile\Back
-[28465] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Projectile\Front
-[28461] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Push\Back
-[28463] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Push\Front
-[28462] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Push\OverBack\InAir
-[28468] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\SeatedTracks
-[28469] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\SeatedTracks\FractureStrength
-[28473] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Sync\Sync\NoSyncValid
-[28472] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Sync\Sync\ParentObject
-[28470] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Sync\Sync\Sync
-[28471] \Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Sync\Sync\interactionPoint
-[28476] \Global\POI_Sit_Sprawl\Interactions\SeatedTracks
-[28477] \Global\POI_Sit_Sprawl\Interactions\SeatedTracks\FractureStrength
-[28456] \Global\POI_Sit_Sprawl\Interactions\Sitting
-[28458] \Global\POI_Sit_Sprawl\Interactions\Sitting\Anims\Cycle
-[28457] \Global\POI_Sit_Sprawl\Interactions\Sitting\Anims\Into
-[28459] \Global\POI_Sit_Sprawl\Interactions\Sitting\Exit
-[28455] \Global\POI_Sit_Sprawl\UseConditions
+[28475](\Global\POI_Sit_Sprawl\Interactions\HitTree\Ragdoll\AquireRagdollLoose):
+[0ms](MasterTrack)
+[0ms](RagdollAquireTrack)
+[0ms](SubjectFollowOverrideTrack)
+
+[28474](\Global\POI_Sit_Sprawl\Interactions\HitTree\Ragdoll\AquireRagdollStiff):
+[0ms](MasterTrack)
+[0ms](RagdollAquireTrack)
+[0ms](SubjectFollowOverrideTrack)
+
+[28466](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Attack\Female):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[2266ms](OpportunityTrack)
+
+[28467](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Attack\Male):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[1733ms](OpportunityTrack)
+
+[28460](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Dead\Dead):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](RagdollDeathImpulseTrack)
+[0ms](SpawnTrack)
+
+[28464](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Projectile\Back):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](RagdollImpulseTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[28465](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Projectile\Front):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](RagdollImpulseTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[28461](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Push\Back):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](HandleDamageTrack)
+[0ms](RagdollImpulseTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[28463](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Push\Front):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](HandleDamageTrack)
+[0ms](RagdollImpulseTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[28462](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Push\OverBack\InAir):
+[0ms](AnimationTrack)
+[0ms](GravityTrack)
+[0ms](HandleDamageTrack)
+[0ms](ParkourSyncPositionTrack)
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+[733ms](DetailedOnGroundTrack)
+[766ms](SpawnTrack)
+[900ms](GravityTrack)
+
+[28468](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\SeatedTracks):
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SpawnTrack)
+
+[28469](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\SeatedTracks\FractureStrength):
+[0ms](MasterTrack)
+[0ms](TargetFractureStrengthTrack)
+
+[28473](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Sync\Sync\NoSyncValid)
+[28472](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Sync\Sync\ParentObject):
+[0ms](TargetSyncPositionTrack)
+
+[28470](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Sync\Sync\Sync):
+[0ms](TargetSyncPositionTrack)
+
+[28471](\Global\POI_Sit_Sprawl\Interactions\HitTree\Sitting\Reactions\Sync\Sync\interactionPoint):
+[0ms](TargetSyncPositionTrack)
+
+[28476](\Global\POI_Sit_Sprawl\Interactions\SeatedTracks):
+[0ms](CharacterPhysicsTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](SpawnTrack)
+
+[28477](\Global\POI_Sit_Sprawl\Interactions\SeatedTracks\FractureStrength):
+[0ms](MasterTrack)
+[0ms](TargetFractureStrengthTrack)
+
+[28456](\Global\POI_Sit_Sprawl\Interactions\Sitting):
+[0ms](AudioTrackSoundbankIO)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetReleaseTrack)
+
+[28458](\Global\POI_Sit_Sprawl\Interactions\Sitting\Anims\Cycle):
+[0ms](AnimationTrack)
+
+[28457](\Global\POI_Sit_Sprawl\Interactions\Sitting\Anims\Into):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[28459](\Global\POI_Sit_Sprawl\Interactions\Sitting\Exit):
+[0ms](AnimationTrack)
+[0ms](ExecuteTrackLibraryTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[5666ms](OpportunityTrack)
+[5666ms](OpportunityTrack)
+[5666ms](OpportunityTrack)
+
+[28455](\Global\POI_Sit_Sprawl\UseConditions)

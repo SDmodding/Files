@@ -1,32 +1,150 @@
-[19279] \Global\Gun\Flashlight\TacLight
-[19250] \Global\Gun\MasterSpawn
-[19251] \Global\Gun\MasterSpawn\Actions\AmmoDryNoOwnerModeSwitch\ModeSwitch
-[19253] \Global\Gun\MasterSpawn\Actions\AmmoDryNoOwnerModeSwitch\ModeSwitch\ModeSwitched\HasSecondaryAmmo
-[19252] \Global\Gun\MasterSpawn\Actions\AmmoDryNoOwnerModeSwitch\ModeSwitch\ModeSwitched\NoAmmoInSecondary
-[19266] \Global\Gun\MasterSpawn\Actions\Equiped\Fake-Fire
-[19258] \Global\Gun\MasterSpawn\Actions\Equiped\Fire
-[19264] \Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\NPC\Default
-[19263] \Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\NPC\Revolver
-[19262] \Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\Player\Default
-[19261] \Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\Player\Revolver
-[19260] \Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\Player\RevolverGrenade
-[19259] \Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\Player\Silencer
-[19265] \Global\Gun\MasterSpawn\Actions\Equiped\Idle
-[19254] \Global\Gun\MasterSpawn\Actions\Equiped\Timewarp\Fire
-[19257] \Global\Gun\MasterSpawn\Actions\Equiped\Timewarp\Fire\VFX\Default
-[19255] \Global\Gun\MasterSpawn\Actions\Equiped\Timewarp\Fire\VFX\JC2_Revolver
-[19256] \Global\Gun\MasterSpawn\Actions\Equiped\Timewarp\Fire\VFX\Player
-[19267] \Global\Gun\MasterSpawn\Actions\Idle
-[19268] \Global\Gun\MasterSpawn\Actions\Idle\Rimlight
-[19269] \Global\Gun\MasterSpawn\Animations\BarrelSlideRecoil
-[19270] \Global\Gun\MasterSpawn\Animations\BarrelSlideRecoil\BarrelSlideLockedBack
-[19272] \Global\Gun\MasterSpawn\Animations\Idle
-[19271] \Global\Gun\MasterSpawn\Animations\TargetPlayedOnDiscard\BarrelSlideLockedBack
-[19273] \Global\Gun\MasterSpawn\GunSmoke\Firing
-[19274] \Global\Gun\MasterSpawn\GunSmoke\Firing\Smoking
-[19275] \Global\Gun\MasterSpawn\GunSmoke\Idle
-[19276] \Global\Gun\RedDot\RedDotSight
-[19278] \Global\Gun\RedDot\RedDotSight\Switch\Off
-[19277] \Global\Gun\RedDot\RedDotSight\Switch\On
-[19281] \Global\Gun\Utility\NoAmmoWaitForCull_KEY
-[19280] \Global\Gun\Utility\OwnerFireWeaponStimuli
+[19279](\Global\Gun\Flashlight\TacLight):
+[0ms](AudioTrackSimple)
+[0ms](AudioTrackSimple)
+[0ms](PlayEffectTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[19250](\Global\Gun\MasterSpawn):
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[19251](\Global\Gun\MasterSpawn\Actions\AmmoDryNoOwnerModeSwitch\ModeSwitch):
+[0ms](OpportunityTrack)
+[0ms](TargetWeaponModeChangeTrack)
+
+[19253](\Global\Gun\MasterSpawn\Actions\AmmoDryNoOwnerModeSwitch\ModeSwitch\ModeSwitched\HasSecondaryAmmo):
+[0ms](OpportunityTrack)
+
+[19252](\Global\Gun\MasterSpawn\Actions\AmmoDryNoOwnerModeSwitch\ModeSwitch\ModeSwitched\NoAmmoInSecondary):
+[0ms](MasterTrack)
+[0ms](TargetDetachTrack)
+
+[19266](\Global\Gun\MasterSpawn\Actions\Equiped\Fake-Fire):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[0ms](ShootTrack)
+[0ms](SpawnTrack)
+[0ms](TargetPlayTrack)
+
+[19258](\Global\Gun\MasterSpawn\Actions\Equiped\Fire):
+[0ms](OpportunityTrack)
+[0ms](ShootTrack)
+[0ms](SpawnTrack)
+[0ms](TargetPlayTrack)
+[0ms](TriggerRecoilPostEffectTrack)
+
+[19264](\Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\NPC\Default):
+[0ms](MasterTrack)
+[0ms](PlayEffectTrack)
+[0ms](PlayEffectTrack)
+
+[19263](\Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\NPC\Revolver):
+[0ms](MasterTrack)
+[0ms](PlayEffectTrack)
+
+[19262](\Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\Player\Default):
+[0ms](MasterTrack)
+[0ms](PlayEffectTrack)
+[0ms](PlayEffectTrack)
+
+[19261](\Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\Player\Revolver):
+[0ms](MasterTrack)
+[0ms](PlayEffectTrack)
+
+[19260](\Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\Player\RevolverGrenade):
+[0ms](MasterTrack)
+[0ms](PlayEffectTrack)
+
+[19259](\Global\Gun\MasterSpawn\Actions\Equiped\Fire\VFX\Player\Silencer):
+[0ms](MasterTrack)
+[0ms](PlayEffectTrack)
+
+[19265](\Global\Gun\MasterSpawn\Actions\Equiped\Idle):
+[0ms](AnimationRefPoseTrack)
+[0ms](OpportunityTrack)
+
+[19254](\Global\Gun\MasterSpawn\Actions\Equiped\Timewarp\Fire):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](ShootTrack)
+[0ms](SpawnTrack)
+[0ms](TargetPlayTrack)
+[0ms](TriggerRecoilPostEffectTrack)
+
+[19257](\Global\Gun\MasterSpawn\Actions\Equiped\Timewarp\Fire\VFX\Default):
+[0ms](MasterTrack)
+[0ms](PlayEffectTrack)
+[0ms](PlayEffectTrack)
+
+[19255](\Global\Gun\MasterSpawn\Actions\Equiped\Timewarp\Fire\VFX\JC2_Revolver):
+[0ms](MasterTrack)
+[0ms](PlayEffectTrack)
+
+[19256](\Global\Gun\MasterSpawn\Actions\Equiped\Timewarp\Fire\VFX\Player):
+[0ms](MasterTrack)
+[0ms](PlayEffectTrack)
+[0ms](PlayEffectTrack)
+
+[19267](\Global\Gun\MasterSpawn\Actions\Idle):
+[0ms](AnimationRefPoseTrack)
+[0ms](GravityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[19268](\Global\Gun\MasterSpawn\Actions\Idle\Rimlight):
+[0ms](OpportunityTrack)
+[0ms](RimLightTrack)
+
+[19269](\Global\Gun\MasterSpawn\Animations\BarrelSlideRecoil):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[19270](\Global\Gun\MasterSpawn\Animations\BarrelSlideRecoil\BarrelSlideLockedBack):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[19272](\Global\Gun\MasterSpawn\Animations\Idle):
+[0ms](AnimationRefPoseTrack)
+[0ms](OpportunityTrack)
+
+[19271](\Global\Gun\MasterSpawn\Animations\TargetPlayedOnDiscard\BarrelSlideLockedBack):
+[0ms](AnimationTrack)
+
+[19273](\Global\Gun\MasterSpawn\GunSmoke\Firing):
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[1000ms](OpportunityTrack)
+
+[19274](\Global\Gun\MasterSpawn\GunSmoke\Firing\Smoking):
+[0ms](ExecuteTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+[2000ms](OpportunityTrack)
+
+[19275](\Global\Gun\MasterSpawn\GunSmoke\Idle):
+[0ms](OpportunityTrack)
+
+[19276](\Global\Gun\RedDot\RedDotSight):
+[0ms](SpawnTrack)
+
+[19278](\Global\Gun\RedDot\RedDotSight\Switch\Off):
+[0ms](OpportunityTrack)
+
+[19277](\Global\Gun\RedDot\RedDotSight\Switch\On):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+
+[19281](\Global\Gun\Utility\NoAmmoWaitForCull_KEY):
+[0ms](MasterTrack)
+
+[19280](\Global\Gun\Utility\OwnerFireWeaponStimuli):
+[0ms](StimulusTrack)
+[0ms](StimulusTrack)
+

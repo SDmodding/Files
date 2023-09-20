@@ -1,3 +1,10 @@
-[25451] \Global\POI_Cock_Holding_RCV\Interactions\Exit
-[25450] \Global\POI_Cock_Holding_RCV\Interactions\WaitToBeGrabbed
-[25449] \Global\POI_Cock_Holding_RCV\UseConditions
+[25451](\Global\POI_Cock_Holding_RCV\Interactions\Exit):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_stop_using_use()
+
+[25450](\Global\POI_Cock_Holding_RCV\Interactions\WaitToBeGrabbed):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+
+[25449](\Global\POI_Cock_Holding_RCV\UseConditions)

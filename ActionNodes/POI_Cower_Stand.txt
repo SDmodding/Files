@@ -1,8 +1,39 @@
-[25692] \Global\POI_Cower_Stand\Interactions\Stand\CowerStandEnter\Female\CowerStandEnter_Female
-[25693] \Global\POI_Cower_Stand\Interactions\Stand\CowerStandEnter\Male\CowerStandEnter_Male
-[25694] \Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles
-[25695] \Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandAnims\Female\CowerStandIdle_Female
-[25696] \Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandAnims\Male\CowerStandIdle_Male
-[25697] \Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandExit\Female\CowerStandExit_Female
-[25698] \Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandExit\Male\CowerStandExit_Male
-[25691] \Global\POI_Cower_Stand\UseConditions
+[25692](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandEnter\Female\CowerStandEnter_Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25693](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandEnter\Male\CowerStandEnter_Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25694](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles):
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25695](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandAnims\Female\CowerStandIdle_Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25696](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandAnims\Male\CowerStandIdle_Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25697](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandExit\Female\CowerStandExit_Female):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25698](\Global\POI_Cower_Stand\Interactions\Stand\CowerStandIdles\CowerStandExit\Male\CowerStandExit_Male):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25691](\Global\POI_Cower_Stand\UseConditions)

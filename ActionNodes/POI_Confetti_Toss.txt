@@ -1,9 +1,42 @@
-[25478] \Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles
-[25485] \Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\ConfettiToss_Exit
-[25479] \Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload
-[25482] \Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\AttachBucket
-[25483] \Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\AttachBucket\ConfettiToss
-[25484] \Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\AttachBucket\ConfettiToss\ConfettiToss_Anims\Toss
-[25480] \Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\WaitForResources
-[25481] \Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\WaitForResources\Timeout
-[25477] \Global\POI_Confetti_Toss\UseConditions
+[25478](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25485](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\ConfettiToss_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25479](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload):
+[0ms](AnimationTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25482](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\AttachBucket):
+[0ms](ObjectCreateTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAttachTrack)
+
+[25483](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\AttachBucket\ConfettiToss):
+[0ms](SequenceTrack)
+
+[25484](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\AttachBucket\ConfettiToss\ConfettiToss_Anims\Toss):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[2533ms](PlayEffectTrack)
+[6933ms](PlayEffectTrack)
+
+[25480](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\WaitForResources):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[2500ms](OpportunityTrack)
+
+[25481](\Global\POI_Confetti_Toss\Interactions\ConfettiToss_Idles\Idles\Preload\WaitForResources\Timeout)
+[25477](\Global\POI_Confetti_Toss\UseConditions)

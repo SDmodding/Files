@@ -1,6 +1,35 @@
-[28834] \Global\POI_Tailoring_Tailor\Interactions\TailoringAnims
-[28837] \Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Exit\Exit
-[28838] \Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Exit\ExitSpecial
-[28836] \Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Tailoring_States\Measuring\Measuring
-[28835] \Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Tailoring_States\WaitFor_Child\Wait
-[28833] \Global\POI_Tailoring_Tailor\UseConditions
+[28834](\Global\POI_Tailoring_Tailor\Interactions\TailoringAnims):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[28837](\Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Exit\Exit):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](POIEnableChildTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[28838](\Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Exit\ExitSpecial):
+[0ms](SequenceTrack)
+
+[28836](\Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Tailoring_States\Measuring\Measuring):
+[0ms](AnimationTrack)
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSyncPositionTrack)
+
+[28835](\Global\POI_Tailoring_Tailor\Interactions\TailoringAnims\Tailoring_States\WaitFor_Child\Wait):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](POIEnableChildTrack)
+[3000ms](OpportunityTrack)
+
+[28833](\Global\POI_Tailoring_Tailor\UseConditions)

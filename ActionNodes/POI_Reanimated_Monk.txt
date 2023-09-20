@@ -1,4 +1,24 @@
-[27705] \Global\POI_Reanimated_Monk\Interactions\Downed\FaceUp
-[27706] \Global\POI_Reanimated_Monk\Interactions\Exit
-[27707] \Global\POI_Reanimated_Monk\Interactions\Exit\Getup
-[27704] \Global\POI_Reanimated_Monk\UseConditions
+[27705](\Global\POI_Reanimated_Monk\Interactions\Downed\FaceUp):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](InvulnerableTrack)
+[0ms](OpportunityTrack)
+[0ms](SimObjectFlagSetTrack)
+
+[27706](\Global\POI_Reanimated_Monk\Interactions\Exit):
+[0ms](AnimationTrack)
+[0ms](PlayEffectTrack)
+[0ms](PlayEffectTrack)
+[0ms](SequenceTrack)
+[0ms](SetStateFlagTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: get_properties().append_property_boolean('FXEtherealFire', true)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: get_properties().append_property_boolean('FXGlowingEyes', true)
+
+[27707](\Global\POI_Reanimated_Monk\Interactions\Exit\Getup):
+[0ms](AnimationTrack)
+
+[27704](\Global\POI_Reanimated_Monk\UseConditions)

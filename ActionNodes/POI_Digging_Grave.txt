@@ -1,6 +1,27 @@
-[25819] \Global\POI_Digging_Grave\Interactions\AudiobankLoad
-[25821] \Global\POI_Digging_Grave\Interactions\DigCycle
-[25822] \Global\POI_Digging_Grave\Interactions\DiggingExit
-[25820] \Global\POI_Digging_Grave\Interactions\DiggingInto
-[25818] \Global\POI_Digging_Grave\Interactions\DropEquipped
-[25817] \Global\POI_Digging_Grave\UseConditions
+[25819](\Global\POI_Digging_Grave\Interactions\AudiobankLoad):
+[0ms](AudioTrackSoundbankIO)
+[0ms](ObjectReferenceTrack)
+[0ms](SpawnTrack)
+
+[25821](\Global\POI_Digging_Grave\Interactions\DigCycle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+
+[25822](\Global\POI_Digging_Grave\Interactions\DiggingExit):
+[0ms](AnimationTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetReleaseTrack)
+
+[25820](\Global\POI_Digging_Grave\Interactions\DiggingInto):
+[0ms](AnimationTrack)
+[0ms](ObjectCreateTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](SequenceTrack)
+[33ms](TargetAttachTrack)
+
+[25818](\Global\POI_Digging_Grave\Interactions\DropEquipped):
+[0ms](OpportunityTrack)
+[0ms](TargetDetachTrack)
+[0ms](TargetDetachTrack)
+
+[25817](\Global\POI_Digging_Grave\UseConditions)

@@ -1,14 +1,85 @@
-[24663] \Global\LOM_SkylightOpenable001\Interactions\Action\Cancel
-[24664] \Global\LOM_SkylightOpenable001\Interactions\Action\Cancel\Break
-[24658] \Global\LOM_SkylightOpenable001\Interactions\Action\MoveTo
-[24659] \Global\LOM_SkylightOpenable001\Interactions\Action\OpenDoor_INTO
-[24660] \Global\LOM_SkylightOpenable001\Interactions\Action\OpenDoor_INTO\Idle
-[24661] \Global\LOM_SkylightOpenable001\Interactions\Action\OpenDoor_INTO\OpenDoor_PARA
-[24662] \Global\LOM_SkylightOpenable001\Interactions\Action\OpenDoor_INTO\OpenDoor_PARA\Opening_Finish
-[24657] \Global\LOM_SkylightOpenable001\Interactions\AudiobankLoad
-[24665] \Global\LOM_SkylightOpenable001\Interactions\Utility\SpawnHUD
-[24655] \Global\LOM_SkylightOpenable001\Object\Animation\Opening
-[24653] \Global\LOM_SkylightOpenable001\Object\Closed
-[24652] \Global\LOM_SkylightOpenable001\Object\Idle
-[24654] \Global\LOM_SkylightOpenable001\Object\Opened
-[24656] \Global\LOM_SkylightOpenable001\UseConditions\ActionRequest
+[24663](\Global\LOM_SkylightOpenable001\Interactions\Action\Cancel):
+[0ms](AnimationTrack)
+[0ms](InputSignalFilterTrack)
+[0ms](OpportunityTrack)
+[0ms](Struggle2Track)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[50ms](DialogueTrackWeaponImpact)
+
+[24664](\Global\LOM_SkylightOpenable001\Interactions\Action\Cancel\Break)
+[24658](\Global\LOM_SkylightOpenable001\Interactions\Action\MoveTo):
+[0ms](BlendTreeTrack)
+[0ms](OpportunityTrack)
+[0ms](PathfindToTargetTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[24659](\Global\LOM_SkylightOpenable001\Interactions\Action\OpenDoor_INTO):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSyncPositionTrack)
+[191ms](AudioTrackSimple)
+[591ms](AudioTrackSimple)
+[733ms](AudioTrackSimple)
+
+[24660](\Global\LOM_SkylightOpenable001\Interactions\Action\OpenDoor_INTO\Idle):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+
+[24661](\Global\LOM_SkylightOpenable001\Interactions\Action\OpenDoor_INTO\OpenDoor_PARA):
+[0ms](AnimationTrack)
+[0ms](InputSignalFilterTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](Struggle2Track)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[666ms](OpportunityTrack)
+
+[24662](\Global\LOM_SkylightOpenable001\Interactions\Action\OpenDoor_INTO\OpenDoor_PARA\Opening_Finish):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SubjectFollowOverrideTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[50ms](AudioTrackSimple)
+[50ms](DialogueTrackWeaponImpact)
+
+[24657](\Global\LOM_SkylightOpenable001\Interactions\AudiobankLoad):
+[0ms](AudioTrackSoundbankIO)
+[0ms](SpawnTrack)
+
+[24665](\Global\LOM_SkylightOpenable001\Interactions\Utility\SpawnHUD):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show_for_one_frame("", "y", "mash")
+
+[24655](\Global\LOM_SkylightOpenable001\Object\Animation\Opening):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[24653](\Global\LOM_SkylightOpenable001\Object\Closed):
+[0ms](AnimationRefPoseTrack)
+[0ms](ParkourHandleTrack)
+[0ms](ParkourHandleTrack)
+
+[24652](\Global\LOM_SkylightOpenable001\Object\Idle):
+[0ms](AnimationRefPoseTrack)
+[0ms](ParkourHandleTrack)
+[0ms](ParkourHandleTrack)
+
+[24654](\Global\LOM_SkylightOpenable001\Object\Opened):
+[0ms](AnimationTrack)
+[0ms](ParkourHandleTrack)
+[0ms](ParkourHandleTrack)
+
+[24656](\Global\LOM_SkylightOpenable001\UseConditions\ActionRequest)

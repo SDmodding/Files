@@ -1,7 +1,32 @@
-[25298] \Global\POI_CheckMeter\Interactions\AudiobankLoad
-[25299] \Global\POI_CheckMeter\Interactions\CheckMeter_Idles
-[25300] \Global\POI_CheckMeter\Interactions\CheckMeter_Idles\Anims\CheckMeter
-[25301] \Global\POI_CheckMeter\Interactions\CheckMeter_Idles\Anims\FeedMeter\FeedMeter_Female
-[25302] \Global\POI_CheckMeter\Interactions\CheckMeter_Idles\Anims\FeedMeter\FeedMeter_Male
-[25303] \Global\POI_CheckMeter\Interactions\CheckMeter_Idles\Exit
-[25297] \Global\POI_CheckMeter\UseConditions
+[25298](\Global\POI_CheckMeter\Interactions\AudiobankLoad):
+[0ms](AudioTrackSoundbankIO)
+[0ms](SpawnTrack)
+
+[25299](\Global\POI_CheckMeter\Interactions\CheckMeter_Idles):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[25300](\Global\POI_CheckMeter\Interactions\CheckMeter_Idles\Anims\CheckMeter):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25301](\Global\POI_CheckMeter\Interactions\CheckMeter_Idles\Anims\FeedMeter\FeedMeter_Female):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25302](\Global\POI_CheckMeter\Interactions\CheckMeter_Idles\Anims\FeedMeter\FeedMeter_Male):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[25303](\Global\POI_CheckMeter\Interactions\CheckMeter_Idles\Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[25297](\Global\POI_CheckMeter\UseConditions)

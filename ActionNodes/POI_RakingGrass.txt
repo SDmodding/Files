@@ -1,7 +1,30 @@
-[27680] \Global\POI_RakingGrass\Interactions\MasterSpawn
-[27682] \Global\POI_RakingGrass\Interactions\MasterSpawn\Anims\Cycle
-[27681] \Global\POI_RakingGrass\Interactions\MasterSpawn\Anims\Intro
-[27683] \Global\POI_RakingGrass\Interactions\MasterSpawn\Exit
-[27684] \Global\POI_RakingGrass\Interactions\MasterSpawn\ObjectSpawn\LoadResources
-[27685] \Global\POI_RakingGrass\Interactions\MasterSpawn\ObjectSpawn\LoadResources\Attach
-[27679] \Global\POI_RakingGrass\UseConditions
+[27680](\Global\POI_RakingGrass\Interactions\MasterSpawn):
+[0ms](AudioTrackSoundbankIO)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](SpawnTrack)
+
+[27682](\Global\POI_RakingGrass\Interactions\MasterSpawn\Anims\Cycle):
+[0ms](AnimationTrack)
+
+[27681](\Global\POI_RakingGrass\Interactions\MasterSpawn\Anims\Intro):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27683](\Global\POI_RakingGrass\Interactions\MasterSpawn\Exit):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[27684](\Global\POI_RakingGrass\Interactions\MasterSpawn\ObjectSpawn\LoadResources):
+[0ms](ObjectReferenceTrack)
+[0ms](OpportunityTrack)
+
+[27685](\Global\POI_RakingGrass\Interactions\MasterSpawn\ObjectSpawn\LoadResources\Attach):
+[0ms](ObjectCreateTrack)
+[0ms](ObjectReferenceTrack)
+[0ms](TargetAttachTrack)
+[0ms](TargetDestroyTrack)
+
+[27679](\Global\POI_RakingGrass\UseConditions)

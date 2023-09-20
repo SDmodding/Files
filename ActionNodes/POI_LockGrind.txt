@@ -1,8 +1,36 @@
-[26944] \Global\POI_LockGrind\Interactions\Action\GrindLockINTO
-[26945] \Global\POI_LockGrind\Interactions\Action\GrindLockINTO\GrindLockCYC
-[26946] \Global\POI_LockGrind\Interactions\Action\GrindLockINTO\GrindLockCYC\GrindLockEND
-[26943] \Global\POI_LockGrind\Interactions\Action\Spawner
-[26947] \Global\POI_LockGrind\Interactions\Action\Util\Sparks
-[26948] \Global\POI_LockGrind\Interactions\Action\Util\Sparks\EndSparks
-[26949] \Global\POI_LockGrind\Interactions\Object\TruckOpen
-[26942] \Global\POI_LockGrind\UseConditions
+[26944](\Global\POI_LockGrind\Interactions\Action\GrindLockINTO):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SubjectFollowOverrideTrack)
+[1200ms](AudioTrackSimple)
+
+[26945](\Global\POI_LockGrind\Interactions\Action\GrindLockINTO\GrindLockCYC):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SubjectFollowOverrideTrack)
+[0ms](TargetPlayTrack)
+
+[26946](\Global\POI_LockGrind\Interactions\Action\GrindLockINTO\GrindLockCYC\GrindLockEND):
+[0ms](AnimationTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+
+[26943](\Global\POI_LockGrind\Interactions\Action\Spawner):
+[0ms](AudioTrackSoundbankIO)
+[0ms](SpawnTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+
+[26947](\Global\POI_LockGrind\Interactions\Action\Util\Sparks):
+[0ms](ExecuteTrack)
+[0ms](PlayEffectTrack)
+
+[26948](\Global\POI_LockGrind\Interactions\Action\Util\Sparks\EndSparks)
+[26949](\Global\POI_LockGrind\Interactions\Object\TruckOpen):
+[0ms](AnimationTrack)
+[0ms](SkookumTrack)
+	[Class]: Vehicle
+	[Script]: get_properties().append_property_boolean('LockedForGrinding', false)
+
+[26942](\Global\POI_LockGrind\UseConditions)

@@ -1,6 +1,40 @@
-[26423] \Global\POI_Hacking_Bus\Interactions\AudiobankLoad
-[26424] \Global\POI_Hacking_Bus\Interactions\Begin
-[26426] \Global\POI_Hacking_Bus\Interactions\Exit
-[26425] \Global\POI_Hacking_Bus\Interactions\Hacking
-[26422] \Global\POI_Hacking_Bus\Interactions\POIHideEquipped
-[26421] \Global\POI_Hacking_Bus\UseConditions
+[26423](\Global\POI_Hacking_Bus\Interactions\AudiobankLoad):
+[0ms](AudioTrackSoundbankIO)
+[0ms](SpawnTrack)
+
+[26424](\Global\POI_Hacking_Bus\Interactions\Begin):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSyncPositionTrack)
+[500ms](ObjectCreateTrack)
+[500ms](TargetAttachTrack)
+[500ms](TargetLockTrack)
+
+[26426](\Global\POI_Hacking_Bus\Interactions\Exit):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+[0ms](TargetSyncPositionTrack)
+
+[26425](\Global\POI_Hacking_Bus\Interactions\Hacking):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: Minigame.setup_cameras(false)
+[0ms](TargetDetachTrack)
+[0ms](TargetSyncPositionTrack)
+[0ms](UIScreenTrack)
+
+[26422](\Global\POI_Hacking_Bus\Interactions\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[26421](\Global\POI_Hacking_Bus\UseConditions)

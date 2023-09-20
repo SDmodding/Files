@@ -1,35 +1,226 @@
-[27349] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Dead
-[27358] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\ExitCleanup
-[27350] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapGIV
-[27351] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapGIV\Stunned
-[27352] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapGIV\Stunned\Dead
-[27353] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapRCV
-[27354] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapRCV\GrapGIV
-[27355] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapRCV\GrapGIV\Fake-Fire
-[27357] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Melee\GrapGIV
-[27356] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Melee\GrapRCV
-[27359] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Success\GrapGIV
-[27360] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Success\GrapRCV
-[27332] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Grab
-[27337] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\LightPunch\GrapGIV
-[27338] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\LightPunch\GrapRCV
-[27339] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\GrapGIV
-[27340] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\GrapRCV
-[27346] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleBCK\GrapGIV
-[27347] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleBCK\GrapRCV
-[27348] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleBCK\GrapRCV\GrapDlgRCV
-[27343] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleFWD\GrapGIV
-[27344] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleFWD\GrapGIV\GrapDlgGIV
-[27345] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleFWD\GrapRCV
-[27341] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleFWD\Into\GrapGIV
-[27342] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleFWD\Into\GrapRCV
-[27333] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Orientation\Behind\GrapGIV
-[27334] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Orientation\Behind\GrapRCV
-[27335] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Orientation\GrapGIV
-[27336] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Orientation\GrapRCV
-[27364] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\StealWeapon\Default\Steal
-[27362] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\StealWeapon\Gun\Consume
-[27361] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\StealWeapon\Gun\DrawStowed
-[27363] \Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\StealWeapon\Gun\Steal
-[27331] \Global\POI_PedStruggleForWeapon_Parent\Interactions\WaitForTarget
-[27330] \Global\POI_PedStruggleForWeapon_Parent\UseConditions
+[27349](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Dead):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_stop_using_use()
+
+[27358](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\ExitCleanup):
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_stop_using_use()
+
+[27350](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](SequenceTrack)
+[0ms](SetStateFlagTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSteerToTrack)
+[258ms](TargetSyncPositionTrack)
+
+[27351](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapGIV\Stunned):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](SequenceTrack)
+[0ms](SetStateFlagTrack)
+
+[27352](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapGIV\Stunned\Dead):
+[0ms](AnimationTrack)
+[0ms](HealthSetPercentageTrack)
+[0ms](SequenceTrack)
+[0ms](SetStateFlagTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_stop_using_use()
+
+[27353](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapRCV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[400ms](TargetDamageTrack)
+
+[27354](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapRCV\GrapGIV):
+[0ms](AccuracyOverrideTrack)
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: poi_stop_using_use()
+[0ms](TargetAssignTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetSteerToTrack)
+[233ms](TargetPlayTrack)
+
+[27355](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Gun\GrapRCV\GrapGIV\Fake-Fire):
+[0ms](ExecuteTrack)
+[0ms](SequenceTrack)
+[0ms](ShootTrack)
+[0ms](StimulusTrack)
+[0ms](StimulusTrack)
+[100ms](PlayEffectTrack)
+[133ms](PlayEffectTrack)
+
+[27357](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Melee\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[27356](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Failure\Melee\GrapRCV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](AttackTimerTrack)
+[0ms](HealthSetPercentageTrack)
+[0ms](SequenceTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSteerToTrack)
+[258ms](TargetSyncPositionTrack)
+[1233ms](PlayEffectTrack)
+[1266ms](PlayEffectTrack)
+
+[27359](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Success\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](GameStatEventTrack)
+[0ms](SpawnTrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetPlayTrack)
+[50ms](TargetSyncPositionTrack)
+[750ms](TargetDamageTrack)
+
+[27360](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Exit\Success\GrapRCV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27332](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Grab):
+[0ms](AnimationTrack)
+[0ms](MinimumDistanceTrack)
+[0ms](SequenceTrack)
+[0ms](TargetSteerToTrack)
+
+[27337](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\LightPunch\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[100ms](TargetSyncPositionTrack)
+
+[27338](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\LightPunch\GrapRCV):
+[0ms](AnimationTrack)
+[66ms](SpawnTrack)
+
+[27339](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSteerToTrack)
+[0ms](TargetSyncPositionTrack)
+[300ms](TargetLockTrack)
+
+[27340](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\GrapRCV):
+[0ms](AnimationTrack)
+
+[27346](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleBCK\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+[666ms](OpportunityTrack)
+
+[27347](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleBCK\GrapRCV):
+[0ms](AnimationTrack)
+[0ms](InputSignalFilterTrack)
+[0ms](Struggle2Track)
+[0ms](TargetSteerToTrack)
+
+[27348](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleBCK\GrapRCV\GrapDlgRCV):
+[0ms](ExecuteTrack)
+[150ms](AudioTrackSimple)
+[183ms](DialogueTrackWeaponImpact)
+
+[27343](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleFWD\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+
+[27344](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleFWD\GrapGIV\GrapDlgGIV):
+[0ms](ExecuteTrack)
+[50ms](AudioTrackSimple)
+[141ms](DialogueTrackWeaponImpact)
+
+[27345](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleFWD\GrapRCV):
+[0ms](AnimationTrack)
+[0ms](InputSignalFilterTrack)
+[0ms](Struggle2Track)
+[0ms](TargetSteerToTrack)
+
+[27341](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleFWD\Into\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSyncPositionTrack)
+
+[27342](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\GrappleInit\PushBack\StealInit\StruggleCycle\StruggleFWD\Into\GrapRCV):
+[0ms](AnimationTrack)
+
+[27333](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Orientation\Behind\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTrack)
+[0ms](TargetPlayTrack)
+[33ms](TargetLockTrack)
+[100ms](TargetSyncPositionTrack)
+
+[27334](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Orientation\Behind\GrapRCV):
+[0ms](AnimationTrack)
+
+[27335](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Orientation\GrapGIV):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetSteerToTrack)
+[300ms](TargetLockTrack)
+[300ms](TargetSyncPositionTrack)
+
+[27336](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\Orientation\GrapRCV):
+[0ms](AnimationTrack)
+
+[27364](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\StealWeapon\Default\Steal):
+[0ms](AudioTrackSimple)
+[0ms](ExecuteTrack)
+[0ms](TargetStealAttachedItemTrack)
+
+[27362](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\StealWeapon\Gun\Consume):
+[0ms](AudioTrackSimple)
+[0ms](ExecuteTrack)
+[0ms](TargetWeaponAmmoConsumeTrack)
+
+[27361](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\StealWeapon\Gun\DrawStowed):
+[0ms](AttachmentTransferTrack)
+[0ms](AudioTrackSimple)
+[0ms](ExecuteTrack)
+[0ms](TargetAssignTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetWeaponAmmoConsumeTrack)
+
+[27363](\Global\POI_PedStruggleForWeapon_Parent\Interactions\Grab\StealWeapon\Gun\Steal):
+[0ms](AudioTrackSimple)
+[0ms](ExecuteTrack)
+[0ms](TargetStealAttachedItemTrack)
+
+[27331](\Global\POI_PedStruggleForWeapon_Parent\Interactions\WaitForTarget):
+[0ms](ExecuteTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](TargetSyncPositionTrack)
+
+[27330](\Global\POI_PedStruggleForWeapon_Parent\UseConditions)

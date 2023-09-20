@@ -1,20 +1,172 @@
-[25006] \Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\POIHideEquipped
-[25010] \Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnLeft\HeadslamGIV
-[25011] \Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnLeft\HeadslamRCV
-[25012] \Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnLeft\HeadslamRCV\Toilet_Victim_Idle
-[25007] \Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnRight\HeadslamGIV
-[25008] \Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnRight\HeadslamRCV
-[25009] \Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnRight\HeadslamRCV\Toilet_Victim_Idle
-[25013] \Global\POI_BBClubUrinal001\Interactions\Toilet\POISubInteraction\POIHideEquipped
-[25014] \Global\POI_BBClubUrinal001\Interactions\Toilet\POISubInteraction\UseUrinal
-[25015] \Global\POI_BBClubUrinal001\Interactions\Toilet\POISubInteraction\UseUrinal\UrnialAnimations
-[25017] \Global\POI_BBClubUrinal001\Interactions\Toilet\POISubInteraction\UseUrinal\UrnialAnimations\EndInteraction
-[25016] \Global\POI_BBClubUrinal001\Interactions\Toilet\POISubInteraction\UseUrinal\UrnialAnimations\InUse
-[25023] \Global\POI_BBClubUrinal001\POI_Condition_Reference\ActionRequest
-[25020] \Global\POI_BBClubUrinal001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD
-[25018] \Global\POI_BBClubUrinal001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD
-[25021] \Global\POI_BBClubUrinal001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD
-[25019] \Global\POI_BBClubUrinal001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD
-[25022] \Global\POI_BBClubUrinal001\POI_Condition_Reference\UseConditions
-[25005] \Global\POI_BBClubUrinal001\UseConditions\ActionInteract\Action
-[25004] \Global\POI_BBClubUrinal001\UseConditions\GrappleInteract\GrappleInteract
+[25006](\Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[25010](\Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnLeft\HeadslamGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](POIDisableSelfTrack)
+[0ms](StimulusTrack)
+[0ms](StimulusTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[500ms](CameraShakeTrack)
+[500ms](TargetPlayTrack)
+[733ms](SetStateFlagTrack)
+[1400ms](CameraShakeTrack)
+[1833ms](TimeWarpTrack)
+[2266ms](CameraShakeTrack)
+
+[25011](\Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnLeft\HeadslamRCV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[733ms](SetStateFlagTrack)
+[1833ms](TimeWarpTrack)
+
+[25012](\Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnLeft\HeadslamRCV\Toilet_Victim_Idle):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](SetStateFlagTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSyncPositionTrack)
+
+[25007](\Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnRight\HeadslamGIV):
+[0ms](AnimationTrack)
+[0ms](AttackTimerTrack)
+[0ms](FacialRequestTrack)
+[0ms](GameStatEventTrack)
+[0ms](GameStatSpecialMoveTrack)
+[0ms](GravityTrack)
+[0ms](GravityTrack)
+[0ms](POIDisableSelfTrack)
+[0ms](StimulusTrack)
+[0ms](StimulusTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetPlayTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetSyncPositionTrack)
+[500ms](CameraShakeTrack)
+[500ms](TargetPlayTrack)
+[733ms](SetStateFlagTrack)
+[1400ms](CameraShakeTrack)
+[1833ms](TimeWarpTrack)
+[1833ms](TimeWarpTrack)
+[2266ms](CameraShakeTrack)
+
+[25008](\Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnRight\HeadslamRCV):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](DamageTrack)
+[0ms](FacialRequestTrack)
+[0ms](GravityTrack)
+[0ms](SequenceTrack)
+[0ms](TargetAssignTargetsTargetToMyTargetTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSyncPositionTrack)
+[733ms](SetStateFlagTrack)
+
+[25009](\Global\POI_BBClubUrinal001\Interactions\Toilet\Grapple\WeiOnRight\HeadslamRCV\Toilet_Victim_Idle):
+[0ms](AnimationTrack)
+[0ms](CharacterPhysicsTrack)
+[0ms](GravityTrack)
+[0ms](SetStateFlagTrack)
+[0ms](TargetLockTrack)
+[0ms](TargetSyncPositionTrack)
+
+[25013](\Global\POI_BBClubUrinal001\Interactions\Toilet\POISubInteraction\POIHideEquipped):
+[0ms](SequenceTrack)
+[0ms](SpawnTrack)
+
+[25014](\Global\POI_BBClubUrinal001\Interactions\Toilet\POISubInteraction\UseUrinal):
+[0ms](AudioTrackSoundbankIO)
+[0ms](SpawnTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetSyncPositionTrack)
+
+[25015](\Global\POI_BBClubUrinal001\Interactions\Toilet\POISubInteraction\UseUrinal\UrnialAnimations):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](SequenceTrack)
+
+[25017](\Global\POI_BBClubUrinal001\Interactions\Toilet\POISubInteraction\UseUrinal\UrnialAnimations\EndInteraction):
+[0ms](AnimationTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[0ms](TargetGrappleReleaseTrack)
+[0ms](TargetReleaseTrack)
+[0ms](TargetReleaseTrack)
+[1500ms](TargetPlayTrack)
+
+[25016](\Global\POI_BBClubUrinal001\Interactions\Toilet\POISubInteraction\UseUrinal\UrnialAnimations\InUse):
+[0ms](AnimationTrack)
+[0ms](OpportunityTrack)
+[0ms](PlayEffectTrack)
+[0ms](SubjectFollowOverridePOITrack)
+[400ms](AudioTrack)
+[3333ms](HealthReplenishInstantTrack)
+[4000ms](OpportunityTrack)
+
+[25023](\Global\POI_BBClubUrinal001\POI_Condition_Reference\ActionRequest)
+[25020](\Global\POI_BBClubUrinal001\POI_Condition_Reference\StruggleHUD_A\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "a", "mash")
+
+[25018](\Global\POI_BBClubUrinal001\POI_Condition_Reference\StruggleHUD_B\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "b", "mash")
+
+[25021](\Global\POI_BBClubUrinal001\POI_Condition_Reference\StruggleHUD_X\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "x", "mash")
+
+[25019](\Global\POI_BBClubUrinal001\POI_Condition_Reference\StruggleHUD_Y\StruggleHUD):
+[0ms](ExecuteTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.hide()
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: ActionButton.show("", "y", "mash")
+
+[25022](\Global\POI_BBClubUrinal001\POI_Condition_Reference\UseConditions)
+[25005](\Global\POI_BBClubUrinal001\UseConditions\ActionInteract\Action)
+[25004](\Global\POI_BBClubUrinal001\UseConditions\GrappleInteract\GrappleInteract)

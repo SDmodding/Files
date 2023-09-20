@@ -1,7 +1,32 @@
-[26400] \Global\POI_Guard\Interactions\Guard_Idles
-[26401] \Global\POI_Guard\Interactions\Guard_Idles\Guard
-[26403] \Global\POI_Guard\Interactions\Guard_Idles\Guard\Guard_Anims\0xB164979A
-[26404] \Global\POI_Guard\Interactions\Guard_Idles\Guard\Guard_Anims\0xB5A58A2D
-[26402] \Global\POI_Guard\Interactions\Guard_Idles\Guard\Guard_Anims\Guard_Idle01
-[26405] \Global\POI_Guard\Interactions\Guard_Idles\Guard_Idle_Exit
-[26399] \Global\POI_Guard\UseConditions
+[26400](\Global\POI_Guard\Interactions\Guard_Idles):
+[0ms](LookAtTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SpawnTrack)
+
+[26401](\Global\POI_Guard\Interactions\Guard_Idles\Guard):
+[0ms](SequenceTrack)
+
+[26403](\Global\POI_Guard\Interactions\Guard_Idles\Guard\Guard_Anims\0xB164979A):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26404](\Global\POI_Guard\Interactions\Guard_Idles\Guard\Guard_Anims\0xB5A58A2D):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26402](\Global\POI_Guard\Interactions\Guard_Idles\Guard\Guard_Anims\Guard_Idle01):
+[0ms](AnimationTrack)
+[0ms](SequenceTrack)
+
+[26405](\Global\POI_Guard\Interactions\Guard_Idles\Guard_Idle_Exit):
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](OpportunityTrack)
+[0ms](SkookumTrack)
+	[Class]: Character
+	[Script]: _poi_stop_using_use() 
+
+[26399](\Global\POI_Guard\UseConditions)
