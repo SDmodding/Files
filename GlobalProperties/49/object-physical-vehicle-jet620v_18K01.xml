@@ -1,7 +1,7 @@
 <Property Hash="0xEE0A3F13" Name="object-physical-vehicle-jet620v_18K01">
 	<ActFileName>Data\Global\Act\Vehicle.act</ActFileName>
-	<ActionHijackProfile>0xBF25C725</ActionHijackProfile>
-	<ChaseCameraParameters>0x9B9BF2B6</ChaseCameraParameters>
+	<ActionHijackProfile>Vehicles-ActionHijackProfile-Boat</ActionHijackProfile>
+	<ChaseCameraParameters>Cameras-ChaseCameraBoat</ChaseCameraParameters>
 	<Component_BaseAnimation>
 		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
 		<RigName>Jet620V01</RigName>
@@ -20,7 +20,7 @@
 		<SkinSSEnabled>0</SkinSSEnabled>
 	</Component_DrawableComponent>
 	<Component_FXSimComponent>
-		<EffectId>0xFFFFFFFF</EffectId>
+		<Effect>0xFFFFFFFF</Effect>
 	</Component_FXSimComponent>
 	<Component_Health>
 		<HealthProjectileDamageMultiplier>1.000000</HealthProjectileDamageMultiplier>
@@ -63,11 +63,11 @@
 		<LowLodMinTurningRadius>5.000000</LowLodMinTurningRadius>
 		<LowLodThrottleAcceleration>2.000000</LowLodThrottleAcceleration>
 		<ModelName>Jet620V01</ModelName>
-		<PhysicsPropertySetAI>0xA65226BE</PhysicsPropertySetAI>
-		<PhysicsPropertySetHuman>0xA65226BE</PhysicsPropertySetHuman>
+		<PhysicsPropertySetAI>Vehicles-BaseBoatProperties</PhysicsPropertySetAI>
+		<PhysicsPropertySetHuman>Vehicles-BaseBoatProperties</PhysicsPropertySetHuman>
 		<TireBlownImpulse>0.000000</TireBlownImpulse>
 		<TireShotImpulse>0.000000</TireShotImpulse>
-		<TrunkType>0xDE16D029</TrunkType>
+		<TrunkType>eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
 	</Component_PhysicsMover>
 	<Component_Sensor>
 		<HasActiveRegion>0</HasActiveRegion>
@@ -76,11 +76,11 @@
 		<SensorPhantomSizeZ>8.000000</SensorPhantomSizeZ>
 	</Component_Sensor>
 	<Component_SimObjectProperties>
-		<SimObjectType>0x9844EE67</SimObjectType>
+		<SimObjectType>eSIM_OBJ_TYPE_VEHICLE</SimObjectType>
 		<SubTargetingProfile>0xFFFFFFFF</SubTargetingProfile>
 	</Component_SimObjectProperties>
 	<Component_TSActor>
-		<SkookumClass>0x9B06086B</SkookumClass>
+		<SkookumClass>Vehicle</SkookumClass>
 	</Component_TSActor>
 	<CreateObjectFlags>1</CreateObjectFlags>
 	<DeniesAllyDriver>0</DeniesAllyDriver>
@@ -94,24 +94,24 @@
 	<ObjectType>Vehicle</ObjectType>
 	<SeatCount>4</SeatCount>
 	<Set>
-		<0x17B9254E></0x17B9254E>
-		<0x1A07D10C></0x1A07D10C>
-		<0x1EBD6D50></0x1EBD6D50>
-		<0x77F43A25></0x77F43A25>
-		<0x7F1798C0></0x7F1798C0>
-		<0x83824245></0x83824245>
-		<0x91587106></0x91587106>
-		<0xDB4EBBFF></0xDB4EBBFF>
-		<0xEC2CE6F9></0xEC2CE6F9>
-		<0xF20A4492></0xF20A4492>
+		<component_BoatPhysicsMover></component_BoatPhysicsMover>
+		<component_DropShadow></component_DropShadow>
+		<component_Interactable></component_Interactable>
+		<component_MissionFailCondition></component_MissionFailCondition>
+		<component_StreamedResource></component_StreamedResource>
+		<component_VehicleAudio></component_VehicleAudio>
+		<component_VehicleEffects></component_VehicleEffects>
+		<component_VehicleProperties></component_VehicleProperties>
+		<component_VehiclesBlip></component_VehiclesBlip>
+		<schema_classlist></schema_classlist>
 	</Set>
 	<SpawnPriority>Critical</SpawnPriority>
-	<TranJobName>0xDCF92817</TranJobName>
+	<TranJobName>None</TranJobName>
 	<UnlockVehicleDoors>0</UnlockVehicleDoors>
-	<VehicleJob>0x94BC85A0</VehicleJob>
+	<VehicleJob>Traffic</VehicleJob>
 	<VehicleLook NumItems="1">
 		<Item>WhiteNewPaint</Item>
 	</VehicleLook>
 	<XformParent>0</XformParent>
-	<explosionPropertySet>0xE24A4351</explosionPropertySet>
+	<explosionPropertySet>object-physical-explosion-vehicle</explosionPropertySet>
 </Property>

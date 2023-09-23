@@ -85,7 +85,7 @@
 		<SkinSSEnabled>1</SkinSSEnabled>
 	</Component_DrawableComponent>
 	<Component_FXSimComponent>
-		<EffectId>0xFFFFFFFF</EffectId>
+		<Effect>0xFFFFFFFF</Effect>
 	</Component_FXSimComponent>
 	<Component_Health>
 		<HealthProjectileDamageMultiplier>1.000000</HealthProjectileDamageMultiplier>
@@ -105,9 +105,9 @@
 		<SensorPhantomSizeZ>8.000000</SensorPhantomSizeZ>
 	</Component_Sensor>
 	<Component_SimObjectCharacterProperties>
-		<CharacterFightingClass>0xB7D9CA1F</CharacterFightingClass>
-		<CharacterType>0xA0567ECF</CharacterType>
-		<FactionClass>0x7301D91C</FactionClass>
+		<CharacterFightingClass>eFIGHTING_CLASS_NONE</CharacterFightingClass>
+		<CharacterType>eCHARACTER_TYPE_PEDESTRIAN</CharacterType>
+		<FactionClass>Innocent</FactionClass>
 		<Gender>Male</Gender>
 		<IsFemale>0</IsFemale>
 		<IsTired>0</IsTired>
@@ -116,11 +116,11 @@
 		<Stamina>100</Stamina>
 	</Component_SimObjectCharacterProperties>
 	<Component_SimObjectProperties>
-		<SimObjectType>0xA94623B7</SimObjectType>
-		<SubTargetingProfile>0xD447D38</SubTargetingProfile>
+		<SimObjectType>eSIM_OBJ_TYPE_CHARACTER</SimObjectType>
+		<SubTargetingProfile>Targeting-SubTargetingProfiles-Character</SubTargetingProfile>
 	</Component_SimObjectProperties>
 	<Component_TSActor>
-		<SkookumClass>0xB825B7BB</SkookumClass>
+		<SkookumClass>Character</SkookumClass>
 	</Component_TSActor>
 	<Component_WorldContext>
 		<WC_StinkyFeet>0</WC_StinkyFeet>
@@ -131,17 +131,17 @@
 	<CreateObjectFlags>1</CreateObjectFlags>
 	<DLCCharacter>0x12B32444</DLCCharacter>
 	<Description>Job: Debt Collection 5 Vagrant (Bribe)</Description>
-	<DesiredWeapon>0xBE5F68F9</DesiredWeapon>
+	<DesiredWeapon>object-physical-weapon-firearm-pistol-9mm</DesiredWeapon>
 	<DisarmAbility>0</DisarmAbility>
 	<DodgeChance>0</DodgeChance>
-	<DropMoney>0x66C5490A</DropMoney>
+	<DropMoney>object-physical-prop-StreamedObject-MoneyStack_Basic</DropMoney>
 	<DynamicWallCast>0</DynamicWallCast>
 	<FXEliteGhoul>0</FXEliteGhoul>
 	<FXEtherealFire>0</FXEtherealFire>
 	<FXGhostAlly>0</FXGhostAlly>
 	<FXGlowingEyes>0</FXGlowingEyes>
 	<FXPonytail>0</FXPonytail>
-	<FaceAction>0xDB15B70E</FaceAction>
+	<FaceAction>eFACEACTION_INTIMIDATE</FaceAction>
 	<FaceActionEnabled>0</FaceActionEnabled>
 	<FaceFxActor>none</FaceFxActor>
 	<FacialActFileName>Data\Global\Act\Facial\GlobalFace.act</FacialActFileName>
@@ -184,23 +184,23 @@
 	<MissionCriticalAlly>0</MissionCriticalAlly>
 	<ObjectType>Character</ObjectType>
 	<OnlyPullOutOfVehicle>0</OnlyPullOutOfVehicle>
-	<PersonalityType>0xBF4E9DCD</PersonalityType>
+	<PersonalityType>fearful</PersonalityType>
 	<PipsRequired>0</PipsRequired>
-	<RangedCombatStrategy>0x360800E0</RangedCombatStrategy>
+	<RangedCombatStrategy>Balanced</RangedCombatStrategy>
 	<RemoveOnCompletion>1</RemoveOnCompletion>
 	<RequiresGreet>0</RequiresGreet>
 	<ScenarioControl>0</ScenarioControl>
-	<SellableItem>0x28019ECE</SellableItem>
-	<SellableItemProp>0x146209E</SellableItemProp>
+	<SellableItem>eINVENTORY_ITEM_BRIBE_CHEAP</SellableItem>
+	<SellableItemProp>Invalid</SellableItemProp>
 	<Set>
-		<0x17B9254E></0x17B9254E>
-		<0x85FEE236></0x85FEE236>
-		<0x8EA2B0B2></0x8EA2B0B2>
-		<0x91587106></0x91587106>
-		<0x95BB3A32></0x95BB3A32>
-		<0xDB4EBBFF></0xDB4EBBFF>
-		<0xEC2CE6F9></0xEC2CE6F9>
-		<0xF20A4492></0xF20A4492>
+		<AnimBankStreamingForFaceAction></AnimBankStreamingForFaceAction>
+		<component_CharacterEffects></component_CharacterEffects>
+		<component_DropShadow></component_DropShadow>
+		<component_Interactable></component_Interactable>
+		<component_MissionFailCondition></component_MissionFailCondition>
+		<component_StreamedResource></component_StreamedResource>
+		<object_physical_character_stats_BaseAttackParameters></object_physical_character_stats_BaseAttackParameters>
+		<schema_classlist></schema_classlist>
 	</Set>
 	<SkipCombatEntry>0</SkipCombatEntry>
 	<SkookumControl>0</SkookumControl>
@@ -220,5 +220,5 @@
 	<Voice>NOTSET</Voice>
 	<XformParent>0</XformParent>
 	<costForGroupIntimidate>1</costForGroupIntimidate>
-	<walkCycle>0xB8BE19B5</walkCycle>
+	<walkCycle>Default</walkCycle>
 </Property>

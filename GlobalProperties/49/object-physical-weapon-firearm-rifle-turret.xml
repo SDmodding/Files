@@ -24,7 +24,7 @@
 	<BulletEffectID>GrenadeShell_01</BulletEffectID>
 	<BulletLifeSpan>2.000000</BulletLifeSpan>
 	<BulletPerShot>1</BulletPerShot>
-	<BulletType>0xA626BE30</BulletType>
+	<BulletType>Bullet</BulletType>
 	<CanBeDropped>1</CanBeDropped>
 	<Component_BaseAnimation>
 		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
@@ -42,14 +42,14 @@
 		<SkinSSEnabled>0</SkinSSEnabled>
 	</Component_DrawableComponent>
 	<Component_FXSimComponent>
-		<EffectId>0xFFFFFFFF</EffectId>
+		<Effect>0xFFFFFFFF</Effect>
 	</Component_FXSimComponent>
 	<Component_SimObjectProperties>
-		<SimObjectType>0x5DCE28B7</SimObjectType>
+		<SimObjectType>eSIM_OBJ_TYPE_WEAPON</SimObjectType>
 		<SubTargetingProfile>0xFFFFFFFF</SubTargetingProfile>
 	</Component_SimObjectProperties>
 	<Component_TSActor>
-		<SkookumClass>0x31D83102</SkookumClass>
+		<SkookumClass>Actor</SkookumClass>
 	</Component_TSActor>
 	<CreateObjectFlags>1</CreateObjectFlags>
 	<Damage>24</Damage>
@@ -60,10 +60,10 @@
 	<HardLockDamageMultiplier>1.000000</HardLockDamageMultiplier>
 	<HardLockReticleSizeMax>0.000000</HardLockReticleSizeMax>
 	<HardLockReticleSizeMin>0.000000</HardLockReticleSizeMin>
-	<HudReticle>0x8568E861</HudReticle>
+	<HudReticle>Pistol</HudReticle>
 	<IsAutomatic>0</IsAutomatic>
 	<IsRealWeapon>1</IsRealWeapon>
-	<MagazineType>0x303BC4FC</MagazineType>
+	<MagazineType>object-physical-prop-StreamedObject-HandGunClip001</MagazineType>
 	<MaxDisiredDistance>25.000000</MaxDisiredDistance>
 	<MinDesiredDistance>2.000000</MinDesiredDistance>
 	<NetWorkedFireStateNode>\\global\\gun\\masterspawn\\actions\\equiped\\fire</NetWorkedFireStateNode>
@@ -78,7 +78,7 @@
 	<ProjectileSpeedAI>50.000000</ProjectileSpeedAI>
 	<PropBone>Grip R Hand</PropBone>
 	<PropDamage>70</PropDamage>
-	<RadarHighlightType>0x8A5A95FC</RadarHighlightType>
+	<RadarHighlightType>Weapon</RadarHighlightType>
 	<RangedDistance>60.000000</RangedDistance>
 	<RateOfFire>0.100000</RateOfFire>
 	<RecoilDurEye>0.000000</RecoilDurEye>
@@ -92,10 +92,10 @@
 	<ReticleSizeMax>0.009000</ReticleSizeMax>
 	<ReticleSizeMin>0.008000</ReticleSizeMin>
 	<Set>
-		<0x5454709E></0x5454709E>
-		<0x9DA2A4AD></0x9DA2A4AD>
-		<0xDB4EBBFF></0xDB4EBBFF>
-		<0xF20A4492></0xF20A4492>
+		<component_Interactable></component_Interactable>
+		<component_InventoryItem></component_InventoryItem>
+		<component_StreamedResource></component_StreamedResource>
+		<component_WeaponProperties></component_WeaponProperties>
 	</Set>
 	<SlowModeProjectileDamageMultiplier>2.050000</SlowModeProjectileDamageMultiplier>
 	<SlowModeProjectileDamageMultiplierAI>1.000000</SlowModeProjectileDamageMultiplierAI>
@@ -106,10 +106,10 @@
 	<StartingMaxAmmoCount>45</StartingMaxAmmoCount>
 	<StartingMinAmmoCount>45</StartingMinAmmoCount>
 	<Stowable>1</Stowable>
-	<Tracer>0xF2BB4308</Tracer>
-	<TracerAI>0x4469AEB0</TracerAI>
-	<TracerTrail>0x7F7EE4B</TracerTrail>
-	<TracerTrailAI>0x7F7EE4B</TracerTrailAI>
+	<Tracer>9mm_TracerBeam_Wei</Tracer>
+	<TracerAI>9mm_TracerBeam</TracerAI>
+	<TracerTrail>9mm_TracerBeamTrail</TracerTrail>
+	<TracerTrailAI>9mm_TracerBeamTrail</TracerTrailAI>
 	<VehicleDamage>2</VehicleDamage>
 	<XformParent>0</XformParent>
 	<simObjectWeaponType>eSIM_OBJ_WEAPON_TYPE_PISTOL</simObjectWeaponType>

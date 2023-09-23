@@ -1,7 +1,7 @@
 <Property Hash="0x104BAD89" Name="object-physical-prop-LOC_DLCCauldron001">
 	<AIDataBuild>1</AIDataBuild>
 	<ActFileName>Data\Global\Act\LOC_DLCCauldronOffer001.act</ActFileName>
-	<CollectibleType>0xF01F8F15</CollectibleType>
+	<CollectibleType>Collectible_DLC_01</CollectibleType>
 	<Collectible_Caption>HUD_COLLECTIBLE_CAULDRON_SUCCESS</Collectible_Caption>
 	<Component_BaseAnimation>
 		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
@@ -19,10 +19,10 @@
 		<SkinSSEnabled>0</SkinSSEnabled>
 	</Component_DrawableComponent>
 	<Component_FXSimComponent>
-		<EffectId>0xFFFFFFFF</EffectId>
+		<Effect>0xFFFFFFFF</Effect>
 	</Component_FXSimComponent>
 	<Component_TSActor>
-		<SkookumClass>0x8ED03A76</SkookumClass>
+		<SkookumClass>Prop</SkookumClass>
 	</Component_TSActor>
 	<CreateObjectFlags>1</CreateObjectFlags>
 	<DeleteAfterUse>0</DeleteAfterUse>
@@ -31,7 +31,7 @@
 	<MaxHealthUpgradePoint>0</MaxHealthUpgradePoint>
 	<ObjectType>Prop</ObjectType>
 	<PowerManagement_SuspendDistance>25.000000</PowerManagement_SuspendDistance>
-	<RadarHighlightType>0x2A84762D</RadarHighlightType>
+	<RadarHighlightType>CombatProp</RadarHighlightType>
 	<RewardsPropertySet>0xD8923CA7</RewardsPropertySet>
 	<StatueUpgradePoint>0</StatueUpgradePoint>
 	<XformParent>0</XformParent>

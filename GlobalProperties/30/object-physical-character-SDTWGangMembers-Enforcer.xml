@@ -85,7 +85,7 @@
 		<SkinSSEnabled>1</SkinSSEnabled>
 	</Component_DrawableComponent>
 	<Component_FXSimComponent>
-		<EffectId>0xFFFFFFFF</EffectId>
+		<Effect>0xFFFFFFFF</Effect>
 	</Component_FXSimComponent>
 	<Component_FormationManager>
 		<NumRanges>4</NumRanges>
@@ -108,9 +108,9 @@
 		<SensorPhantomSizeZ>8.000000</SensorPhantomSizeZ>
 	</Component_Sensor>
 	<Component_SimObjectCharacterProperties>
-		<CharacterFightingClass>0xB7D9CA1F</CharacterFightingClass>
-		<CharacterType>0xA0567ECF</CharacterType>
-		<FactionClass>0x7301D91C</FactionClass>
+		<CharacterFightingClass>eFIGHTING_CLASS_NONE</CharacterFightingClass>
+		<CharacterType>eCHARACTER_TYPE_PEDESTRIAN</CharacterType>
+		<FactionClass>Innocent</FactionClass>
 		<Gender>Male</Gender>
 		<IsFemale>0</IsFemale>
 		<IsTired>0</IsTired>
@@ -119,11 +119,11 @@
 		<Stamina>100</Stamina>
 	</Component_SimObjectCharacterProperties>
 	<Component_SimObjectProperties>
-		<SimObjectType>0xA94623B7</SimObjectType>
-		<SubTargetingProfile>0xD447D38</SubTargetingProfile>
+		<SimObjectType>eSIM_OBJ_TYPE_CHARACTER</SimObjectType>
+		<SubTargetingProfile>Targeting-SubTargetingProfiles-Character</SubTargetingProfile>
 	</Component_SimObjectProperties>
 	<Component_TSActor>
-		<SkookumClass>0xB825B7BB</SkookumClass>
+		<SkookumClass>Character</SkookumClass>
 	</Component_TSActor>
 	<Component_WorldContext>
 		<WC_StinkyFeet>0</WC_StinkyFeet>
@@ -135,14 +135,14 @@
 	<CoverNoAttack>0</CoverNoAttack>
 	<CreateObjectFlags>1</CreateObjectFlags>
 	<DLCCharacter>0x12B32444</DLCCharacter>
-	<DefaultMeleeWeapon>0x7A79C594</DefaultMeleeWeapon>
-	<DefaultRangedWeapon>0x3619EAE3</DefaultRangedWeapon>
+	<DefaultMeleeWeapon>tireiron</DefaultMeleeWeapon>
+	<DefaultRangedWeapon>shotgun_pump</DefaultRangedWeapon>
 	<DefaultTimeUntilNextAttack>1.000000</DefaultTimeUntilNextAttack>
 	<Description>SDTW Enforcer</Description>
-	<DesiredWeapon>0xBE5F68F9</DesiredWeapon>
+	<DesiredWeapon>object-physical-weapon-firearm-pistol-9mm</DesiredWeapon>
 	<DisarmAbility>0</DisarmAbility>
 	<DodgeChance>0</DodgeChance>
-	<DropMoney>0x66C5490A</DropMoney>
+	<DropMoney>object-physical-prop-StreamedObject-MoneyStack_Basic</DropMoney>
 	<DynamicWallCast>0</DynamicWallCast>
 	<FXEliteGhoul>0</FXEliteGhoul>
 	<FXEtherealFire>0</FXEtherealFire>
@@ -201,11 +201,11 @@
 	<HasInventoryUI>0</HasInventoryUI>
 	<HasMask>0</HasMask>
 	<HealthToBeIntimidated>100.000000</HealthToBeIntimidated>
-	<HeavyAttack1>0x37D1AB90</HeavyAttack1>
-	<HeavyAttack2>0x2E21D121</HeavyAttack2>
-	<HeavyAttack3>0xD8242E05</HeavyAttack3>
-	<HeavyAttack4>0x85E26CB9</HeavyAttack4>
-	<HeavyAttack5>0x924240A</HeavyAttack5>
+	<HeavyAttack1>SideKick_Mid</HeavyAttack1>
+	<HeavyAttack2>RoundKickLow</HeavyAttack2>
+	<HeavyAttack3>StunKnee</HeavyAttack3>
+	<HeavyAttack4>HighCircle</HeavyAttack4>
+	<HeavyAttack5>FlyingRoundHouse</HeavyAttack5>
 	<HoldFire>0</HoldFire>
 	<HostageEscapeChance>1</HostageEscapeChance>
 	<IgnoreAmbientStimuli>0</IgnoreAmbientStimuli>
@@ -222,11 +222,11 @@
 	<IsRestaurant>0</IsRestaurant>
 	<IsUsingCellPhone>0</IsUsingCellPhone>
 	<KnockdownProof>0</KnockdownProof>
-	<LightAttack1>0x8930D00</LightAttack1>
-	<LightAttack2>0xA541AC06</LightAttack2>
-	<LightAttack3>0x72CCE1F9</LightAttack3>
-	<LightAttack4>0x7EE607C2</LightAttack4>
-	<LightAttack5>0x8A1B74D1</LightAttack5>
+	<LightAttack1>Combo01_L_Jab_Hi</LightAttack1>
+	<LightAttack2>R_Cross_Hi</LightAttack2>
+	<LightAttack3>Combo03_L_Hook_Hi</LightAttack3>
+	<LightAttack4>Combo04_BackHand</LightAttack4>
+	<LightAttack5>LightAttack5BackFist</LightAttack5>
 	<MaxAngleToBeConsideredInCombat>75.000000</MaxAngleToBeConsideredInCombat>
 	<MaxDistanceToBeConsideredInCombat>1.500000</MaxDistanceToBeConsideredInCombat>
 	<MaxNumShotsPerVolleyAutomatic>4</MaxNumShotsPerVolleyAutomatic>
@@ -301,18 +301,18 @@
 	<OnScreenTestHeadHeight>1.500000</OnScreenTestHeadHeight>
 	<OnScreenTestHeadSphereRadius>0.150000</OnScreenTestHeadSphereRadius>
 	<OnlyPullOutOfVehicle>0</OnlyPullOutOfVehicle>
-	<PersonalityType>0xBF4E9DCD</PersonalityType>
-	<RangedCombatStrategy>0x3BB4A12B</RangedCombatStrategy>
+	<PersonalityType>fearful</PersonalityType>
+	<RangedCombatStrategy>Aggressive</RangedCombatStrategy>
 	<ScenarioControl>0</ScenarioControl>
-	<SellableItemProp>0x146209E</SellableItemProp>
+	<SellableItemProp>Invalid</SellableItemProp>
 	<Set>
-		<0x17B9254E></0x17B9254E>
-		<0x8EA2B0B2></0x8EA2B0B2>
-		<0x91587106></0x91587106>
-		<0x95BB3A32></0x95BB3A32>
-		<0xDB4EBBFF></0xDB4EBBFF>
-		<0xEC2CE6F9></0xEC2CE6F9>
-		<0xF20A4492></0xF20A4492>
+		<component_CharacterEffects></component_CharacterEffects>
+		<component_DropShadow></component_DropShadow>
+		<component_Interactable></component_Interactable>
+		<component_MissionFailCondition></component_MissionFailCondition>
+		<component_StreamedResource></component_StreamedResource>
+		<object_physical_character_stats_BaseAttackParameters></object_physical_character_stats_BaseAttackParameters>
+		<schema_classlist></schema_classlist>
 	</Set>
 	<SkipCombatEntry>0</SkipCombatEntry>
 	<SkookumControl>0</SkookumControl>
@@ -347,5 +347,5 @@
 	<Voice>Conroy</Voice>
 	<XformParent>0</XformParent>
 	<costForGroupIntimidate>1</costForGroupIntimidate>
-	<walkCycle>0xB8BE19B5</walkCycle>
+	<walkCycle>Default</walkCycle>
 </Property>

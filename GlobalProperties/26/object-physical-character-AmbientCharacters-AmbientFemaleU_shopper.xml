@@ -85,7 +85,7 @@
 		<SkinSSEnabled>1</SkinSSEnabled>
 	</Component_DrawableComponent>
 	<Component_FXSimComponent>
-		<EffectId>0xFFFFFFFF</EffectId>
+		<Effect>0xFFFFFFFF</Effect>
 	</Component_FXSimComponent>
 	<Component_Health>
 		<HealthProjectileDamageMultiplier>1.000000</HealthProjectileDamageMultiplier>
@@ -99,9 +99,9 @@
 		<HitReceiverDamageMultiplierPct>100</HitReceiverDamageMultiplierPct>
 	</Component_HitReaction>
 	<Component_SimObjectCharacterProperties>
-		<CharacterFightingClass>0xB7D9CA1F</CharacterFightingClass>
-		<CharacterType>0xA0567ECF</CharacterType>
-		<FactionClass>0x7301D91C</FactionClass>
+		<CharacterFightingClass>eFIGHTING_CLASS_NONE</CharacterFightingClass>
+		<CharacterType>eCHARACTER_TYPE_PEDESTRIAN</CharacterType>
+		<FactionClass>Innocent</FactionClass>
 		<Gender>Male</Gender>
 		<IsFemale>0</IsFemale>
 		<IsTired>0</IsTired>
@@ -110,11 +110,11 @@
 		<Stamina>100</Stamina>
 	</Component_SimObjectCharacterProperties>
 	<Component_SimObjectProperties>
-		<SimObjectType>0xA94623B7</SimObjectType>
-		<SubTargetingProfile>0xD447D38</SubTargetingProfile>
+		<SimObjectType>eSIM_OBJ_TYPE_CHARACTER</SimObjectType>
+		<SubTargetingProfile>Targeting-SubTargetingProfiles-Character</SubTargetingProfile>
 	</Component_SimObjectProperties>
 	<Component_TSActor>
-		<SkookumClass>0xB825B7BB</SkookumClass>
+		<SkookumClass>Character</SkookumClass>
 	</Component_TSActor>
 	<Component_WorldContext>
 		<WC_StinkyFeet>0</WC_StinkyFeet>
@@ -124,10 +124,10 @@
 	<CreateObjectFlags>1</CreateObjectFlags>
 	<DLCCharacter>0x12B32444</DLCCharacter>
 	<Description>Ambient Upperclass Female Shopper</Description>
-	<DesiredWeapon>0xBE5F68F9</DesiredWeapon>
+	<DesiredWeapon>object-physical-weapon-firearm-pistol-9mm</DesiredWeapon>
 	<DisarmAbility>0</DisarmAbility>
 	<DodgeChance>0</DodgeChance>
-	<DropMoney>0x66C5490A</DropMoney>
+	<DropMoney>object-physical-prop-StreamedObject-MoneyStack_Basic</DropMoney>
 	<DynamicWallCast>0</DynamicWallCast>
 	<FXEliteGhoul>0</FXEliteGhoul>
 	<FXEtherealFire>0</FXEtherealFire>
@@ -170,21 +170,21 @@
 	<MinTimeBetweenAIUpdateTarget>0.200000</MinTimeBetweenAIUpdateTarget>
 	<MissionControl>0</MissionControl>
 	<MissionCriticalAlly>0</MissionCriticalAlly>
-	<MorphController>0xBED585C1</MorphController>
+	<MorphController>RandomizeMorphWeights</MorphController>
 	<ObjectType>Character</ObjectType>
 	<OnlyPullOutOfVehicle>0</OnlyPullOutOfVehicle>
-	<PersonalityType>0xBF4E9DCD</PersonalityType>
-	<RangedCombatStrategy>0x360800E0</RangedCombatStrategy>
+	<PersonalityType>fearful</PersonalityType>
+	<RangedCombatStrategy>Balanced</RangedCombatStrategy>
 	<ScenarioControl>0</ScenarioControl>
-	<SellableItemProp>0x146209E</SellableItemProp>
+	<SellableItemProp>Invalid</SellableItemProp>
 	<Set>
-		<0x17B9254E></0x17B9254E>
-		<0x8EA2B0B2></0x8EA2B0B2>
-		<0x91587106></0x91587106>
-		<0x95BB3A32></0x95BB3A32>
-		<0xDB4EBBFF></0xDB4EBBFF>
-		<0xEC2CE6F9></0xEC2CE6F9>
-		<0xF20A4492></0xF20A4492>
+		<component_CharacterEffects></component_CharacterEffects>
+		<component_DropShadow></component_DropShadow>
+		<component_Interactable></component_Interactable>
+		<component_MissionFailCondition></component_MissionFailCondition>
+		<component_StreamedResource></component_StreamedResource>
+		<object_physical_character_stats_BaseAttackParameters></object_physical_character_stats_BaseAttackParameters>
+		<schema_classlist></schema_classlist>
 	</Set>
 	<SkipCombatEntry>0</SkipCombatEntry>
 	<SkookumControl>0</SkookumControl>
@@ -200,5 +200,5 @@
 	<Voice>NOTSET</Voice>
 	<XformParent>0</XformParent>
 	<costForGroupIntimidate>1</costForGroupIntimidate>
-	<walkCycle>0xB8BE19B5</walkCycle>
+	<walkCycle>Default</walkCycle>
 </Property>

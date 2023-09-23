@@ -1,7 +1,7 @@
 <Property Hash="0x88EB8BE" Name="object-physical-prop-Attachable-AmbientCap002">
 	<AIDataBuild>1</AIDataBuild>
 	<AttachBone>Bip01 Head</AttachBone>
-	<AttachOffset>0x6EC56766</AttachOffset>
+	<AttachOffset>FemCapOffset</AttachOffset>
 	<CanBeDropped>1</CanBeDropped>
 	<Component_BaseAnimation>
 		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
@@ -19,21 +19,21 @@
 		<SkinSSEnabled>0</SkinSSEnabled>
 	</Component_DrawableComponent>
 	<Component_FXSimComponent>
-		<EffectId>0xFFFFFFFF</EffectId>
+		<Effect>0xFFFFFFFF</Effect>
 	</Component_FXSimComponent>
 	<Component_TSActor>
-		<SkookumClass>0x8ED03A76</SkookumClass>
+		<SkookumClass>Prop</SkookumClass>
 	</Component_TSActor>
 	<CreateObjectFlags>1</CreateObjectFlags>
-	<EquipTarget>0x7769C088</EquipTarget>
+	<EquipTarget>eTARGET_TYPE_EQUIPPED_HAT</EquipTarget>
 	<ObjectType>Prop</ObjectType>
 	<PerceivedDangerous>0</PerceivedDangerous>
 	<PowerManagement_SuspendDistance>25.000000</PowerManagement_SuspendDistance>
 	<PropBone>HeadSync</PropBone>
-	<RadarHighlightType>0x92300732</RadarHighlightType>
+	<RadarHighlightType>RimLight</RadarHighlightType>
 	<Set>
-		<0x9DA2A4AD></0x9DA2A4AD>
-		<0xDB4EBBFF></0xDB4EBBFF>
+		<component_InventoryItem></component_InventoryItem>
+		<component_StreamedResource></component_StreamedResource>
 	</Set>
 	<SpawnPriority>Low</SpawnPriority>
 	<XformParent>0</XformParent>

@@ -1,7 +1,7 @@
 <Property Hash="0xDA9F0DB" Name="object-physical-prop-LOM_LockBox001CN">
 	<AIDataBuild>1</AIDataBuild>
 	<ActFileName>Data\Global\Act\Object\LOM_LockBox001.act</ActFileName>
-	<CollectibleType>0x7C910D9E</CollectibleType>
+	<CollectibleType>Collectible_LockBoxCN</CollectibleType>
 	<Component_BaseAnimation>
 		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
 		<RigName>LOM_LockBox001</RigName>
@@ -18,10 +18,10 @@
 		<SkinSSEnabled>0</SkinSSEnabled>
 	</Component_DrawableComponent>
 	<Component_FXSimComponent>
-		<EffectId>0xFFFFFFFF</EffectId>
+		<Effect>0xFFFFFFFF</Effect>
 	</Component_FXSimComponent>
 	<Component_TSActor>
-		<SkookumClass>0x8ED03A76</SkookumClass>
+		<SkookumClass>Prop</SkookumClass>
 	</Component_TSActor>
 	<CreateObjectFlags>1</CreateObjectFlags>
 	<DeleteAfterUse>0</DeleteAfterUse>
@@ -30,7 +30,7 @@
 	<MaxHealthUpgradePoint>0</MaxHealthUpgradePoint>
 	<ObjectType>Prop</ObjectType>
 	<PowerManagement_SuspendDistance>25.000000</PowerManagement_SuspendDistance>
-	<RadarHighlightType>0x2A84762D</RadarHighlightType>
+	<RadarHighlightType>CombatProp</RadarHighlightType>
 	<StatueUpgradePoint>0</StatueUpgradePoint>
 	<XformParent>0</XformParent>
 </Property>

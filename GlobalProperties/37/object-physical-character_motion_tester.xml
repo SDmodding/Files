@@ -17,9 +17,9 @@
 		<SensorPhantomSizeZ>8.000000</SensorPhantomSizeZ>
 	</Component_Sensor>
 	<Component_SimObjectCharacterProperties>
-		<CharacterFightingClass>0xB7D9CA1F</CharacterFightingClass>
-		<CharacterType>0xA0567ECF</CharacterType>
-		<FactionClass>0x7301D91C</FactionClass>
+		<CharacterFightingClass>eFIGHTING_CLASS_NONE</CharacterFightingClass>
+		<CharacterType>eCHARACTER_TYPE_PEDESTRIAN</CharacterType>
+		<FactionClass>Innocent</FactionClass>
 		<Gender>Male</Gender>
 		<IsFemale>0</IsFemale>
 		<IsTired>0</IsTired>
@@ -28,7 +28,7 @@
 		<Stamina>100</Stamina>
 	</Component_SimObjectCharacterProperties>
 	<Component_SimObjectProperties>
-		<SimObjectType>0xA94623B7</SimObjectType>
+		<SimObjectType>eSIM_OBJ_TYPE_CHARACTER</SimObjectType>
 		<SubTargetingProfile>0xFFFFFFFF</SubTargetingProfile>
 	</Component_SimObjectProperties>
 	<Component_WorldContext>
@@ -38,8 +38,8 @@
 	<Description>0x20</Description>
 	<ObjectType>character_motion_tester</ObjectType>
 	<Set>
-		<0xE4C2A9CA></0xE4C2A9CA>
+		<component-CharacterPhysics></component-CharacterPhysics>
 	</Set>
-	<SpawnPriority>0x9548F73B</SpawnPriority>
+	<SpawnPriority>Mission</SpawnPriority>
 	<XformParent>0</XformParent>
 </Property>

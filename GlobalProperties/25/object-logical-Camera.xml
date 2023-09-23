@@ -1,5 +1,5 @@
 <Property Hash="0xE6EBC7E3" Name="object-logical-Camera">
-	<AIEntityType>0xF91E5D1A</AIEntityType>
+	<AIEntityType>eAI_ENTITY_NONE</AIEntityType>
 	<ActFileName>Data\Global\Act\Camera.act</ActFileName>
 	<Component_BaseAnimation>
 		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
@@ -39,12 +39,12 @@
 		<PhysicsPropertySetHuman>0xFFFFFFFF</PhysicsPropertySetHuman>
 		<TireBlownImpulse>1.000000</TireBlownImpulse>
 		<TireShotImpulse>1.000000</TireShotImpulse>
-		<TrunkType>0xDE16D029</TrunkType>
+		<TrunkType>eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
 	</Component_PhysicsMover>
 	<CreateObjectFlags>1</CreateObjectFlags>
 	<ObjectType>Camera</ObjectType>
 	<Set>
-		<0x7483CC0F></0x7483CC0F>
+		<component_CameraAnimation></component_CameraAnimation>
 	</Set>
 	<XformParent>0</XformParent>
 	<characterControllerComponent>nil</characterControllerComponent>

@@ -30,14 +30,14 @@
 		<SkinSSEnabled>0</SkinSSEnabled>
 	</Component_DrawableComponent>
 	<Component_FXSimComponent>
-		<EffectId>0xFFFFFFFF</EffectId>
+		<Effect>0xFFFFFFFF</Effect>
 	</Component_FXSimComponent>
 	<Component_SimObjectProperties>
-		<SimObjectType>0x5DCE28B7</SimObjectType>
+		<SimObjectType>eSIM_OBJ_TYPE_WEAPON</SimObjectType>
 		<SubTargetingProfile>0xFFFFFFFF</SubTargetingProfile>
 	</Component_SimObjectProperties>
 	<Component_TSActor>
-		<SkookumClass>0x31D83102</SkookumClass>
+		<SkookumClass>Actor</SkookumClass>
 	</Component_TSActor>
 	<CreateObjectFlags>1</CreateObjectFlags>
 	<DamageMultiplier>0.800000</DamageMultiplier>
@@ -49,13 +49,13 @@
 	<NetworkView>NetMeleeView</NetworkView>
 	<ObjectType>Weapon</ObjectType>
 	<PropBone>Grip R Hand</PropBone>
-	<RadarHighlightType>0x8A5A95FC</RadarHighlightType>
+	<RadarHighlightType>Weapon</RadarHighlightType>
 	<RangedDistance>10.000000</RangedDistance>
 	<Set>
-		<0x5454709E></0x5454709E>
-		<0x9DA2A4AD></0x9DA2A4AD>
-		<0xDB4EBBFF></0xDB4EBBFF>
-		<0xF20A4492></0xF20A4492>
+		<component_Interactable></component_Interactable>
+		<component_InventoryItem></component_InventoryItem>
+		<component_StreamedResource></component_StreamedResource>
+		<component_WeaponProperties></component_WeaponProperties>
 	</Set>
 	<SoundBank>0x891ED54F</SoundBank>
 	<Stowable>0</Stowable>
