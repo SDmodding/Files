@@ -1,0 +1,35 @@
+<PropertySet name="default-encounters-f_BPH_BoatThugs1" nameUID="0x68514D8E" schema="default-encounters-f_BPH_BoatThugs1">
+    <Parent>default-encounters-defaults</Parent>
+    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+    <Property name="BlipName" type="String">enemy</Property>
+    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x9B7B4AB7">TRIAD_GENERIC</Property>
+    <Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
+    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+    <Property name="kills_required" type="UInt32">1</Property>
+    <Property name="show_blip_radius" type="Boolean">True</Property>
+    <Property name="vehicle_initial_speed_ratio" type="Float32">0.8</Property>
+    <Property name="wave_definitions" type="List">
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5</Property>
+            <Property name="heatwave_timer" type="Float32">40</Property>
+            <Property name="onfoot_population" type="UInt32">1</Property>
+            <Property name="persistent_resources" type="List">
+                <Property type="Symbol" Symbol="0xEE0A3F13">object-physical-vehicle-jet620v_18K01</Property>
+                <Property type="Symbol" Symbol="0x4D960073">object-physical-character-thugB</Property>
+            </Property>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x4D960073">object-physical-character-thugB</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xEE0A3F13">object-physical-vehicle-jet620v_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">1</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

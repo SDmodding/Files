@@ -1,0 +1,23 @@
+<PropertySet name="object-physical-vehicle-CommonBoatJetBoat" nameUID="0x7BF7B471" schema="object-physical-vehicle-CommonBoatJetBoat">
+    <Parent>object-physical-vehicle-CommonBoat</Parent>
+    <Property name="Description" type="String">Boat-Common Jet Boat</Property>
+    <Property name="SeatCount" type="UInt32">4</Property>
+    <Property name="VehicleExclusionClassList" type="List">
+        <Property type="Symbol" Symbol="0xF58DDF48">NoSportsDriver</Property>
+    </Property>
+    <Property name="VehiclePriorityClassList" type="List">
+        <Property type="Symbol" Symbol="0x85FFF790">SportsDriver</Property>
+    </Property>
+    <Property name="component_BoatPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet"/>
+    <Property name="component_VehicleProperties" type="PropSet"/>
+</PropertySet>

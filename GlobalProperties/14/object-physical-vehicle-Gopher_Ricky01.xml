@@ -1,0 +1,21 @@
+<PropertySet name="object-physical-vehicle-Gopher_Ricky01" nameUID="0x46CEBF66" schema="object-physical-vehicle-Gopher_Ricky01">
+    <Parent>object-physical-vehicle-Gopher01</Parent>
+    <Property name="Description" type="String">Van4Dr- Gopher Ricky</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">BlackPaint</Property>
+    </Property>
+    <Property name="VehicleLookGlass" type="List">
+        <Property type="String">GlassBlack</Property>
+    </Property>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_VAN_STANDARD</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_VAN_STANDARD</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+</PropertySet>

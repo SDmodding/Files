@@ -1,0 +1,38 @@
+<PropertySet name="default-encounters-m_hsmission_encounter_2" nameUID="0xD741542E" schema="default-encounters-m_hsmission_encounter_2">
+    <Parent>default-encounters-defaults</Parent>
+    <Property name="BlipName" type="String">enemy</Property>
+    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x96962095">TRIAD_18K</Property>
+    <Property name="kills_required" type="UInt32">4</Property>
+    <Property name="show_blip_radius" type="Boolean">False</Property>
+    <Property name="wave_definitions" type="List">
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5</Property>
+            <Property name="heatwave_timer" type="Float32">90</Property>
+            <Property name="onfoot_population" type="UInt32">4</Property>
+            <Property name="persistent_resources" type="List">
+                <Property type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+                <Property type="Symbol" Symbol="0x2DFA571">object-physical-character-Thug_18k_grap</Property>
+                <Property type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
+            </Property>
+            <Property name="replenish_style" type="Symbol" Symbol="0xAD0BA30D">by_wave_type</Property>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
+                    <Property name="num_instances" type="UInt32">2</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x2DFA571">object-physical-character-Thug_18k_grap</Property>
+                    <Property name="num_instances" type="UInt32">2</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x46738290">object-physical-weapon-firearm-shotgun-pump</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">0</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

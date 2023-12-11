@@ -1,0 +1,48 @@
+<PropertySet name="object-physical-character-stats-18k_striker" nameUID="0x15D74220" schema="object-physical-character-stats-18k_striker">
+    <Parent>default-component-AttackableByAI</Parent>
+    <Property name="BlockChance" type="Int32">40</Property>
+    <Property name="CounterAttack" type="Int32">35</Property>
+    <Property name="DefaultMeleeWeapon" type="Symbol" Symbol="0xA7CE0D21">knife</Property>
+    <Property name="DefaultRangedWeapon" type="Symbol" Symbol="0x1D291ED4">pistol_9mm</Property>
+    <Property name="DisarmAbility" type="Int32">27</Property>
+    <Property name="FakeResistanceChance" type="Int32">50</Property>
+    <Property name="Grapple" type="Int32">0</Property>
+    <Property name="HealthToBeIntimidated" type="Float32">20</Property>
+    <Property name="InterruptChance" type="Int32">40</Property>
+    <Property name="IntimidatedFleeChance" type="Int32">50</Property>
+    <Property name="RangedCombatStrategy" type="Symbol" Symbol="0x360800E0">Balanced</Property>
+    <Property name="StunResistance" type="Int32">0</Property>
+    <Property name="component_AIActionTree" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-AIActionTree</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Health</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_HitReaction" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-HitReaction</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet">
+        <PropertySet>
+            <Parent>object-physical-character-stats-BaseAttackParameters</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

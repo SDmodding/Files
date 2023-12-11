@@ -1,11 +1,17 @@
-<Property Hash="0x38EFA8C4" Name="default-component-InterestPoint-squatlook">
-	<BehaviourFile>Data\Global\Act\POI\POI_SquatLook.act</BehaviourFile>
-	<Category>General</Category>
-	<Description>Squat look</Description>
-	<HasBehaviour>1</HasBehaviour>
-	<Set>
-		<component_InterestPoint></component_InterestPoint>
-		<schema_classlist></schema_classlist>
-		<schema_interestpoint_script></schema_interestpoint_script>
-	</Set>
-</Property>
+<PropertySet name="default-component-InterestPoint-squatlook" nameUID="0x38EFA8C4" schema="default-component-InterestPoint-squatlook">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0x4D965D6D">POI_SquatLook_M</Property>
+        <Property type="SymbolUC" Symbol="0x7846165B">POI_Squat</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_SquatLook.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x263C38FF">General</Property>
+    <Property name="Description" type="Symbol" Symbol="0x90C5E010">Squat look</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+    <Property name="schema_interestpoint_script" type="PropSet"/>
+</PropertySet>

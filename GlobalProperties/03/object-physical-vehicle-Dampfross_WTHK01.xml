@@ -1,0 +1,31 @@
+<PropertySet name="object-physical-vehicle-Dampfross_WTHK01" nameUID="0xD5386F1" schema="object-physical-vehicle-Dampfross_WTHK01">
+    <Parent>object-physical-vehicle-CommonVan</Parent>
+    <Property name="AimDistFromBumper" type="Float32">2.1</Property>
+    <Property name="AimDistFromSide" type="Float32">2.5</Property>
+    <Property name="AimLookOffsetHighZ" type="Float32">1.5</Property>
+    <Property name="AimLookOffsetLowZ" type="Float32">-2.16</Property>
+    <Property name="AimOriginOffsetConstX" type="Float32">-0.2</Property>
+    <Property name="AimOriginOffsetX" type="Float32">-1.5</Property>
+    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0x98FF4C9">Cameras-ChaseCameraTallVan</Property>
+    <Property name="Description" type="String">Van4Dr- Dampfross_WTHK01</Property>
+    <Property name="Parkable" type="Boolean">True</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">WhiteDarkerPaint</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet"/>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="component_VehicleAudio" type="PropSet"/>
+    <Property name="component_VehicleProperties" type="PropSet"/>
+</PropertySet>

@@ -1,0 +1,30 @@
+<PropertySet name="object-physical-character-Vendors-FoodVendor-FoodVendor_Base" nameUID="0xA933F783" schema="object-physical-character-Vendors-FoodVendor-FoodVendor_Base">
+    <Parent>default-component-FaceAction</Parent>
+    <Property name="CanBeckon" type="Boolean">True</Property>
+    <Property name="Description" type="String">Vendor: Food Vendor Base</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0xA82DBB3F">eFACEACTION_PURCHASE</Property>
+    <Property name="FaceActionEnabled" type="Boolean">True</Property>
+    <Property name="InfiniteSellableItem" type="Boolean">True</Property>
+    <Property name="PipsRequired" type="UInt32">0</Property>
+    <Property name="RemoveOnCompletion" type="Boolean">False</Property>
+    <Property name="RequiresGreet" type="Boolean">False</Property>
+    <Property name="SocialEffectName" type="String">FX_Social_Icon_White</Property>
+    <Property name="VoiceTagList" type="List">
+        <Property type="Symbol" Symbol="0xEFA85545">Elderly</Property>
+        <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
+        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+</PropertySet>

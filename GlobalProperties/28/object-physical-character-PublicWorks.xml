@@ -1,0 +1,28 @@
+<PropertySet name="object-physical-character-PublicWorks" nameUID="0x86F8163F" schema="object-physical-character-PublicWorks">
+    <Parent>object-physical-character-drivers-nothing</Parent>
+    <Property name="CanDoCellIdle" type="Boolean">False</Property>
+    <Property name="CanDoSmokeIdle" type="Boolean">False</Property>
+    <Property name="CanJoinGroup" type="Boolean">False</Property>
+    <Property name="CanUseNewspaperAsCover" type="Boolean">True</Property>
+    <Property name="CanUseUmbrella" type="Boolean">False</Property>
+    <Property name="Description" type="String">Public Works Worker</Property>
+    <Property name="MorphController" type="Symbol" Symbol="0xBED585C1">RandomizeMorphWeights</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x89346ADF">default-component-personality-samaritan</Property>
+    </Property>
+    <Property name="PropList" type="List">
+        <Property type="Symbol" Symbol="0xAB084392">object-physical-prop-Attachable-AmbientHat009</Property>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

@@ -1,0 +1,36 @@
+<PropertySet name="object-physical-character-EventCharacters-F_IFR_Character" nameUID="0xDA46184B" schema="object-physical-character-EventCharacters-F_IFR_Character">
+    <Parent>default-component-FaceAction</Parent>
+    <Property name="AIEntityType" type="String">eAI_ENTITY_FREERUNNER</Property>
+    <Property name="CanBreachDoor" type="Boolean">True</Property>
+    <Property name="CanDoCellIdle" type="Boolean">False</Property>
+    <Property name="CanDoSmokeIdle" type="Boolean">False</Property>
+    <Property name="CanSuspend" type="Boolean">False</Property>
+    <Property name="ChanceOfCleanVault" type="Float32">1</Property>
+    <Property name="Description" type="String">Favour: Ilyana Free Running</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0x26B31F04">eFACEACTION_FLIRT</Property>
+    <Property name="FaceActionEnabled" type="Boolean">True</Property>
+    <Property name="IgnoreAmbientStimuli" type="Boolean">True</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0xAEBCB9DC">default-component-personality-fearful</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

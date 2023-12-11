@@ -1,0 +1,39 @@
+<PropertySet name="object-physical-character-Monk" nameUID="0x4C3B830A" schema="object-physical-character-Monk">
+    <Parent>object-physical-character-drivers-nothing</Parent>
+    <Property name="CanDoCellIdle" type="Boolean">False</Property>
+    <Property name="CanDoSmokeIdle" type="Boolean">False</Property>
+    <Property name="CanJoinGroup" type="Boolean">False</Property>
+    <Property name="CanLookAtWatchIdle" type="Boolean">False</Property>
+    <Property name="CanWander" type="Boolean">True</Property>
+    <Property name="Description" type="String">Monk</Property>
+    <Property name="IsEliteFighter" type="Boolean">True</Property>
+    <Property name="MorphController" type="Symbol" Symbol="0xBED585C1">RandomizeMorphWeights</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0xB00E559E">default-component-personality-aggressive</Property>
+    </Property>
+    <Property name="VoiceTagList" type="List">
+        <Property type="Symbol" Symbol="0x80003A73">Monk</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="idleStance" type="Symbol" Symbol="0x80003A73">Monk</Property>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

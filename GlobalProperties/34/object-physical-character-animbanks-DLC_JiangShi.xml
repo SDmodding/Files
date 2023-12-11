@@ -1,8 +1,12 @@
-<Property Hash="0xA23F223C" Name="object-physical-character-animbanks-DLC_JiangShi">
-	<Component_BaseAnimation>
-		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
-	</Component_BaseAnimation>
-	<Component_CharacterAnimation>
-		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
-	</Component_CharacterAnimation>
-</Property>
+<PropertySet name="object-physical-character-animbanks-DLC_JiangShi" nameUID="0xA23F223C" schema="object-physical-character-animbanks-DLC_JiangShi">
+    <Property name="component_BaseAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+</PropertySet>

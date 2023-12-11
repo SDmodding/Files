@@ -1,8 +1,9 @@
-<Property Hash="0x761B2905" Name="object-logical-IrradianceSkyInterior">
-	<CreateObjectFlags>1</CreateObjectFlags>
-	<ObjectType>IrradianceVolume</ObjectType>
-	<Set>
-		<component_IrradianceVolume></component_IrradianceVolume>
-	</Set>
-	<XformParent>0</XformParent>
-</Property>
+<PropertySet name="object-logical-IrradianceSkyInterior" nameUID="0x761B2905" schema="object-logical-IrradianceSkyInterior">
+    <Parent>default-SimObject</Parent>
+    <Property name="ObjectType" type="Symbol" Symbol="0xEB604C0A">IrradianceVolume</Property>
+    <Property name="component_IrradianceVolume" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-IrradianceVolume</Parent>
+        </PropertySet>
+    </Property>
+</PropertySet>

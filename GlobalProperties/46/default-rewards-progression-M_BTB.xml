@@ -1,0 +1,35 @@
+<PropertySet name="default-rewards-progression-M_BTB" nameUID="0xDB4B1D6F" schema="default-rewards-progression-M_BTB">
+    <Parent>default-rewards-progression-mission_defaults</Parent>
+    <Property name="0x34BE120D" type="Int32">111</Property>
+    <Property name="0x39FD34D4" type="Int32">1</Property>
+    <Property name="0x72201393" type="Int32">400</Property>
+    <Property name="0xC3DF597C" type="Int32">95</Property>
+    <Property name="0xC71E44CB" type="Int32">50</Property>
+    <Property name="0xCA5D6212" type="Int32">1</Property>
+    <Property name="CompletionText" type="String">$SGTITLE_BRIDE_TO_BE</Property>
+    <Property name="CopStartingScore" type="Int32">75</Property>
+    <Property name="EnableMissionScoring" type="Boolean">True</Property>
+    <Property name="MoneyAdjustment" type="Int32">2500</Property>
+    <Property name="StandingAdjustment" type="Int32">0</Property>
+    <Property name="TriadBaseScore" type="Int32">0</Property>
+    <Property name="TriadTargetScore" type="Int32">250</Property>
+    <Property name="UnlockItems" type="List">
+        <ListProperty>
+            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
+            <Property name="0x4E4D2ED3" type="String">OutfitMonk</Property>
+            <Property name="0xDE3E6A23" type="String">$MISSION_REWARDS_MONKOUTFIT</Property>
+            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="0x2DFB6FC5" type="Int32">2</Property>
+            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_02</Property>
+            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
+            <Property name="0x4E4D2ED3" type="String">OutfitWinstonBoy</Property>
+            <Property name="0xDE3E6A23" type="String">$MISSION_REWARDS_WINSTONBOYOUTFIT</Property>
+            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

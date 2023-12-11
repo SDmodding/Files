@@ -1,0 +1,52 @@
+<PropertySet name="object-physical-character-dlc_ghost-DLC_EliteGhoulQuad" nameUID="0xA08E9300" schema="object-physical-character-dlc_ghost-DLC_EliteGhoulQuad">
+    <Parent>object-physical-character-drivers-nothing</Parent>
+    <Property name="BlockChance" type="Int32">20</Property>
+    <Property name="CanBeCombatIntimidated" type="Boolean">False</Property>
+    <Property name="CanBePushed" type="Boolean">False</Property>
+    <Property name="CanDoUpperBodyTalkAnims" type="Boolean">False</Property>
+    <Property name="CounterAttack" type="Int32">35</Property>
+    <Property name="Description" type="String">Elite Ghoul</Property>
+    <Property name="DisarmAbility" type="Int32">0</Property>
+    <Property name="FXEliteGhoul" type="Boolean">True</Property>
+    <Property name="FXGlowingEyes" type="Boolean">True</Property>
+    <Property name="FakeResistanceChance" type="Int32">50</Property>
+    <Property name="Grapple" type="Int32">0</Property>
+    <Property name="HealthToBeIntimidated" type="Float32">0</Property>
+    <Property name="InterruptChance" type="Int32">40</Property>
+    <Property name="IntimidatedFleeChance" type="Int32">0</Property>
+    <Property name="IsEliteFighter" type="Boolean">True</Property>
+    <Property name="KnockdownProof" type="Boolean">True</Property>
+    <Property name="OnSpawnAnimNodeName" type="String">Global\GlobalActions\DLC_Nightmare\EliteGhoulEntry</Property>
+    <Property name="Quadruped" type="Boolean">True</Property>
+    <Property name="StunResistance" type="Int32">0</Property>
+    <Property name="TagVoice" type="WwiseID" Symbol="0x761F1FC4"/>
+    <Property name="Voice" type="String">elite_ghoul</Property>
+    <Property name="VoiceTagList" type="List">
+        <Property type="Symbol" Symbol="0x8A664E0E">Thug</Property>
+        <Property type="Symbol" Symbol="0xE7522969">Cantonese</Property>
+    </Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_HitReaction" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

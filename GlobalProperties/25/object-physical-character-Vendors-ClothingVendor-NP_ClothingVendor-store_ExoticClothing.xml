@@ -1,0 +1,31 @@
+<PropertySet name="object-physical-character-Vendors-ClothingVendor-NP_ClothingVendor-store_ExoticClothing" nameUID="0x7941E783" schema="object-physical-character-Vendors-ClothingVendor-NP_ClothingVendor-store_ExoticClothing">
+    <Parent>default-component-FaceAction</Parent>
+    <Property name="AccessStoreCaption" type="String">Access Store</Property>
+    <Property name="Description" type="String">Vendor: Store Exotic Clothing</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0xA82DBB3F">eFACEACTION_PURCHASE</Property>
+    <Property name="FaceActionEnabled" type="Boolean">True</Property>
+    <Property name="HasInventoryUI" type="Boolean">True</Property>
+    <Property name="InventoryType" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
+    <Property name="PipsRequired" type="UInt32">0</Property>
+    <Property name="RemoveOnCompletion" type="Boolean">False</Property>
+    <Property name="RequiresGreet" type="Boolean">False</Property>
+    <Property name="RequiresInteractionAreaCheck" type="Boolean">True</Property>
+    <Property name="RequiresPOIUsage" type="Boolean">True</Property>
+    <Property name="SocialEffectName" type="String">FX_Social_Icon_White</Property>
+    <Property name="StoreDesc" type="String">$GLOBAL_STOREDESC_EXOTIC</Property>
+    <Property name="StoreId" type="Symbol" Symbol="0xBEA3A846"/>
+    <Property name="StoreTitle" type="String">$GLOBAL_STORETITLE_EXOTIC</Property>
+    <Property name="StoreType" type="Symbol" Symbol="0x5A58B64A">Retail</Property>
+    <Property name="Voice" type="String">HD_ExoticClothingVendor</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+</PropertySet>

@@ -1,0 +1,36 @@
+<PropertySet name="object-physical-character-Vendors-SafeHouseVendor-Items-ABSH_Item_3" nameUID="0x33EBAA01" schema="object-physical-character-Vendors-SafeHouseVendor-Items-ABSH_Item_3">
+    <Parent>default-component-FaceAction</Parent>
+    <Property name="AutoCharge" type="Boolean">True</Property>
+    <Property name="ColorTintIndex" type="Int32">3</Property>
+    <Property name="ConfirmationBoxText" type="String">$ABSH_Confirm_Item3</Property>
+    <Property name="CycleBackToGreet" type="Boolean">True</Property>
+    <Property name="Description" type="String">AB SH Item 3</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0xA82DBB3F">eFACEACTION_PURCHASE</Property>
+    <Property name="FaceActionEnabled" type="Boolean">True</Property>
+    <Property name="Inventory" type="List">
+        <ListProperty>
+            <Property name="Value" type="Int32">1</Property>
+        </ListProperty>
+    </Property>
+    <Property name="PipsRequired" type="UInt32">1</Property>
+    <Property name="RemoveOnCompletion" type="Boolean">True</Property>
+    <Property name="RequiresGreet" type="Boolean">True</Property>
+    <Property name="SellableItem" type="Symbol" Symbol="0x19D1689A">eINVENTORY_ITEM_AB_SAFEHOUSEITEM_03</Property>
+    <Property name="SocialEffectName" type="String">FX_Social_Icon_White</Property>
+    <Property name="UseConfirmationDialog" type="Boolean">True</Property>
+    <Property name="Voice" type="String">Nelly2</Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

@@ -1,12 +1,17 @@
-<Property Hash="0x2DD4E61A" Name="default-component-InterestPoint-chopping_chicken">
-	<BehaviourFile>Data\Global\Act\POI\POI_Male_Chicken_Butcher.act</BehaviourFile>
-	<Category>General</Category>
-	<ConversationTopic>Cellphone</ConversationTopic>
-	<Description>Chopping chicken</Description>
-	<HasBehaviour>1</HasBehaviour>
-	<Set>
-		<component_InterestPoint></component_InterestPoint>
-		<schema_classlist></schema_classlist>
-		<schema_interestpoint_script></schema_interestpoint_script>
-	</Set>
-</Property>
+<PropertySet name="default-component-InterestPoint-chopping_chicken" nameUID="0x2DD4E61A" schema="default-component-InterestPoint-chopping_chicken">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0xC4E8D50A">POI_Male_Chicken_Butcher</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_Male_Chicken_Butcher.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x263C38FF">General</Property>
+    <Property name="ConversationTopic" type="Symbol" Symbol="0x85DC75E3">Cellphone</Property>
+    <Property name="Description" type="Symbol" Symbol="0xF4F91E5D">Chopping chicken</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+    <Property name="schema_interestpoint_script" type="PropSet"/>
+</PropertySet>

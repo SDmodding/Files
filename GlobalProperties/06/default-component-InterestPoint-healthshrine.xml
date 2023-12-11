@@ -1,0 +1,15 @@
+<PropertySet name="default-component-InterestPoint-healthshrine" nameUID="0x1D93E799" schema="default-component-InterestPoint-healthshrine">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0xD85581D3">SHRINE</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_HealthShrine.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x9548F73B">Mission</Property>
+    <Property name="Description" type="Symbol" Symbol="0x14F93A6B">Health Shrine</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

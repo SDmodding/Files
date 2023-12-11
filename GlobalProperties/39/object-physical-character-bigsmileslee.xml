@@ -1,0 +1,35 @@
+<PropertySet name="object-physical-character-bigsmileslee" nameUID="0xBCD89912" schema="object-physical-character-bigsmileslee">
+    <Parent>object-physical-character-stats-bigsmile_ranged</Parent>
+    <Property name="AIEntityType" type="String">eAI_ENTITY_FREERUNNER</Property>
+    <Property name="DefaultRangedWeapon" type="Symbol" Symbol="0x83F1DDD9">smg_45cal_taclight</Property>
+    <Property name="Description" type="String">Big Smiles Lee</Property>
+    <Property name="Grapple" type="Int32">100</Property>
+    <Property name="IsBigSmileLee" type="Boolean">True</Property>
+    <Property name="IsEliteFighter" type="Boolean">True</Property>
+    <Property name="StunResistance" type="Int32">100</Property>
+    <Property name="TagVoice" type="WwiseID" Symbol="0x54007B3B"/>
+    <Property name="Voice" type="String">BigSmileLee</Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_BRAWLER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_BRAWLER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

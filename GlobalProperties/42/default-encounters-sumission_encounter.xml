@@ -1,0 +1,30 @@
+<PropertySet name="default-encounters-sumission_encounter" nameUID="0xC9F9A4E4" schema="default-encounters-sumission_encounter">
+    <Parent>default-encounters-defaults</Parent>
+    <Property name="EncounterFactionClass" type="Symbol" Symbol="0xF841EFE4">TRIAD_DOGBOYS</Property>
+    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+    <Property name="kills_required" type="UInt32">4</Property>
+    <Property name="wave_definitions" type="List">
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5</Property>
+            <Property name="heatwave_timer" type="Float32">20</Property>
+            <Property name="onfoot_population" type="UInt32">3</Property>
+            <Property name="persistent_resources" type="List">
+                <Property type="Symbol" Symbol="0x88561343">object-physical-vehicle-Odaiko01</Property>
+                <Property type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
+            </Property>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Parent>object-physical-vehicle-Odaiko01</Parent>
+                    <Property name="character" type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0x88561343">object-physical-vehicle-Odaiko01</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">3</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

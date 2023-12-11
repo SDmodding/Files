@@ -1,0 +1,15 @@
+<PropertySet name="default-component-InterestPoint-HammerWall" nameUID="0x480B8A90" schema="default-component-InterestPoint-HammerWall">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0xFE601D4">POI_Construction_Hammer_M</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_Hammer_Wall.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x1F635045">Service</Property>
+    <Property name="Description" type="Symbol" Symbol="0x1424B316">Hammer a wall</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

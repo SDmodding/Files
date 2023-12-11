@@ -1,0 +1,51 @@
+<PropertySet name="object-physical-prop-LOB_SlidingDoorWhs001" nameUID="0x924456F6" schema="object-physical-prop-LOB_SlidingDoorWhs001">
+    <Parent>object-physical-door_single</Parent>
+    <Property name="AIDataBuild" type="Boolean">False</Property>
+    <Property name="ActBaseName" type="String">LOB_SlidingDoorWhs001</Property>
+    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOB_SlidingDoorWhs001.act</Property>
+    <Property name="Description" type="String">LOB_SlidingDoorWhs001</Property>
+    <Property name="DoorClosingNodeName" type="String">Global\LOB_SlidingDoorWhs001\Object\Animation\Closing</Property>
+    <Property name="DoorLockedNodeName" type="String">Global\LOB_SlidingDoorWhs001\Object\Locked</Property>
+    <Property name="DoorOpeningLeftNodeName" type="String">Global\LOB_SlidingDoorWhs001\Object\Animation\Opening</Property>
+    <Property name="DoorOpeningRightNodeName" type="String">Global\LOB_SlidingDoorWhs001\Object\Animation\Opening</Property>
+    <Property name="DoorUnlockedNodeName" type="String">Global\LOB_SlidingDoorWhs001\Object\Closed</Property>
+    <Property name="RadarHighlightType" type="Symbol" Symbol="0x299760D">Interactable</Property>
+    <Property name="SimObjChildren" type="List">
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">SlidingDoorWhsUsePoint01</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-SlidingDoorWhs</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x1A08FE0D">C_InteractionPoint01</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">SlidingDoorWhsUsePoint02</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-SlidingDoorWhs</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x174BD8D4">C_InteractionPoint02</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+</PropertySet>

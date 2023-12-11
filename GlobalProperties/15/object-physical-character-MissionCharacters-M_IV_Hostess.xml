@@ -1,0 +1,25 @@
+<PropertySet name="object-physical-character-MissionCharacters-M_IV_Hostess" nameUID="0x4AEC6BEE" schema="object-physical-character-MissionCharacters-M_IV_Hostess">
+    <Parent>object-physical-character-CommonPedestrian</Parent>
+    <Property name="CanBePushed" type="Boolean">False</Property>
+    <Property name="Description" type="String">Important Visitor - Hostess</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x56203F5">default-component-personality-shopkeep</Property>
+    </Property>
+    <Property name="TetherAttenuation" type="Float32">2</Property>
+    <Property name="TetherDistance" type="Float32">10</Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

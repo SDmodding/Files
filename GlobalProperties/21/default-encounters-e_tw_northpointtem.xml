@@ -1,0 +1,192 @@
+<PropertySet name="default-encounters-e_tw_northpointtem" nameUID="0x6734DCEC" schema="default-encounters-e_tw_northpointtem">
+    <Parent>default-encounters-defaults</Parent>
+    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+    <Property name="BlipName" type="String">enemy</Property>
+    <Property name="ContextualWeapon" type="Boolean">True</Property>
+    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x96962095">TRIAD_18K</Property>
+    <Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
+    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+    <Property name="formation_slot_behind" type="Boolean">False</Property>
+    <Property name="formation_slot_beside" type="Boolean">True</Property>
+    <Property name="formation_slot_follow" type="Boolean">False</Property>
+    <Property name="formation_slot_front" type="Boolean">True</Property>
+    <Property name="formation_slot_frontcorner" type="Boolean">True</Property>
+    <Property name="formation_slot_pitposition" type="Boolean">True</Property>
+    <Property name="formation_slot_rearcorner" type="Boolean">False</Property>
+    <Property name="formation_style" type="Symbol" Symbol="0x36106EE6">none</Property>
+    <Property name="kills_required" type="UInt32">10</Property>
+    <Property name="show_blip_radius" type="Boolean">False</Property>
+    <Property name="vehicle_generic_spawn_max_radius" type="Float32">60</Property>
+    <Property name="vehicle_generic_spawn_min_radius" type="Float32">30</Property>
+    <Property name="water_offset_max_range" type="Float32">60</Property>
+    <Property name="water_offset_min_range" type="Float32">40</Property>
+    <Property name="wave_definitions" type="List">
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5</Property>
+            <Property name="heatwave_timer" type="Float32">10</Property>
+            <Property name="onfoot_population" type="UInt32">4</Property>
+            <Property name="persistent_resources" type="List">
+                <Property type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+                <Property type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
+                <Property type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+                <Property type="Symbol" Symbol="0xF22FCF9">object-physical-vehicle-625MHC01</Property>
+                <Property type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
+            </Property>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+                    <Property name="num_passengers" type="UInt32">0</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
+                    <Property name="num_passengers" type="UInt32">2</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xF22FCF9">object-physical-vehicle-625MHC01</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">2</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5</Property>
+            <Property name="heatwave_timer" type="Float32">10</Property>
+            <Property name="onfoot_population" type="UInt32">4</Property>
+            <Property name="persistent_resources" type="List">
+                <Property type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+                <Property type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
+                <Property type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+                <Property type="Symbol" Symbol="0xF22FCF9">object-physical-vehicle-625MHC01</Property>
+                <Property type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
+            </Property>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+                    <Property name="num_passengers" type="UInt32">0</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>object-physical-character-Thug_18k_quick</Parent>
+                    <Property name="character" type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0xBC9C426D">object-physical-weapon-melee-cleaver_A</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
+                    <Property name="num_passengers" type="UInt32">0</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+                    <Property name="num_passengers" type="UInt32">2</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xF22FCF9">object-physical-vehicle-625MHC01</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>object-physical-character-Thug_18k_striker</Parent>
+                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0xD921A7C0">object-physical-weapon-melee-kitchenknife</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">2</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5</Property>
+            <Property name="heatwave_timer" type="Float32">10</Property>
+            <Property name="onfoot_population" type="UInt32">4</Property>
+            <Property name="persistent_resources" type="List">
+                <Property type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+                <Property type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
+                <Property type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+                <Property type="Symbol" Symbol="0xF22FCF9">object-physical-vehicle-625MHC01</Property>
+                <Property type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
+                <Property type="Symbol" Symbol="0x5B157C5C">object-physical-weapon-melee-baton</Property>
+            </Property>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
+                    <Property name="num_passengers" type="UInt32">0</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0xBC9C426D">object-physical-weapon-melee-cleaver_A</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>object-physical-character-Thug_18k_striker</Parent>
+                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x5B157C5C">object-physical-weapon-melee-baton</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+                    <Property name="num_passengers" type="UInt32">0</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0xD921A7C0">object-physical-weapon-melee-kitchenknife</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+                    <Property name="num_passengers" type="UInt32">2</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xF22FCF9">object-physical-vehicle-625MHC01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0xBC9C426D">object-physical-weapon-melee-cleaver_A</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">2</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5</Property>
+            <Property name="heatwave_timer" type="Float32">10</Property>
+            <Property name="onfoot_population" type="UInt32">4</Property>
+            <Property name="persistent_resources" type="List">
+                <Property type="Symbol" Symbol="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</Property>
+                <Property type="Symbol" Symbol="0x8B2ED6A3">object-physical-character-Thug_Dbs_quick</Property>
+                <Property type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
+                <Property type="Symbol" Symbol="0xF22FCF9">object-physical-vehicle-625MHC01</Property>
+                <Property type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
+                <Property type="Symbol" Symbol="0x1EED9144">object-physical-weapon-melee-crowbar</Property>
+                <Property type="Symbol" Symbol="0x5B157C5C">object-physical-weapon-melee-baton</Property>
+            </Property>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x8B2ED6A3">object-physical-character-Thug_Dbs_quick</Property>
+                    <Property name="num_passengers" type="UInt32">2</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xF22FCF9">object-physical-vehicle-625MHC01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x1EED9144">object-physical-weapon-melee-crowbar</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>object-physical-character-Thug_Dbs_striker</Parent>
+                    <Property name="character" type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x5B157C5C">object-physical-weapon-melee-baton</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</Property>
+                    <Property name="num_passengers" type="UInt32">0</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x5B157C5C">object-physical-weapon-melee-baton</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</Property>
+                    <Property name="num_passengers" type="UInt32">0</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x1EED9144">object-physical-weapon-melee-crowbar</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">2</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

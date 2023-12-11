@@ -1,0 +1,39 @@
+<PropertySet name="object-physical-door" nameUID="0xD27C1568" schema="object-physical-door">
+    <Parent>default-SimObject</Parent>
+    <Property name="AIDataBuild" type="Boolean">True</Property>
+    <Property name="AIOutlineBoundingBoxMax" type="Vector3" x="1.5" y="0.15" z="2"/>
+    <Property name="AIOutlineBoundingBoxMin" type="Vector3" x="-0.3" y="-0.15" z="0"/>
+    <Property name="ActFileName" type="String">Data\Global\Act\Door.act</Property>
+    <Property name="DoorClosingNodeName" type="String">Global\Door\Object\Closed\Idle</Property>
+    <Property name="DoorLockedNodeName" type="String">Global\Door\Object\Closed\NotInteractable\Idle</Property>
+    <Property name="DoorOpeningLeftNodeName" type="String">Global\Door\Object\Closed\NotInteractable\Opening</Property>
+    <Property name="DoorOpeningRightNodeName" type="String">Global\Door\Object\Closed\NotInteractable\Opening_Right</Property>
+    <Property name="DoorUnlockedNodeName" type="String">Global\Door\Object\Closed\Idle</Property>
+    <Property name="IsDoubleDoor" type="Boolean">False</Property>
+    <Property name="ObjectType" type="Symbol" Symbol="0x1946D26D">Door</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CompositeDrawable" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CompositeDrawable</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-SimObjectProperties</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_TSActor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-TSActor</Parent>
+        </PropertySet>
+    </Property>
+</PropertySet>

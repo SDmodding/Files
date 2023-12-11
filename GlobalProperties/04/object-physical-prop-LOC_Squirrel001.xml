@@ -1,0 +1,96 @@
+<PropertySet name="object-physical-prop-LOC_Squirrel001" nameUID="0x1637F74C" schema="object-physical-prop-LOC_Squirrel001">
+    <Parent>default-component-Collectible</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\Shrine.act</Property>
+    <Property name="CollectibleType" type="Symbol" Symbol="0xF01F8F15">Collectible_DLC_01</Property>
+    <Property name="Description" type="String">LOC_Squirrel001</Property>
+    <Property name="RewardsPropertySet" type="Symbol" Symbol="0x78349E74"/>
+    <Property name="SimObjChildren" type="List">
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">HealthShrine001UsePoint01</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-healthshrine</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0xD520214E">C_InteractionPoint01_Player</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">HealthShrine001UsePoint02</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-healthshrine</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x39C24410">C_InteractionPoint02_Player</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">HealthShrine001UsePoint03</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-healthshrine</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x626398DA">C_InteractionPoint03_Player</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">HealthShrine001UsePoint04</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-healthshrine</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0xE4C7931B">C_InteractionPoint04_Player</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">HealthShrine001UsePoint05</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-healthshrine_pedestrian</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x81638C06">C_InteractionPoint_Ped</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+</PropertySet>

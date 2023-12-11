@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-vagrant" nameUID="0xBDEE9D16" schema="object-physical-character-vagrant">
+    <Parent>object-physical-character-drivers-nothing</Parent>
+    <Property name="CanDoCellIdle" type="Boolean">False</Property>
+    <Property name="CanJoinGroup" type="Boolean">False</Property>
+    <Property name="CanUseNewspaperAsCover" type="Boolean">True</Property>
+    <Property name="CanUseUmbrella" type="Boolean">False</Property>
+    <Property name="Description" type="String">vagrant</Property>
+    <Property name="Grapple" type="Int32">100</Property>
+    <Property name="IgnoreSocial" type="Boolean">True</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x8343B39">default-component-personality-jaded</Property>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+    <Property name="walkCycle" type="Symbol" Symbol="0x857E308A">Beggar</Property>
+</PropertySet>

@@ -1,0 +1,33 @@
+<PropertySet name="object-physical-character-MissionCharacters-M_WED_05" nameUID="0xB039850C" schema="object-physical-character-MissionCharacters-M_WED_05">
+    <Parent>object-physical-character-animbanks-ThugQuickStriker</Parent>
+    <Property name="AIEntityType" type="String">eAI_ENTITY_FREERUNNER</Property>
+    <Property name="Description" type="String">Mission: Wedding - H:Quick</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x64A7F39B">default-component-personality-territorial</Property>
+    </Property>
+    <Property name="Voice" type="String">ChineseSamson</Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_HitReaction" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

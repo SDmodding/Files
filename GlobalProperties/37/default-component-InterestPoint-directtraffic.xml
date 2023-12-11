@@ -1,0 +1,16 @@
+<PropertySet name="default-component-InterestPoint-directtraffic" nameUID="0xB142B66B" schema="default-component-InterestPoint-directtraffic">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0x7398B0F3">POI_DirectTraffic</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_DirectTraffic.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x263C38FF">General</Property>
+    <Property name="Description" type="Symbol" Symbol="0x74469F7A">Direct traffic</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+    <Property name="schema_interestpoint_script" type="PropSet"/>
+</PropertySet>

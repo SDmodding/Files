@@ -1,0 +1,25 @@
+<PropertySet name="object-physical-character-Vendors-FoodVendor-M_IceCream_Vendor" nameUID="0xB1FA6E53" schema="object-physical-character-Vendors-FoodVendor-M_IceCream_Vendor">
+    <Parent>object-physical-character-Vendors-FoodVendor-FoodVendor_Base</Parent>
+    <Property name="Description" type="String">Vendor: Ice_Cream_Vendor_PuiPui</Property>
+    <Property name="Inventory" type="List">
+        <ListProperty>
+            <Property name="Value" type="Int32">1000000</Property>
+        </ListProperty>
+    </Property>
+    <Property name="SellableItem" type="Symbol" Symbol="0xCA6066F">eINVENTORY_ITEM_ICE_CREAM</Property>
+    <Property name="SellableItemProp" type="Symbol" Symbol="0x9196D830">object-physical-prop-StreamedObject-IceCreamStick001</Property>
+    <Property name="Voice" type="String">Kai</Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+</PropertySet>

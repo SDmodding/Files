@@ -1,0 +1,27 @@
+<PropertySet name="object-physical-character-EventCharacters-E_S4_Character" nameUID="0x659B2A5A" schema="object-physical-character-EventCharacters-E_S4_Character">
+    <Parent>object-physical-character</Parent>
+    <Property name="Description" type="String">Event: Shoplifter IV</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0xA82DBB3F">eFACEACTION_PURCHASE</Property>
+    <Property name="FaceActionEnabled" type="Boolean">True</Property>
+    <Property name="IgnoreAmbientStimuli" type="Boolean">True</Property>
+    <Property name="Inventory" type="List">
+        <ListProperty>
+            <Property name="Value" type="Int32">1</Property>
+        </ListProperty>
+    </Property>
+    <Property name="SellableItem" type="Symbol" Symbol="0x4C229B8F">eINVENTORY_ITEM_PISTOL_SERVICE</Property>
+    <Property name="TetherAttenuation" type="Float32">2</Property>
+    <Property name="TetherDistance" type="Float32">10</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

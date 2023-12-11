@@ -1,0 +1,146 @@
+<PropertySet name="default-encounters-e_police_protection2" nameUID="0x395C7E8" schema="default-encounters-e_police_protection2">
+    <Parent>default-encounters-defaults</Parent>
+    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+    <Property name="BlipName" type="String">enemy_objective</Property>
+    <Property name="CoronaName" type="String">arrow_enemy</Property>
+    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x96962095">TRIAD_18K</Property>
+    <Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
+    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+    <Property name="formation_slot_behind" type="Boolean">True</Property>
+    <Property name="formation_slot_beside" type="Boolean">True</Property>
+    <Property name="formation_slot_follow" type="Boolean">True</Property>
+    <Property name="formation_slot_front" type="Boolean">True</Property>
+    <Property name="formation_slot_frontcorner" type="Boolean">True</Property>
+    <Property name="formation_slot_pitposition" type="Boolean">True</Property>
+    <Property name="formation_slot_rearcorner" type="Boolean">True</Property>
+    <Property name="formation_style" type="Symbol" Symbol="0x36106EE6">none</Property>
+    <Property name="kills_required" type="UInt32">99</Property>
+    <Property name="show_blip_radius" type="Boolean">False</Property>
+    <Property name="vehicle_chase_spawn_distance" type="Float32">85</Property>
+    <Property name="vehicle_generic_spawn_max_radius" type="Float32">100</Property>
+    <Property name="vehicle_generic_spawn_min_radius" type="Float32">70</Property>
+    <Property name="vehicle_initial_speed_ratio" type="Float32">0.9</Property>
+    <Property name="vehicle_spawn_behind_probability" type="Float32">0.15</Property>
+    <Property name="wave_definitions" type="List">
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5</Property>
+            <Property name="heatwave_timer" type="Float32">6</Property>
+            <Property name="onfoot_population" type="UInt32">2</Property>
+            <Property name="persistent_resources" type="List"/>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xBCA6530F">object-physical-vehicle-CS750R_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xBCA6530F">object-physical-vehicle-CS750R_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xBCA6530F">object-physical-vehicle-CS750R_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">2</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5</Property>
+            <Property name="heatwave_timer" type="Float32">10</Property>
+            <Property name="onfoot_population" type="UInt32">4</Property>
+            <Property name="persistent_resources" type="List"/>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xBCA6530F">object-physical-vehicle-CS750R_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xBCA6530F">object-physical-vehicle-CS750R_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">4</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5</Property>
+            <Property name="heatwave_timer" type="Float32">10</Property>
+            <Property name="onfoot_population" type="UInt32">5</Property>
+            <Property name="persistent_resources" type="List"/>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xBCA6530F">object-physical-vehicle-CS750R_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xBCA6530F">object-physical-vehicle-CS750R_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0xBCA6530F">object-physical-vehicle-CS750R_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">5</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

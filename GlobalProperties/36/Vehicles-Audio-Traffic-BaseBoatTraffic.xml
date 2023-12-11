@@ -1,0 +1,17 @@
+<PropertySet name="Vehicles-Audio-Traffic-BaseBoatTraffic" nameUID="0xAB8FF3BB" schema="Vehicles-Audio-Traffic-BaseBoatTraffic">
+    <Property name="audio_bank" type="WwiseID" Symbol="0x6FE4D460"/>
+    <Property name="engine_curve" type="Symbol" Symbol="0xE49C26E8">vehicles-audio-engines-Boat_Speed_Traffic</Property>
+    <Property name="radio_enabled" type="Boolean">False</Property>
+    <Property name="skid_event_destroy" type="WwiseID" Symbol="0x0"/>
+    <Property name="skid_event_init" type="WwiseID" Symbol="0x0"/>
+    <Property name="skid_strength_multiplier" type="Float32">0.2</Property>
+    <Property name="vehicle_road_noise_init" type="WwiseID" Symbol="0xEA58361D"/>
+    <Property name="vehicle_speed_rlf" type="PropSet">
+        <PropertySet>
+            <Property name="fall_rate" type="Float32">60</Property>
+            <Property name="max" type="Float32">200</Property>
+            <Property name="min" type="Float32">-200</Property>
+            <Property name="rise_rate" type="Float32">60</Property>
+        </PropertySet>
+    </Property>
+</PropertySet>

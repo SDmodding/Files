@@ -1,0 +1,16 @@
+<PropertySet name="default-component-InterestPoint-HospitalElevator" nameUID="0x8472BAAC" schema="default-component-InterestPoint-HospitalElevator">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0xEAF49CBD">LOL_HOSPELEVDOORS001</Property>
+        <Property type="SymbolUC" Symbol="0x7B197DF8">Door_Elevator_Use</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\Object\LOL_HospElevDoors001.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x9548F73B">Mission</Property>
+    <Property name="Description" type="Symbol" Symbol="0xCDDCF21">Elevator Interaction POI</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

@@ -1,0 +1,33 @@
+<PropertySet name="object-physical-character-EventCharacters-J_DC5_VagrantBribe_Character" nameUID="0x615B86D9" schema="object-physical-character-EventCharacters-J_DC5_VagrantBribe_Character">
+    <Parent>object-physical-character</Parent>
+    <Property name="Description" type="String">Job: Debt Collection 5 Vagrant (Bribe)</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0xA82DBB3F">eFACEACTION_PURCHASE</Property>
+    <Property name="FaceActionEnabled" type="Boolean">False</Property>
+    <Property name="Inventory" type="List">
+        <ListProperty>
+            <Property name="Value" type="Int32">1</Property>
+        </ListProperty>
+    </Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x8343B39">default-component-personality-jaded</Property>
+    </Property>
+    <Property name="RemoveOnCompletion" type="Boolean">True</Property>
+    <Property name="SellableItem" type="Symbol" Symbol="0x28019ECE">eINVENTORY_ITEM_BRIBE_CHEAP</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

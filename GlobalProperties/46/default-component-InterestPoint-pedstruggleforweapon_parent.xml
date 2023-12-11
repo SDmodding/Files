@@ -1,0 +1,19 @@
+<PropertySet name="default-component-InterestPoint-pedstruggleforweapon_parent" nameUID="0xDA9D9D91" schema="default-component-InterestPoint-pedstruggleforweapon_parent">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0x98592B0">Grapples</Property>
+        <Property type="SymbolUC" Symbol="0xB7167E3A">Grapples_Weapon_1hand_Equipped</Property>
+        <Property type="SymbolUC" Symbol="0x40CD607C">Gun_Equipped</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_PedStruggleForWeapon_Parent.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x141DFE98">Paired</Property>
+    <Property name="ConversationTopic" type="Symbol" Symbol="0x943BC610">Generic</Property>
+    <Property name="Description" type="Symbol" Symbol="0xA9DFFDE6">Ped Struggle Parent</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+    <Property name="schema_interestpoint_script" type="PropSet"/>
+</PropertySet>

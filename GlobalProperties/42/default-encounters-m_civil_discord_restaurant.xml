@@ -1,0 +1,58 @@
+<PropertySet name="default-encounters-m_civil_discord_restaurant" nameUID="0xCB960CE8" schema="default-encounters-m_civil_discord_restaurant">
+    <Parent>default-encounters-defaults</Parent>
+    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x9E12E132">TRIAD_LEE</Property>
+    <Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
+    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+    <Property name="enable_forward_spawning" type="Boolean">True</Property>
+    <Property name="formation_slot_behind" type="Boolean">False</Property>
+    <Property name="formation_slot_beside" type="Boolean">True</Property>
+    <Property name="formation_slot_follow" type="Boolean">False</Property>
+    <Property name="formation_slot_front" type="Boolean">True</Property>
+    <Property name="formation_slot_frontcorner" type="Boolean">True</Property>
+    <Property name="formation_slot_pitposition" type="Boolean">False</Property>
+    <Property name="formation_slot_rearcorner" type="Boolean">False</Property>
+    <Property name="formation_style" type="Symbol" Symbol="0x5C1F343F">generic</Property>
+    <Property name="kills_required" type="UInt32">40</Property>
+    <Property name="replenish_style" type="Symbol" Symbol="0x3D61342A">by_population</Property>
+    <Property name="show_blip_radius" type="Boolean">True</Property>
+    <Property name="vehicle_chase_spawn_distance" type="Float32">30</Property>
+    <Property name="vehicle_generic_spawn_max_radius" type="Float32">50</Property>
+    <Property name="vehicle_generic_spawn_min_radius" type="Float32">20</Property>
+    <Property name="vehicle_spawn_behind_probability" type="Float32">0.25</Property>
+    <Property name="wave_definitions" type="List">
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5000</Property>
+            <Property name="heatwave_timer" type="Float32">8</Property>
+            <Property name="onfoot_population" type="UInt32">4</Property>
+            <Property name="persistent_resources" type="List">
+                <Property type="Symbol" Symbol="0x4C16658D">object-physical-character-Thug_Soy_quick</Property>
+                <Property type="Symbol" Symbol="0x7B84C8F7">object-physical-character-Thug_Soy_striker</Property>
+                <Property type="Symbol" Symbol="0x1B8E4841">object-physical-character-Thug_Soy_brawler</Property>
+            </Property>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Parent>object-physical-character-Thug_Soy_quick</Parent>
+                    <Property name="character" type="Symbol" Symbol="0x4C16658D">object-physical-character-Thug_Soy_quick</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>object-physical-character-Thug_Soy_grap</Parent>
+                    <Property name="character" type="Symbol" Symbol="0x4E8231A4">object-physical-character-Thug_Soy_grap</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>object-physical-character-Thug_Soy_brawler</Parent>
+                    <Property name="character" type="Symbol" Symbol="0x1B8E4841">object-physical-character-Thug_Soy_brawler</Property>
+                    <Property name="weapon" type="Symbol" Symbol="0x14D4357D">object-physical-weapon-firearm-rifle-assault_taclight</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">0</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

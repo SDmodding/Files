@@ -1,0 +1,40 @@
+<PropertySet name="default-encounters-c_kidnapper_swat_boats" nameUID="0x65F2A0F1" schema="default-encounters-c_kidnapper_swat_boats">
+    <Parent>default-encounters-defaults</Parent>
+    <Property name="AIObjective" type="String">eAI_OBJECTIVE_PURSUIT_TARGET</Property>
+    <Property name="BlipName" type="String">cop_symbol</Property>
+    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x3D67DC76">LAW</Property>
+    <Property name="OverrideAIBehaviour" type="String">Cop_behaviour.act</Property>
+    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_PURSUIT_TARGET</Property>
+    <Property name="kills_required" type="UInt32">99</Property>
+    <Property name="show_blip_radius" type="Boolean">False</Property>
+    <Property name="vehicle_initial_speed_ratio" type="Float32">0.8</Property>
+    <Property name="wave_definitions" type="List">
+        <ListProperty>
+            <Property name="cooldown_timer" type="Float32">5</Property>
+            <Property name="heatwave_timer" type="Float32">40</Property>
+            <Property name="onfoot_population" type="UInt32">3</Property>
+            <Property name="persistent_resources" type="List">
+                <Property type="Symbol" Symbol="0x6AF9EE27">object-physical-vehicle-Seaker01</Property>
+                <Property type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
+            </Property>
+            <Property name="spawn_groups" type="List">
+                <ListProperty>
+                    <Parent>object-physical-vehicle-Seaker01</Parent>
+                    <Property name="character" type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0x6AF9EE27">object-physical-vehicle-Seaker01</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>object-physical-vehicle-Seaker01</Parent>
+                    <Property name="character" type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
+                    <Property name="vehicle" type="Symbol" Symbol="0x6AF9EE27">object-physical-vehicle-Seaker01</Property>
+                </ListProperty>
+            </Property>
+            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
+            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
+            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
+            <Property name="vehicle_population" type="UInt32">3</Property>
+            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
+            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

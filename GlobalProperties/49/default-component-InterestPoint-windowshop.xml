@@ -1,0 +1,16 @@
+<PropertySet name="default-component-InterestPoint-windowshop" nameUID="0xEAEDB9EE" schema="default-component-InterestPoint-windowshop">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0xE148B6D4">POI_Window_F</Property>
+        <Property type="SymbolUC" Symbol="0xCA037DB5">POI_Window_M</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_WindowShop.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x263C38FF">General</Property>
+    <Property name="Description" type="Symbol" Symbol="0xD9493C8F">Windowshopping (Outside)</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

@@ -1,0 +1,20 @@
+<PropertySet name="default-formation-default" nameUID="0xA2D7688D" schema="default-formation-default">
+    <Property name="Active" type="Boolean">True</Property>
+    <Property name="DistanceToBeConsideredClose" type="Float32">7</Property>
+    <Property name="MaxFollowers" type="UInt32">1</Property>
+    <Property name="MaxRadialDistanceFromDesiredPositionToBeginSprintingWhenTargetSprinting_Formation" type="Float32">1</Property>
+    <Property name="MaxTimeForLargeHysteresis" type="Float32">4</Property>
+    <Property name="MinTimeBetweenSlotChanges" type="Float32">1</Property>
+    <Property name="MinTimeForLargeHysteresis" type="Float32">3</Property>
+    <Property name="SlotList" type="List">
+        <ListProperty>
+            <Parent>default-formation-slot-besideOnLeft</Parent>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-formation-slot-besideOnRight</Parent>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-formation-slot-behind</Parent>
+        </ListProperty>
+    </Property>
+</PropertySet>

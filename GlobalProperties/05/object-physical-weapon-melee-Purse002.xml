@@ -1,0 +1,23 @@
+<PropertySet name="object-physical-weapon-melee-Purse002" nameUID="0x19A3AF03" schema="object-physical-weapon-melee-Purse002">
+    <Parent>object-physical-weapon-melee</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\GenericWeaponTree.act</Property>
+    <Property name="AudioWeaponType" type="WwiseID" Symbol="0x4E5CB772"/>
+    <Property name="DamageMultiplier" type="Float32">0.5</Property>
+    <Property name="Description" type="String">$HUD_WEAPON_PURSE</Property>
+    <Property name="MaxAngularVelocityWhenThrown" type="Vector3" x="10" y="10" z="10"/>
+    <Property name="MinAngularVelocityWhenThrown" type="Vector3" x="7" y="7" z="7"/>
+    <Property name="PerceivedDangerous" type="Boolean">False</Property>
+    <Property name="RangedDistance" type="Float32">10</Property>
+    <Property name="SoundBank" type="WwiseID" Symbol="0xFB99A106"/>
+    <Property name="ThrownSpeed" type="Float32">30</Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_InventoryItem" type="PropSet"/>
+    <Property name="component_StreamedResource" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-StreamedResource</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="isValuableItem" type="Boolean">True</Property>
+    <Property name="simObjectWeaponType" type="String">eSIM_OBJ_WEAPON_TYPE_HANDLED_OBJECT</Property>
+</PropertySet>

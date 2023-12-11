@@ -1,10 +1,16 @@
-<Property Hash="0x317032E3" Name="default-component-InterestPoint-knee_smash_combat">
-	<BehaviourFile>Data\Global\Act\POI_KneeSmashCombatProps.act</BehaviourFile>
-	<Category>Mission</Category>
-	<Description>Knee Smash Combat Props</Description>
-	<HasBehaviour>1</HasBehaviour>
-	<Set>
-		<component_InterestPoint></component_InterestPoint>
-		<schema_classlist></schema_classlist>
-	</Set>
-</Property>
+<PropertySet name="default-component-InterestPoint-knee_smash_combat" nameUID="0x317032E3" schema="default-component-InterestPoint-knee_smash_combat">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0x971A7ED">Prop_HeadSmash_Dead</Property>
+        <Property type="SymbolUC" Symbol="0x61FB7BE0">LOM_TV4HeadSmash001_Use</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI_KneeSmashCombatProps.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x9548F73B">Mission</Property>
+    <Property name="Description" type="Symbol" Symbol="0xB7D548C5">Knee Smash Combat Props</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

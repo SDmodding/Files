@@ -1,0 +1,46 @@
+<PropertySet name="object-physical-character_motion_tester" nameUID="0x74149586" schema="object-physical-character_motion_tester">
+    <Parent>default-SimObject</Parent>
+    <Property name="AIDataBuild" type="Boolean">True</Property>
+    <Property name="ActFileName" type="String">Data\Global\Act\Chan.act</Property>
+    <Property name="Description" type="String"/>
+    <Property name="ObjectType" type="Symbol" Symbol="0xFF2078FA">character_motion_tester</Property>
+    <Property name="SpawnPriority" type="Symbol" Symbol="0x9548F73B">Mission</Property>
+    <Property name="component-CharacterPhysics" type="PropSet"/>
+    <Property name="component_AIActionTree" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-AIActionTree</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_WorldContext" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-WorldContext</Parent>
+        </PropertySet>
+    </Property>
+</PropertySet>

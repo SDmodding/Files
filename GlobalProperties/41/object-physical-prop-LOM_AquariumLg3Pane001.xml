@@ -1,32 +1,62 @@
-<Property Hash="0xC61B7872" Name="object-physical-prop-LOM_AquariumLg3Pane001">
-	<0xB62E65CB_SYMBOL>0x84AB1768</0xB62E65CB_SYMBOL>
-	<AIDataBuild>1</AIDataBuild>
-	<ActFileName>Data\Global\Act\Object\LOM_AquariumLg3Pane001.act</ActFileName>
-	<Component_BaseAnimation>
-		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
-		<RigName>LOM_AquariumLg3Pane001</RigName>
-	</Component_BaseAnimation>
-	<Component_CharacterAnimation>
-		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
-		<RigName>LOM_AquariumLg3Pane001</RigName>
-	</Component_CharacterAnimation>
-	<Component_DrawableComponent>
-		<DefaultSaturationOverride>1.000000</DefaultSaturationOverride>
-		<DrawScale>1.000000</DrawScale>
-		<HighlightingColour>1.000, 1.000, 1.000, 1.000</HighlightingColour>
-		<LightSFXMultiplier>0.000000</LightSFXMultiplier>
-		<SkinSSEnabled>0</SkinSSEnabled>
-	</Component_DrawableComponent>
-	<Component_FXSimComponent>
-		<Effect>0xFFFFFFFF</Effect>
-	</Component_FXSimComponent>
-	<Component_TSActor>
-		<SkookumClass>Prop</SkookumClass>
-	</Component_TSActor>
-	<CreateObjectFlags>1</CreateObjectFlags>
-	<Description>LOM_AquariumLg3Pane001</Description>
-	<ObjectType>Prop</ObjectType>
-	<PowerManagement_SuspendDistance>30.000000</PowerManagement_SuspendDistance>
-	<RadarHighlightType>CombatProp</RadarHighlightType>
-	<XformParent>0</XformParent>
-</Property>
+<PropertySet name="object-physical-prop-LOM_AquariumLg3Pane001" nameUID="0xC61B7872" schema="object-physical-prop-LOM_AquariumLg3Pane001">
+    <Parent>object-physical-prop-InteractableProp</Parent>
+    <Property name="0xB62E65CB" type="Symbol" Symbol="0x84AB1768"/>
+    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOM_AquariumLg3Pane001.act</Property>
+    <Property name="Description" type="String">LOM_AquariumLg3Pane001</Property>
+    <Property name="PowerManagement_SuspendDistance" type="Float32">30</Property>
+    <Property name="SimObjChildren" type="List">
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">AquariumUsePoint01</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-aquarium</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x1A08FE0D">C_InteractionPoint01</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">AquariumUsePoint02</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-aquarium</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x174BD8D4">C_InteractionPoint02</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">AquariumUsePoint03</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-aquarium</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x138AC563">C_InteractionPoint03</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+</PropertySet>

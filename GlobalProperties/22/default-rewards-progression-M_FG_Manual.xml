@@ -1,0 +1,28 @@
+<PropertySet name="default-rewards-progression-M_FG_Manual" nameUID="0x68257831" schema="default-rewards-progression-M_FG_Manual">
+    <Parent>default-rewards-progression-mission_defaults</Parent>
+    <Property name="CompletionText" type="String">Fast Girls</Property>
+    <Property name="CopStartingScore" type="Int32">100</Property>
+    <Property name="EnableMissionScoring" type="Boolean">True</Property>
+    <Property name="MoneyAdjustment" type="Int32">8000</Property>
+    <Property name="StandingAdjustment" type="Int32">100</Property>
+    <Property name="TriadBaseScore" type="Int32">0</Property>
+    <Property name="TriadTargetScore" type="Int32">250</Property>
+    <Property name="UnlockItems" type="List">
+        <ListProperty>
+            <Property name="0x308E0AE5" type="String"/>
+            <Property name="0x4E4D2ED3" type="String">LOI_KT_SHDoor001_101</Property>
+            <Property name="0xDE3E6A23" type="String"/>
+            <Property name="Type" type="Symbol" Symbol="0x1946D26D">Door</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="0x308E0AE5" type="String">safe_house_icon</Property>
+            <Property name="0x4E4D2ED3" type="String">SFKT-KT</Property>
+            <Property name="0xDE3E6A23" type="String">$MISSION_REWARDS_SAFEHOUSE</Property>
+            <Property name="Type" type="Symbol" Symbol="0x1B43F7CE">Safehouse</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="0xDE3E6A23" type="String">Sandra's Phone Number</Property>
+            <Property name="Type" type="Symbol" Symbol="0x5F96DC30"/>
+        </ListProperty>
+    </Property>
+</PropertySet>

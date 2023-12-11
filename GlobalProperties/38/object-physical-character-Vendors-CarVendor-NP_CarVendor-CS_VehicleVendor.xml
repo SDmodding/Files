@@ -1,0 +1,27 @@
+<PropertySet name="object-physical-character-Vendors-CarVendor-NP_CarVendor-CS_VehicleVendor" nameUID="0xB7FDFE58" schema="object-physical-character-Vendors-CarVendor-NP_CarVendor-CS_VehicleVendor">
+    <Parent>default-component-FaceAction</Parent>
+    <Property name="Description" type="String">Vendor: Chop Shop Vehicle</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0xA82DBB3F">eFACEACTION_PURCHASE</Property>
+    <Property name="FaceActionEnabled" type="Boolean">True</Property>
+    <Property name="HasInventoryUI" type="Boolean">True</Property>
+    <Property name="InventoryType" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
+    <Property name="RemoveOnCompletion" type="Boolean">False</Property>
+    <Property name="RequiresGreet" type="Boolean">False</Property>
+    <Property name="SocialEffectName" type="String">FX_Social_Icon_White</Property>
+    <Property name="StoreDesc" type="String">$GLOBAL_VEHICLESTOREDESC_FACE1</Property>
+    <Property name="StoreId" type="Symbol" Symbol="0xA1B5DBAD">face_1_vehicle_store</Property>
+    <Property name="StoreTitle" type="String">$GLOBAL_VEHICLESTORETITLE_FACE1</Property>
+    <Property name="StoreType" type="Symbol" Symbol="0x5A58B64A">Retail</Property>
+    <Property name="Voice" type="String">Teddy</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+</PropertySet>

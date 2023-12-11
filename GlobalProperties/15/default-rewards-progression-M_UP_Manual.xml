@@ -1,0 +1,34 @@
+<PropertySet name="default-rewards-progression-M_UP_Manual" nameUID="0x49DC2CFB" schema="default-rewards-progression-M_UP_Manual">
+    <Parent>default-rewards-progression-mission_defaults</Parent>
+    <Property name="CompletionText" type="String">Uncle Po</Property>
+    <Property name="CopStartingScore" type="Int32">100</Property>
+    <Property name="EnableMissionScoring" type="Boolean">True</Property>
+    <Property name="MoneyAdjustment" type="Int32">8000</Property>
+    <Property name="StandingAdjustment" type="Int32">200</Property>
+    <Property name="TriadBaseScore" type="Int32">0</Property>
+    <Property name="TriadTargetScore" type="Int32">500</Property>
+    <Property name="UnlockItems" type="List">
+        <ListProperty>
+            <Property name="0x308E0AE5" type="String">pda_icon</Property>
+            <Property name="0xDE3E6A23" type="String">Roland's Contact</Property>
+            <Property name="Type" type="Symbol" Symbol="0x5F96DC30"/>
+        </ListProperty>
+        <ListProperty>
+            <Property name="0x308E0AE5" type="String"/>
+            <Property name="0x4E4D2ED3" type="String">LOI_CT_SHAptDoor001_101</Property>
+            <Property name="0xDE3E6A23" type="String"/>
+            <Property name="Type" type="Symbol" Symbol="0x1946D26D">Door</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="0x308E0AE5" type="String">safe_house_icon</Property>
+            <Property name="0x4E4D2ED3" type="String">SFCT-CT</Property>
+            <Property name="0xDE3E6A23" type="String">$MISSION_REWARDS_SAFEHOUSE</Property>
+            <Property name="Type" type="Symbol" Symbol="0x1B43F7CE">Safehouse</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="0x2DFB6FC5" type="Int32">16</Property>
+            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_16</Property>
+            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

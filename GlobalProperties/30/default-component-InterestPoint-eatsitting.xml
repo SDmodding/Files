@@ -1,0 +1,17 @@
+<PropertySet name="default-component-InterestPoint-eatsitting" nameUID="0x92BFA2C5" schema="default-component-InterestPoint-eatsitting">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0x8C10177F">POI_Eat_Sitting</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_Eat_Sitting.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0xB080F26C">Sitting</Property>
+    <Property name="ConversationTopic" type="Symbol" Symbol="0x85DC75E3">Cellphone</Property>
+    <Property name="Description" type="Symbol" Symbol="0x9F13E0AA">Eat while sitting</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+    <Property name="schema_interestpoint_script" type="PropSet"/>
+</PropertySet>

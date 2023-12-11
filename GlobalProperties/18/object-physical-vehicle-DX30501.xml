@@ -1,0 +1,24 @@
+<PropertySet name="object-physical-vehicle-DX30501" nameUID="0x582ABBBA" schema="object-physical-vehicle-DX30501">
+    <Parent>object-physical-vehicle-CommonBike</Parent>
+    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0xFD22023E">Cameras-ChaseCameraBike</Property>
+    <Property name="Description" type="String">DX305</Property>
+    <Property name="SeatCount" type="UInt32">1</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">DX305_Paint01</Property>
+        <Property type="String">DX305_Paint02</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_BikePhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="component_VehicleAudio" type="PropSet"/>
+</PropertySet>

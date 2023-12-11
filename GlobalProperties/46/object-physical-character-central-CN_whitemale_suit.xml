@@ -1,0 +1,33 @@
+<PropertySet name="object-physical-character-central-CN_whitemale_suit" nameUID="0xDC577057" schema="object-physical-character-central-CN_whitemale_suit">
+    <Parent>object-physical-character-CommonPedestrian</Parent>
+    <Property name="CanUseUmbrella" type="Boolean">True</Property>
+    <Property name="Description" type="String">CN Ambient Male White Businessman</Property>
+    <Property name="DriverProfileList" type="List">
+        <Property type="Symbol" Symbol="0xE61E6672">default-component-personality-driverwealthymale</Property>
+    </Property>
+    <Property name="MorphController" type="Symbol" Symbol="0xBED585C1">RandomizeMorphWeights</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0xB00E559E">default-component-personality-aggressive</Property>
+    </Property>
+    <Property name="PropList" type="List">
+        <Property type="Symbol" Symbol="0xFFFFFFFF"/>
+        <Property type="Symbol" Symbol="0xDB7EFB11">object-physical-prop-StreamedObject-Briefcase001</Property>
+    </Property>
+    <Property name="VoiceTagList" type="List">
+        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
+        <Property type="Symbol" Symbol="0x44EF718F">Adult</Property>
+        <Property type="Symbol" Symbol="0x3628E7C7">White</Property>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

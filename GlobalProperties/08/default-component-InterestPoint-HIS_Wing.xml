@@ -1,11 +1,14 @@
-<Property Hash="0x2A5B1E29" Name="default-component-InterestPoint-HIS_Wing">
-	<BehaviourFile>Data\Global\Act\POI_HIS_Wing.act</BehaviourFile>
-	<Category>0xA3495BE4</Category>
-	<Description>0x33BD775</Description>
-	<HasBehaviour>1</HasBehaviour>
-	<Set>
-		<component_InterestPoint></component_InterestPoint>
-		<schema_classlist></schema_classlist>
-		<schema_interestpoint_script></schema_interestpoint_script>
-	</Set>
-</Property>
+<PropertySet name="default-component-InterestPoint-HIS_Wing" nameUID="0x2A5B1E29" schema="default-component-InterestPoint-HIS_Wing">
+    <Property name="AnimBankFileNames" type="List"/>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI_HIS_Wing.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0xA3495BE4"/>
+    <Property name="Description" type="Symbol" Symbol="0x33BD775"/>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+    <Property name="schema_interestpoint_script" type="PropSet"/>
+</PropertySet>

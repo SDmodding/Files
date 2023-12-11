@@ -1,0 +1,17 @@
+<PropertySet name="default-component-InterestPoint-boatjack" nameUID="0x6A0939ED" schema="default-component-InterestPoint-boatjack">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0x56534459">Boat_ActionHijack</Property>
+        <Property type="SymbolUC" Symbol="0xDEF293D2">Car_ActionHijack</Property>
+        <Property type="SymbolUC" Symbol="0xD6BD6B2F">Vehicle_ActionHijack</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_BoatHijack.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x9548F73B">Mission</Property>
+    <Property name="Description" type="Symbol" Symbol="0x287E26C7">Boat Hijack</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

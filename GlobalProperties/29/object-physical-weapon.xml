@@ -1,0 +1,79 @@
+<PropertySet name="object-physical-weapon" nameUID="0x8D8E86EF" schema="object-physical-weapon">
+    <Parent>default-SimObject</Parent>
+    <Property name="0x50AA4A0D" type="Boolean">True</Property>
+    <Property name="AccuracyOnTargetChanged" type="Float32">1</Property>
+    <Property name="AimFlickTransitionDegPerS" type="Float32">120</Property>
+    <Property name="AimFovOffset" type="Float32">0</Property>
+    <Property name="AimFreeAimTransitionDegPerS" type="Float32">20</Property>
+    <Property name="AimInputMapping" type="List">
+        <ListProperty>
+            <Property name="AimInput" type="Float32">0</Property>
+            <Property name="AimOutput" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="AimInput" type="Float32">0.5</Property>
+            <Property name="AimOutput" type="Float32">0.1</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="AimInput" type="Float32">0.8</Property>
+            <Property name="AimOutput" type="Float32">0.3</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="AimInput" type="Float32">1</Property>
+            <Property name="AimOutput" type="Float32">1</Property>
+        </ListProperty>
+    </Property>
+    <Property name="AimMaxInputSpeedPerS" type="Float32">1.5</Property>
+    <Property name="AimOriginOffset" type="Vector3" x="0.15" y="-0.18" z="1.55"/>
+    <Property name="AimPitchPerS" type="Float32">120</Property>
+    <Property name="AimSubtargetTransitionDegPerS" type="Float32">20</Property>
+    <Property name="AimYawPerS" type="Float32">180</Property>
+    <Property name="CanBeDropped" type="Boolean">True</Property>
+    <Property name="ObjectType" type="Symbol" Symbol="0x8A5A95FC">Weapon</Property>
+    <Property name="Stowable" type="Boolean">False</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CompositeDrawable" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CompositeDrawable</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_FXSimComponent" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-FXSimComponent</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Interactable" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Interactable</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_InventoryItem" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InventoryItem</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-WeaponProperties</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_TSActor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-TSActor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_WeaponProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-WeaponProperties</Parent>
+        </PropertySet>
+    </Property>
+</PropertySet>

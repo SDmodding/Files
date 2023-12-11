@@ -1,0 +1,16 @@
+<PropertySet name="object-physical-weapon-melee-hackbroom" nameUID="0x4DCFBDEA" schema="object-physical-weapon-melee-hackbroom">
+    <Parent>object-physical-weapon-melee</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\GenericActionTree.act</Property>
+    <Property name="AttachBone" type="String">Bip01 R Prop</Property>
+    <Property name="Description" type="String">$HUD_WEAPON_BROOM</Property>
+    <Property name="PropBone" type="String">Grip R Hand</Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_InventoryItem" type="PropSet"/>
+    <Property name="component_StreamedResource" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-StreamedResource</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="simObjectWeaponType" type="String">eSIM_OBJ_WEAPON_TYPE_BATON</Property>
+</PropertySet>

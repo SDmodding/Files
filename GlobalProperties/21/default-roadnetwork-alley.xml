@@ -1,7 +1,8 @@
-<Property Hash="0x652BB724" Name="default-roadnetwork-alley">
-	<Density>0.000000</Density>
-	<DensityNight>60.000000</DensityNight>
-	<GpsRestricted>1</GpsRestricted>
-	<RoadDriveableTraffic>0</RoadDriveableTraffic>
-	<RoadID>20</RoadID>
-</Property>
+<PropertySet name="default-roadnetwork-alley" nameUID="0x652BB724" schema="default-roadnetwork-alley">
+    <Parent>default-roadnetwork-road</Parent>
+    <Property name="Density" type="Float32">0</Property>
+    <Property name="DensityNight" type="Float32">0</Property>
+    <Property name="GpsRestricted" type="Boolean">True</Property>
+    <Property name="RoadDriveableTraffic" type="Boolean">False</Property>
+    <Property name="RoadID" type="UInt32">20</Property>
+</PropertySet>

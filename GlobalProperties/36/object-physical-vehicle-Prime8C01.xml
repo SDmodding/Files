@@ -1,0 +1,31 @@
+<PropertySet name="object-physical-vehicle-Prime8C01" nameUID="0xAE603104" schema="object-physical-vehicle-Prime8C01">
+    <Parent>object-physical-vehicle-CommonCar</Parent>
+    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0x56777792">Cameras-ChaseCameraCommon</Property>
+    <Property name="Description" type="String">4Dr- Prime8C</Property>
+    <Property name="Parkable" type="Boolean">True</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">Prime8C_Paint02</Property>
+        <Property type="String">Prime8C_Paint03</Property>
+        <Property type="String">Prime8C_Paint04</Property>
+        <Property type="String">Prime8C_Paint05</Property>
+        <Property type="String">Prime8C_Paint06</Property>
+        <Property type="String">Prime8C_Paint07</Property>
+        <Property type="String">Prime8C_Paint08</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_WIDE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_WIDE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet"/>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="component_VehicleAudio" type="PropSet"/>
+    <Property name="component_VehicleProperties" type="PropSet"/>
+</PropertySet>

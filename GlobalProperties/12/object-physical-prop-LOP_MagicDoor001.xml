@@ -1,0 +1,45 @@
+<PropertySet name="object-physical-prop-LOP_MagicDoor001" nameUID="0x3973C706" schema="object-physical-prop-LOP_MagicDoor001">
+    <Parent>object-physical-prop-InteractableProp</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\MagicDoor.act</Property>
+    <Property name="Description" type="String">LOP_MagicDoor001</Property>
+    <Property name="SimObjChildren" type="List">
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">MagicDoorDespawnPoint</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-magicdoordespawn</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x7508FAFF">C_FeetSync01</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">MagicDoorSpawnPoint</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-magicdoorspawn</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x784BDC26">C_FeetSync02</Property>
+                    <Property name="component_InterestPoint" type="PropSet"/>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CompositeDrawable" type="PropSet"/>
+</PropertySet>

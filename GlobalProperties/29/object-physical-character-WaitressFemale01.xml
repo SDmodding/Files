@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-WaitressFemale01" nameUID="0x8F895C1C" schema="object-physical-character-WaitressFemale01">
+    <Parent>object-physical-character-drivers-nothing</Parent>
+    <Property name="Description" type="String">WaitressFemale01</Property>
+    <Property name="Grapple" type="Int32">100</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x56203F5">default-component-personality-shopkeep</Property>
+    </Property>
+    <Property name="VoiceTagList" type="List">
+        <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
+        <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
+        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

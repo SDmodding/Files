@@ -1,0 +1,38 @@
+<PropertySet name="object-physical-vehicle-MOViTCargoChickens" nameUID="0xEA111F56" schema="object-physical-vehicle-MOViTCargoChickens">
+    <Parent>object-physical-vehicle-CommonVan</Parent>
+    <Property name="AimDistFromBumper" type="Float32">2</Property>
+    <Property name="AimDistFromSide" type="Float32">2.5</Property>
+    <Property name="AimLookOffsetHighZ" type="Float32">1.5</Property>
+    <Property name="AimLookOffsetLowZ" type="Float32">-2.16</Property>
+    <Property name="AimOriginOffsetConstX" type="Float32">-0.2</Property>
+    <Property name="AimOriginOffsetX" type="Float32">-1.2</Property>
+    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0x98FF4C9">Cameras-ChaseCameraTallVan</Property>
+    <Property name="Description" type="String">4DrVan- MovitCargoChickens</Property>
+    <Property name="Parkable" type="Boolean">True</Property>
+    <Property name="TranJobName" type="Symbol" Symbol="0x57A0E4F0">TranJob04</Property>
+    <Property name="VehicleExclusionClassList" type="List">
+        <Property type="Symbol" Symbol="0xEFA85545">Elderly</Property>
+        <Property type="Symbol" Symbol="0xB7B39865">Police</Property>
+        <Property type="Symbol" Symbol="0xF62EC7D0">NoTruck</Property>
+    </Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">WhitePaint</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet"/>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="component_VehicleAudio" type="PropSet"/>
+    <Property name="component_VehicleEffects" type="PropSet"/>
+    <Property name="component_VehicleProperties" type="PropSet"/>
+</PropertySet>

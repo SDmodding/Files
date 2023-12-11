@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-SDTWGangMembers-EnforcerMuayThai" nameUID="0xA1DC0FF0" schema="object-physical-character-SDTWGangMembers-EnforcerMuayThai">
+    <Parent>object-physical-character-Thug_Dbs_striker</Parent>
+    <Property name="BlockChance" type="Int32">75</Property>
+    <Property name="Description" type="String">Enforcer MuayThai</Property>
+    <Property name="FightingStyle" type="Symbol" Symbol="0xF7752B38">MuayThai</Property>
+    <Property name="Grapple" type="Int32">100</Property>
+    <Property name="IsEliteFighter" type="Boolean">True</Property>
+    <Property name="StunResistance" type="Int32">60</Property>
+    <Property name="TagVoice" type="WwiseID" Symbol="0x831FC203"/>
+    <Property name="Voice" type="String">karl</Property>
+    <Property name="VoiceTagList" type="List">
+        <Property type="Symbol" Symbol="0x44EF718F">Adult</Property>
+        <Property type="Symbol" Symbol="0x8A664E0E">Thug</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_ENFORCER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_ENFORCER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

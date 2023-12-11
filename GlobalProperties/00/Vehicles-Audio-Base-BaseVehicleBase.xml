@@ -1,0 +1,95 @@
+<PropertySet name="Vehicles-Audio-Base-BaseVehicleBase" nameUID="0xA4AE7DE3" schema="Vehicles-Audio-Base-BaseVehicleBase">
+    <Property name="audio_bank" type="WwiseID" Symbol="0x0"/>
+    <Property name="burnout_rlf" type="PropSet">
+        <PropertySet>
+            <Property name="fall_rate" type="Float32">10</Property>
+            <Property name="max" type="Float32">1</Property>
+            <Property name="min" type="Float32">0</Property>
+            <Property name="rise_rate" type="Float32">1</Property>
+        </PropertySet>
+    </Property>
+    <Property name="damage_tire_blow_event" type="WwiseID" Symbol="0xCAD1C4E7"/>
+    <Property name="damage_tire_flap_distance" type="Float32">0.8</Property>
+    <Property name="damage_tire_flap_event" type="WwiseID" Symbol="0x8323EB2A"/>
+    <Property name="engine_accel_event" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_accel_oneshot" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_brake_squeal_init" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_brake_squeal_start" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_brake_squeal_stop" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_curve" type="Symbol" Symbol="0x7EC5DD2E">vehicles-audio-engines-Car_Base</Property>
+    <Property name="engine_decel_event" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_ignition" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_load_rlf" type="PropSet">
+        <PropertySet>
+            <Property name="fall_rate" type="Float32">9</Property>
+            <Property name="max" type="Float32">1</Property>
+            <Property name="min" type="Float32">-1</Property>
+            <Property name="rise_rate" type="Float32">18</Property>
+        </PropertySet>
+    </Property>
+    <Property name="engine_loop" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_max_max_rpm" type="Float32">0</Property>
+    <Property name="engine_max_rpm_offset" type="Float32">0</Property>
+    <Property name="engine_min_max_rpm" type="Float32">0</Property>
+    <Property name="engine_min_rpm_offset" type="Float32">0</Property>
+    <Property name="engine_off" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_post_downshift_sweetener" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_post_upshift_sweetener" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_pre_downshift_sweetener" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_pre_upshift_sweetener" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_reverse_beep_start" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_reverse_beep_stop" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_rpm_rlf" type="PropSet">
+        <PropertySet>
+            <Property name="fall_rate" type="Float32">12000</Property>
+            <Property name="max" type="Float32">12000</Property>
+            <Property name="min" type="Float32">0</Property>
+            <Property name="rise_rate" type="Float32">12000</Property>
+        </PropertySet>
+    </Property>
+    <Property name="engine_shutdown" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_turbo_charge_event" type="WwiseID" Symbol="0x0"/>
+    <Property name="engine_turbo_charge_time" type="Float32">2</Property>
+    <Property name="environment_big_jump_hang_time" type="Float32">0.35</Property>
+    <Property name="environment_big_landing" type="WwiseID" Symbol="0xD8651B28"/>
+    <Property name="environment_fall_speed_threshold" type="Float32">4</Property>
+    <Property name="environment_small_jump_hang_time" type="Float32">0.05</Property>
+    <Property name="environment_small_landing" type="WwiseID" Symbol="0x88B04AA7"/>
+    <Property name="environment_stair_distance" type="Float32">0.8</Property>
+    <Property name="horn_event" type="WwiseID" Symbol="0x0"/>
+    <Property name="horn_is_persistent" type="Boolean">False</Property>
+    <Property name="on_player_enter" type="WwiseID" Symbol="0x0"/>
+    <Property name="on_player_exit" type="WwiseID" Symbol="0x0"/>
+    <Property name="race_banks" type="List"/>
+    <Property name="race_engines" type="List"/>
+    <Property name="radio_enabled" type="Boolean">True</Property>
+    <Property name="radio_station" type="Float32">0</Property>
+    <Property name="siren_event" type="WwiseID" Symbol="0x0"/>
+    <Property name="skid_angle_rlf" type="PropSet">
+        <PropertySet>
+            <Property name="fall_rate" type="Float32">5</Property>
+            <Property name="rise_rate" type="Float32">1</Property>
+        </PropertySet>
+    </Property>
+    <Property name="skid_event_destroy" type="WwiseID" Symbol="0x5DFFE901"/>
+    <Property name="skid_event_force_stop" type="WwiseID" Symbol="0x6C6A16C6"/>
+    <Property name="skid_event_init" type="WwiseID" Symbol="0x43491BEF"/>
+    <Property name="skid_strength_multiplier" type="Float32">5</Property>
+    <Property name="skid_strength_rlf" type="PropSet">
+        <PropertySet>
+            <Property name="fall_rate" type="Float32">5</Property>
+            <Property name="rise_rate" type="Float32">1</Property>
+        </PropertySet>
+    </Property>
+    <Property name="skid_strength_threshold" type="Float32">0.2</Property>
+    <Property name="vehicle_class" type="WwiseID" Symbol="0xFFFB22A"/>
+    <Property name="vehicle_road_noise_init" type="WwiseID" Symbol="0xE56FEA7F"/>
+    <Property name="vehicle_speed_rlf" type="PropSet">
+        <PropertySet>
+            <Property name="fall_rate" type="Float32">160</Property>
+            <Property name="max" type="Float32">200</Property>
+            <Property name="min" type="Float32">-200</Property>
+            <Property name="rise_rate" type="Float32">160</Property>
+        </PropertySet>
+    </Property>
+</PropertySet>

@@ -1,0 +1,36 @@
+<PropertySet name="object-physical-character-SDTWGangMembers-Enforcer" nameUID="0x657D5C10" schema="object-physical-character-SDTWGangMembers-Enforcer">
+    <Parent>object-physical-character-stats-18k_ranged</Parent>
+    <Property name="BlockChance" type="Int32">75</Property>
+    <Property name="Description" type="String">SDTW Enforcer</Property>
+    <Property name="Grapple" type="Int32">100</Property>
+    <Property name="HeavyAttack1" type="Symbol" Symbol="0x37D1AB90">SideKick_Mid</Property>
+    <Property name="HeavyAttack2" type="Symbol" Symbol="0x2E21D121">RoundKickLow</Property>
+    <Property name="HeavyAttack3" type="Symbol" Symbol="0xD8242E05">StunKnee</Property>
+    <Property name="HeavyAttack4" type="Symbol" Symbol="0x85E26CB9">HighCircle</Property>
+    <Property name="HeavyAttack5" type="Symbol" Symbol="0x924240A">FlyingRoundHouse</Property>
+    <Property name="IsEliteFighter" type="Boolean">True</Property>
+    <Property name="LightAttack1" type="Symbol" Symbol="0x8930D00">Combo01_L_Jab_Hi</Property>
+    <Property name="LightAttack2" type="Symbol" Symbol="0xA541AC06">R_Cross_Hi</Property>
+    <Property name="LightAttack3" type="Symbol" Symbol="0x72CCE1F9">Combo03_L_Hook_Hi</Property>
+    <Property name="LightAttack4" type="Symbol" Symbol="0x7EE607C2">Combo04_BackHand</Property>
+    <Property name="LightAttack5" type="Symbol" Symbol="0x8A1B74D1">LightAttack5BackFist</Property>
+    <Property name="NPCImmuneHeadshot" type="Boolean">True</Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_ENFORCER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_HitReaction" type="PropSet"/>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_ENFORCER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

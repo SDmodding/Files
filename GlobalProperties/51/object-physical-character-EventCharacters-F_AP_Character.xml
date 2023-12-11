@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-EventCharacters-F_AP_Character" nameUID="0xF4A21B03" schema="object-physical-character-EventCharacters-F_AP_Character">
+    <Parent>object-physical-character</Parent>
+    <Property name="CanFlee" type="Boolean">False</Property>
+    <Property name="CanSuspend" type="Boolean">False</Property>
+    <Property name="CanWander" type="Boolean">False</Property>
+    <Property name="Description" type="String">Favour: Amanda Photos</Property>
+    <Property name="Grapple" type="Int32">100</Property>
+    <Property name="IgnoreAmbientStimuli" type="Boolean">True</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0xAEBCB9DC">default-component-personality-fearful</Property>
+    </Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

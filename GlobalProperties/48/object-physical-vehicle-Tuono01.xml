@@ -1,118 +1,38 @@
-<Property Hash="0xE5008A86" Name="object-physical-vehicle-Tuono01">
-	<ActFileName>Data\Global\Act\Vehicle.act</ActFileName>
-	<ActionHijackProfile>Vehicles-ActionHijackProfile-Car</ActionHijackProfile>
-	<ChaseCameraParameters>Cameras-ChaseCameraLowin</ChaseCameraParameters>
-	<Component_BaseAnimation>
-		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
-		<RigName>Tuono01</RigName>
-		<WeightSetFileName>Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
-	</Component_BaseAnimation>
-	<Component_CharacterAnimation>
-		<DestroyAttachedCharacters>1</DestroyAttachedCharacters>
-		<RigName>Tuono01</RigName>
-		<WeightSetFileName>Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
-	</Component_CharacterAnimation>
-	<Component_DrawableComponent>
-		<DefaultSaturationOverride>0.000000</DefaultSaturationOverride>
-		<DrawScale>1.000000</DrawScale>
-		<HighlightingColour>1.000, 1.000, 1.000, 1.000</HighlightingColour>
-		<LightSFXMultiplier>0.000000</LightSFXMultiplier>
-		<SkinSSEnabled>0</SkinSSEnabled>
-	</Component_DrawableComponent>
-	<Component_FXSimComponent>
-		<Effect>0xFFFFFFFF</Effect>
-	</Component_FXSimComponent>
-	<Component_Health>
-		<HealthProjectileDamageMultiplier>1.000000</HealthProjectileDamageMultiplier>
-		<InvulnerableCharacter>0</InvulnerableCharacter>
-		<MaxHealth>100</MaxHealth>
-		<MaxUpgradedHealth>400</MaxUpgradedHealth>
-		<RegenerativeHealthRate>-1.000000</RegenerativeHealthRate>
-	</Component_Health>
-	<Component_HitReaction>
-		<HitActFilename>Data\Global\Act\VehicleHitTree.act</HitActFilename>
-		<HitReceiverDamageMultiplierPct>100</HitReceiverDamageMultiplierPct>
-	</Component_HitReaction>
-	<Component_PhysicsMover>
-		<AutoDeterioratingDamageRate>0.010000</AutoDeterioratingDamageRate>
-		<AutoDeterioratingDamageThreshold>0.750000</AutoDeterioratingDamageThreshold>
-		<BoundingBoxMax>2.500, 1.000, 1.600</BoundingBoxMax>
-		<BoundingBoxMin>-2.500, -1.000, 0.000</BoundingBoxMin>
-		<CollisionDamageDealtAtMaxImpulse>0.050000</CollisionDamageDealtAtMaxImpulse>
-		<CollisionDamageDealtAtMaxRamImpulse>0.300000</CollisionDamageDealtAtMaxRamImpulse>
-		<CollisionDamageDealtAtMinImpulse>0.010000</CollisionDamageDealtAtMinImpulse>
-		<CollisionDamageDealtAtMinRamImpulse>0.250000</CollisionDamageDealtAtMinRamImpulse>
-		<CollisionExtraDamageMultiplier>2.000000</CollisionExtraDamageMultiplier>
-		<CollisionForceDamageDealer>0</CollisionForceDamageDealer>
-		<CollisionMaxImpulseForDealingDamage>10.000000</CollisionMaxImpulseForDealingDamage>
-		<CollisionMaxRamImpulseForDealingDamage>12.000000</CollisionMaxRamImpulseForDealingDamage>
-		<CollisionMinImpulseRequiredToDealDamage>5.000000</CollisionMinImpulseRequiredToDealDamage>
-		<CollisionMinImpulseRequiredToTakeDamage>5.000000</CollisionMinImpulseRequiredToTakeDamage>
-		<CollisionMinRamImpulseRequiredToDealDamage>6.000000</CollisionMinRamImpulseRequiredToDealDamage>
-		<DamageMultiplierBullets>1.000000</DamageMultiplierBullets>
-		<DamageMultiplierTires>1.000000</DamageMultiplierTires>
-		<DamageMultiplierVehicleCollisions>1.000000</DamageMultiplierVehicleCollisions>
-		<DamageMultiplierWorldCollisions>1.000000</DamageMultiplierWorldCollisions>
-		<DistanceToHighLod>15.000000</DistanceToHighLod>
-		<DistanceToMedLod>70.000000</DistanceToMedLod>
-		<LockedAtLowLOD>0</LockedAtLowLOD>
-		<LowLodBrakesAcceleration>-60.000000</LowLodBrakesAcceleration>
-		<LowLodCoastAcceleration>-1.000000</LowLodCoastAcceleration>
-		<LowLodMaxLateralAcceleration>1.000000</LowLodMaxLateralAcceleration>
-		<LowLodMaxSpeed>50.000000</LowLodMaxSpeed>
-		<LowLodMinTurningRadius>2.000000</LowLodMinTurningRadius>
-		<LowLodThrottleAcceleration>12.000000</LowLodThrottleAcceleration>
-		<ModelName>Exec01</ModelName>
-		<PhysicsPropertySetAI>Vehicles-GenericCarProperties</PhysicsPropertySetAI>
-		<PhysicsPropertySetHuman>Vehicles-GenericCarProperties</PhysicsPropertySetHuman>
-		<TireBlownImpulse>1.000000</TireBlownImpulse>
-		<TireShotImpulse>0.645000</TireShotImpulse>
-		<TrunkType>eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
-	</Component_PhysicsMover>
-	<Component_SimObjectProperties>
-		<SimObjectType>eSIM_OBJ_TYPE_VEHICLE</SimObjectType>
-		<SubTargetingProfile>0xFFFFFFFF</SubTargetingProfile>
-	</Component_SimObjectProperties>
-	<Component_TSActor>
-		<SkookumClass>Vehicle</SkookumClass>
-	</Component_TSActor>
-	<CreateObjectFlags>1</CreateObjectFlags>
-	<DeniesAllyDriver>0</DeniesAllyDriver>
-	<DeniesAllyPassenger>1</DeniesAllyPassenger>
-	<DeniesGetInDriverSide>0</DeniesGetInDriverSide>
-	<DeniesGetInPassengerSide>0</DeniesGetInPassengerSide>
-	<Description>2Dr- Tuono1</Description>
-	<EnableMaxSpeedStatGame>1</EnableMaxSpeedStatGame>
-	<HasRearEngine>0</HasRearEngine>
-	<HasTireIron>1</HasTireIron>
-	<IsStolenProperty>0</IsStolenProperty>
-	<NetworkCullingDistance>150.000000</NetworkCullingDistance>
-	<NetworkView>NetVehicleView</NetworkView>
-	<ObjectType>Vehicle</ObjectType>
-	<Parkable>1</Parkable>
-	<SeatCount>4</SeatCount>
-	<Set>
-		<component_CarPhysicsMover></component_CarPhysicsMover>
-		<component_DropShadow></component_DropShadow>
-		<component_Interactable></component_Interactable>
-		<component_MissionFailCondition></component_MissionFailCondition>
-		<component_StreamedResource></component_StreamedResource>
-		<component_VehicleAudio></component_VehicleAudio>
-		<component_VehicleEffects></component_VehicleEffects>
-		<component_VehicleProperties></component_VehicleProperties>
-		<component_VehiclesBlip></component_VehiclesBlip>
-		<schema_classlist></schema_classlist>
-	</Set>
-	<SpawnPriority>Critical</SpawnPriority>
-	<TranJobName>None</TranJobName>
-	<UnlockVehicleDoors>0</UnlockVehicleDoors>
-	<VehicleJob>Traffic</VehicleJob>
-	<VehicleLook NumItems="4">
-		<Item>WhiteNewPaint</Item>
-		<Item>RedPaint</Item>
-		<Item>BlackPaint</Item>
-		<Item>SilverPaint</Item>
-	</VehicleLook>
-	<XformParent>0</XformParent>
-	<explosionPropertySet>object-physical-explosion-vehicle</explosionPropertySet>
-</Property>
+<PropertySet name="object-physical-vehicle-Tuono01" nameUID="0xE5008A86" schema="object-physical-vehicle-Tuono01">
+    <Parent>object-physical-vehicle-InteractionPointOverride-TwoDoorNoTrunk</Parent>
+    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0xE2F570AB">Cameras-ChaseCameraLowin</Property>
+    <Property name="Description" type="String">2Dr- Tuono1</Property>
+    <Property name="EnableMaxSpeedStatGame" type="Boolean">True</Property>
+    <Property name="Parkable" type="Boolean">True</Property>
+    <Property name="VehicleExclusionClassList" type="List">
+        <Property type="Symbol" Symbol="0xC2B6331F">NoExoticDriver</Property>
+    </Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">WhiteNewPaint</Property>
+        <Property type="String">RedPaint</Property>
+        <Property type="String">BlackPaint</Property>
+        <Property type="String">SilverPaint</Property>
+    </Property>
+    <Property name="VehiclePriorityClassList" type="List">
+        <Property type="Symbol" Symbol="0xB2C41BC7">ExoticDriver</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_Interactable" type="PropSet"/>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet"/>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="component_VehicleAudio" type="PropSet"/>
+    <Property name="component_VehicleEffects" type="PropSet"/>
+    <Property name="component_VehicleProperties" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

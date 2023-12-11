@@ -1,0 +1,30 @@
+<PropertySet name="object-physical-character-illyana" nameUID="0x36BF724A" schema="object-physical-character-illyana">
+    <Parent>object-physical-character</Parent>
+    <Property name="AIEntityType" type="String">eAI_ENTITY_FREERUNNER</Property>
+    <Property name="Description" type="String">Illyana</Property>
+    <Property name="Grapple" type="Int32">100</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0xBAAA7DED">default-component-personality-Personality_Distribution_Female</Property>
+    </Property>
+    <Property name="TagVoice" type="WwiseID" Symbol="0xC58A3227"/>
+    <Property name="Voice" type="String">Illyana</Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+</PropertySet>

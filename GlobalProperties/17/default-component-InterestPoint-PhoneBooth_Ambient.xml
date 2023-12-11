@@ -1,0 +1,16 @@
+<PropertySet name="default-component-InterestPoint-PhoneBooth_Ambient" nameUID="0x51DDFB0C" schema="default-component-InterestPoint-PhoneBooth_Ambient">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0x84C75526">LOS_PhoneBooth003_Use</Property>
+        <Property type="SymbolUC" Symbol="0x1B96F846">LOS_PhoneBooth00X_Use</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_PhoneBooth_Ambient.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x9548F73B">Mission</Property>
+    <Property name="Description" type="Symbol" Symbol="0x9B010080">Phone Booth - Tiffany</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

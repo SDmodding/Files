@@ -1,0 +1,24 @@
+<PropertySet name="object-physical-vehicle-Enterprise_Reward01" nameUID="0x30005155" schema="object-physical-vehicle-Enterprise_Reward01">
+    <Parent>object-physical-vehicle-Enterprise01</Parent>
+    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0x56777792">Cameras-ChaseCameraCommon</Property>
+    <Property name="Description" type="String">4Dr- Enterprise_Reward01</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">Enterprise_Paint07</Property>
+    </Property>
+    <Property name="VehicleLookGlass" type="List">
+        <Property type="String">GlassBlack02</Property>
+    </Property>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_WIDE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_WIDE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="component_VehicleAudio" type="PropSet"/>
+    <Property name="component_VehicleEffects" type="PropSet"/>
+</PropertySet>

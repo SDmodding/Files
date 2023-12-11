@@ -1,0 +1,35 @@
+<PropertySet name="object-physical-explosion-gdc_explosion" nameUID="0xBC06B4BD" schema="object-physical-explosion-gdc_explosion">
+    <Property name="Description" type="String">GDC Propane Explosion</Property>
+    <Property name="DistanceMagnitudeRatioTable" type="List">
+        <ListProperty>
+            <Property name="Distance" type="Float32">5</Property>
+            <Property name="Ratio" type="Float32">1</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="Distance" type="Float32">8</Property>
+            <Property name="Ratio" type="Float32">0.5</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="Distance" type="Float32">10</Property>
+            <Property name="Ratio" type="Float32">0.001</Property>
+        </ListProperty>
+    </Property>
+    <Property name="ExplosionEffectID" type="String">Explosion_Propane</Property>
+    <Property name="MassMagnitudeTable" type="List">
+        <ListProperty>
+            <Property name="ExplosionMagnitude" type="Float32">25</Property>
+            <Property name="ExplosionMass" type="Float32">10</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="ExplosionMagnitude" type="Float32">40000</Property>
+            <Property name="ExplosionMass" type="Float32">2000</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="ExplosionMagnitude" type="Float32">120000</Property>
+            <Property name="ExplosionMass" type="Float32">6000</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="ExplosionMagnitude" type="Float32">120000</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

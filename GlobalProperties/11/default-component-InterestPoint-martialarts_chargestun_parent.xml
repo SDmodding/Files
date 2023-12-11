@@ -1,11 +1,19 @@
-<Property Hash="0x37BD2684" Name="default-component-InterestPoint-martialarts_chargestun_parent">
-	<BehaviourFile>Data\Global\Act\POI\POI_MartialArts_ChargeStun_Parent.act</BehaviourFile>
-	<Category>Dojo</Category>
-	<Description>Charge Stun Attack (Parent)</Description>
-	<HasBehaviour>1</HasBehaviour>
-	<Set>
-		<component_InterestPoint></component_InterestPoint>
-		<schema_classlist></schema_classlist>
-		<schema_interestpoint_script></schema_interestpoint_script>
-	</Set>
-</Property>
+<PropertySet name="default-component-InterestPoint-martialarts_chargestun_parent" nameUID="0x37BD2684" schema="default-component-InterestPoint-martialarts_chargestun_parent">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0x20BBE2AB">POI_MartialArts_Student_M</Property>
+        <Property type="SymbolUC" Symbol="0x12DD7203">Strikes</Property>
+        <Property type="SymbolUC" Symbol="0x41227EF3">Locomotion</Property>
+        <Property type="SymbolUC" Symbol="0x1383338B">POI_Pray_M</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_MartialArts_ChargeStun_Parent.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0xF3A76FBB">Dojo</Property>
+    <Property name="Description" type="Symbol" Symbol="0x735EE823">Charge Stun Attack (Parent)</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+    <Property name="schema_interestpoint_script" type="PropSet"/>
+</PropertySet>

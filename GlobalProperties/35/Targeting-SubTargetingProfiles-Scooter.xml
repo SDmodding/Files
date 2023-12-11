@@ -1,0 +1,161 @@
+<PropertySet name="Targeting-SubTargetingProfiles-Scooter" nameUID="0xAA0C6D8D" schema="Targeting-SubTargetingProfiles-Scooter">
+    <Property name="DefaultSubTargetingLocations" type="List">
+        <ListProperty>
+            <Parent>Targeting-SubTargetingProfiles-Locations-DriverHead</Parent>
+            <Property name="Condition" type="Symbol" Symbol="0x28A4CF3A">HAS_DRIVER</Property>
+            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0x7C36BA91">Targeting-SubTargetingProfiles-Locations-DriverHead</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>Targeting-SubTargetingProfiles-Locations-ScooterSeat</Parent>
+            <Property name="Condition" type="Symbol" Symbol="0xA7E413B6">ALWAYS</Property>
+            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0xBFA3D571">Targeting-SubTargetingProfiles-Locations-ScooterSeat</Property>
+        </ListProperty>
+    </Property>
+    <Property name="HeadLookAtSubTargetingLocations" type="List">
+        <ListProperty>
+            <Parent>Targeting-SubTargetingProfiles-Locations-DriverHead</Parent>
+            <Property name="Condition" type="Symbol" Symbol="0x28A4CF3A">HAS_DRIVER</Property>
+            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0x7C36BA91">Targeting-SubTargetingProfiles-Locations-DriverHead</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>Targeting-SubTargetingProfiles-Locations-ScooterSeat</Parent>
+            <Property name="Condition" type="Symbol" Symbol="0xA7E413B6">ALWAYS</Property>
+            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0xBFA3D571">Targeting-SubTargetingProfiles-Locations-ScooterSeat</Property>
+        </ListProperty>
+    </Property>
+    <Property name="SoftLockExtraCapsuleRadius" type="Float32">2</Property>
+    <Property name="SubTargetingProfileInfos" type="List">
+        <ListProperty>
+            <Property name="AngularHalfWidth" type="Float32">30</Property>
+            <Property name="AngularInputToSubTargetingLocations" type="List">
+                <ListProperty>
+                    <Property name="MaxAngularInput" type="Float32">90</Property>
+                    <Property name="SubTargetingLocations" type="List">
+                        <ListProperty>
+                            <Parent>Targeting-SubTargetingProfiles-Locations-DriverHead</Parent>
+                            <Property name="Condition" type="Symbol" Symbol="0x28A4CF3A">HAS_DRIVER</Property>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0x7C36BA91">Targeting-SubTargetingProfiles-Locations-DriverHead</Property>
+                        </ListProperty>
+                        <ListProperty>
+                            <Parent>Targeting-SubTargetingProfiles-Locations-ScooterSeat</Parent>
+                            <Property name="Condition" type="Symbol" Symbol="0xA7E413B6">ALWAYS</Property>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0xBFA3D571">Targeting-SubTargetingProfiles-Locations-ScooterSeat</Property>
+                        </ListProperty>
+                    </Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="MaxAngularInput" type="Float32">270</Property>
+                    <Property name="SubTargetingLocations" type="List">
+                        <ListProperty>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0x8DDEAC7A">Targeting-SubTargetingProfiles-Locations-VehicleBackWheel</Property>
+                        </ListProperty>
+                    </Property>
+                </ListProperty>
+            </Property>
+            <Property name="TargetHeadingRelativeToCamera" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="AngularHalfWidth" type="Float32">60</Property>
+            <Property name="AngularInputToSubTargetingLocations" type="List">
+                <ListProperty>
+                    <Property name="MaxAngularInput" type="Float32">90</Property>
+                    <Property name="SubTargetingLocations" type="List">
+                        <ListProperty>
+                            <Parent>Targeting-SubTargetingProfiles-Locations-DriverHead</Parent>
+                            <Property name="Condition" type="Symbol" Symbol="0x28A4CF3A">HAS_DRIVER</Property>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0x7C36BA91">Targeting-SubTargetingProfiles-Locations-DriverHead</Property>
+                        </ListProperty>
+                        <ListProperty>
+                            <Parent>Targeting-SubTargetingProfiles-Locations-ScooterSeat</Parent>
+                            <Property name="Condition" type="Symbol" Symbol="0xA7E413B6">ALWAYS</Property>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0xBFA3D571">Targeting-SubTargetingProfiles-Locations-ScooterSeat</Property>
+                        </ListProperty>
+                    </Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="MaxAngularInput" type="Float32">180</Property>
+                    <Property name="SubTargetingLocations" type="List">
+                        <ListProperty>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0xA8241469">Targeting-SubTargetingProfiles-Locations-VehicleFrontWheel</Property>
+                        </ListProperty>
+                    </Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="MaxAngularInput" type="Float32">270</Property>
+                    <Property name="SubTargetingLocations" type="List">
+                        <ListProperty>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0x8DDEAC7A">Targeting-SubTargetingProfiles-Locations-VehicleBackWheel</Property>
+                        </ListProperty>
+                    </Property>
+                </ListProperty>
+            </Property>
+            <Property name="TargetHeadingRelativeToCamera" type="Float32">90</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="AngularHalfWidth" type="Float32">30</Property>
+            <Property name="AngularInputToSubTargetingLocations" type="List">
+                <ListProperty>
+                    <Property name="MaxAngularInput" type="Float32">90</Property>
+                    <Property name="SubTargetingLocations" type="List">
+                        <ListProperty>
+                            <Parent>Targeting-SubTargetingProfiles-Locations-DriverHead</Parent>
+                            <Property name="Condition" type="Symbol" Symbol="0x28A4CF3A">HAS_DRIVER</Property>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0x7C36BA91">Targeting-SubTargetingProfiles-Locations-DriverHead</Property>
+                        </ListProperty>
+                        <ListProperty>
+                            <Parent>Targeting-SubTargetingProfiles-Locations-ScooterSeat</Parent>
+                            <Property name="Condition" type="Symbol" Symbol="0xA7E413B6">ALWAYS</Property>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0xBFA3D571">Targeting-SubTargetingProfiles-Locations-ScooterSeat</Property>
+                        </ListProperty>
+                    </Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="MaxAngularInput" type="Float32">270</Property>
+                    <Property name="SubTargetingLocations" type="List">
+                        <ListProperty>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0xA8241469">Targeting-SubTargetingProfiles-Locations-VehicleFrontWheel</Property>
+                        </ListProperty>
+                    </Property>
+                </ListProperty>
+            </Property>
+            <Property name="TargetHeadingRelativeToCamera" type="Float32">180</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="AngularHalfWidth" type="Float32">60</Property>
+            <Property name="AngularInputToSubTargetingLocations" type="List">
+                <ListProperty>
+                    <Property name="MaxAngularInput" type="Float32">90</Property>
+                    <Property name="SubTargetingLocations" type="List">
+                        <ListProperty>
+                            <Parent>Targeting-SubTargetingProfiles-Locations-DriverHead</Parent>
+                            <Property name="Condition" type="Symbol" Symbol="0x28A4CF3A">HAS_DRIVER</Property>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0x7C36BA91">Targeting-SubTargetingProfiles-Locations-DriverHead</Property>
+                        </ListProperty>
+                        <ListProperty>
+                            <Parent>Targeting-SubTargetingProfiles-Locations-ScooterSeat</Parent>
+                            <Property name="Condition" type="Symbol" Symbol="0xA7E413B6">ALWAYS</Property>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0xBFA3D571">Targeting-SubTargetingProfiles-Locations-ScooterSeat</Property>
+                        </ListProperty>
+                    </Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="MaxAngularInput" type="Float32">180</Property>
+                    <Property name="SubTargetingLocations" type="List">
+                        <ListProperty>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0x8DDEAC7A">Targeting-SubTargetingProfiles-Locations-VehicleBackWheel</Property>
+                        </ListProperty>
+                    </Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="MaxAngularInput" type="Float32">270</Property>
+                    <Property name="SubTargetingLocations" type="List">
+                        <ListProperty>
+                            <Property name="SubTargetingLocationName" type="Symbol" Symbol="0xA8241469">Targeting-SubTargetingProfiles-Locations-VehicleFrontWheel</Property>
+                        </ListProperty>
+                    </Property>
+                </ListProperty>
+            </Property>
+            <Property name="TargetHeadingRelativeToCamera" type="Float32">270</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

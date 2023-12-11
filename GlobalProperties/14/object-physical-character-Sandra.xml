@@ -1,0 +1,27 @@
+<PropertySet name="object-physical-character-Sandra" nameUID="0x4643CAC5" schema="object-physical-character-Sandra">
+    <Parent>object-physical-character-CommonPedestrian</Parent>
+    <Property name="Description" type="String">Sandra</Property>
+    <Property name="Grapple" type="Int32">100</Property>
+    <Property name="TagVoice" type="WwiseID" Symbol="0xC58A3227"/>
+    <Property name="Voice" type="String">Sandra</Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

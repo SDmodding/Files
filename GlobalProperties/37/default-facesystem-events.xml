@@ -1,0 +1,618 @@
+<PropertySet name="default-facesystem-events" nameUID="0xAFD6D5D1" schema="default-facesystem-events">
+    <Property name="ActivatedMeterCooldownDrainRatePerSecond" type="Float32">10</Property>
+    <Property name="Events" type="List">
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">35</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x2E0E39D">FaceLost</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-35</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">25</Property>
+            <Property name="MultiplierReduction" type="Float32">0.35</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+            <Property name="TriadPoints" type="Float32">25</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_Vault</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x2E0E39D">FaceLost</Property>
+            <Property name="CopPoints" type="Float32">-5</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">0</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VaultFail</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">25</Property>
+            <Property name="MultiplierReduction" type="Float32">0.35</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x2E0E39D">FaceLost</Property>
+            <Property name="CopPoints" type="Float32">-5</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">0</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_ClimbFail</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">25</Property>
+            <Property name="MultiplierReduction" type="Float32">0.35</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x2E0E39D">FaceLost</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-15</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-10</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-35</Property>
+            <Property name="MultiplierReduction" type="Float32">1</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-20</Property>
+            <Property name="MultiplierReduction" type="Float32">1</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-75</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-30</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-100</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">0</Property>
+            <Property name="MultiplierReduction" type="Float32">0.35</Property>
+            <Property name="MultiplierResetTimer" type="Float32">5</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">-15</Property>
+            <Property name="MultiplierReduction" type="Float32">0.35</Property>
+            <Property name="MultiplierResetTimer" type="Float32">8</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">5</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+            <Property name="MultiplierSlowMode" type="Float32">1</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">15</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+            <Property name="MultiplierSlowMode" type="Float32">1</Property>
+            <Property name="TriadPoints" type="Float32">25</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_Explosive</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">10</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+            <Property name="MultiplierSlowMode" type="Float32">1</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">0</Property>
+            <Property name="MultiplierReduction" type="Float32">0.5</Property>
+            <Property name="MultiplierResetTimer" type="Float32">15</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x2E0E39D">FaceLost</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-100</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="FaceAdjustment" type="Float32">-100</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="FaceAdjustment" type="Float32">-200</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="FaceAdjustment" type="Float32">-300</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="FaceAdjustment" type="Float32">-400</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="FaceAdjustment" type="Float32">-500</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">5</Property>
+            <Property name="MultiplierReduction" type="Float32">1</Property>
+            <Property name="MultiplierResetTimer" type="Float32">15</Property>
+            <Property name="TriadPoints" type="Float32">8</Property>
+            <Property name="XPFlasherCaption" type="String">$PAUSE_TRIAD_LEVEL_HEADER_4</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">15</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+            <Property name="TriadPoints" type="Float32">25</Property>
+            <Property name="XPFlasherCaption" type="String">$PAUSE_TRIAD_LEVEL_HEADER_5</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">10</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+            <Property name="TriadPoints" type="Float32">25</Property>
+            <Property name="XPFlasherCaption" type="String">$PAUSE_TRIAD_LEVEL_HEADER_8</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">10</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+            <Property name="TriadPoints" type="Float32">20</Property>
+            <Property name="XPFlasherCaption" type="String">$PAUSE_MELEE_LEVEL_HEADER_2</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">10</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+            <Property name="TriadPoints" type="Float32">25</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_HeavyAttack</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">15</Property>
+            <Property name="MultiplierReduction" type="Float32">0.666666</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+            <Property name="TriadPoints" type="Float32">30</Property>
+            <Property name="XPFlasherCaption" type="String">$PAUSE_MELEE_LEVEL_HEADER_12</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">4</Property>
+            <Property name="MultiplierReduction" type="Float32">0.3</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+            <Property name="TriadPoints" type="Float32">3</Property>
+            <Property name="XPFlasherCaption" type="String"/>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">5</Property>
+            <Property name="MultiplierReduction" type="Float32">0.3</Property>
+            <Property name="MultiplierResetTimer" type="Float32">6</Property>
+            <Property name="TriadPoints" type="Float32">3</Property>
+            <Property name="XPFlasherCaption" type="String"/>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">15</Property>
+            <Property name="MultiplierReduction" type="Float32">0.2</Property>
+            <Property name="MultiplierResetTimer" type="Float32">8</Property>
+            <Property name="TriadPoints" type="Float32">15</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_HeavyAttack</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">30</Property>
+            <Property name="MultiplierReduction" type="Float32">0.75</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="MultiplierReduction" type="Float32">0.15</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+            <Property name="TriadPoints" type="Float32">5</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_Block</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">0</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">1</Property>
+            <Property name="TriadPoints" type="Float32">0</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_Grapple</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">8</Property>
+            <Property name="MultiplierReduction" type="Float32">0.05</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+            <Property name="TriadPoints" type="Float32">10</Property>
+            <Property name="XPFlasherCaption" type="String"/>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">20</Property>
+            <Property name="MultiplierReduction" type="Float32">0.35</Property>
+            <Property name="MultiplierResetTimer" type="Float32">12</Property>
+            <Property name="TriadPoints" type="Float32">20</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_WepHeavy</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">20</Property>
+            <Property name="MultiplierReduction" type="Float32">0.5</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+            <Property name="TriadPoints" type="Float32">25</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_WepHeavy</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">20</Property>
+            <Property name="MultiplierReduction" type="Float32">0.75</Property>
+            <Property name="MultiplierResetTimer" type="Float32">20</Property>
+            <Property name="TriadPoints" type="Float32">25</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_StunFinish</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">20</Property>
+            <Property name="MultiplierReduction" type="Float32">0.5</Property>
+            <Property name="MultiplierResetTimer" type="Float32">15</Property>
+            <Property name="TriadPoints" type="Float32">20</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_StunElbow</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">14</Property>
+            <Property name="MultiplierReduction" type="Float32">0.8</Property>
+            <Property name="MultiplierResetTimer" type="Float32">6</Property>
+            <Property name="TriadPoints" type="Float32">14</Property>
+            <Property name="XPFlasherCaption" type="String">$PAUSE_MELEE_LEVEL_HEADER_3</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">10</Property>
+            <Property name="MultiplierReduction" type="Float32">0.35</Property>
+            <Property name="MultiplierResetTimer" type="Float32">20</Property>
+            <Property name="TriadPoints" type="Float32">15</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VaultShoot</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">False</Property>
+            <Property name="FaceAdjustment" type="Float32">50</Property>
+            <Property name="MultiplierReduction" type="Float32">0.35</Property>
+            <Property name="MultiplierResetTimer" type="Float32">20</Property>
+            <Property name="TriadPoints" type="Float32">50</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_BikeBackSlide</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">30</Property>
+            <Property name="MultiplierReduction" type="Float32">0.5</Property>
+            <Property name="MultiplierResetTimer" type="Float32">20</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x2E0E39D">FaceLost</Property>
+            <Property name="FaceAdjustment" type="Float32">-20</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">40</Property>
+            <Property name="MultiplierReduction" type="Float32">0.65</Property>
+            <Property name="MultiplierResetTimer" type="Float32">20</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">15</Property>
+            <Property name="MultiplierReduction" type="Float32">0.5</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+            <Property name="TriadPoints" type="Float32">15</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_GrappleThrow</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">10</Property>
+            <Property name="MultiplierReduction" type="Float32">0.75</Property>
+            <Property name="MultiplierResetTimer" type="Float32">12</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">10</Property>
+            <Property name="MultiplierReduction" type="Float32">0.8</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+            <Property name="TriadPoints" type="Float32">10</Property>
+            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_KnockDown</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="FaceAdjustment" type="Float32">30</Property>
+            <Property name="MultiplierReduction" type="Float32">0.25</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="FaceAdjustment" type="Float32">-35</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">20</Property>
+            <Property name="MultiplierReduction" type="Float32">0.333</Property>
+            <Property name="MultiplierResetTimer" type="Float32">30</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">5</Property>
+            <Property name="MultiplierReduction" type="Float32">0.333</Property>
+            <Property name="MultiplierResetTimer" type="Float32">15</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">5</Property>
+            <Property name="MultiplierReduction" type="Float32">0.333</Property>
+            <Property name="MultiplierResetTimer" type="Float32">15</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">4</Property>
+            <Property name="MultiplierReduction" type="Float32">0.1</Property>
+            <Property name="MultiplierResetTimer" type="Float32">10</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-45</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">15</Property>
+            <Property name="MultiplierReduction" type="Float32">0.35</Property>
+            <Property name="MultiplierResetTimer" type="Float32">15</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x7DC82D12">FaceUsed</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-10</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">50</Property>
+            <Property name="MultiplierReduction" type="Float32">0.5</Property>
+            <Property name="MultiplierResetTimer" type="Float32">25</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x2E0E39D">FaceLost</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">-25</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x6A9AEDC3">FaceGained</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">10</Property>
+            <Property name="MultiplierReduction" type="Float32">0.3</Property>
+            <Property name="MultiplierResetTimer" type="Float32">2</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="AdjumentType" type="Symbol" Symbol="0x2E0E39D">FaceLost</Property>
+            <Property name="Disabled" type="Boolean">True</Property>
+            <Property name="FaceAdjustment" type="Float32">0</Property>
+            <Property name="MultiplierReduction" type="Float32">0</Property>
+            <Property name="MultiplierResetTimer" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-facesystem-defaults</Parent>
+            <Property name="Disabled" type="Boolean">True</Property>
+        </ListProperty>
+    </Property>
+    <Property name="MeterCooldownDrainRatePerSecond" type="Float32">5</Property>
+    <Property name="MeterCooldownStartsAfter" type="Float32">100</Property>
+</PropertySet>

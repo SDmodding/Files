@@ -1,0 +1,39 @@
+<PropertySet name="object-physical-character-dlc_ghost-DLC_EliteGhoul_Illusion" nameUID="0x14C327FB" schema="object-physical-character-dlc_ghost-DLC_EliteGhoul_Illusion">
+    <Parent>object-physical-character-dlc_ghost-DLC_EliteGhoulQuad</Parent>
+    <Property name="DLCCharacter" type="Symbol" Symbol="0xE90CEAD">Illusion</Property>
+    <Property name="OnSpawnAnimNodeName" type="String">Global\Player\Attacks\ABILITIES\IllusionCast\spawnTrack</Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterEffects" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CompositeDrawable" type="PropSet"/>
+    <Property name="component_DropShadow" type="PropSet"/>
+    <Property name="component_FXSimComponent" type="PropSet"/>
+    <Property name="component_FacialActionTree" type="PropSet"/>
+    <Property name="component_FormationManager" type="PropSet"/>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_HitReaction" type="PropSet"/>
+    <Property name="component_Interactable" type="PropSet"/>
+    <Property name="component_MissionFailCondition" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="component_TSActor" type="PropSet"/>
+    <Property name="component_WorldContext" type="PropSet"/>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

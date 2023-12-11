@@ -1,0 +1,50 @@
+<PropertySet name="object-physical-character-dlc_ghost-UnDogeyes" nameUID="0x6A866FB1" schema="object-physical-character-dlc_ghost-UnDogeyes">
+    <Parent>object-physical-character-animbanks-ThugElite</Parent>
+    <Property name="AIEntityType" type="String">eAI_ENTITY_FREERUNNER</Property>
+    <Property name="BlockChance" type="Int32">80</Property>
+    <Property name="CanBeCombatIntimidated" type="Boolean">False</Property>
+    <Property name="CanBePushed" type="Boolean">False</Property>
+    <Property name="CanCrowdPush" type="Boolean">True</Property>
+    <Property name="CounterAttack" type="Int32">85</Property>
+    <Property name="DefaultMeleeWeapon" type="Symbol" Symbol="0xC13E1AC0">cleaver</Property>
+    <Property name="Description" type="String">Dog Eyes</Property>
+    <Property name="DisarmAbility" type="Int32">100</Property>
+    <Property name="FXGlowingEyes" type="Boolean">True</Property>
+    <Property name="Grapple" type="Int32">100</Property>
+    <Property name="HealthToBeIntimidated" type="Float32">0</Property>
+    <Property name="ImportantVFXCharacter" type="Boolean">True</Property>
+    <Property name="InterruptChance" type="Int32">80</Property>
+    <Property name="IntimidatedFleeChance" type="Int32">0</Property>
+    <Property name="IsEliteFighter" type="Boolean">True</Property>
+    <Property name="IsPossessed" type="Boolean">True</Property>
+    <Property name="PropList" type="List">
+        <Property type="Symbol" Symbol="0x16CFCCEE">object-physical-prop-Attachable-DogEyesHat001</Property>
+    </Property>
+    <Property name="StunResistance" type="Int32">100</Property>
+    <Property name="TagVoice" type="WwiseID" Symbol="0xBD76AECB"/>
+    <Property name="Voice" type="String">Dogeyes</Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_HitReaction" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="costForGroupIntimidate" type="Int32">1000</Property>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

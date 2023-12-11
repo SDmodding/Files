@@ -1,0 +1,18 @@
+<PropertySet name="object-physical-vehicle-Enterprise_Ricky01" nameUID="0x8A20B8D" schema="object-physical-vehicle-Enterprise_Ricky01">
+    <Parent>object-physical-vehicle-Enterprise01</Parent>
+    <Property name="Description" type="String">4Dr- Enterprise_Ricky</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">Enterprise_Paint01</Property>
+    </Property>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_WIDE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_WIDE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+</PropertySet>

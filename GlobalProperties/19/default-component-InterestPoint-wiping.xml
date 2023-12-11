@@ -1,0 +1,16 @@
+<PropertySet name="default-component-InterestPoint-wiping" nameUID="0x5DB14EF4" schema="default-component-InterestPoint-wiping">
+    <Property name="AnimBankFileNames" type="List">
+        <Property type="SymbolUC" Symbol="0x90464303">POI_Wiping</Property>
+    </Property>
+    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_Wiping.act</Property>
+    <Property name="Category" type="Symbol" Symbol="0x1F635045">Service</Property>
+    <Property name="Description" type="Symbol" Symbol="0xA4981AF8">Wiping counter</Property>
+    <Property name="HasBehaviour" type="Boolean">True</Property>
+    <Property name="component_InterestPoint" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InterestPoint</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+    <Property name="schema_interestpoint_script" type="PropSet"/>
+</PropertySet>

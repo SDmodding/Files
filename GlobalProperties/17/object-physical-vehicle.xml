@@ -1,0 +1,99 @@
+<PropertySet name="object-physical-vehicle" nameUID="0x51524B6E" schema="object-physical-vehicle">
+    <Parent>default-SimObject</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\Vehicle.act</Property>
+    <Property name="Description" type="String">Vehicle</Property>
+    <Property name="IsStolenProperty" type="Boolean">False</Property>
+    <Property name="NetworkCullingDistance" type="Float32">150</Property>
+    <Property name="NetworkView" type="String">NetVehicleView</Property>
+    <Property name="ObjectType" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
+    <Property name="SeatCount" type="UInt32">4</Property>
+    <Property name="SpawnPriority" type="Symbol" Symbol="0xB82F7335">Critical</Property>
+    <Property name="TranJobName" type="Symbol" Symbol="0xDCF92817">None</Property>
+    <Property name="UnlockVehicleDoors" type="Boolean">False</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CompositeDrawable" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CompositeDrawable</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_DropShadow" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-DropShadow</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_FXSimComponent" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-FXSimComponent</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Health</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_HitReaction" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-HitReaction</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Interactable" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Interactable</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_MissionFailCondition" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-MissionFailCondition</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-VehicleProperties</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-StreamedResource</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_TSActor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-TSActor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_VehicleAudio" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-VehicleAudio</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_VehicleEffects" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-VehicleEffects</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_VehicleProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-VehicleProperties</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_VehiclesBlip" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-VehiclesBlip</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="explosionPropertySet" type="Symbol" Symbol="0xE24A4351">object-physical-explosion-vehicle</Property>
+    <Property name="schema_classlist" type="PropSet">
+        <PropertySet>
+            <Parent>default-schema-classlist</Parent>
+        </PropertySet>
+    </Property>
+</PropertySet>

@@ -1,0 +1,66 @@
+<PropertySet name="object-physical-character-MissionCharacters-M_BSL_01" nameUID="0xAA22DBE0" schema="object-physical-character-MissionCharacters-M_BSL_01">
+    <Parent>object-physical-character-animbanks-ThugQuickStrikerElite</Parent>
+    <Property name="AIEntityType" type="String">eAI_ENTITY_FREERUNNER</Property>
+    <Property name="BlockChance" type="Int32">50</Property>
+    <Property name="CanBePushed" type="Boolean">False</Property>
+    <Property name="CanCrowdPush" type="Boolean">True</Property>
+    <Property name="CanUseCover" type="Boolean">True</Property>
+    <Property name="CounterAttack" type="Int32">85</Property>
+    <Property name="DefaultMeleeWeapon" type="Symbol" Symbol="0xA7CE0D21">knife</Property>
+    <Property name="DefaultRangedWeapon" type="Symbol" Symbol="0x419F1C08">pistol_50cal_gold</Property>
+    <Property name="Description" type="String">Mission: Big Smile Lee - Ponytail</Property>
+    <Property name="DisarmAbility" type="Int32">100</Property>
+    <Property name="Grapple" type="Int32">0</Property>
+    <Property name="HealthToBeIntimidated" type="Float32">0</Property>
+    <Property name="IntimidatedFleeChance" type="Int32">0</Property>
+    <Property name="IsEliteFighter" type="Boolean">False</Property>
+    <Property name="MaxNumShotsPerVolleyAutomatic" type="Int32">11</Property>
+    <Property name="MaxNumShotsPerVolleyPistol" type="Int32">5</Property>
+    <Property name="MaxTimeAfterStandBeforeBeginVolleyCombatShotgun" type="Float32">0.3</Property>
+    <Property name="MaxTimeAfterStandBeforeBeginVolleyPistol" type="Float32">0.1</Property>
+    <Property name="MaxTimeAfterVolleyToKeepStandingAutomatic" type="Float32">0.3</Property>
+    <Property name="MaxTimeAfterVolleyToKeepStandingPistol" type="Float32">0.1</Property>
+    <Property name="MaxTimeBetweenShotsPistol" type="Float32">0.35</Property>
+    <Property name="MaxTimeBetweenVolleysAutomatic" type="Float32">0.8</Property>
+    <Property name="MaxTimeToHoldTriggerAutomatic" type="Float32">0.6</Property>
+    <Property name="MinNumShotsPerVolleyAutomatic" type="Int32">6</Property>
+    <Property name="MinNumShotsPerVolleyPistol" type="Int32">3</Property>
+    <Property name="MinTimeAfterStandBeforeBeginVolleyCombatShotgun" type="Float32">0.15</Property>
+    <Property name="MinTimeAfterStandBeforeBeginVolleyPistol" type="Float32">0.05</Property>
+    <Property name="MinTimeAfterVolleyToKeepStandingAutomatic" type="Float32">0.1</Property>
+    <Property name="MinTimeAfterVolleyToKeepStandingPistol" type="Float32">0.05</Property>
+    <Property name="MinTimeBetweenShotsAutomatic" type="Float32">0.067</Property>
+    <Property name="MinTimeBetweenShotsPistol" type="Float32">0.25</Property>
+    <Property name="MinTimeBetweenVolleysAutomatic" type="Float32">0.2</Property>
+    <Property name="MinTimeToHoldTriggerAutomatic" type="Float32">0.2</Property>
+    <Property name="NPCImmuneHeadshot" type="Boolean">True</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x64A7F39B">default-component-personality-territorial</Property>
+    </Property>
+    <Property name="RangedCombatStrategy" type="Symbol" Symbol="0xFD34A5C4">Defensive</Property>
+    <Property name="StunResistance" type="Int32">100</Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_HitReaction" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

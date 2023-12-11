@@ -1,0 +1,32 @@
+<PropertySet name="default-rewards-progression-M_HGF_CM" nameUID="0xBDCB8267" schema="default-rewards-progression-M_HGF_CM">
+    <Parent>default-rewards-progression-dlc_hgf_defaults</Parent>
+    <Property name="CompletionText" type="String">$SGTITLE_CHINESE_MAGIC</Property>
+    <Property name="MinimumStanding" type="Int32">10000</Property>
+    <Property name="UnlockItems" type="List">
+        <ListProperty>
+            <Property name="0x2DFB6FC5" type="Int32">32</Property>
+            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_32</Property>
+            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="0x308E0AE5" type="String">safe_house_icon</Property>
+            <Property name="0x4E4D2ED3" type="String">SFNP-NP</Property>
+            <Property name="0xDE3E6A23" type="String">$MISSION_NIGHTMARKETCHASE_REWARD_02A</Property>
+            <Property name="Type" type="Symbol" Symbol="0x1B43F7CE">Safehouse</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="0xDE3E6A23" type="String">$HGF_REWARD_EVENTS</Property>
+            <Property name="Type" type="Symbol" Symbol="0x5F96DC30"/>
+        </ListProperty>
+        <ListProperty>
+            <Property name="0xDE3E6A23" type="String">$HGF_REWARD_HELL_SHRINES</Property>
+            <Property name="Type" type="Symbol" Symbol="0x5F96DC30"/>
+        </ListProperty>
+        <ListProperty>
+            <Property name="0x308E0AE5" type="String"/>
+            <Property name="0x4E4D2ED3" type="String">LOI_NP_SHDoor001_101</Property>
+            <Property name="0xDE3E6A23" type="String"/>
+            <Property name="Type" type="Symbol" Symbol="0x1946D26D">Door</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

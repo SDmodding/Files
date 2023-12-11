@@ -1,0 +1,46 @@
+<PropertySet name="object-physical-explosion-cemetery_mudslide" nameUID="0x4001B745" schema="object-physical-explosion-cemetery_mudslide">
+    <Property name="CameraShakeAmplitude" type="Float32">3</Property>
+    <Property name="CameraShakeMaxDistance" type="Float32">20</Property>
+    <Property name="Description" type="String">Mud Sliding</Property>
+    <Property name="DistanceMagnitudeRatioTable" type="List">
+        <ListProperty>
+            <Property name="Distance" type="Float32">0</Property>
+            <Property name="Ratio" type="Float32">1</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="Distance" type="Float32">4</Property>
+            <Property name="Ratio" type="Float32">1</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="Distance" type="Float32">4.01</Property>
+            <Property name="Ratio" type="Float32">0</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="Distance" type="Float32">5</Property>
+            <Property name="Ratio" type="Float32">0</Property>
+        </ListProperty>
+    </Property>
+    <Property name="ExplosionEffectID" type="String"/>
+    <Property name="ExplosionNoDamage" type="Boolean">False</Property>
+    <Property name="MassMagnitudeTable" type="List">
+        <ListProperty>
+            <Property name="ExplosionMagnitude" type="Float32">20</Property>
+            <Property name="ExplosionMass" type="Float32">6</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="ExplosionMagnitude" type="Float32">1000</Property>
+            <Property name="ExplosionMass" type="Float32">100</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="ExplosionMagnitude" type="Float32">4000</Property>
+            <Property name="ExplosionMass" type="Float32">800</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="ExplosionMagnitude" type="Float32">0</Property>
+            <Property name="ExplosionMass" type="Float32">1999</Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="ExplosionMagnitude" type="Float32">4000</Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

@@ -1,0 +1,17 @@
+<PropertySet name="object-physical-vehicle-CommonBoatSampan" nameUID="0x3955400C" schema="object-physical-vehicle-CommonBoatSampan">
+    <Parent>object-physical-vehicle-CommonBoat</Parent>
+    <Property name="Description" type="String">Boat-Common Boat Sampan</Property>
+    <Property name="SeatCount" type="UInt32">1</Property>
+    <Property name="component_BoatPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet"/>
+    <Property name="component_VehicleProperties" type="PropSet"/>
+</PropertySet>

@@ -1,0 +1,23 @@
+<PropertySet name="object-physical-vehicle-Leo01" nameUID="0xF986805D" schema="object-physical-vehicle-Leo01">
+    <Parent>object-physical-vehicle-CommonBoatZodiac</Parent>
+    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0x87D4112F">Cameras-ChaseCameraBoatMedium</Property>
+    <Property name="Description" type="String">Boat- Leo</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">WhitePaint</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_BoatPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="component_VehicleAudio" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

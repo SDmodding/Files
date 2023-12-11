@@ -1,0 +1,59 @@
+<PropertySet name="object-physical-character-elderly_base" nameUID="0xCCC6D6B2" schema="object-physical-character-elderly_base">
+    <Property name="AllowedToUseCrosswalks" type="Boolean">False</Property>
+    <Property name="CanDoCellIdle" type="Boolean">False</Property>
+    <Property name="CanJoinGroup" type="Boolean">False</Property>
+    <Property name="DriverTypeList" type="List">
+        <Property type="Symbol" Symbol="0xE7F04840">AverageDriver</Property>
+        <Property type="Symbol" Symbol="0xF56A4081">NoArmouredDriver</Property>
+        <Property type="Symbol" Symbol="0xDBE6EFF7">NoBike</Property>
+        <Property type="Symbol" Symbol="0xC2B6331F">NoExoticDriver</Property>
+        <Property type="Symbol" Symbol="0x98FAF68F">NoLimoDriver</Property>
+        <Property type="Symbol" Symbol="0xF6685C32">NoLuxuryDriver</Property>
+        <Property type="Symbol" Symbol="0x27CCA72">NoPoliceDriver</Property>
+        <Property type="Symbol" Symbol="0x70552FFB">NoScooterDriver</Property>
+        <Property type="Symbol" Symbol="0xF58DDF48">NoSportsDriver</Property>
+        <Property type="Symbol" Symbol="0x153613D9">NoTaxiDriver</Property>
+        <Property type="Symbol" Symbol="0x1B9133DC">NoTransitDriver</Property>
+        <Property type="Symbol" Symbol="0x10E9C9C4">NoTruckDriver</Property>
+        <Property type="Symbol" Symbol="0x6C6A9C47">NoVanDriver</Property>
+        <Property type="Symbol" Symbol="0xC9160EC8">NoWorkBoatDriver</Property>
+    </Property>
+    <Property name="VoiceTagList" type="List">
+        <Property type="Symbol" Symbol="0xEFA85545">Elderly</Property>
+        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Health</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-StreamedResource</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+    <Property name="walkCycle" type="Symbol" Symbol="0xEFA85545">Elderly</Property>
+</PropertySet>

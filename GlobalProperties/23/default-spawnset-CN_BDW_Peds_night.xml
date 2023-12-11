@@ -1,6 +1,14 @@
-<Property Hash="0x6F212EA6" Name="default-spawnset-CN_BDW_Peds_night">
-	<SpawnSet NumItems="2">
-		<Item Reference="0xB8B4C45E"></Item>
-		<Item Reference="0x1E3FF464"></Item>
-	</SpawnSet>
-</Property>
+<PropertySet name="default-spawnset-CN_BDW_Peds_night" nameUID="0x6F212EA6" schema="default-spawnset-CN_BDW_Peds_night">
+    <Property name="RareSpawnList" type="List">
+        <ListProperty>
+            <Property name="MaxInstances" type="Int32">1</Property>
+            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+            <Property name="MinTimeBetweenSpawns" type="Float32">10</Property>
+            <Property name="PropertySet" type="Symbol" Symbol="0x99290F7D">object-physical-character-vagrant_junkie</Property>
+        </ListProperty>
+    </Property>
+    <Property name="SpawnSet" type="List">
+        <Property type="Symbol" Symbol="0xB8B4C45E">object-physical-character-AmbientCharacters-CN_Bdwk_Male_Night</Property>
+        <Property type="Symbol" Symbol="0x1E3FF464">object-physical-character-AmbientCharacters-beggar</Property>
+    </Property>
+</PropertySet>

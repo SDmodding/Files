@@ -1,0 +1,33 @@
+<PropertySet name="object-physical-vehicle-Cheer01" nameUID="0xAC05B14E" schema="object-physical-vehicle-Cheer01">
+    <Parent>object-physical-vehicle-CommonCar</Parent>
+    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0x56777792">Cameras-ChaseCameraCommon</Property>
+    <Property name="Description" type="String">4Dr- Cheer</Property>
+    <Property name="Parkable" type="Boolean">True</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">RedPaint</Property>
+        <Property type="String">GoldPaint</Property>
+        <Property type="String">DarkBluePaint</Property>
+        <Property type="String">GreyPaint</Property>
+        <Property type="String">SilverPaint</Property>
+        <Property type="String">GreenLightPaint</Property>
+        <Property type="String">BlueBrightPaint</Property>
+        <Property type="String">BurgandyPaint</Property>
+        <Property type="String">OrangeDarkPaint</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_VAN_WIDER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_VAN_WIDER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet"/>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="component_VehicleAudio" type="PropSet"/>
+    <Property name="component_VehicleProperties" type="PropSet"/>
+</PropertySet>

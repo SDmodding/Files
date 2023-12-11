@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-informant" nameUID="0x51030C77" schema="object-physical-character-informant">
+    <Parent>object-physical-character-animbanks-ThugQuickStriker</Parent>
+    <Property name="BlockChance" type="Int32">30</Property>
+    <Property name="CounterAttack" type="Int32">20</Property>
+    <Property name="Description" type="String">Thug Informant</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
+    <Property name="Grapple" type="Int32">30</Property>
+    <Property name="Hidden" type="Boolean">False</Property>
+    <Property name="PipsRequired" type="UInt32">2</Property>
+    <Property name="RemoveOnCompletion" type="Boolean">True</Property>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

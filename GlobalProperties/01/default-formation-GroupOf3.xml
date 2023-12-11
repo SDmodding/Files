@@ -1,0 +1,24 @@
+<PropertySet name="default-formation-GroupOf3" nameUID="0x33833AA" schema="default-formation-GroupOf3">
+    <Parent>default-formation-default</Parent>
+    <Property name="MaxFollowers" type="UInt32">2</Property>
+    <Property name="SlotList" type="List">
+        <ListProperty>
+            <Parent>default-formation-slot-besideOnLeft</Parent>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-formation-slot-besideOnRight</Parent>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-formation-slot-closeBehind</Parent>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-formation-slot-behind</Parent>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-formation-slot-behindOnLeft</Parent>
+        </ListProperty>
+        <ListProperty>
+            <Parent>default-formation-slot-behindOnRight</Parent>
+        </ListProperty>
+    </Property>
+</PropertySet>

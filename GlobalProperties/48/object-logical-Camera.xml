@@ -1,0 +1,26 @@
+<PropertySet name="object-logical-Camera" nameUID="0xE6EBC7E3" schema="object-logical-Camera">
+    <Parent>default-SimObject</Parent>
+    <Property name="AIEntityType" type="SymbolUC" Symbol="0xF91E5D1A">eAI_ENTITY_NONE</Property>
+    <Property name="ActFileName" type="String">Data\Global\Act\Camera.act</Property>
+    <Property name="ObjectType" type="Symbol" Symbol="0xDB0B6EC5">Camera</Property>
+    <Property name="characterControllerComponent" type="String">nil</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CameraAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_CameraAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CameraAnimation</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="controllerID" type="Int32">0</Property>
+    <Property name="minAnimUpdatePeriod" type="Int32">1</Property>
+    <Property name="modelSkinFilename" type="String">Data\\Characters\\Camera</Property>
+    <Property name="skeletonFilename" type="String">Data\\Characters\\Camera\\CameraRig.hkx</Property>
+</PropertySet>

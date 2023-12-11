@@ -1,0 +1,23 @@
+<PropertySet name="object-physical-vehicle-600CoupeS_Race02" nameUID="0xBB2DDCCC" schema="object-physical-vehicle-600CoupeS_Race02">
+    <Parent>object-physical-vehicle-600CoupeS01</Parent>
+    <Property name="Description" type="String">2Dr- 600CoupeS_Race02</Property>
+    <Property name="SymbolUC" type="String">FourWheelVehicle</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">RacingGreenPaint</Property>
+    </Property>
+    <Property name="VehicleLookGlass" type="List">
+        <Property type="String">GlassBlack02</Property>
+    </Property>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_NARROW</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_NARROW</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="component_VehicleEffects" type="PropSet"/>
+</PropertySet>

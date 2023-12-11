@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-jobCharacters-J_BD1_01_Character" nameUID="0x44531A3B" schema="object-physical-character-jobCharacters-J_BD1_01_Character">
+    <Parent>object-physical-character-animbanks-ThugQuickStriker</Parent>
+    <Property name="Description" type="String">Thug Dbs Quick</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x64A7F39B">default-component-personality-territorial</Property>
+    </Property>
+    <Property name="Voice" type="String">ChineseLittleMarty</Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_HitReaction" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

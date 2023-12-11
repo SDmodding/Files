@@ -1,0 +1,25 @@
+<PropertySet name="object-physical-character-bartendermale" nameUID="0x5B9A3552" schema="object-physical-character-bartendermale">
+    <Parent>object-physical-character-CommonPedestrian</Parent>
+    <Property name="CanDoCellIdle" type="Boolean">False</Property>
+    <Property name="CanDoSmokeIdle" type="Boolean">False</Property>
+    <Property name="Description" type="String">Bartender Male</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x56203F5">default-component-personality-shopkeep</Property>
+    </Property>
+    <Property name="TetherAttenuation" type="Float32">2</Property>
+    <Property name="TetherDistance" type="Float32">10</Property>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_HitReaction" type="PropSet"/>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

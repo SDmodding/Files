@@ -1,0 +1,28 @@
+<PropertySet name="object-physical-character-bouncer2" nameUID="0x9BF5C8B0" schema="object-physical-character-bouncer2">
+    <Parent>object-physical-character</Parent>
+    <Property name="BlockChance" type="Int32">20</Property>
+    <Property name="Description" type="String">Bouncer - Friendly</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x64A7F39B">default-component-personality-territorial</Property>
+    </Property>
+    <Property name="TetherAttenuation" type="Float32">2</Property>
+    <Property name="TetherDistance" type="Float32">10</Property>
+    <Property name="Voice" type="String">ChineseAnton</Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_BRAWLER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_BRAWLER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

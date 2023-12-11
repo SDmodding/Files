@@ -1,0 +1,454 @@
+<PropertySet name="UI-PlayerStats" nameUID="0xF7731D9E" schema="UI-PlayerStats">
+    <Property name="items" type="List">
+        <ListProperty>
+            <Property name="category" type="String">$STATS_COMPLETION</Property>
+            <Property name="stats" type="List">
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_EVENTS_COMPLETED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1A133C2">EventsCompleted</Property>
+                    <Property name="statType" type="String">numberlimit</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_FAVOURS_COMPLETED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xCE3B48E3">FavoursCompleted</Property>
+                    <Property name="statType" type="String">numberlimit</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_JOBS_COMPLETED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC6727847">JobsCompleted</Property>
+                    <Property name="statType" type="String">numberlimit</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_MISSIONS_COMPLETED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x361F67F0">MissionsCompleted</Property>
+                    <Property name="statType" type="String">numberlimit</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_CAMERAS_HACKED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x64992F59">Collectible_SpyCam</Property>
+                    <Property name="statType" type="String">numberlimit</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_CASES_COMPLETED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xAC6C3CC2">CasesCompleted</Property>
+                    <Property name="statType" type="String">numberlimit</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_MELEE_UPGRADES_UNLOCKED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xCF06DA85">MeleeUpgradesUnlocked</Property>
+                    <Property name="statType" type="String">string</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_POLICE_UPGRADES_UNLOCKED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF2FC2897">PoliceUpgradesUnlocked</Property>
+                    <Property name="statType" type="String">string</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ENERGY_DRINKS_CONSUMED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x74E72B9F">EnergyDrinksPurchased</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_FOODS_CONSUMED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x29867C9E">FoodPurchased</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_MASSAGES_RECEIVED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x8D29669D">MassagesPurchased</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_GAMBLING_PROFIT</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x9C745387">GamblingProfit</Property>
+                    <Property name="statType" type="String">money</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_RACES_COMPLETED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xE0604027">StreetRacesCompletedWon</Property>
+                    <Property name="statType" type="String">numberlimit</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_STORY_PROGRESS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xB5858AD5">StoryProgress</Property>
+                    <Property name="statType" type="String">percentage</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TEA_CONSUMED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF41648AB">HerbalTeaPurchased</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TOTAL_PLAYTIME</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x9E6252BB">PlayTime</Property>
+                    <Property name="statType" type="String">time</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TOTAL_STAT_GAMES_PLAYED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x3FF5C9A8">StatGamesPlayedBoolList</Property>
+                    <Property name="statType" type="String">numberlimit</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TRIAD_UPGRADES_UNLOCKED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xABBAF1FE">TriadUpgradesUnlocked</Property>
+                    <Property name="statType" type="String">string</Property>
+                </ListProperty>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="category" type="String">$STATS_WORLD</Property>
+            <Property name="stats" type="List">
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TIMES_ARRESTED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x5C22DC1B">TimesArrested</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TOTAL_DISTANCE_DRIVEN</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xA1FA3D55">TotalDistanceDriven</Property>
+                    <Property name="statType" type="String">distance</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TOTAL_DISTANCE_TRAVELED_ON_FOOT</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF8E1F4C6">TotalDistanceWalked</Property>
+                    <Property name="statType" type="String">distance</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_VEHICLES_STOLEN</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xAAF600A3">VehiclesStolen</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="category" type="String">$STATS_COMBAT</Property>
+            <Property name="stats" type="List">
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_KILLS_FROM_COVER</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xECCF0E38">KillsFromCover</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_MOST_ACCURATE_GUN</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x8495D342">MostAccurateGun</Property>
+                    <Property name="statType" type="String">string</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_MOST_DEADLY_GUN</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xCC3ACA29">MostDeadlyGun</Property>
+                    <Property name="statType" type="String">string</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_MOST_USED_GUN</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x85AFEDC1">MostUsedGun</Property>
+                    <Property name="statType" type="String">string</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TIMES_KILLED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xBEB86394">TimesKilled</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TIMES_KILLED_BY_GUNFIRE</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC5C5F916">KilledByGunFire</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TIMES_KILLED_BY_MELEE</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xA60A8D65">KilledByMelee</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TIMES_KILLED_BY_VEHICLES</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC3B9AF25">KilledByVehicles</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TIRES_SHOT_OUT</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC4769FAF">TiresShot</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_TOTAL_SHOTS_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x77C07232">ShotsMade</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Property name="category" type="String">$STATS_DEBUG_WEAPON</Property>
+            <Property name="stats" type="List">
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_9MM_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_9MM_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_9MM_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_50CAL_GOLD_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0xA6EC8F10">object-physical-weapon-firearm-pistol-50cal_gold</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_50CAL_GOLD_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0xA6EC8F10">object-physical-weapon-firearm-pistol-50cal_gold</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_50CAL_GOLD_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0xA6EC8F10">object-physical-weapon-firearm-pistol-50cal_gold</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_50CAL_SLVR_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x519652A3">object-physical-weapon-firearm-pistol-50cal_silver</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_50CAL_SLVR_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x519652A3">object-physical-weapon-firearm-pistol-50cal_silver</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_50CAL_SLVR_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x519652A3">object-physical-weapon-firearm-pistol-50cal_silver</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_45CAL_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x227F1078">object-physical-weapon-firearm-pistol-45cal</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_45CAL_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x227F1078">object-physical-weapon-firearm-pistol-45cal</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_45CAL_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x227F1078">object-physical-weapon-firearm-pistol-45cal</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_45CALREDDOT_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x55A129DE">object-physical-weapon-firearm-pistol-45cal_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_45CALREDDOT_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x55A129DE">object-physical-weapon-firearm-pistol-45cal_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_45CALREDDOT_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x55A129DE">object-physical-weapon-firearm-pistol-45cal_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ARIFLE_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x14D4357D">object-physical-weapon-firearm-rifle-assault_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ARIFLE_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x14D4357D">object-physical-weapon-firearm-rifle-assault_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ARIFLE_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x14D4357D">object-physical-weapon-firearm-rifle-assault_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ARIFLENOLIGHT_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x96B4ED64">object-physical-weapon-firearm-rifle-assault</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ARIFLENOLIGHT_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x96B4ED64">object-physical-weapon-firearm-rifle-assault</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ARIFLENOLIGHT_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x96B4ED64">object-physical-weapon-firearm-rifle-assault</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ARIFLEGREN_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x268A56C0">object-physical-weapon-firearm-rifle-grenade</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ARIFLEGREN_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x268A56C0">object-physical-weapon-firearm-rifle-grenade</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ARIFLEGREN_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x268A56C0">object-physical-weapon-firearm-rifle-grenade</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ANTIRIOT_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x4680A61E">object-physical-weapon-firearm-shotgun-antiriot_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ANTIRIOT_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x4680A61E">object-physical-weapon-firearm-shotgun-antiriot_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ANTIRIOT_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x4680A61E">object-physical-weapon-firearm-shotgun-antiriot_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ANTIRIOTNOLIGHT_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x83E29E3A">object-physical-weapon-firearm-shotgun-antiriotnolight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ANTIRIOTNOLIGHT_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x83E29E3A">object-physical-weapon-firearm-shotgun-antiriotnolight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_ANTIRIOTNOLIGHT_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x83E29E3A">object-physical-weapon-firearm-shotgun-antiriotnolight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_PUMPSHOTGUN_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x46738290">object-physical-weapon-firearm-shotgun-pump</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_PUMPSHOTGUN_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x46738290">object-physical-weapon-firearm-shotgun-pump</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_PUMPSHOTGUN_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x46738290">object-physical-weapon-firearm-shotgun-pump</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_MACHPISTOL_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_MACHPISTOL_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_MACHPISTOL_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_SMG_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_SMG_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_SMG_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_SMG_GOLD_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x6523CD95">object-physical-weapon-firearm-smg-45cal_gold</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_SMG_GOLD_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x6523CD95">object-physical-weapon-firearm-smg-45cal_gold</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_SMG_GOLD_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0x6523CD95">object-physical-weapon-firearm-smg-45cal_gold</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_SMG_REDDOT_FIRED</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xC1271821">FireArmFired</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0xB31A1ACD">object-physical-weapon-firearm-smg-45cal</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_SMG_REDDOT_HITS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0x26FE70D7">FireArmHits</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0xB31A1ACD">object-physical-weapon-firearm-smg-45cal</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="statCaption" type="String">$STATS_SMG_REDDOT_KILLS</Property>
+                    <Property name="statName" type="Symbol" Symbol="0xF4ACB588">FireArmKills</Property>
+                    <Property name="statNameIndex" type="Symbol" Symbol="0xB31A1ACD">object-physical-weapon-firearm-smg-45cal</Property>
+                    <Property name="statType" type="String">number</Property>
+                </ListProperty>
+            </Property>
+        </ListProperty>
+    </Property>
+</PropertySet>

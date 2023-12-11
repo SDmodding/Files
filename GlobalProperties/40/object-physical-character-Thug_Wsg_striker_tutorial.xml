@@ -1,0 +1,42 @@
+<PropertySet name="object-physical-character-Thug_Wsg_striker_tutorial" nameUID="0xC23FD341" schema="object-physical-character-Thug_Wsg_striker_tutorial">
+    <Parent>object-physical-character-drivers-nothing</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\Chan.act</Property>
+    <Property name="BlockChance" type="Int32">0</Property>
+    <Property name="CounterAttack" type="Int32">45</Property>
+    <Property name="Description" type="String">Thug WSG Striker tutorial</Property>
+    <Property name="DisarmAbility" type="Int32">31</Property>
+    <Property name="FakeResistanceChance" type="Int32">50</Property>
+    <Property name="Grapple" type="Int32">13</Property>
+    <Property name="HealthToBeIntimidated" type="Float32">20</Property>
+    <Property name="InterruptChance" type="Int32">0</Property>
+    <Property name="IntimidatedFleeChance" type="Int32">50</Property>
+    <Property name="StunResistance" type="Int32">18</Property>
+    <Property name="VoiceTagList" type="List">
+        <Property type="Symbol" Symbol="0x8A664E0E">Thug</Property>
+        <Property type="Symbol" Symbol="0xE7522969">Cantonese</Property>
+    </Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_TUTORIAL</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_HitReaction" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_TUTORIAL</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

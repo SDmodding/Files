@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-ZodiacDLC-Thug_Island_brawler" nameUID="0xD64D6BF" schema="object-physical-character-ZodiacDLC-Thug_Island_brawler">
+    <Parent>object-physical-character-drivers-nothing</Parent>
+    <Property name="AIEntityType" type="String">eAI_ENTITY_FREERUNNER</Property>
+    <Property name="DLCCharacter" type="Symbol" Symbol="0x71D5CE31">ZodiacGrappler</Property>
+    <Property name="Description" type="String">Thug Island Brawler</Property>
+    <Property name="TagVoice" type="WwiseID" Symbol="0x2D8F3F64"/>
+    <Property name="Voice" type="String">M_ZOD_ChineseThug2</Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_BRAWLER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_HitReaction" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_BRAWLER</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

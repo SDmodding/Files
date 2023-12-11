@@ -1,0 +1,37 @@
+<PropertySet name="default-component-BoatPhysicsMover" nameUID="0x61D61592" schema="default-component-BoatPhysicsMover" schematype="component">
+    <Parent>default-component-PhysicsMover</Parent>
+    <Property name="TrunkType" type="Symbol" Symbol="0xDE16D029">eVEHICLE_TRUNK_TYPE_NONE</Property>
+    <Property name="autoDeterioratingDamageRate" type="Float32">0.01</Property>
+    <Property name="autoDeterioratingDamageThreshold" type="Float32">0.75</Property>
+    <Property name="boundingBoxMax" type="Vector3" x="1.1" y="0.4" z="1.2"/>
+    <Property name="boundingBoxMin" type="Vector3" x="-1.1" y="-0.4" z="0"/>
+    <Property name="damageMultiplierBullets" type="Float32">0.05</Property>
+    <Property name="damageMultiplierTires" type="Float32">0</Property>
+    <Property name="damageMultiplierVehicleCollisions" type="Float32">0</Property>
+    <Property name="damageMultiplierWorldCollisions" type="Float32">0</Property>
+    <Property name="lockedAtLowLOD" type="Boolean">False</Property>
+    <Property name="lowLodBrakesAcceleration" type="Float32">-2</Property>
+    <Property name="lowLodCoastAcceleration" type="Float32">-1</Property>
+    <Property name="lowLodMaxLateralAcceleration" type="Float32">1</Property>
+    <Property name="lowLodMaxSpeed" type="Float32">15</Property>
+    <Property name="lowLodMinTurningRadius" type="Float32">5</Property>
+    <Property name="lowLodThrottleAcceleration" type="Float32">2</Property>
+    <Property name="modelName" type="String">Jet620V01</Property>
+    <Property name="physicsPropertySetAI" type="Symbol" Symbol="0xA65226BE">Vehicles-BaseBoatProperties</Property>
+    <Property name="physicsPropertySetHuman" type="Symbol" Symbol="0xA65226BE">Vehicles-BaseBoatProperties</Property>
+    <Property name="tireBlownImpulse" type="Float32">0</Property>
+    <Property name="tireShotImpulse" type="Float32">0</Property>
+    <Property name="vehicleCollisionDamageDealtAtMaxImpulse" type="Float32">0.05</Property>
+    <Property name="vehicleCollisionDamageDealtAtMaxRamImpulse" type="Float32">0.3</Property>
+    <Property name="vehicleCollisionDamageDealtAtMinImpulse" type="Float32">0.01</Property>
+    <Property name="vehicleCollisionDamageDealtAtMinRamImpulse" type="Float32">0.25</Property>
+    <Property name="vehicleCollisionExtraDamageMultiplier" type="Float32">2</Property>
+    <Property name="vehicleCollisionForceDamageDealer" type="Boolean">False</Property>
+    <Property name="vehicleCollisionMaxImpulseForDealingDamage" type="Float32">10</Property>
+    <Property name="vehicleCollisionMaxRamImpulseForDealingDamage" type="Float32">12</Property>
+    <Property name="vehicleCollisionMinImpulseRequiredToDealDamage" type="Float32">5</Property>
+    <Property name="vehicleCollisionMinImpulseRequiredToTakeDamage" type="Float32">5</Property>
+    <Property name="vehicleCollisionMinRamImpulseRequiredToDealDamage" type="Float32">6</Property>
+    <Property name="vehicleDistanceToHighLod" type="Float32">50</Property>
+    <Property name="vehicleDistanceToMedLod" type="Float32">100</Property>
+</PropertySet>

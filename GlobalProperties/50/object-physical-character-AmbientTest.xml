@@ -1,0 +1,24 @@
+<PropertySet name="object-physical-character-AmbientTest" nameUID="0xF0170417" schema="object-physical-character-AmbientTest">
+    <Parent>object-physical-character-CommonPedestrian</Parent>
+    <Property name="CanUseUmbrella" type="Boolean">True</Property>
+    <Property name="Description" type="String">Ambient Test</Property>
+    <Property name="DriverProfileList" type="List">
+        <Property type="Symbol" Symbol="0x82F58AC7">default-component-personality-driverscooter</Property>
+    </Property>
+    <Property name="MorphController" type="Symbol" Symbol="0xBED585C1">RandomizeMorphWeights</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x22BC9499">default-component-personality-testpersonality</Property>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

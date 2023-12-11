@@ -1,0 +1,73 @@
+<PropertySet name="object-physical-character-Thug_18k_turret" nameUID="0xDD378917" schema="object-physical-character-Thug_18k_turret">
+    <Parent>object-physical-character-stats-base_ranged</Parent>
+    <Property name="BaseAIAimingAccuracy" type="Float32">0.7</Property>
+    <Property name="CanUseCover" type="Boolean">True</Property>
+    <Property name="Description" type="String">Thug 18k Quick</Property>
+    <Property name="MaxNumShotsPerVolleyAutomatic" type="Int32">4</Property>
+    <Property name="MaxNumShotsPerVolleyCombatShotgun" type="Int32">4</Property>
+    <Property name="MaxNumShotsPerVolleyPistol" type="Int32">1</Property>
+    <Property name="MaxNumShotsPerVolleyShotgun" type="Int32">4</Property>
+    <Property name="MaxTimeAfterStandBeforeBeginVolleyAutomatic" type="Float32">0</Property>
+    <Property name="MaxTimeAfterStandBeforeBeginVolleyCombatShotgun" type="Float32">0.75</Property>
+    <Property name="MaxTimeAfterStandBeforeBeginVolleyPistol" type="Float32">0</Property>
+    <Property name="MaxTimeAfterStandBeforeBeginVolleyShotgun" type="Float32">1</Property>
+    <Property name="MaxTimeAfterVolleyToKeepStandingAutomatic" type="Float32">0.6</Property>
+    <Property name="MaxTimeAfterVolleyToKeepStandingCombatShotgun" type="Float32">0.7</Property>
+    <Property name="MaxTimeAfterVolleyToKeepStandingPistol" type="Float32">0.3</Property>
+    <Property name="MaxTimeAfterVolleyToKeepStandingShotgun" type="Float32">0.75</Property>
+    <Property name="MaxTimeBetweenShotsCombatShotgun" type="Float32">1</Property>
+    <Property name="MaxTimeBetweenShotsPistol" type="Float32">0.5</Property>
+    <Property name="MaxTimeBetweenShotsShotgun" type="Float32">1.5</Property>
+    <Property name="MaxTimeBetweenVolleysAutomatic" type="Float32">0.6</Property>
+    <Property name="MaxTimeToHoldTriggerAutomatic" type="Float32">0.4</Property>
+    <Property name="MinNumShotsPerVolleyAutomatic" type="Int32">2</Property>
+    <Property name="MinNumShotsPerVolleyCombatShotgun" type="Int32">3</Property>
+    <Property name="MinNumShotsPerVolleyPistol" type="Int32">1</Property>
+    <Property name="MinNumShotsPerVolleyShotgun" type="Int32">1</Property>
+    <Property name="MinTimeAfterStandBeforeBeginVolleyAutomatic" type="Float32">0</Property>
+    <Property name="MinTimeAfterStandBeforeBeginVolleyCombatShotgun" type="Float32">0.5</Property>
+    <Property name="MinTimeAfterStandBeforeBeginVolleyPistol" type="Float32">0</Property>
+    <Property name="MinTimeAfterStandBeforeBeginVolleyShotgun" type="Float32">0.5</Property>
+    <Property name="MinTimeAfterVolleyToKeepStandingAutomatic" type="Float32">0.3</Property>
+    <Property name="MinTimeAfterVolleyToKeepStandingCombatShotgun" type="Float32">0.5</Property>
+    <Property name="MinTimeAfterVolleyToKeepStandingPistol" type="Float32">0.3</Property>
+    <Property name="MinTimeAfterVolleyToKeepStandingShotgun" type="Float32">0.5</Property>
+    <Property name="MinTimeBetweenShotsAutomatic" type="Float32">0.1</Property>
+    <Property name="MinTimeBetweenShotsCombatShotgun" type="Float32">0.33</Property>
+    <Property name="MinTimeBetweenShotsPistol" type="Float32">0.5</Property>
+    <Property name="MinTimeBetweenShotsShotgun" type="Float32">0.8</Property>
+    <Property name="MinTimeBetweenVolleysAutomatic" type="Float32">0.3</Property>
+    <Property name="MinTimeToHoldTriggerAutomatic" type="Float32">0.2</Property>
+    <Property name="PropList" type="List">
+        <Property type="Symbol" Symbol="0xC0C4BDEF">object-physical-prop-Attachable-Thug_18k_QuickA_Glasses</Property>
+        <Property type="Symbol" Symbol="0xFFFFFFFF"/>
+    </Property>
+    <Property name="VoiceTagList" type="List">
+        <Property type="Symbol" Symbol="0x8A664E0E">Thug</Property>
+        <Property type="Symbol" Symbol="0xE7522969">Cantonese</Property>
+    </Property>
+    <Property name="component_AIActionTree" type="PropSet"/>
+    <Property name="component_BaseAnimation" type="PropSet"/>
+    <Property name="component_CharacterAnimation" type="PropSet"/>
+    <Property name="component_CharacterPhysics" type="PropSet"/>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Health" type="PropSet"/>
+    <Property name="component_HitReaction" type="PropSet"/>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet"/>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>
