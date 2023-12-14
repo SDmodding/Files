@@ -1,0 +1,82 @@
+<PropertySet name="object-physical-character-Vendors-FoodVendor-F_NoodleBowl_Vendor" nameUID="0x8E12122B" schema="object-physical-character-Vendors-FoodVendor-F_NoodleBowl_Vendor">
+    <Parent>object-physical-character-Vendors-FoodVendor-FoodVendor_Base</Parent>
+    <Property name="ColorTintIndex" type="Int32">2</Property>
+    <Property name="Description" type="String">Female Noodle Bowl Vendor Yee </Property>
+    <Property name="Inventory" type="List">
+        <ListProperty>
+            <Property name="Value" type="Int32">1000000</Property>
+        </ListProperty>
+    </Property>
+    <Property name="SellableItem" type="Symbol" Symbol="0x186A966F">eINVENTORY_ITEM_NOODLE_BOWL</Property>
+    <Property name="SellableItemProp" type="Symbol" Symbol="0x6D509911">object-physical-prop-StreamedObject-NoodleBowl001</Property>
+    <Property name="Voice" type="String">MrsYee</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicFemale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicFemale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_SHOPKEEPER</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Female</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xEFA85545">Elderly</Property>
+                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
+            </ResourceTags>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0x1A589DB9">Data\Characters_New\AF_H_012</Property>
+                <Property type="Symbol" Symbol="0x4FD81110">Data\Characters_New\AS_B_FemaleVendor</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0.8</BMIMin>
+            <BMIMax type="Float32">0.8</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

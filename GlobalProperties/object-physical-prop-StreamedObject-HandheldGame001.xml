@@ -1,0 +1,38 @@
+<PropertySet name="object-physical-prop-StreamedObject-HandheldGame001" nameUID="0x12DB5FDE" schema="object-physical-prop-StreamedObject-HandheldGame001">
+    <Parent>object-physical-prop-StreamedAttachableProp</Parent>
+    <Property name="AttachBone" type="String">Bip01 R Hand</Property>
+    <Property name="PropBone" type="String">Grip R Hand</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">HandheldGame001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">HandheldGame001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xDCCAF05C">Data\Props_New\HandheldGame001</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">Prop</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

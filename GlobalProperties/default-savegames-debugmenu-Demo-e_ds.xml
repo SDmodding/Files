@@ -1,0 +1,57 @@
+<PropertySet name="default-savegames-debugmenu-Demo-e_ds" nameUID="0x1C945193" schema="default-savegames-debugmenu-Demo-e_ds">
+    <Parent>default-savegames-defaults</Parent>
+    <Property name="0x4A846F2F" type="PropSet">
+        <PropertySet>
+            <Property name="Names" type="List">
+                <Property type="Symbol"/>
+            </Property>
+            <Property name="Values" type="List">
+                <Property type="Boolean">True</Property>
+            </Property>
+        </PropertySet>
+    </Property>
+    <Property name="Collectible_Melee" type="PropSet">
+        <PropertySet>
+            <Property name="Names" type="List">
+                <Property type="Symbol"/>
+            </Property>
+            <Property name="Values" type="List">
+                <Property type="Boolean">True</Property>
+            </Property>
+        </PropertySet>
+    </Property>
+    <Property name="Collectible_SafehouseItems" type="PropSet">
+        <PropertySet>
+            <Property name="Names" type="List">
+                <Property type="Symbol" Symbol="0x40B69306">eINVENTORY_ITEM_NP_SAFEHOUSEITEM_01</Property>
+                <Property type="Symbol" Symbol="0x4DF5B5DF">eINVENTORY_ITEM_NP_SAFEHOUSEITEM_02</Property>
+                <Property type="Symbol" Symbol="0x4934A868">eINVENTORY_ITEM_NP_SAFEHOUSEITEM_03</Property>
+                <Property type="Symbol" Symbol="0x53B2E5DA">eINVENTORY_ITEM_NP_SAFEHOUSEITEM_05</Property>
+            </Property>
+            <Property name="Values" type="List">
+                <Property type="Int32">1</Property>
+                <Property type="Int32">1</Property>
+                <Property type="Int32">1</Property>
+                <Property type="Int32">1</Property>
+            </Property>
+        </PropertySet>
+    </Property>
+    <Property name="CopDrivingStage" type="Int32">5</Property>
+    <Property name="DynamicTutorials" type="PropSet">
+        <PropertySet>
+            <Property name="Names" type="List">
+                <Property type="Symbol" Symbol="0x55D6695A">GrapplingInnocentTutorial</Property>
+                <Property type="Symbol" Symbol="0xE34A9D8B">DrivingTutorial</Property>
+                <Property type="Symbol" Symbol="0xEA369349">CopsTutorial</Property>
+            </Property>
+            <Property name="Values" type="List">
+                <Property type="Boolean">True</Property>
+                <Property type="Boolean">True</Property>
+                <Property type="Boolean">True</Property>
+            </Property>
+        </PropertySet>
+    </Property>
+    <Property name="GunplayUpgradeStage" type="Int32">5</Property>
+    <Property name="StatueDefensiveStage" type="Int32">5</Property>
+    <Property name="StatueOffensiveStage" type="Int32">7</Property>
+</PropertySet>

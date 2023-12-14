@@ -1,0 +1,43 @@
+<PropertySet name="object-physical-character-Wei_SwordMaster" nameUID="0xDF75F685" schema="object-physical-character-Wei_SwordMaster">
+    <Parent>object-physical-character-player</Parent>
+    <Property name="Description" type="String">Wei</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\Wei_Head</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x3A11DB8A">Data\Characters_New\Wei_Head</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xB3B842C0">Data\Characters_New\Wei_Head_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\H_SwordMaster</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xA30A48EB">Data\Characters_New\H_SwordMaster</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x1BDAC8F3">Data\Characters_New\H_SwordMaster_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\T_SwordMaster</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xE1761651">Data\Characters_New\T_SwordMaster</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x3F88E5D5">Data\Characters_New\T_SwordMaster_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\P_SwordMaster</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x4EA4689C">Data\Characters_New\P_SwordMaster</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x3395876F">Data\Characters_New\P_SwordMaster_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\S_SwordMaster</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x73898F24">Data\Characters_New\S_SwordMaster</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xB4FCE047">Data\Characters_New\S_SwordMaster_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">Player</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

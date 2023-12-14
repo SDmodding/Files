@@ -1,0 +1,109 @@
+<PropertySet name="object-physical-prop-LOS_PhoneBooth002" nameUID="0xB3C991D8" schema="object-physical-prop-LOS_PhoneBooth002">
+    <Parent>object-physical-prop-InteractableProp</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOS_PhoneBooth002.act</Property>
+    <Property name="Description" type="String">Phone Booth 2</Property>
+    <Property name="SimObjChildren" type="List">
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">PhoneBooth002UsePoint01</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-PhoneBooth002</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0xBAEA79C3">C_InteractionSync_Front</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">PhoneBooth002UsePoint02</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-PhoneBooth_PlainFaces</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x8D842B57">C_InteractionSync_Left</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">PhoneBooth002UsePoint03</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-PhoneBooth_PlainFaces</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x9C562815">C_InteractionSync_Right</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">PhoneBooth002UsePoint04</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-PhoneBooth_PlainFaces</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x5080E325">C_InteractionSync_Back</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOS_PhoneBooth002</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0xEAF2E4FB">LOS_PHONEBOOTH002</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOS_PhoneBooth002</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0xEAF2E4FB">LOS_PHONEBOOTH002</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CompositeDrawable" type="PropSet">
+        <BinData>
+            <DefaultSaturationOverride type="Float32">1</DefaultSaturationOverride>
+            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
+            <HighlightingMode type="String">eHIGHLIGHTING_MODE_OFF</HighlightingMode>
+            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
+            <SkinSSEnabled type="Boolean">false</SkinSSEnabled>
+            <OverlayWeights type="List"/>
+            <OverlayTextures type="List"/>
+            <DrawScale type="Float32">1</DrawScale>
+        </BinData>
+    </Property>
+</PropertySet>

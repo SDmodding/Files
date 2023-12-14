@@ -1,0 +1,42 @@
+<PropertySet name="object-physical-character-EventCharacters-F_CNY_HelpRookie1_Character" nameUID="0x74E2E8B6" schema="object-physical-character-EventCharacters-F_CNY_HelpRookie1_Character">
+    <Parent>default-component-FaceAction</Parent>
+    <Property name="CanBePushed" type="Boolean">False</Property>
+    <Property name="Description" type="String">Favor: CNY HelpRookie1</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
+    <Property name="FaceActionEnabled" type="Boolean">True</Property>
+    <Property name="IgnoreAmbientStimuli" type="Boolean">True</Property>
+    <Property name="UsableByCopSystem" type="Boolean">False</Property>
+    <Property name="component_AIActionTree" type="PropSet">
+        <BinData>
+            <AIBehaviour type="String">Thug_behaviour.act</AIBehaviour>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_POLICE_VARIANT1</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NONE</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">TRIAD_WINSTON</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

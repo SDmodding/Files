@@ -1,0 +1,103 @@
+<PropertySet name="object-physical-character-Sandra" nameUID="0x4643CAC5" schema="object-physical-character-Sandra">
+    <Parent>object-physical-character-CommonPedestrian</Parent>
+    <Property name="Description" type="String">Sandra</Property>
+    <Property name="Grapple" type="Int32">100</Property>
+    <Property name="TagVoice" type="WwiseID"/>
+    <Property name="Voice" type="String">Sandra</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicFemale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">0x3462500C</PoseDriverSet>
+            <RigNameHD type="String">Sandra_HD</RigNameHD>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicFemale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">0x3462500C</PoseDriverSet>
+            <RigNameHD type="String">Sandra_HD</RigNameHD>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterPhysics" type="PropSet">
+        <BinData>
+            <Mass type="Float32">75</Mass>
+            <MaxForce type="Float32">1000</MaxForce>
+            <MaxClimableSlope type="Float32">65</MaxClimableSlope>
+            <WalkCollisionHeight type="Float32">1.835</WalkCollisionHeight>
+            <CombatCollisionHeight type="Float32">1.835</CombatCollisionHeight>
+            <CrouchCollisionHeight type="Float32">0.95</CrouchCollisionHeight>
+            <DrivingCollisionHeight type="Float32">1.1</DrivingCollisionHeight>
+            <CrawlCollisionHeight type="Float32">0.3</CrawlCollisionHeight>
+            <SittingCollisionHeight type="Float32">1.3</SittingCollisionHeight>
+            <CoverCollisionHeight type="Float32">1.835</CoverCollisionHeight>
+            <FreerunCollisionHeight type="Float32">1.835</FreerunCollisionHeight>
+            <WalkCollisionRadius type="Float32">0.32</WalkCollisionRadius>
+            <CombatCollisionRadius type="Float32">0.5</CombatCollisionRadius>
+            <CrouchCollisionRadius type="Float32">0.35</CrouchCollisionRadius>
+            <DrivingCollisionRadius type="Float32">0.3</DrivingCollisionRadius>
+            <CrawlCollisionRadius type="Float32">0.3</CrawlCollisionRadius>
+            <SittingCollisionRadius type="Float32">0.3</SittingCollisionRadius>
+            <CoverCollisionRadius type="Float32">0.32</CoverCollisionRadius>
+            <FreerunCollisionRadius type="Float32">0.2</FreerunCollisionRadius>
+            <DetailedOnGroundCheck type="Boolean">true</DetailedOnGroundCheck>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">2</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">8</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Female</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xF1890B8C">Data\Characters_New\Sandra</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">UniquePed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

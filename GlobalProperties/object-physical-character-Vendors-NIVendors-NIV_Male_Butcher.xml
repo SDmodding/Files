@@ -1,0 +1,34 @@
+<PropertySet name="object-physical-character-Vendors-NIVendors-NIV_Male_Butcher" nameUID="0x1B8B77C" schema="object-physical-character-Vendors-NIVendors-NIV_Male_Butcher">
+    <Parent>object-physical-character-Vendors-NIVendor</Parent>
+    <Property name="Description" type="String">NIV Male Butcher</Property>
+    <Property name="VoiceTagList" type="List">
+        <Property type="Symbol" Symbol="0x44EFF06D">VendorGenericButcher</Property>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">2</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">8</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+</PropertySet>

@@ -1,0 +1,19 @@
+<PropertySet name="object-physical-vehicle-NeoV01_LightsOn" nameUID="0x1D137F69" schema="object-physical-vehicle-NeoV01_LightsOn">
+    <Parent>object-physical-vehicle-NeoV01</Parent>
+    <Property name="Description" type="String">4Dr- NeoV LightsOn</Property>
+    <Property name="component_VehicleEffects" type="PropSet">
+        <BinData>
+            <headlightsInRainProbability type="Float32">0.5</headlightsInRainProbability>
+            <headlightsAlwaysOn type="Boolean">true</headlightsAlwaysOn>
+            <headlightsAlwaysOff type="Boolean">false</headlightsAlwaysOff>
+            <DamageTransfer type="Symbol">vehicle4door</DamageTransfer>
+            <EffectGroupName type="Symbol">common4doorcar</EffectGroupName>
+            <InitialDirtSeed type="Float32">0.2</InitialDirtSeed>
+            <GrimeFactor type="Float32">1</GrimeFactor>
+            <Speed0 type="Float32">0</Speed0>
+            <Speed1 type="Float32">5</Speed1>
+            <Speed2 type="Float32">30</Speed2>
+            <Speed3 type="Float32">60</Speed3>
+        </BinData>
+    </Property>
+</PropertySet>

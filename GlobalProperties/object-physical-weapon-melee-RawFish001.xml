@@ -1,0 +1,40 @@
+<PropertySet name="object-physical-weapon-melee-RawFish001" nameUID="0xFE9196F2" schema="object-physical-weapon-melee-RawFish001">
+    <Parent>object-physical-prop-StreamedAttachableProp</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\GenericActionTree.act</Property>
+    <Property name="AttachBone" type="String">Bip01 R Prop</Property>
+    <Property name="Description" type="String">$HUD_WEAPON_FISH</Property>
+    <Property name="PropBone" type="String">Grip R Hand</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">RawFish001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">RawFish001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xF3457ECD">Data\Props_New\RawFish001</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">Prop</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

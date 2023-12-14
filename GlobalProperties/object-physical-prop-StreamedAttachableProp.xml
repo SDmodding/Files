@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-prop-StreamedAttachableProp" nameUID="0xE9175745" schema="object-physical-prop-StreamedAttachableProp">
+    <Parent>object-physical-prop-VisibleProp</Parent>
+    <Property name="CanBeDropped" type="Boolean">True</Property>
+    <Property name="PerceivedDangerous" type="Boolean">False</Property>
+    <Property name="SpawnPriority" type="Symbol" Symbol="0xEA79A044">Low</Property>
+    <Property name="component_InventoryItem" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InventoryItem</Parent>
+        </PropertySet>
+        <BinData>
+            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
+            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
+            <simObjectInventoryItem type="Symbol"/>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-StreamedResource</Parent>
+        </PropertySet>
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol"/>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

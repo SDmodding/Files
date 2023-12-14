@@ -1,0 +1,57 @@
+<PropertySet name="object-physical-weapon-melee-TableLegClub001" nameUID="0x5A872D01" schema="object-physical-weapon-melee-TableLegClub001">
+    <Parent>object-physical-weapon-melee</Parent>
+    <Property name="AttachBone" type="String">Bip01 R Prop</Property>
+    <Property name="AudioWeaponType" type="WwiseID"/>
+    <Property name="DamageMultiplier" type="Float32">1</Property>
+    <Property name="Description" type="String">$HUD_WEAPON_TABLE_LEG</Property>
+    <Property name="MaxAngularVelocityWhenThrown" type="Vector3" x="10" y="10" z="10"/>
+    <Property name="MinAngularVelocityWhenThrown" type="Vector3" x="7" y="7" z="7"/>
+    <Property name="PropBone" type="String">Grip R Hand</Property>
+    <Property name="RangedDistance" type="Float32">10</Property>
+    <Property name="SoundBank" type="WwiseID"/>
+    <Property name="ThrownSpeed" type="Float32">30</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">TableLegClub001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">TableLegClub001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_InventoryItem" type="PropSet">
+        <BinData>
+            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
+            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
+            <simObjectInventoryItem type="Symbol">eINVENTORY_ITEM_WOODENCLUB</simObjectInventoryItem>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-StreamedResource</Parent>
+        </PropertySet>
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xAC5B0462">Data\Props_New\TableLegClub001</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">Prop</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="simObjectWeaponType" type="String">eSIM_OBJ_WEAPON_TYPE_BATON</Property>
+</PropertySet>

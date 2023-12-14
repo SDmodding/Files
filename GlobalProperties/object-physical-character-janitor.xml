@@ -1,0 +1,56 @@
+<PropertySet name="object-physical-character-janitor" nameUID="0xA4FB9106" schema="object-physical-character-janitor">
+    <Parent>object-physical-character-CommonPedestrian</Parent>
+    <Property name="CanDoCellIdle" type="Boolean">False</Property>
+    <Property name="CanDoSmokeIdle" type="Boolean">False</Property>
+    <Property name="CanJoinGroup" type="Boolean">False</Property>
+    <Property name="Description" type="String">Janitor</Property>
+    <Property name="PropList" type="List">
+        <Property type="Symbol" Symbol="0xF79D50C5">object-physical-prop-StreamedObject-Broom001</Property>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">2</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">8</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0x44EF718F">Adult</Property>
+                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
+                <Property type="Symbol" Symbol="0xD1A31B88">Janitor</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

@@ -1,0 +1,24 @@
+<PropertySet name="object-physical-door_single" nameUID="0xCAE986B5" schema="object-physical-door_single">
+    <Parent>object-physical-door</Parent>
+    <Property name="RadarHighlightType" type="Symbol" Symbol="0x299760D">Interactable</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x43A2F135">Door_Use</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x43A2F135">Door_Use</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+</PropertySet>

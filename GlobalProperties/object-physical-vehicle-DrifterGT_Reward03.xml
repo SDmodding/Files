@@ -1,0 +1,25 @@
+<PropertySet name="object-physical-vehicle-DrifterGT_Reward03" nameUID="0x5FB839CB" schema="object-physical-vehicle-DrifterGT_Reward03">
+    <Parent>object-physical-vehicle-DrifterGT01</Parent>
+    <Property name="Description" type="String">2Dr- DrifterGT_Reward03</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">RedPaint</Property>
+    </Property>
+    <Property name="VehicleLookGlass" type="List">
+        <Property type="String">GlassBlack</Property>
+    </Property>
+    <Property name="component_VehicleEffects" type="PropSet">
+        <BinData>
+            <headlightsInRainProbability type="Float32">0.5</headlightsInRainProbability>
+            <headlightsAlwaysOn type="Boolean">false</headlightsAlwaysOn>
+            <headlightsAlwaysOff type="Boolean">false</headlightsAlwaysOff>
+            <DamageTransfer type="Symbol">vehicle2door</DamageTransfer>
+            <EffectGroupName type="Symbol">common4doorcar</EffectGroupName>
+            <InitialDirtSeed type="Float32">0.2</InitialDirtSeed>
+            <GrimeFactor type="Float32">0</GrimeFactor>
+            <Speed0 type="Float32">0</Speed0>
+            <Speed1 type="Float32">5</Speed1>
+            <Speed2 type="Float32">30</Speed2>
+            <Speed3 type="Float32">60</Speed3>
+        </BinData>
+    </Property>
+</PropertySet>

@@ -1,0 +1,72 @@
+<PropertySet name="object-physical-character-EventCharacters-E_FC_01_Character" nameUID="0x9A55EEC8" schema="object-physical-character-EventCharacters-E_FC_01_Character">
+    <Parent>default-component-FaceAction</Parent>
+    <Property name="Description" type="String">Event: Fight Club #1 - Promoter</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
+    <Property name="FaceActionEnabled" type="Boolean">True</Property>
+    <Property name="IgnoreAmbientStimuli" type="Boolean">True</Property>
+    <Property name="component_AIActionTree" type="PropSet">
+        <BinData>
+            <AIBehaviour type="String">Pedestrian_Hangout.act</AIBehaviour>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_Health" type="PropSet">
+        <BinData>
+            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
+            <maxHealth type="Int32">70</maxHealth>
+            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
+            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
+            <healthProjectileDamageMultiplier type="Float32">0.72</healthProjectileDamageMultiplier>
+        </BinData>
+    </Property>
+    <Property name="component_HitReaction" type="PropSet">
+        <BinData>
+            <HitActFilename type="String">Data/Global/Act/HitTree.act</HitActFilename>
+            <HitReceiverDamageMultiplierPct type="UInt32">140</HitReceiverDamageMultiplierPct>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xCF6AB08F">Data\Characters_New\AM_H_123</Property>
+                <Property type="Symbol" Symbol="0x63A83023">Data\Characters_New\Wsg_B_103</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

@@ -1,0 +1,59 @@
+<PropertySet name="object-physical-weapon-melee-kitchenknife" nameUID="0xD921A7C0" schema="object-physical-weapon-melee-kitchenknife">
+    <Parent>object-physical-weapon-melee</Parent>
+    <Property name="AttachBone" type="String">Bip01 R Prop</Property>
+    <Property name="AudioWeaponType" type="WwiseID"/>
+    <Property name="DamageMultiplier" type="Float32">1</Property>
+    <Property name="Description" type="String">$HUD_WEAPON_KITCHEN_KNIFE</Property>
+    <Property name="IsBladed" type="Boolean">True</Property>
+    <Property name="MaxAngularVelocityWhenThrown" type="Vector3" x="10" y="10" z="10"/>
+    <Property name="MinAngularVelocityWhenThrown" type="Vector3" x="5" y="5" z="5"/>
+    <Property name="PropBone" type="String">Grip R Hand</Property>
+    <Property name="RangedDistance" type="Float32">10</Property>
+    <Property name="SoundBank" type="WwiseID"/>
+    <Property name="ThrownSpeed" type="Float32">45</Property>
+    <Property name="ThrownWeaponSpinAxis" type="Vector3" x="0" y="0" z="1"/>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">KitchenKnife001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">KitchenKnife001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_InventoryItem" type="PropSet">
+        <BinData>
+            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
+            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
+            <simObjectInventoryItem type="Symbol">eINVENTORY_ITEM_KNIFE</simObjectInventoryItem>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-StreamedResource</Parent>
+        </PropertySet>
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xFCAC53EF">Data\Props_New\KitchenKnife001</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">Prop</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="simObjectWeaponType" type="String">eSIM_OBJ_WEAPON_TYPE_KNIFE</Property>
+</PropertySet>

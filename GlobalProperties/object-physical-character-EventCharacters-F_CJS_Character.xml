@@ -1,0 +1,52 @@
+<PropertySet name="object-physical-character-EventCharacters-F_CJS_Character" nameUID="0x8D6A5A1D" schema="object-physical-character-EventCharacters-F_CJS_Character">
+    <Parent>default-component-FaceAction</Parent>
+    <Property name="Description" type="String">Favour: Cheap Jack Serenade</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
+    <Property name="FaceActionEnabled" type="Boolean">True</Property>
+    <Property name="IgnoreAmbientStimuli" type="Boolean">True</Property>
+    <Property name="RequiresGreet" type="Boolean">False</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xBC5943DB">Data\Characters_New\AM_H_013</Property>
+                <Property type="Symbol" Symbol="0x62E9AD1E">Data\Characters_New\AM_B_010</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0.15</BMIMin>
+            <BMIMax type="Float32">0.15</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

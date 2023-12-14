@@ -1,0 +1,75 @@
+<PropertySet name="object-physical-character-EventCharacters-E_CP2_Character" nameUID="0x9A70A099" schema="object-physical-character-EventCharacters-E_CP2_Character">
+    <Parent>object-physical-character-calvin</Parent>
+    <Property name="AIEntityType" type="String">eAI_ENTITY_FREERUNNER</Property>
+    <Property name="CanTakeHostage" type="Boolean">False</Property>
+    <Property name="Description" type="String">Event: Cop Pursuit 2</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
+    <Property name="FaceActionEnabled" type="Boolean">True</Property>
+    <Property name="IgnoreAmbientStimuli" type="Boolean">True</Property>
+    <Property name="component_AIActionTree" type="PropSet">
+        <BinData>
+            <AIBehaviour type="String">Pedestrian_hangout.act</AIBehaviour>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterPhysics" type="PropSet">
+        <BinData>
+            <Mass type="Float32">75</Mass>
+            <MaxForce type="Float32">1000</MaxForce>
+            <MaxClimableSlope type="Float32">65</MaxClimableSlope>
+            <WalkCollisionHeight type="Float32">1.835</WalkCollisionHeight>
+            <CombatCollisionHeight type="Float32">1.835</CombatCollisionHeight>
+            <CrouchCollisionHeight type="Float32">0.95</CrouchCollisionHeight>
+            <DrivingCollisionHeight type="Float32">1.1</DrivingCollisionHeight>
+            <CrawlCollisionHeight type="Float32">0.3</CrawlCollisionHeight>
+            <SittingCollisionHeight type="Float32">1.3</SittingCollisionHeight>
+            <CoverCollisionHeight type="Float32">1.835</CoverCollisionHeight>
+            <FreerunCollisionHeight type="Float32">1.835</FreerunCollisionHeight>
+            <WalkCollisionRadius type="Float32">0.32</WalkCollisionRadius>
+            <CombatCollisionRadius type="Float32">0.5</CombatCollisionRadius>
+            <CrouchCollisionRadius type="Float32">0.35</CrouchCollisionRadius>
+            <DrivingCollisionRadius type="Float32">0.3</DrivingCollisionRadius>
+            <CrawlCollisionRadius type="Float32">0.3</CrawlCollisionRadius>
+            <SittingCollisionRadius type="Float32">0.3</SittingCollisionRadius>
+            <CoverCollisionRadius type="Float32">0.32</CoverCollisionRadius>
+            <FreerunCollisionRadius type="Float32">0.2</FreerunCollisionRadius>
+            <DetailedOnGroundCheck type="Boolean">true</DetailedOnGroundCheck>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_BRAWLER</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_THUG</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_STRIKER_BRAWLER</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">TRIAD_WINSTON</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_Health" type="PropSet">
+        <BinData>
+            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
+            <maxHealth type="Int32">70</maxHealth>
+            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
+            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
+            <healthProjectileDamageMultiplier type="Float32">0.72</healthProjectileDamageMultiplier>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_STRIKER_BRAWLER</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

@@ -1,0 +1,60 @@
+<PropertySet name="object-physical-character-Vendors-CockFights-AB_CockFightTrainer02" nameUID="0x79D18D00" schema="object-physical-character-Vendors-CockFights-AB_CockFightTrainer02">
+    <Parent>object-physical-character-Vendors-vendorBase</Parent>
+    <Property name="CanWander" type="Boolean">False</Property>
+    <Property name="Description" type="String">Trainer 02 on Aberdeen docks</Property>
+    <Property name="component_AIActionTree" type="PropSet">
+        <BinData>
+            <AIBehaviour type="String">Pedestrian_behaviour.act</AIBehaviour>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_SHOPKEEPER</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0xD12DE08A">Data\Characters_New\AM_H_124</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="ColorTintIndex" type="Int32">2</Property>
+                    <Property name="Model" type="Symbol" Symbol="0xBDB34A1B">Data\Characters_New\AM_B_003</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x218C5F85">Data\Characters_New\TM_B_003</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

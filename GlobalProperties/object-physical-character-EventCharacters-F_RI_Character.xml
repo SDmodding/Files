@@ -1,0 +1,88 @@
+<PropertySet name="object-physical-character-EventCharacters-F_RI_Character" nameUID="0xBDF25AF" schema="object-physical-character-EventCharacters-F_RI_Character">
+    <Parent>default-component-FaceAction</Parent>
+    <Property name="Description" type="String">Favor: Race Intro</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
+    <Property name="IgnoreAmbientStimuli" type="Boolean">True</Property>
+    <Property name="component_AIActionTree" type="PropSet">
+        <BinData>
+            <AIBehaviour type="String">POI_User.act</AIBehaviour>
+        </BinData>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0xD820C366">Thug_Brawler</Property>
+                <Property type="SymbolUC" Symbol="0x4B2E6719">Thug_Brawler_Strikes</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0xD820C366">Thug_Brawler</Property>
+                <Property type="SymbolUC" Symbol="0x4B2E6719">Thug_Brawler_Strikes</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0x1529E6BA">Data\Characters_New\AM_H_031</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="ColorTintIndex" type="Int32">8</Property>
+                    <Property name="Model" type="Symbol" Symbol="0xD35A33A4">Data\Characters_New\AS_B_MaleStudent</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xB0CAB8B8">Data\Characters_New\TS_B_MaleStudent</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-0.1</BMIMin>
+            <BMIMax type="Float32">-0.1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

@@ -1,0 +1,34 @@
+<PropertySet name="object-physical-character-shopkeeper" nameUID="0xE06C9051" schema="object-physical-character-shopkeeper">
+    <Parent>object-physical-character-Vendors-vendorBase</Parent>
+    <Property name="CanBeckon" type="Boolean">True</Property>
+    <Property name="CanWander" type="Boolean">False</Property>
+    <Property name="Description" type="String">Shopkeeper- Male</Property>
+    <Property name="TetherAttenuation" type="Float32">2</Property>
+    <Property name="TetherDistance" type="Float32">10</Property>
+    <Property name="component_Health" type="PropSet">
+        <BinData>
+            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
+            <maxHealth type="Int32">25</maxHealth>
+            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
+            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
+            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0xA0FC0E2">ShopKeep</Property>
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

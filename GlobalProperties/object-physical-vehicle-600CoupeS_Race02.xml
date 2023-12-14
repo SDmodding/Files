@@ -1,0 +1,127 @@
+<PropertySet name="object-physical-vehicle-600CoupeS_Race02" nameUID="0xBB2DDCCC" schema="object-physical-vehicle-600CoupeS_Race02">
+    <Parent>object-physical-vehicle-600CoupeS01</Parent>
+    <Property name="Description" type="String">2Dr- 600CoupeS_Race02</Property>
+    <Property name="SymbolUC" type="String">FourWheelVehicle</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">RacingGreenPaint</Property>
+    </Property>
+    <Property name="VehicleLookGlass" type="List">
+        <Property type="String">GlassBlack02</Property>
+    </Property>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_NARROW</Parent>
+        </PropertySet>
+        <BinData>
+            <physicsPropertySetAI type="Symbol">Vehicles-AI_Race_600CoupeS01Properties</physicsPropertySetAI>
+            <physicsPropertySetHuman type="Symbol">Vehicles-600CoupeS01Properties</physicsPropertySetHuman>
+            <modelName type="String">600CoupeS01</modelName>
+            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_CAR_NARROW</TrunkType>
+            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
+            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
+            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
+            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
+            <boundingBoxMin type="Vector3" x="-2" y="-2" z="-0.8"/>
+            <boundingBoxMax type="Vector3" x="2" y="2" z="0.8"/>
+            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
+            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
+            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
+            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
+            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
+            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
+            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
+            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
+            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
+            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
+            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
+            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
+            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
+            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
+            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
+            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
+            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
+            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
+            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
+            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
+            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
+            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
+        </BinData>
+    </Property>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_NARROW</Parent>
+        </PropertySet>
+        <BinData>
+            <physicsPropertySetAI type="Symbol">Vehicles-AI_Race_600CoupeS01Properties</physicsPropertySetAI>
+            <physicsPropertySetHuman type="Symbol">Vehicles-600CoupeS01Properties</physicsPropertySetHuman>
+            <modelName type="String">600CoupeS01</modelName>
+            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_CAR_NARROW</TrunkType>
+            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
+            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
+            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
+            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
+            <boundingBoxMin type="Vector3" x="-2" y="-2" z="-0.8"/>
+            <boundingBoxMax type="Vector3" x="2" y="2" z="0.8"/>
+            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
+            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
+            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
+            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
+            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
+            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
+            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
+            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
+            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
+            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
+            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
+            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
+            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
+            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
+            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
+            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
+            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
+            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
+            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
+            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
+            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
+            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0x4609E86F">Data\Vehicles_New\600CoupeS01</Property>
+                <Property type="Symbol" Symbol="0x55EA5DBA">Data\Vehicles_New\WheelStyle04</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List">
+                <Property type="Symbol" Symbol="0x92456EAF">Data\Vehicles_New\600CoupeS01_ts001</Property>
+                <Property type="Symbol"/>
+            </TextureSetList>
+            <EntityType type="Symbol">FourWheelVehicle</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_VehicleEffects" type="PropSet">
+        <BinData>
+            <headlightsInRainProbability type="Float32">0.5</headlightsInRainProbability>
+            <headlightsAlwaysOn type="Boolean">false</headlightsAlwaysOn>
+            <headlightsAlwaysOff type="Boolean">false</headlightsAlwaysOff>
+            <DamageTransfer type="Symbol">vehicle2door</DamageTransfer>
+            <EffectGroupName type="Symbol">common4doorcar</EffectGroupName>
+            <InitialDirtSeed type="Float32">0.2</InitialDirtSeed>
+            <GrimeFactor type="Float32">0</GrimeFactor>
+            <Speed0 type="Float32">0</Speed0>
+            <Speed1 type="Float32">5</Speed1>
+            <Speed2 type="Float32">30</Speed2>
+            <Speed3 type="Float32">60</Speed3>
+        </BinData>
+    </Property>
+</PropertySet>

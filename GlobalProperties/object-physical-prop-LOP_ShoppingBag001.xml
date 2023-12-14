@@ -1,0 +1,58 @@
+<PropertySet name="object-physical-prop-LOP_ShoppingBag001" nameUID="0x4AB046AB" schema="object-physical-prop-LOP_ShoppingBag001">
+    <Parent>object-physical-prop</Parent>
+    <Property name="Description" type="String">DO NOT USE</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOW_PoliceBaton001_00</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0xF3760F47">ShoppingBag</Property>
+                <Property type="SymbolUC" Symbol="0x93419D14">Grapples_Weapon_Equipped</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOW_PoliceBaton001_00</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0xF3760F47">ShoppingBag</Property>
+                <Property type="SymbolUC" Symbol="0x93419D14">Grapples_Weapon_Equipped</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CompositeDrawable" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CompositeDrawable</Parent>
+        </PropertySet>
+        <BinData>
+            <DefaultSaturationOverride type="Float32">0</DefaultSaturationOverride>
+            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
+            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
+            <SkinSSEnabled type="Boolean">false</SkinSSEnabled>
+            <OverlayWeights type="List"/>
+            <OverlayTextures type="List"/>
+            <DrawScale type="Float32">1</DrawScale>
+        </BinData>
+    </Property>
+    <Property name="component_InventoryItem" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-InventoryItem</Parent>
+        </PropertySet>
+        <BinData>
+            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
+            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
+            <simObjectInventoryItem type="Symbol">eINVENTORY_ITEM_SHOPPING_BAG</simObjectInventoryItem>
+        </BinData>
+    </Property>
+</PropertySet>

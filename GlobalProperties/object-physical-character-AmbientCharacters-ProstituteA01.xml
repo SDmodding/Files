@@ -1,0 +1,65 @@
+<PropertySet name="object-physical-character-AmbientCharacters-ProstituteA01" nameUID="0xE74C6456" schema="object-physical-character-AmbientCharacters-ProstituteA01">
+    <Parent>object-physical-character-drivers-nothing</Parent>
+    <Property name="CanDoCellIdle" type="Boolean">False</Property>
+    <Property name="CanDoSmokeIdle" type="Boolean">True</Property>
+    <Property name="CanJoinGroup" type="Boolean">False</Property>
+    <Property name="Description" type="String">Prostitute A1</Property>
+    <Property name="TetherAttenuation" type="Float32">1</Property>
+    <Property name="TetherDistance" type="Float32">2</Property>
+    <Property name="VoiceTagList" type="List">
+        <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
+        <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
+        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Female</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0xE7DE76F9">Female</Property>
+                <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
+                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Property name="ColorTintIndex" type="Int32">2</Property>
+                    <Property name="Model" type="Symbol" Symbol="0x2F1377C5">Data\Characters_New\ProstituteA01_Body</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xC7ACD43B">Data\Characters_New\ProstituteA01_Body_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">UniquePed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

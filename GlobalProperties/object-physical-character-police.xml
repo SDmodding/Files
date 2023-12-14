@@ -1,0 +1,61 @@
+<PropertySet name="object-physical-character-police" nameUID="0x95576162" schema="object-physical-character-police">
+    <Parent>object-physical-character-stats-police_striker</Parent>
+    <Property name="CanArrest" type="Boolean">True</Property>
+    <Property name="CanUseCover" type="Boolean">True</Property>
+    <Property name="DefaultRangedWeapon" type="Symbol" Symbol="0x1D291ED4">pistol_9mm</Property>
+    <Property name="Description" type="String">Police for script</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_POLICE_VARIANT1</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NONE</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">LAW</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_Health" type="PropSet">
+        <BinData>
+            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
+            <maxHealth type="Int32">160</maxHealth>
+            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
+            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
+            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xB7B39865">Police</Property>
+                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+</PropertySet>

@@ -1,0 +1,64 @@
+<PropertySet name="object-physical-prop-LOL_ABHFMRollingGt001" nameUID="0x78DCAD6C" schema="object-physical-prop-LOL_ABHFMRollingGt001">
+    <Parent>object-physical-prop-InteractableProp</Parent>
+    <Property name="AIDataBuild" type="Boolean">False</Property>
+    <Property name="Description" type="String">ABHFM Rolling Gate</Property>
+    <Property name="RadarHighlightType" type="Symbol" Symbol="0x299760D">Interactable</Property>
+    <Property name="SimObjChildren" type="List">
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">ABHFMRollingGateUsePoint01</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-SlidingDoorFishMarket</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x1A08FE0D">C_InteractionPoint01</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">ABHFMRollingGateUsePoint02</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-SlidingDoorFishMarket</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x174BD8D4">C_InteractionPoint02</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOL_ABHFMRollingGt001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x43F671AE">LOL_ABHFMRollingGate001</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOL_ABHFMRollingGt001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x43F671AE">LOL_ABHFMRollingGate001</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+</PropertySet>

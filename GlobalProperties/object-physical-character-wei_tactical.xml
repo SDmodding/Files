@@ -1,0 +1,43 @@
+<PropertySet name="object-physical-character-wei_tactical" nameUID="0x5C2D2B52" schema="object-physical-character-wei_tactical">
+    <Parent>default-component-AICover</Parent>
+    <Property name="Description" type="String">Wei</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\Wei_Head</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x3A11DB8A">Data\Characters_New\Wei_Head</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xB3B842C0">Data\Characters_New\Wei_Head_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\H_Tactical</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x14E305D9">Data\Characters_New\H_Tactical</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x3BD56BA5">Data\Characters_New\H_Tactical_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\T_Tactical</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x27A02107">Data\Characters_New\T_Tactical</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x51631F65">Data\Characters_New\T_Tactical_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\P_Tactical</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x2C609BF5">Data\Characters_New\P_Tactical</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x281FBC74">Data\Characters_New\P_Tactical_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\S_Tactical</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xA91066EB">Data\Characters_New\S_Tactical</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x4BCE8255">Data\Characters_New\S_Tactical_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">Player</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

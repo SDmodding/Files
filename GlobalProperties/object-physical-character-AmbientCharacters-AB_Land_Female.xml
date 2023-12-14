@@ -1,0 +1,89 @@
+<PropertySet name="object-physical-character-AmbientCharacters-AB_Land_Female" nameUID="0xD6E3F63B" schema="object-physical-character-AmbientCharacters-AB_Land_Female">
+    <Parent>object-physical-character-CommonPedestrian</Parent>
+    <Property name="CanUseUmbrella" type="Boolean">True</Property>
+    <Property name="Description" type="String">AB Mainland Ambient Female</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0xBAAA7DED">default-component-personality-Personality_Distribution_Female</Property>
+    </Property>
+    <Property name="PropList" type="List">
+        <Property type="Symbol"/>
+        <Property type="Symbol" Symbol="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</Property>
+        <Property type="Symbol" Symbol="0x88EB8BE">object-physical-prop-Attachable-AmbientCap002</Property>
+        <Property type="Symbol" Symbol="0x84829544">object-physical-prop-Attachable-AmbientHat003</Property>
+        <Property type="Symbol" Symbol="0x98ACE464">object-physical-weapon-melee-Purse001_Elbow</Property>
+        <Property type="Symbol" Symbol="0xCE873DFE">object-physical-weapon-melee-Purse001_Hand</Property>
+        <Property type="Symbol" Symbol="0xAC64F33E">object-physical-weapon-melee-Purse001_Shoulder</Property>
+        <Property type="Symbol" Symbol="0x2290B7CF">object-physical-weapon-melee-PurseHand001_Elbow</Property>
+        <Property type="Symbol" Symbol="0x8A1A83AB">object-physical-weapon-melee-PurseHand001_Hand</Property>
+        <Property type="Symbol" Symbol="0x59236CEC">object-physical-prop-Attachable-AmbientGlasses004</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicFemale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicFemale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">2</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">8</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Female</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0xE7DE76F9">Female</Property>
+                <Property type="Symbol" Symbol="0xFF1790B9">Aberdeen</Property>
+                <Property type="Symbol" Symbol="0x51C69212">Middle</Property>
+                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
+                <Property type="Symbol" Symbol="0x44EF718F">Adult</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

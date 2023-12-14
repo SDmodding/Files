@@ -1,0 +1,47 @@
+<PropertySet name="object-physical-prop-Attachable-AmbientHat009" nameUID="0xAB084392" schema="object-physical-prop-Attachable-AmbientHat009">
+    <Parent>object-physical-prop-StreamedAttachableProp</Parent>
+    <Property name="AttachBone" type="String">Bip01 Head</Property>
+    <Property name="AttachOffset" type="Symbol" Symbol="0xF0E937E">HatOffset</Property>
+    <Property name="EquipTarget" type="Symbol" Symbol="0x7769C088">eTARGET_TYPE_EQUIPPED_HAT</Property>
+    <Property name="PropBone" type="String">HeadSync</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">AmbientHat009</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">AmbientHat009</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_InventoryItem" type="PropSet">
+        <BinData>
+            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
+            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
+            <simObjectInventoryItem type="Symbol">eINVENTORY_ITEM_HAT</simObjectInventoryItem>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0x8007DF9E">Data\Props_New\AmbientHat009</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">Prop</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

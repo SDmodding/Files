@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-Thug_18k_BrawlerA01_NIS" nameUID="0x18F54629" schema="object-physical-character-Thug_18k_BrawlerA01_NIS">
+    <Parent>object-physical-character-Thug_18k_brawler</Parent>
+    <Property name="Description" type="String">ThugFactions</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xAD776A86">18k</Property>
+                <Property type="Symbol" Symbol="0x744D31A3">Brawler</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\18k_BrawlerA01_Head</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xA7EC3FA">Data\Characters_New\18k_BrawlerA01_Head</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x8F669097">Data\Characters_New\18k_BrawlerA01_Head_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="ColorTintIndex" type="Int32">0</Property>
+                    <Property name="Model" type="Symbol" Symbol="0xA81BF3C9">Data\Characters_New\18k_BrawlerA01_Body</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xEC69F2FE">Data\Characters_New\18k_BrawlerA01_Body_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0.9</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

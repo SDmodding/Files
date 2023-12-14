@@ -1,0 +1,36 @@
+<PropertySet name="object-physical-weapon-firearm-pistol-50cal_gold_hd" nameUID="0x8AB5E646" schema="object-physical-weapon-firearm-pistol-50cal_gold_hd">
+    <Parent>object-physical-weapon-firearm-pistol-50cal</Parent>
+    <Property name="AmmoInventoryItem" type="String">eINVENTORY_ITEM_PISTOL_50CAL_AMMO</Property>
+    <Property name="AudioWeaponType" type="WwiseID"/>
+    <Property name="Description" type="String">$HUD_WEAPON_GOLD_.50CAL_PISTOL</Property>
+    <Property name="MagazineType" type="Symbol" Symbol="0xC6B17E59">object-physical-prop-StreamedObject-50calClipGold</Property>
+    <Property name="SoundbankList" type="List">
+        <Property type="WwiseID"/>
+        <Property type="WwiseID"/>
+        <Property type="WwiseID"/>
+    </Property>
+    <Property name="component_InventoryItem" type="PropSet">
+        <BinData>
+            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
+            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
+            <simObjectInventoryItem type="Symbol">eINVENTORY_ITEM_PISTOL_50CAL_GOL</simObjectInventoryItem>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0x2A28E788">Data\Props_New\HandGun003</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List">
+                <Property type="Symbol" Symbol="0x9D8324FC">Data\Props_New\HandGun003_ts003</Property>
+            </TextureSetList>
+            <EntityType type="Symbol">Prop</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

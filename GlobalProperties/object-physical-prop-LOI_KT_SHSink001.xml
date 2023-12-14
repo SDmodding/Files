@@ -1,0 +1,42 @@
+<PropertySet name="object-physical-prop-LOI_KT_SHSink001" nameUID="0x4D4E22FD" schema="object-physical-prop-LOI_KT_SHSink001">
+    <Parent>object-physical-prop-InteractableProp</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOI_BBClubSink001.act</Property>
+    <Property name="Description" type="String">LOI_KT_SHSink001</Property>
+    <Property name="SimObjChildren" type="List">
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">KTSHSinkUsePoint01</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-BBClubSink001</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x1A08FE0D">C_InteractionPoint01</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOI_KT_SHSink001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOI_KT_SHSink001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

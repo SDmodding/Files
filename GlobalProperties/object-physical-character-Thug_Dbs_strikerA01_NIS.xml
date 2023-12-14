@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-Thug_Dbs_strikerA01_NIS" nameUID="0x99ABCD88" schema="object-physical-character-Thug_Dbs_strikerA01_NIS">
+    <Parent>object-physical-character-Thug_Dbs_striker</Parent>
+    <Property name="Description" type="String">ThugFactions</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xEACD1187">Dbs</Property>
+                <Property type="Symbol" Symbol="0x1447B115">Striker</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\Dbs_StrikerA_Head</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x1F6D5591">Data\Characters_New\Dbs_StrikerA_Head</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x97E5F83F">Data\Characters_New\Dbs_StrikerA_Head_TS02</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="ColorTintIndex" type="Int32">1</Property>
+                    <Property name="Model" type="Symbol" Symbol="0xBD0865A2">Data\Characters_New\Dbs_StrikerA_Body</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xFD68A138">Data\Characters_New\Dbs_StrikerA_Body_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">3</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0.1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

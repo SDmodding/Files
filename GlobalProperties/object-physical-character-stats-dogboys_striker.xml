@@ -1,0 +1,80 @@
+<PropertySet name="object-physical-character-stats-dogboys_striker" nameUID="0x9BE29183" schema="object-physical-character-stats-dogboys_striker">
+    <Parent>default-component-AttackableByAI</Parent>
+    <Property name="BlockChance" type="Int32">35</Property>
+    <Property name="CounterAttack" type="Int32">20</Property>
+    <Property name="DefaultMeleeWeapon" type="Symbol" Symbol="0xA7CE0D21">knife</Property>
+    <Property name="DefaultRangedWeapon" type="Symbol" Symbol="0x1D291ED4">pistol_9mm</Property>
+    <Property name="DisarmAbility" type="Int32">20</Property>
+    <Property name="FakeResistanceChance" type="Int32">50</Property>
+    <Property name="Grapple" type="Int32">0</Property>
+    <Property name="HealthToBeIntimidated" type="Float32">20</Property>
+    <Property name="InterruptChance" type="Int32">25</Property>
+    <Property name="IntimidatedFleeChance" type="Int32">50</Property>
+    <Property name="RangedCombatStrategy" type="Symbol" Symbol="0x360800E0">Balanced</Property>
+    <Property name="StunResistance" type="Int32">0</Property>
+    <Property name="TagVoice" type="WwiseID"/>
+    <Property name="component_AIActionTree" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-AIActionTree</Parent>
+        </PropertySet>
+        <BinData>
+            <AIBehaviour type="String">Thug_Behaviour.act</AIBehaviour>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol"/>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_THUG</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_STRIKER</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">TRIAD_DOGBOYS</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_Health" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Health</Parent>
+        </PropertySet>
+        <BinData>
+            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
+            <maxHealth type="Int32">110</maxHealth>
+            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
+            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
+            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
+        </BinData>
+    </Property>
+    <Property name="component_HitReaction" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-HitReaction</Parent>
+        </PropertySet>
+        <BinData>
+            <HitActFilename type="String">Data/Global/Act/HitTree.act</HitActFilename>
+            <HitReceiverDamageMultiplierPct type="UInt32">100</HitReceiverDamageMultiplierPct>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol"/>
+        </BinData>
+    </Property>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet">
+        <PropertySet>
+            <Parent>object-physical-character-stats-BaseAttackParameters</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

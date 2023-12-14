@@ -1,0 +1,27 @@
+<PropertySet name="object-physical-character-dlc_ghost-UnVincent" nameUID="0x726831C8" schema="object-physical-character-dlc_ghost-UnVincent">
+    <Parent>object-physical-character-Vincent</Parent>
+    <Property name="0xBDFBC8FC" type="Boolean">True</Property>
+    <Property name="FXGhostAlly" type="Boolean">True</Property>
+    <Property name="FXGlowingEyes" type="Boolean">True</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xE1CDF501">Data\Characters_New\Vincent</Property>
+            </ResourceList>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\UnVincent</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xAC38FAF6">Data\Characters_New\UnVincent</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xC46BDD40">Data\Characters_New\UnVincent_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">UniquePed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

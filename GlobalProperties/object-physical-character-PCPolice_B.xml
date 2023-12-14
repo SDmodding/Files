@@ -1,0 +1,74 @@
+<PropertySet name="object-physical-character-PCPolice_B" nameUID="0x7FDFCE90" schema="object-physical-character-PCPolice_B">
+    <Parent>object-physical-character-stats-police_striker</Parent>
+    <Property name="CanArrest" type="Boolean">True</Property>
+    <Property name="CanUseCover" type="Boolean">True</Property>
+    <Property name="DefaultRangedWeapon" type="Symbol" Symbol="0x83F1DDD9">smg_45cal_taclight</Property>
+    <Property name="Description" type="String">GenericCop</Property>
+    <Property name="DesiredWeapon" type="Symbol" Symbol="0x4C6CE8DA">object-physical-weapon-firearm-smg-45cal_taclight</Property>
+    <Property name="PropList" type="List">
+        <Property type="Symbol" Symbol="0xF51BA4F9">object-physical-prop-Attachable-PoliceHat001</Property>
+        <Property type="Symbol" Symbol="0xF8588220">object-physical-prop-Attachable-PoliceHat002</Property>
+    </Property>
+    <Property name="RangedCombatStrategy" type="Symbol" Symbol="0x360800E0">Balanced</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_POLICE_VARIANT1</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NONE</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">LAW</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_Health" type="PropSet">
+        <BinData>
+            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
+            <maxHealth type="Int32">600</maxHealth>
+            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
+            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
+            <healthProjectileDamageMultiplier type="Float32">0.5</healthProjectileDamageMultiplier>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\PCPoliceA_Head</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xE46ED823">Data\Characters_New\PCPoliceA_Head</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x179693EB">Data\Characters_New\PCPoliceB_Head_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\PCPolice_Body</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xA3543AB7">Data\Characters_New\PCPolice_Body</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xC9A63C29">Data\Characters_New\PCPolice_Body_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+</PropertySet>

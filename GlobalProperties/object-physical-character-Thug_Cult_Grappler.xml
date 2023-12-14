@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-Thug_Cult_Grappler" nameUID="0x4468868E" schema="object-physical-character-Thug_Cult_Grappler">
+    <Parent>object-physical-character-Thug_BsL_grap</Parent>
+    <Property name="Description" type="String">Cult Grappler</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xE0884651">BSL</Property>
+                <Property type="Symbol" Symbol="0xC73BA389">Grappler</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\Cult_GrapplerA_Head</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xAB687806">Data\Characters_New\Cult_GrapplerA_Head</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x55048CD">Data\Characters_New\Cult_GrapplerA_Head_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\Cult_GrapplerA_Body</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x90D4835">Data\Characters_New\Cult_GrapplerA_Body</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x665F2AA4">Data\Characters_New\Cult_GrapplerA_Body_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0.9</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

@@ -1,0 +1,163 @@
+<PropertySet name="object-physical-vehicle-CommonTruck" nameUID="0xAB03D2AB" schema="object-physical-vehicle-CommonTruck">
+    <Parent>object-physical-vehicle</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\Vehicle.act</Property>
+    <Property name="ActionHijackProfile" type="Symbol" Symbol="0x8574A6BE">Vehicles-ActionHijackProfile-Truck</Property>
+    <Property name="Description" type="String">Truck- Common Truck</Property>
+    <Property name="DriverProfileList" type="List">
+        <Property type="Symbol" Symbol="0xA4FCA83D">default-component-personality-driverdefault</Property>
+    </Property>
+    <Property name="LockedForGrinding" type="Boolean">False</Property>
+    <Property name="VehicleExclusionClassList" type="List">
+        <Property type="Symbol" Symbol="0x10E9C9C4">NoTruckDriver</Property>
+    </Property>
+    <Property name="VehicleJob" type="Symbol" Symbol="0x94BC85A0">Traffic</Property>
+    <Property name="VehiclePriorityClassList" type="List">
+        <Property type="Symbol" Symbol="0xBA471E6C">TruckDriver</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Car</PoseDriverSet>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CarPhysicsMover</Parent>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <physicsPropertySetAI type="Symbol">Vehicles-GenericCarProperties</physicsPropertySetAI>
+            <physicsPropertySetHuman type="Symbol">Vehicles-GenericCarProperties</physicsPropertySetHuman>
+            <modelName type="String">Exec01</modelName>
+            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
+            <damageMultiplierWorldCollisions type="Float32">0.5</damageMultiplierWorldCollisions>
+            <damageMultiplierVehicleCollisions type="Float32">0.5</damageMultiplierVehicleCollisions>
+            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
+            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
+            <boundingBoxMin type="Vector3" x="-3.12" y="-3.12" z="-1.1"/>
+            <boundingBoxMax type="Vector3" x="3.1" y="3.1" z="1.1"/>
+            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
+            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
+            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
+            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
+            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
+            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
+            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
+            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
+            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
+            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
+            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
+            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
+            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
+            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
+            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
+            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
+            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
+            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
+            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
+            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
+            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
+            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Car</PoseDriverSet>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_Interactable" type="PropSet">
+        <BinData>
+            <InteractionPoints type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CarPhysicsMover</Parent>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <physicsPropertySetAI type="Symbol">Vehicles-GenericCarProperties</physicsPropertySetAI>
+            <physicsPropertySetHuman type="Symbol">Vehicles-GenericCarProperties</physicsPropertySetHuman>
+            <modelName type="String">Exec01</modelName>
+            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
+            <damageMultiplierWorldCollisions type="Float32">0.5</damageMultiplierWorldCollisions>
+            <damageMultiplierVehicleCollisions type="Float32">0.5</damageMultiplierVehicleCollisions>
+            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
+            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
+            <boundingBoxMin type="Vector3" x="-3.12" y="-3.12" z="-1.1"/>
+            <boundingBoxMax type="Vector3" x="3.1" y="3.1" z="1.1"/>
+            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
+            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
+            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
+            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
+            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
+            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
+            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
+            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
+            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
+            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
+            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
+            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
+            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
+            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
+            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
+            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
+            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
+            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
+            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
+            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
+            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
+            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-VehicleWithBackPassengers</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_TSActor" type="PropSet">
+        <BinData>
+            <SkookumClass type="Symbol">Car</SkookumClass>
+        </BinData>
+    </Property>
+    <Property name="component_VehicleEffects" type="PropSet">
+        <BinData>
+            <headlightsInRainProbability type="Float32">0.5</headlightsInRainProbability>
+            <headlightsAlwaysOn type="Boolean">false</headlightsAlwaysOn>
+            <headlightsAlwaysOff type="Boolean">false</headlightsAlwaysOff>
+            <DamageTransfer type="Symbol">truckcab</DamageTransfer>
+            <EffectGroupName type="Symbol">commontruck</EffectGroupName>
+            <InitialDirtSeed type="Float32">0.2</InitialDirtSeed>
+            <GrimeFactor type="Float32">1</GrimeFactor>
+            <Speed0 type="Float32">0</Speed0>
+            <Speed1 type="Float32">5</Speed1>
+            <Speed2 type="Float32">30</Speed2>
+            <Speed3 type="Float32">60</Speed3>
+        </BinData>
+    </Property>
+    <Property name="component_VehicleProperties" type="PropSet">
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-VehicleWithBackPassengers</subTargetingProfile>
+            <simObjectVehicleType type="Symbol">eSIM_OBJ_VEHICLE_TYPE_TRUCK</simObjectVehicleType>
+            <simObjectBoatType type="Symbol"/>
+            <aim_limit type="List"/>
+            <default_left_aim_limit type="Float32">45</default_left_aim_limit>
+            <default_right_aim_limit type="Float32">-45</default_right_aim_limit>
+            <door_phantom_info type="List"/>
+        </BinData>
+    </Property>
+    <Property name="explosionPropertySet" type="Symbol" Symbol="0x2BF02FDB">object-physical-explosion-truck</Property>
+</PropertySet>

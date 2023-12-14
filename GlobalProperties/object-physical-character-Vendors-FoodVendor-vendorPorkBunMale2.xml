@@ -1,0 +1,66 @@
+<PropertySet name="object-physical-character-Vendors-FoodVendor-vendorPorkBunMale2" nameUID="0x5384350D" schema="object-physical-character-Vendors-FoodVendor-vendorPorkBunMale2">
+    <Parent>object-physical-character-Vendors-FoodVendor-FoodVendor_Base</Parent>
+    <Property name="Description" type="String">Pork Bun Chao</Property>
+    <Property name="Inventory" type="List">
+        <ListProperty>
+            <Property name="Value" type="Int32">1000000</Property>
+        </ListProperty>
+    </Property>
+    <Property name="SellableItem" type="Symbol" Symbol="0x9DA6D013">eINVENTORY_ITEM_PORK_BUN</Property>
+    <Property name="SellableItemProp" type="Symbol" Symbol="0x86E28C14">object-physical-prop-LOP_PorkBun001</Property>
+    <Property name="Voice" type="String">Lester</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_SHOPKEEPER</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xEFA85545">Elderly</Property>
+                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
+            </ResourceTags>
+            <ResourceList type="List">
+                <Property type="Symbol"/>
+                <Property type="Symbol" Symbol="0x4E8BA675">Data\Characters_New\AS_B_Cook</Property>
+            </ResourceList>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Property name="Model" type="Symbol"/>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="Model" type="Symbol"/>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

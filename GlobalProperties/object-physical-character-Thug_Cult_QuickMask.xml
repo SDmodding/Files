@@ -1,0 +1,33 @@
+<PropertySet name="object-physical-character-Thug_Cult_QuickMask" nameUID="0x6159FB39" schema="object-physical-character-Thug_Cult_QuickMask">
+    <Parent>object-physical-character-Thug_BsL_quick</Parent>
+    <Property name="Description" type="String">Cult QuickStriker with Gas Mask</Property>
+    <Property name="HasMask" type="Boolean">True</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xE0884651">BSL</Property>
+                <Property type="Symbol" Symbol="0x31B08D26">Quick</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\Cult_Mask_Head</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x4B6BDC7D">Data\Characters_New\Cult_Mask_Head</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x342A426A">Data\Characters_New\Cult_Mask_Head_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\Cult_QuickA_Body</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x18C2DFF7">Data\Characters_New\Cult_QuickA_Body</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xA9F26EB2">Data\Characters_New\Cult_QuickA_Body_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">-0.9</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

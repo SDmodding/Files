@@ -1,0 +1,62 @@
+<PropertySet name="object-physical-character-Vendors-ParkingVendor-RaceParkingVendor-R_VP_01" nameUID="0xFE94A1A4" schema="object-physical-character-Vendors-ParkingVendor-RaceParkingVendor-R_VP_01">
+    <Parent>object-physical-character-Vendors-ParkingVendor-parkingAttendent</Parent>
+    <Property name="AccessStoreCaption" type="String">Access Store</Property>
+    <Property name="AttractedToPOIs" type="Boolean">True</Property>
+    <Property name="CanUseUmbrella" type="Boolean">True</Property>
+    <Property name="CanWander" type="Boolean">False</Property>
+    <Property name="Description" type="String">Vendor: R_VP_01</Property>
+    <Property name="HasInventoryUI" type="Boolean">False</Property>
+    <Property name="StoreDesc" type="String">Chose which car to race with.</Property>
+    <Property name="StoreId" type="Symbol" Symbol="0x2936C5E">R_VP_01</Property>
+    <Property name="StoreTitle" type="String">$EVENT_RACE_VP_01_TITLE</Property>
+    <Property name="StoreType" type="Symbol" Symbol="0xB991FDB6">Race</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_SHOPKEEPER</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
+                <Property type="Symbol" Symbol="0x18AB26C4">Parking</Property>
+                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
+            </ResourceTags>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0x8B963DA1">Data\Characters_New\AM_H_063</Property>
+                <Property type="Symbol" Symbol="0x62E9AD1E">Data\Characters_New\AM_B_010</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0.1</BMIMin>
+            <BMIMax type="Float32">0.1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

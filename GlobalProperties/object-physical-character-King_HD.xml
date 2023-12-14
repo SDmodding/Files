@@ -1,0 +1,60 @@
+<PropertySet name="object-physical-character-King_HD" nameUID="0x2DACF501" schema="object-physical-character-King_HD">
+    <Parent>object-physical-character-King</Parent>
+    <Property name="Description" type="String">King_HD</Property>
+    <Property name="Voice" type="String">King</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">PrimaryBasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <RigNameHD type="String">King_HD</RigNameHD>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
+                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
+                <Property type="SymbolUC" Symbol="0xD820C366">Thug_Brawler</Property>
+                <Property type="SymbolUC" Symbol="0x4B2E6719">Thug_Brawler_Strikes</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">PrimaryBasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <RigNameHD type="String">King_HD</RigNameHD>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
+                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
+                <Property type="SymbolUC" Symbol="0xD820C366">Thug_Brawler</Property>
+                <Property type="SymbolUC" Symbol="0x4B2E6719">Thug_Brawler_Strikes</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0x4414617A">Data\Characters_New\King_HD</Property>
+            </ResourceList>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0x4414617A">Data\Characters_New\King_HD</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">UniquePed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

@@ -1,0 +1,46 @@
+<PropertySet name="object-physical-weapon-firearm" nameUID="0x9C5D997C" schema="object-physical-weapon-firearm">
+    <Parent>default-component-Gun</Parent>
+    <Property name="BulletType" type="SymbolUC" Symbol="0xA626BE30">Bullet</Property>
+    <Property name="DesiredDistance" type="Float32">10</Property>
+    <Property name="FlickTargetingAngularLimit" type="Float32">45</Property>
+    <Property name="HardLockDamageMultiplier" type="Float32">1</Property>
+    <Property name="HardLockReticleSizeMax" type="Float32">0.01</Property>
+    <Property name="HardLockReticleSizeMin" type="Float32">0.002</Property>
+    <Property name="IsRealWeapon" type="Boolean">True</Property>
+    <Property name="MagazineType" type="Symbol" Symbol="0x303BC4FC">object-physical-prop-StreamedObject-HandGunClip001</Property>
+    <Property name="MaxDisiredDistance" type="Float32">25</Property>
+    <Property name="MinDesiredDistance" type="Float32">2</Property>
+    <Property name="NetworkView" type="String">NetGunView</Property>
+    <Property name="PerceivedDangerous" type="Boolean">True</Property>
+    <Property name="ProjectileGravity" type="Float32">0</Property>
+    <Property name="ProjectilePhysicsImpulse" type="Float32">50</Property>
+    <Property name="ProjectileSpeed" type="Float32">-1</Property>
+    <Property name="ProjectileSpeedAI" type="Float32">-1</Property>
+    <Property name="RadarHighlightType" type="Symbol" Symbol="0x8A5A95FC">Weapon</Property>
+    <Property name="RecoilDurEye" type="Float32">0</Property>
+    <Property name="RecoilDurLook" type="Float32">0</Property>
+    <Property name="RecoilKickback" type="Float32">0</Property>
+    <Property name="RecoilKickbackSpeed" type="Float32">0</Property>
+    <Property name="RecoilKickupMax" type="Float32">0</Property>
+    <Property name="RecoilKickupMin" type="Float32">0</Property>
+    <Property name="RecoilKickupSpeed" type="Float32">0</Property>
+    <Property name="ReticleSizeBlindfire" type="Float32">0.05</Property>
+    <Property name="ReticleSizeMax" type="Float32">0.035</Property>
+    <Property name="ReticleSizeMin" type="Float32">0.015</Property>
+    <Property name="SlowModeProjectileDamageMultiplier" type="Float32">1</Property>
+    <Property name="SlowModeProjectileDamageMultiplierAI" type="Float32">1</Property>
+    <Property name="SlowModeProjectileSpeedMultiplier" type="Float32">1</Property>
+    <Property name="SlowModeProjectileSpeedMultiplierAI" type="Float32">1</Property>
+    <Property name="SlowModeRateOfFireMultiplier" type="Float32">1</Property>
+    <Property name="SlowModeRateOfFireMultiplierAI" type="Float32">1</Property>
+    <Property name="Tracer" type="SymbolUC" Symbol="0xF2BB4308">9mm_TracerBeam_Wei</Property>
+    <Property name="TracerAI" type="SymbolUC" Symbol="0x4469AEB0">9mm_TracerBeam</Property>
+    <Property name="TracerTrail" type="SymbolUC" Symbol="0x7F7EE4B">9mm_TracerBeamTrail</Property>
+    <Property name="TracerTrailAI" type="SymbolUC" Symbol="0x7F7EE4B">9mm_TracerBeamTrail</Property>
+    <Property name="VehicleDamage" type="UInt32">2</Property>
+    <Property name="component_TSActor" type="PropSet">
+        <BinData>
+            <SkookumClass type="Symbol">Firearm</SkookumClass>
+        </BinData>
+    </Property>
+</PropertySet>

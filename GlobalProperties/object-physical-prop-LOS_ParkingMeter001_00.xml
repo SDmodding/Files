@@ -1,0 +1,59 @@
+<PropertySet name="object-physical-prop-LOS_ParkingMeter001_00" nameUID="0xA493804D" schema="object-physical-prop-LOS_ParkingMeter001_00">
+    <Parent>object-physical-prop-VisibleProp</Parent>
+    <Property name="Description" type="String">LOS_ParkingMeter001</Property>
+    <Property name="SimObjChildren" type="List">
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">ParkingMeterUsePoint01</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-check_meter</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x1A08FE0D">C_InteractionPoint01</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">ParkingMeterLookPoint01</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="1" z="0" w="0"/>
+                <Up x="0" y="0" z="1" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-look</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC"/>
+                    <Property name="schema_classlist" type="PropSet"/>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOS_ParkingMeter001_00</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOS_ParkingMeter001_00</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

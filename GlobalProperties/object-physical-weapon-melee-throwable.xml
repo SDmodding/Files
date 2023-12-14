@@ -1,0 +1,25 @@
+<PropertySet name="object-physical-weapon-melee-throwable" nameUID="0x75F53C8D" schema="object-physical-weapon-melee-throwable">
+    <Parent>object-physical-weapon-melee</Parent>
+    <Property name="AttachBone" type="String">Bip01 R Prop</Property>
+    <Property name="MaxAngularVelocityWhenThrown" type="Vector3" x="10" y="10" z="10"/>
+    <Property name="MinAngularVelocityWhenThrown" type="Vector3" x="5" y="5" z="5"/>
+    <Property name="PropBone" type="String">Grip R Hand</Property>
+    <Property name="RangedDistance" type="Float32">10</Property>
+    <Property name="ThrownSpeed" type="Float32">10</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-StreamedResource</Parent>
+        </PropertySet>
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol"/>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

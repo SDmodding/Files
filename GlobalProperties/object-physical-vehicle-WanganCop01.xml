@@ -1,0 +1,173 @@
+<PropertySet name="object-physical-vehicle-WanganCop01" nameUID="0xFADCA6BD" schema="object-physical-vehicle-WanganCop01">
+    <Parent>object-physical-vehicle-CommonCar</Parent>
+    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0xE2F570AB">Cameras-ChaseCameraLowin</Property>
+    <Property name="Description" type="String">2Dr- WanganCop</Property>
+    <Property name="EnableMaxSpeedStatGame" type="Boolean">True</Property>
+    <Property name="HasShotgun" type="Boolean">True</Property>
+    <Property name="HasTireIron" type="Boolean">False</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">BlackPaint</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">WanganCop01</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Car</PoseDriverSet>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CarPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_WIDE</Parent>
+        </PropertySet>
+        <BinData>
+            <physicsPropertySetAI type="Symbol">Vehicles-AI_WanganGSXProperties</physicsPropertySetAI>
+            <physicsPropertySetHuman type="Symbol">Vehicles-WanganGSXProperties</physicsPropertySetHuman>
+            <modelName type="String">WanganCop01</modelName>
+            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_CAR_WIDE</TrunkType>
+            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
+            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
+            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
+            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
+            <boundingBoxMin type="Vector3" x="-2.3" y="-2.3" z="-1"/>
+            <boundingBoxMax type="Vector3" x="2.4" y="2.4" z="1"/>
+            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
+            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
+            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
+            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
+            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
+            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
+            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
+            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
+            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
+            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
+            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
+            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
+            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
+            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
+            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
+            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
+            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
+            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
+            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
+            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
+            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
+            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">WanganCop01</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Car</PoseDriverSet>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_CAR_WIDE</Parent>
+        </PropertySet>
+        <BinData>
+            <physicsPropertySetAI type="Symbol">Vehicles-AI_WanganGSXProperties</physicsPropertySetAI>
+            <physicsPropertySetHuman type="Symbol">Vehicles-WanganGSXProperties</physicsPropertySetHuman>
+            <modelName type="String">WanganCop01</modelName>
+            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_CAR_WIDE</TrunkType>
+            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
+            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
+            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
+            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
+            <boundingBoxMin type="Vector3" x="-2.3" y="-2.3" z="-1"/>
+            <boundingBoxMax type="Vector3" x="2.4" y="2.4" z="1"/>
+            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
+            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
+            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
+            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
+            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
+            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
+            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
+            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
+            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
+            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
+            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
+            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
+            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
+            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
+            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
+            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
+            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
+            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
+            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
+            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
+            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
+            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-VehicleFourWheels</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0x389579C7">Data\Vehicles_New\WanganCop01</Property>
+                <Property type="Symbol" Symbol="0x2A4224B0">Data\Vehicles_New\WheelStyle37</Property>
+                <Property type="Symbol" Symbol="0x5FEC4CA7">Data\Vehicles_New\WanganCopLight01</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List">
+                <Property type="Symbol" Symbol="0xA431CB47">Data\Vehicles_New\WanganCop01_ts001</Property>
+                <Property type="Symbol" Symbol="0x88F76B0A">Data\Vehicles_New\WheelStyle37_ts_001</Property>
+                <Property type="Symbol" Symbol="0xA50B6307">Data\Vehicles_New\WanganCopLight01_ts_001</Property>
+            </TextureSetList>
+            <EntityType type="Symbol">FourWheelVehicleWithRoofAttachment</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_VehicleAudio" type="PropSet">
+        <BinData>
+            <AudioPropertySet type="Symbol">Vehicles-Audio-CopCarSportTwoAudioProperties</AudioPropertySet>
+        </BinData>
+    </Property>
+    <Property name="component_VehicleEffects" type="PropSet">
+        <BinData>
+            <headlightsInRainProbability type="Float32">0.5</headlightsInRainProbability>
+            <headlightsAlwaysOn type="Boolean">false</headlightsAlwaysOn>
+            <headlightsAlwaysOff type="Boolean">false</headlightsAlwaysOff>
+            <DamageTransfer type="Symbol">vehicle2door</DamageTransfer>
+            <EffectGroupName type="Symbol">WanganCop</EffectGroupName>
+            <InitialDirtSeed type="Float32">0.2</InitialDirtSeed>
+            <GrimeFactor type="Float32">0</GrimeFactor>
+            <Speed0 type="Float32">0</Speed0>
+            <Speed1 type="Float32">5</Speed1>
+            <Speed2 type="Float32">30</Speed2>
+            <Speed3 type="Float32">60</Speed3>
+        </BinData>
+    </Property>
+    <Property name="component_VehicleProperties" type="PropSet">
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-VehicleFourWheels</subTargetingProfile>
+            <simObjectVehicleType type="Symbol">eSIM_OBJ_VEHICLE_TYPE_CAR</simObjectVehicleType>
+            <simObjectBoatType type="Symbol"/>
+            <aim_limit type="List"/>
+            <default_left_aim_limit type="Float32">45</default_left_aim_limit>
+            <default_right_aim_limit type="Float32">-45</default_right_aim_limit>
+            <door_phantom_info type="List"/>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

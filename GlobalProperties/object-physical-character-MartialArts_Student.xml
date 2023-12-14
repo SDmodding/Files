@@ -1,0 +1,96 @@
+<PropertySet name="object-physical-character-MartialArts_Student" nameUID="0x4495B524" schema="object-physical-character-MartialArts_Student">
+    <Parent>object-physical-character-animbanks-ThugQuickStrikerElite</Parent>
+    <Property name="CanDoCellIdle" type="Boolean">False</Property>
+    <Property name="CanUseUmbrella" type="Boolean">False</Property>
+    <Property name="Description" type="String">Dojo Martial Arts Student</Property>
+    <Property name="DisarmAbility" type="Int32">0</Property>
+    <Property name="NotSemiProne" type="Boolean">True</Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0xB00E559E">default-component-personality-aggressive</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
+                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
+                <Property type="SymbolUC" Symbol="0x33616624">Thug_Elite</Property>
+                <Property type="SymbolUC" Symbol="0x1EDEAA07">Thug_Elite_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xC4F522A7">Thug_QuickStriker</Property>
+                <Property type="SymbolUC" Symbol="0x35AA897E">Thug_QuickStriker_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xF4601FA1">Thug_QuickStriker_Elite</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
+                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
+                <Property type="SymbolUC" Symbol="0x33616624">Thug_Elite</Property>
+                <Property type="SymbolUC" Symbol="0x1EDEAA07">Thug_Elite_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xC4F522A7">Thug_QuickStriker</Property>
+                <Property type="SymbolUC" Symbol="0x35AA897E">Thug_QuickStriker_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xF4601FA1">Thug_QuickStriker_Elite</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_MARTIAL_ARTS_STUDENT</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NONE</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">STUDENT</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
+                <Property type="Symbol" Symbol="0xF3A76FBB">Dojo</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

@@ -1,0 +1,68 @@
+<PropertySet name="object-physical-character-shopkeeper1" nameUID="0x79CA075E" schema="object-physical-character-shopkeeper1">
+    <Parent>default-component-FaceAction</Parent>
+    <Property name="CanBeckon" type="Boolean">True</Property>
+    <Property name="CanWander" type="Boolean">False</Property>
+    <Property name="Description" type="String">VE Shopkeeper 1</Property>
+    <Property name="FaceAction" type="Symbol" Symbol="0xA82DBB3F">eFACEACTION_PURCHASE</Property>
+    <Property name="FaceActionEnabled" type="Boolean">True</Property>
+    <Property name="Inventory" type="List">
+        <ListProperty>
+            <Property name="Value" type="Int32">1000000</Property>
+        </ListProperty>
+    </Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x56203F5">default-component-personality-shopkeep</Property>
+    </Property>
+    <Property name="PipsRequired" type="UInt32">0</Property>
+    <Property name="RemoveOnCompletion" type="Boolean">False</Property>
+    <Property name="SellableItem" type="Symbol" Symbol="0x9DA6D013">eINVENTORY_ITEM_PORK_BUN</Property>
+    <Property name="TetherAttenuation" type="Float32">2</Property>
+    <Property name="TetherDistance" type="Float32">10</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_SHOPKEEPER</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">2</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">8</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0xA0FC0E2">ShopKeep</Property>
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+            </ResourceTags>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xAB9C28B0">Data\Characters_New\AM_H_016</Property>
+                <Property type="Symbol"/>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

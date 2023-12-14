@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-EventCharacters-F_RN2_Character" nameUID="0xF7216AA3" schema="object-physical-character-EventCharacters-F_RN2_Character">
+    <Parent>object-physical-character-Thug_Wsg_quick</Parent>
+    <Property name="Description" type="String">Favour: Rough Neighborhood_Red</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0x6873DB1D">Wsg</Property>
+                <Property type="Symbol" Symbol="0x31B08D26">Quick</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\Wsg_QuickA_Head</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x8C64FD03">Data\Characters_New\Wsg_QuickA_Head</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x5180B17">Data\Characters_New\Wsg_QuickA_Head_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="ColorTintIndex" type="Int32">0</Property>
+                    <Property name="Model" type="Symbol" Symbol="0x2E01CD30">Data\Characters_New\Wsg_QuickA_Body</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x6617697E">Data\Characters_New\Wsg_QuickA_Body_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">-0.9</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

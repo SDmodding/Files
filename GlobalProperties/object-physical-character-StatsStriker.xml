@@ -1,0 +1,37 @@
+<PropertySet name="object-physical-character-StatsStriker" nameUID="0x15DD6562" schema="object-physical-character-StatsStriker">
+    <Parent>object-physical-character-StatsRangedWeapon</Parent>
+    <Property name="BlockChance" type="Int32">0</Property>
+    <Property name="CounterAttack" type="Int32">35</Property>
+    <Property name="FakeResistanceChance" type="Int32">50</Property>
+    <Property name="Grapple" type="Int32">20</Property>
+    <Property name="HealthToBeIntimidated" type="Float32">50</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol"/>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_THUG</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_STRIKER</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol"/>
+        </BinData>
+    </Property>
+</PropertySet>

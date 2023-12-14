@@ -1,0 +1,80 @@
+<PropertySet name="object-physical-character_motion_tester" nameUID="0x74149586" schema="object-physical-character_motion_tester">
+    <Parent>default-SimObject</Parent>
+    <Property name="AIDataBuild" type="Boolean">True</Property>
+    <Property name="ActFileName" type="String">Data\Global\Act\Chan.act</Property>
+    <Property name="Description" type="String"/>
+    <Property name="ObjectType" type="Symbol" Symbol="0xFF2078FA">character_motion_tester</Property>
+    <Property name="SpawnPriority" type="Symbol" Symbol="0x9548F73B">Mission</Property>
+    <Property name="component-CharacterPhysics" type="PropSet"/>
+    <Property name="component_AIActionTree" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-AIActionTree</Parent>
+        </PropertySet>
+        <BinData>
+            <AIBehaviour type="String">Pedestrian_behaviour.act</AIBehaviour>
+        </BinData>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">SiuWah</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">SiuWah</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol"/>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NONE</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol"/>
+        </BinData>
+    </Property>
+    <Property name="component_WorldContext" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-WorldContext</Parent>
+        </PropertySet>
+    </Property>
+</PropertySet>

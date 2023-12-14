@@ -1,0 +1,28 @@
+<PropertySet name="object-physical-character-DoctorTang" nameUID="0x2528A09B" schema="object-physical-character-DoctorTang">
+    <Parent>object-physical-character</Parent>
+    <Property name="Description" type="String">AM_H</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\AM_H_018</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x971288BA">Data\Characters_New\AM_H_018</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xB2D9D24">Data\Characters_New\TM_H_018</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\AS_B_Doctor2</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x49B920CD">Data\Characters_New\AS_B_Doctor2</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x2EFA7FB3">Data\Characters_New\TS_B_Doctor2</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

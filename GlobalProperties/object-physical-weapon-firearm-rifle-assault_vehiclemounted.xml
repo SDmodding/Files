@@ -1,0 +1,101 @@
+<PropertySet name="object-physical-weapon-firearm-rifle-assault_vehiclemounted" nameUID="0xF0E43AEC" schema="object-physical-weapon-firearm-rifle-assault_vehiclemounted">
+    <Parent>object-physical-weapon-firearm</Parent>
+    <Property name="AIOnDeathDropMaxAmmoCount" type="UInt32">150</Property>
+    <Property name="AIOnDeathDropMinAmmoCount" type="UInt32">200</Property>
+    <Property name="AccuracyPenaltyPerShot" type="Float32">0</Property>
+    <Property name="AccuracyRateMultiplier" type="Float32">10</Property>
+    <Property name="ActFileName" type="String">Data\Global\Act\Rifle.act</Property>
+    <Property name="AimFovOffset" type="Float32">0</Property>
+    <Property name="AimOriginOffset" type="Vector3" x="0.15" y="0.15" z="-0.18"/>
+    <Property name="AmmoClipCapacity" type="Int32">200</Property>
+    <Property name="AmmoInventoryItem" type="String">eINVENTORY_ITEM_RIFLE_ASSAULT_AMMO</Property>
+    <Property name="AmmoTotalCapacity" type="Int32">200</Property>
+    <Property name="AngularInaccuracyMax" type="Float32">2.5</Property>
+    <Property name="AngularInaccuracyMin" type="Float32">1.4</Property>
+    <Property name="AttachBone" type="String">Bip01 R Prop</Property>
+    <Property name="AudioWeaponIsLooping" type="Boolean">True</Property>
+    <Property name="AudioWeaponType" type="WwiseID"/>
+    <Property name="BulletPerShot" type="UInt32">1</Property>
+    <Property name="BulletType" type="SymbolUC" Symbol="0x40283CD1">Bullet_Rifle</Property>
+    <Property name="Damage" type="UInt32">32</Property>
+    <Property name="Description" type="String"/>
+    <Property name="HasWeaponLight" type="Boolean">False</Property>
+    <Property name="HudReticle" type="Symbol" Symbol="0x7B173445">Rifle</Property>
+    <Property name="IsAutomatic" type="Boolean">True</Property>
+    <Property name="IsTwoHandedWeapon" type="Boolean">True</Property>
+    <Property name="MagazineType" type="Symbol" Symbol="0x4D1F725C">object-physical-prop-StreamedObject-AssaultRifleClip001</Property>
+    <Property name="ProjectilePhysicsImpulse" type="Float32">90</Property>
+    <Property name="ProjectileReaction" type="String">ePROJECTILE_REACTION_LIGHT</Property>
+    <Property name="ProjectileSpawnBoneName" type="String">Muzzle</Property>
+    <Property name="ProjectileSpeed" type="Float32">600</Property>
+    <Property name="ProjectileSpeedAI" type="Float32">300</Property>
+    <Property name="PropBone" type="String">Grip R Hand</Property>
+    <Property name="PropDamage" type="UInt32">50</Property>
+    <Property name="RangedDistance" type="Float32">60</Property>
+    <Property name="RateOfFire" type="Float32">0.1</Property>
+    <Property name="ReticleSizeBlindfire" type="Float32">0.065</Property>
+    <Property name="ReticleSizeMax" type="Float32">0.015</Property>
+    <Property name="ReticleSizeMin" type="Float32">0.015</Property>
+    <Property name="SlowModeProjectileDamageMultiplier" type="Float32">1.6</Property>
+    <Property name="SlowModeProjectileSpeedMultiplier" type="Float32">0.75</Property>
+    <Property name="SlowModeProjectileSpeedMultiplierAI" type="Float32">0.25</Property>
+    <Property name="SlowModeRateOfFireMultiplier" type="Float32">0.8</Property>
+    <Property name="SlowModeRateOfFireMultiplierAI" type="Float32">2</Property>
+    <Property name="SoundbankList" type="List">
+        <Property type="WwiseID"/>
+        <Property type="WwiseID"/>
+        <Property type="WwiseID"/>
+    </Property>
+    <Property name="StartingMaxAmmoCount" type="UInt32">200</Property>
+    <Property name="StartingMinAmmoCount" type="UInt32">200</Property>
+    <Property name="Tracer" type="SymbolUC" Symbol="0x5C9FC1A3">Rifle_TracerBeam_Wei</Property>
+    <Property name="TracerAI" type="SymbolUC" Symbol="0xF3EF7462">Rifle_TracerBeam</Property>
+    <Property name="TracerTrail" type="SymbolUC" Symbol="0x7F7EE4B">9mm_TracerBeamTrail</Property>
+    <Property name="TracerTrailAI" type="SymbolUC" Symbol="0x7F7EE4B">9mm_TracerBeamTrail</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">AssaultRifle001</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\Rifle.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">AssaultRifle001</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\Rifle.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_InventoryItem" type="PropSet">
+        <BinData>
+            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
+            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
+            <simObjectInventoryItem type="Symbol">0x53038A7B</simObjectInventoryItem>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-StreamedResource</Parent>
+        </PropertySet>
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xFBE66B33">Data\Props_New\AssaultRifle001</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">Prop</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="simObjectWeaponType" type="String">eSIM_OBJ_WEAPON_TYPE_RIFLE</Property>
+</PropertySet>

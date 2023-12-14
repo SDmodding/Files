@@ -1,0 +1,39 @@
+<PropertySet name="object-physical-prop-VisibleProp" nameUID="0x3C7C2007" schema="object-physical-prop-VisibleProp">
+    <Parent>object-physical-prop</Parent>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterAnimation</Parent>
+        </PropertySet>
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CompositeDrawable" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CompositeDrawable</Parent>
+        </PropertySet>
+        <BinData>
+            <DefaultSaturationOverride type="Float32">1</DefaultSaturationOverride>
+            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
+            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
+            <SkinSSEnabled type="Boolean">false</SkinSSEnabled>
+            <OverlayWeights type="List"/>
+            <OverlayTextures type="List"/>
+            <DrawScale type="Float32">1</DrawScale>
+        </BinData>
+    </Property>
+</PropertySet>

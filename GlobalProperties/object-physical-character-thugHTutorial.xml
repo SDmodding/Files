@@ -1,0 +1,66 @@
+<PropertySet name="object-physical-character-thugHTutorial" nameUID="0x749932D0" schema="object-physical-character-thugHTutorial">
+    <Parent>object-physical-character-thugH</Parent>
+    <Property name="Description" type="String">ThugH Tutorial</Property>
+    <Property name="Voice" type="String">ChineseSamson</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">PrimaryBasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
+                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
+                <Property type="SymbolUC" Symbol="0xC4F522A7">Thug_QuickStriker</Property>
+                <Property type="SymbolUC" Symbol="0x35AA897E">Thug_QuickStriker_Strikes</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">PrimaryBasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
+                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
+                <Property type="SymbolUC" Symbol="0xC4F522A7">Thug_QuickStriker</Property>
+                <Property type="SymbolUC" Symbol="0x35AA897E">Thug_QuickStriker_Strikes</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_TUTORIAL</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_THUG</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_TUTORIAL</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">TRIAD_DOGBOYS</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_TUTORIAL</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+</PropertySet>

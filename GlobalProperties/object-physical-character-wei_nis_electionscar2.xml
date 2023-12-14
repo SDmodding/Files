@@ -1,0 +1,38 @@
+<PropertySet name="object-physical-character-wei_nis_electionscar2" nameUID="0x1239E9BE" schema="object-physical-character-wei_nis_electionscar2">
+    <Parent>object-physical-character-wei_nis_globals</Parent>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\Wei_Head_HD</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xD5905C49">Data\Characters_New\Wei_Head_HD</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x85938CF0">Data\Characters_New\Wei_Head_HD_Bloody_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0x938AFE7D">Data\Characters_New\H_DefaultHair</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\T_Underwear</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xA28DA87A">Data\Characters_New\T_Underwear</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x4B669C24">Data\Characters_New\T_Underwear_Scarred_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="ColorTintIndex" type="Int32">6</Property>
+                    <Property name="Model" type="Symbol" Symbol="0x7773ACE2">Data\Characters_New\P_SuitDress</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xA4907B16">Data\Characters_New\P_SuitDress_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0x4748049E">Data\Characters_New\S_Underwear</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">Player</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

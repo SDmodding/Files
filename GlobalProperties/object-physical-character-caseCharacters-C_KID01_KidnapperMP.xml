@@ -1,0 +1,85 @@
+<PropertySet name="object-physical-character-caseCharacters-C_KID01_KidnapperMP" nameUID="0xB54C71E" schema="object-physical-character-caseCharacters-C_KID01_KidnapperMP">
+    <Parent>object-physical-character-CommonPedestrian</Parent>
+    <Property name="CanDoCellIdle" type="Boolean">False</Property>
+    <Property name="CanDoSmokeIdle" type="Boolean">False</Property>
+    <Property name="Description" type="String">Case: Kidnapper - Poker Kidnapper</Property>
+    <Property name="Inventory" type="List">
+        <ListProperty>
+            <Property name="Range" type="Int32">119</Property>
+            <Property name="Value" type="Int32">126</Property>
+        </ListProperty>
+    </Property>
+    <Property name="PersonalityList" type="List">
+        <Property type="Symbol" Symbol="0x56203F5">default-component-personality-shopkeep</Property>
+    </Property>
+    <Property name="TetherAttenuation" type="Float32">2</Property>
+    <Property name="TetherDistance" type="Float32">10</Property>
+    <Property name="component_CharacterPhysics" type="PropSet">
+        <BinData>
+            <Mass type="Float32">75</Mass>
+            <MaxForce type="Float32">1000</MaxForce>
+            <MaxClimableSlope type="Float32">65</MaxClimableSlope>
+            <WalkCollisionHeight type="Float32">1.835</WalkCollisionHeight>
+            <CombatCollisionHeight type="Float32">1.835</CombatCollisionHeight>
+            <CrouchCollisionHeight type="Float32">0.95</CrouchCollisionHeight>
+            <DrivingCollisionHeight type="Float32">1.1</DrivingCollisionHeight>
+            <CrawlCollisionHeight type="Float32">0.3</CrawlCollisionHeight>
+            <SittingCollisionHeight type="Float32">1.3</SittingCollisionHeight>
+            <CoverCollisionHeight type="Float32">1.835</CoverCollisionHeight>
+            <FreerunCollisionHeight type="Float32">1.835</FreerunCollisionHeight>
+            <WalkCollisionRadius type="Float32">0.32</WalkCollisionRadius>
+            <CombatCollisionRadius type="Float32">0.5</CombatCollisionRadius>
+            <CrouchCollisionRadius type="Float32">0.35</CrouchCollisionRadius>
+            <DrivingCollisionRadius type="Float32">0.3</DrivingCollisionRadius>
+            <CrawlCollisionRadius type="Float32">0.3</CrawlCollisionRadius>
+            <SittingCollisionRadius type="Float32">0.3</SittingCollisionRadius>
+            <CoverCollisionRadius type="Float32">0.32</CoverCollisionRadius>
+            <FreerunCollisionRadius type="Float32">0.2</FreerunCollisionRadius>
+            <DetailedOnGroundCheck type="Boolean">true</DetailedOnGroundCheck>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">2</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">8</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xC3F13AD1">Data\Characters_New\AM_H_020</Property>
+                <Property type="Symbol" Symbol="0xD3DCA0D3">Data\Characters_New\AM_B_048</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

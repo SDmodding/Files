@@ -1,0 +1,95 @@
+<PropertySet name="object-physical-character-student_grap" nameUID="0xC0BE901B" schema="object-physical-character-student_grap">
+    <Parent>object-physical-character-animbanks-ThugGrappler</Parent>
+    <Property name="Description" type="String">Student Grappler</Property>
+    <Property name="component_AIActionTree" type="PropSet">
+        <BinData>
+            <AIBehaviour type="String">Pedestrian_behaviour.act</AIBehaviour>
+        </BinData>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
+                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
+                <Property type="SymbolUC" Symbol="0xF6C91D03">Thug_Grappler</Property>
+                <Property type="SymbolUC" Symbol="0x7C2C8820">Thug_Grappler_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0x378AE508">Circling</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">BasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
+                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
+                <Property type="SymbolUC" Symbol="0xF6C91D03">Thug_Grappler</Property>
+                <Property type="SymbolUC" Symbol="0x7C2C8820">Thug_Grappler_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0x378AE508">Circling</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_GRAPPLER</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_MARTIAL_ARTS_STUDENT</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_GRAPPLER</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">STUDENT</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_FormationManager" type="PropSet"/>
+    <Property name="component_Health" type="PropSet">
+        <BinData>
+            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
+            <maxHealth type="Int32">70</maxHealth>
+            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
+            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
+            <healthProjectileDamageMultiplier type="Float32">0.56</healthProjectileDamageMultiplier>
+        </BinData>
+    </Property>
+    <Property name="component_HitReaction" type="PropSet">
+        <BinData>
+            <HitActFilename type="String">Data/Global/Act/HitTree.act</HitActFilename>
+            <HitReceiverDamageMultiplierPct type="UInt32">150</HitReceiverDamageMultiplierPct>
+        </BinData>
+    </Property>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_GRAPPLER</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

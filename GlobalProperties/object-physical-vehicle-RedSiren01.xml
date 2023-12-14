@@ -1,0 +1,133 @@
+<PropertySet name="object-physical-vehicle-RedSiren01" nameUID="0x5100C46D" schema="object-physical-vehicle-RedSiren01">
+    <Parent>object-physical-vehicle-CommonBoatYacht</Parent>
+    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0xA235654">Cameras-ChaseCameraBoatLarge</Property>
+    <Property name="Description" type="String">Boat- RedSiren01</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">WhitePaint</Property>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">RedSiren01</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Boat</PoseDriverSet>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_BoatPhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <physicsPropertySetAI type="Symbol">Vehicles-AI_RedSirenProperties</physicsPropertySetAI>
+            <physicsPropertySetHuman type="Symbol">Vehicles-RedSirenProperties</physicsPropertySetHuman>
+            <modelName type="String">RedSiren01</modelName>
+            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
+            <damageMultiplierWorldCollisions type="Float32">0</damageMultiplierWorldCollisions>
+            <damageMultiplierVehicleCollisions type="Float32">0</damageMultiplierVehicleCollisions>
+            <damageMultiplierBullets type="Float32">0.05</damageMultiplierBullets>
+            <damageMultiplierTires type="Float32">0</damageMultiplierTires>
+            <boundingBoxMin type="Vector3" x="-8.6" y="-8.6" z="-2.2"/>
+            <boundingBoxMax type="Vector3" x="5.8" y="5.8" z="2.2"/>
+            <tireShotImpulse type="Float32">0</tireShotImpulse>
+            <tireBlownImpulse type="Float32">0</tireBlownImpulse>
+            <lowLodThrottleAcceleration type="Float32">2</lowLodThrottleAcceleration>
+            <lowLodBrakesAcceleration type="Float32">-2</lowLodBrakesAcceleration>
+            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
+            <lowLodMaxSpeed type="Float32">15</lowLodMaxSpeed>
+            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
+            <lowLodMinTurningRadius type="Float32">5</lowLodMinTurningRadius>
+            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
+            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
+            <vehicleDistanceToHighLod type="Float32">50</vehicleDistanceToHighLod>
+            <vehicleDistanceToMedLod type="Float32">100</vehicleDistanceToMedLod>
+            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
+            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
+            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
+            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
+            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
+            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
+            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
+            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
+            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
+            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">RedSiren01</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">Boat</PoseDriverSet>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_PhysicsMover" type="PropSet">
+        <PropertySet>
+            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <physicsPropertySetAI type="Symbol">Vehicles-AI_RedSirenProperties</physicsPropertySetAI>
+            <physicsPropertySetHuman type="Symbol">Vehicles-RedSirenProperties</physicsPropertySetHuman>
+            <modelName type="String">RedSiren01</modelName>
+            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
+            <damageMultiplierWorldCollisions type="Float32">0</damageMultiplierWorldCollisions>
+            <damageMultiplierVehicleCollisions type="Float32">0</damageMultiplierVehicleCollisions>
+            <damageMultiplierBullets type="Float32">0.05</damageMultiplierBullets>
+            <damageMultiplierTires type="Float32">0</damageMultiplierTires>
+            <boundingBoxMin type="Vector3" x="-8.6" y="-8.6" z="-2.2"/>
+            <boundingBoxMax type="Vector3" x="5.8" y="5.8" z="2.2"/>
+            <tireShotImpulse type="Float32">0</tireShotImpulse>
+            <tireBlownImpulse type="Float32">0</tireBlownImpulse>
+            <lowLodThrottleAcceleration type="Float32">2</lowLodThrottleAcceleration>
+            <lowLodBrakesAcceleration type="Float32">-2</lowLodBrakesAcceleration>
+            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
+            <lowLodMaxSpeed type="Float32">15</lowLodMaxSpeed>
+            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
+            <lowLodMinTurningRadius type="Float32">5</lowLodMinTurningRadius>
+            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
+            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
+            <vehicleDistanceToHighLod type="Float32">50</vehicleDistanceToHighLod>
+            <vehicleDistanceToMedLod type="Float32">100</vehicleDistanceToMedLod>
+            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
+            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
+            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
+            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
+            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
+            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
+            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
+            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
+            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
+            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
+            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0x4FB212C9">Data\Vehicles_New\RedSiren01</Property>
+            </ResourceList>
+            <ComponentList type="List"/>
+            <TextureSetList type="List">
+                <Property type="Symbol" Symbol="0xBB98E022">Data\Vehicles_New\RedSiren01_ts001</Property>
+            </TextureSetList>
+            <EntityType type="Symbol">Boat</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_VehicleAudio" type="PropSet">
+        <BinData>
+            <AudioPropertySet type="Symbol">Vehicles-Audio-SpeedBoatAudioProperties</AudioPropertySet>
+        </BinData>
+    </Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

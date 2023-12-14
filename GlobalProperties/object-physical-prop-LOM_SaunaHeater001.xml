@@ -1,0 +1,28 @@
+<PropertySet name="object-physical-prop-LOM_SaunaHeater001" nameUID="0xC0ABE128" schema="object-physical-prop-LOM_SaunaHeater001">
+    <Parent>object-physical-prop-LOM_RooftopFan001_00</Parent>
+    <Property name="0x4395972F" type="Boolean">True</Property>
+    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOM_SaunaHeater001.act</Property>
+    <Property name="Description" type="String">LOM_SaunaHeater001</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOM_SaunaHeater001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x7CBDBBA6">LOM_ROOFTOPFAN001</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOM_SaunaHeater001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x7CBDBBA6">LOM_ROOFTOPFAN001</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+</PropertySet>

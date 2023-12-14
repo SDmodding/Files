@@ -1,0 +1,35 @@
+<PropertySet name="object-physical-prop-LOI_PH_ScafBreak01" nameUID="0x96C276F0" schema="object-physical-prop-LOI_PH_ScafBreak01">
+    <Parent>object-physical-prop-InteractableProp</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOI_PH_ScafBreak01.act</Property>
+    <Property name="Description" type="String">LOI_PH_ScafBreak01</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOI_PH_ScafBreak01</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOI_PH_ScafBreak01</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CompositeDrawable" type="PropSet">
+        <BinData>
+            <DefaultSaturationOverride type="Float32">1</DefaultSaturationOverride>
+            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
+            <HighlightingMode type="String">eHIGHLIGHTING_MODE_OFF</HighlightingMode>
+            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
+            <SkinSSEnabled type="Boolean">false</SkinSSEnabled>
+            <OverlayWeights type="List"/>
+            <OverlayTextures type="List"/>
+            <DrawScale type="Float32">1</DrawScale>
+        </BinData>
+    </Property>
+</PropertySet>

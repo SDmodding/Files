@@ -1,0 +1,11 @@
+<PropertySet name="object-logical-TrafficRegion" nameUID="0x4D424BBE" schema="object-logical-TrafficRegion">
+    <Parent>default-SimObject</Parent>
+    <Property name="ObjectType" type="Symbol" Symbol="0x57F90554">TrafficRegion</Property>
+    <Property name="default-component-Region" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Region</Parent>
+            <Property name="Max" type="Vector3" x="10" y="10" z="10"/>
+            <Property name="Min" type="Vector3" x="-10" y="-10" z="-10"/>
+        </PropertySet>
+    </Property>
+</PropertySet>

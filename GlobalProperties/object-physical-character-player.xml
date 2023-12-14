@@ -1,0 +1,170 @@
+<PropertySet name="object-physical-character-player" nameUID="0xBD387BEE" schema="object-physical-character-player">
+    <Parent>object-physical-character-animbanks-Player</Parent>
+    <Property name="AIEntityType" type="String">eAI_ENTITY_FREERUNNER</Property>
+    <Property name="CanBePushed" type="Boolean">False</Property>
+    <Property name="Description" type="String">PlayerCharacterParameters</Property>
+    <Property name="DisplayConsumableMessageHerbalTea" type="Boolean">True</Property>
+    <Property name="DisplayConsumableMessagePorkBun" type="Boolean">True</Property>
+    <Property name="DisplayConsumableMessageSodaCan" type="Boolean">True</Property>
+    <Property name="DynamicWallCast" type="Boolean">True</Property>
+    <Property name="ImportantVFXCharacter" type="Boolean">True</Property>
+    <Property name="IsPossessed" type="Boolean">False</Property>
+    <Property name="RagdollPhysicsObjectPropertyGroup" type="Symbol" Symbol="0xA17A5FA2">Wei</Property>
+    <Property name="SpawnPriority" type="Symbol" Symbol="0xB82F7335">Critical</Property>
+    <Property name="SpawnSet" type="List">
+        <Property type="Symbol" Symbol="0xEEF1B115">object-physical-character-ClubberMale</Property>
+        <Property type="Symbol" Symbol="0xAAB1DCB5">object-physical-character-ClubberFemale</Property>
+        <Property type="Symbol" Symbol="0x19288094">object-physical-character-AmbientCharacters-waitress_high</Property>
+        <Property type="Symbol" Symbol="0xF462AD30">object-physical-character-ClubGirl</Property>
+    </Property>
+    <Property name="TagVoice" type="WwiseID"/>
+    <Property name="Voice" type="String">Wei</Property>
+    <Property name="WakeUp" type="Boolean">False</Property>
+    <Property name="component_AIActionTree" type="PropSet">
+        <BinData>
+            <AIBehaviour type="String">Player_behaviour.act</AIBehaviour>
+        </BinData>
+    </Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">Chan</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">PlayerPed</PoseDriverSet>
+            <RigNameHD type="String">Wei_Head_HD</RigNameHD>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">Chan</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">PlayerPed</PoseDriverSet>
+            <RigNameHD type="String">Wei_Head_HD</RigNameHD>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterPhysics" type="PropSet">
+        <BinData>
+            <Mass type="Float32">75</Mass>
+            <MaxForce type="Float32">1000</MaxForce>
+            <MaxClimableSlope type="Float32">65</MaxClimableSlope>
+            <WalkCollisionHeight type="Float32">1.835</WalkCollisionHeight>
+            <CombatCollisionHeight type="Float32">1.835</CombatCollisionHeight>
+            <CrouchCollisionHeight type="Float32">0.95</CrouchCollisionHeight>
+            <DrivingCollisionHeight type="Float32">1.1</DrivingCollisionHeight>
+            <CrawlCollisionHeight type="Float32">0.3</CrawlCollisionHeight>
+            <SittingCollisionHeight type="Float32">1.3</SittingCollisionHeight>
+            <CoverCollisionHeight type="Float32">1.835</CoverCollisionHeight>
+            <FreerunCollisionHeight type="Float32">1.835</FreerunCollisionHeight>
+            <WalkCollisionRadius type="Float32">0.38</WalkCollisionRadius>
+            <CombatCollisionRadius type="Float32">0.5</CombatCollisionRadius>
+            <CrouchCollisionRadius type="Float32">0.35</CrouchCollisionRadius>
+            <DrivingCollisionRadius type="Float32">0.3</DrivingCollisionRadius>
+            <CrawlCollisionRadius type="Float32">0.3</CrawlCollisionRadius>
+            <SittingCollisionRadius type="Float32">0.3</SittingCollisionRadius>
+            <CoverCollisionRadius type="Float32">0.32</CoverCollisionRadius>
+            <FreerunCollisionRadius type="Float32">0.2</FreerunCollisionRadius>
+            <DetailedOnGroundCheck type="Boolean">true</DetailedOnGroundCheck>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PLAYER</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NONE</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Player</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_Health" type="PropSet">
+        <BinData>
+            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
+            <maxHealth type="Int32">70</maxHealth>
+            <regenerativeHealthRate type="Float32">16</regenerativeHealthRate>
+            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
+            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
+        </BinData>
+    </Property>
+    <Property name="component_MissionFailCondition" type="PropSet"/>
+    <Property name="component_Ragdoll" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Ragdoll</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_Sensor" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Sensor</Parent>
+        </PropertySet>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0x3A11DB8A">Data\Characters_New\Wei_Head</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0x938AFE7D">Data\Characters_New\H_DefaultHair</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0xEC9590D9">Data\Characters_New\N_Jade</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\T_JacketBase</Parent>
+                    <Property name="ColorTintIndex" type="Int32">1</Property>
+                    <Property name="Model" type="Symbol" Symbol="0x7BC6284D">Data\Characters_New\T_JacketBase</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0xE58C3928">Data\Characters_New\W_Bling</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0x2B70AC32">Data\Characters_New\W_Pearl</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0xA398127D">Data\Characters_New\P_JeansBase</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="Model" type="Symbol" Symbol="0xD2C7BC9B">Data\Characters_New\S_Sleek</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">Player</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_TSActor" type="PropSet">
+        <BinData>
+            <SkookumClass type="Symbol">Player</SkookumClass>
+        </BinData>
+    </Property>
+    <Property name="pointsForGroupIntimidate" type="Int32">7</Property>
+    <Property name="schema_classlist" type="PropSet"/>
+</PropertySet>

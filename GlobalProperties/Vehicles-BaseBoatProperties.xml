@@ -1,0 +1,53 @@
+<PropertySet name="Vehicles-BaseBoatProperties" nameUID="0xA65226BE" schema="Vehicles-BaseBoatProperties">
+    <Parent>Vehicles-BasePhysicsProperties</Parent>
+    <Property name="COMShift" type="Float32">0</Property>
+    <Property name="bowThrusterCutoffSpeed" type="Float32">15</Property>
+    <Property name="bowThrusterOffsetX" type="Float32">2</Property>
+    <Property name="bowThrusterOffsetZ" type="Float32">0</Property>
+    <Property name="bowThrusterPower" type="Float32">0.5</Property>
+    <Property name="chassis_physicsProperties" type="String">BoatHull</Property>
+    <Property name="collision_friction" type="Float32">0.1</Property>
+    <Property name="collision_restitution" type="Float32">0.01</Property>
+    <Property name="dollarValue" type="Float32">50000</Property>
+    <Property name="engineThrustAngle" type="Float32">0</Property>
+    <Property name="highSpeedGovernor" type="Float32">70</Property>
+    <Property name="keelTorque" type="Float32">75</Property>
+    <Property name="leanFactor" type="Float32">10</Property>
+    <Property name="mass" type="Float32">250</Property>
+    <Property name="maxEngineThrust" type="Float32">2500</Property>
+    <Property name="maxRudderAngle" type="Float32">30</Property>
+    <Property name="numWheels" type="UInt32">0</Property>
+    <Property name="other_airSteerYawRate" type="Float32">50</Property>
+    <Property name="other_verticalVelocityDampingDown" type="Float32">0</Property>
+    <Property name="other_verticalVelocityDampingUp" type="Float32">0</Property>
+    <Property name="pad_BasePhysicsProperties" type="UInt32">0</Property>
+    <Property name="pitchStability" type="Float32">1.25</Property>
+    <Property name="pontoon0" type="Vector3" x="3" y="3" z="1.5"/>
+    <Property name="pontoon0Buoyancy" type="Float32">1000</Property>
+    <Property name="pontoon0DragZ" type="Float32">-100</Property>
+    <Property name="pontoon1" type="Vector3" x="3" y="3" z="-1.5"/>
+    <Property name="pontoon1Buoyancy" type="Float32">1000</Property>
+    <Property name="pontoon1DragZ" type="Float32">-100</Property>
+    <Property name="pontoon2" type="Vector3" x="-6" y="-6" z="1.5"/>
+    <Property name="pontoon2Buoyancy" type="Float32">1000</Property>
+    <Property name="pontoon2DragZ" type="Float32">-100</Property>
+    <Property name="pontoon3" type="Vector3" x="-6" y="-6" z="-1.5"/>
+    <Property name="pontoon3Buoyancy" type="Float32">1000</Property>
+    <Property name="pontoon3DragZ" type="Float32">-100</Property>
+    <Property name="quadraticDragLateralVelocityLimit" type="Float32">2</Property>
+    <Property name="reverseSpeedGovernor" type="Float32">20</Property>
+    <Property name="rollStability" type="Float32">1.25</Property>
+    <Property name="rudderForceMultiplier" type="Float32">400</Property>
+    <Property name="rudderOffsetX" type="Float32">-2.5</Property>
+    <Property name="rudderOffsetZ" type="Float32">-0.7</Property>
+    <Property name="steering_SensitivityHi" type="Float32">0.445</Property>
+    <Property name="steering_SensitivityLo" type="Float32">1</Property>
+    <Property name="steering_SensitivityMaxSpeed" type="Float32">56</Property>
+    <Property name="steering_SensitivityMinSpeed" type="Float32">0</Property>
+    <Property name="steering_SteeringModelExponent" type="Float32">2</Property>
+    <Property name="superStop_Drag" type="Float32">12000</Property>
+    <Property name="torqueDamping" type="Float32">1750</Property>
+    <Property name="torqueDampingBowScale" type="Float32">2</Property>
+    <Property name="viscousDrag" type="Float32">50</Property>
+    <Property name="viscousDrag2" type="Float32">250</Property>
+</PropertySet>

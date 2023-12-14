@@ -1,0 +1,28 @@
+<PropertySet name="object-physical-character-ACE" nameUID="0x30704A5B" schema="object-physical-character-ACE">
+    <Parent>object-physical-character</Parent>
+    <Property name="Description" type="String">ACE</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\Ace_Head</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x581E98BB">Data\Characters_New\Ace_Head</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x57CC51EA">Data\Characters_New\Ace_Head_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\Ace_Body</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xFA7BA888">Data\Characters_New\Ace_Body</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x34C33383">Data\Characters_New\Ace_Body_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

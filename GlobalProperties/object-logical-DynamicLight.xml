@@ -1,0 +1,30 @@
+<PropertySet name="object-logical-DynamicLight" nameUID="0xBEE575E" schema="object-logical-DynamicLight">
+    <Parent>default-SimObject</Parent>
+    <Property name="ObjectType" type="Symbol" Symbol="0x25504106">DynamicLight</Property>
+    <Property name="component_DynamicLight" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-DynamicLight</Parent>
+        </PropertySet>
+        <BinData>
+            <Light_Color type="Vector3" x="1" y="1" z="1"/>
+            <Light_Intensity type="Float32">1</Light_Intensity>
+            <Light_Attenuation type="Float32">0</Light_Attenuation>
+            <Light_DecayRadius type="Float32">7</Light_DecayRadius>
+            <Light_FovInner type="Float32">10</Light_FovInner>
+            <Light_FovOuter type="Float32">45</Light_FovOuter>
+            <Light_ShadowNear type="Float32">0.1</Light_ShadowNear>
+            <Light_AreaWidth type="Float32">1</Light_AreaWidth>
+            <Light_AreaHeight type="Float32">1</Light_AreaHeight>
+            <Light_AreaOffset type="Float32">0</Light_AreaOffset>
+            <Light_AreaFarOffset type="Float32">0</Light_AreaFarOffset>
+            <Light_OnTime type="Float32">0</Light_OnTime>
+            <Light_OffTime type="Float32">24</Light_OffTime>
+            <Light_TextureUID type="Symbol"/>
+            <Light_TexDistAttenUID type="Symbol"/>
+            <Light_TexDistAtten_V type="Float32">0</Light_TexDistAtten_V>
+            <Light_Specular type="Boolean">false</Light_Specular>
+            <Light_Shadow type="Boolean">false</Light_Shadow>
+            <Light_Type type="UInt32">0</Light_Type>
+        </BinData>
+    </Property>
+</PropertySet>

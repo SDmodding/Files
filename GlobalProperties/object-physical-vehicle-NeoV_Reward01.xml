@@ -1,0 +1,55 @@
+<PropertySet name="object-physical-vehicle-NeoV_Reward01" nameUID="0xACF79F94" schema="object-physical-vehicle-NeoV_Reward01">
+    <Parent>object-physical-vehicle-NeoV01</Parent>
+    <Property name="Description" type="String">4Dr- NeoV01_Reward01</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">BluePaint02</Property>
+    </Property>
+    <Property name="VehicleLookGlass" type="List">
+        <Property type="String">GlassBlack02</Property>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0x2856B29E">Data\Vehicles_New\NeoV01</Property>
+                <Property type="Symbol" Symbol="0x99B4CC63">Data\Vehicles_New\WheelStyle13</Property>
+            </ResourceList>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Vehicles_New\NeoV01</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x2856B29E">Data\Vehicles_New\NeoV01</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x23AF86A1">Data\Vehicles_New\NeoV_18K01_ts001</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Vehicles_New\WheelStyle18</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xB2FF0702">Data\Vehicles_New\WheelStyle18</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x375CD257">Data\Vehicles_New\WheelStyle18_ts_002</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List">
+                <Property type="Symbol" Symbol="0x48ED0A26">Data\Vehicles_New\NeoV01_ts001</Property>
+                <Property type="Symbol"/>
+            </TextureSetList>
+            <EntityType type="Symbol">FourWheelVehicle</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_VehicleEffects" type="PropSet">
+        <BinData>
+            <headlightsInRainProbability type="Float32">0.5</headlightsInRainProbability>
+            <headlightsAlwaysOn type="Boolean">false</headlightsAlwaysOn>
+            <headlightsAlwaysOff type="Boolean">false</headlightsAlwaysOff>
+            <DamageTransfer type="Symbol">vehicle4door</DamageTransfer>
+            <EffectGroupName type="Symbol">common4doorcar</EffectGroupName>
+            <InitialDirtSeed type="Float32">0.2</InitialDirtSeed>
+            <GrimeFactor type="Float32">0</GrimeFactor>
+            <Speed0 type="Float32">0</Speed0>
+            <Speed1 type="Float32">5</Speed1>
+            <Speed2 type="Float32">30</Speed2>
+            <Speed3 type="Float32">60</Speed3>
+        </BinData>
+    </Property>
+</PropertySet>

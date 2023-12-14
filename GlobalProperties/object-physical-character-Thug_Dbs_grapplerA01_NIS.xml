@@ -1,0 +1,63 @@
+<PropertySet name="object-physical-character-Thug_Dbs_grapplerA01_NIS" nameUID="0x2C25C6F1" schema="object-physical-character-Thug_Dbs_grapplerA01_NIS">
+    <Parent>object-physical-character-Thug_Dbs_grap</Parent>
+    <Property name="Description" type="String">ThugFactions</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">PrimaryBasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">PlayerPed</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
+                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
+                <Property type="SymbolUC" Symbol="0xF6C91D03">Thug_Grappler</Property>
+                <Property type="SymbolUC" Symbol="0x7C2C8820">Thug_Grappler_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0x378AE508">Circling</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">PrimaryBasicMale</RigName>
+            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
+            <PoseDriverSet type="Symbol">PlayerPed</PoseDriverSet>
+            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
+                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
+                <Property type="SymbolUC" Symbol="0xF6C91D03">Thug_Grappler</Property>
+                <Property type="SymbolUC" Symbol="0x7C2C8820">Thug_Grappler_Strikes</Property>
+                <Property type="SymbolUC" Symbol="0x378AE508">Circling</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xEACD1187">Dbs</Property>
+                <Property type="Symbol" Symbol="0xC73BA389">Grappler</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\Dbs_GrapplerA_Body</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x8DE91072">Data\Characters_New\Dbs_GrapplerA_Body</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xBDFA8A2E">Data\Characters_New\Dbs_GrapplerA_Body_TS01</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">UniquePed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">3</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0.9</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

@@ -1,0 +1,51 @@
+<PropertySet name="object-physical-character-stats-police_striker" nameUID="0x1C69EB1E" schema="object-physical-character-stats-police_striker">
+    <Parent>object-physical-character-stats-police_ranged</Parent>
+    <Property name="BlockChance" type="Int32">45</Property>
+    <Property name="CounterAttack" type="Int32">60</Property>
+    <Property name="FakeResistanceChance" type="Int32">50</Property>
+    <Property name="Grapple" type="Int32">100</Property>
+    <Property name="HealthToBeIntimidated" type="Float32">25</Property>
+    <Property name="IntimidatedFleeChance" type="Int32">50</Property>
+    <Property name="StunResistance" type="Int32">20</Property>
+    <Property name="component_CharacterProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol"/>
+            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_POLICE_VARIANT1</simObjectCharacterType>
+            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
+            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NONE</simObjectCharacterFightingClass>
+            <Stamina type="Int32">100</Stamina>
+            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
+            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
+            <FactionClass type="Symbol">Innocent</FactionClass>
+            <Gender type="Symbol">Male</Gender>
+            <IsTired type="Boolean">false</IsTired>
+        </BinData>
+    </Property>
+    <Property name="component_Health" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-Health</Parent>
+        </PropertySet>
+        <BinData>
+            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
+            <maxHealth type="Int32">160</maxHealth>
+            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
+            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
+            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
+        </BinData>
+    </Property>
+    <Property name="component_SimObjectProperties" type="PropSet">
+        <PropertySet>
+            <Parent>default-component-CharacterProperties</Parent>
+            <Parent>eFIGHTING_CLASS_NONE</Parent>
+        </PropertySet>
+        <BinData>
+            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
+            <subTargetingProfile type="Symbol"/>
+        </BinData>
+    </Property>
+</PropertySet>

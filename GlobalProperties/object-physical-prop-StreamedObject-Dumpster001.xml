@@ -1,0 +1,73 @@
+<PropertySet name="object-physical-prop-StreamedObject-Dumpster001" nameUID="0x1378EB0B" schema="object-physical-prop-StreamedObject-Dumpster001">
+    <Parent>object-physical-prop-StreamedInteractableProp</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOM_Dumpster001.act</Property>
+    <Property name="SimObjChildren" type="List">
+        <ListProperty>
+            <Parent>object-logical-InterestPoint</Parent>
+            <Property name="NameRoot" type="String">Dumpster01</Property>
+            <Property name="XformLocal" type="Matrix">
+                <Forward x="1" y="0" z="0" w="0"/>
+                <Right x="0" y="0" z="-1" w="0"/>
+                <Up x="-0" y="1" z="0" w="0"/>
+                <Translation x="0" y="0" z="0" w="1"/>
+            </Property>
+            <Property name="XformParent" type="UInt32">1</Property>
+            <Property name="default-component-InterestPoint" type="PropSet">
+                <PropertySet>
+                    <Parent>default-component-InterestPoint-dumpster</Parent>
+                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x410A1B33">C_InteractionSync</Property>
+                </PropertySet>
+            </Property>
+        </ListProperty>
+    </Property>
+    <Property name="SpawnPriority" type="Symbol" Symbol="0xB82F7335">Critical</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">TRF_OBJ_Dumpster001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0xB3DE7D2">LOM_Dumpster001</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">TRF_OBJ_Dumpster001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0xB3DE7D2">LOM_Dumpster001</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CompositeDrawable" type="PropSet">
+        <BinData>
+            <DefaultSaturationOverride type="Float32">1</DefaultSaturationOverride>
+            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
+            <HighlightingMode type="String">eHIGHLIGHTING_MODE_OFF</HighlightingMode>
+            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
+            <SkinSSEnabled type="Boolean">false</SkinSSEnabled>
+            <OverlayWeights type="List"/>
+            <OverlayTextures type="List"/>
+            <DrawScale type="Float32">1</DrawScale>
+        </BinData>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List"/>
+            <ComponentList type="List"/>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">Prop</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List">
+                <Property type="String">TRF_OBJ_Dumpster001</Property>
+            </PartList>
+        </BinData>
+    </Property>
+</PropertySet>

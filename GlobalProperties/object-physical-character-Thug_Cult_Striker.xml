@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-Thug_Cult_Striker" nameUID="0x44BC759B" schema="object-physical-character-Thug_Cult_Striker">
+    <Parent>object-physical-character-Thug_BsL_striker</Parent>
+    <Property name="Description" type="String">Cult Striker</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xE0884651">BSL</Property>
+                <Property type="Symbol" Symbol="0x1447B115">Striker</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\Cult_StrikerA_Head</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x8CC1EFD4">Data\Characters_New\Cult_StrikerA_Head</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x13E0668A">Data\Characters_New\Cult_StrikerA_Head_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Characters_New\Cult_StrikerA_Body</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x2EA4DFE7">Data\Characters_New\Cult_StrikerA_Body</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x70EF04E3">Data\Characters_New\Cult_StrikerA_Body_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">1</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>

@@ -1,0 +1,40 @@
+<PropertySet name="object-physical-prop-LOM_SpringTrap001" nameUID="0x7880869F" schema="object-physical-prop-LOM_SpringTrap001">
+    <Parent>default-component-TargetingSystemItem</Parent>
+    <Property name="ActFileName" type="String">Data\Global\Act\LOM_SpringTrap001.act</Property>
+    <Property name="Description" type="String">Spring Trap</Property>
+    <Property name="IsSpikeTrap" type="Boolean">True</Property>
+    <Property name="component_BaseAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOM_SpringTrap001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0xB6EF53B2">LOM_SpringTrap001</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CharacterAnimation" type="PropSet">
+        <BinData>
+            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
+            <RigName type="String">LOM_SpringTrap001</RigName>
+            <PoseDriverSet type="Symbol"/>
+            <PoseDriverSetHD type="Symbol"/>
+            <RequiredAnimBanks type="List">
+                <Property type="SymbolUC" Symbol="0xB6EF53B2">LOM_SpringTrap001</Property>
+            </RequiredAnimBanks>
+        </BinData>
+    </Property>
+    <Property name="component_CompositeDrawable" type="PropSet">
+        <BinData>
+            <DefaultSaturationOverride type="Float32">1</DefaultSaturationOverride>
+            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
+            <HighlightingMode type="String">eHIGHLIGHTING_MODE_OFF</HighlightingMode>
+            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
+            <SkinSSEnabled type="Boolean">false</SkinSSEnabled>
+            <OverlayWeights type="List"/>
+            <OverlayTextures type="List"/>
+            <DrawScale type="Float32">1</DrawScale>
+        </BinData>
+    </Property>
+</PropertySet>

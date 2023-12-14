@@ -1,0 +1,55 @@
+<PropertySet name="object-physical-vehicle-WanganGSX_Reward03" nameUID="0x205B2CE0" schema="object-physical-vehicle-WanganGSX_Reward03">
+    <Parent>object-physical-vehicle-WanganGSX01</Parent>
+    <Property name="Description" type="String">4Dr- WanganGSX_Reward03</Property>
+    <Property name="VehicleLook" type="List">
+        <Property type="String">YellowPaint</Property>
+    </Property>
+    <Property name="VehicleLookGlass" type="List">
+        <Property type="String">GlassBlack02</Property>
+    </Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List"/>
+            <ResourceList type="List">
+                <Property type="Symbol" Symbol="0xB553B1C1">Data\Vehicles_New\WanganGSX01</Property>
+                <Property type="Symbol" Symbol="0xB63E1AB5">Data\Vehicles_New\WheelStyle19</Property>
+            </ResourceList>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Vehicles_New\WanganGSX01</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0xB553B1C1">Data\Vehicles_New\WanganGSX01</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x57333D75">Data\Vehicles_New\WanganGSX_Race02_ts001</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Parent>Data\Vehicles_New\WheelStyle01</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x422F36D1">Data\Vehicles_New\WheelStyle01</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x4A7179C5">Data\Vehicles_New\WheelStyle01_ts_002</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List">
+                <Property type="Symbol" Symbol="0x9C4E35E7">Data\Vehicles_New\WanganGSX01_ts001</Property>
+                <Property type="Symbol"/>
+            </TextureSetList>
+            <EntityType type="Symbol">FourWheelVehicle</EntityType>
+            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
+            <BMIMin type="Float32">0</BMIMin>
+            <BMIMax type="Float32">0</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+    <Property name="component_VehicleEffects" type="PropSet">
+        <BinData>
+            <headlightsInRainProbability type="Float32">0.5</headlightsInRainProbability>
+            <headlightsAlwaysOn type="Boolean">false</headlightsAlwaysOn>
+            <headlightsAlwaysOff type="Boolean">false</headlightsAlwaysOff>
+            <DamageTransfer type="Symbol">vehicle2door</DamageTransfer>
+            <EffectGroupName type="Symbol">common4doorcar</EffectGroupName>
+            <InitialDirtSeed type="Float32">0.2</InitialDirtSeed>
+            <GrimeFactor type="Float32">0</GrimeFactor>
+            <Speed0 type="Float32">0</Speed0>
+            <Speed1 type="Float32">5</Speed1>
+            <Speed2 type="Float32">30</Speed2>
+            <Speed3 type="Float32">60</Speed3>
+        </BinData>
+    </Property>
+</PropertySet>

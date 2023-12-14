@@ -1,0 +1,32 @@
+<PropertySet name="object-physical-character-Thug_Dbs_quickA01_NIS" nameUID="0x6D0FC215" schema="object-physical-character-Thug_Dbs_quickA01_NIS">
+    <Parent>object-physical-character-Thug_Dbs_quick</Parent>
+    <Property name="Description" type="String">ThugFactions</Property>
+    <Property name="component_StreamedResource" type="PropSet">
+        <BinData>
+            <ResourceTags type="List">
+                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
+                <Property type="Symbol" Symbol="0xEACD1187">Dbs</Property>
+                <Property type="Symbol" Symbol="0x31B08D26">Quick</Property>
+            </ResourceTags>
+            <ResourceList type="List"/>
+            <ComponentList type="List">
+                <ListProperty>
+                    <Parent>Data\Characters_New\Dbs_QuickA_Head</Parent>
+                    <Property name="Model" type="Symbol" Symbol="0x3C10B84B">Data\Characters_New\Dbs_QuickA_Head</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0x83BFA54F">Data\Characters_New\Dbs_QuickA_Head_TS00</Property>
+                </ListProperty>
+                <ListProperty>
+                    <Property name="ColorTintIndex" type="Int32">0</Property>
+                    <Property name="Model" type="Symbol" Symbol="0x9E758878">Data\Characters_New\Dbs_QuickA_Body</Property>
+                    <Property name="TextureSet" type="Symbol" Symbol="0xE0B0C726">Data\Characters_New\Dbs_QuickA_Body_TS00</Property>
+                </ListProperty>
+            </ComponentList>
+            <TextureSetList type="List"/>
+            <EntityType type="Symbol">TwoPartPed</EntityType>
+            <TrueCrowdSelectionType type="UInt32">3</TrueCrowdSelectionType>
+            <BMIMin type="Float32">-1</BMIMin>
+            <BMIMax type="Float32">-0.9</BMIMax>
+            <PartList type="List"/>
+        </BinData>
+    </Property>
+</PropertySet>
