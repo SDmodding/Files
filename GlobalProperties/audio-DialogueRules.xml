@@ -1,6 +1,6 @@
 <PropertySet name="audio-DialogueRules" nameUID="0x33E8A55C" schema="audio-DialogueRules">
     <Property name="responses" type="List">
-        <ListProperty>
+        <ListProperty nameUID="0x3C929F71">
             <Property name="line" type="WwiseID"/>
             <Property name="then" type="PropSet">
                 <PropertySet>
@@ -9,7 +9,7 @@
                 </PropertySet>
             </Property>
         </ListProperty>
-        <ListProperty>
+        <ListProperty nameUID="0x385382C6">
             <Property name="line" type="WwiseID"/>
             <Property name="then" type="PropSet">
                 <PropertySet>
@@ -18,7 +18,7 @@
                 </PropertySet>
             </Property>
         </ListProperty>
-        <ListProperty>
+        <ListProperty nameUID="0x3510A41F">
             <Property name="line" type="WwiseID"/>
             <Property name="then" type="PropSet">
                 <PropertySet>
@@ -27,7 +27,7 @@
                 </PropertySet>
             </Property>
         </ListProperty>
-        <ListProperty>
+        <ListProperty nameUID="0x31D1B9A8">
             <Property name="line" type="WwiseID"/>
             <Property name="then" type="PropSet">
                 <PropertySet>
@@ -38,7 +38,7 @@
         </ListProperty>
     </Property>
     <Property name="rules" type="List">
-        <ListProperty>
+        <ListProperty nameUID="0x242A096D">
             <Property name="apply" type="PropSet">
                 <PropertySet>
                     <Parent>rsp_TestConv_0</Parent>
@@ -48,12 +48,12 @@
             </Property>
             <Property name="concept" type="Symbol" Symbol="0xBE942998">Conversation</Property>
             <Property name="criteria" type="List">
-                <ListProperty>
+                <ListProperty nameUID="0xFFFFFFFF">
                     <Parent>character</Parent>
                     <Property name="key" type="Symbol" Symbol="0x88AF8001">character</Property>
                     <Property name="value" type="Symbol" Symbol="0x90ECB5FF">PlayerOne_Havok</Property>
                 </ListProperty>
-                <ListProperty>
+                <ListProperty nameUID="0xFFFFFFFF">
                     <Parent>conv_to_start</Parent>
                     <Property name="key" type="Symbol" Symbol="0x65FDFA44">conv_to_start</Property>
                     <Property name="value" type="Symbol" Symbol="0x4DFB6882">convTest</Property>
@@ -61,7 +61,7 @@
             </Property>
             <Property name="response" type="Symbol" Symbol="0x3C929F71">rsp_TestConv_0</Property>
         </ListProperty>
-        <ListProperty>
+        <ListProperty nameUID="0x29692FB4">
             <Property name="apply" type="PropSet">
                 <PropertySet>
                     <Parent>rsp_TestConv_1</Parent>
@@ -71,12 +71,12 @@
             </Property>
             <Property name="concept" type="Symbol" Symbol="0xBE942998">Conversation</Property>
             <Property name="criteria" type="List">
-                <ListProperty>
+                <ListProperty nameUID="0xFFFFFFFF">
                     <Parent>character</Parent>
                     <Property name="key" type="Symbol" Symbol="0x88AF8001">character</Property>
                     <Property name="value" type="Symbol" Symbol="0x8D5470E6">winston1</Property>
                 </ListProperty>
-                <ListProperty>
+                <ListProperty nameUID="0xFFFFFFFF">
                     <Parent>rsp_TestConv_0</Parent>
                     <Property name="key" type="Symbol" Symbol="0x3C929F71">rsp_TestConv_0</Property>
                     <Property name="value" type="Symbol" Symbol="0x9EFBCF93">1</Property>

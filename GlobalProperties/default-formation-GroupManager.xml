@@ -1,19 +1,19 @@
 <PropertySet name="default-formation-GroupManager" nameUID="0x16A3C6D8" schema="default-formation-GroupManager">
     <Property name="Profiles" type="List">
-        <ListProperty>
+        <ListProperty nameUID="0xB8BE19B5">
             <Property name="MinGroupSpacing" type="UInt32">0</Property>
             <Property name="SpawnTasks" type="List">
-                <ListProperty>
+                <ListProperty nameUID="0xFFFFFFFF">
                     <Property name="Formation" type="Symbol" Symbol="0x7F92E1D">default-formation-GroupOf2</Property>
                     <Property name="UseDifferentGenders" type="Boolean">True</Property>
                     <Property name="Weight" type="Float32">0.45</Property>
                 </ListProperty>
-                <ListProperty>
+                <ListProperty nameUID="0xFFFFFFFF">
                     <Parent>default-formation-GroupOf2</Parent>
                     <Property name="Formation" type="Symbol" Symbol="0x7F92E1D">default-formation-GroupOf2</Property>
                     <Property name="Weight" type="Float32">0.45</Property>
                 </ListProperty>
-                <ListProperty>
+                <ListProperty nameUID="0xFFFFFFFF">
                     <Parent>default-formation-NoGroup</Parent>
                     <Property name="Formation" type="Symbol" Symbol="0xFE8523BE">default-formation-NoGroup</Property>
                     <Property name="Weight" type="Float32">0.1</Property>
@@ -22,7 +22,7 @@
         </ListProperty>
     </Property>
     <Property name="Restrictions" type="List">
-        <ListProperty>
+        <ListProperty nameUID="0xFFFFFFFF">
             <Parent>Thug</Parent>
             <Property name="ClassType" type="Symbol" Symbol="0x8A664E0E">Thug</Property>
             <Property name="IsSameClass" type="Boolean">True</Property>

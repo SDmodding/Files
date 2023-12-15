@@ -22,7 +22,7 @@
     <Property name="vehicle_generic_spawn_min_radius" type="Float32">20</Property>
     <Property name="vehicle_spawn_behind_probability" type="Float32">0.25</Property>
     <Property name="wave_definitions" type="List">
-        <ListProperty>
+        <ListProperty nameUID="0x2DC0526A">
             <Property name="cooldown_timer" type="Float32">5000</Property>
             <Property name="heatwave_timer" type="Float32">8</Property>
             <Property name="onfoot_population" type="UInt32">4</Property>
@@ -31,12 +31,12 @@
                 <Property type="Symbol" Symbol="0x6159FB39">object-physical-character-Thug_Cult_QuickMask</Property>
             </Property>
             <Property name="spawn_groups" type="List">
-                <ListProperty>
+                <ListProperty nameUID="0x8DE342E1">
                     <Parent>object-physical-character-Thug_Cult_Quick</Parent>
                     <Property name="character" type="Symbol" Symbol="0x24B3D37">object-physical-character-Thug_Cult_Quick</Property>
                     <Property name="weapon" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
                 </ListProperty>
-                <ListProperty>
+                <ListProperty nameUID="0x3C7FED17">
                     <Parent>object-physical-character-Thug_Cult_QuickMask</Parent>
                     <Property name="character" type="Symbol" Symbol="0x6159FB39">object-physical-character-Thug_Cult_QuickMask</Property>
                     <Property name="weapon" type="Symbol" Symbol="0x14D4357D">object-physical-weapon-firearm-rifle-assault_taclight</Property>
