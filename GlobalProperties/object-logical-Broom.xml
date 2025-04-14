@@ -1,32 +1,44 @@
-<PropertySet name="object-logical-Broom" nameUID="0x3CF0E4F2" schema="object-logical-Broom">
-    <Parent>default-SimObject</Parent>
-    <Property name="SimObjChildren" type="List">
-        <ListProperty nameUID="0xA4CE118D">
-            <Parent>object-physical-prop-StreamedObject-Broom001</Parent>
-            <Property name="NameRoot" type="String">Broom</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD9A8A08">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">BroomReturn</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-broomreturn</Parent>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-Broom" nameUID="0x3CF0E4F2">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0xFF1B33E2">default-component-Marker</Parent>
+	<!-- Properties -->
+	<Property name="SimObjChildren" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Broom" nameUID="0xA4CE118D">
+				<!-- Parents -->
+				<Parent nameUID="0xF79D50C5">object-physical-prop-StreamedObject-Broom001</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">Broom</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="BroomReturn" nameUID="0xD9A8A08">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">BroomReturn</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x4AEB4C1E">default-component-InterestPoint-broomreturn</Parent>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

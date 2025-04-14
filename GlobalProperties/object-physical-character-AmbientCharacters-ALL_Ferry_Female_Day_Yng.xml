@@ -1,27 +1,33 @@
-<PropertySet name="object-physical-character-AmbientCharacters-ALL_Ferry_Female_Day_Yng" nameUID="0x982793D3" schema="object-physical-character-AmbientCharacters-ALL_Ferry_Female_Day_Yng">
-    <Parent>object-physical-character-drivers-yng_female</Parent>
-    <Property name="Description" type="String">Ferry Boat Female Youth Day</Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
-        <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0xE7DE76F9">Female</Property>
-                <Property type="Symbol" Symbol="0x2868668D">Ferry</Property>
-                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-                <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-ALL_Ferry_Female_Day_Yng" nameUID="0x982793D3">
+	<!-- Parents -->
+	<Parent nameUID="0x766DE91C">object-physical-character-drivers-yng_female</Parent>
+	<Parent nameUID="0xC4A01ACF">object-physical-character-AmbientCharacters-ALL_Ferry_Female_Day</Parent>
+	<!-- Properties -->
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+		<ListProperty type="Symbol" symUID="0x95BC9EE4">Ped</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xE7DE76F9">Female</ListProperty>
+				<ListProperty type="Symbol" symUID="0x2868668D">Ferry</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Ferry Boat Female Youth Day</Property>
+</PropertySetResource>

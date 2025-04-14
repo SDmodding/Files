@@ -1,14 +1,16 @@
-<PropertySet name="default-component-CharacterProperties" nameUID="0x324584F9" schema="default-component-CharacterProperties" schematype="component">
-    <Parent>default-component-SimObjectProperties</Parent>
-    <Property name="FactionClass" type="Symbol" Symbol="0x7301D91C">Innocent</Property>
-    <Property name="Gender" type="Symbol" Symbol="0x166A8B5C">Male</Property>
-    <Property name="IsTired" type="Boolean">False</Property>
-    <Property name="PoiCooldownTimeMax" type="Float32">0</Property>
-    <Property name="PoiCooldownTimeMin" type="Float32">0</Property>
-    <Property name="Stamina" type="Int32">100</Property>
-    <Property name="simObjectCharacterFightingClass" type="Symbol" Symbol="0xB7D9CA1F">eFIGHTING_CLASS_NONE</Property>
-    <Property name="simObjectCharacterIsFemale" type="Boolean">False</Property>
-    <Property name="simObjectCharacterType" type="Symbol" Symbol="0xA0567ECF">eCHARACTER_TYPE_PEDESTRIAN</Property>
-    <Property name="simObjectType" type="Symbol" Symbol="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
-    <Property name="subTargetingProfile" type="Symbol"/>
-</PropertySet>
+<PropertySetResource name="default-component-CharacterProperties" nameUID="0x324584F9" schema="default-component-CharacterProperties" schematype="component">
+	<!-- Parents -->
+	<Parent nameUID="0x48BB3117">default-component-SimObjectProperties</Parent>
+	<!-- Properties -->
+	<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+	<Property name="FactionClass" type="Symbol" symUID="0x7301D91C">INNOCENT</Property>
+	<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+	<Property name="Stamina" type="Int32">100</Property>
+	<Property name="Gender" type="Symbol" symUID="0x166A8B5C">Male</Property>
+	<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+	<Property name="IsTired" type="Boolean">false</Property>
+	<Property name="simObjectCharacterType" type="Symbol" symUID="0xA0567ECF">eCHARACTER_TYPE_PEDESTRIAN</Property>
+	<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+	<Property name="subTargetingProfile" type="Symbol"/>
+	<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0xB7D9CA1F">eFIGHTING_CLASS_NONE</Property>
+</PropertySetResource>

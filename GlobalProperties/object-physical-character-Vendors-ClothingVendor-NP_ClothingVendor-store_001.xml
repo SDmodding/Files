@@ -1,66 +1,67 @@
-<PropertySet name="object-physical-character-Vendors-ClothingVendor-NP_ClothingVendor-store_001" nameUID="0x3B4E71FF" schema="object-physical-character-Vendors-ClothingVendor-NP_ClothingVendor-store_001">
-    <Parent>default-component-FaceAction</Parent>
-    <Property name="AccessStoreCaption" type="String">Access Store</Property>
-    <Property name="ColorTintIndex" type="Int32">3</Property>
-    <Property name="Description" type="String">Vendor: North Point store_001</Property>
-    <Property name="FaceAction" type="Symbol" Symbol="0xA82DBB3F">eFACEACTION_PURCHASE</Property>
-    <Property name="FaceActionEnabled" type="Boolean">True</Property>
-    <Property name="HasInventoryUI" type="Boolean">True</Property>
-    <Property name="InventoryType" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-    <Property name="RemoveOnCompletion" type="Boolean">False</Property>
-    <Property name="RequiresGreet" type="Boolean">False</Property>
-    <Property name="RequiresInteractionAreaCheck" type="Boolean">True</Property>
-    <Property name="RequiresPOIUsage" type="Boolean">True</Property>
-    <Property name="SocialEffectName" type="String">FX_Social_Icon_White</Property>
-    <Property name="StoreDesc" type="String">$GLOBAL_STOREDESC001</Property>
-    <Property name="StoreId" type="Symbol" Symbol="0x51C940BD">Store_001</Property>
-    <Property name="StoreTitle" type="String">$GLOBAL_STORETITLE001</Property>
-    <Property name="StoreType" type="Symbol" Symbol="0x5A58B64A">Retail</Property>
-    <Property name="Voice" type="String">Larry2</Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_SHOPKEEPER</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">Innocent</FactionClass>
-            <Gender type="Symbol">Male</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0xA5BB75AF">Shopkeeper</Property>
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-            </ResourceTags>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0xB11A6502">Data\Characters_New\AM_H_010</Property>
-                <Property type="Symbol" Symbol="0xAA762170">Data\Characters_New\AM_B_006</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0.5</BMIMin>
-            <BMIMax type="Float32">0.5</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Vendors-ClothingVendor-NP_ClothingVendor-store_001" nameUID="0x3B4E71FF">
+	<!-- Parents -->
+	<Parent nameUID="0xD0BBE97D">default-component-FaceAction</Parent>
+	<Parent nameUID="0x8082A86">object-physical-character-Vendors-vendorBase</Parent>
+	<!-- Properties -->
+	<Property name="RequiresInteractionAreaCheck" type="Boolean">true</Property>
+	<Property name="FaceAction" type="Symbol" symUID="0xA82DBB3F">eFACEACTION_PURCHASE</Property>
+	<Property name="StoreDesc" type="String">$GLOBAL_STOREDESC001</Property>
+	<Property name="Voice" type="String">Larry2</Property>
+	<Property name="ColorTintIndex" type="Int32">3</Property>
+	<Property name="StoreId" type="Symbol" symUID="0x51C940BD">Store_001</Property>
+	<Property name="RemoveOnCompletion" type="Boolean">false</Property>
+	<Property name="InventoryType" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+	<Property name="StoreType" type="Symbol" symUID="0x5A58B64A">Retail</Property>
+	<Property name="StoreTitle" type="String">$GLOBAL_STORETITLE001</Property>
+	<Property name="RequiresPOIUsage" type="Boolean">true</Property>
+	<Property name="AccessStoreCaption" type="String">Access Store</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0x54144541">eCHARACTER_TYPE_SHOPKEEPER</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0x5038C060">eFIGHTING_CLASS_NON_COMBATANT</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x7301D91C">INNOCENT</Property>
+			<Property name="Gender" type="Symbol" symUID="0x166A8B5C">Male</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="RequiresGreet" type="Boolean">false</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xA5BB75AF">Shopkeeper</ListProperty>
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xB11A6502">Data\Characters_New\AM_H_010</ListProperty>
+				<ListProperty type="Symbol" symUID="0xAA762170">Data\Characters_New\AM_B_006</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0.5</Property>
+			<Property name="BMIMax" type="Float32">0.5</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="SocialEffectName" type="String">FX_Social_Icon_White</Property>
+	<Property name="FaceActionEnabled" type="Boolean">true</Property>
+	<Property name="HasInventoryUI" type="Boolean">true</Property>
+	<Property name="Description" type="String">Vendor: North Point store_001</Property>
+</PropertySetResource>

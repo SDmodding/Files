@@ -1,9 +1,14 @@
-<PropertySet name="object-logical-ParkingSpot" nameUID="0x4F6C7741" schema="object-logical-ParkingSpot">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0x67FCE20C">ParkingSpot</Property>
-    <Property name="default-component-Region" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Region</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-ParkingSpot" nameUID="0x4F6C7741">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0xD5A08381">default-component-ParkingSpot</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0x67FCE20C">ParkingSpot</Property>
+	<Property name="default-component-Region" type="PropSet">
+		<PropertySet>
+			<!-- Parents -->
+			<Parent nameUID="0xF6AC0CA8">default-component-Region</Parent>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

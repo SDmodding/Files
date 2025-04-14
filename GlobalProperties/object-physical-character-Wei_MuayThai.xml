@@ -1,43 +1,57 @@
-<PropertySet name="object-physical-character-Wei_MuayThai" nameUID="0x413CD37B" schema="object-physical-character-Wei_MuayThai">
-    <Parent>object-physical-character-player</Parent>
-    <Property name="Description" type="String">Wei</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List"/>
-            <ComponentList type="List">
-                <ListProperty nameUID="0xA8245162">
-                    <Parent>Data\Characters_New\Wei_HeadGang</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0x140FF99D">Data\Characters_New\Wei_HeadGang</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x215E0F5E">Data\Characters_New\Wei_HeadGangMThai_TS00</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8FC6C875">
-                    <Parent>Data\Characters_New\H_DefaultHair</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0x938AFE7D">Data\Characters_New\H_DefaultHair</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x849AF662">Data\Characters_New\H_DefaultHair_TS00</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF8DE4056">
-                    <Parent>Data\Characters_New\T_MuayThai</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0x9B1DEBCF">Data\Characters_New\T_MuayThai</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x81BF22F8">Data\Characters_New\T_MuayThai_TS00</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xBBD01F39">
-                    <Parent>Data\Characters_New\P_MuayThai</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0x90DD513D">Data\Characters_New\P_MuayThai</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0xF8C381E9">Data\Characters_New\P_MuayThai_TS00</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x86D0435B">
-                    <Parent>Data\Characters_New\S_MuayThai</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0x15ADAC23">Data\Characters_New\S_MuayThai</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x9B12BFC8">Data\Characters_New\S_MuayThai_TS00</Property>
-                </ListProperty>
-            </ComponentList>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">Player</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Wei_MuayThai" nameUID="0x413CD37B">
+	<!-- Parents -->
+	<Parent nameUID="0xBD387BEE">object-physical-character-player</Parent>
+	<!-- Properties -->
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Head" nameUID="0xA8245162">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x140FF99D">Data\Characters_New\Wei_HeadGang</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x215E0F5E">Data\Characters_New\Wei_HeadGangMThai_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Hat" nameUID="0x8FC6C875">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x938AFE7D">Data\Characters_New\H_DefaultHair</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x849AF662">Data\Characters_New\H_DefaultHair_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Torso" nameUID="0xF8DE4056">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x9B1DEBCF">Data\Characters_New\T_MuayThai</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x81BF22F8">Data\Characters_New\T_MuayThai_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Pants" nameUID="0xBBD01F39">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x90DD513D">Data\Characters_New\P_MuayThai</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0xF8C381E9">Data\Characters_New\P_MuayThai_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Shoes" nameUID="0x86D0435B">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x15ADAC23">Data\Characters_New\S_MuayThai</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x9B12BFC8">Data\Characters_New\S_MuayThai_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0xF5C5D591">PLAYER</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Wei</Property>
+</PropertySetResource>

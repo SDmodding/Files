@@ -1,90 +1,56 @@
-<PropertySet name="object-physical-vehicle-270DX_Race02" nameUID="0x47B673A3" schema="object-physical-vehicle-270DX_Race02">
-    <Parent>object-physical-vehicle-270DX01</Parent>
-    <Property name="Description" type="String">270DX_Race02</Property>
-    <Property name="VehicleLook" type="List">
-        <Property type="String">270DX_Paint02</Property>
-    </Property>
-    <Property name="component_BikePhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_Race_270DXProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-270DXProperties</physicsPropertySetHuman>
-            <modelName type="String">270DX01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-0.923" y="-0.923" z="-0.28"/>
-            <boundingBoxMax type="Vector3" x="0.789" y="0.789" z="0.28"/>
-            <tireShotImpulse type="Float32">0.2</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">30</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-            <canWheelie type="Int32">1</canWheelie>
-        </BinData>
-    </Property>
-    <Property name="component_PhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_Race_270DXProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-270DXProperties</physicsPropertySetHuman>
-            <modelName type="String">270DX01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-0.923" y="-0.923" z="-0.28"/>
-            <boundingBoxMax type="Vector3" x="0.789" y="0.789" z="0.28"/>
-            <tireShotImpulse type="Float32">0.2</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">30</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-270DX_Race02" nameUID="0x47B673A3">
+	<!-- Parents -->
+	<Parent nameUID="0x4BD42DB4">object-physical-vehicle-270DX01</Parent>
+	<!-- Properties -->
+	<Property name="component_PhysicsMover" type="PropSet">
+		<PropertySet name="component_BikePhysicsMover" nameUID="0x3A19EBF5" schema="default-component-BikePhysicsMover">
+			<!-- Schema Properties -->
+			<Property name="physicsPropertySetAI" type="Symbol" symUID="0x37F309F1">Vehicles-AI_Race_270DXProperties</Property>
+			<Property name="physicsPropertySetHuman" type="Symbol" symUID="0xD1B7F059">Vehicles-270DXProperties</Property>
+			<Property name="modelName" type="String">270DX01</Property>
+			<Property name="TrunkType" type="Symbol" symUID="0xDE16D029">eVEHICLE_TRUNK_TYPE_NONE</Property>
+			<Property name="damageMultiplierWorldCollisions" type="Float32">1</Property>
+			<Property name="damageMultiplierVehicleCollisions" type="Float32">1</Property>
+			<Property name="damageMultiplierBullets" type="Float32">1</Property>
+			<Property name="damageMultiplierTires" type="Float32">1</Property>
+			<Property name="boundingBoxMin" type="Vector3" x="-0.923" y="-0.28" z="0.279"/>
+			<Property name="boundingBoxMAx" type="Vector3" x="0.789" y="0.28" z="1.05"/>
+			<Property name="tireShotImpulse" type="Float32">0.2</Property>
+			<Property name="tireBlownImpulse" type="Float32">1</Property>
+			<Property name="lowLodThrottleAcceleration" type="Float32">12</Property>
+			<Property name="lowLodBrakesAcceleration" type="Float32">-60</Property>
+			<Property name="lowLodCoastAcceleration" type="Float32">-1</Property>
+			<Property name="lowLodMaxSpeed" type="Float32">50</Property>
+			<Property name="lowLodMaxLateralAcceleration" type="Float32">1</Property>
+			<Property name="lowLodMinTurningRadius" type="Float32">2</Property>
+			<Property name="autoDeterioratingDamageThreshold" type="Float32">0.75</Property>
+			<Property name="autoDeterioratingDamageRate" type="Float32">0.01</Property>
+			<Property name="vehicleDistanceToHighLod" type="Float32">30</Property>
+			<Property name="vehicleDistanceToMedLod" type="Float32">70</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToTakeDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionExtraDamageMultiplier" type="Float32">2</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinImpulse" type="Float32">0.01</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxImpulse" type="Float32">0.05</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToDealDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionMaxImpulseForDealingDamage" type="Float32">10</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinRamImpulse" type="Float32">0.25</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxRamImpulse" type="Float32">0.3</Property>
+			<Property name="vehicleCollisionMinRamImpulseRequiredToDealDamage" type="Float32">6</Property>
+			<Property name="vehicleCollisionMaxRamImpulseForDealingDamage" type="Float32">12</Property>
+			<Property name="vehicleCollisionForceDamageDealer" type="Boolean">false</Property>
+			<Property name="lockedAtLowLOD" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_BikePhysicsMover" type="PropSet">
+		<PropertySet name="component_BikePhysicsMover" nameUID="0x3A19EBF5" schema="default-component-BikePhysicsMover">
+			<!-- Schema Properties -->
+			<Property name="canWheelie" type="Int32">1</Property>
+			<!-- Schema Parent: component_PhysicsMover -->
+		</PropertySet>
+	</Property>
+	<Property name="VehicleLook" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">270DX_Paint02</ListProperty>
+	</Property>
+	<Property name="Description" type="String">270DX_Race02</Property>
+</PropertySetResource>

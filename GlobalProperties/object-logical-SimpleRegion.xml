@@ -1,10 +1,15 @@
-<PropertySet name="object-logical-SimpleRegion" nameUID="0x161B7499" schema="object-logical-SimpleRegion">
-    <Parent>default-SimObject</Parent>
-    <Property name="default-component-Region" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Region</Parent>
-            <Property name="Max" type="Vector3" x="1" y="1" z="1"/>
-            <Property name="Min" type="Vector3" x="-1" y="-1" z="-1"/>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-SimpleRegion" nameUID="0x161B7499">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<!-- Properties -->
+	<Property name="default-component-Region" type="PropSet">
+		<PropertySet>
+			<!-- Parents -->
+			<Parent nameUID="0xF6AC0CA8">default-component-Region</Parent>
+			<!-- Properties -->
+			<Property name="Min" type="Vector3" x="-1" y="-1" z="-0.25"/>
+			<Property name="Max" type="Vector3" x="1" y="1" z="1.75"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

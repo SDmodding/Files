@@ -1,28 +1,40 @@
-<PropertySet name="default-vehiclespawnset-ab_island_night" nameUID="0x6600703B" schema="default-vehiclespawnset-ab_island_night">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0x97D708A8">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0xB3E0049E">object-physical-vehicle-Drag97901</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x97D708A8">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x61522611">object-physical-vehicle-Taikai01</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x97D708A8">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x87FC692F">object-physical-vehicle-Terre01</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0x4BD42DB4">object-physical-vehicle-270DX01</Property>
-        <Property type="Symbol" Symbol="0x582ABBBA">object-physical-vehicle-DX30501</Property>
-        <Property type="Symbol" Symbol="0x368EE36F">object-physical-vehicle-Gopher01</Property>
-        <Property type="Symbol" Symbol="0x28E10405">object-physical-vehicle-Guide01</Property>
-        <Property type="Symbol" Symbol="0xC9D337B6">object-physical-vehicle-Klienod01</Property>
-        <Property type="Symbol" Symbol="0x2B618D45">object-physical-vehicle-CanZi</Property>
-        <Property type="Symbol" Symbol="0x8CB0BCCA">object-physical-vehicle-625MHCTaxi01</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-vehiclespawnset-ab_island_night" nameUID="0x6600703B">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="ABIsleRareVehicleSpawns" nameUID="0x97D708A8">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0xB3E0049E">object-physical-vehicle-Drag97901</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="ABIsleRareVehicleSpawns" nameUID="0x97D708A8">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x61522611">object-physical-vehicle-Taikai01</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="ABIsleRareVehicleSpawns" nameUID="0x97D708A8">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x87FC692F">object-physical-vehicle-Terre01</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x4BD42DB4">object-physical-vehicle-270DX01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x582ABBBA">object-physical-vehicle-DX30501</ListProperty>
+		<ListProperty type="Symbol" symUID="0x368EE36F">object-physical-vehicle-Gopher01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x28E10405">object-physical-vehicle-Guide01</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC9D337B6">object-physical-vehicle-Klienod01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x2B618D45">object-physical-vehicle-CanZi</ListProperty>
+		<ListProperty type="Symbol" symUID="0x8CB0BCCA">object-physical-vehicle-625MHCTaxi01</ListProperty>
+	</Property>
+</PropertySetResource>

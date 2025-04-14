@@ -1,5 +1,7 @@
-<PropertySet name="default-rewards-progression-J_BD3" nameUID="0xD48CAD38" schema="default-rewards-progression-J_BD3">
-    <Parent>default-rewards-progression-job_defaults</Parent>
-    <Property name="CompletionText" type="String">Bus Driver Job Complete</Property>
-    <Property name="MoneyAdjustment" type="Int32">250</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-J_BD3" nameUID="0xD48CAD38">
+	<!-- Parents -->
+	<Parent nameUID="0x93DAADC2">default-rewards-progression-job_defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">250</Property>
+	<Property name="CompletionText" type="String">Bus Driver Job Complete</Property>
+</PropertySetResource>

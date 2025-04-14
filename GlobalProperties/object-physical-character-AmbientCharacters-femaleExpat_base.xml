@@ -1,98 +1,114 @@
-<PropertySet name="object-physical-character-AmbientCharacters-femaleExpat_base" nameUID="0xE1634EEF" schema="object-physical-character-AmbientCharacters-femaleExpat_base">
-    <Parent>object-physical-character-CommonPedestrian</Parent>
-    <Property name="CanUseUmbrella" type="Boolean">True</Property>
-    <Property name="Description" type="String">femaleExpat_base</Property>
-    <Property name="DriverProfileList" type="List">
-        <Property type="Symbol" Symbol="0xA780423">default-component-personality-driverwealthyfemale</Property>
-    </Property>
-    <Property name="MorphController" type="Symbol" Symbol="0xBED585C1">RandomizeMorphWeights</Property>
-    <Property name="PersonalityList" type="List">
-        <Property type="Symbol" Symbol="0xAEBCB9DC">default-component-personality-fearful</Property>
-    </Property>
-    <Property name="PropList" type="List">
-        <Property type="Symbol"/>
-        <Property type="Symbol" Symbol="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</Property>
-        <Property type="Symbol" Symbol="0x98ACE464">object-physical-weapon-melee-Purse001_Elbow</Property>
-        <Property type="Symbol" Symbol="0xCE873DFE">object-physical-weapon-melee-Purse001_Hand</Property>
-        <Property type="Symbol" Symbol="0xAC64F33E">object-physical-weapon-melee-Purse001_Shoulder</Property>
-        <Property type="Symbol" Symbol="0x2290B7CF">object-physical-weapon-melee-PurseHand001_Elbow</Property>
-        <Property type="Symbol" Symbol="0x8A1A83AB">object-physical-weapon-melee-PurseHand001_Hand</Property>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">BasicFemale</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">BasicFemale</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">2</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">8</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">Innocent</FactionClass>
-            <Gender type="Symbol">Female</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_Health" type="PropSet">
-        <BinData>
-            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
-            <maxHealth type="Int32">25</maxHealth>
-            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
-            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
-            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0xE7DE76F9">Female</Property>
-                <Property type="Symbol" Symbol="0xB8C3227C">Soho</Property>
-                <Property type="Symbol" Symbol="0x44EF718F">Adult</Property>
-                <Property type="Symbol" Symbol="0x1FDAE298">Caucasain</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-femaleExpat_base" nameUID="0xE1634EEF">
+	<!-- Parents -->
+	<Parent nameUID="0xB83AE074">object-physical-character-CommonPedestrian</Parent>
+	<Parent nameUID="0x79C303E9">object-physical-character</Parent>
+	<!-- Properties -->
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xAB8E6064">BBC_Crowd</ListProperty>
+				<ListProperty type="Symbol" symUID="0x8C8E7DEB">Generic_Ped</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE7F04840">AverageDriver</ListProperty>
+				<ListProperty type="Symbol" symUID="0xA240E438">NoWorkBoat</ListProperty>
+				<ListProperty type="Symbol" symUID="0xDBE6EFF7">NoBike</ListProperty>
+				<ListProperty type="Symbol" symUID="0xF62EC7D0">NoTruck</ListProperty>
+				<ListProperty type="Symbol" symUID="0xEC0B1776">NoScooter</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="PropList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol"/>
+		<ListProperty type="Symbol" symUID="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</ListProperty>
+		<ListProperty type="Symbol" symUID="0x98ACE464">object-physical-weapon-melee-Purse001_Elbow</ListProperty>
+		<ListProperty type="Symbol" symUID="0xCE873DFE">object-physical-weapon-melee-Purse001_Hand</ListProperty>
+		<ListProperty type="Symbol" symUID="0xAC64F33E">object-physical-weapon-melee-Purse001_Shoulder</ListProperty>
+		<ListProperty type="Symbol" symUID="0x2290B7CF">object-physical-weapon-melee-PurseHand001_Elbow</ListProperty>
+		<ListProperty type="Symbol" symUID="0x8A1A83AB">object-physical-weapon-melee-PurseHand001_Hand</ListProperty>
+	</Property>
+	<Property name="DriverProfileList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xA780423">default-component-personality-driverwealthyfemale</ListProperty>
+	</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="CanUseUmbrella" type="Boolean">true</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">BasicFemale</Property>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\ChanWeightSets.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC" symUID="0x2D3C1E22">Ped</Property>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String">Data\Global\Act\NIS_WeightSets.wst</Property>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="PersonalityList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xAEBCB9DC">default-component-personality-fearful</ListProperty>
+	</Property>
+	<Property name="component_Health" type="PropSet">
+		<PropertySet name="component_Health" nameUID="0xA9EB4546" schema="default-component-Health">
+			<!-- Schema Properties -->
+			<Property name="maxUpgradedHealth" type="Int32">400</Property>
+			<Property name="maxHealth" type="Int32">25</Property>
+			<Property name="regenerativeHealthRate" type="Float32">-1</Property>
+			<Property name="InvulnerableCharacter" type="Boolean">false</Property>
+			<Property name="healthProjectileDamageMultiplier" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0xA0567ECF">eCHARACTER_TYPE_PEDESTRIAN</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0x5038C060">eFIGHTING_CLASS_NON_COMBATANT</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">2</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">8</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x7301D91C">INNOCENT</Property>
+			<Property name="Gender" type="Symbol" symUID="0xE7DE76F9">Female</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="MorphController" type="Symbol" symUID="0xBED585C1">RandomizeMorphWeights</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xE7DE76F9">Female</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB8C3227C">Soho</ListProperty>
+				<ListProperty type="Symbol" symUID="0x44EF718F">Adult</ListProperty>
+				<ListProperty type="Symbol" symUID="0x1FDAE298">Caucasain</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">femaleExpat_base</Property>
+</PropertySetResource>

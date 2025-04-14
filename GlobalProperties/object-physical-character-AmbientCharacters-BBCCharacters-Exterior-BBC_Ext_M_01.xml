@@ -1,23 +1,28 @@
-<PropertySet name="object-physical-character-AmbientCharacters-BBCCharacters-Exterior-BBC_Ext_M_01" nameUID="0x63F1A14C" schema="object-physical-character-AmbientCharacters-BBCCharacters-Exterior-BBC_Ext_M_01">
-    <Parent>object-physical-character-ClubberMale</Parent>
-    <Property name="Description" type="String">BBC Ext Male 01</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0xF0572EE1">Clubber</Property>
-            </ResourceTags>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0x74C6CFB5">Data\Characters_New\AM_H_005</Property>
-                <Property type="Symbol" Symbol="0x6628B0A9">Data\Characters_New\AM_B_011</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-BBCCharacters-Exterior-BBC_Ext_M_01" nameUID="0x63F1A14C">
+	<!-- Parents -->
+	<Parent nameUID="0xEEF1B115">object-physical-character-ClubberMale</Parent>
+	<!-- Properties -->
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0xF0572EE1">Clubber</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x74C6CFB5">Data\Characters_New\AM_H_005</ListProperty>
+				<ListProperty type="Symbol" symUID="0x6628B0A9">Data\Characters_New\AM_B_011</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">BBC Ext Male 01</Property>
+</PropertySetResource>

@@ -1,57 +1,52 @@
-<PropertySet name="object-physical-character-EventCharacters-E_JT1_Character" nameUID="0x385E0F2C" schema="object-physical-character-EventCharacters-E_JT1_Character">
-    <Parent>object-physical-character-DoctorFemale</Parent>
-    <Property name="Description" type="String">Event: Junk in the trunk 1</Property>
-    <Property name="PropList" type="List">
-        <Property type="Symbol"/>
-        <Property type="Symbol" Symbol="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</Property>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">BasicFemale</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">BasicFemale</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">2</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">8</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">Innocent</FactionClass>
-            <Gender type="Symbol">Female</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-EventCharacters-E_JT1_Character" nameUID="0x385E0F2C">
+	<!-- Parents -->
+	<Parent nameUID="0x7886125E">object-physical-character-DoctorFemale</Parent>
+	<!-- Properties -->
+	<Property name="PropList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol"/>
+		<ListProperty type="Symbol" symUID="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</ListProperty>
+	</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">BasicFemale</Property>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\ChanWeightSets.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC" symUID="0x2D3C1E22">Ped</Property>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String">Data\Global\Act\NIS_WeightSets.wst</Property>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0xA0567ECF">eCHARACTER_TYPE_PEDESTRIAN</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0x5038C060">eFIGHTING_CLASS_NON_COMBATANT</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">2</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">8</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x7301D91C">INNOCENT</Property>
+			<Property name="Gender" type="Symbol" symUID="0xE7DE76F9">Female</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Event: Junk in the trunk 1</Property>
+</PropertySetResource>

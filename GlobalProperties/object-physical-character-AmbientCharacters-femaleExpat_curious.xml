@@ -1,16 +1,20 @@
-<PropertySet name="object-physical-character-AmbientCharacters-femaleExpat_curious" nameUID="0x409C2718" schema="object-physical-character-AmbientCharacters-femaleExpat_curious">
-    <Parent>object-physical-character-AmbientCharacters-femaleExpat_base</Parent>
-    <Property name="Description" type="String">femaleExpat_curious</Property>
-    <Property name="PersonalityList" type="List">
-        <Property type="Symbol" Symbol="0x2339A927">default-component-personality-curious</Property>
-    </Property>
-    <Property name="component_Health" type="PropSet">
-        <BinData>
-            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
-            <maxHealth type="Int32">25</maxHealth>
-            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
-            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
-            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-femaleExpat_curious" nameUID="0x409C2718">
+	<!-- Parents -->
+	<Parent nameUID="0xE1634EEF">object-physical-character-AmbientCharacters-femaleExpat_base</Parent>
+	<!-- Properties -->
+	<Property name="PersonalityList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x2339A927">default-component-personality-curious</ListProperty>
+	</Property>
+	<Property name="component_Health" type="PropSet">
+		<PropertySet name="component_Health" nameUID="0xA9EB4546" schema="default-component-Health">
+			<!-- Schema Properties -->
+			<Property name="maxUpgradedHealth" type="Int32">400</Property>
+			<Property name="maxHealth" type="Int32">25</Property>
+			<Property name="regenerativeHealthRate" type="Float32">-1</Property>
+			<Property name="InvulnerableCharacter" type="Boolean">false</Property>
+			<Property name="healthProjectileDamageMultiplier" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">femaleExpat_curious</Property>
+</PropertySetResource>

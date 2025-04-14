@@ -1,5 +1,7 @@
-<PropertySet name="default-formation-CopGroupOf2" nameUID="0xACC6B9B1" schema="default-formation-CopGroupOf2">
-    <Parent>default-formation-default</Parent>
-    <Property name="Active" type="Boolean">False</Property>
-    <Property name="MaxFollowers" type="UInt32">1</Property>
-</PropertySet>
+<PropertySetResource name="default-formation-CopGroupOf2" nameUID="0xACC6B9B1">
+	<!-- Parents -->
+	<Parent nameUID="0xA2D7688D">default-formation-default</Parent>
+	<!-- Properties -->
+	<Property name="MaxFollowers" type="UInt32">1</Property>
+	<Property name="Active" type="Boolean">false</Property>
+</PropertySetResource>

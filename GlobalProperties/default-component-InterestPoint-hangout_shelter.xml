@@ -1,17 +1,71 @@
-<PropertySet name="default-component-InterestPoint-hangout_shelter" nameUID="0x9EF50ADA" schema="default-component-InterestPoint-hangout_shelter">
-    <Parent>default-component-InterestPoint-hangout</Parent>
-    <Property name="AnimBankFileNames" type="List">
-        <Property type="SymbolUC" Symbol="0x322CCFDC">POI_Rain_HangOut_F</Property>
-        <Property type="SymbolUC" Symbol="0x196704BD">POI_Rain_HangOut_M</Property>
-    </Property>
-    <Property name="AnimBankFileNamesFemale" type="List">
-        <Property type="SymbolUC" Symbol="0x322CCFDC">POI_Rain_HangOut_F</Property>
-    </Property>
-    <Property name="AnimBankFileNamesMale" type="List">
-        <Property type="SymbolUC" Symbol="0x196704BD">POI_Rain_HangOut_M</Property>
-    </Property>
-    <Property name="Category" type="Symbol" Symbol="0x263C38FF">General</Property>
-    <Property name="Description" type="Symbol" Symbol="0x519B4CD7">Hangout (Sheltered)</Property>
-    <Property name="RunToPOI" type="Boolean">True</Property>
-    <Property name="component_InterestPoint" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="default-component-InterestPoint-hangout_shelter" nameUID="0x9EF50ADA">
+	<!-- Parents -->
+	<Parent nameUID="0x5761401B">default-component-InterestPoint-hangout</Parent>
+	<!-- Properties -->
+	<Property name="AnimBankFileNamesMale" type="List">
+		<!-- Elements -->
+		<ListProperty type="SymbolUC" symUID="0x196704BD">POI_Rain_HangOut_M</ListProperty>
+	</Property>
+	<Property name="Category" type="Symbol" symUID="0x263C38FF">General</Property>
+	<Property name="AnimBankFileNamesFemale" type="List">
+		<!-- Elements -->
+		<ListProperty type="SymbolUC" symUID="0x322CCFDC">POI_Rain_HangOut_F</ListProperty>
+	</Property>
+	<Property name="component_InterestPoint" type="PropSet">
+		<PropertySet name="component_InterestPoint" nameUID="0x9B2B8283" schema="default-component-InterestPoint">
+			<!-- Schema Properties -->
+			<Property name="InterestPointType" type="Symbol" symUID="0xEA20C542">hangout_shelter</Property>
+			<Property name="InterestPointPriority" type="Symbol" symUID="0xEA79A044">Low</Property>
+			<Property name="StartActive" type="Boolean">true</Property>
+			<Property name="Appeal" type="Float32">1</Property>
+			<Property name="MinAppealRadius" type="Float32">1.5</Property>
+			<Property name="MaxAppealRadius" type="Float32">4</Property>
+			<Property name="UserRelativeAngleRange" type="Float32">180</Property>
+			<Property name="GenderAllowed" type="Symbol" symUID="0xC91BB31">Any</Property>
+			<Property name="ChanceIsActive" type="Float32">1</Property>
+			<Property name="TimeOfDayToBecomeActiveInHours" type="Float32">0</Property>
+			<Property name="TimeOfDayToBecomeInactiveInHours" type="Float32">0</Property>
+			<Property name="UseTimeMin" type="Float32">-1</Property>
+			<Property name="UseTimeMax" type="Float32">-1</Property>
+			<Property name="CoolDownTimeMin" type="Float32">2</Property>
+			<Property name="CoolDownTimeMax" type="Float32">4</Property>
+			<Property name="ItemFilterAppliesToPlayer" type="Boolean">false</Property>
+			<Property name="ItemFilterOn" type="Boolean">true</Property>
+			<Property name="ItemListIsAllowable" type="Boolean">true</Property>
+			<Property name="ItemList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x64AC832F">eINVENTORY_ITEM_CELLPHONE</ListProperty>
+				<ListProperty type="Symbol" symUID="0x36CB3E2E">eINVENTORY_ITEM_CIGARETTE</ListProperty>
+				<ListProperty type="Symbol" symUID="0xDCF92817">None</ListProperty>
+			</Property>
+			<Property name="MaxConcurrentInstances" type="Int32">-1</Property>
+			<Property name="MaxDistanceFromPlayer" type="Float32">-1</Property>
+			<Property name="SpawnAmbientUserDistance" type="Float32">-1</Property>
+			<Property name="IsAutoInteractable" type="Boolean">false</Property>
+			<Property name="RequiresSync" type="Boolean">true</Property>
+			<Property name="PositionSyncRequired" type="Boolean">true</Property>
+			<Property name="RotationSyncRequired" type="Boolean">true</Property>
+			<Property name="WeatherFilterOn" type="Boolean">true</Property>
+			<Property name="WeatherFilterIsRaining" type="Boolean">true</Property>
+			<Property name="AllowRepeatedUse" type="Boolean">false</Property>
+			<Property name="AllowLeaders" type="Boolean">false</Property>
+			<Property name="AllowFollowers" type="Boolean">false</Property>
+			<Property name="MinGroupSize" type="Int32">-1</Property>
+			<Property name="MaxGroupSize" type="Int32">-1</Property>
+			<Property name="InitialUseOnly" type="Boolean">false</Property>
+			<Property name="IgnoreCharacterCooldown" type="Boolean">false</Property>
+			<Property name="UserCanBeRecycled" type="Boolean">true</Property>
+			<Property name="ResumeIfInterrupted" type="Boolean">false</Property>
+			<Property name="AllowSocialInteraction" type="Boolean">false</Property>
+			<Property name="IsSittingConversation" type="Boolean">false</Property>
+			<Property name="IgnoreStimuli" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="AnimBankFileNames" type="List">
+		<!-- Elements -->
+		<ListProperty type="SymbolUC" symUID="0x322CCFDC">POI_Rain_HangOut_F</ListProperty>
+		<ListProperty type="SymbolUC" symUID="0x196704BD">POI_Rain_HangOut_M</ListProperty>
+	</Property>
+	<Property name="RunToPOI" type="Boolean">true</Property>
+	<Property name="Description" type="Symbol" symUID="0x519B4CD7">Hangout (Sheltered)</Property>
+</PropertySetResource>

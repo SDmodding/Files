@@ -1,22 +1,25 @@
-<PropertySet name="object-physical-prop-LOI_CurvyVase001" nameUID="0x9BC10A82" schema="object-physical-prop-LOI_CurvyVase001">
-    <Parent>object-physical-prop-VisibleProp</Parent>
-    <Property name="Description" type="String">LOI_CurvyVase001</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOI_CurvyVase001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOI_CurvyVase001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOI_CurvyVase001" nameUID="0x9BC10A82">
+	<!-- Parents -->
+	<Parent nameUID="0x3C7C2007">object-physical-prop-VisibleProp</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOI_CurvyVase001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">LOI_CurvyVase001</Property>
+</PropertySetResource>

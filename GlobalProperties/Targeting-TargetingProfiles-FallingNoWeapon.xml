@@ -1,8 +1,10 @@
-<PropertySet name="Targeting-TargetingProfiles-FallingNoWeapon" nameUID="0x5615C24C" schema="Targeting-TargetingProfiles-FallingNoWeapon">
-    <Parent>Targeting-TargetingProfiles-Default</Parent>
-    <Property name="ExtraNegativePitch" type="Float32">40</Property>
-    <Property name="HalfHorizontalIntentionLimiter" type="Float32">40</Property>
-    <Property name="VertialFOV" type="Float32">65</Property>
-    <Property name="eCONE_PERIPHERY_ConeDistance" type="Float32">6</Property>
-    <Property name="eCONE_PERIPHERY_HorizontalFOV" type="Float32">110</Property>
-</PropertySet>
+<PropertySetResource name="Targeting-TargetingProfiles-FallingNoWeapon" nameUID="0x5615C24C">
+	<!-- Parents -->
+	<Parent nameUID="0x756B6E8F">Targeting-TargetingProfiles-Default</Parent>
+	<!-- Properties -->
+	<Property name="eCONE_PERIPHERY_ConeDistance" type="Float32">6</Property>
+	<Property name="HalfHorizontalIntentionLimiter" type="Float32">40</Property>
+	<Property name="eCONE_PERIPHERY_HorizontalFOV" type="Float32">110</Property>
+	<Property name="ExtraNegativePitch" type="Float32">40</Property>
+	<Property name="VertialFOV" type="Float32">65</Property>
+</PropertySetResource>

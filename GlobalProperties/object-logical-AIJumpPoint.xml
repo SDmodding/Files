@@ -1,5 +1,9 @@
-<PropertySet name="object-logical-AIJumpPoint" nameUID="0x704A7AC7" schema="object-logical-AIJumpPoint">
-    <Parent>default-SimObject</Parent>
-    <Property name="AIDataBuild" type="Boolean">True</Property>
-    <Property name="ObjectType" type="Symbol" Symbol="0x58DAEF8A">AIJumpPoint</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-AIJumpPoint" nameUID="0x704A7AC7">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x6C57837B">default-component-AIMarker</Parent>
+	<!-- Properties -->
+	<Property name="AIDataBuild" type="Boolean">true</Property>
+	<Property name="ObjectType" type="Symbol" symUID="0x58DAEF8A">AIJumpPoint</Property>
+</PropertySetResource>

@@ -1,32 +1,41 @@
-<PropertySet name="object-physical-character-Thug_Cult_Grappler" nameUID="0x4468868E" schema="object-physical-character-Thug_Cult_Grappler">
-    <Parent>object-physical-character-Thug_BsL_grap</Parent>
-    <Property name="Description" type="String">Cult Grappler</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0xE0884651">BSL</Property>
-                <Property type="Symbol" Symbol="0xC73BA389">Grappler</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List">
-                <ListProperty nameUID="0xA8245162">
-                    <Parent>Data\Characters_New\Cult_GrapplerA_Head</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0xAB687806">Data\Characters_New\Cult_GrapplerA_Head</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x55048CD">Data\Characters_New\Cult_GrapplerA_Head_TS00</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA416151">
-                    <Parent>Data\Characters_New\Cult_GrapplerA_Body</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0x90D4835">Data\Characters_New\Cult_GrapplerA_Body</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x665F2AA4">Data\Characters_New\Cult_GrapplerA_Body_TS00</Property>
-                </ListProperty>
-            </ComponentList>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0.9</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Thug_Cult_Grappler" nameUID="0x4468868E">
+	<!-- Parents -->
+	<Parent nameUID="0xBDA7000A">object-physical-character-Thug_BsL_grap</Parent>
+	<!-- Properties -->
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE0884651">BSL</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC73BA389">Grappler</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Head" nameUID="0xA8245162">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0xAB687806">Data\Characters_New\Cult_GrapplerA_Head</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x55048CD">Data\Characters_New\Cult_GrapplerA_Head_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Body" nameUID="0xA416151">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x90D4835">Data\Characters_New\Cult_GrapplerA_Body</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x665F2AA4">Data\Characters_New\Cult_GrapplerA_Body_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0.9</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Cult Grappler</Property>
+</PropertySetResource>

@@ -1,24 +1,27 @@
-<PropertySet name="object-physical-prop-LOL_IntroFishTankCollapse001" nameUID="0xD315A9A0" schema="object-physical-prop-LOL_IntroFishTankCollapse001">
-    <Parent>object-physical-prop-InteractableProp</Parent>
-    <Property name="ActBaseName" type="String">LOL_IntroFishTankCollapse001</Property>
-    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOL_IntroFishTankCollapse001.act</Property>
-    <Property name="Description" type="String">LOL_IntroFishTankCollapse001</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOL_IntroFishTankCollapse001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOL_IntroFishTankCollapse001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOL_IntroFishTankCollapse001" nameUID="0xD315A9A0">
+	<!-- Parents -->
+	<Parent nameUID="0xFB0E6A05">object-physical-prop-InteractableProp</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\Object\LOL_IntroFishTankCollapse001.act</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOL_IntroFishTankCollapse001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="ActBaseName" type="String">LOL_IntroFishTankCollapse001</Property>
+	<Property name="Description" type="String">LOL_IntroFishTankCollapse001</Property>
+</PropertySetResource>

@@ -1,5 +1,7 @@
-<PropertySet name="default-rewards-progression-date_defaults" nameUID="0xE6CB9FEF" schema="default-rewards-progression-date_defaults">
-    <Parent>default-rewards-defaults</Parent>
-    <Property name="CompletionTitle" type="String">Event Completed</Property>
-    <Property name="GamesliceType" type="Symbol" Symbol="0xFB11F7DE">EVENT</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-date_defaults" nameUID="0xE6CB9FEF">
+	<!-- Parents -->
+	<Parent nameUID="0xC21C95B9">default-rewards-defaults</Parent>
+	<!-- Properties -->
+	<Property name="GamesliceType" type="Symbol" symUID="0xFB11F7DE">EVENT</Property>
+	<Property name="CompletionTitle" type="String">Event Completed</Property>
+</PropertySetResource>

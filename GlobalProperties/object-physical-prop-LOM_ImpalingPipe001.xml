@@ -1,105 +1,131 @@
-<PropertySet name="object-physical-prop-LOM_ImpalingPipe001" nameUID="0x1507D753" schema="object-physical-prop-LOM_ImpalingPipe001">
-    <Parent>object-physical-prop-InteractableProp</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOM_RebarImpaleBox001.act</Property>
-    <Property name="Description" type="String">LOM_ImpalingPipe001</Property>
-    <Property name="SimObjChildren" type="List">
-        <ListProperty nameUID="0xC71D6F1B">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">RebarImpaleBoxUsePoint01</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-rebarbox</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x1A08FE0D">C_InteractionPoint01</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xCA5E49C2">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">RebarImpaleBoxUsePoint02</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-rebarbox</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x174BD8D4">C_InteractionPoint02</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xCE9F5475">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">RebarImpaleBoxUsePoint03</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-rebarbox</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x138AC563">C_InteractionPoint03</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD0D80470">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">RebarImpaleBoxUsePoint04</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-rebarbox</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0xDCD9566">C_InteractionPoint04</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOM_ImpalingPipe001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOM_ImpalingPipe001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CompositeDrawable" type="PropSet">
-        <BinData>
-            <DefaultSaturationOverride type="Float32">1</DefaultSaturationOverride>
-            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
-            <HighlightingMode type="String">eHIGHLIGHTING_MODE_OFF</HighlightingMode>
-            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
-            <SkinSSEnabled type="Boolean">false</SkinSSEnabled>
-            <OverlayWeights type="List"/>
-            <OverlayTextures type="List"/>
-            <DrawScale type="Float32">1</DrawScale>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOM_ImpalingPipe001" nameUID="0x1507D753">
+	<!-- Parents -->
+	<Parent nameUID="0xFB0E6A05">object-physical-prop-InteractableProp</Parent>
+	<Parent nameUID="0x49F339C4">default-component-AIOutline</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\Object\LOM_RebarImpaleBox001.act</Property>
+	<Property name="SimObjChildren" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="RebarImpaleBoxUsePoint01" nameUID="0xC71D6F1B">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">RebarImpaleBoxUsePoint01</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x6FBC171A">default-component-InterestPoint-rebarbox</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0x1A08FE0D">C_InteractionPoint01</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="RebarImpaleBoxUsePoint02" nameUID="0xCA5E49C2">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">RebarImpaleBoxUsePoint02</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x6FBC171A">default-component-InterestPoint-rebarbox</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0x174BD8D4">C_InteractionPoint02</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="RebarImpaleBoxUsePoint03" nameUID="0xCE9F5475">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">RebarImpaleBoxUsePoint03</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x6FBC171A">default-component-InterestPoint-rebarbox</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0x138AC563">C_InteractionPoint03</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="RebarImpaleBoxUsePoint04" nameUID="0xD0D80470">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">RebarImpaleBoxUsePoint04</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x6FBC171A">default-component-InterestPoint-rebarbox</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0xDCD9566">C_InteractionPoint04</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOM_ImpalingPipe001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CompositeDrawable" type="PropSet">
+		<PropertySet name="component_CompositeDrawable" nameUID="0x79DB63A1" schema="default-component-CompositeDrawable">
+			<!-- Schema Properties -->
+			<Property name="DefaultSaturationOverride" type="Float32">1</Property>
+			<Property name="LightSFXMultiplier" type="Float32">0</Property>
+			<Property name="HighlightingMode" type="String">eHIGHLIGHTING_MODE_OFF</Property>
+			<Property name="HighlightingColour" type="Vector4" x="1" y="1" z="1" w="1"/>
+			<Property name="SkinSSEnabled" type="Boolean">false</Property>
+			<Property name="OverlayWeights" type="List"/>
+			<Property name="OverlayTextures" type="List"/>
+			<Property name="DrawScale" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">LOM_ImpalingPipe001</Property>
+</PropertySetResource>

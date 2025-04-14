@@ -1,8 +1,11 @@
-<PropertySet name="object-physical-prop-HIS_Vincent" nameUID="0x4E39AB2E" schema="object-physical-prop-HIS_Vincent">
-    <Parent>object-physical-prop</Parent>
-    <Property name="default-component-InterestPoint" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-InterestPoint-HIS_Vincent</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-HIS_Vincent" nameUID="0x4E39AB2E">
+	<!-- Parents -->
+	<Parent nameUID="0x45EAFD73">object-physical-prop</Parent>
+	<!-- Properties -->
+	<Property name="default-component-InterestPoint" type="PropSet">
+		<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+			<!-- Parents -->
+			<Parent nameUID="0x43A77B78">default-component-InterestPoint-HIS_Vincent</Parent>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

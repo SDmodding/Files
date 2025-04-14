@@ -1,12 +1,20 @@
-<PropertySet name="default-rewards-progression-M_CNY_TB1" nameUID="0x6BF42934" schema="default-rewards-progression-M_CNY_TB1">
-    <Parent>default-rewards-progression-dlc_cny_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_BOMBBUS</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF57EB71C">
-            <Property name="0x308E0AE5" type="String">vehicle_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">DLC_ULTPOLICE_COP_BIKE</Property>
-            <Property name="0xDE3E6A23" type="String">$CNY_REWARD_BIKE</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_CNY_TB1" nameUID="0x6BF42934">
+	<!-- Parents -->
+	<Parent nameUID="0xB911CE91">default-rewards-progression-dlc_cny_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF57EB71C">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9B06086B">Vehicle</Property>
+				<Property name="Icon" type="String">vehicle_icon</Property>
+				<Property name="AssetId" type="String">DLC_ULTPOLICE_COP_BIKE</Property>
+				<Property name="Text" type="String">$CNY_REWARD_BIKE</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_BOMBBUS</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xF57EB71C (Normal) -->

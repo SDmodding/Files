@@ -1,6 +1,11 @@
-<PropertySet name="default-rewards-progression-dlc_hgf_event_defaults" nameUID="0x45E71420" schema="default-rewards-progression-dlc_hgf_event_defaults">
-    <Parent>default-rewards-defaults</Parent>
-    <Property name="0xDA71F297" type="Symbol"/>
-    <Property name="CompletionTitle" type="String">$OVERLAY_REWARD_COMPLETE</Property>
-    <Property name="GamesliceType" type="Symbol" Symbol="0x71C2B6C5">DLC</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-dlc_hgf_event_defaults" nameUID="0x45E71420">
+	<!-- Parents -->
+	<Parent nameUID="0xC21C95B9">default-rewards-defaults</Parent>
+	<!-- Properties -->
+	<Property name="GamesliceType" type="Symbol" symUID="0x71C2B6C5">DLC</Property>
+	<Property name="CompletionTitle" type="String">$OVERLAY_REWARD_COMPLETE</Property>
+	<Property name="~da71f297~" type="Symbol" symUID="0x134A0683"/>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x134A0683 (Normal) -->
+<!-- 0xDA71F297 (Normal) -->

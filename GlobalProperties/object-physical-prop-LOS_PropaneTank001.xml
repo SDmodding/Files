@@ -1,5 +1,8 @@
-<PropertySet name="object-physical-prop-LOS_PropaneTank001" nameUID="0xFAA0163" schema="object-physical-prop-LOS_PropaneTank001">
-    <Parent>object-physical-prop</Parent>
-    <Property name="CollisionModelName" type="SymbolUC" Symbol="0x97DC1FD9">LOS_PropaneTank001_P</Property>
-    <Property name="Description" type="String">object-physical-prop-LOS_PropaneTank001</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOS_PropaneTank001" nameUID="0xFAA0163">
+	<!-- Parents -->
+	<Parent nameUID="0x45EAFD73">object-physical-prop</Parent>
+	<Parent nameUID="0xA3F04C8B">default-component-RigidBody</Parent>
+	<!-- Properties -->
+	<Property name="CollisionModelName" type="SymbolUC" symUID="0x97DC1FD9">LOS_PropaneTank001_P</Property>
+	<Property name="Description" type="String">object-physical-prop-LOS_PropaneTank001</Property>
+</PropertySetResource>

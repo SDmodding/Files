@@ -1,14 +1,20 @@
-<PropertySet name="default-rewards-progression-R_CT_05" nameUID="0xFB497F2A" schema="default-rewards-progression-R_CT_05">
-    <Parent>default-rewards-progression-race_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_CENTRAL_05</Property>
-    <Property name="MoneyAdjustment" type="Int32">10000</Property>
-    <Property name="StandingAdjustment" type="Int32">150</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x9B06086B">
-            <Property name="0x308E0AE5" type="String">vehicle_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">DLC_CommunityPack1_Car</Property>
-            <Property name="0xDE3E6A23" type="String">$DLC_COMMUNITY_PACK1_UFGCAR_REWARD</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-R_CT_05" nameUID="0xFB497F2A">
+	<!-- Parents -->
+	<Parent nameUID="0x6D19FF7C">default-rewards-progression-race_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Vehicle" nameUID="0x9B06086B">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9B06086B">Vehicle</Property>
+				<Property name="Icon" type="String">vehicle_icon</Property>
+				<Property name="AssetId" type="String">DLC_CommunityPack1_Car</Property>
+				<Property name="Text" type="String">$DLC_COMMUNITY_PACK1_UFGCAR_REWARD</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="MoneyAdjustment" type="Int32">10000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_CENTRAL_05</Property>
+	<Property name="StandingAdjustment" type="Int32">150</Property>
+</PropertySetResource>

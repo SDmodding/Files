@@ -1,5 +1,7 @@
-<PropertySet name="object-physical-character-AmbientCharacters-BBCCharacters-ClubberFemaleDrunk" nameUID="0xAA5DA171" schema="object-physical-character-AmbientCharacters-BBCCharacters-ClubberFemaleDrunk">
-    <Parent>object-physical-character-ClubberFemale</Parent>
-    <Property name="Description" type="String">Clubbers - Female Drunk</Property>
-    <Property name="walkCycle" type="Symbol" Symbol="0xCE41243C">Drunk</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-BBCCharacters-ClubberFemaleDrunk" nameUID="0xAA5DA171">
+	<!-- Parents -->
+	<Parent nameUID="0xAAB1DCB5">object-physical-character-ClubberFemale</Parent>
+	<!-- Properties -->
+	<Property name="walkCycle" type="Symbol" symUID="0xCE41243C">Drunk</Property>
+	<Property name="Description" type="String">Clubbers - Female Drunk</Property>
+</PropertySetResource>

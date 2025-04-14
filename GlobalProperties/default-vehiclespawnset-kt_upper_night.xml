@@ -1,33 +1,48 @@
-<PropertySet name="default-vehiclespawnset-kt_upper_night" nameUID="0xCEAB9498" schema="default-vehiclespawnset-kt_upper_night">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0x97D708A8">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x9C2ECD51">object-physical-vehicle-Blast01</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x97D708A8">
-            <Property name="MaxInstances" type="Int32">2</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x1A72A18F">object-physical-vehicle-KyouKan01</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x97D708A8">
-            <Property name="MaxInstances" type="Int32">2</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x250E679F">object-physical-vehicle-Loewe01</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x97D708A8">
-            <Property name="MaxInstances" type="Int32">2</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x464FD688">object-physical-vehicle-etalon01</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0xEA52FCD3">object-physical-vehicle-Enterprise01</Property>
-        <Property type="Symbol" Symbol="0x368EE36F">object-physical-vehicle-Gopher01</Property>
-        <Property type="Symbol" Symbol="0x28E10405">object-physical-vehicle-Guide01</Property>
-        <Property type="Symbol" Symbol="0x88561343">object-physical-vehicle-Odaiko01</Property>
-        <Property type="Symbol" Symbol="0xAE603104">object-physical-vehicle-Prime8C01</Property>
-        <Property type="Symbol" Symbol="0x58F6A06">object-physical-vehicle-SES01</Property>
-        <Property type="Symbol" Symbol="0x8CB0BCCA">object-physical-vehicle-625MHCTaxi01</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-vehiclespawnset-kt_upper_night" nameUID="0xCEAB9498">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="ABIsleRareVehicleSpawns" nameUID="0x97D708A8">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x9C2ECD51">object-physical-vehicle-Blast01</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="ABIsleRareVehicleSpawns" nameUID="0x97D708A8">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x1A72A18F">object-physical-vehicle-KyouKan01</Property>
+				<Property name="MaxInstances" type="Int32">2</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="ABIsleRareVehicleSpawns" nameUID="0x97D708A8">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x250E679F">object-physical-vehicle-Loewe01</Property>
+				<Property name="MaxInstances" type="Int32">2</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="ABIsleRareVehicleSpawns" nameUID="0x97D708A8">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x464FD688">object-physical-vehicle-etalon01</Property>
+				<Property name="MaxInstances" type="Int32">2</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xEA52FCD3">object-physical-vehicle-Enterprise01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x368EE36F">object-physical-vehicle-Gopher01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x28E10405">object-physical-vehicle-Guide01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x88561343">object-physical-vehicle-Odaiko01</ListProperty>
+		<ListProperty type="Symbol" symUID="0xAE603104">object-physical-vehicle-Prime8C01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x58F6A06">object-physical-vehicle-SES01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x8CB0BCCA">object-physical-vehicle-625MHCTaxi01</ListProperty>
+	</Property>
+</PropertySetResource>

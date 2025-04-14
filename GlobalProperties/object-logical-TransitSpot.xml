@@ -1,8 +1,13 @@
-<PropertySet name="object-logical-TransitSpot" nameUID="0x2775CA98" schema="object-logical-TransitSpot">
-    <Parent>default-SimObject</Parent>
-    <Property name="default-component-Region" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Region</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-TransitSpot" nameUID="0x2775CA98">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0xBDB93E58">default-component-TransitSpot</Parent>
+	<!-- Properties -->
+	<Property name="default-component-Region" type="PropSet">
+		<PropertySet>
+			<!-- Parents -->
+			<Parent nameUID="0xF6AC0CA8">default-component-Region</Parent>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

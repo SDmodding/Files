@@ -1,20 +1,24 @@
-<PropertySet name="object-physical-character-DockWorkerThug" nameUID="0xBCEA25B4" schema="object-physical-character-DockWorkerThug">
-    <Parent>object-physical-character-Thug_18k_striker</Parent>
-    <Property name="Description" type="String">Dock Worker Thug (TGA E3)</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0x6B506DB4">DockWorker</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0.1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-DockWorkerThug" nameUID="0xBCEA25B4">
+	<!-- Parents -->
+	<Parent nameUID="0xAB732629">object-physical-character-Thug_18k_striker</Parent>
+	<!-- Properties -->
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0x6B506DB4">DockWorker</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0.1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Dock Worker Thug (TGA E3)</Property>
+</PropertySetResource>

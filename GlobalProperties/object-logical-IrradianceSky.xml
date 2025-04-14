@@ -1,9 +1,23 @@
-<PropertySet name="object-logical-IrradianceSky" nameUID="0xE2797D98" schema="object-logical-IrradianceSky">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0xEB604C0A">IrradianceVolume</Property>
-    <Property name="component_IrradianceVolume" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-IrradianceVolume</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-IrradianceSky" nameUID="0xE2797D98">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0xEB604C0A">IrradianceVolume</Property>
+	<Property name="component_IrradianceVolume" type="PropSet">
+		<PropertySet name="component_IrradianceVolume" nameUID="0xFF8F4170" schema="default-component-IrradianceVolume">
+			<!-- Parents -->
+			<Parent nameUID="0x845E85EE">default-component-IrradianceVolume</Parent>
+			<!-- Schema Properties -->
+			<Property name="IrrVol_ResolutionX" type="UInt32">16</Property>
+			<Property name="IrrVol_ResolutionY" type="UInt32">16</Property>
+			<Property name="IrrVol_ResolutionZ" type="UInt32">16</Property>
+			<Property name="IrrVol_Type" type="UInt32">2</Property>
+			<Property name="IrrVol_Flags" type="UInt32">0</Property>
+			<Property name="IrrVol_Max" type="Vector3" x="5" y="5" z="10"/>
+			<Property name="IrrVol_Min" type="Vector3" x="-5" y="-5" z="0"/>
+			<Property name="IrrVol_Id" type="UInt64">0</Property>
+			<Property name="IrrVol_SectionIndex" type="Int32">-1</Property>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

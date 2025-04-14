@@ -1,81 +1,135 @@
-<PropertySet name="default-rewards-progression-M_MB" nameUID="0x211846A" schema="default-rewards-progression-M_MB">
-    <Parent>default-rewards-progression-mission_defaults</Parent>
-    <Property name="0x34BE120D" type="Int32">50</Property>
-    <Property name="0x39FD34D4" type="Int32">1</Property>
-    <Property name="0x72201393" type="Int32">350</Property>
-    <Property name="0xB5355664" type="Symbol"/>
-    <Property name="0xC3DF597C" type="Int32">190</Property>
-    <Property name="0xC71E44CB" type="Int32">150</Property>
-    <Property name="0xCA5D6212" type="Int32">1</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_MINI_BUS</Property>
-    <Property name="CopStartingScore" type="Int32">75</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="MoneyAdjustment" type="Int32">15000</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">150</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x92D275DF">
-            <Property name="0x4E4D2ED3" type="String">MinibusDepot</Property>
-            <Property name="0x7198AF49" type="Int32">4</Property>
-            <Property name="Type" type="Symbol" Symbol="0x93910E97">Collectible_AreaOwnership</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC5403555">
-            <Parent>DynamicTutorials</Parent>
-            <Property name="0x4E4D2ED3" type="String">MeleeCollectibleTutorial</Property>
-            <Property name="Type" type="Symbol" Symbol="0xF8447E4C">DynamicTutorials</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC803138C">
-            <Parent>DynamicTutorials</Parent>
-            <Property name="0x4E4D2ED3" type="String">JobTutorial</Property>
-            <Property name="Type" type="Symbol" Symbol="0xF8447E4C">DynamicTutorials</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD89854E5">
-            <Property name="0x308E0AE5" type="String">pda_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">HJ_Return_Points-HJ_CEN_ALLEY_RP</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x1CDBE0A9">HijackReturn</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE977825E">
-            <Property name="0x2DFB6FC5" type="Int32">28</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_28</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD5DB723C">
-            <Property name="0x308E0AE5" type="String">pda_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">HJ_Return_Points-HJ_CEN_ALLEY_RP</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x1CDBE0A9">HijackReturn</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD11A6F8B">
-            <Property name="0x308E0AE5" type="String">pda_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">HJ_Return_Points-HJ_AB_WH_RP</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x1CDBE0A9">HijackReturn</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xCF5D3F8E">
-            <Property name="0x308E0AE5" type="String">pda_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">HJ_Return_Points-HJ_CEN_LB_RP</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x1CDBE0A9">HijackReturn</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xCB9C2239">
-            <Property name="0x308E0AE5" type="String">pda_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">HJ_Return_Points-HJ_NP_IND_RP</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x1CDBE0A9">HijackReturn</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC6DF04E0">
-            <Property name="0x308E0AE5" type="String">pda_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">HJ_Return_Points-HJ_AB_DOCKS_RP</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x1CDBE0A9">HijackReturn</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC21E1957">
-            <Property name="0x308E0AE5" type="String">pda_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">HJ_Return_Points-HJ_NP_SMDOCK_RP</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x1CDBE0A9">HijackReturn</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_MB" nameUID="0x211846A">
+	<!-- Parents -->
+	<Parent nameUID="0xD274BB76">default-rewards-progression-mission_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="MinibusDepot" nameUID="0x92D275DF">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x93910E97">Collectible_AreaOwnership</Property>
+				<Property name="AssetId" type="String">MinibusDepot</Property>
+				<Property name="~7198af49~" type="Int32">4</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xC5403555">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xF8447E4C">DynamicTutorials</Property>
+				<Property name="AssetId" type="String">MeleeCollectibleTutorial</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xC803138C">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xF8447E4C">DynamicTutorials</Property>
+				<Property name="AssetId" type="String">JobTutorial</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xD89854E5">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1CDBE0A9">HijackReturn</Property>
+				<Property name="Icon" type="String">pda_icon</Property>
+				<Property name="AssetId" type="String">HJ_Return_Points-HJ_CEN_ALLEY_RP</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xE977825E">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="Property" type="Int32">28</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_28</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xD5DB723C">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1CDBE0A9">HijackReturn</Property>
+				<Property name="Icon" type="String">pda_icon</Property>
+				<Property name="AssetId" type="String">HJ_Return_Points-HJ_CEN_ALLEY_RP</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xD11A6F8B">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1CDBE0A9">HijackReturn</Property>
+				<Property name="Icon" type="String">pda_icon</Property>
+				<Property name="AssetId" type="String">HJ_Return_Points-HJ_AB_WH_RP</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xCF5D3F8E">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1CDBE0A9">HijackReturn</Property>
+				<Property name="Icon" type="String">pda_icon</Property>
+				<Property name="AssetId" type="String">HJ_Return_Points-HJ_CEN_LB_RP</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xCB9C2239">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1CDBE0A9">HijackReturn</Property>
+				<Property name="Icon" type="String">pda_icon</Property>
+				<Property name="AssetId" type="String">HJ_Return_Points-HJ_NP_IND_RP</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xC6DF04E0">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1CDBE0A9">HijackReturn</Property>
+				<Property name="Icon" type="String">pda_icon</Property>
+				<Property name="AssetId" type="String">HJ_Return_Points-HJ_AB_DOCKS_RP</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xC21E1957">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1CDBE0A9">HijackReturn</Property>
+				<Property name="Icon" type="String">pda_icon</Property>
+				<Property name="AssetId" type="String">HJ_Return_Points-HJ_NP_SMDOCK_RP</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">75</Property>
+	<Property name="~34be120d~" type="Int32">50</Property>
+	<Property name="MoneyAdjustment" type="Int32">15000</Property>
+	<Property name="~39fd34d4~" type="Int32">1</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_MINI_BUS</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">350</Property>
+	<Property name="TriadTargetScore" type="Int32">150</Property>
+	<Property name="~b5355664~" type="Symbol" symUID="0x5CBF012"/>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="~c3df597c~" type="Int32">190</Property>
+	<Property name="~c71e44cb~" type="Int32">150</Property>
+	<Property name="~ca5d6212~" type="Int32">1</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x5CBF012 (Normal) -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x34BE120D (Normal) -->
+<!-- 0x39FD34D4 (Normal) -->
+<!-- 0x7198AF49 (Normal) -->
+<!-- 0xB5355664 (Normal) -->
+<!-- 0xC21E1957 (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC5403555 (Normal) -->
+<!-- 0xC6DF04E0 (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xC803138C (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->
+<!-- 0xCB9C2239 (Normal) -->
+<!-- 0xCF5D3F8E (Normal) -->
+<!-- 0xD11A6F8B (Normal) -->
+<!-- 0xD5DB723C (Normal) -->
+<!-- 0xD89854E5 (Normal) -->
+<!-- 0xE977825E (Normal) -->

@@ -1,36 +1,41 @@
-<PropertySet name="object-physical-prop-StreamedObject-CounterBlood001" nameUID="0xCD62264F" schema="object-physical-prop-StreamedObject-CounterBlood001">
-    <Parent>object-physical-prop-StreamedAttachableProp</Parent>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">CounterBlood001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">CounterBlood001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0x37389CD">Data\Props_New\CounterBlood001</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">Prop</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-StreamedObject-CounterBlood001" nameUID="0xCD62264F">
+	<!-- Parents -->
+	<Parent nameUID="0xE9175745">object-physical-prop-StreamedAttachableProp</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">CounterBlood001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x37389CD">Data\Props_New\CounterBlood001</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0xD452A50">Prop</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

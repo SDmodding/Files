@@ -1,16 +1,32 @@
-<PropertySet name="default-rewards-progression-M_HGF_GOTP" nameUID="0x484DE588" schema="default-rewards-progression-M_HGF_GOTP">
-    <Parent>default-rewards-progression-dlc_hgf_defaults</Parent>
-    <Property name="0xBF780215" type="Symbol"/>
-    <Property name="CompletionText" type="String">$SGTITLE_GHOSTS_OF_THE_PAST</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x71CAA1EC">
-            <Property name="0x2DFB6FC5" type="Int32">36</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_36</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0xDE3E6A23" type="String">$HGF_REWARD_EVENTS</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_HGF_GOTP" nameUID="0x484DE588">
+	<!-- Parents -->
+	<Parent nameUID="0x1201C2F0">default-rewards-progression-dlc_hgf_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x71CAA1EC">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">36</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_36</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$HGF_REWARD_EVENTS</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_GHOSTS_OF_THE_PAST</Property>
+	<Property name="~bf780215~" type="Symbol" symUID="0x86F76364"/>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0x71CAA1EC (Normal) -->
+<!-- 0x86F76364 (Normal) -->
+<!-- 0xBF780215 (Normal) -->
+<!-- 0xF630B577 (Normal) -->

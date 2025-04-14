@@ -1,36 +1,33 @@
-<PropertySet name="object-physical-character-animbanks-DLC_EliteGhoul" nameUID="0x53003617" schema="object-physical-character-animbanks-DLC_EliteGhoul">
-    <Property name="component_BaseAnimation" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-CharacterAnimation</Parent>
-        </PropertySet>
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
-                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
-                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
-                <Property type="SymbolUC" Symbol="0xE897A397">HungryGhostsEGhoul</Property>
-                <Property type="SymbolUC" Symbol="0xF98A3641">ThrowCounters</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-CharacterAnimation</Parent>
-        </PropertySet>
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
-                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
-                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
-                <Property type="SymbolUC" Symbol="0xE897A397">HungryGhostsEGhoul</Property>
-                <Property type="SymbolUC" Symbol="0xF98A3641">ThrowCounters</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-animbanks-DLC_EliteGhoul" nameUID="0x53003617">
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Parents -->
+			<Parent nameUID="0x6C08125D">default-component-CharacterAnimation</Parent>
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Parents -->
+			<Parent nameUID="0x6C08125D">default-component-CharacterAnimation</Parent>
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String"/>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List">
+				<!-- Elements -->
+				<ListProperty type="SymbolUC" symUID="0x9F35E28">Thug</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0xBCEB5E67">THUG_STRIKES</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0xEB4FEEB5">Thug_LowHealth</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0xE897A397">HungryGhostsEGhoul</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0xF98A3641">ThrowCounters</ListProperty>
+			</Property>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

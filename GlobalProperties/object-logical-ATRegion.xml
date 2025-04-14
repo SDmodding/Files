@@ -1,9 +1,14 @@
-<PropertySet name="object-logical-ATRegion" nameUID="0x93FB2D69" schema="object-logical-ATRegion">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0x278618B">AudioTriggerRegion</Property>
-    <Property name="default-component-Region" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Region</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-ATRegion" nameUID="0x93FB2D69">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x8660E5F9">default-component-ATRegion</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0x278618B">AudioTriggerRegion</Property>
+	<Property name="default-component-Region" type="PropSet">
+		<PropertySet>
+			<!-- Parents -->
+			<Parent nameUID="0xF6AC0CA8">default-component-Region</Parent>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

@@ -1,10 +1,18 @@
-<PropertySet name="default-rewards-progression-J_BD1" nameUID="0xDD0E9656" schema="default-rewards-progression-J_BD1">
-    <Parent>default-rewards-progression-job_defaults</Parent>
-    <Property name="CompletionText" type="String">Bus Driver Job Complete</Property>
-    <Property name="MoneyAdjustment" type="Int32">250</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF04DEE45">
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-J_BD1" nameUID="0xDD0E9656">
+	<!-- Parents -->
+	<Parent nameUID="0x93DAADC2">default-rewards-progression-job_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="J_BD1" nameUID="0xF04DEE45">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xA9501391"/>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="MoneyAdjustment" type="Int32">250</Property>
+	<Property name="CompletionText" type="String">Bus Driver Job Complete</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xA9501391 (Normal) -->

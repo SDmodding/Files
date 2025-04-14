@@ -1,27 +1,37 @@
-<PropertySet name="default-savegames-debugmenu-Main-r_ab_04" nameUID="0xDDCEC577" schema="default-savegames-debugmenu-Main-r_ab_04">
-    <Parent>default-savegames-defaults</Parent>
-    <Property name="Asset_Vehicle" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0x8742DFA5">mission_reward_vehicle_M_NMC</Property>
-                <Property type="Symbol" Symbol="0x20357A9">Face_One_Vehicle_01</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="DynamicTutorials" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-savegames-debugmenu-Main-r_ab_04" nameUID="0xDDCEC577">
+	<!-- Parents -->
+	<Parent nameUID="0x10965489">default-savegames-defaults</Parent>
+	<!-- Properties -->
+	<Property name="Asset_Vehicle" type="PropSet">
+		<PropertySet nameUID="0xBBC8CAF6">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x8742DFA5">mission_reward_vehicle_M_NMC</ListProperty>
+				<ListProperty type="Symbol" symUID="0x20357A9">Face_One_Vehicle_01</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="DynamicTutorials" type="PropSet">
+		<PropertySet name="Melee" nameUID="0xFB892B3B">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x444B6EFA">TranStoreTutorial</ListProperty>
+				<ListProperty type="Symbol" symUID="0x144D1EC7">HijackingTutorial</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xBBC8CAF6 (Normal) -->

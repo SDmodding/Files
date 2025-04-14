@@ -1,60 +1,104 @@
-<PropertySet name="default-unlockables-caseLeads-list" nameUID="0xACAF6EFF" schema="default-unlockables-caseLeads-list">
-    <Property name="List" type="List">
-        <ListProperty nameUID="0xEC3F9FE6">
-            <Property name="Description" type="String">Ask around and find out answers</Property>
-            <Property name="ObjectiveName" type="String">Investigate</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE17CB93F">
-            <Property name="Description" type="String">Look around for clues</Property>
-            <Property name="ObjectiveName" type="String">Snooping</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE5BDA488">
-            <Property name="Description" type="String">Find the kidnappers lair</Property>
-            <Property name="ObjectiveName" type="String">Find</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7824D4E3">
-            <Property name="Description" type="String">Win a race</Property>
-            <Property name="ObjectiveName" type="String">Win Street Race</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7567F23A">
-            <Property name="Description" type="String">Trace and spy on Hotshot</Property>
-            <Property name="ObjectiveName" type="String">Investigate Hotshot</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x71A6EF8D">
-            <Property name="Description" type="String">Investigate the crash</Property>
-            <Property name="ObjectiveName" type="String">Investigate the crash</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6FE1BF88">
-            <Property name="Description" type="String">Eliminate Hotshot</Property>
-            <Property name="ObjectiveName" type="String">Eliminate Hotshot</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x684DD3DB">
-            <Property name="Description" type="String">Investigate the crime scene</Property>
-            <Property name="ObjectiveName" type="String">Investigate Crime Scene 1</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x650EF502">
-            <Property name="Description" type="String">Investigate the hospital</Property>
-            <Property name="ObjectiveName" type="String">Investigate the hospital</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x61CFE8B5">
-            <Property name="Description" type="String">Wound the 18k Cell Boss</Property>
-            <Property name="ObjectiveName" type="String">Wound the 18k Cell Boss</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF03DFE13">
-            <Property name="Description" type="String">Discover the location of the drug deal</Property>
-            <Property name="ObjectiveName" type="String">Talk to Ming and find Popstar</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFD7ED8CA">
-            <Property name="Description" type="String">Add surveillance to the site</Property>
-            <Property name="ObjectiveName" type="String">Hack the security camera</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF9BFC57D">
-            <Property name="Description" type="String">Capture surveillance evidence</Property>
-            <Property name="ObjectiveName" type="String">Use the Spy PC</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE7F89578">
-            <Property name="Description" type="String">Photograph transcation with source</Property>
-            <Property name="ObjectiveName" type="String">Photograph the Drug Deal</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-unlockables-caseLeads-list" nameUID="0xACAF6EFF">
+	<!-- Properties -->
+	<Property name="List" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_KN1" nameUID="0xEC3F9FE6">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Investigate</Property>
+				<Property name="Description" type="String">Ask around and find out answers</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_KN2" nameUID="0xE17CB93F">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Snooping</Property>
+				<Property name="Description" type="String">Look around for clues</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_KN3" nameUID="0xE5BDA488">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Find</Property>
+				<Property name="Description" type="String">Find the kidnappers lair</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_R1" nameUID="0x7824D4E3">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Win Street Race</Property>
+				<Property name="Description" type="String">Win a race</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_R2" nameUID="0x7567F23A">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Investigate Hotshot</Property>
+				<Property name="Description" type="String">Trace and spy on Hotshot</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_R3" nameUID="0x71A6EF8D">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Investigate the crash</Property>
+				<Property name="Description" type="String">Investigate the crash</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_R4" nameUID="0x6FE1BF88">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Eliminate Hotshot</Property>
+				<Property name="Description" type="String">Eliminate Hotshot</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_SK1" nameUID="0x684DD3DB">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Investigate Crime Scene 1</Property>
+				<Property name="Description" type="String">Investigate the crime scene</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_SK2" nameUID="0x650EF502">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Investigate the hospital</Property>
+				<Property name="Description" type="String">Investigate the hospital</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_SK3" nameUID="0x61CFE8B5">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Wound the 18k Cell Boss</Property>
+				<Property name="Description" type="String">Wound the 18k Cell Boss</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_PS1" nameUID="0xF03DFE13">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Talk to Ming and find Popstar</Property>
+				<Property name="Description" type="String">Discover the location of the drug deal</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_PS2" nameUID="0xFD7ED8CA">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Hack the security camera</Property>
+				<Property name="Description" type="String">Add surveillance to the site</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_PS3" nameUID="0xF9BFC57D">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Use the Spy PC</Property>
+				<Property name="Description" type="String">Capture surveillance evidence</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_PS4" nameUID="0xE7F89578">
+				<!-- Properties -->
+				<Property name="ObjectiveName" type="String">Photograph the Drug Deal</Property>
+				<Property name="Description" type="String">Photograph transcation with source</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

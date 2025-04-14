@@ -1,6 +1,8 @@
-<PropertySet name="default-rewards-lockboxes-wsmg" nameUID="0x199987D1" schema="default-rewards-lockboxes-wsmg">
-    <Parent>default-rewards-lockboxes-lockbox</Parent>
-    <Property name="CompletionText" type="String">Found Service Pistol</Property>
-    <Property name="InventoryItemType" type="Symbol" Symbol="0x4C229B8F">eINVENTORY_ITEM_PISTOL_SERVICE</Property>
-    <Property name="MoneyAdjustment" type="Int32">14000</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-lockboxes-wsmg" nameUID="0x199987D1">
+	<!-- Parents -->
+	<Parent nameUID="0x1B0A318C">default-rewards-lockboxes-lockbox</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">14000</Property>
+	<Property name="CompletionText" type="String">Found Service Pistol</Property>
+	<Property name="InventoryItemType" type="Symbol" symUID="0x4C229B8F">eINVENTORY_ITEM_PISTOL_SERVICE</Property>
+</PropertySetResource>

@@ -1,6 +1,11 @@
-<PropertySet name="object-physical-weapon-melee-woodenclub" nameUID="0xE9CF6133" schema="object-physical-weapon-melee-woodenclub">
-    <Parent>object-physical-weapon-melee-stickbamboo</Parent>
-    <Property name="AudioWeaponType" type="WwiseID"/>
-    <Property name="Description" type="String">$HUD_WEAPON_WOODEN_CLUB</Property>
-    <Property name="SoundBank" type="WwiseID"/>
-</PropertySet>
+<PropertySetResource name="object-physical-weapon-melee-woodenclub" nameUID="0xE9CF6133">
+	<!-- Parents -->
+	<Parent nameUID="0x63A4388C">object-physical-weapon-melee-stickbamboo</Parent>
+	<!-- Properties -->
+	<Property name="SoundBank" type="WwiseID" symUID="0x84E58092"/>
+	<Property name="AudioWeaponType" type="WwiseID" symUID="0x5E77F4D1"/>
+	<Property name="Description" type="String">$HUD_WEAPON_WOODEN_CLUB</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x5E77F4D1 (WWise) -->
+<!-- 0x84E58092 (WWise) -->

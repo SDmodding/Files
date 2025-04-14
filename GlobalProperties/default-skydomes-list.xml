@@ -1,37 +1,66 @@
-<PropertySet name="default-skydomes-list" nameUID="0xE82C441E" schema="default-skydomes-list">
-    <Property name="CloudyList" type="List"/>
-    <Property name="CustomList" type="List">
-        <ListProperty nameUID="0x45815142">
-            <Property name="ModelList" type="List">
-                <ListProperty nameUID="0x462E032D">
-                    <Property name="Model" type="String">WTHKCeiling</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDF9EEEBF">
-                    <Property name="Model" type="String">WTHKDome2</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x130750A7">
-                    <Property name="Model" type="String">WTHKDome</Property>
-                    <Property name="RotationRate" type="Float32">2</Property>
-                </ListProperty>
-            </Property>
-            <Property name="TexturePack" type="String">WTHKTexturePack</Property>
-        </ListProperty>
-    </Property>
-    <Property name="StormyList" type="List"/>
-    <Property name="SunnyList" type="List">
-        <ListProperty nameUID="0xB8BE19B5">
-            <Property name="ModelList" type="List">
-                <ListProperty nameUID="0x462E032D">
-                    <Property name="Model" type="String">CeilingGeo</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDF9EEEBF">
-                    <Property name="Model" type="String">DomeGeo2</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x130750A7">
-                    <Property name="Model" type="String">DomeGeo</Property>
-                </ListProperty>
-            </Property>
-            <Property name="TexturePack" type="String">DefaultTexturePack</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-skydomes-list" nameUID="0xE82C441E">
+	<!-- Properties -->
+	<Property name="CustomList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="WTHK" nameUID="0x45815142">
+				<!-- Properties -->
+				<Property name="ModelList" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="Ceiling" nameUID="0x462E032D">
+							<!-- Properties -->
+							<Property name="Model" type="String">WTHKCeiling</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="Outer" nameUID="0xDF9EEEBF">
+							<!-- Properties -->
+							<Property name="Model" type="String">WTHKDome2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="Inner" nameUID="0x130750A7">
+							<!-- Properties -->
+							<Property name="Model" type="String">WTHKDome</Property>
+							<Property name="RotationRate" type="Float32">2</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="TexturePack" type="String">WTHKTexturePack</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SunnyList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Default" nameUID="0xB8BE19B5">
+				<!-- Properties -->
+				<Property name="ModelList" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="Ceiling" nameUID="0x462E032D">
+							<!-- Properties -->
+							<Property name="Model" type="String">CeilingGeo</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="Outer" nameUID="0xDF9EEEBF">
+							<!-- Properties -->
+							<Property name="Model" type="String">DomeGeo2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="Inner" nameUID="0x130750A7">
+							<!-- Properties -->
+							<Property name="Model" type="String">DomeGeo</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="TexturePack" type="String">DefaultTexturePack</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CloudyList" type="List"/>
+	<Property name="StormyList" type="List"/>
+</PropertySetResource>

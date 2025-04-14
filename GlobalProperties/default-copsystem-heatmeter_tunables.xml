@@ -1,480 +1,582 @@
-<PropertySet name="default-copsystem-heatmeter_tunables" nameUID="0xE78B4BD5" schema="default-copsystem-heatmeter_tunables">
-    <Parent>default-encounters-defaults</Parent>
-    <Property name="AIObjective" type="String">eAI_OBJECTIVE_PURSUIT_TARGET</Property>
-    <Property name="EncounterFactionClass" type="Symbol"/>
-    <Property name="arrest_right_closer_distance_threshold" type="Float32">3</Property>
-    <Property name="arrest_right_cooldown_timer" type="Float32">0</Property>
-    <Property name="arrest_right_distance_threshold" type="Float32">10</Property>
-    <Property name="arrest_right_timeout_timer" type="Float32">500</Property>
-    <Property name="disengage_vehicle_radius_ratio" type="Float32">0.7</Property>
-    <Property name="disengage_vehicle_topspeed" type="Float32">50</Property>
-    <Property name="formation_offset_behind" type="Vector3" x="-6" y="-6" z="2.5"/>
-    <Property name="formation_offset_beside" type="Vector3" x="1.5" y="1.5" z="4"/>
-    <Property name="formation_offset_follow" type="Vector3" x="-1" y="-1" z="0"/>
-    <Property name="formation_offset_front" type="Vector3" x="8" y="8" z="2.5"/>
-    <Property name="formation_offset_frontcorner" type="Vector3" x="5" y="5" z="4"/>
-    <Property name="formation_offset_pitposition" type="Vector3" x="-1.5" y="-1.5" z="3.5"/>
-    <Property name="formation_offset_rearcorner" type="Vector3" x="-3" y="-3" z="3.5"/>
-    <Property name="formation_slot_behind" type="Boolean">True</Property>
-    <Property name="formation_slot_beside" type="Boolean">True</Property>
-    <Property name="formation_slot_follow" type="Boolean">True</Property>
-    <Property name="formation_slot_front" type="Boolean">True</Property>
-    <Property name="formation_slot_frontcorner" type="Boolean">True</Property>
-    <Property name="formation_slot_pitposition" type="Boolean">True</Property>
-    <Property name="formation_slot_rearcorner" type="Boolean">True</Property>
-    <Property name="formation_style" type="Symbol" Symbol="0x52556586">generic_favor_front</Property>
-    <Property name="group_formation" type="Symbol" Symbol="0xACC6B9B1">default-formation-CopGroupOf2</Property>
-    <Property name="heat_level_0" type="Symbol" Symbol="0x3997CAC0">heat_level_0_land</Property>
-    <Property name="heat_level_1" type="Symbol" Symbol="0x22BFC7B8">heat_level_1_land</Property>
-    <Property name="heat_level_2" type="Symbol" Symbol="0xFC7D030">heat_level_2_land</Property>
-    <Property name="heat_level_3" type="Symbol" Symbol="0x14EFDD48">heat_level_3_land</Property>
-    <Property name="heat_level_4" type="Symbol" Symbol="0x5537FF20">heat_level_4_land</Property>
-    <Property name="heat_level_5" type="Symbol" Symbol="0x4E1FF258">heat_level_5_land</Property>
-    <Property name="heat_radius_onfoot" type="Float32">60</Property>
-    <Property name="heat_radius_static" type="Float32">40</Property>
-    <Property name="heat_radius_vehicle" type="Float32">150</Property>
-    <Property name="invalid_buffer_distance" type="Float32">10</Property>
-    <Property name="invalid_onfoot_distance" type="Float32">70</Property>
-    <Property name="invalid_reacquire_distance" type="Float32">110</Property>
-    <Property name="invalid_vehicle_distance" type="Float32">150</Property>
-    <Property name="invalid_water_vehicle_distance" type="Float32">400</Property>
-    <Property name="kills_required" type="UInt32">0</Property>
-    <Property name="last_heat_event_timer" type="Float32">3</Property>
-    <Property name="minimum_acquired_time" type="Float32">15</Property>
-    <Property name="multiplier_density_one_to_five" type="Float32">1</Property>
-    <Property name="multiplier_density_six_to_twelve" type="Float32">1.25</Property>
-    <Property name="multiplier_density_thirdteen_up" type="Float32">1.5</Property>
-    <Property name="multiplier_within_view_of_police" type="Float32">1.5</Property>
-    <Property name="reduced_radius_percentage" type="Float32">0.5</Property>
-    <Property name="reduced_radius_percentage_perk" type="Float32">0.5</Property>
-    <Property name="reduced_radius_timer" type="Float32">20</Property>
-    <Property name="reduced_radius_timer_perk" type="Float32">20</Property>
-    <Property name="replenish_style" type="Symbol" Symbol="0x3D61342A">by_population</Property>
-    <Property name="replenish_timeout" type="Float32">15</Property>
-    <Property name="roadblock_escape_radius" type="Float32">160</Property>
-    <Property name="roadblock_spawn_max_radius" type="Float32">140</Property>
-    <Property name="roadblock_spawn_min_radius" type="Float32">120</Property>
-    <Property name="stimulus_assault_melee_cop" type="Float32">20</Property>
-    <Property name="stimulus_assault_melee_pedestrian" type="Float32">5</Property>
-    <Property name="stimulus_assault_vehicle_cop" type="Float32">20</Property>
-    <Property name="stimulus_assault_vehicle_pedestrian" type="Float32">10</Property>
-    <Property name="stimulus_assault_weapon_cop" type="Float32">30</Property>
-    <Property name="stimulus_assault_weapon_pedestrian" type="Float32">10</Property>
-    <Property name="stimulus_explosion" type="Float32">20</Property>
-    <Property name="stimulus_fire_weapon" type="Float32">10</Property>
-    <Property name="stimulus_gang_fight" type="Float32">5</Property>
-    <Property name="stimulus_grapple_cop" type="Float32">5</Property>
-    <Property name="stimulus_grapple_other" type="Float32">1</Property>
-    <Property name="stimulus_intimidation" type="Float32">1</Property>
-    <Property name="stimulus_kidnap" type="Float32">20</Property>
-    <Property name="stimulus_manslaughter_cop" type="Float32">30</Property>
-    <Property name="stimulus_manslaughter_pedestrian" type="Float32">10</Property>
-    <Property name="stimulus_manslaughter_vehicle_cop" type="Float32">30</Property>
-    <Property name="stimulus_manslaughter_vehicle_pedestrian" type="Float32">10</Property>
-    <Property name="stimulus_none" type="Float32">0</Property>
-    <Property name="stimulus_resist_arrest" type="Float32">30</Property>
-    <Property name="stimulus_vehicle_collision_cop" type="Float32">5</Property>
-    <Property name="stimulus_vehicle_collision_other" type="Float32">5</Property>
-    <Property name="stimulus_vehicle_hijack" type="Float32">5</Property>
-    <Property name="stimulus_vehicle_tire_hit_cop" type="Float32">5</Property>
-    <Property name="stimulus_vehicle_tire_hit_other" type="Float32">5</Property>
-    <Property name="stimulus_wave_weapon" type="Float32">5</Property>
-    <Property name="stimulus_wreckless_driving" type="Float32">1</Property>
-    <Property name="success_vault_no_sprint_timer" type="Float32">4</Property>
-    <Property name="suppress_vehicle_spawning_by_kill" type="Boolean">False</Property>
-    <Property name="threshold_level1" type="Float32">1000</Property>
-    <Property name="threshold_level2" type="Float32">2000</Property>
-    <Property name="threshold_level3" type="Float32">3000</Property>
-    <Property name="threshold_level4" type="Float32">4000</Property>
-    <Property name="threshold_level5" type="Float32">5000</Property>
-    <Property name="tunable_stimulus_alive_time" type="Float32">5</Property>
-    <Property name="vehicle_chase_spawn_distance" type="Float32">40</Property>
-    <Property name="vehicle_generic_spawn_max_radius" type="Float32">210</Property>
-    <Property name="vehicle_generic_spawn_min_radius" type="Float32">40</Property>
-    <Property name="vehicle_initial_speed_ratio" type="Float32">0.75</Property>
-    <Property name="vehicle_spawn_behind_probability" type="Float32">0.1</Property>
-    <Property name="vehicle_spawn_sensor_extent_x" type="Float32">3</Property>
-    <Property name="vehicle_spawn_sensor_extent_y" type="Float32">1.5</Property>
-    <Property name="vehicle_spawn_sensor_extent_z" type="Float32">1.5</Property>
-    <Property name="water_heat_level_0" type="Symbol" Symbol="0x53CCEE11">heat_level_0_water</Property>
-    <Property name="water_heat_level_1" type="Symbol" Symbol="0x1C9B8600">heat_level_1_water</Property>
-    <Property name="water_heat_level_2" type="Symbol" Symbol="0xCD623E33">heat_level_2_water</Property>
-    <Property name="water_heat_level_3" type="Symbol" Symbol="0x82355622">heat_level_3_water</Property>
-    <Property name="water_heat_level_4" type="Symbol" Symbol="0x6A5053E2">heat_level_4_water</Property>
-    <Property name="water_heat_level_5" type="Symbol" Symbol="0x25073BF3">heat_level_5_water</Property>
-    <Property name="water_offset_max_range" type="Float32">95</Property>
-    <Property name="water_offset_min_range" type="Float32">50</Property>
-    <Property name="wave_definitions" type="List">
-        <ListProperty nameUID="0x3997CAC0">
-            <Property name="ambient_density_invehicle" type="Float32">1</Property>
-            <Property name="ambient_density_onfoot" type="Float32">1</Property>
-            <Property name="cooldown_timer" type="Float32">6</Property>
-            <Property name="enable_forward_spawning" type="Boolean">True</Property>
-            <Property name="heat_radius_onfoot" type="Float32">60</Property>
-            <Property name="heat_radius_static" type="Float32">40</Property>
-            <Property name="heat_radius_vehicle" type="Float32">150</Property>
-            <Property name="heatwave_timer" type="Float32">90</Property>
-            <Property name="onfoot_population" type="UInt32">0</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x45840B73">object-physical-vehicle-klienodcop</Property>
-                <Property type="Symbol" Symbol="0x39725C13">object-physical-character-police_variation2</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">-1</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0x34317ACA">object-physical-character-police_variation1</Property>
-                    <Property name="num_passengers" type="UInt32">0</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x4A42E1C0">object-physical-vehicle-klienodcop02</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">False</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">True</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">False</Property>
-            <Property name="vehicle_population" type="UInt32">1</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">True</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">True</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x22BFC7B8">
-            <Property name="ambient_density_invehicle" type="Float32">0.5</Property>
-            <Property name="ambient_density_onfoot" type="Float32">1</Property>
-            <Property name="cooldown_timer" type="Float32">3</Property>
-            <Property name="enable_forward_spawning" type="Boolean">False</Property>
-            <Property name="heat_radius_onfoot" type="Float32">60</Property>
-            <Property name="heat_radius_static" type="Float32">40</Property>
-            <Property name="heat_radius_vehicle" type="Float32">150</Property>
-            <Property name="heatwave_timer" type="Float32">99999</Property>
-            <Property name="onfoot_population" type="UInt32">1</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x45840B73">object-physical-vehicle-klienodcop</Property>
-                <Property type="Symbol" Symbol="0x34317ACA">object-physical-character-police_variation1</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">-1</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0x34317ACA">object-physical-character-police_variation1</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x45840B73">object-physical-vehicle-klienodcop</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">True</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_kill_bonus_timer" type="Float32">99999</Property>
-            <Property name="vehicle_population" type="UInt32">1</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">True</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFC7D030">
-            <Property name="ambient_density_invehicle" type="Float32">0.5</Property>
-            <Property name="ambient_density_onfoot" type="Float32">1</Property>
-            <Property name="cooldown_timer" type="Float32">3</Property>
-            <Property name="enable_forward_spawning" type="Boolean">False</Property>
-            <Property name="heat_radius_onfoot" type="Float32">60</Property>
-            <Property name="heat_radius_static" type="Float32">40</Property>
-            <Property name="heat_radius_vehicle" type="Float32">150</Property>
-            <Property name="heatwave_timer" type="Float32">10</Property>
-            <Property name="onfoot_population" type="UInt32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x45840B73">object-physical-vehicle-klienodcop</Property>
-                <Property type="Symbol" Symbol="0x39725C13">object-physical-character-police_variation2</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">-1</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0x39725C13">object-physical-character-police_variation2</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x45840B73">object-physical-vehicle-klienodcop</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">True</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_kill_bonus_timer" type="Float32">99999</Property>
-            <Property name="vehicle_population" type="UInt32">2</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">True</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x14EFDD48">
-            <Property name="ambient_density_invehicle" type="Float32">0.4</Property>
-            <Property name="ambient_density_onfoot" type="Float32">0.5</Property>
-            <Property name="cooldown_timer" type="Float32">3</Property>
-            <Property name="enable_forward_spawning" type="Boolean">True</Property>
-            <Property name="heat_radius_onfoot" type="Float32">60</Property>
-            <Property name="heat_radius_static" type="Float32">40</Property>
-            <Property name="heat_radius_vehicle" type="Float32">150</Property>
-            <Property name="heatwave_timer" type="Float32">8</Property>
-            <Property name="onfoot_population" type="UInt32">3</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x5FCF84C6">object-physical-vehicle-DampfrossCop01</Property>
-                <Property type="Symbol" Symbol="0x3DB341A4">object-physical-character-police_variation3</Property>
-                <Property type="Symbol" Symbol="0x45840B73">object-physical-vehicle-klienodcop</Property>
-                <Property type="Symbol" Symbol="0x39725C13">object-physical-character-police_variation2</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">-1</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Parent>object-physical-vehicle-klienodcop</Parent>
-                    <Property name="character" type="Symbol" Symbol="0x39725C13">object-physical-character-police_variation2</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x45840B73">object-physical-vehicle-klienodcop</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x83075CB5">
-                    <Parent>object-physical-vehicle-DampfrossCop01</Parent>
-                    <Property name="character" type="Symbol" Symbol="0x39725C13">object-physical-character-police_variation2</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x5FCF84C6">object-physical-vehicle-DampfrossCop01</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">True</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">3</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">True</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x5537FF20">
-            <Property name="ambient_density_invehicle" type="Float32">0.3</Property>
-            <Property name="ambient_density_onfoot" type="Float32">0.5</Property>
-            <Property name="cooldown_timer" type="Float32">4</Property>
-            <Property name="enable_forward_spawning" type="Boolean">True</Property>
-            <Property name="heat_radius_onfoot" type="Float32">60</Property>
-            <Property name="heat_radius_static" type="Float32">40</Property>
-            <Property name="heat_radius_vehicle" type="Float32">150</Property>
-            <Property name="heatwave_timer" type="Float32">7</Property>
-            <Property name="onfoot_population" type="UInt32">4</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x7D6143AF">object-physical-vehicle-CopSUV</Property>
-                <Property type="Symbol" Symbol="0xC915EA19">object-physical-character-police_variation4a</Property>
-                <Property type="Symbol" Symbol="0xC456CCC0">object-physical-character-police_variation4b</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">-1</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Parent>object-physical-vehicle-CopSUV</Parent>
-                    <Property name="character" type="Symbol" Symbol="0xC915EA19">object-physical-character-police_variation4a</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x7D6143AF">object-physical-vehicle-CopSUV</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x83075CB5">
-                    <Parent>object-physical-vehicle-CopSUV</Parent>
-                    <Property name="character" type="Symbol" Symbol="0xC456CCC0">object-physical-character-police_variation4b</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x7D6143AF">object-physical-vehicle-CopSUV</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">True</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">3</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">True</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4E1FF258">
-            <Property name="ambient_density_invehicle" type="Float32">0.25</Property>
-            <Property name="ambient_density_onfoot" type="Float32">0.5</Property>
-            <Property name="cooldown_timer" type="Float32">4</Property>
-            <Property name="enable_forward_spawning" type="Boolean">True</Property>
-            <Property name="heat_radius_onfoot" type="Float32">100</Property>
-            <Property name="heat_radius_static" type="Float32">100</Property>
-            <Property name="heat_radius_vehicle" type="Float32">200</Property>
-            <Property name="heatwave_timer" type="Float32">0.5</Property>
-            <Property name="onfoot_population" type="UInt32">5</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x5920BEAE">object-physical-vehicle-RidgeSportSWAT01</Property>
-                <Property type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-                <Property type="Symbol" Symbol="0xD2C18B62">object-physical-vehicle-AggressorSWAT</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">5</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Parent>object-physical-vehicle-RidgeSportSWAT01</Parent>
-                    <Property name="character" type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x5920BEAE">object-physical-vehicle-RidgeSportSWAT01</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x83075CB5">
-                    <Parent>object-physical-vehicle-AggressorSWAT</Parent>
-                    <Property name="character" type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xD2C18B62">object-physical-vehicle-AggressorSWAT</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">True</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">4</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">True</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x53CCEE11">
-            <Property name="ambient_density_invehicle" type="Float32">1</Property>
-            <Property name="ambient_density_onfoot" type="Float32">1</Property>
-            <Property name="cooldown_timer" type="Float32">20</Property>
-            <Property name="enable_forward_spawning" type="Boolean">True</Property>
-            <Property name="heat_radius_onfoot" type="Float32">60</Property>
-            <Property name="heat_radius_static" type="Float32">40</Property>
-            <Property name="heat_radius_vehicle" type="Float32">150</Property>
-            <Property name="heatwave_timer" type="Float32">-1</Property>
-            <Property name="onfoot_population" type="UInt32">0</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
-                <Property type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">-1</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="boat" type="Symbol" Symbol="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
-                    <Property name="character" type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">False</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">True</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">0</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">True</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1C9B8600">
-            <Property name="ambient_density_invehicle" type="Float32">0.7</Property>
-            <Property name="ambient_density_onfoot" type="Float32">1</Property>
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="enable_forward_spawning" type="Boolean">True</Property>
-            <Property name="heat_radius_onfoot" type="Float32">60</Property>
-            <Property name="heat_radius_static" type="Float32">40</Property>
-            <Property name="heat_radius_vehicle" type="Float32">150</Property>
-            <Property name="heatwave_timer" type="Float32">30</Property>
-            <Property name="onfoot_population" type="UInt32">4</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
-                <Property type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">-1</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="boat" type="Symbol" Symbol="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
-                    <Property name="character" type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">1</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xCD623E33">
-            <Property name="ambient_density_invehicle" type="Float32">0.5</Property>
-            <Property name="ambient_density_onfoot" type="Float32">1</Property>
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="enable_forward_spawning" type="Boolean">True</Property>
-            <Property name="heat_radius_onfoot" type="Float32">60</Property>
-            <Property name="heat_radius_static" type="Float32">40</Property>
-            <Property name="heat_radius_vehicle" type="Float32">150</Property>
-            <Property name="heatwave_timer" type="Float32">20</Property>
-            <Property name="onfoot_population" type="UInt32">8</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
-                <Property type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">-1</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="boat" type="Symbol" Symbol="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
-                    <Property name="character" type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">2</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">True</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x82355622">
-            <Property name="ambient_density_invehicle" type="Float32">0.3</Property>
-            <Property name="ambient_density_onfoot" type="Float32">1</Property>
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="enable_forward_spawning" type="Boolean">True</Property>
-            <Property name="heat_radius_onfoot" type="Float32">60</Property>
-            <Property name="heat_radius_static" type="Float32">40</Property>
-            <Property name="heat_radius_vehicle" type="Float32">150</Property>
-            <Property name="heatwave_timer" type="Float32">15</Property>
-            <Property name="onfoot_population" type="UInt32">12</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
-                <Property type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">-1</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="boat" type="Symbol" Symbol="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
-                    <Property name="character" type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-                    <Property name="num_passengers" type="UInt32">2</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">2</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6A5053E2">
-            <Property name="ambient_density_invehicle" type="Float32">0.1</Property>
-            <Property name="ambient_density_onfoot" type="Float32">1</Property>
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="enable_forward_spawning" type="Boolean">True</Property>
-            <Property name="heat_radius_onfoot" type="Float32">60</Property>
-            <Property name="heat_radius_static" type="Float32">40</Property>
-            <Property name="heat_radius_vehicle" type="Float32">150</Property>
-            <Property name="heatwave_timer" type="Float32">10</Property>
-            <Property name="onfoot_population" type="UInt32">16</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xDD894BE6">object-physical-vehicle-LeoCoastGuard01</Property>
-                <Property type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">-1</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="boat" type="Symbol" Symbol="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
-                    <Property name="character" type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-                    <Property name="num_passengers" type="UInt32">3</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">2</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x25073BF3">
-            <Property name="ambient_density_invehicle" type="Float32">0.1</Property>
-            <Property name="ambient_density_onfoot" type="Float32">1</Property>
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="enable_forward_spawning" type="Boolean">True</Property>
-            <Property name="heat_radius_onfoot" type="Float32">100</Property>
-            <Property name="heat_radius_static" type="Float32">100</Property>
-            <Property name="heat_radius_vehicle" type="Float32">200</Property>
-            <Property name="heatwave_timer" type="Float32">10</Property>
-            <Property name="onfoot_population" type="UInt32">20</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
-                <Property type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-            </Property>
-            <Property name="roadblock_frequency" type="Float32">-1</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="boat" type="Symbol" Symbol="0xDD894BE6">object-physical-vehicle-LeoCoastGuard01</Property>
-                    <Property name="character" type="Symbol" Symbol="0xD6B3D080">object-physical-character-police_swat</Property>
-                    <Property name="num_passengers" type="UInt32">3</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">3</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-copsystem-heatmeter_tunables" nameUID="0xE78B4BD5">
+	<!-- Parents -->
+	<Parent nameUID="0x6159DA8B">default-encounters-defaults</Parent>
+	<!-- Properties -->
+	<Property name="formation_offset_rearcorner" type="Vector3" x="-3" y="3.5" z="0"/>
+	<Property name="suppress_vehicle_spawning_by_kill" type="Boolean">false</Property>
+	<Property name="formation_offset_frontcorner" type="Vector3" x="5" y="4" z="0"/>
+	<Property name="invalid_vehicle_distance" type="Float32">150</Property>
+	<Property name="stimulus_resist_arrest" type="Float32">30</Property>
+	<Property name="formation_offset_behind" type="Vector3" x="-6" y="2.5" z="0"/>
+	<Property name="stimulus_vehicle_collision_cop" type="Float32">5</Property>
+	<Property name="kills_required" type="UInt32">0</Property>
+	<Property name="stimulus_grapple_other" type="Float32">1</Property>
+	<Property name="minimum_acquired_time" type="Float32">15</Property>
+	<Property name="stimulus_manslaughter_vehicle_cop" type="Float32">30</Property>
+	<Property name="formation_slot_behind" type="Boolean">true</Property>
+	<Property name="stimulus_manslaughter_pedestrian" type="Float32">10</Property>
+	<Property name="invalid_reacquire_distance" type="Float32">110</Property>
+	<Property name="vehicle_generic_spawn_max_radius" type="Float32">210</Property>
+	<Property name="reduced_radius_percentage_perk" type="Float32">0.5</Property>
+	<Property name="tunable_stimulus_alive_time" type="Float32">5</Property>
+	<Property name="stimulus_vehicle_collision_other" type="Float32">5</Property>
+	<Property name="reduced_radius_percentage" type="Float32">0.5</Property>
+	<Property name="formation_offset_follow" type="Vector3" x="-1" y="0" z="0"/>
+	<Property name="heat_level_1" type="Symbol" symUID="0x22BFC7B8">heat_level_1_land</Property>
+	<Property name="arrest_right_closer_distance_threshold" type="Float32">3</Property>
+	<Property name="formation_slot_pitposition" type="Boolean">true</Property>
+	<Property name="stimulus_wave_weapon" type="Float32">5</Property>
+	<Property name="stimulus_grapple_cop" type="Float32">5</Property>
+	<Property name="reduced_radius_timer" type="Float32">20</Property>
+	<Property name="heat_level_0" type="Symbol" symUID="0x3997CAC0">heat_level_0_land</Property>
+	<Property name="stimulus_explosion" type="Float32">20</Property>
+	<Property name="heat_level_3" type="Symbol" symUID="0x14EFDD48">heat_level_3_land</Property>
+	<Property name="vehicle_initial_speed_ratio" type="Float32">0.75</Property>
+	<Property name="heat_level_2" type="Symbol" symUID="0xFC7D030">heat_level_2_land</Property>
+	<Property name="stimulus_kidnap" type="Float32">20</Property>
+	<Property name="heat_radius_static" type="Float32">40</Property>
+	<Property name="formation_style" type="Symbol" symUID="0x52556586">generic_favor_front</Property>
+	<Property name="heat_level_5" type="Symbol" symUID="0x4E1FF258">heat_level_5_land</Property>
+	<Property name="stimulus_vehicle_tire_hit_cop" type="Float32">5</Property>
+	<Property name="formation_offset_beside" type="Vector3" x="1.5" y="4" z="0"/>
+	<Property name="heat_level_4" type="Symbol" symUID="0x5537FF20">heat_level_4_land</Property>
+	<Property name="roadblock_escape_radius" type="Float32">160</Property>
+	<Property name="water_offset_min_range" type="Float32">50</Property>
+	<Property name="success_vault_no_sprint_timer" type="Float32">4</Property>
+	<Property name="stimulus_assault_vehicle_cop" type="Float32">20</Property>
+	<Property name="stimulus_gang_fight" type="Float32">5</Property>
+	<Property name="formation_slot_beside" type="Boolean">true</Property>
+	<Property name="invalid_water_vehicle_distance" type="Float32">400</Property>
+	<Property name="formation_slot_follow" type="Boolean">true</Property>
+	<Property name="invalid_buffer_distance" type="Float32">10</Property>
+	<Property name="disengage_vehicle_topspeed" type="Float32">50</Property>
+	<Property name="roadblock_spawn_max_radius" type="Float32">140</Property>
+	<Property name="stimulus_wreckless_driving" type="Float32">1</Property>
+	<Property name="stimulus_none" type="Float32">0</Property>
+	<Property name="stimulus_assault_weapon_cop" type="Float32">30</Property>
+	<Property name="stimulus_assault_vehicle_pedestrian" type="Float32">10</Property>
+	<Property name="arrest_right_distance_threshold" type="Float32">10</Property>
+	<Property name="formation_slot_rearcorner" type="Boolean">true</Property>
+	<Property name="multiplier_within_view_of_police" type="Float32">1.5</Property>
+	<Property name="roadblock_spawn_min_radius" type="Float32">120</Property>
+	<Property name="AIObjective" type="String">eAI_OBJECTIVE_PURSUIT_TARGET</Property>
+	<Property name="stimulus_manslaughter_cop" type="Float32">30</Property>
+	<Property name="stimulus_assault_weapon_pedestrian" type="Float32">10</Property>
+	<Property name="stimulus_vehicle_hijack" type="Float32">5</Property>
+	<Property name="arrest_right_timeout_timer" type="Float32">500</Property>
+	<Property name="invalid_onfoot_distance" type="Float32">70</Property>
+	<Property name="disengage_vehicle_radius_ratio" type="Float32">0.7</Property>
+	<Property name="water_heat_level_5" type="Symbol" symUID="0x25073BF3">heat_level_5_water</Property>
+	<Property name="replenish_timeout" type="Float32">15</Property>
+	<Property name="water_heat_level_4" type="Symbol" symUID="0x6A5053E2">heat_level_4_water</Property>
+	<Property name="wave_definitions" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_0_land" nameUID="0x3997CAC0">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x4A42E1C0">object-physical-vehicle-klienodcop02</Property>
+							<Property name="num_passengers" type="UInt32">0</Property>
+							<Property name="character" type="Symbol" symUID="0x34317ACA">object-physical-character-police_variation1</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">true</Property>
+				<Property name="heat_radius_static" type="Float32">40</Property>
+				<Property name="roadblock_frequency" type="Float32">-1</Property>
+				<Property name="ambient_density_invehicle" type="Float32">1</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">true</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">false</Property>
+				<Property name="heatwave_timer" type="Float32">90</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">true</Property>
+				<Property name="onfoot_population" type="UInt32">0</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x45840B73">object-physical-vehicle-klienodcop</ListProperty>
+					<ListProperty type="Symbol" symUID="0x39725C13">object-physical-character-police_variation2</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">true</Property>
+				<Property name="ambient_density_onfoot" type="Float32">1</Property>
+				<Property name="cooldown_timer" type="Float32">6</Property>
+				<Property name="heat_radius_onfoot" type="Float32">60</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">false</Property>
+				<Property name="vehicle_population" type="UInt32">1</Property>
+				<Property name="heat_radius_vehicle" type="Float32">150</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_1_land" nameUID="0x22BFC7B8">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x45840B73">object-physical-vehicle-klienodcop</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0x34317ACA">object-physical-character-police_variation1</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">true</Property>
+				<Property name="heat_radius_static" type="Float32">40</Property>
+				<Property name="roadblock_frequency" type="Float32">-1</Property>
+				<Property name="vehicle_kill_bonus_timer" type="Float32">99999</Property>
+				<Property name="ambient_density_invehicle" type="Float32">0.5</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">true</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">99999</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">1</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x45840B73">object-physical-vehicle-klienodcop</ListProperty>
+					<ListProperty type="Symbol" symUID="0x34317ACA">object-physical-character-police_variation1</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">false</Property>
+				<Property name="ambient_density_onfoot" type="Float32">1</Property>
+				<Property name="cooldown_timer" type="Float32">3</Property>
+				<Property name="heat_radius_onfoot" type="Float32">60</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">1</Property>
+				<Property name="heat_radius_vehicle" type="Float32">150</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_2_land" nameUID="0xFC7D030">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x45840B73">object-physical-vehicle-klienodcop</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0x39725C13">object-physical-character-police_variation2</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">true</Property>
+				<Property name="heat_radius_static" type="Float32">40</Property>
+				<Property name="roadblock_frequency" type="Float32">-1</Property>
+				<Property name="vehicle_kill_bonus_timer" type="Float32">99999</Property>
+				<Property name="ambient_density_invehicle" type="Float32">0.5</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">true</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">10</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">2</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x45840B73">object-physical-vehicle-klienodcop</ListProperty>
+					<ListProperty type="Symbol" symUID="0x39725C13">object-physical-character-police_variation2</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">false</Property>
+				<Property name="ambient_density_onfoot" type="Float32">1</Property>
+				<Property name="cooldown_timer" type="Float32">3</Property>
+				<Property name="heat_radius_onfoot" type="Float32">60</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">2</Property>
+				<Property name="heat_radius_vehicle" type="Float32">150</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_3_land" nameUID="0x14EFDD48">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x45840B73">object-physical-vehicle-klienodcop</Property>
+							<Property name="character" type="Symbol" symUID="0x39725C13">object-physical-character-police_variation2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x5FCF84C6">object-physical-vehicle-DampfrossCop01</Property>
+							<Property name="character" type="Symbol" symUID="0x39725C13">object-physical-character-police_variation2</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">true</Property>
+				<Property name="heat_radius_static" type="Float32">40</Property>
+				<Property name="roadblock_frequency" type="Float32">-1</Property>
+				<Property name="ambient_density_invehicle" type="Float32">0.4</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">true</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">8</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">3</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5FCF84C6">object-physical-vehicle-DampfrossCop01</ListProperty>
+					<ListProperty type="Symbol" symUID="0x3DB341A4">object-physical-character-police_variation3</ListProperty>
+					<ListProperty type="Symbol" symUID="0x45840B73">object-physical-vehicle-klienodcop</ListProperty>
+					<ListProperty type="Symbol" symUID="0x39725C13">object-physical-character-police_variation2</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">true</Property>
+				<Property name="ambient_density_onfoot" type="Float32">0.5</Property>
+				<Property name="cooldown_timer" type="Float32">3</Property>
+				<Property name="heat_radius_onfoot" type="Float32">60</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">3</Property>
+				<Property name="heat_radius_vehicle" type="Float32">150</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_4_land" nameUID="0x5537FF20">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x7D6143AF">object-physical-vehicle-CopSUV</Property>
+							<Property name="character" type="Symbol" symUID="0xC915EA19">object-physical-character-police_variation4a</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x7D6143AF">object-physical-vehicle-CopSUV</Property>
+							<Property name="character" type="Symbol" symUID="0xC456CCC0">object-physical-character-police_variation4b</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">true</Property>
+				<Property name="heat_radius_static" type="Float32">40</Property>
+				<Property name="roadblock_frequency" type="Float32">-1</Property>
+				<Property name="ambient_density_invehicle" type="Float32">0.3</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">true</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">7</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">4</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x7D6143AF">object-physical-vehicle-CopSUV</ListProperty>
+					<ListProperty type="Symbol" symUID="0xC915EA19">object-physical-character-police_variation4a</ListProperty>
+					<ListProperty type="Symbol" symUID="0xC456CCC0">object-physical-character-police_variation4b</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">true</Property>
+				<Property name="ambient_density_onfoot" type="Float32">0.5</Property>
+				<Property name="cooldown_timer" type="Float32">4</Property>
+				<Property name="heat_radius_onfoot" type="Float32">60</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">3</Property>
+				<Property name="heat_radius_vehicle" type="Float32">150</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_5_land" nameUID="0x4E1FF258">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x5920BEAE">object-physical-vehicle-RidgeSportSWAT01</Property>
+							<Property name="character" type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xD2C18B62">object-physical-vehicle-AggressorSWAT</Property>
+							<Property name="character" type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">true</Property>
+				<Property name="heat_radius_static" type="Float32">100</Property>
+				<Property name="roadblock_frequency" type="Float32">5</Property>
+				<Property name="ambient_density_invehicle" type="Float32">0.25</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">true</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">0.5</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">5</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5920BEAE">object-physical-vehicle-RidgeSportSWAT01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</ListProperty>
+					<ListProperty type="Symbol" symUID="0xD2C18B62">object-physical-vehicle-AggressorSWAT</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">true</Property>
+				<Property name="ambient_density_onfoot" type="Float32">0.5</Property>
+				<Property name="cooldown_timer" type="Float32">4</Property>
+				<Property name="heat_radius_onfoot" type="Float32">100</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">4</Property>
+				<Property name="heat_radius_vehicle" type="Float32">200</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_0_water" nameUID="0x53CCEE11">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="boat" type="Symbol" symUID="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">true</Property>
+				<Property name="heat_radius_static" type="Float32">40</Property>
+				<Property name="roadblock_frequency" type="Float32">-1</Property>
+				<Property name="ambient_density_invehicle" type="Float32">1</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">true</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">false</Property>
+				<Property name="heatwave_timer" type="Float32">-1</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">0</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA462B63F">object-physical-vehicle-LeoPolice01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">true</Property>
+				<Property name="ambient_density_onfoot" type="Float32">1</Property>
+				<Property name="cooldown_timer" type="Float32">20</Property>
+				<Property name="heat_radius_onfoot" type="Float32">60</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">0</Property>
+				<Property name="heat_radius_vehicle" type="Float32">150</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_1_water" nameUID="0x1C9B8600">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="boat" type="Symbol" symUID="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</Property>
+							<Property name="weapon" type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="heat_radius_static" type="Float32">40</Property>
+				<Property name="roadblock_frequency" type="Float32">-1</Property>
+				<Property name="ambient_density_invehicle" type="Float32">0.7</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">30</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">4</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA462B63F">object-physical-vehicle-LeoPolice01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">true</Property>
+				<Property name="ambient_density_onfoot" type="Float32">1</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="heat_radius_onfoot" type="Float32">60</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">1</Property>
+				<Property name="heat_radius_vehicle" type="Float32">150</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_2_water" nameUID="0xCD623E33">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="boat" type="Symbol" symUID="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</Property>
+							<Property name="weapon" type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="heat_radius_static" type="Float32">40</Property>
+				<Property name="roadblock_frequency" type="Float32">-1</Property>
+				<Property name="ambient_density_invehicle" type="Float32">0.5</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">true</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">20</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">8</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA462B63F">object-physical-vehicle-LeoPolice01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">true</Property>
+				<Property name="ambient_density_onfoot" type="Float32">1</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="heat_radius_onfoot" type="Float32">60</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">2</Property>
+				<Property name="heat_radius_vehicle" type="Float32">150</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_3_water" nameUID="0x82355622">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="boat" type="Symbol" symUID="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
+							<Property name="num_passengers" type="UInt32">2</Property>
+							<Property name="character" type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="heat_radius_static" type="Float32">40</Property>
+				<Property name="roadblock_frequency" type="Float32">-1</Property>
+				<Property name="ambient_density_invehicle" type="Float32">0.3</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">15</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">12</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA462B63F">object-physical-vehicle-LeoPolice01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">true</Property>
+				<Property name="ambient_density_onfoot" type="Float32">1</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="heat_radius_onfoot" type="Float32">60</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">2</Property>
+				<Property name="heat_radius_vehicle" type="Float32">150</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_4_water" nameUID="0x6A5053E2">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="boat" type="Symbol" symUID="0xA462B63F">object-physical-vehicle-LeoPolice01</Property>
+							<Property name="num_passengers" type="UInt32">3</Property>
+							<Property name="character" type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="heat_radius_static" type="Float32">40</Property>
+				<Property name="roadblock_frequency" type="Float32">-1</Property>
+				<Property name="ambient_density_invehicle" type="Float32">0.1</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">10</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">16</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xDD894BE6">object-physical-vehicle-LeoCoastGuard01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">true</Property>
+				<Property name="ambient_density_onfoot" type="Float32">1</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="heat_radius_onfoot" type="Float32">60</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">2</Property>
+				<Property name="heat_radius_vehicle" type="Float32">150</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="heat_level_5_water" nameUID="0x25073BF3">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="boat" type="Symbol" symUID="0xDD894BE6">object-physical-vehicle-LeoCoastGuard01</Property>
+							<Property name="num_passengers" type="UInt32">3</Property>
+							<Property name="character" type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="heat_radius_static" type="Float32">100</Property>
+				<Property name="roadblock_frequency" type="Float32">-1</Property>
+				<Property name="ambient_density_invehicle" type="Float32">0.1</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">10</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">20</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA462B63F">object-physical-vehicle-LeoPolice01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xD6B3D080">object-physical-character-police_swat</ListProperty>
+				</Property>
+				<Property name="enable_forward_spawning" type="Boolean">true</Property>
+				<Property name="ambient_density_onfoot" type="Float32">1</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="heat_radius_onfoot" type="Float32">100</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">3</Property>
+				<Property name="heat_radius_vehicle" type="Float32">200</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="water_heat_level_3" type="Symbol" symUID="0x82355622">heat_level_3_water</Property>
+	<Property name="vehicle_spawn_sensor_extent_z" type="Float32">1.5</Property>
+	<Property name="stimulus_vehicle_tire_hit_other" type="Float32">5</Property>
+	<Property name="water_heat_level_2" type="Symbol" symUID="0xCD623E33">heat_level_2_water</Property>
+	<Property name="formation_slot_frontcorner" type="Boolean">true</Property>
+	<Property name="heat_radius_onfoot" type="Float32">60</Property>
+	<Property name="water_heat_level_1" type="Symbol" symUID="0x1C9B8600">heat_level_1_water</Property>
+	<Property name="vehicle_spawn_sensor_extent_x" type="Float32">3</Property>
+	<Property name="group_formation" type="Symbol" symUID="0xACC6B9B1">default-formation-CopGroupOf2</Property>
+	<Property name="water_heat_level_0" type="Symbol" symUID="0x53CCEE11">heat_level_0_water</Property>
+	<Property name="vehicle_spawn_sensor_extent_y" type="Float32">1.5</Property>
+	<Property name="multiplier_density_six_to_twelve" type="Float32">1.25</Property>
+	<Property name="threshold_level3" type="Float32">3000</Property>
+	<Property name="replenish_style" type="Symbol" symUID="0x3D61342A">by_population</Property>
+	<Property name="threshold_level2" type="Float32">2000</Property>
+	<Property name="last_heat_event_timer" type="Float32">3</Property>
+	<Property name="vehicle_spawn_behind_probability" type="Float32">0.1</Property>
+	<Property name="stimulus_fire_weapon" type="Float32">10</Property>
+	<Property name="threshold_level1" type="Float32">1000</Property>
+	<Property name="multiplier_density_thirdteen_up" type="Float32">1.5</Property>
+	<Property name="stimulus_intimidation" type="Float32">1</Property>
+	<Property name="reduced_radius_timer_perk" type="Float32">20</Property>
+	<Property name="EncounterFactionClass" type="Symbol"/>
+	<Property name="vehicle_generic_spawn_min_radius" type="Float32">40</Property>
+	<Property name="threshold_level5" type="Float32">5000</Property>
+	<Property name="threshold_level4" type="Float32">4000</Property>
+	<Property name="stimulus_assault_melee_pedestrian" type="Float32">5</Property>
+	<Property name="formation_offset_front" type="Vector3" x="8" y="2.5" z="0"/>
+	<Property name="stimulus_manslaughter_vehicle_pedestrian" type="Float32">10</Property>
+	<Property name="arrest_right_cooldown_timer" type="Float32">0</Property>
+	<Property name="formation_slot_front" type="Boolean">true</Property>
+	<Property name="vehicle_chase_spawn_distance" type="Float32">40</Property>
+	<Property name="heat_radius_vehicle" type="Float32">150</Property>
+	<Property name="multiplier_density_one_to_five" type="Float32">1</Property>
+	<Property name="water_offset_max_range" type="Float32">95</Property>
+	<Property name="stimulus_assault_melee_cop" type="Float32">20</Property>
+	<Property name="formation_offset_pitposition" type="Vector3" x="-1.5" y="3.5" z="0"/>
+</PropertySetResource>

@@ -1,16 +1,25 @@
-<PropertySet name="default-rewards-progression-E_DS" nameUID="0xEB7A5829" schema="default-rewards-progression-E_DS">
-    <Parent>default-rewards-defaults</Parent>
-    <Property name="ShowRewardScreen" type="Boolean">False</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x473F7265">
-            <Parent>DynamicTutorials</Parent>
-            <Property name="0x4E4D2ED3" type="String">CopsTutorial</Property>
-            <Property name="Type" type="Symbol" Symbol="0xF8447E4C">DynamicTutorials</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x473F7265">
-            <Parent>DynamicTutorials</Parent>
-            <Property name="0x4E4D2ED3" type="String">DrivingTutorial</Property>
-            <Property name="Type" type="Symbol" Symbol="0xF8447E4C">DynamicTutorials</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-E_DS" nameUID="0xEB7A5829">
+	<!-- Parents -->
+	<Parent nameUID="0xC21C95B9">default-rewards-defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x473F7265">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xF8447E4C">DynamicTutorials</Property>
+				<Property name="AssetId" type="String">CopsTutorial</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x473F7265">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xF8447E4C">DynamicTutorials</Property>
+				<Property name="AssetId" type="String">DrivingTutorial</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="ShowRewardScreen" type="Boolean">false</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x473F7265 (Normal) -->

@@ -1,22 +1,27 @@
-<PropertySet name="TrueCrowd-Characters_New-AM_H_017" nameUID="0x3B61375F" schema="TrueCrowd-Characters_New-AM_H_017">
-    <Property name="GlassesOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Translation" type="Vector3" x="0" y="0" z="0.00558105"/>
-        </PropertySet>
-    </Property>
-    <Property name="HatOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Translation" type="Vector3" x="-0.00198914" y="-0.00198914" z="0"/>
-        </PropertySet>
-    </Property>
-    <Property name="HelmetOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Translation" type="Vector3" x="0" y="0" z="-0.0119468"/>
-        </PropertySet>
-    </Property>
-    <Property name="MaskOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Translation" type="Vector3" x="0" y="0" z="0.00825317"/>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="TrueCrowd-Characters_New-AM_H_017" nameUID="0x3B61375F">
+	<!-- Properties -->
+	<Property name="HelmetOffset" type="PropSet">
+		<PropertySet name="HelmetOffset" nameUID="0x947B4FC">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="0" y="-0.0119468" z="-0.0100052"/>
+		</PropertySet>
+	</Property>
+	<Property name="HatOffset" type="PropSet">
+		<PropertySet name="HatOffset" nameUID="0xF0E937E">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="-0.00198914" y="0" z="0.00300293"/>
+		</PropertySet>
+	</Property>
+	<Property name="GlassesOffset" type="PropSet">
+		<PropertySet name="GlassesOffset" nameUID="0x193245CA">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="0" y="0.00558105" z="-0.0143982"/>
+		</PropertySet>
+	</Property>
+	<Property name="MaskOffset" type="PropSet">
+		<PropertySet name="MaskOffset" nameUID="0x1F979BD3">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="0" y="0.00825317" z="-0.00548096"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

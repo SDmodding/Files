@@ -1,19 +1,25 @@
-<PropertySet name="default-spawnset-peds_ferry" nameUID="0xDB401FEB" schema="default-spawnset-peds_ferry">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xB7B39865">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">25</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x309915CE">object-physical-character-police_ambient</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0x74D31BEF">object-physical-character-AmbientCharacters-ALL_Ferry_Male_Day</Property>
-        <Property type="Symbol" Symbol="0xCEAE99">object-physical-character-AmbientCharacters-ALL_Ferry_Male_Day_yng</Property>
-        <Property type="Symbol" Symbol="0xC4A01ACF">object-physical-character-AmbientCharacters-ALL_Ferry_Female_Day</Property>
-        <Property type="Symbol" Symbol="0x982793D3">object-physical-character-AmbientCharacters-ALL_Ferry_Female_Day_Yng</Property>
-        <Property type="Symbol" Symbol="0x5DD667D2">object-physical-character-CollegeFemale</Property>
-        <Property type="Symbol" Symbol="0xA00BCE98">object-physical-character-CollegeMale</Property>
-        <Property type="Symbol" Symbol="0x7EBC4C9F">object-physical-character-AmbientCharacters-Laborer</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-peds_ferry" nameUID="0xDB401FEB">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Police" nameUID="0xB7B39865">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x309915CE">object-physical-character-police_ambient</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">25</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x74D31BEF">object-physical-character-AmbientCharacters-ALL_Ferry_Male_Day</ListProperty>
+		<ListProperty type="Symbol" symUID="0xCEAE99">object-physical-character-AmbientCharacters-ALL_Ferry_Male_Day_yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC4A01ACF">object-physical-character-AmbientCharacters-ALL_Ferry_Female_Day</ListProperty>
+		<ListProperty type="Symbol" symUID="0x982793D3">object-physical-character-AmbientCharacters-ALL_Ferry_Female_Day_Yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0x5DD667D2">object-physical-character-CollegeFemale</ListProperty>
+		<ListProperty type="Symbol" symUID="0xA00BCE98">object-physical-character-CollegeMale</ListProperty>
+		<ListProperty type="Symbol" symUID="0x7EBC4C9F">object-physical-character-AmbientCharacters-Laborer</ListProperty>
+	</Property>
+</PropertySetResource>

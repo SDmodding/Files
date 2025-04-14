@@ -1,6 +1,8 @@
-<PropertySet name="default-rewards-lockboxes-wknife" nameUID="0x5F0CAE72" schema="default-rewards-lockboxes-wknife">
-    <Parent>default-rewards-lockboxes-lockbox</Parent>
-    <Property name="CompletionText" type="String">Found Kitchen Knife</Property>
-    <Property name="InventoryItemType" type="Symbol" Symbol="0x7B80635B">eINVENTORY_ITEM_KNIFE</Property>
-    <Property name="MoneyAdjustment" type="Int32">2800</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-lockboxes-wknife" nameUID="0x5F0CAE72">
+	<!-- Parents -->
+	<Parent nameUID="0x1B0A318C">default-rewards-lockboxes-lockbox</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">2800</Property>
+	<Property name="CompletionText" type="String">Found Kitchen Knife</Property>
+	<Property name="InventoryItemType" type="Symbol" symUID="0x7B80635B">eINVENTORY_ITEM_KNIFE</Property>
+</PropertySetResource>

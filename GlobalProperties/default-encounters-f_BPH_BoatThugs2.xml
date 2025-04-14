@@ -1,42 +1,56 @@
-<PropertySet name="default-encounters-f_BPH_BoatThugs2" nameUID="0x65126B57" schema="default-encounters-f_BPH_BoatThugs2">
-    <Parent>default-encounters-defaults</Parent>
-    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
-    <Property name="BlipName" type="String">enemy</Property>
-    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x9B7B4AB7">TRIAD_GENERIC</Property>
-    <Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
-    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
-    <Property name="kills_required" type="UInt32">1</Property>
-    <Property name="show_blip_radius" type="Boolean">True</Property>
-    <Property name="vehicle_initial_speed_ratio" type="Float32">0.8</Property>
-    <Property name="wave_definitions" type="List">
-        <ListProperty nameUID="0x2DC0526A">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">40</Property>
-            <Property name="onfoot_population" type="UInt32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xEE0A3F13">object-physical-vehicle-jet620v_18K01</Property>
-                <Property type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
-                <Property type="Symbol" Symbol="0x4D960073">object-physical-character-thugB</Property>
-                <Property type="Symbol" Symbol="0x49571DC4">object-physical-character-thugC</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x8E447A6C">
-                    <Property name="character" type="Symbol" Symbol="0x4D960073">object-physical-character-thugB</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xEE0A3F13">object-physical-vehicle-jet620v_18K01</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8A8567DB">
-                    <Property name="character" type="Symbol" Symbol="0x49571DC4">object-physical-character-thugC</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xEE0A3F13">object-physical-vehicle-jet620v_18K01</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">2</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-encounters-f_BPH_BoatThugs2" nameUID="0x65126B57">
+	<!-- Parents -->
+	<Parent nameUID="0x6159DA8B">default-encounters-defaults</Parent>
+	<!-- Properties -->
+	<Property name="kills_required" type="UInt32">1</Property>
+	<Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
+	<Property name="vehicle_initial_speed_ratio" type="Float32">0.8</Property>
+	<Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+	<Property name="wave_definitions" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_1" nameUID="0x2DC0526A">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group2" nameUID="0x8E447A6C">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xEE0A3F13">object-physical-vehicle-jet620v_18K01</Property>
+							<Property name="character" type="Symbol" symUID="0x4D960073">object-physical-character-thugB</Property>
+							<Property name="weapon" type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group3" nameUID="0x8A8567DB">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xEE0A3F13">object-physical-vehicle-jet620v_18K01</Property>
+							<Property name="character" type="Symbol" symUID="0x49571DC4">object-physical-character-thugC</Property>
+							<Property name="weapon" type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">40</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">2</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xEE0A3F13">object-physical-vehicle-jet620v_18K01</ListProperty>
+					<ListProperty type="Symbol" symUID="0x40D526AA">object-physical-character-thugA</ListProperty>
+					<ListProperty type="Symbol" symUID="0x4D960073">object-physical-character-thugB</ListProperty>
+					<ListProperty type="Symbol" symUID="0x49571DC4">object-physical-character-thugC</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">2</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="show_blip_radius" type="Boolean">true</Property>
+	<Property name="EncounterFactionClass" type="Symbol" symUID="0x9B7B4AB7">TRIAD_GENERIC</Property>
+	<Property name="BlipName" type="String">enemy</Property>
+	<Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+</PropertySetResource>

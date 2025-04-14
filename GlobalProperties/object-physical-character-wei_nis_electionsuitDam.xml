@@ -1,40 +1,58 @@
-<PropertySet name="object-physical-character-wei_nis_electionsuitDam" nameUID="0xB8A257CE" schema="object-physical-character-wei_nis_electionsuitDam">
-    <Parent>object-physical-character-wei_nis_globals</Parent>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List"/>
-            <ComponentList type="List">
-                <ListProperty nameUID="0xA8245162">
-                    <Parent>Data\Characters_New\Wei_Head_HD</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0xD5905C49">Data\Characters_New\Wei_Head_HD</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x85938CF0">Data\Characters_New\Wei_Head_HD_Bloody_TS00</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8FC6C875">
-                    <Property name="Model" type="Symbol" Symbol="0x938AFE7D">Data\Characters_New\H_DefaultHair</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF8DE4056">
-                    <Property name="ColorTintIndex" type="Int32">2</Property>
-                    <Property name="Model" type="Symbol" Symbol="0xF1428496">Data\Characters_New\T_SuitFuneral</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0xDB3AD4DE">Data\Characters_New\T_SuitFuneral_TS00</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xBBD01F39">
-                    <Property name="ColorTintIndex" type="Int32">6</Property>
-                    <Property name="Model" type="Symbol" Symbol="0x7773ACE2">Data\Characters_New\P_SuitDress</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0xA4907B16">Data\Characters_New\P_SuitDress_TS00</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x86D0435B">
-                    <Property name="ColorTintIndex" type="Int32">0</Property>
-                    <Property name="Model" type="Symbol" Symbol="0xCFD25AF5">Data\Characters_New\S_Pointy</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x6797A0FF">Data\Characters_New\S_Pointy_TS00</Property>
-                </ListProperty>
-            </ComponentList>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">Player</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-wei_nis_electionsuitDam" nameUID="0xB8A257CE">
+	<!-- Parents -->
+	<Parent nameUID="0xD9571BF1">object-physical-character-wei_nis_globals</Parent>
+	<!-- Properties -->
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Head" nameUID="0xA8245162">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0xD5905C49">Data\Characters_New\Wei_Head_HD</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x85938CF0">Data\Characters_New\Wei_Head_HD_Bloody_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Hat" nameUID="0x8FC6C875">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x938AFE7D">Data\Characters_New\H_DefaultHair</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Torso" nameUID="0xF8DE4056">
+						<!-- Properties -->
+						<Property name="ColorTintIndex" type="Int32">2</Property>
+						<Property name="Model" type="Symbol" symUID="0xF1428496">Data\Characters_New\T_SuitFuneral</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0xDB3AD4DE">Data\Characters_New\T_SuitFuneral_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Pants" nameUID="0xBBD01F39">
+						<!-- Properties -->
+						<Property name="ColorTintIndex" type="Int32">6</Property>
+						<Property name="Model" type="Symbol" symUID="0x7773ACE2">Data\Characters_New\P_SuitDress</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0xA4907B16">Data\Characters_New\P_SuitDress_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Shoes" nameUID="0x86D0435B">
+						<!-- Properties -->
+						<Property name="ColorTintIndex" type="Int32">0</Property>
+						<Property name="Model" type="Symbol" symUID="0xCFD25AF5">Data\Characters_New\S_Pointy</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x6797A0FF">Data\Characters_New\S_Pointy_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0xF5C5D591">PLAYER</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

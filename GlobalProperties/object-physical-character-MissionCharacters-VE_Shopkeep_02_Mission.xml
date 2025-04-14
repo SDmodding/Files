@@ -1,10 +1,24 @@
-<PropertySet name="object-physical-character-MissionCharacters-VE_Shopkeep_02_Mission" nameUID="0x36FFB180" schema="object-physical-character-MissionCharacters-VE_Shopkeep_02_Mission">
-    <Parent>default-component-FaceAction</Parent>
-    <Property name="Description" type="String">Mission: Vendor Extortion - 2nd Shopkeeper (Mission Only)</Property>
-    <Property name="FaceAction" type="Symbol" Symbol="0x34A3B3EE">eFACEACTION_FAVOR_PACKAGE</Property>
-    <Property name="FaceActionEnabled" type="Boolean">True</Property>
-    <Property name="MissionControl" type="Boolean">True</Property>
-    <Property name="PipsRequired" type="UInt32">0</Property>
-    <Property name="RemoveOnCompletion" type="Boolean">True</Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-MissionCharacters-VE_Shopkeep_02_Mission" nameUID="0x36FFB180">
+	<!-- Parents -->
+	<Parent nameUID="0xD0BBE97D">default-component-FaceAction</Parent>
+	<Parent nameUID="0x4720C8B6">object-physical-character-MissionCharacters-VE_Shopkeep_02</Parent>
+	<!-- Properties -->
+	<Property name="FaceAction" type="Symbol" symUID="0x34A3B3EE">eFACEACTION_FAVOR_PACKAGE</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x9548F73B">Mission</ListProperty>
+				<ListProperty type="Symbol" symUID="0xA5BB75AF">Shopkeeper</ListProperty>
+				<ListProperty type="Symbol" symUID="0x17EFC49D">Vendor</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="RemoveOnCompletion" type="Boolean">true</Property>
+	<Property name="MissionControl" type="Boolean">true</Property>
+	<Property name="PipsRequired" type="UInt32">0</Property>
+	<Property name="FaceActionEnabled" type="Boolean">true</Property>
+	<Property name="Description" type="String">Mission: Vendor Extortion - 2nd Shopkeeper (Mission Only)</Property>
+</PropertySetResource>

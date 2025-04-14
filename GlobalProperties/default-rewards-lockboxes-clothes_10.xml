@@ -1,12 +1,18 @@
-<PropertySet name="default-rewards-lockboxes-clothes_10" nameUID="0xDCB247C9" schema="default-rewards-lockboxes-clothes_10">
-    <Parent>default-rewards-lockboxes-lockbox</Parent>
-    <Property name="MoneyAdjustment" type="Int32">5000</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x9773EC16">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">W_Sport_TS00(Tint: 1)</Property>
-            <Property name="0xDE3E6A23" type="String">$ITEMS_TITLE_W_Sport_TS00_T1</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-lockboxes-clothes_10" nameUID="0xDCB247C9">
+	<!-- Parents -->
+	<Parent nameUID="0x1B0A318C">default-rewards-lockboxes-lockbox</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Clothing" nameUID="0x9773EC16">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">W_Sport_TS00(Tint: 1)</Property>
+				<Property name="Text" type="String">$ITEMS_TITLE_W_Sport_TS00_T1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="MoneyAdjustment" type="Int32">5000</Property>
+</PropertySetResource>

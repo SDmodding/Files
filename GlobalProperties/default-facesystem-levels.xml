@@ -1,70 +1,105 @@
-<PropertySet name="default-facesystem-levels" nameUID="0x34ADC3CF" schema="default-facesystem-levels">
-    <Property name="Levels" type="List">
-        <ListProperty nameUID="0xE77727E">
-            <Property name="Favours" type="Boolean">False</Property>
-            <Property name="PointsRequired" type="Int32">0</Property>
-            <Property name="PriceDiscount" type="Int32">0</Property>
-            <Property name="RageTimer" type="Int32">-1</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xAB66FC9">
-            <Property name="Favours" type="Boolean">True</Property>
-            <Property name="PointsRequired" type="Int32">1000</Property>
-            <Property name="PriceDiscount" type="Int32">0</Property>
-            <Property name="RageTimer" type="Int32">20</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7F54910">
-            <Property name="Favours" type="Boolean">True</Property>
-            <Property name="PointsRequired" type="Int32">2000</Property>
-            <Property name="PriceDiscount" type="Int32">0</Property>
-            <Property name="RageTimer" type="Int32">20</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x33454A7">
-            <Property name="Favours" type="Boolean">True</Property>
-            <Property name="PointsRequired" type="Int32">3000</Property>
-            <Property name="PriceDiscount" type="Int32">0</Property>
-            <Property name="RageTimer" type="Int32">20</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1D7304A2">
-            <Property name="Favours" type="Boolean">True</Property>
-            <Property name="PointsRequired" type="Int32">4000</Property>
-            <Property name="PriceDiscount" type="Int32">0</Property>
-            <Property name="RageTimer" type="Int32">20</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x19B21915">
-            <Property name="Favours" type="Boolean">True</Property>
-            <Property name="PointsRequired" type="Int32">5000</Property>
-            <Property name="PriceDiscount" type="Int32">20</Property>
-            <Property name="RageTimer" type="Int32">20</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x14F13FCC">
-            <Property name="Favours" type="Boolean">True</Property>
-            <Property name="PointsRequired" type="Int32">6000</Property>
-            <Property name="PriceDiscount" type="Int32">0</Property>
-            <Property name="RageTimer" type="Int32">20</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1030227B">
-            <Property name="Favours" type="Boolean">True</Property>
-            <Property name="PointsRequired" type="Int32">7000</Property>
-            <Property name="PriceDiscount" type="Int32">0</Property>
-            <Property name="RageTimer" type="Int32">20</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x287F9FC6">
-            <Property name="Favours" type="Boolean">True</Property>
-            <Property name="PointsRequired" type="Int32">8000</Property>
-            <Property name="PriceDiscount" type="Int32">0</Property>
-            <Property name="RageTimer" type="Int32">20</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x2CBE8271">
-            <Property name="Favours" type="Boolean">True</Property>
-            <Property name="PointsRequired" type="Int32">9000</Property>
-            <Property name="PriceDiscount" type="Int32">0</Property>
-            <Property name="RageTimer" type="Int32">20</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4DD77246">
-            <Property name="Favours" type="Boolean">True</Property>
-            <Property name="PointsRequired" type="Int32">10000</Property>
-            <Property name="PriceDiscount" type="Int32">40</Property>
-            <Property name="RageTimer" type="Int32">20</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-facesystem-levels" nameUID="0x34ADC3CF">
+	<!-- Properties -->
+	<Property name="Levels" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Level0" nameUID="0xE77727E">
+				<!-- Properties -->
+				<Property name="RageTimer" type="Int32">-1</Property>
+				<Property name="PointsRequired" type="Int32">0</Property>
+				<Property name="PriceDiscount" type="Int32">0</Property>
+				<Property name="Favours" type="Boolean">false</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Level1" nameUID="0xAB66FC9">
+				<!-- Properties -->
+				<Property name="RageTimer" type="Int32">20</Property>
+				<Property name="PointsRequired" type="Int32">1000</Property>
+				<Property name="PriceDiscount" type="Int32">0</Property>
+				<Property name="Favours" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Level2" nameUID="0x7F54910">
+				<!-- Properties -->
+				<Property name="RageTimer" type="Int32">20</Property>
+				<Property name="PointsRequired" type="Int32">2000</Property>
+				<Property name="PriceDiscount" type="Int32">0</Property>
+				<Property name="Favours" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Level3" nameUID="0x33454A7">
+				<!-- Properties -->
+				<Property name="RageTimer" type="Int32">20</Property>
+				<Property name="PointsRequired" type="Int32">3000</Property>
+				<Property name="PriceDiscount" type="Int32">0</Property>
+				<Property name="Favours" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Level4" nameUID="0x1D7304A2">
+				<!-- Properties -->
+				<Property name="RageTimer" type="Int32">20</Property>
+				<Property name="PointsRequired" type="Int32">4000</Property>
+				<Property name="PriceDiscount" type="Int32">0</Property>
+				<Property name="Favours" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Level5" nameUID="0x19B21915">
+				<!-- Properties -->
+				<Property name="RageTimer" type="Int32">20</Property>
+				<Property name="PointsRequired" type="Int32">5000</Property>
+				<Property name="PriceDiscount" type="Int32">20</Property>
+				<Property name="Favours" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Level6" nameUID="0x14F13FCC">
+				<!-- Properties -->
+				<Property name="RageTimer" type="Int32">20</Property>
+				<Property name="PointsRequired" type="Int32">6000</Property>
+				<Property name="PriceDiscount" type="Int32">0</Property>
+				<Property name="Favours" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Level7" nameUID="0x1030227B">
+				<!-- Properties -->
+				<Property name="RageTimer" type="Int32">20</Property>
+				<Property name="PointsRequired" type="Int32">7000</Property>
+				<Property name="PriceDiscount" type="Int32">0</Property>
+				<Property name="Favours" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Level8" nameUID="0x287F9FC6">
+				<!-- Properties -->
+				<Property name="RageTimer" type="Int32">20</Property>
+				<Property name="PointsRequired" type="Int32">8000</Property>
+				<Property name="PriceDiscount" type="Int32">0</Property>
+				<Property name="Favours" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Level9" nameUID="0x2CBE8271">
+				<!-- Properties -->
+				<Property name="RageTimer" type="Int32">20</Property>
+				<Property name="PointsRequired" type="Int32">9000</Property>
+				<Property name="PriceDiscount" type="Int32">0</Property>
+				<Property name="Favours" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Level10" nameUID="0x4DD77246">
+				<!-- Properties -->
+				<Property name="RageTimer" type="Int32">20</Property>
+				<Property name="PointsRequired" type="Int32">10000</Property>
+				<Property name="PriceDiscount" type="Int32">40</Property>
+				<Property name="Favours" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

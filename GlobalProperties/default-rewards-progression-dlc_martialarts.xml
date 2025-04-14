@@ -1,27 +1,45 @@
-<PropertySet name="default-rewards-progression-dlc_martialarts" nameUID="0x7CAD2532" schema="default-rewards-progression-dlc_martialarts">
-    <Parent>default-rewards-progression-dlc_defaults</Parent>
-    <Property name="0x72201393" type="Int32">1000</Property>
-    <Property name="0xAA7067BB" type="Int32">250</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_DLC_PREMARTIALARTS</Property>
-    <Property name="EnableCopScoring" type="Boolean">False</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="FixedMissionScoring" type="Boolean">True</Property>
-    <Property name="GamesliceType" type="Symbol"/>
-    <Property name="MoneyAdjustment" type="Int32">0</Property>
-    <Property name="TriadBaseScore" type="Int32">1000</Property>
-    <Property name="TriadTargetScore" type="Int32">250</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0xDE3E6A23" type="String">$DLC_PRESALE_MARTIAL_ARTS_REWARD_1</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0xFB7393AE">
-            <Property name="0xDE3E6A23" type="String">$DLC_PRESALE_MARTIAL_ARTS_REWARD_2</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0xFFB28E19">
-            <Property name="0xDE3E6A23" type="String">$DLC_PRESALE_MARTIAL_ARTS_REWARD_3</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-dlc_martialarts" nameUID="0x7CAD2532">
+	<!-- Parents -->
+	<Parent nameUID="0x32FFCA04">default-rewards-progression-dlc_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_PRESALE_MARTIAL_ARTS_REWARD_1</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xFB7393AE">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_PRESALE_MARTIAL_ARTS_REWARD_2</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xFFB28E19">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_PRESALE_MARTIAL_ARTS_REWARD_3</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="MoneyAdjustment" type="Int32">0</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_DLC_PREMARTIALARTS</Property>
+	<Property name="TriadBaseScore" type="Int32">1000</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">1000</Property>
+	<Property name="FixedMissionScoring" type="Boolean">true</Property>
+	<Property name="TriadTargetScore" type="Int32">250</Property>
+	<Property name="~aa7067bb~" type="Int32">250</Property>
+	<Property name="EnableCopScoring" type="Boolean">false</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x679F1003">DLC_TRIAD</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0xAA7067BB (Normal) -->
+<!-- 0xF630B577 (Normal) -->
+<!-- 0xFB7393AE (Normal) -->
+<!-- 0xFFB28E19 (Normal) -->

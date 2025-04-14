@@ -1,41 +1,58 @@
-<PropertySet name="object-physical-character-AmbientCharacters-KT_Lower_Day_Male_yng" nameUID="0x22A8CF4A" schema="object-physical-character-AmbientCharacters-KT_Lower_Day_Male_yng">
-    <Parent>object-physical-character-drivers-yng_male</Parent>
-    <Property name="CanUseNewspaperAsCover" type="Boolean">True</Property>
-    <Property name="Description" type="String">KT Lower Area Day Young Male</Property>
-    <Property name="PropList" type="List">
-        <Property type="Symbol"/>
-        <Property type="Symbol" Symbol="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</Property>
-        <Property type="Symbol" Symbol="0x9AC5C541">object-physical-prop-Attachable-AmbientHat004</Property>
-        <Property type="Symbol" Symbol="0x4EE60787">object-physical-prop-Attachable-AmbientGlasses001</Property>
-        <Property type="Symbol" Symbol="0x43A5215E">object-physical-prop-Attachable-AmbientGlasses002</Property>
-        <Property type="Symbol" Symbol="0x887690BB">object-physical-weapon-melee-PopCan_A</Property>
-        <Property type="Symbol" Symbol="0x8535B662">object-physical-weapon-melee-PopCan_B</Property>
-        <Property type="Symbol" Symbol="0x250A8F3E">object-physical-weapon-melee-BottledSoftDrink001_B</Property>
-    </Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-        <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0x1176ADB3">KTown</Property>
-                <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-                <Property type="Symbol" Symbol="0xB4042ED1">Lower</Property>
-                <Property type="Symbol" Symbol="0xB7AC9882">Day</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-KT_Lower_Day_Male_yng" nameUID="0x22A8CF4A">
+	<!-- Parents -->
+	<Parent nameUID="0xF68835AD">object-physical-character-drivers-yng_male</Parent>
+	<Parent nameUID="0x3158FF3E">object-physical-character-AmbientCharacters-KT_Lower_Day_Male</Parent>
+	<!-- Properties -->
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x8C8E7DEB">Generic_Ped</ListProperty>
+				<ListProperty type="Symbol" symUID="0x58623AF2">DrugBuyer</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="PropList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol"/>
+		<ListProperty type="Symbol" symUID="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</ListProperty>
+		<ListProperty type="Symbol" symUID="0x9AC5C541">object-physical-prop-Attachable-AmbientHat004</ListProperty>
+		<ListProperty type="Symbol" symUID="0x4EE60787">object-physical-prop-Attachable-AmbientGlasses001</ListProperty>
+		<ListProperty type="Symbol" symUID="0x43A5215E">object-physical-prop-Attachable-AmbientGlasses002</ListProperty>
+		<ListProperty type="Symbol" symUID="0x887690BB">object-physical-weapon-melee-PopCan_A</ListProperty>
+		<ListProperty type="Symbol" symUID="0x8535B662">object-physical-weapon-melee-PopCan_B</ListProperty>
+		<ListProperty type="Symbol" symUID="0x250A8F3E">object-physical-weapon-melee-BottledSoftDrink001_B</ListProperty>
+	</Property>
+	<Property name="CanUseNewspaperAsCover" type="Boolean">true</Property>
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+		<ListProperty type="Symbol" symUID="0x95BC9EE4">Ped</ListProperty>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0x1176ADB3">KTown</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB4042ED1">Lower</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB7AC9882">Day</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">KT Lower Area Day Young Male</Property>
+</PropertySetResource>

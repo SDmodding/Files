@@ -1,4 +1,8 @@
-<PropertySet name="object-logical-Marker" nameUID="0x1BFD5F1B" schema="object-logical-Marker">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0x261DF63D">Marker</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-Marker" nameUID="0x1BFD5F1B">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0xFF1B33E2">default-component-Marker</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0x261DF63D">Marker</Property>
+</PropertySetResource>

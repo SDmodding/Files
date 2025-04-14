@@ -1,31 +1,42 @@
-<PropertySet name="object-physical-character-MissionCharacters-M_WED_03" nameUID="0xAABFC8BE" schema="object-physical-character-MissionCharacters-M_WED_03">
-    <Parent>object-physical-character-Thug_Dbs_brawler</Parent>
-    <Property name="Description" type="String">Mission: Wedding - H:Brawler</Property>
-    <Property name="Voice" type="String">ChineseLarry</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0xEACD1187">Dbs</Property>
-                <Property type="Symbol" Symbol="0x744D31A3">Brawler</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List">
-                <ListProperty nameUID="0xA8245162">
-                    <Property name="Model" type="Symbol" Symbol="0xAE859980">Data\Characters_New\AM_H_117</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA416151">
-                    <Property name="ColorTintIndex" type="Int32">16</Property>
-                    <Property name="Model" type="Symbol" Symbol="0xEA97071C">Data\Characters_New\AS_B_Caterer2</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x1B2AEF8E">Data\Characters_New\TS_B_Caterer2</Property>
-                </ListProperty>
-            </ComponentList>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">3</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0.9</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-MissionCharacters-M_WED_03" nameUID="0xAABFC8BE">
+	<!-- Parents -->
+	<Parent nameUID="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</Parent>
+	<!-- Properties -->
+	<Property name="Voice" type="String">ChineseLarry</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0xEACD1187">Dbs</ListProperty>
+				<ListProperty type="Symbol" symUID="0x744D31A3">Brawler</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Head" nameUID="0xA8245162">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0xAE859980">Data\Characters_New\AM_H_117</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Body" nameUID="0xA416151">
+						<!-- Properties -->
+						<Property name="ColorTintIndex" type="Int32">16</Property>
+						<Property name="Model" type="Symbol" symUID="0xEA97071C">Data\Characters_New\AS_B_Caterer2</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x1B2AEF8E">Data\Characters_New\TS_B_Caterer2</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">3</Property>
+			<Property name="BMIMin" type="Float32">0.9</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Mission: Wedding - H:Brawler</Property>
+</PropertySetResource>

@@ -1,8 +1,12 @@
-<PropertySet name="object-physical-character-AmbientCharacters-Amb_Wedding_M" nameUID="0xBED8B0E1" schema="object-physical-character-AmbientCharacters-Amb_Wedding_M">
-    <Parent>object-physical-character-Amb_Business_M</Parent>
-    <Property name="CanWander" type="Boolean">False</Property>
-    <Property name="Description" type="String">Ambient Wedding Guy</Property>
-    <Property name="PropList" type="List">
-        <Property type="Symbol"/>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-Amb_Wedding_M" nameUID="0xBED8B0E1">
+	<!-- Parents -->
+	<Parent nameUID="0xFBAA612C">object-physical-character-Amb_Business_M</Parent>
+	<Parent nameUID="0x551F3BD">object-physical-character-drivers-nothing</Parent>
+	<!-- Properties -->
+	<Property name="PropList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol"/>
+	</Property>
+	<Property name="CanWander" type="Boolean">false</Property>
+	<Property name="Description" type="String">Ambient Wedding Guy</Property>
+</PropertySetResource>

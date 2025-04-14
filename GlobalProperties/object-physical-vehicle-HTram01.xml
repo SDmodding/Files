@@ -1,127 +1,93 @@
-<PropertySet name="object-physical-vehicle-HTram01" nameUID="0x77A6ED95" schema="object-physical-vehicle-HTram01">
-    <Parent>object-physical-vehicle-CommonTram</Parent>
-    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0xD74D2265">Cameras-ChaseCameraTram</Property>
-    <Property name="Description" type="String">Tram- HTram01</Property>
-    <Property name="VehicleLook" type="List">
-        <Property type="String">RedPaint</Property>
-        <Property type="String">DarkGreenPaint</Property>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">HTram01</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CarPhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_CanZiProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-CanZiProperties</physicsPropertySetHuman>
-            <modelName type="String">HTram01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">0</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">0</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">0</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">0</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-4.4" y="-4.4" z="-1"/>
-            <boundingBoxMax type="Vector3" x="4.4" y="4.4" z="1"/>
-            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">3</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-5</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-0.2</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">true</lockedAtLowLOD>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">HTram01</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_PhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_CanZiProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-CanZiProperties</physicsPropertySetHuman>
-            <modelName type="String">HTram01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">0</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">0</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">0</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">0</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-4.4" y="-4.4" z="-1"/>
-            <boundingBoxMax type="Vector3" x="4.4" y="4.4" z="1"/>
-            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">3</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-5</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-0.2</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">true</lockedAtLowLOD>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0x4109BCCA">Data\Vehicles_New\HTram01</Property>
-                <Property type="Symbol" Symbol="0xD512D6A4">Data\Vehicles_New\WheelStyle51</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">FourWheelVehicle</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-HTram01" nameUID="0x77A6ED95">
+	<!-- Parents -->
+	<Parent nameUID="0x46779B64">object-physical-vehicle-CommonTram</Parent>
+	<!-- Properties -->
+	<Property name="component_PhysicsMover" type="PropSet">
+		<PropertySet name="component_CarPhysicsMover" nameUID="0xF32DD55B" schema="default-component-CarPhysicsMover">
+			<!-- Schema Properties -->
+			<Property name="physicsPropertySetAI" type="Symbol" symUID="0x667842E4">Vehicles-AI_CanZiProperties</Property>
+			<Property name="physicsPropertySetHuman" type="Symbol" symUID="0xE058E01D">Vehicles-CanZiProperties</Property>
+			<Property name="modelName" type="String">HTram01</Property>
+			<Property name="TrunkType" type="Symbol" symUID="0xDE16D029">eVEHICLE_TRUNK_TYPE_NONE</Property>
+			<Property name="damageMultiplierWorldCollisions" type="Float32">0</Property>
+			<Property name="damageMultiplierVehicleCollisions" type="Float32">0</Property>
+			<Property name="damageMultiplierBullets" type="Float32">0</Property>
+			<Property name="damageMultiplierTires" type="Float32">0</Property>
+			<Property name="boundingBoxMin" type="Vector3" x="-4.4" y="-1" z="0.09"/>
+			<Property name="boundingBoxMAx" type="Vector3" x="4.4" y="1" z="4.3"/>
+			<Property name="tireShotImpulse" type="Float32">0.645</Property>
+			<Property name="tireBlownImpulse" type="Float32">1</Property>
+			<Property name="lowLodThrottleAcceleration" type="Float32">3</Property>
+			<Property name="lowLodBrakesAcceleration" type="Float32">-5</Property>
+			<Property name="lowLodCoastAcceleration" type="Float32">-0.2</Property>
+			<Property name="lowLodMaxSpeed" type="Float32">50</Property>
+			<Property name="lowLodMaxLateralAcceleration" type="Float32">1</Property>
+			<Property name="lowLodMinTurningRadius" type="Float32">2</Property>
+			<Property name="autoDeterioratingDamageThreshold" type="Float32">0.75</Property>
+			<Property name="autoDeterioratingDamageRate" type="Float32">0.01</Property>
+			<Property name="vehicleDistanceToHighLod" type="Float32">15</Property>
+			<Property name="vehicleDistanceToMedLod" type="Float32">70</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToTakeDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionExtraDamageMultiplier" type="Float32">2</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinImpulse" type="Float32">0.01</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxImpulse" type="Float32">0.05</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToDealDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionMaxImpulseForDealingDamage" type="Float32">10</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinRamImpulse" type="Float32">0.25</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxRamImpulse" type="Float32">0.3</Property>
+			<Property name="vehicleCollisionMinRamImpulseRequiredToDealDamage" type="Float32">6</Property>
+			<Property name="vehicleCollisionMaxRamImpulseForDealingDamage" type="Float32">12</Property>
+			<Property name="vehicleCollisionForceDamageDealer" type="Boolean">false</Property>
+			<Property name="lockedAtLowLOD" type="Boolean">true</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">HTram01</Property>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\VehicleWeightSets.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="VehicleLook" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">RedPaint</ListProperty>
+		<ListProperty type="String">DarkGreenPaint</ListProperty>
+	</Property>
+	<Property name="ChaseCameraParameters" type="Symbol" symUID="0xD74D2265">Cameras-ChaseCameraTram</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x4109BCCA">Data\Vehicles_New\HTram01</ListProperty>
+				<ListProperty type="Symbol" symUID="0xD512D6A4">Data\Vehicles_New\WheelStyle51</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x9FA8BBC9">FourWheelVehicle</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="component_CarPhysicsMover" type="PropSet">
+		<PropertySet name="component_CarPhysicsMover" nameUID="0xF32DD55B" schema="default-component-CarPhysicsMover">
+			<!-- Schema Parent: component_PhysicsMover -->
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Tram- HTram01</Property>
+</PropertySetResource>

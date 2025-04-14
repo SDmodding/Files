@@ -1,28 +1,32 @@
-<PropertySet name="object-physical-prop-LOC_Statue001" nameUID="0xF65EEBFB" schema="object-physical-prop-LOC_Statue001">
-    <Parent>object-physical-prop-InteractableProp</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOC_Statue001.act</Property>
-    <Property name="Description" type="String">LOC_Statue001</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOC_Statue001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOC_Statue001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="default-component-InterestPoint" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-InterestPoint-LOC_Statue001</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOC_Statue001" nameUID="0xF65EEBFB">
+	<!-- Parents -->
+	<Parent nameUID="0xFB0E6A05">object-physical-prop-InteractableProp</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\Object\LOC_Statue001.act</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOC_Statue001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="default-component-InterestPoint" type="PropSet">
+		<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+			<!-- Parents -->
+			<Parent nameUID="0x22EED348">default-component-InterestPoint-LOC_Statue001</Parent>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">LOC_Statue001</Property>
+</PropertySetResource>

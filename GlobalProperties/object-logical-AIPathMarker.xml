@@ -1,7 +1,11 @@
-<PropertySet name="object-logical-AIPathMarker" nameUID="0x55D410D1" schema="object-logical-AIPathMarker">
-    <Parent>default-SimObject</Parent>
-    <Property name="AIDataBuild" type="Boolean">True</Property>
-    <Property name="AIPathMarker_ArrivalTolerance" type="Float32">-1</Property>
-    <Property name="AIPathMarker_Speed" type="Symbol" Symbol="0xF7DE702B">eMoveType_None</Property>
-    <Property name="ObjectType" type="Symbol" Symbol="0x7B6A0689">AIPathMarker</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-AIPathMarker" nameUID="0x55D410D1">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x6C57837B">default-component-AIMarker</Parent>
+	<!-- Properties -->
+	<Property name="AIDataBuild" type="Boolean">true</Property>
+	<Property name="ObjectType" type="Symbol" symUID="0x7B6A0689">AIPathMarker</Property>
+	<Property name="AIPathMarker_Speed" type="Symbol" symUID="0xF7DE702B">eMoveType_None</Property>
+	<Property name="AIPathMarker_ArrivalTolerance" type="Float32">-1</Property>
+</PropertySetResource>

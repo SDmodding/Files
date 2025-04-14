@@ -1,66 +1,181 @@
-<PropertySet name="object-physical-character-jobCharacters-CJ_SWAT01_Character" nameUID="0x6F030DD5" schema="object-physical-character-jobCharacters-CJ_SWAT01_Character">
-    <Parent>object-physical-character-stats-police_striker</Parent>
-    <Property name="AttractedToPOIs" type="Boolean">False</Property>
-    <Property name="CanArrest" type="Boolean">True</Property>
-    <Property name="CanUseCover" type="Boolean">True</Property>
-    <Property name="CanWander" type="Boolean">False</Property>
-    <Property name="CombatFleeWeight" type="Int32">0</Property>
-    <Property name="DefaultFirearm" type="Symbol" Symbol="0x1D291ED4">pistol_9mm</Property>
-    <Property name="Description" type="String">CJ_SWAT01</Property>
-    <Property name="RangedCombatStrategy" type="Symbol" Symbol="0x360800E0">Balanced</Property>
-    <Property name="Voice" type="String">NewOfficerMan</Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_POLICE_SWAT</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NONE</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">LAW</FactionClass>
-            <Gender type="Symbol">Male</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_Health" type="PropSet">
-        <BinData>
-            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
-            <maxHealth type="Int32">500</maxHealth>
-            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
-            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
-            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0xD6F7B4A4">Data\Characters_New\AM_H_059</Property>
-                <Property type="Symbol" Symbol="0xA0454310">Data\Characters_New\AM_B_204</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-jobCharacters-CJ_SWAT01_Character" nameUID="0x6F030DD5">
+	<!-- Parents -->
+	<Parent nameUID="0x1C69EB1E">object-physical-character-stats-police_striker</Parent>
+	<Parent nameUID="0x1CE0872D">object-physical-character-police_base</Parent>
+	<!-- Properties -->
+	<Property name="CanUseCover" type="Boolean">true</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x2DD6F805">Event_NPC</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Voice" type="String">NewOfficerMan</Property>
+	<Property name="RangedCombatStrategy" type="Symbol" symUID="0x360800E0">Balanced</Property>
+	<Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet">
+		<PropertySet name="object_physical_character_stats_BaseAttackParameters" nameUID="0x8EA2B0B2" schema="object-physical-character-stats-BaseAttackParameters">
+			<!-- Schema Properties -->
+			<Property name="MaxDistanceToChooseCloseAttack" type="Float32">2.75</Property>
+			<Property name="ExitDistanceForCloseAttack" type="Float32">3.75</Property>
+			<Property name="MaxDistanceToChooseMidAttack" type="Float32">5</Property>
+			<Property name="ExitDistanceForMidAttack" type="Float32">7</Property>
+			<Property name="MaxDistanceToUseCloseAttack" type="Float32">1.75</Property>
+			<Property name="MaxDistanceToUseMidAttack" type="Float32">3</Property>
+			<Property name="ChanceToUseMidAttack" type="Int32">20</Property>
+			<Property name="MinRunningAttackDistance" type="Float32">6</Property>
+			<Property name="MaxRunningAttackDistance" type="Float32">9</Property>
+			<Property name="RunningAttackExitDistance" type="Float32">12</Property>
+			<Property name="MaxOpportunisticMeleeAttackDistanceVSPlayer" type="Float32">2</Property>
+			<Property name="MaxOpportunisticMeleeAttackDistanceVSAI" type="Float32">2</Property>
+			<Property name="MaxOpportunisticMeleeExitDistance" type="Float32">1</Property>
+			<Property name="MaxOpportunityMeleeAttackDistanceVSPlayer" type="Float32">1.5</Property>
+			<Property name="MaxOpportunityMeleeAttackDistanceVSAI" type="Float32">1.5</Property>
+			<Property name="MaxOpportunityMeleeExitDistance" type="Float32">1</Property>
+			<Property name="MinTimeBeforeOpportunityMeleeAttack" type="Float32">0.25</Property>
+			<Property name="MaxTimeBeforeOpportunityMeleeAttack" type="Float32">0.5</Property>
+			<Property name="MinForOpportunityMeleeAttackTimeout" type="Float32">2</Property>
+			<Property name="MaxForOpportunityMeleeAttackTimeout" type="Float32">3</Property>
+			<Property name="MaxOpportunityRangedAttackDistanceVSPlayer" type="Float32">5</Property>
+			<Property name="MaxOpportunityRangedAttackDistanceVSAI" type="Float32">5</Property>
+			<Property name="MaxOpportunityRangedExitDistance" type="Float32">1</Property>
+			<Property name="MinTimeBeforeOpportunityRangedAttack" type="Float32">0.25</Property>
+			<Property name="MaxTimeBeforeOpportunityRangedAttack" type="Float32">0.5</Property>
+			<Property name="MinTimeBeforeNextOpportunityRangedAttack" type="Float32">2.5</Property>
+			<Property name="MaxTimeBeforeNextOpportunityRangedAttack" type="Float32">3</Property>
+			<Property name="InitialAttackTimeMinMeleeVSHumanAsEnemy" type="Float32">0</Property>
+			<Property name="InitialAttackTimeMaxMeleeVSHumanAsEnemy" type="Float32">0.4</Property>
+			<Property name="AttackTimeMinMeleeVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMaxMeleeVSHumanAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMinMeleeVSHumanAsEnemyMobBattle" type="Float32">0.25</Property>
+			<Property name="AttackTimeMaxMeleeVSHumanAsEnemyMobBattle" type="Float32">1</Property>
+			<Property name="AttackTimeMinMeleeDownedVSHumanAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMaxMeleeDownedVSHumanAsEnemy" type="Float32">5</Property>
+			<Property name="InitialAttackTimeMinRangedVSHumanAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxRangedVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedDownedVSHumanAsEnemy" type="Float32">3.5</Property>
+			<Property name="AttackTimeMaxRangedDownedVSHumanAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinRangedInCoverVSHumanAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxRangedInCoverVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedInCoverVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedInCoverVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedInCoverDownedVSHumanAsEnemy" type="Float32">3.5</Property>
+			<Property name="AttackTimeMaxRangedInCoverDownedVSHumanAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinDirectFollowersVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="InitialAttackTimeMaxDirectFollowersVSHumanAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMinDirectFollowersVSHumanAsEnemy" type="Float32">2.5</Property>
+			<Property name="AttackTimeMaxDirectFollowersVSHumanAsEnemy" type="Float32">8.5</Property>
+			<Property name="AttackTimeMinDirectFollowersDownedVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMaxDirectFollowersDownedVSHumanAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinMeleeVSAIAsEnemy" type="Float32">1</Property>
+			<Property name="InitialAttackTimeMaxMeleeVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="AttackTimeMinMeleeVSAIAsEnemy" type="Float32">0.5</Property>
+			<Property name="AttackTimeMaxMeleeVSAIAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMinMeleeDownedVSAIAsEnemy" type="Float32">8</Property>
+			<Property name="AttackTimeMaxMeleeDownedVSAIAsEnemy" type="Float32">12</Property>
+			<Property name="InitialAttackTimeMinRangedVSAIAsEnemy" type="Float32">0.5</Property>
+			<Property name="InitialAttackTimeMaxRangedVSAIAsEnemy" type="Float32">5.5</Property>
+			<Property name="AttackTimeMinRangedVSAIAsEnemy" type="Float32">0.5</Property>
+			<Property name="AttackTimeMaxRangedVSAIAsEnemy" type="Float32">6</Property>
+			<Property name="AttackTimeMinRangedDownedVSAIAsEnemy" type="Float32">2</Property>
+			<Property name="AttackTimeMaxRangedDownedVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinRangedInCoverVSAIAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxRangedInCoverVSAIAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedInCoverVSAIAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMaxRangedInCoverVSAIAsEnemy" type="Float32">6</Property>
+			<Property name="AttackTimeMinRangedInCoverDownedVSAIAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedInCoverDownedVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinDirectFollowersVSAIAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxDirectFollowersVSAIAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinDirectFollowersVSAIAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMaxDirectFollowersVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="AttackTimeMinDirectFollowersDownedVSAIAsEnemy" type="Float32">2</Property>
+			<Property name="AttackTimeMaxDirectFollowersDownedVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinMeleeVSAIAsAlly" type="Float32">0.1</Property>
+			<Property name="InitialAttackTimeMaxMeleeVSAIAsAlly" type="Float32">0.4</Property>
+			<Property name="AttackTimeMinMeleeVSAIAsAlly" type="Float32">0.5</Property>
+			<Property name="AttackTimeMaxMeleeVSAIAsAlly" type="Float32">1</Property>
+			<Property name="AttackTimeMinMeleeDownedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="AttackTimeMaxMeleeDownedVSAIAsAlly" type="Float32">3</Property>
+			<Property name="InitialAttackTimeMinRangedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="InitialAttackTimeMaxRangedVSAIAsAlly" type="Float32">5</Property>
+			<Property name="AttackTimeMinRangedVSAIAsAlly" type="Float32">1.5</Property>
+			<Property name="AttackTimeMaxRangedVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="AttackTimeMinRangedDownedVSAIAsAlly" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedDownedVSAIAsAlly" type="Float32">3</Property>
+			<Property name="InitialAttackTimeMinRangedInCoverVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="InitialAttackTimeMaxRangedInCoverVSAIAsAlly" type="Float32">5</Property>
+			<Property name="AttackTimeMinRangedInCoverVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="AttackTimeMaxRangedInCoverVSAIAsAlly" type="Float32">8</Property>
+			<Property name="AttackTimeMinRangedInCoverDownedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="AttackTimeMaxRangedInCoverDownedVSAIAsAlly" type="Float32">8</Property>
+			<Property name="InitialAttackTimeMinDirectFollowersVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="InitialAttackTimeMaxDirectFollowersVSAIAsAlly" type="Float32">4</Property>
+			<Property name="AttackTimeMinDirectFollowersVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="AttackTimeMaxDirectFollowersVSAIAsAlly" type="Float32">4</Property>
+			<Property name="AttackTimeMinDirectFollowersDownedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="AttackTimeMaxDirectFollowersDownedVSAIAsAlly" type="Float32">4</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_Health" type="PropSet">
+		<PropertySet name="component_Health" nameUID="0xA9EB4546" schema="default-component-Health">
+			<!-- Schema Properties -->
+			<Property name="maxUpgradedHealth" type="Int32">400</Property>
+			<Property name="maxHealth" type="Int32">500</Property>
+			<Property name="regenerativeHealthRate" type="Float32">-1</Property>
+			<Property name="InvulnerableCharacter" type="Boolean">false</Property>
+			<Property name="healthProjectileDamageMultiplier" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0x9B1A8C6D">eCHARACTER_TYPE_POLICE_SWAT</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0xB7D9CA1F">eFIGHTING_CLASS_NONE</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x3D67DC76">LAW</Property>
+			<Property name="Gender" type="Symbol" symUID="0x166A8B5C">Male</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xD6F7B4A4">Data\Characters_New\AM_H_059</ListProperty>
+				<ListProperty type="Symbol" symUID="0xA0454310">Data\Characters_New\AM_B_204</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="DefaultFirearm" type="Symbol" symUID="0x1D291ED4">pistol_9mm</Property>
+	<Property name="CanArrest" type="Boolean">true</Property>
+	<Property name="CombatFleeWeight" type="Int32">0</Property>
+	<Property name="CanWander" type="Boolean">false</Property>
+	<Property name="Description" type="String">CJ_SWAT01</Property>
+	<Property name="AttractedToPOIs" type="Boolean">false</Property>
+</PropertySetResource>

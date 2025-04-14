@@ -1,61 +1,123 @@
-<PropertySet name="object-physical-character-Vendors-vendorBase" nameUID="0x8082A86" schema="object-physical-character-Vendors-vendorBase">
-    <Parent>object-physical-character-drivers-nothing</Parent>
-    <Property name="CanBeckon" type="Boolean">True</Property>
-    <Property name="CanDoCellIdle" type="Boolean">False</Property>
-    <Property name="CanDoSmokeIdle" type="Boolean">False</Property>
-    <Property name="CanWander" type="Boolean">False</Property>
-    <Property name="Description" type="String">Vendor: Base Vendor (DO NOT USE)</Property>
-    <Property name="PersonalityList" type="List">
-        <Property type="Symbol" Symbol="0x56203F5">default-component-personality-shopkeep</Property>
-    </Property>
-    <Property name="PersonalityType" type="Symbol" Symbol="0x65B176BB">aggressive</Property>
-    <Property name="RequiresPOIUsage" type="Boolean">True</Property>
-    <Property name="SellableItemProp" type="Symbol" Symbol="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</Property>
-    <Property name="SocialEffectName" type="String">FX_Social_Icon_White</Property>
-    <Property name="TetherAttenuation" type="Float32">1</Property>
-    <Property name="TetherDistance" type="Float32">2</Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0x44EF718F">Adult</Property>
-        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
-        <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-        <Property type="Symbol" Symbol="0xBD96CC2D">VendorGeneric</Property>
-    </Property>
-    <Property name="component_AIActionTree" type="PropSet">
-        <BinData>
-            <AIBehaviour type="String">Pedestrian_Hangout.act</AIBehaviour>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_SHOPKEEPER</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">Innocent</FactionClass>
-            <Gender type="Symbol">Male</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_Interactable" type="PropSet">
-        <BinData>
-            <InteractionPoints type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Vendors-vendorBase" nameUID="0x8082A86">
+	<!-- Parents -->
+	<Parent nameUID="0x551F3BD">object-physical-character-drivers-nothing</Parent>
+	<Parent nameUID="0xB83AE074">object-physical-character-CommonPedestrian</Parent>
+	<Parent nameUID="0x79C303E9">object-physical-character</Parent>
+	<!-- Properties -->
+	<Property name="component_AIActionTree" type="PropSet">
+		<PropertySet name="component_AIActionTree" nameUID="0x523487F" schema="default-component-AIActionTree">
+			<!-- Schema Properties -->
+			<Property name="AIBehaviour" type="String">Pedestrian_Hangout.act</Property>
+		</PropertySet>
+	</Property>
+	<Property name="CanBeckon" type="Boolean">true</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x17EFC49D">Vendor</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="CanDoSmokeIdle" type="Boolean">false</Property>
+	<Property name="SellableItemProp" type="Symbol" symUID="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</Property>
+	<Property name="CanDoCellIdle" type="Boolean">false</Property>
+	<Property name="PersonalityType" type="Symbol" symUID="0x65B176BB">aggressive</Property>
+	<Property name="PersonalityList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x56203F5">default-component-personality-shopkeep</ListProperty>
+	</Property>
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x44EF718F">Adult</ListProperty>
+		<ListProperty type="Symbol" symUID="0x95BC9EE4">Ped</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+		<ListProperty type="Symbol" symUID="0xBD96CC2D">VendorGeneric</ListProperty>
+	</Property>
+	<Property name="RequiresPOIUsage" type="Boolean">true</Property>
+	<Property name="TetherDistance" type="Float32">2</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0x54144541">eCHARACTER_TYPE_SHOPKEEPER</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0x5038C060">eFIGHTING_CLASS_NON_COMBATANT</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x7301D91C">INNOCENT</Property>
+			<Property name="Gender" type="Symbol" symUID="0x166A8B5C">Male</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="TetherAttenuation" type="Float32">1</Property>
+	<Property name="SocialEffectName" type="String">FX_Social_Icon_White</Property>
+	<Property name="component_Interactable" type="PropSet">
+		<PropertySet name="component_Interactable" nameUID="0xF20A4492" schema="default-component-Interactable">
+			<!-- Schema Properties -->
+			<Property name="InteractionPoints" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0xBC9BA367">eINTERACTION_POINT_UPDATE_DISTANCE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x30E2F569">eTARGET_TYPE_INTERACTION_POINT0</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC"/>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0xBC9BA367">eINTERACTION_POINT_UPDATE_DISTANCE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x3423E8DE">eTARGET_TYPE_INTERACTION_POINT1</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0.8</Property>
+						<Property name="IPBoneName" type="SymbolUC"/>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x84800166">eINTERACTION_POINT_UPDATE_PROJECTED</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x3960CE07">eTARGET_TYPE_INTERACTION_POINT2</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x9BAB284B">eTARGET_TYPE_INTERACTION_OFFSET</Property>
+						<Property name="IPDistance" type="Float32">2</Property>
+						<Property name="IPBoneName" type="SymbolUC"/>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="CanWander" type="Boolean">false</Property>
+	<Property name="Description" type="String">Vendor: Base Vendor (DO NOT USE)</Property>
+</PropertySetResource>

@@ -1,31 +1,28 @@
-<PropertySet name="object-physical-character-student" nameUID="0x2BBD802E" schema="object-physical-character-student">
-    <Parent>object-physical-character-thugL</Parent>
-    <Property name="Description" type="String">Student</Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_THUG</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_STRIKER_QUICK</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">STUDENT</FactionClass>
-            <Gender type="Symbol">Male</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-student" nameUID="0x2BBD802E">
+	<!-- Parents -->
+	<Parent nameUID="0x7118A079">object-physical-character-thugL</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0xD2BB8C2">eCHARACTER_TYPE_THUG</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0xB92E1EFC">eFIGHTING_CLASS_STRIKER_QUICK</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x5CBED401">STUDENT</Property>
+			<Property name="Gender" type="Symbol" symUID="0x166A8B5C">Male</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Student</Property>
+</PropertySetResource>

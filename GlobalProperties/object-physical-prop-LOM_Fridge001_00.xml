@@ -1,55 +1,65 @@
-<PropertySet name="object-physical-prop-LOM_Fridge001_00" nameUID="0xDB4DCF8C" schema="object-physical-prop-LOM_Fridge001_00">
-    <Parent>object-physical-prop-InteractableProp</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\Fridge.act</Property>
-    <Property name="CanUseFromCounter" type="Boolean">True</Property>
-    <Property name="Description" type="String">LOM_Fridge001</Property>
-    <Property name="SimObjChildren" type="List">
-        <ListProperty nameUID="0xFD98C3FF">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">Fridge01</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="0" z="-1" w="0"/>
-                <Up x="-0" y="1" z="0" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-fridge</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x410A1B33">C_InteractionSync</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOM_Fridge001_00</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOM_Fridge001_00</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CompositeDrawable" type="PropSet">
-        <BinData>
-            <DefaultSaturationOverride type="Float32">1</DefaultSaturationOverride>
-            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
-            <HighlightingMode type="String">eHIGHLIGHTING_MODE_OFF</HighlightingMode>
-            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
-            <SkinSSEnabled type="Boolean">false</SkinSSEnabled>
-            <OverlayWeights type="List"/>
-            <OverlayTextures type="List"/>
-            <DrawScale type="Float32">1</DrawScale>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOM_Fridge001_00" nameUID="0xDB4DCF8C">
+	<!-- Parents -->
+	<Parent nameUID="0xFB0E6A05">object-physical-prop-InteractableProp</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\Fridge.act</Property>
+	<Property name="SimObjChildren" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Fridge01" nameUID="0xFD98C3FF">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="-0" y="1" z="0"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">Fridge01</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x62CBC47B">default-component-InterestPoint-fridge</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0x410A1B33">C_InteractionSync</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOM_Fridge001_00</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CompositeDrawable" type="PropSet">
+		<PropertySet name="component_CompositeDrawable" nameUID="0x79DB63A1" schema="default-component-CompositeDrawable">
+			<!-- Schema Properties -->
+			<Property name="DefaultSaturationOverride" type="Float32">1</Property>
+			<Property name="LightSFXMultiplier" type="Float32">0</Property>
+			<Property name="HighlightingMode" type="String">eHIGHLIGHTING_MODE_OFF</Property>
+			<Property name="HighlightingColour" type="Vector4" x="1" y="1" z="1" w="1"/>
+			<Property name="SkinSSEnabled" type="Boolean">false</Property>
+			<Property name="OverlayWeights" type="List"/>
+			<Property name="OverlayTextures" type="List"/>
+			<Property name="DrawScale" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="CanUseFromCounter" type="Boolean">true</Property>
+	<Property name="Description" type="String">LOM_Fridge001</Property>
+</PropertySetResource>

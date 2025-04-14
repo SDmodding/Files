@@ -1,23 +1,32 @@
-<PropertySet name="object-physical-character-AmbientCharacters-BBCCharacters-Exterior-BBC_Ext_F_04" nameUID="0xEDA9E043" schema="object-physical-character-AmbientCharacters-BBCCharacters-Exterior-BBC_Ext_F_04">
-    <Parent>object-physical-character-ClubberFemale</Parent>
-    <Property name="Description" type="String">BBC Ext Female 04</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0xE7DE76F9">Female</Property>
-                <Property type="Symbol"/>
-            </ResourceTags>
-            <ResourceList type="List">
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-BBCCharacters-Exterior-BBC_Ext_F_04" nameUID="0xEDA9E043">
+	<!-- Parents -->
+	<Parent nameUID="0xAAB1DCB5">object-physical-character-ClubberFemale</Parent>
+	<!-- Properties -->
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xE7DE76F9">Female</ListProperty>
+				<ListProperty type="Symbol" symUID="0x73F3B3E6"/>
+			</Property>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x1CFC3E7F"/>
+				<ListProperty type="Symbol" symUID="0x11880349"/>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">BBC Ext Female 04</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x11880349 (Normal) -->
+<!-- 0x1CFC3E7F (Normal) -->
+<!-- 0x73F3B3E6 (Normal) -->

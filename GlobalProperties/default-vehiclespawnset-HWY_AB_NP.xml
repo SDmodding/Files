@@ -1,15 +1,21 @@
-<PropertySet name="default-vehiclespawnset-HWY_AB_NP" nameUID="0x8EEF173F" schema="default-vehiclespawnset-HWY_AB_NP">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0x97D708A8">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">90</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x6DC316F3">object-physical-vehicle-AggressorArmoured</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0x4BD42DB4">object-physical-vehicle-270DX01</Property>
-        <Property type="Symbol" Symbol="0xF22FCF9">object-physical-vehicle-625MHC01</Property>
-        <Property type="Symbol" Symbol="0x582ABBBA">object-physical-vehicle-DX30501</Property>
-        <Property type="Symbol" Symbol="0x28E10405">object-physical-vehicle-Guide01</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-vehiclespawnset-HWY_AB_NP" nameUID="0x8EEF173F">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="ABIsleRareVehicleSpawns" nameUID="0x97D708A8">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x6DC316F3">object-physical-vehicle-AggressorArmoured</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">90</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x4BD42DB4">object-physical-vehicle-270DX01</ListProperty>
+		<ListProperty type="Symbol" symUID="0xF22FCF9">object-physical-vehicle-625MHC01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x582ABBBA">object-physical-vehicle-DX30501</ListProperty>
+		<ListProperty type="Symbol" symUID="0x28E10405">object-physical-vehicle-Guide01</ListProperty>
+	</Property>
+</PropertySetResource>

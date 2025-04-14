@@ -1,14 +1,19 @@
-<PropertySet name="propprofiles-eINVENTORY_ITEM_NOODLE_BOX" nameUID="0xD5CFF5AC" schema="propprofiles-eINVENTORY_ITEM_NOODLE_BOX">
-    <Property name="0x46348560" type="Boolean">True</Property>
-    <Property name="0xB0369B06" type="Boolean">True</Property>
-    <Property name="ItemCaptioning" type="String"/>
-    <Property name="ItemCost" type="Int32">25</Property>
-    <Property name="ItemDescriptionBuff" type="Symbol" Symbol="0xCB5F2F48">ePLAYER_BUFF_HEALTHREGEN</Property>
-    <Property name="ItemDescriptionList" type="List">
-        <Property type="String">$ITEMS_DESC_FOOD_SM</Property>
-        <Property type="String">$ITEMS_DESC_FOOD_MD</Property>
-        <Property type="String">$ITEMS_DESC_FOOD_LG</Property>
-    </Property>
-    <Property name="ItemName" type="String">$ITEMS_TITLE_DUCK</Property>
-    <Property name="eITEM_PROPERTIES_DEFAULT_DROP" type="Boolean">True</Property>
-</PropertySet>
+<PropertySetResource name="propprofiles-eINVENTORY_ITEM_NOODLE_BOX" nameUID="0xD5CFF5AC">
+	<!-- Properties -->
+	<Property name="ItemCaptioning" type="String"/>
+	<Property name="ItemDescriptionBuff" type="Symbol" symUID="0xCB5F2F48">ePLAYER_BUFF_HEALTHREGEN</Property>
+	<Property name="ItemCost" type="Int32">25</Property>
+	<Property name="~46348560~" type="Boolean">true</Property>
+	<Property name="ItemName" type="String">$ITEMS_TITLE_DUCK</Property>
+	<Property name="eITEM_PROPERTIES_DEFAULT_DROP" type="Boolean">true</Property>
+	<Property name="~b0369b06~" type="Boolean">true</Property>
+	<Property name="ItemDescriptionList" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">$ITEMS_DESC_FOOD_SM</ListProperty>
+		<ListProperty type="String">$ITEMS_DESC_FOOD_MD</ListProperty>
+		<ListProperty type="String">$ITEMS_DESC_FOOD_LG</ListProperty>
+	</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x46348560 (Normal) -->
+<!-- 0xB0369B06 (Normal) -->

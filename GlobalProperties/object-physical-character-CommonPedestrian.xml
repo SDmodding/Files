@@ -1,38 +1,37 @@
-<PropertySet name="object-physical-character-CommonPedestrian" nameUID="0xB83AE074" schema="object-physical-character-CommonPedestrian">
-    <Property name="ActFileName" type="String">Data\Global\Act\Pedestrian.act</Property>
-    <Property name="CanDoCellIdle" type="Boolean">True</Property>
-    <Property name="CanDoSmokeIdle" type="Boolean">True</Property>
-    <Property name="CanWander" type="Boolean">True</Property>
-    <Property name="PersonalityList" type="List">
-        <Property type="Symbol" Symbol="0x72C90E85">default-component-personality-Personality_Distribution_Male</Property>
-    </Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-CharacterProperties</Parent>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol"/>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">2</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">8</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">Innocent</FactionClass>
-            <Gender type="Symbol">Male</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-CharacterProperties</Parent>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-CommonPedestrian" nameUID="0xB83AE074">
+	<!-- Properties -->
+	<Property name="CanDoSmokeIdle" type="Boolean">true</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\Pedestrian.act</Property>
+	<Property name="CanDoCellIdle" type="Boolean">true</Property>
+	<Property name="PersonalityList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x72C90E85">default-component-personality-Personality_Distribution_Male</ListProperty>
+	</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Parents -->
+			<Parent nameUID="0x324584F9">default-component-CharacterProperties</Parent>
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0xA0567ECF">eCHARACTER_TYPE_PEDESTRIAN</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0x5038C060">eFIGHTING_CLASS_NON_COMBATANT</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">2</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">8</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x7301D91C">INNOCENT</Property>
+			<Property name="Gender" type="Symbol" symUID="0x166A8B5C">Male</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Parents -->
+			<Parent nameUID="0x324584F9">default-component-CharacterProperties</Parent>
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol"/>
+		</PropertySet>
+	</Property>
+	<Property name="CanWander" type="Boolean">true</Property>
+</PropertySetResource>

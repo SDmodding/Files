@@ -1,9 +1,11 @@
-<PropertySet name="default-rewards-progression-E_CP2" nameUID="0x3EEA8AA0" schema="default-rewards-progression-E_CP2">
-    <Parent>default-rewards-progression-favor_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_COP_PURSUIT_2</Property>
-    <Property name="CopStartingScore" type="Int32">0</Property>
-    <Property name="MoneyAdjustment" type="Int32">2000</Property>
-    <Property name="StandingAdjustment" type="Int32">75</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-E_CP2" nameUID="0x3EEA8AA0">
+	<!-- Parents -->
+	<Parent nameUID="0xB5D2DBF9">default-rewards-progression-favor_defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">0</Property>
+	<Property name="MoneyAdjustment" type="Int32">2000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_COP_PURSUIT_2</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">75</Property>
+</PropertySetResource>

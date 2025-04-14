@@ -1,16 +1,22 @@
-<PropertySet name="default-spawnset-AB_Fishmarket_Night" nameUID="0xFAD6750D" schema="default-spawnset-AB_Fishmarket_Night">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0x34270861">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">10</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x99290F7D">object-physical-character-vagrant_junkie</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0xBDEE9D16">object-physical-character-vagrant</Property>
-        <Property type="Symbol" Symbol="0xA4FB9106">object-physical-character-janitor</Property>
-        <Property type="Symbol" Symbol="0xB10DB1D5">object-physical-character-AmbientCharacters-AB_Fish_Male</Property>
-        <Property type="Symbol" Symbol="0x70825FDA">object-physical-character-DockWorker</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-AB_Fishmarket_Night" nameUID="0xFAD6750D">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="RareSpawnA" nameUID="0x34270861">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x99290F7D">object-physical-character-vagrant_junkie</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">10</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xBDEE9D16">object-physical-character-vagrant</ListProperty>
+		<ListProperty type="Symbol" symUID="0xA4FB9106">object-physical-character-janitor</ListProperty>
+		<ListProperty type="Symbol" symUID="0xB10DB1D5">object-physical-character-AmbientCharacters-AB_Fish_Male</ListProperty>
+		<ListProperty type="Symbol" symUID="0x70825FDA">object-physical-character-DockWorker</ListProperty>
+	</Property>
+</PropertySetResource>

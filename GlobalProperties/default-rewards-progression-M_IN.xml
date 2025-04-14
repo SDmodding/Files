@@ -1,35 +1,57 @@
-<PropertySet name="default-rewards-progression-M_IN" nameUID="0x72393EA7" schema="default-rewards-progression-M_IN">
-    <Parent>default-rewards-progression-mission_defaults</Parent>
-    <Property name="0x34BE120D" type="Int32">200</Property>
-    <Property name="0x39FD34D4" type="Int32">1</Property>
-    <Property name="0x72201393" type="Int32">400</Property>
-    <Property name="0xC3DF597C" type="Int32">290</Property>
-    <Property name="0xC71E44CB" type="Int32">250</Property>
-    <Property name="0xCA5D6212" type="Int32">1</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_INITIATION</Property>
-    <Property name="CopStartingScore" type="Int32">75</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="MoneyAdjustment" type="Int32">100000</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">500</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x449D8298">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">LOI_AB_SHDoor001_101</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x1946D26D">Door</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6EB5BCBC">
-            <Property name="0x308E0AE5" type="String">safe_house_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">SFAB-AB</Property>
-            <Property name="0xDE3E6A23" type="String">$MISSION_REWARDS_ABSAFEHOUSE</Property>
-            <Property name="Type" type="Symbol" Symbol="0x1B43F7CE">Safehouse</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xAA515B5E">
-            <Property name="0x2DFB6FC5" type="Int32">15</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_15</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_IN" nameUID="0x72393EA7">
+	<!-- Parents -->
+	<Parent nameUID="0xD274BB76">default-rewards-progression-mission_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x449D8298">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1946D26D">Door</Property>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">LOI_AB_SHDoor001_101</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x6EB5BCBC">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1B43F7CE">Safehouse</Property>
+				<Property name="Icon" type="String">safe_house_icon</Property>
+				<Property name="AssetId" type="String">SFAB-AB</Property>
+				<Property name="Text" type="String">$MISSION_REWARDS_ABSAFEHOUSE</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xAA515B5E">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">15</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_15</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">75</Property>
+	<Property name="~34be120d~" type="Int32">200</Property>
+	<Property name="MoneyAdjustment" type="Int32">100000</Property>
+	<Property name="~39fd34d4~" type="Int32">1</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_INITIATION</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">400</Property>
+	<Property name="TriadTargetScore" type="Int32">500</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="~c3df597c~" type="Int32">290</Property>
+	<Property name="~c71e44cb~" type="Int32">250</Property>
+	<Property name="~ca5d6212~" type="Int32">1</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x34BE120D (Normal) -->
+<!-- 0x39FD34D4 (Normal) -->
+<!-- 0x449D8298 (Normal) -->
+<!-- 0x6EB5BCBC (Normal) -->
+<!-- 0xAA515B5E (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->

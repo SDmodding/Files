@@ -1,24 +1,32 @@
-<PropertySet name="object-physical-character-NotPingDate" nameUID="0x1E59F48A" schema="object-physical-character-NotPingDate">
-    <Parent>object-physical-character-NotPing</Parent>
-    <Property name="Description" type="String">NotPingDate</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0xE573196">NoPing</Property>
-                <Property type="Symbol" Symbol="0xE7DE76F9">Female</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List">
-                <ListProperty nameUID="0x92750FDF">
-                    <Property name="Model" type="Symbol" Symbol="0xD82EEB1F">Data\Characters_New\NotPingDate</Property>
-                </ListProperty>
-            </ComponentList>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">UniquePed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-NotPingDate" nameUID="0x1E59F48A">
+	<!-- Parents -->
+	<Parent nameUID="0x2290F6E1">object-physical-character-NotPing</Parent>
+	<!-- Properties -->
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xE573196">NoPing</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE7DE76F9">Female</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Model" nameUID="0x92750FDF">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0xD82EEB1F">Data\Characters_New\NotPingDate</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0xA196621B">UniquePed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">NotPingDate</Property>
+</PropertySetResource>

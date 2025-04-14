@@ -1,202 +1,449 @@
-<PropertySet name="object-physical-character-dlc_ghost-DLC_EliteGhoul_Illusion" nameUID="0x14C327FB" schema="object-physical-character-dlc_ghost-DLC_EliteGhoul_Illusion">
-    <Parent>object-physical-character-dlc_ghost-DLC_EliteGhoulQuad</Parent>
-    <Property name="DLCCharacter" type="Symbol" Symbol="0xE90CEAD">Illusion</Property>
-    <Property name="OnSpawnAnimNodeName" type="String">Global\Player\Attacks\ABILITIES\IllusionCast\spawnTrack</Property>
-    <Property name="component_AIActionTree" type="PropSet">
-        <BinData>
-            <AIBehaviour type="String">Thug_Behaviour.act</AIBehaviour>
-        </BinData>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">EliteGhoul_HD</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">EliteGhoul_HD</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterEffects" type="PropSet">
-        <BinData>
-            <fxPlayerWalkingThroughWater type="Symbol">HK_FootStep_Water_Effect</fxPlayerWalkingThroughWater>
-            <fxPlayerWalkingThroughWater type="Float32">2</fxPlayerWalkingThroughWater>
-            <fxPlayerWalkingThroughWater type="Float32">0.5</fxPlayerWalkingThroughWater>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterPhysics" type="PropSet">
-        <BinData>
-            <Mass type="Float32">75</Mass>
-            <MaxForce type="Float32">1000</MaxForce>
-            <MaxClimableSlope type="Float32">65</MaxClimableSlope>
-            <WalkCollisionHeight type="Float32">1.835</WalkCollisionHeight>
-            <CombatCollisionHeight type="Float32">1.835</CombatCollisionHeight>
-            <CrouchCollisionHeight type="Float32">0.95</CrouchCollisionHeight>
-            <DrivingCollisionHeight type="Float32">1.1</DrivingCollisionHeight>
-            <CrawlCollisionHeight type="Float32">0.3</CrawlCollisionHeight>
-            <SittingCollisionHeight type="Float32">1.3</SittingCollisionHeight>
-            <CoverCollisionHeight type="Float32">1.835</CoverCollisionHeight>
-            <FreerunCollisionHeight type="Float32">1.835</FreerunCollisionHeight>
-            <WalkCollisionRadius type="Float32">0.32</WalkCollisionRadius>
-            <CombatCollisionRadius type="Float32">0.5</CombatCollisionRadius>
-            <CrouchCollisionRadius type="Float32">0.35</CrouchCollisionRadius>
-            <DrivingCollisionRadius type="Float32">0.3</DrivingCollisionRadius>
-            <CrawlCollisionRadius type="Float32">0.3</CrawlCollisionRadius>
-            <SittingCollisionRadius type="Float32">0.3</SittingCollisionRadius>
-            <CoverCollisionRadius type="Float32">0.32</CoverCollisionRadius>
-            <FreerunCollisionRadius type="Float32">0.2</FreerunCollisionRadius>
-            <DetailedOnGroundCheck type="Boolean">true</DetailedOnGroundCheck>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_DLC_ELITE_GHOUL</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_STRIKER</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">TRIAD_18K</FactionClass>
-            <Gender type="Symbol">Male</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_CompositeDrawable" type="PropSet">
-        <BinData>
-            <DefaultSaturationOverride type="Float32">0</DefaultSaturationOverride>
-            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
-            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
-            <SkinSSEnabled type="Boolean">true</SkinSSEnabled>
-            <OverlayWeights type="List">
-                <Property type="Symbol" Symbol="0x2E014785">Posh</Property>
-                <Property type="Symbol" Symbol="0x146CAC92">Funny</Property>
-            </OverlayWeights>
-            <OverlayTextures type="List">
-                <ListProperty nameUID="0x2E014785">
-                    <Property name="Textures" type="List">
-                        <Property type="SymbolUC" Symbol="0x18F8F75C">logo001</Property>
-                        <Property type="SymbolUC" Symbol="0x15BBD185">logo002</Property>
-                        <Property type="SymbolUC" Symbol="0x117ACC32">logo003</Property>
-                        <Property type="SymbolUC" Symbol="0xF3D9C37">logo004</Property>
-                        <Property type="SymbolUC" Symbol="0xBFC8180">logo005</Property>
-                        <Property type="SymbolUC" Symbol="0x6BFA759">logo006</Property>
-                    </Property>
-                </ListProperty>
-                <ListProperty nameUID="0x146CAC92">
-                    <Property name="Textures" type="List">
-                        <Property type="SymbolUC" Symbol="0x27EBAEE">logo007</Property>
-                        <Property type="SymbolUC" Symbol="0x3A310753">logo008</Property>
-                        <Property type="SymbolUC" Symbol="0x3EF01AE4">logo009</Property>
-                        <Property type="SymbolUC" Symbol="0xCE202B37">logo010</Property>
-                        <Property type="SymbolUC" Symbol="0xCAE13680">logo011</Property>
-                        <Property type="SymbolUC" Symbol="0xC7A21059">logo012</Property>
-                        <Property type="SymbolUC" Symbol="0xC3630DEE">logo013</Property>
-                    </Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDCF92817">
-                    <Property name="Textures" type="List">
-                        <Property type="SymbolUC" Symbol="0x2274E880">DefaultAlpha</Property>
-                    </Property>
-                </ListProperty>
-            </OverlayTextures>
-            <DrawScale type="Float32">1</DrawScale>
-        </BinData>
-    </Property>
-    <Property name="component_DropShadow" type="PropSet">
-        <BinData>
-            <DropShadow_ScaleX type="Float32">0.75</DropShadow_ScaleX>
-            <DropShadow_ScaleY type="Float32">0.75</DropShadow_ScaleY>
-            <DropShadow_TextureUID type="Symbol">FX_ShadowCircle</DropShadow_TextureUID>
-        </BinData>
-    </Property>
-    <Property name="component_FXSimComponent" type="PropSet">
-        <BinData>
-            <EffectId type="Symbol"/>
-        </BinData>
-    </Property>
-    <Property name="component_FacialActionTree" type="PropSet">
-        <BinData>
-            <FacialActFileName type="String">Data\Global\Act\Facial\GlobalFace.act</FacialActFileName>
-        </BinData>
-    </Property>
-    <Property name="component_FormationManager" type="PropSet"/>
-    <Property name="component_Health" type="PropSet">
-        <BinData>
-            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
-            <maxHealth type="Int32">400</maxHealth>
-            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
-            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
-            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
-        </BinData>
-    </Property>
-    <Property name="component_HitReaction" type="PropSet">
-        <BinData>
-            <HitActFilename type="String">Data/Global/Act/HitTree.act</HitActFilename>
-            <HitReceiverDamageMultiplierPct type="UInt32">75</HitReceiverDamageMultiplierPct>
-        </BinData>
-    </Property>
-    <Property name="component_Interactable" type="PropSet">
-        <BinData>
-            <InteractionPoints type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_MissionFailCondition" type="PropSet"/>
-    <Property name="component_Sensor" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Sensor</Parent>
-        </PropertySet>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_STRIKER</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List"/>
-            <ComponentList type="List">
-                <ListProperty nameUID="0x92750FDF">
-                    <Parent>Data\Characters_New\EliteGhoul</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0xB4A86370">Data\Characters_New\EliteGhoul</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0xCE39E085">Data\Characters_New\EliteGhoul_TS00</Property>
-                </ListProperty>
-            </ComponentList>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">UniquePed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_TSActor" type="PropSet">
-        <BinData>
-            <SkookumClass type="Symbol">Character</SkookumClass>
-        </BinData>
-    </Property>
-    <Property name="component_WorldContext" type="PropSet"/>
-    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-dlc_ghost-DLC_EliteGhoul_Illusion" nameUID="0x14C327FB">
+	<!-- Parents -->
+	<Parent nameUID="0xA08E9300">object-physical-character-dlc_ghost-DLC_EliteGhoulQuad</Parent>
+	<Parent nameUID="0x551F3BD">object-physical-character-drivers-nothing</Parent>
+	<Parent nameUID="0x664F6F76">default-component-AttackableByAI</Parent>
+	<Parent nameUID="0xF1FCC326">object-physical-character-stats-18k_ranged</Parent>
+	<Parent nameUID="0x79C303E9">object-physical-character</Parent>
+	<!-- Properties -->
+	<Property name="component_AIActionTree" type="PropSet">
+		<PropertySet name="component_AIActionTree" nameUID="0x523487F" schema="default-component-AIActionTree">
+			<!-- Schema Properties -->
+			<Property name="AIBehaviour" type="String">Thug_Behaviour.act</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_FacialActionTree" type="PropSet">
+		<PropertySet name="component_FacialActionTree" nameUID="0x8607C0B" schema="default-component-FacialActionTree">
+			<!-- Schema Properties -->
+			<Property name="FacialActFileName" type="String">Data\Global\Act\Facial\GlobalFace.act</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_HitReaction" type="PropSet">
+		<PropertySet name="component_HitReaction" nameUID="0x1575D886" schema="default-component-HitReaction">
+			<!-- Schema Properties -->
+			<Property name="HitActFilename" type="String">Data/Global/Act/HitTree.act</Property>
+			<Property name="HitReactionOpeningBranchFullPath" type="String"/>
+			<Property name="HitReceiverDamageMultiplierPct" type="UInt32">75</Property>
+		</PropertySet>
+	</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xDC76B4F1">Triad</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_TSActor" type="PropSet">
+		<PropertySet name="component_TSActor" nameUID="0x2873821B" schema="default-component-TSActor">
+			<!-- Schema Properties -->
+			<Property name="SkookumClass" type="Symbol" symUID="0xB825B7BB">Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="OnSpawnAnimNodeName" type="String">Global\Player\Attacks\ABILITIES\IllusionCast\spawnTrack</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">EliteGhoul_HD</Property>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\ChanWeightSets.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC" symUID="0x2D3C1E22">Ped</Property>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String">Data\Global\Act\NIS_WeightSets.wst</Property>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="DLCCharacter" type="Symbol" symUID="0xE90CEAD">Illusion</Property>
+	<Property name="component_FXSimComponent" type="PropSet">
+		<PropertySet name="component_FXSimComponent" nameUID="0x6FE755E1" schema="default-component-FXSimComponent">
+			<!-- Schema Properties -->
+			<Property name="EffectId" type="SymbolUC"/>
+		</PropertySet>
+	</Property>
+	<Property name="component_CompositeDrawable" type="PropSet">
+		<PropertySet name="component_CompositeDrawable" nameUID="0x79DB63A1" schema="default-component-CompositeDrawable">
+			<!-- Schema Properties -->
+			<Property name="DefaultSaturationOverride" type="Float32">0</Property>
+			<Property name="LightSFXMultiplier" type="Float32">0</Property>
+			<Property name="HighlightingMode" type="String"/>
+			<Property name="HighlightingColour" type="Vector4" x="1" y="1" z="1" w="1"/>
+			<Property name="SkinSSEnabled" type="Boolean">true</Property>
+			<Property name="OverlayWeights" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x2E014785">Posh</ListProperty>
+				<ListProperty type="Symbol" symUID="0x146CAC92">Funny</ListProperty>
+			</Property>
+			<Property name="OverlayTextures" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Posh" nameUID="0x2E014785">
+						<!-- Properties -->
+						<Property name="Textures" type="List">
+							<!-- Elements -->
+							<ListProperty type="SymbolUC" symUID="0x18F8F75C">logo001</ListProperty>
+							<ListProperty type="SymbolUC" symUID="0x15BBD185">logo002</ListProperty>
+							<ListProperty type="SymbolUC" symUID="0x117ACC32">logo003</ListProperty>
+							<ListProperty type="SymbolUC" symUID="0xF3D9C37">logo004</ListProperty>
+							<ListProperty type="SymbolUC" symUID="0xBFC8180">logo005</ListProperty>
+							<ListProperty type="SymbolUC" symUID="0x6BFA759">logo006</ListProperty>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Funny" nameUID="0x146CAC92">
+						<!-- Properties -->
+						<Property name="Textures" type="List">
+							<!-- Elements -->
+							<ListProperty type="SymbolUC" symUID="0x27EBAEE">logo007</ListProperty>
+							<ListProperty type="SymbolUC" symUID="0x3A310753">logo008</ListProperty>
+							<ListProperty type="SymbolUC" symUID="0x3EF01AE4">logo009</ListProperty>
+							<ListProperty type="SymbolUC" symUID="0xCE202B37">logo010</ListProperty>
+							<ListProperty type="SymbolUC" symUID="0xCAE13680">logo011</ListProperty>
+							<ListProperty type="SymbolUC" symUID="0xC7A21059">logo012</ListProperty>
+							<ListProperty type="SymbolUC" symUID="0xC3630DEE">logo013</ListProperty>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="None" nameUID="0xDCF92817">
+						<!-- Properties -->
+						<Property name="Textures" type="List">
+							<!-- Elements -->
+							<ListProperty type="SymbolUC" symUID="0x2274E880">DefaultAlpha</ListProperty>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="DrawScale" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_FormationManager" type="PropSet">
+		<PropertySet name="component_FormationManager" nameUID="0x8259C690" schema="default-component-FormationManager">
+			<!-- Schema Properties -->
+			<Property name="NumRanges" type="Int32">4</Property>
+			<Property name="NumSlotsInRange0" type="Int32">1</Property>
+			<Property name="NumSlotsInRange1" type="Int32">3</Property>
+			<Property name="NumSlotsInRange2" type="Int32">4</Property>
+			<Property name="NumSlotsInRange3" type="Int32">8</Property>
+			<Property name="NormalMaxDistance0" type="Float32">2.9</Property>
+			<Property name="NormalMaxDistance1" type="Float32">3.7</Property>
+			<Property name="NormalMaxDistance2" type="Float32">5.7</Property>
+			<Property name="NormalMaxDistance3" type="Float32">15</Property>
+			<Property name="NormalMinTimeBeforeCheckPlayersTarget" type="Float32">0.25</Property>
+			<Property name="NormalMaxTimeBeforeCheckPlayersTarget" type="Float32">1</Property>
+			<Property name="NormalMinTimeBeforeSwitchFromRange0" type="Float32">99999</Property>
+			<Property name="NormalMaxTimeBeforeSwitchFromRange0" type="Float32">999999</Property>
+			<Property name="NormalMinTimeBeforeSwitchFromRange1" type="Float32">99999</Property>
+			<Property name="NormalMaxTimeBeforeSwitchFromRange1" type="Float32">999999</Property>
+			<Property name="NormalMinTimeBeforeSwitchFromRange2" type="Float32">99999</Property>
+			<Property name="NormalMaxTimeBeforeSwitchFromRange2" type="Float32">999999</Property>
+			<Property name="MobMaxDistance0" type="Float32">2</Property>
+			<Property name="MobMaxDistance1" type="Float32">2</Property>
+			<Property name="MobMaxDistance2" type="Float32">10.5</Property>
+			<Property name="MobMaxDistance3" type="Float32">15</Property>
+			<Property name="MobMinTimeBeforeCheckPlayersTarget" type="Float32">0.1</Property>
+			<Property name="MobMaxTimeBeforeCheckPlayersTarget" type="Float32">0.1</Property>
+			<Property name="MobMinTimeBeforeSwitchFromRange0" type="Float32">5</Property>
+			<Property name="MobMaxTimeBeforeSwitchFromRange0" type="Float32">8</Property>
+			<Property name="MobMinTimeBeforeSwitchFromRange1" type="Float32">99999</Property>
+			<Property name="MobMaxTimeBeforeSwitchFromRange1" type="Float32">999999</Property>
+			<Property name="MobMinTimeBeforeSwitchFromRange2" type="Float32">99999</Property>
+			<Property name="MobMaxTimeBeforeSwitchFromRange2" type="Float32">999999</Property>
+			<Property name="MaxRadialDistanceFromDesiredPosition0" type="Float32">0.25</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresis0" type="Float32">0.3</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresisLarge0" type="Float32">0.3</Property>
+			<Property name="MaxLateralDistanceFromDesiredPosition0" type="Float32">0.7</Property>
+			<Property name="MaxLateralDistanceFromDesiredPositionHysteresis0" type="Float32">1.2</Property>
+			<Property name="MaxRadialDistanceFromDesiredPosition1" type="Float32">0.3</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresis1" type="Float32">0.3</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresisLarge1" type="Float32">0.3</Property>
+			<Property name="MaxLateralDistanceFromDesiredPosition1" type="Float32">1.2</Property>
+			<Property name="MaxLateralDistanceFromDesiredPositionHysteresis1" type="Float32">1</Property>
+			<Property name="MaxRadialDistanceFromDesiredPosition2" type="Float32">0.5</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresis2" type="Float32">3</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresisLarge2" type="Float32">10</Property>
+			<Property name="MaxLateralDistanceFromDesiredPosition2" type="Float32">0.5</Property>
+			<Property name="MaxLateralDistanceFromDesiredPositionHysteresis2" type="Float32">10</Property>
+			<Property name="MaxRadialDistanceFromDesiredPosition3" type="Float32">0.5</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresis3" type="Float32">6</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresisLarge3" type="Float32">10</Property>
+			<Property name="MaxLateralDistanceFromDesiredPosition3" type="Float32">0.5</Property>
+			<Property name="MaxLateralDistanceFromDesiredPositionHysteresis3" type="Float32">10</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionToBeginSprintingWhenTargetSprinting" type="Float32">1</Property>
+			<Property name="FacingTypeEnumString" type="String">eFORMATION_FACING_CENTRE</Property>
+			<Property name="MaxFacingDifference0" type="Float32">50</Property>
+			<Property name="MaxFacingDifferenceHysteresis0" type="Float32">25</Property>
+			<Property name="MaxFacingDifference1" type="Float32">50</Property>
+			<Property name="MaxFacingDifferenceHysteresis1" type="Float32">25</Property>
+			<Property name="MaxFacingDifference2" type="Float32">50</Property>
+			<Property name="MaxFacingDifferenceHysteresis2" type="Float32">40</Property>
+			<Property name="MaxFacingDifference3" type="Float32">50</Property>
+			<Property name="MaxFacingDifferenceHysteresis3" type="Float32">40</Property>
+			<Property name="RadialHysteresisModifierMin0" type="Float32">0</Property>
+			<Property name="RadialHysteresisModifierMax0" type="Float32">0</Property>
+			<Property name="RadialHysteresisModifierMin1" type="Float32">-1</Property>
+			<Property name="RadialHysteresisModifierMax1" type="Float32">1</Property>
+			<Property name="RadialHysteresisModifierMin2" type="Float32">-2</Property>
+			<Property name="RadialHysteresisModifierMax2" type="Float32">2</Property>
+			<Property name="RadialHysteresisModifierMin3" type="Float32">-2</Property>
+			<Property name="RadialHysteresisModifierMax3" type="Float32">2</Property>
+		</PropertySet>
+	</Property>
+	<Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet">
+		<PropertySet name="object_physical_character_stats_BaseAttackParameters" nameUID="0x8EA2B0B2" schema="object-physical-character-stats-BaseAttackParameters">
+			<!-- Schema Properties -->
+			<Property name="MaxDistanceToChooseCloseAttack" type="Float32">2.75</Property>
+			<Property name="ExitDistanceForCloseAttack" type="Float32">3.75</Property>
+			<Property name="MaxDistanceToChooseMidAttack" type="Float32">5</Property>
+			<Property name="ExitDistanceForMidAttack" type="Float32">7</Property>
+			<Property name="MaxDistanceToUseCloseAttack" type="Float32">1.75</Property>
+			<Property name="MaxDistanceToUseMidAttack" type="Float32">3</Property>
+			<Property name="ChanceToUseMidAttack" type="Int32">40</Property>
+			<Property name="MinRunningAttackDistance" type="Float32">6</Property>
+			<Property name="MaxRunningAttackDistance" type="Float32">9</Property>
+			<Property name="RunningAttackExitDistance" type="Float32">12</Property>
+			<Property name="MaxOpportunisticMeleeAttackDistanceVSPlayer" type="Float32">2</Property>
+			<Property name="MaxOpportunisticMeleeAttackDistanceVSAI" type="Float32">2</Property>
+			<Property name="MaxOpportunisticMeleeExitDistance" type="Float32">1</Property>
+			<Property name="MaxOpportunityMeleeAttackDistanceVSPlayer" type="Float32">1.5</Property>
+			<Property name="MaxOpportunityMeleeAttackDistanceVSAI" type="Float32">1.5</Property>
+			<Property name="MaxOpportunityMeleeExitDistance" type="Float32">1</Property>
+			<Property name="MinTimeBeforeOpportunityMeleeAttack" type="Float32">0.25</Property>
+			<Property name="MaxTimeBeforeOpportunityMeleeAttack" type="Float32">0.5</Property>
+			<Property name="MinForOpportunityMeleeAttackTimeout" type="Float32">2</Property>
+			<Property name="MaxForOpportunityMeleeAttackTimeout" type="Float32">3</Property>
+			<Property name="MaxOpportunityRangedAttackDistanceVSPlayer" type="Float32">5</Property>
+			<Property name="MaxOpportunityRangedAttackDistanceVSAI" type="Float32">5</Property>
+			<Property name="MaxOpportunityRangedExitDistance" type="Float32">1</Property>
+			<Property name="MinTimeBeforeOpportunityRangedAttack" type="Float32">0.25</Property>
+			<Property name="MaxTimeBeforeOpportunityRangedAttack" type="Float32">0.5</Property>
+			<Property name="MinTimeBeforeNextOpportunityRangedAttack" type="Float32">2.5</Property>
+			<Property name="MaxTimeBeforeNextOpportunityRangedAttack" type="Float32">3</Property>
+			<Property name="InitialAttackTimeMinMeleeVSHumanAsEnemy" type="Float32">0</Property>
+			<Property name="InitialAttackTimeMaxMeleeVSHumanAsEnemy" type="Float32">0.4</Property>
+			<Property name="AttackTimeMinMeleeVSHumanAsEnemy" type="Float32">0.65</Property>
+			<Property name="AttackTimeMaxMeleeVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMinMeleeVSHumanAsEnemyMobBattle" type="Float32">0.25</Property>
+			<Property name="AttackTimeMaxMeleeVSHumanAsEnemyMobBattle" type="Float32">1</Property>
+			<Property name="AttackTimeMinMeleeDownedVSHumanAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMaxMeleeDownedVSHumanAsEnemy" type="Float32">5</Property>
+			<Property name="InitialAttackTimeMinRangedVSHumanAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxRangedVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedDownedVSHumanAsEnemy" type="Float32">3.5</Property>
+			<Property name="AttackTimeMaxRangedDownedVSHumanAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinRangedInCoverVSHumanAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxRangedInCoverVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedInCoverVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedInCoverVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedInCoverDownedVSHumanAsEnemy" type="Float32">3.5</Property>
+			<Property name="AttackTimeMaxRangedInCoverDownedVSHumanAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinDirectFollowersVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="InitialAttackTimeMaxDirectFollowersVSHumanAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMinDirectFollowersVSHumanAsEnemy" type="Float32">2.5</Property>
+			<Property name="AttackTimeMaxDirectFollowersVSHumanAsEnemy" type="Float32">8.5</Property>
+			<Property name="AttackTimeMinDirectFollowersDownedVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMaxDirectFollowersDownedVSHumanAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinMeleeVSAIAsEnemy" type="Float32">1</Property>
+			<Property name="InitialAttackTimeMaxMeleeVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="AttackTimeMinMeleeVSAIAsEnemy" type="Float32">0.5</Property>
+			<Property name="AttackTimeMaxMeleeVSAIAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMinMeleeDownedVSAIAsEnemy" type="Float32">8</Property>
+			<Property name="AttackTimeMaxMeleeDownedVSAIAsEnemy" type="Float32">12</Property>
+			<Property name="InitialAttackTimeMinRangedVSAIAsEnemy" type="Float32">0.5</Property>
+			<Property name="InitialAttackTimeMaxRangedVSAIAsEnemy" type="Float32">5.5</Property>
+			<Property name="AttackTimeMinRangedVSAIAsEnemy" type="Float32">0.5</Property>
+			<Property name="AttackTimeMaxRangedVSAIAsEnemy" type="Float32">6</Property>
+			<Property name="AttackTimeMinRangedDownedVSAIAsEnemy" type="Float32">2</Property>
+			<Property name="AttackTimeMaxRangedDownedVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinRangedInCoverVSAIAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxRangedInCoverVSAIAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedInCoverVSAIAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMaxRangedInCoverVSAIAsEnemy" type="Float32">6</Property>
+			<Property name="AttackTimeMinRangedInCoverDownedVSAIAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedInCoverDownedVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinDirectFollowersVSAIAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxDirectFollowersVSAIAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinDirectFollowersVSAIAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMaxDirectFollowersVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="AttackTimeMinDirectFollowersDownedVSAIAsEnemy" type="Float32">2</Property>
+			<Property name="AttackTimeMaxDirectFollowersDownedVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinMeleeVSAIAsAlly" type="Float32">0.1</Property>
+			<Property name="InitialAttackTimeMaxMeleeVSAIAsAlly" type="Float32">0.4</Property>
+			<Property name="AttackTimeMinMeleeVSAIAsAlly" type="Float32">0.5</Property>
+			<Property name="AttackTimeMaxMeleeVSAIAsAlly" type="Float32">1</Property>
+			<Property name="AttackTimeMinMeleeDownedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="AttackTimeMaxMeleeDownedVSAIAsAlly" type="Float32">3</Property>
+			<Property name="InitialAttackTimeMinRangedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="InitialAttackTimeMaxRangedVSAIAsAlly" type="Float32">5</Property>
+			<Property name="AttackTimeMinRangedVSAIAsAlly" type="Float32">1.5</Property>
+			<Property name="AttackTimeMaxRangedVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="AttackTimeMinRangedDownedVSAIAsAlly" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedDownedVSAIAsAlly" type="Float32">3</Property>
+			<Property name="InitialAttackTimeMinRangedInCoverVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="InitialAttackTimeMaxRangedInCoverVSAIAsAlly" type="Float32">5</Property>
+			<Property name="AttackTimeMinRangedInCoverVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="AttackTimeMaxRangedInCoverVSAIAsAlly" type="Float32">8</Property>
+			<Property name="AttackTimeMinRangedInCoverDownedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="AttackTimeMaxRangedInCoverDownedVSAIAsAlly" type="Float32">8</Property>
+			<Property name="InitialAttackTimeMinDirectFollowersVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="InitialAttackTimeMaxDirectFollowersVSAIAsAlly" type="Float32">4</Property>
+			<Property name="AttackTimeMinDirectFollowersVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="AttackTimeMaxDirectFollowersVSAIAsAlly" type="Float32">4</Property>
+			<Property name="AttackTimeMinDirectFollowersDownedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="AttackTimeMaxDirectFollowersDownedVSAIAsAlly" type="Float32">4</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_MissionFailCondition" type="PropSet">
+		<PropertySet name="component_MissionFailCondition" nameUID="0x91587106" schema="default-component-MissionFailCondition">
+			<!-- Schema Properties -->
+			<Property name="ArrestFailTrigger" type="Boolean">false</Property>
+			<Property name="DeathFailTrigger" type="Boolean">false</Property>
+			<Property name="DamageFailTrigger" type="Boolean">false</Property>
+			<Property name="DamageHealthThreshold" type="Float32">1</Property>
+			<Property name="DistanceFailTrigger" type="Boolean">false</Property>
+			<Property name="DistanceFailThreshold" type="Float32">35</Property>
+			<Property name="PanicWeaponFailTrigger" type="Boolean">false</Property>
+			<Property name="PanicVehicleFailTrigger" type="Boolean">false</Property>
+			<Property name="VehicleFlipFailTrigger" type="Boolean">false</Property>
+			<Property name="BoatStuckFailTrigger" type="Boolean">false</Property>
+			<Property name="ArrestFailCaption" type="String">Arrested</Property>
+			<Property name="DeathFailCaption" type="String">Died</Property>
+			<Property name="DamageFailCaption" type="String">Damaged enemy</Property>
+			<Property name="DistanceFailCaption" type="String">Too far away</Property>
+			<Property name="PanicWeaponFailCaption" type="String">Caused panic</Property>
+			<Property name="PanicVehicleFailCaption" type="String">Caused panic</Property>
+			<Property name="VehicleFlipFailCaption" type="String">Vehicle flipped over</Property>
+			<Property name="BoatStuckFailCaption" type="String">Boat is stuck</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_Sensor" type="PropSet">
+		<PropertySet name="component_Sensor" nameUID="0x93D7F4B1" schema="default-component-Sensor">
+			<!-- Parents -->
+			<Parent nameUID="0xA1E0B63F">default-component-Sensor</Parent>
+			<!-- Schema Properties -->
+			<Property name="SensorPhantomSizeX" type="Float32">8</Property>
+			<Property name="SensorPhantomSizeY" type="Float32">8</Property>
+			<Property name="SensorPhantomSizeZ" type="Float32">8</Property>
+			<Property name="HasActiveRegion" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterEffects" type="PropSet">
+		<PropertySet name="component_CharacterEffects" nameUID="0x95BB3A32" schema="default-component-CharacterEffects">
+			<!-- Schema Properties -->
+			<Property name="fxPlayerWalkingThroughWater" type="SymbolUC" symUID="0x5C5CFC10">HK_FootStep_Water_Effect</Property>
+			<Property name="fxPlayerWalkingThroughWaterMinSpeed" type="Float32">2</Property>
+			<Property name="fxMaxWaterDepthForWalkingThroughWaterEffect" type="Float32">0.5</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterPhysics" type="PropSet">
+		<PropertySet name="component_CharacterPhysics" nameUID="0xA27BEFF2" schema="default-component-CharacterPhysics">
+			<!-- Schema Properties -->
+			<Property name="Mass" type="Float32">75</Property>
+			<Property name="MaxForce" type="Float32">1000</Property>
+			<Property name="MaxClimableSlope" type="Float32">65</Property>
+			<Property name="WalkCollisionHeight" type="Float32">1.835</Property>
+			<Property name="CombatCollisionHeight" type="Float32">1.835</Property>
+			<Property name="CrouchCollisionHeight" type="Float32">0.95</Property>
+			<Property name="DrivingCollisionHeight" type="Float32">1.1</Property>
+			<Property name="CrawlCollisionHeight" type="Float32">0.3</Property>
+			<Property name="SittingCollisionHeight" type="Float32">1.3</Property>
+			<Property name="CoverCollisionHeight" type="Float32">1.835</Property>
+			<Property name="FreerunCollisionHeight" type="Float32">1.835</Property>
+			<Property name="WalkCollisionRadius" type="Float32">0.32</Property>
+			<Property name="CombatCollisionRadius" type="Float32">0.5</Property>
+			<Property name="CrouchCollisionRadius" type="Float32">0.35</Property>
+			<Property name="DrivingCollisionRadius" type="Float32">0.3</Property>
+			<Property name="CrawlCollisionRadius" type="Float32">0.3</Property>
+			<Property name="SittingCollisionRadius" type="Float32">0.3</Property>
+			<Property name="CoverCollisionRadius" type="Float32">0.32</Property>
+			<Property name="FreerunCollisionRadius" type="Float32">0.2</Property>
+			<Property name="DetailedOnGroundCheck" type="Boolean">true</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_WorldContext" type="PropSet">
+		<PropertySet name="component_WorldContext" nameUID="0xA59FE5E4" schema="default-component-WorldContext">
+			<!-- Schema Properties -->
+			<Property name="WC_StinkyFeet" type="Int32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_Health" type="PropSet">
+		<PropertySet name="component_Health" nameUID="0xA9EB4546" schema="default-component-Health">
+			<!-- Schema Properties -->
+			<Property name="maxUpgradedHealth" type="Int32">400</Property>
+			<Property name="maxHealth" type="Int32">400</Property>
+			<Property name="regenerativeHealthRate" type="Float32">-1</Property>
+			<Property name="InvulnerableCharacter" type="Boolean">false</Property>
+			<Property name="healthProjectileDamageMultiplier" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0x49C08600">eCHARACTER_TYPE_DLC_ELITE_GHOUL</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0x32C8AA93">eFIGHTING_CLASS_STRIKER</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x96962095">TRIAD_18K</Property>
+			<Property name="Gender" type="Symbol" symUID="0x166A8B5C">Male</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Model" nameUID="0x92750FDF">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0xB4A86370">Data\Characters_New\EliteGhoul</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0xCE39E085">Data\Characters_New\EliteGhoul_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0xA196621B">UniquePed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="component_DropShadow" type="PropSet">
+		<PropertySet name="component_DropShadow" nameUID="0xEC2CE6F9" schema="default-component-DropShadow">
+			<!-- Schema Properties -->
+			<Property name="DropShadow_ScaleX" type="Float32">0.75</Property>
+			<Property name="DropShadow_ScaleY" type="Float32">0.75</Property>
+			<Property name="DropShadow_TextureUID" type="SymbolUC" symUID="0x94453E50">FX_ShadowCircle</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_Interactable" type="PropSet">
+		<PropertySet name="component_Interactable" nameUID="0xF20A4492" schema="default-component-Interactable">
+			<!-- Schema Properties -->
+			<Property name="InteractionPoints" type="List"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

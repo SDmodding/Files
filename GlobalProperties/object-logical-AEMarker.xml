@@ -1,4 +1,8 @@
-<PropertySet name="object-logical-AEMarker" nameUID="0x33698DFE" schema="object-logical-AEMarker">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0xA24EA7CA">AudioEmitterMarker</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-AEMarker" nameUID="0x33698DFE">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x26F2456E">default-component-AEMarker</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0xA24EA7CA">AudioEmitterMarker</Property>
+</PropertySetResource>

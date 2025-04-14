@@ -1,20 +1,26 @@
-<PropertySet name="default-rewards-progression-J_CJ_WS_01" nameUID="0xD46F16BC" schema="default-rewards-progression-J_CJ_WS_01">
-    <Parent>default-rewards-progression-job_defaults</Parent>
-    <Property name="0x72201393" type="Int32">0</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_CJ_WHARF_SMUGGLER_01</Property>
-    <Property name="CopStartingScore" type="Int32">50</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="EnableTriadScoring" type="Boolean">False</Property>
-    <Property name="GamesliceType" type="Symbol"/>
-    <Property name="MoneyAdjustment" type="Int32">20000</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x1D7E06F7">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">DLC_Tactical_Set</Property>
-            <Property name="0xDE3E6A23" type="String">$DLC_TACTICAL_OUTFIT_REWARD</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-J_CJ_WS_01" nameUID="0xD46F16BC">
+	<!-- Parents -->
+	<Parent nameUID="0x93DAADC2">default-rewards-progression-job_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Suit" nameUID="0x1D7E06F7">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">DLC_Tactical_Set</Property>
+				<Property name="Text" type="String">$DLC_TACTICAL_OUTFIT_REWARD</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">50</Property>
+	<Property name="MoneyAdjustment" type="Int32">20000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_CJ_WHARF_SMUGGLER_01</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x50419A9A">DLC_POLICE</Property>
+	<Property name="EnableTriadScoring" type="Boolean">false</Property>
+</PropertySetResource>

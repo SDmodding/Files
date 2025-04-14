@@ -1,837 +1,1057 @@
-<PropertySet name="default-unlockables-merchantdatabase-vehicles" nameUID="0xE85167D6" schema="default-unlockables-merchantdatabase-vehicles">
-    <Property name="Items" type="List">
-        <ListProperty nameUID="0x8742DFA5">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_270DX</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="GenericRace" type="Symbol" Symbol="0x83617461">object-physical-vehicle-270DX_Reward01</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x83617461">object-physical-vehicle-270DX_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Bike_270DX</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_270DX</Property>
-            <Property name="Type" type="Symbol" Symbol="0xCA08F77F">Bike</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB2CA1065">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F21</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">29000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x94F53833">object-physical-vehicle-Bisai_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xA1B5DBAD">face_1_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_BISAI</Property>
-            <Property name="Tier" type="String">Class C</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F21</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x69243813">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F12</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x1E0CFF84">object-physical-vehicle-600CoupeS_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_600S</Property>
-            <Property name="Tier" type="String">Class C</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F12</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x20357A9">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F46</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">3</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">38000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x99BAAD3E">object-physical-vehicle-DX305_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xA1B5DBAD">face_1_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Bike_DX305</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_MDX305</Property>
-            <Property name="Type" type="Symbol" Symbol="0xCA08F77F">Bike</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF407170">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F11</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">2</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">85000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xC15C4D40">object-physical-vehicle-KyouKan_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xA1B5DBAD">face_1_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_KYOUKAN</Property>
-            <Property name="Tier" type="String">Class C</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F11</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB816CC7">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F13</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">3</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">55000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x28F61839">object-physical-vehicle-425MHC_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xA1B5DBAD">face_1_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_425MHC</Property>
-            <Property name="Tier" type="String">Class C</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_425MHC</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x15C63CC2">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F47</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">3</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">73200</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xCA6AD43B">object-physical-vehicle-Prime8C_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xA1B5DBAD">face_1_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_PRIME8C</Property>
-            <Property name="Tier" type="String">Class C</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_MPRIME</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA50F7B0E">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_MNeoV</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">3</Property>
-            <Property name="FaceRequired" type="UInt32">2</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">63200</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xACF79F94">object-physical-vehicle-NeoV_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xA1B5DBAD">face_1_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_NEOV</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_MNeoV</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA84C5DD7">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_MTaika</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">3</Property>
-            <Property name="FaceRequired" type="UInt32">2</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">125000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x2F803A86">object-physical-vehicle-Taikai_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xC264E58C">face_2_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_TAKKAI</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_MTaika</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xAC8D4060">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_MHassha</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">3</Property>
-            <Property name="FaceRequired" type="UInt32">3</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">153000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xC66AA3">object-physical-vehicle-Hassha_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xC264E58C">face_2_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_HASSHA</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_MHassha</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB60B0DD2">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F22</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">2</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">160000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x7D6187B0">object-physical-vehicle-Odaiko_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xC264E58C">face_2_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_ODAIKO</Property>
-            <Property name="Tier" type="String">Class C</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F22</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xBB482B0B">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F24</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">2</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">330000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x30005155">object-physical-vehicle-Enterprise_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xC264E58C">face_2_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_ENTERPRISE</Property>
-            <Property name="Tier" type="String">Class C</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F24</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF839202B">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F33</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">2</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">270000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x72E5433B">object-physical-vehicle-RidgeSport_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xC264E58C">face_2_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_RidgeSport</Property>
-            <Property name="Tier" type="String">Class D</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F33</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x2B55D5DB">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F31</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">3</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">69300</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x38F6A9EA">object-physical-vehicle-CS750R_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x1F6B04FE">face_3_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Bike_750R</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F31</Property>
-            <Property name="Type" type="Symbol" Symbol="0xCA08F77F">Bike</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x2616F302">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_M979</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">4</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">92700</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x716DFCE0">object-physical-vehicle-Drag979_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x1F6B04FE">face_3_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Bike_DRAG979</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_M979</Property>
-            <Property name="Type" type="Symbol" Symbol="0xCA08F77F">Bike</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x22D7EEB5">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F32</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">3</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">210000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x563A02A5">object-physical-vehicle-DrifterGT_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0xC264E58C">face_2_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_DrifterGT</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F32</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3C90BEB0">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F34</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">3</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">462000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xFF1BF371">object-physical-vehicle-860MHC_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x1F6B04FE">face_3_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_860MHC</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F34</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3851A307">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F35</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">3</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">405000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xAB3668AE">object-physical-vehicle-SES_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x1F6B04FE">face_3_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_SES</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F35</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x351285DE">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_MLoewe</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">3</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">210000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x81945C21">object-physical-vehicle-Loewe_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x1F6B04FE">face_3_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_EXECUTIVE</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_MLoewe</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x31D39869">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F25</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">3</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">390000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x1D448CD5">object-physical-vehicle-Bismarck_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x1F6B04FE">face_3_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_Bismarck</Property>
-            <Property name="Tier" type="String">Class D</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F25</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x50FF855E">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F44</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">1</Property>
-            <Property name="FaceRequired" type="UInt32">4</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">150000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xD44B702E">object-physical-vehicle-1100NAR_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5C699CE">face_4_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Bike_1100NAR</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F44</Property>
-            <Property name="Type" type="Symbol" Symbol="0xCA08F77F">Bike</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x5DBCA387">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_MLowin</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">5</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">360000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xE2BA595">object-physical-vehicle-Lowin_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5C699CE">face_4_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_HOTSHOT</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_MLowin</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x597DBE30">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F45</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">1.4</Property>
-            <Property name="FaceRequired" type="UInt32">4</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">550500</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x29D9178E">object-physical-vehicle-WanganGSX_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5C699CE">face_4_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_WANGAN</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F45</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x473AEE35">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F43</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">3</Property>
-            <Property name="FaceRequired" type="UInt32">7</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">605000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x49C4C726">object-physical-vehicle-Tuono_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5C699CE">face_4_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_TUONO</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F43</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x17A3D754">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_HR_DLC</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">3</Property>
-            <Property name="FaceRequired" type="UInt32">0</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x49C4C726">object-physical-vehicle-Tuono_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_TUONO</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_HR_DLC</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4AD9A7CF">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_MURALVAN_DLC</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">0</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x6467E5DC">object-physical-vehicle-MovitRetro01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_RETRO</Property>
-            <Property name="Tier" type="String">Class D</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_MURALVAN_DLC</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xDBF608DE">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$DLC_COMMUNITY_PACK1_UFGCAR_DESC</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">0</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xCF1E2574">object-physical-vehicle-Bisai_DLC02</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_DLC_UFG</Property>
-            <Property name="Tier" type="String">Class C</Property>
-            <Property name="Title" type="String">$DLC_COMMUNITY_PACK1_UFGCAR_TITLE</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1DFE2412">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_MBlast</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">3</Property>
-            <Property name="FaceRequired" type="UInt32">4</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">420000</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x45CCB318">object-physical-vehicle-Blast_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5C699CE">face_4_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_BLAST</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_MBlast</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4EB8D55B">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_ETALON</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">3</Property>
-            <Property name="FaceRequired" type="UInt32">4</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">280100</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x2FCFFDE6">object-physical-vehicle-Terre_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x1F6B04FE">face_3_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_TERRE</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_MTerre</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4A79C8EC">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_Mtalon</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">6</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">520300</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x2E727215">object-physical-vehicle-Etalon_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5C699CE">face_4_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_ETALON</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_Mtalon</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x72367551">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$VEHICLE_STORE_DESC_F41</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">4</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">649900</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xB2B875E9">object-physical-vehicle-Velocita_Reward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5C699CE">face_4_vehicle_store</Property>
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_VELOCITA</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$VEHICLE_STORE_TITLE_F41</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x5435987E">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_DLC_STING</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xAA66AA9F">object-physical-vehicle-Sting01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Bike_Sting</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_DLC_STING</Property>
-            <Property name="Type" type="Symbol" Symbol="0xCA08F77F">Bike</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x38542C30">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_DLC_TAIKAI</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x633157D2">object-physical-vehicle-Taikai_Triad01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_TriadTaikai</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_DLC_TAIKAI</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1A310162">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$ITEMS_DESC_DLC_WANGAN01</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x813657AB">object-physical-vehicle-Wangan_Undercover01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_UndercoverCopCar</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$ITEMS_TITLE_DLC_WANGAN01</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x573050ED">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$DLC_Wangan_Desc</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xFADCA6BD">object-physical-vehicle-WanganCop01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_WANGANCOP</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$DLC_Wangan_Title</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x692C92C">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$DLC_ULTPOLICE_SWATVAN_DESC</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xD2C18B62">object-physical-vehicle-AggressorSWAT</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_AggressorSWAT</Property>
-            <Property name="Tier" type="String">Class C</Property>
-            <Property name="Title" type="String">$DLC_ULTPOLICE_SWATVAN_TITLE</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA0AB97CA">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$DLC_ULTPOLICE_CRUISER_DESC</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x45840B73">object-physical-vehicle-klienodcop</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_KleinodCop</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$DLC_ULTPOLICE_CRUISER_TITLE</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB611DC7A">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$DLC_ULTPOLICE_COPBIKE_DESC</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x229CAE7A">object-physical-vehicle-CopBike</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_CopBike</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$DLC_ULTPOLICE_COPBIKE_TITLE</Property>
-            <Property name="Type" type="Symbol" Symbol="0xCA08F77F">Bike</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x9B5A7C4C">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$DLC_ULTPOLICE_COPVAN_DESC</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x5FCF84C6">object-physical-vehicle-DampfrossCop01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_DampfrossCop</Property>
-            <Property name="Tier" type="String">Class C</Property>
-            <Property name="Title" type="String">$DLC_ULTPOLICE_COPVAN_TITLE</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA28CEEA5">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$DLC_ULTPOLICE_COPSUV_DESC</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x5920BEAE">object-physical-vehicle-RidgeSportSWAT01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_RidgeSportSWAT</Property>
-            <Property name="Tier" type="String">Class B</Property>
-            <Property name="Title" type="String">$DLC_ULTPOLICE_COPSUV_TITLE</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3AB972E3">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$DLC_TRANSTERROR_CAR_DESC</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0xD8AF8CA2">object-physical-vehicle-TransTerrReward01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Car_TransTerror</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$DLC_TRANSTERROR_CAR_TITLE</Property>
-            <Property name="Type" type="Symbol" Symbol="0x99EC1476">Car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x43A59642">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">$DLC_MONKEYKING_CLOUDCAR_DESC</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="FaceRequired" type="UInt32">1</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">0</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x523B728">object-physical-vehicle-Drag979_MonkeyKing</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-            </Property>
-            <Property name="Texture" type="String">Vehicles_Bike_Cloud</Property>
-            <Property name="Tier" type="String">Class A</Property>
-            <Property name="Title" type="String">$DLC_MONKEYKING_CLOUDCAR_TITLE</Property>
-            <Property name="Type" type="Symbol" Symbol="0xCA08F77F">Bike</Property>
-        </ListProperty>
-    </Property>
-    <Property name="StoreType" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
-    <Property name="Stores" type="List">
-        <Property type="Symbol" Symbol="0xA1B5DBAD">face_1_vehicle_store</Property>
-        <Property type="Symbol" Symbol="0xC264E58C">face_2_vehicle_store</Property>
-        <Property type="Symbol" Symbol="0x1F6B04FE">face_3_vehicle_store</Property>
-        <Property type="Symbol" Symbol="0x5C699CE">face_4_vehicle_store</Property>
-        <Property type="Symbol" Symbol="0x5AAF800">GameTrackerVehicle</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-unlockables-merchantdatabase-vehicles" nameUID="0xE85167D6">
+	<!-- Properties -->
+	<Property name="Items" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="mission_reward_vehicle_M_NMC" nameUID="0x8742DFA5">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xCA08F77F">Bike</Property>
+				<Property name="GenericRace" type="Symbol" symUID="0x83617461">object-physical-vehicle-270DX_Reward01</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Bike_270DX</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x83617461">object-physical-vehicle-270DX_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_270DX</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_270DX</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Two_Vehicle_04" nameUID="0xB2CA1065">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA1B5DBAD">face_1_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_BISAI</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">29000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x94F53833">object-physical-vehicle-Bisai_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F21</Property>
+				<Property name="Tier" type="String">Class C</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F21</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Mission_Reward_01" nameUID="0x69243813">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_600S</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x1E0CFF84">object-physical-vehicle-600CoupeS_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F12</Property>
+				<Property name="Tier" type="String">Class C</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F12</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_One_Vehicle_01" nameUID="0x20357A9">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xCA08F77F">Bike</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA1B5DBAD">face_1_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Bike_DX305</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">38000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">3</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x99BAAD3E">object-physical-vehicle-DX305_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_MDX305</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F46</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_One_Vehicle_02" nameUID="0xF407170">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA1B5DBAD">face_1_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_KYOUKAN</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">85000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xC15C4D40">object-physical-vehicle-KyouKan_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">2</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F11</Property>
+				<Property name="Tier" type="String">Class C</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F11</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_One_Vehicle_03" nameUID="0xB816CC7">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA1B5DBAD">face_1_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_425MHC</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">55000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">3</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x28F61839">object-physical-vehicle-425MHC_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_425MHC</Property>
+				<Property name="Tier" type="String">Class C</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F13</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_One_Vehicle_04" nameUID="0x15C63CC2">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA1B5DBAD">face_1_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_PRIME8C</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">73200</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">3</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xCA6AD43B">object-physical-vehicle-Prime8C_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_MPRIME</Property>
+				<Property name="Tier" type="String">Class C</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F47</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Two_Vehicle_01" nameUID="0xA50F7B0E">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA1B5DBAD">face_1_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_NEOV</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">63200</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">3</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xACF79F94">object-physical-vehicle-NeoV_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">2</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_MNeoV</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_MNeoV</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Two_Vehicle_02" nameUID="0xA84C5DD7">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xC264E58C">face_2_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_TAKKAI</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">125000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">3</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x2F803A86">object-physical-vehicle-Taikai_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">2</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_MTaika</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_MTaika</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Two_Vehicle_03" nameUID="0xAC8D4060">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xC264E58C">face_2_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_HASSHA</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">153000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">3</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xC66AA3">object-physical-vehicle-Hassha_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">3</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_MHassha</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_MHassha</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Two_Vehicle_05" nameUID="0xB60B0DD2">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xC264E58C">face_2_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_ODAIKO</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">160000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x7D6187B0">object-physical-vehicle-Odaiko_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">2</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F22</Property>
+				<Property name="Tier" type="String">Class C</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F22</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Two_Vehicle_06" nameUID="0xBB482B0B">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xC264E58C">face_2_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_ENTERPRISE</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">330000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x30005155">object-physical-vehicle-Enterprise_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">2</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F24</Property>
+				<Property name="Tier" type="String">Class C</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F24</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="face_Two_Vehicle_07" nameUID="0xF839202B">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xC264E58C">face_2_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_RidgeSport</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">270000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x72E5433B">object-physical-vehicle-RidgeSport_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">2</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F33</Property>
+				<Property name="Tier" type="String">Class D</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F33</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Three_Vehicle_01" nameUID="0x2B55D5DB">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xCA08F77F">Bike</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x1F6B04FE">face_3_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Bike_750R</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">69300</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x38F6A9EA">object-physical-vehicle-CS750R_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">3</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F31</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F31</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Three_Vehicle_02" nameUID="0x2616F302">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xCA08F77F">Bike</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x1F6B04FE">face_3_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Bike_DRAG979</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">92700</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x716DFCE0">object-physical-vehicle-Drag979_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">4</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_M979</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_M979</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Three_Vehicle_03" nameUID="0x22D7EEB5">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xC264E58C">face_2_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_DrifterGT</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">210000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x563A02A5">object-physical-vehicle-DrifterGT_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">3</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F32</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F32</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Three_Vehicle_04" nameUID="0x3C90BEB0">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x1F6B04FE">face_3_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_860MHC</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">462000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xFF1BF371">object-physical-vehicle-860MHC_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">3</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F34</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F34</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Three_Vehicle_05" nameUID="0x3851A307">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x1F6B04FE">face_3_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_SES</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">405000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xAB3668AE">object-physical-vehicle-SES_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">3</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F35</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F35</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Three_Vehicle_06" nameUID="0x351285DE">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x1F6B04FE">face_3_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_EXECUTIVE</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">210000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x81945C21">object-physical-vehicle-Loewe_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">3</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_MLoewe</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_MLoewe</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Three_Vehicle_07" nameUID="0x31D39869">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x1F6B04FE">face_3_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_Bismarck</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">390000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x1D448CD5">object-physical-vehicle-Bismarck_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">3</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F25</Property>
+				<Property name="Tier" type="String">Class D</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F25</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Four_Vehicle_01" nameUID="0x50FF855E">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xCA08F77F">Bike</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5C699CE">face_4_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Bike_1100NAR</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">150000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">1</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xD44B702E">object-physical-vehicle-1100NAR_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">4</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F44</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F44</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Four_Vehicle_02" nameUID="0x5DBCA387">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5C699CE">face_4_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_HOTSHOT</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">360000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xE2BA595">object-physical-vehicle-Lowin_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">5</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_MLowin</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_MLowin</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Four_Vehicle_03" nameUID="0x597DBE30">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5C699CE">face_4_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_WANGAN</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">550500</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">1.4</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x29D9178E">object-physical-vehicle-WanganGSX_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">4</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F45</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F45</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Four_Vehicle_04" nameUID="0x473AEE35">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5C699CE">face_4_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_TUONO</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">605000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">3</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x49C4C726">object-physical-vehicle-Tuono_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">7</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F43</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F43</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="DLC_HiRollerCar" nameUID="0x17A3D754">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_TUONO</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">3</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x49C4C726">object-physical-vehicle-Tuono_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">0</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_HR_DLC</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_HR_DLC</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="DLC_Throwback_DragonMural" nameUID="0x4AD9A7CF">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_RETRO</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x6467E5DC">object-physical-vehicle-MovitRetro01</Property>
+				<Property name="FaceRequired" type="UInt32">0</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_MURALVAN_DLC</Property>
+				<Property name="Tier" type="String">Class D</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_MURALVAN_DLC</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="DLC_CommunityPack1_Car" nameUID="0xDBF608DE">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_DLC_UFG</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xCF1E2574">object-physical-vehicle-Bisai_DLC02</Property>
+				<Property name="FaceRequired" type="UInt32">0</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$DLC_COMMUNITY_PACK1_UFGCAR_TITLE</Property>
+				<Property name="Tier" type="String">Class C</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$DLC_COMMUNITY_PACK1_UFGCAR_DESC</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Four_vehicle_05" nameUID="0x1DFE2412">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5C699CE">face_4_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_BLAST</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">420000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">3</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x45CCB318">object-physical-vehicle-Blast_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">4</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_MBlast</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_MBlast</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Four_Vehicle_06" nameUID="0x4EB8D55B">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x1F6B04FE">face_3_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_TERRE</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">280100</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">3</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x2FCFFDE6">object-physical-vehicle-Terre_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">4</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_MTerre</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_ETALON</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Four_Vehicle_07" nameUID="0x4A79C8EC">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5C699CE">face_4_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_ETALON</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">520300</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x2E727215">object-physical-vehicle-Etalon_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">6</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_Mtalon</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_Mtalon</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Face_Four_Vehicle_08" nameUID="0x72367551">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5C699CE">face_4_vehicle_store</ListProperty>
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_VELOCITA</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">649900</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xB2B875E9">object-physical-vehicle-Velocita_Reward01</Property>
+				<Property name="FaceRequired" type="UInt32">4</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$VEHICLE_STORE_TITLE_F41</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$VEHICLE_STORE_DESC_F41</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="DLC_Sting01" nameUID="0x5435987E">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xCA08F77F">Bike</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Bike_Sting</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xAA66AA9F">object-physical-vehicle-Sting01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_DLC_STING</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_DLC_STING</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="DLC_Taikai_Triad01" nameUID="0x38542C30">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_TriadTaikai</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x633157D2">object-physical-vehicle-Taikai_Triad01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_DLC_TAIKAI</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_DLC_TAIKAI</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="DLC_Wangan_Undercover01" nameUID="0x1A310162">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_UndercoverCopCar</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x813657AB">object-physical-vehicle-Wangan_Undercover01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$ITEMS_TITLE_DLC_WANGAN01</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$ITEMS_DESC_DLC_WANGAN01</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="DLC_Wangan_Cop01" nameUID="0x573050ED">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_WANGANCOP</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xFADCA6BD">object-physical-vehicle-WanganCop01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$DLC_Wangan_Title</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$DLC_Wangan_Desc</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x692C92C">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_AggressorSWAT</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xD2C18B62">object-physical-vehicle-AggressorSWAT</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$DLC_ULTPOLICE_SWATVAN_TITLE</Property>
+				<Property name="Tier" type="String">Class C</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$DLC_ULTPOLICE_SWATVAN_DESC</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xA0AB97CA">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_KleinodCop</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x45840B73">object-physical-vehicle-klienodcop</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$DLC_ULTPOLICE_CRUISER_TITLE</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$DLC_ULTPOLICE_CRUISER_DESC</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xB611DC7A">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xCA08F77F">Bike</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_CopBike</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x229CAE7A">object-physical-vehicle-CopBike</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$DLC_ULTPOLICE_COPBIKE_TITLE</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$DLC_ULTPOLICE_COPBIKE_DESC</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x9B5A7C4C">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_DampfrossCop</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x5FCF84C6">object-physical-vehicle-DampfrossCop01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$DLC_ULTPOLICE_COPVAN_TITLE</Property>
+				<Property name="Tier" type="String">Class C</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$DLC_ULTPOLICE_COPVAN_DESC</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xA28CEEA5">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_RidgeSportSWAT</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x5920BEAE">object-physical-vehicle-RidgeSportSWAT01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$DLC_ULTPOLICE_COPSUV_TITLE</Property>
+				<Property name="Tier" type="String">Class B</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$DLC_ULTPOLICE_COPSUV_DESC</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x3AB972E3">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x99EC1476">Car</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Car_TransTerror</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0xD8AF8CA2">object-physical-vehicle-TransTerrReward01</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$DLC_TRANSTERROR_CAR_TITLE</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$DLC_TRANSTERROR_CAR_DESC</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="DLC_MONKEYKING_CLOUDCAR" nameUID="0x43A59642">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xCA08F77F">Bike</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Vehicles_Bike_Cloud</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">0</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x523B728">object-physical-vehicle-Drag979_MonkeyKing</Property>
+				<Property name="FaceRequired" type="UInt32">1</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String">$DLC_MONKEYKING_CLOUDCAR_TITLE</Property>
+				<Property name="Tier" type="String">Class A</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">$DLC_MONKEYKING_CLOUDCAR_DESC</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="Stores" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xA1B5DBAD">face_1_vehicle_store</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC264E58C">face_2_vehicle_store</ListProperty>
+		<ListProperty type="Symbol" symUID="0x1F6B04FE">face_3_vehicle_store</ListProperty>
+		<ListProperty type="Symbol" symUID="0x5C699CE">face_4_vehicle_store</ListProperty>
+		<ListProperty type="Symbol" symUID="0x5AAF800">GameTrackerVehicle</ListProperty>
+	</Property>
+	<Property name="StoreType" type="Symbol" symUID="0x9B06086B">Vehicle</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x692C92C (Normal) -->
+<!-- 0x3AB972E3 (Normal) -->
+<!-- 0x9B5A7C4C (Normal) -->
+<!-- 0xA0AB97CA (Normal) -->
+<!-- 0xA28CEEA5 (Normal) -->
+<!-- 0xB611DC7A (Normal) -->

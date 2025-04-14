@@ -1,29 +1,35 @@
-<PropertySet name="object-physical-character-AmbientCharacters-waitress_low" nameUID="0x58A56DD1" schema="object-physical-character-AmbientCharacters-waitress_low">
-    <Parent>object-physical-character-AmbientCharacters-waitress_high</Parent>
-    <Property name="Description" type="String">Waitress - Low</Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-        <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0xE7DE76F9">Female</Property>
-                <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-                <Property type="Symbol" Symbol="0xE69D7A9A">Waitress</Property>
-            </ResourceTags>
-            <ResourceList type="List">
-                <Property type="Symbol"/>
-                <Property type="Symbol" Symbol="0xC6EAEBB">Data\Characters_New\AS_B_WaitressLow</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-0.2</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-waitress_low" nameUID="0x58A56DD1">
+	<!-- Parents -->
+	<Parent nameUID="0x19288094">object-physical-character-AmbientCharacters-waitress_high</Parent>
+	<!-- Properties -->
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+		<ListProperty type="Symbol" symUID="0x95BC9EE4">Ped</ListProperty>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xE7DE76F9">Female</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE69D7A9A">Waitress</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol"/>
+				<ListProperty type="Symbol" symUID="0xC6EAEBB">Data\Characters_New\AS_B_WaitressLow</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-0.2</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Waitress - Low</Property>
+</PropertySetResource>

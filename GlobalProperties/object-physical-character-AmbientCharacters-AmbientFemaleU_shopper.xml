@@ -1,16 +1,34 @@
-<PropertySet name="object-physical-character-AmbientCharacters-AmbientFemaleU_shopper" nameUID="0xE7EF2EA5" schema="object-physical-character-AmbientCharacters-AmbientFemaleU_shopper">
-    <Parent>object-physical-character-AmbientFemaleU</Parent>
-    <Property name="CanWander" type="Boolean">True</Property>
-    <Property name="Description" type="String">Ambient Upperclass Female Shopper</Property>
-    <Property name="PropList" type="List">
-        <Property type="Symbol"/>
-        <Property type="Symbol" Symbol="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</Property>
-        <Property type="Symbol" Symbol="0x98ACE464">object-physical-weapon-melee-Purse001_Elbow</Property>
-        <Property type="Symbol" Symbol="0xCE873DFE">object-physical-weapon-melee-Purse001_Hand</Property>
-        <Property type="Symbol" Symbol="0xAC64F33E">object-physical-weapon-melee-Purse001_Shoulder</Property>
-        <Property type="Symbol" Symbol="0x2290B7CF">object-physical-weapon-melee-PurseHand001_Elbow</Property>
-        <Property type="Symbol" Symbol="0x8A1A83AB">object-physical-weapon-melee-PurseHand001_Hand</Property>
-        <Property type="Symbol" Symbol="0x59236CEC">object-physical-prop-Attachable-AmbientGlasses004</Property>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-AmbientFemaleU_shopper" nameUID="0xE7EF2EA5">
+	<!-- Parents -->
+	<Parent nameUID="0x1DEE2D7E">object-physical-character-AmbientFemaleU</Parent>
+	<!-- Properties -->
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x8C8E7DEB">Generic_Ped</ListProperty>
+				<ListProperty type="Symbol" symUID="0x861A74EA">LuxuryDriver</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB2C41BC7">ExoticDriver</ListProperty>
+				<ListProperty type="Symbol" symUID="0xA240E438">NoWorkBoat</ListProperty>
+				<ListProperty type="Symbol" symUID="0xDBE6EFF7">NoBike</ListProperty>
+				<ListProperty type="Symbol" symUID="0xF62EC7D0">NoTruck</ListProperty>
+				<ListProperty type="Symbol" symUID="0xEC0B1776">NoScooter</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="PropList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol"/>
+		<ListProperty type="Symbol" symUID="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</ListProperty>
+		<ListProperty type="Symbol" symUID="0x98ACE464">object-physical-weapon-melee-Purse001_Elbow</ListProperty>
+		<ListProperty type="Symbol" symUID="0xCE873DFE">object-physical-weapon-melee-Purse001_Hand</ListProperty>
+		<ListProperty type="Symbol" symUID="0xAC64F33E">object-physical-weapon-melee-Purse001_Shoulder</ListProperty>
+		<ListProperty type="Symbol" symUID="0x2290B7CF">object-physical-weapon-melee-PurseHand001_Elbow</ListProperty>
+		<ListProperty type="Symbol" symUID="0x8A1A83AB">object-physical-weapon-melee-PurseHand001_Hand</ListProperty>
+		<ListProperty type="Symbol" symUID="0x59236CEC">object-physical-prop-Attachable-AmbientGlasses004</ListProperty>
+	</Property>
+	<Property name="CanWander" type="Boolean">true</Property>
+	<Property name="Description" type="String">Ambient Upperclass Female Shopper</Property>
+</PropertySetResource>

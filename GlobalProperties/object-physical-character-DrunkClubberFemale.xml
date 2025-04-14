@@ -1,6 +1,21 @@
-<PropertySet name="object-physical-character-DrunkClubberFemale" nameUID="0xE4E49E07" schema="object-physical-character-DrunkClubberFemale">
-    <Parent>object-physical-character-ClubberFemale</Parent>
-    <Property name="Description" type="String">Clubbers - Drunk Female</Property>
-    <Property name="schema_classlist" type="PropSet"/>
-    <Property name="walkCycle" type="Symbol" Symbol="0xCE41243C">Drunk</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-DrunkClubberFemale" nameUID="0xE4E49E07">
+	<!-- Parents -->
+	<Parent nameUID="0xAAB1DCB5">object-physical-character-ClubberFemale</Parent>
+	<!-- Properties -->
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xCE41243C">Drunk</ListProperty>
+				<ListProperty type="Symbol" symUID="0xA240E438">NoWorkBoat</ListProperty>
+				<ListProperty type="Symbol" symUID="0xDBE6EFF7">NoBike</ListProperty>
+				<ListProperty type="Symbol" symUID="0xF62EC7D0">NoTruck</ListProperty>
+				<ListProperty type="Symbol" symUID="0xEC0B1776">NoScooter</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="walkCycle" type="Symbol" symUID="0xCE41243C">Drunk</Property>
+	<Property name="Description" type="String">Clubbers - Drunk Female</Property>
+</PropertySetResource>

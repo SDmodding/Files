@@ -1,37 +1,53 @@
-<PropertySet name="object-physical-character-Vendors-ParkingVendor-parkingAttendent" nameUID="0xCFE2385C" schema="object-physical-character-Vendors-ParkingVendor-parkingAttendent">
-    <Parent>default-component-FaceAction</Parent>
-    <Property name="AnimBankFileNames" type="List">
-        <Property type="Symbol" Symbol="0xA5BB75AF">Shopkeeper</Property>
-    </Property>
-    <Property name="CanFlee" type="Boolean">False</Property>
-    <Property name="Description" type="String">Parking Attendent</Property>
-    <Property name="FaceAction" type="Symbol" Symbol="0x7F95473">eFACEACTION_ACCESS_STORAGE</Property>
-    <Property name="FaceActionEnabled" type="Boolean">True</Property>
-    <Property name="HasInventoryUI" type="Boolean">True</Property>
-    <Property name="InventoryType" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
-    <Property name="PipsRequired" type="UInt32">0</Property>
-    <Property name="RemoveOnCompletion" type="Boolean">False</Property>
-    <Property name="RequiresGreet" type="Boolean">False</Property>
-    <Property name="SocialEffectName" type="String">FX_Social_Icon_White</Property>
-    <Property name="StoreType" type="Symbol" Symbol="0x2EDC739A">Storage</Property>
-    <Property name="Voice" type="String">Dayo</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-                <Property type="Symbol" Symbol="0x18AB26C4">Parking</Property>
-                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Vendors-ParkingVendor-parkingAttendent" nameUID="0xCFE2385C">
+	<!-- Parents -->
+	<Parent nameUID="0xD0BBE97D">default-component-FaceAction</Parent>
+	<Parent nameUID="0x8082A86">object-physical-character-Vendors-vendorBase</Parent>
+	<!-- Properties -->
+	<Property name="FaceAction" type="Symbol" symUID="0x7F95473">eFACEACTION_ACCESS_STORAGE</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x17EFC49D">Vendor</ListProperty>
+				<ListProperty type="Symbol" symUID="0x58B20F94">ParkingGuy</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Voice" type="String">Dayo</Property>
+	<Property name="RemoveOnCompletion" type="Boolean">false</Property>
+	<Property name="InventoryType" type="Symbol" symUID="0x9B06086B">Vehicle</Property>
+	<Property name="PipsRequired" type="UInt32">0</Property>
+	<Property name="CanFlee" type="Boolean">false</Property>
+	<Property name="StoreType" type="Symbol" symUID="0x2EDC739A">Storage</Property>
+	<Property name="AnimBankFileNames" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xA5BB75AF">Shopkeeper</ListProperty>
+	</Property>
+	<Property name="RequiresGreet" type="Boolean">false</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+				<ListProperty type="Symbol" symUID="0x18AB26C4">Parking</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="SocialEffectName" type="String">FX_Social_Icon_White</Property>
+	<Property name="FaceActionEnabled" type="Boolean">true</Property>
+	<Property name="HasInventoryUI" type="Boolean">true</Property>
+	<Property name="Description" type="String">Parking Attendent</Property>
+</PropertySetResource>

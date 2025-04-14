@@ -1,22 +1,33 @@
-<PropertySet name="default-timeset-CN_Comm" nameUID="0x7F52AFD5" schema="default-timeset-CN_Comm">
-    <Property name="TimeSetList" type="List">
-        <ListProperty nameUID="0xF4B7E331">
-            <Property name="OffTime" type="Int32">18</Property>
-            <Property name="OnTime" type="Int32">8</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0x4F97305D">default-spawnset-CN_Comm_Day</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-1</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">1</Property>
-            <Property name="OnTime" type="Int32">18</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0xD6112E2A">default-spawnset-cn_commercial_eve</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-1</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">8</Property>
-            <Property name="OnTime" type="Int32">1</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0xC39999F8">default-spawnset-cn_commercial_night</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-3</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-timeset-CN_Comm" nameUID="0x7F52AFD5">
+	<!-- Properties -->
+	<Property name="TimeSetList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Night" nameUID="0xF4B7E331">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">18</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-1</Property>
+				<Property name="OnTime" type="Int32">8</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0x4F97305D">default-spawnset-CN_Comm_Day</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">1</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-1</Property>
+				<Property name="OnTime" type="Int32">18</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0xD6112E2A">default-spawnset-cn_commercial_eve</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">8</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-3</Property>
+				<Property name="OnTime" type="Int32">1</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0xC39999F8">default-spawnset-cn_commercial_night</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

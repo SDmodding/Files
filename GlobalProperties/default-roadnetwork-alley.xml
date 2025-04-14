@@ -1,8 +1,10 @@
-<PropertySet name="default-roadnetwork-alley" nameUID="0x652BB724" schema="default-roadnetwork-alley">
-    <Parent>default-roadnetwork-road</Parent>
-    <Property name="Density" type="Float32">0</Property>
-    <Property name="DensityNight" type="Float32">0</Property>
-    <Property name="GpsRestricted" type="Boolean">True</Property>
-    <Property name="RoadDriveableTraffic" type="Boolean">False</Property>
-    <Property name="RoadID" type="UInt32">20</Property>
-</PropertySet>
+<PropertySetResource name="default-roadnetwork-alley" nameUID="0x652BB724">
+	<!-- Parents -->
+	<Parent nameUID="0x3ABE3A4E">default-roadnetwork-road</Parent>
+	<!-- Properties -->
+	<Property name="DensityNight" type="Float32">0</Property>
+	<Property name="Density" type="Float32">0</Property>
+	<Property name="RoadID" type="UInt32">20</Property>
+	<Property name="GpsRestricted" type="Boolean">true</Property>
+	<Property name="RoadDriveableTraffic" type="Boolean">false</Property>
+</PropertySetResource>

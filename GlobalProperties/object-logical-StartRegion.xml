@@ -1,11 +1,17 @@
-<PropertySet name="object-logical-StartRegion" nameUID="0xC707EC44" schema="object-logical-StartRegion">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0xEF977909">StartRegion</Property>
-    <Property name="default-component-Region" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Region</Parent>
-            <Property name="Radius" type="Float32">1</Property>
-            <Property name="Type" type="UInt32">2</Property>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-StartRegion" nameUID="0xC707EC44">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x5DCB1884">default-component-StartRegion</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0xEF977909">StartRegion</Property>
+	<Property name="default-component-Region" type="PropSet">
+		<PropertySet>
+			<!-- Parents -->
+			<Parent nameUID="0xF6AC0CA8">default-component-Region</Parent>
+			<!-- Properties -->
+			<Property name="Type" type="UInt32">2</Property>
+			<Property name="Radius" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

@@ -1,44 +1,52 @@
-<PropertySet name="object-physical-vehicle-Blast_Reward06" nameUID="0x5B8BE31D" schema="object-physical-vehicle-Blast_Reward06">
-    <Parent>object-physical-vehicle-Blast01</Parent>
-    <Property name="Description" type="String">2Dr- Blast_Reward06</Property>
-    <Property name="VehicleLook" type="List">
-        <Property type="String">WhitePaint</Property>
-    </Property>
-    <Property name="VehicleLookGlass" type="List">
-        <Property type="String">GlassBlack02</Property>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0xAA819C0E">Data\Vehicles_New\Blast01</Property>
-                <Property type="Symbol" Symbol="0x512B400D">Data\Vehicles_New\WheelStyle05</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List">
-                <Property type="Symbol" Symbol="0x83AB0046">Data\Vehicles_New\Blast01_ts003</Property>
-                <Property type="Symbol" Symbol="0x2D743183">Data\Vehicles_New\WheelStyle05_ts_001</Property>
-            </TextureSetList>
-            <EntityType type="Symbol">FourWheelVehicle</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_VehicleEffects" type="PropSet">
-        <BinData>
-            <headlightsInRainProbability type="Float32">0.5</headlightsInRainProbability>
-            <headlightsAlwaysOn type="Boolean">false</headlightsAlwaysOn>
-            <headlightsAlwaysOff type="Boolean">false</headlightsAlwaysOff>
-            <DamageTransfer type="Symbol">vehicle2door</DamageTransfer>
-            <EffectGroupName type="Symbol">common4doorcar</EffectGroupName>
-            <InitialDirtSeed type="Float32">0.2</InitialDirtSeed>
-            <GrimeFactor type="Float32">0</GrimeFactor>
-            <Speed0 type="Float32">0</Speed0>
-            <Speed1 type="Float32">5</Speed1>
-            <Speed2 type="Float32">30</Speed2>
-            <Speed3 type="Float32">60</Speed3>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-Blast_Reward06" nameUID="0x5B8BE31D">
+	<!-- Parents -->
+	<Parent nameUID="0x9C2ECD51">object-physical-vehicle-Blast01</Parent>
+	<!-- Properties -->
+	<Property name="VehicleLookGlass" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">GlassBlack02</ListProperty>
+	</Property>
+	<Property name="component_VehicleEffects" type="PropSet">
+		<PropertySet name="component_VehicleEffects" nameUID="0x83824245" schema="default-component-VehicleEffects">
+			<!-- Schema Properties -->
+			<Property name="headlightsInRainProbability" type="Float32">0.5</Property>
+			<Property name="headlightsAlwaysOn" type="Boolean">false</Property>
+			<Property name="headlightsAlwaysOff" type="Boolean">false</Property>
+			<Property name="DamageTransfer" type="SymbolUC" symUID="0xDCF96C57">vehicle2door</Property>
+			<Property name="EffectGroupName" type="SymbolUC" symUID="0xC4B2E9E2">common4doorcar</Property>
+			<Property name="InitialDirtSeed" type="Float32">0.2</Property>
+			<Property name="GrimeFactor" type="Float32">0</Property>
+			<Property name="Speed0" type="Float32">0</Property>
+			<Property name="Speed1" type="Float32">5</Property>
+			<Property name="Speed2" type="Float32">30</Property>
+			<Property name="Speed3" type="Float32">60</Property>
+		</PropertySet>
+	</Property>
+	<Property name="VehicleLook" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">WhitePaint</ListProperty>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xAA819C0E">Data\Vehicles_New\Blast01</ListProperty>
+				<ListProperty type="Symbol" symUID="0x512B400D">Data\Vehicles_New\WheelStyle05</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x83AB0046">Data\Vehicles_New\Blast01_ts003</ListProperty>
+				<ListProperty type="Symbol" symUID="0x2D743183">Data\Vehicles_New\WheelStyle05_ts_001</ListProperty>
+			</Property>
+			<Property name="EntityType" type="SymbolUC" symUID="0x9FA8BBC9">FourWheelVehicle</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">2Dr- Blast_Reward06</Property>
+</PropertySetResource>

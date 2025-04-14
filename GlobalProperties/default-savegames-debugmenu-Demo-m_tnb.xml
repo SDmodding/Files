@@ -1,21 +1,26 @@
-<PropertySet name="default-savegames-debugmenu-Demo-m_tnb" nameUID="0x192CD9AF" schema="default-savegames-debugmenu-Demo-m_tnb">
-    <Parent>default-savegames-defaults</Parent>
-    <Property name="CopDrivingStage" type="Int32">2</Property>
-    <Property name="DynamicTutorials" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0x55D6695A">GrapplingInnocentTutorial</Property>
-                <Property type="Symbol" Symbol="0xE34A9D8B">DrivingTutorial</Property>
-                <Property type="Symbol" Symbol="0xEA369349">CopsTutorial</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="GunplayUpgradeStage" type="Int32">2</Property>
-    <Property name="StatueDefensiveStage" type="Int32">3</Property>
-    <Property name="StatueOffensiveStage" type="Int32">3</Property>
-</PropertySet>
+<PropertySetResource name="default-savegames-debugmenu-Demo-m_tnb" nameUID="0x192CD9AF">
+	<!-- Parents -->
+	<Parent nameUID="0x10965489">default-savegames-defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopDrivingStage" type="Int32">2</Property>
+	<Property name="StatueDefensiveStage" type="Int32">3</Property>
+	<Property name="StatueOffensiveStage" type="Int32">3</Property>
+	<Property name="GunplayUpgradeStage" type="Int32">2</Property>
+	<Property name="DynamicTutorials" type="PropSet">
+		<PropertySet name="Set" nameUID="0xDBC4B01D">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x55D6695A">GrapplingInnocentTutorial</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE34A9D8B">DrivingTutorial</ListProperty>
+				<ListProperty type="Symbol" symUID="0xEA369349">CopsTutorial</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

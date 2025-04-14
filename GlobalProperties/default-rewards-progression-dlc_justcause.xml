@@ -1,10 +1,19 @@
-<PropertySet name="default-rewards-progression-dlc_justcause" nameUID="0xA7E7EDED" schema="default-rewards-progression-dlc_justcause">
-    <Parent>default-rewards-progression-dlc_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_DLC_JUSTCAUSE</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0xDE3E6A23" type="String">$DLC_PRESALE_JUSTCAUSE_REWARD_1</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-dlc_justcause" nameUID="0xA7E7EDED">
+	<!-- Parents -->
+	<Parent nameUID="0x32FFCA04">default-rewards-progression-dlc_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_PRESALE_JUSTCAUSE_REWARD_1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_DLC_JUSTCAUSE</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0xF630B577 (Normal) -->

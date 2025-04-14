@@ -1,15 +1,24 @@
-<PropertySet name="default-rewards-progression-M_VEF" nameUID="0x10EF4B10" schema="default-rewards-progression-M_VEF">
-    <Parent>default-rewards-progression-favor_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_VENDOR_FAVOR</Property>
-    <Property name="MoneyAdjustment" type="Int32">200</Property>
-    <Property name="StandingAdjustment" type="Int32">200</Property>
-    <Property name="TimeAttackTargetTime" type="Float32">25</Property>
-    <Property name="TimeAttackZeroTime" type="Float32">35</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xB4160B5B">
-            <Property name="0x2DFB6FC5" type="Int32">12</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_12</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_VEF" nameUID="0x10EF4B10">
+	<!-- Parents -->
+	<Parent nameUID="0xB5D2DBF9">default-rewards-progression-favor_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xB4160B5B">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">12</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_12</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="MoneyAdjustment" type="Int32">200</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_VENDOR_FAVOR</Property>
+	<Property name="TimeAttackZeroTime" type="Float32">35</Property>
+	<Property name="TimeAttackTargetTime" type="Float32">25</Property>
+	<Property name="StandingAdjustment" type="Int32">200</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0xB4160B5B (Normal) -->

@@ -1,49 +1,82 @@
-<PropertySet name="object-physical-explosion-truck" nameUID="0x2BF02FDB" schema="object-physical-explosion-truck">
-    <Property name="CameraShakeAmplitude" type="Float32">7</Property>
-    <Property name="CameraShakeMaxDistance" type="Float32">60</Property>
-    <Property name="Description" type="String">Vehicle Explosion</Property>
-    <Property name="DistanceMagnitudeRatioTable" type="List">
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="Distance" type="Float32">0</Property>
-            <Property name="Ratio" type="Float32">1</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="Distance" type="Float32">1</Property>
-            <Property name="Ratio" type="Float32">1</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="Distance" type="Float32">3</Property>
-            <Property name="Ratio" type="Float32">1</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="Distance" type="Float32">5</Property>
-            <Property name="Ratio" type="Float32">0.5</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="Distance" type="Float32">6</Property>
-            <Property name="Ratio" type="Float32">0</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="Distance" type="Float32">8.5</Property>
-            <Property name="Ratio" type="Float32">0</Property>
-        </ListProperty>
-    </Property>
-    <Property name="MassMagnitudeTable" type="List">
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="ExplosionMagnitude" type="Float32">15</Property>
-            <Property name="ExplosionMass" type="Float32">5</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="ExplosionMagnitude" type="Float32">10000</Property>
-            <Property name="ExplosionMass" type="Float32">1000</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="ExplosionMagnitude" type="Float32">10000</Property>
-            <Property name="ExplosionMass" type="Float32">1999</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="ExplosionMagnitude" type="Float32">25000</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SimObjectToSpawn" type="Symbol" Symbol="0x79462B6C">object-physical-prop-StreamedObject-SPFlinger001</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-explosion-truck" nameUID="0x2BF02FDB">
+	<!-- Properties -->
+	<Property name="CameraShakeMaxDistance" type="Float32">60</Property>
+	<Property name="CameraShakeAmplitude" type="Float32">7</Property>
+	<Property name="DistanceMagnitudeRatioTable" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="Ratio" type="Float32">1</Property>
+				<Property name="Distance" type="Float32">0</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="Ratio" type="Float32">1</Property>
+				<Property name="Distance" type="Float32">1</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="Ratio" type="Float32">1</Property>
+				<Property name="Distance" type="Float32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="Ratio" type="Float32">0.5</Property>
+				<Property name="Distance" type="Float32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="Ratio" type="Float32">0</Property>
+				<Property name="Distance" type="Float32">6</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="Ratio" type="Float32">0</Property>
+				<Property name="Distance" type="Float32">8.5</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="MassMagnitudeTable" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="ExplosionMass" type="Float32">5</Property>
+				<Property name="ExplosionMagnitude" type="Float32">15</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="ExplosionMass" type="Float32">1000</Property>
+				<Property name="ExplosionMagnitude" type="Float32">10000</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="ExplosionMass" type="Float32">1999</Property>
+				<Property name="ExplosionMagnitude" type="Float32">10000</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="ExplosionMagnitude" type="Float32">25000</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SimObjectToSpawn" type="Symbol" symUID="0x79462B6C">object-physical-prop-StreamedObject-SPFlinger001</Property>
+	<Property name="Description" type="String">Vehicle Explosion</Property>
+</PropertySetResource>

@@ -1,20 +1,120 @@
-<PropertySet name="default-component-InterestPoint-martialarts_chargerh_parent" nameUID="0x67C27A42" schema="default-component-InterestPoint-martialarts_chargerh_parent">
-    <Property name="AnimBankFileNames" type="List">
-        <Property type="SymbolUC" Symbol="0x20BBE2AB">POI_MartialArts_Student_M</Property>
-        <Property type="SymbolUC" Symbol="0x12DD7203">Strikes</Property>
-        <Property type="SymbolUC" Symbol="0x41227EF3">Locomotion</Property>
-        <Property type="SymbolUC" Symbol="0xB0A88FEE">MONKEYKINGREPLACEDANIMS</Property>
-        <Property type="SymbolUC" Symbol="0x1383338B">POI_Pray_M</Property>
-    </Property>
-    <Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_MartialArts_ChargeRH_Parent.act</Property>
-    <Property name="Category" type="Symbol" Symbol="0xF3A76FBB">Dojo</Property>
-    <Property name="Description" type="Symbol" Symbol="0x1C46C391">Charge Roundhouse Attack (Parent)</Property>
-    <Property name="HasBehaviour" type="Boolean">True</Property>
-    <Property name="component_InterestPoint" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-InterestPoint</Parent>
-        </PropertySet>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-    <Property name="schema_interestpoint_script" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="default-component-InterestPoint-martialarts_chargerh_parent" nameUID="0x67C27A42">
+	<!-- Properties -->
+	<Property name="HasBehaviour" type="Boolean">true</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x6DBA8169">Dojo_Teacher</ListProperty>
+				<ListProperty type="Symbol" symUID="0x7D481B92">Dojo_Student</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="BehaviourFile" type="String">Data\Global\Act\POI\POI_MartialArts_ChargeRH_Parent.act</Property>
+	<Property name="Category" type="Symbol" symUID="0xF3A76FBB">Dojo</Property>
+	<Property name="component_InterestPoint" type="PropSet">
+		<PropertySet name="component_InterestPoint" nameUID="0x9B2B8283" schema="default-component-InterestPoint">
+			<!-- Parents -->
+			<Parent nameUID="0xBF3B3B4B">default-component-InterestPoint</Parent>
+			<!-- Schema Properties -->
+			<Property name="InterestPointType" type="Symbol" symUID="0x3DAD5859">martialarts_chargerh_parent</Property>
+			<Property name="InterestPointPriority" type="Symbol" symUID="0xEA79A044">Low</Property>
+			<Property name="StartActive" type="Boolean">false</Property>
+			<Property name="Appeal" type="Float32">0.5</Property>
+			<Property name="MinAppealRadius" type="Float32">4.5</Property>
+			<Property name="MaxAppealRadius" type="Float32">8</Property>
+			<Property name="UserRelativeAngleRange" type="Float32">180</Property>
+			<Property name="GenderAllowed" type="Symbol" symUID="0xC91BB31">Any</Property>
+			<Property name="ChanceIsActive" type="Float32">1</Property>
+			<Property name="TimeOfDayToBecomeActiveInHours" type="Float32">0</Property>
+			<Property name="TimeOfDayToBecomeInactiveInHours" type="Float32">0</Property>
+			<Property name="UseTimeMin" type="Float32">-1</Property>
+			<Property name="UseTimeMax" type="Float32">-1</Property>
+			<Property name="CoolDownTimeMin" type="Float32">60</Property>
+			<Property name="CoolDownTimeMax" type="Float32">60</Property>
+			<Property name="ItemFilterAppliesToPlayer" type="Boolean">false</Property>
+			<Property name="ItemFilterOn" type="Boolean">true</Property>
+			<Property name="ItemListIsAllowable" type="Boolean">true</Property>
+			<Property name="ItemList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x64AC832F">eINVENTORY_ITEM_CELLPHONE</ListProperty>
+				<ListProperty type="Symbol" symUID="0x36CB3E2E">eINVENTORY_ITEM_CIGARETTE</ListProperty>
+				<ListProperty type="Symbol" symUID="0xDCF92817">None</ListProperty>
+			</Property>
+			<Property name="MaxConcurrentInstances" type="Int32">-1</Property>
+			<Property name="MaxDistanceFromPlayer" type="Float32">-1</Property>
+			<Property name="SpawnAmbientUserDistance" type="Float32">-1</Property>
+			<Property name="IsAutoInteractable" type="Boolean">false</Property>
+			<Property name="RequiresSync" type="Boolean">true</Property>
+			<Property name="PositionSyncRequired" type="Boolean">true</Property>
+			<Property name="RotationSyncRequired" type="Boolean">true</Property>
+			<Property name="WeatherFilterOn" type="Boolean">false</Property>
+			<Property name="WeatherFilterIsRaining" type="Boolean">false</Property>
+			<Property name="AllowRepeatedUse" type="Boolean">false</Property>
+			<Property name="AllowLeaders" type="Boolean">false</Property>
+			<Property name="AllowFollowers" type="Boolean">false</Property>
+			<Property name="MinGroupSize" type="Int32">-1</Property>
+			<Property name="MaxGroupSize" type="Int32">-1</Property>
+			<Property name="InitialUseOnly" type="Boolean">false</Property>
+			<Property name="IgnoreCharacterCooldown" type="Boolean">false</Property>
+			<Property name="UserCanBeRecycled" type="Boolean">true</Property>
+			<Property name="ResumeIfInterrupted" type="Boolean">false</Property>
+			<Property name="AllowSocialInteraction" type="Boolean">false</Property>
+			<Property name="IsSittingConversation" type="Boolean">false</Property>
+			<Property name="IgnoreStimuli" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="schema_interestpoint_script" type="PropSet">
+		<PropertySet name="schema_interestpoint_script" nameUID="0xA0D43F36" schema="default-schema-interestpoint_script">
+			<!-- Schema Properties -->
+			<Property name="HasBeginningScript" type="Boolean">true</Property>
+			<Property name="HasEndingScript" type="Boolean">true</Property>
+			<Property name="BeginningScriptText" type="String">
+				[
+					!myPOI: poi_get_target()
+					if myPOI.is_not_nil()
+					[
+						!partnerPOI: myPOI.get_child_poi()&lt;&gt;InterestPoint
+						if partnerPOI.is_not_nil()
+						[			
+							!partnerCharacter: myPOI.get_child_poi()&lt;&gt;InterestPoint.get_user()
+							if partnerCharacter.is_not_nil()
+							[
+								partnerCharacter&lt;&gt;Character.set_target(this, &quot;eTARGET_TYPE_FOCUS&quot;)
+								partnerCharacter&lt;&gt;Character.set_target_lock(&quot;eTARGET_TYPE_FOCUS&quot;, true)
+		
+								set_target(partnerCharacter&lt;&gt;Character, &quot;eTARGET_TYPE_FOCUS&quot;)
+								set_target_lock(&quot;eTARGET_TYPE_FOCUS&quot;, true)
+							] 
+						]				
+					]
+					else
+					[
+						poi_stop_using_use()
+					]			 	
+				]		
+			</Property>
+			<Property name="EndingScriptText" type="String">
+				[
+					clear_target(&quot;eTARGET_TYPE_FOCUS&quot;)
+				]
+			</Property>
+			<Property name="BeginningScriptClass" type="String">Character</Property>
+			<Property name="EndingScriptClass" type="String">Character</Property>
+			<Property name="HasOnReservationScript" type="Boolean">false</Property>
+			<Property name="OnReservationScriptText" type="String"/>
+			<Property name="OnReservationScriptClass" type="String"/>
+		</PropertySet>
+	</Property>
+	<Property name="AnimBankFileNames" type="List">
+		<!-- Elements -->
+		<ListProperty type="SymbolUC" symUID="0x20BBE2AB">POI_MartialArts_Student_M</ListProperty>
+		<ListProperty type="SymbolUC" symUID="0x12DD7203">STRIKES</ListProperty>
+		<ListProperty type="SymbolUC" symUID="0x41227EF3">LOCOMOTION</ListProperty>
+		<ListProperty type="SymbolUC" symUID="0xB0A88FEE">MONKEYKINGREPLACEDANIMS</ListProperty>
+		<ListProperty type="SymbolUC" symUID="0x1383338B">POI_Pray_M</ListProperty>
+	</Property>
+	<Property name="Description" type="Symbol" symUID="0x1C46C391">Charge Roundhouse Attack (Parent)</Property>
+</PropertySetResource>

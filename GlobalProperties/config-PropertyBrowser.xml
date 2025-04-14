@@ -1,25 +1,39 @@
-<PropertySet name="config-PropertyBrowser" nameUID="0x42162D5B" schema="config-PropertyBrowser">
-    <Property name="PropertyBrowser_ControlOverrides" type="List">
-        <ListProperty nameUID="0xBABD20CC">
-            <Property name="ControlOverride_Control" type="Symbol" Symbol="0xCDF8EF7C">ColourPicker</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6472EDC3">
-            <Property name="ControlOverride_Control" type="Symbol" Symbol="0xCDF8EF7C">ColourPicker</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x904347ED">
-            <Property name="ControlOverride_Control" type="Symbol" Symbol="0xCDF8EF7C">ColourPicker</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC665DA74">
-            <Parent>Enum</Parent>
-            <Property name="ControlOverride_Control" type="Symbol" Symbol="0x8A46C4DE">Enum</Property>
-            <Property name="ControlOverride_EnumValues" type="List">
-                <Property type="Symbol" Symbol="0xDCC0363B">omni</Property>
-                <Property type="Symbol" Symbol="0x14FBE13B">spot</Property>
-                <Property type="Symbol" Symbol="0xFB43A47F">direction</Property>
-                <Property type="Symbol" Symbol="0xBE884B2B">card</Property>
-                <Property type="Symbol" Symbol="0x3F74B2E4">spot_light_shaft</Property>
-                <Property type="Symbol" Symbol="0x2D2AD009">area</Property>
-            </Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="config-PropertyBrowser" nameUID="0x42162D5B">
+	<!-- Properties -->
+	<Property name="PropertyBrowser_ControlOverrides" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Light_Color" nameUID="0xBABD20CC">
+				<!-- Properties -->
+				<Property name="ControlOverride_Control" type="Symbol" symUID="0xCDF8EF7C">ColourPicker</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="ColourTint_Instance" nameUID="0x6472EDC3">
+				<!-- Properties -->
+				<Property name="ControlOverride_Control" type="Symbol" symUID="0xCDF8EF7C">ColourPicker</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="ColourTintSI_Instance" nameUID="0x904347ED">
+				<!-- Properties -->
+				<Property name="ControlOverride_Control" type="Symbol" symUID="0xCDF8EF7C">ColourPicker</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Light_Type" nameUID="0xC665DA74">
+				<!-- Properties -->
+				<Property name="ControlOverride_EnumValues" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xDCC0363B">omni</ListProperty>
+					<ListProperty type="Symbol" symUID="0x14FBE13B">spot</ListProperty>
+					<ListProperty type="Symbol" symUID="0xFB43A47F">direction</ListProperty>
+					<ListProperty type="Symbol" symUID="0xBE884B2B">card</ListProperty>
+					<ListProperty type="Symbol" symUID="0x3F74B2E4">spot_light_shaft</ListProperty>
+					<ListProperty type="Symbol" symUID="0x2D2AD009">area</ListProperty>
+				</Property>
+				<Property name="ControlOverride_Control" type="Symbol" symUID="0x8A46C4DE">Enum</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

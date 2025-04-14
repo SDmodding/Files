@@ -1,63 +1,87 @@
-<PropertySet name="object-physical-vehicle-CungSauDelivery01" nameUID="0xECFDBF15" schema="object-physical-vehicle-CungSauDelivery01">
-    <Parent>object-physical-vehicle-CungSau02</Parent>
-    <Property name="Description" type="String">T2Dr- CungSauDelivery01</Property>
-    <Property name="SimObjChildren" type="List">
-        <ListProperty nameUID="0x79D5B5CF">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">UnloadTruck</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="-3.75" y="0" z="0.1" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-unloadtruck</Parent>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF8AE0C39">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">OpenTruck</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="-4.25" y="0" z="0.1" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-opentruck</Parent>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="VehicleLook" type="List">
-        <Property type="String">CungSauPaint03</Property>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0x76F926FF">Data\Vehicles_New\CungSau02</Property>
-                <Property type="Symbol" Symbol="0x58A97B63">Data\Vehicles_New\WheelStyle07</Property>
-                <Property type="Symbol" Symbol="0x562E38B6">Data\Vehicles_New\WheelStyle07_Rear</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List">
-                <Property type="Symbol" Symbol="0x7101C600">Data\Vehicles_New\CungSau02_ts003</Property>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-            </TextureSetList>
-            <EntityType type="Symbol">FourDifferentWheelVehicle</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-CungSauDelivery01" nameUID="0xECFDBF15">
+	<!-- Parents -->
+	<Parent nameUID="0x3BE2DFDF">object-physical-vehicle-CungSau02</Parent>
+	<!-- Properties -->
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xD1027A97">Unloadable</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="SimObjChildren" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="UnloadTruck" nameUID="0x79D5B5CF">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="-3.75" y="0" z="0.1"/>
+				</Property>
+				<Property name="NameRoot" type="String">UnloadTruck</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x5583FBAF">default-component-InterestPoint-unloadtruck</Parent>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="OpenTruck" nameUID="0xF8AE0C39">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="-4.25" y="0" z="0.1"/>
+				</Property>
+				<Property name="NameRoot" type="String">OpenTruck</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x5F611B0B">default-component-InterestPoint-opentruck</Parent>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="VehicleLook" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">CungSauPaint03</ListProperty>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x76F926FF">Data\Vehicles_New\CungSau02</ListProperty>
+				<ListProperty type="Symbol" symUID="0x58A97B63">Data\Vehicles_New\WheelStyle07</ListProperty>
+				<ListProperty type="Symbol" symUID="0x562E38B6">Data\Vehicles_New\WheelStyle07_Rear</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x7101C600">Data\Vehicles_New\CungSau02_ts003</ListProperty>
+				<ListProperty type="Symbol"/>
+				<ListProperty type="Symbol"/>
+			</Property>
+			<Property name="EntityType" type="SymbolUC" symUID="0x23151DE">FourDifferentWheelVehicle</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">T2Dr- CungSauDelivery01</Property>
+</PropertySetResource>

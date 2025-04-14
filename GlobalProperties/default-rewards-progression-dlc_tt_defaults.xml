@@ -1,5 +1,7 @@
-<PropertySet name="default-rewards-progression-dlc_tt_defaults" nameUID="0xCBB66843" schema="default-rewards-progression-dlc_tt_defaults">
-    <Parent>default-rewards-defaults</Parent>
-    <Property name="CompletionTitle" type="String">$OVERLAY_REWARD_COMPLETE</Property>
-    <Property name="GamesliceType" type="Symbol" Symbol="0x9ECC3976">REWARD</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-dlc_tt_defaults" nameUID="0xCBB66843">
+	<!-- Parents -->
+	<Parent nameUID="0xC21C95B9">default-rewards-defaults</Parent>
+	<!-- Properties -->
+	<Property name="GamesliceType" type="Symbol" symUID="0x9ECC3976">REWARD</Property>
+	<Property name="CompletionTitle" type="String">$OVERLAY_REWARD_COMPLETE</Property>
+</PropertySetResource>

@@ -1,11 +1,20 @@
-<PropertySet name="default-rewards-progression-M_CNY_SDUR" nameUID="0x3E42C725" schema="default-rewards-progression-M_CNY_SDUR">
-    <Parent>default-rewards-progression-dlc_cny_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_SDURIOTS</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x71CAA1EC">
-            <Property name="0x2DFB6FC5" type="Int32">40</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_40</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_CNY_SDUR" nameUID="0x3E42C725">
+	<!-- Parents -->
+	<Parent nameUID="0xB911CE91">default-rewards-progression-dlc_cny_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x71CAA1EC">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">40</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_40</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_SDURIOTS</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x71CAA1EC (Normal) -->

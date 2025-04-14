@@ -1,49 +1,105 @@
-<PropertySet name="object-physical-prop-LOI_Furnace1FDoor01" nameUID="0xA7D7952" schema="object-physical-prop-LOI_Furnace1FDoor01">
-    <Parent>object-physical-prop-InteractableProp</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOI_Furnace1stFloorDoor01.act</Property>
-    <Property name="Description" type="String">LOI_Furnace1FDoor01</Property>
-    <Property name="SimObjChildren" type="List">
-        <ListProperty nameUID="0x528BB8A4">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">Sweatshop1FFurnaceUsePoint01</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-furnace</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x410A1B33">C_InteractionSync</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOI_Furnace1FDoor01</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x5F23BBBD">LOI_FURNACE1STFLOORDOOR01</Property>
-                <Property type="SymbolUC" Symbol="0xCD9AB04A">Locomotion_OnFire_Dies</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOI_Furnace1FDoor01</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x5F23BBBD">LOI_FURNACE1STFLOORDOOR01</Property>
-                <Property type="SymbolUC" Symbol="0xCD9AB04A">Locomotion_OnFire_Dies</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_InterestPoint" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOI_Furnace1FDoor01" nameUID="0xA7D7952">
+	<!-- Parents -->
+	<Parent nameUID="0xFB0E6A05">object-physical-prop-InteractableProp</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\Object\LOI_Furnace1stFloorDoor01.act</Property>
+	<Property name="SimObjChildren" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Sweatshop1FFurnaceUsePoint01" nameUID="0x528BB8A4">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">Sweatshop1FFurnaceUsePoint01</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x29824C97">default-component-InterestPoint-furnace</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0x410A1B33">C_InteractionSync</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOI_Furnace1FDoor01</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List">
+				<!-- Elements -->
+				<ListProperty type="SymbolUC" symUID="0x5F23BBBD">LOI_FURNACE1STFLOORDOOR01</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0xCD9AB04A">Locomotion_OnFire_Dies</ListProperty>
+			</Property>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_InterestPoint" type="PropSet">
+		<PropertySet name="component_InterestPoint" nameUID="0x9B2B8283" schema="default-component-InterestPoint">
+			<!-- Schema Properties -->
+			<Property name="InterestPointType" type="Symbol"/>
+			<Property name="InterestPointPriority" type="Symbol" symUID="0xEA79A044">Low</Property>
+			<Property name="StartActive" type="Boolean">true</Property>
+			<Property name="Appeal" type="Float32">0.5</Property>
+			<Property name="MinAppealRadius" type="Float32">1.5</Property>
+			<Property name="MaxAppealRadius" type="Float32">4</Property>
+			<Property name="UserRelativeAngleRange" type="Float32">180</Property>
+			<Property name="GenderAllowed" type="Symbol" symUID="0xC91BB31">Any</Property>
+			<Property name="ChanceIsActive" type="Float32">1</Property>
+			<Property name="TimeOfDayToBecomeActiveInHours" type="Float32">0</Property>
+			<Property name="TimeOfDayToBecomeInactiveInHours" type="Float32">0</Property>
+			<Property name="UseTimeMin" type="Float32">0</Property>
+			<Property name="UseTimeMax" type="Float32">0</Property>
+			<Property name="CoolDownTimeMin" type="Float32">0</Property>
+			<Property name="CoolDownTimeMax" type="Float32">0</Property>
+			<Property name="ItemFilterAppliesToPlayer" type="Boolean">false</Property>
+			<Property name="ItemFilterOn" type="Boolean">false</Property>
+			<Property name="ItemListIsAllowable" type="Boolean">true</Property>
+			<Property name="ItemList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x64AC832F">eINVENTORY_ITEM_CELLPHONE</ListProperty>
+				<ListProperty type="Symbol" symUID="0x36CB3E2E">eINVENTORY_ITEM_CIGARETTE</ListProperty>
+				<ListProperty type="Symbol" symUID="0xDCF92817">None</ListProperty>
+			</Property>
+			<Property name="MaxConcurrentInstances" type="Int32">-1</Property>
+			<Property name="MaxDistanceFromPlayer" type="Float32">-1</Property>
+			<Property name="SpawnAmbientUserDistance" type="Float32">-1</Property>
+			<Property name="IsAutoInteractable" type="Boolean">false</Property>
+			<Property name="RequiresSync" type="Boolean">true</Property>
+			<Property name="PositionSyncRequired" type="Boolean">true</Property>
+			<Property name="RotationSyncRequired" type="Boolean">true</Property>
+			<Property name="WeatherFilterOn" type="Boolean">false</Property>
+			<Property name="WeatherFilterIsRaining" type="Boolean">false</Property>
+			<Property name="AllowRepeatedUse" type="Boolean">false</Property>
+			<Property name="AllowLeaders" type="Boolean">false</Property>
+			<Property name="AllowFollowers" type="Boolean">false</Property>
+			<Property name="MinGroupSize" type="Int32">-1</Property>
+			<Property name="MaxGroupSize" type="Int32">-1</Property>
+			<Property name="InitialUseOnly" type="Boolean">false</Property>
+			<Property name="IgnoreCharacterCooldown" type="Boolean">false</Property>
+			<Property name="UserCanBeRecycled" type="Boolean">true</Property>
+			<Property name="ResumeIfInterrupted" type="Boolean">false</Property>
+			<Property name="AllowSocialInteraction" type="Boolean">false</Property>
+			<Property name="IsSittingConversation" type="Boolean">false</Property>
+			<Property name="IgnoreStimuli" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">LOI_Furnace1FDoor01</Property>
+</PropertySetResource>

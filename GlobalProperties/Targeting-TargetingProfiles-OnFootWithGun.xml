@@ -1,12 +1,14 @@
-<PropertySet name="Targeting-TargetingProfiles-OnFootWithGun" nameUID="0x749C18B" schema="Targeting-TargetingProfiles-OnFootWithGun">
-    <Parent>Targeting-TargetingProfiles-Default</Parent>
-    <Property name="ConsiderDownedTargets" type="Boolean">True</Property>
-    <Property name="IdlePriorityConeHorizontalFOV" type="Float32">90</Property>
-    <Property name="IdlePriorityConeTime" type="Float32">0.4</Property>
-    <Property name="eCONE_PERIPHERY_ConeDistance" type="Float32">6</Property>
-    <Property name="eCONE_PERIPHERY_HorizontalFOV" type="Float32">180</Property>
-    <Property name="eCONE_PRIORITY_ConeDistance" type="Float32">2.5</Property>
-    <Property name="eCONE_PRIORITY_HorizontalFOV" type="Float32">60</Property>
-    <Property name="eCONE_REAR_ConeDistance" type="Float32">2.5</Property>
-    <Property name="eCONE_REAR_HorizontalFOV" type="Float32">180</Property>
-</PropertySet>
+<PropertySetResource name="Targeting-TargetingProfiles-OnFootWithGun" nameUID="0x749C18B">
+	<!-- Parents -->
+	<Parent nameUID="0x756B6E8F">Targeting-TargetingProfiles-Default</Parent>
+	<!-- Properties -->
+	<Property name="eCONE_PERIPHERY_ConeDistance" type="Float32">6</Property>
+	<Property name="eCONE_PERIPHERY_HorizontalFOV" type="Float32">180</Property>
+	<Property name="ConsiderDownedTargets" type="Boolean">true</Property>
+	<Property name="eCONE_REAR_ConeDistance" type="Float32">2.5</Property>
+	<Property name="eCONE_PRIORITY_HorizontalFOV" type="Float32">60</Property>
+	<Property name="eCONE_PRIORITY_ConeDistance" type="Float32">2.5</Property>
+	<Property name="IdlePriorityConeHorizontalFOV" type="Float32">90</Property>
+	<Property name="eCONE_REAR_HorizontalFOV" type="Float32">180</Property>
+	<Property name="IdlePriorityConeTime" type="Float32">0.4</Property>
+</PropertySetResource>

@@ -1,6 +1,18 @@
-<PropertySet name="object-physical-character-Thug_18k_grap_amb" nameUID="0xB77A6D5B" schema="object-physical-character-Thug_18k_grap_amb">
-    <Parent>object-physical-character-AmbientCharacters-Thug_amb</Parent>
-    <Property name="CanWander" type="Boolean">True</Property>
-    <Property name="Description" type="String">Thug 18K Grappler - Amb</Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Thug_18k_grap_amb" nameUID="0xB77A6D5B">
+	<!-- Parents -->
+	<Parent nameUID="0x2F344521">object-physical-character-AmbientCharacters-Thug_amb</Parent>
+	<Parent nameUID="0x2DFA571">object-physical-character-Thug_18k_grap</Parent>
+	<!-- Properties -->
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xDC76B4F1">Triad</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="CanWander" type="Boolean">true</Property>
+	<Property name="Description" type="String">Thug 18K Grappler - Amb</Property>
+</PropertySetResource>

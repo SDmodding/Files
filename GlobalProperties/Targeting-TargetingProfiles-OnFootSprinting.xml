@@ -1,4 +1,6 @@
-<PropertySet name="Targeting-TargetingProfiles-OnFootSprinting" nameUID="0xD5DB3BDF" schema="Targeting-TargetingProfiles-OnFootSprinting">
-    <Parent>Targeting-TargetingProfiles-OnFootNoWeapon</Parent>
-    <Property name="HalfHorizontalIntentionLimiter" type="Float32">0</Property>
-</PropertySet>
+<PropertySetResource name="Targeting-TargetingProfiles-OnFootSprinting" nameUID="0xD5DB3BDF">
+	<!-- Parents -->
+	<Parent nameUID="0xD1E5F645">Targeting-TargetingProfiles-OnFootNoWeapon</Parent>
+	<!-- Properties -->
+	<Property name="HalfHorizontalIntentionLimiter" type="Float32">0</Property>
+</PropertySetResource>

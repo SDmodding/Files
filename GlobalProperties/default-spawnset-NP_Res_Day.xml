@@ -1,19 +1,25 @@
-<PropertySet name="default-spawnset-NP_Res_Day" nameUID="0x221E1B37" schema="default-spawnset-NP_Res_Day">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0x39642EB8">
-            <Property name="MaxInstances" type="Int32">2</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">10</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0xE53A49C1">object-physical-character-Postman</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0x7FEB8911">object-physical-character-AmbientCharacters-NP_Res_Day_Male</Property>
-        <Property type="Symbol" Symbol="0xA1ECBD77">object-physical-character-AmbientCharacters-NP_FaceCommenter_M</Property>
-        <Property type="Symbol" Symbol="0xB1EA5344">object-physical-character-AmbientCharacters-NP_Res_Day_Female</Property>
-        <Property type="Symbol" Symbol="0x8AA77616">object-physical-character-AmbientCharacters-NP_FaceCommenter_F</Property>
-        <Property type="Symbol" Symbol="0xD45E67DD">object-physical-character-AmbientCharacters-NP_Res_Day_Female_Yng</Property>
-        <Property type="Symbol" Symbol="0xE1B9F843">object-physical-character-ElderlyAmbMaleNP</Property>
-        <Property type="Symbol" Symbol="0xF0A18C51">object-physical-character-ElderlyAmbFemM</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-NP_Res_Day" nameUID="0x221E1B37">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="RareSpawnB" nameUID="0x39642EB8">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0xE53A49C1">object-physical-character-Postman</Property>
+				<Property name="MaxInstances" type="Int32">2</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">10</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x7FEB8911">object-physical-character-AmbientCharacters-NP_Res_Day_Male</ListProperty>
+		<ListProperty type="Symbol" symUID="0xA1ECBD77">object-physical-character-AmbientCharacters-NP_FaceCommenter_M</ListProperty>
+		<ListProperty type="Symbol" symUID="0xB1EA5344">object-physical-character-AmbientCharacters-NP_Res_Day_Female</ListProperty>
+		<ListProperty type="Symbol" symUID="0x8AA77616">object-physical-character-AmbientCharacters-NP_FaceCommenter_F</ListProperty>
+		<ListProperty type="Symbol" symUID="0xD45E67DD">object-physical-character-AmbientCharacters-NP_Res_Day_Female_Yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0xE1B9F843">object-physical-character-ElderlyAmbMaleNP</ListProperty>
+		<ListProperty type="Symbol" symUID="0xF0A18C51">object-physical-character-ElderlyAmbFemM</ListProperty>
+	</Property>
+</PropertySetResource>

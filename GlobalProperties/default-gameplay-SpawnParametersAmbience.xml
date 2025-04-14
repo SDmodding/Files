@@ -1,7 +1,9 @@
-<PropertySet name="default-gameplay-SpawnParametersAmbience" nameUID="0xE9993DFE" schema="default-gameplay-SpawnParametersAmbience">
-    <Property name="default-gameplay-AllowInActiveStatus" type="PropSet">
-        <PropertySet>
-            <Parent>default-gameplay-AllowInActiveStatus</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-gameplay-SpawnParametersAmbience" nameUID="0xE9993DFE">
+	<!-- Properties -->
+	<Property name="default-gameplay-AllowInActiveStatus" type="PropSet">
+		<PropertySet>
+			<!-- Parents -->
+			<Parent nameUID="0x3B332890">default-gameplay-AllowInActiveStatus</Parent>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

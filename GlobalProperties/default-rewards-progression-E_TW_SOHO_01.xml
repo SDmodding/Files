@@ -1,8 +1,10 @@
-<PropertySet name="default-rewards-progression-E_TW_SOHO_01" nameUID="0xF0C9270F" schema="default-rewards-progression-E_TW_SOHO_01">
-    <Parent>default-rewards-progression-E_TW</Parent>
-    <Property name="CompletionText" type="String">$MAP_LABELS_WANG</Property>
-    <Property name="CopStartingScore" type="Int32">250</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="EnableTriadScoring" type="Boolean">False</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-E_TW_SOHO_01" nameUID="0xF0C9270F">
+	<!-- Parents -->
+	<Parent nameUID="0xE82FB5E6">default-rewards-progression-E_TW</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">250</Property>
+	<Property name="CompletionText" type="String">$MAP_LABELS_WANG</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="EnableTriadScoring" type="Boolean">false</Property>
+</PropertySetResource>

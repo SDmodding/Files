@@ -1,22 +1,38 @@
-<PropertySet name="default-rewards-progression-M_HGF_BT" nameUID="0x10A68C4" schema="default-rewards-progression-M_HGF_BT">
-    <Parent>default-rewards-progression-dlc_hgf_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_BIG_TROUBLE</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x71CAA1EC">
-            <Property name="0x2DFB6FC5" type="Int32">31</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_31</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x25F428B2">
-            <Parent>DynamicTutorials</Parent>
-            <Property name="0x4E4D2ED3" type="String">PossessedPeds</Property>
-            <Property name="Type" type="Symbol" Symbol="0xF8447E4C">DynamicTutorials</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF57EB71C">
-            <Property name="0x308E0AE5" type="String">vehicle_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">Mission_Reward_01</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_HGF_BT" nameUID="0x10A68C4">
+	<!-- Parents -->
+	<Parent nameUID="0x1201C2F0">default-rewards-progression-dlc_hgf_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x71CAA1EC">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">31</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_31</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x25F428B2">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xF8447E4C">DynamicTutorials</Property>
+				<Property name="AssetId" type="String">PossessedPeds</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF57EB71C">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9B06086B">Vehicle</Property>
+				<Property name="Icon" type="String">vehicle_icon</Property>
+				<Property name="AssetId" type="String">Mission_Reward_01</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_BIG_TROUBLE</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x25F428B2 (Normal) -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x71CAA1EC (Normal) -->
+<!-- 0xF57EB71C (Normal) -->

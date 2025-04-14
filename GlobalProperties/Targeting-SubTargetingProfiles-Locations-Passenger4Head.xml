@@ -1,8 +1,9 @@
-<PropertySet name="Targeting-SubTargetingProfiles-Locations-Passenger4Head" nameUID="0x5C53969E" schema="Targeting-SubTargetingProfiles-Locations-Passenger4Head">
-    <Property name="AccuracyPenalty" type="Float32">0.4</Property>
-    <Property name="AccuracyRate" type="Float32">0.4</Property>
-    <Property name="BoneName" type="SymbolUC" Symbol="0x22C14F2A">Bip01 Head</Property>
-    <Property name="Offset" type="Vector3" x="0.055" y="0.055" z="0"/>
-    <Property name="Radius" type="Float32">0.2</Property>
-    <Property name="SubTargetType" type="Symbol" Symbol="0xB2FBBD8">eTARGET_TYPE_VEHICLE_PASSENGER4</Property>
-</PropertySet>
+<PropertySetResource name="Targeting-SubTargetingProfiles-Locations-Passenger4Head" nameUID="0x5C53969E">
+	<!-- Properties -->
+	<Property name="Radius" type="Float32">0.2</Property>
+	<Property name="SubTargetType" type="Symbol" symUID="0xB2FBBD8">eTARGET_TYPE_VEHICLE_PASSENGER4</Property>
+	<Property name="AccuracyPenalty" type="Float32">0.4</Property>
+	<Property name="Offset" type="Vector3" x="0.055" y="0" z="0"/>
+	<Property name="AccuracyRate" type="Float32">0.4</Property>
+	<Property name="BoneName" type="SymbolUC" symUID="0x22C14F2A">Bip01 Head</Property>
+</PropertySetResource>

@@ -1,49 +1,79 @@
-<PropertySet name="default-rewards-progression-M_WED" nameUID="0x18B5DCF9" schema="default-rewards-progression-M_WED">
-    <Parent>default-rewards-progression-mission_defaults</Parent>
-    <Property name="0x34BE120D" type="Int32">550</Property>
-    <Property name="0x39FD34D4" type="Int32">1</Property>
-    <Property name="0x72201393" type="Int32">1350</Property>
-    <Property name="0xBF780215" type="Symbol"/>
-    <Property name="0xC3DF597C" type="Int32">290</Property>
-    <Property name="0xC71E44CB" type="Int32">250</Property>
-    <Property name="0xCA5D6212" type="Int32">1</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_WEDDING</Property>
-    <Property name="CopStartingScore" type="Int32">75</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="GamesliceType" type="Symbol"/>
-    <Property name="MoneyAdjustment" type="Int32">0</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">500</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x223BF3CF">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">OutfitBloody</Property>
-            <Property name="0xDE3E6A23" type="String">$MISSION_REWARD_BLOODY</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x49851C51">
-            <Property name="0x2DFB6FC5" type="Int32">8</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_08</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x223BF3CF">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">S_DGslipon_TS00(Tint: 0)</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x223BF3CF">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">P_SuitDress_TS00(Tint: 4)</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x223BF3CF">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">T_SuitFuneral_TS04(Tint: 1)</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_WED" nameUID="0x18B5DCF9">
+	<!-- Parents -->
+	<Parent nameUID="0xD274BB76">default-rewards-progression-mission_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x223BF3CF">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">OutfitBloody</Property>
+				<Property name="Text" type="String">$MISSION_REWARD_BLOODY</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x49851C51">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">8</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_08</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x223BF3CF">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">S_DGslipon_TS00(Tint: 0)</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x223BF3CF">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">P_SuitDress_TS00(Tint: 4)</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x223BF3CF">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">T_SuitFuneral_TS04(Tint: 1)</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">75</Property>
+	<Property name="~34be120d~" type="Int32">550</Property>
+	<Property name="MoneyAdjustment" type="Int32">0</Property>
+	<Property name="~39fd34d4~" type="Int32">1</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_WEDDING</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">1350</Property>
+	<Property name="TriadTargetScore" type="Int32">500</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="~bf780215~" type="Symbol" symUID="0x5A71475C"/>
+	<Property name="~c3df597c~" type="Int32">290</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0xE3322BAE"/>
+	<Property name="~c71e44cb~" type="Int32">250</Property>
+	<Property name="~ca5d6212~" type="Int32">1</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x223BF3CF (Normal) -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x34BE120D (Normal) -->
+<!-- 0x39FD34D4 (Normal) -->
+<!-- 0x49851C51 (Normal) -->
+<!-- 0x5A71475C (Normal) -->
+<!-- 0xBF780215 (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->
+<!-- 0xE3322BAE (Normal) -->

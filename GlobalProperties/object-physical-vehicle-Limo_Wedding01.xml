@@ -1,6 +1,9 @@
-<PropertySet name="object-physical-vehicle-Limo_Wedding01" nameUID="0xC911701F" schema="object-physical-vehicle-Limo_Wedding01">
-    <Parent>object-physical-vehicle-Limo01</Parent>
-    <Property name="VehicleLook" type="List">
-        <Property type="String">WhiteNewPaint</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-Limo_Wedding01" nameUID="0xC911701F">
+	<!-- Parents -->
+	<Parent nameUID="0x927387BC">object-physical-vehicle-Limo01</Parent>
+	<!-- Properties -->
+	<Property name="VehicleLook" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">WhiteNewPaint</ListProperty>
+	</Property>
+</PropertySetResource>

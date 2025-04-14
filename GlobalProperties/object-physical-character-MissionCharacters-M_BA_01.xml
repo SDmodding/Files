@@ -1,5 +1,16 @@
-<PropertySet name="object-physical-character-MissionCharacters-M_BA_01" nameUID="0x9D7C431B" schema="object-physical-character-MissionCharacters-M_BA_01">
-    <Parent>object-physical-character-Tran</Parent>
-    <Property name="Description" type="String">Mission: Buried Alive - Tran</Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-MissionCharacters-M_BA_01" nameUID="0x9D7C431B">
+	<!-- Parents -->
+	<Parent nameUID="0x211F4884">object-physical-character-Tran</Parent>
+	<!-- Properties -->
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x658A9612">Mission_NPC</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Mission: Buried Alive - Tran</Property>
+</PropertySetResource>

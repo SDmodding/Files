@@ -1,10 +1,17 @@
-<PropertySet name="object-logical-SpawnPoint" nameUID="0x64E81080" schema="object-logical-SpawnPoint">
-    <Parent>default-SimObject</Parent>
-    <Property name="AIDataBuild" type="Boolean">True</Property>
-    <Property name="ObjectType" type="Symbol" Symbol="0xF9D450A8">SpawnPoint</Property>
-    <Property name="component_SpawnPoint" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-SpawnPoint</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-SpawnPoint" nameUID="0x64E81080">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<!-- Properties -->
+	<Property name="AIDataBuild" type="Boolean">true</Property>
+	<Property name="component_SpawnPoint" type="PropSet">
+		<PropertySet name="component_SpawnPoint" nameUID="0x13077530" schema="default-component-SpawnPoint">
+			<!-- Parents -->
+			<Parent nameUID="0x25429B19">default-component-SpawnPoint</Parent>
+			<!-- Schema Properties -->
+			<Property name="DeferSpawning" type="Boolean">false</Property>
+			<Property name="ThugPoint" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="ObjectType" type="Symbol" symUID="0xF9D450A8">SpawnPoint</Property>
+</PropertySetResource>

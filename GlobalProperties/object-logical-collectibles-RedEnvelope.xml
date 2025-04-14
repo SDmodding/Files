@@ -1,7 +1,9 @@
-<PropertySet name="object-logical-collectibles-RedEnvelope" nameUID="0xAD8E48BD" schema="object-logical-collectibles-RedEnvelope">
-    <Parent>object-logical-collectibles-Base</Parent>
-    <Property name="CollectibleSpawnInfo" type="Symbol" Symbol="0x3908DC8B">object-physical-prop-StreamedObject-MoneyDrop_DLC001</Property>
-    <Property name="CollectibleType" type="Symbol" Symbol="0x494CDF4D">ReservedFMapBool2</Property>
-    <Property name="DeleteAfterUse" type="Boolean">True</Property>
-    <Property name="RewardsPropertySet" type="Symbol"/>
-</PropertySet>
+<PropertySetResource name="object-logical-collectibles-RedEnvelope" nameUID="0xAD8E48BD">
+	<!-- Parents -->
+	<Parent nameUID="0x9611976B">object-logical-collectibles-Base</Parent>
+	<!-- Properties -->
+	<Property name="RewardsPropertySet" type="Symbol" symUID="0x90F02EE6">default-rewards-dlc-redenvelope_rewards</Property>
+	<Property name="CollectibleType" type="Symbol" symUID="0x494CDF4D">ReservedFMapBool2</Property>
+	<Property name="DeleteAfterUse" type="Boolean">true</Property>
+	<Property name="CollectibleSpawnInfo" type="Symbol" symUID="0x3908DC8B">object-physical-prop-StreamedObject-MoneyDrop_DLC001</Property>
+</PropertySetResource>

@@ -1,51 +1,58 @@
-<PropertySet name="object-physical-prop-LOM_ElecStoreShutter002" nameUID="0xB402C432" schema="object-physical-prop-LOM_ElecStoreShutter002">
-    <Parent>object-physical-prop-InteractableProp</Parent>
-    <Property name="AIDataBuild" type="Boolean">False</Property>
-    <Property name="ActBaseName" type="String">LOM_ElecStoreShutter002</Property>
-    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOM_ElecStoreShutter002.act</Property>
-    <Property name="Description" type="String">LOM_ElecStoreShutter002</Property>
-    <Property name="PowerManagement_SuspendDistance" type="Float32">1000</Property>
-    <Property name="SimObjChildren" type="List">
-        <ListProperty nameUID="0x388E2AA4">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">ElecStoreShutter002UsePoint01</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-elecStoreShutter002</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x410A1B33">C_InteractionSync</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOM_ElecStoreShutter002</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x39AF168B">LOM_ElecStoreShutter002</Property>
-                <Property type="SymbolUC" Symbol="0x26EBA1A3">LOM_ElecStoreShutter001_Use</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOM_ElecStoreShutter002</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x39AF168B">LOM_ElecStoreShutter002</Property>
-                <Property type="SymbolUC" Symbol="0x26EBA1A3">LOM_ElecStoreShutter001_Use</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOM_ElecStoreShutter002" nameUID="0xB402C432">
+	<!-- Parents -->
+	<Parent nameUID="0xFB0E6A05">object-physical-prop-InteractableProp</Parent>
+	<!-- Properties -->
+	<Property name="AIDataBuild" type="Boolean">false</Property>
+	<Property name="PowerManagement_SuspendDistance" type="Float32">1000</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\Object\LOM_ElecStoreShutter002.act</Property>
+	<Property name="SimObjChildren" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="ElecStoreShutter002UsePoint01" nameUID="0x388E2AA4">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">ElecStoreShutter002UsePoint01</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x53622D93">default-component-InterestPoint-elecStoreShutter002</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0x410A1B33">C_InteractionSync</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOM_ElecStoreShutter002</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List">
+				<!-- Elements -->
+				<ListProperty type="SymbolUC" symUID="0x39AF168B">LOM_ElecStoreShutter002</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0x26EBA1A3">LOM_ElecStoreShutter001_Use</ListProperty>
+			</Property>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="ActBaseName" type="String">LOM_ElecStoreShutter002</Property>
+	<Property name="Description" type="String">LOM_ElecStoreShutter002</Property>
+</PropertySetResource>

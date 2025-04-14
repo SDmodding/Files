@@ -1,5 +1,8 @@
-<PropertySet name="object-logical-MarkerProgressionTrigger" nameUID="0x845BB9E7" schema="object-logical-MarkerProgressionTrigger">
-    <Parent>object-logical-Marker</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0xACCF9D70">MarkerProgressionTrigger</Property>
-    <Property name="TriggerType" type="UInt32">0</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-MarkerProgressionTrigger" nameUID="0x845BB9E7">
+	<!-- Parents -->
+	<Parent nameUID="0x1BFD5F1B">object-logical-Marker</Parent>
+	<Parent nameUID="0x35BDDE2E">default-component-ProgressionTrigger</Parent>
+	<!-- Properties -->
+	<Property name="TriggerType" type="UInt32">0</Property>
+	<Property name="ObjectType" type="Symbol" symUID="0xACCF9D70">MarkerProgressionTrigger</Property>
+</PropertySetResource>

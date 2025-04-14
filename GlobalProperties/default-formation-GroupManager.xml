@@ -1,31 +1,47 @@
-<PropertySet name="default-formation-GroupManager" nameUID="0x16A3C6D8" schema="default-formation-GroupManager">
-    <Property name="Profiles" type="List">
-        <ListProperty nameUID="0xB8BE19B5">
-            <Property name="MinGroupSpacing" type="UInt32">0</Property>
-            <Property name="SpawnTasks" type="List">
-                <ListProperty nameUID="0xFFFFFFFF">
-                    <Property name="Formation" type="Symbol" Symbol="0x7F92E1D">default-formation-GroupOf2</Property>
-                    <Property name="UseDifferentGenders" type="Boolean">True</Property>
-                    <Property name="Weight" type="Float32">0.45</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xFFFFFFFF">
-                    <Parent>default-formation-GroupOf2</Parent>
-                    <Property name="Formation" type="Symbol" Symbol="0x7F92E1D">default-formation-GroupOf2</Property>
-                    <Property name="Weight" type="Float32">0.45</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xFFFFFFFF">
-                    <Parent>default-formation-NoGroup</Parent>
-                    <Property name="Formation" type="Symbol" Symbol="0xFE8523BE">default-formation-NoGroup</Property>
-                    <Property name="Weight" type="Float32">0.1</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="Restrictions" type="List">
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Parent>Thug</Parent>
-            <Property name="ClassType" type="Symbol" Symbol="0x8A664E0E">Thug</Property>
-            <Property name="IsSameClass" type="Boolean">True</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-formation-GroupManager" nameUID="0x16A3C6D8">
+	<!-- Properties -->
+	<Property name="Restrictions" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="ClassType" type="Symbol" symUID="0x8A664E0E">Thug</Property>
+				<Property name="IsSameClass" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="Profiles" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Default" nameUID="0xB8BE19B5">
+				<!-- Properties -->
+				<Property name="MinGroupSpacing" type="UInt32">0</Property>
+				<Property name="SpawnTasks" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet>
+							<!-- Properties -->
+							<Property name="UseDifferentGenders" type="Boolean">true</Property>
+							<Property name="Weight" type="Float32">0.45</Property>
+							<Property name="Formation" type="Symbol" symUID="0x7F92E1D">default-formation-GroupOf2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet>
+							<!-- Properties -->
+							<Property name="Weight" type="Float32">0.45</Property>
+							<Property name="Formation" type="Symbol" symUID="0x7F92E1D">default-formation-GroupOf2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet>
+							<!-- Properties -->
+							<Property name="Weight" type="Float32">0.1</Property>
+							<Property name="Formation" type="Symbol" symUID="0xFE8523BE">default-formation-NoGroup</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

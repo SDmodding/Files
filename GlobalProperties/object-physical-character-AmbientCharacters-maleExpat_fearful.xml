@@ -1,7 +1,10 @@
-<PropertySet name="object-physical-character-AmbientCharacters-maleExpat_fearful" nameUID="0x3E72C0E6" schema="object-physical-character-AmbientCharacters-maleExpat_fearful">
-    <Parent>object-physical-character-AmbientCharacters-maleExpat_base</Parent>
-    <Property name="Description" type="String">maleExpat_fearful</Property>
-    <Property name="PersonalityList" type="List">
-        <Property type="Symbol" Symbol="0xAEBCB9DC">default-component-personality-fearful</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-maleExpat_fearful" nameUID="0x3E72C0E6">
+	<!-- Parents -->
+	<Parent nameUID="0x33C8E00F">object-physical-character-AmbientCharacters-maleExpat_base</Parent>
+	<!-- Properties -->
+	<Property name="PersonalityList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xAEBCB9DC">default-component-personality-fearful</ListProperty>
+	</Property>
+	<Property name="Description" type="String">maleExpat_fearful</Property>
+</PropertySetResource>

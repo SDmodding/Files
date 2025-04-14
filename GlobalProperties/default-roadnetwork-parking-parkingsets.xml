@@ -1,6 +1,8 @@
-<PropertySet name="default-roadnetwork-parking-parkingsets" nameUID="0xD2B7DDB4" schema="default-roadnetwork-parking-parkingsets">
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0x18951A16">default-roadnetwork-parking-trucks</Property>
-        <Property type="Symbol" Symbol="0xAE8840C5">default-roadnetwork-parking-cars</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-roadnetwork-parking-parkingsets" nameUID="0xD2B7DDB4">
+	<!-- Properties -->
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x18951A16">default-roadnetwork-parking-trucks</ListProperty>
+		<ListProperty type="Symbol" symUID="0xAE8840C5">default-roadnetwork-parking-cars</ListProperty>
+	</Property>
+</PropertySetResource>

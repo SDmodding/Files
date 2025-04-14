@@ -1,16 +1,22 @@
-<PropertySet name="default-spawnset-Alleyways" nameUID="0x55345B93" schema="default-spawnset-Alleyways">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xB7B39865">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x309915CE">object-physical-character-police_ambient</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0xBCF9928A">object-physical-character-AmbientMaleL</Property>
-        <Property type="Symbol" Symbol="0x8DC02CDE">object-physical-character-ScenarioCharacters-shadymale</Property>
-        <Property type="Symbol" Symbol="0xBDEE9D16">object-physical-character-vagrant</Property>
-        <Property type="Symbol" Symbol="0x1E3FF464">object-physical-character-AmbientCharacters-beggar</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-Alleyways" nameUID="0x55345B93">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Police" nameUID="0xB7B39865">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x309915CE">object-physical-character-police_ambient</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xBCF9928A">object-physical-character-AmbientMaleL</ListProperty>
+		<ListProperty type="Symbol" symUID="0x8DC02CDE">object-physical-character-ScenarioCharacters-shadymale</ListProperty>
+		<ListProperty type="Symbol" symUID="0xBDEE9D16">object-physical-character-vagrant</ListProperty>
+		<ListProperty type="Symbol" symUID="0x1E3FF464">object-physical-character-AmbientCharacters-beggar</ListProperty>
+	</Property>
+</PropertySetResource>

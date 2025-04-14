@@ -1,19 +1,25 @@
-<PropertySet name="default-spawnset-Night_Soho" nameUID="0xE0079B87" schema="default-spawnset-Night_Soho">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xB7B39865">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x309915CE">object-physical-character-police_ambient</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0x4CBE9200">object-physical-character-AmbientCharacters-CN_Comm_Night_Male</Property>
-        <Property type="Symbol" Symbol="0x86A35790">object-physical-character-AmbientCharacters-CN_Comm_Night_Male_yng</Property>
-        <Property type="Symbol" Symbol="0x57A8BD3A">object-physical-character-AmbientCharacters-CN_Soho_Eve_Male</Property>
-        <Property type="Symbol" Symbol="0x752F1890">object-physical-character-TouristWestMale</Property>
-        <Property type="Symbol" Symbol="0x445F685C">object-physical-character-TouristWestFemale</Property>
-        <Property type="Symbol" Symbol="0x980B2AC5">object-physical-character-vagrant_d</Property>
-        <Property type="Symbol" Symbol="0x1E3FF464">object-physical-character-AmbientCharacters-beggar</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-Night_Soho" nameUID="0xE0079B87">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Police" nameUID="0xB7B39865">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x309915CE">object-physical-character-police_ambient</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x4CBE9200">object-physical-character-AmbientCharacters-CN_Comm_Night_Male</ListProperty>
+		<ListProperty type="Symbol" symUID="0x86A35790">object-physical-character-AmbientCharacters-CN_Comm_Night_Male_yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0x57A8BD3A">object-physical-character-AmbientCharacters-CN_Soho_Eve_Male</ListProperty>
+		<ListProperty type="Symbol" symUID="0x752F1890">object-physical-character-TouristWestMale</ListProperty>
+		<ListProperty type="Symbol" symUID="0x445F685C">object-physical-character-TouristWestFemale</ListProperty>
+		<ListProperty type="Symbol" symUID="0x980B2AC5">object-physical-character-vagrant_d</ListProperty>
+		<ListProperty type="Symbol" symUID="0x1E3FF464">object-physical-character-AmbientCharacters-beggar</ListProperty>
+	</Property>
+</PropertySetResource>

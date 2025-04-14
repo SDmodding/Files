@@ -1,30 +1,34 @@
-<PropertySet name="object-physical-prop-LOC_CNYBombBag001" nameUID="0x2830766E" schema="object-physical-prop-LOC_CNYBombBag001">
-    <Parent>object-physical-prop-InteractableProp</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\LOC_CNY_BombBag.act</Property>
-    <Property name="CollectibleType" type="Symbol" Symbol="0xF99DB47B">Collectible_DLC_03</Property>
-    <Property name="Collectible_Caption" type="String">HUD_COLLECTIBLE_EVIDENCE_BAG_SUCCESS</Property>
-    <Property name="Description" type="String">LOC_CNY_BombBag001</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOC_CNY_BombBag001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOC_CNY_BombBag001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="default-component-InterestPoint" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-InterestPoint-LOC_CNY_BombBag</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOC_CNYBombBag001" nameUID="0x2830766E">
+	<!-- Parents -->
+	<Parent nameUID="0xFB0E6A05">object-physical-prop-InteractableProp</Parent>
+	<!-- Properties -->
+	<Property name="CollectibleType" type="Symbol" symUID="0xF99DB47B">Collectible_DLC_03</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\LOC_CNY_BombBag.act</Property>
+	<Property name="Collectible_Caption" type="String">HUD_COLLECTIBLE_EVIDENCE_BAG_SUCCESS</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOC_CNY_BombBag001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="default-component-InterestPoint" type="PropSet">
+		<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+			<!-- Parents -->
+			<Parent nameUID="0xE7B9B74A">default-component-InterestPoint-LOC_CNY_BombBag</Parent>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">LOC_CNY_BombBag001</Property>
+</PropertySetResource>

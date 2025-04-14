@@ -1,43 +1,54 @@
-<PropertySet name="default-encounters-m_systest_eliteghoul" nameUID="0x1D65DE49" schema="default-encounters-m_systest_eliteghoul">
-    <Parent>default-encounters-defaults</Parent>
-    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
-    <Property name="BlipName" type="String">enemy</Property>
-    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x96962095">TRIAD_18K</Property>
-    <Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
-    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
-    <Property name="formation_slot_behind" type="Boolean">False</Property>
-    <Property name="formation_slot_beside" type="Boolean">True</Property>
-    <Property name="formation_slot_follow" type="Boolean">False</Property>
-    <Property name="formation_slot_front" type="Boolean">True</Property>
-    <Property name="formation_slot_frontcorner" type="Boolean">True</Property>
-    <Property name="formation_slot_pitposition" type="Boolean">True</Property>
-    <Property name="formation_slot_rearcorner" type="Boolean">False</Property>
-    <Property name="formation_style" type="Symbol" Symbol="0x36106EE6">none</Property>
-    <Property name="kills_required" type="UInt32">9999999</Property>
-    <Property name="show_blip_radius" type="Boolean">False</Property>
-    <Property name="vehicle_generic_spawn_max_radius" type="Float32">60</Property>
-    <Property name="vehicle_generic_spawn_min_radius" type="Float32">30</Property>
-    <Property name="water_offset_max_range" type="Float32">60</Property>
-    <Property name="water_offset_min_range" type="Float32">40</Property>
-    <Property name="wave_definitions" type="List">
-        <ListProperty nameUID="0x2DC0526A">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">2.5</Property>
-            <Property name="onfoot_population" type="UInt32">4</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xE8E2068F">object-physical-character-dlc_ghost-DLC_JiangShi</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0xFED9A1C6">
-                    <Property name="character" type="Symbol" Symbol="0xE8E2068F">object-physical-character-dlc_ghost-DLC_JiangShi</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">0</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-encounters-m_systest_eliteghoul" nameUID="0x1D65DE49">
+	<!-- Parents -->
+	<Parent nameUID="0x6159DA8B">default-encounters-defaults</Parent>
+	<!-- Properties -->
+	<Property name="kills_required" type="UInt32">9999999</Property>
+	<Property name="formation_slot_behind" type="Boolean">false</Property>
+	<Property name="vehicle_generic_spawn_max_radius" type="Float32">60</Property>
+	<Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
+	<Property name="formation_slot_pitposition" type="Boolean">true</Property>
+	<Property name="formation_style" type="Symbol" symUID="0x36106EE6">none</Property>
+	<Property name="water_offset_min_range" type="Float32">40</Property>
+	<Property name="formation_slot_beside" type="Boolean">true</Property>
+	<Property name="formation_slot_follow" type="Boolean">false</Property>
+	<Property name="formation_slot_rearcorner" type="Boolean">false</Property>
+	<Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+	<Property name="wave_definitions" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_1" nameUID="0x2DC0526A">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="group1" nameUID="0xFED9A1C6">
+							<!-- Properties -->
+							<Property name="character" type="Symbol" symUID="0xE8E2068F">object-physical-character-dlc_ghost-DLC_JiangShi</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">2.5</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">4</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xE8E2068F">object-physical-character-dlc_ghost-DLC_JiangShi</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">0</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="formation_slot_frontcorner" type="Boolean">true</Property>
+	<Property name="show_blip_radius" type="Boolean">false</Property>
+	<Property name="EncounterFactionClass" type="Symbol" symUID="0x96962095">TRIAD_18K</Property>
+	<Property name="vehicle_generic_spawn_min_radius" type="Float32">30</Property>
+	<Property name="BlipName" type="String">enemy</Property>
+	<Property name="formation_slot_front" type="Boolean">true</Property>
+	<Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+	<Property name="water_offset_max_range" type="Float32">60</Property>
+</PropertySetResource>

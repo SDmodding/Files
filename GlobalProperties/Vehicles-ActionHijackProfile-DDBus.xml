@@ -1,12 +1,13 @@
-<PropertySet name="Vehicles-ActionHijackProfile-DDBus" nameUID="0x67BEAA44" schema="Vehicles-ActionHijackProfile-DDBus">
-    <Property name="CanActionHijackClimb" type="Boolean">False</Property>
-    <Property name="CanActionHijackFrom" type="Boolean">False</Property>
-    <Property name="CanActionHijackTo" type="Boolean">False</Property>
-    <Property name="DistanceAheadOfTargetMax" type="Float32">1</Property>
-    <Property name="DistanceBehindTargetMax" type="Float32">14</Property>
-    <Property name="DistanceToSideMax" type="Float32">5</Property>
-    <Property name="OrientationDeltaRadMax" type="Float32">45</Property>
-    <Property name="SpeedDifferenceModifiesDistanceAheadEnd" type="Float32">130</Property>
-    <Property name="SpeedDifferenceModifiesDistanceAheadStart" type="Float32">30</Property>
-    <Property name="VehicleSpeedMinKPH" type="Float32">10</Property>
-</PropertySet>
+<PropertySetResource name="Vehicles-ActionHijackProfile-DDBus" nameUID="0x67BEAA44">
+	<!-- Properties -->
+	<Property name="DistanceAheadOfTargetMax" type="Float32">1</Property>
+	<Property name="CanActionHijackTo" type="Boolean">false</Property>
+	<Property name="VehicleSpeedMinKPH" type="Float32">10</Property>
+	<Property name="SpeedDifferenceModifiesDistanceAheadStart" type="Float32">30</Property>
+	<Property name="DistanceBehindTargetMax" type="Float32">14</Property>
+	<Property name="CanActionHijackFrom" type="Boolean">false</Property>
+	<Property name="OrientationDeltaRadMax" type="Float32">45</Property>
+	<Property name="SpeedDifferenceModifiesDistanceAheadEnd" type="Float32">130</Property>
+	<Property name="DistanceToSideMax" type="Float32">5</Property>
+	<Property name="CanActionHijackClimb" type="Boolean">false</Property>
+</PropertySetResource>

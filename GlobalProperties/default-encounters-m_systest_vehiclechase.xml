@@ -1,283 +1,375 @@
-<PropertySet name="default-encounters-m_systest_vehiclechase" nameUID="0xBA171C7C" schema="default-encounters-m_systest_vehiclechase">
-    <Parent>default-encounters-defaults</Parent>
-    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
-    <Property name="BlipName" type="String">enemy</Property>
-    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x9E12E132">TRIAD_LEE</Property>
-    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
-    <Property name="formation_slot_behind" type="Boolean">True</Property>
-    <Property name="formation_slot_beside" type="Boolean">True</Property>
-    <Property name="formation_slot_follow" type="Boolean">True</Property>
-    <Property name="formation_slot_front" type="Boolean">False</Property>
-    <Property name="formation_slot_frontcorner" type="Boolean">True</Property>
-    <Property name="formation_slot_pitposition" type="Boolean">True</Property>
-    <Property name="formation_slot_rearcorner" type="Boolean">True</Property>
-    <Property name="formation_style" type="Symbol" Symbol="0x52556586">generic_favor_front</Property>
-    <Property name="kills_required" type="UInt32">0</Property>
-    <Property name="replenish_style" type="Symbol" Symbol="0xAD0BA30D">by_wave_type</Property>
-    <Property name="show_blip_radius" type="Boolean">False</Property>
-    <Property name="vehicle_chase_spawn_distance" type="Float32">40</Property>
-    <Property name="vehicle_generic_spawn_max_radius" type="Float32">50</Property>
-    <Property name="vehicle_generic_spawn_min_radius" type="Float32">30</Property>
-    <Property name="vehicle_initial_speed_ratio" type="Float32">0.85</Property>
-    <Property name="vehicle_spawn_behind_probability" type="Float32">0.8</Property>
-    <Property name="wave_definitions" type="List">
-        <ListProperty nameUID="0x29014FDD">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x50A6A13F">object-physical-vehicle-NeoV01</Property>
-                <Property type="Symbol" Symbol="0x2DFA571">object-physical-character-Thug_18k_grap</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x50A6A13F">object-physical-vehicle-NeoV01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x2DC0526A">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x61522611">object-physical-vehicle-Taikai01</Property>
-                <Property type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                    <Property name="num_instances" type="UInt32">2</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x61522611">object-physical-vehicle-Taikai01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x208374B3">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
-                <Property type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                    <Property name="num_instances" type="UInt32">3</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x24426904">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x8A20B8D">object-physical-vehicle-Enterprise_Ricky01</Property>
-                <Property type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                <Property type="Symbol" Symbol="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
-                <Property type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x8A20B8D">object-physical-vehicle-Enterprise_Ricky01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8E447A6C">
-                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">4</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3A053901">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x50A6A13F">object-physical-vehicle-NeoV01</Property>
-                <Property type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
-                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
-                    <Property name="num_instances" type="UInt32">2</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x50A6A13F">object-physical-vehicle-NeoV01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">4</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3EC424B6">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</Property>
-                <Property type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
-                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
-                    <Property name="num_instances" type="UInt32">2</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">4</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3387026F">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</Property>
-                <Property type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x46738290">object-physical-weapon-firearm-shotgun-pump</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x37461FD8">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</Property>
-                <Property type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x46738290">object-physical-weapon-firearm-shotgun-pump</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF09A265">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</Property>
-                <Property type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                <Property type="Symbol" Symbol="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
-                <Property type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8E447A6C">
-                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">4</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xBC8BFD2">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
-                <Property type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">4</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8E447A6C">
-                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                    <Property name="helmet" type="Symbol" Symbol="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">4</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-encounters-m_systest_vehiclechase" nameUID="0xBA171C7C">
+	<!-- Parents -->
+	<Parent nameUID="0x6159DA8B">default-encounters-defaults</Parent>
+	<!-- Properties -->
+	<Property name="kills_required" type="UInt32">0</Property>
+	<Property name="formation_slot_behind" type="Boolean">true</Property>
+	<Property name="vehicle_generic_spawn_max_radius" type="Float32">50</Property>
+	<Property name="formation_slot_pitposition" type="Boolean">true</Property>
+	<Property name="vehicle_initial_speed_ratio" type="Float32">0.85</Property>
+	<Property name="formation_style" type="Symbol" symUID="0x52556586">generic_favor_front</Property>
+	<Property name="formation_slot_beside" type="Boolean">true</Property>
+	<Property name="formation_slot_follow" type="Boolean">true</Property>
+	<Property name="formation_slot_rearcorner" type="Boolean">true</Property>
+	<Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+	<Property name="wave_definitions" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_0" nameUID="0x29014FDD">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x50A6A13F">object-physical-vehicle-NeoV01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+							<Property name="weapon" type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">2</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x50A6A13F">object-physical-vehicle-NeoV01</ListProperty>
+					<ListProperty type="Symbol" symUID="0x2DFA571">object-physical-character-Thug_18k_grap</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_1" nameUID="0x2DC0526A">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x61522611">object-physical-vehicle-Taikai01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+							<Property name="num_instances" type="UInt32">2</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+							<Property name="weapon" type="Symbol" symUID="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">2</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x61522611">object-physical-vehicle-Taikai01</ListProperty>
+					<ListProperty type="Symbol" symUID="0x10085B9E">object-physical-character-Thug_18k_quick</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_2" nameUID="0x208374B3">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+							<Property name="num_instances" type="UInt32">3</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+							<Property name="weapon" type="Symbol" symUID="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">2</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5CECFE12">object-physical-vehicle-Taikai_18K01</ListProperty>
+					<ListProperty type="Symbol" symUID="0x10085B9E">object-physical-character-Thug_18k_quick</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_3" nameUID="0x24426904">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x8A20B8D">object-physical-vehicle-Enterprise_Ricky01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+							<Property name="weapon" type="Symbol" symUID="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group2" nameUID="0x8E447A6C">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
+							<Property name="character" type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="helmet" type="Symbol" symUID="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">4</Property>
+							<Property name="weapon" type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">2</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x8A20B8D">object-physical-vehicle-Enterprise_Ricky01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</ListProperty>
+					<ListProperty type="Symbol" symUID="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xCB79A69F">object-physical-character-Thug_18k_brawler</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_4" nameUID="0x3A053901">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x50A6A13F">object-physical-vehicle-NeoV01</Property>
+							<Property name="character" type="Symbol" symUID="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+							<Property name="num_instances" type="UInt32">2</Property>
+							<Property name="helmet" type="Symbol" symUID="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">4</Property>
+							<Property name="weapon" type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">2</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x50A6A13F">object-physical-vehicle-NeoV01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xCB79A69F">object-physical-character-Thug_18k_brawler</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_5" nameUID="0x3EC424B6">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
+							<Property name="character" type="Symbol" symUID="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+							<Property name="num_instances" type="UInt32">2</Property>
+							<Property name="helmet" type="Symbol" symUID="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">4</Property>
+							<Property name="weapon" type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">2</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xCB79A69F">object-physical-character-Thug_18k_brawler</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_6" nameUID="0x3387026F">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+							<Property name="weapon" type="Symbol" symUID="0x46738290">object-physical-weapon-firearm-shotgun-pump</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">2</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xCB79A69F">object-physical-character-Thug_18k_brawler</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_7" nameUID="0x37461FD8">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+							<Property name="weapon" type="Symbol" symUID="0x46738290">object-physical-weapon-firearm-shotgun-pump</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">2</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_8" nameUID="0xF09A265">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+							<Property name="weapon" type="Symbol" symUID="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group2" nameUID="0x8E447A6C">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
+							<Property name="character" type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="helmet" type="Symbol" symUID="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">4</Property>
+							<Property name="weapon" type="Symbol" symUID="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">2</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA51E333">object-physical-vehicle-Prime8C_Ricky01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</ListProperty>
+					<ListProperty type="Symbol" symUID="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_9" nameUID="0xBC8BFD2">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
+							<Property name="character" type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="helmet" type="Symbol" symUID="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">4</Property>
+							<Property name="weapon" type="Symbol" symUID="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group2" nameUID="0x8E447A6C">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</Property>
+							<Property name="character" type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="helmet" type="Symbol" symUID="0xCF9EF392">object-physical-prop-StreamedObject-MotorcycleHelmet</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">4</Property>
+							<Property name="weapon" type="Symbol" symUID="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">2</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xBFE53971">object-physical-vehicle-1100NAR_Ricky01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="formation_slot_frontcorner" type="Boolean">true</Property>
+	<Property name="replenish_style" type="Symbol" symUID="0xAD0BA30D">by_wave_type</Property>
+	<Property name="vehicle_spawn_behind_probability" type="Float32">0.8</Property>
+	<Property name="show_blip_radius" type="Boolean">false</Property>
+	<Property name="EncounterFactionClass" type="Symbol" symUID="0x9E12E132">TRIAD_LEE</Property>
+	<Property name="vehicle_generic_spawn_min_radius" type="Float32">30</Property>
+	<Property name="BlipName" type="String">enemy</Property>
+	<Property name="formation_slot_front" type="Boolean">false</Property>
+	<Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+	<Property name="vehicle_chase_spawn_distance" type="Float32">40</Property>
+</PropertySetResource>

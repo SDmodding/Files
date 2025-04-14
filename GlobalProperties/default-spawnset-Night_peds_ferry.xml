@@ -1,15 +1,21 @@
-<PropertySet name="default-spawnset-Night_peds_ferry" nameUID="0xF2761B48" schema="default-spawnset-Night_peds_ferry">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xB7B39865">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x980B2AC5">object-physical-character-vagrant_d</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0x163FE8AF">object-physical-character-AmbientCharacters-ALL_Ferry_Male_Night</Property>
-        <Property type="Symbol" Symbol="0x9AB44225">object-physical-character-AmbientCharacters-ALL_Ferry_Male_Night_yng</Property>
-        <Property type="Symbol" Symbol="0xA00BCE98">object-physical-character-CollegeMale</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-Night_peds_ferry" nameUID="0xF2761B48">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Police" nameUID="0xB7B39865">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x980B2AC5">object-physical-character-vagrant_d</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x163FE8AF">object-physical-character-AmbientCharacters-ALL_Ferry_Male_Night</ListProperty>
+		<ListProperty type="Symbol" symUID="0x9AB44225">object-physical-character-AmbientCharacters-ALL_Ferry_Male_Night_yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0xA00BCE98">object-physical-character-CollegeMale</ListProperty>
+	</Property>
+</PropertySetResource>

@@ -1,4 +1,8 @@
-<PropertySet name="object-logical-FleeToPoint" nameUID="0xB8AA71B5" schema="object-logical-FleeToPoint">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0x903AE4F8">FleeToPoint</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-FleeToPoint" nameUID="0xB8AA71B5">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x6C57837B">default-component-AIMarker</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0x903AE4F8">FleeToPoint</Property>
+</PropertySetResource>

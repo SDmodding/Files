@@ -1,34 +1,37 @@
-<PropertySet name="default-component-personality-testpersonality" nameUID="0x22BC9499" schema="default-component-personality-testpersonality">
-    <Parent>default-component-personality-personality</Parent>
-    <Property name="CameraFlee" type="Float32">0.2</Property>
-    <Property name="CameraTurnAndFace" type="Float32">1</Property>
-    <Property name="CarCrashIndifferent" type="Float32">1</Property>
-    <Property name="CarjackWalk" type="Float32">1</Property>
-    <Property name="Corpse911" type="Float32">1</Property>
-    <Property name="CorpseCheck" type="Float32">1</Property>
-    <Property name="CorpseFindWitness" type="Float32">1</Property>
-    <Property name="CorpseWalk" type="Float32">1</Property>
-    <Property name="DebrisShieldSelf" type="Float32">1</Property>
-    <Property name="DrawGunFear" type="Float32">1</Property>
-    <Property name="DrawGunPanic" type="Float32">1</Property>
-    <Property name="DrawGunRun" type="Float32">1</Property>
-    <Property name="DriverProfileList" type="List">
-        <Property type="Symbol" Symbol="0x9F256A9A">default-component-personality-drivercautious</Property>
-    </Property>
-    <Property name="ExplosionRun" type="Float32">1</Property>
-    <Property name="GroupAttackMaleDefendFemale" type="Float32">0.75</Property>
-    <Property name="GunShotFear" type="Float32">1</Property>
-    <Property name="GunShotPanic" type="Float32">1</Property>
-    <Property name="GunShotRun" type="Float32">1</Property>
-    <Property name="GunViolencePanic" type="Float32">1</Property>
-    <Property name="GunViolenceRun" type="Float32">1</Property>
-    <Property name="MeleeAttackFear" type="Float32">0.5</Property>
-    <Property name="MeleeAttackFightBack" type="Float32">0.5</Property>
-    <Property name="MeleeAttackFlee" type="Float32">0.5</Property>
-    <Property name="MeleeFightDefendTurf" type="Float32">0.5</Property>
-    <Property name="MeleeFightWalk" type="Float32">0.5</Property>
-    <Property name="NPCDiedRun" type="Float32">1</Property>
-    <Property name="PostFightWalk" type="Float32">1</Property>
-    <Property name="PropertyHighFaceWalk" type="Float32">1</Property>
-    <Property name="PropertyLowFaceWalk" type="Float32">1</Property>
-</PropertySet>
+<PropertySetResource name="default-component-personality-testpersonality" nameUID="0x22BC9499">
+	<!-- Parents -->
+	<Parent nameUID="0xCB3A9171">default-component-personality-personality</Parent>
+	<!-- Properties -->
+	<Property name="DrawGunRun" type="Float32">1</Property>
+	<Property name="DebrisShieldSelf" type="Float32">1</Property>
+	<Property name="GunShotPanic" type="Float32">1</Property>
+	<Property name="DriverProfileList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x9F256A9A">default-component-personality-drivercautious</ListProperty>
+	</Property>
+	<Property name="MeleeAttackFightBack" type="Float32">0.5</Property>
+	<Property name="GunShotFear" type="Float32">1</Property>
+	<Property name="CameraFlee" type="Float32">0.2</Property>
+	<Property name="CarjackWalk" type="Float32">1</Property>
+	<Property name="CorpseFindWitness" type="Float32">1</Property>
+	<Property name="GunViolenceRun" type="Float32">1</Property>
+	<Property name="PostFightWalk" type="Float32">1</Property>
+	<Property name="PropertyHighFaceWalk" type="Float32">1</Property>
+	<Property name="GroupAttackMaleDefendFemale" type="Float32">0.75</Property>
+	<Property name="CarCrashIndifferent" type="Float32">1</Property>
+	<Property name="ExplosionRun" type="Float32">1</Property>
+	<Property name="CameraTurnAndFace" type="Float32">1</Property>
+	<Property name="PropertyLowFaceWalk" type="Float32">1</Property>
+	<Property name="MeleeFightWalk" type="Float32">0.5</Property>
+	<Property name="Corpse911" type="Float32">1</Property>
+	<Property name="CorpseCheck" type="Float32">1</Property>
+	<Property name="GunViolencePanic" type="Float32">1</Property>
+	<Property name="MeleeAttackFlee" type="Float32">0.5</Property>
+	<Property name="GunShotRun" type="Float32">1</Property>
+	<Property name="CorpseWalk" type="Float32">1</Property>
+	<Property name="DrawGunFear" type="Float32">1</Property>
+	<Property name="MeleeFightDefendTurf" type="Float32">0.5</Property>
+	<Property name="DrawGunPanic" type="Float32">1</Property>
+	<Property name="MeleeAttackFear" type="Float32">0.5</Property>
+	<Property name="NPCDiedRun" type="Float32">1</Property>
+</PropertySetResource>

@@ -1,9 +1,11 @@
-<PropertySet name="default-rewards-progression-J_CJ_DR_02_repeat" nameUID="0x51EAC11E" schema="default-rewards-progression-J_CJ_DR_02_repeat">
-    <Parent>default-rewards-progression-J_CJ_DR_02</Parent>
-    <Property name="CopStartingScore" type="Int32">25</Property>
-    <Property name="EnableCopScoring" type="Boolean">True</Property>
-    <Property name="EnableTriadScoring" type="Boolean">False</Property>
-    <Property name="MoneyAdjustment" type="Int32">5000</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-J_CJ_DR_02_repeat" nameUID="0x51EAC11E">
+	<!-- Parents -->
+	<Parent nameUID="0x5D840C49">default-rewards-progression-J_CJ_DR_02</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">25</Property>
+	<Property name="MoneyAdjustment" type="Int32">5000</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="EnableCopScoring" type="Boolean">true</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="EnableTriadScoring" type="Boolean">false</Property>
+</PropertySetResource>

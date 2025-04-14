@@ -1,78 +1,140 @@
-<PropertySet name="object-physical-prop-LOP_MagicDoor001" nameUID="0x3973C706" schema="object-physical-prop-LOP_MagicDoor001">
-    <Parent>object-physical-prop-InteractableProp</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\MagicDoor.act</Property>
-    <Property name="Description" type="String">LOP_MagicDoor001</Property>
-    <Property name="SimObjChildren" type="List">
-        <ListProperty nameUID="0xE3BD0E96">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">MagicDoorDespawnPoint</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-magicdoordespawn</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x7508FAFF">C_FeetSync01</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xEEFE284F">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">MagicDoorSpawnPoint</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-magicdoorspawn</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x784BDC26">C_FeetSync02</Property>
-                    <Property name="component_InterestPoint" type="PropSet"/>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOP_MagicDoor001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x43A2F135">Door_Use</Property>
-                <Property type="SymbolUC" Symbol="0x9AD3C24B">Door</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOP_MagicDoor001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x43A2F135">Door_Use</Property>
-                <Property type="SymbolUC" Symbol="0x9AD3C24B">Door</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CompositeDrawable" type="PropSet">
-        <BinData>
-            <DefaultSaturationOverride type="Float32">1</DefaultSaturationOverride>
-            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
-            <HighlightingMode type="String">eHIGHLIGHTING_MODE_OFF</HighlightingMode>
-            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
-            <SkinSSEnabled type="Boolean">false</SkinSSEnabled>
-            <OverlayWeights type="List"/>
-            <OverlayTextures type="List"/>
-            <DrawScale type="Float32">1</DrawScale>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOP_MagicDoor001" nameUID="0x3973C706">
+	<!-- Parents -->
+	<Parent nameUID="0xFB0E6A05">object-physical-prop-InteractableProp</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\MagicDoor.act</Property>
+	<Property name="SimObjChildren" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="MagicDoorUsePoint01" nameUID="0xE3BD0E96">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">MagicDoorDespawnPoint</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x97237142">default-component-InterestPoint-magicdoordespawn</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0x7508FAFF">C_FEETSYNC01</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="MagicDoorUsePoint02" nameUID="0xEEFE284F">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">MagicDoorSpawnPoint</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x6D770A4A">default-component-InterestPoint-magicdoorspawn</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0x784BDC26">C_FEETSYNC02</Property>
+						<Property name="component_InterestPoint" type="PropSet">
+							<PropertySet name="component_InterestPoint" nameUID="0x9B2B8283" schema="default-component-InterestPoint">
+								<!-- Schema Properties -->
+								<Property name="InterestPointType" type="Symbol" symUID="0xFC0E2AB9">magicdoor</Property>
+								<Property name="InterestPointPriority" type="Symbol" symUID="0xEA79A044">Low</Property>
+								<Property name="StartActive" type="Boolean">true</Property>
+								<Property name="Appeal" type="Float32">1</Property>
+								<Property name="MinAppealRadius" type="Float32">0</Property>
+								<Property name="MaxAppealRadius" type="Float32">0.5</Property>
+								<Property name="UserRelativeAngleRange" type="Float32">180</Property>
+								<Property name="GenderAllowed" type="Symbol" symUID="0xC91BB31">Any</Property>
+								<Property name="ChanceIsActive" type="Float32">1</Property>
+								<Property name="TimeOfDayToBecomeActiveInHours" type="Float32">0</Property>
+								<Property name="TimeOfDayToBecomeInactiveInHours" type="Float32">0</Property>
+								<Property name="UseTimeMin" type="Float32">-1</Property>
+								<Property name="UseTimeMax" type="Float32">-1</Property>
+								<Property name="CoolDownTimeMin" type="Float32">0</Property>
+								<Property name="CoolDownTimeMax" type="Float32">0</Property>
+								<Property name="ItemFilterAppliesToPlayer" type="Boolean">false</Property>
+								<Property name="ItemFilterOn" type="Boolean">false</Property>
+								<Property name="ItemListIsAllowable" type="Boolean">true</Property>
+								<Property name="ItemList" type="List">
+									<!-- Elements -->
+									<ListProperty type="Symbol" symUID="0x64AC832F">eINVENTORY_ITEM_CELLPHONE</ListProperty>
+									<ListProperty type="Symbol" symUID="0x36CB3E2E">eINVENTORY_ITEM_CIGARETTE</ListProperty>
+									<ListProperty type="Symbol" symUID="0xDCF92817">None</ListProperty>
+								</Property>
+								<Property name="MaxConcurrentInstances" type="Int32">-1</Property>
+								<Property name="MaxDistanceFromPlayer" type="Float32">-1</Property>
+								<Property name="SpawnAmbientUserDistance" type="Float32">21</Property>
+								<Property name="IsAutoInteractable" type="Boolean">false</Property>
+								<Property name="RequiresSync" type="Boolean">true</Property>
+								<Property name="PositionSyncRequired" type="Boolean">false</Property>
+								<Property name="RotationSyncRequired" type="Boolean">false</Property>
+								<Property name="WeatherFilterOn" type="Boolean">false</Property>
+								<Property name="WeatherFilterIsRaining" type="Boolean">false</Property>
+								<Property name="AllowRepeatedUse" type="Boolean">false</Property>
+								<Property name="AllowLeaders" type="Boolean">false</Property>
+								<Property name="AllowFollowers" type="Boolean">false</Property>
+								<Property name="MinGroupSize" type="Int32">-1</Property>
+								<Property name="MaxGroupSize" type="Int32">-1</Property>
+								<Property name="InitialUseOnly" type="Boolean">false</Property>
+								<Property name="IgnoreCharacterCooldown" type="Boolean">false</Property>
+								<Property name="UserCanBeRecycled" type="Boolean">true</Property>
+								<Property name="ResumeIfInterrupted" type="Boolean">false</Property>
+								<Property name="AllowSocialInteraction" type="Boolean">false</Property>
+								<Property name="IsSittingConversation" type="Boolean">false</Property>
+								<Property name="IgnoreStimuli" type="Boolean">false</Property>
+							</PropertySet>
+						</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOP_MagicDoor001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List">
+				<!-- Elements -->
+				<ListProperty type="SymbolUC" symUID="0x43A2F135">Door_Use</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0x9AD3C24B">DOOR</ListProperty>
+			</Property>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CompositeDrawable" type="PropSet">
+		<PropertySet name="component_CompositeDrawable" nameUID="0x79DB63A1" schema="default-component-CompositeDrawable">
+			<!-- Schema Properties -->
+			<Property name="DefaultSaturationOverride" type="Float32">1</Property>
+			<Property name="LightSFXMultiplier" type="Float32">0</Property>
+			<Property name="HighlightingMode" type="String">eHIGHLIGHTING_MODE_OFF</Property>
+			<Property name="HighlightingColour" type="Vector4" x="1" y="1" z="1" w="1"/>
+			<Property name="SkinSSEnabled" type="Boolean">false</Property>
+			<Property name="OverlayWeights" type="List"/>
+			<Property name="OverlayTextures" type="List"/>
+			<Property name="DrawScale" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">LOP_MagicDoor001</Property>
+</PropertySetResource>

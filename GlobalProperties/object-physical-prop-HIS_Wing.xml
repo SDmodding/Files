@@ -1,8 +1,11 @@
-<PropertySet name="object-physical-prop-HIS_Wing" nameUID="0xE79A119F" schema="object-physical-prop-HIS_Wing">
-    <Parent>object-physical-prop</Parent>
-    <Property name="default-component-InterestPoint" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-InterestPoint-HIS_Wing</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-HIS_Wing" nameUID="0xE79A119F">
+	<!-- Parents -->
+	<Parent nameUID="0x45EAFD73">object-physical-prop</Parent>
+	<!-- Properties -->
+	<Property name="default-component-InterestPoint" type="PropSet">
+		<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+			<!-- Parents -->
+			<Parent nameUID="0x2A5B1E29">default-component-InterestPoint-HIS_Wing</Parent>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

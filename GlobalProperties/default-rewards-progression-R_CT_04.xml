@@ -1,7 +1,9 @@
-<PropertySet name="default-rewards-progression-R_CT_04" nameUID="0xFF88629D" schema="default-rewards-progression-R_CT_04">
-    <Parent>default-rewards-progression-event_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_RACE_CENTRAL_04</Property>
-    <Property name="GamesliceType" type="Symbol" Symbol="0x3A04ED90">Race</Property>
-    <Property name="MoneyAdjustment" type="Int32">15000</Property>
-    <Property name="StandingAdjustment" type="Int32">200</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-R_CT_04" nameUID="0xFF88629D">
+	<!-- Parents -->
+	<Parent nameUID="0xD907A49A">default-rewards-progression-event_defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">15000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_RACE_CENTRAL_04</Property>
+	<Property name="StandingAdjustment" type="Int32">200</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x3A04ED90">RACE</Property>
+</PropertySetResource>

@@ -1,20 +1,26 @@
-<PropertySet name="default-spawnset-CN_BDW_Peds_eve" nameUID="0x5F8B52D8" schema="default-spawnset-CN_BDW_Peds_eve">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xB7B39865">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x309915CE">object-physical-character-police_ambient</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0xA7EF439C">object-physical-character-AmbientCharacters-CN_Bdwk_Male_Eve</Property>
-        <Property type="Symbol" Symbol="0x35703FC4">object-physical-character-AmbientCharacters-CN_Bdwk_Female_Eve</Property>
-        <Property type="Symbol" Symbol="0x3560787C">object-physical-character-AmbientCharacters-CN_Bdwk_Female_Eve_Yng</Property>
-        <Property type="Symbol" Symbol="0x5DD667D2">object-physical-character-CollegeFemale</Property>
-        <Property type="Symbol" Symbol="0xA00BCE98">object-physical-character-CollegeMale</Property>
-        <Property type="Symbol" Symbol="0x476D5A20">object-physical-character-AmbientCharacters-CN_Sexy_Female</Property>
-        <Property type="Symbol" Symbol="0xA4FB9106">object-physical-character-janitor</Property>
-        <Property type="Symbol" Symbol="0xBDEE9D16">object-physical-character-vagrant</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-CN_BDW_Peds_eve" nameUID="0x5F8B52D8">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Police" nameUID="0xB7B39865">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x309915CE">object-physical-character-police_ambient</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xA7EF439C">object-physical-character-AmbientCharacters-CN_Bdwk_Male_Eve</ListProperty>
+		<ListProperty type="Symbol" symUID="0x35703FC4">object-physical-character-AmbientCharacters-CN_Bdwk_Female_Eve</ListProperty>
+		<ListProperty type="Symbol" symUID="0x3560787C">object-physical-character-AmbientCharacters-CN_Bdwk_Female_Eve_Yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0x5DD667D2">object-physical-character-CollegeFemale</ListProperty>
+		<ListProperty type="Symbol" symUID="0xA00BCE98">object-physical-character-CollegeMale</ListProperty>
+		<ListProperty type="Symbol" symUID="0x476D5A20">object-physical-character-AmbientCharacters-CN_Sexy_Female</ListProperty>
+		<ListProperty type="Symbol" symUID="0xA4FB9106">object-physical-character-janitor</ListProperty>
+		<ListProperty type="Symbol" symUID="0xBDEE9D16">object-physical-character-vagrant</ListProperty>
+	</Property>
+</PropertySetResource>

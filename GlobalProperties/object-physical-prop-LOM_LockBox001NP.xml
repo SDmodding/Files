@@ -1,5 +1,7 @@
-<PropertySet name="object-physical-prop-LOM_LockBox001NP" nameUID="0x60432886" schema="object-physical-prop-LOM_LockBox001NP">
-    <Parent>object-physical-prop-LOM_LockBox001</Parent>
-    <Property name="CollectibleType" type="Symbol" Symbol="0x117BD5C3">Collectible_LockBoxNP</Property>
-    <Property name="Description" type="String">Lock Box #1: North Point</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOM_LockBox001NP" nameUID="0x60432886">
+	<!-- Parents -->
+	<Parent nameUID="0x7CF61BEA">object-physical-prop-LOM_LockBox001</Parent>
+	<!-- Properties -->
+	<Property name="CollectibleType" type="Symbol" symUID="0x117BD5C3">Collectible_LockBoxNP</Property>
+	<Property name="Description" type="String">Lock Box #1: North Point</Property>
+</PropertySetResource>

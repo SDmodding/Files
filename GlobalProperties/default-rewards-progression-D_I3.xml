@@ -1,11 +1,20 @@
-<PropertySet name="default-rewards-progression-D_I3" nameUID="0x86C7A72E" schema="default-rewards-progression-D_I3">
-    <Parent>default-rewards-progression-date_defaults</Parent>
-    <Property name="CompletionText" type="String">Ilyana: Third Date</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x25E9E9FD">
-            <Property name="0x308E0AE5" type="String">face_increased_icon</Property>
-            <Property name="0xDE3E6A23" type="String">You can now access a Jet Boat in all major docks</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-D_I3" nameUID="0x86C7A72E">
+	<!-- Parents -->
+	<Parent nameUID="0xE6CB9FEF">default-rewards-progression-date_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x25E9E9FD">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Icon" type="String">face_increased_icon</Property>
+				<Property name="Text" type="String">You can now access a Jet Boat in all major docks</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">Ilyana: Third Date</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x25E9E9FD (Normal) -->
+<!-- 0x5F96DC30 (Normal) -->

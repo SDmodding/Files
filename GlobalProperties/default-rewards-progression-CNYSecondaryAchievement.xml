@@ -1,14 +1,25 @@
-<PropertySet name="default-rewards-progression-CNYSecondaryAchievement" nameUID="0xB545D956" schema="default-rewards-progression-CNYSecondaryAchievement">
-    <Parent>default-rewards-progression-dlc_cny_event_defaults</Parent>
-    <Property name="0xBF780215" type="Symbol"/>
-    <Property name="CompletionText" type="String">$STATS_EVENTS_COMPLETED</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">REWARD_CULTIST</Property>
-            <Property name="0xDE3E6A23" type="String">$CNY_REWARD_CULTIST_OUTFIT</Property>
-            <Property name="0xE99C970C" type="Boolean">True</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-CNYSecondaryAchievement" nameUID="0xB545D956">
+	<!-- Parents -->
+	<Parent nameUID="0x367D1CC6">default-rewards-progression-dlc_cny_event_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">REWARD_CULTIST</Property>
+				<Property name="Text" type="String">$CNY_REWARD_CULTIST_OUTFIT</Property>
+				<Property name="~e99c970c~" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$STATS_EVENTS_COMPLETED</Property>
+	<Property name="~bf780215~" type="Symbol" symUID="0x336FFC44"/>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x336FFC44 (Normal) -->
+<!-- 0xBF780215 (Normal) -->
+<!-- 0xE99C970C (Normal) -->
+<!-- 0xF630B577 (Normal) -->

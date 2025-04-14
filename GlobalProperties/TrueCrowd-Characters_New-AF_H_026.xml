@@ -1,9 +1,13 @@
-<PropertySet name="TrueCrowd-Characters_New-AF_H_026" nameUID="0xEF8BB6EE" schema="TrueCrowd-Characters_New-AF_H_026">
-    <Property name="FemCapOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Rotation" type="Vector3" x="-18.3522" y="-18.3522" z="-0.862762"/>
-            <Property name="Translation" type="Vector3" x="0.00229614" y="0.00229614" z="-0.0418042"/>
-        </PropertySet>
-    </Property>
-    <Property name="FemHatOffset" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="TrueCrowd-Characters_New-AF_H_026" nameUID="0xEF8BB6EE">
+	<!-- Properties -->
+	<Property name="FemCapOffset" type="PropSet">
+		<PropertySet name="FemCapOffset" nameUID="0x6EC56766">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="0.00229614" y="-0.0418042" z="0.0158472"/>
+			<Property name="Rotation" type="Vector3" x="-18.3522" y="-0.862762" z="2.20118"/>
+		</PropertySet>
+	</Property>
+	<Property name="FemHatOffset" type="PropSet">
+		<PropertySet name="FemHatOffset" nameUID="0xCBDB3ABD"/>
+	</Property>
+</PropertySetResource>

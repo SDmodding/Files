@@ -1,20 +1,26 @@
-<PropertySet name="default-rewards-progression-J_CJ_DR_03" nameUID="0x594511FE" schema="default-rewards-progression-J_CJ_DR_03">
-    <Parent>default-rewards-progression-job_defaults</Parent>
-    <Property name="0x72201393" type="Int32">0</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_CJ_DRUG_RUNNER_05</Property>
-    <Property name="CopStartingScore" type="Int32">50</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="EnableTriadScoring" type="Boolean">False</Property>
-    <Property name="GamesliceType" type="Symbol"/>
-    <Property name="MoneyAdjustment" type="Int32">20000</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x9B06086B">
-            <Property name="0x308E0AE5" type="String">vehicle_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">DLC_Wangan_Undercover01</Property>
-            <Property name="0xDE3E6A23" type="String">$DLC_PRESALE_UNDERCOVER_REWARD_3</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-J_CJ_DR_03" nameUID="0x594511FE">
+	<!-- Parents -->
+	<Parent nameUID="0x93DAADC2">default-rewards-progression-job_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Vehicle" nameUID="0x9B06086B">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9B06086B">Vehicle</Property>
+				<Property name="Icon" type="String">vehicle_icon</Property>
+				<Property name="AssetId" type="String">DLC_Wangan_Undercover01</Property>
+				<Property name="Text" type="String">$DLC_PRESALE_UNDERCOVER_REWARD_3</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">50</Property>
+	<Property name="MoneyAdjustment" type="Int32">20000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_CJ_DRUG_RUNNER_05</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x50419A9A">DLC_POLICE</Property>
+	<Property name="EnableTriadScoring" type="Boolean">false</Property>
+</PropertySetResource>

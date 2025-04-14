@@ -1,4 +1,8 @@
-<PropertySet name="object-logical-Turf" nameUID="0xB56B79CE" schema="object-logical-Turf">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0xAC9D9F10">Turf</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-Turf" nameUID="0xB56B79CE">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x2C0EECC4">default-component-Turf</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0xAC9D9F10">Turf</Property>
+</PropertySetResource>

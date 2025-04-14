@@ -1,35 +1,42 @@
-<PropertySet name="object-physical-character-EventCharacters-E_BA2_Boyfriend_Character" nameUID="0xF28D3BE7" schema="object-physical-character-EventCharacters-E_BA2_Boyfriend_Character">
-    <Parent>default-component-FaceAction</Parent>
-    <Property name="Description" type="String">Favour: Break Arrest 2 Boyfriend</Property>
-    <Property name="FaceAction" type="Symbol" Symbol="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
-    <Property name="FaceActionEnabled" type="Boolean">False</Property>
-    <Property name="RemoveOnCompletion" type="Boolean">True</Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_THUG</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_STRIKER_QUICK</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">TRIAD_WINSTON</FactionClass>
-            <Gender type="Symbol">Male</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-EventCharacters-E_BA2_Boyfriend_Character" nameUID="0xF28D3BE7">
+	<!-- Parents -->
+	<Parent nameUID="0xD0BBE97D">default-component-FaceAction</Parent>
+	<Parent nameUID="0xA83C1F5D">object-physical-character-Thug_Wsg_quick</Parent>
+	<!-- Properties -->
+	<Property name="FaceAction" type="Symbol" symUID="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x2DD6F805">Event_NPC</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="RemoveOnCompletion" type="Boolean">true</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0xD2BB8C2">eCHARACTER_TYPE_THUG</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0xB92E1EFC">eFIGHTING_CLASS_STRIKER_QUICK</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x2FDA7843">TRIAD_WINSTON</Property>
+			<Property name="Gender" type="Symbol" symUID="0x166A8B5C">Male</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="FaceActionEnabled" type="Boolean">false</Property>
+	<Property name="Description" type="String">Favour: Break Arrest 2 Boyfriend</Property>
+</PropertySetResource>

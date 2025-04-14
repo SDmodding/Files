@@ -1,6 +1,8 @@
-<PropertySet name="default-rewards-progression-E_FC_05" nameUID="0x7731BAE0" schema="default-rewards-progression-E_FC_05">
-    <Parent>default-rewards-progression-event_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_FIGHT_CLUB_5</Property>
-    <Property name="MoneyAdjustment" type="Int32">0</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-E_FC_05" nameUID="0x7731BAE0">
+	<!-- Parents -->
+	<Parent nameUID="0xD907A49A">default-rewards-progression-event_defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">0</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_FIGHT_CLUB_5</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+</PropertySetResource>

@@ -1,8 +1,9 @@
-<PropertySet name="Targeting-SubTargetingProfiles-Locations-DriverHip" nameUID="0x7AC7464D" schema="Targeting-SubTargetingProfiles-Locations-DriverHip">
-    <Property name="AccuracyPenalty" type="Float32">0.4</Property>
-    <Property name="AccuracyRate" type="Float32">0.4</Property>
-    <Property name="BoneName" type="SymbolUC" Symbol="0xCC742058">Bip01 Spine1</Property>
-    <Property name="Offset" type="Vector3" x="0.1" y="0.1" z="-0.15"/>
-    <Property name="Radius" type="Float32">0.2</Property>
-    <Property name="SubTargetType" type="Symbol" Symbol="0x1FF9A190">eTARGET_TYPE_VEHICLE_DRIVER</Property>
-</PropertySet>
+<PropertySetResource name="Targeting-SubTargetingProfiles-Locations-DriverHip" nameUID="0x7AC7464D">
+	<!-- Properties -->
+	<Property name="Radius" type="Float32">0.2</Property>
+	<Property name="SubTargetType" type="Symbol" symUID="0x1FF9A190">eTARGET_TYPE_VEHICLE_DRIVER</Property>
+	<Property name="AccuracyPenalty" type="Float32">0.4</Property>
+	<Property name="Offset" type="Vector3" x="0.1" y="-0.15" z="0"/>
+	<Property name="AccuracyRate" type="Float32">0.4</Property>
+	<Property name="BoneName" type="SymbolUC" symUID="0xCC742058">BIP01 SPINE1</Property>
+</PropertySetResource>

@@ -1,6 +1,8 @@
-<PropertySet name="default-rewards-progression-E_NP2_BS3" nameUID="0x9877E541" schema="default-rewards-progression-E_NP2_BS3">
-    <Parent>default-rewards-progression-event_defaults</Parent>
-    <Property name="CompletionText" type="String">MiniBus Line</Property>
-    <Property name="MoneyAdjustment" type="Int32">2300</Property>
-    <Property name="StandingAdjustment" type="Int32">10</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-E_NP2_BS3" nameUID="0x9877E541">
+	<!-- Parents -->
+	<Parent nameUID="0xD907A49A">default-rewards-progression-event_defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">2300</Property>
+	<Property name="CompletionText" type="String">MiniBus Line</Property>
+	<Property name="StandingAdjustment" type="Int32">10</Property>
+</PropertySetResource>

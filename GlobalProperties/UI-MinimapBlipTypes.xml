@@ -1,1263 +1,1680 @@
-<PropertySet name="UI-MinimapBlipTypes" nameUID="0xB0F9904E" schema="UI-MinimapBlipTypes">
-    <Property name="blipTypes" type="List">
-        <ListProperty nameUID="0x9DDDDEEF">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x66F13422">Player_Arrow</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">player_arrow</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x67DBD6CF">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0xC48AEE20">Waypoint</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">player_car</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xEC12FDFA">
-            <Property name="caption" type="String">$MAP_LEGEND_WAYPOINT</Property>
-            <Property name="drawDepth" type="UInt32">6</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xC48AEE20">Waypoint</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">waypoint</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x8E4B7BF1">
-            <Property name="caption" type="String">$MAP_LEGEND_MISSION_START</Property>
-            <Property name="drawDepth" type="UInt32">5</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x1C09674">Mission_Start</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">mission_start</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x32C3B8B9">
-            <Property name="caption" type="String">$MAP_LEGEND_MISSION_OBJECTIVE</Property>
-            <Property name="drawDepth" type="UInt32">5</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x11629BA4">Mission_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">mission_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4D51D390">
-            <Property name="caption" type="String">$MAP_LEGEND_RACE_START</Property>
-            <Property name="drawDepth" type="UInt32">4</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0xFDD3A318">Race_Start</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">race_start</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x320E4EF9">
-            <Property name="caption" type="String">$MAP_LEGEND_RACE_START_FLAG</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0x67359A8D">Race_Start_Flag</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isHiddenIndoors" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">race_start_flag</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB5BC2415">
-            <Property name="caption" type="String">$MAP_LEGEND_RACE_OBJECTIVE</Property>
-            <Property name="drawDepth" type="UInt32">4</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0xDFF0A4FB">Race_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isHiddenIndoors" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">race_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB7BEEEC4">
-            <Property name="caption" type="String">$MAP_LEGEND_RACE_END</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0x2549FB96">Race_End</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isHiddenIndoors" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">race_end</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF3BE199A">
-            <Property name="caption" type="String">$MAP_LEGEND_COP_JOB</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">cop_event_start</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xCA3E3AA0">
-            <Property name="caption" type="String">$MAP_LEGEND_EVENT_START</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0xE6DCCF96">Event_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">event_start</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x26221802">
-            <Property name="caption" type="String">$MAP_LEGEND_EVENT_OBJECTIVE</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xE6DCCF96">Event_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">event_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x416695E7">
-            <Property name="caption" type="String">$MAP_LEGEND_CASE_START</Property>
-            <Property name="drawDepth" type="UInt32">4</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xFF994F7C">Case_Start</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">case_start</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x49547117">
-            <Property name="caption" type="String">$MAP_LEGEND_CASE_OBJECTIVE</Property>
-            <Property name="drawDepth" type="UInt32">4</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x8B11C096">Case_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">case_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x55D0A63D">
-            <Property name="caption" type="String">$MAP_LEGEND_JOB_START</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0x8AA31ADA">Job_Start</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">job_start</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x70A78F6A">
-            <Property name="caption" type="String">$MAP_LEGEND_JOB_OBJECTIVE</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xE10F8413">Job_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">job_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xEB65A58C">
-            <Property name="caption" type="String">$MAP_LEGEND_JOB_OBJECTIVE</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xE10F8413">Job_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isDistanceFilteredOnWorldMap" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">job_filtered_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4D89883A">
-            <Property name="caption" type="String">$MAP_LEGEND_COP_JOB</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0xA3220A78">Cop_Job</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">cop_job</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB81CC04C">
-            <Property name="caption" type="String">$MAP_LEGEND_CRIME_SCENE</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x8B3630FD">Crime_Scene</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">crime_scene</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x5969C281">
-            <Property name="caption" type="String">$MAP_LEGEND_ENEMY_OBJECTIVE</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x75FDECCC">Enemy_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">enemy_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6204C2ED">
-            <Property name="caption" type="String">$MAP_LEGEND_COP_OBJECTIVE</Property>
-            <Property name="drawDepth" type="UInt32">4</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x7D1E30D">Cop_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">cop_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xBAA22B11">
-            <Property name="caption" type="String">$MAP_LEGEND_HIDING_SPOT</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x600D346E">Hiding_Spot</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">hiding_spot</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6BB2DB55">
-            <Property name="caption" type="String">$MAP_LEGEND_HIDING_SPOT_GARAGE</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xB5D99DFC">Hiding_Spot_Garage</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">hiding_spot_garage</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC1290A31">
-            <Property name="caption" type="String">$MAP_LEGEND_HIDING_SPOT</Property>
-            <Property name="drawDepth" type="UInt32">2</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xF95234CA">Foot_Hiding_Spot</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">hiding_spot_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xEA399E0">
-            <Property name="caption" type="String">$MAP_LEGEND_HIDING_SPOT_GARAGE</Property>
-            <Property name="drawDepth" type="UInt32">2</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x7E1B39B9">Vehicle_Hiding_Spot</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">hiding_spot_garage_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7AB456C7">
-            <Property name="caption" type="String">$MAP_LEGEND_POLICE</Property>
-            <Property name="drawDepth" type="UInt32">1</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xFFF0D3EC">Cop</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="radiusColor" type="UInt32">3439329344</Property>
-            <Property name="typeName" type="String">cop_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3428D8C1">
-            <Property name="caption" type="String">$MAP_LEGEND_POLICE_FOOT</Property>
-            <Property name="drawDepth" type="UInt32">1</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xC34A9303">Cop_OnFoot</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">cop_foot_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6781E2CD">
-            <Property name="caption" type="String">$MAP_LEGEND_POLICE_FOOT</Property>
-            <Property name="drawDepth" type="UInt32">1</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x707BE63">Cop_OnFoot_Patrol</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">cop_foot_patrol_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x73EAE5C6">
-            <Property name="caption" type="String">$MAP_LEGEND_POLICE</Property>
-            <Property name="drawDepth" type="UInt32">1</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x3E137C36">Cop_Vehicle_Patrol</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">cop_vehicle_patrol_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA87ECB3">
-            <Property name="caption" type="String">$MAP_LEGEND_WITNESS</Property>
-            <Property name="drawDepth" type="UInt32">1</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x606E9153">Witness</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">witness_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7CF8AA33">
-            <Property name="caption" type="String">$MAP_LEGEND_FERRY</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x2868668D">Ferry</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">ferry</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7FA67F3A">
-            <Property name="caption" type="String">$MAP_LEGEND_BUS_STOP</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x9D2E5782">Bus_Stop</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">bus_stop</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x89546488">
-            <Property name="caption" type="String">$MAP_LEGEND_PORK_BUN</Property>
-            <Property name="drawDepth" type="UInt32">2</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0xEC7EBE55">Pork_Bun_Vendor</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isDistanceFilteredOnWorldMap" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_social</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x8FCDC869">
-            <Property name="caption" type="String">$MAP_LEGEND_CONVENIENCE_STORE</Property>
-            <Property name="drawDepth" type="UInt32">2</Property>
-            <Property name="filterDistance" type="Float32">100</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0x523644EF">Convenience_Store</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isDistanceFilteredOnWorldMap" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_convenience_inside</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x8FCDC869">
-            <Property name="caption" type="String">$MAP_LEGEND_CONVENIENCE_STORE</Property>
-            <Property name="drawDepth" type="UInt32">2</Property>
-            <Property name="filterDistance" type="Float32">125</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0x523644EF">Convenience_Store</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isDistanceFilteredOnWorldMap" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_convenience_outside</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7C95F735">
-            <Property name="caption" type="String">$MAP_LEGEND_APOTHECARY_STORE</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0x55F511CA">Apothecary_Store</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_apothecary</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x22F519D0">
-            <Property name="caption" type="String">$MAP_LEGEND_APOTHECARY_STORE</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x55F511CA">Apothecary_Store</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_apothecary_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x2861073B">
-            <Property name="caption" type="String">$MAP_LEGEND_CLOTHING_STORE</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0x32FC88DF">Clothing_Store</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_clothing</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x2861073B">
-            <Property name="caption" type="String">$MAP_LEGEND_CLOTHING_STORE</Property>
-            <Property name="filterDistance" type="Float32">100</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0x32FC88DF">Clothing_Store</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_clothing_indoors</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA4CFABF">
-            <Property name="caption" type="String">$LEGENDARY_OUTFITS_COLOR</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_exotic_clothing</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD555DE83">
-            <Property name="caption" type="String">$MAP_LEGEND_CLOTHING_STORE</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x32FC88DF">Clothing_Store</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_clothing_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3C4CD3C0">
-            <Property name="caption" type="String">$MAP_LEGEND_GAMBLING_DEN</Property>
-            <Property name="drawDepth" type="UInt32">2</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0x3D2D33ED">Gambling_Den</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_gambling</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xDC9D1FCB">
-            <Property name="caption" type="String">$MAP_LEGEND_MASSAGE_PARLOR</Property>
-            <Property name="filterDistance" type="Float32">175</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0xDC88E661">Massage_Parlors</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_massage</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD67AB22F">
-            <Property name="caption" type="String">$MAP_LEGEND_MASSAGE_PARLOR</Property>
-            <Property name="filterDistance" type="Float32">175</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0xDC88E661">Massage_Parlors</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">outdoor_massage</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x2E639DA6">
-            <Property name="caption" type="String">$MAP_LEGEND_MASSAGE_PARLOR</Property>
-            <Property name="drawDepth" type="UInt32">2</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xDC88E661">Massage_Parlors</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_massage_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC846629D">
-            <Property name="caption" type="String">$MAP_LEGEND_DRUNKEN_DICE</Property>
-            <Property name="drawDepth" type="UInt32">2</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0x74240E55">Drunken_Dice</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">drunken_dice</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA4556750">
-            <Property name="caption" type="String">$MAP_LEGEND_VEHICLE_STORE</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0xD1BA9A43">Vehicle_Store</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_vehicle</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF18EE5ED">
-            <Property name="caption" type="String">$MAP_LEGEND_MARTIAL_ARTS</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x71475E5F">Martial_Arts_School</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">martial_arts</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xAEFB51F9">
-            <Property name="caption" type="String">$MAP_LEGEND_MARTIAL_ARTS</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x11D4C5AB">Martial_Arts_School_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">martial_arts_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3E1E7739">
-            <Property name="caption" type="String">$TRIADWARS_SAFEHOUSE</Property>
-            <Property name="drawDepth" type="UInt32">6</Property>
-            <Property name="filterDistance" type="Float32">300</Property>
-            <Property name="icon" type="Symbol" Symbol="0xC4250917">TriadWars_Safehouse</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">safe_house</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x45C90BB2">
-            <Property name="caption" type="String">$MAP_LEGEND_SAFEHOUSE_UNLOCKED</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x345E53BD">Safehouse_Unlocked</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">safe_house_unlocked</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3334E727">
-            <Property name="caption" type="String">$MAP_LEGEND_UNDERCOVER_SAFEHOUSE</Property>
-            <Property name="filterDistance" type="Float32">300</Property>
-            <Property name="icon" type="Symbol" Symbol="0xCD3D4C07">Undercover_Safehouse</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">undercover_safe_house</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7A7F62C9">
-            <Property name="caption" type="String">$MAP_LEGEND_SAFEHOUSE_UNLOCKED</Property>
-            <Property name="drawDepth" type="UInt32">4</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x345E53BD">Safehouse_Unlocked</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isHiddenIndoors" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">safe_house_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xECA85282">
-            <Property name="caption" type="String">$MAP_LEGEND_PARKING_LOT</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xCDDBB8B7">Parking_Lot</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isHiddenIndoors" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">parking_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1E322D3B">
-            <Property name="caption" type="String">$MAP_LEGEND_PARKING_LOT</Property>
-            <Property name="drawDepth" type="UInt32">4</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0xCDDBB8B7">Parking_Lot</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isHiddenIndoors" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">parking_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x43535900">
-            <Property name="caption" type="String">$MAP_LEGEND_FIGHT_CLUB</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0xADD847BA">Fight_Club</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">fight_club</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE647BE03">
-            <Property name="caption" type="String">$MAP_LEGEND_COCK_FIGHTING</Property>
-            <Property name="filterDistance" type="Float32">560</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0x121AFA61">Cock_Fighting</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">cock_fighting</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7E157F6F">
-            <Property name="caption" type="String">$MAP_LEGEND_KARAOKE</Property>
-            <Property name="filterDistance" type="Float32">560</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0x83859207">Karaoke</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">karaoke</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x8B25011E">
-            <Property name="caption" type="String">$MAP_LEGEND_ENEMY</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xDFB5CDA0">Enemy</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="radiusColor" type="UInt32">16777044</Property>
-            <Property name="typeName" type="String">enemy</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x95400532">
-            <Property name="caption" type="String">$MAP_LEGEND_ENEMY</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xDFB5CDA0">Enemy</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="radiusColor" type="UInt32">16777044</Property>
-            <Property name="typeName" type="String">enemy_noncombat</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x34A711F9">
-            <Property name="caption" type="String">$MAP_LEGEND_FRIENDLY</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x6BAFE38F">Generic_Blip</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">friendly</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF1802173">
-            <Property name="caption" type="String">$MAP_LEGEND_SOCIAL</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xFD98878C">Social</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">girl</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6C7E457">
-            <Property name="caption" type="String">$MAP_LEGEND_EVENT_OBJECTIVE</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xE6DCCF96">Event_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">social</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF3513B7E">
-            <Property name="caption" type="String">$MAP_LEGEND_CONTACT</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xEC1D616">Contact</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">contact</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x8DA5B862">
-            <Property name="caption" type="String">$MAP_LEGEND_FAVOUR</Property>
-            <Property name="drawDepth" type="UInt32">4</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0x89963A64">Face_Character</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isProximityUnlockable" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">face_character</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x9ED0F181">
-            <Property name="caption" type="String">$MAP_LEGEND_FAVOUR</Property>
-            <Property name="drawDepth" type="UInt32">6</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0x6ED73E94">Date_Character</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isProximityUnlockable" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">date_character</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x96C65B3C">
-            <Property name="caption" type="String">$MAP_LEGEND_FAVOUR</Property>
-            <Property name="drawDepth" type="UInt32">4</Property>
-            <Property name="icon" type="Symbol" Symbol="0x89963A64">Face_Character</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">face_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1CFC8EA6">
-            <Property name="caption" type="String">$MAP_LEGEND_FAVOUR</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x7E32B967">Story_Character</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">story_character</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4B2A830C">
-            <Property name="caption" type="String">$MAP_LEGEND_SECURITY_CAMERA</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol" Symbol="0x61201D22">Security_Camera</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isProximityUnlockable" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">security_camera</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7AD657E1">
-            <Property name="caption" type="String">$MAP_LEGEND_SECURITY_CAMERA</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol" Symbol="0xB4239560">Security_Camera_Collected</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">True</Property>
-            <Property name="typeName" type="String">security_camera_collected</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4913B570">
-            <Property name="caption" type="String">$MAP_LEGEND_HEALTH_SHRINE</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol" Symbol="0xB24CD6AB">Shrine</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isProximityUnlockable" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">shrine</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD5918CCA">
-            <Property name="caption" type="String">$MAP_LEGEND_HEALTH_SHRINE</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol" Symbol="0x2A210F58">Shrine_Collected</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">True</Property>
-            <Property name="typeName" type="String">shrine_collected</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xAA68E184">
-            <Property name="caption" type="String">$MAP_LEGEND_LOCKBOX</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol" Symbol="0x57F80CEC">Lockbox</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isProximityUnlockable" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">lockbox</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xAC4AEC80">
-            <Property name="caption" type="String">$MAP_LEGEND_LOCK_COLLECTED</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol" Symbol="0x65159D7D">Lockbox_Collected</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">True</Property>
-            <Property name="typeName" type="String">lockbox_collected</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA86FB02D">
-            <Property name="caption" type="String">$MAP_LEGEND_MELEE_UPGRADE</Property>
-            <Property name="filterDistance" type="Float32">300</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol" Symbol="0x8CF37B84">Melee_Upgrade</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isProximityUnlockable" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">melee_upgrade</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF8621DBC">
-            <Property name="caption" type="String">$MAP_LEGEND_MELEE_UPGRADE</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol" Symbol="0x61C0D8F9">Melee_Upgrade_Collected</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">True</Property>
-            <Property name="typeName" type="String">melee_upgrade_collected</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x681497B0">
-            <Property name="caption" type="String">$MAP_LEGEND_JUMP</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0x99CD7E9C">Jump</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isProximityUnlockable" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">jump</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB27B11BB">
-            <Property name="caption" type="String">$MAP_LEGEND_JUMP</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="hideOnBorder" type="Boolean">True</Property>
-            <Property name="icon" type="Symbol" Symbol="0xE232FEB3">Jump_Collected</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">True</Property>
-            <Property name="typeName" type="String">jump_collected</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFD2D2D38">
-            <Property name="caption" type="String">$MAP_LEGEND_TOURIST_PHOTO</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="icon" type="Symbol" Symbol="0xB17418BB">Tourist_Photo</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">tourist_photo</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x318D1387">
-            <Property name="caption" type="String">$MAP_LEGEND_TAPE_RECORDER</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="icon" type="Symbol" Symbol="0xDD22968D">Tape_Recorder</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">tape_recorder</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x5BF0CF">
-            <Property name="caption" type="String">$MAP_LEGEND_BUG</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="icon" type="Symbol" Symbol="0x9695B250">Bug</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">bug</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x38841246">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="icon" type="Symbol" Symbol="0x41FEDB51">Up_Arrow</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">up_arrow</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x937E63A8">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xD2D8E698">invisible_icon</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="radiusColor" type="UInt32">4286578772</Property>
-            <Property name="typeName" type="String">invisible_icon</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x63A7B63E">
-            <Property name="caption" type="String">$MAP_LEGEND_HIJACK</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x98F8D5E5">Hijack</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">hijack</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB8627C06">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xD2D8E698">invisible_icon</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">empty</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7DBBA922">
-            <Property name="caption" type="String">$MAP_LEGEND_ROADBLOCK</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xD625D892">Road_Block</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">roadblock_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x40BC355E">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x6BAFE38F">Generic_Blip</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">whitedot_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFD556639">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xB4BC6956">Mission_Vehicle_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">greendot_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1DB997E">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xB4BC6956">Mission_Vehicle_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">reddot_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x813DDFE7">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xE6DCCF96">Event_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">bluedot_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x8DE4C359">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xE6DCCF96">Event_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">event_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE44DB712">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xDFB5CDA0">Enemy</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">enemy_small</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB4B323">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x6BAFE38F">Generic_Blip</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">friendly_small</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1AD1B700">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xB5DC8256">Lover</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">girl_small</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x73B981AC">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xFD98878C">Social</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">social_ambient</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x95A29CF6">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xFD98878C">Social</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">social_mission</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x5EE1C07F">
-            <Property name="caption" type="String"/>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x8B11C096">Case_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">cop_activities_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF7EB486D">
-            <Property name="caption" type="String"/>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xFF994F7C">Case_Start</Property>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">cop_activities_start</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x63E1D1F2">
-            <Property name="caption" type="String"/>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xE6DCCF96">Event_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">event_special</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7614A45B">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x8B11C096">Case_Objective</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">lead_special</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7E2AD87A">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0xEA7D02BA">Job_Trigger</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">job_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x9A0E81C">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xC2E475F6">Generic_Interactive_Object</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">jackie_symbol</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x991BB6E0">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xF36D863F">Generic_Store</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">store_gadget</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE12AED5D">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0xC48AEE20">Waypoint</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">location</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC8E2BEA7">
-            <Property name="caption" type="String"/>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol" Symbol="0x6BAFE38F">Generic_Blip</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">weapon_spawn</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4750C936">
-            <Property name="caption" type="String">$MAP_LEGEND_DRUG_BUST</Property>
-            <Property name="drawDepth" type="UInt32">5</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0x7CDA7AB3">Triad_Wars</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">triad_war</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4750C936">
-            <Property name="caption" type="String">$MAP_LEGEND_DRUG_BUST</Property>
-            <Property name="drawDepth" type="UInt32">5</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol" Symbol="0x7CDA7AB3">Triad_Wars</Property>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">triad_war_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x77A910BE">
-            <Property name="caption" type="String">$MAP_LEGEND_DLC_01</Property>
-            <Property name="drawDepth" type="UInt32">5</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">ghost_lesser_ghoul</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6C86DD41">
-            <Property name="caption" type="String">$MAP_LEGEND_DLC_02</Property>
-            <Property name="drawDepth" type="UInt32">5</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">ghost_elite_ghoul</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE53F6938">
-            <Property name="caption" type="String">$MAP_LEGEND_DLC_03</Property>
-            <Property name="drawDepth" type="UInt32">5</Property>
-            <Property name="filterDistance" type="Float32">250</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">ghost_trapped_ped</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x97F9D11A">
-            <Property name="drawDepth" type="UInt32">5</Property>
-            <Property name="filterDistance" type="Float32">300</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">zodiac_start</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1916DC51">
-            <Property name="caption" type="String">$MAP_LEGEND_JOB_OBJECTIVE</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">zodiac_objective</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC99C8AFF">
-            <Property name="caption" type="String">$MAP_LEGEND_FRIENDLY</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">zodiac_friendly</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF552502F">
-            <Property name="caption" type="String">$MAP_LEGEND_EVENT_OBJECTIVE</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">zodiac_event</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE4786D70">
-            <Property name="caption" type="String">$MAP_LEGEND_ENEMY</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="radiusColor" type="UInt32">16777044</Property>
-            <Property name="typeName" type="String">zodiac_enemy</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD023E182">
-            <Property name="drawDepth" type="UInt32">5</Property>
-            <Property name="filterDistance" type="Float32">300</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">transterror_start</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x19902FC7">
-            <Property name="caption" type="String">$MAP_LEGEND_JOB_START</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">200</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">transterror_mission</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x855AC03A">
-            <Property name="caption" type="String">$MAP_LEGEND_JOB_START</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">750</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">transterror_event</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x917C20C1">
-            <Property name="caption" type="String">$MAP_LEGEND_JOB_START</Property>
-            <Property name="drawDepth" type="UInt32">3</Property>
-            <Property name="filterDistance" type="Float32">750</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="typeName" type="String">transterror_mission_repeat</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x282E9F7D">
-            <Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_01</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isProximityUnlockable" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">ghost_orb</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xEAB7EE50">
-            <Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_01</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">True</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">ghost_orb_collected</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x65CBC898">
-            <Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_02</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isProximityUnlockable" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">fire_statue</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6BCC25F6">
-            <Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_02</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">True</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">fire_statue_collected</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xAACD5D83">
-            <Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_03</Property>
-            <Property name="filterDistance" type="Float32">150</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">True</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isProximityUnlockable" type="Boolean">True</Property>
-            <Property name="isWorldMapOnly" type="Boolean">False</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">evidence_bag</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB326563C">
-            <Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_03</Property>
-            <Property name="hasAltitude" type="Boolean">False</Property>
-            <Property name="icon" type="Symbol"/>
-            <Property name="isDistanceFiltered" type="Boolean">False</Property>
-            <Property name="isObjective" type="Boolean">False</Property>
-            <Property name="isWorldMapOnly" type="Boolean">True</Property>
-            <Property name="progressionFlow" type="Symbol"/>
-            <Property name="typeName" type="String">evidence_bag_collected</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="UI-MinimapBlipTypes" nameUID="0xB0F9904E">
+	<!-- Properties -->
+	<Property name="blipTypes" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-PlayerArrow" nameUID="0x9DDDDEEF">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">player_arrow</Property>
+				<Property name="icon" type="Symbol" symUID="0x66F13422">Player_Arrow</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-PlayerCar" nameUID="0x67DBD6CF">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">player_car</Property>
+				<Property name="icon" type="Symbol" symUID="0xC48AEE20">Waypoint</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Waypoint" nameUID="0xEC12FDFA">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_WAYPOINT</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">waypoint</Property>
+				<Property name="icon" type="Symbol" symUID="0xC48AEE20">Waypoint</Property>
+				<Property name="drawDepth" type="UInt32">6</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-MissionStart" nameUID="0x8E4B7BF1">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_MISSION_START</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">mission_start</Property>
+				<Property name="icon" type="Symbol" symUID="0x1C09674">Mission_Start</Property>
+				<Property name="drawDepth" type="UInt32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-MissionObjective" nameUID="0x32C3B8B9">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_MISSION_OBJECTIVE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">mission_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x11629BA4">Mission_Objective</Property>
+				<Property name="drawDepth" type="UInt32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-RaceStart" nameUID="0x4D51D390">
+				<!-- Properties -->
+				<Property name="isHiddenIndoors" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_RACE_START</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">race_start</Property>
+				<Property name="icon" type="Symbol" symUID="0xFDD3A318">Race_Start</Property>
+				<Property name="drawDepth" type="UInt32">4</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-RaceStartFlag" nameUID="0x320E4EF9">
+				<!-- Properties -->
+				<Property name="isHiddenIndoors" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_RACE_START_FLAG</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">race_start_flag</Property>
+				<Property name="icon" type="Symbol" symUID="0x67359A8D">Race_Start_Flag</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-RaceObjective" nameUID="0xB5BC2415">
+				<!-- Properties -->
+				<Property name="isHiddenIndoors" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_RACE_OBJECTIVE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">race_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0xDFF0A4FB">Race_Objective</Property>
+				<Property name="drawDepth" type="UInt32">4</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-RaceEnd" nameUID="0xB7BEEEC4">
+				<!-- Properties -->
+				<Property name="isHiddenIndoors" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_RACE_END</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">race_end</Property>
+				<Property name="icon" type="Symbol" symUID="0x2549FB96">Race_End</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF3BE199A">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_COP_JOB</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">cop_event_start</Property>
+				<Property name="icon" type="Symbol" symUID="0xF8EBBDA3"/>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-EventStart" nameUID="0xCA3E3AA0">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_EVENT_START</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">event_start</Property>
+				<Property name="icon" type="Symbol" symUID="0xE6DCCF96">Event_Objective</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-EventObjective" nameUID="0x26221802">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_EVENT_OBJECTIVE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">event_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0xE6DCCF96">Event_Objective</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CaseStart" nameUID="0x416695E7">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_CASE_START</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">case_start</Property>
+				<Property name="icon" type="Symbol" symUID="0xFF994F7C">Case_Start</Property>
+				<Property name="drawDepth" type="UInt32">4</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CaseObjective" nameUID="0x49547117">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_CASE_OBJECTIVE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">case_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x8B11C096">Case_Objective</Property>
+				<Property name="drawDepth" type="UInt32">4</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-JobStart" nameUID="0x55D0A63D">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_JOB_START</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">job_start</Property>
+				<Property name="icon" type="Symbol" symUID="0x8AA31ADA">Job_Start</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-JobObjective" nameUID="0x70A78F6A">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_JOB_OBJECTIVE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">job_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0xE10F8413">Job_Objective</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-JobFilteredObjective" nameUID="0xEB65A58C">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_JOB_OBJECTIVE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">job_filtered_objective</Property>
+				<Property name="isDistanceFilteredOnWorldMap" type="Boolean">true</Property>
+				<Property name="icon" type="Symbol" symUID="0xE10F8413">Job_Objective</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CopJob" nameUID="0x4D89883A">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_COP_JOB</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">cop_job</Property>
+				<Property name="icon" type="Symbol" symUID="0xA3220A78">Cop_Job</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CrimeScene" nameUID="0xB81CC04C">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_CRIME_SCENE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">crime_scene</Property>
+				<Property name="icon" type="Symbol" symUID="0x8B3630FD">Crime_Scene</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-EnemyObjective" nameUID="0x5969C281">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_ENEMY_OBJECTIVE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">enemy_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x75FDECCC">Enemy_Objective</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CopObjective" nameUID="0x6204C2ED">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_COP_OBJECTIVE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">cop_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x7D1E30D">Cop_Objective</Property>
+				<Property name="drawDepth" type="UInt32">4</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-HidingSpot" nameUID="0xBAA22B11">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_HIDING_SPOT</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">hiding_spot</Property>
+				<Property name="icon" type="Symbol" symUID="0x600D346E">Hiding_Spot</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-HidingSpotGarage" nameUID="0x6BB2DB55">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_HIDING_SPOT_GARAGE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">hiding_spot_garage</Property>
+				<Property name="icon" type="Symbol" symUID="0xB5D99DFC">Hiding_Spot_Garage</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-HidingSpotObjective" nameUID="0xC1290A31">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_HIDING_SPOT</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">hiding_spot_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0xF95234CA">Foot_Hiding_Spot</Property>
+				<Property name="drawDepth" type="UInt32">2</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-HidingSpotGarageObjective" nameUID="0xEA399E0">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_HIDING_SPOT_GARAGE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">hiding_spot_garage_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x7E1B39B9">Vehicle_Hiding_Spot</Property>
+				<Property name="drawDepth" type="UInt32">2</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CopSymbol" nameUID="0x7AB456C7">
+				<!-- Properties -->
+				<Property name="radiusColor" type="UInt32">3439329344</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_POLICE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">cop_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0xFFF0D3EC">Cop</Property>
+				<Property name="drawDepth" type="UInt32">1</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CopFootSymbol" nameUID="0x3428D8C1">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_POLICE_FOOT</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">cop_foot_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0xC34A9303">Cop_OnFoot</Property>
+				<Property name="drawDepth" type="UInt32">1</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CopFootPatrolSymbol" nameUID="0x6781E2CD">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_POLICE_FOOT</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">cop_foot_patrol_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0x707BE63">Cop_OnFoot_Patrol</Property>
+				<Property name="drawDepth" type="UInt32">1</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CopVehiclePatrolSymbol" nameUID="0x73EAE5C6">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_POLICE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">cop_vehicle_patrol_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0x3E137C36">Cop_Vehicle_Patrol</Property>
+				<Property name="drawDepth" type="UInt32">1</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-WitnessSymbol" nameUID="0xA87ECB3">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_WITNESS</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">witness_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0x606E9153">Witness</Property>
+				<Property name="drawDepth" type="UInt32">1</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Ferry" nameUID="0x7CF8AA33">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_FERRY</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">ferry</Property>
+				<Property name="icon" type="Symbol" symUID="0x2868668D">Ferry</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-BusStop" nameUID="0x7FA67F3A">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_BUS_STOP</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">bus_stop</Property>
+				<Property name="icon" type="Symbol" symUID="0x9D2E5782">Bus_Stop</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreSocial" nameUID="0x89546488">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_PORK_BUN</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">store_social</Property>
+				<Property name="isDistanceFilteredOnWorldMap" type="Boolean">true</Property>
+				<Property name="icon" type="Symbol" symUID="0xEC7EBE55">Pork_Bun_Vendor</Property>
+				<Property name="drawDepth" type="UInt32">2</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreConvenience" nameUID="0x8FCDC869">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isHiddenIndoors" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_CONVENIENCE_STORE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">100</Property>
+				<Property name="typeName" type="String">store_convenience_inside</Property>
+				<Property name="isDistanceFilteredOnWorldMap" type="Boolean">true</Property>
+				<Property name="icon" type="Symbol" symUID="0x523644EF">Convenience_Store</Property>
+				<Property name="drawDepth" type="UInt32">2</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreConvenience" nameUID="0x8FCDC869">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isHiddenIndoors" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_CONVENIENCE_STORE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">125</Property>
+				<Property name="typeName" type="String">store_convenience_outside</Property>
+				<Property name="isDistanceFilteredOnWorldMap" type="Boolean">true</Property>
+				<Property name="icon" type="Symbol" symUID="0x523644EF">Convenience_Store</Property>
+				<Property name="drawDepth" type="UInt32">2</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreApothecary" nameUID="0x7C95F735">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isHiddenIndoors" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_APOTHECARY_STORE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">store_apothecary</Property>
+				<Property name="icon" type="Symbol" symUID="0x55F511CA">Apothecary_Store</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreApothecaryObjective" nameUID="0x22F519D0">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_APOTHECARY_STORE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">store_apothecary_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x55F511CA">Apothecary_Store</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreClothing" nameUID="0x2861073B">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isHiddenIndoors" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_CLOTHING_STORE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">store_clothing</Property>
+				<Property name="icon" type="Symbol" symUID="0x32FC88DF">Clothing_Store</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreClothing" nameUID="0x2861073B">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isHiddenIndoors" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_CLOTHING_STORE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">100</Property>
+				<Property name="typeName" type="String">store_clothing_indoors</Property>
+				<Property name="icon" type="Symbol" symUID="0x32FC88DF">Clothing_Store</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xA4CFABF">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isHiddenIndoors" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$LEGENDARY_OUTFITS_COLOR</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">store_exotic_clothing</Property>
+				<Property name="icon" type="Symbol" symUID="0x7F431637"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreClothingObjective" nameUID="0xD555DE83">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_CLOTHING_STORE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">store_clothing_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x32FC88DF">Clothing_Store</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreGambling" nameUID="0x3C4CD3C0">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_GAMBLING_DEN</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">store_gambling</Property>
+				<Property name="icon" type="Symbol" symUID="0x3D2D33ED">Gambling_Den</Property>
+				<Property name="drawDepth" type="UInt32">2</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreMassage" nameUID="0xDC9D1FCB">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_MASSAGE_PARLOR</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">175</Property>
+				<Property name="typeName" type="String">store_massage</Property>
+				<Property name="icon" type="Symbol" symUID="0xDC88E661">Massage_Parlors</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreMassageOut" nameUID="0xD67AB22F">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isHiddenIndoors" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_MASSAGE_PARLOR</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">175</Property>
+				<Property name="typeName" type="String">outdoor_massage</Property>
+				<Property name="icon" type="Symbol" symUID="0xDC88E661">Massage_Parlors</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreMassageObjective" nameUID="0x2E639DA6">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_MASSAGE_PARLOR</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">store_massage_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0xDC88E661">Massage_Parlors</Property>
+				<Property name="drawDepth" type="UInt32">2</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-DrunkenDice" nameUID="0xC846629D">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DRUNKEN_DICE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">drunken_dice</Property>
+				<Property name="icon" type="Symbol" symUID="0x74240E55">Drunken_Dice</Property>
+				<Property name="drawDepth" type="UInt32">2</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreVehicle" nameUID="0xA4556750">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_VEHICLE_STORE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">store_vehicle</Property>
+				<Property name="icon" type="Symbol" symUID="0xD1BA9A43">Vehicle_Store</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-MartialArts" nameUID="0xF18EE5ED">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_MARTIAL_ARTS</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">martial_arts</Property>
+				<Property name="icon" type="Symbol" symUID="0x71475E5F">Martial_Arts_School</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-MartialArtsObjective" nameUID="0xAEFB51F9">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_MARTIAL_ARTS</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">martial_arts_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x11D4C5AB">Martial_Arts_School_Objective</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-SafeHouse" nameUID="0x3E1E7739">
+				<!-- Properties -->
+				<Property name="isHiddenIndoors" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$TRIADWARS_SAFEHOUSE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">300</Property>
+				<Property name="typeName" type="String">safe_house</Property>
+				<Property name="icon" type="Symbol" symUID="0xC4250917">TriadWars_Safehouse</Property>
+				<Property name="drawDepth" type="UInt32">6</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-SafeHouseUnlocked" nameUID="0x45C90BB2">
+				<!-- Properties -->
+				<Property name="isHiddenIndoors" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_SAFEHOUSE_UNLOCKED</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">safe_house_unlocked</Property>
+				<Property name="icon" type="Symbol" symUID="0x345E53BD">Safehouse_Unlocked</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-SafeHouseUndercover" nameUID="0x3334E727">
+				<!-- Properties -->
+				<Property name="isHiddenIndoors" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_UNDERCOVER_SAFEHOUSE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">300</Property>
+				<Property name="typeName" type="String">undercover_safe_house</Property>
+				<Property name="icon" type="Symbol" symUID="0xCD3D4C07">Undercover_Safehouse</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-SafeHouseObjective" nameUID="0x7A7F62C9">
+				<!-- Properties -->
+				<Property name="isHiddenIndoors" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_SAFEHOUSE_UNLOCKED</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">safe_house_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x345E53BD">Safehouse_Unlocked</Property>
+				<Property name="drawDepth" type="UInt32">4</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-ParkingSymbol" nameUID="0xECA85282">
+				<!-- Properties -->
+				<Property name="isHiddenIndoors" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_PARKING_LOT</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">parking_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0xCDDBB8B7">Parking_Lot</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-ParkingObjective" nameUID="0x1E322D3B">
+				<!-- Properties -->
+				<Property name="isHiddenIndoors" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_PARKING_LOT</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">parking_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0xCDDBB8B7">Parking_Lot</Property>
+				<Property name="drawDepth" type="UInt32">4</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-FightClub" nameUID="0x43535900">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_FIGHT_CLUB</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">fight_club</Property>
+				<Property name="icon" type="Symbol" symUID="0xADD847BA">Fight_Club</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CockFighting" nameUID="0xE647BE03">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_COCK_FIGHTING</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">560</Property>
+				<Property name="typeName" type="String">cock_fighting</Property>
+				<Property name="icon" type="Symbol" symUID="0x121AFA61">Cock_Fighting</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Karaoke" nameUID="0x7E157F6F">
+				<!-- Properties -->
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_KARAOKE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">560</Property>
+				<Property name="typeName" type="String">karaoke</Property>
+				<Property name="icon" type="Symbol" symUID="0x83859207">Karaoke</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Enemy" nameUID="0x8B25011E">
+				<!-- Properties -->
+				<Property name="radiusColor" type="UInt32">16777044</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_ENEMY</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">enemy</Property>
+				<Property name="icon" type="Symbol" symUID="0xDFB5CDA0">Enemy</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-EnemyNonCombat" nameUID="0x95400532">
+				<!-- Properties -->
+				<Property name="radiusColor" type="UInt32">16777044</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_ENEMY</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">enemy_noncombat</Property>
+				<Property name="icon" type="Symbol" symUID="0xDFB5CDA0">Enemy</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Friendly" nameUID="0x34A711F9">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_FRIENDLY</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">friendly</Property>
+				<Property name="icon" type="Symbol" symUID="0x6BAFE38F">Generic_Blip</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Girl" nameUID="0xF1802173">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_SOCIAL</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">girl</Property>
+				<Property name="icon" type="Symbol" symUID="0xFD98878C">Social</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Social" nameUID="0x6C7E457">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_EVENT_OBJECTIVE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">social</Property>
+				<Property name="icon" type="Symbol" symUID="0xE6DCCF96">Event_Objective</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Contact" nameUID="0xF3513B7E">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_CONTACT</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">contact</Property>
+				<Property name="icon" type="Symbol" symUID="0xEC1D616">Contact</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-FaceCharacter" nameUID="0x8DA5B862">
+				<!-- Properties -->
+				<Property name="isProximityUnlockable" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_FAVOUR</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">face_character</Property>
+				<Property name="icon" type="Symbol" symUID="0x89963A64">Face_Character</Property>
+				<Property name="drawDepth" type="UInt32">4</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Dates" nameUID="0x9ED0F181">
+				<!-- Properties -->
+				<Property name="isProximityUnlockable" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_FAVOUR</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">date_character</Property>
+				<Property name="icon" type="Symbol" symUID="0x6ED73E94">Date_Character</Property>
+				<Property name="drawDepth" type="UInt32">6</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-FaceObj" nameUID="0x96C65B3C">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_FAVOUR</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="typeName" type="String">face_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x89963A64">Face_Character</Property>
+				<Property name="drawDepth" type="UInt32">4</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoryCharacter" nameUID="0x1CFC8EA6">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_FAVOUR</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">story_character</Property>
+				<Property name="icon" type="Symbol" symUID="0x7E32B967">Story_Character</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-SecurityCamera" nameUID="0x4B2A830C">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isProximityUnlockable" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_SECURITY_CAMERA</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">security_camera</Property>
+				<Property name="icon" type="Symbol" symUID="0x61201D22">Security_Camera</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-SecurityCameraCollected" nameUID="0x7AD657E1">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_SECURITY_CAMERA</Property>
+				<Property name="isWorldMapOnly" type="Boolean">true</Property>
+				<Property name="typeName" type="String">security_camera_collected</Property>
+				<Property name="icon" type="Symbol" symUID="0xB4239560">Security_Camera_Collected</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Shrine" nameUID="0x4913B570">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isProximityUnlockable" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_HEALTH_SHRINE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">shrine</Property>
+				<Property name="icon" type="Symbol" symUID="0xB24CD6AB">Shrine</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-ShrineCollected" nameUID="0xD5918CCA">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_HEALTH_SHRINE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">true</Property>
+				<Property name="typeName" type="String">shrine_collected</Property>
+				<Property name="icon" type="Symbol" symUID="0x2A210F58">Shrine_Collected</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Lockbox" nameUID="0xAA68E184">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isProximityUnlockable" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_LOCKBOX</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">lockbox</Property>
+				<Property name="icon" type="Symbol" symUID="0x57F80CEC">Lockbox</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-LockboxCollected" nameUID="0xAC4AEC80">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_LOCK_COLLECTED</Property>
+				<Property name="isWorldMapOnly" type="Boolean">true</Property>
+				<Property name="typeName" type="String">lockbox_collected</Property>
+				<Property name="icon" type="Symbol" symUID="0x65159D7D">Lockbox_Collected</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-MeleeUpgrade" nameUID="0xA86FB02D">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isProximityUnlockable" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_MELEE_UPGRADE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">300</Property>
+				<Property name="typeName" type="String">melee_upgrade</Property>
+				<Property name="icon" type="Symbol" symUID="0x8CF37B84">Melee_Upgrade</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-MeleeUpgradeCollected" nameUID="0xF8621DBC">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_MELEE_UPGRADE</Property>
+				<Property name="isWorldMapOnly" type="Boolean">true</Property>
+				<Property name="typeName" type="String">melee_upgrade_collected</Property>
+				<Property name="icon" type="Symbol" symUID="0x61C0D8F9">Melee_Upgrade_Collected</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Jump" nameUID="0x681497B0">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isProximityUnlockable" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_JUMP</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">jump</Property>
+				<Property name="icon" type="Symbol" symUID="0x99CD7E9C">Jump</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-JumpCollected" nameUID="0xB27B11BB">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="hideOnBorder" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_JUMP</Property>
+				<Property name="isWorldMapOnly" type="Boolean">true</Property>
+				<Property name="typeName" type="String">jump_collected</Property>
+				<Property name="icon" type="Symbol" symUID="0xE232FEB3">Jump_Collected</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-TouristPhoto" nameUID="0xFD2D2D38">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_TOURIST_PHOTO</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">tourist_photo</Property>
+				<Property name="icon" type="Symbol" symUID="0xB17418BB">Tourist_Photo</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-TapeRecorder" nameUID="0x318D1387">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_TAPE_RECORDER</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">tape_recorder</Property>
+				<Property name="icon" type="Symbol" symUID="0xDD22968D">Tape_Recorder</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Bug" nameUID="0x5BF0CF">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_BUG</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">bug</Property>
+				<Property name="icon" type="Symbol" symUID="0x9695B250">Bug</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-UpArrow" nameUID="0x38841246">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">up_arrow</Property>
+				<Property name="icon" type="Symbol" symUID="0x41FEDB51">Up_Arrow</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-InvisibleIcon" nameUID="0x937E63A8">
+				<!-- Properties -->
+				<Property name="radiusColor" type="UInt32">4286578772</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">invisible_icon</Property>
+				<Property name="icon" type="Symbol" symUID="0xD2D8E698">invisible_icon</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Hijack" nameUID="0x63A7B63E">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_HIJACK</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">hijack</Property>
+				<Property name="icon" type="Symbol" symUID="0x98F8D5E5">Hijack</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Empty" nameUID="0xB8627C06">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">empty</Property>
+				<Property name="icon" type="Symbol" symUID="0xD2D8E698">invisible_icon</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-RoadblockSymbol" nameUID="0x7DBBA922">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_ROADBLOCK</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">roadblock_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0xD625D892">Road_Block</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-WhitedotSymbol" nameUID="0x40BC355E">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">whitedot_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0x6BAFE38F">Generic_Blip</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-GreendotSymbol" nameUID="0xFD556639">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">greendot_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0xB4BC6956">Mission_Vehicle_Objective</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-ReddotSymbol" nameUID="0x1DB997E">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">reddot_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0xB4BC6956">Mission_Vehicle_Objective</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-BluedotSymbol" nameUID="0x813DDFE7">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">bluedot_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0xE6DCCF96">Event_Objective</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-EventSymbol" nameUID="0x8DE4C359">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">event_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0xE6DCCF96">Event_Objective</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-EnemySmall" nameUID="0xE44DB712">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">enemy_small</Property>
+				<Property name="icon" type="Symbol" symUID="0xDFB5CDA0">Enemy</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-FriendlySmall" nameUID="0xB4B323">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">friendly_small</Property>
+				<Property name="icon" type="Symbol" symUID="0x6BAFE38F">Generic_Blip</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-GirlSmall" nameUID="0x1AD1B700">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">girl_small</Property>
+				<Property name="icon" type="Symbol" symUID="0xB5DC8256">Lover</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-SocialAmbient" nameUID="0x73B981AC">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">social_ambient</Property>
+				<Property name="icon" type="Symbol" symUID="0xFD98878C">Social</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-SocialMission" nameUID="0x95A29CF6">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">social_mission</Property>
+				<Property name="icon" type="Symbol" symUID="0xFD98878C">Social</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CopActivitiesObjective" nameUID="0x5EE1C07F">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">cop_activities_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x8B11C096">Case_Objective</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-CopActivitiesStart" nameUID="0xF7EB486D">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">cop_activities_start</Property>
+				<Property name="icon" type="Symbol" symUID="0xFF994F7C">Case_Start</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-EventSpecial" nameUID="0x63E1D1F2">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">event_special</Property>
+				<Property name="icon" type="Symbol" symUID="0xE6DCCF96">Event_Objective</Property>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-LeadSpecial" nameUID="0x7614A45B">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">lead_special</Property>
+				<Property name="icon" type="Symbol" symUID="0x8B11C096">Case_Objective</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-JobSymbol" nameUID="0x7E2AD87A">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">job_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0xEA7D02BA">Job_Trigger</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-JackieSymbol" nameUID="0x9A0E81C">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">jackie_symbol</Property>
+				<Property name="icon" type="Symbol" symUID="0xC2E475F6">Generic_Interactive_Object</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-StoreGadget" nameUID="0x991BB6E0">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">store_gadget</Property>
+				<Property name="icon" type="Symbol" symUID="0xF36D863F">Generic_Store</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-Location" nameUID="0xE12AED5D">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">location</Property>
+				<Property name="icon" type="Symbol" symUID="0xC48AEE20">Waypoint</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-WeaponSpawn" nameUID="0xC8E2BEA7">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String"/>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">weapon_spawn</Property>
+				<Property name="icon" type="Symbol" symUID="0x6BAFE38F">Generic_Blip</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-TriadWars" nameUID="0x4750C936">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DRUG_BUST</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">triad_war</Property>
+				<Property name="icon" type="Symbol" symUID="0x7CDA7AB3">Triad_Wars</Property>
+				<Property name="drawDepth" type="UInt32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MinimapBlipTypes-TriadWars" nameUID="0x4750C936">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DRUG_BUST</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">triad_war_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x7CDA7AB3">Triad_Wars</Property>
+				<Property name="drawDepth" type="UInt32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x77A910BE">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DLC_01</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">ghost_lesser_ghoul</Property>
+				<Property name="icon" type="Symbol" symUID="0x1F52B16B"/>
+				<Property name="drawDepth" type="UInt32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x6C86DD41">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DLC_02</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">ghost_elite_ghoul</Property>
+				<Property name="icon" type="Symbol" symUID="0x7EFD292F"/>
+				<Property name="drawDepth" type="UInt32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xE53F6938">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DLC_03</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">250</Property>
+				<Property name="typeName" type="String">ghost_trapped_ped</Property>
+				<Property name="icon" type="Symbol" symUID="0x94DE58F6"/>
+				<Property name="drawDepth" type="UInt32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x97F9D11A">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">300</Property>
+				<Property name="typeName" type="String">zodiac_start</Property>
+				<Property name="icon" type="Symbol" symUID="0xC64A094F"/>
+				<Property name="drawDepth" type="UInt32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x1916DC51">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_JOB_OBJECTIVE</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0x1B3DA2E2">Zodiac</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">zodiac_objective</Property>
+				<Property name="icon" type="Symbol" symUID="0x4B146E63"/>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xC99C8AFF">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_FRIENDLY</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0x1B3DA2E2">Zodiac</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">zodiac_friendly</Property>
+				<Property name="icon" type="Symbol" symUID="0x96ABB5EE"/>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF552502F">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_EVENT_OBJECTIVE</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0x1B3DA2E2">Zodiac</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">zodiac_event</Property>
+				<Property name="icon" type="Symbol" symUID="0x933328F7"/>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xE4786D70">
+				<!-- Properties -->
+				<Property name="radiusColor" type="UInt32">16777044</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_ENEMY</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0x1B3DA2E2">Zodiac</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">zodiac_enemy</Property>
+				<Property name="icon" type="Symbol" symUID="0xDEEB445E"/>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xD023E182">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">300</Property>
+				<Property name="typeName" type="String">transterror_start</Property>
+				<Property name="icon" type="Symbol" symUID="0xA1445DB7"/>
+				<Property name="drawDepth" type="UInt32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x19902FC7">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_JOB_START</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">200</Property>
+				<Property name="typeName" type="String">transterror_mission</Property>
+				<Property name="icon" type="Symbol" symUID="0xB4EAB9F0"/>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x855AC03A">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_JOB_START</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">750</Property>
+				<Property name="typeName" type="String">transterror_event</Property>
+				<Property name="icon" type="Symbol" symUID="0xF43D7C0F"/>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x917C20C1">
+				<!-- Properties -->
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">true</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_JOB_START</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">750</Property>
+				<Property name="typeName" type="String">transterror_mission_repeat</Property>
+				<Property name="icon" type="Symbol" symUID="0xB4EAB9F0"/>
+				<Property name="drawDepth" type="UInt32">3</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x282E9F7D">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isProximityUnlockable" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_01</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">ghost_orb</Property>
+				<Property name="icon" type="Symbol" symUID="0x813281D2"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xEAB7EE50">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_01</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="isWorldMapOnly" type="Boolean">true</Property>
+				<Property name="typeName" type="String">ghost_orb_collected</Property>
+				<Property name="icon" type="Symbol" symUID="0x2F62AFB7"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x65CBC898">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isProximityUnlockable" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_02</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">fire_statue</Property>
+				<Property name="icon" type="Symbol" symUID="0xB2CEDA8B"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x6BCC25F6">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_02</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="isWorldMapOnly" type="Boolean">true</Property>
+				<Property name="typeName" type="String">fire_statue_collected</Property>
+				<Property name="icon" type="Symbol" symUID="0x7E27D945"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xAACD5D83">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isProximityUnlockable" type="Boolean">true</Property>
+				<Property name="isDistanceFiltered" type="Boolean">true</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_03</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0x5703AF69">DLC_CNY</Property>
+				<Property name="isWorldMapOnly" type="Boolean">false</Property>
+				<Property name="filterDistance" type="Float32">150</Property>
+				<Property name="typeName" type="String">evidence_bag</Property>
+				<Property name="icon" type="Symbol" symUID="0x63674452"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xB326563C">
+				<!-- Properties -->
+				<Property name="hasAltitude" type="Boolean">false</Property>
+				<Property name="isDistanceFiltered" type="Boolean">false</Property>
+				<Property name="isObjective" type="Boolean">false</Property>
+				<Property name="caption" type="String">$MAP_LEGEND_DLC_COLL_03</Property>
+				<Property name="progressionFlow" type="Symbol" symUID="0x5703AF69">DLC_CNY</Property>
+				<Property name="isWorldMapOnly" type="Boolean">true</Property>
+				<Property name="typeName" type="String">evidence_bag_collected</Property>
+				<Property name="icon" type="Symbol" symUID="0x219D3546"/>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xA4CFABF (Normal) -->
+<!-- 0x1916DC51 (Normal) -->
+<!-- 0x19902FC7 (Normal) -->
+<!-- 0x1F52B16B (Normal) -->
+<!-- 0x219D3546 (Normal) -->
+<!-- 0x282E9F7D (Normal) -->
+<!-- 0x2F62AFB7 (Normal) -->
+<!-- 0x4B146E63 (Normal) -->
+<!-- 0x63674452 (Normal) -->
+<!-- 0x65CBC898 (Normal) -->
+<!-- 0x6BCC25F6 (Normal) -->
+<!-- 0x6C86DD41 (Normal) -->
+<!-- 0x77A910BE (Normal) -->
+<!-- 0x7E27D945 (Normal) -->
+<!-- 0x7EFD292F (Normal) -->
+<!-- 0x7F431637 (Normal) -->
+<!-- 0x813281D2 (Normal) -->
+<!-- 0x855AC03A (Normal) -->
+<!-- 0x917C20C1 (Normal) -->
+<!-- 0x933328F7 (Normal) -->
+<!-- 0x94DE58F6 (Normal) -->
+<!-- 0x96ABB5EE (Normal) -->
+<!-- 0x97F9D11A (Normal) -->
+<!-- 0xA1445DB7 (Normal) -->
+<!-- 0xAACD5D83 (Normal) -->
+<!-- 0xB2CEDA8B (Normal) -->
+<!-- 0xB326563C (Normal) -->
+<!-- 0xB4EAB9F0 (Normal) -->
+<!-- 0xC64A094F (Normal) -->
+<!-- 0xC99C8AFF (Normal) -->
+<!-- 0xD023E182 (Normal) -->
+<!-- 0xDEEB445E (Normal) -->
+<!-- 0xE4786D70 (Normal) -->
+<!-- 0xE53F6938 (Normal) -->
+<!-- 0xEAB7EE50 (Normal) -->
+<!-- 0xF3BE199A (Normal) -->
+<!-- 0xF43D7C0F (Normal) -->
+<!-- 0xF552502F (Normal) -->
+<!-- 0xF8EBBDA3 (Normal) -->

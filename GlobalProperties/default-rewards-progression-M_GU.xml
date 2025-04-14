@@ -1,17 +1,25 @@
-<PropertySet name="default-rewards-progression-M_GU" nameUID="0x7AFDD242" schema="default-rewards-progression-M_GU">
-    <Parent>default-rewards-progression-mission_defaults</Parent>
-    <Property name="0x34BE120D" type="Int32">50</Property>
-    <Property name="0x39FD34D4" type="Int32">1</Property>
-    <Property name="0x72201393" type="Int32">0</Property>
-    <Property name="0xC3DF597C" type="Int32">80</Property>
-    <Property name="0xC71E44CB" type="Int32">50</Property>
-    <Property name="0xCA5D6212" type="Int32">1</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_GOING_UNDER</Property>
-    <Property name="CopStartingScore" type="Int32">0</Property>
-    <Property name="EnableMissionScoring" type="Boolean">False</Property>
-    <Property name="MoneyAdjustment" type="Int32">0</Property>
-    <Property name="ShowRewardScreen" type="Boolean">False</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_GU" nameUID="0x7AFDD242">
+	<!-- Parents -->
+	<Parent nameUID="0xD274BB76">default-rewards-progression-mission_defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">0</Property>
+	<Property name="~34be120d~" type="Int32">50</Property>
+	<Property name="MoneyAdjustment" type="Int32">0</Property>
+	<Property name="~39fd34d4~" type="Int32">1</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_GOING_UNDER</Property>
+	<Property name="ShowRewardScreen" type="Boolean">false</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="EnableMissionScoring" type="Boolean">false</Property>
+	<Property name="MaxTriadScore" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="~c3df597c~" type="Int32">80</Property>
+	<Property name="~c71e44cb~" type="Int32">50</Property>
+	<Property name="~ca5d6212~" type="Int32">1</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x34BE120D (Normal) -->
+<!-- 0x39FD34D4 (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->

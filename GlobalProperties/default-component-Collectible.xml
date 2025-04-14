@@ -1,13 +1,14 @@
-<PropertySet name="default-component-Collectible" nameUID="0x95357218" schema="default-component-Collectible">
-    <Property name="CollectibleCollectedFalseEffect" type="String"/>
-    <Property name="CollectibleCollectedTrueEffect" type="String"/>
-    <Property name="CollectibleSpawnInfo" type="Symbol"/>
-    <Property name="CollectibleSpawnInfo_Collected" type="Symbol"/>
-    <Property name="CollectibleType" type="Symbol" Symbol="0x91BFAAF0">Collectible_Generic</Property>
-    <Property name="DeleteAfterUse" type="Boolean">False</Property>
-    <Property name="IsLocked" type="Boolean">False</Property>
-    <Property name="MaxHealthUpgradePoint" type="Int32">0</Property>
-    <Property name="RewardsPropertySet" type="Symbol"/>
-    <Property name="StatueUpgradePoint" type="Int32">0</Property>
-    <Property name="UnlocksAfter" type="Symbol"/>
-</PropertySet>
+<PropertySetResource name="default-component-Collectible" nameUID="0x95357218">
+	<!-- Properties -->
+	<Property name="CollectibleCollectedFalseEffect" type="String"/>
+	<Property name="RewardsPropertySet" type="Symbol"/>
+	<Property name="CollectibleType" type="Symbol" symUID="0x91BFAAF0">Collectible_Generic</Property>
+	<Property name="UnlocksAfter" type="Symbol"/>
+	<Property name="CollectibleSpawnInfo_Collected" type="Symbol"/>
+	<Property name="MaxHealthUpgradePoint" type="Int32">0</Property>
+	<Property name="CollectibleCollectedTrueEffect" type="String"/>
+	<Property name="DeleteAfterUse" type="Boolean">false</Property>
+	<Property name="IsLocked" type="Boolean">false</Property>
+	<Property name="StatueUpgradePoint" type="Int32">0</Property>
+	<Property name="CollectibleSpawnInfo" type="Symbol"/>
+</PropertySetResource>

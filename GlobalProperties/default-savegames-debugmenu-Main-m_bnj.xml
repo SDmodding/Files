@@ -1,19 +1,24 @@
-<PropertySet name="default-savegames-debugmenu-Main-m_bnj" nameUID="0x513C4B39" schema="default-savegames-debugmenu-Main-m_bnj">
-    <Parent>default-savegames-defaults</Parent>
-    <Property name="CopDrivingStage" type="Int32">2</Property>
-    <Property name="DynamicTutorials" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="GunplayUpgradeStage" type="Int32">3</Property>
-    <Property name="StatueDefensiveStage" type="Int32">3</Property>
-    <Property name="StatueOffensiveStage" type="Int32">5</Property>
-</PropertySet>
+<PropertySetResource name="default-savegames-debugmenu-Main-m_bnj" nameUID="0x513C4B39">
+	<!-- Parents -->
+	<Parent nameUID="0x10965489">default-savegames-defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopDrivingStage" type="Int32">2</Property>
+	<Property name="StatueDefensiveStage" type="Int32">3</Property>
+	<Property name="StatueOffensiveStage" type="Int32">5</Property>
+	<Property name="GunplayUpgradeStage" type="Int32">3</Property>
+	<Property name="DynamicTutorials" type="PropSet">
+		<PropertySet name="Melee" nameUID="0xFB892B3B">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x444B6EFA">TranStoreTutorial</ListProperty>
+				<ListProperty type="Symbol" symUID="0x144D1EC7">HijackingTutorial</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

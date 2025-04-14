@@ -1,32 +1,43 @@
-<PropertySet name="default-encounters-limodriver" nameUID="0xE940F4B3" schema="default-encounters-limodriver">
-    <Parent>default-encounters-defaults</Parent>
-    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
-    <Property name="BlipName" type="String">reddot_symbol</Property>
-    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x9B7B4AB7">TRIAD_GENERIC</Property>
-    <Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
-    <Property name="kills_required" type="UInt32">3</Property>
-    <Property name="wave_definitions" type="List">
-        <ListProperty nameUID="0x2DC0526A">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">20</Property>
-            <Property name="onfoot_population" type="UInt32">2</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xA11E0B3D">object-physical-vehicle-625MHCGTS01</Property>
-                <Property type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xA11E0B3D">object-physical-vehicle-625MHCGTS01</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">2</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-encounters-limodriver" nameUID="0xE940F4B3">
+	<!-- Parents -->
+	<Parent nameUID="0x6159DA8B">default-encounters-defaults</Parent>
+	<!-- Properties -->
+	<Property name="kills_required" type="UInt32">3</Property>
+	<Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
+	<Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+	<Property name="wave_definitions" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_1" nameUID="0x2DC0526A">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xA11E0B3D">object-physical-vehicle-625MHCGTS01</Property>
+							<Property name="character" type="Symbol" symUID="0x40D526AA">object-physical-character-thugA</Property>
+							<Property name="weapon" type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">20</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">2</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xA11E0B3D">object-physical-vehicle-625MHCGTS01</ListProperty>
+					<ListProperty type="Symbol" symUID="0x40D526AA">object-physical-character-thugA</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">2</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="EncounterFactionClass" type="Symbol" symUID="0x9B7B4AB7">TRIAD_GENERIC</Property>
+	<Property name="BlipName" type="String">reddot_symbol</Property>
+</PropertySetResource>

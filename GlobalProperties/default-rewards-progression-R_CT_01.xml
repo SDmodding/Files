@@ -1,18 +1,26 @@
-<PropertySet name="default-rewards-progression-R_CT_01" nameUID="0xE84D09F6" schema="default-rewards-progression-R_CT_01">
-    <Parent>default-rewards-progression-event_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_DLC_RACER_KAMIKAZE</Property>
-    <Property name="CopStartingScore" type="Int32">0</Property>
-    <Property name="GamesliceType" type="Symbol" Symbol="0x3A04ED90">Race</Property>
-    <Property name="MoneyAdjustment" type="Int32">20000</Property>
-    <Property name="StandingAdjustment" type="Int32">200</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xFB7393AE">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">DLC_OutfitRacing</Property>
-            <Property name="0xDE3E6A23" type="String">$DLC_STREET_RACER_PACK_REWARD_5</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-R_CT_01" nameUID="0xE84D09F6">
+	<!-- Parents -->
+	<Parent nameUID="0xD907A49A">default-rewards-progression-event_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xFB7393AE">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">DLC_OutfitRacing</Property>
+				<Property name="Text" type="String">$DLC_STREET_RACER_PACK_REWARD_5</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">0</Property>
+	<Property name="MoneyAdjustment" type="Int32">20000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_DLC_RACER_KAMIKAZE</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">200</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x3A04ED90">RACE</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xFB7393AE (Normal) -->

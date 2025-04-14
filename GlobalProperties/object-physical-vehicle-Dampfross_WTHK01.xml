@@ -1,156 +1,174 @@
-<PropertySet name="object-physical-vehicle-Dampfross_WTHK01" nameUID="0xD5386F1" schema="object-physical-vehicle-Dampfross_WTHK01">
-    <Parent>object-physical-vehicle-CommonVan</Parent>
-    <Property name="AimDistFromBumper" type="Float32">2.1</Property>
-    <Property name="AimDistFromSide" type="Float32">2.5</Property>
-    <Property name="AimLookOffsetHighZ" type="Float32">1.5</Property>
-    <Property name="AimLookOffsetLowZ" type="Float32">-2.16</Property>
-    <Property name="AimOriginOffsetConstX" type="Float32">-0.2</Property>
-    <Property name="AimOriginOffsetX" type="Float32">-1.5</Property>
-    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0x98FF4C9">Cameras-ChaseCameraTallVan</Property>
-    <Property name="Description" type="String">Van4Dr- Dampfross_WTHK01</Property>
-    <Property name="Parkable" type="Boolean">True</Property>
-    <Property name="VehicleLook" type="List">
-        <Property type="String">WhiteDarkerPaint</Property>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">Dampfross01</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Car</PoseDriverSet>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CarPhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_Dampfross01Properties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-Dampfross01Properties</physicsPropertySetHuman>
-            <modelName type="String">Dampfross01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-2.5" y="-2.5" z="-0.895"/>
-            <boundingBoxMax type="Vector3" x="2.57" y="2.57" z="0.895"/>
-            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">Dampfross01</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Car</PoseDriverSet>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_PhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_Dampfross01Properties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-Dampfross01Properties</physicsPropertySetHuman>
-            <modelName type="String">Dampfross01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-2.5" y="-2.5" z="-0.895"/>
-            <boundingBoxMax type="Vector3" x="2.57" y="2.57" z="0.895"/>
-            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-VehicleFourWheels</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0x544478D0">Data\Vehicles_New\Dampfross01</Property>
-                <Property type="Symbol" Symbol="0x6427DB69">Data\Vehicles_New\WheelStyle09</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">FourWheelVehicle</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_VehicleAudio" type="PropSet">
-        <BinData>
-            <AudioPropertySet type="Symbol">Vehicles-Audio-VanAudioProperties</AudioPropertySet>
-        </BinData>
-    </Property>
-    <Property name="component_VehicleProperties" type="PropSet">
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-VehicleFourWheels</subTargetingProfile>
-            <simObjectVehicleType type="Symbol">eSIM_OBJ_VEHICLE_TYPE_VAN</simObjectVehicleType>
-            <simObjectBoatType type="Symbol"/>
-            <aim_limit type="List"/>
-            <default_left_aim_limit type="Float32">45</default_left_aim_limit>
-            <default_right_aim_limit type="Float32">-45</default_right_aim_limit>
-            <door_phantom_info type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-Dampfross_WTHK01" nameUID="0xD5386F1">
+	<!-- Parents -->
+	<Parent nameUID="0x38375B73">object-physical-vehicle-CommonVan</Parent>
+	<!-- Properties -->
+	<Property name="component_PhysicsMover" type="PropSet">
+		<PropertySet name="component_CarPhysicsMover" nameUID="0xF32DD55B" schema="default-component-CarPhysicsMover">
+			<!-- Schema Properties -->
+			<Property name="physicsPropertySetAI" type="Symbol" symUID="0x3157CF6F">Vehicles-AI_Dampfross01Properties</Property>
+			<Property name="physicsPropertySetHuman" type="Symbol" symUID="0x8EE37A59">Vehicles-Dampfross01Properties</Property>
+			<Property name="modelName" type="String">Dampfross01</Property>
+			<Property name="TrunkType" type="Symbol" symUID="0xDE16D029">eVEHICLE_TRUNK_TYPE_NONE</Property>
+			<Property name="damageMultiplierWorldCollisions" type="Float32">1</Property>
+			<Property name="damageMultiplierVehicleCollisions" type="Float32">1</Property>
+			<Property name="damageMultiplierBullets" type="Float32">1</Property>
+			<Property name="damageMultiplierTires" type="Float32">1</Property>
+			<Property name="boundingBoxMin" type="Vector3" x="-2.5" y="-0.895" z="0"/>
+			<Property name="boundingBoxMAx" type="Vector3" x="2.57" y="0.895" z="2.1"/>
+			<Property name="tireShotImpulse" type="Float32">0.645</Property>
+			<Property name="tireBlownImpulse" type="Float32">1</Property>
+			<Property name="lowLodThrottleAcceleration" type="Float32">12</Property>
+			<Property name="lowLodBrakesAcceleration" type="Float32">-60</Property>
+			<Property name="lowLodCoastAcceleration" type="Float32">-1</Property>
+			<Property name="lowLodMaxSpeed" type="Float32">50</Property>
+			<Property name="lowLodMaxLateralAcceleration" type="Float32">1</Property>
+			<Property name="lowLodMinTurningRadius" type="Float32">2</Property>
+			<Property name="autoDeterioratingDamageThreshold" type="Float32">0.75</Property>
+			<Property name="autoDeterioratingDamageRate" type="Float32">0.01</Property>
+			<Property name="vehicleDistanceToHighLod" type="Float32">15</Property>
+			<Property name="vehicleDistanceToMedLod" type="Float32">70</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToTakeDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionExtraDamageMultiplier" type="Float32">2</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinImpulse" type="Float32">0.01</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxImpulse" type="Float32">0.05</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToDealDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionMaxImpulseForDealingDamage" type="Float32">10</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinRamImpulse" type="Float32">0.25</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxRamImpulse" type="Float32">0.3</Property>
+			<Property name="vehicleCollisionMinRamImpulseRequiredToDealDamage" type="Float32">6</Property>
+			<Property name="vehicleCollisionMaxRamImpulseForDealingDamage" type="Float32">12</Property>
+			<Property name="vehicleCollisionForceDamageDealer" type="Boolean">false</Property>
+			<Property name="lockedAtLowLOD" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="AimOriginOffsetX" type="Float32">-1.5</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="AimDistFromBumper" type="Float32">2.1</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">Dampfross01</Property>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\VehicleWeightSets.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC" symUID="0x216C94B0">Car</Property>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="AimLookOffsetLowZ" type="Float32">-2.16</Property>
+	<Property name="Parkable" type="Boolean">true</Property>
+	<Property name="component_VehicleAudio" type="PropSet">
+		<PropertySet name="component_VehicleAudio" nameUID="0x77F43A25" schema="default-component-VehicleAudio">
+			<!-- Schema Properties -->
+			<Property name="AudioPropertySet" type="Symbol" symUID="0xA993244D">Vehicles-Audio-VanAudioProperties</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_VehicleProperties" type="PropSet">
+		<PropertySet name="component_VehicleProperties" nameUID="0x7F1798C0" schema="default-component-VehicleProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectVehicleType" type="Symbol" symUID="0x1D2979EF">eSIM_OBJ_VEHICLE_TYPE_VAN</Property>
+			<Property name="simObjectBoatType" type="Symbol"/>
+			<Property name="aim_limit" type="List"/>
+			<Property name="default_left_aim_limit" type="Float32">45</Property>
+			<Property name="default_right_aim_limit" type="Float32">-45</Property>
+			<Property name="door_phantom_info" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet schema="default-schema-doorphantominfo">
+						<!-- Schema Properties -->
+						<Property name="door_name" type="SymbolUC" symUID="0x58153A47">M_DoorR01</Property>
+						<Property name="extentX" type="Float32">1.65</Property>
+						<Property name="extentY" type="Float32">0.78</Property>
+						<Property name="door_height" type="Float32">0.8</Property>
+						<Property name="height_offset" type="Float32">0.1</Property>
+						<Property name="extend_left" type="Boolean">false</Property>
+						<Property name="extend_forward" type="Boolean">false</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet schema="default-schema-doorphantominfo">
+						<!-- Schema Properties -->
+						<Property name="door_name" type="SymbolUC" symUID="0x55561C9E">M_DoorR02</Property>
+						<Property name="extentX" type="Float32">0.9</Property>
+						<Property name="extentY" type="Float32">0.8</Property>
+						<Property name="door_height" type="Float32">0.8</Property>
+						<Property name="height_offset" type="Float32">0.1</Property>
+						<Property name="extend_left" type="Boolean">false</Property>
+						<Property name="extend_forward" type="Boolean">false</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet schema="default-schema-doorphantominfo">
+						<!-- Schema Properties -->
+						<Property name="door_name" type="SymbolUC" symUID="0x4F897D1D">M_DoorL01</Property>
+						<Property name="extentX" type="Float32">1.65</Property>
+						<Property name="extentY" type="Float32">0.78</Property>
+						<Property name="door_height" type="Float32">0.8</Property>
+						<Property name="height_offset" type="Float32">0.1</Property>
+						<Property name="extend_left" type="Boolean">true</Property>
+						<Property name="extend_forward" type="Boolean">false</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet schema="default-schema-doorphantominfo">
+						<!-- Schema Properties -->
+						<Property name="door_name" type="SymbolUC" symUID="0x42CA5BC4">M_DoorL02</Property>
+						<Property name="extentX" type="Float32">0.9</Property>
+						<Property name="extentY" type="Float32">0.8</Property>
+						<Property name="door_height" type="Float32">0.8</Property>
+						<Property name="height_offset" type="Float32">0.1</Property>
+						<Property name="extend_left" type="Boolean">true</Property>
+						<Property name="extend_forward" type="Boolean">false</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="VehicleLook" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">WhiteDarkerPaint</ListProperty>
+	</Property>
+	<Property name="ChaseCameraParameters" type="Symbol" symUID="0x98FF4C9">Cameras-ChaseCameraTallVan</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_VehicleProperties" nameUID="0x7F1798C0" schema="default-component-VehicleProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0x9844EE67">eSIM_OBJ_TYPE_VEHICLE</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0x38469632">Targeting-SubTargetingProfiles-VehicleFourWheels</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x544478D0">Data\Vehicles_New\Dampfross01</ListProperty>
+				<ListProperty type="Symbol" symUID="0x6427DB69">Data\Vehicles_New\WheelStyle09</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x9FA8BBC9">FourWheelVehicle</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="AimLookOffsetHighZ" type="Float32">1.5</Property>
+	<Property name="AimDistFromSide" type="Float32">2.5</Property>
+	<Property name="AimOriginOffsetConstX" type="Float32">-0.2</Property>
+	<Property name="component_CarPhysicsMover" type="PropSet">
+		<PropertySet name="component_CarPhysicsMover" nameUID="0xF32DD55B" schema="default-component-CarPhysicsMover">
+			<!-- Schema Parent: component_PhysicsMover -->
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Van4Dr- Dampfross_WTHK01</Property>
+</PropertySetResource>

@@ -1,11 +1,18 @@
-<PropertySet name="object-logical-AIOutlineRegion" nameUID="0x9EE8A7B2" schema="object-logical-AIOutlineRegion">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0x7C9CA7E3">AIOutlineRegion</Property>
-    <Property name="default-component-Region" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Region</Parent>
-            <Property name="Max" type="Vector3" x="1" y="1" z="1"/>
-            <Property name="Min" type="Vector3" x="-1" y="-1" z="-1"/>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-AIOutlineRegion" nameUID="0x9EE8A7B2">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x49F339C4">default-component-AIOutline</Parent>
+	<Parent nameUID="0xF2A61B6A">default-component-AIOutlineRegion</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0x7C9CA7E3">AIOutlineRegion</Property>
+	<Property name="default-component-Region" type="PropSet">
+		<PropertySet>
+			<!-- Parents -->
+			<Parent nameUID="0xF6AC0CA8">default-component-Region</Parent>
+			<!-- Properties -->
+			<Property name="Min" type="Vector3" x="-1" y="-1" z="-0.25"/>
+			<Property name="Max" type="Vector3" x="1" y="1" z="1.75"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

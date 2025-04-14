@@ -1,15 +1,23 @@
-<PropertySet name="default-rewards-progression-E_TW6" nameUID="0x2A00DE3" schema="default-rewards-progression-E_TW6">
-    <Parent>default-rewards-defaults</Parent>
-    <Property name="CompletionText" type="String">Triad Wars 6</Property>
-    <Property name="CompletionTitle" type="String">Triad Wars 6</Property>
-    <Property name="StandingAdjustment" type="Int32">10</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x7BFE830D">
-            <Property name="0x308E0AE5" type="String">turf_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">NorthPointPark</Property>
-            <Property name="0x7198AF49" type="Int32">2</Property>
-            <Property name="0xDE3E6A23" type="String">18K hangout eliminated</Property>
-            <Property name="Type" type="Symbol" Symbol="0x93910E97">Collectible_AreaOwnership</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-E_TW6" nameUID="0x2A00DE3">
+	<!-- Parents -->
+	<Parent nameUID="0xC21C95B9">default-rewards-defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="NorthPointPark" nameUID="0x7BFE830D">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x93910E97">Collectible_AreaOwnership</Property>
+				<Property name="Icon" type="String">turf_icon</Property>
+				<Property name="AssetId" type="String">NorthPointPark</Property>
+				<Property name="~7198af49~" type="Int32">2</Property>
+				<Property name="Text" type="String">18K hangout eliminated</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">Triad Wars 6</Property>
+	<Property name="StandingAdjustment" type="Int32">10</Property>
+	<Property name="CompletionTitle" type="String">Triad Wars 6</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x7198AF49 (Normal) -->

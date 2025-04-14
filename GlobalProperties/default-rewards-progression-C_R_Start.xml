@@ -1,53 +1,86 @@
-<PropertySet name="default-rewards-progression-C_R_Start" nameUID="0x5768E002" schema="default-rewards-progression-C_R_Start">
-    <Parent>default-rewards-progression-case_defaults</Parent>
-    <Property name="0xC3DF597C" type="Int32">100</Property>
-    <Property name="0xC71E44CB" type="Int32">95</Property>
-    <Property name="0xCA5D6212" type="Int32">1</Property>
-    <Property name="CompletionText" type="String">$CASE_LEAD_CAPTION_R1</Property>
-    <Property name="CopStartingScore" type="Int32">350</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="MoneyAdjustment" type="Int32">1200</Property>
-    <Property name="ShowRewardScreen" type="Boolean">True</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x9B9CDD8D">
-            <Property name="0x2DFB6FC5" type="Int32">18</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_18</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD572E926">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">CaseDoc_C_R</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Status" type="Int32">1</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0x7824D4E3">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">Lead_C_R1</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Status" type="Int32">1</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0xA907507C">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">CaseDoc_C_R</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Status" type="Int32">2</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0x2ECB7628">
-            <Property name="0x308E0AE5" type="String">vehicle_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">Mission_Reward_01</Property>
-            <Property name="0xDE3E6A23" type="String">$CASE_REWARDS_R_02</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x8E504568">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x44399F56" type="Boolean">False</Property>
-            <Property name="0x4E4D2ED3" type="String">R_NP_04</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-C_R_Start" nameUID="0x5768E002">
+	<!-- Parents -->
+	<Parent nameUID="0x91F1AA7E">default-rewards-progression-case_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x9B9CDD8D">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">18</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_18</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CaseDoc_C_R" nameUID="0xD572E926">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xAD5FAF23"/>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">CaseDoc_C_R</Property>
+				<Property name="Status" type="Int32">1</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_R1" nameUID="0x7824D4E3">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x748078A5"/>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">Lead_C_R1</Property>
+				<Property name="Status" type="Int32">1</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xA907507C">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xAD5FAF23"/>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">CaseDoc_C_R</Property>
+				<Property name="Status" type="Int32">2</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x2ECB7628">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9B06086B">Vehicle</Property>
+				<Property name="Icon" type="String">vehicle_icon</Property>
+				<Property name="AssetId" type="String">Mission_Reward_01</Property>
+				<Property name="Text" type="String">$CASE_REWARDS_R_02</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x8E504568">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x8E504568"/>
+				<Property name="Icon" type="String"/>
+				<Property name="~44399f56~" type="Boolean">false</Property>
+				<Property name="AssetId" type="String">R_NP_04</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">350</Property>
+	<Property name="MoneyAdjustment" type="Int32">1200</Property>
+	<Property name="CompletionText" type="String">$CASE_LEAD_CAPTION_R1</Property>
+	<Property name="ShowRewardScreen" type="Boolean">true</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="~c3df597c~" type="Int32">100</Property>
+	<Property name="~c71e44cb~" type="Int32">95</Property>
+	<Property name="~ca5d6212~" type="Int32">1</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x2ECB7628 (Normal) -->
+<!-- 0x44399F56 (Normal) -->
+<!-- 0x748078A5 (Normal) -->
+<!-- 0x8E504568 (Normal) -->
+<!-- 0x9B9CDD8D (Normal) -->
+<!-- 0xA907507C (Normal) -->
+<!-- 0xAD5FAF23 (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->

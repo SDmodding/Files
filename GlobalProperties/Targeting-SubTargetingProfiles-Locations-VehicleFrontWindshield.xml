@@ -1,7 +1,8 @@
-<PropertySet name="Targeting-SubTargetingProfiles-Locations-VehicleFrontWindshield" nameUID="0x512FA76E" schema="Targeting-SubTargetingProfiles-Locations-VehicleFrontWindshield">
-    <Property name="AccuracyPenalty" type="Float32">0.3</Property>
-    <Property name="AccuracyRate" type="Float32">0.6</Property>
-    <Property name="BoneName" type="SymbolUC" Symbol="0x384EDA47">M_WINF</Property>
-    <Property name="Offset" type="Vector3" x="0" y="0" z="0"/>
-    <Property name="Radius" type="Float32">0.2</Property>
-</PropertySet>
+<PropertySetResource name="Targeting-SubTargetingProfiles-Locations-VehicleFrontWindshield" nameUID="0x512FA76E">
+	<!-- Properties -->
+	<Property name="Radius" type="Float32">0.2</Property>
+	<Property name="AccuracyPenalty" type="Float32">0.3</Property>
+	<Property name="Offset" type="Vector3" x="0" y="0" z="0"/>
+	<Property name="AccuracyRate" type="Float32">0.6</Property>
+	<Property name="BoneName" type="SymbolUC" symUID="0x384EDA47">M_WINF</Property>
+</PropertySetResource>

@@ -1,9 +1,13 @@
-<PropertySet name="default-rewards-lockboxes-lockbox" nameUID="0x1B0A318C" schema="default-rewards-lockboxes-lockbox">
-    <Parent>default-rewards-defaults</Parent>
-    <Property name="CompletionText" type="String">Found a Piece of Awesome</Property>
-    <Property name="CompletionTitle" type="String">Lock Box Found</Property>
-    <Property name="MoneyAdjustment" type="Int32">1400</Property>
-    <Property name="MoneyAdjustmentIcon" type="String">money_icon</Property>
-    <Property name="MoneyAdjustmentText" type="String"/>
-    <Property name="UIScreenType" type="Symbol"/>
-</PropertySet>
+<PropertySetResource name="default-rewards-lockboxes-lockbox" nameUID="0x1B0A318C">
+	<!-- Parents -->
+	<Parent nameUID="0xC21C95B9">default-rewards-defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustmentIcon" type="String">money_icon</Property>
+	<Property name="MoneyAdjustment" type="Int32">1400</Property>
+	<Property name="CompletionText" type="String">Found a Piece of Awesome</Property>
+	<Property name="UIScreenType" type="Symbol" symUID="0xBB1623EA"/>
+	<Property name="CompletionTitle" type="String">Lock Box Found</Property>
+	<Property name="MoneyAdjustmentText" type="String"/>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xBB1623EA (Normal) -->

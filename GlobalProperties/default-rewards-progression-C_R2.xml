@@ -1,39 +1,61 @@
-<PropertySet name="default-rewards-progression-C_R2" nameUID="0x7676C360" schema="default-rewards-progression-C_R2">
-    <Parent>default-rewards-progression-case_defaults</Parent>
-    <Property name="0xC3DF597C" type="Int32">300</Property>
-    <Property name="0xC71E44CB" type="Int32">280</Property>
-    <Property name="0xCA5D6212" type="Int32">1</Property>
-    <Property name="CompletionText" type="String">$CASE_LEAD_CAPTION_R2</Property>
-    <Property name="CopStartingScore" type="Int32">350</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="MoneyAdjustment" type="Int32">1200</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x7824D4E3">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">Lead_C_R2</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Status" type="Int32">1</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0x71A6EF8D">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">Lead_C_R3</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Status" type="Int32">1</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0x7567F23A">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">Lead_C_R2</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Status" type="Int32">2</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0xD1383FE3">
-            <Property name="0x2DFB6FC5" type="Int32">27</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_27</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-C_R2" nameUID="0x7676C360">
+	<!-- Parents -->
+	<Parent nameUID="0x91F1AA7E">default-rewards-progression-case_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_R1" nameUID="0x7824D4E3">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x748078A5"/>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">Lead_C_R2</Property>
+				<Property name="Status" type="Int32">1</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_R3" nameUID="0x71A6EF8D">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x748078A5"/>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">Lead_C_R3</Property>
+				<Property name="Status" type="Int32">1</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_R2" nameUID="0x7567F23A">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x748078A5"/>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">Lead_C_R2</Property>
+				<Property name="Status" type="Int32">2</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xD1383FE3">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">27</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_27</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">350</Property>
+	<Property name="MoneyAdjustment" type="Int32">1200</Property>
+	<Property name="CompletionText" type="String">$CASE_LEAD_CAPTION_R2</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="~c3df597c~" type="Int32">300</Property>
+	<Property name="~c71e44cb~" type="Int32">280</Property>
+	<Property name="~ca5d6212~" type="Int32">1</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x748078A5 (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->
+<!-- 0xD1383FE3 (Normal) -->

@@ -1,169 +1,237 @@
-<PropertySet name="object-physical-vehicle-CommonBike" nameUID="0x6C18BB3F" schema="object-physical-vehicle-CommonBike">
-    <Parent>object-physical-vehicle</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\Bike.act</Property>
-    <Property name="ActionHijackProfile" type="Symbol" Symbol="0xD99C37AD">Vehicles-ActionHijackProfile-Bike</Property>
-    <Property name="Description" type="String">Bike- Common Bike</Property>
-    <Property name="UnlockVehicleDoors" type="Boolean">True</Property>
-    <Property name="VehicleExclusionClassList" type="List">
-        <Property type="Symbol" Symbol="0xB1C9182F">NoBikeDriver</Property>
-    </Property>
-    <Property name="VehicleJob" type="Symbol" Symbol="0x94BC85A0">Traffic</Property>
-    <Property name="VehiclePriorityClassList" type="List">
-        <Property type="Symbol" Symbol="0xBF102A3">BikeDriver</Property>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <WeightSetFileName type="String">Data\Global\Act\Bike.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Bike</PoseDriverSet>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_BikePhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-BikePhysicsMover</Parent>
-            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-GenericBikeProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-GenericBikeProperties</physicsPropertySetHuman>
-            <modelName type="String">BikeSport01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-0.92" y="-0.92" z="-0.33"/>
-            <boundingBoxMax type="Vector3" x="0.9" y="0.9" z="0.33"/>
-            <tireShotImpulse type="Float32">0.2</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">30</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-            <canWheelie type="Int32">1</canWheelie>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <WeightSetFileName type="String">Data\Global\Act\Bike.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Bike</PoseDriverSet>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_DropShadow" type="PropSet">
-        <BinData>
-            <DropShadow_ScaleX type="Float32">0.5</DropShadow_ScaleX>
-            <DropShadow_ScaleY type="Float32">0.2</DropShadow_ScaleY>
-            <DropShadow_TextureUID type="Symbol">FX_ShadowSquare</DropShadow_TextureUID>
-        </BinData>
-    </Property>
-    <Property name="component_Interactable" type="PropSet">
-        <BinData>
-            <InteractionPoints type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_PhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-BikePhysicsMover</Parent>
-            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-GenericBikeProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-GenericBikeProperties</physicsPropertySetHuman>
-            <modelName type="String">BikeSport01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-0.92" y="-0.92" z="-0.33"/>
-            <boundingBoxMax type="Vector3" x="0.9" y="0.9" z="0.33"/>
-            <tireShotImpulse type="Float32">0.2</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">30</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-VehicleTwoWheels</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="component_TSActor" type="PropSet">
-        <BinData>
-            <SkookumClass type="Symbol">Bike</SkookumClass>
-        </BinData>
-    </Property>
-    <Property name="component_VehicleEffects" type="PropSet">
-        <BinData>
-            <headlightsInRainProbability type="Float32">0.5</headlightsInRainProbability>
-            <headlightsAlwaysOn type="Boolean">false</headlightsAlwaysOn>
-            <headlightsAlwaysOff type="Boolean">false</headlightsAlwaysOff>
-            <DamageTransfer type="Symbol"/>
-            <EffectGroupName type="Symbol">commonbike</EffectGroupName>
-            <InitialDirtSeed type="Float32">0.2</InitialDirtSeed>
-            <GrimeFactor type="Float32">0</GrimeFactor>
-            <Speed0 type="Float32">0</Speed0>
-            <Speed1 type="Float32">15</Speed1>
-            <Speed2 type="Float32">10000</Speed2>
-            <Speed3 type="Float32">10000</Speed3>
-        </BinData>
-    </Property>
-    <Property name="component_VehicleProperties" type="PropSet">
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-VehicleTwoWheels</subTargetingProfile>
-            <simObjectVehicleType type="Symbol">eSIM_OBJ_VEHICLE_TYPE_BIKE</simObjectVehicleType>
-            <simObjectBoatType type="Symbol"/>
-            <aim_limit type="List"/>
-            <default_left_aim_limit type="Float32">45</default_left_aim_limit>
-            <default_right_aim_limit type="Float32">-45</default_right_aim_limit>
-            <door_phantom_info type="List"/>
-        </BinData>
-    </Property>
-    <Property name="explosionPropertySet" type="Symbol" Symbol="0x7CD45919">object-physical-explosion-bike</Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-CommonBike" nameUID="0x6C18BB3F">
+	<!-- Parents -->
+	<Parent nameUID="0x51524B6E">object-physical-vehicle</Parent>
+	<Parent nameUID="0xB722C132">default-component-StimulusReceiver</Parent>
+	<!-- Properties -->
+	<Property name="VehicleExclusionClassList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xB1C9182F">NoBikeDriver</ListProperty>
+	</Property>
+	<Property name="component_PhysicsMover" type="PropSet">
+		<PropertySet name="component_BikePhysicsMover" nameUID="0x3A19EBF5" schema="default-component-BikePhysicsMover">
+			<!-- Parents -->
+			<Parent nameUID="0x41C82F6B">default-component-BikePhysicsMover</Parent>
+			<!-- Schema Properties -->
+			<Property name="physicsPropertySetAI" type="Symbol" symUID="0x51AE817D">Vehicles-GenericBikeProperties</Property>
+			<Property name="physicsPropertySetHuman" type="Symbol" symUID="0x51AE817D">Vehicles-GenericBikeProperties</Property>
+			<Property name="modelName" type="String">BikeSport01</Property>
+			<Property name="TrunkType" type="Symbol" symUID="0xDE16D029">eVEHICLE_TRUNK_TYPE_NONE</Property>
+			<Property name="damageMultiplierWorldCollisions" type="Float32">1</Property>
+			<Property name="damageMultiplierVehicleCollisions" type="Float32">1</Property>
+			<Property name="damageMultiplierBullets" type="Float32">1</Property>
+			<Property name="damageMultiplierTires" type="Float32">1</Property>
+			<Property name="boundingBoxMin" type="Vector3" x="-0.92" y="-0.33" z="0"/>
+			<Property name="boundingBoxMAx" type="Vector3" x="0.9" y="0.33" z="1.6"/>
+			<Property name="tireShotImpulse" type="Float32">0.2</Property>
+			<Property name="tireBlownImpulse" type="Float32">1</Property>
+			<Property name="lowLodThrottleAcceleration" type="Float32">12</Property>
+			<Property name="lowLodBrakesAcceleration" type="Float32">-60</Property>
+			<Property name="lowLodCoastAcceleration" type="Float32">-1</Property>
+			<Property name="lowLodMaxSpeed" type="Float32">50</Property>
+			<Property name="lowLodMaxLateralAcceleration" type="Float32">1</Property>
+			<Property name="lowLodMinTurningRadius" type="Float32">2</Property>
+			<Property name="autoDeterioratingDamageThreshold" type="Float32">0.75</Property>
+			<Property name="autoDeterioratingDamageRate" type="Float32">0.01</Property>
+			<Property name="vehicleDistanceToHighLod" type="Float32">30</Property>
+			<Property name="vehicleDistanceToMedLod" type="Float32">70</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToTakeDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionExtraDamageMultiplier" type="Float32">2</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinImpulse" type="Float32">0.01</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxImpulse" type="Float32">0.05</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToDealDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionMaxImpulseForDealingDamage" type="Float32">10</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinRamImpulse" type="Float32">0.25</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxRamImpulse" type="Float32">0.3</Property>
+			<Property name="vehicleCollisionMinRamImpulseRequiredToDealDamage" type="Float32">6</Property>
+			<Property name="vehicleCollisionMaxRamImpulseForDealingDamage" type="Float32">12</Property>
+			<Property name="vehicleCollisionForceDamageDealer" type="Boolean">false</Property>
+			<Property name="lockedAtLowLOD" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xCA08F77F">Bike</ListProperty>
+				<ListProperty type="Symbol" symUID="0x9B06086B">Vehicle</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="UnlockVehicleDoors" type="Boolean">true</Property>
+	<Property name="component_TSActor" type="PropSet">
+		<PropertySet name="component_TSActor" nameUID="0x2873821B" schema="default-component-TSActor">
+			<!-- Schema Properties -->
+			<Property name="SkookumClass" type="Symbol" symUID="0xCA08F77F">Bike</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="component_BikePhysicsMover" type="PropSet">
+		<PropertySet name="component_BikePhysicsMover" nameUID="0x3A19EBF5" schema="default-component-BikePhysicsMover">
+			<!-- Parents -->
+			<Parent nameUID="0x41C82F6B">default-component-BikePhysicsMover</Parent>
+			<!-- Schema Properties -->
+			<Property name="canWheelie" type="Int32">1</Property>
+			<!-- Schema Parent: component_PhysicsMover -->
+		</PropertySet>
+	</Property>
+	<Property name="VehicleJob" type="Symbol" symUID="0x94BC85A0">Traffic</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\Bike.act</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String"/>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\Bike.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC" symUID="0x499DE759">Bike</Property>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="ActionHijackProfile" type="Symbol" symUID="0xD99C37AD">Vehicles-ActionHijackProfile-Bike</Property>
+	<Property name="component_VehicleProperties" type="PropSet">
+		<PropertySet name="component_VehicleProperties" nameUID="0x7F1798C0" schema="default-component-VehicleProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectVehicleType" type="Symbol" symUID="0x65FF4C54">eSIM_OBJ_VEHICLE_TYPE_BIKE</Property>
+			<Property name="simObjectBoatType" type="Symbol"/>
+			<Property name="aim_limit" type="List"/>
+			<Property name="default_left_aim_limit" type="Float32">45</Property>
+			<Property name="default_right_aim_limit" type="Float32">-45</Property>
+			<Property name="door_phantom_info" type="List"/>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_VehicleEffects" type="PropSet">
+		<PropertySet name="component_VehicleEffects" nameUID="0x83824245" schema="default-component-VehicleEffects">
+			<!-- Schema Properties -->
+			<Property name="headlightsInRainProbability" type="Float32">0.5</Property>
+			<Property name="headlightsAlwaysOn" type="Boolean">false</Property>
+			<Property name="headlightsAlwaysOff" type="Boolean">false</Property>
+			<Property name="DamageTransfer" type="SymbolUC"/>
+			<Property name="EffectGroupName" type="SymbolUC" symUID="0x69FD4826">commonbike</Property>
+			<Property name="InitialDirtSeed" type="Float32">0.2</Property>
+			<Property name="GrimeFactor" type="Float32">0</Property>
+			<Property name="Speed0" type="Float32">0</Property>
+			<Property name="Speed1" type="Float32">15</Property>
+			<Property name="Speed2" type="Float32">10000</Property>
+			<Property name="Speed3" type="Float32">10000</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_VehicleProperties" nameUID="0x7F1798C0" schema="default-component-VehicleProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0x9844EE67">eSIM_OBJ_TYPE_VEHICLE</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0x2D7C0250">Targeting-SubTargetingProfiles-VehicleTwoWheels</Property>
+		</PropertySet>
+	</Property>
+	<Property name="VehiclePriorityClassList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xBF102A3">BikeDriver</ListProperty>
+	</Property>
+	<Property name="explosionPropertySet" type="Symbol" symUID="0x7CD45919">object-physical-explosion-bike</Property>
+	<Property name="component_DropShadow" type="PropSet">
+		<PropertySet name="component_DropShadow" nameUID="0xEC2CE6F9" schema="default-component-DropShadow">
+			<!-- Schema Properties -->
+			<Property name="DropShadow_ScaleX" type="Float32">0.5</Property>
+			<Property name="DropShadow_ScaleY" type="Float32">0.2</Property>
+			<Property name="DropShadow_TextureUID" type="SymbolUC" symUID="0x80C33DEF">FX_ShadowSquare</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_Interactable" type="PropSet">
+		<PropertySet name="component_Interactable" nameUID="0xF20A4492" schema="default-component-Interactable">
+			<!-- Schema Properties -->
+			<Property name="InteractionPoints" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0xBC9BA367">eINTERACTION_POINT_UPDATE_DISTANCE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x30E2F569">eTARGET_TYPE_INTERACTION_POINT0</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC"/>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x8B5E191A">eINTERACTION_POINT_UPDATE_BONE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x3423E8DE">eTARGET_TYPE_INTERACTION_POINT1</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC" symUID="0xA4729703">C_FEETSYNCL01</Property>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x8B5E191A">eINTERACTION_POINT_UPDATE_BONE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x3960CE07">eTARGET_TYPE_INTERACTION_POINT2</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC" symUID="0xB3EED059">C_FEETSYNCR01</Property>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x8B5E191A">eINTERACTION_POINT_UPDATE_BONE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x3DA1D3B0">eTARGET_TYPE_INTERACTION_POINT3</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC" symUID="0xA7B7A52E">C_FeetSyncRear01</Property>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x95CD025B">eINTERACTION_POINT_UPDATE_OBJECT_XFORM</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x23E683B5">eTARGET_TYPE_INTERACTION_POINT4</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC"/>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="-1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="1.5"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Bike- Common Bike</Property>
+</PropertySetResource>

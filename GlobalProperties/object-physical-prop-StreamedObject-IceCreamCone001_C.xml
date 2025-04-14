@@ -1,21 +1,26 @@
-<PropertySet name="object-physical-prop-StreamedObject-IceCreamCone001_C" nameUID="0xA1E2C6FB" schema="object-physical-prop-StreamedObject-IceCreamCone001_C">
-    <Parent>object-physical-prop-StreamedObject-IceCreamCone001</Parent>
-    <Property name="Description" type="String">IceCreamCone001_C</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0xD0578AFA">Data\Props_New\IceCreamCone001</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List">
-                <Property type="Symbol" Symbol="0xD424A7EE">Data\Props_New\IceCreamCone001_ts003</Property>
-            </TextureSetList>
-            <EntityType type="Symbol">Prop</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-StreamedObject-IceCreamCone001_C" nameUID="0xA1E2C6FB">
+	<!-- Parents -->
+	<Parent nameUID="0x1E462578">object-physical-prop-StreamedObject-IceCreamCone001</Parent>
+	<!-- Properties -->
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xD0578AFA">Data\Props_New\IceCreamCone001</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xD424A7EE">Data\Props_New\IceCreamCone001_ts003</ListProperty>
+			</Property>
+			<Property name="EntityType" type="SymbolUC" symUID="0xD452A50">Prop</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">IceCreamCone001_C</Property>
+</PropertySetResource>

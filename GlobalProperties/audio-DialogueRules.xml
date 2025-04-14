@@ -1,88 +1,128 @@
-<PropertySet name="audio-DialogueRules" nameUID="0x33E8A55C" schema="audio-DialogueRules">
-    <Property name="responses" type="List">
-        <ListProperty nameUID="0x3C929F71">
-            <Property name="line" type="WwiseID"/>
-            <Property name="then" type="PropSet">
-                <PropertySet>
-                    <Property name="character" type="WwiseID"/>
-                    <Property name="concept" type="Symbol" Symbol="0xBE942998">Conversation</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x385382C6">
-            <Property name="line" type="WwiseID"/>
-            <Property name="then" type="PropSet">
-                <PropertySet>
-                    <Property name="character" type="WwiseID"/>
-                    <Property name="concept" type="Symbol" Symbol="0xBE942998">Conversation</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3510A41F">
-            <Property name="line" type="WwiseID"/>
-            <Property name="then" type="PropSet">
-                <PropertySet>
-                    <Property name="character" type="WwiseID"/>
-                    <Property name="concept" type="Symbol" Symbol="0xBE942998">Conversation</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x31D1B9A8">
-            <Property name="line" type="WwiseID"/>
-            <Property name="then" type="PropSet">
-                <PropertySet>
-                    <Property name="character" type="WwiseID"/>
-                    <Property name="concept" type="Symbol" Symbol="0xBE942998">Conversation</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="rules" type="List">
-        <ListProperty nameUID="0x242A096D">
-            <Property name="apply" type="PropSet">
-                <PropertySet>
-                    <Parent>rsp_TestConv_0</Parent>
-                    <Property name="key" type="Symbol" Symbol="0x3C929F71">rsp_TestConv_0</Property>
-                    <Property name="value" type="Symbol" Symbol="0x9EFBCF93">1</Property>
-                </PropertySet>
-            </Property>
-            <Property name="concept" type="Symbol" Symbol="0xBE942998">Conversation</Property>
-            <Property name="criteria" type="List">
-                <ListProperty nameUID="0xFFFFFFFF">
-                    <Parent>character</Parent>
-                    <Property name="key" type="Symbol" Symbol="0x88AF8001">character</Property>
-                    <Property name="value" type="Symbol" Symbol="0x90ECB5FF">PlayerOne_Havok</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xFFFFFFFF">
-                    <Parent>conv_to_start</Parent>
-                    <Property name="key" type="Symbol" Symbol="0x65FDFA44">conv_to_start</Property>
-                    <Property name="value" type="Symbol" Symbol="0x4DFB6882">convTest</Property>
-                </ListProperty>
-            </Property>
-            <Property name="response" type="Symbol" Symbol="0x3C929F71">rsp_TestConv_0</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x29692FB4">
-            <Property name="apply" type="PropSet">
-                <PropertySet>
-                    <Parent>rsp_TestConv_1</Parent>
-                    <Property name="key" type="Symbol" Symbol="0x385382C6">rsp_TestConv_1</Property>
-                    <Property name="value" type="Symbol" Symbol="0x9EFBCF93">1</Property>
-                </PropertySet>
-            </Property>
-            <Property name="concept" type="Symbol" Symbol="0xBE942998">Conversation</Property>
-            <Property name="criteria" type="List">
-                <ListProperty nameUID="0xFFFFFFFF">
-                    <Parent>character</Parent>
-                    <Property name="key" type="Symbol" Symbol="0x88AF8001">character</Property>
-                    <Property name="value" type="Symbol" Symbol="0x8D5470E6">winston1</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xFFFFFFFF">
-                    <Parent>rsp_TestConv_0</Parent>
-                    <Property name="key" type="Symbol" Symbol="0x3C929F71">rsp_TestConv_0</Property>
-                    <Property name="value" type="Symbol" Symbol="0x9EFBCF93">1</Property>
-                </ListProperty>
-            </Property>
-            <Property name="response" type="Symbol" Symbol="0x385382C6">rsp_TestConv_1</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="audio-DialogueRules" nameUID="0x33E8A55C">
+	<!-- Properties -->
+	<Property name="rules" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="rule_1" nameUID="0x242A096D">
+				<!-- Properties -->
+				<Property name="response" type="Symbol" symUID="0x3C929F71">rsp_TestConv_0</Property>
+				<Property name="concept" type="Symbol" symUID="0xBE942998">Conversation</Property>
+				<Property name="criteria" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet>
+							<!-- Properties -->
+							<Property name="value" type="Symbol" symUID="0x90ECB5FF">PlayerOne_Havok</Property>
+							<Property name="key" type="Symbol" symUID="0x88AF8001">character</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet>
+							<!-- Properties -->
+							<Property name="value" type="Symbol" symUID="0x4DFB6882">convTest</Property>
+							<Property name="key" type="Symbol" symUID="0x65FDFA44">conv_to_start</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="apply" type="PropSet">
+					<PropertySet>
+						<!-- Properties -->
+						<Property name="value" type="Symbol" symUID="0x9EFBCF93">1</Property>
+						<Property name="key" type="Symbol" symUID="0x3C929F71">rsp_TestConv_0</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="rule_2" nameUID="0x29692FB4">
+				<!-- Properties -->
+				<Property name="response" type="Symbol" symUID="0x385382C6">rsp_TestConv_1</Property>
+				<Property name="concept" type="Symbol" symUID="0xBE942998">Conversation</Property>
+				<Property name="criteria" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet>
+							<!-- Properties -->
+							<Property name="value" type="Symbol" symUID="0x8D5470E6">winston1</Property>
+							<Property name="key" type="Symbol" symUID="0x88AF8001">character</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet>
+							<!-- Properties -->
+							<Property name="value" type="Symbol" symUID="0x9EFBCF93">1</Property>
+							<Property name="key" type="Symbol" symUID="0x3C929F71">rsp_TestConv_0</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="apply" type="PropSet">
+					<PropertySet>
+						<!-- Properties -->
+						<Property name="value" type="Symbol" symUID="0x9EFBCF93">1</Property>
+						<Property name="key" type="Symbol" symUID="0x385382C6">rsp_TestConv_1</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="responses" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="rsp_TestConv_0" nameUID="0x3C929F71">
+				<!-- Properties -->
+				<Property name="then" type="PropSet">
+					<PropertySet>
+						<!-- Properties -->
+						<Property name="concept" type="Symbol" symUID="0xBE942998">Conversation</Property>
+						<Property name="character" type="WwiseID" symUID="0xA72BB160">winston1</Property>
+					</PropertySet>
+				</Property>
+				<Property name="line" type="WwiseID" symUID="0x89770CAF"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="rsp_TestConv_1" nameUID="0x385382C6">
+				<!-- Properties -->
+				<Property name="then" type="PropSet">
+					<PropertySet>
+						<!-- Properties -->
+						<Property name="concept" type="Symbol" symUID="0xBE942998">Conversation</Property>
+						<Property name="character" type="WwiseID" symUID="0x4666198E">Wei</Property>
+					</PropertySet>
+				</Property>
+				<Property name="line" type="WwiseID" symUID="0xCF1D4354"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="rsp_TestConv_2" nameUID="0x3510A41F">
+				<!-- Properties -->
+				<Property name="then" type="PropSet">
+					<PropertySet>
+						<!-- Properties -->
+						<Property name="concept" type="Symbol" symUID="0xBE942998">Conversation</Property>
+						<Property name="character" type="WwiseID" symUID="0xA72BB160">winston1</Property>
+					</PropertySet>
+				</Property>
+				<Property name="line" type="WwiseID" symUID="0x962BBF7"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="rsp_TestConv_3" nameUID="0x31D1B9A8">
+				<!-- Properties -->
+				<Property name="then" type="PropSet">
+					<PropertySet>
+						<!-- Properties -->
+						<Property name="concept" type="Symbol" symUID="0xBE942998">Conversation</Property>
+						<Property name="character" type="WwiseID" symUID="0x4666198E">Wei</Property>
+					</PropertySet>
+				</Property>
+				<Property name="line" type="WwiseID" symUID="0x1AFC1901"/>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x962BBF7 (WWise) -->
+<!-- 0x1AFC1901 (WWise) -->
+<!-- 0x89770CAF (WWise) -->
+<!-- 0xCF1D4354 (WWise) -->

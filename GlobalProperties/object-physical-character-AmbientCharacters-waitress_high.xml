@@ -1,113 +1,136 @@
-<PropertySet name="object-physical-character-AmbientCharacters-waitress_high" nameUID="0x19288094" schema="object-physical-character-AmbientCharacters-waitress_high">
-    <Parent>object-physical-character-drivers-nothing</Parent>
-    <Property name="CanDoCellIdle" type="Boolean">False</Property>
-    <Property name="CanDoSmokeIdle" type="Boolean">False</Property>
-    <Property name="CanJoinGroup" type="Boolean">False</Property>
-    <Property name="CanLookAtWatchIdle" type="Boolean">False</Property>
-    <Property name="Description" type="String">Waitress - High</Property>
-    <Property name="Grapple" type="Int32">100</Property>
-    <Property name="Inventory" type="List">
-        <ListProperty nameUID="0x186A966F">
-            <Property name="Value" type="Int32">1000000</Property>
-        </ListProperty>
-    </Property>
-    <Property name="PersonalityList" type="List">
-        <Property type="Symbol" Symbol="0x56203F5">default-component-personality-shopkeep</Property>
-    </Property>
-    <Property name="PropList" type="List">
-        <Property type="Symbol"/>
-        <Property type="Symbol" Symbol="0x59236CEC">object-physical-prop-Attachable-AmbientGlasses004</Property>
-    </Property>
-    <Property name="SellableItem" type="Symbol" Symbol="0x186A966F">eINVENTORY_ITEM_NOODLE_BOWL</Property>
-    <Property name="TetherAttenuation" type="Float32">1.5</Property>
-    <Property name="TetherDistance" type="Float32">4</Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-        <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">BasicFemale</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">BasicFemale</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_WAITRESS</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">Innocent</FactionClass>
-            <Gender type="Symbol">Female</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_Health" type="PropSet">
-        <BinData>
-            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
-            <maxHealth type="Int32">25</maxHealth>
-            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
-            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
-            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
-        </BinData>
-    </Property>
-    <Property name="component_Sensor" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Sensor</Parent>
-        </PropertySet>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0xE7DE76F9">Female</Property>
-                <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-                <Property type="Symbol" Symbol="0xE69D7A9A">Waitress</Property>
-            </ResourceTags>
-            <ResourceList type="List">
-                <Property type="Symbol"/>
-                <Property type="Symbol" Symbol="0xE620D34E">Data\Characters_New\AS_B_WaitressPosh</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-0.2</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-waitress_high" nameUID="0x19288094">
+	<!-- Parents -->
+	<Parent nameUID="0x551F3BD">object-physical-character-drivers-nothing</Parent>
+	<Parent nameUID="0xB83AE074">object-physical-character-CommonPedestrian</Parent>
+	<Parent nameUID="0x79C303E9">object-physical-character</Parent>
+	<!-- Properties -->
+	<Property name="Grapple" type="Int32">100</Property>
+	<Property name="CanJoinGroup" type="Boolean">false</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x296FE43F">BBC_Staff</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE69D7A9A">Waitress</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="PropList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol"/>
+		<ListProperty type="Symbol" symUID="0x59236CEC">object-physical-prop-Attachable-AmbientGlasses004</ListProperty>
+	</Property>
+	<Property name="CanDoSmokeIdle" type="Boolean">false</Property>
+	<Property name="CanLookAtWatchIdle" type="Boolean">false</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="CanDoCellIdle" type="Boolean">false</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">BasicFemale</Property>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\ChanWeightSets.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC" symUID="0x2D3C1E22">Ped</Property>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String">Data\Global\Act\NIS_WeightSets.wst</Property>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="SellableItem" type="Symbol" symUID="0x186A966F">eINVENTORY_ITEM_NOODLE_BOWL</Property>
+	<Property name="PersonalityList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x56203F5">default-component-personality-shopkeep</ListProperty>
+	</Property>
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+		<ListProperty type="Symbol" symUID="0x95BC9EE4">Ped</ListProperty>
+	</Property>
+	<Property name="component_Sensor" type="PropSet">
+		<PropertySet name="component_Sensor" nameUID="0x93D7F4B1" schema="default-component-Sensor">
+			<!-- Parents -->
+			<Parent nameUID="0xA1E0B63F">default-component-Sensor</Parent>
+			<!-- Schema Properties -->
+			<Property name="SensorPhantomSizeX" type="Float32">8</Property>
+			<Property name="SensorPhantomSizeY" type="Float32">8</Property>
+			<Property name="SensorPhantomSizeZ" type="Float32">8</Property>
+			<Property name="HasActiveRegion" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_Health" type="PropSet">
+		<PropertySet name="component_Health" nameUID="0xA9EB4546" schema="default-component-Health">
+			<!-- Schema Properties -->
+			<Property name="maxUpgradedHealth" type="Int32">400</Property>
+			<Property name="maxHealth" type="Int32">25</Property>
+			<Property name="regenerativeHealthRate" type="Float32">-1</Property>
+			<Property name="InvulnerableCharacter" type="Boolean">false</Property>
+			<Property name="healthProjectileDamageMultiplier" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="TetherDistance" type="Float32">4</Property>
+	<Property name="Inventory" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="eINVENTORY_ITEM_NOODLE_BOWL" nameUID="0x186A966F">
+				<!-- Properties -->
+				<Property name="Value" type="Int32">1000000</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0x35B919E2">eCHARACTER_TYPE_WAITRESS</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0x5038C060">eFIGHTING_CLASS_NON_COMBATANT</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x7301D91C">INNOCENT</Property>
+			<Property name="Gender" type="Symbol" symUID="0xE7DE76F9">Female</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="TetherAttenuation" type="Float32">1.5</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xE7DE76F9">Female</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE69D7A9A">Waitress</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol"/>
+				<ListProperty type="Symbol" symUID="0xE620D34E">Data\Characters_New\AS_B_WaitressPosh</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-0.2</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Waitress - High</Property>
+</PropertySetResource>

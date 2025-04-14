@@ -1,4 +1,8 @@
-<PropertySet name="object-logical-CameraMarker" nameUID="0x1283A31" schema="object-logical-CameraMarker">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0x2F962C69">CameraMarker</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-CameraMarker" nameUID="0x1283A31">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0xC74B1779">default-component-CameraMarker</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0x2F962C69">CameraMarker</Property>
+</PropertySetResource>

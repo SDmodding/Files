@@ -1,23 +1,29 @@
-<PropertySet name="default-spawnset-CN_Comm_Day" nameUID="0x4F97305D" schema="default-spawnset-CN_Comm_Day">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0x99BDAF0A">
-            <Property name="MaxInstances" type="Int32">2</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">10</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x86F8163F">object-physical-character-PublicWorks</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0xA0C92447">object-physical-character-AmbientCharacters-CN_Comm_Day_Male</Property>
-        <Property type="Symbol" Symbol="0xB676BC9A">object-physical-character-AmbientCharacters-CN_Comm_Day_Male_yng</Property>
-        <Property type="Symbol" Symbol="0x832DE98D">object-physical-character-AmbientCharacters-CN_FaceCommenter_M</Property>
-        <Property type="Symbol" Symbol="0xE301CC25">object-physical-character-AmbientCharacters-CN_Comm_Day_Female</Property>
-        <Property type="Symbol" Symbol="0x64B93460">object-physical-character-AmbientCharacters-CN_Comm_Day_Female_Yng</Property>
-        <Property type="Symbol" Symbol="0xA86622EC">object-physical-character-AmbientCharacters-CN_FaceCommenter_F</Property>
-        <Property type="Symbol" Symbol="0xFBAA612C">object-physical-character-Amb_Business_M</Property>
-        <Property type="Symbol" Symbol="0xD0E1AA4D">object-physical-character-Amb_Business_F</Property>
-        <Property type="Symbol" Symbol="0x3732AA82">object-physical-character-Amb_Business_WM</Property>
-        <Property type="Symbol" Symbol="0x1C7961E3">object-physical-character-Amb_Business_WF</Property>
-        <Property type="Symbol" Symbol="0x476D5A20">object-physical-character-AmbientCharacters-CN_Sexy_Female</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-CN_Comm_Day" nameUID="0x4F97305D">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="RareSpawnC3" nameUID="0x99BDAF0A">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x86F8163F">object-physical-character-PublicWorks</Property>
+				<Property name="MaxInstances" type="Int32">2</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">10</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xA0C92447">object-physical-character-AmbientCharacters-CN_Comm_Day_Male</ListProperty>
+		<ListProperty type="Symbol" symUID="0xB676BC9A">object-physical-character-AmbientCharacters-CN_Comm_Day_Male_yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0x832DE98D">object-physical-character-AmbientCharacters-CN_FaceCommenter_M</ListProperty>
+		<ListProperty type="Symbol" symUID="0xE301CC25">object-physical-character-AmbientCharacters-CN_Comm_Day_Female</ListProperty>
+		<ListProperty type="Symbol" symUID="0x64B93460">object-physical-character-AmbientCharacters-CN_Comm_Day_Female_Yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0xA86622EC">object-physical-character-AmbientCharacters-CN_FaceCommenter_F</ListProperty>
+		<ListProperty type="Symbol" symUID="0xFBAA612C">object-physical-character-Amb_Business_M</ListProperty>
+		<ListProperty type="Symbol" symUID="0xD0E1AA4D">object-physical-character-Amb_Business_F</ListProperty>
+		<ListProperty type="Symbol" symUID="0x3732AA82">object-physical-character-Amb_Business_WM</ListProperty>
+		<ListProperty type="Symbol" symUID="0x1C7961E3">object-physical-character-Amb_Business_WF</ListProperty>
+		<ListProperty type="Symbol" symUID="0x476D5A20">object-physical-character-AmbientCharacters-CN_Sexy_Female</ListProperty>
+	</Property>
+</PropertySetResource>

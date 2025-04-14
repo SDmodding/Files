@@ -1,4 +1,6 @@
-<PropertySet name="object-physical-prop-LOS_Crate001" nameUID="0xBF134F00" schema="object-physical-prop-LOS_Crate001">
-    <Parent>object-physical-prop-LOI_MovingBox001</Parent>
-    <Property name="RadarHighlightType" type="Symbol" Symbol="0x2A84762D">CombatProp</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOS_Crate001" nameUID="0xBF134F00">
+	<!-- Parents -->
+	<Parent nameUID="0x3BD49E98">object-physical-prop-LOI_MovingBox001</Parent>
+	<!-- Properties -->
+	<Property name="RadarHighlightType" type="Symbol" symUID="0x2A84762D">CombatProp</Property>
+</PropertySetResource>

@@ -1,14 +1,17 @@
-<PropertySet name="object-physical-prop-AttachableProp" nameUID="0x23D174BB" schema="object-physical-prop-AttachableProp">
-    <Parent>object-physical-prop-VisibleProp</Parent>
-    <Property name="PerceivedDangerous" type="Boolean">False</Property>
-    <Property name="component_InventoryItem" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-InventoryItem</Parent>
-        </PropertySet>
-        <BinData>
-            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
-            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
-            <simObjectInventoryItem type="Symbol"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-AttachableProp" nameUID="0x23D174BB">
+	<!-- Parents -->
+	<Parent nameUID="0x3C7C2007">object-physical-prop-VisibleProp</Parent>
+	<Parent nameUID="0xE6CEAAF8">default-component-ActionTree</Parent>
+	<!-- Properties -->
+	<Property name="PerceivedDangerous" type="Boolean">false</Property>
+	<Property name="component_InventoryItem" type="PropSet">
+		<PropertySet name="component_InventoryItem" nameUID="0x9DA2A4AD" schema="default-component-InventoryItem">
+			<!-- Parents -->
+			<Parent nameUID="0xB9B21D65">default-component-InventoryItem</Parent>
+			<!-- Schema Properties -->
+			<Property name="InventoryItemQuantityMin" type="UInt32">1</Property>
+			<Property name="InventoryItemQuantityMax" type="UInt32">1</Property>
+			<Property name="simObjectInventoryItem" type="Symbol"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

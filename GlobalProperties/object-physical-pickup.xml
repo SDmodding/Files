@@ -1,11 +1,12 @@
-<PropertySet name="object-physical-pickup" nameUID="0x4A036C2E" schema="object-physical-pickup">
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-SimObjectProperties</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_PICKUP</simObjectType>
-            <subTargetingProfile type="Symbol"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-pickup" nameUID="0x4A036C2E">
+	<!-- Properties -->
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_SimObjectProperties" nameUID="0xC5AFD1A8" schema="default-component-SimObjectProperties">
+			<!-- Parents -->
+			<Parent nameUID="0x48BB3117">default-component-SimObjectProperties</Parent>
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0x9A43C276">eSIM_OBJ_TYPE_PICKUP</Property>
+			<Property name="subTargetingProfile" type="Symbol"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

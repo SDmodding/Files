@@ -1,14 +1,17 @@
-<PropertySet name="TrueCrowd-Characters_New-AM_H_111" nameUID="0x203FD66A" schema="TrueCrowd-Characters_New-AM_H_111">
-    <Property name="HatOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Rotation" type="Vector3" x="-2.30585" y="-2.30585" z="2.15802"/>
-            <Property name="Translation" type="Vector3" x="-0.00676361" y="-0.00676361" z="0.0057312"/>
-        </PropertySet>
-    </Property>
-    <Property name="HelmetOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Rotation" type="Vector3" x="-5.20449" y="-5.20449" z="0"/>
-            <Property name="Translation" type="Vector3" x="0" y="0" z="-0.0169928"/>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="TrueCrowd-Characters_New-AM_H_111" nameUID="0x203FD66A">
+	<!-- Properties -->
+	<Property name="HelmetOffset" type="PropSet">
+		<PropertySet name="HelmetOffset" nameUID="0x947B4FC">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="0" y="-0.0169928" z="0.00814606"/>
+			<Property name="Rotation" type="Vector3" x="-5.20449" y="0" z="0"/>
+		</PropertySet>
+	</Property>
+	<Property name="HatOffset" type="PropSet">
+		<PropertySet name="HatOffset" nameUID="0xF0E937E">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="-0.00676361" y="0.0057312" z="0.0152209"/>
+			<Property name="Rotation" type="Vector3" x="-2.30585" y="2.15802" z="-2.12737"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

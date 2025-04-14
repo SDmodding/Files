@@ -1,12 +1,15 @@
-<PropertySet name="object-logical-FXSimComponent" nameUID="0x5ECBB6E1" schema="object-logical-FXSimComponent">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0x861E5147">FXSimComponent</Property>
-    <Property name="component_FXSimComponent" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-FXSimComponent</Parent>
-        </PropertySet>
-        <BinData>
-            <EffectId type="Symbol"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-FXSimComponent" nameUID="0x5ECBB6E1">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0x861E5147">FXSimComponent</Property>
+	<Property name="component_FXSimComponent" type="PropSet">
+		<PropertySet name="component_FXSimComponent" nameUID="0x6FE755E1" schema="default-component-FXSimComponent">
+			<!-- Parents -->
+			<Parent nameUID="0xF4795DDD">default-component-FXSimComponent</Parent>
+			<!-- Schema Properties -->
+			<Property name="EffectId" type="SymbolUC"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

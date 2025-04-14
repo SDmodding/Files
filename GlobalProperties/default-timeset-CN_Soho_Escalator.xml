@@ -1,22 +1,33 @@
-<PropertySet name="default-timeset-CN_Soho_Escalator" nameUID="0x2002F317" schema="default-timeset-CN_Soho_Escalator">
-    <Property name="TimeSetList" type="List">
-        <ListProperty nameUID="0xF4B7E331">
-            <Property name="OffTime" type="Int32">18</Property>
-            <Property name="OnTime" type="Int32">11</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0xA93C570C">default-spawnset-Day_Soho</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-2</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">3</Property>
-            <Property name="OnTime" type="Int32">18</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0x5848B99">default-spawnset-Evening_Soho</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-2</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">11</Property>
-            <Property name="OnTime" type="Int32">3</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0xE0079B87">default-spawnset-Night_Soho</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-3</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-timeset-CN_Soho_Escalator" nameUID="0x2002F317">
+	<!-- Properties -->
+	<Property name="TimeSetList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Night" nameUID="0xF4B7E331">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">18</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-2</Property>
+				<Property name="OnTime" type="Int32">11</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0xA93C570C">default-spawnset-Day_Soho</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">3</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-2</Property>
+				<Property name="OnTime" type="Int32">18</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0x5848B99">default-spawnset-Evening_Soho</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">11</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-3</Property>
+				<Property name="OnTime" type="Int32">3</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0xE0079B87">default-spawnset-Night_Soho</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

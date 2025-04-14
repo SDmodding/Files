@@ -1,49 +1,74 @@
-<PropertySet name="object-physical-character-wei_nis_nmc" nameUID="0xBCA5D8E" schema="object-physical-character-wei_nis_nmc">
-    <Parent>object-physical-character-wei_nis_globals</Parent>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List"/>
-            <ComponentList type="List">
-                <ListProperty nameUID="0xA8245162">
-                    <Parent>Data\Characters_New\Wei_Head_HD</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0xD5905C49">Data\Characters_New\Wei_Head_HD</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x237E2227">Data\Characters_New\Wei_Head_HD_TS00</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF076160C">
-                    <Property name="Model" type="Symbol" Symbol="0x8E49071B">Data\Characters_New\N_CoinString</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8FC6C875">
-                    <Property name="Model" type="Symbol" Symbol="0x938AFE7D">Data\Characters_New\H_DefaultHair</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF8DE4056">
-                    <Property name="ColorTintIndex" type="Int32">2</Property>
-                    <Property name="Model" type="Symbol" Symbol="0xA97CA2A">Data\Characters_New\T_Vneck</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0xEFBA835C">Data\Characters_New\T_Vneck_TS01</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x55CCB293">
-                    <Property name="Model" type="Symbol" Symbol="0x2DB2BE0C">Data\Characters_New\W_MetalRound</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xBC98D79C">
-                    <Property name="Model" type="Symbol" Symbol="0x398D117C">Data\Characters_New\W_Rocker</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xBBD01F39">
-                    <Parent>Data\Characters_New\P_JeansBaggy</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0x1C19045C">Data\Characters_New\P_JeansBaggy</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x456C93B7">Data\Characters_New\P_JeansBaggy_TS01</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x86D0435B">
-                    <Parent>Data\Characters_New\S_Sleek</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0xD2C7BC9B">Data\Characters_New\S_Sleek</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x399B32A8">Data\Characters_New\S_Sleek_TS02</Property>
-                </ListProperty>
-            </ComponentList>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">Player</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-wei_nis_nmc" nameUID="0xBCA5D8E">
+	<!-- Parents -->
+	<Parent nameUID="0xD9571BF1">object-physical-character-wei_nis_globals</Parent>
+	<!-- Properties -->
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Head" nameUID="0xA8245162">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0xD5905C49">Data\Characters_New\Wei_Head_HD</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x237E2227">Data\Characters_New\Wei_Head_HD_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Neck" nameUID="0xF076160C">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x8E49071B">Data\Characters_New\N_CoinString</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Hat" nameUID="0x8FC6C875">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x938AFE7D">Data\Characters_New\H_DefaultHair</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Torso" nameUID="0xF8DE4056">
+						<!-- Properties -->
+						<Property name="ColorTintIndex" type="Int32">2</Property>
+						<Property name="Model" type="Symbol" symUID="0xA97CA2A">Data\Characters_New\T_Vneck</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0xEFBA835C">Data\Characters_New\T_Vneck_TS01</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="LeftWrist" nameUID="0x55CCB293">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x2DB2BE0C">Data\Characters_New\W_MetalRound</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="RightWrist" nameUID="0xBC98D79C">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x398D117C">Data\Characters_New\W_Rocker</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Pants" nameUID="0xBBD01F39">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x1C19045C">Data\Characters_New\P_JeansBaggy</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x456C93B7">Data\Characters_New\P_JeansBaggy_TS01</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Shoes" nameUID="0x86D0435B">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0xD2C7BC9B">Data\Characters_New\S_Sleek</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x399B32A8">Data\Characters_New\S_Sleek_TS02</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0xF5C5D591">PLAYER</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

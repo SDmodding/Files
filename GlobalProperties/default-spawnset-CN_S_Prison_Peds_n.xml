@@ -1,16 +1,22 @@
-<PropertySet name="default-spawnset-CN_S_Prison_Peds_n" nameUID="0x691C17F7" schema="default-spawnset-CN_S_Prison_Peds_n">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xB7B39865">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x309915CE">object-physical-character-police_ambient</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0x29FC33C0">object-physical-character-AmbientCharacters-NP_Res_Eve_Male</Property>
-        <Property type="Symbol" Symbol="0xEDAC90C8">object-physical-character-AmbientCharacters-NP_Res_Eve_Female</Property>
-        <Property type="Symbol" Symbol="0x39725C13">object-physical-character-police_variation2</Property>
-        <Property type="Symbol" Symbol="0xEA57FD95">object-physical-character-policeyoung</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-CN_S_Prison_Peds_n" nameUID="0x691C17F7">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Police" nameUID="0xB7B39865">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x309915CE">object-physical-character-police_ambient</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x29FC33C0">object-physical-character-AmbientCharacters-NP_Res_Eve_Male</ListProperty>
+		<ListProperty type="Symbol" symUID="0xEDAC90C8">object-physical-character-AmbientCharacters-NP_Res_Eve_Female</ListProperty>
+		<ListProperty type="Symbol" symUID="0x39725C13">object-physical-character-police_variation2</ListProperty>
+		<ListProperty type="Symbol" symUID="0xEA57FD95">object-physical-character-policeyoung</ListProperty>
+	</Property>
+</PropertySetResource>

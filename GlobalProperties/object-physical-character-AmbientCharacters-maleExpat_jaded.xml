@@ -1,7 +1,10 @@
-<PropertySet name="object-physical-character-AmbientCharacters-maleExpat_jaded" nameUID="0xF7587CE1" schema="object-physical-character-AmbientCharacters-maleExpat_jaded">
-    <Parent>object-physical-character-AmbientCharacters-maleExpat_base</Parent>
-    <Property name="Description" type="String">maleExpat_jaded</Property>
-    <Property name="PersonalityList" type="List">
-        <Property type="Symbol" Symbol="0x8343B39">default-component-personality-jaded</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-maleExpat_jaded" nameUID="0xF7587CE1">
+	<!-- Parents -->
+	<Parent nameUID="0x33C8E00F">object-physical-character-AmbientCharacters-maleExpat_base</Parent>
+	<!-- Properties -->
+	<Property name="PersonalityList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x8343B39">default-component-personality-jaded</ListProperty>
+	</Property>
+	<Property name="Description" type="String">maleExpat_jaded</Property>
+</PropertySetResource>

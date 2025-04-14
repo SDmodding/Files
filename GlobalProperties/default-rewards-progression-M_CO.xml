@@ -1,14 +1,24 @@
-<PropertySet name="default-rewards-progression-M_CO" nameUID="0x5C42FE4D" schema="default-rewards-progression-M_CO">
-    <Parent>default-rewards-progression-mission_defaults</Parent>
-    <Property name="0xBF780215" type="Symbol"/>
-    <Property name="CompletionText" type="String">Confrontation</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xFF1790B9">
-            <Property name="0x308E0AE5" type="String">turf_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">Aberdeen</Property>
-            <Property name="0x7198AF49" type="Int32">4</Property>
-            <Property name="0xDE3E6A23" type="String">Big Smile Lee's gang eliminated</Property>
-            <Property name="Type" type="Symbol" Symbol="0x93910E97">Collectible_AreaOwnership</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_CO" nameUID="0x5C42FE4D">
+	<!-- Parents -->
+	<Parent nameUID="0xD274BB76">default-rewards-progression-mission_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Aberdeen" nameUID="0xFF1790B9">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x93910E97">Collectible_AreaOwnership</Property>
+				<Property name="Icon" type="String">turf_icon</Property>
+				<Property name="AssetId" type="String">Aberdeen</Property>
+				<Property name="~7198af49~" type="Int32">4</Property>
+				<Property name="Text" type="String">Big Smile Lee&apos;s gang eliminated</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">Confrontation</Property>
+	<Property name="~bf780215~" type="Symbol" symUID="0xDD90F81"/>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xDD90F81 (Normal) -->
+<!-- 0x7198AF49 (Normal) -->
+<!-- 0xBF780215 (Normal) -->

@@ -1,6 +1,8 @@
-<PropertySet name="default-rewards-progression-J_DC8" nameUID="0xCCDBF331" schema="default-rewards-progression-J_DC8">
-    <Parent>default-rewards-progression-job_defaults</Parent>
-    <Property name="CompletionText" type="String">$JOB_DEBTCOLLECTION8_NAME_001</Property>
-    <Property name="MoneyAdjustment" type="Int32">38500</Property>
-    <Property name="MoneyAdjustmentText" type="String">$JOB_DEBTCOLLECTION1_REWARD_001</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-J_DC8" nameUID="0xCCDBF331">
+	<!-- Parents -->
+	<Parent nameUID="0x93DAADC2">default-rewards-progression-job_defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">38500</Property>
+	<Property name="CompletionText" type="String">$JOB_DEBTCOLLECTION8_NAME_001</Property>
+	<Property name="MoneyAdjustmentText" type="String">$JOB_DEBTCOLLECTION1_REWARD_001</Property>
+</PropertySetResource>

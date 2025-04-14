@@ -1,73 +1,92 @@
-<PropertySet name="default-encounters-m_confrontation_rs2" nameUID="0x3529EBCC" schema="default-encounters-m_confrontation_rs2">
-    <Parent>default-encounters-defaults</Parent>
-    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
-    <Property name="BlipName" type="String">enemy</Property>
-    <Property name="CoronaName" type="String">arrow_enemy</Property>
-    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x9E12E132">TRIAD_LEE</Property>
-    <Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
-    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
-    <Property name="enable_forward_spawning" type="Boolean">True</Property>
-    <Property name="formation_slot_behind" type="Boolean">False</Property>
-    <Property name="formation_slot_beside" type="Boolean">True</Property>
-    <Property name="formation_slot_follow" type="Boolean">False</Property>
-    <Property name="formation_slot_front" type="Boolean">True</Property>
-    <Property name="formation_slot_frontcorner" type="Boolean">True</Property>
-    <Property name="formation_slot_pitposition" type="Boolean">False</Property>
-    <Property name="formation_slot_rearcorner" type="Boolean">False</Property>
-    <Property name="formation_style" type="Symbol" Symbol="0x5C1F343F">generic</Property>
-    <Property name="kills_required" type="UInt32">0</Property>
-    <Property name="replenish_style" type="Symbol" Symbol="0xAD0BA30D">by_wave_type</Property>
-    <Property name="show_blip_radius" type="Boolean">True</Property>
-    <Property name="vehicle_chase_spawn_distance" type="Float32">30</Property>
-    <Property name="vehicle_generic_spawn_max_radius" type="Float32">50</Property>
-    <Property name="vehicle_generic_spawn_min_radius" type="Float32">20</Property>
-    <Property name="vehicle_spawn_behind_probability" type="Float32">0.25</Property>
-    <Property name="wave_definitions" type="List">
-        <ListProperty nameUID="0x2DC0526A">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">0.5</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xD4B3E199">object-physical-vehicle-DrifterGT_DogEyes01</Property>
-                <Property type="Symbol" Symbol="0x49571DC4">object-physical-character-thugC</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0x49571DC4">object-physical-character-thugC</Property>
-                    <Property name="num_instances" type="UInt32">3</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xD4B3E199">object-physical-vehicle-DrifterGT_DogEyes01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x208374B3">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">0.5</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xAB8CBDAF">object-physical-vehicle-Movit_18K01</Property>
-                <Property type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0x40D526AA">object-physical-character-thugA</Property>
-                    <Property name="num_instances" type="UInt32">3</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xAB8CBDAF">object-physical-vehicle-Movit_18K01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-encounters-m_confrontation_rs2" nameUID="0x3529EBCC">
+	<!-- Parents -->
+	<Parent nameUID="0x6159DA8B">default-encounters-defaults</Parent>
+	<!-- Properties -->
+	<Property name="kills_required" type="UInt32">0</Property>
+	<Property name="formation_slot_behind" type="Boolean">false</Property>
+	<Property name="vehicle_generic_spawn_max_radius" type="Float32">50</Property>
+	<Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
+	<Property name="formation_slot_pitposition" type="Boolean">false</Property>
+	<Property name="formation_style" type="Symbol" symUID="0x5C1F343F">generic</Property>
+	<Property name="formation_slot_beside" type="Boolean">true</Property>
+	<Property name="formation_slot_follow" type="Boolean">false</Property>
+	<Property name="CoronaName" type="String">arrow_enemy</Property>
+	<Property name="formation_slot_rearcorner" type="Boolean">false</Property>
+	<Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+	<Property name="enable_forward_spawning" type="Boolean">true</Property>
+	<Property name="wave_definitions" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_1" nameUID="0x2DC0526A">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xD4B3E199">object-physical-vehicle-DrifterGT_DogEyes01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0x49571DC4">object-physical-character-thugC</Property>
+							<Property name="num_instances" type="UInt32">3</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+							<Property name="weapon" type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">0.5</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xD4B3E199">object-physical-vehicle-DrifterGT_DogEyes01</ListProperty>
+					<ListProperty type="Symbol" symUID="0x49571DC4">object-physical-character-thugC</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_2" nameUID="0x208374B3">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xAB8CBDAF">object-physical-vehicle-Movit_18K01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0x40D526AA">object-physical-character-thugA</Property>
+							<Property name="num_instances" type="UInt32">3</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+							<Property name="weapon" type="Symbol" symUID="0x5A6DCEF7">object-physical-weapon-firearm-smg-machine_pistol</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">0.5</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xAB8CBDAF">object-physical-vehicle-Movit_18K01</ListProperty>
+					<ListProperty type="Symbol" symUID="0x40D526AA">object-physical-character-thugA</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="formation_slot_frontcorner" type="Boolean">true</Property>
+	<Property name="replenish_style" type="Symbol" symUID="0xAD0BA30D">by_wave_type</Property>
+	<Property name="vehicle_spawn_behind_probability" type="Float32">0.25</Property>
+	<Property name="show_blip_radius" type="Boolean">true</Property>
+	<Property name="EncounterFactionClass" type="Symbol" symUID="0x9E12E132">TRIAD_LEE</Property>
+	<Property name="vehicle_generic_spawn_min_radius" type="Float32">20</Property>
+	<Property name="BlipName" type="String">enemy</Property>
+	<Property name="formation_slot_front" type="Boolean">true</Property>
+	<Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+	<Property name="vehicle_chase_spawn_distance" type="Float32">30</Property>
+</PropertySetResource>

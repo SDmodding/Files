@@ -1,21 +1,39 @@
-<PropertySet name="object-logical-SpawnRegion" nameUID="0xF6C5B8EB" schema="object-logical-SpawnRegion">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0xDE552DA6">SpawnRegion</Property>
-    <Property name="component_Spawn" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-SpawnRegion</Parent>
-        </PropertySet>
-    </Property>
-    <Property name="component_SpawnRegion" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-SpawnRegion</Parent>
-        </PropertySet>
-    </Property>
-    <Property name="default-component-Region" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Region</Parent>
-            <Property name="Max" type="Vector3" x="2.5" y="2.5" z="2.5"/>
-            <Property name="Min" type="Vector3" x="-2.5" y="-2.5" z="-2.5"/>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-SpawnRegion" nameUID="0xF6C5B8EB">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0xDE552DA6">SpawnRegion</Property>
+	<Property name="component_Spawn" type="PropSet">
+		<PropertySet name="component_SpawnRegion" nameUID="0xE7534509" schema="default-component-SpawnRegion">
+			<!-- Parents -->
+			<Parent nameUID="0x6C094C2B">default-component-SpawnRegion</Parent>
+			<!-- Schema Properties -->
+			<Property name="Spawn_Pad0" type="Boolean">false</Property>
+			<Property name="Spawn_Pad1" type="Boolean">false</Property>
+			<Property name="Spawn_Pad2" type="Boolean">false</Property>
+			<Property name="Spawn_Pad3" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_SpawnRegion" type="PropSet">
+		<PropertySet name="component_SpawnRegion" nameUID="0xE7534509" schema="default-component-SpawnRegion">
+			<!-- Parents -->
+			<Parent nameUID="0x6C094C2B">default-component-SpawnRegion</Parent>
+			<!-- Schema Properties -->
+			<Property name="SpawnInfo" type="Symbol" symUID="0x90A55CA5">default-spawnset-npcs_default</Property>
+			<Property name="SpawnPopulation" type="Int32">-100</Property>
+			<Property name="TimeSet" type="Symbol"/>
+			<Property name="ThugRegion" type="Boolean">false</Property>
+			<!-- Schema Parent: component_Spawn -->
+		</PropertySet>
+	</Property>
+	<Property name="default-component-Region" type="PropSet">
+		<PropertySet>
+			<!-- Parents -->
+			<Parent nameUID="0xF6AC0CA8">default-component-Region</Parent>
+			<!-- Properties -->
+			<Property name="Min" type="Vector3" x="-2.5" y="-2.5" z="0"/>
+			<Property name="Max" type="Vector3" x="2.5" y="2.5" z="0.5"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

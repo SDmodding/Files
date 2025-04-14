@@ -1,4 +1,8 @@
-<PropertySet name="object-logical-collectibles-Base" nameUID="0x9611976B" schema="object-logical-collectibles-Base">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0x27691395">Collectible</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-collectibles-Base" nameUID="0x9611976B">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x95357218">default-component-Collectible</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0x27691395">Collectible</Property>
+</PropertySetResource>

@@ -1,29 +1,35 @@
-<PropertySet name="object-physical-prop-LOP_TeaAPot001" nameUID="0xE5FD6C71" schema="object-physical-prop-LOP_TeaAPot001">
-    <Parent>object-physical-prop-AttachableProp</Parent>
-    <Property name="Description" type="String">LOP_TeaAPot001</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOP_TeaAPot001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOP_TeaAPot001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_InventoryItem" type="PropSet">
-        <BinData>
-            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
-            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
-            <simObjectInventoryItem type="Symbol">eINVENTORY_ITEM_TEAPOT</simObjectInventoryItem>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOP_TeaAPot001" nameUID="0xE5FD6C71">
+	<!-- Parents -->
+	<Parent nameUID="0x23D174BB">object-physical-prop-AttachableProp</Parent>
+	<Parent nameUID="0xA9486D13">default-component-PropInteract</Parent>
+	<Parent nameUID="0xDE1805F3">default-component-TargetingSystemItem</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOP_TeaAPot001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_InventoryItem" type="PropSet">
+		<PropertySet name="component_InventoryItem" nameUID="0x9DA2A4AD" schema="default-component-InventoryItem">
+			<!-- Schema Properties -->
+			<Property name="InventoryItemQuantityMin" type="UInt32">1</Property>
+			<Property name="InventoryItemQuantityMax" type="UInt32">1</Property>
+			<Property name="simObjectInventoryItem" type="Symbol" symUID="0x5E211A66">eINVENTORY_ITEM_TEAPOT</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">LOP_TeaAPot001</Property>
+</PropertySetResource>

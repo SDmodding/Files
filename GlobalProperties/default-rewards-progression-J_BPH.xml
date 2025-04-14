@@ -1,6 +1,8 @@
-<PropertySet name="default-rewards-progression-J_BPH" nameUID="0x4A06C104" schema="default-rewards-progression-J_BPH">
-    <Parent>default-rewards-progression-job_defaults</Parent>
-    <Property name="CompletionText" type="String">Drop Point Used</Property>
-    <Property name="MoneyAdjustment" type="Int32">5000</Property>
-    <Property name="StandingAdjustment" type="Int32">10</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-J_BPH" nameUID="0x4A06C104">
+	<!-- Parents -->
+	<Parent nameUID="0x93DAADC2">default-rewards-progression-job_defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">5000</Property>
+	<Property name="CompletionText" type="String">Drop Point Used</Property>
+	<Property name="StandingAdjustment" type="Int32">10</Property>
+</PropertySetResource>

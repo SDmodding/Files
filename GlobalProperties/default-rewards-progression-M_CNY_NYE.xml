@@ -1,30 +1,53 @@
-<PropertySet name="default-rewards-progression-M_CNY_NYE" nameUID="0x604830DB" schema="default-rewards-progression-M_CNY_NYE">
-    <Parent>default-rewards-progression-dlc_cny_defaults</Parent>
-    <Property name="0xBF780215" type="Symbol"/>
-    <Property name="CompletionText" type="String">$SGTITLE_NEWYEARSEVE</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x71CAA1EC">
-            <Property name="0x2DFB6FC5" type="Int32">43</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_43</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">CNY_BeatCop</Property>
-            <Property name="0xDE3E6A23" type="String">$CNY_REWARD_BEAT_COP_OUTFIT</Property>
-            <Property name="0xE99C970C" type="Boolean">True</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">CNY_SDUOutfit</Property>
-            <Property name="0xDE3E6A23" type="String">$CNY_REWARD_SDU_OUTFIT</Property>
-            <Property name="0xE99C970C" type="Boolean">True</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0xDE3E6A23" type="String">$TEARGAS_LAUNCHER_REWARD</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_CNY_NYE" nameUID="0x604830DB">
+	<!-- Parents -->
+	<Parent nameUID="0xB911CE91">default-rewards-progression-dlc_cny_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x71CAA1EC">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">43</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_43</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">CNY_BeatCop</Property>
+				<Property name="Text" type="String">$CNY_REWARD_BEAT_COP_OUTFIT</Property>
+				<Property name="~e99c970c~" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">CNY_SDUOutfit</Property>
+				<Property name="Text" type="String">$CNY_REWARD_SDU_OUTFIT</Property>
+				<Property name="~e99c970c~" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$TEARGAS_LAUNCHER_REWARD</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_NEWYEARSEVE</Property>
+	<Property name="~bf780215~" type="Symbol" symUID="0x5B1A7183"/>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x5B1A7183 (Normal) -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0x71CAA1EC (Normal) -->
+<!-- 0xBF780215 (Normal) -->
+<!-- 0xE99C970C (Normal) -->
+<!-- 0xF630B577 (Normal) -->

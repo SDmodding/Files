@@ -1,39 +1,34 @@
-<PropertySet name="object-physical-character-jackieSARS" nameUID="0x899F1980" schema="object-physical-character-jackieSARS">
-    <Parent>object-physical-character-jackie</Parent>
-    <Property name="Description" type="String">Jackie with SARS mask</Property>
-    <Property name="PropList" type="List">
-        <Property type="Symbol" Symbol="0xF6AA5305">object-physical-prop-Attachable-JackieSarsMask</Property>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">Jackie</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">PlayerPed</PoseDriverSet>
-            <RigNameHD type="String">Jackie_HD</RigNameHD>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0xBB9FDDB7">Jackie</Property>
-                <Property type="SymbolUC" Symbol="0xC4F522A7">Thug_QuickStriker</Property>
-                <Property type="SymbolUC" Symbol="0x35AA897E">Thug_QuickStriker_Strikes</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">Jackie</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">PlayerPed</PoseDriverSet>
-            <RigNameHD type="String">Jackie_HD</RigNameHD>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0xBB9FDDB7">Jackie</Property>
-                <Property type="SymbolUC" Symbol="0xC4F522A7">Thug_QuickStriker</Property>
-                <Property type="SymbolUC" Symbol="0x35AA897E">Thug_QuickStriker_Strikes</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-jackieSARS" nameUID="0x899F1980">
+	<!-- Parents -->
+	<Parent nameUID="0xF36273C8">object-physical-character-jackie</Parent>
+	<!-- Properties -->
+	<Property name="PropList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xF6AA5305">object-physical-prop-Attachable-JackieSarsMask</ListProperty>
+	</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">Jackie</Property>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\ChanWeightSets.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC" symUID="0xE3A9334A">PlayerPed</Property>
+			<Property name="RigNameHD" type="String">Jackie_HD</Property>
+			<Property name="WeightSetFileNameHD" type="String">Data\Global\Act\NIS_WeightSets.wst</Property>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List">
+				<!-- Elements -->
+				<ListProperty type="SymbolUC" symUID="0xBB9FDDB7">Jackie</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0xC4F522A7">Thug_QuickStriker</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0x35AA897E">Thug_QuickStriker_Strikes</ListProperty>
+			</Property>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Jackie with SARS mask</Property>
+</PropertySetResource>

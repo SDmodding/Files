@@ -1,10 +1,19 @@
-<PropertySet name="default-rewards-progression-dlc_transportation_terror" nameUID="0x369CD094" schema="default-rewards-progression-dlc_transportation_terror">
-    <Parent>default-rewards-progression-dlc_defaults</Parent>
-    <Property name="CompletionText" type="String">$DLC_TRANSTERROR_TITLE</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0xDE3E6A23" type="String">$DLC_TRANSTERROR_REWARD</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-dlc_transportation_terror" nameUID="0x369CD094">
+	<!-- Parents -->
+	<Parent nameUID="0x32FFCA04">default-rewards-progression-dlc_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_TRANSTERROR_REWARD</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$DLC_TRANSTERROR_TITLE</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0xF630B577 (Normal) -->

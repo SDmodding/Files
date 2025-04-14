@@ -1,9 +1,11 @@
-<PropertySet name="default-rewards-progression-R_NP_04" nameUID="0xAB6DCD90" schema="default-rewards-progression-R_NP_04">
-    <Parent>default-rewards-progression-race_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_RACE_HOTSHOT_LEAD_1</Property>
-    <Property name="CopStartingScore" type="Int32">0</Property>
-    <Property name="GamesliceType" type="Symbol" Symbol="0x3A04ED90">Race</Property>
-    <Property name="MoneyAdjustment" type="Int32">10000</Property>
-    <Property name="StandingAdjustment" type="Int32">150</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-R_NP_04" nameUID="0xAB6DCD90">
+	<!-- Parents -->
+	<Parent nameUID="0x6D19FF7C">default-rewards-progression-race_defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">0</Property>
+	<Property name="MoneyAdjustment" type="Int32">10000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_RACE_HOTSHOT_LEAD_1</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">150</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x3A04ED90">RACE</Property>
+</PropertySetResource>

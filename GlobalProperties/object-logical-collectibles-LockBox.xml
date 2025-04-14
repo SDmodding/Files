@@ -1,5 +1,7 @@
-<PropertySet name="object-logical-collectibles-LockBox" nameUID="0xE5351E58" schema="object-logical-collectibles-LockBox">
-    <Parent>object-logical-collectibles-Base</Parent>
-    <Property name="CollectibleSpawnInfo" type="Symbol" Symbol="0x7CF61BEA">object-physical-prop-LOM_LockBox001</Property>
-    <Property name="CollectibleType" type="Symbol" Symbol="0x6969F0EC">Collectible_LockBox</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-collectibles-LockBox" nameUID="0xE5351E58">
+	<!-- Parents -->
+	<Parent nameUID="0x9611976B">object-logical-collectibles-Base</Parent>
+	<!-- Properties -->
+	<Property name="CollectibleType" type="Symbol" symUID="0x6969F0EC">Collectible_LockBox</Property>
+	<Property name="CollectibleSpawnInfo" type="Symbol" symUID="0x7CF61BEA">object-physical-prop-LOM_LockBox001</Property>
+</PropertySetResource>

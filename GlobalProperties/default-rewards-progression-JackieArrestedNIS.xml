@@ -1,14 +1,22 @@
-<PropertySet name="default-rewards-progression-JackieArrestedNIS" nameUID="0xED291FD5" schema="default-rewards-progression-JackieArrestedNIS">
-    <Parent>default-rewards-progression-mission_defaults</Parent>
-    <Property name="0xBF780215" type="Symbol"/>
-    <Property name="0xC3DF597C" type="Int32">0</Property>
-    <Property name="0xC71E44CB" type="Int32">0</Property>
-    <Property name="0xCA5D6212" type="Int32">0</Property>
-    <Property name="CopStartingScore" type="Int32">0</Property>
-    <Property name="EnableCopScoring" type="Boolean">False</Property>
-    <Property name="EnableMissionScoring" type="Boolean">False</Property>
-    <Property name="EnableTriadScoring" type="Boolean">False</Property>
-    <Property name="MoneyAdjustment" type="Int32">0</Property>
-    <Property name="ShowRewardScreen" type="Boolean">False</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-JackieArrestedNIS" nameUID="0xED291FD5">
+	<!-- Parents -->
+	<Parent nameUID="0xD274BB76">default-rewards-progression-mission_defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">0</Property>
+	<Property name="MoneyAdjustment" type="Int32">0</Property>
+	<Property name="ShowRewardScreen" type="Boolean">false</Property>
+	<Property name="EnableMissionScoring" type="Boolean">false</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="EnableCopScoring" type="Boolean">false</Property>
+	<Property name="~bf780215~" type="Symbol" symUID="0x3775C1E"/>
+	<Property name="~c3df597c~" type="Int32">0</Property>
+	<Property name="~c71e44cb~" type="Int32">0</Property>
+	<Property name="Property" type="Int32">0</Property>
+	<Property name="EnableTriadScoring" type="Boolean">false</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x3775C1E (Normal) -->
+<!-- 0xBF780215 (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->

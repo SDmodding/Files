@@ -1,11 +1,12 @@
-<PropertySet name="ColourTints-TurfColour" nameUID="0xE3B455FB" schema="ColourTints-TurfColour">
-    <Property name="component_ColourTint" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-ColourTint</Parent>
-        </PropertySet>
-        <BinData>
-            <ColourTint_Instance type="Vector4" x="0" y="0" z="0" w="1"/>
-            <ColourTintSI_Instance type="Vector4" x="1" y="1" z="1" w="1"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="ColourTints-TurfColour" nameUID="0xE3B455FB">
+	<!-- Properties -->
+	<Property name="component_ColourTint" type="PropSet">
+		<PropertySet name="component_ColourTint" nameUID="0x5AC530F1" schema="default-component-ColourTint">
+			<!-- Parents -->
+			<Parent nameUID="0x6C80DED8">default-component-ColourTint</Parent>
+			<!-- Schema Properties -->
+			<Property name="ColourTint_Instance" type="Vector4" x="0" y="0" z="1" w="1"/>
+			<Property name="ColourTintSI_Instance" type="Vector4" x="1" y="1" z="1" w="1"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

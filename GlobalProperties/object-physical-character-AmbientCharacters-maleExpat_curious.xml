@@ -1,7 +1,10 @@
-<PropertySet name="object-physical-character-AmbientCharacters-maleExpat_curious" nameUID="0xB3F7D01D" schema="object-physical-character-AmbientCharacters-maleExpat_curious">
-    <Parent>object-physical-character-AmbientCharacters-maleExpat_base</Parent>
-    <Property name="Description" type="String">maleExpat_curious</Property>
-    <Property name="PersonalityList" type="List">
-        <Property type="Symbol" Symbol="0x2339A927">default-component-personality-curious</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-maleExpat_curious" nameUID="0xB3F7D01D">
+	<!-- Parents -->
+	<Parent nameUID="0x33C8E00F">object-physical-character-AmbientCharacters-maleExpat_base</Parent>
+	<!-- Properties -->
+	<Property name="PersonalityList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x2339A927">default-component-personality-curious</ListProperty>
+	</Property>
+	<Property name="Description" type="String">maleExpat_curious</Property>
+</PropertySetResource>

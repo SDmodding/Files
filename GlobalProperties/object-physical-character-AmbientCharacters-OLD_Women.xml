@@ -1,28 +1,36 @@
-<PropertySet name="object-physical-character-AmbientCharacters-OLD_Women" nameUID="0x9C924BFD" schema="object-physical-character-AmbientCharacters-OLD_Women">
-    <Parent>object-physical-character-AmandaCartwright</Parent>
-    <Property name="Description" type="String">AF_H</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List"/>
-            <ComponentList type="List">
-                <ListProperty nameUID="0xA8245162">
-                    <Parent>Data\Characters_New\AF_H_OLDWomen</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0xEAA1CE0B">Data\Characters_New\AF_H_OLDWomen</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0xCB8AD0CE">Data\Characters_New\AF_H_OLDWomen_TS00</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA416151">
-                    <Parent>Data\Characters_New\AF_B_OLDWomen_Body</Parent>
-                    <Property name="Model" type="Symbol" Symbol="0x9D12D8FA">Data\Characters_New\AF_B_OLDWomen_Body</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x5500E859">Data\Characters_New\AF_B_OLDWomen_Body_TS00</Property>
-                </ListProperty>
-            </ComponentList>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-OLD_Women" nameUID="0x9C924BFD">
+	<!-- Parents -->
+	<Parent nameUID="0x7F1E3BA3">object-physical-character-AmandaCartwright</Parent>
+	<!-- Properties -->
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Head" nameUID="0xA8245162">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0xEAA1CE0B">Data\Characters_New\AF_H_OLDWomen</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0xCB8AD0CE">Data\Characters_New\AF_H_OLDWomen_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Body" nameUID="0xA416151">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x9D12D8FA">Data\Characters_New\AF_B_OLDWomen_Body</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x5500E859">Data\Characters_New\AF_B_OLDWomen_Body_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">AF_H</Property>
+</PropertySetResource>

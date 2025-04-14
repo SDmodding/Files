@@ -1,22 +1,35 @@
-<PropertySet name="default-rewards-progression-E_SS" nameUID="0xCCE4BD40" schema="default-rewards-progression-E_SS">
-    <Parent>default-rewards-progression-event_defaults</Parent>
-    <Property name="0x72201393" type="Int32">250</Property>
-    <Property name="CompletionText" type="String">$EVENT_SHAOLINSHOWDOWN_NAME_001</Property>
-    <Property name="EnableCopScoring" type="Boolean">False</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="GamesliceType" type="Symbol"/>
-    <Property name="MoneyAdjustment" type="Int32">0</Property>
-    <Property name="StandingAdjustment" type="Int32">50</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xFB7393AE">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">OutfitShaolinWarrior</Property>
-            <Property name="0xDE3E6A23" type="String">$DLC_PRESALE_MARTIAL_ARTS_REWARD_2</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFB28E19">
-            <Property name="0xDE3E6A23" type="String">$DLC_PRESALE_MARTIAL_ARTS_REWARD_3</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-E_SS" nameUID="0xCCE4BD40">
+	<!-- Parents -->
+	<Parent nameUID="0xD907A49A">default-rewards-progression-event_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xFB7393AE">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">OutfitShaolinWarrior</Property>
+				<Property name="Text" type="String">$DLC_PRESALE_MARTIAL_ARTS_REWARD_2</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xFFB28E19">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_PRESALE_MARTIAL_ARTS_REWARD_3</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="MoneyAdjustment" type="Int32">0</Property>
+	<Property name="CompletionText" type="String">$EVENT_SHAOLINSHOWDOWN_NAME_001</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">250</Property>
+	<Property name="EnableCopScoring" type="Boolean">false</Property>
+	<Property name="StandingAdjustment" type="Int32">50</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x679F1003">DLC_TRIAD</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0xFB7393AE (Normal) -->
+<!-- 0xFFB28E19 (Normal) -->

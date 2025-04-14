@@ -1,14 +1,22 @@
-<PropertySet name="default-timeset-VEH_VP_General" nameUID="0xD4BF1B78" schema="default-timeset-VEH_VP_General">
-    <Property name="TimeSetList" type="List">
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">24</Property>
-            <Property name="OnTime" type="Int32">8</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0x5C511D4A">default-vehiclespawnset-vp_general_day</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF4B7E331">
-            <Property name="OffTime" type="Int32">8</Property>
-            <Property name="OnTime" type="Int32">24</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0xDAFF465B">default-vehiclespawnset-vp_general_night</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-timeset-VEH_VP_General" nameUID="0xD4BF1B78">
+	<!-- Properties -->
+	<Property name="TimeSetList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">24</Property>
+				<Property name="OnTime" type="Int32">8</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0x5C511D4A">default-vehiclespawnset-vp_general_day</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Night" nameUID="0xF4B7E331">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">8</Property>
+				<Property name="OnTime" type="Int32">24</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0xDAFF465B">default-vehiclespawnset-vp_general_night</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

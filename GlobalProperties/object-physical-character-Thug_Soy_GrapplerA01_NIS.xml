@@ -1,27 +1,35 @@
-<PropertySet name="object-physical-character-Thug_Soy_GrapplerA01_NIS" nameUID="0x79065D56" schema="object-physical-character-Thug_Soy_GrapplerA01_NIS">
-    <Parent>object-physical-character-Thug_Soy_grap</Parent>
-    <Property name="Description" type="String">ThugFactions</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0x58905D73">SoY</Property>
-                <Property type="Symbol" Symbol="0xC73BA389">Grappler</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List">
-                <ListProperty nameUID="0x92750FDF">
-                    <Property name="ColorTintIndex" type="Int32">1</Property>
-                    <Property name="Model" type="Symbol" Symbol="0xE6FD7BDA">Data\Characters_New\Soy_GrapplerA_Body</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0xC47ED622">Data\Characters_New\Soy_GrapplerA_Body_TS00</Property>
-                </ListProperty>
-            </ComponentList>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">UniquePed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">3</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0.9</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Thug_Soy_GrapplerA01_NIS" nameUID="0x79065D56">
+	<!-- Parents -->
+	<Parent nameUID="0x4E8231A4">object-physical-character-Thug_Soy_grap</Parent>
+	<!-- Properties -->
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0x58905D73">SoY</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC73BA389">Grappler</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Model" nameUID="0x92750FDF">
+						<!-- Properties -->
+						<Property name="ColorTintIndex" type="Int32">1</Property>
+						<Property name="Model" type="Symbol" symUID="0xE6FD7BDA">Data\Characters_New\Soy_GrapplerA_Body</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0xC47ED622">Data\Characters_New\Soy_GrapplerA_Body_TS00</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0xA196621B">UniquePed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">3</Property>
+			<Property name="BMIMin" type="Float32">0.9</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">ThugFactions</Property>
+</PropertySetResource>

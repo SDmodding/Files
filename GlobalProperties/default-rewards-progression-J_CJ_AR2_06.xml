@@ -1,18 +1,27 @@
-<PropertySet name="default-rewards-progression-J_CJ_AR2_06" nameUID="0xF0E0E8F0" schema="default-rewards-progression-J_CJ_AR2_06">
-    <Parent>default-rewards-progression-job_defaults</Parent>
-    <Property name="0x72201393" type="Int32">0</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_CJ_ARMED_ROBBERY204</Property>
-    <Property name="CopStartingScore" type="Int32">50</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="EnableTriadScoring" type="Boolean">False</Property>
-    <Property name="GamesliceType" type="Symbol"/>
-    <Property name="MoneyAdjustment" type="Int32">20000</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xFFB28E19">
-            <Property name="0xDE3E6A23" type="String">$DLC_PRESALE_UNDERCOVER_REWARD_4</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-J_CJ_AR2_06" nameUID="0xF0E0E8F0">
+	<!-- Parents -->
+	<Parent nameUID="0x93DAADC2">default-rewards-progression-job_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xFFB28E19">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_PRESALE_UNDERCOVER_REWARD_4</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">50</Property>
+	<Property name="MoneyAdjustment" type="Int32">20000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_CJ_ARMED_ROBBERY204</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x50419A9A">DLC_POLICE</Property>
+	<Property name="EnableTriadScoring" type="Boolean">false</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0xFFB28E19 (Normal) -->

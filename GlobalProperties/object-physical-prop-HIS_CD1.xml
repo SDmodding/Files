@@ -1,8 +1,11 @@
-<PropertySet name="object-physical-prop-HIS_CD1" nameUID="0x39F7985B" schema="object-physical-prop-HIS_CD1">
-    <Parent>object-physical-prop</Parent>
-    <Property name="default-component-InterestPoint" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-InterestPoint-hidingspot_vendor_duck</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-HIS_CD1" nameUID="0x39F7985B">
+	<!-- Parents -->
+	<Parent nameUID="0x45EAFD73">object-physical-prop</Parent>
+	<!-- Properties -->
+	<Property name="default-component-InterestPoint" type="PropSet">
+		<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+			<!-- Parents -->
+			<Parent nameUID="0x47BE4695">default-component-InterestPoint-hidingspot_vendor_duck</Parent>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

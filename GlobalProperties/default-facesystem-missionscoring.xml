@@ -1,179 +1,281 @@
-<PropertySet name="default-facesystem-missionscoring" nameUID="0x7B75E554" schema="default-facesystem-missionscoring">
-    <Property name="Events" type="List">
-        <ListProperty nameUID="0xB6D126C9">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">25</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_COP_KILL</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB57FEDF7">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">0</Property>
-            <Property name="XPFlasherCaption" type="String"/>
-        </ListProperty>
-        <ListProperty nameUID="0x5CEA676C">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">15</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_PED_KILL</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x51437BE6">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0.5</Property>
-            <Property name="MultiplierResetTimer" type="Float32">8</Property>
-            <Property name="Points" type="Float32">5</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_PED_HIT</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x424FA9D4">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">5</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VEH_STEAL</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x88E47EBE">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">10</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VEH_DESTROY</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD536B433">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0.5</Property>
-            <Property name="MultiplierResetTimer" type="Float32">10</Property>
-            <Property name="Points" type="Float32">5</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VEH_DAMAGE</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE2D6C5A2">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">0</Property>
-            <Property name="XPFlasherCaption" type="String"/>
-        </ListProperty>
-        <ListProperty nameUID="0xAC71CDD1">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">1</Property>
-            <Property name="MultiplierResetTimer" type="Float32">5</Property>
-            <Property name="Points" type="Float32">5</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VEH_HIT_DEST</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE69819DF">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">0</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_FailParkour</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF50AAA9A">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">0</Property>
-            <Property name="XPFlasherCaption" type="String"/>
-        </ListProperty>
-        <ListProperty nameUID="0x42FE2E2D">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">20</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_KILL_SLOW_MO</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x27351EB4">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">20</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_KILL_ENV</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xDDA4ADBC">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">10</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_KILL_HOSTILE</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xECCADBCE">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">20</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_KILL_HEADSHOT</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC369DE2F">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0.3</Property>
-            <Property name="MultiplierResetTimer" type="Float32">10</Property>
-            <Property name="Points" type="Float32">10</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_HOSVEH_DAMAGE</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x8119F47C">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">1</Property>
-            <Property name="MultiplierResetTimer" type="Float32">3</Property>
-            <Property name="Points" type="Float32">25</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_HOSVEH_DESTROY</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x770B5023">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0.5</Property>
-            <Property name="MultiplierResetTimer" type="Float32">5</Property>
-            <Property name="Points" type="Float32">20</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_HOSVEH_TIRE</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD168A494">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">1</Property>
-            <Property name="MultiplierResetTimer" type="Float32">20</Property>
-            <Property name="Points" type="Float32">45</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VEH_ACTIONHIJACK</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x8E4B8433">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">30</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_DISARM</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x44904A29">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0.5</Property>
-            <Property name="MultiplierResetTimer" type="Float32">15</Property>
-            <Property name="Points" type="Float32">15</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_COUNTER</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x554FE044">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">5</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_WEP_STRIKE</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1A361BC2">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">20</Property>
-            <Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_FAST_TALK</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC8692B19">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">0</Property>
-            <Property name="XPFlasherCaption" type="String"/>
-        </ListProperty>
-        <ListProperty nameUID="0x4CD068FB">
-            <Parent>default-facesystem-defaults</Parent>
-            <Property name="MultiplierReduction" type="Float32">0</Property>
-            <Property name="MultiplierResetTimer" type="Float32">0</Property>
-            <Property name="Points" type="Float32">0</Property>
-            <Property name="XPFlasherCaption" type="String"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-facesystem-missionscoring" nameUID="0x7B75E554">
+	<!-- Properties -->
+	<Property name="Events" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="CopScoring_CopKill" nameUID="0xB6D126C9">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">25</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_COP_KILL</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CopScoring_CopHit" nameUID="0xB57FEDF7">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">0</Property>
+				<Property name="XPFlasherCaption" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CopScoring_PedestrianKill" nameUID="0x5CEA676C">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">15</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_PED_KILL</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CopScoring_PedestrianHit" nameUID="0x51437BE6">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">8</Property>
+				<Property name="MultiplierReduction" type="Float32">0.5</Property>
+				<Property name="Points" type="Float32">5</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_PED_HIT</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CopScoring_VehicleSteal" nameUID="0x424FA9D4">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">5</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VEH_STEAL</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CopScoring_VehicleDestroy" nameUID="0x88E47EBE">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">10</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VEH_DESTROY</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CopScoring_VehicleDamage" nameUID="0xD536B433">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">10</Property>
+				<Property name="MultiplierReduction" type="Float32">0.5</Property>
+				<Property name="Points" type="Float32">5</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VEH_DAMAGE</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CopScoring_TireShot" nameUID="0xE2D6C5A2">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">0</Property>
+				<Property name="XPFlasherCaption" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CopScoring_HitDestructible" nameUID="0xAC71CDD1">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">5</Property>
+				<Property name="MultiplierReduction" type="Float32">1</Property>
+				<Property name="Points" type="Float32">5</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VEH_HIT_DEST</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CopScoring_FSRMove" nameUID="0xE69819DF">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">0</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_FailParkour</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CopScoring_ScriptEvent" nameUID="0xF50AAA9A">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">0</Property>
+				<Property name="XPFlasherCaption" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_KillSlowMo" nameUID="0x42FE2E2D">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">20</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_KILL_SLOW_MO</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_KillEnvironment" nameUID="0x27351EB4">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">20</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_KILL_ENV</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_KillHostile" nameUID="0xDDA4ADBC">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">10</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_KILL_HOSTILE</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_KillHeadShot" nameUID="0xECCADBCE">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">20</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_KILL_HEADSHOT</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_VehicleDamage" nameUID="0xC369DE2F">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">10</Property>
+				<Property name="MultiplierReduction" type="Float32">0.3</Property>
+				<Property name="Points" type="Float32">10</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_HOSVEH_DAMAGE</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_VehicleDestroy" nameUID="0x8119F47C">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">3</Property>
+				<Property name="MultiplierReduction" type="Float32">1</Property>
+				<Property name="Points" type="Float32">25</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_HOSVEH_DESTROY</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_VehicleTireShot" nameUID="0x770B5023">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">5</Property>
+				<Property name="MultiplierReduction" type="Float32">0.5</Property>
+				<Property name="Points" type="Float32">20</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_HOSVEH_TIRE</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_VehicleActionHijack" nameUID="0xD168A494">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">20</Property>
+				<Property name="MultiplierReduction" type="Float32">1</Property>
+				<Property name="Points" type="Float32">45</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_VEH_ACTIONHIJACK</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_WeaponDisarm" nameUID="0x8E4B8433">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">30</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_DISARM</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_MeleeCounter" nameUID="0x44904A29">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">15</Property>
+				<Property name="MultiplierReduction" type="Float32">0.5</Property>
+				<Property name="Points" type="Float32">15</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_COUNTER</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_MeleeWeaponStrike" nameUID="0x554FE044">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">5</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_WEP_STRIKE</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_FastTalk" nameUID="0x1A361BC2">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">20</Property>
+				<Property name="XPFlasherCaption" type="String">$HUD_ScoreEvent_FAST_TALK</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_FSRMove" nameUID="0xC8692B19">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">0</Property>
+				<Property name="XPFlasherCaption" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TriadScoring_ScriptEvent" nameUID="0x4CD068FB">
+				<!-- Parents -->
+				<Parent nameUID="0x2972D7E6">default-facesystem-defaults</Parent>
+				<!-- Properties -->
+				<Property name="MultiplierResetTimer" type="Float32">0</Property>
+				<Property name="MultiplierReduction" type="Float32">0</Property>
+				<Property name="Points" type="Float32">0</Property>
+				<Property name="XPFlasherCaption" type="String"/>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

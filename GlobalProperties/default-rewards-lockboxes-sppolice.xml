@@ -1,7 +1,9 @@
-<PropertySet name="default-rewards-lockboxes-sppolice" nameUID="0x3A3C0759" schema="default-rewards-lockboxes-sppolice">
-    <Parent>default-rewards-lockboxes-lockbox</Parent>
-    <Property name="CompletionText" type="String">Found Shotgun</Property>
-    <Property name="CompletionTitle" type="String">Lock Box Found</Property>
-    <Property name="InventoryItemType" type="Symbol" Symbol="0xC60FB44F">eINVENTORY_ITEM_SHOTGUN_PUMP</Property>
-    <Property name="MoneyAdjustment" type="Int32">5</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-lockboxes-sppolice" nameUID="0x3A3C0759">
+	<!-- Parents -->
+	<Parent nameUID="0x1B0A318C">default-rewards-lockboxes-lockbox</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">5</Property>
+	<Property name="CompletionText" type="String">Found Shotgun</Property>
+	<Property name="InventoryItemType" type="Symbol" symUID="0xC60FB44F">eINVENTORY_ITEM_SHOTGUN_PUMP</Property>
+	<Property name="CompletionTitle" type="String">Lock Box Found</Property>
+</PropertySetResource>

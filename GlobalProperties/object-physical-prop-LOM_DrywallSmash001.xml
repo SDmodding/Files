@@ -1,28 +1,33 @@
-<PropertySet name="object-physical-prop-LOM_DrywallSmash001" nameUID="0x54D7827D" schema="object-physical-prop-LOM_DrywallSmash001">
-    <Parent>object-physical-prop-LOM_TV4HeadSmash001</Parent>
-    <Property name="0x354F91B0" type="Symbol"/>
-    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOM_DrywallHeadSmash001.act</Property>
-    <Property name="Description" type="String">LOM_DrywallSmash001</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOM_DrywallSmash001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x9BF2E3FC">LOM_DRYWALLHEADSMASH001</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOM_DrywallSmash001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x9BF2E3FC">LOM_DRYWALLHEADSMASH001</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOM_DrywallSmash001" nameUID="0x54D7827D">
+	<!-- Parents -->
+	<Parent nameUID="0xE81246E1">object-physical-prop-LOM_TV4HeadSmash001</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="~354f91b0~" type="Symbol" symUID="0x33AE088E"/>
+	<Property name="ActFileName" type="String">Data\Global\Act\Object\LOM_DrywallHeadSmash001.act</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOM_DrywallSmash001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List">
+				<!-- Elements -->
+				<ListProperty type="SymbolUC" symUID="0x9BF2E3FC">LOM_DRYWALLHEADSMASH001</ListProperty>
+			</Property>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">LOM_DrywallSmash001</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x33AE088E (Normal) -->
+<!-- 0x354F91B0 (Normal) -->

@@ -1,28 +1,34 @@
-<PropertySet name="object-physical-character-AmbientCharacters-KT_Shoppers_Female_Yng" nameUID="0x254F5EAB" schema="object-physical-character-AmbientCharacters-KT_Shoppers_Female_Yng">
-    <Parent>object-physical-character-drivers-yng_female</Parent>
-    <Property name="Description" type="String">KT Shoppers Female Youth</Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-        <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0xE7DE76F9">Female</Property>
-                <Property type="Symbol" Symbol="0x1176ADB3">KTown</Property>
-                <Property type="Symbol" Symbol="0x7F91BED9">Shopper</Property>
-                <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-KT_Shoppers_Female_Yng" nameUID="0x254F5EAB">
+	<!-- Parents -->
+	<Parent nameUID="0x766DE91C">object-physical-character-drivers-yng_female</Parent>
+	<Parent nameUID="0x6C494895">object-physical-character-AmbientCharacters-KT_Shoppers_Female</Parent>
+	<!-- Properties -->
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+		<ListProperty type="Symbol" symUID="0x95BC9EE4">Ped</ListProperty>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xE7DE76F9">Female</ListProperty>
+				<ListProperty type="Symbol" symUID="0x1176ADB3">KTown</ListProperty>
+				<ListProperty type="Symbol" symUID="0x7F91BED9">Shopper</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">KT Shoppers Female Youth</Property>
+</PropertySetResource>

@@ -1,106 +1,74 @@
-<PropertySet name="object-physical-vehicle-jet620v_18K01" nameUID="0xEE0A3F13" schema="object-physical-vehicle-jet620v_18K01">
-    <Parent>object-physical-vehicle-jet620v01</Parent>
-    <Property name="Description" type="String">Boat- Jet620V01</Property>
-    <Property name="VehicleLook" type="List">
-        <Property type="String">WhiteNewPaint</Property>
-    </Property>
-    <Property name="component_BoatPhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_Thug_Jet620VProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-Jet620VProperties</physicsPropertySetHuman>
-            <modelName type="String">Jet620V01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">0</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">0</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">0.05</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">0</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-3.48" y="-3.48" z="-1.39"/>
-            <boundingBoxMax type="Vector3" x="3.5" y="3.5" z="1.39"/>
-            <tireShotImpulse type="Float32">0</tireShotImpulse>
-            <tireBlownImpulse type="Float32">0</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">2</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-2</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">15</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">5</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">50</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">100</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-        </BinData>
-    </Property>
-    <Property name="component_PhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_Thug_Jet620VProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-Jet620VProperties</physicsPropertySetHuman>
-            <modelName type="String">Jet620V01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_NONE</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">0</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">0</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">0.05</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">0</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-3.48" y="-3.48" z="-1.39"/>
-            <boundingBoxMax type="Vector3" x="3.5" y="3.5" z="1.39"/>
-            <tireShotImpulse type="Float32">0</tireShotImpulse>
-            <tireBlownImpulse type="Float32">0</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">2</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-2</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">15</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">5</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">50</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">100</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0x539DA11F">Data\Vehicles_New\Jet620V01</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List">
-                <Property type="Symbol" Symbol="0x6D12AEAF">Data\Vehicles_New\Jet620V_18K01_ts002</Property>
-            </TextureSetList>
-            <EntityType type="Symbol">Boat</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-jet620v_18K01" nameUID="0xEE0A3F13">
+	<!-- Parents -->
+	<Parent nameUID="0x1519FF65">object-physical-vehicle-jet620v01</Parent>
+	<!-- Properties -->
+	<Property name="component_PhysicsMover" type="PropSet">
+		<PropertySet name="component_BoatPhysicsMover" nameUID="0x1A07D10C" schema="default-component-BoatPhysicsMover">
+			<!-- Schema Properties -->
+			<Property name="physicsPropertySetAI" type="Symbol" symUID="0x82EFA7D4">Vehicles-AI_Thug_Jet620VProperties</Property>
+			<Property name="physicsPropertySetHuman" type="Symbol" symUID="0x69551608">Vehicles-Jet620VProperties</Property>
+			<Property name="modelName" type="String">Jet620V01</Property>
+			<Property name="TrunkType" type="Symbol" symUID="0xDE16D029">eVEHICLE_TRUNK_TYPE_NONE</Property>
+			<Property name="damageMultiplierWorldCollisions" type="Float32">0</Property>
+			<Property name="damageMultiplierVehicleCollisions" type="Float32">0</Property>
+			<Property name="damageMultiplierBullets" type="Float32">0.05</Property>
+			<Property name="damageMultiplierTires" type="Float32">0</Property>
+			<Property name="boundingBoxMin" type="Vector3" x="-3.48" y="-1.39" z="0"/>
+			<Property name="boundingBoxMAx" type="Vector3" x="3.5" y="1.39" z="1.4"/>
+			<Property name="tireShotImpulse" type="Float32">0</Property>
+			<Property name="tireBlownImpulse" type="Float32">0</Property>
+			<Property name="lowLodThrottleAcceleration" type="Float32">2</Property>
+			<Property name="lowLodBrakesAcceleration" type="Float32">-2</Property>
+			<Property name="lowLodCoastAcceleration" type="Float32">-1</Property>
+			<Property name="lowLodMaxSpeed" type="Float32">15</Property>
+			<Property name="lowLodMaxLateralAcceleration" type="Float32">1</Property>
+			<Property name="lowLodMinTurningRadius" type="Float32">5</Property>
+			<Property name="autoDeterioratingDamageThreshold" type="Float32">0.75</Property>
+			<Property name="autoDeterioratingDamageRate" type="Float32">0.01</Property>
+			<Property name="vehicleDistanceToHighLod" type="Float32">50</Property>
+			<Property name="vehicleDistanceToMedLod" type="Float32">100</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToTakeDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionExtraDamageMultiplier" type="Float32">2</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinImpulse" type="Float32">0.01</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxImpulse" type="Float32">0.05</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToDealDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionMaxImpulseForDealingDamage" type="Float32">10</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinRamImpulse" type="Float32">0.25</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxRamImpulse" type="Float32">0.3</Property>
+			<Property name="vehicleCollisionMinRamImpulseRequiredToDealDamage" type="Float32">6</Property>
+			<Property name="vehicleCollisionMaxRamImpulseForDealingDamage" type="Float32">12</Property>
+			<Property name="vehicleCollisionForceDamageDealer" type="Boolean">false</Property>
+			<Property name="lockedAtLowLOD" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_BoatPhysicsMover" type="PropSet">
+		<PropertySet name="component_BoatPhysicsMover" nameUID="0x1A07D10C" schema="default-component-BoatPhysicsMover">
+			<!-- Schema Parent: component_PhysicsMover -->
+		</PropertySet>
+	</Property>
+	<Property name="VehicleLook" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">WhiteNewPaint</ListProperty>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x539DA11F">Data\Vehicles_New\Jet620V01</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x6D12AEAF">Data\Vehicles_New\Jet620V_18K01_ts002</ListProperty>
+			</Property>
+			<Property name="EntityType" type="SymbolUC" symUID="0x2F2417D1">BOAT</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Boat- Jet620V01</Property>
+</PropertySetResource>

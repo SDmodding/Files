@@ -1,11 +1,20 @@
-<PropertySet name="default-rewards-progression-F_SS" nameUID="0xAC930F2E" schema="default-rewards-progression-F_SS">
-    <Parent>default-rewards-progression-favor_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_SANDRA_SPEEDING</Property>
-    <Property name="StandingAdjustment" type="Int32">15</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xE3FDF04F">
-            <Property name="0xDE3E6A23" type="String">$REWARDS_SANDRA_DATE</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-F_SS" nameUID="0xAC930F2E">
+	<!-- Parents -->
+	<Parent nameUID="0xB5D2DBF9">default-rewards-progression-favor_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xE3FDF04F">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$REWARDS_SANDRA_DATE</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_SANDRA_SPEEDING</Property>
+	<Property name="StandingAdjustment" type="Int32">15</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0xE3FDF04F (Normal) -->

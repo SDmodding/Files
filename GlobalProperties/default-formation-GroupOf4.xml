@@ -1,33 +1,63 @@
-<PropertySet name="default-formation-GroupOf4" nameUID="0x1D7F63AF" schema="default-formation-GroupOf4">
-    <Parent>default-formation-default</Parent>
-    <Property name="MaxFollowers" type="UInt32">3</Property>
-    <Property name="SlotList" type="List">
-        <ListProperty nameUID="0xEA3FB99E">
-            <Parent>default-formation-slot-besideOnLeft</Parent>
-        </ListProperty>
-        <ListProperty nameUID="0xEA3FB99E">
-            <Parent>default-formation-slot-besideOnRight</Parent>
-        </ListProperty>
-        <ListProperty nameUID="0xEA3FB99E">
-            <Parent>default-formation-slot-closeBehind</Parent>
-        </ListProperty>
-        <ListProperty nameUID="0xEA3FB99E">
-            <Parent>default-formation-slot-behind</Parent>
-        </ListProperty>
-        <ListProperty nameUID="0xEA3FB99E">
-            <Parent>default-formation-slot-behindOnLeft</Parent>
-        </ListProperty>
-        <ListProperty nameUID="0xEA3FB99E">
-            <Parent>default-formation-slot-behindOnRight</Parent>
-        </ListProperty>
-        <ListProperty nameUID="0xEA3FB99E">
-            <Parent>default-formation-slot-farBehindOnLeft</Parent>
-        </ListProperty>
-        <ListProperty nameUID="0xEA3FB99E">
-            <Parent>default-formation-slot-farBehindOnRight</Parent>
-        </ListProperty>
-        <ListProperty nameUID="0xEA3FB99E">
-            <Parent>default-formation-slot-farBehind</Parent>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-formation-GroupOf4" nameUID="0x1D7F63AF">
+	<!-- Parents -->
+	<Parent nameUID="0xA2D7688D">default-formation-default</Parent>
+	<!-- Properties -->
+	<Property name="MaxFollowers" type="UInt32">3</Property>
+	<Property name="SlotList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Slot" nameUID="0xEA3FB99E">
+				<!-- Parents -->
+				<Parent nameUID="0x5894D7DF">default-formation-slot-besideOnLeft</Parent>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Slot" nameUID="0xEA3FB99E">
+				<!-- Parents -->
+				<Parent nameUID="0x12D73677">default-formation-slot-besideOnRight</Parent>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Slot" nameUID="0xEA3FB99E">
+				<!-- Parents -->
+				<Parent nameUID="0xC7286702">default-formation-slot-closeBehind</Parent>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Slot" nameUID="0xEA3FB99E">
+				<!-- Parents -->
+				<Parent nameUID="0x88EEBE14">default-formation-slot-behind</Parent>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Slot" nameUID="0xEA3FB99E">
+				<!-- Parents -->
+				<Parent nameUID="0xC9FFB856">default-formation-slot-behindOnLeft</Parent>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Slot" nameUID="0xEA3FB99E">
+				<!-- Parents -->
+				<Parent nameUID="0x5864995E">default-formation-slot-behindOnRight</Parent>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Slot" nameUID="0xEA3FB99E">
+				<!-- Parents -->
+				<Parent nameUID="0xF437C736">default-formation-slot-farBehindOnLeft</Parent>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Slot" nameUID="0xEA3FB99E">
+				<!-- Parents -->
+				<Parent nameUID="0x75E4121D">default-formation-slot-farBehindOnRight</Parent>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Slot" nameUID="0xEA3FB99E">
+				<!-- Parents -->
+				<Parent nameUID="0x2F542859">default-formation-slot-farBehind</Parent>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

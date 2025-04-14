@@ -1,80 +1,93 @@
-<PropertySet name="default-savegames-debugmenu-Main-m_rl" nameUID="0x5017FCA6" schema="default-savegames-debugmenu-Main-m_rl">
-    <Parent>default-savegames-defaults</Parent>
-    <Property name="0x4A846F2F" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="Collectible_Melee" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="CopDrivingStage" type="Int32">4</Property>
-    <Property name="CopUpgradePoint" type="Int32">4</Property>
-    <Property name="DynamicTutorials" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="GunplayUpgradeStage" type="Int32">5</Property>
-    <Property name="StatueDefensiveStage" type="Int32">5</Property>
-    <Property name="StatueOffensiveStage" type="Int32">7</Property>
-</PropertySet>
+<PropertySetResource name="default-savegames-debugmenu-Main-m_rl" nameUID="0x5017FCA6">
+	<!-- Parents -->
+	<Parent nameUID="0x10965489">default-savegames-defaults</Parent>
+	<!-- Properties -->
+	<Property name="Collectible_Melee" type="PropSet">
+		<PropertySet name="Melee" nameUID="0xFB892B3B">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x269446AE">NP_Upgrades-Melee_Restaurant</ListProperty>
+				<ListProperty type="Symbol" symUID="0x31FF93C2">NP_Upgrades-Melee_NightMarket</ListProperty>
+				<ListProperty type="Symbol" symUID="0x407EC767">NP_Upgrades-Melee_Viviennes</ListProperty>
+				<ListProperty type="Symbol" symUID="0x867F5674">NP_Upgrades-Melee_BadLuck</ListProperty>
+				<ListProperty type="Symbol" symUID="0x74B23E5F">NP_Upgrades-Melee_Hospital</ListProperty>
+				<ListProperty type="Symbol" symUID="0x936D585C">NP_Upgrades-Melee_BamBam</ListProperty>
+				<ListProperty type="Symbol" symUID="0x13D9341F">NP_Upgrades-Melee_PentHouse</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB28BE3FA">NP_Upgrades-Melee_TopGlamour</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC221119F">NP_Upgrades-Melee_Funeral</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFF59B600">NP_Upgrades-Melee_ImportantVisitor</ListProperty>
+				<ListProperty type="Symbol" symUID="0x417B71F9">NP_Upgrades-Melee_Temple</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Collectible_MeleeDelivered" type="PropSet">
+		<PropertySet nameUID="0xC8AD833">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x269446AE">NP_Upgrades-Melee_Restaurant</ListProperty>
+				<ListProperty type="Symbol" symUID="0x31FF93C2">NP_Upgrades-Melee_NightMarket</ListProperty>
+				<ListProperty type="Symbol" symUID="0x407EC767">NP_Upgrades-Melee_Viviennes</ListProperty>
+				<ListProperty type="Symbol" symUID="0x867F5674">NP_Upgrades-Melee_BadLuck</ListProperty>
+				<ListProperty type="Symbol" symUID="0x74B23E5F">NP_Upgrades-Melee_Hospital</ListProperty>
+				<ListProperty type="Symbol" symUID="0x936D585C">NP_Upgrades-Melee_BamBam</ListProperty>
+				<ListProperty type="Symbol" symUID="0x13D9341F">NP_Upgrades-Melee_PentHouse</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB28BE3FA">NP_Upgrades-Melee_TopGlamour</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC221119F">NP_Upgrades-Melee_Funeral</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFF59B600">NP_Upgrades-Melee_ImportantVisitor</ListProperty>
+				<ListProperty type="Symbol" symUID="0x417B71F9">NP_Upgrades-Melee_Temple</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="CopDrivingStage" type="Int32">4</Property>
+	<Property name="StatueDefensiveStage" type="Int32">5</Property>
+	<Property name="StatueOffensiveStage" type="Int32">7</Property>
+	<Property name="GunplayUpgradeStage" type="Int32">5</Property>
+	<Property name="CopUpgradePoint" type="Int32">4</Property>
+	<Property name="DynamicTutorials" type="PropSet">
+		<PropertySet name="Melee" nameUID="0xFB892B3B">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x444B6EFA">TranStoreTutorial</ListProperty>
+				<ListProperty type="Symbol" symUID="0x144D1EC7">HijackingTutorial</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xC8AD833 (Normal) -->

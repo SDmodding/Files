@@ -1,38 +1,33 @@
-<PropertySet name="config-StartupLocations" nameUID="0xA4C70A8F" schema="config-StartupLocations">
-    <Property name="Game" type="Matrix">
-        <Forward x="0" y="1" z="0" w="0"/>
-        <Right x="-0.99988" y="0" z="0.0155016" w="0"/>
-        <Up x="0.0155016" y="-0" z="0.99988" w="0"/>
-        <Translation x="1554" y="-112" z="3.2" w="1"/>
-    </Property>
-    <Property name="HKTest" type="Matrix">
-        <Forward x="1" y="0" z="0" w="0"/>
-        <Right x="0" y="1" z="0" w="0"/>
-        <Up x="0" y="0" z="1" w="0"/>
-        <Translation x="0" y="0" z="0" w="1"/>
-    </Property>
-    <Property name="HK_AI_Test" type="Matrix">
-        <Forward x="1" y="0" z="0" w="0"/>
-        <Right x="0" y="1" z="0" w="0"/>
-        <Up x="0" y="0" z="1" w="0"/>
-        <Translation x="0" y="0" z="0" w="1"/>
-    </Property>
-    <Property name="HK_ArtSandbox" type="Matrix">
-        <Forward x="1" y="0" z="0" w="0"/>
-        <Right x="0" y="1" z="0" w="0"/>
-        <Up x="0" y="0" z="1" w="0"/>
-        <Translation x="0" y="0" z="1" w="1"/>
-    </Property>
-    <Property name="HK_CharacterGym" type="Matrix">
-        <Forward x="0" y="-1" z="0" w="0"/>
-        <Right x="1" y="0" z="-0" w="0"/>
-        <Up x="0" y="0" z="1" w="0"/>
-        <Translation x="0" y="5.5" z="0.2" w="1"/>
-    </Property>
-    <Property name="SD2_ViolenceSandbox" type="Matrix">
-        <Forward x="0" y="-1" z="0" w="0"/>
-        <Right x="1" y="0" z="-0" w="0"/>
-        <Up x="0" y="0" z="1" w="0"/>
-        <Translation x="8" y="-64" z="4.87" w="1"/>
-    </Property>
-</PropertySet>
+<PropertySetResource name="config-StartupLocations" nameUID="0xA4C70A8F">
+	<!-- Properties -->
+	<Property name="HK_CharacterGym" type="TransRotation">
+		<Forward x="0" y="-1" z="0"/>
+		<Up x="0" y="0" z="1"/>
+		<Translation x="0" y="5.5" z="0.2"/>
+	</Property>
+	<Property name="HKTest" type="TransRotation">
+		<Forward x="1" y="0" z="0"/>
+		<Up x="0" y="0" z="1"/>
+		<Translation x="0" y="0" z="0"/>
+	</Property>
+	<Property name="SD2_ViolenceSandbox" type="TransRotation">
+		<Forward x="0" y="-1" z="0"/>
+		<Up x="0" y="0" z="1"/>
+		<Translation x="8" y="-64" z="4.87"/>
+	</Property>
+	<Property name="Game" type="TransRotation">
+		<Forward x="0" y="1" z="0"/>
+		<Up x="0.0155016" y="-0" z="0.99988"/>
+		<Translation x="1554" y="-112" z="3.2"/>
+	</Property>
+	<Property name="HK_AI_Test" type="TransRotation">
+		<Forward x="1" y="0" z="0"/>
+		<Up x="0" y="0" z="1"/>
+		<Translation x="0" y="0" z="0"/>
+	</Property>
+	<Property name="HK_ArtSandbox" type="TransRotation">
+		<Forward x="1" y="0" z="0"/>
+		<Up x="0" y="0" z="1"/>
+		<Translation x="0" y="0" z="1"/>
+	</Property>
+</PropertySetResource>

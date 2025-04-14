@@ -1,16 +1,24 @@
-<PropertySet name="object-logical-Teapot" nameUID="0xF95926F4" schema="object-logical-Teapot">
-    <Parent>default-SimObject</Parent>
-    <Property name="SimObjChildren" type="List">
-        <ListProperty nameUID="0xC4B98FD2">
-            <Parent>object-physical-prop-LOP_TeaAPot001</Parent>
-            <Property name="NameRoot" type="String">Teapot</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-Teapot" nameUID="0xF95926F4">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0xFF1B33E2">default-component-Marker</Parent>
+	<!-- Properties -->
+	<Property name="SimObjChildren" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Teapot" nameUID="0xC4B98FD2">
+				<!-- Parents -->
+				<Parent nameUID="0xE5FD6C71">object-physical-prop-LOP_TeaAPot001</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">Teapot</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

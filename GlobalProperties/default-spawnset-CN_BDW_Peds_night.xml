@@ -1,14 +1,20 @@
-<PropertySet name="default-spawnset-CN_BDW_Peds_night" nameUID="0x6F212EA6" schema="default-spawnset-CN_BDW_Peds_night">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0x34270861">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">10</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x99290F7D">object-physical-character-vagrant_junkie</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0xB8B4C45E">object-physical-character-AmbientCharacters-CN_Bdwk_Male_Night</Property>
-        <Property type="Symbol" Symbol="0x1E3FF464">object-physical-character-AmbientCharacters-beggar</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-CN_BDW_Peds_night" nameUID="0x6F212EA6">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="RareSpawnA" nameUID="0x34270861">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x99290F7D">object-physical-character-vagrant_junkie</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">10</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xB8B4C45E">object-physical-character-AmbientCharacters-CN_Bdwk_Male_Night</ListProperty>
+		<ListProperty type="Symbol" symUID="0x1E3FF464">object-physical-character-AmbientCharacters-beggar</ListProperty>
+	</Property>
+</PropertySetResource>

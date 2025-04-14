@@ -1,10 +1,77 @@
-<PropertySet name="object-physical-vehicle-InteractionPointOverride-TwoDoor" nameUID="0x4B70BB0D" schema="object-physical-vehicle-InteractionPointOverride-TwoDoor">
-    <Property name="component_Interactable" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Interactable</Parent>
-        </PropertySet>
-        <BinData>
-            <InteractionPoints type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-InteractionPointOverride-TwoDoor" nameUID="0x4B70BB0D">
+	<!-- Properties -->
+	<Property name="component_Interactable" type="PropSet">
+		<PropertySet name="component_Interactable" nameUID="0xF20A4492" schema="default-component-Interactable">
+			<!-- Parents -->
+			<Parent nameUID="0xEA444D1D">default-component-Interactable</Parent>
+			<!-- Schema Properties -->
+			<Property name="InteractionPoints" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0xBC9BA367">eINTERACTION_POINT_UPDATE_DISTANCE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x30E2F569">eTARGET_TYPE_INTERACTION_POINT0</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC"/>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x8B5E191A">eINTERACTION_POINT_UPDATE_BONE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x3423E8DE">eTARGET_TYPE_INTERACTION_POINT1</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC" symUID="0x7508FAFF">C_FEETSYNC01</Property>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x8B5E191A">eINTERACTION_POINT_UPDATE_BONE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x3960CE07">eTARGET_TYPE_INTERACTION_POINT2</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC" symUID="0x784BDC26">C_FEETSYNC02</Property>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x8B5E191A">eINTERACTION_POINT_UPDATE_BONE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x27279E02">eTARGET_TYPE_INTERACTION_POINT5</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC" symUID="0xA7AC367B">C_FEETSYNCTRUNK</Property>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

@@ -1,7 +1,10 @@
-<PropertySet name="object-logical-store-Boat" nameUID="0xD074DA48" schema="object-logical-store-Boat">
-    <Parent>default-component-StoreBlip</Parent>
-    <Property name="AccessStoreCaption" type="String">Access Boat Showroom</Property>
-    <Property name="InventoryType" type="Symbol" Symbol="0xACB107F7">Boat</Property>
-    <Property name="StoreBlipName" type="String">parking_symbol</Property>
-    <Property name="StoreType" type="Symbol" Symbol="0x5A58B64A">Retail</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-store-Boat" nameUID="0xD074DA48">
+	<!-- Parents -->
+	<Parent nameUID="0x5CDB22F8">default-component-StoreBlip</Parent>
+	<Parent nameUID="0x221196B9">object-logical-store-Base</Parent>
+	<!-- Properties -->
+	<Property name="StoreBlipName" type="String">parking_symbol</Property>
+	<Property name="InventoryType" type="Symbol" symUID="0xACB107F7">Boat</Property>
+	<Property name="StoreType" type="Symbol" symUID="0x5A58B64A">Retail</Property>
+	<Property name="AccessStoreCaption" type="String">Access Boat Showroom</Property>
+</PropertySetResource>

@@ -1,16 +1,21 @@
-<PropertySet name="default-component-ATRegion" nameUID="0x8660E5F9" schema="default-component-ATRegion">
-    <Property name="TagList" type="List">
-        <ListProperty nameUID="0xDAB92B88">
-            <Property name="AudioType" type="UInt32">0</Property>
-            <Property name="DryLevel" type="Float32">0</Property>
-            <Property name="ModeUid" type="WwiseID"/>
-            <Property name="RtpcVal" type="Float32">0</Property>
-            <Property name="UidOnEnter" type="UInt32">0</Property>
-            <Property name="UidOnExit" type="UInt32">0</Property>
-            <Property name="WetLevel" type="Float32">0</Property>
-        </ListProperty>
-    </Property>
-    <Property name="TriggerInVehicle" type="Boolean">True</Property>
-    <Property name="TriggerOnBike" type="Boolean">True</Property>
-    <Property name="TriggerOnFoot" type="Boolean">True</Property>
-</PropertySet>
+<PropertySetResource name="default-component-ATRegion" nameUID="0x8660E5F9">
+	<!-- Properties -->
+	<Property name="TriggerInVehicle" type="Boolean">true</Property>
+	<Property name="TriggerOnFoot" type="Boolean">true</Property>
+	<Property name="TriggerOnBike" type="Boolean">true</Property>
+	<Property name="TagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Tag" nameUID="0xDAB92B88">
+				<!-- Properties -->
+				<Property name="AudioType" type="UInt32">0</Property>
+				<Property name="UidOnEnter" type="UInt32">0</Property>
+				<Property name="ModeUid" type="WwiseID" symUID="0x50C5D2F">0</Property>
+				<Property name="WetLevel" type="Float32">0</Property>
+				<Property name="DryLevel" type="Float32">0</Property>
+				<Property name="UidOnExit" type="UInt32">0</Property>
+				<Property name="RtpcVal" type="Float32">0</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

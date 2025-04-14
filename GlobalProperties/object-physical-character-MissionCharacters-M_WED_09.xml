@@ -1,31 +1,42 @@
-<PropertySet name="object-physical-character-MissionCharacters-M_WED_09" nameUID="0x85351E68" schema="object-physical-character-MissionCharacters-M_WED_09">
-    <Parent>object-physical-character-Thug_Wsg_grap</Parent>
-    <Property name="Description" type="String">Mission: Wedding - A:Grappler</Property>
-    <Property name="Voice" type="String">ChineseFreddie</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0x6873DB1D">Wsg</Property>
-                <Property type="Symbol" Symbol="0xC73BA389">Grappler</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List">
-                <ListProperty nameUID="0xA8245162">
-                    <Property name="Model" type="Symbol" Symbol="0xC2299656">Data\Characters_New\AM_H_120</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA416151">
-                    <Property name="ColorTintIndex" type="Int32">28</Property>
-                    <Property name="Model" type="Symbol" Symbol="0x91C69AA5">Data\Characters_New\Soy_B_102_White</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x15DEE5CF">Data\Characters_New\Soy_B_102_White_TS0</Property>
-                </ListProperty>
-            </ComponentList>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0.9</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-MissionCharacters-M_WED_09" nameUID="0x85351E68">
+	<!-- Parents -->
+	<Parent nameUID="0xBDE2E005">object-physical-character-Thug_Wsg_grap</Parent>
+	<!-- Properties -->
+	<Property name="Voice" type="String">ChineseFreddie</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0x6873DB1D">Wsg</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC73BA389">Grappler</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Head" nameUID="0xA8245162">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0xC2299656">Data\Characters_New\AM_H_120</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Body" nameUID="0xA416151">
+						<!-- Properties -->
+						<Property name="ColorTintIndex" type="Int32">28</Property>
+						<Property name="Model" type="Symbol" symUID="0x91C69AA5">Data\Characters_New\Soy_B_102_White</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x15DEE5CF">Data\Characters_New\Soy_B_102_White_TS0</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0.9</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Mission: Wedding - A:Grappler</Property>
+</PropertySetResource>

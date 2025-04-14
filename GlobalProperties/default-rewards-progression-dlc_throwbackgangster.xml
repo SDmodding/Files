@@ -1,14 +1,27 @@
-<PropertySet name="default-rewards-progression-dlc_throwbackgangster" nameUID="0xC1FCEF4A" schema="default-rewards-progression-dlc_throwbackgangster">
-    <Parent>default-rewards-progression-dlc_defaults</Parent>
-    <Property name="CompletionText" type="String">$DLC_RETROTRIAD_TITLE</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0xDE3E6A23" type="String">$ITEMS_TITLE_O_RETROTRIAD_DLC_REWARD</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0xFB7393AE">
-            <Property name="0xDE3E6A23" type="String">$VEHICLE_STORE_TITLE_MURALVAN_DLC_REWARD</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-dlc_throwbackgangster" nameUID="0xC1FCEF4A">
+	<!-- Parents -->
+	<Parent nameUID="0x32FFCA04">default-rewards-progression-dlc_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$ITEMS_TITLE_O_RETROTRIAD_DLC_REWARD</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xFB7393AE">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$VEHICLE_STORE_TITLE_MURALVAN_DLC_REWARD</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$DLC_RETROTRIAD_TITLE</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0xF630B577 (Normal) -->
+<!-- 0xFB7393AE (Normal) -->

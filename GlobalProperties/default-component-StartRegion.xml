@@ -1,7 +1,10 @@
-<PropertySet name="default-component-StartRegion" nameUID="0x5DCB1884" schema="default-component-StartRegion">
-    <Parent>default-component-TriggerRegion</Parent>
-    <Property name="Layers" type="List">
-        <Property type="Symbol"/>
-    </Property>
-    <Property name="Location" type="String"/>
-</PropertySet>
+<PropertySetResource name="default-component-StartRegion" nameUID="0x5DCB1884">
+	<!-- Parents -->
+	<Parent nameUID="0xDF3F979D">default-component-TriggerRegion</Parent>
+	<!-- Properties -->
+	<Property name="Layers" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol"/>
+	</Property>
+	<Property name="Location" type="String"/>
+</PropertySetResource>

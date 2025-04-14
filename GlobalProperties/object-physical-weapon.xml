@@ -1,122 +1,175 @@
-<PropertySet name="object-physical-weapon" nameUID="0x8D8E86EF" schema="object-physical-weapon">
-    <Parent>default-SimObject</Parent>
-    <Property name="0x50AA4A0D" type="Boolean">True</Property>
-    <Property name="AccuracyOnTargetChanged" type="Float32">1</Property>
-    <Property name="AimFlickTransitionDegPerS" type="Float32">120</Property>
-    <Property name="AimFovOffset" type="Float32">0</Property>
-    <Property name="AimFreeAimTransitionDegPerS" type="Float32">20</Property>
-    <Property name="AimInputMapping" type="List">
-        <ListProperty nameUID="0x72C2EC95">
-            <Property name="AimInput" type="Float32">0</Property>
-            <Property name="AimOutput" type="Float32">0</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7603F122">
-            <Property name="AimInput" type="Float32">0.5</Property>
-            <Property name="AimOutput" type="Float32">0.1</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7B40D7FB">
-            <Property name="AimInput" type="Float32">0.8</Property>
-            <Property name="AimOutput" type="Float32">0.3</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7F81CA4C">
-            <Property name="AimInput" type="Float32">1</Property>
-            <Property name="AimOutput" type="Float32">1</Property>
-        </ListProperty>
-    </Property>
-    <Property name="AimMaxInputSpeedPerS" type="Float32">1.5</Property>
-    <Property name="AimOriginOffset" type="Vector3" x="0.15" y="0.15" z="-0.18"/>
-    <Property name="AimPitchPerS" type="Float32">120</Property>
-    <Property name="AimSubtargetTransitionDegPerS" type="Float32">20</Property>
-    <Property name="AimYawPerS" type="Float32">180</Property>
-    <Property name="CanBeDropped" type="Boolean">True</Property>
-    <Property name="ObjectType" type="Symbol" Symbol="0x8A5A95FC">Weapon</Property>
-    <Property name="Stowable" type="Boolean">False</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-CharacterAnimation</Parent>
-        </PropertySet>
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-CharacterAnimation</Parent>
-        </PropertySet>
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CompositeDrawable" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-CompositeDrawable</Parent>
-        </PropertySet>
-        <BinData>
-            <DefaultSaturationOverride type="Float32">1</DefaultSaturationOverride>
-            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
-            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
-            <SkinSSEnabled type="Boolean">false</SkinSSEnabled>
-            <OverlayWeights type="List"/>
-            <OverlayTextures type="List"/>
-            <DrawScale type="Float32">1</DrawScale>
-        </BinData>
-    </Property>
-    <Property name="component_FXSimComponent" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-FXSimComponent</Parent>
-        </PropertySet>
-        <BinData>
-            <EffectId type="Symbol"/>
-        </BinData>
-    </Property>
-    <Property name="component_Interactable" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Interactable</Parent>
-        </PropertySet>
-        <BinData>
-            <InteractionPoints type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_InventoryItem" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-InventoryItem</Parent>
-        </PropertySet>
-        <BinData>
-            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
-            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
-            <simObjectInventoryItem type="Symbol"/>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-WeaponProperties</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_WEAPON</simObjectType>
-            <subTargetingProfile type="Symbol"/>
-        </BinData>
-    </Property>
-    <Property name="component_TSActor" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-TSActor</Parent>
-        </PropertySet>
-        <BinData>
-            <SkookumClass type="Symbol">Actor</SkookumClass>
-        </BinData>
-    </Property>
-    <Property name="component_WeaponProperties" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-WeaponProperties</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_WEAPON</simObjectType>
-            <subTargetingProfile type="Symbol"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-weapon" nameUID="0x8D8E86EF">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0xDE1805F3">default-component-TargetingSystemItem</Parent>
+	<Parent nameUID="0xE6CEAAF8">default-component-ActionTree</Parent>
+	<Parent nameUID="0x5D6CBF2A">default-component-Radar</Parent>
+	<!-- Properties -->
+	<Property name="AimFlickTransitionDegPerS" type="Float32">120</Property>
+	<Property name="AimMaxInputSpeedPerS" type="Float32">1.5</Property>
+	<Property name="AimInputMapping" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Mapping0" nameUID="0x72C2EC95">
+				<!-- Properties -->
+				<Property name="AimOutput" type="Float32">0</Property>
+				<Property name="AimInput" type="Float32">0</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Mapping1" nameUID="0x7603F122">
+				<!-- Properties -->
+				<Property name="AimOutput" type="Float32">0.1</Property>
+				<Property name="AimInput" type="Float32">0.5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Mapping2" nameUID="0x7B40D7FB">
+				<!-- Properties -->
+				<Property name="AimOutput" type="Float32">0.3</Property>
+				<Property name="AimInput" type="Float32">0.8</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Mapping3" nameUID="0x7F81CA4C">
+				<!-- Properties -->
+				<Property name="AimOutput" type="Float32">1</Property>
+				<Property name="AimInput" type="Float32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="component_TSActor" type="PropSet">
+		<PropertySet name="component_TSActor" nameUID="0x2873821B" schema="default-component-TSActor">
+			<!-- Parents -->
+			<Parent nameUID="0xC2815AE5">default-component-TSActor</Parent>
+			<!-- Schema Properties -->
+			<Property name="SkookumClass" type="Symbol" symUID="0x31D83102">Actor</Property>
+		</PropertySet>
+	</Property>
+	<Property name="AimSubtargetTransitionDegPerS" type="Float32">20</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Parents -->
+			<Parent nameUID="0x6C08125D">default-component-CharacterAnimation</Parent>
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="AccuracyOnTargetChanged" type="Float32">1</Property>
+	<Property name="CanBeThrown" type="Boolean">true</Property>
+	<Property name="ObjectType" type="Symbol" symUID="0x8A5A95FC">Weapon</Property>
+	<Property name="component_WeaponProperties" type="PropSet">
+		<PropertySet name="component_WeaponProperties" nameUID="0x5454709E" schema="default-component-WeaponProperties">
+			<!-- Parents -->
+			<Parent nameUID="0x2F85B400">default-component-WeaponProperties</Parent>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Parents -->
+			<Parent nameUID="0x6C08125D">default-component-CharacterAnimation</Parent>
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String"/>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_FXSimComponent" type="PropSet">
+		<PropertySet name="component_FXSimComponent" nameUID="0x6FE755E1" schema="default-component-FXSimComponent">
+			<!-- Parents -->
+			<Parent nameUID="0xF4795DDD">default-component-FXSimComponent</Parent>
+			<!-- Schema Properties -->
+			<Property name="EffectId" type="SymbolUC"/>
+		</PropertySet>
+	</Property>
+	<Property name="component_CompositeDrawable" type="PropSet">
+		<PropertySet name="component_CompositeDrawable" nameUID="0x79DB63A1" schema="default-component-CompositeDrawable">
+			<!-- Parents -->
+			<Parent nameUID="0x63E02B27">default-component-CompositeDrawable</Parent>
+			<!-- Schema Properties -->
+			<Property name="DefaultSaturationOverride" type="Float32">1</Property>
+			<Property name="LightSFXMultiplier" type="Float32">0</Property>
+			<Property name="HighlightingMode" type="String"/>
+			<Property name="HighlightingColour" type="Vector4" x="1" y="1" z="1" w="1"/>
+			<Property name="SkinSSEnabled" type="Boolean">false</Property>
+			<Property name="OverlayWeights" type="List"/>
+			<Property name="OverlayTextures" type="List"/>
+			<Property name="DrawScale" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="AimFreeAimTransitionDegPerS" type="Float32">20</Property>
+	<Property name="CanBeDropped" type="Boolean">true</Property>
+	<Property name="component_InventoryItem" type="PropSet">
+		<PropertySet name="component_InventoryItem" nameUID="0x9DA2A4AD" schema="default-component-InventoryItem">
+			<!-- Parents -->
+			<Parent nameUID="0xB9B21D65">default-component-InventoryItem</Parent>
+			<!-- Schema Properties -->
+			<Property name="InventoryItemQuantityMin" type="UInt32">1</Property>
+			<Property name="InventoryItemQuantityMax" type="UInt32">1</Property>
+			<Property name="simObjectInventoryItem" type="Symbol"/>
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_WeaponProperties" nameUID="0x5454709E" schema="default-component-WeaponProperties">
+			<!-- Parents -->
+			<Parent nameUID="0x2F85B400">default-component-WeaponProperties</Parent>
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0x5DCE28B7">eSIM_OBJ_TYPE_WEAPON</Property>
+			<Property name="subTargetingProfile" type="Symbol"/>
+		</PropertySet>
+	</Property>
+	<Property name="AimFovOffset" type="Float32">0</Property>
+	<Property name="AimYawPerS" type="Float32">180</Property>
+	<Property name="AimPitchPerS" type="Float32">120</Property>
+	<Property name="component_Interactable" type="PropSet">
+		<PropertySet name="component_Interactable" nameUID="0xF20A4492" schema="default-component-Interactable">
+			<!-- Parents -->
+			<Parent nameUID="0xEA444D1D">default-component-Interactable</Parent>
+			<!-- Schema Properties -->
+			<Property name="InteractionPoints" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0xBC9BA367">eINTERACTION_POINT_UPDATE_DISTANCE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x30E2F569">eTARGET_TYPE_INTERACTION_POINT0</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC"/>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0xBC9BA367">eINTERACTION_POINT_UPDATE_DISTANCE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x3423E8DE">eTARGET_TYPE_INTERACTION_POINT1</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0.7</Property>
+						<Property name="IPBoneName" type="SymbolUC"/>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Stowable" type="Boolean">false</Property>
+	<Property name="AimOriginOffset" type="Vector3" x="0.15" y="-0.18" z="1.55"/>
+</PropertySetResource>

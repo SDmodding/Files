@@ -1,7 +1,9 @@
-<PropertySet name="default-rewards-progression-race_defaults" nameUID="0x6D19FF7C" schema="default-rewards-progression-race_defaults">
-    <Parent>default-rewards-defaults</Parent>
-    <Property name="CompletionTitle" type="String">$OVERLAY_RACE_COMPLETE_UPPERCASE</Property>
-    <Property name="GamesliceType" type="Symbol" Symbol="0x3A04ED90">Race</Property>
-    <Property name="MoneyAdjustment" type="Int32">10000</Property>
-    <Property name="StandingAdjustment" type="Int32">100</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-race_defaults" nameUID="0x6D19FF7C">
+	<!-- Parents -->
+	<Parent nameUID="0xC21C95B9">default-rewards-defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">10000</Property>
+	<Property name="StandingAdjustment" type="Int32">100</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x3A04ED90">RACE</Property>
+	<Property name="CompletionTitle" type="String">$OVERLAY_RACE_COMPLETE_UPPERCASE</Property>
+</PropertySetResource>

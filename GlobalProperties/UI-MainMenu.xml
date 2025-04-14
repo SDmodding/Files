@@ -1,1346 +1,2347 @@
-<PropertySet name="UI-MainMenu" nameUID="0xA73E82ED" schema="UI-MainMenu">
-    <Property name="items" type="List">
-        <ListProperty nameUID="0x171E8CE3">
-            <Property name="caption" type="String">$PAUSE_CONTINUE_GAME</Property>
-            <Property name="operation" type="String">memcard_continue</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD53AB293">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">$DLC_MAIN_STORY_CAMPAIGN</Property>
-            <Property name="dependant" type="String">gameSetupGame_WTHK</Property>
-            <Property name="operation" type="String">flow_main_story</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3A693E0">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">$DLC_GHOST_CAMPAIGN</Property>
-            <Property name="dependant" type="String">gameSetupGameGhost_Start</Property>
-            <Property name="operation" type="String">flow_ghost</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1941A3B0">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">$DLC_CNY_TITLE</Property>
-            <Property name="dependant" type="String">gameSetupGameCNY_Start</Property>
-            <Property name="operation" type="String">flow_cny</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x2C62CEB7">
-            <Property name="caption" type="String">$DURANGO_HELP</Property>
-            <Property name="operation" type="String">durangohelp</Property>
-            <Property name="platform" type="String">durango</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4FF866F2">
-            <Property name="caption" type="String">$PAUSE_OPTIONS_UPPERCASE</Property>
-            <Property name="numSlots" type="String">4</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x3D450B35">
-                    <Property name="caption" type="String">$OPTIONS_AUDIO</Property>
-                    <Property name="dependant" type="String">Options_Audio</Property>
-                    <Property name="operation" type="String">screenpush</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xBB113E37">
-                    <Property name="caption" type="String">$OPTIONS_DISPLAY</Property>
-                    <Property name="dependant" type="String">Options_Display</Property>
-                    <Property name="operation" type="String">screenpush</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3A35C79C">
-                    <Property name="caption" type="String">$OPTIONS_GAME</Property>
-                    <Property name="dependant" type="String">Options_Game</Property>
-                    <Property name="operation" type="String">screenpush</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3E1CF46F">
-                    <Property name="caption" type="String">$OPTIONS_CONTROLS_ORBIS</Property>
-                    <Property name="operation" type="String">controllers</Property>
-                    <Property name="platform" type="String">orbis</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3E1CF46F">
-                    <Property name="caption" type="String">$OPTIONS_CONTROLS</Property>
-                    <Property name="operation" type="String">controllers</Property>
-                    <Property name="platform" type="String">pc</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3E1CF46F">
-                    <Property name="caption" type="String">$OPTIONS_CONTROLS</Property>
-                    <Property name="operation" type="String">controllers</Property>
-                    <Property name="platform" type="String">durango</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x9E983072">
-            <Property name="caption" type="String">$CREDITS</Property>
-            <Property name="operation" type="String">credits</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE9A8A2F">
-            <Property name="caption" type="String">$PAUSE_EXIT_GAME</Property>
-            <Property name="operation" type="String">exit</Property>
-            <Property name="platform" type="String">pc</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x315FA0CC">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">STORY (DEBUG)</Property>
-            <Property name="numSlots" type="String">3</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x171E8CE3">
-                    <Property name="caption" type="String">$PAUSE_NEW_GAME</Property>
-                    <Property name="dependant" type="String">gameSetupGame_WTHK</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1A5DAA3A">
-                    <Property name="caption" type="String">Open World (Debug)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_MB</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1E9CB78D">
-                    <Property name="caption" type="String">$PAUSE_MENU_LOAD</Property>
-                    <Property name="dependant" type="String"/>
-                    <Property name="operation" type="String">memcard_load</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDBE788">
-                    <Property name="caption" type="String">$PAUSE_MENU_SCENARIOS</Property>
-                    <Property name="dependant" type="String">gameSetupGame_BSL</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x3A693E0">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">NIGHTMARE FLOW (DEBUG)</Property>
-            <Property name="numSlots" type="String">3</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x8DADA5AC">
-                    <Property name="caption" type="String">$PAUSE_NEW_GAME</Property>
-                    <Property name="dependant" type="String">gameSetupGameGhost_Start</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8DADA5AC">
-                    <Property name="caption" type="String">$PAUSE_CONTINUE_GAME</Property>
-                    <Property name="dependant" type="String">gameSetupGameGhost_SaveGame</Property>
-                    <Property name="operation" type="String">memcard_continue_ghost</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8E1CFCA2">
-                    <Property name="caption" type="String">$PAUSE_MENU_LOAD</Property>
-                    <Property name="dependant" type="String">gameSetupGameGhost_SaveGame</Property>
-                    <Property name="operation" type="String">memcard_load_ghost</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1941A3B0">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">NEW YEAR FLOW (DEBUG)</Property>
-            <Property name="numSlots" type="String">3</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x8DADA5AC">
-                    <Property name="caption" type="String">$PAUSE_NEW_GAME</Property>
-                    <Property name="dependant" type="String">gameSetupGameCNY_Start</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8DADA5AC">
-                    <Property name="caption" type="String">$PAUSE_CONTINUE_GAME</Property>
-                    <Property name="dependant" type="String">gameSetupGameCNY_SaveGame</Property>
-                    <Property name="operation" type="String">memcard_continue_cny</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8E1CFCA2">
-                    <Property name="caption" type="String">$PAUSE_MENU_LOAD</Property>
-                    <Property name="dependant" type="String">gameSetupGameCNY_SaveGame</Property>
-                    <Property name="operation" type="String">memcard_load_cny</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA9ED4D4C">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">MISSIONS (DEBUG)</Property>
-            <Property name="numSlots" type="String">6</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0xDFCDCBF8">
-                    <Property name="caption" type="String">Main Demo</Property>
-                    <Property name="dependant" type="String">gameSetupGame_SU</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDFCDCBF8">
-                    <Property name="caption" type="String">ACT 1: Welcome to HK</Property>
-                    <Property name="dependant" type="String">gameSetupGame_WTHK</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDFCDCBF8">
-                    <Property name="caption" type="String">ACT 1: Going Under</Property>
-                    <Property name="dependant" type="String">gameSetupGame_GU</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDFCDCBF8">
-                    <Property name="caption" type="String">ACT 1: Vendor Extortion</Property>
-                    <Property name="dependant" type="String">gameSetupGame_VE</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDFCDCBF8">
-                    <Property name="caption" type="String">ACT 1: Night Market Chase</Property>
-                    <Property name="dependant" type="String">gameSetupGame_NMC</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1A5DAA3A">
-                    <Property name="caption" type="String">(debug) 1st Time Open World</Property>
-                    <Property name="dependant" type="String">gameSetupGame_OpenWorld</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC49E66A">
-                    <Property name="caption" type="String">ACT 1: Amanda</Property>
-                    <Property name="dependant" type="String">gameSetupGame_AM</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x547E9FDE">
-                    <Property name="caption" type="String">ACT 1: Martial Arts School</Property>
-                    <Property name="dependant" type="String">gameSetupGame_MAS</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDFCDCBF8">
-                    <Property name="caption" type="String">ACT 1: Stick Up &amp; Delivery</Property>
-                    <Property name="dependant" type="String">gameSetupGame_SU</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDFCDCBF8">
-                    <Property name="caption" type="String">ACT 1: Minibus</Property>
-                    <Property name="dependant" type="String">gameSetupGame_MB</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDFCDCBF8">
-                    <Property name="caption" type="String">ACT 1: Bam Bam</Property>
-                    <Property name="dependant" type="String">gameSetupGame_BBC</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xED5A72F4">
-                    <Property name="caption" type="String">ACT 1: Checking In 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CK1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDFCDCBF8">
-                    <Property name="caption" type="String">ACT 1: Pendrew's Bugs</Property>
-                    <Property name="dependant" type="String">gameSetupGame_RTNC</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF0471D2E">
-                    <Property name="caption" type="String">ACT 1: Tiffany's Gun</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TG</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDFCDCBF8">
-                    <Property name="caption" type="String">ACT 1: SweatShop</Property>
-                    <Property name="dependant" type="String">gameSetupGame_SS</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC54B864A">
-                    <Property name="caption" type="String">ACT 2: Uncle Po</Property>
-                    <Property name="dependant" type="String">gameSetupGame_UNP</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x4F851ACE">
-                    <Property name="caption" type="String">ACT 2: Bride to Be</Property>
-                    <Property name="dependant" type="String">gameSetupGame_BTB</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xE019542D">
-                    <Property name="caption" type="String">ACT 2: Checking In 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CK2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xCFF9857D">
-                    <Property name="caption" type="String">ACT 2: Wedding</Property>
-                    <Property name="dependant" type="String">gameSetupGame_WED</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x460721A0">
-                    <Property name="caption" type="String">ACT 2: Mrs. Chu's Revenge</Property>
-                    <Property name="dependant" type="String">gameSetupGame_MCR</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF4860099">
-                    <Property name="caption" type="String">ACT 2: The New Boss</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TNB</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDFCDCBF8">
-                    <Property name="caption" type="String">ACT 2: Top Glamour</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TGA</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xE4D8499A">
-                    <Property name="caption" type="String">ACT 2: Checking In 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CK3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x806F8BB9">
-                    <Property name="caption" type="String">ACT 2: Final Kill</Property>
-                    <Property name="dependant" type="String">gameSetupGame_FK</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC18A9BFD">
-                    <Property name="caption" type="String">ACT 2: Initiation</Property>
-                    <Property name="dependant" type="String">gameSetupGame_INI</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xFE5E0428">
-                    <Property name="caption" type="String">ACT 2: Checking In 5</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CK5</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC808A093">
-                    <Property name="caption" type="String">ACT 2: Jackie Arrested</Property>
-                    <Property name="dependant" type="String">gameSetupGame_JAR</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x42C63C17">
-                    <Property name="caption" type="String">ACT 3: The Bosses Meet</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HS</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xFA9F199F">
-                    <Property name="caption" type="String">ACT 3: Checking In 4</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CK4</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xCCC9BD24">
-                    <Property name="caption" type="String">ACT 3: Important Visitor</Property>
-                    <Property name="dependant" type="String">gameSetupGame_IV</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x76F78DD7">
-                    <Property name="caption" type="String">ACT 3: Fast Girls</Property>
-                    <Property name="dependant" type="String">gameSetupGame_FGI</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1CB76A5F">
-                    <Property name="caption" type="String">ACT 3: Bad Luck</Property>
-                    <Property name="dependant" type="String">gameSetupGame_BL</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x4B440779">
-                    <Property name="caption" type="String">ACT 3: The Big Hit</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TBH</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x58E92DB4">
-                    <Property name="caption" type="String">ACT 3: The Funeral</Property>
-                    <Property name="dependant" type="String">gameSetupGame_FU</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8BD43493">
-                    <Property name="caption" type="String">ACT 3: Civil Discord</Property>
-                    <Property name="dependant" type="String">gameSetupGame_MCD</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xB4BE8A07">
-                    <Property name="caption" type="String">ACT 3: Buried Alive</Property>
-                    <Property name="dependant" type="String">gameSetupGame_MBA</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xEB707AA1">
-                    <Property name="caption" type="String">ACT 3: The Election</Property>
-                    <Property name="dependant" type="String">gameSetupGame_MTE</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDB0CD64F">
-                    <Property name="caption" type="String">ACT 3: Big Smile Lee</Property>
-                    <Property name="dependant" type="String">gameSetupGame_BSL</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE0939457">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">Nightmare Missions (DEBUG)</Property>
-            <Property name="numSlots" type="String">6</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">1. Big Trouble</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HGF_BT</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1498CE02">
-                    <Property name="caption" type="String">2. Chinese Magic</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HGF_CM</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1059D3B5">
-                    <Property name="caption" type="String">3. Happy Cat's Army</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HGF_HCA</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xE1E83B0">
-                    <Property name="caption" type="String">4a. Clean Out the Rats</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HGF_COTR</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xADF9E07">
-                    <Property name="caption" type="String">4b. Revenge X2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HGF_RX2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x79CB8DE">
-                    <Property name="caption" type="String">4c. Ghosts of the Past</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HGF_GOTP</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x35DA569">
-                    <Property name="caption" type="String">5. Happy Cat</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HGF_HC</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x46A4E85A">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">New Year Missions (DEBUG)</Property>
-            <Property name="numSlots" type="String">6</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">Start (End of the World)</Property>
-                    <Property name="dependant" type="String">gameSetupGameCNY_Start</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">Illumination</Property>
-                    <Property name="dependant" type="String">gameSetupGame_M_CNY_ILL</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">Bomb Threats</Property>
-                    <Property name="dependant" type="String">gameSetupGame_M_CNY_BS1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">Transit Security</Property>
-                    <Property name="dependant" type="String">gameSetupGame_M_CNY_TB1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">Cease Operations</Property>
-                    <Property name="dependant" type="String">gameSetupGame_M_CNY_HOS</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">SDU: Soho Riot</Property>
-                    <Property name="dependant" type="String">gameSetupGame_M_CNY_SDUR</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">SDU: Nerve Gas</Property>
-                    <Property name="dependant" type="String">gameSetupGame_M_CNY_SDUV</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">SDU: Park/Dockyard</Property>
-                    <Property name="dependant" type="String">gameSetupGame_M_CNY_SDUS1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">New Years Eve</Property>
-                    <Property name="dependant" type="String">gameSetupGame_M_CNY_NYE</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1CE80AC6">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">Zodiac Missions (DEBUG)</Property>
-            <Property name="numSlots" type="String">6</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">0. Unlocker</Property>
-                    <Property name="dependant" type="String">gameSetupGame_ZI_Unlocker</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">1. Welcome to Zodiac Island</Property>
-                    <Property name="dependant" type="String">gameSetupGame_ZI_WTZ</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1498CE02">
-                    <Property name="caption" type="String">2. Trial by Fire</Property>
-                    <Property name="dependant" type="String">gameSetupGame_ZI_TBF</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1059D3B5">
-                    <Property name="caption" type="String">3. Cliffhanger</Property>
-                    <Property name="dependant" type="String">gameSetupGame_ZI_CH</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1059D3B5">
-                    <Property name="caption" type="String">4. Helping Hand</Property>
-                    <Property name="dependant" type="String">gameSetupGame_ZI_HH</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xE1E83B0">
-                    <Property name="caption" type="String">5. Last Man Standing</Property>
-                    <Property name="dependant" type="String">gameSetupGame_ZI_LMS</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xADF9E07">
-                    <Property name="caption" type="String">6. Endgame</Property>
-                    <Property name="dependant" type="String">gameSetupGame_ZI_EG</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xADF9E07">
-                    <Property name="caption" type="String">After Endgame (Freeroam)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_ZI_AEG</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xEB219989">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">Transportation Terror Missions (DEBUG)</Property>
-            <Property name="numSlots" type="String">5</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x19DBE8DB">
-                    <Property name="caption" type="String">1. Convoy</Property>
-                    <Property name="dependant" type="String">gameSetupGame_JAR</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1498CE02">
-                    <Property name="caption" type="String">2. EMP</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TT_EMP</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1059D3B5">
-                    <Property name="caption" type="String">3. Cruise Control</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TT_CC</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xE1E83B0">
-                    <Property name="caption" type="String">4. Rescue Tang</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TT_RT</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xE1E83B0">
-                    <Property name="caption" type="String">5. Death Race</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TT_DR</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA686E5AE">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">JOBS (DEBUG)</Property>
-            <Property name="numSlots" type="String">6</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x601801CD">
-                    <Property name="caption" type="String">Cop Jobs - Drug Run 01 (DLC)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_CJ_DR_01</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x6D5B2714">
-                    <Property name="caption" type="String">Cop Jobs - Drug Run 02 (DLC)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_CJ_DR_02</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x699A3AA3">
-                    <Property name="caption" type="String">Cop Jobs - Drug Run 03 (DLC)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_CJ_DR_03</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x77DD6AA6">
-                    <Property name="caption" type="String">Cop Jobs - Drug Run 04 (DLC)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_CJ_DR_04</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x731C7711">
-                    <Property name="caption" type="String">Cop Jobs - Drug Run 05 (DLC)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_CJ_DR_05</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x7E5F51C8">
-                    <Property name="caption" type="String">Cop Jobs - Drug Run 06 (DLC)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_CJ_DR_06</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x7A9E4C7F">
-                    <Property name="caption" type="String">Cop Jobs - Drug Run 07 (DLC)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_CJ_DR_07</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x5EB63497">
-                    <Property name="caption" type="String">Debt C. 1(PDA Roland)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_DC1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x53F5124E">
-                    <Property name="caption" type="String">Debt C. 2(PDA Roland)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_DC2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x57340FF9">
-                    <Property name="caption" type="String">Debt C. 3(PDA Roland)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_DC3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x49735FFC">
-                    <Property name="caption" type="String">Debt C. 4(PDA Roland)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_DC4</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x4DB2424B">
-                    <Property name="caption" type="String">Debt C. 5(PDA Roland)</Property>
-                    <Property name="dependant" type="String">gameSetupGame_DC5</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xB3BFEB2D">
-                    <Property name="caption" type="String">Tran (PDA Tran) - 425</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xBEFCCDF4">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Basi</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xBA3DD043">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Drifter</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA47A8046">
-                    <Property name="caption" type="String">Tran (PDA Tran) - 600 Coupe</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD4</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA0BB9DF1">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Klienod</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD5</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xADF8BB28">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Gopher</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD6</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA939A69F">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Takai</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD7</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x91761B22">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Taxi</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD8</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x95B70695">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Enterprise</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD9</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDBA4EB37">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Bismarck</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD10</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xDF65F680">
-                    <Property name="caption" type="String">Tran (PDA Tran) - RidgeSport</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD11</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xD226D059">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Hassha</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD12</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xD6E7CDEE">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Wangan GSX</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD13</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC8A09DEB">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Limo</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD14</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xCC61805C">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Terre</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD15</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC122A685">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Lowin</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD16</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC5E3BB32">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Blast</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD17</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xFDAC068F">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Tuono</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD18</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF96D1B38">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Etalon</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD19</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA94FB4E4">
-                    <Property name="caption" type="String">Tran (PDA Tran) - Velocita</Property>
-                    <Property name="dependant" type="String">gameSetupGame_J_TD20</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x2E6DD9CB">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">RACES (DEBUG)</Property>
-            <Property name="numSlots" type="String">6</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x4EE9E957">
-                    <Property name="caption" type="String">Car: Water Street NP_03</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_NP_03</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xB66FFB51">
-                    <Property name="caption" type="String">Car: Detour AB_01</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_AB_01</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xBB2CDD88">
-                    <Property name="caption" type="String">Car: Lost AB_02</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_AB_02</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1ECD5BED">
-                    <Property name="caption" type="String">Car: Midtown CT_02</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_CT_02</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8A0BE8">
-                    <Property name="caption" type="String">Car: Mailman CT_05</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_CT_05</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1A0C465A">
-                    <Property name="caption" type="String">Car: Wall Street CT_03</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_CT_03</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x546FA4E5">
-                    <Property name="caption" type="String">Car: Crippling Road NP_05</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_NP_05</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x592C823C">
-                    <Property name="caption" type="String">Car: No Sweat NP_06</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_NP_06</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC556A15F">
-                    <Property name="caption" type="String">Car: Unconventional CT_10</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_CT_10</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8813FDEA">
-                    <Property name="caption" type="String">Car: Summit VP_02</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_VP_02</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8550DB33">
-                    <Property name="caption" type="String">Car: The Queen VP_01</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_VP_01</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x5F245CEB">
-                    <Property name="caption" type="String">Bike: Dock Yard KT_02</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_KT_02</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x4A28F4E0">
-                    <Property name="caption" type="String">Bike: Alley Press NP_02</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_NP_02</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3586908C">
-                    <Property name="caption" type="String">Bike: Early Grave CT_09</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_CT_09</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x31478D3B">
-                    <Property name="caption" type="String">Bike: Starboard CT_08</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_CT_08</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA1AA903A">
-                    <Property name="caption" type="String">Bike: Indecision AB_04</Property>
-                    <Property name="dependant" type="String">gameSetupGame_R_AB_04</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF938783A">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">CASES (DEBUG)</Property>
-            <Property name="numSlots" type="String">6</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0xAAD747C0">
-                    <Property name="caption" type="String">Popstar Intro</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CasePS</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xAAD747C0">
-                    <Property name="caption" type="String">Popstar Lead 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CasePS1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xAE165A77">
-                    <Property name="caption" type="String">Popstar Lead 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CasePS2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xB0510A72">
-                    <Property name="caption" type="String">Popstar Lead 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CasePS3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x326B650E">
-                    <Property name="caption" type="String">Hotshot Intro / Lead 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseR</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3F2843D7">
-                    <Property name="caption" type="String">Hotshot Lead 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseR2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3BE95E60">
-                    <Property name="caption" type="String">Hotshot Lead 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseR3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x25AE0E65">
-                    <Property name="caption" type="String">Hotshot Lead 4</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseR4</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA4F62F18">
-                    <Property name="caption" type="String">Kidnapper Intro</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseKNP</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA4F62F18">
-                    <Property name="caption" type="String">Kidnapper Lead 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseKN_lead1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA9B509C1">
-                    <Property name="caption" type="String">Kidnapper Lead 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseKN_lead2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xAD741476">
-                    <Property name="caption" type="String">Kidnapper Lead 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseKN_lead3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xECCA6DC9">
-                    <Property name="caption" type="String">Serial Killer Intro</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseSK</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xECCA6DC9">
-                    <Property name="caption" type="String">Serial Killer Lead 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseSK1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xE1894B10">
-                    <Property name="caption" type="String">Serial Killer Lead 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseSK2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xE54856A7">
-                    <Property name="caption" type="String">Serial Killer Lead 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CaseSK3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x50A7A084">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">EVENTS (DEBUG)</Property>
-            <Property name="numSlots" type="String">6</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0xBCB0473F">
-                    <Property name="caption" type="String">Hit and Run 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HNR1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xB1F361E6">
-                    <Property name="caption" type="String">Hit and Run 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HNR2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xB5327C51">
-                    <Property name="caption" type="String">Hit and Run 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HNR3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA61CD4E4">
-                    <Property name="caption" type="String">Junk in the Trunk 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_JT1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x2ACDA942">
-                    <Property name="caption" type="String">Junk in the Trunk 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_JT2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x2E0CB4F5">
-                    <Property name="caption" type="String">Junk in the Trunk 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_JT3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x304BE4F0">
-                    <Property name="caption" type="String">Junk in the Trunk 4</Property>
-                    <Property name="dependant" type="String">gameSetupGame_JT4</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1C2C6880">
-                    <Property name="caption" type="String">Shop Lifter</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_S</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x88C596EA">
-                    <Property name="caption" type="String">Shop Lifter 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_S2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8C048B5D">
-                    <Property name="caption" type="String">Shop Lifter 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_S3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x9243DB58">
-                    <Property name="caption" type="String">Shop Lifter 4</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_S4</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8B99D1B7">
-                    <Property name="caption" type="String">Triad Wars NP 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWNP2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8F58CC00">
-                    <Property name="caption" type="String">Triad Wars NP 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWNP3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x911F9C05">
-                    <Property name="caption" type="String">Triad Wars Temple 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWNPT1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x95DE81B2">
-                    <Property name="caption" type="String">Triad Wars Temple 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWNPT2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x989DA76B">
-                    <Property name="caption" type="String">Triad Wars Temple 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWNPT3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x39E07C8E">
-                    <Property name="caption" type="String">Triad Wars CT 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWCT1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x34A35A57">
-                    <Property name="caption" type="String">Triad Wars CT 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWCT2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x306247E0">
-                    <Property name="caption" type="String">Triad Wars CT 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWCT3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x372518B6">
-                    <Property name="caption" type="String">Triad Wars KT 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWKT1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3A663E6F">
-                    <Property name="caption" type="String">Triad Wars KT 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWKT2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3EA723D8">
-                    <Property name="caption" type="String">Triad Wars KT 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWKT3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xCFD60135">
-                    <Property name="caption" type="String">Triad Wars AB 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWAB1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC29527EC">
-                    <Property name="caption" type="String">Triad Wars AB 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWAB2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC6543A5B">
-                    <Property name="caption" type="String">Triad Wars AB 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWAB3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xFB574D16">
-                    <Property name="caption" type="String">Triad Wars SH 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWSH1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF6146BCF">
-                    <Property name="caption" type="String">Triad Wars SH 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWSH2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF2D57678">
-                    <Property name="caption" type="String">Triad Wars SH 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_TWSH3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x76831EF8">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">FAVOURS (DEBUG)</Property>
-            <Property name="numSlots" type="String">6</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x9AE140">
-                    <Property name="caption" type="String">Cheap Jack Serenade</Property>
-                    <Property name="dependant" type="String">gameSetupGame_F_CJS</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA5E3ED1E">
-                    <Property name="caption" type="String">Collect Insurance 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CI</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA8A0CBC7">
-                    <Property name="caption" type="String">Collect Insurance 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_CI2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xCCA94133">
-                    <Property name="caption" type="String">Cop Draw</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_CD</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x93BCEC9F">
-                    <Property name="caption" type="String">Cop Pursuit 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_CP</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x4902D4B9">
-                    <Property name="caption" type="String">Cop Pursuit 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_CP2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x4902D4B9">
-                    <Property name="caption" type="String">Cop Pursuit 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_CP3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x964EB7B2">
-                    <Property name="caption" type="String">Fight Club 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_FightClub1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x9B0D916B">
-                    <Property name="caption" type="String">Fight Club 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_FightClub2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x9FCC8CDC">
-                    <Property name="caption" type="String">Fight Club 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_FightClub3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x818BDCD9">
-                    <Property name="caption" type="String">Fight Club 4</Property>
-                    <Property name="dependant" type="String">gameSetupGame_FightClub4</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x77F2C858">
-                    <Property name="caption" type="String">Follow Tiffany</Property>
-                    <Property name="dependant" type="String">gameSetupGame_F_FT</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x898D609A">
-                    <Property name="caption" type="String">Gambling Den</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_GD</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1B15DC1F">
-                    <Property name="caption" type="String">Gambling Den 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_GD2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x5D3C8F5F">
-                    <Property name="caption" type="String">Highway Mayhem</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HM</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA865242A">
-                    <Property name="caption" type="String">Highway Mayhem 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HM2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC643A33A">
-                    <Property name="caption" type="String">Ilyana Free Running</Property>
-                    <Property name="dependant" type="String">gameSetupGame_F_IFR</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x99D26839">
-                    <Property name="caption" type="String">Not Ping Hacking</Property>
-                    <Property name="dependant" type="String">gameSetupGame_F_CH</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x5339C0FE">
-                    <Property name="caption" type="String">Photographing Amanda</Property>
-                    <Property name="dependant" type="String">gameSetupGame_F_AP</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x106CFF76">
-                    <Property name="caption" type="String">Rope a Dope</Property>
-                    <Property name="dependant" type="String">gameSetupGame_RAD</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xFD5EFB8E">
-                    <Property name="caption" type="String">Rope a Dope 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_RAD2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF99FE639">
-                    <Property name="caption" type="String">Rope a Dope 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_RAD3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF106285F">
-                    <Property name="caption" type="String">Pied Piper 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_PP</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x56E1E940">
-                    <Property name="caption" type="String">Pied Piper 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_PP2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8BFFE191">
-                    <Property name="caption" type="String">Cheaters Never Prosper</Property>
-                    <Property name="dependant" type="String">gameSetupGame_RI</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x32D8FB31">
-                    <Property name="caption" type="String">Cheaters Never Prosper 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_F_CNP2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3619E686">
-                    <Property name="caption" type="String">Cheaters Never Prosper 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_F_CNP3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x95B8B194">
-                    <Property name="caption" type="String">Rough Neighborhood</Property>
-                    <Property name="dependant" type="String">gameSetupGame_RN</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x57D9920B">
-                    <Property name="caption" type="String">Rough Neighborhood 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_RN2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xEED9E33B">
-                    <Property name="caption" type="String">Sandra Speed</Property>
-                    <Property name="dependant" type="String">gameSetupGame_F_SS</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x497102C1">
-                    <Property name="caption" type="String">Sewer Line</Property>
-                    <Property name="dependant" type="String">gameSetupGame_SL1</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xBE3C0A31">
-                    <Property name="caption" type="String">Sewer Line 3</Property>
-                    <Property name="dependant" type="String">gameSetupGame_SL3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA07B5A34">
-                    <Property name="caption" type="String">Sewer Line 4</Property>
-                    <Property name="dependant" type="String">gameSetupGame_SL4</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x74639B5B">
-                    <Property name="caption" type="String">Showoff 1</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_SO2</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x70A286EC">
-                    <Property name="caption" type="String">Showoff 2</Property>
-                    <Property name="dependant" type="String">gameSetupGame_E_SO3</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA27D4BBD">
-                    <Property name="caption" type="String">Red-Handed Tiffany</Property>
-                    <Property name="dependant" type="String">gameSetupGame_F_RHT</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xD9169D41">
-                    <Property name="caption" type="String">Tiffany's Song</Property>
-                    <Property name="dependant" type="String">gameSetupGame_F_TS</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x67D40942">
-                    <Property name="caption" type="String">Ting's T-Shirt</Property>
-                    <Property name="dependant" type="String">gameSetupGame_F_TTS</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8D563E11">
-                    <Property name="caption" type="String">Truck Recovery</Property>
-                    <Property name="dependant" type="String">gameSetupGame_HI</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xC624E0ED">
-            <Property name="caption" type="String">HELP (DEBUG)</Property>
-            <Property name="numSlots" type="String">1</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0xF1BEBCC3">
-                    <Property name="caption" type="String">$OPTIONS_CONTROLS</Property>
-                    <Property name="operation" type="String">controllers</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x9E983072">
-            <Property name="caption" type="String">CREDITS (DEBUG)</Property>
-            <Property name="operation" type="String">credits</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6E1905BD">
-            <Property name="caption" type="String">Text Lang (DEBUG)</Property>
-            <Property name="operation" type="String">debug_language_list</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD9A7DF74">
-            <Property name="caption" type="String">Infocasting (DEBUG)</Property>
-            <Property name="numSlots" type="String">3</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0xE59A217D">
-                    <Property name="caption" type="String">Load Offline Infocast</Property>
-                    <Property name="operation" type="String">loadofflineinfocast</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x2928BFC7">
-                    <Property name="caption" type="String">Load Staging Infocast</Property>
-                    <Property name="operation" type="String">loadstaginginfocast</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xAF2CF859">
-                    <Property name="caption" type="String">Load Active Infocast</Property>
-                    <Property name="operation" type="String">loadactiveinfocast</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x2B05CB34">
-            <Property name="caption" type="String">REPLAYABLE (DEBUG)</Property>
-            <Property name="numSlots" type="String">6</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0xD5A3235A">
-                    <Property name="caption" type="String">Stickup</Property>
-                    <Property name="dependant" type="String">gameSetupGame_RP_M_SU</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x7B5D6846">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">TEST LEVELS (DEBUG)</Property>
-            <Property name="numSlots" type="String">4</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x9F742D5D">
-                    <Property name="caption" type="String">Audio Sandbox</Property>
-                    <Property name="dependant" type="String">gameSetupHKAudioSandbox</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3712B1C9">
-                    <Property name="caption" type="String">Art Sandbox</Property>
-                    <Property name="dependant" type="String">gameSetupHK_ArtSandbox</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xC11B0003">
-                    <Property name="caption" type="String">ChrisLTest</Property>
-                    <Property name="dependant" type="String">gameSetupChrisLTest</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x33D3AC7E">
-                    <Property name="caption" type="String">HK Test</Property>
-                    <Property name="dependant" type="String">gameSetupHKTest</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3712B1C9">
-                    <Property name="caption" type="String">Game - Empty Flow</Property>
-                    <Property name="dependant" type="String">gameSetupGame_Empty</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x1510A1B1">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">Presentation Demo (DEBUG)</Property>
-            <Property name="numSlots" type="String">7</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x1A5DAA3A">
-                    <Property name="caption" type="String">Play</Property>
-                    <Property name="dependant" type="String">gameSetupGameDemo_NMC</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x9655EC86">
-                    <Property name="caption" type="String">Night Market Chase</Property>
-                    <Property name="dependant" type="String">gameSetupGameDemo_NMC</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1A5DAA3A">
-                    <Property name="caption" type="String">North Point</Property>
-                    <Property name="dependant" type="String">gameSetupDemoFlow</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF4860099">
-                    <Property name="caption" type="String">Mrs. Chu's Revenge</Property>
-                    <Property name="dependant" type="String">gameSetupGameDemo_MRC</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1E9CB78D">
-                    <Property name="caption" type="String">Central</Property>
-                    <Property name="dependant" type="String">gameSetupDemoCentral</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xEB707AA1">
-                    <Property name="caption" type="String">The Election</Property>
-                    <Property name="dependant" type="String">gameSetupGameDemo_MTE</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xFC017E72">
-                    <Property name="caption" type="String">Fast Girls</Property>
-                    <Property name="dependant" type="String">gameSetupGameDemo_FGI</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0xE57C93F3">
-            <Property name="0x5A1922A7" type="Symbol"/>
-            <Property name="caption" type="String">Consumer Demo (DEBUG)</Property>
-            <Property name="numSlots" type="String">2</Property>
-            <Property name="submenu" type="List">
-                <ListProperty nameUID="0x1A5DAA3A">
-                    <Property name="caption" type="String">Play</Property>
-                    <Property name="dependant" type="String">gameSetupGameDemo_NMC</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x1A5DAA3A">
-                    <Property name="caption" type="String">Meet the New Boss</Property>
-                    <Property name="dependant" type="String">gameSetupGameDemo_TNB</Property>
-                    <Property name="operation" type="String">loadfreeroam</Property>
-                </ListProperty>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="numSlots" type="String">7</Property>
-</PropertySet>
+<PropertySetResource name="UI-MainMenu" nameUID="0xA73E82ED">
+	<!-- Properties -->
+	<Property name="items" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="UI_MainSubmenu1_1" nameUID="0x171E8CE3">
+				<!-- Properties -->
+				<Property name="operation" type="String">memcard_continue</Property>
+				<Property name="caption" type="String">$PAUSE_CONTINUE_GAME</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xD53AB293">
+				<!-- Properties -->
+				<Property name="operation" type="String">flow_main_story</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">$DLC_MAIN_STORY_CAMPAIGN</Property>
+				<Property name="dependant" type="String">gameSetupGame_WTHK</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x3A693E0">
+				<!-- Properties -->
+				<Property name="operation" type="String">flow_ghost</Property>
+				<Property name="flow" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="caption" type="String">$DLC_GHOST_CAMPAIGN</Property>
+				<Property name="dependant" type="String">gameSetupGameGhost_Start</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x1941A3B0">
+				<!-- Properties -->
+				<Property name="operation" type="String">flow_cny</Property>
+				<Property name="flow" type="Symbol" symUID="0x5703AF69">DLC_CNY</Property>
+				<Property name="caption" type="String">$DLC_CNY_TITLE</Property>
+				<Property name="dependant" type="String">gameSetupGameCNY_Start</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x2C62CEB7">
+				<!-- Properties -->
+				<Property name="operation" type="String">durangohelp</Property>
+				<Property name="caption" type="String">$DURANGO_HELP</Property>
+				<Property name="platform" type="String">durango</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MainMenu-Options" nameUID="0x4FF866F2">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">4</Property>
+				<Property name="caption" type="String">$PAUSE_OPTIONS_UPPERCASE</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_PauseMenu3_1_Audio" nameUID="0x3D450B35">
+							<!-- Properties -->
+							<Property name="operation" type="String">screenpush</Property>
+							<Property name="caption" type="String">$OPTIONS_AUDIO</Property>
+							<Property name="dependant" type="String">Options_Audio</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xBB113E37">
+							<!-- Properties -->
+							<Property name="operation" type="String">screenpush</Property>
+							<Property name="caption" type="String">$OPTIONS_DISPLAY</Property>
+							<Property name="dependant" type="String">Options_Display</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_PauseMenu3_3_Game" nameUID="0x3A35C79C">
+							<!-- Properties -->
+							<Property name="operation" type="String">screenpush</Property>
+							<Property name="caption" type="String">$OPTIONS_GAME</Property>
+							<Property name="dependant" type="String">Options_Game</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_PauseMenu3_4_Controls" nameUID="0x3E1CF46F">
+							<!-- Properties -->
+							<Property name="operation" type="String">controllers</Property>
+							<Property name="caption" type="String">$OPTIONS_CONTROLS_ORBIS</Property>
+							<Property name="platform" type="String">orbis</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_PauseMenu3_4_Controls" nameUID="0x3E1CF46F">
+							<!-- Properties -->
+							<Property name="operation" type="String">controllers</Property>
+							<Property name="caption" type="String">$OPTIONS_CONTROLS</Property>
+							<Property name="platform" type="String">pc</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_PauseMenu3_4_Controls" nameUID="0x3E1CF46F">
+							<!-- Properties -->
+							<Property name="operation" type="String">controllers</Property>
+							<Property name="caption" type="String">$OPTIONS_CONTROLS</Property>
+							<Property name="platform" type="String">durango</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MainMenu-Credits" nameUID="0x9E983072">
+				<!-- Properties -->
+				<Property name="operation" type="String">credits</Property>
+				<Property name="caption" type="String">$CREDITS</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MainMenu-Exit" nameUID="0xE9A8A2F">
+				<!-- Properties -->
+				<Property name="operation" type="String">exit</Property>
+				<Property name="caption" type="String">$PAUSE_EXIT_GAME</Property>
+				<Property name="platform" type="String">pc</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x315FA0CC">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">3</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">STORY (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu1_1" nameUID="0x171E8CE3">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">$PAUSE_NEW_GAME</Property>
+							<Property name="dependant" type="String">gameSetupGame_WTHK</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu1_2" nameUID="0x1A5DAA3A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Open World (Debug)</Property>
+							<Property name="dependant" type="String">gameSetupGame_MB</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu1_3" nameUID="0x1E9CB78D">
+							<!-- Properties -->
+							<Property name="operation" type="String">memcard_load</Property>
+							<Property name="caption" type="String">$PAUSE_MENU_LOAD</Property>
+							<Property name="dependant" type="String"/>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDBE788">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">$PAUSE_MENU_SCENARIOS</Property>
+							<Property name="dependant" type="String">gameSetupGame_BSL</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x3A693E0">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">3</Property>
+				<Property name="flow" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="caption" type="String">NIGHTMARE FLOW (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8DADA5AC">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">$PAUSE_NEW_GAME</Property>
+							<Property name="dependant" type="String">gameSetupGameGhost_Start</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8DADA5AC">
+							<!-- Properties -->
+							<Property name="operation" type="String">memcard_continue_ghost</Property>
+							<Property name="caption" type="String">$PAUSE_CONTINUE_GAME</Property>
+							<Property name="dependant" type="String">gameSetupGameGhost_SaveGame</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8E1CFCA2">
+							<!-- Properties -->
+							<Property name="operation" type="String">memcard_load_ghost</Property>
+							<Property name="caption" type="String">$PAUSE_MENU_LOAD</Property>
+							<Property name="dependant" type="String">gameSetupGameGhost_SaveGame</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x1941A3B0">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">3</Property>
+				<Property name="flow" type="Symbol" symUID="0x5703AF69">DLC_CNY</Property>
+				<Property name="caption" type="String">NEW YEAR FLOW (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8DADA5AC">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">$PAUSE_NEW_GAME</Property>
+							<Property name="dependant" type="String">gameSetupGameCNY_Start</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8DADA5AC">
+							<!-- Properties -->
+							<Property name="operation" type="String">memcard_continue_cny</Property>
+							<Property name="caption" type="String">$PAUSE_CONTINUE_GAME</Property>
+							<Property name="dependant" type="String">gameSetupGameCNY_SaveGame</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8E1CFCA2">
+							<!-- Properties -->
+							<Property name="operation" type="String">memcard_load_cny</Property>
+							<Property name="caption" type="String">$PAUSE_MENU_LOAD</Property>
+							<Property name="dependant" type="String">gameSetupGameCNY_SaveGame</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xA9ED4D4C">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">6</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">MISSIONS (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDFCDCBF8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Main Demo</Property>
+							<Property name="dependant" type="String">gameSetupGame_SU</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDFCDCBF8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Welcome to HK</Property>
+							<Property name="dependant" type="String">gameSetupGame_WTHK</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDFCDCBF8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Going Under</Property>
+							<Property name="dependant" type="String">gameSetupGame_GU</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDFCDCBF8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Vendor Extortion</Property>
+							<Property name="dependant" type="String">gameSetupGame_VE</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDFCDCBF8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Night Market Chase</Property>
+							<Property name="dependant" type="String">gameSetupGame_NMC</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu1_2" nameUID="0x1A5DAA3A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">(debug) 1st Time Open World</Property>
+							<Property name="dependant" type="String">gameSetupGame_OpenWorld</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC49E66A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Amanda</Property>
+							<Property name="dependant" type="String">gameSetupGame_AM</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x547E9FDE">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Martial Arts School</Property>
+							<Property name="dependant" type="String">gameSetupGame_MAS</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDFCDCBF8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Stick Up &amp; Delivery</Property>
+							<Property name="dependant" type="String">gameSetupGame_SU</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDFCDCBF8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Minibus</Property>
+							<Property name="dependant" type="String">gameSetupGame_MB</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDFCDCBF8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Bam Bam</Property>
+							<Property name="dependant" type="String">gameSetupGame_BBC</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xED5A72F4">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Checking In 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_CK1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDFCDCBF8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Pendrew&apos;s Bugs</Property>
+							<Property name="dependant" type="String">gameSetupGame_RTNC</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xF0471D2E">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: Tiffany&apos;s Gun</Property>
+							<Property name="dependant" type="String">gameSetupGame_TG</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDFCDCBF8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 1: SweatShop</Property>
+							<Property name="dependant" type="String">gameSetupGame_SS</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC54B864A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: Uncle Po</Property>
+							<Property name="dependant" type="String">gameSetupGame_UNP</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x4F851ACE">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: Bride to Be</Property>
+							<Property name="dependant" type="String">gameSetupGame_BTB</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xE019542D">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: Checking In 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_CK2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xCFF9857D">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: Wedding</Property>
+							<Property name="dependant" type="String">gameSetupGame_WED</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x460721A0">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: Mrs. Chu&apos;s Revenge</Property>
+							<Property name="dependant" type="String">gameSetupGame_MCR</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xF4860099">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: The New Boss</Property>
+							<Property name="dependant" type="String">gameSetupGame_TNB</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDFCDCBF8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: Top Glamour</Property>
+							<Property name="dependant" type="String">gameSetupGame_TGA</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xE4D8499A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: Checking In 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_CK3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x806F8BB9">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: Final Kill</Property>
+							<Property name="dependant" type="String">gameSetupGame_FK</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC18A9BFD">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: Initiation</Property>
+							<Property name="dependant" type="String">gameSetupGame_INI</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xFE5E0428">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: Checking In 5</Property>
+							<Property name="dependant" type="String">gameSetupGame_CK5</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC808A093">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 2: Jackie Arrested</Property>
+							<Property name="dependant" type="String">gameSetupGame_JAR</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x42C63C17">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 3: The Bosses Meet</Property>
+							<Property name="dependant" type="String">gameSetupGame_HS</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xFA9F199F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 3: Checking In 4</Property>
+							<Property name="dependant" type="String">gameSetupGame_CK4</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xCCC9BD24">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 3: Important Visitor</Property>
+							<Property name="dependant" type="String">gameSetupGame_IV</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x76F78DD7">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 3: Fast Girls</Property>
+							<Property name="dependant" type="String">gameSetupGame_FGI</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1CB76A5F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 3: Bad Luck</Property>
+							<Property name="dependant" type="String">gameSetupGame_BL</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x4B440779">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 3: The Big Hit</Property>
+							<Property name="dependant" type="String">gameSetupGame_TBH</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x58E92DB4">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 3: The Funeral</Property>
+							<Property name="dependant" type="String">gameSetupGame_FU</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8BD43493">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 3: Civil Discord</Property>
+							<Property name="dependant" type="String">gameSetupGame_MCD</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xB4BE8A07">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 3: Buried Alive</Property>
+							<Property name="dependant" type="String">gameSetupGame_MBA</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xEB707AA1">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 3: The Election</Property>
+							<Property name="dependant" type="String">gameSetupGame_MTE</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDB0CD64F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ACT 3: Big Smile Lee</Property>
+							<Property name="dependant" type="String">gameSetupGame_BSL</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xE0939457">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">6</Property>
+				<Property name="flow" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="caption" type="String">Nightmare Missions (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">1. Big Trouble</Property>
+							<Property name="dependant" type="String">gameSetupGame_HGF_BT</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1498CE02">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">2. Chinese Magic</Property>
+							<Property name="dependant" type="String">gameSetupGame_HGF_CM</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1059D3B5">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">3. Happy Cat&apos;s Army</Property>
+							<Property name="dependant" type="String">gameSetupGame_HGF_HCA</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xE1E83B0">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">4a. Clean Out the Rats</Property>
+							<Property name="dependant" type="String">gameSetupGame_HGF_COTR</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xADF9E07">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">4b. Revenge X2</Property>
+							<Property name="dependant" type="String">gameSetupGame_HGF_RX2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x79CB8DE">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">4c. Ghosts of the Past</Property>
+							<Property name="dependant" type="String">gameSetupGame_HGF_GOTP</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x35DA569">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">5. Happy Cat</Property>
+							<Property name="dependant" type="String">gameSetupGame_HGF_HC</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x46A4E85A">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">6</Property>
+				<Property name="flow" type="Symbol" symUID="0x5703AF69">DLC_CNY</Property>
+				<Property name="caption" type="String">New Year Missions (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Start (End of the World)</Property>
+							<Property name="dependant" type="String">gameSetupGameCNY_Start</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Illumination</Property>
+							<Property name="dependant" type="String">gameSetupGame_M_CNY_ILL</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Bomb Threats</Property>
+							<Property name="dependant" type="String">gameSetupGame_M_CNY_BS1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Transit Security</Property>
+							<Property name="dependant" type="String">gameSetupGame_M_CNY_TB1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cease Operations</Property>
+							<Property name="dependant" type="String">gameSetupGame_M_CNY_HOS</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">SDU: Soho Riot</Property>
+							<Property name="dependant" type="String">gameSetupGame_M_CNY_SDUR</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">SDU: Nerve Gas</Property>
+							<Property name="dependant" type="String">gameSetupGame_M_CNY_SDUV</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">SDU: Park/Dockyard</Property>
+							<Property name="dependant" type="String">gameSetupGame_M_CNY_SDUS1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">New Years Eve</Property>
+							<Property name="dependant" type="String">gameSetupGame_M_CNY_NYE</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x1CE80AC6">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">6</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">Zodiac Missions (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">0. Unlocker</Property>
+							<Property name="dependant" type="String">gameSetupGame_ZI_Unlocker</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">1. Welcome to Zodiac Island</Property>
+							<Property name="dependant" type="String">gameSetupGame_ZI_WTZ</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1498CE02">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">2. Trial by Fire</Property>
+							<Property name="dependant" type="String">gameSetupGame_ZI_TBF</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1059D3B5">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">3. Cliffhanger</Property>
+							<Property name="dependant" type="String">gameSetupGame_ZI_CH</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1059D3B5">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">4. Helping Hand</Property>
+							<Property name="dependant" type="String">gameSetupGame_ZI_HH</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xE1E83B0">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">5. Last Man Standing</Property>
+							<Property name="dependant" type="String">gameSetupGame_ZI_LMS</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xADF9E07">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">6. Endgame</Property>
+							<Property name="dependant" type="String">gameSetupGame_ZI_EG</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xADF9E07">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">After Endgame (Freeroam)</Property>
+							<Property name="dependant" type="String">gameSetupGame_ZI_AEG</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xEB219989">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">5</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">Transportation Terror Missions (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x19DBE8DB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">1. Convoy</Property>
+							<Property name="dependant" type="String">gameSetupGame_JAR</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1498CE02">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">2. EMP</Property>
+							<Property name="dependant" type="String">gameSetupGame_TT_EMP</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1059D3B5">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">3. Cruise Control</Property>
+							<Property name="dependant" type="String">gameSetupGame_TT_CC</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xE1E83B0">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">4. Rescue Tang</Property>
+							<Property name="dependant" type="String">gameSetupGame_TT_RT</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xE1E83B0">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">5. Death Race</Property>
+							<Property name="dependant" type="String">gameSetupGame_TT_DR</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xA686E5AE">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">6</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">JOBS (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x601801CD">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cop Jobs - Drug Run 01 (DLC)</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_CJ_DR_01</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x6D5B2714">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cop Jobs - Drug Run 02 (DLC)</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_CJ_DR_02</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x699A3AA3">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cop Jobs - Drug Run 03 (DLC)</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_CJ_DR_03</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x77DD6AA6">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cop Jobs - Drug Run 04 (DLC)</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_CJ_DR_04</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x731C7711">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cop Jobs - Drug Run 05 (DLC)</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_CJ_DR_05</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x7E5F51C8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cop Jobs - Drug Run 06 (DLC)</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_CJ_DR_06</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x7A9E4C7F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cop Jobs - Drug Run 07 (DLC)</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_CJ_DR_07</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x5EB63497">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Debt C. 1(PDA Roland)</Property>
+							<Property name="dependant" type="String">gameSetupGame_DC1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x53F5124E">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Debt C. 2(PDA Roland)</Property>
+							<Property name="dependant" type="String">gameSetupGame_DC2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x57340FF9">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Debt C. 3(PDA Roland)</Property>
+							<Property name="dependant" type="String">gameSetupGame_DC3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x49735FFC">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Debt C. 4(PDA Roland)</Property>
+							<Property name="dependant" type="String">gameSetupGame_DC4</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x4DB2424B">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Debt C. 5(PDA Roland)</Property>
+							<Property name="dependant" type="String">gameSetupGame_DC5</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xB3BFEB2D">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - 425</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xBEFCCDF4">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Basi</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xBA3DD043">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Drifter</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA47A8046">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - 600 Coupe</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD4</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA0BB9DF1">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Klienod</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD5</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xADF8BB28">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Gopher</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD6</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA939A69F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Takai</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD7</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x91761B22">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Taxi</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD8</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x95B70695">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Enterprise</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD9</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDBA4EB37">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Bismarck</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD10</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xDF65F680">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - RidgeSport</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD11</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xD226D059">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Hassha</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD12</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xD6E7CDEE">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Wangan GSX</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD13</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC8A09DEB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Limo</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD14</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xCC61805C">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Terre</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD15</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC122A685">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Lowin</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD16</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC5E3BB32">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Blast</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD17</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xFDAC068F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Tuono</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD18</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xF96D1B38">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Etalon</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD19</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA94FB4E4">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tran (PDA Tran) - Velocita</Property>
+							<Property name="dependant" type="String">gameSetupGame_J_TD20</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x2E6DD9CB">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">6</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">RACES (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x4EE9E957">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Car: Water Street NP_03</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_NP_03</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xB66FFB51">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Car: Detour AB_01</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_AB_01</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xBB2CDD88">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Car: Lost AB_02</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_AB_02</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1ECD5BED">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Car: Midtown CT_02</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_CT_02</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8A0BE8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Car: Mailman CT_05</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_CT_05</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1A0C465A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Car: Wall Street CT_03</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_CT_03</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x546FA4E5">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Car: Crippling Road NP_05</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_NP_05</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x592C823C">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Car: No Sweat NP_06</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_NP_06</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC556A15F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Car: Unconventional CT_10</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_CT_10</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8813FDEA">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Car: Summit VP_02</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_VP_02</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8550DB33">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Car: The Queen VP_01</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_VP_01</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x5F245CEB">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Bike: Dock Yard KT_02</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_KT_02</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x4A28F4E0">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Bike: Alley Press NP_02</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_NP_02</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x3586908C">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Bike: Early Grave CT_09</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_CT_09</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x31478D3B">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Bike: Starboard CT_08</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_CT_08</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA1AA903A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Bike: Indecision AB_04</Property>
+							<Property name="dependant" type="String">gameSetupGame_R_AB_04</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF938783A">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">6</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">CASES (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xAAD747C0">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Popstar Intro</Property>
+							<Property name="dependant" type="String">gameSetupGame_CasePS</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xAAD747C0">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Popstar Lead 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_CasePS1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xAE165A77">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Popstar Lead 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_CasePS2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xB0510A72">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Popstar Lead 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_CasePS3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x326B650E">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Hotshot Intro / Lead 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseR</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x3F2843D7">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Hotshot Lead 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseR2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x3BE95E60">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Hotshot Lead 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseR3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x25AE0E65">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Hotshot Lead 4</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseR4</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA4F62F18">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Kidnapper Intro</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseKNP</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA4F62F18">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Kidnapper Lead 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseKN_lead1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA9B509C1">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Kidnapper Lead 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseKN_lead2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xAD741476">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Kidnapper Lead 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseKN_lead3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xECCA6DC9">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Serial Killer Intro</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseSK</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xECCA6DC9">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Serial Killer Lead 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseSK1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xE1894B10">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Serial Killer Lead 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseSK2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xE54856A7">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Serial Killer Lead 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_CaseSK3</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x50A7A084">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">6</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">EVENTS (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xBCB0473F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Hit and Run 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_HNR1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xB1F361E6">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Hit and Run 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_HNR2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xB5327C51">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Hit and Run 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_HNR3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA61CD4E4">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Junk in the Trunk 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_JT1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x2ACDA942">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Junk in the Trunk 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_JT2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x2E0CB4F5">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Junk in the Trunk 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_JT3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x304BE4F0">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Junk in the Trunk 4</Property>
+							<Property name="dependant" type="String">gameSetupGame_JT4</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1C2C6880">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Shop Lifter</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_S</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x88C596EA">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Shop Lifter 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_S2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8C048B5D">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Shop Lifter 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_S3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x9243DB58">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Shop Lifter 4</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_S4</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8B99D1B7">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars NP 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWNP2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8F58CC00">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars NP 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWNP3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x911F9C05">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars Temple 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWNPT1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x95DE81B2">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars Temple 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWNPT2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x989DA76B">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars Temple 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWNPT3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x39E07C8E">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars CT 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWCT1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x34A35A57">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars CT 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWCT2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x306247E0">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars CT 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWCT3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x372518B6">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars KT 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWKT1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x3A663E6F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars KT 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWKT2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x3EA723D8">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars KT 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWKT3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xCFD60135">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars AB 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWAB1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC29527EC">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars AB 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWAB2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC6543A5B">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars AB 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWAB3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xFB574D16">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars SH 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWSH1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xF6146BCF">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars SH 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWSH2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xF2D57678">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Triad Wars SH 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_TWSH3</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x76831EF8">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">6</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">FAVOURS (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x9AE140">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cheap Jack Serenade</Property>
+							<Property name="dependant" type="String">gameSetupGame_F_CJS</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA5E3ED1E">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Collect Insurance 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_CI</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA8A0CBC7">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Collect Insurance 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_CI2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xCCA94133">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cop Draw</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_CD</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x93BCEC9F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cop Pursuit 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_CP</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x4902D4B9">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cop Pursuit 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_CP2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x4902D4B9">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cop Pursuit 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_CP3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x964EB7B2">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Fight Club 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_FightClub1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x9B0D916B">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Fight Club 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_FightClub2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x9FCC8CDC">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Fight Club 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_FightClub3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x818BDCD9">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Fight Club 4</Property>
+							<Property name="dependant" type="String">gameSetupGame_FightClub4</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x77F2C858">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Follow Tiffany</Property>
+							<Property name="dependant" type="String">gameSetupGame_F_FT</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x898D609A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Gambling Den</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_GD</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x1B15DC1F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Gambling Den 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_GD2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x5D3C8F5F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Highway Mayhem</Property>
+							<Property name="dependant" type="String">gameSetupGame_HM</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA865242A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Highway Mayhem 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_HM2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC643A33A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Ilyana Free Running</Property>
+							<Property name="dependant" type="String">gameSetupGame_F_IFR</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x99D26839">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Not Ping Hacking</Property>
+							<Property name="dependant" type="String">gameSetupGame_F_CH</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x5339C0FE">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Photographing Amanda</Property>
+							<Property name="dependant" type="String">gameSetupGame_F_AP</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x106CFF76">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Rope a Dope</Property>
+							<Property name="dependant" type="String">gameSetupGame_RAD</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xFD5EFB8E">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Rope a Dope 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_RAD2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xF99FE639">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Rope a Dope 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_RAD3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xF106285F">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Pied Piper 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_PP</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x56E1E940">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Pied Piper 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_PP2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8BFFE191">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cheaters Never Prosper</Property>
+							<Property name="dependant" type="String">gameSetupGame_RI</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x32D8FB31">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cheaters Never Prosper 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_F_CNP2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x3619E686">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Cheaters Never Prosper 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_F_CNP3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x95B8B194">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Rough Neighborhood</Property>
+							<Property name="dependant" type="String">gameSetupGame_RN</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x57D9920B">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Rough Neighborhood 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_RN2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xEED9E33B">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Sandra Speed</Property>
+							<Property name="dependant" type="String">gameSetupGame_F_SS</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x497102C1">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Sewer Line</Property>
+							<Property name="dependant" type="String">gameSetupGame_SL1</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xBE3C0A31">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Sewer Line 3</Property>
+							<Property name="dependant" type="String">gameSetupGame_SL3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA07B5A34">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Sewer Line 4</Property>
+							<Property name="dependant" type="String">gameSetupGame_SL4</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x74639B5B">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Showoff 1</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_SO2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x70A286EC">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Showoff 2</Property>
+							<Property name="dependant" type="String">gameSetupGame_E_SO3</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xA27D4BBD">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Red-Handed Tiffany</Property>
+							<Property name="dependant" type="String">gameSetupGame_F_RHT</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xD9169D41">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Tiffany&apos;s Song</Property>
+							<Property name="dependant" type="String">gameSetupGame_F_TS</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x67D40942">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Ting&apos;s T-Shirt</Property>
+							<Property name="dependant" type="String">gameSetupGame_F_TTS</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x8D563E11">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Truck Recovery</Property>
+							<Property name="dependant" type="String">gameSetupGame_HI</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MainMenu-Help" nameUID="0xC624E0ED">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">1</Property>
+				<Property name="caption" type="String">HELP (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_PauseMenu3_3_Controllers" nameUID="0xF1BEBCC3">
+							<!-- Properties -->
+							<Property name="operation" type="String">controllers</Property>
+							<Property name="caption" type="String">$OPTIONS_CONTROLS</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MainMenu-Credits" nameUID="0x9E983072">
+				<!-- Properties -->
+				<Property name="operation" type="String">credits</Property>
+				<Property name="caption" type="String">CREDITS (DEBUG)</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MainMenu-ChangeLanguage" nameUID="0x6E1905BD">
+				<!-- Properties -->
+				<Property name="operation" type="String">debug_language_list</Property>
+				<Property name="caption" type="String">Text Lang (DEBUG)</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xD9A7DF74">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">3</Property>
+				<Property name="caption" type="String">Infocasting (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xE59A217D">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadofflineinfocast</Property>
+							<Property name="caption" type="String">Load Offline Infocast</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x2928BFC7">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadstaginginfocast</Property>
+							<Property name="caption" type="String">Load Staging Infocast</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xAF2CF859">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadactiveinfocast</Property>
+							<Property name="caption" type="String">Load Active Infocast</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x2B05CB34">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">6</Property>
+				<Property name="caption" type="String">REPLAYABLE (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xD5A3235A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Stickup</Property>
+							<Property name="dependant" type="String">gameSetupGame_RP_M_SU</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-MainMenu-Debug 3" nameUID="0x7B5D6846">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">4</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">TEST LEVELS (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu5_22" nameUID="0x9F742D5D">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Audio Sandbox</Property>
+							<Property name="dependant" type="String">gameSetupHKAudioSandbox</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu_6_1c" nameUID="0x3712B1C9">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Art Sandbox</Property>
+							<Property name="dependant" type="String">gameSetupHK_ArtSandbox</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xC11B0003">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">ChrisLTest</Property>
+							<Property name="dependant" type="String">gameSetupChrisLTest</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x33D3AC7E">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">HK Test</Property>
+							<Property name="dependant" type="String">gameSetupHKTest</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu_6_1c" nameUID="0x3712B1C9">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Game - Empty Flow</Property>
+							<Property name="dependant" type="String">gameSetupGame_Empty</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x1510A1B1">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">7</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">Presentation Demo (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu1_2" nameUID="0x1A5DAA3A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Play</Property>
+							<Property name="dependant" type="String">gameSetupGameDemo_NMC</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0x9655EC86">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Night Market Chase</Property>
+							<Property name="dependant" type="String">gameSetupGameDemo_NMC</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu1_2" nameUID="0x1A5DAA3A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">North Point</Property>
+							<Property name="dependant" type="String">gameSetupDemoFlow</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xF4860099">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Mrs. Chu&apos;s Revenge</Property>
+							<Property name="dependant" type="String">gameSetupGameDemo_MRC</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu1_3" nameUID="0x1E9CB78D">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Central</Property>
+							<Property name="dependant" type="String">gameSetupDemoCentral</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xEB707AA1">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">The Election</Property>
+							<Property name="dependant" type="String">gameSetupGameDemo_MTE</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet nameUID="0xFC017E72">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Fast Girls</Property>
+							<Property name="dependant" type="String">gameSetupGameDemo_FGI</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xE57C93F3">
+				<!-- Properties -->
+				<Property name="numSlots" type="String">2</Property>
+				<Property name="flow" type="Symbol" symUID="0xAA1CA048">Main</Property>
+				<Property name="caption" type="String">Consumer Demo (DEBUG)</Property>
+				<Property name="submenu" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu1_2" nameUID="0x1A5DAA3A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Play</Property>
+							<Property name="dependant" type="String">gameSetupGameDemo_NMC</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="UI_MainSubmenu1_2" nameUID="0x1A5DAA3A">
+							<!-- Properties -->
+							<Property name="operation" type="String">loadfreeroam</Property>
+							<Property name="caption" type="String">Meet the New Boss</Property>
+							<Property name="dependant" type="String">gameSetupGameDemo_TNB</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="numSlots" type="String">7</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x8A0BE8 (Normal) -->
+<!-- 0x9AE140 (Normal) -->
+<!-- 0xDBE788 (Normal) -->
+<!-- 0x35DA569 (Normal) -->
+<!-- 0x3A693E0 (Normal) -->
+<!-- 0x79CB8DE (Normal) -->
+<!-- 0xADF9E07 (Normal) -->
+<!-- 0xC49E66A (Normal) -->
+<!-- 0xE1E83B0 (Normal) -->
+<!-- 0x1059D3B5 (Normal) -->
+<!-- 0x106CFF76 (Normal) -->
+<!-- 0x1498CE02 (Normal) -->
+<!-- 0x1510A1B1 (Normal) -->
+<!-- 0x1941A3B0 (Normal) -->
+<!-- 0x19DBE8DB (Normal) -->
+<!-- 0x1A0C465A (Normal) -->
+<!-- 0x1B15DC1F (Normal) -->
+<!-- 0x1C2C6880 (Normal) -->
+<!-- 0x1CB76A5F (Normal) -->
+<!-- 0x1CE80AC6 (Normal) -->
+<!-- 0x1ECD5BED (Normal) -->
+<!-- 0x25AE0E65 (Normal) -->
+<!-- 0x2928BFC7 (Normal) -->
+<!-- 0x2ACDA942 (Normal) -->
+<!-- 0x2B05CB34 (Normal) -->
+<!-- 0x2C62CEB7 (Normal) -->
+<!-- 0x2E0CB4F5 (Normal) -->
+<!-- 0x2E6DD9CB (Normal) -->
+<!-- 0x304BE4F0 (Normal) -->
+<!-- 0x306247E0 (Normal) -->
+<!-- 0x31478D3B (Normal) -->
+<!-- 0x315FA0CC (Normal) -->
+<!-- 0x326B650E (Normal) -->
+<!-- 0x32D8FB31 (Normal) -->
+<!-- 0x33D3AC7E (Normal) -->
+<!-- 0x34A35A57 (Normal) -->
+<!-- 0x3586908C (Normal) -->
+<!-- 0x3619E686 (Normal) -->
+<!-- 0x372518B6 (Normal) -->
+<!-- 0x39E07C8E (Normal) -->
+<!-- 0x3A663E6F (Normal) -->
+<!-- 0x3BE95E60 (Normal) -->
+<!-- 0x3EA723D8 (Normal) -->
+<!-- 0x3F2843D7 (Normal) -->
+<!-- 0x42C63C17 (Normal) -->
+<!-- 0x460721A0 (Normal) -->
+<!-- 0x46A4E85A (Normal) -->
+<!-- 0x4902D4B9 (Normal) -->
+<!-- 0x497102C1 (Normal) -->
+<!-- 0x49735FFC (Normal) -->
+<!-- 0x4A28F4E0 (Normal) -->
+<!-- 0x4B440779 (Normal) -->
+<!-- 0x4DB2424B (Normal) -->
+<!-- 0x4EE9E957 (Normal) -->
+<!-- 0x4F851ACE (Normal) -->
+<!-- 0x50A7A084 (Normal) -->
+<!-- 0x5339C0FE (Normal) -->
+<!-- 0x53F5124E (Normal) -->
+<!-- 0x546FA4E5 (Normal) -->
+<!-- 0x547E9FDE (Normal) -->
+<!-- 0x56E1E940 (Normal) -->
+<!-- 0x57340FF9 (Normal) -->
+<!-- 0x57D9920B (Normal) -->
+<!-- 0x58E92DB4 (Normal) -->
+<!-- 0x592C823C (Normal) -->
+<!-- 0x5D3C8F5F (Normal) -->
+<!-- 0x5EB63497 (Normal) -->
+<!-- 0x5F245CEB (Normal) -->
+<!-- 0x601801CD (Normal) -->
+<!-- 0x67D40942 (Normal) -->
+<!-- 0x699A3AA3 (Normal) -->
+<!-- 0x6D5B2714 (Normal) -->
+<!-- 0x70A286EC (Normal) -->
+<!-- 0x731C7711 (Normal) -->
+<!-- 0x74639B5B (Normal) -->
+<!-- 0x76831EF8 (Normal) -->
+<!-- 0x76F78DD7 (Normal) -->
+<!-- 0x77DD6AA6 (Normal) -->
+<!-- 0x77F2C858 (Normal) -->
+<!-- 0x7A9E4C7F (Normal) -->
+<!-- 0x7E5F51C8 (Normal) -->
+<!-- 0x806F8BB9 (Normal) -->
+<!-- 0x818BDCD9 (Normal) -->
+<!-- 0x8550DB33 (Normal) -->
+<!-- 0x8813FDEA (Normal) -->
+<!-- 0x88C596EA (Normal) -->
+<!-- 0x898D609A (Normal) -->
+<!-- 0x8B99D1B7 (Normal) -->
+<!-- 0x8BD43493 (Normal) -->
+<!-- 0x8BFFE191 (Normal) -->
+<!-- 0x8C048B5D (Normal) -->
+<!-- 0x8D563E11 (Normal) -->
+<!-- 0x8DADA5AC (Normal) -->
+<!-- 0x8E1CFCA2 (Normal) -->
+<!-- 0x8F58CC00 (Normal) -->
+<!-- 0x911F9C05 (Normal) -->
+<!-- 0x91761B22 (Normal) -->
+<!-- 0x9243DB58 (Normal) -->
+<!-- 0x93BCEC9F (Normal) -->
+<!-- 0x95B70695 (Normal) -->
+<!-- 0x95B8B194 (Normal) -->
+<!-- 0x95DE81B2 (Normal) -->
+<!-- 0x964EB7B2 (Normal) -->
+<!-- 0x9655EC86 (Normal) -->
+<!-- 0x989DA76B (Normal) -->
+<!-- 0x99D26839 (Normal) -->
+<!-- 0x9B0D916B (Normal) -->
+<!-- 0x9FCC8CDC (Normal) -->
+<!-- 0xA07B5A34 (Normal) -->
+<!-- 0xA0BB9DF1 (Normal) -->
+<!-- 0xA1AA903A (Normal) -->
+<!-- 0xA27D4BBD (Normal) -->
+<!-- 0xA47A8046 (Normal) -->
+<!-- 0xA4F62F18 (Normal) -->
+<!-- 0xA5E3ED1E (Normal) -->
+<!-- 0xA61CD4E4 (Normal) -->
+<!-- 0xA686E5AE (Normal) -->
+<!-- 0xA865242A (Normal) -->
+<!-- 0xA8A0CBC7 (Normal) -->
+<!-- 0xA939A69F (Normal) -->
+<!-- 0xA94FB4E4 (Normal) -->
+<!-- 0xA9B509C1 (Normal) -->
+<!-- 0xA9ED4D4C (Normal) -->
+<!-- 0xAAD747C0 (Normal) -->
+<!-- 0xAD741476 (Normal) -->
+<!-- 0xADF8BB28 (Normal) -->
+<!-- 0xAE165A77 (Normal) -->
+<!-- 0xAF2CF859 (Normal) -->
+<!-- 0xB0510A72 (Normal) -->
+<!-- 0xB1F361E6 (Normal) -->
+<!-- 0xB3BFEB2D (Normal) -->
+<!-- 0xB4BE8A07 (Normal) -->
+<!-- 0xB5327C51 (Normal) -->
+<!-- 0xB66FFB51 (Normal) -->
+<!-- 0xBA3DD043 (Normal) -->
+<!-- 0xBB113E37 (Normal) -->
+<!-- 0xBB2CDD88 (Normal) -->
+<!-- 0xBCB0473F (Normal) -->
+<!-- 0xBE3C0A31 (Normal) -->
+<!-- 0xBEFCCDF4 (Normal) -->
+<!-- 0xC11B0003 (Normal) -->
+<!-- 0xC122A685 (Normal) -->
+<!-- 0xC18A9BFD (Normal) -->
+<!-- 0xC29527EC (Normal) -->
+<!-- 0xC54B864A (Normal) -->
+<!-- 0xC556A15F (Normal) -->
+<!-- 0xC5E3BB32 (Normal) -->
+<!-- 0xC643A33A (Normal) -->
+<!-- 0xC6543A5B (Normal) -->
+<!-- 0xC808A093 (Normal) -->
+<!-- 0xC8A09DEB (Normal) -->
+<!-- 0xCC61805C (Normal) -->
+<!-- 0xCCA94133 (Normal) -->
+<!-- 0xCCC9BD24 (Normal) -->
+<!-- 0xCFD60135 (Normal) -->
+<!-- 0xCFF9857D (Normal) -->
+<!-- 0xD226D059 (Normal) -->
+<!-- 0xD53AB293 (Normal) -->
+<!-- 0xD5A3235A (Normal) -->
+<!-- 0xD6E7CDEE (Normal) -->
+<!-- 0xD9169D41 (Normal) -->
+<!-- 0xD9A7DF74 (Normal) -->
+<!-- 0xDB0CD64F (Normal) -->
+<!-- 0xDBA4EB37 (Normal) -->
+<!-- 0xDF65F680 (Normal) -->
+<!-- 0xDFCDCBF8 (Normal) -->
+<!-- 0xE019542D (Normal) -->
+<!-- 0xE0939457 (Normal) -->
+<!-- 0xE1894B10 (Normal) -->
+<!-- 0xE4D8499A (Normal) -->
+<!-- 0xE54856A7 (Normal) -->
+<!-- 0xE57C93F3 (Normal) -->
+<!-- 0xE59A217D (Normal) -->
+<!-- 0xEB219989 (Normal) -->
+<!-- 0xEB707AA1 (Normal) -->
+<!-- 0xECCA6DC9 (Normal) -->
+<!-- 0xED5A72F4 (Normal) -->
+<!-- 0xEED9E33B (Normal) -->
+<!-- 0xF0471D2E (Normal) -->
+<!-- 0xF106285F (Normal) -->
+<!-- 0xF2D57678 (Normal) -->
+<!-- 0xF4860099 (Normal) -->
+<!-- 0xF6146BCF (Normal) -->
+<!-- 0xF938783A (Normal) -->
+<!-- 0xF96D1B38 (Normal) -->
+<!-- 0xF99FE639 (Normal) -->
+<!-- 0xFA9F199F (Normal) -->
+<!-- 0xFB574D16 (Normal) -->
+<!-- 0xFC017E72 (Normal) -->
+<!-- 0xFD5EFB8E (Normal) -->
+<!-- 0xFDAC068F (Normal) -->
+<!-- 0xFE5E0428 (Normal) -->

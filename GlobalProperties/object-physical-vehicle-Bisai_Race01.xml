@@ -1,109 +1,77 @@
-<PropertySet name="object-physical-vehicle-Bisai_Race01" nameUID="0x4BD70156" schema="object-physical-vehicle-Bisai_Race01">
-    <Parent>object-physical-vehicle-Bisai01</Parent>
-    <Property name="Description" type="String">2Dr- Bisai_Race01</Property>
-    <Property name="VehicleLook" type="List">
-        <Property type="String">Bisai_Paint07</Property>
-        <Property type="String">Bisai_Paint06</Property>
-    </Property>
-    <Property name="component_CarPhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_VAN_WIDER</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_Race_BisaiProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-BisaiProperties</physicsPropertySetHuman>
-            <modelName type="String">Bisai01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_VAN_WIDER</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-1.39" y="-1.39" z="-0.72"/>
-            <boundingBoxMax type="Vector3" x="1.37" y="1.37" z="0.72"/>
-            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-        </BinData>
-    </Property>
-    <Property name="component_PhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_VAN_WIDER</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_Race_BisaiProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-BisaiProperties</physicsPropertySetHuman>
-            <modelName type="String">Bisai01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_VAN_WIDER</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-1.39" y="-1.39" z="-0.72"/>
-            <boundingBoxMax type="Vector3" x="1.37" y="1.37" z="0.72"/>
-            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0x923AD229">Data\Vehicles_New\Bisai01</Property>
-                <Property type="Symbol" Symbol="0x55EA5DBA">Data\Vehicles_New\WheelStyle04</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List">
-                <Property type="Symbol" Symbol="0x453D3510">Data\Vehicles_New\Bisai01_ts003</Property>
-                <Property type="Symbol"/>
-            </TextureSetList>
-            <EntityType type="Symbol">FourWheelVehicle</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-Bisai_Race01" nameUID="0x4BD70156">
+	<!-- Parents -->
+	<Parent nameUID="0xA4958376">object-physical-vehicle-Bisai01</Parent>
+	<!-- Properties -->
+	<Property name="component_PhysicsMover" type="PropSet">
+		<PropertySet name="component_CarPhysicsMover" nameUID="0xF32DD55B" schema="default-component-CarPhysicsMover">
+			<!-- Schema Properties -->
+			<Property name="physicsPropertySetAI" type="Symbol" symUID="0xF1E9D084">Vehicles-AI_Race_BisaiProperties</Property>
+			<Property name="physicsPropertySetHuman" type="Symbol" symUID="0x17AD292C">Vehicles-BisaiProperties</Property>
+			<Property name="modelName" type="String">Bisai01</Property>
+			<Property name="TrunkType" type="Symbol" symUID="0x29E2856E">eVEHICLE_TRUNK_TYPE_VAN_WIDER</Property>
+			<Property name="damageMultiplierWorldCollisions" type="Float32">1</Property>
+			<Property name="damageMultiplierVehicleCollisions" type="Float32">1</Property>
+			<Property name="damageMultiplierBullets" type="Float32">1</Property>
+			<Property name="damageMultiplierTires" type="Float32">1</Property>
+			<Property name="boundingBoxMin" type="Vector3" x="-1.39" y="-0.72" z="0"/>
+			<Property name="boundingBoxMAx" type="Vector3" x="1.37" y="0.72" z="1.6"/>
+			<Property name="tireShotImpulse" type="Float32">0.645</Property>
+			<Property name="tireBlownImpulse" type="Float32">1</Property>
+			<Property name="lowLodThrottleAcceleration" type="Float32">12</Property>
+			<Property name="lowLodBrakesAcceleration" type="Float32">-60</Property>
+			<Property name="lowLodCoastAcceleration" type="Float32">-1</Property>
+			<Property name="lowLodMaxSpeed" type="Float32">50</Property>
+			<Property name="lowLodMaxLateralAcceleration" type="Float32">1</Property>
+			<Property name="lowLodMinTurningRadius" type="Float32">2</Property>
+			<Property name="autoDeterioratingDamageThreshold" type="Float32">0.75</Property>
+			<Property name="autoDeterioratingDamageRate" type="Float32">0.01</Property>
+			<Property name="vehicleDistanceToHighLod" type="Float32">15</Property>
+			<Property name="vehicleDistanceToMedLod" type="Float32">70</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToTakeDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionExtraDamageMultiplier" type="Float32">2</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinImpulse" type="Float32">0.01</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxImpulse" type="Float32">0.05</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToDealDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionMaxImpulseForDealingDamage" type="Float32">10</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinRamImpulse" type="Float32">0.25</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxRamImpulse" type="Float32">0.3</Property>
+			<Property name="vehicleCollisionMinRamImpulseRequiredToDealDamage" type="Float32">6</Property>
+			<Property name="vehicleCollisionMaxRamImpulseForDealingDamage" type="Float32">12</Property>
+			<Property name="vehicleCollisionForceDamageDealer" type="Boolean">false</Property>
+			<Property name="lockedAtLowLOD" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="VehicleLook" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">Bisai_Paint07</ListProperty>
+		<ListProperty type="String">Bisai_Paint06</ListProperty>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x923AD229">Data\Vehicles_New\Bisai01</ListProperty>
+				<ListProperty type="Symbol" symUID="0x55EA5DBA">Data\Vehicles_New\WheelStyle04</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x453D3510">Data\Vehicles_New\Bisai01_ts003</ListProperty>
+				<ListProperty type="Symbol"/>
+			</Property>
+			<Property name="EntityType" type="SymbolUC" symUID="0x9FA8BBC9">FourWheelVehicle</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="component_CarPhysicsMover" type="PropSet">
+		<PropertySet name="component_CarPhysicsMover" nameUID="0xF32DD55B" schema="default-component-CarPhysicsMover">
+			<!-- Schema Parent: component_PhysicsMover -->
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">2Dr- Bisai_Race01</Property>
+</PropertySetResource>

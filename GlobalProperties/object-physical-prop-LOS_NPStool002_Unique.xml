@@ -1,41 +1,49 @@
-<PropertySet name="object-physical-prop-LOS_NPStool002_Unique" nameUID="0xE4901E55" schema="object-physical-prop-LOS_NPStool002_Unique">
-    <Parent>object-physical-prop-InteractableProp</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\RestaurantChair.act</Property>
-    <Property name="Description" type="String">LOS_NPStool002_Unique</Property>
-    <Property name="SimObjChildren" type="List">
-        <ListProperty nameUID="0x26CAB095">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">ChairUsePoint02</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="-1" y="0" z="0" w="0"/>
-                <Right x="0" y="-1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0.8" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-social_popstar1_ming</Parent>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">false</DestroyAttachedCharacters>
-            <RigName type="String">LOS_NPStool002_Unique</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">false</DestroyAttachedCharacters>
-            <RigName type="String">LOS_NPStool002_Unique</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOS_NPStool002_Unique" nameUID="0xE4901E55">
+	<!-- Parents -->
+	<Parent nameUID="0xFB0E6A05">object-physical-prop-InteractableProp</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\RestaurantChair.act</Property>
+	<Property name="SimObjChildren" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="ChairUsePoint02" nameUID="0x26CAB095">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="-1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0.8" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">ChairUsePoint02</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x44EC0B7E">default-component-InterestPoint-social_popstar1_ming</Parent>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">false</Property>
+			<Property name="RigName" type="String">LOS_NPStool002_Unique</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">LOS_NPStool002_Unique</Property>
+</PropertySetResource>

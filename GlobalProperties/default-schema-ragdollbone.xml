@@ -1,7 +1,8 @@
-<PropertySet name="default-schema-ragdollbone" nameUID="0xD88CA7D6" schema="default-schema-ragdollbone">
-    <Property name="bonemass" type="Float32">20</Property>
-    <Property name="collision_ragdoll_shape_type" type="SymbolUC" Symbol="0x60A01215">Box</Property>
-    <Property name="geo_offset" type="Vector3" x="0" y="0" z="0"/>
-    <Property name="half_extents" type="Vector3" x="0.15" y="0.15" z="0.1"/>
-    <Property name="high_quality_collision" type="Boolean">True</Property>
-</PropertySet>
+<PropertySetResource name="default-schema-ragdollbone" nameUID="0xD88CA7D6" schema="default-schema-ragdollbone">
+	<!-- Properties -->
+	<Property name="bonemass" type="Float32">20</Property>
+	<Property name="half_extents" type="Vector3" x="0.15" y="0.1" z="0.2"/>
+	<Property name="high_quality_collision" type="Boolean">true</Property>
+	<Property name="collision_ragdoll_shape_type" type="SymbolUC" symUID="0x60A01215">BOX</Property>
+	<Property name="geo_offset" type="Vector3" x="0" y="0" z="0"/>
+</PropertySetResource>

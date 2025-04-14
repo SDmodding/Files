@@ -1,22 +1,33 @@
-<PropertySet name="default-timeset-AB_Fishmarket" nameUID="0x4E3B7D98" schema="default-timeset-AB_Fishmarket">
-    <Property name="TimeSetList" type="List">
-        <ListProperty nameUID="0xF4B7E331">
-            <Property name="OffTime" type="Int32">10</Property>
-            <Property name="OnTime" type="Int32">5</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0x2F34855C">default-spawnset-AB_Fishmarket_Day</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-2</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">20</Property>
-            <Property name="OnTime" type="Int32">10</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0xD012ABB4">default-spawnset-AB_Fishmarket_Evening</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">5</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">5</Property>
-            <Property name="OnTime" type="Int32">20</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0xFAD6750D">default-spawnset-AB_Fishmarket_Night</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-5</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-timeset-AB_Fishmarket" nameUID="0x4E3B7D98">
+	<!-- Properties -->
+	<Property name="TimeSetList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Night" nameUID="0xF4B7E331">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">10</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-2</Property>
+				<Property name="OnTime" type="Int32">5</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0x2F34855C">default-spawnset-AB_Fishmarket_Day</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">20</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">5</Property>
+				<Property name="OnTime" type="Int32">10</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0xD012ABB4">default-spawnset-AB_Fishmarket_Evening</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">5</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-5</Property>
+				<Property name="OnTime" type="Int32">20</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0xFAD6750D">default-spawnset-AB_Fishmarket_Night</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

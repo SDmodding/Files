@@ -1,12 +1,20 @@
-<PropertySet name="default-rewards-progression-E_HGF_EGP2" nameUID="0xD1000DD" schema="default-rewards-progression-E_HGF_EGP2">
-    <Parent>default-rewards-progression-dlc_hgf_event_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_ELITE_GHOUL_PORTAL_002</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">OutfitMonk</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARD_TITLE_O_Monk</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-E_HGF_EGP2" nameUID="0xD1000DD">
+	<!-- Parents -->
+	<Parent nameUID="0x45E71420">default-rewards-progression-dlc_hgf_event_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">OutfitMonk</Property>
+				<Property name="Text" type="String">$REWARD_TITLE_O_Monk</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_ELITE_GHOUL_PORTAL_002</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xF630B577 (Normal) -->

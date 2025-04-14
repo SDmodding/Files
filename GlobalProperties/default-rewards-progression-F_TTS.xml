@@ -1,9 +1,11 @@
-<PropertySet name="default-rewards-progression-F_TTS" nameUID="0x103C575B" schema="default-rewards-progression-F_TTS">
-    <Parent>default-rewards-progression-favor_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_TINGS_TSHIRT</Property>
-    <Property name="CopStartingScore" type="Int32">0</Property>
-    <Property name="MoneyAdjustment" type="Int32">500</Property>
-    <Property name="StandingAdjustment" type="Int32">200</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-F_TTS" nameUID="0x103C575B">
+	<!-- Parents -->
+	<Parent nameUID="0xB5D2DBF9">default-rewards-progression-favor_defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">0</Property>
+	<Property name="MoneyAdjustment" type="Int32">500</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_TINGS_TSHIRT</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">200</Property>
+</PropertySetResource>

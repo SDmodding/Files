@@ -1,6 +1,8 @@
-<PropertySet name="object-physical-character-Thug_18k_quick_hard" nameUID="0x3F75CC0C" schema="object-physical-character-Thug_18k_quick_hard">
-    <Parent>object-physical-character-Thug_18k_quick</Parent>
-    <Property name="DefaultRangedWeapon" type="Symbol" Symbol="0x95F0FBF4">smg_machine_pistol</Property>
-    <Property name="Description" type="String">Thug 18K Quick - Hard</Property>
-    <Property name="RangedCombatStrategy" type="Symbol" Symbol="0x3BB4A12B">Aggressive</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Thug_18k_quick_hard" nameUID="0x3F75CC0C">
+	<!-- Parents -->
+	<Parent nameUID="0x10085B9E">object-physical-character-Thug_18k_quick</Parent>
+	<!-- Properties -->
+	<Property name="RangedCombatStrategy" type="Symbol" symUID="0x3BB4A12B">Aggressive</Property>
+	<Property name="DefaultRangedWeapon" type="Symbol" symUID="0x95F0FBF4">smg_machine_pistol</Property>
+	<Property name="Description" type="String">Thug 18K Quick - Hard</Property>
+</PropertySetResource>

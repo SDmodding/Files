@@ -1,11 +1,17 @@
-<PropertySet name="object-logical-BoostRegion" nameUID="0xD1BDD200" schema="object-logical-BoostRegion">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0xF92D474D">BoostRegion</Property>
-    <Property name="default-component-Region" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Region</Parent>
-            <Property name="Max" type="Vector3" x="1" y="1" z="1"/>
-            <Property name="Min" type="Vector3" x="-1" y="-1" z="-1"/>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-BoostRegion" nameUID="0xD1BDD200">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x4B7126C0">default-component-BoostRegion</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0xF92D474D">BoostRegion</Property>
+	<Property name="default-component-Region" type="PropSet">
+		<PropertySet>
+			<!-- Parents -->
+			<Parent nameUID="0xF6AC0CA8">default-component-Region</Parent>
+			<!-- Properties -->
+			<Property name="Min" type="Vector3" x="-1" y="-1" z="-0.25"/>
+			<Property name="Max" type="Vector3" x="1" y="1" z="1.75"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

@@ -1,12 +1,20 @@
-<PropertySet name="default-rewards-progression-E_HGF_LGP2" nameUID="0x28970260" schema="default-rewards-progression-E_HGF_LGP2">
-    <Parent>default-rewards-progression-dlc_hgf_event_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_LESSER_GHOUL_PORTAL_002</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF57EB71C">
-            <Property name="0x308E0AE5" type="String">vehicle_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">Face_Two_Vehicle_01</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARD_TITLE_MNeoV</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-E_HGF_LGP2" nameUID="0x28970260">
+	<!-- Parents -->
+	<Parent nameUID="0x45E71420">default-rewards-progression-dlc_hgf_event_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF57EB71C">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9B06086B">Vehicle</Property>
+				<Property name="Icon" type="String">vehicle_icon</Property>
+				<Property name="AssetId" type="String">Face_Two_Vehicle_01</Property>
+				<Property name="Text" type="String">$REWARD_TITLE_MNeoV</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_LESSER_GHOUL_PORTAL_002</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xF57EB71C (Normal) -->

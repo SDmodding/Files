@@ -1,5 +1,7 @@
-<PropertySet name="object-physical-character-DeliveryNW" nameUID="0x3BC239A6" schema="object-physical-character-DeliveryNW">
-    <Parent>object-physical-character-Delivery</Parent>
-    <Property name="CanWander" type="Boolean">False</Property>
-    <Property name="Description" type="String">Delivery - No Wander</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-DeliveryNW" nameUID="0x3BC239A6">
+	<!-- Parents -->
+	<Parent nameUID="0x339C21C2">object-physical-character-Delivery</Parent>
+	<!-- Properties -->
+	<Property name="CanWander" type="Boolean">false</Property>
+	<Property name="Description" type="String">Delivery - No Wander</Property>
+</PropertySetResource>

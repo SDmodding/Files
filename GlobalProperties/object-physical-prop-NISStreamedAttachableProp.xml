@@ -1,4 +1,7 @@
-<PropertySet name="object-physical-prop-NISStreamedAttachableProp" nameUID="0x32F29E48" schema="object-physical-prop-NISStreamedAttachableProp">
-    <Parent>object-physical-prop-StreamedAttachableProp</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\NISProp.act</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-NISStreamedAttachableProp" nameUID="0x32F29E48">
+	<!-- Parents -->
+	<Parent nameUID="0xE9175745">object-physical-prop-StreamedAttachableProp</Parent>
+	<Parent nameUID="0xE6CEAAF8">default-component-ActionTree</Parent>
+	<!-- Properties -->
+	<Property name="ActFileName" type="String">Data\Global\Act\NISProp.act</Property>
+</PropertySetResource>

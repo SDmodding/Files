@@ -1,18 +1,22 @@
-<PropertySet name="TrueCrowd-Characters_New-AF_H_011" nameUID="0x8327B938" schema="TrueCrowd-Characters_New-AF_H_011">
-    <Property name="FemCapOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Rotation" type="Vector3" x="-17.0048" y="-17.0048" z="-1.40355"/>
-            <Property name="Translation" type="Vector3" x="0" y="0" z="-0.0586865"/>
-        </PropertySet>
-    </Property>
-    <Property name="FemGlassesOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Translation" type="Vector3" x="0" y="0" z="-0.0193066"/>
-        </PropertySet>
-    </Property>
-    <Property name="FemHatOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Translation" type="Vector3" x="0" y="0" z="-0.00101547"/>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="TrueCrowd-Characters_New-AF_H_011" nameUID="0x8327B938">
+	<!-- Properties -->
+	<Property name="FemGlassesOffset" type="PropSet">
+		<PropertySet name="FemGlassesOffset" nameUID="0x39C8CA5C">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="0" y="-0.0193066" z="-0.0100906"/>
+		</PropertySet>
+	</Property>
+	<Property name="FemCapOffset" type="PropSet">
+		<PropertySet name="FemCapOffset" nameUID="0x6EC56766">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="0" y="-0.0586865" z="0.03"/>
+			<Property name="Rotation" type="Vector3" x="-17.0048" y="-1.40355" z="3.84035"/>
+		</PropertySet>
+	</Property>
+	<Property name="FemHatOffset" type="PropSet">
+		<PropertySet name="FemHatOffset" nameUID="0xCBDB3ABD">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="0" y="-0.00101547" z="0"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

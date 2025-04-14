@@ -1,4 +1,6 @@
-<PropertySet name="object-physical-prop-StreamedObject-MoneyStack_ParkingMeter" nameUID="0x4DA2CD5A" schema="object-physical-prop-StreamedObject-MoneyStack_ParkingMeter">
-    <Parent>object-physical-prop-StreamedObject-MoneyStack_Basic</Parent>
-    <Property name="ParkingMeterDrop" type="Boolean">True</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-StreamedObject-MoneyStack_ParkingMeter" nameUID="0x4DA2CD5A">
+	<!-- Parents -->
+	<Parent nameUID="0x66C5490A">object-physical-prop-StreamedObject-MoneyStack_Basic</Parent>
+	<!-- Properties -->
+	<Property name="ParkingMeterDrop" type="Boolean">true</Property>
+</PropertySetResource>

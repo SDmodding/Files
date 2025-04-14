@@ -1,87 +1,106 @@
-<PropertySet name="object-physical-prop-LOL_HospElevDoors001" nameUID="0xF3C41DE1" schema="object-physical-prop-LOL_HospElevDoors001">
-    <Parent>object-physical-prop-InteractableProp</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\Object\LOL_HospElevDoors001.act</Property>
-    <Property name="Description" type="String">LOL_HospElevDoors001</Property>
-    <Property name="DoorClosingNodeName" type="String">Global\LOL_HospElevDoors001\Object\WaitingForCall\Closed</Property>
-    <Property name="DoorLockedNodeName" type="String">Global\LOL_HospElevDoors001\Object\WaitingForCall\Closed</Property>
-    <Property name="DoorOpeningLeftNodeName" type="String">Global\LOL_HospElevDoors001\Object\WaitingForCall\Opened</Property>
-    <Property name="DoorOpeningRightNodeName" type="String">Global\LOL_HospElevDoors001\Object\WaitingForCall\Opened</Property>
-    <Property name="DoorUnlockedNodeName" type="String">Global\LOL_HospElevDoors001\Object\WaitingForCall\Closed</Property>
-    <Property name="IsDoubleDoor" type="Boolean">False</Property>
-    <Property name="RadarHighlightType" type="Symbol" Symbol="0x299760D">Interactable</Property>
-    <Property name="SimObjChildren" type="List">
-        <ListProperty nameUID="0x86322541">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">HospElevatorUsePoint01</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-HospitalElevator</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x9B53C8A2">C_OuterSync</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x8B710398">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">HospElevatorUsePoint02</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-HospitalElevator</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0x20814D3B">C_InnerSync</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-        <ListProperty nameUID="0x8FB01E2F">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">HospElevatorUsePoint03</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="1" y="0" z="0" w="0"/>
-                <Right x="0" y="1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="0" y="0" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-HospitalElevator</Parent>
-                    <Property name="InterestPointParentBone" type="SymbolUC" Symbol="0xCCB3198B">C_InsidePrySync</Property>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOL_HospElevDoors001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0xEAF49CBD">LOL_HOSPELEVDOORS001</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOL_HospElevDoors001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0xEAF49CBD">LOL_HOSPELEVDOORS001</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOL_HospElevDoors001" nameUID="0xF3C41DE1">
+	<!-- Parents -->
+	<Parent nameUID="0xFB0E6A05">object-physical-prop-InteractableProp</Parent>
+	<Parent nameUID="0x99D5A1B9">default-component-Door</Parent>
+	<!-- Properties -->
+	<Property name="IsDoubleDoor" type="Boolean">false</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="DoorClosingNodeName" type="String">Global\LOL_HospElevDoors001\Object\WaitingForCall\Closed</Property>
+	<Property name="DoorOpeningLeftNodeName" type="String">Global\LOL_HospElevDoors001\Object\WaitingForCall\Opened</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\Object\LOL_HospElevDoors001.act</Property>
+	<Property name="SimObjChildren" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="HospElevatorUsePoint01" nameUID="0x86322541">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">HospElevatorUsePoint01</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x8472BAAC">default-component-InterestPoint-HospitalElevator</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0x9B53C8A2">C_OuterSync</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="HospElevatorUsePoint02" nameUID="0x8B710398">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">HospElevatorUsePoint02</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x8472BAAC">default-component-InterestPoint-HospitalElevator</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0x20814D3B">C_InnerSync</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="HospElevatorUsePoint03" nameUID="0x8FB01E2F">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="0" y="0" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">HospElevatorUsePoint03</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x8472BAAC">default-component-InterestPoint-HospitalElevator</Parent>
+						<!-- Properties -->
+						<Property name="InterestPointParentBone" type="SymbolUC" symUID="0xCCB3198B">C_InsidePrySync</Property>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOL_HospElevDoors001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List">
+				<!-- Elements -->
+				<ListProperty type="SymbolUC" symUID="0xEAF49CBD">LOL_HOSPELEVDOORS001</ListProperty>
+			</Property>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="DoorLockedNodeName" type="String">Global\LOL_HospElevDoors001\Object\WaitingForCall\Closed</Property>
+	<Property name="RadarHighlightType" type="Symbol" symUID="0x299760D">Interactable</Property>
+	<Property name="DoorOpeningRightNodeName" type="String">Global\LOL_HospElevDoors001\Object\WaitingForCall\Opened</Property>
+	<Property name="DoorUnlockedNodeName" type="String">Global\LOL_HospElevDoors001\Object\WaitingForCall\Closed</Property>
+	<Property name="Description" type="String">LOL_HospElevDoors001</Property>
+</PropertySetResource>

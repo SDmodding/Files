@@ -1,40 +1,47 @@
-<PropertySet name="object-physical-character-AmbientCharacters-AB_Isle_Eve_Female_Yng" nameUID="0x9946EBC8" schema="object-physical-character-AmbientCharacters-AB_Isle_Eve_Female_Yng">
-    <Parent>object-physical-character-drivers-yng_female</Parent>
-    <Property name="Description" type="String">AB Island Evening Ambient Female Youth</Property>
-    <Property name="PropList" type="List">
-        <Property type="Symbol"/>
-        <Property type="Symbol" Symbol="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</Property>
-        <Property type="Symbol" Symbol="0x84829544">object-physical-prop-Attachable-AmbientHat003</Property>
-        <Property type="Symbol" Symbol="0x98ACE464">object-physical-weapon-melee-Purse001_Elbow</Property>
-        <Property type="Symbol" Symbol="0xAC64F33E">object-physical-weapon-melee-Purse001_Shoulder</Property>
-        <Property type="Symbol" Symbol="0xCE873DFE">object-physical-weapon-melee-Purse001_Hand</Property>
-        <Property type="Symbol" Symbol="0x2290B7CF">object-physical-weapon-melee-PurseHand001_Elbow</Property>
-        <Property type="Symbol" Symbol="0x8A1A83AB">object-physical-weapon-melee-PurseHand001_Hand</Property>
-        <Property type="Symbol" Symbol="0x59236CEC">object-physical-prop-Attachable-AmbientGlasses004</Property>
-    </Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-        <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0xE7DE76F9">Female</Property>
-                <Property type="Symbol" Symbol="0xFF1790B9">Aberdeen</Property>
-                <Property type="Symbol" Symbol="0xB4042ED1">Lower</Property>
-                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-                <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-                <Property type="Symbol" Symbol="0xA7221F1F">Evening</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-AB_Isle_Eve_Female_Yng" nameUID="0x9946EBC8">
+	<!-- Parents -->
+	<Parent nameUID="0x766DE91C">object-physical-character-drivers-yng_female</Parent>
+	<Parent nameUID="0x82F2D735">object-physical-character-AmbientCharacters-AB_Isle_Eve_Female</Parent>
+	<!-- Properties -->
+	<Property name="PropList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol"/>
+		<ListProperty type="Symbol" symUID="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</ListProperty>
+		<ListProperty type="Symbol" symUID="0x84829544">object-physical-prop-Attachable-AmbientHat003</ListProperty>
+		<ListProperty type="Symbol" symUID="0x98ACE464">object-physical-weapon-melee-Purse001_Elbow</ListProperty>
+		<ListProperty type="Symbol" symUID="0xAC64F33E">object-physical-weapon-melee-Purse001_Shoulder</ListProperty>
+		<ListProperty type="Symbol" symUID="0xCE873DFE">object-physical-weapon-melee-Purse001_Hand</ListProperty>
+		<ListProperty type="Symbol" symUID="0x2290B7CF">object-physical-weapon-melee-PurseHand001_Elbow</ListProperty>
+		<ListProperty type="Symbol" symUID="0x8A1A83AB">object-physical-weapon-melee-PurseHand001_Hand</ListProperty>
+		<ListProperty type="Symbol" symUID="0x59236CEC">object-physical-prop-Attachable-AmbientGlasses004</ListProperty>
+	</Property>
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+		<ListProperty type="Symbol" symUID="0x95BC9EE4">Ped</ListProperty>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xE7DE76F9">Female</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFF1790B9">Aberdeen</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB4042ED1">Lower</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+				<ListProperty type="Symbol" symUID="0xA7221F1F">Evening</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">AB Island Evening Ambient Female Youth</Property>
+</PropertySetResource>

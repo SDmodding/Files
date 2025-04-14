@@ -1,24 +1,36 @@
-<PropertySet name="default-rewards-progression-M_IN_Manual" nameUID="0xBECB16AC" schema="default-rewards-progression-M_IN_Manual">
-    <Parent>default-rewards-progression-mission_defaults</Parent>
-    <Property name="CompletionText" type="String">Initiation</Property>
-    <Property name="CopStartingScore" type="Int32">500</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="MoneyAdjustment" type="Int32">200000</Property>
-    <Property name="StandingAdjustment" type="Int32">300</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">500</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x449D8298">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">LOI_AB_SHDoor001_101</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x1946D26D">Door</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x6EB5BCBC">
-            <Property name="0x308E0AE5" type="String">safe_house_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">SFAB-AB</Property>
-            <Property name="0xDE3E6A23" type="String">$MISSION_REWARDS_SAFEHOUSE</Property>
-            <Property name="Type" type="Symbol" Symbol="0x1B43F7CE">Safehouse</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_IN_Manual" nameUID="0xBECB16AC">
+	<!-- Parents -->
+	<Parent nameUID="0xD274BB76">default-rewards-progression-mission_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x449D8298">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1946D26D">Door</Property>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">LOI_AB_SHDoor001_101</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x6EB5BCBC">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1B43F7CE">Safehouse</Property>
+				<Property name="Icon" type="String">safe_house_icon</Property>
+				<Property name="AssetId" type="String">SFAB-AB</Property>
+				<Property name="Text" type="String">$MISSION_REWARDS_SAFEHOUSE</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">500</Property>
+	<Property name="MoneyAdjustment" type="Int32">200000</Property>
+	<Property name="CompletionText" type="String">Initiation</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="TriadTargetScore" type="Int32">500</Property>
+	<Property name="StandingAdjustment" type="Int32">300</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x449D8298 (Normal) -->
+<!-- 0x6EB5BCBC (Normal) -->

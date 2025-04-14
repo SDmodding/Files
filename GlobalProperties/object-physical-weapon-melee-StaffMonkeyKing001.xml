@@ -1,58 +1,67 @@
-<PropertySet name="object-physical-weapon-melee-StaffMonkeyKing001" nameUID="0x4A742C53" schema="object-physical-weapon-melee-StaffMonkeyKing001">
-    <Parent>object-physical-weapon-melee</Parent>
-    <Property name="AttachBone" type="String">Bip01 R Prop</Property>
-    <Property name="AudioWeaponType" type="WwiseID"/>
-    <Property name="DamageMultiplier" type="Float32">1</Property>
-    <Property name="Description" type="String">StaffMonkeyKing001</Property>
-    <Property name="MaxAngularVelocityWhenThrown" type="Vector3" x="10" y="10" z="10"/>
-    <Property name="MinAngularVelocityWhenThrown" type="Vector3" x="5" y="5" z="5"/>
-    <Property name="PropBone" type="String">Grip R Hand</Property>
-    <Property name="RangedDistance" type="Float32">15</Property>
-    <Property name="SoundBank" type="WwiseID"/>
-    <Property name="ThrownSpeed" type="Float32">30</Property>
-    <Property name="ThrownWeaponSpinAxis" type="Vector3" x="0" y="0" z="1"/>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">StaffMonkeyKing001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">StaffMonkeyKing001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_InventoryItem" type="PropSet">
-        <BinData>
-            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
-            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
-            <simObjectInventoryItem type="Symbol">0xB754C4B6</simObjectInventoryItem>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-StreamedResource</Parent>
-        </PropertySet>
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0x3758F642">Data\Props_New\StaffMonkeyKing001</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">Prop</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="simObjectWeaponType" type="String">eSIM_OBJ_WEAPON_TYPE_POLEARM</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-weapon-melee-StaffMonkeyKing001" nameUID="0x4A742C53">
+	<!-- Parents -->
+	<Parent nameUID="0x4049E7ED">object-physical-weapon-melee</Parent>
+	<!-- Properties -->
+	<Property name="MaxAngularVelocityWhenThrown" type="Vector3" x="10" y="10" z="10"/>
+	<Property name="ThrownSpeed" type="Float32">30</Property>
+	<Property name="ThrownWeaponSpinAxis" type="Vector3" x="0" y="1" z="0"/>
+	<Property name="SoundBank" type="WwiseID" symUID="0xCFD1C75F"/>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="AttachBone" type="String">Bip01 R Prop</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">StaffMonkeyKing001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="PropBone" type="String">Grip R Hand</Property>
+	<Property name="component_InventoryItem" type="PropSet">
+		<PropertySet name="component_InventoryItem" nameUID="0x9DA2A4AD" schema="default-component-InventoryItem">
+			<!-- Schema Properties -->
+			<Property name="InventoryItemQuantityMin" type="UInt32">1</Property>
+			<Property name="InventoryItemQuantityMax" type="UInt32">1</Property>
+			<Property name="simObjectInventoryItem" type="Symbol" symUID="0xB754C4B6"/>
+		</PropertySet>
+	</Property>
+	<Property name="AudioWeaponType" type="WwiseID" symUID="0xA1AFC20D"/>
+	<Property name="DamageMultiplier" type="Float32">1</Property>
+	<Property name="MinAngularVelocityWhenThrown" type="Vector3" x="5" y="5" z="5"/>
+	<Property name="RangedDistance" type="Float32">15</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Parents -->
+			<Parent nameUID="0xA09F7F61">default-component-StreamedResource</Parent>
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x3758F642">Data\Props_New\StaffMonkeyKing001</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0xD452A50">Prop</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="simObjectWeaponType" type="String">eSIM_OBJ_WEAPON_TYPE_POLEARM</Property>
+	<Property name="Description" type="String">StaffMonkeyKing001</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xA1AFC20D (WWise) -->
+<!-- 0xB754C4B6 (Normal) -->
+<!-- 0xCFD1C75F (WWise) -->

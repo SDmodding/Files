@@ -1,12 +1,16 @@
-<PropertySet name="object-logical-MeleeScriptSystem" nameUID="0x65696D88" schema="object-logical-MeleeScriptSystem">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0xD5131A4E">MeleeScriptSystem</Property>
-    <Property name="component_TSActor" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-TSActor</Parent>
-        </PropertySet>
-        <BinData>
-            <SkookumClass type="Symbol">MeleeScriptSystem</SkookumClass>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-MeleeScriptSystem" nameUID="0x65696D88">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x7F308564">default-component-MeleeScriptSystem</Parent>
+	<!-- Properties -->
+	<Property name="component_TSActor" type="PropSet">
+		<PropertySet name="component_TSActor" nameUID="0x2873821B" schema="default-component-TSActor">
+			<!-- Parents -->
+			<Parent nameUID="0xC2815AE5">default-component-TSActor</Parent>
+			<!-- Schema Properties -->
+			<Property name="SkookumClass" type="Symbol" symUID="0xD5131A4E">MeleeScriptSystem</Property>
+		</PropertySet>
+	</Property>
+	<Property name="ObjectType" type="Symbol" symUID="0xD5131A4E">MeleeScriptSystem</Property>
+</PropertySetResource>

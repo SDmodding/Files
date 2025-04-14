@@ -1,6 +1,8 @@
-<PropertySet name="object-logical-collectibles-HealthShrine" nameUID="0x615D18B3" schema="object-logical-collectibles-HealthShrine">
-    <Parent>object-logical-collectibles-Base</Parent>
-    <Property name="CollectibleSpawnInfo" type="Symbol" Symbol="0xD362889C">object-physical-prop-LOC_Shrine001</Property>
-    <Property name="CollectibleType" type="Symbol" Symbol="0xF2E8DAFD">Collectible_HealthShrine</Property>
-    <Property name="MaxHealthUpgradePoint" type="Int32">4</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-collectibles-HealthShrine" nameUID="0x615D18B3">
+	<!-- Parents -->
+	<Parent nameUID="0x9611976B">object-logical-collectibles-Base</Parent>
+	<!-- Properties -->
+	<Property name="CollectibleType" type="Symbol" symUID="0xF2E8DAFD">Collectible_HealthShrine</Property>
+	<Property name="MaxHealthUpgradePoint" type="Int32">4</Property>
+	<Property name="CollectibleSpawnInfo" type="Symbol" symUID="0xD362889C">object-physical-prop-LOC_Shrine001</Property>
+</PropertySetResource>

@@ -1,17 +1,22 @@
-<PropertySet name="Vehicles-Audio-Traffic-BaseBoatTraffic" nameUID="0xAB8FF3BB" schema="Vehicles-Audio-Traffic-BaseBoatTraffic">
-    <Property name="audio_bank" type="WwiseID"/>
-    <Property name="engine_curve" type="Symbol" Symbol="0xE49C26E8">vehicles-audio-engines-Boat_Speed_Traffic</Property>
-    <Property name="radio_enabled" type="Boolean">False</Property>
-    <Property name="skid_event_destroy" type="WwiseID"/>
-    <Property name="skid_event_init" type="WwiseID"/>
-    <Property name="skid_strength_multiplier" type="Float32">0.2</Property>
-    <Property name="vehicle_road_noise_init" type="WwiseID"/>
-    <Property name="vehicle_speed_rlf" type="PropSet">
-        <PropertySet>
-            <Property name="fall_rate" type="Float32">60</Property>
-            <Property name="max" type="Float32">200</Property>
-            <Property name="min" type="Float32">-200</Property>
-            <Property name="rise_rate" type="Float32">60</Property>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="Vehicles-Audio-Traffic-BaseBoatTraffic" nameUID="0xAB8FF3BB">
+	<!-- Properties -->
+	<Property name="audio_bank" type="WwiseID" symUID="0x6FE4D460"/>
+	<Property name="vehicle_road_noise_init" type="WwiseID" symUID="0xEA58361D"/>
+	<Property name="vehicle_speed_rlf" type="PropSet">
+		<PropertySet name="vehicle_speed_rlf" nameUID="0x6878D182">
+			<!-- Properties -->
+			<Property name="min" type="Float32">-200</Property>
+			<Property name="rise_rate" type="Float32">60</Property>
+			<Property name="max" type="Float32">200</Property>
+			<Property name="fall_rate" type="Float32">60</Property>
+		</PropertySet>
+	</Property>
+	<Property name="radio_enabled" type="Boolean">false</Property>
+	<Property name="engine_curve" type="Symbol" symUID="0xE49C26E8">vehicles-audio-engines-Boat_Speed_Traffic</Property>
+	<Property name="skid_event_destroy" type="WwiseID"/>
+	<Property name="skid_event_init" type="WwiseID"/>
+	<Property name="skid_strength_multiplier" type="Float32">0.2</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x6FE4D460 (WWise) -->
+<!-- 0xEA58361D (WWise) -->

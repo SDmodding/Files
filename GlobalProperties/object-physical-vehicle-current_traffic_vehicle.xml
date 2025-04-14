@@ -1,4 +1,6 @@
-<PropertySet name="object-physical-vehicle-current_traffic_vehicle" nameUID="0xDA40702E" schema="object-physical-vehicle-current_traffic_vehicle">
-    <Parent>object-physical-vehicle-CommonCar</Parent>
-    <Property name="SpawnFromCurrentTrafficSet" type="Boolean">True</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-current_traffic_vehicle" nameUID="0xDA40702E">
+	<!-- Parents -->
+	<Parent nameUID="0x5A1ACD8C">object-physical-vehicle-CommonCar</Parent>
+	<!-- Properties -->
+	<Property name="SpawnFromCurrentTrafficSet" type="Boolean">true</Property>
+</PropertySetResource>

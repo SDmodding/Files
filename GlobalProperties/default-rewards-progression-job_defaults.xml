@@ -1,9 +1,11 @@
-<PropertySet name="default-rewards-progression-job_defaults" nameUID="0x93DAADC2" schema="default-rewards-progression-job_defaults">
-    <Parent>default-rewards-defaults</Parent>
-    <Property name="CopStartingScore" type="Int32">0</Property>
-    <Property name="GamesliceType" type="Symbol" Symbol="0xDFE7B8B">JOB</Property>
-    <Property name="MoneyAdjustment" type="Int32">85000</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">10</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-job_defaults" nameUID="0x93DAADC2">
+	<!-- Parents -->
+	<Parent nameUID="0xC21C95B9">default-rewards-defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">0</Property>
+	<Property name="MoneyAdjustment" type="Int32">85000</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">10</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0xDFE7B8B">JOB</Property>
+</PropertySetResource>

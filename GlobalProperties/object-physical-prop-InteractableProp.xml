@@ -1,4 +1,7 @@
-<PropertySet name="object-physical-prop-InteractableProp" nameUID="0xFB0E6A05" schema="object-physical-prop-InteractableProp">
-    <Parent>object-physical-prop-VisibleProp</Parent>
-    <Property name="RadarHighlightType" type="Symbol" Symbol="0x2A84762D">CombatProp</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-InteractableProp" nameUID="0xFB0E6A05">
+	<!-- Parents -->
+	<Parent nameUID="0x3C7C2007">object-physical-prop-VisibleProp</Parent>
+	<Parent nameUID="0xE6CEAAF8">default-component-ActionTree</Parent>
+	<!-- Properties -->
+	<Property name="RadarHighlightType" type="Symbol" symUID="0x2A84762D">CombatProp</Property>
+</PropertySetResource>

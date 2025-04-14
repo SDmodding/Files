@@ -1,8 +1,10 @@
-<PropertySet name="default-rewards-progression-J_TTD" nameUID="0x237758AB" schema="default-rewards-progression-J_TTD">
-    <Parent>default-rewards-defaults</Parent>
-    <Property name="CompletionText" type="String">You took down many thugs!</Property>
-    <Property name="CopStartingScore" type="Int32">0</Property>
-    <Property name="MoneyAdjustment" type="Int32">20000</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-J_TTD" nameUID="0x237758AB">
+	<!-- Parents -->
+	<Parent nameUID="0xC21C95B9">default-rewards-defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">0</Property>
+	<Property name="MoneyAdjustment" type="Int32">20000</Property>
+	<Property name="CompletionText" type="String">You took down many thugs!</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+</PropertySetResource>

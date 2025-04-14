@@ -1,33 +1,37 @@
-<PropertySet name="object-physical-door_double" nameUID="0xE7AD3B2F" schema="object-physical-door_double">
-    <Parent>object-physical-door</Parent>
-    <Property name="AIOutlineBoundingBoxMax" type="Vector3" x="2.8" y="2.8" z="0.15"/>
-    <Property name="AIOutlineBoundingBoxMin" type="Vector3" x="-0.3" y="-0.3" z="-0.15"/>
-    <Property name="ActFileName" type="String">Data\Global\Act\DoorDouble.act</Property>
-    <Property name="DoorClosingNodeName" type="String">Global\DoorDouble\Object\Idle</Property>
-    <Property name="DoorLockedNodeName" type="String">Global\DoorDouble\Object\NotInteractable\Idle</Property>
-    <Property name="DoorOpeningLeftNodeName" type="String">Global\DoorDouble\Object\Animation\Back_Opening</Property>
-    <Property name="DoorOpeningRightNodeName" type="String">Global\DoorDouble\Object\Animation\Front_Opening</Property>
-    <Property name="DoorUnlockedNodeName" type="String">Global\DoorDouble\Object\Idle</Property>
-    <Property name="IsDoubleDoor" type="Boolean">True</Property>
-    <Property name="RadarHighlightType" type="Symbol" Symbol="0x299760D">Interactable</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x40E01872">DoorDouble</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x40E01872">DoorDouble</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-door_double" nameUID="0xE7AD3B2F">
+	<!-- Parents -->
+	<Parent nameUID="0xD27C1568">object-physical-door</Parent>
+	<!-- Properties -->
+	<Property name="IsDoubleDoor" type="Boolean">true</Property>
+	<Property name="AIOutlineBoundingBoxMax" type="Vector3" x="2.8" y="0.15" z="2"/>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="DoorClosingNodeName" type="String">Global\DoorDouble\Object\Idle</Property>
+	<Property name="DoorOpeningLeftNodeName" type="String">Global\DoorDouble\Object\Animation\Back_Opening</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\DoorDouble.act</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String"/>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List">
+				<!-- Elements -->
+				<ListProperty type="SymbolUC" symUID="0x40E01872">DoorDouble</ListProperty>
+			</Property>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="DoorLockedNodeName" type="String">Global\DoorDouble\Object\NotInteractable\Idle</Property>
+	<Property name="RadarHighlightType" type="Symbol" symUID="0x299760D">Interactable</Property>
+	<Property name="DoorOpeningRightNodeName" type="String">Global\DoorDouble\Object\Animation\Front_Opening</Property>
+	<Property name="DoorUnlockedNodeName" type="String">Global\DoorDouble\Object\Idle</Property>
+	<Property name="AIOutlineBoundingBoxMin" type="Vector3" x="-0.3" y="-0.15" z="0"/>
+</PropertySetResource>

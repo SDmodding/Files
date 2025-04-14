@@ -1,24 +1,41 @@
-<PropertySet name="Audio-VisualEffectAudio" nameUID="0xE8303149" schema="Audio-VisualEffectAudio">
-    <Property name="VisualEffectList" type="List">
-        <ListProperty nameUID="0x22F4FE44">
-            <Parent>Combat_Meter_Into</Parent>
-            <Property name="Tags" type="List">
-                <ListProperty nameUID="0xC54F9B2C">
-                    <Property name="SampleUid" type="WwiseID"/>
-                    <Property name="TimeBegin" type="Float32">0</Property>
-                </ListProperty>
-            </Property>
-            <Property name="VisualEffectName" type="Symbol" Symbol="0x8FA17535">Combat_Meter_Into</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x22F4FE44">
-            <Parent>Combat_Meter_Out</Parent>
-            <Property name="Tags" type="List">
-                <ListProperty nameUID="0xC54F9B2C">
-                    <Property name="SampleUid" type="WwiseID"/>
-                    <Property name="TimeBegin" type="Float32">0</Property>
-                </ListProperty>
-            </Property>
-            <Property name="VisualEffectName" type="Symbol" Symbol="0x57AC52C8">Combat_Meter_Out</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="Audio-VisualEffectAudio" nameUID="0xE8303149">
+	<!-- Properties -->
+	<Property name="VisualEffectList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="VisualEffectEntry" nameUID="0x22F4FE44">
+				<!-- Properties -->
+				<Property name="Tags" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="ListProp" nameUID="0xC54F9B2C">
+							<!-- Properties -->
+							<Property name="SampleUid" type="WwiseID" symUID="0xB62F6614"/>
+							<Property name="TimeBegin" type="Float32">0</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="VisualEffectName" type="Symbol" symUID="0x8FA17535">Combat_Meter_Into</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="VisualEffectEntry" nameUID="0x22F4FE44">
+				<!-- Properties -->
+				<Property name="Tags" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="ListProp" nameUID="0xC54F9B2C">
+							<!-- Properties -->
+							<Property name="SampleUid" type="WwiseID" symUID="0x78EB9D76"/>
+							<Property name="TimeBegin" type="Float32">0</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="VisualEffectName" type="Symbol" symUID="0x57AC52C8">Combat_Meter_Out</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x78EB9D76 (WWise) -->
+<!-- 0xB62F6614 (WWise) -->

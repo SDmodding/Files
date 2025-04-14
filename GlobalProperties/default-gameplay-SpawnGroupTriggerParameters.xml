@@ -1,7 +1,9 @@
-<PropertySet name="default-gameplay-SpawnGroupTriggerParameters" nameUID="0xAD4AB358" schema="default-gameplay-SpawnGroupTriggerParameters">
-    <Property name="default-gameplay-TriggerTypes" type="PropSet">
-        <PropertySet>
-            <Parent>default-gameplay-TriggerTypes</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-gameplay-SpawnGroupTriggerParameters" nameUID="0xAD4AB358">
+	<!-- Properties -->
+	<Property name="default-gameplay-TriggerTypes" type="PropSet">
+		<PropertySet>
+			<!-- Parents -->
+			<Parent nameUID="0x789A0FB9">default-gameplay-TriggerTypes</Parent>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

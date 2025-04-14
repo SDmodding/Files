@@ -1,8 +1,11 @@
-<PropertySet name="object-physical-character-dirtymingPiP" nameUID="0x640B26BB" schema="object-physical-character-dirtymingPiP">
-    <Parent>default-component-FaceAction</Parent>
-    <Property name="Description" type="String">Dirty Ming PiP</Property>
-    <Property name="FaceAction" type="Symbol" Symbol="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
-    <Property name="Hidden" type="Boolean">False</Property>
-    <Property name="PipsRequired" type="UInt32">0</Property>
-    <Property name="RemoveOnCompletion" type="Boolean">True</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-dirtymingPiP" nameUID="0x640B26BB">
+	<!-- Parents -->
+	<Parent nameUID="0xD0BBE97D">default-component-FaceAction</Parent>
+	<Parent nameUID="0x265AEBE4">object-physical-character-dirtyming</Parent>
+	<!-- Properties -->
+	<Property name="FaceAction" type="Symbol" symUID="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
+	<Property name="Hidden" type="Boolean">false</Property>
+	<Property name="RemoveOnCompletion" type="Boolean">true</Property>
+	<Property name="PipsRequired" type="UInt32">0</Property>
+	<Property name="Description" type="String">Dirty Ming PiP</Property>
+</PropertySetResource>

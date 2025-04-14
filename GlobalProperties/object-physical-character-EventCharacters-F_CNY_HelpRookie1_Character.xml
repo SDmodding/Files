@@ -1,42 +1,50 @@
-<PropertySet name="object-physical-character-EventCharacters-F_CNY_HelpRookie1_Character" nameUID="0x74E2E8B6" schema="object-physical-character-EventCharacters-F_CNY_HelpRookie1_Character">
-    <Parent>default-component-FaceAction</Parent>
-    <Property name="CanBePushed" type="Boolean">False</Property>
-    <Property name="Description" type="String">Favor: CNY HelpRookie1</Property>
-    <Property name="FaceAction" type="Symbol" Symbol="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
-    <Property name="FaceActionEnabled" type="Boolean">True</Property>
-    <Property name="IgnoreAmbientStimuli" type="Boolean">True</Property>
-    <Property name="UsableByCopSystem" type="Boolean">False</Property>
-    <Property name="component_AIActionTree" type="PropSet">
-        <BinData>
-            <AIBehaviour type="String">Thug_behaviour.act</AIBehaviour>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_POLICE_VARIANT1</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NONE</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">TRIAD_WINSTON</FactionClass>
-            <Gender type="Symbol">Male</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NONE</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-EventCharacters-F_CNY_HelpRookie1_Character" nameUID="0x74E2E8B6">
+	<!-- Parents -->
+	<Parent nameUID="0xD0BBE97D">default-component-FaceAction</Parent>
+	<Parent nameUID="0x95576162">object-physical-character-police</Parent>
+	<!-- Properties -->
+	<Property name="component_AIActionTree" type="PropSet">
+		<PropertySet name="component_AIActionTree" nameUID="0x523487F" schema="default-component-AIActionTree">
+			<!-- Schema Properties -->
+			<Property name="AIBehaviour" type="String">Thug_behaviour.act</Property>
+		</PropertySet>
+	</Property>
+	<Property name="FaceAction" type="Symbol" symUID="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
+	<Property name="UsableByCopSystem" type="Boolean">false</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x2DD6F805">Event_NPC</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0xFDC62F91">eCHARACTER_TYPE_POLICE_VARIANT1</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0xB7D9CA1F">eFIGHTING_CLASS_NONE</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x2FDA7843">TRIAD_WINSTON</Property>
+			<Property name="Gender" type="Symbol" symUID="0x166A8B5C">Male</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="CanBePushed" type="Boolean">false</Property>
+	<Property name="IgnoreAmbientStimuli" type="Boolean">true</Property>
+	<Property name="FaceActionEnabled" type="Boolean">true</Property>
+	<Property name="Description" type="String">Favor: CNY HelpRookie1</Property>
+</PropertySetResource>

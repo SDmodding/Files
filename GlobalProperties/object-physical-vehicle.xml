@@ -1,188 +1,322 @@
-<PropertySet name="object-physical-vehicle" nameUID="0x51524B6E" schema="object-physical-vehicle">
-    <Parent>default-SimObject</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\Vehicle.act</Property>
-    <Property name="Description" type="String">Vehicle</Property>
-    <Property name="IsStolenProperty" type="Boolean">False</Property>
-    <Property name="NetworkCullingDistance" type="Float32">150</Property>
-    <Property name="NetworkView" type="String">NetVehicleView</Property>
-    <Property name="ObjectType" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
-    <Property name="SeatCount" type="UInt32">4</Property>
-    <Property name="SpawnPriority" type="Symbol" Symbol="0xB82F7335">Critical</Property>
-    <Property name="TranJobName" type="Symbol" Symbol="0xDCF92817">None</Property>
-    <Property name="UnlockVehicleDoors" type="Boolean">False</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-CharacterAnimation</Parent>
-        </PropertySet>
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-CharacterAnimation</Parent>
-        </PropertySet>
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CompositeDrawable" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-CompositeDrawable</Parent>
-        </PropertySet>
-        <BinData>
-            <DefaultSaturationOverride type="Float32">0</DefaultSaturationOverride>
-            <LightSFXMultiplier type="Float32">0</LightSFXMultiplier>
-            <HighlightingColour type="Vector4" x="1" y="1" z="1" w="1"/>
-            <SkinSSEnabled type="Boolean">false</SkinSSEnabled>
-            <OverlayWeights type="List"/>
-            <OverlayTextures type="List"/>
-            <DrawScale type="Float32">1</DrawScale>
-        </BinData>
-    </Property>
-    <Property name="component_DropShadow" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-DropShadow</Parent>
-        </PropertySet>
-        <BinData>
-            <DropShadow_ScaleX type="Float32">0.6</DropShadow_ScaleX>
-            <DropShadow_ScaleY type="Float32">0.5</DropShadow_ScaleY>
-            <DropShadow_TextureUID type="Symbol">FX_ShadowSquare</DropShadow_TextureUID>
-        </BinData>
-    </Property>
-    <Property name="component_FXSimComponent" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-FXSimComponent</Parent>
-        </PropertySet>
-        <BinData>
-            <EffectId type="Symbol"/>
-        </BinData>
-    </Property>
-    <Property name="component_Health" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Health</Parent>
-        </PropertySet>
-        <BinData>
-            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
-            <maxHealth type="Int32">100</maxHealth>
-            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
-            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
-            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
-        </BinData>
-    </Property>
-    <Property name="component_HitReaction" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-HitReaction</Parent>
-        </PropertySet>
-        <BinData>
-            <HitActFilename type="String">Data\Global\Act\VehicleHitTree.act</HitActFilename>
-            <HitReceiverDamageMultiplierPct type="UInt32">100</HitReceiverDamageMultiplierPct>
-        </BinData>
-    </Property>
-    <Property name="component_Interactable" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Interactable</Parent>
-        </PropertySet>
-        <BinData>
-            <InteractionPoints type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_MissionFailCondition" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-MissionFailCondition</Parent>
-        </PropertySet>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-VehicleProperties</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
-            <subTargetingProfile type="Symbol"/>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-StreamedResource</Parent>
-        </PropertySet>
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List"/>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol"/>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_TSActor" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-TSActor</Parent>
-        </PropertySet>
-        <BinData>
-            <SkookumClass type="Symbol">Vehicle</SkookumClass>
-        </BinData>
-    </Property>
-    <Property name="component_VehicleAudio" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-VehicleAudio</Parent>
-        </PropertySet>
-        <BinData>
-            <AudioPropertySet type="Symbol"/>
-        </BinData>
-    </Property>
-    <Property name="component_VehicleEffects" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-VehicleEffects</Parent>
-        </PropertySet>
-        <BinData>
-            <headlightsInRainProbability type="Float32">0.5</headlightsInRainProbability>
-            <headlightsAlwaysOn type="Boolean">false</headlightsAlwaysOn>
-            <headlightsAlwaysOff type="Boolean">false</headlightsAlwaysOff>
-            <DamageTransfer type="Symbol"/>
-            <EffectGroupName type="Symbol"/>
-            <InitialDirtSeed type="Float32">0</InitialDirtSeed>
-            <GrimeFactor type="Float32">0</GrimeFactor>
-            <Speed0 type="Float32">0</Speed0>
-            <Speed1 type="Float32">5</Speed1>
-            <Speed2 type="Float32">30</Speed2>
-            <Speed3 type="Float32">60</Speed3>
-        </BinData>
-    </Property>
-    <Property name="component_VehicleProperties" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-VehicleProperties</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
-            <subTargetingProfile type="Symbol"/>
-            <simObjectVehicleType type="Symbol">eSIM_OBJ_VEHICLE_TYPE_CAR</simObjectVehicleType>
-            <simObjectBoatType type="Symbol"/>
-            <aim_limit type="List"/>
-            <default_left_aim_limit type="Float32">45</default_left_aim_limit>
-            <default_right_aim_limit type="Float32">-45</default_right_aim_limit>
-            <door_phantom_info type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_VehiclesBlip" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-VehiclesBlip</Parent>
-        </PropertySet>
-    </Property>
-    <Property name="explosionPropertySet" type="Symbol" Symbol="0xE24A4351">object-physical-explosion-vehicle</Property>
-    <Property name="schema_classlist" type="PropSet">
-        <PropertySet>
-            <Parent>default-schema-classlist</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle" nameUID="0x51524B6E">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x308C5DD9">default-component-AiScriptInterface</Parent>
+	<Parent nameUID="0xE5CAD23D">default-component-VehicleOccupant</Parent>
+	<Parent nameUID="0xE6CEAAF8">default-component-ActionTree</Parent>
+	<Parent nameUID="0x3AF3B647">default-component-VehicleSubject</Parent>
+	<Parent nameUID="0x49F339C4">default-component-AIOutline</Parent>
+	<!-- Properties -->
+	<Property name="component_HitReaction" type="PropSet">
+		<PropertySet name="component_HitReaction" nameUID="0x1575D886" schema="default-component-HitReaction">
+			<!-- Parents -->
+			<Parent nameUID="0x9E2FD1A4">default-component-HitReaction</Parent>
+			<!-- Schema Properties -->
+			<Property name="HitActFilename" type="String">Data\Global\Act\VehicleHitTree.act</Property>
+			<Property name="HitReactionOpeningBranchFullPath" type="String"/>
+			<Property name="HitReceiverDamageMultiplierPct" type="UInt32">100</Property>
+		</PropertySet>
+	</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Parents -->
+			<Parent nameUID="0xC91285E9">default-schema-classlist</Parent>
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x9B06086B">Vehicle</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="UnlockVehicleDoors" type="Boolean">false</Property>
+	<Property name="component_VehiclesBlip" type="PropSet">
+		<PropertySet name="component_VehiclesBlip" nameUID="0x1EBD6D50" schema="default-component-VehiclesBlip">
+			<!-- Parents -->
+			<Parent nameUID="0x6F364DF">default-component-VehiclesBlip</Parent>
+		</PropertySet>
+	</Property>
+	<Property name="component_TSActor" type="PropSet">
+		<PropertySet name="component_TSActor" nameUID="0x2873821B" schema="default-component-TSActor">
+			<!-- Parents -->
+			<Parent nameUID="0xC2815AE5">default-component-TSActor</Parent>
+			<!-- Schema Properties -->
+			<Property name="SkookumClass" type="Symbol" symUID="0x9B06086B">Vehicle</Property>
+		</PropertySet>
+	</Property>
+	<Property name="SpawnPriority" type="Symbol" symUID="0xB82F7335">Critical</Property>
+	<Property name="TranJobName" type="Symbol" symUID="0xDCF92817">None</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Parents -->
+			<Parent nameUID="0x6C08125D">default-component-CharacterAnimation</Parent>
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="ObjectType" type="Symbol" symUID="0x9B06086B">Vehicle</Property>
+	<Property name="IsStolenProperty" type="Boolean">false</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\Vehicle.act</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Parents -->
+			<Parent nameUID="0x6C08125D">default-component-CharacterAnimation</Parent>
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String"/>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\VehicleWeightSets.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="NetworkView" type="String">NetVehicleView</Property>
+	<Property name="component_FXSimComponent" type="PropSet">
+		<PropertySet name="component_FXSimComponent" nameUID="0x6FE755E1" schema="default-component-FXSimComponent">
+			<!-- Parents -->
+			<Parent nameUID="0xF4795DDD">default-component-FXSimComponent</Parent>
+			<!-- Schema Properties -->
+			<Property name="EffectId" type="SymbolUC"/>
+		</PropertySet>
+	</Property>
+	<Property name="component_VehicleAudio" type="PropSet">
+		<PropertySet name="component_VehicleAudio" nameUID="0x77F43A25" schema="default-component-VehicleAudio">
+			<!-- Parents -->
+			<Parent nameUID="0x6FBA33AA">default-component-VehicleAudio</Parent>
+			<!-- Schema Properties -->
+			<Property name="AudioPropertySet" type="Symbol"/>
+		</PropertySet>
+	</Property>
+	<Property name="component_CompositeDrawable" type="PropSet">
+		<PropertySet name="component_CompositeDrawable" nameUID="0x79DB63A1" schema="default-component-CompositeDrawable">
+			<!-- Parents -->
+			<Parent nameUID="0x63E02B27">default-component-CompositeDrawable</Parent>
+			<!-- Schema Properties -->
+			<Property name="DefaultSaturationOverride" type="Float32">0</Property>
+			<Property name="LightSFXMultiplier" type="Float32">0</Property>
+			<Property name="HighlightingMode" type="String"/>
+			<Property name="HighlightingColour" type="Vector4" x="1" y="1" z="1" w="1"/>
+			<Property name="SkinSSEnabled" type="Boolean">false</Property>
+			<Property name="OverlayWeights" type="List"/>
+			<Property name="OverlayTextures" type="List"/>
+			<Property name="DrawScale" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_VehicleProperties" type="PropSet">
+		<PropertySet name="component_VehicleProperties" nameUID="0x7F1798C0" schema="default-component-VehicleProperties">
+			<!-- Parents -->
+			<Parent nameUID="0x652CD046">default-component-VehicleProperties</Parent>
+			<!-- Schema Properties -->
+			<Property name="simObjectVehicleType" type="Symbol" symUID="0x7F04EF10">eSIM_OBJ_VEHICLE_TYPE_CAR</Property>
+			<Property name="simObjectBoatType" type="Symbol"/>
+			<Property name="aim_limit" type="List"/>
+			<Property name="default_left_aim_limit" type="Float32">45</Property>
+			<Property name="default_right_aim_limit" type="Float32">-45</Property>
+			<Property name="door_phantom_info" type="List"/>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_VehicleEffects" type="PropSet">
+		<PropertySet name="component_VehicleEffects" nameUID="0x83824245" schema="default-component-VehicleEffects">
+			<!-- Parents -->
+			<Parent nameUID="0x181C4A79">default-component-VehicleEffects</Parent>
+			<!-- Schema Properties -->
+			<Property name="headlightsInRainProbability" type="Float32">0.5</Property>
+			<Property name="headlightsAlwaysOn" type="Boolean">false</Property>
+			<Property name="headlightsAlwaysOff" type="Boolean">false</Property>
+			<Property name="DamageTransfer" type="SymbolUC"/>
+			<Property name="EffectGroupName" type="SymbolUC"/>
+			<Property name="InitialDirtSeed" type="Float32">0</Property>
+			<Property name="GrimeFactor" type="Float32">0</Property>
+			<Property name="Speed0" type="Float32">0</Property>
+			<Property name="Speed1" type="Float32">5</Property>
+			<Property name="Speed2" type="Float32">30</Property>
+			<Property name="Speed3" type="Float32">60</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_MissionFailCondition" type="PropSet">
+		<PropertySet name="component_MissionFailCondition" nameUID="0x91587106" schema="default-component-MissionFailCondition">
+			<!-- Parents -->
+			<Parent nameUID="0xDD79A83B">default-component-MissionFailCondition</Parent>
+			<!-- Schema Properties -->
+			<Property name="ArrestFailTrigger" type="Boolean">false</Property>
+			<Property name="DeathFailTrigger" type="Boolean">false</Property>
+			<Property name="DamageFailTrigger" type="Boolean">false</Property>
+			<Property name="DamageHealthThreshold" type="Float32">1</Property>
+			<Property name="DistanceFailTrigger" type="Boolean">false</Property>
+			<Property name="DistanceFailThreshold" type="Float32">100</Property>
+			<Property name="PanicWeaponFailTrigger" type="Boolean">false</Property>
+			<Property name="PanicVehicleFailTrigger" type="Boolean">false</Property>
+			<Property name="VehicleFlipFailTrigger" type="Boolean">false</Property>
+			<Property name="BoatStuckFailTrigger" type="Boolean">false</Property>
+			<Property name="ArrestFailCaption" type="String">Arrested</Property>
+			<Property name="DeathFailCaption" type="String">Died</Property>
+			<Property name="DamageFailCaption" type="String">Damaged enemy</Property>
+			<Property name="DistanceFailCaption" type="String">Too far away</Property>
+			<Property name="PanicWeaponFailCaption" type="String">Caused panic</Property>
+			<Property name="PanicVehicleFailCaption" type="String">Caused panic</Property>
+			<Property name="VehicleFlipFailCaption" type="String">Vehicle flipped over</Property>
+			<Property name="BoatStuckFailCaption" type="String">Boat is stuck</Property>
+		</PropertySet>
+	</Property>
+	<Property name="NetworkCullingDistance" type="Float32">150</Property>
+	<Property name="component_Health" type="PropSet">
+		<PropertySet name="component_Health" nameUID="0xA9EB4546" schema="default-component-Health">
+			<!-- Parents -->
+			<Parent nameUID="0x9BDC07C8">default-component-Health</Parent>
+			<!-- Schema Properties -->
+			<Property name="maxUpgradedHealth" type="Int32">400</Property>
+			<Property name="maxHealth" type="Int32">100</Property>
+			<Property name="regenerativeHealthRate" type="Float32">-1</Property>
+			<Property name="InvulnerableCharacter" type="Boolean">false</Property>
+			<Property name="healthProjectileDamageMultiplier" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_VehicleProperties" nameUID="0x7F1798C0" schema="default-component-VehicleProperties">
+			<!-- Parents -->
+			<Parent nameUID="0x652CD046">default-component-VehicleProperties</Parent>
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0x9844EE67">eSIM_OBJ_TYPE_VEHICLE</Property>
+			<Property name="subTargetingProfile" type="Symbol"/>
+		</PropertySet>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Parents -->
+			<Parent nameUID="0xA09F7F61">default-component-StreamedResource</Parent>
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC"/>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="explosionPropertySet" type="Symbol" symUID="0xE24A4351">object-physical-explosion-vehicle</Property>
+	<Property name="SeatCount" type="UInt32">4</Property>
+	<Property name="component_DropShadow" type="PropSet">
+		<PropertySet name="component_DropShadow" nameUID="0xEC2CE6F9" schema="default-component-DropShadow">
+			<!-- Parents -->
+			<Parent nameUID="0xDA6908D0">default-component-DropShadow</Parent>
+			<!-- Schema Properties -->
+			<Property name="DropShadow_ScaleX" type="Float32">0.6</Property>
+			<Property name="DropShadow_ScaleY" type="Float32">0.5</Property>
+			<Property name="DropShadow_TextureUID" type="SymbolUC" symUID="0x80C33DEF">FX_ShadowSquare</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_Interactable" type="PropSet">
+		<PropertySet name="component_Interactable" nameUID="0xF20A4492" schema="default-component-Interactable">
+			<!-- Parents -->
+			<Parent nameUID="0xEA444D1D">default-component-Interactable</Parent>
+			<!-- Schema Properties -->
+			<Property name="InteractionPoints" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0xBC9BA367">eINTERACTION_POINT_UPDATE_DISTANCE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x30E2F569">eTARGET_TYPE_INTERACTION_POINT0</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC"/>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x8B5E191A">eINTERACTION_POINT_UPDATE_BONE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x3423E8DE">eTARGET_TYPE_INTERACTION_POINT1</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC" symUID="0x7508FAFF">C_FEETSYNC01</Property>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x8B5E191A">eINTERACTION_POINT_UPDATE_BONE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x3960CE07">eTARGET_TYPE_INTERACTION_POINT2</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC" symUID="0x784BDC26">C_FEETSYNC02</Property>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x8B5E191A">eINTERACTION_POINT_UPDATE_BONE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x3DA1D3B0">eTARGET_TYPE_INTERACTION_POINT3</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC" symUID="0x7C8AC191">C_FEETSYNC03</Property>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x8B5E191A">eINTERACTION_POINT_UPDATE_BONE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x23E683B5">eTARGET_TYPE_INTERACTION_POINT4</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC" symUID="0x62CD9194">C_FEETSYNC04</Property>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="InteractionPoint" nameUID="0x886E1502" schema="default-schema-interactionPoint">
+						<!-- Schema Properties -->
+						<Property name="IPActive" type="Boolean">true</Property>
+						<Property name="IPUpdate" type="Symbol" symUID="0x8B5E191A">eINTERACTION_POINT_UPDATE_BONE</Property>
+						<Property name="IPTarget" type="Symbol" symUID="0x27279E02">eTARGET_TYPE_INTERACTION_POINT5</Property>
+						<Property name="IPOffsetTarget" type="Symbol" symUID="0x2E7F1F12">eTARGET_TYPE_INVALID</Property>
+						<Property name="IPDistance" type="Float32">0</Property>
+						<Property name="IPBoneName" type="SymbolUC" symUID="0xA7AC367B">C_FEETSYNCTRUNK</Property>
+						<Property name="IPXform" type="TransRotation">
+							<Forward x="1" y="0" z="0"/>
+							<Up x="0" y="0" z="1"/>
+							<Translation x="0" y="0" z="0"/>
+						</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Vehicle</Property>
+</PropertySetResource>

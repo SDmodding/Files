@@ -1,43 +1,60 @@
-<PropertySet name="default-encounters-m_hsmission_encounter_test" nameUID="0xFEA7334D" schema="default-encounters-m_hsmission_encounter_test">
-    <Parent>default-encounters-defaults</Parent>
-    <Property name="BlipName" type="String">enemy</Property>
-    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x96962095">TRIAD_18K</Property>
-    <Property name="kills_required" type="UInt32">6</Property>
-    <Property name="show_blip_radius" type="Boolean">False</Property>
-    <Property name="wave_definitions" type="List">
-        <ListProperty nameUID="0x29014FDD">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">15</Property>
-            <Property name="onfoot_population" type="UInt32">3</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
-                <Property type="Symbol" Symbol="0x2DFA571">object-physical-character-Thug_18k_grap</Property>
-                <Property type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
-            </Property>
-            <Property name="replenish_style" type="Symbol" Symbol="0xAD0BA30D">by_wave_type</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x32083EE1">
-                    <Property name="character" type="Symbol" Symbol="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x14D4357D">object-physical-weapon-firearm-rifle-assault_taclight</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3F4B1838">
-                    <Property name="character" type="Symbol" Symbol="0x2DFA571">object-physical-character-Thug_18k_grap</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0x46738290">object-physical-weapon-firearm-shotgun-pump</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x3B8A058F">
-                    <Property name="character" type="Symbol" Symbol="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xB31A1ACD">object-physical-weapon-firearm-smg-45cal</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">0</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-encounters-m_hsmission_encounter_test" nameUID="0xFEA7334D">
+	<!-- Parents -->
+	<Parent nameUID="0x6159DA8B">default-encounters-defaults</Parent>
+	<!-- Properties -->
+	<Property name="kills_required" type="UInt32">6</Property>
+	<Property name="wave_definitions" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_0" nameUID="0x29014FDD">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="18k_group1" nameUID="0x32083EE1">
+							<!-- Properties -->
+							<Property name="character" type="Symbol" symUID="0xCB79A69F">object-physical-character-Thug_18k_brawler</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="weapon" type="Symbol" symUID="0x14D4357D">object-physical-weapon-firearm-rifle-assault_taclight</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="18k_group2" nameUID="0x3F4B1838">
+							<!-- Properties -->
+							<Property name="character" type="Symbol" symUID="0x2DFA571">object-physical-character-Thug_18k_grap</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="weapon" type="Symbol" symUID="0x46738290">object-physical-weapon-firearm-shotgun-pump</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="18k_group3" nameUID="0x3B8A058F">
+							<!-- Properties -->
+							<Property name="character" type="Symbol" symUID="0x10085B9E">object-physical-character-Thug_18k_quick</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="weapon" type="Symbol" symUID="0xB31A1ACD">object-physical-weapon-firearm-smg-45cal</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">15</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">3</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0xCB79A69F">object-physical-character-Thug_18k_brawler</ListProperty>
+					<ListProperty type="Symbol" symUID="0x2DFA571">object-physical-character-Thug_18k_grap</ListProperty>
+					<ListProperty type="Symbol" symUID="0x10085B9E">object-physical-character-Thug_18k_quick</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="replenish_style" type="Symbol" symUID="0xAD0BA30D">by_wave_type</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">0</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="show_blip_radius" type="Boolean">false</Property>
+	<Property name="EncounterFactionClass" type="Symbol" symUID="0x96962095">TRIAD_18K</Property>
+	<Property name="BlipName" type="String">enemy</Property>
+</PropertySetResource>

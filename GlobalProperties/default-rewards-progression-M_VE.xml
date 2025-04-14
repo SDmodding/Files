@@ -1,13 +1,15 @@
-<PropertySet name="default-rewards-progression-M_VE" nameUID="0xF4A453FD" schema="default-rewards-progression-M_VE">
-    <Parent>default-rewards-progression-mission_defaults</Parent>
-    <Property name="0x72201393" type="Int32">425</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_VENDOR_EXTORTION</Property>
-    <Property name="CopStartingScore" type="Int32">75</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="MinimumStanding" type="Int32">100</Property>
-    <Property name="MoneyAdjustment" type="Int32">0</Property>
-    <Property name="ShowRewardScreen" type="Boolean">False</Property>
-    <Property name="StandingAdjustment" type="Int32">1000</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">250</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_VE" nameUID="0xF4A453FD">
+	<!-- Parents -->
+	<Parent nameUID="0xD274BB76">default-rewards-progression-mission_defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">75</Property>
+	<Property name="MoneyAdjustment" type="Int32">0</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_VENDOR_EXTORTION</Property>
+	<Property name="MinimumStanding" type="Int32">100</Property>
+	<Property name="ShowRewardScreen" type="Boolean">false</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">425</Property>
+	<Property name="TriadTargetScore" type="Int32">250</Property>
+	<Property name="StandingAdjustment" type="Int32">1000</Property>
+</PropertySetResource>

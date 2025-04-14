@@ -1,5 +1,7 @@
-<PropertySet name="default-formation-slot-besideOnRight" nameUID="0x12D73677" schema="default-formation-slot-besideOnRight">
-    <Parent>default-formation-slot-default</Parent>
-    <Property name="Angle" type="Float32">-90</Property>
-    <Property name="MinFollowers" type="UInt32">1</Property>
-</PropertySet>
+<PropertySetResource name="default-formation-slot-besideOnRight" nameUID="0x12D73677">
+	<!-- Parents -->
+	<Parent nameUID="0x64BBD6BA">default-formation-slot-default</Parent>
+	<!-- Properties -->
+	<Property name="MinFollowers" type="UInt32">1</Property>
+	<Property name="Angle" type="Float32">-90</Property>
+</PropertySetResource>

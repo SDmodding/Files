@@ -1,26 +1,34 @@
-<PropertySet name="object-logical-OrderDrink" nameUID="0x84EFF4D0" schema="object-logical-OrderDrink">
-    <Parent>object-logical-InterestPoint</Parent>
-    <Property name="SimObjChildren" type="List">
-        <ListProperty nameUID="0x6E8B785A">
-            <Parent>object-logical-InterestPoint</Parent>
-            <Property name="NameRoot" type="String">ClerksSpot</Property>
-            <Property name="XformLocal" type="Matrix">
-                <Forward x="-1" y="0" z="0" w="0"/>
-                <Right x="0" y="-1" z="0" w="0"/>
-                <Up x="0" y="0" z="1" w="0"/>
-                <Translation x="1.548" y="0.165" z="0" w="1"/>
-            </Property>
-            <Property name="XformParent" type="UInt32">1</Property>
-            <Property name="default-component-InterestPoint" type="PropSet">
-                <PropertySet>
-                    <Parent>default-component-InterestPoint-purchasedrink_bartender</Parent>
-                </PropertySet>
-            </Property>
-        </ListProperty>
-    </Property>
-    <Property name="default-component-InterestPoint" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-InterestPoint-purchasedrink_customer</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-OrderDrink" nameUID="0x84EFF4D0">
+	<!-- Parents -->
+	<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+	<!-- Properties -->
+	<Property name="SimObjChildren" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="ClerksSpot" nameUID="0x6E8B785A">
+				<!-- Parents -->
+				<Parent nameUID="0x9B1AAE60">object-logical-InterestPoint</Parent>
+				<!-- Properties -->
+				<Property name="XformLocal" type="TransRotation">
+					<Forward x="-1" y="0" z="0"/>
+					<Up x="0" y="0" z="1"/>
+					<Translation x="1.548" y="0.165" z="0"/>
+				</Property>
+				<Property name="NameRoot" type="String">ClerksSpot</Property>
+				<Property name="XformParent" type="UInt32">1</Property>
+				<Property name="default-component-InterestPoint" type="PropSet">
+					<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+						<!-- Parents -->
+						<Parent nameUID="0x2A991938">default-component-InterestPoint-purchasedrink_bartender</Parent>
+					</PropertySet>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="default-component-InterestPoint" type="PropSet">
+		<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+			<!-- Parents -->
+			<Parent nameUID="0xA0DD8B51">default-component-InterestPoint-purchasedrink_customer</Parent>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

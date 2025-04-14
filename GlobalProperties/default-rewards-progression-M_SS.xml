@@ -1,34 +1,60 @@
-<PropertySet name="default-rewards-progression-M_SS" nameUID="0x350E254A" schema="default-rewards-progression-M_SS">
-    <Parent>default-rewards-progression-mission_defaults</Parent>
-    <Property name="0x34BE120D" type="Int32">500</Property>
-    <Property name="0x39FD34D4" type="Int32">1</Property>
-    <Property name="0x72201393" type="Int32">1300</Property>
-    <Property name="0xBF780215" type="Symbol"/>
-    <Property name="0xC3DF597C" type="Int32">280</Property>
-    <Property name="0xC71E44CB" type="Int32">250</Property>
-    <Property name="0xCA5D6212" type="Int32">1</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_SWEATSHOP</Property>
-    <Property name="CopStartingScore" type="Int32">75</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="GamesliceType" type="Symbol"/>
-    <Property name="MoneyAdjustment" type="Int32">25000</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">350</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xAE26406A">
-            <Property name="0x4E4D2ED3" type="String">Locomotion_Nervous</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0xD71F82D8">
-            <Property name="0x4E4D2ED3" type="String">Sweatshop</Property>
-            <Property name="0x7198AF49" type="Int32">2</Property>
-            <Property name="Type" type="Symbol" Symbol="0x93910E97">Collectible_AreaOwnership</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xBD943035">
-            <Property name="0x2DFB6FC5" type="Int32">10</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_10</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_SS" nameUID="0x350E254A">
+	<!-- Parents -->
+	<Parent nameUID="0xD274BB76">default-rewards-progression-mission_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xAE26406A">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x958197CB"/>
+				<Property name="AssetId" type="String">Locomotion_Nervous</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Sweatshop" nameUID="0xD71F82D8">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x93910E97">Collectible_AreaOwnership</Property>
+				<Property name="AssetId" type="String">Sweatshop</Property>
+				<Property name="~7198af49~" type="Int32">2</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xBD943035">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">10</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_10</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">75</Property>
+	<Property name="~34be120d~" type="Int32">500</Property>
+	<Property name="MoneyAdjustment" type="Int32">25000</Property>
+	<Property name="~39fd34d4~" type="Int32">1</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_SWEATSHOP</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">1300</Property>
+	<Property name="TriadTargetScore" type="Int32">350</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="~bf780215~" type="Symbol" symUID="0x371985C5"/>
+	<Property name="~c3df597c~" type="Int32">280</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0xE3322BAE"/>
+	<Property name="~c71e44cb~" type="Int32">250</Property>
+	<Property name="~ca5d6212~" type="Int32">1</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x34BE120D (Normal) -->
+<!-- 0x371985C5 (Normal) -->
+<!-- 0x39FD34D4 (Normal) -->
+<!-- 0x7198AF49 (Normal) -->
+<!-- 0x958197CB (Normal) -->
+<!-- 0xAE26406A (Normal) -->
+<!-- 0xBD943035 (Normal) -->
+<!-- 0xBF780215 (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->
+<!-- 0xE3322BAE (Normal) -->

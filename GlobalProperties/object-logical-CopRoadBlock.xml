@@ -1,4 +1,8 @@
-<PropertySet name="object-logical-CopRoadBlock" nameUID="0xFA69C385" schema="object-logical-CopRoadBlock">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0xD4D7D5DD">CopRoadBlock</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-CopRoadBlock" nameUID="0xFA69C385">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x3C0AEECD">default-component-CopRoadBlock</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0xD4D7D5DD">CopRoadBlock</Property>
+</PropertySetResource>

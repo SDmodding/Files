@@ -1,16 +1,26 @@
-<PropertySet name="default-rewards-progression-F_FC4" nameUID="0x9B7BB5DE" schema="default-rewards-progression-F_FC4">
-    <Parent>default-rewards-progression-favor_defaults</Parent>
-    <Property name="0xBF780215" type="Symbol"/>
-    <Property name="CompletionText" type="String">$SGTITLE_FIGHT_CLUB_4</Property>
-    <Property name="MoneyAdjustment" type="Int32">150000</Property>
-    <Property name="StandingAdjustment" type="Int32">450</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x223BF3CF">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">OutfitKungFuPeasant</Property>
-            <Property name="0xDE3E6A23" type="String">$MISSION_REWARD_BONGAK</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-F_FC4" nameUID="0x9B7BB5DE">
+	<!-- Parents -->
+	<Parent nameUID="0xB5D2DBF9">default-rewards-progression-favor_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x223BF3CF">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">OutfitKungFuPeasant</Property>
+				<Property name="Text" type="String">$MISSION_REWARD_BONGAK</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="MoneyAdjustment" type="Int32">150000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_FIGHT_CLUB_4</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">450</Property>
+	<Property name="~bf780215~" type="Symbol" symUID="0x9A5D1A6D"/>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x223BF3CF (Normal) -->
+<!-- 0x9A5D1A6D (Normal) -->
+<!-- 0xBF780215 (Normal) -->

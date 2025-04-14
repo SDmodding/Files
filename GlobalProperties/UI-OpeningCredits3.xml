@@ -1,28 +1,38 @@
-<PropertySet name="UI-OpeningCredits3" nameUID="0x5CE40396" schema="UI-OpeningCredits3">
-    <Property name="section_list" type="List">
-        <ListProperty nameUID="0x5284275E">
-            <Property name="duration" type="Float32">5</Property>
-            <Property name="heading" type="String">Heading</Property>
-            <Property name="names_list" type="List">
-                <Property type="String">First Name</Property>
-                <Property type="String">Second Name</Property>
-                <Property type="String">Third Name</Property>
-            </Property>
-            <Property name="pos_x" type="Float32">150</Property>
-            <Property name="pos_y" type="Float32">280</Property>
-            <Property name="start_time" type="Float32">0.5</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x5284275E">
-            <Property name="duration" type="Float32">5</Property>
-            <Property name="heading" type="String">Heading</Property>
-            <Property name="names_list" type="List">
-                <Property type="String">Fourth Name</Property>
-                <Property type="String">Fifth Name</Property>
-                <Property type="String">Sixth Name</Property>
-            </Property>
-            <Property name="pos_x" type="Float32">1462</Property>
-            <Property name="pos_y" type="Float32">280</Property>
-            <Property name="start_time" type="Float32">6.5</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="UI-OpeningCredits3" nameUID="0x5CE40396">
+	<!-- Properties -->
+	<Property name="section_list" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-Credits2" nameUID="0x5284275E">
+				<!-- Properties -->
+				<Property name="pos_y" type="Float32">280</Property>
+				<Property name="pos_x" type="Float32">150</Property>
+				<Property name="heading" type="String">Heading</Property>
+				<Property name="start_time" type="Float32">0.5</Property>
+				<Property name="duration" type="Float32">5</Property>
+				<Property name="names_list" type="List">
+					<!-- Elements -->
+					<ListProperty type="String">First Name</ListProperty>
+					<ListProperty type="String">Second Name</ListProperty>
+					<ListProperty type="String">Third Name</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="UI-Credits2" nameUID="0x5284275E">
+				<!-- Properties -->
+				<Property name="pos_y" type="Float32">280</Property>
+				<Property name="pos_x" type="Float32">1462</Property>
+				<Property name="heading" type="String">Heading</Property>
+				<Property name="start_time" type="Float32">6.5</Property>
+				<Property name="duration" type="Float32">5</Property>
+				<Property name="names_list" type="List">
+					<!-- Elements -->
+					<ListProperty type="String">Fourth Name</ListProperty>
+					<ListProperty type="String">Fifth Name</ListProperty>
+					<ListProperty type="String">Sixth Name</ListProperty>
+				</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

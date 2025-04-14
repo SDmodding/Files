@@ -1,24 +1,33 @@
-<PropertySet name="default-vehiclespawnset-cn_soho_day" nameUID="0xD9F028A0" schema="default-vehiclespawnset-cn_soho_day">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0x97D708A8">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x250E679F">object-physical-vehicle-Loewe01</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x97D708A8">
-            <Property name="MaxInstances" type="Int32">2</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0xE6A7FFAD">object-physical-vehicle-Lowin</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0xB861456D">object-physical-vehicle-425MHC01</Property>
-        <Property type="Symbol" Symbol="0xFD6B3046">object-physical-vehicle-CS750R</Property>
-        <Property type="Symbol" Symbol="0x50A6A13F">object-physical-vehicle-NeoV01</Property>
-        <Property type="Symbol" Symbol="0x58F6A06">object-physical-vehicle-SES01</Property>
-        <Property type="Symbol" Symbol="0x8CB0BCCA">object-physical-vehicle-625MHCTaxi01</Property>
-        <Property type="Symbol" Symbol="0xA4958376">object-physical-vehicle-Bisai01</Property>
-        <Property type="Symbol" Symbol="0x5EAD89E">object-physical-vehicle-LittleBear01</Property>
-        <Property type="Symbol" Symbol="0xE3E11CDF">object-physical-vehicle-MVR01</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-vehiclespawnset-cn_soho_day" nameUID="0xD9F028A0">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="ABIsleRareVehicleSpawns" nameUID="0x97D708A8">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x250E679F">object-physical-vehicle-Loewe01</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="ABIsleRareVehicleSpawns" nameUID="0x97D708A8">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0xE6A7FFAD">object-physical-vehicle-Lowin</Property>
+				<Property name="MaxInstances" type="Int32">2</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xB861456D">object-physical-vehicle-425MHC01</ListProperty>
+		<ListProperty type="Symbol" symUID="0xFD6B3046">object-physical-vehicle-CS750R</ListProperty>
+		<ListProperty type="Symbol" symUID="0x50A6A13F">object-physical-vehicle-NeoV01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x58F6A06">object-physical-vehicle-SES01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x8CB0BCCA">object-physical-vehicle-625MHCTaxi01</ListProperty>
+		<ListProperty type="Symbol" symUID="0xA4958376">object-physical-vehicle-Bisai01</ListProperty>
+		<ListProperty type="Symbol" symUID="0x5EAD89E">object-physical-vehicle-LittleBear01</ListProperty>
+		<ListProperty type="Symbol" symUID="0xE3E11CDF">object-physical-vehicle-MVR01</ListProperty>
+	</Property>
+</PropertySetResource>

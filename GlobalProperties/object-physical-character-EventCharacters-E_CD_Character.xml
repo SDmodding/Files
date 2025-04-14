@@ -1,58 +1,140 @@
-<PropertySet name="object-physical-character-EventCharacters-E_CD_Character" nameUID="0x7A217470" schema="object-physical-character-EventCharacters-E_CD_Character">
-    <Parent>default-component-AttackableByAI</Parent>
-    <Property name="Description" type="String">Favour: Cop Draw</Property>
-    <Property name="FaceAction" type="Symbol" Symbol="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
-    <Property name="FaceActionEnabled" type="Boolean">True</Property>
-    <Property name="IgnoreAmbientStimuli" type="Boolean">True</Property>
-    <Property name="component_AIActionTree" type="PropSet">
-        <BinData>
-            <AIBehaviour type="String">Pedestrian_hangout.act</AIBehaviour>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_PEDESTRIAN</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">TRIAD_WINSTON</FactionClass>
-            <Gender type="Symbol">Male</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_FormationManager" type="PropSet"/>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0x6873DB1D">Wsg</Property>
-                <Property type="Symbol" Symbol="0x31B08D26">Quick</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0.15</BMIMin>
-            <BMIMax type="Float32">0.15</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-EventCharacters-E_CD_Character" nameUID="0x7A217470">
+	<!-- Parents -->
+	<Parent nameUID="0x664F6F76">default-component-AttackableByAI</Parent>
+	<Parent nameUID="0xD0BBE97D">default-component-FaceAction</Parent>
+	<Parent nameUID="0xA83C1F5D">object-physical-character-Thug_Wsg_quick</Parent>
+	<!-- Properties -->
+	<Property name="component_AIActionTree" type="PropSet">
+		<PropertySet name="component_AIActionTree" nameUID="0x523487F" schema="default-component-AIActionTree">
+			<!-- Schema Properties -->
+			<Property name="AIBehaviour" type="String">Pedestrian_hangout.act</Property>
+		</PropertySet>
+	</Property>
+	<Property name="FaceAction" type="Symbol" symUID="0x571C44B9">eFACEACTION_OFFER_HELP</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x2DD6F805">Event_NPC</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_FormationManager" type="PropSet">
+		<PropertySet name="component_FormationManager" nameUID="0x8259C690" schema="default-component-FormationManager">
+			<!-- Schema Properties -->
+			<Property name="NumRanges" type="Int32">4</Property>
+			<Property name="NumSlotsInRange0" type="Int32">1</Property>
+			<Property name="NumSlotsInRange1" type="Int32">3</Property>
+			<Property name="NumSlotsInRange2" type="Int32">4</Property>
+			<Property name="NumSlotsInRange3" type="Int32">8</Property>
+			<Property name="NormalMaxDistance0" type="Float32">2.9</Property>
+			<Property name="NormalMaxDistance1" type="Float32">3.7</Property>
+			<Property name="NormalMaxDistance2" type="Float32">5.7</Property>
+			<Property name="NormalMaxDistance3" type="Float32">15</Property>
+			<Property name="NormalMinTimeBeforeCheckPlayersTarget" type="Float32">0.25</Property>
+			<Property name="NormalMaxTimeBeforeCheckPlayersTarget" type="Float32">1</Property>
+			<Property name="NormalMinTimeBeforeSwitchFromRange0" type="Float32">99999</Property>
+			<Property name="NormalMaxTimeBeforeSwitchFromRange0" type="Float32">999999</Property>
+			<Property name="NormalMinTimeBeforeSwitchFromRange1" type="Float32">99999</Property>
+			<Property name="NormalMaxTimeBeforeSwitchFromRange1" type="Float32">999999</Property>
+			<Property name="NormalMinTimeBeforeSwitchFromRange2" type="Float32">99999</Property>
+			<Property name="NormalMaxTimeBeforeSwitchFromRange2" type="Float32">999999</Property>
+			<Property name="MobMaxDistance0" type="Float32">2</Property>
+			<Property name="MobMaxDistance1" type="Float32">2</Property>
+			<Property name="MobMaxDistance2" type="Float32">10.5</Property>
+			<Property name="MobMaxDistance3" type="Float32">15</Property>
+			<Property name="MobMinTimeBeforeCheckPlayersTarget" type="Float32">0.1</Property>
+			<Property name="MobMaxTimeBeforeCheckPlayersTarget" type="Float32">0.1</Property>
+			<Property name="MobMinTimeBeforeSwitchFromRange0" type="Float32">5</Property>
+			<Property name="MobMaxTimeBeforeSwitchFromRange0" type="Float32">8</Property>
+			<Property name="MobMinTimeBeforeSwitchFromRange1" type="Float32">99999</Property>
+			<Property name="MobMaxTimeBeforeSwitchFromRange1" type="Float32">999999</Property>
+			<Property name="MobMinTimeBeforeSwitchFromRange2" type="Float32">99999</Property>
+			<Property name="MobMaxTimeBeforeSwitchFromRange2" type="Float32">999999</Property>
+			<Property name="MaxRadialDistanceFromDesiredPosition0" type="Float32">0.25</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresis0" type="Float32">0.3</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresisLarge0" type="Float32">0.3</Property>
+			<Property name="MaxLateralDistanceFromDesiredPosition0" type="Float32">0.7</Property>
+			<Property name="MaxLateralDistanceFromDesiredPositionHysteresis0" type="Float32">1.2</Property>
+			<Property name="MaxRadialDistanceFromDesiredPosition1" type="Float32">0.3</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresis1" type="Float32">0.3</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresisLarge1" type="Float32">0.3</Property>
+			<Property name="MaxLateralDistanceFromDesiredPosition1" type="Float32">1.2</Property>
+			<Property name="MaxLateralDistanceFromDesiredPositionHysteresis1" type="Float32">1</Property>
+			<Property name="MaxRadialDistanceFromDesiredPosition2" type="Float32">0.5</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresis2" type="Float32">3</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresisLarge2" type="Float32">10</Property>
+			<Property name="MaxLateralDistanceFromDesiredPosition2" type="Float32">0.5</Property>
+			<Property name="MaxLateralDistanceFromDesiredPositionHysteresis2" type="Float32">10</Property>
+			<Property name="MaxRadialDistanceFromDesiredPosition3" type="Float32">0.5</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresis3" type="Float32">6</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionHysteresisLarge3" type="Float32">10</Property>
+			<Property name="MaxLateralDistanceFromDesiredPosition3" type="Float32">0.5</Property>
+			<Property name="MaxLateralDistanceFromDesiredPositionHysteresis3" type="Float32">10</Property>
+			<Property name="MaxRadialDistanceFromDesiredPositionToBeginSprintingWhenTargetSprinting" type="Float32">1</Property>
+			<Property name="FacingTypeEnumString" type="String">eFORMATION_FACING_CENTRE</Property>
+			<Property name="MaxFacingDifference0" type="Float32">50</Property>
+			<Property name="MaxFacingDifferenceHysteresis0" type="Float32">25</Property>
+			<Property name="MaxFacingDifference1" type="Float32">50</Property>
+			<Property name="MaxFacingDifferenceHysteresis1" type="Float32">25</Property>
+			<Property name="MaxFacingDifference2" type="Float32">50</Property>
+			<Property name="MaxFacingDifferenceHysteresis2" type="Float32">40</Property>
+			<Property name="MaxFacingDifference3" type="Float32">50</Property>
+			<Property name="MaxFacingDifferenceHysteresis3" type="Float32">40</Property>
+			<Property name="RadialHysteresisModifierMin0" type="Float32">0</Property>
+			<Property name="RadialHysteresisModifierMax0" type="Float32">0</Property>
+			<Property name="RadialHysteresisModifierMin1" type="Float32">-1</Property>
+			<Property name="RadialHysteresisModifierMax1" type="Float32">1</Property>
+			<Property name="RadialHysteresisModifierMin2" type="Float32">-2</Property>
+			<Property name="RadialHysteresisModifierMax2" type="Float32">2</Property>
+			<Property name="RadialHysteresisModifierMin3" type="Float32">-2</Property>
+			<Property name="RadialHysteresisModifierMax3" type="Float32">2</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0xA0567ECF">eCHARACTER_TYPE_PEDESTRIAN</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0x5038C060">eFIGHTING_CLASS_NON_COMBATANT</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x2FDA7843">TRIAD_WINSTON</Property>
+			<Property name="Gender" type="Symbol" symUID="0x166A8B5C">Male</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="IgnoreAmbientStimuli" type="Boolean">true</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0x6873DB1D">Wsg</ListProperty>
+				<ListProperty type="Symbol" symUID="0x31B08D26">Quick</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0.15</Property>
+			<Property name="BMIMax" type="Float32">0.15</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="FaceActionEnabled" type="Boolean">true</Property>
+	<Property name="Description" type="String">Favour: Cop Draw</Property>
+</PropertySetResource>

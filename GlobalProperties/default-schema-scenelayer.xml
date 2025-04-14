@@ -1,30 +1,32 @@
-<PropertySet name="default-schema-scenelayer" nameUID="0xA190063D" schema="default-schema-scenelayer">
-    <Property name="AutoActivate" type="Boolean">True</Property>
-    <Property name="BoundsMax" type="Vector3" x="0" y="0" z="0"/>
-    <Property name="BoundsMin" type="Vector3" x="0" y="0" z="0"/>
-    <Property name="CategoryAudio" type="Boolean">False</Property>
-    <Property name="CategoryOut" type="Boolean">False</Property>
-    <Property name="CollectibleCategory" type="Symbol"/>
-    <Property name="CollectibleItem" type="Symbol"/>
-    <Property name="CollectibleItemStage" type="UInt32">0</Property>
-    <Property name="ExcludeLayer" type="Boolean">False</Property>
-    <Property name="FaceCheckMax" type="Int32">-1</Property>
-    <Property name="FaceCheckMin" type="Int32">-1</Property>
-    <Property name="Flow" type="List">
-        <Property type="Symbol"/>
-    </Property>
-    <Property name="ForceGlobal" type="Boolean">False</Property>
-    <Property name="GeoWeatherMax" type="Float32">-1</Property>
-    <Property name="GeoWeatherMin" type="Float32">-1</Property>
-    <Property name="Geographical" type="Boolean">False</Property>
-    <Property name="InitialActivate" type="Boolean">False</Property>
-    <Property name="LayerCategory" type="Symbol"/>
-    <Property name="LayerLocksAfter" type="Symbol"/>
-    <Property name="LayerLocksAfterCondition" type="UInt32">0</Property>
-    <Property name="LayerTimeBegin" type="UInt32">0</Property>
-    <Property name="LayerTimeEnd" type="UInt32">0</Property>
-    <Property name="LayerUnlocksAfter" type="Symbol"/>
-    <Property name="LayerUnlocksAfterCondition" type="UInt32">0</Property>
-    <Property name="OffDuringMissions" type="Boolean">False</Property>
-    <Property name="Pinned" type="Boolean">False</Property>
-</PropertySet>
+<PropertySetResource name="default-schema-scenelayer" nameUID="0xA190063D" schema="default-schema-scenelayer">
+	<!-- Properties -->
+	<Property name="BoundsMin" type="Vector3" x="0" y="0" z="0"/>
+	<Property name="Geographical" type="Boolean">false</Property>
+	<Property name="FaceCheckMax" type="Int32">-1</Property>
+	<Property name="GeoWeatherMax" type="Float32">-1</Property>
+	<Property name="LayerTimeBegin" type="UInt32">0</Property>
+	<Property name="CollectibleItem" type="Symbol"/>
+	<Property name="LayerCategory" type="Symbol"/>
+	<Property name="ExcludeLayer" type="Boolean">false</Property>
+	<Property name="InitialActivate" type="Boolean">false</Property>
+	<Property name="Pinned" type="Boolean">false</Property>
+	<Property name="LayerUnlocksAfter" type="Symbol"/>
+	<Property name="LayerTimeEnd" type="UInt32">0</Property>
+	<Property name="CategoryOut" type="Boolean">false</Property>
+	<Property name="LayerLocksAfter" type="Symbol"/>
+	<Property name="AutoActivate" type="Boolean">true</Property>
+	<Property name="CollectibleItemStage" type="UInt32">0</Property>
+	<Property name="LayerLocksAfterCondition" type="UInt32">0</Property>
+	<Property name="CategoryAudio" type="Boolean">false</Property>
+	<Property name="Flow" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xAA1CA048">Main</ListProperty>
+	</Property>
+	<Property name="FaceCheckMin" type="Int32">-1</Property>
+	<Property name="BoundsMax" type="Vector3" x="0" y="0" z="0"/>
+	<Property name="OffDuringMissions" type="Boolean">false</Property>
+	<Property name="LayerUnlocksAfterCondition" type="UInt32">0</Property>
+	<Property name="ForceGlobal" type="Boolean">false</Property>
+	<Property name="CollectibleCategory" type="Symbol"/>
+	<Property name="GeoWeatherMin" type="Float32">-1</Property>
+</PropertySetResource>

@@ -1,8 +1,10 @@
-<PropertySet name="default-roadnetwork-emptygpsonly" nameUID="0x7BDB3C5F" schema="default-roadnetwork-emptygpsonly">
-    <Parent>default-roadnetwork-road</Parent>
-    <Property name="Density" type="Float32">0</Property>
-    <Property name="DensityNight" type="Float32">0</Property>
-    <Property name="RoadDriveableTraffic" type="Boolean">False</Property>
-    <Property name="RoadID" type="UInt32">30</Property>
-    <Property name="WayFinderGPSOnly" type="Boolean">True</Property>
-</PropertySet>
+<PropertySetResource name="default-roadnetwork-emptygpsonly" nameUID="0x7BDB3C5F">
+	<!-- Parents -->
+	<Parent nameUID="0x3ABE3A4E">default-roadnetwork-road</Parent>
+	<!-- Properties -->
+	<Property name="DensityNight" type="Float32">0</Property>
+	<Property name="Density" type="Float32">0</Property>
+	<Property name="RoadID" type="UInt32">30</Property>
+	<Property name="RoadDriveableTraffic" type="Boolean">false</Property>
+	<Property name="WayFinderGPSOnly" type="Boolean">true</Property>
+</PropertySetResource>

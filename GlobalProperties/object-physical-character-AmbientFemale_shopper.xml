@@ -1,17 +1,21 @@
-<PropertySet name="object-physical-character-AmbientFemale_shopper" nameUID="0xF6DCB9CC" schema="object-physical-character-AmbientFemale_shopper">
-    <Parent>object-physical-character-AmbientFemaleM</Parent>
-    <Property name="CanWander" type="Boolean">True</Property>
-    <Property name="Description" type="String">Ambient Female Shopper</Property>
-    <Property name="PersonalityList" type="List">
-        <Property type="Symbol" Symbol="0x89346ADF">default-component-personality-samaritan</Property>
-    </Property>
-    <Property name="PropList" type="List">
-        <Property type="Symbol"/>
-        <Property type="Symbol" Symbol="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</Property>
-        <Property type="Symbol" Symbol="0x98ACE464">object-physical-weapon-melee-Purse001_Elbow</Property>
-        <Property type="Symbol" Symbol="0xCE873DFE">object-physical-weapon-melee-Purse001_Hand</Property>
-        <Property type="Symbol" Symbol="0xAC64F33E">object-physical-weapon-melee-Purse001_Shoulder</Property>
-        <Property type="Symbol" Symbol="0x2290B7CF">object-physical-weapon-melee-PurseHand001_Elbow</Property>
-        <Property type="Symbol" Symbol="0x8A1A83AB">object-physical-weapon-melee-PurseHand001_Hand</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientFemale_shopper" nameUID="0xF6DCB9CC">
+	<!-- Parents -->
+	<Parent nameUID="0x77F71BB6">object-physical-character-AmbientFemaleM</Parent>
+	<!-- Properties -->
+	<Property name="PropList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol"/>
+		<ListProperty type="Symbol" symUID="0x43E25501">object-physical-prop-StreamedObject-ShoppingBag001</ListProperty>
+		<ListProperty type="Symbol" symUID="0x98ACE464">object-physical-weapon-melee-Purse001_Elbow</ListProperty>
+		<ListProperty type="Symbol" symUID="0xCE873DFE">object-physical-weapon-melee-Purse001_Hand</ListProperty>
+		<ListProperty type="Symbol" symUID="0xAC64F33E">object-physical-weapon-melee-Purse001_Shoulder</ListProperty>
+		<ListProperty type="Symbol" symUID="0x2290B7CF">object-physical-weapon-melee-PurseHand001_Elbow</ListProperty>
+		<ListProperty type="Symbol" symUID="0x8A1A83AB">object-physical-weapon-melee-PurseHand001_Hand</ListProperty>
+	</Property>
+	<Property name="PersonalityList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x89346ADF">default-component-personality-samaritan</ListProperty>
+	</Property>
+	<Property name="CanWander" type="Boolean">true</Property>
+	<Property name="Description" type="String">Ambient Female Shopper</Property>
+</PropertySetResource>

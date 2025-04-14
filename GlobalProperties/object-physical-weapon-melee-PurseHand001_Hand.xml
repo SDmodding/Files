@@ -1,7 +1,9 @@
-<PropertySet name="object-physical-weapon-melee-PurseHand001_Hand" nameUID="0x8A1A83AB" schema="object-physical-weapon-melee-PurseHand001_Hand">
-    <Parent>object-physical-weapon-melee-pursehand</Parent>
-    <Property name="AttachBone" type="String">Bip01 R Prop</Property>
-    <Property name="Description" type="String">$HUD_WEAPON_PURSE</Property>
-    <Property name="PropBone" type="String">Grip R Hand</Property>
-    <Property name="PurseCarryPosition" type="Symbol" Symbol="0x9154CE70">Hand</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-weapon-melee-PurseHand001_Hand" nameUID="0x8A1A83AB">
+	<!-- Parents -->
+	<Parent nameUID="0x69B35AE1">object-physical-weapon-melee-pursehand</Parent>
+	<!-- Properties -->
+	<Property name="PurseCarryPosition" type="Symbol" symUID="0x9154CE70">HAND</Property>
+	<Property name="AttachBone" type="String">Bip01 R Prop</Property>
+	<Property name="PropBone" type="String">Grip R Hand</Property>
+	<Property name="Description" type="String">$HUD_WEAPON_PURSE</Property>
+</PropertySetResource>

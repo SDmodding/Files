@@ -1,8 +1,21 @@
-<PropertySet name="object-physical-character-AmbientCharacters-AB_FaceCommenter_M" nameUID="0x64F6174C" schema="object-physical-character-AmbientCharacters-AB_FaceCommenter_M">
-    <Parent>object-physical-character-AmbientCharacters-AB_Isle_Day_Male</Parent>
-    <Property name="Description" type="String">AB FaceCommenter Male</Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0xAEEC82F4">AB</Property>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-AB_FaceCommenter_M" nameUID="0x64F6174C">
+	<!-- Parents -->
+	<Parent nameUID="0x4BE0B8D2">object-physical-character-AmbientCharacters-AB_Isle_Day_Male</Parent>
+	<!-- Properties -->
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x8C8E7DEB">Generic_Ped</ListProperty>
+				<ListProperty type="Symbol" symUID="0x1AAD7A6C">FaceCommenter</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xAEEC82F4">AB</ListProperty>
+	</Property>
+	<Property name="Description" type="String">AB FaceCommenter Male</Property>
+</PropertySetResource>

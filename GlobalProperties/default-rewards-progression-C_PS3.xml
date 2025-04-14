@@ -1,42 +1,69 @@
-<PropertySet name="default-rewards-progression-C_PS3" nameUID="0xE5CDB9A4" schema="default-rewards-progression-C_PS3">
-    <Parent>default-rewards-progression-case_defaults</Parent>
-    <Property name="0xBF780215" type="Symbol"/>
-    <Property name="0xC3DF597C" type="Int32">600</Property>
-    <Property name="0xC71E44CB" type="Int32">595</Property>
-    <Property name="0xCA5D6212" type="Int32">1</Property>
-    <Property name="CompletionText" type="String">$CASE_REWARDS_PS_TEXT</Property>
-    <Property name="CopStartingScore" type="Int32">600</Property>
-    <Property name="EnableCopScoring" type="Boolean">True</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="EnableTriadScoring" type="Boolean">False</Property>
-    <Property name="GamesliceType" type="Symbol" Symbol="0x12CC197">CASE</Property>
-    <Property name="MoneyAdjustment" type="Int32">2400</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xBDAE1499">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">Lead_C_PS3</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Status" type="Int32">1</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0x42ED8C8E">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">Lead_C_PS3</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Status" type="Int32">2</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0x17564CD4">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">OutfitVagrant</Property>
-            <Property name="0xDE3E6A23" type="String">$MISSION_REWARD_VAGRANT</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xAE9046E9">
-            <Property name="0x2DFB6FC5" type="Int32">14</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_14</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-C_PS3" nameUID="0xE5CDB9A4">
+	<!-- Parents -->
+	<Parent nameUID="0x91F1AA7E">default-rewards-progression-case_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xBDAE1499">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x748078A5"/>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">Lead_C_PS3</Property>
+				<Property name="Status" type="Int32">1</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x42ED8C8E">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x748078A5"/>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">Lead_C_PS3</Property>
+				<Property name="Status" type="Int32">2</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x17564CD4">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">OutfitVagrant</Property>
+				<Property name="Text" type="String">$MISSION_REWARD_VAGRANT</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xAE9046E9">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">14</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_14</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">600</Property>
+	<Property name="MoneyAdjustment" type="Int32">2400</Property>
+	<Property name="CompletionText" type="String">$CASE_REWARDS_PS_TEXT</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="EnableCopScoring" type="Boolean">true</Property>
+	<Property name="~bf780215~" type="Symbol" symUID="0xCA84BE4C"/>
+	<Property name="~c3df597c~" type="Int32">600</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x12CC197">CASE</Property>
+	<Property name="~c71e44cb~" type="Int32">595</Property>
+	<Property name="~ca5d6212~" type="Int32">1</Property>
+	<Property name="EnableTriadScoring" type="Boolean">false</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x17564CD4 (Normal) -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x42ED8C8E (Normal) -->
+<!-- 0x748078A5 (Normal) -->
+<!-- 0xAE9046E9 (Normal) -->
+<!-- 0xBDAE1499 (Normal) -->
+<!-- 0xBF780215 (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->
+<!-- 0xCA84BE4C (Normal) -->

@@ -1,8 +1,14 @@
-<PropertySet name="object-logical-collectibles-HidingSpot" nameUID="0x8E90B469" schema="object-logical-collectibles-HidingSpot">
-    <Parent>default-SimObject</Parent>
-    <Property name="CollectibleCollectedFalseEffect" type="String">Corona_walk_disabled</Property>
-    <Property name="CollectibleCollectedTrueEffect" type="String">HK_Mission_CoronaHome_Effect</Property>
-    <Property name="CollectibleSpawnInfo" type="Symbol"/>
-    <Property name="CollectibleType" type="Symbol" Symbol="0xB83D321A">Collectible_HidingSpot</Property>
-    <Property name="ObjectType" type="Symbol"/>
-</PropertySet>
+<PropertySetResource name="object-logical-collectibles-HidingSpot" nameUID="0x8E90B469">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x3825F987">default-component-CollectibleHidingSpot</Parent>
+	<!-- Properties -->
+	<Property name="CollectibleCollectedFalseEffect" type="String">Corona_walk_disabled</Property>
+	<Property name="CollectibleType" type="Symbol" symUID="0xB83D321A">Collectible_HidingSpot</Property>
+	<Property name="ObjectType" type="Symbol" symUID="0x868843"/>
+	<Property name="CollectibleCollectedTrueEffect" type="String">HK_Mission_CoronaHome_Effect</Property>
+	<Property name="CollectibleSpawnInfo" type="Symbol" symUID="0x9EFC78DC">object-physical-prop-HidingSpot</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x868843 (Normal) -->

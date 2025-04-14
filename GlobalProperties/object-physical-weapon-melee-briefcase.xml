@@ -1,5 +1,9 @@
-<PropertySet name="object-physical-weapon-melee-briefcase" nameUID="0xF4FE75C8" schema="object-physical-weapon-melee-briefcase">
-    <Parent>object-physical-weapon-melee-briefcasealuminum</Parent>
-    <Property name="Description" type="String">$HUD_WEAPON_BRIEFCASE</Property>
-    <Property name="SoundBank" type="WwiseID"/>
-</PropertySet>
+<PropertySetResource name="object-physical-weapon-melee-briefcase" nameUID="0xF4FE75C8">
+	<!-- Parents -->
+	<Parent nameUID="0xF58FE160">object-physical-weapon-melee-briefcasealuminum</Parent>
+	<!-- Properties -->
+	<Property name="SoundBank" type="WwiseID" symUID="0xAB09E7E0"/>
+	<Property name="Description" type="String">$HUD_WEAPON_BRIEFCASE</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xAB09E7E0 (WWise) -->

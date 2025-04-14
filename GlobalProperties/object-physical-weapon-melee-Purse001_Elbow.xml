@@ -1,7 +1,9 @@
-<PropertySet name="object-physical-weapon-melee-Purse001_Elbow" nameUID="0x98ACE464" schema="object-physical-weapon-melee-Purse001_Elbow">
-    <Parent>object-physical-weapon-melee-purse</Parent>
-    <Property name="AttachBone" type="String">Bip01 R Forearm</Property>
-    <Property name="Description" type="String">$HUD_WEAPON_PURSE</Property>
-    <Property name="PropBone" type="String">Grip R Elbow</Property>
-    <Property name="PurseCarryPosition" type="Symbol" Symbol="0x93A4CA3E">Elbow</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-weapon-melee-Purse001_Elbow" nameUID="0x98ACE464">
+	<!-- Parents -->
+	<Parent nameUID="0x31990577">object-physical-weapon-melee-purse</Parent>
+	<!-- Properties -->
+	<Property name="PurseCarryPosition" type="Symbol" symUID="0x93A4CA3E">ELBOW</Property>
+	<Property name="AttachBone" type="String">Bip01 R Forearm</Property>
+	<Property name="PropBone" type="String">Grip R Elbow</Property>
+	<Property name="Description" type="String">$HUD_WEAPON_PURSE</Property>
+</PropertySetResource>

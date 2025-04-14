@@ -1,14 +1,19 @@
-<PropertySet name="propprofiles-eINVENTORY_ITEM_HAPPY_ENDING" nameUID="0x4EC429EC" schema="propprofiles-eINVENTORY_ITEM_HAPPY_ENDING">
-    <Property name="0x46348560" type="Boolean">True</Property>
-    <Property name="0xB0369B06" type="Boolean">False</Property>
-    <Property name="ItemCaptioning" type="String"/>
-    <Property name="ItemCost" type="Int32">1200</Property>
-    <Property name="ItemDescription" type="String">This will not be seen once Warren J fixes a bug!</Property>
-    <Property name="ItemDescriptionBuff" type="Symbol" Symbol="0x97A1E52B">ePLAYER_BUFF_MASSAGEPARLOUR</Property>
-    <Property name="ItemDescriptionList" type="List">
-        <Property type="String">$ITEMS_DESC_MASSAGE_SM</Property>
-        <Property type="String">$ITEMS_DESC_MASSAGE_MD</Property>
-        <Property type="String">$ITEMS_DESC_MASSAGE_LG</Property>
-    </Property>
-    <Property name="ItemName" type="String">$ITEMS_TITLE_CMASSAGE</Property>
-</PropertySet>
+<PropertySetResource name="propprofiles-eINVENTORY_ITEM_HAPPY_ENDING" nameUID="0x4EC429EC">
+	<!-- Properties -->
+	<Property name="ItemCaptioning" type="String"/>
+	<Property name="ItemDescriptionBuff" type="Symbol" symUID="0x97A1E52B">ePLAYER_BUFF_MASSAGEPARLOUR</Property>
+	<Property name="ItemCost" type="Int32">1200</Property>
+	<Property name="~46348560~" type="Boolean">true</Property>
+	<Property name="ItemDescription" type="String">This will not be seen once Warren J fixes a bug!</Property>
+	<Property name="ItemName" type="String">$ITEMS_TITLE_CMASSAGE</Property>
+	<Property name="~b0369b06~" type="Boolean">false</Property>
+	<Property name="ItemDescriptionList" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">$ITEMS_DESC_MASSAGE_SM</ListProperty>
+		<ListProperty type="String">$ITEMS_DESC_MASSAGE_MD</ListProperty>
+		<ListProperty type="String">$ITEMS_DESC_MASSAGE_LG</ListProperty>
+	</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x46348560 (Normal) -->
+<!-- 0xB0369B06 (Normal) -->

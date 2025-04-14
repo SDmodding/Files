@@ -1,22 +1,36 @@
-<PropertySet name="default-rewards-progression-M_JA" nameUID="0x389DDCC9" schema="default-rewards-progression-M_JA">
-    <Parent>default-rewards-progression-mission_defaults</Parent>
-    <Property name="0x34BE120D" type="Int32">80</Property>
-    <Property name="0x39FD34D4" type="Int32">1</Property>
-    <Property name="0x72201393" type="Int32">400</Property>
-    <Property name="0xC3DF597C" type="Int32">95</Property>
-    <Property name="0xC71E44CB" type="Int32">50</Property>
-    <Property name="0xCA5D6212" type="Int32">1</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_JACKIE_ARRESTED</Property>
-    <Property name="CopStartingScore" type="Int32">75</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="MoneyAdjustment" type="Int32">0</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">150</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xAE26406A">
-            <Property name="0x4E4D2ED3" type="String">Locomotion_Stressed</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_JA" nameUID="0x389DDCC9">
+	<!-- Parents -->
+	<Parent nameUID="0xD274BB76">default-rewards-progression-mission_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xAE26406A">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x958197CB"/>
+				<Property name="AssetId" type="String">Locomotion_Stressed</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">75</Property>
+	<Property name="~34be120d~" type="Int32">80</Property>
+	<Property name="MoneyAdjustment" type="Int32">0</Property>
+	<Property name="~39fd34d4~" type="Int32">1</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_JACKIE_ARRESTED</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">400</Property>
+	<Property name="TriadTargetScore" type="Int32">150</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="~c3df597c~" type="Int32">95</Property>
+	<Property name="~c71e44cb~" type="Int32">50</Property>
+	<Property name="~ca5d6212~" type="Int32">1</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x34BE120D (Normal) -->
+<!-- 0x39FD34D4 (Normal) -->
+<!-- 0x958197CB (Normal) -->
+<!-- 0xAE26406A (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->

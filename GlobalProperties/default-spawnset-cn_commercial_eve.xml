@@ -1,20 +1,26 @@
-<PropertySet name="default-spawnset-cn_commercial_eve" nameUID="0xD6112E2A" schema="default-spawnset-cn_commercial_eve">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xB7B39865">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">25</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x309915CE">object-physical-character-police_ambient</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0xF6DE9E96">object-physical-character-AmbientCharacters-CN_Comm_Eve_Male</Property>
-        <Property type="Symbol" Symbol="0xC58114FB">object-physical-character-AmbientCharacters-CN_Comm_Eve_Male_yng</Property>
-        <Property type="Symbol" Symbol="0xBF470FA9">object-physical-character-AmbientCharacters-CN_Comm_Eve_Female</Property>
-        <Property type="Symbol" Symbol="0x476D5A20">object-physical-character-AmbientCharacters-CN_Sexy_Female</Property>
-        <Property type="Symbol" Symbol="0xFBAA612C">object-physical-character-Amb_Business_M</Property>
-        <Property type="Symbol" Symbol="0xD0E1AA4D">object-physical-character-Amb_Business_F</Property>
-        <Property type="Symbol" Symbol="0x3732AA82">object-physical-character-Amb_Business_WM</Property>
-        <Property type="Symbol" Symbol="0x1C7961E3">object-physical-character-Amb_Business_WF</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-cn_commercial_eve" nameUID="0xD6112E2A">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Police" nameUID="0xB7B39865">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x309915CE">object-physical-character-police_ambient</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">25</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xF6DE9E96">object-physical-character-AmbientCharacters-CN_Comm_Eve_Male</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC58114FB">object-physical-character-AmbientCharacters-CN_Comm_Eve_Male_yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0xBF470FA9">object-physical-character-AmbientCharacters-CN_Comm_Eve_Female</ListProperty>
+		<ListProperty type="Symbol" symUID="0x476D5A20">object-physical-character-AmbientCharacters-CN_Sexy_Female</ListProperty>
+		<ListProperty type="Symbol" symUID="0xFBAA612C">object-physical-character-Amb_Business_M</ListProperty>
+		<ListProperty type="Symbol" symUID="0xD0E1AA4D">object-physical-character-Amb_Business_F</ListProperty>
+		<ListProperty type="Symbol" symUID="0x3732AA82">object-physical-character-Amb_Business_WM</ListProperty>
+		<ListProperty type="Symbol" symUID="0x1C7961E3">object-physical-character-Amb_Business_WF</ListProperty>
+	</Property>
+</PropertySetResource>

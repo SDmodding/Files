@@ -1,7 +1,8 @@
-<PropertySet name="default-component-Health" nameUID="0x9BDC07C8" schema="default-component-Health" schematype="component">
-    <Property name="InvulnerableCharacter" type="Boolean">False</Property>
-    <Property name="healthProjectileDamageMultiplier" type="Float32">1</Property>
-    <Property name="maxHealth" type="Int32">100</Property>
-    <Property name="maxUpgradedHealth" type="Int32">400</Property>
-    <Property name="regenerativeHealthRate" type="Float32">-1</Property>
-</PropertySet>
+<PropertySetResource name="default-component-Health" nameUID="0x9BDC07C8" schema="default-component-Health" schematype="component">
+	<!-- Properties -->
+	<Property name="regenerativeHealthRate" type="Float32">-1</Property>
+	<Property name="InvulnerableCharacter" type="Boolean">false</Property>
+	<Property name="maxHealth" type="Int32">100</Property>
+	<Property name="healthProjectileDamageMultiplier" type="Float32">1</Property>
+	<Property name="maxUpgradedHealth" type="Int32">400</Property>
+</PropertySetResource>

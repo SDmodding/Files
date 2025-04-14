@@ -1,7 +1,12 @@
-<PropertySet name="default-savegames-debugmenu-Ghost-m_hgf_gotp" nameUID="0xA2181B66" schema="default-savegames-debugmenu-Ghost-m_hgf_gotp">
-    <Parent>default-savegames-debugmenu-Ghost-HGF_defaults</Parent>
-    <Property name="0x643FDE38" type="String">$HGF_TUTORIAL_ETHEREAL_FIRE</Property>
-    <Property name="0x697CF8E1" type="String">$HGF_TUTORIAL_SWORD PEACHWOOD SWORDS</Property>
-    <Property name="LoadingHintPriority0" type="String">$HGF_TUTORIAL_STUNNED</Property>
-    <Property name="LoadingScreenPriority0" type="String">Data\UI\loading_hgf_gotp_start_tp.perm.bin</Property>
-</PropertySet>
+<PropertySetResource name="default-savegames-debugmenu-Ghost-m_hgf_gotp" nameUID="0xA2181B66">
+	<!-- Parents -->
+	<Parent nameUID="0x8854817B">default-savegames-debugmenu-Ghost-HGF_defaults</Parent>
+	<!-- Properties -->
+	<Property name="LoadingHintPriority0" type="String">$HGF_TUTORIAL_STUNNED</Property>
+	<Property name="~643fde38~" type="String">$HGF_TUTORIAL_ETHEREAL_FIRE</Property>
+	<Property name="~697cf8e1~" type="String">$HGF_TUTORIAL_SWORD PEACHWOOD SWORDS</Property>
+	<Property name="LoadingScreenPriority0" type="String">Data\UI\loading_hgf_gotp_start_tp.perm.bin</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x643FDE38 (Normal) -->
+<!-- 0x697CF8E1 (Normal) -->

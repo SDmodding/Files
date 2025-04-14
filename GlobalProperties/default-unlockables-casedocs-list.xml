@@ -1,34 +1,48 @@
-<PropertySet name="default-unlockables-casedocs-list" nameUID="0x2E5D539" schema="default-unlockables-casedocs-list">
-    <Property name="List" type="List">
-        <ListProperty nameUID="0x34BFCF62">
-            <Property name="CaseName" type="String">The Kidnapper</Property>
-            <Property name="Description" type="String">Prostitution, Rape, Human Trafficking.</Property>
-            <Property name="Lead1" type="String">Lead_C_KN1</Property>
-            <Property name="Lead2" type="String">Lead_C_KN2</Property>
-            <Property name="Lead3" type="String">Lead_C_KN3</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA1911553">
-            <Property name="CaseName" type="String">Popstar</Property>
-            <Property name="Description" type="String">Drug Dealing, Violence, Armed Robbery</Property>
-            <Property name="Lead1" type="String">Lead_C_PS1</Property>
-            <Property name="Lead2" type="String">Lead_C_PS2</Property>
-            <Property name="Lead3" type="String">Lead_C_PS3</Property>
-            <Property name="Lead4" type="String">Lead_C_PS4</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xD572E926">
-            <Property name="CaseName" type="String">Oliver 'Hotshot' Cheng</Property>
-            <Property name="Description" type="String">Street Racing, Manslaughter</Property>
-            <Property name="Lead1" type="String">Lead_C_R1</Property>
-            <Property name="Lead2" type="String">Lead_C_R2</Property>
-            <Property name="Lead3" type="String">Lead_C_R3</Property>
-            <Property name="Lead4" type="String">Lead_C_R4</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB9637C48">
-            <Property name="CaseName" type="String">Serial Killer</Property>
-            <Property name="Description" type="String">Murder</Property>
-            <Property name="Lead1" type="String">Lead_C_SK1</Property>
-            <Property name="Lead2" type="String">Lead_C_SK2</Property>
-            <Property name="Lead3" type="String">Lead_C_SK3</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-unlockables-casedocs-list" nameUID="0x2E5D539">
+	<!-- Properties -->
+	<Property name="List" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="CaseDoc_C_KN" nameUID="0x34BFCF62">
+				<!-- Properties -->
+				<Property name="Lead1" type="String">Lead_C_KN1</Property>
+				<Property name="CaseName" type="String">The Kidnapper</Property>
+				<Property name="Lead3" type="String">Lead_C_KN3</Property>
+				<Property name="Lead2" type="String">Lead_C_KN2</Property>
+				<Property name="Description" type="String">Prostitution, Rape, Human Trafficking.</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CaseDoc_C_PS" nameUID="0xA1911553">
+				<!-- Properties -->
+				<Property name="Lead1" type="String">Lead_C_PS1</Property>
+				<Property name="CaseName" type="String">Popstar</Property>
+				<Property name="Lead3" type="String">Lead_C_PS3</Property>
+				<Property name="Lead2" type="String">Lead_C_PS2</Property>
+				<Property name="Lead4" type="String">Lead_C_PS4</Property>
+				<Property name="Description" type="String">Drug Dealing, Violence, Armed Robbery</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CaseDoc_C_R" nameUID="0xD572E926">
+				<!-- Properties -->
+				<Property name="Lead1" type="String">Lead_C_R1</Property>
+				<Property name="CaseName" type="String">Oliver &apos;Hotshot&apos; Cheng</Property>
+				<Property name="Lead3" type="String">Lead_C_R3</Property>
+				<Property name="Lead2" type="String">Lead_C_R2</Property>
+				<Property name="Lead4" type="String">Lead_C_R4</Property>
+				<Property name="Description" type="String">Street Racing, Manslaughter</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="CaseDoc_C_SK" nameUID="0xB9637C48">
+				<!-- Properties -->
+				<Property name="Lead1" type="String">Lead_C_SK1</Property>
+				<Property name="CaseName" type="String">Serial Killer</Property>
+				<Property name="Lead3" type="String">Lead_C_SK3</Property>
+				<Property name="Lead2" type="String">Lead_C_SK2</Property>
+				<Property name="Description" type="String">Murder</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

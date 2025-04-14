@@ -1,40 +1,51 @@
-<PropertySet name="default-encounters-j_ar2copjob__encounter" nameUID="0xC7F099C2" schema="default-encounters-j_ar2copjob__encounter">
-    <Parent>default-encounters-defaults</Parent>
-    <Property name="BlipName" type="String">enemy</Property>
-    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x96962095">TRIAD_18K</Property>
-    <Property name="heat_radius_vehicle" type="Float32">100</Property>
-    <Property name="kills_required" type="UInt32">2</Property>
-    <Property name="show_blip_radius" type="Boolean">True</Property>
-    <Property name="vehicle_generic_spawn_max_radius" type="Float32">60</Property>
-    <Property name="vehicle_generic_spawn_min_radius" type="Float32">20</Property>
-    <Property name="vehicle_initial_speed_ratio" type="Float32">0.8</Property>
-    <Property name="vehicle_spawn_behind_probability" type="Float32">0</Property>
-    <Property name="wave_definitions" type="List">
-        <ListProperty nameUID="0x29014FDD">
-            <Property name="cooldown_timer" type="Float32">59</Property>
-            <Property name="heatwave_timer" type="Float32">59</Property>
-            <Property name="onfoot_population" type="UInt32">0</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
-                <Property type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                <Property type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-            </Property>
-            <Property name="replenish_style" type="Symbol" Symbol="0xAD0BA30D">by_wave_type</Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xAB732629">object-physical-character-Thug_18k_striker</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">1</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
-                    <Property name="weapon" type="Symbol" Symbol="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">1</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-encounters-j_ar2copjob__encounter" nameUID="0xC7F099C2">
+	<!-- Parents -->
+	<Parent nameUID="0x6159DA8B">default-encounters-defaults</Parent>
+	<!-- Properties -->
+	<Property name="kills_required" type="UInt32">2</Property>
+	<Property name="vehicle_generic_spawn_max_radius" type="Float32">60</Property>
+	<Property name="vehicle_initial_speed_ratio" type="Float32">0.8</Property>
+	<Property name="wave_definitions" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_0" nameUID="0x29014FDD">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x5CECFE12">object-physical-vehicle-Taikai_18K01</Property>
+							<Property name="num_passengers" type="UInt32">1</Property>
+							<Property name="character" type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="weapon" type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">59</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">0</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x5CECFE12">object-physical-vehicle-Taikai_18K01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xAB732629">object-physical-character-Thug_18k_striker</ListProperty>
+					<ListProperty type="Symbol" symUID="0xBE5F68F9">object-physical-weapon-firearm-pistol-9mm</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">59</Property>
+				<Property name="replenish_style" type="Symbol" symUID="0xAD0BA30D">by_wave_type</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="vehicle_spawn_behind_probability" type="Float32">0</Property>
+	<Property name="show_blip_radius" type="Boolean">true</Property>
+	<Property name="EncounterFactionClass" type="Symbol" symUID="0x96962095">TRIAD_18K</Property>
+	<Property name="vehicle_generic_spawn_min_radius" type="Float32">20</Property>
+	<Property name="BlipName" type="String">enemy</Property>
+	<Property name="heat_radius_vehicle" type="Float32">100</Property>
+</PropertySetResource>

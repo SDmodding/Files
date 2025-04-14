@@ -1,4 +1,7 @@
-<PropertySet name="object-logical-Director" nameUID="0xF1E703C0" schema="object-logical-Director">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0xB0EF2BAB">Director</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-Director" nameUID="0xF1E703C0">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0xE47CCB50">default-component-Director</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0xB0EF2BAB">Director</Property>
+</PropertySetResource>

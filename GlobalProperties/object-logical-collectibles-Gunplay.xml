@@ -1,7 +1,9 @@
-<PropertySet name="object-logical-collectibles-Gunplay" nameUID="0x2617CCC" schema="object-logical-collectibles-Gunplay">
-    <Parent>object-logical-collectibles-Base</Parent>
-    <Property name="CollectibleSpawnInfo" type="Symbol" Symbol="0xF65EEBFB">object-physical-prop-LOC_Statue001</Property>
-    <Property name="CollectibleType" type="Symbol" Symbol="0x8E3D9278">Collectible_Gunplay</Property>
-    <Property name="DeleteAfterUse" type="Boolean">True</Property>
-    <Property name="StatueUpgradePoint" type="Int32">1</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-collectibles-Gunplay" nameUID="0x2617CCC">
+	<!-- Parents -->
+	<Parent nameUID="0x9611976B">object-logical-collectibles-Base</Parent>
+	<!-- Properties -->
+	<Property name="CollectibleType" type="Symbol" symUID="0x8E3D9278">Collectible_Gunplay</Property>
+	<Property name="DeleteAfterUse" type="Boolean">true</Property>
+	<Property name="StatueUpgradePoint" type="Int32">1</Property>
+	<Property name="CollectibleSpawnInfo" type="Symbol" symUID="0xF65EEBFB">object-physical-prop-LOC_Statue001</Property>
+</PropertySetResource>

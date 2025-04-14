@@ -1,24 +1,27 @@
-<PropertySet name="object-physical-prop-LOS_CnstLghtStnd002" nameUID="0x2888558A" schema="object-physical-prop-LOS_CnstLghtStnd002">
-    <Parent>object-physical-prop-VisibleProp</Parent>
-    <Property name="Description" type="String">LOS_CnstLghtStnd002</Property>
-    <Property name="PowerManagement_SuspendDistance" type="Float32">45</Property>
-    <Property name="RadarHighlightType" type="Symbol" Symbol="0x2A84762D">CombatProp</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOS_CnstLghtStnd002</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">LOS_CnstLghtStnd002</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-LOS_CnstLghtStnd002" nameUID="0x2888558A">
+	<!-- Parents -->
+	<Parent nameUID="0x3C7C2007">object-physical-prop-VisibleProp</Parent>
+	<!-- Properties -->
+	<Property name="PowerManagement_SuspendDistance" type="Float32">45</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">LOS_CnstLghtStnd002</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="RadarHighlightType" type="Symbol" symUID="0x2A84762D">CombatProp</Property>
+	<Property name="Description" type="String">LOS_CnstLghtStnd002</Property>
+</PropertySetResource>

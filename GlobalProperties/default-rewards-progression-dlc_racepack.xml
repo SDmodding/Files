@@ -1,22 +1,43 @@
-<PropertySet name="default-rewards-progression-dlc_racepack" nameUID="0xC9A2C39C" schema="default-rewards-progression-dlc_racepack">
-    <Parent>default-rewards-progression-dlc_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_DLC_STREETRACERPACK</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0xDE3E6A23" type="String">$DLC_STREET_RACER_PACK_REWARD_1</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0xE1F5DE1C">
-            <Property name="0xDE3E6A23" type="String">$DLC_STREET_RACER_PACK_REWARD_4</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0xE534C3AB">
-            <Property name="0xDE3E6A23" type="String">$DLC_STREET_RACER_PACK_REWARD_5</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0xE877E572">
-            <Property name="0xDE3E6A23" type="String">$DLC_STREET_RACER_PACK_REWARD_6</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-dlc_racepack" nameUID="0xC9A2C39C">
+	<!-- Parents -->
+	<Parent nameUID="0x32FFCA04">default-rewards-progression-dlc_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_STREET_RACER_PACK_REWARD_1</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xE1F5DE1C">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_STREET_RACER_PACK_REWARD_4</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xE534C3AB">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_STREET_RACER_PACK_REWARD_5</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xE877E572">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_STREET_RACER_PACK_REWARD_6</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_DLC_STREETRACERPACK</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0xE1F5DE1C (Normal) -->
+<!-- 0xE534C3AB (Normal) -->
+<!-- 0xE877E572 (Normal) -->
+<!-- 0xF630B577 (Normal) -->

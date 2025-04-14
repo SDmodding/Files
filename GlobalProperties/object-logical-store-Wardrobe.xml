@@ -1,7 +1,10 @@
-<PropertySet name="object-logical-store-Wardrobe" nameUID="0x2034DC22" schema="object-logical-store-Wardrobe">
-    <Parent>default-component-StoreBlip</Parent>
-    <Property name="AccessStoreCaption" type="String">$HINT_ACCESS_WARDROBE</Property>
-    <Property name="InventoryType" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-    <Property name="StoreBlipName" type="String">safe_house</Property>
-    <Property name="StoreType" type="Symbol" Symbol="0x2EDC739A">Storage</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-store-Wardrobe" nameUID="0x2034DC22">
+	<!-- Parents -->
+	<Parent nameUID="0x5CDB22F8">default-component-StoreBlip</Parent>
+	<Parent nameUID="0x221196B9">object-logical-store-Base</Parent>
+	<!-- Properties -->
+	<Property name="StoreBlipName" type="String">safe_house</Property>
+	<Property name="InventoryType" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+	<Property name="StoreType" type="Symbol" symUID="0x2EDC739A">Storage</Property>
+	<Property name="AccessStoreCaption" type="String">$HINT_ACCESS_WARDROBE</Property>
+</PropertySetResource>

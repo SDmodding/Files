@@ -1,7 +1,10 @@
-<PropertySet name="object-physical-character-Vendors-NIVendors-NIV_Female_Fish" nameUID="0xA8447214" schema="object-physical-character-Vendors-NIVendors-NIV_Female_Fish">
-    <Parent>object-physical-character-Vendors-NIVendorFem</Parent>
-    <Property name="Description" type="String">NIV Female Fish</Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0x6803A69A">VendorGenericFish</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Vendors-NIVendors-NIV_Female_Fish" nameUID="0xA8447214">
+	<!-- Parents -->
+	<Parent nameUID="0x39D4190">object-physical-character-Vendors-NIVendorFem</Parent>
+	<!-- Properties -->
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x6803A69A">VendorGenericFish</ListProperty>
+	</Property>
+	<Property name="Description" type="String">NIV Female Fish</Property>
+</PropertySetResource>

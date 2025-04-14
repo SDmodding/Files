@@ -1,28 +1,45 @@
-<PropertySet name="object-physical-vehiclefx-boatspeed1_base" nameUID="0xB1405E52" schema="object-physical-vehiclefx-boatspeed1_base">
-    <Property name="EffectList" type="List">
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="BoundEffect" type="String">HK_BoatSideSpray_Slow_01_Effect</Property>
-            <Property name="FrontBone" type="String">E_SprayFrontL</Property>
-            <Property name="RearBone" type="String">E_SprayRearL</Property>
-            <Property name="Transform" type="Symbol" Symbol="0x829C8DFC">BuoyancyLeft</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="BoundEffect" type="String">HK_BoatSideSpray_Slow_01_Effect</Property>
-            <Property name="FrontBone" type="String">E_SprayFrontR</Property>
-            <Property name="RearBone" type="String">E_SprayRearR</Property>
-            <Property name="Transform" type="Symbol" Symbol="0x249C8848">BuoyancyRight</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="Bone" type="String">E_Propeller</Property>
-            <Property name="BoundEffect" type="String">HK_BoatPropSpray_Slow_01_Effect</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="Bone" type="String">E_VortexL</Property>
-            <Property name="BoundEffect" type="String">HK_BoatVortexSpray_Slow_01_Effect</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="Bone" type="String">E_VortexR</Property>
-            <Property name="BoundEffect" type="String">HK_BoatVortexSpray_Slow_01_Effect</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-vehiclefx-boatspeed1_base" nameUID="0xB1405E52">
+	<!-- Properties -->
+	<Property name="EffectList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="Transform" type="Symbol" symUID="0x829C8DFC">BuoyancyLeft</Property>
+				<Property name="BoundEffect" type="String">HK_BoatSideSpray_Slow_01_Effect</Property>
+				<Property name="RearBone" type="String">E_SprayRearL</Property>
+				<Property name="FrontBone" type="String">E_SprayFrontL</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="Transform" type="Symbol" symUID="0x249C8848">BuoyancyRight</Property>
+				<Property name="BoundEffect" type="String">HK_BoatSideSpray_Slow_01_Effect</Property>
+				<Property name="RearBone" type="String">E_SprayRearR</Property>
+				<Property name="FrontBone" type="String">E_SprayFrontR</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="Bone" type="String">E_Propeller</Property>
+				<Property name="BoundEffect" type="String">HK_BoatPropSpray_Slow_01_Effect</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="Bone" type="String">E_VortexL</Property>
+				<Property name="BoundEffect" type="String">HK_BoatVortexSpray_Slow_01_Effect</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="Bone" type="String">E_VortexR</Property>
+				<Property name="BoundEffect" type="String">HK_BoatVortexSpray_Slow_01_Effect</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

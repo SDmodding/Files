@@ -1,11 +1,13 @@
-<PropertySet name="default-rewards-progression-case_defaults" nameUID="0x91F1AA7E" schema="default-rewards-progression-case_defaults">
-    <Parent>default-rewards-defaults</Parent>
-    <Property name="CopStartingScore" type="Int32">300</Property>
-    <Property name="EnableTriadScoring" type="Boolean">False</Property>
-    <Property name="GamesliceType" type="Symbol" Symbol="0xB71EF73F">CASE_LEAD</Property>
-    <Property name="MoneyAdjustment" type="Int32">12000</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="Status" type="Int32">0</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">25</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-case_defaults" nameUID="0x91F1AA7E">
+	<!-- Parents -->
+	<Parent nameUID="0xC21C95B9">default-rewards-defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">300</Property>
+	<Property name="MoneyAdjustment" type="Int32">12000</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="Status" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">25</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0xB71EF73F">CASE_LEAD</Property>
+	<Property name="EnableTriadScoring" type="Boolean">false</Property>
+</PropertySetResource>

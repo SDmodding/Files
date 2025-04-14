@@ -1,25 +1,36 @@
-<PropertySet name="default-savegames-debugmenu-Main-r_kt_03" nameUID="0x27811411" schema="default-savegames-debugmenu-Main-r_kt_03">
-    <Parent>default-savegames-defaults</Parent>
-    <Property name="Asset_Vehicle" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol"/>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="DynamicTutorials" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-savegames-debugmenu-Main-r_kt_03" nameUID="0x27811411">
+	<!-- Parents -->
+	<Parent nameUID="0x10965489">default-savegames-defaults</Parent>
+	<!-- Properties -->
+	<Property name="Asset_Vehicle" type="PropSet">
+		<PropertySet nameUID="0xF0092DF6">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x29903113"/>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="DynamicTutorials" type="PropSet">
+		<PropertySet name="Melee" nameUID="0xFB892B3B">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x444B6EFA">TranStoreTutorial</ListProperty>
+				<ListProperty type="Symbol" symUID="0x144D1EC7">HijackingTutorial</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x29903113 (Normal) -->
+<!-- 0xF0092DF6 (Normal) -->

@@ -1,60 +1,115 @@
-<PropertySet name="UI-DLCSkins" nameUID="0xF31772CB" schema="UI-DLCSkins">
-    <Property name="0xAA1CA048" type="List">
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="0x61EB0C55" type="String">FE_Main_Menu_Loop_DLC_1</Property>
-            <Property name="DLC" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="0x61EB0C55" type="String">FE_Main_Menu_Loop_DLC_2</Property>
-            <Property name="DLC" type="Symbol"/>
-        </ListProperty>
-    </Property>
-    <Property name="0xCD71EB72" type="List">
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="0x1B9DF259" type="Float32">1.5</Property>
-            <Property name="0x87610DD0" type="Boolean">False</Property>
-            <Property name="0x9643D3BE" type="String">BootTexturePack_DLC_Ghost</Property>
-            <Property name="0xA49B9A22" type="Float32">0.25</Property>
-            <Property name="Alpha" type="Float32">0.8</Property>
-            <Property name="DLC" type="Symbol"/>
-        </ListProperty>
-    </Property>
-    <Property name="0xCFCDC9E3" type="List">
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="0x0A98BD43" type="WwiseID"/>
-            <Property name="0x16EC6617" type="WwiseID"/>
-            <Property name="0x2A7280A3" type="WwiseID"/>
-            <Property name="0x2B4405F1" type="WwiseID"/>
-            <Property name="0x2DEE54C4" type="WwiseID"/>
-            <Property name="0xC4680872" type="WwiseID"/>
-            <Property name="0xE2A58FC1" type="String">DLC_Ghost</Property>
-            <Property name="DLC" type="Symbol"/>
-        </ListProperty>
-    </Property>
-    <Property name="0xE4B97887" type="List">
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="DLC" type="Symbol"/>
-            <Property name="TexturePack" type="String">accordion_hgf_texturepack</Property>
-        </ListProperty>
-    </Property>
-    <Property name="Global" type="List">
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="DLC" type="Symbol"/>
-            <Property name="TexturePack" type="String">globalskin_hgf_texturepack</Property>
-        </ListProperty>
-    </Property>
-    <Property name="HUD" type="List">
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="0x70C3BA1A" type="String">GHOST</Property>
-            <Property name="0xA615B19C" type="UInt32">7261388</Property>
-            <Property name="DLC" type="Symbol"/>
-            <Property name="TexturePack" type="String">hudskin_hgf_texturepack</Property>
-        </ListProperty>
-    </Property>
-    <Property name="Pause" type="List">
-        <ListProperty nameUID="0xFFFFFFFF">
-            <Property name="0x360A4007" type="UInt32">1252048098</Property>
-            <Property name="DLC" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="UI-DLCSkins" nameUID="0xF31772CB">
+	<!-- Properties -->
+	<Property name="HUD" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="~70c3ba1a~" type="String">GHOST</Property>
+				<Property name="DLC" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="Property" type="UInt32">7261388</Property>
+				<Property name="TexturePack" type="String">hudskin_hgf_texturepack</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="Global" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="DLC" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="TexturePack" type="String">globalskin_hgf_texturepack</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="Main" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="~61eb0c55~" type="String">FE_Main_Menu_Loop_DLC_1</Property>
+				<Property name="DLC" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="~61eb0c55~" type="String">FE_Main_Menu_Loop_DLC_2</Property>
+				<Property name="DLC" type="Symbol" symUID="0x5703AF69">DLC_CNY</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="Pause" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="~360a4007~" type="UInt32">1252048098</Property>
+				<Property name="DLC" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="~cd71eb72~" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="~1b9df259~" type="Float32">1.5</Property>
+				<Property name="DLC" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="~87610dd0~" type="Boolean">false</Property>
+				<Property name="~9643d3be~" type="String">BootTexturePack_DLC_Ghost</Property>
+				<Property name="~a49b9a22~" type="Float32">0.25</Property>
+				<Property name="Alpha" type="Float32">0.8</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="AudioProperties" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="~0a98bd43~" type="WwiseID" symUID="0x9D78DC6D"/>
+				<Property name="~16ec6617~" type="WwiseID" symUID="0xD884E50C">DLC_Ghost</Property>
+				<Property name="~2a7280a3~" type="WwiseID" symUID="0xEC485A0B"/>
+				<Property name="~2b4405f1~" type="WwiseID" symUID="0x7CBD9A78"/>
+				<Property name="~2dee54c4~" type="WwiseID" symUID="0xF7177094"/>
+				<Property name="DLC" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="~c4680872~" type="WwiseID" symUID="0x4D19686F"/>
+				<Property name="~e2a58fc1~" type="String">DLC_Ghost</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="~e4b97887~" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet>
+				<!-- Properties -->
+				<Property name="DLC" type="Symbol" symUID="0x1CA34841">DLC_Ghost</Property>
+				<Property name="TexturePack" type="String">accordion_hgf_texturepack</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xA98BD43 (Normal) -->
+<!-- 0x16EC6617 (Normal) -->
+<!-- 0x1B9DF259 (Normal) -->
+<!-- 0x2A7280A3 (Normal) -->
+<!-- 0x2B4405F1 (Normal) -->
+<!-- 0x2DEE54C4 (Normal) -->
+<!-- 0x360A4007 (Normal) -->
+<!-- 0x4D19686F (WWise) -->
+<!-- 0x61EB0C55 (Normal) -->
+<!-- 0x70C3BA1A (Normal) -->
+<!-- 0x7CBD9A78 (WWise) -->
+<!-- 0x87610DD0 (Normal) -->
+<!-- 0x9643D3BE (Normal) -->
+<!-- 0x9D78DC6D (WWise) -->
+<!-- 0xA49B9A22 (Normal) -->
+<!-- 0xA615B19C (Normal) -->
+<!-- 0xC4680872 (Normal) -->
+<!-- 0xCD71EB72 (Normal) -->
+<!-- 0xE2A58FC1 (Normal) -->
+<!-- 0xE4B97887 (Normal) -->
+<!-- 0xEC485A0B (WWise) -->
+<!-- 0xF7177094 (WWise) -->

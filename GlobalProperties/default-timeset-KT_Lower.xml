@@ -1,22 +1,33 @@
-<PropertySet name="default-timeset-KT_Lower" nameUID="0x9CB748E3" schema="default-timeset-KT_Lower">
-    <Property name="TimeSetList" type="List">
-        <ListProperty nameUID="0xF4B7E331">
-            <Property name="OffTime" type="Int32">18</Property>
-            <Property name="OnTime" type="Int32">8</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0x892330AA">default-spawnset-KT_Lower_Day</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-3</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">1</Property>
-            <Property name="OnTime" type="Int32">18</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0xD6783950">default-spawnset-KT_Lower_Eve</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-4</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">8</Property>
-            <Property name="OnTime" type="Int32">1</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0x5A8FAF60">default-spawnset-KT_Lower_Night</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-5</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-timeset-KT_Lower" nameUID="0x9CB748E3">
+	<!-- Properties -->
+	<Property name="TimeSetList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Night" nameUID="0xF4B7E331">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">18</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-3</Property>
+				<Property name="OnTime" type="Int32">8</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0x892330AA">default-spawnset-KT_Lower_Day</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">1</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-4</Property>
+				<Property name="OnTime" type="Int32">18</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0xD6783950">default-spawnset-KT_Lower_Eve</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">8</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-5</Property>
+				<Property name="OnTime" type="Int32">1</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0x5A8FAF60">default-spawnset-KT_Lower_Night</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

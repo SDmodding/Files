@@ -1,20 +1,24 @@
-<PropertySet name="object-physical-GameAsset-BuildingTestInt" nameUID="0x5F879CDC" schema="object-physical-GameAsset-BuildingTestInt">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0xA113AB1A">ModelAsset</Property>
-    <Property name="component_FXSimComponent" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-FXSimComponent</Parent>
-        </PropertySet>
-        <BinData>
-            <EffectId type="Symbol"/>
-        </BinData>
-    </Property>
-    <Property name="component_ModelAsset" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-ModelAsset</Parent>
-        </PropertySet>
-        <BinData>
-            <ModelAssetId type="UInt64">9223159172099776023</ModelAssetId>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-GameAsset-BuildingTestInt" nameUID="0x5F879CDC">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<!-- Properties -->
+	<Property name="component_ModelAsset" type="PropSet">
+		<PropertySet name="component_ModelAsset" nameUID="0x4BC08E82" schema="default-component-ModelAsset">
+			<!-- Parents -->
+			<Parent nameUID="0x7D8560AB">default-component-ModelAsset</Parent>
+			<!-- Schema Properties -->
+			<Property name="ModelAssetName" type="String"/>
+			<Property name="ModelAssetId" type="UInt64">9223159172099776023</Property>
+		</PropertySet>
+	</Property>
+	<Property name="ObjectType" type="Symbol" symUID="0xA113AB1A">ModelAsset</Property>
+	<Property name="component_FXSimComponent" type="PropSet">
+		<PropertySet name="component_FXSimComponent" nameUID="0x6FE755E1" schema="default-component-FXSimComponent">
+			<!-- Parents -->
+			<Parent nameUID="0xF4795DDD">default-component-FXSimComponent</Parent>
+			<!-- Schema Properties -->
+			<Property name="EffectId" type="SymbolUC"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

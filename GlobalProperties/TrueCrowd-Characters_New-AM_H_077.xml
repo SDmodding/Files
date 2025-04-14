@@ -1,13 +1,16 @@
-<PropertySet name="TrueCrowd-Characters_New-AM_H_077" nameUID="0xDEB788F9" schema="TrueCrowd-Characters_New-AM_H_077">
-    <Property name="GlassesOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Translation" type="Vector3" x="0" y="0" z="0.00799316"/>
-        </PropertySet>
-    </Property>
-    <Property name="HelmetOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Rotation" type="Vector3" x="0.501147" y="0.501147" z="0"/>
-            <Property name="Translation" type="Vector3" x="0" y="0" z="-0.0203375"/>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="TrueCrowd-Characters_New-AM_H_077" nameUID="0xDEB788F9">
+	<!-- Properties -->
+	<Property name="HelmetOffset" type="PropSet">
+		<PropertySet name="HelmetOffset" nameUID="0x947B4FC">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="0" y="-0.0203375" z="0.00851059"/>
+			<Property name="Rotation" type="Vector3" x="0.501147" y="0" z="0"/>
+		</PropertySet>
+	</Property>
+	<Property name="GlassesOffset" type="PropSet">
+		<PropertySet name="GlassesOffset" nameUID="0x193245CA">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="0" y="0.00799316" z="0"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

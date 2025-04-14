@@ -1,175 +1,207 @@
-<PropertySet name="object-physical-vehicle-Taikai_Triad01" nameUID="0x633157D2" schema="object-physical-vehicle-Taikai_Triad01">
-    <Parent>object-physical-vehicle-CommonCar</Parent>
-    <Property name="ChaseCameraParameters" type="Symbol" Symbol="0x56777792">Cameras-ChaseCameraCommon</Property>
-    <Property name="Description" type="String">4Dr- Taikai_Triad</Property>
-    <Property name="EnableMaxSpeedStatGame" type="Boolean">True</Property>
-    <Property name="HasGoldCleaver" type="Boolean">True</Property>
-    <Property name="HasTireIron" type="Boolean">False</Property>
-    <Property name="Parkable" type="Boolean">True</Property>
-    <Property name="VehicleLook" type="List">
-        <Property type="String">WhiteShinyMediumDirtPaint</Property>
-    </Property>
-    <Property name="VehicleLookGlass" type="List">
-        <Property type="String">GlassBlack02</Property>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">TaikaiTriad01</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Car</PoseDriverSet>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CarPhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_VAN_NARROW</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_Thug_TaikaiProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-TaikaiTriadProperties</physicsPropertySetHuman>
-            <modelName type="String">TaikaiTriad01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_VAN_NARROW</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-2.2" y="-2.2" z="-0.94"/>
-            <boundingBoxMax type="Vector3" x="2.2" y="2.2" z="0.94"/>
-            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">TaikaiTriad01</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\VehicleWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Car</PoseDriverSet>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_PhysicsMover" type="PropSet">
-        <PropertySet>
-            <Parent>eVEHICLE_TRUNK_TYPE_VAN_NARROW</Parent>
-        </PropertySet>
-        <BinData>
-            <physicsPropertySetAI type="Symbol">Vehicles-AI_Thug_TaikaiProperties</physicsPropertySetAI>
-            <physicsPropertySetHuman type="Symbol">Vehicles-TaikaiTriadProperties</physicsPropertySetHuman>
-            <modelName type="String">TaikaiTriad01</modelName>
-            <TrunkType type="Symbol">eVEHICLE_TRUNK_TYPE_VAN_NARROW</TrunkType>
-            <damageMultiplierWorldCollisions type="Float32">1</damageMultiplierWorldCollisions>
-            <damageMultiplierVehicleCollisions type="Float32">1</damageMultiplierVehicleCollisions>
-            <damageMultiplierBullets type="Float32">1</damageMultiplierBullets>
-            <damageMultiplierTires type="Float32">1</damageMultiplierTires>
-            <boundingBoxMin type="Vector3" x="-2.2" y="-2.2" z="-0.94"/>
-            <boundingBoxMax type="Vector3" x="2.2" y="2.2" z="0.94"/>
-            <tireShotImpulse type="Float32">0.645</tireShotImpulse>
-            <tireBlownImpulse type="Float32">1</tireBlownImpulse>
-            <lowLodThrottleAcceleration type="Float32">12</lowLodThrottleAcceleration>
-            <lowLodBrakesAcceleration type="Float32">-60</lowLodBrakesAcceleration>
-            <lowLodCoastAcceleration type="Float32">-1</lowLodCoastAcceleration>
-            <lowLodMaxSpeed type="Float32">50</lowLodMaxSpeed>
-            <lowLodMaxLateralAcceleration type="Float32">1</lowLodMaxLateralAcceleration>
-            <lowLodMinTurningRadius type="Float32">2</lowLodMinTurningRadius>
-            <autoDeterioratingDamageThreshold type="Float32">0.75</autoDeterioratingDamageThreshold>
-            <autoDeterioratingDamageRate type="Float32">0.01</autoDeterioratingDamageRate>
-            <vehicleDistanceToHighLod type="Float32">15</vehicleDistanceToHighLod>
-            <vehicleDistanceToMedLod type="Float32">70</vehicleDistanceToMedLod>
-            <vehicleCollisionMinImpulseRequiredToTakeDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToTakeDamage>
-            <vehicleCollisionExtraDamageMultiplier type="Float32">2</vehicleCollisionExtraDamageMultiplier>
-            <vehicleCollisionDamageDealtAtMinImpulse type="Float32">0.01</vehicleCollisionDamageDealtAtMinImpulse>
-            <vehicleCollisionDamageDealtAtMaxImpulse type="Float32">0.05</vehicleCollisionDamageDealtAtMaxImpulse>
-            <vehicleCollisionMinImpulseRequiredToDealDamage type="Float32">5</vehicleCollisionMinImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxImpulseForDealingDamage type="Float32">10</vehicleCollisionMaxImpulseForDealingDamage>
-            <vehicleCollisionDamageDealtAtMinRamImpulse type="Float32">0.25</vehicleCollisionDamageDealtAtMinRamImpulse>
-            <vehicleCollisionDamageDealtAtMaxRamImpulse type="Float32">0.3</vehicleCollisionDamageDealtAtMaxRamImpulse>
-            <vehicleCollisionMinRamImpulseRequiredToDealDamage type="Float32">6</vehicleCollisionMinRamImpulseRequiredToDealDamage>
-            <vehicleCollisionMaxRamImpulseForDealingDamage type="Float32">12</vehicleCollisionMaxRamImpulseForDealingDamage>
-            <vehicleCollisionForceDamageDealer type="Boolean">false</vehicleCollisionForceDamageDealer>
-            <lockedAtLowLOD type="Boolean">false</lockedAtLowLOD>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-VehicleFourWheels</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0x59703985">Data\Vehicles_New\TaikaiTriad01</Property>
-                <Property type="Symbol" Symbol="0xB2FF0702">Data\Vehicles_New\WheelStyle18</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List">
-                <Property type="Symbol" Symbol="0xC295548C">Data\Vehicles_New\TaikaiTriad01_ts001</Property>
-                <Property type="Symbol" Symbol="0x375CD257">Data\Vehicles_New\WheelStyle18_ts_002</Property>
-            </TextureSetList>
-            <EntityType type="Symbol">FourWheelVehicle</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_VehicleAudio" type="PropSet">
-        <BinData>
-            <AudioPropertySet type="Symbol">Vehicles-Audio-SportCarThreeAudioProperties</AudioPropertySet>
-        </BinData>
-    </Property>
-    <Property name="component_VehicleEffects" type="PropSet">
-        <BinData>
-            <headlightsInRainProbability type="Float32">0.5</headlightsInRainProbability>
-            <headlightsAlwaysOn type="Boolean">false</headlightsAlwaysOn>
-            <headlightsAlwaysOff type="Boolean">false</headlightsAlwaysOff>
-            <DamageTransfer type="Symbol">vehicle4door</DamageTransfer>
-            <EffectGroupName type="Symbol">common4doorcar</EffectGroupName>
-            <InitialDirtSeed type="Float32">0.2</InitialDirtSeed>
-            <GrimeFactor type="Float32">0.3</GrimeFactor>
-            <Speed0 type="Float32">0</Speed0>
-            <Speed1 type="Float32">5</Speed1>
-            <Speed2 type="Float32">30</Speed2>
-            <Speed3 type="Float32">60</Speed3>
-        </BinData>
-    </Property>
-    <Property name="component_VehicleProperties" type="PropSet">
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_VEHICLE</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-VehicleFourWheels</subTargetingProfile>
-            <simObjectVehicleType type="Symbol">eSIM_OBJ_VEHICLE_TYPE_CAR</simObjectVehicleType>
-            <simObjectBoatType type="Symbol"/>
-            <aim_limit type="List"/>
-            <default_left_aim_limit type="Float32">45</default_left_aim_limit>
-            <default_right_aim_limit type="Float32">-45</default_right_aim_limit>
-            <door_phantom_info type="List"/>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-vehicle-Taikai_Triad01" nameUID="0x633157D2">
+	<!-- Parents -->
+	<Parent nameUID="0x5A1ACD8C">object-physical-vehicle-CommonCar</Parent>
+	<!-- Properties -->
+	<Property name="HasTireIron" type="Boolean">false</Property>
+	<Property name="component_PhysicsMover" type="PropSet">
+		<PropertySet name="component_CarPhysicsMover" nameUID="0xF32DD55B" schema="default-component-CarPhysicsMover">
+			<!-- Schema Properties -->
+			<Property name="physicsPropertySetAI" type="Symbol" symUID="0xD82C4CCF">Vehicles-AI_Thug_TaikaiProperties</Property>
+			<Property name="physicsPropertySetHuman" type="Symbol" symUID="0x80948B6A">Vehicles-TaikaiTriadProperties</Property>
+			<Property name="modelName" type="String">TaikaiTriad01</Property>
+			<Property name="TrunkType" type="Symbol" symUID="0x292186CA">eVEHICLE_TRUNK_TYPE_VAN_NARROW</Property>
+			<Property name="damageMultiplierWorldCollisions" type="Float32">1</Property>
+			<Property name="damageMultiplierVehicleCollisions" type="Float32">1</Property>
+			<Property name="damageMultiplierBullets" type="Float32">1</Property>
+			<Property name="damageMultiplierTires" type="Float32">1</Property>
+			<Property name="boundingBoxMin" type="Vector3" x="-2.2" y="-0.94" z="0"/>
+			<Property name="boundingBoxMAx" type="Vector3" x="2.2" y="0.94" z="1.58"/>
+			<Property name="tireShotImpulse" type="Float32">0.645</Property>
+			<Property name="tireBlownImpulse" type="Float32">1</Property>
+			<Property name="lowLodThrottleAcceleration" type="Float32">12</Property>
+			<Property name="lowLodBrakesAcceleration" type="Float32">-60</Property>
+			<Property name="lowLodCoastAcceleration" type="Float32">-1</Property>
+			<Property name="lowLodMaxSpeed" type="Float32">50</Property>
+			<Property name="lowLodMaxLateralAcceleration" type="Float32">1</Property>
+			<Property name="lowLodMinTurningRadius" type="Float32">2</Property>
+			<Property name="autoDeterioratingDamageThreshold" type="Float32">0.75</Property>
+			<Property name="autoDeterioratingDamageRate" type="Float32">0.01</Property>
+			<Property name="vehicleDistanceToHighLod" type="Float32">15</Property>
+			<Property name="vehicleDistanceToMedLod" type="Float32">70</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToTakeDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionExtraDamageMultiplier" type="Float32">2</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinImpulse" type="Float32">0.01</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxImpulse" type="Float32">0.05</Property>
+			<Property name="vehicleCollisionMinImpulseRequiredToDealDamage" type="Float32">5</Property>
+			<Property name="vehicleCollisionMaxImpulseForDealingDamage" type="Float32">10</Property>
+			<Property name="vehicleCollisionDamageDealtAtMinRamImpulse" type="Float32">0.25</Property>
+			<Property name="vehicleCollisionDamageDealtAtMaxRamImpulse" type="Float32">0.3</Property>
+			<Property name="vehicleCollisionMinRamImpulseRequiredToDealDamage" type="Float32">6</Property>
+			<Property name="vehicleCollisionMaxRamImpulseForDealingDamage" type="Float32">12</Property>
+			<Property name="vehicleCollisionForceDamageDealer" type="Boolean">false</Property>
+			<Property name="lockedAtLowLOD" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x99EC1476">Car</ListProperty>
+				<ListProperty type="Symbol" symUID="0x9B06086B">Vehicle</ListProperty>
+				<ListProperty type="Symbol" symUID="0x6AF1C1C4">Fast</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="EnableMaxSpeedStatGame" type="Boolean">true</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="VehicleLookGlass" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">GlassBlack02</ListProperty>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">TaikaiTriad01</Property>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\VehicleWeightSets.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC" symUID="0x216C94B0">Car</Property>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Parkable" type="Boolean">true</Property>
+	<Property name="component_VehicleAudio" type="PropSet">
+		<PropertySet name="component_VehicleAudio" nameUID="0x77F43A25" schema="default-component-VehicleAudio">
+			<!-- Schema Properties -->
+			<Property name="AudioPropertySet" type="Symbol" symUID="0x56A16B48">Vehicles-Audio-SportCarThreeAudioProperties</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_VehicleProperties" type="PropSet">
+		<PropertySet name="component_VehicleProperties" nameUID="0x7F1798C0" schema="default-component-VehicleProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectVehicleType" type="Symbol" symUID="0x7F04EF10">eSIM_OBJ_VEHICLE_TYPE_CAR</Property>
+			<Property name="simObjectBoatType" type="Symbol"/>
+			<Property name="aim_limit" type="List"/>
+			<Property name="default_left_aim_limit" type="Float32">45</Property>
+			<Property name="default_right_aim_limit" type="Float32">-45</Property>
+			<Property name="door_phantom_info" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet schema="default-schema-doorphantominfo">
+						<!-- Schema Properties -->
+						<Property name="door_name" type="SymbolUC" symUID="0x58153A47">M_DoorR01</Property>
+						<Property name="extentX" type="Float32">1.65</Property>
+						<Property name="extentY" type="Float32">0.78</Property>
+						<Property name="door_height" type="Float32">0.65</Property>
+						<Property name="height_offset" type="Float32">0.25</Property>
+						<Property name="extend_left" type="Boolean">false</Property>
+						<Property name="extend_forward" type="Boolean">false</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet schema="default-schema-doorphantominfo">
+						<!-- Schema Properties -->
+						<Property name="door_name" type="SymbolUC" symUID="0x4F897D1D">M_DoorL01</Property>
+						<Property name="extentX" type="Float32">1.65</Property>
+						<Property name="extentY" type="Float32">0.78</Property>
+						<Property name="door_height" type="Float32">0.65</Property>
+						<Property name="height_offset" type="Float32">0.25</Property>
+						<Property name="extend_left" type="Boolean">true</Property>
+						<Property name="extend_forward" type="Boolean">false</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet schema="default-schema-doorphantominfo">
+						<!-- Schema Properties -->
+						<Property name="door_name" type="SymbolUC" symUID="0x55561C9E">M_DoorR02</Property>
+						<Property name="extentX" type="Float32">1.65</Property>
+						<Property name="extentY" type="Float32">0.78</Property>
+						<Property name="door_height" type="Float32">0.65</Property>
+						<Property name="height_offset" type="Float32">0.38</Property>
+						<Property name="extend_left" type="Boolean">false</Property>
+						<Property name="extend_forward" type="Boolean">false</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet schema="default-schema-doorphantominfo">
+						<!-- Schema Properties -->
+						<Property name="door_name" type="SymbolUC" symUID="0x42CA5BC4">M_DoorL02</Property>
+						<Property name="extentX" type="Float32">1.65</Property>
+						<Property name="extentY" type="Float32">0.78</Property>
+						<Property name="door_height" type="Float32">0.65</Property>
+						<Property name="height_offset" type="Float32">0.38</Property>
+						<Property name="extend_left" type="Boolean">true</Property>
+						<Property name="extend_forward" type="Boolean">false</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_VehicleEffects" type="PropSet">
+		<PropertySet name="component_VehicleEffects" nameUID="0x83824245" schema="default-component-VehicleEffects">
+			<!-- Schema Properties -->
+			<Property name="headlightsInRainProbability" type="Float32">0.5</Property>
+			<Property name="headlightsAlwaysOn" type="Boolean">false</Property>
+			<Property name="headlightsAlwaysOff" type="Boolean">false</Property>
+			<Property name="DamageTransfer" type="SymbolUC" symUID="0x6E1720CE">vehicle4door</Property>
+			<Property name="EffectGroupName" type="SymbolUC" symUID="0xC4B2E9E2">common4doorcar</Property>
+			<Property name="InitialDirtSeed" type="Float32">0.2</Property>
+			<Property name="GrimeFactor" type="Float32">0.3</Property>
+			<Property name="Speed0" type="Float32">0</Property>
+			<Property name="Speed1" type="Float32">5</Property>
+			<Property name="Speed2" type="Float32">30</Property>
+			<Property name="Speed3" type="Float32">60</Property>
+		</PropertySet>
+	</Property>
+	<Property name="VehicleLook" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">WhiteShinyMediumDirtPaint</ListProperty>
+	</Property>
+	<Property name="ChaseCameraParameters" type="Symbol" symUID="0x56777792">Cameras-ChaseCameraCommon</Property>
+	<Property name="HasGoldCleaver" type="Boolean">true</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_VehicleProperties" nameUID="0x7F1798C0" schema="default-component-VehicleProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0x9844EE67">eSIM_OBJ_TYPE_VEHICLE</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0x38469632">Targeting-SubTargetingProfiles-VehicleFourWheels</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x59703985">Data\Vehicles_New\TaikaiTriad01</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB2FF0702">Data\Vehicles_New\WheelStyle18</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xC295548C">Data\Vehicles_New\TaikaiTriad01_ts001</ListProperty>
+				<ListProperty type="Symbol" symUID="0x375CD257">Data\Vehicles_New\WheelStyle18_ts_002</ListProperty>
+			</Property>
+			<Property name="EntityType" type="SymbolUC" symUID="0x9FA8BBC9">FourWheelVehicle</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="component_CarPhysicsMover" type="PropSet">
+		<PropertySet name="component_CarPhysicsMover" nameUID="0xF32DD55B" schema="default-component-CarPhysicsMover">
+			<!-- Schema Parent: component_PhysicsMover -->
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">4Dr- Taikai_Triad</Property>
+</PropertySetResource>

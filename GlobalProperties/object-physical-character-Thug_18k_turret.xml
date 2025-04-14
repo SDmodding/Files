@@ -1,178 +1,300 @@
-<PropertySet name="object-physical-character-Thug_18k_turret" nameUID="0xDD378917" schema="object-physical-character-Thug_18k_turret">
-    <Parent>object-physical-character-stats-base_ranged</Parent>
-    <Property name="BaseAIAimingAccuracy" type="Float32">0.7</Property>
-    <Property name="CanUseCover" type="Boolean">True</Property>
-    <Property name="Description" type="String">Thug 18k Quick</Property>
-    <Property name="MaxNumShotsPerVolleyAutomatic" type="Int32">4</Property>
-    <Property name="MaxNumShotsPerVolleyCombatShotgun" type="Int32">4</Property>
-    <Property name="MaxNumShotsPerVolleyPistol" type="Int32">1</Property>
-    <Property name="MaxNumShotsPerVolleyShotgun" type="Int32">4</Property>
-    <Property name="MaxTimeAfterStandBeforeBeginVolleyAutomatic" type="Float32">0</Property>
-    <Property name="MaxTimeAfterStandBeforeBeginVolleyCombatShotgun" type="Float32">0.75</Property>
-    <Property name="MaxTimeAfterStandBeforeBeginVolleyPistol" type="Float32">0</Property>
-    <Property name="MaxTimeAfterStandBeforeBeginVolleyShotgun" type="Float32">1</Property>
-    <Property name="MaxTimeAfterVolleyToKeepStandingAutomatic" type="Float32">0.6</Property>
-    <Property name="MaxTimeAfterVolleyToKeepStandingCombatShotgun" type="Float32">0.7</Property>
-    <Property name="MaxTimeAfterVolleyToKeepStandingPistol" type="Float32">0.3</Property>
-    <Property name="MaxTimeAfterVolleyToKeepStandingShotgun" type="Float32">0.75</Property>
-    <Property name="MaxTimeBetweenShotsCombatShotgun" type="Float32">1</Property>
-    <Property name="MaxTimeBetweenShotsPistol" type="Float32">0.5</Property>
-    <Property name="MaxTimeBetweenShotsShotgun" type="Float32">1.5</Property>
-    <Property name="MaxTimeBetweenVolleysAutomatic" type="Float32">0.6</Property>
-    <Property name="MaxTimeToHoldTriggerAutomatic" type="Float32">0.4</Property>
-    <Property name="MinNumShotsPerVolleyAutomatic" type="Int32">2</Property>
-    <Property name="MinNumShotsPerVolleyCombatShotgun" type="Int32">3</Property>
-    <Property name="MinNumShotsPerVolleyPistol" type="Int32">1</Property>
-    <Property name="MinNumShotsPerVolleyShotgun" type="Int32">1</Property>
-    <Property name="MinTimeAfterStandBeforeBeginVolleyAutomatic" type="Float32">0</Property>
-    <Property name="MinTimeAfterStandBeforeBeginVolleyCombatShotgun" type="Float32">0.5</Property>
-    <Property name="MinTimeAfterStandBeforeBeginVolleyPistol" type="Float32">0</Property>
-    <Property name="MinTimeAfterStandBeforeBeginVolleyShotgun" type="Float32">0.5</Property>
-    <Property name="MinTimeAfterVolleyToKeepStandingAutomatic" type="Float32">0.3</Property>
-    <Property name="MinTimeAfterVolleyToKeepStandingCombatShotgun" type="Float32">0.5</Property>
-    <Property name="MinTimeAfterVolleyToKeepStandingPistol" type="Float32">0.3</Property>
-    <Property name="MinTimeAfterVolleyToKeepStandingShotgun" type="Float32">0.5</Property>
-    <Property name="MinTimeBetweenShotsAutomatic" type="Float32">0.1</Property>
-    <Property name="MinTimeBetweenShotsCombatShotgun" type="Float32">0.33</Property>
-    <Property name="MinTimeBetweenShotsPistol" type="Float32">0.5</Property>
-    <Property name="MinTimeBetweenShotsShotgun" type="Float32">0.8</Property>
-    <Property name="MinTimeBetweenVolleysAutomatic" type="Float32">0.3</Property>
-    <Property name="MinTimeToHoldTriggerAutomatic" type="Float32">0.2</Property>
-    <Property name="PropList" type="List">
-        <Property type="Symbol" Symbol="0xC0C4BDEF">object-physical-prop-Attachable-Thug_18k_QuickA_Glasses</Property>
-        <Property type="Symbol"/>
-    </Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0x8A664E0E">Thug</Property>
-        <Property type="Symbol" Symbol="0xE7522969">Cantonese</Property>
-    </Property>
-    <Property name="component_AIActionTree" type="PropSet">
-        <BinData>
-            <AIBehaviour type="String">Thug_Behaviour.act</AIBehaviour>
-        </BinData>
-    </Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">PrimaryBasicMale</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
-                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
-                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
-                <Property type="SymbolUC" Symbol="0xC4F522A7">Thug_QuickStriker</Property>
-                <Property type="SymbolUC" Symbol="0x35AA897E">Thug_QuickStriker_Strikes</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">PrimaryBasicMale</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\ChanWeightSets.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol">Ped</PoseDriverSet>
-            <WeightSetFileNameHD type="String">Data\Global\Act\NIS_WeightSets.wst</WeightSetFileNameHD>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0x9F35E28">Thug</Property>
-                <Property type="SymbolUC" Symbol="0xBCEB5E67">Thug_Strikes</Property>
-                <Property type="SymbolUC" Symbol="0xEB4FEEB5">Thug_LowHealth</Property>
-                <Property type="SymbolUC" Symbol="0xC4F522A7">Thug_QuickStriker</Property>
-                <Property type="SymbolUC" Symbol="0x35AA897E">Thug_QuickStriker_Strikes</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterPhysics" type="PropSet">
-        <BinData>
-            <Mass type="Float32">75</Mass>
-            <MaxForce type="Float32">1000</MaxForce>
-            <MaxClimableSlope type="Float32">65</MaxClimableSlope>
-            <WalkCollisionHeight type="Float32">1.835</WalkCollisionHeight>
-            <CombatCollisionHeight type="Float32">1.835</CombatCollisionHeight>
-            <CrouchCollisionHeight type="Float32">0.95</CrouchCollisionHeight>
-            <DrivingCollisionHeight type="Float32">1.1</DrivingCollisionHeight>
-            <CrawlCollisionHeight type="Float32">0.3</CrawlCollisionHeight>
-            <SittingCollisionHeight type="Float32">1.3</SittingCollisionHeight>
-            <CoverCollisionHeight type="Float32">1.835</CoverCollisionHeight>
-            <FreerunCollisionHeight type="Float32">1.835</FreerunCollisionHeight>
-            <WalkCollisionRadius type="Float32">0.32</WalkCollisionRadius>
-            <CombatCollisionRadius type="Float32">0.5</CombatCollisionRadius>
-            <CrouchCollisionRadius type="Float32">0.35</CrouchCollisionRadius>
-            <DrivingCollisionRadius type="Float32">0.3</DrivingCollisionRadius>
-            <CrawlCollisionRadius type="Float32">0.3</CrawlCollisionRadius>
-            <SittingCollisionRadius type="Float32">0.3</SittingCollisionRadius>
-            <CoverCollisionRadius type="Float32">0.32</CoverCollisionRadius>
-            <FreerunCollisionRadius type="Float32">0.2</FreerunCollisionRadius>
-            <DetailedOnGroundCheck type="Boolean">true</DetailedOnGroundCheck>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_THUG</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_STRIKER_QUICK</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">TRIAD_18K</FactionClass>
-            <Gender type="Symbol">Male</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_Health" type="PropSet">
-        <BinData>
-            <maxUpgradedHealth type="Int32">400</maxUpgradedHealth>
-            <maxHealth type="Int32">125</maxHealth>
-            <regenerativeHealthRate type="Float32">-1</regenerativeHealthRate>
-            <InvulnerableCharacter type="Boolean">false</InvulnerableCharacter>
-            <healthProjectileDamageMultiplier type="Float32">1</healthProjectileDamageMultiplier>
-        </BinData>
-    </Property>
-    <Property name="component_HitReaction" type="PropSet">
-        <BinData>
-            <HitActFilename type="String">Data/Global/Act/HitTree.act</HitActFilename>
-            <HitReceiverDamageMultiplierPct type="UInt32">120</HitReceiverDamageMultiplierPct>
-        </BinData>
-    </Property>
-    <Property name="component_Sensor" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Sensor</Parent>
-        </PropertySet>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_STRIKER_QUICK</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0xAD776A86">18k</Property>
-                <Property type="Symbol" Symbol="0x31B08D26">Quick</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">-0.9</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet"/>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Thug_18k_turret" nameUID="0xDD378917">
+	<!-- Parents -->
+	<Parent nameUID="0xFA87391D">object-physical-character-stats-base_ranged</Parent>
+	<Parent nameUID="0x551F3BD">object-physical-character-drivers-nothing</Parent>
+	<Parent nameUID="0xCDDBAF9A">object-physical-character-animbanks-ThugQuickStriker</Parent>
+	<Parent nameUID="0xD0A5E612">object-physical-character-stats-18k_quick</Parent>
+	<Parent nameUID="0x79C303E9">object-physical-character</Parent>
+	<!-- Properties -->
+	<Property name="MinTimeAfterStandBeforeBeginVolleyAutomatic" type="Float32">0</Property>
+	<Property name="component_AIActionTree" type="PropSet">
+		<PropertySet name="component_AIActionTree" nameUID="0x523487F" schema="default-component-AIActionTree">
+			<!-- Schema Properties -->
+			<Property name="AIBehaviour" type="String">Thug_Behaviour.act</Property>
+		</PropertySet>
+	</Property>
+	<Property name="MinNumShotsPerVolleyCombatShotgun" type="Int32">3</Property>
+	<Property name="MinTimeBetweenShotsPistol" type="Float32">0.5</Property>
+	<Property name="CanUseCover" type="Boolean">true</Property>
+	<Property name="MinTimeBetweenShotsShotgun" type="Float32">0.8</Property>
+	<Property name="MaxNumShotsPerVolleyAutomatic" type="Int32">4</Property>
+	<Property name="component_HitReaction" type="PropSet">
+		<PropertySet name="component_HitReaction" nameUID="0x1575D886" schema="default-component-HitReaction">
+			<!-- Schema Properties -->
+			<Property name="HitActFilename" type="String">Data/Global/Act/HitTree.act</Property>
+			<Property name="HitReactionOpeningBranchFullPath" type="String"/>
+			<Property name="HitReceiverDamageMultiplierPct" type="UInt32">120</Property>
+		</PropertySet>
+	</Property>
+	<Property name="MinTimeAfterVolleyToKeepStandingShotgun" type="Float32">0.5</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xDC76B4F1">Triad</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="PropList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xC0C4BDEF">object-physical-prop-Attachable-Thug_18k_QuickA_Glasses</ListProperty>
+		<ListProperty type="Symbol"/>
+	</Property>
+	<Property name="MaxNumShotsPerVolleyShotgun" type="Int32">4</Property>
+	<Property name="MaxTimeAfterVolleyToKeepStandingShotgun" type="Float32">0.75</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="MinTimeAfterVolleyToKeepStandingCombatShotgun" type="Float32">0.5</Property>
+	<Property name="MinNumShotsPerVolleyPistol" type="Int32">1</Property>
+	<Property name="MaxTimeAfterStandBeforeBeginVolleyShotgun" type="Float32">1</Property>
+	<Property name="MaxTimeAfterVolleyToKeepStandingCombatShotgun" type="Float32">0.7</Property>
+	<Property name="MaxTimeAfterStandBeforeBeginVolleyCombatShotgun" type="Float32">0.75</Property>
+	<Property name="MinTimeAfterVolleyToKeepStandingPistol" type="Float32">0.3</Property>
+	<Property name="MaxTimeAfterVolleyToKeepStandingPistol" type="Float32">0.3</Property>
+	<Property name="MaxNumShotsPerVolleyCombatShotgun" type="Int32">4</Property>
+	<Property name="MinTimeBetweenShotsAutomatic" type="Float32">0.1</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">PrimaryBasicMale</Property>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\ChanWeightSets.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC" symUID="0x2D3C1E22">Ped</Property>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String">Data\Global\Act\NIS_WeightSets.wst</Property>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List">
+				<!-- Elements -->
+				<ListProperty type="SymbolUC" symUID="0x9F35E28">Thug</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0xBCEB5E67">THUG_STRIKES</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0xEB4FEEB5">Thug_LowHealth</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0xC4F522A7">Thug_QuickStriker</ListProperty>
+				<ListProperty type="SymbolUC" symUID="0x35AA897E">Thug_QuickStriker_Strikes</ListProperty>
+			</Property>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="BaseAIAimingAccuracy" type="Float32">0.7</Property>
+	<Property name="MaxTimeToHoldTriggerAutomatic" type="Float32">0.4</Property>
+	<Property name="MinNumShotsPerVolleyShotgun" type="Int32">1</Property>
+	<Property name="MinTimeBetweenVolleysAutomatic" type="Float32">0.3</Property>
+	<Property name="MaxTimeAfterVolleyToKeepStandingAutomatic" type="Float32">0.6</Property>
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x8A664E0E">Thug</ListProperty>
+		<ListProperty type="Symbol" symUID="0xE7522969">Cantonese</ListProperty>
+	</Property>
+	<Property name="object_physical_character_stats_BaseAttackParameters" type="PropSet">
+		<PropertySet name="object_physical_character_stats_BaseAttackParameters" nameUID="0x8EA2B0B2" schema="object-physical-character-stats-BaseAttackParameters">
+			<!-- Schema Properties -->
+			<Property name="MaxDistanceToChooseCloseAttack" type="Float32">2.75</Property>
+			<Property name="ExitDistanceForCloseAttack" type="Float32">3.75</Property>
+			<Property name="MaxDistanceToChooseMidAttack" type="Float32">5</Property>
+			<Property name="ExitDistanceForMidAttack" type="Float32">7</Property>
+			<Property name="MaxDistanceToUseCloseAttack" type="Float32">1.75</Property>
+			<Property name="MaxDistanceToUseMidAttack" type="Float32">3</Property>
+			<Property name="ChanceToUseMidAttack" type="Int32">20</Property>
+			<Property name="MinRunningAttackDistance" type="Float32">6</Property>
+			<Property name="MaxRunningAttackDistance" type="Float32">9</Property>
+			<Property name="RunningAttackExitDistance" type="Float32">12</Property>
+			<Property name="MaxOpportunisticMeleeAttackDistanceVSPlayer" type="Float32">2</Property>
+			<Property name="MaxOpportunisticMeleeAttackDistanceVSAI" type="Float32">2</Property>
+			<Property name="MaxOpportunisticMeleeExitDistance" type="Float32">1</Property>
+			<Property name="MaxOpportunityMeleeAttackDistanceVSPlayer" type="Float32">1.5</Property>
+			<Property name="MaxOpportunityMeleeAttackDistanceVSAI" type="Float32">1.5</Property>
+			<Property name="MaxOpportunityMeleeExitDistance" type="Float32">1</Property>
+			<Property name="MinTimeBeforeOpportunityMeleeAttack" type="Float32">0.25</Property>
+			<Property name="MaxTimeBeforeOpportunityMeleeAttack" type="Float32">0.5</Property>
+			<Property name="MinForOpportunityMeleeAttackTimeout" type="Float32">2</Property>
+			<Property name="MaxForOpportunityMeleeAttackTimeout" type="Float32">3</Property>
+			<Property name="MaxOpportunityRangedAttackDistanceVSPlayer" type="Float32">5</Property>
+			<Property name="MaxOpportunityRangedAttackDistanceVSAI" type="Float32">5</Property>
+			<Property name="MaxOpportunityRangedExitDistance" type="Float32">1</Property>
+			<Property name="MinTimeBeforeOpportunityRangedAttack" type="Float32">0.25</Property>
+			<Property name="MaxTimeBeforeOpportunityRangedAttack" type="Float32">0.5</Property>
+			<Property name="MinTimeBeforeNextOpportunityRangedAttack" type="Float32">2.5</Property>
+			<Property name="MaxTimeBeforeNextOpportunityRangedAttack" type="Float32">3</Property>
+			<Property name="InitialAttackTimeMinMeleeVSHumanAsEnemy" type="Float32">0</Property>
+			<Property name="InitialAttackTimeMaxMeleeVSHumanAsEnemy" type="Float32">0.4</Property>
+			<Property name="AttackTimeMinMeleeVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMaxMeleeVSHumanAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMinMeleeVSHumanAsEnemyMobBattle" type="Float32">0.25</Property>
+			<Property name="AttackTimeMaxMeleeVSHumanAsEnemyMobBattle" type="Float32">1</Property>
+			<Property name="AttackTimeMinMeleeDownedVSHumanAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMaxMeleeDownedVSHumanAsEnemy" type="Float32">5</Property>
+			<Property name="InitialAttackTimeMinRangedVSHumanAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxRangedVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedDownedVSHumanAsEnemy" type="Float32">3.5</Property>
+			<Property name="AttackTimeMaxRangedDownedVSHumanAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinRangedInCoverVSHumanAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxRangedInCoverVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedInCoverVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedInCoverVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedInCoverDownedVSHumanAsEnemy" type="Float32">3.5</Property>
+			<Property name="AttackTimeMaxRangedInCoverDownedVSHumanAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinDirectFollowersVSHumanAsEnemy" type="Float32">1</Property>
+			<Property name="InitialAttackTimeMaxDirectFollowersVSHumanAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMinDirectFollowersVSHumanAsEnemy" type="Float32">2.5</Property>
+			<Property name="AttackTimeMaxDirectFollowersVSHumanAsEnemy" type="Float32">8.5</Property>
+			<Property name="AttackTimeMinDirectFollowersDownedVSHumanAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMaxDirectFollowersDownedVSHumanAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinMeleeVSAIAsEnemy" type="Float32">1</Property>
+			<Property name="InitialAttackTimeMaxMeleeVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="AttackTimeMinMeleeVSAIAsEnemy" type="Float32">0.5</Property>
+			<Property name="AttackTimeMaxMeleeVSAIAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMinMeleeDownedVSAIAsEnemy" type="Float32">8</Property>
+			<Property name="AttackTimeMaxMeleeDownedVSAIAsEnemy" type="Float32">12</Property>
+			<Property name="InitialAttackTimeMinRangedVSAIAsEnemy" type="Float32">0.5</Property>
+			<Property name="InitialAttackTimeMaxRangedVSAIAsEnemy" type="Float32">5.5</Property>
+			<Property name="AttackTimeMinRangedVSAIAsEnemy" type="Float32">0.5</Property>
+			<Property name="AttackTimeMaxRangedVSAIAsEnemy" type="Float32">6</Property>
+			<Property name="AttackTimeMinRangedDownedVSAIAsEnemy" type="Float32">2</Property>
+			<Property name="AttackTimeMaxRangedDownedVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinRangedInCoverVSAIAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxRangedInCoverVSAIAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinRangedInCoverVSAIAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMaxRangedInCoverVSAIAsEnemy" type="Float32">6</Property>
+			<Property name="AttackTimeMinRangedInCoverDownedVSAIAsEnemy" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedInCoverDownedVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinDirectFollowersVSAIAsEnemy" type="Float32">0.25</Property>
+			<Property name="InitialAttackTimeMaxDirectFollowersVSAIAsEnemy" type="Float32">1.5</Property>
+			<Property name="AttackTimeMinDirectFollowersVSAIAsEnemy" type="Float32">3</Property>
+			<Property name="AttackTimeMaxDirectFollowersVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="AttackTimeMinDirectFollowersDownedVSAIAsEnemy" type="Float32">2</Property>
+			<Property name="AttackTimeMaxDirectFollowersDownedVSAIAsEnemy" type="Float32">4</Property>
+			<Property name="InitialAttackTimeMinMeleeVSAIAsAlly" type="Float32">0.1</Property>
+			<Property name="InitialAttackTimeMaxMeleeVSAIAsAlly" type="Float32">0.4</Property>
+			<Property name="AttackTimeMinMeleeVSAIAsAlly" type="Float32">0.5</Property>
+			<Property name="AttackTimeMaxMeleeVSAIAsAlly" type="Float32">1</Property>
+			<Property name="AttackTimeMinMeleeDownedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="AttackTimeMaxMeleeDownedVSAIAsAlly" type="Float32">3</Property>
+			<Property name="InitialAttackTimeMinRangedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="InitialAttackTimeMaxRangedVSAIAsAlly" type="Float32">5</Property>
+			<Property name="AttackTimeMinRangedVSAIAsAlly" type="Float32">1.5</Property>
+			<Property name="AttackTimeMaxRangedVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="AttackTimeMinRangedDownedVSAIAsAlly" type="Float32">1</Property>
+			<Property name="AttackTimeMaxRangedDownedVSAIAsAlly" type="Float32">3</Property>
+			<Property name="InitialAttackTimeMinRangedInCoverVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="InitialAttackTimeMaxRangedInCoverVSAIAsAlly" type="Float32">5</Property>
+			<Property name="AttackTimeMinRangedInCoverVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="AttackTimeMaxRangedInCoverVSAIAsAlly" type="Float32">8</Property>
+			<Property name="AttackTimeMinRangedInCoverDownedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="AttackTimeMaxRangedInCoverDownedVSAIAsAlly" type="Float32">8</Property>
+			<Property name="InitialAttackTimeMinDirectFollowersVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="InitialAttackTimeMaxDirectFollowersVSAIAsAlly" type="Float32">4</Property>
+			<Property name="AttackTimeMinDirectFollowersVSAIAsAlly" type="Float32">2.5</Property>
+			<Property name="AttackTimeMaxDirectFollowersVSAIAsAlly" type="Float32">4</Property>
+			<Property name="AttackTimeMinDirectFollowersDownedVSAIAsAlly" type="Float32">2</Property>
+			<Property name="AttackTimeMaxDirectFollowersDownedVSAIAsAlly" type="Float32">4</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_Sensor" type="PropSet">
+		<PropertySet name="component_Sensor" nameUID="0x93D7F4B1" schema="default-component-Sensor">
+			<!-- Parents -->
+			<Parent nameUID="0xA1E0B63F">default-component-Sensor</Parent>
+			<!-- Schema Properties -->
+			<Property name="SensorPhantomSizeX" type="Float32">8</Property>
+			<Property name="SensorPhantomSizeY" type="Float32">8</Property>
+			<Property name="SensorPhantomSizeZ" type="Float32">8</Property>
+			<Property name="HasActiveRegion" type="Boolean">false</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_CharacterPhysics" type="PropSet">
+		<PropertySet name="component_CharacterPhysics" nameUID="0xA27BEFF2" schema="default-component-CharacterPhysics">
+			<!-- Schema Properties -->
+			<Property name="Mass" type="Float32">75</Property>
+			<Property name="MaxForce" type="Float32">1000</Property>
+			<Property name="MaxClimableSlope" type="Float32">65</Property>
+			<Property name="WalkCollisionHeight" type="Float32">1.835</Property>
+			<Property name="CombatCollisionHeight" type="Float32">1.835</Property>
+			<Property name="CrouchCollisionHeight" type="Float32">0.95</Property>
+			<Property name="DrivingCollisionHeight" type="Float32">1.1</Property>
+			<Property name="CrawlCollisionHeight" type="Float32">0.3</Property>
+			<Property name="SittingCollisionHeight" type="Float32">1.3</Property>
+			<Property name="CoverCollisionHeight" type="Float32">1.835</Property>
+			<Property name="FreerunCollisionHeight" type="Float32">1.835</Property>
+			<Property name="WalkCollisionRadius" type="Float32">0.32</Property>
+			<Property name="CombatCollisionRadius" type="Float32">0.5</Property>
+			<Property name="CrouchCollisionRadius" type="Float32">0.35</Property>
+			<Property name="DrivingCollisionRadius" type="Float32">0.3</Property>
+			<Property name="CrawlCollisionRadius" type="Float32">0.3</Property>
+			<Property name="SittingCollisionRadius" type="Float32">0.3</Property>
+			<Property name="CoverCollisionRadius" type="Float32">0.32</Property>
+			<Property name="FreerunCollisionRadius" type="Float32">0.2</Property>
+			<Property name="DetailedOnGroundCheck" type="Boolean">true</Property>
+		</PropertySet>
+	</Property>
+	<Property name="MinTimeAfterStandBeforeBeginVolleyCombatShotgun" type="Float32">0.5</Property>
+	<Property name="component_Health" type="PropSet">
+		<PropertySet name="component_Health" nameUID="0xA9EB4546" schema="default-component-Health">
+			<!-- Schema Properties -->
+			<Property name="maxUpgradedHealth" type="Int32">400</Property>
+			<Property name="maxHealth" type="Int32">125</Property>
+			<Property name="regenerativeHealthRate" type="Float32">-1</Property>
+			<Property name="InvulnerableCharacter" type="Boolean">false</Property>
+			<Property name="healthProjectileDamageMultiplier" type="Float32">1</Property>
+		</PropertySet>
+	</Property>
+	<Property name="MinNumShotsPerVolleyAutomatic" type="Int32">2</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0xD2BB8C2">eCHARACTER_TYPE_THUG</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0xB92E1EFC">eFIGHTING_CLASS_STRIKER_QUICK</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x96962095">TRIAD_18K</Property>
+			<Property name="Gender" type="Symbol" symUID="0x166A8B5C">Male</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="MaxNumShotsPerVolleyPistol" type="Int32">1</Property>
+	<Property name="MinTimeAfterStandBeforeBeginVolleyShotgun" type="Float32">0.5</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="MaxTimeBetweenVolleysAutomatic" type="Float32">0.6</Property>
+	<Property name="MinTimeToHoldTriggerAutomatic" type="Float32">0.2</Property>
+	<Property name="MaxTimeAfterStandBeforeBeginVolleyAutomatic" type="Float32">0</Property>
+	<Property name="MinTimeBetweenShotsCombatShotgun" type="Float32">0.33</Property>
+	<Property name="MaxTimeAfterStandBeforeBeginVolleyPistol" type="Float32">0</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0xAD776A86">18k</ListProperty>
+				<ListProperty type="Symbol" symUID="0x31B08D26">Quick</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">-0.9</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="MaxTimeBetweenShotsPistol" type="Float32">0.5</Property>
+	<Property name="MaxTimeBetweenShotsShotgun" type="Float32">1.5</Property>
+	<Property name="MinTimeAfterStandBeforeBeginVolleyPistol" type="Float32">0</Property>
+	<Property name="MaxTimeBetweenShotsCombatShotgun" type="Float32">1</Property>
+	<Property name="Description" type="String">Thug 18k Quick</Property>
+	<Property name="MinTimeAfterVolleyToKeepStandingAutomatic" type="Float32">0.3</Property>
+</PropertySetResource>

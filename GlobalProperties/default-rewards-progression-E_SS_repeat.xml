@@ -1,8 +1,10 @@
-<PropertySet name="default-rewards-progression-E_SS_repeat" nameUID="0x8C7146E2" schema="default-rewards-progression-E_SS_repeat">
-    <Parent>default-rewards-progression-E_SS</Parent>
-    <Property name="0x72201393" type="Int32">50</Property>
-    <Property name="EnableCopScoring" type="Boolean">False</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="MoneyAdjustment" type="Int32">0</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-E_SS_repeat" nameUID="0x8C7146E2">
+	<!-- Parents -->
+	<Parent nameUID="0xCCE4BD40">default-rewards-progression-E_SS</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">0</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">50</Property>
+	<Property name="EnableCopScoring" type="Boolean">false</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+</PropertySetResource>

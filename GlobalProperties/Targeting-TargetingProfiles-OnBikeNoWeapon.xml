@@ -1,10 +1,12 @@
-<PropertySet name="Targeting-TargetingProfiles-OnBikeNoWeapon" nameUID="0x33D25A1E" schema="Targeting-TargetingProfiles-OnBikeNoWeapon">
-    <Parent>Targeting-TargetingProfiles-Default</Parent>
-    <Property name="ExtraNegativePitch" type="Float32">20</Property>
-    <Property name="HalfHorizontalIntentionLimiter" type="Float32">45</Property>
-    <Property name="VertialFOV" type="Float32">40</Property>
-    <Property name="eCONE_FOCAL_ConeDistance" type="Float32">20</Property>
-    <Property name="eCONE_FOCAL_HorizontalFOV" type="Float32">25</Property>
-    <Property name="eCONE_PERIPHERY_ConeDistance" type="Float32">20</Property>
-    <Property name="eCONE_PERIPHERY_HorizontalFOV" type="Float32">95</Property>
-</PropertySet>
+<PropertySetResource name="Targeting-TargetingProfiles-OnBikeNoWeapon" nameUID="0x33D25A1E">
+	<!-- Parents -->
+	<Parent nameUID="0x756B6E8F">Targeting-TargetingProfiles-Default</Parent>
+	<!-- Properties -->
+	<Property name="eCONE_PERIPHERY_ConeDistance" type="Float32">20</Property>
+	<Property name="HalfHorizontalIntentionLimiter" type="Float32">45</Property>
+	<Property name="eCONE_PERIPHERY_HorizontalFOV" type="Float32">95</Property>
+	<Property name="eCONE_FOCAL_ConeDistance" type="Float32">20</Property>
+	<Property name="ExtraNegativePitch" type="Float32">20</Property>
+	<Property name="VertialFOV" type="Float32">40</Property>
+	<Property name="eCONE_FOCAL_HorizontalFOV" type="Float32">25</Property>
+</PropertySetResource>

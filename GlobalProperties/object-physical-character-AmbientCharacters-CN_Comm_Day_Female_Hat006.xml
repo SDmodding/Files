@@ -1,34 +1,53 @@
-<PropertySet name="object-physical-character-AmbientCharacters-CN_Comm_Day_Female_Hat006" nameUID="0x5F9C4E44" schema="object-physical-character-AmbientCharacters-CN_Comm_Day_Female_Hat006">
-    <Parent>object-physical-character-AmbientCharacters-CN_Comm_Day_Female</Parent>
-    <Property name="Description" type="String">CN Commercial Day Female Hat006</Property>
-    <Property name="PropList" type="List">
-        <Property type="Symbol" Symbol="0x9347FE2F">object-physical-prop-Attachable-AmbientHat006</Property>
-    </Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-        <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-        <Property type="Symbol" Symbol="0x95BC9EE4">Ped</Property>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0xE7DE76F9">Female</Property>
-                <Property type="Symbol" Symbol="0x34D93218">Central</Property>
-                <Property type="Symbol" Symbol="0x7F91BED9">Shopper</Property>
-                <Property type="Symbol" Symbol="0xC5BA1292">Asian</Property>
-                <Property type="Symbol" Symbol="0xB7AC9882">Day</Property>
-                <Property type="Symbol" Symbol="0xFC4DCAB4">Youth</Property>
-                <Property type="Symbol" Symbol="0x17DFC3F9">Hat006</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-AmbientCharacters-CN_Comm_Day_Female_Hat006" nameUID="0x5F9C4E44">
+	<!-- Parents -->
+	<Parent nameUID="0xE301CC25">object-physical-character-AmbientCharacters-CN_Comm_Day_Female</Parent>
+	<!-- Properties -->
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x8C8E7DEB">Generic_Ped</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE2C9EA1C">ScooterDriver</ListProperty>
+				<ListProperty type="Symbol" symUID="0xA240E438">NoWorkBoat</ListProperty>
+				<ListProperty type="Symbol" symUID="0xDBE6EFF7">NoBike</ListProperty>
+				<ListProperty type="Symbol" symUID="0xF62EC7D0">NoTruck</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="PropList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x9347FE2F">object-physical-prop-Attachable-AmbientHat006</ListProperty>
+	</Property>
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+		<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+		<ListProperty type="Symbol" symUID="0x95BC9EE4">Ped</ListProperty>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xE7DE76F9">Female</ListProperty>
+				<ListProperty type="Symbol" symUID="0x34D93218">Central</ListProperty>
+				<ListProperty type="Symbol" symUID="0x7F91BED9">Shopper</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC5BA1292">Asian</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB7AC9882">Day</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFC4DCAB4">Youth</ListProperty>
+				<ListProperty type="Symbol" symUID="0x17DFC3F9">Hat006</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">CN Commercial Day Female Hat006</Property>
+</PropertySetResource>

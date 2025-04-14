@@ -1,8 +1,11 @@
-<PropertySet name="object-physical-prop-HIS_Dirty_Ming" nameUID="0xDBC690AC" schema="object-physical-prop-HIS_Dirty_Ming">
-    <Parent>object-physical-prop</Parent>
-    <Property name="default-component-InterestPoint" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-InterestPoint-HIS_Dirty_Ming</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-prop-HIS_Dirty_Ming" nameUID="0xDBC690AC">
+	<!-- Parents -->
+	<Parent nameUID="0x45EAFD73">object-physical-prop</Parent>
+	<!-- Properties -->
+	<Property name="default-component-InterestPoint" type="PropSet">
+		<PropertySet name="default-component-InterestPoint" nameUID="0xBF3B3B4B">
+			<!-- Parents -->
+			<Parent nameUID="0x69611E99">default-component-InterestPoint-HIS_Dirty_Ming</Parent>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

@@ -1,33 +1,52 @@
-<PropertySet name="default-rewards-progression-C_SK_Start" nameUID="0x99100919" schema="default-rewards-progression-C_SK_Start">
-    <Parent>default-rewards-progression-case_defaults</Parent>
-    <Property name="0xC3DF597C" type="Int32">100</Property>
-    <Property name="0xC71E44CB" type="Int32">95</Property>
-    <Property name="0xCA5D6212" type="Int32">1</Property>
-    <Property name="CopStartingScore" type="Int32">0</Property>
-    <Property name="MoneyAdjustment" type="Int32">0</Property>
-    <Property name="ShowRewardScreen" type="Boolean">False</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xB9637C48">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">CaseDoc_C_SK</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Status" type="Int32">1</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0x684DD3DB">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">Lead_C_SK1</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Status" type="Int32">1</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0x213B638F">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">CaseDoc_C_SK</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Status" type="Int32">2</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-C_SK_Start" nameUID="0x99100919">
+	<!-- Parents -->
+	<Parent nameUID="0x91F1AA7E">default-rewards-progression-case_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="CaseDoc_C_SK" nameUID="0xB9637C48">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xAD5FAF23"/>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">CaseDoc_C_SK</Property>
+				<Property name="Status" type="Int32">1</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Lead_C_SK1" nameUID="0x684DD3DB">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x748078A5"/>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">Lead_C_SK1</Property>
+				<Property name="Status" type="Int32">1</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x213B638F">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0xAD5FAF23"/>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">CaseDoc_C_SK</Property>
+				<Property name="Status" type="Int32">2</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">0</Property>
+	<Property name="MoneyAdjustment" type="Int32">0</Property>
+	<Property name="ShowRewardScreen" type="Boolean">false</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="~c3df597c~" type="Int32">100</Property>
+	<Property name="~c71e44cb~" type="Int32">95</Property>
+	<Property name="~ca5d6212~" type="Int32">1</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x213B638F (Normal) -->
+<!-- 0x748078A5 (Normal) -->
+<!-- 0xAD5FAF23 (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->

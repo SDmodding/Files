@@ -1,37 +1,48 @@
-<PropertySet name="default-savegames-debugmenu-Main-r_vp_01" nameUID="0xF9348E7E" schema="default-savegames-debugmenu-Main-r_vp_01">
-    <Parent>default-savegames-defaults</Parent>
-    <Property name="Asset_Vehicle" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0x5DBCA387">Face_Four_Vehicle_02</Property>
-                <Property type="Symbol" Symbol="0x597DBE30">Face_Four_Vehicle_03</Property>
-                <Property type="Symbol" Symbol="0x473AEE35">Face_Four_Vehicle_04</Property>
-                <Property type="Symbol"/>
-                <Property type="Symbol" Symbol="0x4EB8D55B">Face_Four_Vehicle_06</Property>
-                <Property type="Symbol" Symbol="0x4A79C8EC">Face_Four_Vehicle_07</Property>
-                <Property type="Symbol" Symbol="0x72367551">Face_Four_Vehicle_08</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="DynamicTutorials" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-savegames-debugmenu-Main-r_vp_01" nameUID="0xF9348E7E">
+	<!-- Parents -->
+	<Parent nameUID="0x10965489">default-savegames-defaults</Parent>
+	<!-- Properties -->
+	<Property name="Asset_Vehicle" type="PropSet">
+		<PropertySet nameUID="0xC8AD833">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x5DBCA387">Face_Four_Vehicle_02</ListProperty>
+				<ListProperty type="Symbol" symUID="0x597DBE30">Face_Four_Vehicle_03</ListProperty>
+				<ListProperty type="Symbol" symUID="0x473AEE35">Face_Four_Vehicle_04</ListProperty>
+				<ListProperty type="Symbol" symUID="0x43FBF382"/>
+				<ListProperty type="Symbol" symUID="0x4EB8D55B">Face_Four_Vehicle_06</ListProperty>
+				<ListProperty type="Symbol" symUID="0x4A79C8EC">Face_Four_Vehicle_07</ListProperty>
+				<ListProperty type="Symbol" symUID="0x72367551">Face_Four_Vehicle_08</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="DynamicTutorials" type="PropSet">
+		<PropertySet name="Melee" nameUID="0xFB892B3B">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x444B6EFA">TranStoreTutorial</ListProperty>
+				<ListProperty type="Symbol" symUID="0x144D1EC7">HijackingTutorial</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xC8AD833 (Normal) -->
+<!-- 0x43FBF382 (Normal) -->

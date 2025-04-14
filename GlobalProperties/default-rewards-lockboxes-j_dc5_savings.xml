@@ -1,5 +1,7 @@
-<PropertySet name="default-rewards-lockboxes-j_dc5_savings" nameUID="0x370A5072" schema="default-rewards-lockboxes-j_dc5_savings">
-    <Parent>default-rewards-lockboxes-lockbox</Parent>
-    <Property name="CompletionText" type="String">Found Life Savings</Property>
-    <Property name="MoneyAdjustment" type="Int32">60000</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-lockboxes-j_dc5_savings" nameUID="0x370A5072">
+	<!-- Parents -->
+	<Parent nameUID="0x1B0A318C">default-rewards-lockboxes-lockbox</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">60000</Property>
+	<Property name="CompletionText" type="String">Found Life Savings</Property>
+</PropertySetResource>

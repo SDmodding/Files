@@ -1,12 +1,16 @@
-<PropertySet name="object-logical-NISScriptSystem" nameUID="0xE6B583F3" schema="object-logical-NISScriptSystem">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0x4C183A2">NISScriptSystem</Property>
-    <Property name="component_TSActor" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-TSActor</Parent>
-        </PropertySet>
-        <BinData>
-            <SkookumClass type="Symbol">NISScriptSystem</SkookumClass>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-NISScriptSystem" nameUID="0xE6B583F3">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0x8AFB3F2B">default-component-NISScriptSystem</Parent>
+	<!-- Properties -->
+	<Property name="component_TSActor" type="PropSet">
+		<PropertySet name="component_TSActor" nameUID="0x2873821B" schema="default-component-TSActor">
+			<!-- Parents -->
+			<Parent nameUID="0xC2815AE5">default-component-TSActor</Parent>
+			<!-- Schema Properties -->
+			<Property name="SkookumClass" type="Symbol" symUID="0x4C183A2">NISScriptSystem</Property>
+		</PropertySet>
+	</Property>
+	<Property name="ObjectType" type="Symbol" symUID="0x4C183A2">NISScriptSystem</Property>
+</PropertySetResource>

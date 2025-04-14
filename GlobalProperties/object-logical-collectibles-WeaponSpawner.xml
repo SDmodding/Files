@@ -1,3 +1,6 @@
-<PropertySet name="object-logical-collectibles-WeaponSpawner" nameUID="0xF04F2992" schema="object-logical-collectibles-WeaponSpawner">
-    <Parent>default-SimObject</Parent>
-</PropertySet>
+<PropertySetResource name="object-logical-collectibles-WeaponSpawner" nameUID="0xF04F2992">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0xF05DBAEC">default-component-CollectibleWeaponSpawner</Parent>
+</PropertySetResource>

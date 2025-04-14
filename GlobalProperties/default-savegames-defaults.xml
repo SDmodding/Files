@@ -1,493 +1,530 @@
-<PropertySet name="default-savegames-defaults" nameUID="0x10965489" schema="default-savegames-defaults">
-    <Property name="0xCE3BC16C" type="Boolean">True</Property>
-    <Property name="AimMode" type="Int32">3</Property>
-    <Property name="AimSoftLockEnabled" type="Boolean">True</Property>
-    <Property name="AimSpeedPitch" type="Float32">0.5</Property>
-    <Property name="AimSpeedYaw" type="Float32">0.5</Property>
-    <Property name="Asset_Boat" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0x9344FAE1">R_AB_03_rental</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="Asset_Clothing" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0xD4484E62">DefaultHair</Property>
-                <Property type="Symbol" Symbol="0xFF529EE">DefaultHead</Property>
-                <Property type="Symbol" Symbol="0x2BBBFCF0">NoGlasses</Property>
-                <Property type="Symbol" Symbol="0x1B6CB3E2">NoChain</Property>
-                <Property type="Symbol" Symbol="0xB6C17AD4">NoWatch</Property>
-                <Property type="Symbol" Symbol="0xB39F4671">Lower_bodyUnderwear</Property>
-                <Property type="Symbol" Symbol="0x3CE7E8FD">BodyUnderwear</Property>
-                <Property type="Symbol" Symbol="0x6A0CD10">NoRightWrist</Property>
-                <Property type="Symbol" Symbol="0x56D31C9E">FootwearUnderwear</Property>
-                <Property type="Symbol" Symbol="0x89509773">T_JacketBase</Property>
-                <Property type="Symbol" Symbol="0xD08773F9">P_JeansBase</Property>
-                <Property type="Symbol" Symbol="0x3A069DB7">S_SleekBase</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="Berserk_Activated" type="Float32">-1</Property>
-    <Property name="Berserk_Damage_Multiplier" type="Float32">0.8</Property>
-    <Property name="Berserk_Duration" type="Float32">20</Property>
-    <Property name="Body" type="Symbol" Symbol="0x89509773">T_JacketBase</Property>
-    <Property name="CameraFreeLook" type="Boolean">True</Property>
-    <Property name="CameraSpeedPitch" type="Float32">0.5</Property>
-    <Property name="CameraSpeedYaw" type="Float32">0.5</Property>
-    <Property name="ClothingSetBuff_Bulletproof_RangedDamageReduce_Multipler" type="Float32">0.1</Property>
-    <Property name="ClothingSetBuff_CopXP_1_Multiplier" type="Float32">0.05</Property>
-    <Property name="ClothingSetBuff_CopXP_2_Multiplier" type="Float32">0.1</Property>
-    <Property name="ClothingSetBuff_CopXP_3_Multiplier" type="Float32">0.15</Property>
-    <Property name="ClothingSetBuff_Dragon_ActionMeterBonus_Multiplier" type="Float32">0.15</Property>
-    <Property name="ClothingSetBuff_EliteSwat_Damage_Reduction_Multiplier" type="Float32">0.5</Property>
-    <Property name="ClothingSetBuff_GrappleDamage_Multiplier" type="Float32">0.15</Property>
-    <Property name="ClothingSetBuff_HeatReduction_Multiplier" type="Float32">0.2</Property>
-    <Property name="ClothingSetBuff_Inconspicuous_PoliceRadiusReduce_Multiplier" type="Float32">0.2</Property>
-    <Property name="ClothingSetBuff_MeleeDamage_1_Multiplier" type="Float32">0.05</Property>
-    <Property name="ClothingSetBuff_MeleeDamage_2_Multiplier" type="Float32">0.1</Property>
-    <Property name="ClothingSetBuff_MeleeDamage_3_Multiplier" type="Float32">0.2</Property>
-    <Property name="ClothingSetBuff_Monk_HealthRegenRate_Multiplier" type="Float32">0.15</Property>
-    <Property name="ClothingSetBuff_Negotiator_PurchaseDiscountPercentage_1" type="Float32">0.05</Property>
-    <Property name="ClothingSetBuff_Negotiator_PurchaseDiscountPercentage_2" type="Float32">0.1</Property>
-    <Property name="ClothingSetBuff_Negotiator_PurchaseDiscountPercentage_3" type="Float32">0.15</Property>
-    <Property name="ClothingSetBuff_PumpedUp_ActionMeterBonus_Multiplier" type="Float32">0.15</Property>
-    <Property name="ClothingSetBuff_Sharpshooter_RangedAccuracyBonus_Multiplier" type="Float32">0.15</Property>
-    <Property name="ClothingSetBuff_StrikingDamageTriadEnforcer_Multiplier" type="Float32">0.1</Property>
-    <Property name="ClothingSetBuff_StrikingDamage_Multiplier" type="Float32">0.1</Property>
-    <Property name="ClothingSetBuff_Tourist_PurchasePriceIncrease_Multiplier" type="Float32">1</Property>
-    <Property name="ClothingSetBuff_TriadXP_1_Multiplier" type="Float32">0.05</Property>
-    <Property name="ClothingSetBuff_TriadXP_2_Multiplier" type="Float32">0.1</Property>
-    <Property name="ClothingSetBuff_TriadXP_3_Multiplier" type="Float32">0.15</Property>
-    <Property name="ClothingSetBuff_Triad_Enforcer_ActionMeterBonus_Multiplier" type="Float32">0.1</Property>
-    <Property name="Collectible_AreaOwnership" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0x8BEC757E">ChopShop</Property>
-                <Property type="Symbol" Symbol="0xACC8BB8E">DockYards</Property>
-                <Property type="Symbol" Symbol="0xD39C1D97">AberdeenIsland</Property>
-                <Property type="Symbol" Symbol="0xFF1790B9">Aberdeen</Property>
-                <Property type="Symbol" Symbol="0x82B31F08">NorthPointResidential</Property>
-                <Property type="Symbol" Symbol="0xBD42F12A">BamBamClub</Property>
-                <Property type="Symbol" Symbol="0x92D275DF">MinibusDepot</Property>
-                <Property type="Symbol" Symbol="0x8F5896F8">NorthPointWaterfront</Property>
-                <Property type="Symbol" Symbol="0xC71A98B4">NightMarket</Property>
-                <Property type="Symbol" Symbol="0xD71F82D8">Sweatshop</Property>
-                <Property type="Symbol" Symbol="0xE5CBB1F6">NorthPointTemple</Property>
-                <Property type="Symbol" Symbol="0x5B9A6627">TopGlamour</Property>
-                <Property type="Symbol" Symbol="0xC41A8176">TimeSquare</Property>
-                <Property type="Symbol" Symbol="0x57297648">KennedyTown</Property>
-                <Property type="Symbol" Symbol="0x7BFE830D">NorthPointPark</Property>
-                <Property type="Symbol" Symbol="0x1351C61B">CentralFinancial</Property>
-                <Property type="Symbol" Symbol="0xCFED2BA4">CentralResidential</Property>
-                <Property type="Symbol" Symbol="0xB8C3227C">Soho</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Int32">4</Property>
-                <Property type="Int32">14</Property>
-                <Property type="Int32">4</Property>
-                <Property type="Int32">15</Property>
-                <Property type="Int32">5</Property>
-                <Property type="Int32">5</Property>
-                <Property type="Int32">5</Property>
-                <Property type="Int32">5</Property>
-                <Property type="Int32">5</Property>
-                <Property type="Int32">5</Property>
-                <Property type="Int32">12</Property>
-                <Property type="Int32">12</Property>
-                <Property type="Int32">12</Property>
-                <Property type="Int32">12</Property>
-                <Property type="Int32">12</Property>
-                <Property type="Int32">14</Property>
-                <Property type="Int32">14</Property>
-                <Property type="Int32">14</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="Collectible_Safehouse" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0x1E9D6739">SFNP-NP</Property>
-                <Property type="Symbol" Symbol="0x178D9367">SFAB-AB</Property>
-                <Property type="Symbol" Symbol="0x44091DCF">SFCT-CT</Property>
-                <Property type="Symbol" Symbol="0x8FA8599B">SFKT-KT</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="Collectible_SpyCam" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0xFBACA952">SpyCam-ballCourtCam</Property>
-                <Property type="Symbol" Symbol="0x1B936D62">SpyCam-parkKioskCam</Property>
-                <Property type="Symbol" Symbol="0x70C725C1">SpyCam-mrsChusCam</Property>
-                <Property type="Symbol" Symbol="0xD3641C00">SpyCam-warehouseCam</Property>
-                <Property type="Symbol" Symbol="0x8E5CA69">SpyCam-beachCam</Property>
-                <Property type="Symbol" Symbol="0xB871397B">SpyCam-triadHomeCam</Property>
-                <Property type="Symbol" Symbol="0xCE3EA23C">SpyCam-victoriaParkCam</Property>
-                <Property type="Symbol" Symbol="0xDDB53177">SpyCam-govtHouseCam</Property>
-                <Property type="Symbol" Symbol="0x182711A4">SpyCam-fadingstarCam</Property>
-                <Property type="Symbol" Symbol="0x45CEB5EB">SpyCam-tw_NP_02</Property>
-                <Property type="Symbol" Symbol="0x410FA85C">SpyCam-tw_NP_03</Property>
-                <Property type="Symbol" Symbol="0x4FD98004">SpyCam-tw_NPT_02</Property>
-                <Property type="Symbol" Symbol="0x3B3AC812">SpyCam-tw_SOHO_01</Property>
-                <Property type="Symbol" Symbol="0x429AA6DD">SpyCam-tw_NPT_01</Property>
-                <Property type="Symbol" Symbol="0x4B189DB3">SpyCam-tw_NPT_03</Property>
-                <Property type="Symbol" Symbol="0xB49D82F7">SpyCam-tw_CEN_01</Property>
-                <Property type="Symbol" Symbol="0xB9DEA42E">SpyCam-tw_CEN_02</Property>
-                <Property type="Symbol" Symbol="0xBD1FB999">SpyCam-tw_CEN_03</Property>
-                <Property type="Symbol" Symbol="0x3679EECB">SpyCam-tw_SOHO_02</Property>
-                <Property type="Symbol" Symbol="0x32B8F37C">SpyCam-tw_SOHO_03</Property>
-                <Property type="Symbol" Symbol="0xD326D98A">SpyCam-tw_DOCK_01</Property>
-                <Property type="Symbol" Symbol="0xDE65FF53">SpyCam-tw_DOCK_02</Property>
-                <Property type="Symbol" Symbol="0xDAA4E2E4">SpyCam-tw_DOCK_03</Property>
-                <Property type="Symbol" Symbol="0x6B583CB7">SpyCam-tw_ABER_01</Property>
-                <Property type="Symbol" Symbol="0x661B1A6E">SpyCam-tw_ABER_02</Property>
-                <Property type="Symbol" Symbol="0x62DA07D9">SpyCam-tw_ABER_03</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="CompletedGameSlice" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List"/>
-            <Property name="Values" type="List"/>
-        </PropertySet>
-    </Property>
-    <Property name="ContextHelp" type="Boolean">True</Property>
-    <Property name="CopDrivingStage" type="Int32">0</Property>
-    <Property name="CopShootingStage" type="Int32">0</Property>
-    <Property name="CopUpgradePoint" type="Int32">0</Property>
-    <Property name="DoorOpenedByScript" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0x61B66F5B">LOB_TopGlamourRollingGate001_003</Property>
-                <Property type="Symbol" Symbol="0xA0278A7E">LOB_TopGlamourRollingGate002_005</Property>
-                <Property type="Symbol" Symbol="0xE1ABB6DE">LOB_TopGlamourRollingGate001_01</Property>
-                <Property type="Symbol" Symbol="0xE8298DB0">LOB_TopGlamourRollingGate001_03</Property>
-                <Property type="Symbol" Symbol="0xB0A5BE43">LOB_TopGlamourRollingGate002_802</Property>
-                <Property type="Symbol" Symbol="0xECE89007">LOB_TopGlamourRollingGate001_02</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="DoorStateAutoClose" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0x59DEF2B6">LOI_AB_SHDoor001_101</Property>
-                <Property type="Symbol" Symbol="0x7C4CE2C8">LOI_CT_SHAptDoor001_101</Property>
-                <Property type="Symbol" Symbol="0x595C8514">LOI_KT_SHDoor001_101</Property>
-                <Property type="Symbol" Symbol="0xB14965D7">LOI_NP_SHDoor001_101</Property>
-                <Property type="Symbol" Symbol="0xFF042B3A">LOI_BamBamMainDoor001_801</Property>
-                <Property type="Symbol" Symbol="0x46FAAB45">LOI_PHQDoor004_01</Property>
-                <Property type="Symbol" Symbol="0x652E8DF7">LOL_HospitalDoor002_01</Property>
-                <Property type="Symbol" Symbol="0xB11DF01A">LOL_HospitalDoor002_608</Property>
-                <Property type="Symbol" Symbol="0xD002B265">LOI_BanquetHallBackDoor001_604</Property>
-                <Property type="Symbol" Symbol="0x9737F171">LOI_KbarDoor004_01</Property>
-                <Property type="Symbol" Symbol="0x37AF27C3">LOI_KbarDoor001_01</Property>
-                <Property type="Symbol" Symbol="0x84CF58">LOI_KbarDoor004_801</Property>
-                <Property type="Symbol" Symbol="0xFBF89DAE">LOI_KT_SHDoor001_01</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="DoorStateLocked" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0xD002B265">LOI_BanquetHallBackDoor001_604</Property>
-                <Property type="Symbol" Symbol="0xD4C3AFD2">LOI_BanquetHallBackDoor001_605</Property>
-                <Property type="Symbol" Symbol="0x59DEF2B6">LOI_AB_SHDoor001_101</Property>
-                <Property type="Symbol" Symbol="0x7C4CE2C8">LOI_CT_SHAptDoor001_101</Property>
-                <Property type="Symbol" Symbol="0x595C8514">LOI_KT_SHDoor001_101</Property>
-                <Property type="Symbol" Symbol="0xB14965D7">LOI_NP_SHDoor001_101</Property>
-                <Property type="Symbol" Symbol="0x6C90D5B0">LOI_RustyDoor001_201</Property>
-                <Property type="Symbol" Symbol="0x61D3F369">LOI_RustyDoor001_202</Property>
-                <Property type="Symbol" Symbol="0x4C4ED7A9">LOI_FrenchDoor001_01</Property>
-                <Property type="Symbol" Symbol="0x410DF170">LOI_FrenchDoor001_02</Property>
-                <Property type="Symbol" Symbol="0xEDFE4F3F">LOI_JCMetalGateDoor001_667</Property>
-                <Property type="Symbol" Symbol="0x4AEDC900">LOI_JCMetalGateDoor001_090</Property>
-                <Property type="Symbol" Symbol="0x7AEAFD2C">LOB_RBMansionDoors001_02</Property>
-                <Property type="Symbol" Symbol="0x38A975E8">LOB_GoingUDoorDouble001_001</Property>
-                <Property type="Symbol" Symbol="0x2F6C1E83">LOB_GoingUDoorDouble001_004</Property>
-                <Property type="Symbol" Symbol="0x2BAD0334">LOB_GoingUDoorDouble001_005</Property>
-                <Property type="Symbol" Symbol="0x3B2F3709">LOB_GoingUDoorDouble001_802</Property>
-                <Property type="Symbol" Symbol="0x511DDEE7">LOB_SlidingDoorWhs001_851</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="EnablePDA" type="Boolean">True</Property>
-    <Property name="EnableValet" type="Boolean">False</Property>
-    <Property name="EnergyDrinkBuff_Accuracy_Rate_Multiplier" type="Float32">0.15</Property>
-    <Property name="EnergyDrinkBuff_Activated" type="Float32">-1</Property>
-    <Property name="EnergyDrinkBuff_Duration" type="Float32">2700</Property>
-    <Property name="EnergyDrinkBuff_MeleeDamage_Multiplier1" type="Float32">0.1</Property>
-    <Property name="EnergyDrinkBuff_MeleeDamage_Multiplier2" type="Float32">0.15</Property>
-    <Property name="EnergyDrinkBuff_MeleeDamage_Multiplier3" type="Float32">0.2</Property>
-    <Property name="FaceLevel5_Action_DamageReduction_Multiplier" type="Float32">0.2</Property>
-    <Property name="FaceLevel9_Action_MeleeDamage_Multiplier" type="Float32">0.2</Property>
-    <Property name="FaceMeter" type="RangedInt32"/>
-    <Property name="Footwear" type="Symbol" Symbol="0x3A069DB7">S_SleekBase</Property>
-    <Property name="GameHints" type="Boolean">True</Property>
-    <Property name="Gamma" type="Int32">50</Property>
-    <Property name="Glasses" type="Symbol" Symbol="0xC0715A78">DefaultGlasses</Property>
-    <Property name="Group_Intimidate_Points" type="Int32">6</Property>
-    <Property name="GunReticle" type="Int32">1</Property>
-    <Property name="GunplayUpgradeStage" type="Int32">3</Property>
-    <Property name="Head" type="Symbol" Symbol="0xFF529EE">DefaultHead</Property>
-    <Property name="Headgear" type="Symbol" Symbol="0xD4484E62">DefaultHair</Property>
-    <Property name="Health" type="Float32">-1</Property>
-    <Property name="HealthRegen_Activated" type="Float32">-1</Property>
-    <Property name="HealthRegen_Duration_Level1" type="Float32">900</Property>
-    <Property name="HealthRegen_Duration_Level2" type="Float32">1800</Property>
-    <Property name="HealthRegen_Duration_Level3" type="Float32">2700</Property>
-    <Property name="Health_Regen_Health_Restore" type="Float32">0.5</Property>
-    <Property name="Health_Regen_Penalty_Remove" type="Float32">0.2</Property>
-    <Property name="Heat" type="Float32">0</Property>
-    <Property name="HudEnable" type="Boolean">True</Property>
-    <Property name="IsFullscreen" type="Boolean">True</Property>
-    <Property name="KaraokeSongs" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0x2BDD916">Song0</Property>
-                <Property type="Symbol" Symbol="0x67CC4A1">Song1</Property>
-                <Property type="Symbol" Symbol="0xB3FE278">Song2</Property>
-                <Property type="Symbol" Symbol="0xFFEFFCF">Song3</Property>
-                <Property type="Symbol" Symbol="0x11B9AFCA">Song4</Property>
-                <Property type="Symbol" Symbol="0x1578B27D">Song5</Property>
-                <Property type="Symbol" Symbol="0x183B94A4">Song6</Property>
-                <Property type="Symbol" Symbol="0x1CFA8913">Song7</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="LastUsedVehicleDismountLocationX" type="Float32">0</Property>
-    <Property name="LastUsedVehicleDismountLocationY" type="Float32">0</Property>
-    <Property name="LastUsedVehicleDismountLocationZ" type="Float32">0</Property>
-    <Property name="LastUsedVehicleIsCurrentlyUsed" type="Boolean">False</Property>
-    <Property name="LoadingHintPriority0" type="String">$GLOBAL_TUTORIAL_SPRINTING</Property>
-    <Property name="LoadingScreenPriority0" type="String">Data\UI\loading_wthk_start_tp.perm.bin</Property>
-    <Property name="LowerBody" type="Symbol" Symbol="0xD08773F9">P_JeansBase</Property>
-    <Property name="MassageParlourBuff_Activated" type="Float32">-1</Property>
-    <Property name="MassageParlourBuff_Duration" type="Float32">2700</Property>
-    <Property name="MassageParlourBuff_FaceEarned_Multiplier1" type="Float32">0.2</Property>
-    <Property name="MassageParlourBuff_FaceEarned_Multiplier2" type="Float32">0.3</Property>
-    <Property name="MassageParlourBuff_FaceEarned_Multiplier3" type="Float32">0.4</Property>
-    <Property name="MaxHealth" type="Float32">200</Property>
-    <Property name="MonetaryPenalty_Arrest_MaxSum" type="Int32">25000</Property>
-    <Property name="MonetaryPenalty_Arrest_Percentage" type="Float32">6</Property>
-    <Property name="MonetaryPenalty_Hospital_MaxSum" type="Int32">15000</Property>
-    <Property name="MonetaryPenalty_Hospital_Percentage" type="Float32">5</Property>
-    <Property name="Money" type="Int32">225</Property>
-    <Property name="PCMouseInputRaw" type="Boolean">True</Property>
-    <Property name="PCMouseSensitivity" type="Float32">0.5</Property>
-    <Property name="PipMeter" type="RangedInt32"/>
-    <Property name="PlayerFaceMeterBuff_Activated" type="Float32">-1</Property>
-    <Property name="PlayerFaceMeterBuff_BuffTimer" type="Float32">10</Property>
-    <Property name="PlayerFaceMeterBuff_CombatMeterBonusAdjustmentAtLevel5" type="Float32">0.5</Property>
-    <Property name="PlayerFaceMeterBuff_HealthPerHitGainedAtLevel2" type="Float32">15</Property>
-    <Property name="RegenHealthRatio" type="Float32">1</Property>
-    <Property name="ResolutionMode" type="Int32">0</Property>
-    <Property name="Sharpshooter_Accuracy_Rate_Multiplier" type="Float32">0.8</Property>
-    <Property name="Sharpshooter_Activated" type="Float32">-1</Property>
-    <Property name="Sharpshooter_Damage_Multiplier" type="Float32">0.3</Property>
-    <Property name="Sharpshooter_Duration" type="Float32">20</Property>
-    <Property name="Sharpshooter_Duration_Level1" type="Float32">300</Property>
-    <Property name="Sharpshooter_Duration_Level2" type="Float32">600</Property>
-    <Property name="Sharpshooter_Duration_Level3" type="Float32">900</Property>
-    <Property name="StatGameOption" type="Int32">2</Property>
-    <Property name="StatGamesPlayedBoolList" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0x8FD76088">StatGamesCarJump</Property>
-                <Property type="Symbol" Symbol="0x65B777E5">StatGamesBikeJump</Property>
-                <Property type="Symbol" Symbol="0xE6C8ABC1">StatGamesWheelieDistance</Property>
-                <Property type="Symbol" Symbol="0xFDFAC50F">StatGamesLongestCarMaxSpeed</Property>
-                <Property type="Symbol" Symbol="0x3AE91872">StatGamesVehicleTakedownStreak</Property>
-                <Property type="Symbol" Symbol="0x3A546B49">StatGamesLongestNoDamageDriving</Property>
-                <Property type="Symbol" Symbol="0x9E1C1CC4">StatGamesLongestHitAndRun</Property>
-                <Property type="Symbol" Symbol="0xF5F8584F">StatGamesCoinsCollected</Property>
-                <Property type="Symbol" Symbol="0x2BE506A9">StatGamesLongestChase</Property>
-                <Property type="Symbol" Symbol="0xFE56ABA">StatGamesKillStreak</Property>
-                <Property type="Symbol" Symbol="0xE8074207">StatGamesTackles</Property>
-                <Property type="Symbol" Symbol="0xDA7FEF32">StatGamesFlyingKicks</Property>
-                <Property type="Symbol" Symbol="0xA4D259AA">StatGamesHeadShots</Property>
-                <Property type="Symbol" Symbol="0x65FD3F25">StatGamesTireShots</Property>
-                <Property type="Symbol" Symbol="0x2B7D8DC9">StatGamesCopsKilled</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-                <Property type="Boolean">False</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="StatueDefensiveStage" type="Int32">0</Property>
-    <Property name="StatueOffensiveStage" type="Int32">0</Property>
-    <Property name="StatueUpgradePoint" type="Int32">0</Property>
-    <Property name="StrikingBuff_Activated" type="Float32">-1</Property>
-    <Property name="StrikingBuff_Duration" type="Float32">900</Property>
-    <Property name="StrikingBuff_ExtraDamage_Multiplier" type="Float32">0.1</Property>
-    <Property name="Subtitles" type="Int32">3</Property>
-    <Property name="TeaHouseBuff_Activated" type="Float32">-1</Property>
-    <Property name="TeaHouseBuff_Duration" type="Float32">2700</Property>
-    <Property name="TeahouseBuff_Damage_Reduction1" type="Float32">0.1</Property>
-    <Property name="TeahouseBuff_Damage_Reduction2" type="Float32">0.2</Property>
-    <Property name="TeahouseBuff_Damage_Reduction3" type="Float32">0.3</Property>
-    <Property name="TimeOfDay" type="Float32">28800</Property>
-    <Property name="TriadDefensiveLevel1_DamageReduction_Multiplier" type="Float32">0.2</Property>
-    <Property name="TriadDefensiveLevel3_MeleeWeapon_DamageReduction_Multiplier" type="Float32">0.2</Property>
-    <Property name="TriadDefensiveStage" type="Int32">0</Property>
-    <Property name="TriadOffensiveLevel1_StrikingDamage_Multiplier" type="Float32">0.2</Property>
-    <Property name="TriadOffensiveStage" type="Int32">0</Property>
-    <Property name="TriadUpgradePoint" type="Int32">0</Property>
-    <Property name="UIScale" type="Int32">10</Property>
-    <Property name="UnlockedLoadingHints" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol" Symbol="0x9EFBCF93">1</Property>
-                <Property type="Symbol" Symbol="0x93B8E94A">2</Property>
-                <Property type="Symbol" Symbol="0x9779F4FD">3</Property>
-                <Property type="Symbol" Symbol="0x893EA4F8">4</Property>
-                <Property type="Symbol" Symbol="0x8DFFB94F">5</Property>
-                <Property type="Symbol" Symbol="0x80BC9F96">6</Property>
-                <Property type="Symbol" Symbol="0x847D8221">7</Property>
-                <Property type="Symbol" Symbol="0xBC323F9C">8</Property>
-                <Property type="Symbol" Symbol="0xB8F3222B">9</Property>
-                <Property type="Symbol" Symbol="0x366E6504">10</Property>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Int32">1</Property>
-                <Property type="Int32">2</Property>
-                <Property type="Int32">3</Property>
-                <Property type="Int32">4</Property>
-                <Property type="Int32">5</Property>
-                <Property type="Int32">6</Property>
-                <Property type="Int32">7</Property>
-                <Property type="Int32">8</Property>
-                <Property type="Int32">9</Property>
-                <Property type="Int32">10</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="Vibration" type="Boolean">True</Property>
-    <Property name="VolumeCarMusic" type="Int32">6</Property>
-    <Property name="VolumeDialogue" type="Int32">10</Property>
-    <Property name="VolumeMusic" type="Int32">10</Property>
-    <Property name="VolumeSFX" type="Int32">10</Property>
-    <Property name="WeatherIntensity" type="Float32">-1</Property>
-    <Property name="WeatherWetness" type="Float32">-1</Property>
-    <Property name="XAxisInverted" type="Boolean">False</Property>
-    <Property name="YAxisInverted" type="Boolean">False</Property>
-</PropertySet>
+<PropertySetResource name="default-savegames-defaults" nameUID="0x10965489">
+	<!-- Properties -->
+	<Property name="MonetaryPenalty_Arrest_MaxSum" type="Int32">25000</Property>
+	<Property name="CameraFreeLook" type="Boolean">true</Property>
+	<Property name="ClothingSetBuff_PumpedUp_ActionMeterBonus_Multiplier" type="Float32">0.15</Property>
+	<Property name="EnablePDA" type="Boolean">true</Property>
+	<Property name="Body" type="Symbol" symUID="0x89509773">T_JacketBase</Property>
+	<Property name="XAxisInverted" type="Boolean">false</Property>
+	<Property name="EnergyDrinkBuff_Activated" type="Float32">-1</Property>
+	<Property name="ClothingSetBuff_Tourist_PurchasePriceIncrease_Multiplier" type="Float32">1</Property>
+	<Property name="ClothingSetBuff_HeatReduction_Multiplier" type="Float32">0.2</Property>
+	<Property name="ClothingSetBuff_GrappleDamage_Multiplier" type="Float32">0.15</Property>
+	<Property name="TriadOffensiveStage" type="Int32">0</Property>
+	<Property name="AimSoftLockEnabled" type="Boolean">true</Property>
+	<Property name="EnableValet" type="Boolean">false</Property>
+	<Property name="CameraSpeedYaw" type="Float32">0.5</Property>
+	<Property name="PlayerFaceMeterBuff_HealthPerHitGainedAtLevel2" type="Float32">15</Property>
+	<Property name="VolumeSFX" type="Int32">10</Property>
+	<Property name="ClothingSetBuff_CopXP_1_Multiplier" type="Float32">0.05</Property>
+	<Property name="MassageParlourBuff_FaceEarned_Multiplier1" type="Float32">0.2</Property>
+	<Property name="PCMouseSensitivity" type="Float32">0.5</Property>
+	<Property name="ClothingSetBuff_CopXP_2_Multiplier" type="Float32">0.1</Property>
+	<Property name="MassageParlourBuff_FaceEarned_Multiplier2" type="Float32">0.3</Property>
+	<Property name="MassageParlourBuff_Duration" type="Float32">2700</Property>
+	<Property name="MassageParlourBuff_FaceEarned_Multiplier3" type="Float32">0.4</Property>
+	<Property name="ClothingSetBuff_CopXP_3_Multiplier" type="Float32">0.15</Property>
+	<Property name="StatGamesPlayedBoolList" type="PropSet">
+		<PropertySet name="StatGames" nameUID="0xF245EF8B">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x8FD76088">StatGamesCarJump</ListProperty>
+				<ListProperty type="Symbol" symUID="0x65B777E5">StatGamesBikeJump</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE6C8ABC1">StatGamesWheelieDistance</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFDFAC50F">StatGamesLongestCarMaxSpeed</ListProperty>
+				<ListProperty type="Symbol" symUID="0x3AE91872">StatGamesVehicleTakedownStreak</ListProperty>
+				<ListProperty type="Symbol" symUID="0x3A546B49">StatGamesLongestNoDamageDriving</ListProperty>
+				<ListProperty type="Symbol" symUID="0x9E1C1CC4">StatGamesLongestHitAndRun</ListProperty>
+				<ListProperty type="Symbol" symUID="0xF5F8584F">StatGamesCoinsCollected</ListProperty>
+				<ListProperty type="Symbol" symUID="0x2BE506A9">StatGamesLongestChase</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFE56ABA">StatGamesKillStreak</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE8074207">StatGamesTackles</ListProperty>
+				<ListProperty type="Symbol" symUID="0xDA7FEF32">StatGamesFlyingKicks</ListProperty>
+				<ListProperty type="Symbol" symUID="0xA4D259AA">StatGamesHeadShots</ListProperty>
+				<ListProperty type="Symbol" symUID="0x65FD3F25">StatGamesTireShots</ListProperty>
+				<ListProperty type="Symbol" symUID="0x2B7D8DC9">StatGamesCopsKilled</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Sharpshooter_Duration_Level3" type="Float32">900</Property>
+	<Property name="Health" type="Float32">-1</Property>
+	<Property name="StrikingBuff_Duration" type="Float32">900</Property>
+	<Property name="PlayerFaceMeterBuff_CombatMeterBonusAdjustmentAtLevel5" type="Float32">0.5</Property>
+	<Property name="Sharpshooter_Duration_Level2" type="Float32">600</Property>
+	<Property name="DoorStateAutoClose" type="PropSet">
+		<PropertySet name="AutoCloseSet" nameUID="0x85F71395">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x59DEF2B6">LOI_AB_SHDoor001_101</ListProperty>
+				<ListProperty type="Symbol" symUID="0x7C4CE2C8">LOI_CT_SHAptDoor001_101</ListProperty>
+				<ListProperty type="Symbol" symUID="0x595C8514">LOI_KT_SHDoor001_101</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB14965D7">LOI_NP_SHDoor001_101</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFF042B3A">LOI_BamBamMainDoor001_801</ListProperty>
+				<ListProperty type="Symbol" symUID="0x46FAAB45">LOI_PHQDoor004_01</ListProperty>
+				<ListProperty type="Symbol" symUID="0x652E8DF7">LOL_HospitalDoor002_01</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB11DF01A">LOL_HospitalDoor002_608</ListProperty>
+				<ListProperty type="Symbol" symUID="0xD002B265">LOI_BanquetHallBackDoor001_604</ListProperty>
+				<ListProperty type="Symbol" symUID="0x9737F171">LOI_KbarDoor004_01</ListProperty>
+				<ListProperty type="Symbol" symUID="0x37AF27C3">LOI_KbarDoor001_01</ListProperty>
+				<ListProperty type="Symbol" symUID="0x84CF58">LOI_KbarDoor004_801</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFBF89DAE">LOI_KT_SHDoor001_01</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Asset_Boat" type="PropSet">
+		<PropertySet name="BoatSet" nameUID="0x3B642C2D">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x9344FAE1">R_AB_03_rental</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Sharpshooter_Duration_Level1" type="Float32">300</Property>
+	<Property name="Sharpshooter_Accuracy_Rate_Multiplier" type="Float32">0.8</Property>
+	<Property name="CopDrivingStage" type="Int32">0</Property>
+	<Property name="StatueDefensiveStage" type="Int32">0</Property>
+	<Property name="ClothingSetBuff_Monk_HealthRegenRate_Multiplier" type="Float32">0.15</Property>
+	<Property name="LowerBody" type="Symbol" symUID="0xD08773F9">P_JeansBase</Property>
+	<Property name="Glasses" type="Symbol" symUID="0xC0715A78">DefaultGlasses</Property>
+	<Property name="MaxHealth" type="Float32">200</Property>
+	<Property name="ClothingSetBuff_Inconspicuous_PoliceRadiusReduce_Multiplier" type="Float32">0.2</Property>
+	<Property name="AimMode" type="Int32">3</Property>
+	<Property name="WeatherWetness" type="Float32">-1</Property>
+	<Property name="ClothingSetBuff_Bulletproof_RangedDamageReduce_Multipler" type="Float32">0.1</Property>
+	<Property name="LoadingHintPriority0" type="String">$GLOBAL_TUTORIAL_SPRINTING</Property>
+	<Property name="PlayerFaceMeterBuff_BuffTimer" type="Float32">10</Property>
+	<Property name="MassageParlourBuff_Activated" type="Float32">-1</Property>
+	<Property name="Collectible_SpyCam" type="PropSet">
+		<PropertySet name="SpyCam" nameUID="0x44048883">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xFBACA952">SpyCam-ballCourtCam</ListProperty>
+				<ListProperty type="Symbol" symUID="0x1B936D62">SpyCam-parkKioskCam</ListProperty>
+				<ListProperty type="Symbol" symUID="0x70C725C1">SpyCam-mrsChusCam</ListProperty>
+				<ListProperty type="Symbol" symUID="0xD3641C00">SpyCam-warehouseCam</ListProperty>
+				<ListProperty type="Symbol" symUID="0x8E5CA69">SpyCam-beachCam</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB871397B">SpyCam-triadHomeCam</ListProperty>
+				<ListProperty type="Symbol" symUID="0xCE3EA23C">SpyCam-victoriaParkCam</ListProperty>
+				<ListProperty type="Symbol" symUID="0xDDB53177">SpyCam-govtHouseCam</ListProperty>
+				<ListProperty type="Symbol" symUID="0x182711A4">SpyCam-fadingstarCam</ListProperty>
+				<ListProperty type="Symbol" symUID="0x45CEB5EB">SpyCam-tw_NP_02</ListProperty>
+				<ListProperty type="Symbol" symUID="0x410FA85C">SpyCam-tw_NP_03</ListProperty>
+				<ListProperty type="Symbol" symUID="0x4FD98004">SpyCam-tw_NPT_02</ListProperty>
+				<ListProperty type="Symbol" symUID="0x3B3AC812">SpyCam-tw_SOHO_01</ListProperty>
+				<ListProperty type="Symbol" symUID="0x429AA6DD">SpyCam-tw_NPT_01</ListProperty>
+				<ListProperty type="Symbol" symUID="0x4B189DB3">SpyCam-tw_NPT_03</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB49D82F7">SpyCam-tw_CEN_01</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB9DEA42E">SpyCam-tw_CEN_02</ListProperty>
+				<ListProperty type="Symbol" symUID="0xBD1FB999">SpyCam-tw_CEN_03</ListProperty>
+				<ListProperty type="Symbol" symUID="0x3679EECB">SpyCam-tw_SOHO_02</ListProperty>
+				<ListProperty type="Symbol" symUID="0x32B8F37C">SpyCam-tw_SOHO_03</ListProperty>
+				<ListProperty type="Symbol" symUID="0xD326D98A">SpyCam-tw_DOCK_01</ListProperty>
+				<ListProperty type="Symbol" symUID="0xDE65FF53">SpyCam-tw_DOCK_02</ListProperty>
+				<ListProperty type="Symbol" symUID="0xDAA4E2E4">SpyCam-tw_DOCK_03</ListProperty>
+				<ListProperty type="Symbol" symUID="0x6B583CB7">SpyCam-tw_ABER_01</ListProperty>
+				<ListProperty type="Symbol" symUID="0x661B1A6E">SpyCam-tw_ABER_02</ListProperty>
+				<ListProperty type="Symbol" symUID="0x62DA07D9">SpyCam-tw_ABER_03</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Sharpshooter_Activated" type="Float32">-1</Property>
+	<Property name="Asset_Clothing" type="PropSet">
+		<PropertySet name="ClothingSet" nameUID="0x7D8D22CF">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xD4484E62">DefaultHair</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFF529EE">DefaultHead</ListProperty>
+				<ListProperty type="Symbol" symUID="0x2BBBFCF0">NoGlasses</ListProperty>
+				<ListProperty type="Symbol" symUID="0x1B6CB3E2">NoChain</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB6C17AD4">NoWatch</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB39F4671">Lower_bodyUnderwear</ListProperty>
+				<ListProperty type="Symbol" symUID="0x3CE7E8FD">BodyUnderwear</ListProperty>
+				<ListProperty type="Symbol" symUID="0x6A0CD10">NoRightWrist</ListProperty>
+				<ListProperty type="Symbol" symUID="0x56D31C9E">FootwearUnderwear</ListProperty>
+				<ListProperty type="Symbol" symUID="0x89509773">T_JacketBase</ListProperty>
+				<ListProperty type="Symbol" symUID="0xD08773F9">P_JeansBase</ListProperty>
+				<ListProperty type="Symbol" symUID="0x3A069DB7">S_SleekBase</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="TeaHouseBuff_Duration" type="Float32">2700</Property>
+	<Property name="EnergyDrinkBuff_MeleeDamage_Multiplier1" type="Float32">0.1</Property>
+	<Property name="TeahouseBuff_Damage_Reduction1" type="Float32">0.1</Property>
+	<Property name="KaraokeSongs" type="PropSet">
+		<PropertySet name="Songs" nameUID="0x3B788FB8">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x2BDD916">Song0</ListProperty>
+				<ListProperty type="Symbol" symUID="0x67CC4A1">Song1</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB3FE278">Song2</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFFEFFCF">Song3</ListProperty>
+				<ListProperty type="Symbol" symUID="0x11B9AFCA">Song4</ListProperty>
+				<ListProperty type="Symbol" symUID="0x1578B27D">Song5</ListProperty>
+				<ListProperty type="Symbol" symUID="0x183B94A4">Song6</ListProperty>
+				<ListProperty type="Symbol" symUID="0x1CFA8913">Song7</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="EnergyDrinkBuff_Duration" type="Float32">2700</Property>
+	<Property name="EnergyDrinkBuff_MeleeDamage_Multiplier2" type="Float32">0.15</Property>
+	<Property name="TeahouseBuff_Damage_Reduction2" type="Float32">0.2</Property>
+	<Property name="ClothingSetBuff_EliteSwat_Damage_Reduction_Multiplier" type="Float32">0.5</Property>
+	<Property name="EnergyDrinkBuff_MeleeDamage_Multiplier3" type="Float32">0.2</Property>
+	<Property name="TeahouseBuff_Damage_Reduction3" type="Float32">0.3</Property>
+	<Property name="FaceLevel5_Action_DamageReduction_Multiplier" type="Float32">0.2</Property>
+	<Property name="ResolutionMode" type="Int32">0</Property>
+	<Property name="CopShootingStage" type="Int32">0</Property>
+	<Property name="PCMouseInputRaw" type="Boolean">true</Property>
+	<Property name="TeaHouseBuff_Activated" type="Float32">-1</Property>
+	<Property name="IsFullscreen" type="Boolean">true</Property>
+	<Property name="Health_Regen_Penalty_Remove" type="Float32">0.2</Property>
+	<Property name="TriadOffensiveLevel1_StrikingDamage_Multiplier" type="Float32">0.2</Property>
+	<Property name="TimeOfDay" type="Float32">28800</Property>
+	<Property name="StrikingBuff_ExtraDamage_Multiplier" type="Float32">0.1</Property>
+	<Property name="Footwear" type="Symbol" symUID="0x3A069DB7">S_SleekBase</Property>
+	<Property name="HealthRegen_Activated" type="Float32">-1</Property>
+	<Property name="FaceLevel9_Action_MeleeDamage_Multiplier" type="Float32">0.2</Property>
+	<Property name="HudEnable" type="Boolean">true</Property>
+	<Property name="RegenHealthRatio" type="Float32">1</Property>
+	<Property name="StatueOffensiveStage" type="Int32">0</Property>
+	<Property name="GunplayUpgradeStage" type="Int32">3</Property>
+	<Property name="Collectible_AreaOwnership" type="PropSet">
+		<PropertySet name="AreaSet" nameUID="0x856C75E3">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x8BEC757E">ChopShop</ListProperty>
+				<ListProperty type="Symbol" symUID="0xACC8BB8E">DockYards</ListProperty>
+				<ListProperty type="Symbol" symUID="0xD39C1D97">AberdeenIsland</ListProperty>
+				<ListProperty type="Symbol" symUID="0xFF1790B9">Aberdeen</ListProperty>
+				<ListProperty type="Symbol" symUID="0x82B31F08">NorthPointResidential</ListProperty>
+				<ListProperty type="Symbol" symUID="0xBD42F12A">BamBamClub</ListProperty>
+				<ListProperty type="Symbol" symUID="0x92D275DF">MinibusDepot</ListProperty>
+				<ListProperty type="Symbol" symUID="0x8F5896F8">NorthPointWaterfront</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC71A98B4">NightMarket</ListProperty>
+				<ListProperty type="Symbol" symUID="0xD71F82D8">Sweatshop</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE5CBB1F6">NorthPointTemple</ListProperty>
+				<ListProperty type="Symbol" symUID="0x5B9A6627">TopGlamour</ListProperty>
+				<ListProperty type="Symbol" symUID="0xC41A8176">TimeSquare</ListProperty>
+				<ListProperty type="Symbol" symUID="0x57297648">KennedyTown</ListProperty>
+				<ListProperty type="Symbol" symUID="0x7BFE830D">NorthPointPark</ListProperty>
+				<ListProperty type="Symbol" symUID="0x1351C61B">CentralFinancial</ListProperty>
+				<ListProperty type="Symbol" symUID="0xCFED2BA4">CentralResidential</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB8C3227C">Soho</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Int32">4</ListProperty>
+				<ListProperty type="Int32">14</ListProperty>
+				<ListProperty type="Int32">4</ListProperty>
+				<ListProperty type="Int32">15</ListProperty>
+				<ListProperty type="Int32">5</ListProperty>
+				<ListProperty type="Int32">5</ListProperty>
+				<ListProperty type="Int32">5</ListProperty>
+				<ListProperty type="Int32">5</ListProperty>
+				<ListProperty type="Int32">5</ListProperty>
+				<ListProperty type="Int32">5</ListProperty>
+				<ListProperty type="Int32">12</ListProperty>
+				<ListProperty type="Int32">12</ListProperty>
+				<ListProperty type="Int32">12</ListProperty>
+				<ListProperty type="Int32">12</ListProperty>
+				<ListProperty type="Int32">12</ListProperty>
+				<ListProperty type="Int32">14</ListProperty>
+				<ListProperty type="Int32">14</ListProperty>
+				<ListProperty type="Int32">14</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="Berserk_Duration" type="Float32">20</Property>
+	<Property name="LastUsedVehicleDismountLocationZ" type="Float32">0</Property>
+	<Property name="ContextHelp" type="Boolean">true</Property>
+	<Property name="StrikingBuff_Activated" type="Float32">-1</Property>
+	<Property name="LastUsedVehicleDismountLocationY" type="Float32">0</Property>
+	<Property name="Headgear" type="Symbol" symUID="0xD4484E62">DefaultHair</Property>
+	<Property name="Collectible_Safehouse" type="PropSet">
+		<PropertySet name="SafehouseSet" nameUID="0x17D40A4F">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x1E9D6739">SFNP-NP</ListProperty>
+				<ListProperty type="Symbol" symUID="0x178D9367">SFAB-AB</ListProperty>
+				<ListProperty type="Symbol" symUID="0x44091DCF">SFCT-CT</ListProperty>
+				<ListProperty type="Symbol" symUID="0x8FA8599B">SFKT-KT</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="TriadUpgradePoint" type="Int32">0</Property>
+	<Property name="AimSpeedPitch" type="Float32">0.5</Property>
+	<Property name="LastUsedVehicleDismountLocationX" type="Float32">0</Property>
+	<Property name="VolumeCarMusic" type="Int32">6</Property>
+	<Property name="MonetaryPenalty_Hospital_Percentage" type="Float32">5</Property>
+	<Property name="UnlockedLoadingHints" type="PropSet">
+		<PropertySet name="HintSet" nameUID="0x360984EB">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x9EFBCF93">1</ListProperty>
+				<ListProperty type="Symbol" symUID="0x93B8E94A">2</ListProperty>
+				<ListProperty type="Symbol" symUID="0x9779F4FD">3</ListProperty>
+				<ListProperty type="Symbol" symUID="0x893EA4F8">4</ListProperty>
+				<ListProperty type="Symbol" symUID="0x8DFFB94F">5</ListProperty>
+				<ListProperty type="Symbol" symUID="0x80BC9F96">6</ListProperty>
+				<ListProperty type="Symbol" symUID="0x847D8221">7</ListProperty>
+				<ListProperty type="Symbol" symUID="0xBC323F9C">8</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB8F3222B">9</ListProperty>
+				<ListProperty type="Symbol" symUID="0x366E6504">10</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Int32">1</ListProperty>
+				<ListProperty type="Int32">2</ListProperty>
+				<ListProperty type="Int32">3</ListProperty>
+				<ListProperty type="Int32">4</ListProperty>
+				<ListProperty type="Int32">5</ListProperty>
+				<ListProperty type="Int32">6</ListProperty>
+				<ListProperty type="Int32">7</ListProperty>
+				<ListProperty type="Int32">8</ListProperty>
+				<ListProperty type="Int32">9</ListProperty>
+				<ListProperty type="Int32">10</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="LastUsedVehicleIsCurrentlyUsed" type="Boolean">false</Property>
+	<Property name="AimSpeedYaw" type="Float32">0.5</Property>
+	<Property name="Head" type="Symbol" symUID="0xFF529EE">DefaultHead</Property>
+	<Property name="DoorStateLocked" type="PropSet">
+		<PropertySet name="LockedDoorSet" nameUID="0xC87EF208">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xD002B265">LOI_BanquetHallBackDoor001_604</ListProperty>
+				<ListProperty type="Symbol" symUID="0xD4C3AFD2">LOI_BanquetHallBackDoor001_605</ListProperty>
+				<ListProperty type="Symbol" symUID="0x59DEF2B6">LOI_AB_SHDoor001_101</ListProperty>
+				<ListProperty type="Symbol" symUID="0x7C4CE2C8">LOI_CT_SHAptDoor001_101</ListProperty>
+				<ListProperty type="Symbol" symUID="0x595C8514">LOI_KT_SHDoor001_101</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB14965D7">LOI_NP_SHDoor001_101</ListProperty>
+				<ListProperty type="Symbol" symUID="0x6C90D5B0">LOI_RustyDoor001_201</ListProperty>
+				<ListProperty type="Symbol" symUID="0x61D3F369">LOI_RustyDoor001_202</ListProperty>
+				<ListProperty type="Symbol" symUID="0x4C4ED7A9">LOI_FrenchDoor001_01</ListProperty>
+				<ListProperty type="Symbol" symUID="0x410DF170">LOI_FrenchDoor001_02</ListProperty>
+				<ListProperty type="Symbol" symUID="0xEDFE4F3F">LOI_JCMetalGateDoor001_667</ListProperty>
+				<ListProperty type="Symbol" symUID="0x4AEDC900">LOI_JCMetalGateDoor001_090</ListProperty>
+				<ListProperty type="Symbol" symUID="0x7AEAFD2C">LOB_RBMansionDoors001_02</ListProperty>
+				<ListProperty type="Symbol" symUID="0x38A975E8">LOB_GoingUDoorDouble001_001</ListProperty>
+				<ListProperty type="Symbol" symUID="0x2F6C1E83">LOB_GoingUDoorDouble001_004</ListProperty>
+				<ListProperty type="Symbol" symUID="0x2BAD0334">LOB_GoingUDoorDouble001_005</ListProperty>
+				<ListProperty type="Symbol" symUID="0x3B2F3709">LOB_GoingUDoorDouble001_802</ListProperty>
+				<ListProperty type="Symbol" symUID="0x511DDEE7">LOB_SlidingDoorWhs001_851</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">false</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="ClothingSetBuff_StrikingDamageTriadEnforcer_Multiplier" type="Float32">0.1</Property>
+	<Property name="Vibration" type="Boolean">true</Property>
+	<Property name="TriadDefensiveLevel1_DamageReduction_Multiplier" type="Float32">0.2</Property>
+	<Property name="Group_Intimidate_Points" type="Int32">6</Property>
+	<Property name="CopUpgradePoint" type="Int32">0</Property>
+	<Property name="WeatherIntensity" type="Float32">-1</Property>
+	<Property name="StatueUpgradePoint" type="Int32">0</Property>
+	<Property name="MonetaryPenalty_Hospital_MaxSum" type="Int32">15000</Property>
+	<Property name="ClothingSetBuff_Dragon_ActionMeterBonus_Multiplier" type="Float32">0.15</Property>
+	<Property name="ClothingSetBuff_Negotiator_PurchaseDiscountPercentage_1" type="Float32">0.05</Property>
+	<Property name="ClothingSetBuff_Triad_Enforcer_ActionMeterBonus_Multiplier" type="Float32">0.1</Property>
+	<Property name="TriadDefensiveLevel3_MeleeWeapon_DamageReduction_Multiplier" type="Float32">0.2</Property>
+	<Property name="Money" type="Int32">225</Property>
+	<Property name="UIScale" type="Int32">10</Property>
+	<Property name="ClothingSetBuff_Negotiator_PurchaseDiscountPercentage_3" type="Float32">0.15</Property>
+	<Property name="FaceMeter" type="Int32Ranged" range="500">0</Property>
+	<Property name="Gamma" type="Int32">50</Property>
+	<Property name="PlayerFaceMeterBuff_Activated" type="Float32">-1</Property>
+	<Property name="~ce3bc16c~" type="Boolean">true</Property>
+	<Property name="ClothingSetBuff_Negotiator_PurchaseDiscountPercentage_2" type="Float32">0.1</Property>
+	<Property name="EnergyDrinkBuff_Accuracy_Rate_Multiplier" type="Float32">0.15</Property>
+	<Property name="ClothingSetBuff_MeleeDamage_3_Multiplier" type="Float32">0.2</Property>
+	<Property name="DoorOpenedByScript" type="PropSet">
+		<PropertySet name="OpenedDoorSet" nameUID="0x3573A56D">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x61B66F5B">LOB_TopGlamourRollingGate001_003</ListProperty>
+				<ListProperty type="Symbol" symUID="0xA0278A7E">LOB_TopGlamourRollingGate002_005</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE1ABB6DE">LOB_TopGlamourRollingGate001_01</ListProperty>
+				<ListProperty type="Symbol" symUID="0xE8298DB0">LOB_TopGlamourRollingGate001_03</ListProperty>
+				<ListProperty type="Symbol" symUID="0xB0A5BE43">LOB_TopGlamourRollingGate002_802</ListProperty>
+				<ListProperty type="Symbol" symUID="0xECE89007">LOB_TopGlamourRollingGate001_02</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="CompletedGameSlice" type="PropSet">
+		<PropertySet name="GamesliceSet" nameUID="0x21AC034E">
+			<!-- Properties -->
+			<Property name="Names" type="List"/>
+			<Property name="Values" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="ClothingSetBuff_TriadXP_3_Multiplier" type="Float32">0.15</Property>
+	<Property name="Berserk_Activated" type="Float32">-1</Property>
+	<Property name="ClothingSetBuff_TriadXP_2_Multiplier" type="Float32">0.1</Property>
+	<Property name="VolumeDialogue" type="Int32">10</Property>
+	<Property name="GameHints" type="Boolean">true</Property>
+	<Property name="ClothingSetBuff_MeleeDamage_2_Multiplier" type="Float32">0.1</Property>
+	<Property name="MonetaryPenalty_Arrest_Percentage" type="Float32">6</Property>
+	<Property name="TriadDefensiveStage" type="Int32">0</Property>
+	<Property name="ClothingSetBuff_TriadXP_1_Multiplier" type="Float32">0.05</Property>
+	<Property name="Subtitles" type="Int32">3</Property>
+	<Property name="Sharpshooter_Damage_Multiplier" type="Float32">0.3</Property>
+	<Property name="ClothingSetBuff_MeleeDamage_1_Multiplier" type="Float32">0.05</Property>
+	<Property name="ClothingSetBuff_Sharpshooter_RangedAccuracyBonus_Multiplier" type="Float32">0.15</Property>
+	<Property name="Berserk_Damage_Multiplier" type="Float32">0.8</Property>
+	<Property name="CameraSpeedPitch" type="Float32">0.5</Property>
+	<Property name="Health_Regen_Health_Restore" type="Float32">0.5</Property>
+	<Property name="Heat" type="Float32">0</Property>
+	<Property name="ClothingSetBuff_StrikingDamage_Multiplier" type="Float32">0.1</Property>
+	<Property name="YAxisInverted" type="Boolean">false</Property>
+	<Property name="Sharpshooter_Duration" type="Float32">20</Property>
+	<Property name="PipMeter" type="Int32Ranged" range="500">0</Property>
+	<Property name="StatGameOption" type="Int32">2</Property>
+	<Property name="LoadingScreenPriority0" type="String">Data\UI\loading_wthk_start_tp.perm.bin</Property>
+	<Property name="HealthRegen_Duration_Level1" type="Float32">900</Property>
+	<Property name="GunReticle" type="Int32">1</Property>
+	<Property name="VolumeMusic" type="Int32">10</Property>
+	<Property name="HealthRegen_Duration_Level2" type="Float32">1800</Property>
+	<Property name="HealthRegen_Duration_Level3" type="Float32">2700</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xCE3BC16C (Normal) -->

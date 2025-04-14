@@ -1,6 +1,8 @@
-<PropertySet name="object-logical-collectibles-CNYBombBag" nameUID="0x84E4F84C" schema="object-logical-collectibles-CNYBombBag">
-    <Parent>object-logical-collectibles-Base</Parent>
-    <Property name="CollectibleSpawnInfo" type="Symbol" Symbol="0x2830766E">object-physical-prop-LOC_CNYBombBag001</Property>
-    <Property name="CollectibleType" type="Symbol" Symbol="0xF99DB47B">Collectible_DLC_03</Property>
-    <Property name="DeleteAfterUse" type="Boolean">True</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-collectibles-CNYBombBag" nameUID="0x84E4F84C">
+	<!-- Parents -->
+	<Parent nameUID="0x9611976B">object-logical-collectibles-Base</Parent>
+	<!-- Properties -->
+	<Property name="CollectibleType" type="Symbol" symUID="0xF99DB47B">Collectible_DLC_03</Property>
+	<Property name="DeleteAfterUse" type="Boolean">true</Property>
+	<Property name="CollectibleSpawnInfo" type="Symbol" symUID="0x2830766E">object-physical-prop-LOC_CNYBombBag001</Property>
+</PropertySetResource>

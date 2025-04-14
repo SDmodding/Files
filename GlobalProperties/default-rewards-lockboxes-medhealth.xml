@@ -1,6 +1,8 @@
-<PropertySet name="default-rewards-lockboxes-medhealth" nameUID="0xC415EB91" schema="default-rewards-lockboxes-medhealth">
-    <Parent>default-rewards-lockboxes-lockbox</Parent>
-    <Property name="CompletionText" type="String">Found Pork Bun</Property>
-    <Property name="InventoryItemType" type="Symbol" Symbol="0x9DA6D013">eINVENTORY_ITEM_PORK_BUN</Property>
-    <Property name="MoneyAdjustment" type="Int32">3500</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-lockboxes-medhealth" nameUID="0xC415EB91">
+	<!-- Parents -->
+	<Parent nameUID="0x1B0A318C">default-rewards-lockboxes-lockbox</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">3500</Property>
+	<Property name="CompletionText" type="String">Found Pork Bun</Property>
+	<Property name="InventoryItemType" type="Symbol" symUID="0x9DA6D013">eINVENTORY_ITEM_PORK_BUN</Property>
+</PropertySetResource>

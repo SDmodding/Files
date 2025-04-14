@@ -1,14 +1,16 @@
-<PropertySet name="default-savegames-debugmenu-Main-m_ve" nameUID="0x37FA2D00" schema="default-savegames-debugmenu-Main-m_ve">
-    <Parent>default-savegames-defaults</Parent>
-    <Property name="CopDrivingStage" type="Int32">0</Property>
-    <Property name="CopXP" type="Int32">0</Property>
-    <Property name="FaceXP" type="Int32">0</Property>
-    <Property name="GunplayUpgradeStage" type="Int32">0</Property>
-    <Property name="LoadingHintPriority0" type="String">$LOADING_HINT_VE_START</Property>
-    <Property name="LoadingScreenPriority0" type="String">Data\UI\loading_ve_start_tp.perm.bin</Property>
-    <Property name="StatueDefensiveStage" type="Int32">0</Property>
-    <Property name="StatueOffensiveStage" type="Int32">0</Property>
-    <Property name="TriadDefensiveStage" type="Int32">0</Property>
-    <Property name="TriadOffensiveStage" type="Int32">0</Property>
-    <Property name="TriadXP" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-savegames-debugmenu-Main-m_ve" nameUID="0x37FA2D00">
+	<!-- Parents -->
+	<Parent nameUID="0x10965489">default-savegames-defaults</Parent>
+	<!-- Properties -->
+	<Property name="TriadOffensiveStage" type="Int32">0</Property>
+	<Property name="FaceXP" type="Int32">0</Property>
+	<Property name="CopDrivingStage" type="Int32">0</Property>
+	<Property name="StatueDefensiveStage" type="Int32">0</Property>
+	<Property name="LoadingHintPriority0" type="String">$LOADING_HINT_VE_START</Property>
+	<Property name="StatueOffensiveStage" type="Int32">0</Property>
+	<Property name="GunplayUpgradeStage" type="Int32">0</Property>
+	<Property name="CopXP" type="Int32">0</Property>
+	<Property name="TriadDefensiveStage" type="Int32">0</Property>
+	<Property name="LoadingScreenPriority0" type="String">Data\UI\loading_ve_start_tp.perm.bin</Property>
+	<Property name="TriadXP" type="Int32">0</Property>
+</PropertySetResource>

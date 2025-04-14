@@ -1,18 +1,24 @@
-<PropertySet name="default-spawnset-CN_BDW_Peds" nameUID="0x3A7E43AF" schema="default-spawnset-CN_BDW_Peds">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xB7B39865">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">15</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x309915CE">object-physical-character-police_ambient</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0xDF8ECFC2">object-physical-character-AmbientCharacters-CN_Bdwk_Female</Property>
-        <Property type="Symbol" Symbol="0xB2C6C2BF">object-physical-character-AmbientCharacters-CN_Bdwk_Female_Yng</Property>
-        <Property type="Symbol" Symbol="0xB2FC6B9C">object-physical-character-AmbientCharacters-CN_Bdwk_Male</Property>
-        <Property type="Symbol" Symbol="0x1B4C2E07">object-physical-character-AmbientCharacters-CN_Bdwk_Male_yng</Property>
-        <Property type="Symbol" Symbol="0xD0E1AA4D">object-physical-character-Amb_Business_F</Property>
-        <Property type="Symbol" Symbol="0xFBAA612C">object-physical-character-Amb_Business_M</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-CN_BDW_Peds" nameUID="0x3A7E43AF">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Police" nameUID="0xB7B39865">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x309915CE">object-physical-character-police_ambient</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">15</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xDF8ECFC2">object-physical-character-AmbientCharacters-CN_Bdwk_Female</ListProperty>
+		<ListProperty type="Symbol" symUID="0xB2C6C2BF">object-physical-character-AmbientCharacters-CN_Bdwk_Female_Yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0xB2FC6B9C">object-physical-character-AmbientCharacters-CN_Bdwk_Male</ListProperty>
+		<ListProperty type="Symbol" symUID="0x1B4C2E07">object-physical-character-AmbientCharacters-CN_Bdwk_Male_yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0xD0E1AA4D">object-physical-character-Amb_Business_F</ListProperty>
+		<ListProperty type="Symbol" symUID="0xFBAA612C">object-physical-character-Amb_Business_M</ListProperty>
+	</Property>
+</PropertySetResource>

@@ -1,8 +1,12 @@
-<PropertySet name="TrueCrowd-Characters_New-AM_H_010" nameUID="0x2526675A" schema="TrueCrowd-Characters_New-AM_H_010">
-    <Property name="GlassesOffset" type="PropSet"/>
-    <Property name="HatOffset" type="PropSet">
-        <PropertySet>
-            <Property name="Translation" type="Vector3" x="0" y="0" z="0.00472809"/>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="TrueCrowd-Characters_New-AM_H_010" nameUID="0x2526675A">
+	<!-- Properties -->
+	<Property name="HatOffset" type="PropSet">
+		<PropertySet name="HatOffset" nameUID="0xF0E937E">
+			<!-- Properties -->
+			<Property name="Translation" type="Vector3" x="0" y="0.00472809" z="0"/>
+		</PropertySet>
+	</Property>
+	<Property name="GlassesOffset" type="PropSet">
+		<PropertySet name="GlassesOffset" nameUID="0x193245CA"/>
+	</Property>
+</PropertySetResource>

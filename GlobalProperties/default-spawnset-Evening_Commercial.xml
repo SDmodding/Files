@@ -1,17 +1,23 @@
-<PropertySet name="default-spawnset-Evening_Commercial" nameUID="0xF3CADA2A" schema="default-spawnset-Evening_Commercial">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xB7B39865">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x309915CE">object-physical-character-police_ambient</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0x9CB42861">object-physical-character-AmbientCharacters-NP_Comm_Day_Male</Property>
-        <Property type="Symbol" Symbol="0x3B96999D">object-physical-character-AmbientCharacters-NP_Comm_Day_Male_yng</Property>
-        <Property type="Symbol" Symbol="0x9D865B53">object-physical-character-AmbientCharacters-NP_Comm_Eve_Female</Property>
-        <Property type="Symbol" Symbol="0x272F5A00">object-physical-character-AmbientCharacters-NP_Comm_Eve_Female_Yng</Property>
-        <Property type="Symbol" Symbol="0xBDEE9D16">object-physical-character-vagrant</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-Evening_Commercial" nameUID="0xF3CADA2A">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Police" nameUID="0xB7B39865">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x309915CE">object-physical-character-police_ambient</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">35</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x9CB42861">object-physical-character-AmbientCharacters-NP_Comm_Day_Male</ListProperty>
+		<ListProperty type="Symbol" symUID="0x3B96999D">object-physical-character-AmbientCharacters-NP_Comm_Day_Male_yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0x9D865B53">object-physical-character-AmbientCharacters-NP_Comm_Eve_Female</ListProperty>
+		<ListProperty type="Symbol" symUID="0x272F5A00">object-physical-character-AmbientCharacters-NP_Comm_Eve_Female_Yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0xBDEE9D16">object-physical-character-vagrant</ListProperty>
+	</Property>
+</PropertySetResource>

@@ -1,31 +1,42 @@
-<PropertySet name="object-physical-character-MissionCharacters-M_WED_11" nameUID="0x7124320C" schema="object-physical-character-MissionCharacters-M_WED_11">
-    <Parent>object-physical-character-Thug_Wsg_striker</Parent>
-    <Property name="Description" type="String">Mission: Wedding - A:Striker</Property>
-    <Property name="Voice" type="String">ChineseLittleKenny</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0x6873DB1D">Wsg</Property>
-                <Property type="Symbol" Symbol="0x1447B115">Striker</Property>
-            </ResourceTags>
-            <ResourceList type="List"/>
-            <ComponentList type="List">
-                <ListProperty nameUID="0xA8245162">
-                    <Property name="Model" type="Symbol" Symbol="0x3D796442">Data\Characters_New\AM_H_146</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xA416151">
-                    <Property name="ColorTintIndex" type="Int32">28</Property>
-                    <Property name="Model" type="Symbol" Symbol="0x403F2296">Data\Characters_New\Soy_B_101_White</Property>
-                    <Property name="TextureSet" type="Symbol" Symbol="0x1BEA704A">Data\Characters_New\Soy_B_101_White_TS0</Property>
-                </ListProperty>
-            </ComponentList>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0.1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-MissionCharacters-M_WED_11" nameUID="0x7124320C">
+	<!-- Parents -->
+	<Parent nameUID="0x10B00B9A">object-physical-character-Thug_Wsg_striker</Parent>
+	<!-- Properties -->
+	<Property name="Voice" type="String">ChineseLittleKenny</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0x6873DB1D">Wsg</ListProperty>
+				<ListProperty type="Symbol" symUID="0x1447B115">Striker</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List"/>
+			<Property name="ComponentList" type="List">
+				<!-- Elements -->
+				<ListProperty type="PropSet">
+					<PropertySet name="Head" nameUID="0xA8245162">
+						<!-- Properties -->
+						<Property name="Model" type="Symbol" symUID="0x3D796442">Data\Characters_New\AM_H_146</Property>
+					</PropertySet>
+				</ListProperty>
+				<ListProperty type="PropSet">
+					<PropertySet name="Body" nameUID="0xA416151">
+						<!-- Properties -->
+						<Property name="ColorTintIndex" type="Int32">28</Property>
+						<Property name="Model" type="Symbol" symUID="0x403F2296">Data\Characters_New\Soy_B_101_White</Property>
+						<Property name="TextureSet" type="Symbol" symUID="0x1BEA704A">Data\Characters_New\Soy_B_101_White_TS0</Property>
+					</PropertySet>
+				</ListProperty>
+			</Property>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0.1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Description" type="String">Mission: Wedding - A:Striker</Property>
+</PropertySetResource>

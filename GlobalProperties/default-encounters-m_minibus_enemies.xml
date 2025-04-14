@@ -1,121 +1,157 @@
-<PropertySet name="default-encounters-m_minibus_enemies" nameUID="0xC3EAF95B" schema="default-encounters-m_minibus_enemies">
-    <Parent>default-encounters-e_bikerchase</Parent>
-    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
-    <Property name="BlipName" type="String">enemy</Property>
-    <Property name="CoronaName" type="String">arrow_enemy</Property>
-    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x9B7B4AB7">TRIAD_GENERIC</Property>
-    <Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
-    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
-    <Property name="enable_forward_spawning" type="Boolean">True</Property>
-    <Property name="formation_offset_behind" type="Vector3" x="-6" y="-6" z="2"/>
-    <Property name="formation_offset_beside" type="Vector3" x="3.5" y="3.5" z="3.5"/>
-    <Property name="formation_offset_follow" type="Vector3" x="-1" y="-1" z="0"/>
-    <Property name="formation_offset_front" type="Vector3" x="8" y="8" z="2"/>
-    <Property name="formation_offset_frontcorner" type="Vector3" x="5" y="5" z="3.5"/>
-    <Property name="formation_offset_pitposition" type="Vector3" x="-1.5" y="-1.5" z="3"/>
-    <Property name="formation_offset_rearcorner" type="Vector3" x="-3" y="-3" z="3"/>
-    <Property name="formation_slot_behind" type="Boolean">False</Property>
-    <Property name="formation_slot_beside" type="Boolean">True</Property>
-    <Property name="formation_slot_follow" type="Boolean">False</Property>
-    <Property name="formation_slot_front" type="Boolean">False</Property>
-    <Property name="formation_slot_frontcorner" type="Boolean">True</Property>
-    <Property name="formation_slot_pitposition" type="Boolean">False</Property>
-    <Property name="formation_slot_rearcorner" type="Boolean">False</Property>
-    <Property name="formation_style" type="Symbol" Symbol="0x52556586">generic_favor_front</Property>
-    <Property name="kills_required" type="UInt32">4</Property>
-    <Property name="replenish_style" type="Symbol" Symbol="0xAD0BA30D">by_wave_type</Property>
-    <Property name="show_blip_radius" type="Boolean">True</Property>
-    <Property name="vehicle_chase_spawn_distance" type="Float32">20</Property>
-    <Property name="vehicle_generic_spawn_max_radius" type="Float32">40</Property>
-    <Property name="vehicle_generic_spawn_min_radius" type="Float32">20</Property>
-    <Property name="vehicle_spawn_behind_probability" type="Float32">0.25</Property>
-    <Property name="wave_definitions" type="List">
-        <ListProperty nameUID="0x2DC0526A">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">5000</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x37123733">object-physical-vehicle-NeoV_18K01</Property>
-                <Property type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">0</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xD4B3E199">object-physical-vehicle-DrifterGT_DogEyes01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x83075CB5">
-                    <Property name="character" type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">0</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x37123733">object-physical-vehicle-NeoV_18K01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x208374B3">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">5000</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x37123733">object-physical-vehicle-NeoV_18K01</Property>
-                <Property type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x8E447A6C">
-                    <Property name="character" type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">0</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xD4B3E199">object-physical-vehicle-DrifterGT_DogEyes01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8E447A6C">
-                    <Property name="character" type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">0</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x37123733">object-physical-vehicle-NeoV_18K01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x24426904">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">5000</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x37123733">object-physical-vehicle-NeoV_18K01</Property>
-                <Property type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0x8A8567DB">
-                    <Property name="character" type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">0</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0xD4B3E199">object-physical-vehicle-DrifterGT_DogEyes01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                </ListProperty>
-                <ListProperty nameUID="0x8A8567DB">
-                    <Property name="character" type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
-                    <Property name="num_instances" type="UInt32">1</Property>
-                    <Property name="num_passengers" type="UInt32">0</Property>
-                    <Property name="vehicle" type="Symbol" Symbol="0x37123733">object-physical-vehicle-NeoV_18K01</Property>
-                    <Property name="vehicle_damage_multiplier" type="Float32">2</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-encounters-m_minibus_enemies" nameUID="0xC3EAF95B">
+	<!-- Parents -->
+	<Parent nameUID="0xA1F34CC">default-encounters-e_bikerchase</Parent>
+	<!-- Properties -->
+	<Property name="formation_offset_rearcorner" type="Vector3" x="-3" y="3" z="0"/>
+	<Property name="formation_offset_frontcorner" type="Vector3" x="5" y="3.5" z="0"/>
+	<Property name="formation_offset_behind" type="Vector3" x="-6" y="2" z="0"/>
+	<Property name="kills_required" type="UInt32">4</Property>
+	<Property name="formation_slot_behind" type="Boolean">false</Property>
+	<Property name="vehicle_generic_spawn_max_radius" type="Float32">40</Property>
+	<Property name="formation_offset_follow" type="Vector3" x="-1" y="0" z="0"/>
+	<Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
+	<Property name="formation_slot_pitposition" type="Boolean">false</Property>
+	<Property name="formation_style" type="Symbol" symUID="0x52556586">generic_favor_front</Property>
+	<Property name="formation_offset_beside" type="Vector3" x="3.5" y="3.5" z="0"/>
+	<Property name="formation_slot_beside" type="Boolean">true</Property>
+	<Property name="formation_slot_follow" type="Boolean">false</Property>
+	<Property name="CoronaName" type="String">arrow_enemy</Property>
+	<Property name="formation_slot_rearcorner" type="Boolean">false</Property>
+	<Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+	<Property name="enable_forward_spawning" type="Boolean">true</Property>
+	<Property name="wave_definitions" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_1" nameUID="0x2DC0526A">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xD4B3E199">object-physical-vehicle-DrifterGT_DogEyes01</Property>
+							<Property name="num_passengers" type="UInt32">0</Property>
+							<Property name="character" type="Symbol" symUID="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group1" nameUID="0x83075CB5">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x37123733">object-physical-vehicle-NeoV_18K01</Property>
+							<Property name="num_passengers" type="UInt32">0</Property>
+							<Property name="character" type="Symbol" symUID="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">5000</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x37123733">object-physical-vehicle-NeoV_18K01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xCE958271">object-physical-character-Thug_Dbs_striker</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_2" nameUID="0x208374B3">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group2" nameUID="0x8E447A6C">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xD4B3E199">object-physical-vehicle-DrifterGT_DogEyes01</Property>
+							<Property name="num_passengers" type="UInt32">0</Property>
+							<Property name="character" type="Symbol" symUID="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group2" nameUID="0x8E447A6C">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x37123733">object-physical-vehicle-NeoV_18K01</Property>
+							<Property name="num_passengers" type="UInt32">0</Property>
+							<Property name="character" type="Symbol" symUID="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">5000</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x37123733">object-physical-vehicle-NeoV_18K01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xCE958271">object-physical-character-Thug_Dbs_striker</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_3" nameUID="0x24426904">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group3" nameUID="0x8A8567DB">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0xD4B3E199">object-physical-vehicle-DrifterGT_DogEyes01</Property>
+							<Property name="num_passengers" type="UInt32">0</Property>
+							<Property name="character" type="Symbol" symUID="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="car_group3" nameUID="0x8A8567DB">
+							<!-- Properties -->
+							<Property name="vehicle" type="Symbol" symUID="0x37123733">object-physical-vehicle-NeoV_18K01</Property>
+							<Property name="num_passengers" type="UInt32">0</Property>
+							<Property name="character" type="Symbol" symUID="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
+							<Property name="num_instances" type="UInt32">1</Property>
+							<Property name="vehicle_damage_multiplier" type="Float32">2</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">5000</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x37123733">object-physical-vehicle-NeoV_18K01</ListProperty>
+					<ListProperty type="Symbol" symUID="0xCE958271">object-physical-character-Thug_Dbs_striker</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="formation_slot_frontcorner" type="Boolean">true</Property>
+	<Property name="replenish_style" type="Symbol" symUID="0xAD0BA30D">by_wave_type</Property>
+	<Property name="vehicle_spawn_behind_probability" type="Float32">0.25</Property>
+	<Property name="show_blip_radius" type="Boolean">true</Property>
+	<Property name="EncounterFactionClass" type="Symbol" symUID="0x9B7B4AB7">TRIAD_GENERIC</Property>
+	<Property name="vehicle_generic_spawn_min_radius" type="Float32">20</Property>
+	<Property name="formation_offset_front" type="Vector3" x="8" y="2" z="0"/>
+	<Property name="BlipName" type="String">enemy</Property>
+	<Property name="formation_slot_front" type="Boolean">false</Property>
+	<Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+	<Property name="vehicle_chase_spawn_distance" type="Float32">20</Property>
+	<Property name="formation_offset_pitposition" type="Vector3" x="-1.5" y="3" z="0"/>
+</PropertySetResource>

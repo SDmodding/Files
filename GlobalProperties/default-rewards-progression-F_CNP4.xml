@@ -1,7 +1,9 @@
-<PropertySet name="default-rewards-progression-F_CNP4" nameUID="0x3EF3E261" schema="default-rewards-progression-F_CNP4">
-    <Parent>default-rewards-progression-favor_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_CHEATERS_NEVERPROS4</Property>
-    <Property name="MoneyAdjustment" type="Int32">500</Property>
-    <Property name="StandingAdjustment" type="Int32">200</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-F_CNP4" nameUID="0x3EF3E261">
+	<!-- Parents -->
+	<Parent nameUID="0xB5D2DBF9">default-rewards-progression-favor_defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">500</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_CHEATERS_NEVERPROS4</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">200</Property>
+</PropertySetResource>

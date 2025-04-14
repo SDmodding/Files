@@ -1,9 +1,15 @@
-<PropertySet name="object-logical-Prefab" nameUID="0xB16D335D" schema="object-logical-Prefab">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0x8C8D9A7B">Prefab</Property>
-    <Property name="component_Prefab" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-Prefab</Parent>
-        </PropertySet>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-logical-Prefab" nameUID="0xB16D335D">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0x8C8D9A7B">Prefab</Property>
+	<Property name="component_Prefab" type="PropSet">
+		<PropertySet name="component_Prefab" nameUID="0x67BC1D2A" schema="default-component-Prefab">
+			<!-- Parents -->
+			<Parent nameUID="0x558B5FA4">default-component-Prefab</Parent>
+			<!-- Schema Properties -->
+			<Property name="PrefabId" type="Symbol"/>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

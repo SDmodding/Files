@@ -1,14 +1,23 @@
-<PropertySet name="default-rewards-progression-dlc_policeprotection" nameUID="0x32CE42B2" schema="default-rewards-progression-dlc_policeprotection">
-    <Parent>default-rewards-progression-dlc_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_DLC_PREPOLICEPRO</Property>
-    <Property name="CopStartingScore" type="Int32">250</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="FixedMissionScoring" type="Boolean">True</Property>
-    <Property name="GamesliceType" type="Symbol"/>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF630B577">
-            <Property name="0xDE3E6A23" type="String">$DLC_PRESALE_POLICE_PROTECTON_REWARD_1</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-dlc_policeprotection" nameUID="0x32CE42B2">
+	<!-- Parents -->
+	<Parent nameUID="0x32FFCA04">default-rewards-progression-dlc_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF630B577">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Text" type="String">$DLC_PRESALE_POLICE_PROTECTON_REWARD_1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">250</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_DLC_PREPOLICEPRO</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="FixedMissionScoring" type="Boolean">true</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x50419A9A">DLC_POLICE</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0xF630B577 (Normal) -->

@@ -1,12 +1,14 @@
-<PropertySet name="default-component-CharacterAnimation" nameUID="0x6C08125D" schema="default-component-CharacterAnimation" schematype="component">
-    <Parent>default-component-BaseAnimation</Parent>
-    <Property name="DestroyAttachedCharacters" type="Boolean">True</Property>
-    <Property name="PoseDriverSet" type="SymbolUC"/>
-    <Property name="PoseDriverSetHD" type="SymbolUC"/>
-    <Property name="RequiredAnimBanks" type="List"/>
-    <Property name="RigName" type="String"/>
-    <Property name="RigNameHD" type="String"/>
-    <Property name="WeightSetFileName" type="String"/>
-    <Property name="WeightSetFileNameHD" type="String"/>
-    <Property name="pad_BaseAnimation" type="UInt32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-component-CharacterAnimation" nameUID="0x6C08125D" schema="default-component-CharacterAnimation" schematype="component">
+	<!-- Parents -->
+	<Parent nameUID="0x7FDD0516">default-component-BaseAnimation</Parent>
+	<!-- Properties -->
+	<Property name="RigNameHD" type="String"/>
+	<Property name="WeightSetFileNameHD" type="String"/>
+	<Property name="RequiredAnimBanks" type="List"/>
+	<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+	<Property name="RigName" type="String"/>
+	<Property name="WeightSetFileName" type="String"/>
+	<Property name="PoseDriverSetHD" type="SymbolUC"/>
+	<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+	<Property name="PoseDriverSet" type="SymbolUC"/>
+</PropertySetResource>

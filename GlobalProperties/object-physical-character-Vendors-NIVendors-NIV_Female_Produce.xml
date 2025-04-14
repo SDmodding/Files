@@ -1,7 +1,10 @@
-<PropertySet name="object-physical-character-Vendors-NIVendors-NIV_Female_Produce" nameUID="0xBA5B615E" schema="object-physical-character-Vendors-NIVendors-NIV_Female_Produce">
-    <Parent>object-physical-character-Vendors-NIVendorFem</Parent>
-    <Property name="Description" type="String">NIV Female Produce</Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0xDA302C1D">VendorGenericProduce</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Vendors-NIVendors-NIV_Female_Produce" nameUID="0xBA5B615E">
+	<!-- Parents -->
+	<Parent nameUID="0x39D4190">object-physical-character-Vendors-NIVendorFem</Parent>
+	<!-- Properties -->
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xDA302C1D">VendorGenericProduce</ListProperty>
+	</Property>
+	<Property name="Description" type="String">NIV Female Produce</Property>
+</PropertySetResource>

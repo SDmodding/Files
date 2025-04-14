@@ -1,31 +1,42 @@
-<PropertySet name="default-rain-list" nameUID="0x523F87F6" schema="default-rain-list">
-    <Property name="RainList" type="List">
-        <ListProperty nameUID="0x6E926CE8">
-            <Property name="Alpha" type="Float32">0.5</Property>
-            <Property name="AlphaFadeSpeedBegin" type="Float32">80</Property>
-            <Property name="AlphaFadeSpeedEnd" type="Float32">100</Property>
-            <Property name="Density" type="Float32">0</Property>
-            <Property name="Length" type="Float32">1.2</Property>
-            <Property name="Speed" type="Float32">20</Property>
-            <Property name="Width" type="Float32">0.02</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x56AC9811">
-            <Property name="Alpha" type="Float32">0.5</Property>
-            <Property name="AlphaFadeSpeedBegin" type="Float32">80</Property>
-            <Property name="AlphaFadeSpeedEnd" type="Float32">100</Property>
-            <Property name="Density" type="Float32">0</Property>
-            <Property name="Length" type="Float32">1.2</Property>
-            <Property name="Speed" type="Float32">20</Property>
-            <Property name="Width" type="Float32">0.02</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x81A83142">
-            <Property name="Alpha" type="Float32">0.5</Property>
-            <Property name="AlphaFadeSpeedBegin" type="Float32">80</Property>
-            <Property name="AlphaFadeSpeedEnd" type="Float32">100</Property>
-            <Property name="Density" type="Float32">0</Property>
-            <Property name="Length" type="Float32">1.2</Property>
-            <Property name="Speed" type="Float32">20</Property>
-            <Property name="Width" type="Float32">0.02</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rain-list" nameUID="0x523F87F6">
+	<!-- Properties -->
+	<Property name="RainList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Light" nameUID="0x6E926CE8">
+				<!-- Properties -->
+				<Property name="Density" type="Float32">0</Property>
+				<Property name="Alpha" type="Float32">0.5</Property>
+				<Property name="AlphaFadeSpeedBegin" type="Float32">80</Property>
+				<Property name="Length" type="Float32">1.2</Property>
+				<Property name="AlphaFadeSpeedEnd" type="Float32">100</Property>
+				<Property name="Width" type="Float32">0.02</Property>
+				<Property name="Speed" type="Float32">20</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Medium" nameUID="0x56AC9811">
+				<!-- Properties -->
+				<Property name="Density" type="Float32">0</Property>
+				<Property name="Alpha" type="Float32">0.5</Property>
+				<Property name="AlphaFadeSpeedBegin" type="Float32">80</Property>
+				<Property name="Length" type="Float32">1.2</Property>
+				<Property name="AlphaFadeSpeedEnd" type="Float32">100</Property>
+				<Property name="Width" type="Float32">0.02</Property>
+				<Property name="Speed" type="Float32">20</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Heavy" nameUID="0x81A83142">
+				<!-- Properties -->
+				<Property name="Density" type="Float32">0</Property>
+				<Property name="Alpha" type="Float32">0.5</Property>
+				<Property name="AlphaFadeSpeedBegin" type="Float32">80</Property>
+				<Property name="Length" type="Float32">1.2</Property>
+				<Property name="AlphaFadeSpeedEnd" type="Float32">100</Property>
+				<Property name="Width" type="Float32">0.02</Property>
+				<Property name="Speed" type="Float32">20</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

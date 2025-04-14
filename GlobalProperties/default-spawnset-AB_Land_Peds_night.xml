@@ -1,14 +1,20 @@
-<PropertySet name="default-spawnset-AB_Land_Peds_night" nameUID="0x8EDCBDAA" schema="default-spawnset-AB_Land_Peds_night">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xB7B39865">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">25</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x309915CE">object-physical-character-police_ambient</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0xE4905D0A">object-physical-character-AmbientCharacters-AB_Land_Night_Male</Property>
-        <Property type="Symbol" Symbol="0x5382F496">object-physical-character-AmbientCharacters-AB_Land_Night_Male_yng</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-AB_Land_Peds_night" nameUID="0x8EDCBDAA">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Police" nameUID="0xB7B39865">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x309915CE">object-physical-character-police_ambient</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">25</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0xE4905D0A">object-physical-character-AmbientCharacters-AB_Land_Night_Male</ListProperty>
+		<ListProperty type="Symbol" symUID="0x5382F496">object-physical-character-AmbientCharacters-AB_Land_Night_Male_yng</ListProperty>
+	</Property>
+</PropertySetResource>

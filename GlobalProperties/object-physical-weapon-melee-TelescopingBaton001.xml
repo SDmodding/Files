@@ -1,51 +1,58 @@
-<PropertySet name="object-physical-weapon-melee-TelescopingBaton001" nameUID="0x2E96AFAC" schema="object-physical-weapon-melee-TelescopingBaton001">
-    <Parent>object-physical-weapon-melee-baton</Parent>
-    <Property name="ActFileName" type="String">Data\Global\Act\TelescopingBaton001.act</Property>
-    <Property name="Description" type="String">$HUD_WEAPON_NIGHTSTICK</Property>
-    <Property name="IsTelescopingBaton" type="Boolean">True</Property>
-    <Property name="Stowable" type="Boolean">True</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">TelescopingBaton001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0xD6ECE7F">TelescopingBaton001</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">TelescopingBaton001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List">
-                <Property type="SymbolUC" Symbol="0xD6ECE7F">TelescopingBaton001</Property>
-            </RequiredAnimBanks>
-        </BinData>
-    </Property>
-    <Property name="component_InventoryItem" type="PropSet">
-        <BinData>
-            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
-            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
-            <simObjectInventoryItem type="Symbol">0x7FB4B08E</simObjectInventoryItem>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0xD3352598">Data\Props_New\TelescopingBaton001</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">Prop</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-weapon-melee-TelescopingBaton001" nameUID="0x2E96AFAC">
+	<!-- Parents -->
+	<Parent nameUID="0x5B157C5C">object-physical-weapon-melee-baton</Parent>
+	<!-- Properties -->
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\TelescopingBaton001.act</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">TelescopingBaton001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List">
+				<!-- Elements -->
+				<ListProperty type="SymbolUC" symUID="0xD6ECE7F">TelescopingBaton001</ListProperty>
+			</Property>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="IsTelescopingBaton" type="Boolean">true</Property>
+	<Property name="component_InventoryItem" type="PropSet">
+		<PropertySet name="component_InventoryItem" nameUID="0x9DA2A4AD" schema="default-component-InventoryItem">
+			<!-- Schema Properties -->
+			<Property name="InventoryItemQuantityMin" type="UInt32">1</Property>
+			<Property name="InventoryItemQuantityMax" type="UInt32">1</Property>
+			<Property name="simObjectInventoryItem" type="Symbol" symUID="0x7FB4B08E"/>
+		</PropertySet>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xD3352598">Data\Props_New\TelescopingBaton001</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0xD452A50">Prop</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="Stowable" type="Boolean">true</Property>
+	<Property name="Description" type="String">$HUD_WEAPON_NIGHTSTICK</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x7FB4B08E (Normal) -->

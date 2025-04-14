@@ -1,16 +1,22 @@
-<PropertySet name="default-spawnset-UpperClass_Shoppers" nameUID="0x3654B4CB" schema="default-spawnset-UpperClass_Shoppers">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xB7B39865">
-            <Property name="MaxInstances" type="Int32">1</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0x309915CE">object-physical-character-police_ambient</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0x24E2DFCF">object-physical-character-AmbientCharacters-KT_Shoppers_Male</Property>
-        <Property type="Symbol" Symbol="0x6C494895">object-physical-character-AmbientCharacters-KT_Shoppers_Female</Property>
-        <Property type="Symbol" Symbol="0x254F5EAB">object-physical-character-AmbientCharacters-KT_Shoppers_Female_Yng</Property>
-        <Property type="Symbol" Symbol="0x476D5A20">object-physical-character-AmbientCharacters-CN_Sexy_Female</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-UpperClass_Shoppers" nameUID="0x3654B4CB">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="Police" nameUID="0xB7B39865">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0x309915CE">object-physical-character-police_ambient</Property>
+				<Property name="MaxInstances" type="Int32">1</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">5</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x24E2DFCF">object-physical-character-AmbientCharacters-KT_Shoppers_Male</ListProperty>
+		<ListProperty type="Symbol" symUID="0x6C494895">object-physical-character-AmbientCharacters-KT_Shoppers_Female</ListProperty>
+		<ListProperty type="Symbol" symUID="0x254F5EAB">object-physical-character-AmbientCharacters-KT_Shoppers_Female_Yng</ListProperty>
+		<ListProperty type="Symbol" symUID="0x476D5A20">object-physical-character-AmbientCharacters-CN_Sexy_Female</ListProperty>
+	</Property>
+</PropertySetResource>

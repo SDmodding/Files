@@ -1,41 +1,43 @@
-<PropertySet name="object-physical-character-Vendors-SafeHouseVendor-AB_Realtor-realtor_ab_01" nameUID="0xA120C265" schema="object-physical-character-Vendors-SafeHouseVendor-AB_Realtor-realtor_ab_01">
-    <Parent>default-component-FaceAction</Parent>
-    <Property name="Description" type="String">Realtor: AB Safehouse 01</Property>
-    <Property name="FaceAction" type="Symbol" Symbol="0xA82DBB3F">eFACEACTION_PURCHASE</Property>
-    <Property name="FaceActionEnabled" type="Boolean">True</Property>
-    <Property name="Inventory" type="List">
-        <ListProperty nameUID="0x82A0F0F2">
-            <Property name="Value" type="Int32">1</Property>
-        </ListProperty>
-    </Property>
-    <Property name="PipsRequired" type="UInt32">0</Property>
-    <Property name="RequiresGreet" type="Boolean">False</Property>
-    <Property name="SellableItem" type="Symbol" Symbol="0x82A0F0F2">eINVENTORY_ITEM_DEED_AB_01</Property>
-    <Property name="component_CharacterProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-            <simObjectCharacterType type="Symbol">eCHARACTER_TYPE_SHOPKEEPER</simObjectCharacterType>
-            <simObjectCharacterIsFemale type="Boolean">false</simObjectCharacterIsFemale>
-            <simObjectCharacterFightingClass type="Symbol">eFIGHTING_CLASS_NON_COMBATANT</simObjectCharacterFightingClass>
-            <Stamina type="Int32">100</Stamina>
-            <PoiCooldownTimeMin type="Float32">0</PoiCooldownTimeMin>
-            <PoiCooldownTimeMax type="Float32">0</PoiCooldownTimeMax>
-            <FactionClass type="Symbol">Innocent</FactionClass>
-            <Gender type="Symbol">Female</Gender>
-            <IsTired type="Boolean">false</IsTired>
-        </BinData>
-    </Property>
-    <Property name="component_SimObjectProperties" type="PropSet">
-        <PropertySet>
-            <Parent>eFIGHTING_CLASS_NON_COMBATANT</Parent>
-        </PropertySet>
-        <BinData>
-            <simObjectType type="Symbol">eSIM_OBJ_TYPE_CHARACTER</simObjectType>
-            <subTargetingProfile type="Symbol">Targeting-SubTargetingProfiles-Character</subTargetingProfile>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Vendors-SafeHouseVendor-AB_Realtor-realtor_ab_01" nameUID="0xA120C265">
+	<!-- Parents -->
+	<Parent nameUID="0xD0BBE97D">default-component-FaceAction</Parent>
+	<Parent nameUID="0xAA0CBFA1">object-physical-character-Vendors-SafeHouseVendor-realtorBase</Parent>
+	<!-- Properties -->
+	<Property name="FaceAction" type="Symbol" symUID="0xA82DBB3F">eFACEACTION_PURCHASE</Property>
+	<Property name="SellableItem" type="Symbol" symUID="0x82A0F0F2">eINVENTORY_ITEM_DEED_AB_01</Property>
+	<Property name="PipsRequired" type="UInt32">0</Property>
+	<Property name="Inventory" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="eINVENTORY_ITEM_DEED_AB_01" nameUID="0x82A0F0F2">
+				<!-- Properties -->
+				<Property name="Value" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="component_CharacterProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectCharacterType" type="Symbol" symUID="0x54144541">eCHARACTER_TYPE_SHOPKEEPER</Property>
+			<Property name="simObjectCharacterIsFemale" type="Boolean">false</Property>
+			<Property name="simObjectCharacterFightingClass" type="Symbol" symUID="0x5038C060">eFIGHTING_CLASS_NON_COMBATANT</Property>
+			<Property name="Stamina" type="Int32">100</Property>
+			<Property name="PoiCooldownTimeMin" type="Float32">0</Property>
+			<Property name="PoiCooldownTimeMax" type="Float32">0</Property>
+			<Property name="FactionClass" type="Symbol" symUID="0x7301D91C">INNOCENT</Property>
+			<Property name="Gender" type="Symbol" symUID="0xE7DE76F9">Female</Property>
+			<Property name="IsTired" type="Boolean">false</Property>
+			<!-- Schema Parent: component_SimObjectProperties -->
+		</PropertySet>
+	</Property>
+	<Property name="component_SimObjectProperties" type="PropSet">
+		<PropertySet name="component_CharacterProperties" nameUID="0xBF516446" schema="default-component-CharacterProperties">
+			<!-- Schema Properties -->
+			<Property name="simObjectType" type="Symbol" symUID="0xA94623B7">eSIM_OBJ_TYPE_CHARACTER</Property>
+			<Property name="subTargetingProfile" type="Symbol" symUID="0xD447D38">Targeting-SubTargetingProfiles-Character</Property>
+		</PropertySet>
+	</Property>
+	<Property name="RequiresGreet" type="Boolean">false</Property>
+	<Property name="FaceActionEnabled" type="Boolean">true</Property>
+	<Property name="Description" type="String">Realtor: AB Safehouse 01</Property>
+</PropertySetResource>

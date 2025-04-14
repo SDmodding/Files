@@ -1,15 +1,20 @@
-<PropertySet name="propprofiles-eINVENTORY_ITEM_ENERGY_DRINK" nameUID="0x901C445A" schema="propprofiles-eINVENTORY_ITEM_ENERGY_DRINK">
-    <Property name="0x46348560" type="Boolean">True</Property>
-    <Property name="0xB0369B06" type="Boolean">True</Property>
-    <Property name="ItemCaptioning" type="String"/>
-    <Property name="ItemCost" type="Int32">30</Property>
-    <Property name="ItemDescription" type="String">This will not be seen once Warren J fixes a bug!</Property>
-    <Property name="ItemDescriptionBuff" type="Symbol" Symbol="0x5CF8B5DA">ePLAYER_BUFF_ENERGYDRINK</Property>
-    <Property name="ItemDescriptionList" type="List">
-        <Property type="String">$ITEMS_DESC_ENERGY_SM</Property>
-        <Property type="String">$ITEMS_DESC_ENERGY_MD</Property>
-        <Property type="String">$ITEMS_DESC_ENERGY_LG</Property>
-    </Property>
-    <Property name="ItemName" type="String">$ITEMS_TITLE_ENERGYDRINK</Property>
-    <Property name="eITEM_PROPERTIES_DEFAULT_DROP" type="Boolean">True</Property>
-</PropertySet>
+<PropertySetResource name="propprofiles-eINVENTORY_ITEM_ENERGY_DRINK" nameUID="0x901C445A">
+	<!-- Properties -->
+	<Property name="ItemCaptioning" type="String"/>
+	<Property name="ItemDescriptionBuff" type="Symbol" symUID="0x5CF8B5DA">ePLAYER_BUFF_ENERGYDRINK</Property>
+	<Property name="ItemCost" type="Int32">30</Property>
+	<Property name="~46348560~" type="Boolean">true</Property>
+	<Property name="ItemDescription" type="String">This will not be seen once Warren J fixes a bug!</Property>
+	<Property name="ItemName" type="String">$ITEMS_TITLE_ENERGYDRINK</Property>
+	<Property name="eITEM_PROPERTIES_DEFAULT_DROP" type="Boolean">true</Property>
+	<Property name="~b0369b06~" type="Boolean">true</Property>
+	<Property name="ItemDescriptionList" type="List">
+		<!-- Elements -->
+		<ListProperty type="String">$ITEMS_DESC_ENERGY_SM</ListProperty>
+		<ListProperty type="String">$ITEMS_DESC_ENERGY_MD</ListProperty>
+		<ListProperty type="String">$ITEMS_DESC_ENERGY_LG</ListProperty>
+	</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x46348560 (Normal) -->
+<!-- 0xB0369B06 (Normal) -->

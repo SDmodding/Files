@@ -1,8 +1,10 @@
-<PropertySet name="default-rewards-progression-E_HNR3" nameUID="0x34A31187" schema="default-rewards-progression-E_HNR3">
-    <Parent>default-rewards-defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_HIT_AND_RUN_3</Property>
-    <Property name="MoneyAdjustment" type="Int32">2000</Property>
-    <Property name="StandingAdjustment" type="Int32">75</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-E_HNR3" nameUID="0x34A31187">
+	<!-- Parents -->
+	<Parent nameUID="0xC21C95B9">default-rewards-defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">2000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_HIT_AND_RUN_3</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">75</Property>
+</PropertySetResource>

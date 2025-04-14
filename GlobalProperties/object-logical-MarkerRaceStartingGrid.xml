@@ -1,4 +1,9 @@
-<PropertySet name="object-logical-MarkerRaceStartingGrid" nameUID="0xD7DC33C" schema="object-logical-MarkerRaceStartingGrid">
-    <Parent>default-SimObject</Parent>
-    <Property name="ObjectType" type="Symbol" Symbol="0x7AE3B440">MarkerRaceStartingGrid</Property>
-</PropertySet>
+<PropertySetResource name="object-logical-MarkerRaceStartingGrid" nameUID="0xD7DC33C">
+	<!-- Parents -->
+	<Parent nameUID="0x6B16F8E1">default-SimObject</Parent>
+	<Parent nameUID="0x78957300">default-component-TransformNode</Parent>
+	<Parent nameUID="0xDE8AB310">default-component-GameSubject</Parent>
+	<Parent nameUID="0xFF1B33E2">default-component-Marker</Parent>
+	<!-- Properties -->
+	<Property name="ObjectType" type="Symbol" symUID="0x7AE3B440">MarkerRaceStartingGrid</Property>
+</PropertySetResource>

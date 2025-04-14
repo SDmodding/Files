@@ -1,22 +1,33 @@
-<PropertySet name="default-timeset-KT_High" nameUID="0xF50B1874" schema="default-timeset-KT_High">
-    <Property name="TimeSetList" type="List">
-        <ListProperty nameUID="0xF4B7E331">
-            <Property name="OffTime" type="Int32">18</Property>
-            <Property name="OnTime" type="Int32">8</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0xAB744B15">default-spawnset-Day_kt_high</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-2</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">1</Property>
-            <Property name="OnTime" type="Int32">18</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0xFC31A823">default-spawnset-Evening_kt_high</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-4</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">8</Property>
-            <Property name="OnTime" type="Int32">1</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0xF9951823">default-spawnset-Night_kt_high</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-5</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-timeset-KT_High" nameUID="0xF50B1874">
+	<!-- Properties -->
+	<Property name="TimeSetList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Night" nameUID="0xF4B7E331">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">18</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-2</Property>
+				<Property name="OnTime" type="Int32">8</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0xAB744B15">default-spawnset-Day_kt_high</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">1</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-4</Property>
+				<Property name="OnTime" type="Int32">18</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0xFC31A823">default-spawnset-Evening_kt_high</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">8</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-5</Property>
+				<Property name="OnTime" type="Int32">1</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0xF9951823">default-spawnset-Night_kt_high</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

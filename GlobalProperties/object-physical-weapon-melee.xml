@@ -1,14 +1,17 @@
-<PropertySet name="object-physical-weapon-melee" nameUID="0x4049E7ED" schema="object-physical-weapon-melee">
-    <Parent>object-physical-weapon</Parent>
-    <Property name="AccuracyRateMultiplier" type="Float32">1</Property>
-    <Property name="ActFileName" type="String">Data\Global\Act\Melee.act</Property>
-    <Property name="FlickTargetingAngularLimit" type="Float32">45</Property>
-    <Property name="IsRealWeapon" type="Boolean">True</Property>
-    <Property name="NetworkView" type="String">NetMeleeView</Property>
-    <Property name="RadarHighlightType" type="Symbol" Symbol="0x8A5A95FC">Weapon</Property>
-    <Property name="component_TSActor" type="PropSet">
-        <BinData>
-            <SkookumClass type="Symbol">Melee</SkookumClass>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-weapon-melee" nameUID="0x4049E7ED">
+	<!-- Parents -->
+	<Parent nameUID="0x8D8E86EF">object-physical-weapon</Parent>
+	<!-- Properties -->
+	<Property name="component_TSActor" type="PropSet">
+		<PropertySet name="component_TSActor" nameUID="0x2873821B" schema="default-component-TSActor">
+			<!-- Schema Properties -->
+			<Property name="SkookumClass" type="Symbol" symUID="0xFB892B3B">Melee</Property>
+		</PropertySet>
+	</Property>
+	<Property name="IsRealWeapon" type="Boolean">true</Property>
+	<Property name="ActFileName" type="String">Data\Global\Act\Melee.act</Property>
+	<Property name="NetworkView" type="String">NetMeleeView</Property>
+	<Property name="RadarHighlightType" type="Symbol" symUID="0x8A5A95FC">Weapon</Property>
+	<Property name="FlickTargetingAngularLimit" type="Float32">45</Property>
+	<Property name="AccuracyRateMultiplier" type="Float32">1</Property>
+</PropertySetResource>

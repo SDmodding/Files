@@ -1,54 +1,58 @@
-<PropertySet name="object-physical-weapon-firearm-rifle-assault_dlc" nameUID="0x9B574C84" schema="object-physical-weapon-firearm-rifle-assault_dlc">
-    <Parent>object-physical-weapon-firearm-rifle-assault_taclight</Parent>
-    <Property name="AIOnDeathDropMaxAmmoCount" type="UInt32">150</Property>
-    <Property name="AIOnDeathDropMinAmmoCount" type="UInt32">50</Property>
-    <Property name="AmmoClipCapacity" type="Int32">50</Property>
-    <Property name="AmmoInventoryItem" type="String">eINVENTORY_ITEM_RIFLE_ASSAULT_AMMO</Property>
-    <Property name="AmmoTotalCapacity" type="Int32">200</Property>
-    <Property name="Description" type="String">$HUD_WEAPON_ASSAULT_RIFLE_W/_HICAP_MAG</Property>
-    <Property name="HasWeaponLight" type="Boolean">False</Property>
-    <Property name="StartingMaxAmmoCount" type="UInt32">200</Property>
-    <Property name="StartingMinAmmoCount" type="UInt32">200</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">AssaultRifle002</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\Rifle.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">AssaultRifle002</RigName>
-            <WeightSetFileName type="String">Data\Global\Act\Rifle.wst</WeightSetFileName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_InventoryItem" type="PropSet">
-        <BinData>
-            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
-            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
-            <simObjectInventoryItem type="Symbol">eINVENTORY_ITEM_RIFLE_ASSAULT_DLC</simObjectInventoryItem>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0xF6A54DEA">Data\Props_New\AssaultRifle002</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">Prop</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-</PropertySet>
+<PropertySetResource name="object-physical-weapon-firearm-rifle-assault_dlc" nameUID="0x9B574C84">
+	<!-- Parents -->
+	<Parent nameUID="0x14D4357D">object-physical-weapon-firearm-rifle-assault_taclight</Parent>
+	<!-- Properties -->
+	<Property name="AIOnDeathDropMinAmmoCount" type="UInt32">50</Property>
+	<Property name="AmmoClipCapacity" type="Int32">50</Property>
+	<Property name="AmmoTotalCapacity" type="Int32">200</Property>
+	<Property name="HasWeaponLight" type="Boolean">false</Property>
+	<Property name="StartingMinAmmoCount" type="UInt32">200</Property>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">AssaultRifle002</Property>
+			<Property name="WeightSetFileName" type="String">Data\Global\Act\Rifle.wst</Property>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_InventoryItem" type="PropSet">
+		<PropertySet name="component_InventoryItem" nameUID="0x9DA2A4AD" schema="default-component-InventoryItem">
+			<!-- Schema Properties -->
+			<Property name="InventoryItemQuantityMin" type="UInt32">1</Property>
+			<Property name="InventoryItemQuantityMax" type="UInt32">1</Property>
+			<Property name="simObjectInventoryItem" type="Symbol" symUID="0xC81E61E">eINVENTORY_ITEM_RIFLE_ASSAULT_DLC</Property>
+		</PropertySet>
+	</Property>
+	<Property name="AmmoInventoryItem" type="String">eINVENTORY_ITEM_RIFLE_ASSAULT_AMMO</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xF6A54DEA">Data\Props_New\AssaultRifle002</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0xD452A50">Prop</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="StartingMaxAmmoCount" type="UInt32">200</Property>
+	<Property name="AIOnDeathDropMaxAmmoCount" type="UInt32">150</Property>
+	<Property name="Description" type="String">$HUD_WEAPON_ASSAULT_RIFLE_W/_HICAP_MAG</Property>
+</PropertySetResource>

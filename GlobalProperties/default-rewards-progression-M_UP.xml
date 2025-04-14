@@ -1,46 +1,76 @@
-<PropertySet name="default-rewards-progression-M_UP" nameUID="0xDD9BBC35" schema="default-rewards-progression-M_UP">
-    <Parent>default-rewards-progression-mission_defaults</Parent>
-    <Property name="0x34BE120D" type="Int32">190</Property>
-    <Property name="0x39FD34D4" type="Int32">1</Property>
-    <Property name="0x72201393" type="Int32">450</Property>
-    <Property name="0xC3DF597C" type="Int32">190</Property>
-    <Property name="0xC71E44CB" type="Int32">150</Property>
-    <Property name="0xCA5D6212" type="Int32">1</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_UNCLE_PO</Property>
-    <Property name="CopStartingScore" type="Int32">75</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="MoneyAdjustment" type="Int32">2500</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">500</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0x98D0B471">
-            <Property name="0x308E0AE5" type="String">safe_house_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">SFCT-CT</Property>
-            <Property name="0xDE3E6A23" type="String">$MISSION_REWARDS_SAFEHOUSECT</Property>
-            <Property name="Type" type="Symbol" Symbol="0x1B43F7CE">Safehouse</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4D038A9F">
-            <Property name="0x308E0AE5" type="String">pda_icon</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARD_ROLAND</Property>
-            <Property name="Type" type="Symbol"/>
-        </ListProperty>
-        <ListProperty nameUID="0x1D7E06F7">
-            <Property name="0x308E0AE5" type="String">clothing_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">OutfitHighRoller</Property>
-            <Property name="0xDE3E6A23" type="String">$ITEMS_TITLE_O_DLCHIROLLER_REWARD</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9773EC16">Clothing</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA7127D87">
-            <Property name="0x2DFB6FC5" type="Int32">16</Property>
-            <Property name="0xDE3E6A23" type="String">$REWARDS_BIO_16</Property>
-            <Property name="Type" type="Symbol" Symbol="0x810BC917">UnlockableBioId</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xB2F88A55">
-            <Property name="0x308E0AE5" type="String"/>
-            <Property name="0x4E4D2ED3" type="String">LOI_CT_SHAptDoor001_101</Property>
-            <Property name="0xDE3E6A23" type="String"/>
-            <Property name="Type" type="Symbol" Symbol="0x1946D26D">Door</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_UP" nameUID="0xDD9BBC35">
+	<!-- Parents -->
+	<Parent nameUID="0xD274BB76">default-rewards-progression-mission_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x98D0B471">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1B43F7CE">Safehouse</Property>
+				<Property name="Icon" type="String">safe_house_icon</Property>
+				<Property name="AssetId" type="String">SFCT-CT</Property>
+				<Property name="Text" type="String">$MISSION_REWARDS_SAFEHOUSECT</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0x4D038A9F">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x5F96DC30"/>
+				<Property name="Icon" type="String">pda_icon</Property>
+				<Property name="Text" type="String">$REWARD_ROLAND</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="Suit" nameUID="0x1D7E06F7">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9773EC16">Clothing</Property>
+				<Property name="Icon" type="String">clothing_icon</Property>
+				<Property name="AssetId" type="String">OutfitHighRoller</Property>
+				<Property name="Text" type="String">$ITEMS_TITLE_O_DLCHIROLLER_REWARD</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xA7127D87">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x810BC917">UnlockableBioId</Property>
+				<Property name="~2dfb6fc5~" type="Int32">16</Property>
+				<Property name="Text" type="String">$REWARDS_BIO_16</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xB2F88A55">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x1946D26D">Door</Property>
+				<Property name="Icon" type="String"/>
+				<Property name="AssetId" type="String">LOI_CT_SHAptDoor001_101</Property>
+				<Property name="Text" type="String"/>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CopStartingScore" type="Int32">75</Property>
+	<Property name="~34be120d~" type="Int32">190</Property>
+	<Property name="MoneyAdjustment" type="Int32">2500</Property>
+	<Property name="~39fd34d4~" type="Int32">1</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_UNCLE_PO</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">450</Property>
+	<Property name="TriadTargetScore" type="Int32">500</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="~c3df597c~" type="Int32">190</Property>
+	<Property name="~c71e44cb~" type="Int32">150</Property>
+	<Property name="~ca5d6212~" type="Int32">1</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x2DFB6FC5 (Normal) -->
+<!-- 0x34BE120D (Normal) -->
+<!-- 0x39FD34D4 (Normal) -->
+<!-- 0x4D038A9F (Normal) -->
+<!-- 0x5F96DC30 (Normal) -->
+<!-- 0x98D0B471 (Normal) -->
+<!-- 0xA7127D87 (Normal) -->
+<!-- 0xB2F88A55 (Normal) -->
+<!-- 0xC3DF597C (Normal) -->
+<!-- 0xC71E44CB (Normal) -->
+<!-- 0xCA5D6212 (Normal) -->

@@ -1,5 +1,6 @@
-<PropertySet name="default-roadnetwork-transit-peak_tram" nameUID="0xCAC56C17" schema="default-roadnetwork-transit-peak_tram">
-    <Property name="TransitRouteName" type="String">peak_tram</Property>
-    <Property name="TransitRouteType" type="UInt32">1</Property>
-    <Property name="TransitRouteVehicle" type="Symbol" Symbol="0x363FFC7E">object-physical-vehicle-PeakTram01</Property>
-</PropertySet>
+<PropertySetResource name="default-roadnetwork-transit-peak_tram" nameUID="0xCAC56C17">
+	<!-- Properties -->
+	<Property name="TransitRouteType" type="UInt32">1</Property>
+	<Property name="TransitRouteVehicle" type="Symbol" symUID="0x363FFC7E">object-physical-vehicle-PeakTram01</Property>
+	<Property name="TransitRouteName" type="String">peak_tram</Property>
+</PropertySetResource>

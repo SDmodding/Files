@@ -1,59 +1,82 @@
-<PropertySet name="default-encounters-d_melee_test1" nameUID="0xCC492FAE" schema="default-encounters-d_melee_test1">
-    <Parent>default-encounters-defaults</Parent>
-    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
-    <Property name="BlipName" type="String">enemy</Property>
-    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x9B7B4AB7">TRIAD_GENERIC</Property>
-    <Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
-    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
-    <Property name="character_generic_spawn_max_radius" type="Float32">10</Property>
-    <Property name="character_generic_spawn_min_radius" type="Float32">5</Property>
-    <Property name="formation_slot_behind" type="Boolean">False</Property>
-    <Property name="formation_slot_beside" type="Boolean">True</Property>
-    <Property name="formation_slot_follow" type="Boolean">False</Property>
-    <Property name="formation_slot_front" type="Boolean">True</Property>
-    <Property name="formation_slot_frontcorner" type="Boolean">True</Property>
-    <Property name="formation_slot_pitposition" type="Boolean">True</Property>
-    <Property name="formation_slot_rearcorner" type="Boolean">False</Property>
-    <Property name="formation_style" type="Symbol" Symbol="0x36106EE6">none</Property>
-    <Property name="kills_required" type="UInt32">0</Property>
-    <Property name="show_blip_radius" type="Boolean">False</Property>
-    <Property name="vehicle_generic_spawn_max_radius" type="Float32">60</Property>
-    <Property name="vehicle_generic_spawn_min_radius" type="Float32">30</Property>
-    <Property name="water_offset_max_range" type="Float32">95</Property>
-    <Property name="water_offset_min_range" type="Float32">50</Property>
-    <Property name="wave_definitions" type="List">
-        <ListProperty nameUID="0x2DC0526A">
-            <Property name="cooldown_timer" type="Float32">5</Property>
-            <Property name="heatwave_timer" type="Float32">10</Property>
-            <Property name="onfoot_population" type="UInt32">3</Property>
-            <Property name="persistent_resources" type="List">
-                <Property type="Symbol" Symbol="0x8B2ED6A3">object-physical-character-Thug_Dbs_quick</Property>
-                <Property type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
-                <Property type="Symbol" Symbol="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</Property>
-            </Property>
-            <Property name="spawn_groups" type="List">
-                <ListProperty nameUID="0xFED9A1C6">
-                    <Property name="character" type="Symbol" Symbol="0x8B2ED6A3">object-physical-character-Thug_Dbs_quick</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF39A871F">
-                    <Property name="character" type="Symbol" Symbol="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xF75B9AA8">
-                    <Property name="character" type="Symbol" Symbol="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xE91CCAAD">
-                    <Property name="character" type="Symbol" Symbol="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</Property>
-                </ListProperty>
-                <ListProperty nameUID="0xEDDDD71A">
-                    <Property name="character" type="Symbol" Symbol="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</Property>
-                </ListProperty>
-            </Property>
-            <Property name="vehicle_allowed_to_pass" type="Boolean">True</Property>
-            <Property name="vehicle_avoid_peds" type="Boolean">False</Property>
-            <Property name="vehicle_can_turn_around" type="Boolean">True</Property>
-            <Property name="vehicle_population" type="UInt32">0</Property>
-            <Property name="vehicle_respect_speed_limit" type="Boolean">False</Property>
-            <Property name="vehicle_stays_off_sidewalk" type="Boolean">False</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-encounters-d_melee_test1" nameUID="0xCC492FAE">
+	<!-- Parents -->
+	<Parent nameUID="0x6159DA8B">default-encounters-defaults</Parent>
+	<!-- Properties -->
+	<Property name="kills_required" type="UInt32">0</Property>
+	<Property name="formation_slot_behind" type="Boolean">false</Property>
+	<Property name="vehicle_generic_spawn_max_radius" type="Float32">60</Property>
+	<Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
+	<Property name="formation_slot_pitposition" type="Boolean">true</Property>
+	<Property name="character_generic_spawn_max_radius" type="Float32">10</Property>
+	<Property name="formation_style" type="Symbol" symUID="0x36106EE6">none</Property>
+	<Property name="water_offset_min_range" type="Float32">50</Property>
+	<Property name="formation_slot_beside" type="Boolean">true</Property>
+	<Property name="formation_slot_follow" type="Boolean">false</Property>
+	<Property name="formation_slot_rearcorner" type="Boolean">false</Property>
+	<Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+	<Property name="wave_definitions" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="wave_type_1" nameUID="0x2DC0526A">
+				<!-- Properties -->
+				<Property name="spawn_groups" type="List">
+					<!-- Elements -->
+					<ListProperty type="PropSet">
+						<PropertySet name="group1" nameUID="0xFED9A1C6">
+							<!-- Properties -->
+							<Property name="character" type="Symbol" symUID="0x8B2ED6A3">object-physical-character-Thug_Dbs_quick</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="group2" nameUID="0xF39A871F">
+							<!-- Properties -->
+							<Property name="character" type="Symbol" symUID="0xCE958271">object-physical-character-Thug_Dbs_striker</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="group3" nameUID="0xF75B9AA8">
+							<!-- Properties -->
+							<Property name="character" type="Symbol" symUID="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="group4" nameUID="0xE91CCAAD">
+							<!-- Properties -->
+							<Property name="character" type="Symbol" symUID="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</Property>
+						</PropertySet>
+					</ListProperty>
+					<ListProperty type="PropSet">
+						<PropertySet name="group5" nameUID="0xEDDDD71A">
+							<!-- Properties -->
+							<Property name="character" type="Symbol" symUID="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</Property>
+						</PropertySet>
+					</ListProperty>
+				</Property>
+				<Property name="vehicle_avoid_peds" type="Boolean">false</Property>
+				<Property name="vehicle_stays_off_sidewalk" type="Boolean">false</Property>
+				<Property name="vehicle_allowed_to_pass" type="Boolean">true</Property>
+				<Property name="heatwave_timer" type="Float32">10</Property>
+				<Property name="vehicle_respect_speed_limit" type="Boolean">false</Property>
+				<Property name="onfoot_population" type="UInt32">3</Property>
+				<Property name="persistent_resources" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x8B2ED6A3">object-physical-character-Thug_Dbs_quick</ListProperty>
+					<ListProperty type="Symbol" symUID="0xCE958271">object-physical-character-Thug_Dbs_striker</ListProperty>
+					<ListProperty type="Symbol" symUID="0xAE9F02C7">object-physical-character-Thug_Dbs_brawler</ListProperty>
+				</Property>
+				<Property name="cooldown_timer" type="Float32">5</Property>
+				<Property name="vehicle_can_turn_around" type="Boolean">true</Property>
+				<Property name="vehicle_population" type="UInt32">0</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="character_generic_spawn_min_radius" type="Float32">5</Property>
+	<Property name="formation_slot_frontcorner" type="Boolean">true</Property>
+	<Property name="show_blip_radius" type="Boolean">false</Property>
+	<Property name="EncounterFactionClass" type="Symbol" symUID="0x9B7B4AB7">TRIAD_GENERIC</Property>
+	<Property name="vehicle_generic_spawn_min_radius" type="Float32">30</Property>
+	<Property name="BlipName" type="String">enemy</Property>
+	<Property name="formation_slot_front" type="Boolean">true</Property>
+	<Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+	<Property name="water_offset_max_range" type="Float32">95</Property>
+</PropertySetResource>

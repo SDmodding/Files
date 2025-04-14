@@ -1,5 +1,7 @@
-<PropertySet name="default-rewards-progression-F_SRI" nameUID="0x937AA2CE" schema="default-rewards-progression-F_SRI">
-    <Parent>default-rewards-progression-favor_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_SMUGGLING_RING_INTRO</Property>
-    <Property name="MoneyAdjustment" type="Int32">4500</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-F_SRI" nameUID="0x937AA2CE">
+	<!-- Parents -->
+	<Parent nameUID="0xB5D2DBF9">default-rewards-progression-favor_defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">4500</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_SMUGGLING_RING_INTRO</Property>
+</PropertySetResource>

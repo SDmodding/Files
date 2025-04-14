@@ -1,11 +1,12 @@
-<PropertySet name="default-component-CameraMarker" nameUID="0xC74B1779" schema="default-component-CameraMarker">
-    <Property name="DofFarBlurRadius" type="Float32">1</Property>
-    <Property name="DofFarRange" type="Float32">80</Property>
-    <Property name="DofFocalDist" type="Float32">20</Property>
-    <Property name="DofInFocusRange" type="Float32">16</Property>
-    <Property name="DofNearBlurRadius" type="Float32">2</Property>
-    <Property name="DofNearRange" type="Float32">2</Property>
-    <Property name="FovH" type="Float32">80</Property>
-    <Property name="PlaneFar" type="Float32">10000</Property>
-    <Property name="PlaneNear" type="Float32">0.3</Property>
-</PropertySet>
+<PropertySetResource name="default-component-CameraMarker" nameUID="0xC74B1779">
+	<!-- Properties -->
+	<Property name="PlaneNear" type="Float32">0.3</Property>
+	<Property name="FovH" type="Float32">80</Property>
+	<Property name="DofFocalDist" type="Float32">20</Property>
+	<Property name="DofInFocusRange" type="Float32">16</Property>
+	<Property name="DofNearBlurRadius" type="Float32">2</Property>
+	<Property name="PlaneFar" type="Float32">10000</Property>
+	<Property name="DofNearRange" type="Float32">2</Property>
+	<Property name="DofFarBlurRadius" type="Float32">1</Property>
+	<Property name="DofFarRange" type="Float32">80</Property>
+</PropertySetResource>

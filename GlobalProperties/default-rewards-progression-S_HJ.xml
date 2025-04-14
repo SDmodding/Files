@@ -1,6 +1,11 @@
-<PropertySet name="default-rewards-progression-S_HJ" nameUID="0x7D3558D2" schema="default-rewards-progression-S_HJ">
-    <Parent>default-rewards-progression-job_defaults</Parent>
-    <Property name="0xBF780215" type="Symbol"/>
-    <Property name="CompletionText" type="String">$SCENARIO_HIJACKING_COMPLETE</Property>
-    <Property name="MoneyAdjustment" type="Int32">5000</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-S_HJ" nameUID="0x7D3558D2">
+	<!-- Parents -->
+	<Parent nameUID="0x93DAADC2">default-rewards-progression-job_defaults</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">5000</Property>
+	<Property name="CompletionText" type="String">$SCENARIO_HIJACKING_COMPLETE</Property>
+	<Property name="~bf780215~" type="Symbol" symUID="0x4E96A41C"/>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x4E96A41C (Normal) -->
+<!-- 0xBF780215 (Normal) -->

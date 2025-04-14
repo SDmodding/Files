@@ -1,9 +1,11 @@
-<PropertySet name="default-rewards-progression-R_AB_03" nameUID="0x442EB4FD" schema="default-rewards-progression-R_AB_03">
-    <Parent>default-rewards-progression-event_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_RACE_ABERDEEN_03</Property>
-    <Property name="CopStartingScore" type="Int32">0</Property>
-    <Property name="MoneyAdjustment" type="Int32">75000</Property>
-    <Property name="StandingAdjustment" type="Int32">50</Property>
-    <Property name="TriadBaseScore" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">100</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-R_AB_03" nameUID="0x442EB4FD">
+	<!-- Parents -->
+	<Parent nameUID="0xD907A49A">default-rewards-progression-event_defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">0</Property>
+	<Property name="MoneyAdjustment" type="Int32">75000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_RACE_ABERDEEN_03</Property>
+	<Property name="TriadBaseScore" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">100</Property>
+	<Property name="StandingAdjustment" type="Int32">50</Property>
+</PropertySetResource>

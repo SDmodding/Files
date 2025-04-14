@@ -1,27 +1,32 @@
-<PropertySet name="default-savegames-debugmenu-Main-m_am" nameUID="0x366C25D1" schema="default-savegames-debugmenu-Main-m_am">
-    <Parent>default-savegames-defaults</Parent>
-    <Property name="CopDrivingStage" type="Int32">0</Property>
-    <Property name="CopShootingStage" type="Int32">1</Property>
-    <Property name="CopUpgradePoint" type="Int32">1</Property>
-    <Property name="CopXP" type="Int32">1010</Property>
-    <Property name="DynamicTutorials" type="PropSet">
-        <PropertySet>
-            <Property name="Names" type="List">
-                <Property type="Symbol"/>
-                <Property type="Symbol"/>
-            </Property>
-            <Property name="Values" type="List">
-                <Property type="Boolean">True</Property>
-                <Property type="Boolean">True</Property>
-            </Property>
-        </PropertySet>
-    </Property>
-    <Property name="FaceXP" type="Int32">1075</Property>
-    <Property name="GunplayUpgradeStage" type="Int32">0</Property>
-    <Property name="StatueDefensiveStage" type="Int32">0</Property>
-    <Property name="StatueOffensiveStage" type="Int32">1</Property>
-    <Property name="TriadDefensiveStage" type="Int32">1</Property>
-    <Property name="TriadOffensiveStage" type="Int32">1</Property>
-    <Property name="TriadUpgradePoint" type="Int32">2</Property>
-    <Property name="TriadXP" type="Int32">1300</Property>
-</PropertySet>
+<PropertySetResource name="default-savegames-debugmenu-Main-m_am" nameUID="0x366C25D1">
+	<!-- Parents -->
+	<Parent nameUID="0x10965489">default-savegames-defaults</Parent>
+	<!-- Properties -->
+	<Property name="TriadOffensiveStage" type="Int32">1</Property>
+	<Property name="FaceXP" type="Int32">1075</Property>
+	<Property name="CopDrivingStage" type="Int32">0</Property>
+	<Property name="StatueDefensiveStage" type="Int32">0</Property>
+	<Property name="CopShootingStage" type="Int32">1</Property>
+	<Property name="StatueOffensiveStage" type="Int32">1</Property>
+	<Property name="GunplayUpgradeStage" type="Int32">0</Property>
+	<Property name="TriadUpgradePoint" type="Int32">2</Property>
+	<Property name="CopXP" type="Int32">1010</Property>
+	<Property name="CopUpgradePoint" type="Int32">1</Property>
+	<Property name="TriadDefensiveStage" type="Int32">1</Property>
+	<Property name="TriadXP" type="Int32">1300</Property>
+	<Property name="DynamicTutorials" type="PropSet">
+		<PropertySet name="Melee" nameUID="0xFB892B3B">
+			<!-- Properties -->
+			<Property name="Names" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x444B6EFA">TranStoreTutorial</ListProperty>
+				<ListProperty type="Symbol" symUID="0x144D1EC7">HijackingTutorial</ListProperty>
+			</Property>
+			<Property name="Values" type="List">
+				<!-- Elements -->
+				<ListProperty type="Boolean">true</ListProperty>
+				<ListProperty type="Boolean">true</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+</PropertySetResource>

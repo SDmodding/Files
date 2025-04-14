@@ -1,83 +1,106 @@
-<PropertySet name="default-unlockables-merchantdatabase-boats" nameUID="0x22BCEFBB" schema="default-unlockables-merchantdatabase-boats">
-    <Property name="Items" type="List">
-        <ListProperty nameUID="0x9344FAE1">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">Rentals are returned after the race.</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">6000</Property>
-            <Property name="Rental" type="Boolean">True</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x1519FF65">object-physical-vehicle-jet620v01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x382E7752">R_AB_03</Property>
-            </Property>
-            <Property name="Texture" type="String">Boat_Jet620V_Blueprint</Property>
-            <Property name="Title" type="String"> Rental: Jet 620 V</Property>
-            <Property name="Type" type="Symbol" Symbol="0x2F2417D1">Boat</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x4E412DEA">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">Rentals are returned after the race.</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">6000</Property>
-            <Property name="Rental" type="Boolean">True</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x1519FF65">object-physical-vehicle-jet620v01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x22A83AE0">R_AB_05</Property>
-            </Property>
-            <Property name="Texture" type="String">Boat_Jet620V_Blueprint</Property>
-            <Property name="Title" type="String"> Rental: Jet 620 V</Property>
-            <Property name="Type" type="Symbol" Symbol="0x2F2417D1">Boat</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA2A348B4">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">Rentals are returned after the race.</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">6000</Property>
-            <Property name="Rental" type="Boolean">True</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x6AF9EE27">object-physical-vehicle-Seaker01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x2FEB1C39">R_AB_06</Property>
-            </Property>
-            <Property name="Texture" type="String">Boat_Seaker_Blueprint</Property>
-            <Property name="Title" type="String"> Rental: Seaker</Property>
-            <Property name="Type" type="Symbol" Symbol="0x2F2417D1">Boat</Property>
-        </ListProperty>
-        <ListProperty nameUID="0x13A066EF">
-            <Parent>default-unlockables-items-defaults</Parent>
-            <Property name="Brand" type="String"/>
-            <Property name="Category" type="Symbol" Symbol="0x995DD6CA">Vehicle</Property>
-            <Property name="Description" type="String">Rentals are returned after the race.</Property>
-            <Property name="FaceReplenishMultiplier" type="Float32">0</Property>
-            <Property name="ItemType" type="Symbol" Symbol="0x8B34DEE7">Vehicle_Purchase</Property>
-            <Property name="Price" type="Float32">6000</Property>
-            <Property name="Rental" type="Boolean">True</Property>
-            <Property name="SpawnObjectInfo" type="Symbol" Symbol="0x6AF9EE27">object-physical-vehicle-Seaker01</Property>
-            <Property name="StandingAdjustment" type="Float32">0</Property>
-            <Property name="Stores" type="List">
-                <Property type="Symbol" Symbol="0x8A0A9A5C">R_CT_06</Property>
-            </Property>
-            <Property name="Texture" type="String">Boat_Seaker_Blueprint</Property>
-            <Property name="Title" type="String"> Rental: Seaker</Property>
-            <Property name="Type" type="Symbol" Symbol="0x2F2417D1">Boat</Property>
-        </ListProperty>
-    </Property>
-    <Property name="StoreType" type="Symbol" Symbol="0xACB107F7">Boat</Property>
-    <Property name="Stores" type="List">
-        <Property type="Symbol" Symbol="0x382E7752">R_AB_03</Property>
-        <Property type="Symbol" Symbol="0x22A83AE0">R_AB_05</Property>
-        <Property type="Symbol" Symbol="0x2FEB1C39">R_AB_06</Property>
-        <Property type="Symbol" Symbol="0x8A0A9A5C">R_CT_06</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-unlockables-merchantdatabase-boats" nameUID="0x22BCEFBB">
+	<!-- Properties -->
+	<Property name="Items" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="R_AB_03_rental" nameUID="0x9344FAE1">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x2F2417D1">BOAT</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x382E7752">R_AB_03</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Boat_Jet620V_Blueprint</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">6000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="Rental" type="Boolean">true</Property>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x1519FF65">object-physical-vehicle-jet620v01</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String"> Rental: Jet 620 V</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">Rentals are returned after the race.</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="R_AB_05_rental" nameUID="0x4E412DEA">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x2F2417D1">BOAT</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x22A83AE0">R_AB_05</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Boat_Jet620V_Blueprint</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">6000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="Rental" type="Boolean">true</Property>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x1519FF65">object-physical-vehicle-jet620v01</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String"> Rental: Jet 620 V</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">Rentals are returned after the race.</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="R_AB_06_rental" nameUID="0xA2A348B4">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x2F2417D1">BOAT</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x2FEB1C39">R_AB_06</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Boat_Seaker_Blueprint</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">6000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="Rental" type="Boolean">true</Property>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x6AF9EE27">object-physical-vehicle-Seaker01</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String"> Rental: Seaker</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">Rentals are returned after the race.</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="R_CT_06_rental" nameUID="0x13A066EF">
+				<!-- Parents -->
+				<Parent nameUID="0x7AD59153">default-unlockables-items-defaults</Parent>
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x2F2417D1">BOAT</Property>
+				<Property name="Stores" type="List">
+					<!-- Elements -->
+					<ListProperty type="Symbol" symUID="0x8A0A9A5C">R_CT_06</ListProperty>
+				</Property>
+				<Property name="Texture" type="String">Boat_Seaker_Blueprint</Property>
+				<Property name="Category" type="Symbol" symUID="0x995DD6CA">VEHICLE</Property>
+				<Property name="Price" type="Float32">6000</Property>
+				<Property name="Brand" type="String"/>
+				<Property name="Rental" type="Boolean">true</Property>
+				<Property name="FaceReplenishMultiplier" type="Float32">0</Property>
+				<Property name="SpawnObjectInfo" type="Symbol" symUID="0x6AF9EE27">object-physical-vehicle-Seaker01</Property>
+				<Property name="StandingAdjustment" type="Float32">0</Property>
+				<Property name="Title" type="String"> Rental: Seaker</Property>
+				<Property name="ItemType" type="Symbol" symUID="0x8B34DEE7">Vehicle_Purchase</Property>
+				<Property name="Description" type="String">Rentals are returned after the race.</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="Stores" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x382E7752">R_AB_03</ListProperty>
+		<ListProperty type="Symbol" symUID="0x22A83AE0">R_AB_05</ListProperty>
+		<ListProperty type="Symbol" symUID="0x2FEB1C39">R_AB_06</ListProperty>
+		<ListProperty type="Symbol" symUID="0x8A0A9A5C">R_CT_06</ListProperty>
+	</Property>
+	<Property name="StoreType" type="Symbol" symUID="0xACB107F7">Boat</Property>
+</PropertySetResource>

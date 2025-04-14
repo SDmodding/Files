@@ -1,57 +1,64 @@
-<PropertySet name="object-physical-weapon-melee-MissionCellPhone001" nameUID="0x864344AE" schema="object-physical-weapon-melee-MissionCellPhone001">
-    <Parent>object-physical-weapon-melee</Parent>
-    <Property name="AttachBone" type="String">Bip01 R Prop</Property>
-    <Property name="DamageMultiplier" type="Float32">0.8</Property>
-    <Property name="Description" type="String">$HUD_WEAPON_CELL_PHONE</Property>
-    <Property name="HudReticle" type="Symbol" Symbol="0x8568E861">Pistol</Property>
-    <Property name="MaxAngularVelocityWhenThrown" type="Vector3" x="10" y="10" z="10"/>
-    <Property name="MinAngularVelocityWhenThrown" type="Vector3" x="7" y="7" z="7"/>
-    <Property name="PropBone" type="String">Grip R Hand</Property>
-    <Property name="RangedDistance" type="Float32">10</Property>
-    <Property name="SoundBank" type="WwiseID"/>
-    <Property name="ThrownSpeed" type="Float32">30</Property>
-    <Property name="component_BaseAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">CellPhone001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_CharacterAnimation" type="PropSet">
-        <BinData>
-            <DestroyAttachedCharacters type="Boolean">true</DestroyAttachedCharacters>
-            <RigName type="String">CellPhone001</RigName>
-            <PoseDriverSet type="Symbol"/>
-            <PoseDriverSetHD type="Symbol"/>
-            <RequiredAnimBanks type="List"/>
-        </BinData>
-    </Property>
-    <Property name="component_InventoryItem" type="PropSet">
-        <BinData>
-            <InventoryItemQuantityMin type="UInt32">1</InventoryItemQuantityMin>
-            <InventoryItemQuantityMax type="UInt32">1</InventoryItemQuantityMax>
-            <simObjectInventoryItem type="Symbol">eINVENTORY_ITEM_CELLPHONE</simObjectInventoryItem>
-        </BinData>
-    </Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <PropertySet>
-            <Parent>default-component-StreamedResource</Parent>
-        </PropertySet>
-        <BinData>
-            <ResourceTags type="List"/>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0xC579179C">Data\Props_New\CellPhone001</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">Prop</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">0</BMIMin>
-            <BMIMax type="Float32">0</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="simObjectWeaponType" type="String">eSIM_OBJ_WEAPON_TYPE_MISSION_PICKUP_ITEM</Property>
-</PropertySet>
+<PropertySetResource name="object-physical-weapon-melee-MissionCellPhone001" nameUID="0x864344AE">
+	<!-- Parents -->
+	<Parent nameUID="0x4049E7ED">object-physical-weapon-melee</Parent>
+	<!-- Properties -->
+	<Property name="HudReticle" type="Symbol" symUID="0x8568E861">PISTOL</Property>
+	<Property name="MaxAngularVelocityWhenThrown" type="Vector3" x="10" y="10" z="10"/>
+	<Property name="ThrownSpeed" type="Float32">30</Property>
+	<Property name="SoundBank" type="WwiseID" symUID="0x792320AC"/>
+	<Property name="component_CharacterAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Parent: component_BaseAnimation -->
+		</PropertySet>
+	</Property>
+	<Property name="AttachBone" type="String">Bip01 R Prop</Property>
+	<Property name="component_BaseAnimation" type="PropSet">
+		<PropertySet name="component_CharacterAnimation" nameUID="0x34DB99FB" schema="default-component-CharacterAnimation">
+			<!-- Schema Properties -->
+			<Property name="DestroyAttachedCharacters" type="Boolean">true</Property>
+			<Property name="RigName" type="String">CellPhone001</Property>
+			<Property name="WeightSetFileName" type="String"/>
+			<Property name="PoseDriverSet" type="SymbolUC"/>
+			<Property name="RigNameHD" type="String"/>
+			<Property name="WeightSetFileNameHD" type="String"/>
+			<Property name="PoseDriverSetHD" type="SymbolUC"/>
+			<Property name="RequiredAnimBanks" type="List"/>
+			<Property name="pad_BaseAnimation" type="UInt32">0</Property>
+		</PropertySet>
+	</Property>
+	<Property name="PropBone" type="String">Grip R Hand</Property>
+	<Property name="component_InventoryItem" type="PropSet">
+		<PropertySet name="component_InventoryItem" nameUID="0x9DA2A4AD" schema="default-component-InventoryItem">
+			<!-- Schema Properties -->
+			<Property name="InventoryItemQuantityMin" type="UInt32">1</Property>
+			<Property name="InventoryItemQuantityMax" type="UInt32">1</Property>
+			<Property name="simObjectInventoryItem" type="Symbol" symUID="0x64AC832F">eINVENTORY_ITEM_CELLPHONE</Property>
+		</PropertySet>
+	</Property>
+	<Property name="DamageMultiplier" type="Float32">0.8</Property>
+	<Property name="MinAngularVelocityWhenThrown" type="Vector3" x="7" y="7" z="7"/>
+	<Property name="RangedDistance" type="Float32">10</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Parents -->
+			<Parent nameUID="0xA09F7F61">default-component-StreamedResource</Parent>
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List"/>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0xC579179C">Data\Props_New\CellPhone001</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0xD452A50">Prop</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">0</Property>
+			<Property name="BMIMax" type="Float32">0</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="simObjectWeaponType" type="String">eSIM_OBJ_WEAPON_TYPE_MISSION_PICKUP_ITEM</Property>
+	<Property name="Description" type="String">$HUD_WEAPON_CELL_PHONE</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0x792320AC (WWise) -->

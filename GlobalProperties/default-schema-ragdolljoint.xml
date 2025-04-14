@@ -1,16 +1,17 @@
-<PropertySet name="default-schema-ragdolljoint" nameUID="0xF4C54778" schema="default-schema-ragdolljoint">
-    <Property name="angular_limit_max" type="Float32">60</Property>
-    <Property name="angular_limit_min" type="Float32">-15</Property>
-    <Property name="axis" type="Vector3" x="0" y="0" z="0"/>
-    <Property name="child_bone" type="SymbolUC" Symbol="0x11BA157D">Bip01 L Foot</Property>
-    <Property name="cone_limit" type="Float32">45</Property>
-    <Property name="constraint_type" type="Symbol" Symbol="0x8FDFB681">limited_hinge</Property>
-    <Property name="max_friction_torque" type="Float32">0</Property>
-    <Property name="parent_bone" type="SymbolUC" Symbol="0x8C4CF328">Bip01 L Calf</Property>
-    <Property name="plane_axis_parent" type="Vector3" x="0" y="0" z="1"/>
-    <Property name="plane_limit_max" type="Float32">15</Property>
-    <Property name="plane_limit_min" type="Float32">-45</Property>
-    <Property name="twist_axis_parent" type="Vector3" x="0" y="0" z="0"/>
-    <Property name="twist_limit_max" type="Float32">5</Property>
-    <Property name="twist_limit_min" type="Float32">-5</Property>
-</PropertySet>
+<PropertySetResource name="default-schema-ragdolljoint" nameUID="0xF4C54778" schema="default-schema-ragdolljoint">
+	<!-- Properties -->
+	<Property name="parent_bone" type="SymbolUC" symUID="0x8C4CF328">Bip01 L Calf</Property>
+	<Property name="angular_limit_max" type="Float32">60</Property>
+	<Property name="constraint_type" type="Symbol" symUID="0x8FDFB681">limited_hinge</Property>
+	<Property name="cone_limit" type="Float32">45</Property>
+	<Property name="twist_limit_min" type="Float32">-5</Property>
+	<Property name="plane_limit_max" type="Float32">15</Property>
+	<Property name="plane_limit_min" type="Float32">-45</Property>
+	<Property name="max_friction_torque" type="Float32">0</Property>
+	<Property name="axis" type="Vector3" x="0" y="0" z="-1"/>
+	<Property name="plane_axis_parent" type="Vector3" x="0" y="1" z="0"/>
+	<Property name="twist_axis_parent" type="Vector3" x="0" y="0" z="1"/>
+	<Property name="child_bone" type="SymbolUC" symUID="0x11BA157D">Bip01 L Foot</Property>
+	<Property name="twist_limit_max" type="Float32">5</Property>
+	<Property name="angular_limit_min" type="Float32">-15</Property>
+</PropertySetResource>

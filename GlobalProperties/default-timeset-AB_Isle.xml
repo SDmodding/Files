@@ -1,28 +1,42 @@
-<PropertySet name="default-timeset-AB_Isle" nameUID="0xF1D0A334" schema="default-timeset-AB_Isle">
-    <Property name="TimeSetList" type="List">
-        <ListProperty nameUID="0x4FD98B62">
-            <Property name="OffTime" type="Int32">9</Property>
-            <Property name="OnTime" type="Int32">5</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0x2B118D97">default-spawnset-AB_Isle_Peds</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-4</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xF4B7E331">
-            <Property name="OffTime" type="Int32">17</Property>
-            <Property name="OnTime" type="Int32">9</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0x2B118D97">default-spawnset-AB_Isle_Peds</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-3</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">23</Property>
-            <Property name="OnTime" type="Int32">17</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0x6C6CBF49">default-spawnset-AB_Isle_Peds_eve</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-4</Property>
-        </ListProperty>
-        <ListProperty nameUID="0xA75F0417">
-            <Property name="OffTime" type="Int32">5</Property>
-            <Property name="OnTime" type="Int32">23</Property>
-            <Property name="SpawnSet" type="Symbol" Symbol="0x1B47AA3C">default-spawnset-AB_Isle_Peds_night</Property>
-            <Property name="TimeSetSpawnPopulation" type="Int32">-5</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-timeset-AB_Isle" nameUID="0xF1D0A334">
+	<!-- Properties -->
+	<Property name="TimeSetList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Dawn" nameUID="0x4FD98B62">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">9</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-4</Property>
+				<Property name="OnTime" type="Int32">5</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0x2B118D97">default-spawnset-AB_Isle_Peds</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Night" nameUID="0xF4B7E331">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">17</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-3</Property>
+				<Property name="OnTime" type="Int32">9</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0x2B118D97">default-spawnset-AB_Isle_Peds</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">23</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-4</Property>
+				<Property name="OnTime" type="Int32">17</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0x6C6CBF49">default-spawnset-AB_Isle_Peds_eve</Property>
+			</PropertySet>
+		</ListProperty>
+		<ListProperty type="PropSet">
+			<PropertySet name="TimeBand_Day" nameUID="0xA75F0417">
+				<!-- Properties -->
+				<Property name="OffTime" type="Int32">5</Property>
+				<Property name="TimeSetSpawnPopulation" type="Int32">-5</Property>
+				<Property name="OnTime" type="Int32">23</Property>
+				<Property name="SpawnSet" type="Symbol" symUID="0x1B47AA3C">default-spawnset-AB_Isle_Peds_night</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+</PropertySetResource>

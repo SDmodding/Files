@@ -1,26 +1,41 @@
-<PropertySet name="object-physical-character-jobCharacters-J_DC01_05_Character" nameUID="0x5CB9C596" schema="object-physical-character-jobCharacters-J_DC01_05_Character">
-    <Parent>object-physical-character-police_swat</Parent>
-    <Property name="Description" type="String">Job: Debt Collection - Tommy</Property>
-    <Property name="FaceAction" type="Symbol" Symbol="0xA96B9110">eFACEACTION_HARASS</Property>
-    <Property name="FaceActionEnabled" type="Boolean">True</Property>
-    <Property name="component_StreamedResource" type="PropSet">
-        <BinData>
-            <ResourceTags type="List">
-                <Property type="Symbol" Symbol="0x166A8B5C">Male</Property>
-                <Property type="Symbol" Symbol="0x94871CAB">Swat</Property>
-            </ResourceTags>
-            <ResourceList type="List">
-                <Property type="Symbol" Symbol="0x32F9A785">Data\Characters_New\AM_H_139</Property>
-                <Property type="Symbol" Symbol="0xBE021315">Data\Characters_New\AM_B_203</Property>
-            </ResourceList>
-            <ComponentList type="List"/>
-            <TextureSetList type="List"/>
-            <EntityType type="Symbol">TwoPartPed</EntityType>
-            <TrueCrowdSelectionType type="UInt32">2</TrueCrowdSelectionType>
-            <BMIMin type="Float32">-1</BMIMin>
-            <BMIMax type="Float32">1</BMIMax>
-            <PartList type="List"/>
-        </BinData>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-jobCharacters-J_DC01_05_Character" nameUID="0x5CB9C596">
+	<!-- Parents -->
+	<Parent nameUID="0xD6B3D080">object-physical-character-police_swat</Parent>
+	<Parent nameUID="0xD0BBE97D">default-component-FaceAction</Parent>
+	<!-- Properties -->
+	<Property name="FaceAction" type="Symbol" symUID="0xA96B9110">eFACEACTION_HARASS</Property>
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x2DD6F805">Event_NPC</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="component_StreamedResource" type="PropSet">
+		<PropertySet name="component_StreamedResource" nameUID="0xDB4EBBFF" schema="default-component-StreamedResource">
+			<!-- Schema Properties -->
+			<Property name="ResourceTags" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x166A8B5C">Male</ListProperty>
+				<ListProperty type="Symbol" symUID="0x94871CAB">Swat</ListProperty>
+			</Property>
+			<Property name="ResourceList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x32F9A785">Data\Characters_New\AM_H_139</ListProperty>
+				<ListProperty type="Symbol" symUID="0xBE021315">Data\Characters_New\AM_B_203</ListProperty>
+			</Property>
+			<Property name="ComponentList" type="List"/>
+			<Property name="TextureSetList" type="List"/>
+			<Property name="EntityType" type="SymbolUC" symUID="0x25C77A1C">TwoPartPed</Property>
+			<Property name="TrueCrowdSelectionType" type="UInt32">2</Property>
+			<Property name="BMIMin" type="Float32">-1</Property>
+			<Property name="BMIMax" type="Float32">1</Property>
+			<Property name="PartList" type="List"/>
+		</PropertySet>
+	</Property>
+	<Property name="FaceActionEnabled" type="Boolean">true</Property>
+	<Property name="Description" type="String">Job: Debt Collection - Tommy</Property>
+</PropertySetResource>

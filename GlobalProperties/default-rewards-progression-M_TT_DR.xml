@@ -1,12 +1,20 @@
-<PropertySet name="default-rewards-progression-M_TT_DR" nameUID="0x7824A59A" schema="default-rewards-progression-M_TT_DR">
-    <Parent>default-rewards-progression-dlc_tt_defaults</Parent>
-    <Property name="CompletionText" type="String">$SGTITLE_DEATH_RACE</Property>
-    <Property name="UnlockItems" type="List">
-        <ListProperty nameUID="0xF57EB71C">
-            <Property name="0x308E0AE5" type="String">vehicle_icon</Property>
-            <Property name="0x4E4D2ED3" type="String">DLC_TRANSTERROR_REWARD</Property>
-            <Property name="0xDE3E6A23" type="String">$DLC_TRANSTERROR_CAR_REWARD</Property>
-            <Property name="Type" type="Symbol" Symbol="0x9B06086B">Vehicle</Property>
-        </ListProperty>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-M_TT_DR" nameUID="0x7824A59A">
+	<!-- Parents -->
+	<Parent nameUID="0xCBB66843">default-rewards-progression-dlc_tt_defaults</Parent>
+	<!-- Properties -->
+	<Property name="UnlockItems" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet nameUID="0xF57EB71C">
+				<!-- Properties -->
+				<Property name="Type" type="Symbol" symUID="0x9B06086B">Vehicle</Property>
+				<Property name="Icon" type="String">vehicle_icon</Property>
+				<Property name="AssetId" type="String">DLC_TRANSTERROR_REWARD</Property>
+				<Property name="Text" type="String">$DLC_TRANSTERROR_CAR_REWARD</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_DEATH_RACE</Property>
+</PropertySetResource>
+<!-- List of unresolved symbols -->
+<!-- 0xF57EB71C (Normal) -->

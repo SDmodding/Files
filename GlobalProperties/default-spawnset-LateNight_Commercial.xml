@@ -1,13 +1,19 @@
-<PropertySet name="default-spawnset-LateNight_Commercial" nameUID="0xC9053A88" schema="default-spawnset-LateNight_Commercial">
-    <Property name="RareSpawnList" type="List">
-        <ListProperty nameUID="0xD079178C">
-            <Property name="MaxInstances" type="Int32">2</Property>
-            <Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
-            <Property name="MinTimeBetweenSpawns" type="Float32">12</Property>
-            <Property name="PropertySet" type="Symbol" Symbol="0xBDEE9D16">object-physical-character-vagrant</Property>
-        </ListProperty>
-    </Property>
-    <Property name="SpawnSet" type="List">
-        <Property type="Symbol" Symbol="0x6E7FC6FA">object-physical-character-AmbientCharacters-NP_Comm_Night_Male</Property>
-    </Property>
-</PropertySet>
+<PropertySetResource name="default-spawnset-LateNight_Commercial" nameUID="0xC9053A88">
+	<!-- Properties -->
+	<Property name="RareSpawnList" type="List">
+		<!-- Elements -->
+		<ListProperty type="PropSet">
+			<PropertySet name="RareSpawnAA" nameUID="0xD079178C">
+				<!-- Properties -->
+				<Property name="PropertySet" type="Symbol" symUID="0xBDEE9D16">object-physical-character-vagrant</Property>
+				<Property name="MaxInstances" type="Int32">2</Property>
+				<Property name="MinTimeBetweenSpawns" type="Float32">12</Property>
+				<Property name="MaxSpawnsBeforeCycle" type="Int32">1</Property>
+			</PropertySet>
+		</ListProperty>
+	</Property>
+	<Property name="SpawnSet" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x6E7FC6FA">object-physical-character-AmbientCharacters-NP_Comm_Night_Male</ListProperty>
+	</Property>
+</PropertySetResource>

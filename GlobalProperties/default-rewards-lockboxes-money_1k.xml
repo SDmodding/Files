@@ -1,5 +1,7 @@
-<PropertySet name="default-rewards-lockboxes-money_1k" nameUID="0xBDEAE47F" schema="default-rewards-lockboxes-money_1k">
-    <Parent>default-rewards-lockboxes-lockbox</Parent>
-    <Property name="CompletionText" type="String">Found Money</Property>
-    <Property name="MoneyAdjustment" type="Int32">5000</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-lockboxes-money_1k" nameUID="0xBDEAE47F">
+	<!-- Parents -->
+	<Parent nameUID="0x1B0A318C">default-rewards-lockboxes-lockbox</Parent>
+	<!-- Properties -->
+	<Property name="MoneyAdjustment" type="Int32">5000</Property>
+	<Property name="CompletionText" type="String">Found Money</Property>
+</PropertySetResource>

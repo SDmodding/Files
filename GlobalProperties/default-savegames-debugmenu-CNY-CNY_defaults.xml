@@ -1,13 +1,15 @@
-<PropertySet name="default-savegames-debugmenu-CNY-CNY_defaults" nameUID="0x4FC0D2E6" schema="default-savegames-debugmenu-CNY-CNY_defaults">
-    <Parent>default-savegames-defaults</Parent>
-    <Property name="0xF96E9138" type="Int32">1000</Property>
-    <Property name="CopDrivingStage" type="Int32">5</Property>
-    <Property name="CopShootingStage" type="Int32">5</Property>
-    <Property name="MaxHealth" type="Float32">400</Property>
-    <Property name="Money" type="Int32">25000</Property>
-    <Property name="StatueDefensiveStage" type="Int32">5</Property>
-    <Property name="StatueOffensiveStage" type="Int32">5</Property>
-    <Property name="TimeOfDay" type="Float32">20</Property>
-    <Property name="TriadDefensiveStage" type="Int32">5</Property>
-    <Property name="TriadOffensiveStage" type="Int32">5</Property>
-</PropertySet>
+<PropertySetResource name="default-savegames-debugmenu-CNY-CNY_defaults" nameUID="0x4FC0D2E6">
+	<!-- Parents -->
+	<Parent nameUID="0x10965489">default-savegames-defaults</Parent>
+	<!-- Properties -->
+	<Property name="TriadOffensiveStage" type="Int32">5</Property>
+	<Property name="CopDrivingStage" type="Int32">5</Property>
+	<Property name="StatueDefensiveStage" type="Int32">5</Property>
+	<Property name="MaxHealth" type="Float32">400</Property>
+	<Property name="CopShootingStage" type="Int32">5</Property>
+	<Property name="TimeOfDay" type="Float32">20</Property>
+	<Property name="StatueOffensiveStage" type="Int32">5</Property>
+	<Property name="Money" type="Int32">25000</Property>
+	<Property name="TriadDefensiveStage" type="Int32">5</Property>
+	<Property name="Standing" type="Int32">1000</Property>
+</PropertySetResource>

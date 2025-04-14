@@ -1,9 +1,21 @@
-<PropertySet name="object-physical-character-Thug_Dbs_tutorial_A" nameUID="0x989BB530" schema="object-physical-character-Thug_Dbs_tutorial_A">
-    <Parent>object-physical-character-Thug_Dbs_striker_tutorial</Parent>
-    <Property name="Description" type="String">Thug Dogeyes Tutorial - Thug A</Property>
-    <Property name="VoiceTagList" type="List">
-        <Property type="Symbol" Symbol="0x8A664E0E">Thug</Property>
-        <Property type="Symbol" Symbol="0xE7522969">Cantonese</Property>
-    </Property>
-    <Property name="schema_classlist" type="PropSet"/>
-</PropertySet>
+<PropertySetResource name="object-physical-character-Thug_Dbs_tutorial_A" nameUID="0x989BB530">
+	<!-- Parents -->
+	<Parent nameUID="0x44987D19">object-physical-character-Thug_Dbs_striker_tutorial</Parent>
+	<!-- Properties -->
+	<Property name="schema_classlist" type="PropSet">
+		<PropertySet name="schema_classlist" nameUID="0x17B9254E" schema="default-schema-classlist">
+			<!-- Schema Properties -->
+			<Property name="ClassTypeIsAllowable" type="Boolean">true</Property>
+			<Property name="ClassTypeList" type="List">
+				<!-- Elements -->
+				<ListProperty type="Symbol" symUID="0x108F55F8">ThugA</ListProperty>
+			</Property>
+		</PropertySet>
+	</Property>
+	<Property name="VoiceTagList" type="List">
+		<!-- Elements -->
+		<ListProperty type="Symbol" symUID="0x8A664E0E">Thug</ListProperty>
+		<ListProperty type="Symbol" symUID="0xE7522969">Cantonese</ListProperty>
+	</Property>
+	<Property name="Description" type="String">Thug Dogeyes Tutorial - Thug A</Property>
+</PropertySetResource>

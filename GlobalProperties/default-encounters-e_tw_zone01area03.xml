@@ -1,10 +1,12 @@
-<PropertySet name="default-encounters-e_tw_zone01area03" nameUID="0x61F23C07" schema="default-encounters-e_tw_zone01area03">
-    <Parent>default-encounters-e_tw_zone01</Parent>
-    <Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
-    <Property name="BlipName" type="String">enemy</Property>
-    <Property name="EncounterFactionClass" type="Symbol" Symbol="0x9B7B4AB7">TRIAD_GENERIC</Property>
-    <Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
-    <Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
-    <Property name="kills_required" type="UInt32">9</Property>
-    <Property name="show_blip_radius" type="Boolean">False</Property>
-</PropertySet>
+<PropertySetResource name="default-encounters-e_tw_zone01area03" nameUID="0x61F23C07">
+	<!-- Parents -->
+	<Parent nameUID="0x37EE48E7">default-encounters-e_tw_zone01</Parent>
+	<!-- Properties -->
+	<Property name="kills_required" type="UInt32">9</Property>
+	<Property name="OverrideAIBehaviour" type="String">Thug_behaviour.act</Property>
+	<Property name="AIObjective" type="String">eAI_OBJECTIVE_ATTACK_TARGET</Property>
+	<Property name="show_blip_radius" type="Boolean">false</Property>
+	<Property name="EncounterFactionClass" type="Symbol" symUID="0x9B7B4AB7">TRIAD_GENERIC</Property>
+	<Property name="BlipName" type="String">enemy</Property>
+	<Property name="PostAIObjective" type="String">eAI_OBJECTIVE_FLEE</Property>
+</PropertySetResource>

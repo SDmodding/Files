@@ -1,12 +1,14 @@
-<PropertySet name="default-rewards-progression-J_CJ_DR_06" nameUID="0x4E807A95" schema="default-rewards-progression-J_CJ_DR_06">
-    <Parent>default-rewards-progression-job_defaults</Parent>
-    <Property name="0x72201393" type="Int32">0</Property>
-    <Property name="CompletionText" type="String">$SGTITLE_CJ_DRUG_RUNNER_04</Property>
-    <Property name="CopStartingScore" type="Int32">50</Property>
-    <Property name="EnableMissionScoring" type="Boolean">True</Property>
-    <Property name="EnableTriadScoring" type="Boolean">False</Property>
-    <Property name="GamesliceType" type="Symbol"/>
-    <Property name="MoneyAdjustment" type="Int32">20000</Property>
-    <Property name="StandingAdjustment" type="Int32">0</Property>
-    <Property name="TriadTargetScore" type="Int32">0</Property>
-</PropertySet>
+<PropertySetResource name="default-rewards-progression-J_CJ_DR_06" nameUID="0x4E807A95">
+	<!-- Parents -->
+	<Parent nameUID="0x93DAADC2">default-rewards-progression-job_defaults</Parent>
+	<!-- Properties -->
+	<Property name="CopStartingScore" type="Int32">50</Property>
+	<Property name="MoneyAdjustment" type="Int32">20000</Property>
+	<Property name="CompletionText" type="String">$SGTITLE_CJ_DRUG_RUNNER_04</Property>
+	<Property name="EnableMissionScoring" type="Boolean">true</Property>
+	<Property name="MaxTriadScore" type="Int32">0</Property>
+	<Property name="TriadTargetScore" type="Int32">0</Property>
+	<Property name="StandingAdjustment" type="Int32">0</Property>
+	<Property name="GamesliceType" type="Symbol" symUID="0x50419A9A">DLC_POLICE</Property>
+	<Property name="EnableTriadScoring" type="Boolean">false</Property>
+</PropertySetResource>
